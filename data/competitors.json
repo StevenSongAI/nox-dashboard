@@ -95,6 +95,23 @@
         "videoCount": 267
       },
       "latestVideos": []
+    },
+    {
+      "id": "comp-007",
+      "channelId": "@PokeRealtv",
+      "name": "PokeReal TV",
+      "url": "https://www.youtube.com/@PokeRealtv/videos",
+      "niche": "Gaming/Pokémon",
+      "focus": "Pokémon content",
+      "addedAt": "2026-02-08T21:42:00Z",
+      "autoAdded": false,
+      "addedBy": "Steven",
+      "stats": {
+        "subscribers": "TBD",
+        "totalViews": "TBD",
+        "videoCount": 0
+      },
+      "latestVideos": []
     }
   ],
   "outlierPatterns": [
@@ -111,5 +128,5 @@
       "recommendedAction": "Document AI creature creation process"
     }
   ],
-  "lastUpdated": "2026-02-08T12:00:00Z"
+  "lastUpdated": "2026-02-08T21:42:00Z"
 }
