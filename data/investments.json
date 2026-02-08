@@ -152,8 +152,18 @@
       "impact": "bullish",
       "relatedPositions": ["RENDER"],
       "riskFactors": ["Crypto volatility", "Regulatory uncertainty", "Technology adoption risk"]
+    },
+    {
+      "id": "intel-009",
+      "date": "2026-02-08T20:06:00Z",
+      "topic": "TSLA Robotaxi Timeline + FSD Progress",
+      "source": "Market Analysis / Tech News Synthesis",
+      "content": "Tesla trading at ~$185 (Feb 8). Key catalysts: (1) Robotaxi reveal expected Q2 2026 - could be transformational if regulatory pathway clear; (2) FSD v13 showing improved urban performance with reduced interventions; (3) Competition intensifying: Waymo expanding to 10+ cities, Chinese EVs (BYD, NIO) launching autonomous features. Risk: Valuation still assumes significant autonomous revenue. Current price implies ~$3-4T market cap by 2030. Watch for: Robotaxi event date announcement, FSD take-rate changes, and regulatory approvals (California DMV, NHTSA). Entry target $220 appears conservative given current price - may lower to $170-180 range for better risk/reward.",
+      "impact": "neutral",
+      "relatedPositions": ["watch-001"],
+      "riskFactors": ["Valuation dependent on unproven robotaxi revenue", "Intensifying competition", "Regulatory delays", "CEO distraction concerns"]
     }
   ],
-  "lastUpdated": "2026-02-08T19:46:00Z",
+  "lastUpdated": "2026-02-08T20:06:00Z",
   "dataSource": "X.com via browser research (bird API disabled)"
 }
