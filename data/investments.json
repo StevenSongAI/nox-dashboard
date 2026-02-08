@@ -1,59 +1,84 @@
 {
-  "positions": [
+  "marketOpportunities": [
     {
-      "symbol": "NVDA",
-      "name": "NVIDIA Corporation",
-      "shares": 50,
-      "avgCost": 485.50,
-      "currentPrice": 742.30,
-      "totalValue": 37115.00,
-      "totalGain": 12840.00,
-      "gainPercent": 52.9
+      "id": "opp-001",
+      "sector": "AI Infrastructure",
+      "ticker": "NVDA",
+      "name": "NVIDIA",
+      "signal": "Earnings momentum",
+      "source": "X.com / Earnings",
+      "confidence": "high",
+      "notes": "Blackwell chip demand exceeding supply through mid-2026. Data center revenue +93% YoY.",
+      "addedAt": "2026-02-07T20:00:00Z"
     },
     {
-      "symbol": "TSLA",
-      "name": "Tesla Inc",
-      "shares": 100,
-      "avgCost": 195.20,
-      "currentPrice": 218.45,
-      "totalValue": 21845.00,
-      "totalGain": 2325.00,
-      "gainPercent": 11.9
+      "id": "opp-002",
+      "sector": "AI/Data Analytics",
+      "ticker": "PLTR",
+      "name": "Palantir",
+      "signal": "Valuation concern",
+      "source": "X.com / Analyst",
+      "confidence": "medium",
+      "notes": "Morgan Stanley downgrade. 45x forward revenue considered stretched.",
+      "addedAt": "2026-02-06T14:30:00Z"
     }
   ],
   "watchlist": [
     {
-      "symbol": "PLTR",
-      "name": "Palantir Technologies",
-      "targetPrice": 75.00,
-      "currentPrice": 84.20,
-      "notes": "AI infrastructure play, wait for pullback"
+      "id": "watch-001",
+      "sector": "EV/Auto",
+      "ticker": "TSLA",
+      "name": "Tesla",
+      "catalyst": "Robotaxi reveal, FSD progress",
+      "source": "X.com / Tech news",
+      "whyWatching": "Autonomous driving breakthrough could be major catalyst"
     },
     {
-      "symbol": "AMD",
-      "name": "Advanced Micro Devices",
-      "targetPrice": 140.00,
-      "currentPrice": 168.90,
-      "notes": "NVDA alternative, entering data center"
+      "id": "watch-002",
+      "sector": "Semiconductors",
+      "ticker": "AMD",
+      "name": "AMD",
+      "catalyst": "Data center share growth",
+      "source": "X.com / Industry",
+      "whyWatching": "NVDA alternative play, MI300 chip demand"
+    }
+  ],
+  "trends": [
+    {
+      "id": "trend-001",
+      "topic": "AI Agent Infrastructure",
+      "sentiment": "bullish",
+      "momentum": "accelerating",
+      "sources": ["X.com tech community", "Industry reports"],
+      "summary": "Enterprise demand for AI agents driving infrastructure spending"
+    },
+    {
+      "id": "trend-002",
+      "topic": "Gaming Content Evolution",
+      "sentiment": "bullish",
+      "momentum": "stable",
+      "sources": ["YouTube trends", "Creator economy"],
+      "summary": "AI-generated content, simulation videos gaining traction"
     }
   ],
   "intelligence": [
     {
       "id": "intel-001",
       "date": "2026-02-07T20:00:00Z",
-      "ticker": "NVDA",
-      "type": "earnings",
-      "content": "Q4 FY2026 earnings beat expectations with $28.5B revenue (vs $26.8B est). Data center revenue up 93% YoY. Blackwell chip demand exceeding supply through mid-2026. Management guided Q1 revenue above consensus.",
+      "topic": "NVDA Supply Constraint",
+      "source": "X.com / Earnings call",
+      "content": "Blackwell chip demand exceeding supply through mid-2026. Management guided Q1 revenue above consensus.",
       "impact": "bullish"
     },
     {
       "id": "intel-002",
       "date": "2026-02-06T14:30:00Z",
-      "ticker": "PLTR",
-      "type": "analyst",
-      "content": "Morgan Stanley downgraded from Equal Weight to Underweight, citing stretched valuation at 45x forward revenue. Notes strong fundamentals but price already reflects multiple years of growth. Price target raised to $80 from $75.",
+      "topic": "PLTR Valuation Debate",
+      "source": "X.com / Morgan Stanley",
+      "content": "Analyst downgrade citing 45x forward revenue multiple. Strong fundamentals but price reflects multiple years of growth.",
       "impact": "bearish"
     }
   ],
-  "lastUpdated": "2026-02-08T00:00:00Z"
+  "lastUpdated": "2026-02-08T12:10:00Z",
+  "dataSource": "X.com via browser research (bird API disabled)"
 }
