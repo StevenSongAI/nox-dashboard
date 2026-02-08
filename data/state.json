@@ -1,5 +1,5 @@
 {
-  "lastHeartbeat": "2026-02-08T12:00:00Z",
+  "lastHeartbeat": "2026-02-08T12:40:00Z",
   "totalHeartbeats": 2,
   "lastAction": "Added 30 real outlier videos from ZMDE Gaming and StevenSongIRL channels",
   "currentPriorities": {
@@ -49,6 +49,21 @@
     "Populate research.json with real notes",
     "Add more YouTube outlier videos",
     "Fix any remaining dashboard UI issues"
+  ],
+  "blockedTasks": [
+    {
+      "id": "blocked-001",
+      "task": "Research competitor channels via viewstats.com",
+      "description": "Use viewstats Pro Tools > Outlier to find high-performing videos from competitor channels",
+      "channels": ["@RogersPets-w5s", "@petsimulatedworld", "@CreatureLab_real"],
+      "targetPatterns": ["I got a fictional pet simulation", "AI generated creatures"],
+      "blocked": true,
+      "reason": "Requires browser access to viewstats.com (clawd profile)",
+      "blockingSince": "2026-02-08T12:30:00Z",
+      "unblockCondition": "Browser control available or user provides viewstats data",
+      "workaround": "Created research-queue.json with instructions for manual research",
+      "priority": "high"
+    }
   ],
   "nextPriority": "Research competitor channels via viewstats.com - RogersPets, petsimulatedworld, CreatureLab"
 }
