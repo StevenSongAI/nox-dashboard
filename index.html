@@ -23,7 +23,7 @@
 </head>
 <body class="min-h-screen">
   <!-- Header -->
-  <header class="sticky top-0 z-50 bg-dark-900 border-b border-dark-700">
+  <header class="sticky top-0 z-40 bg-dark-900 border-b border-dark-700">
     <div class="max-w-7xl mx-auto px-4 py-3">
       <div class="flex items-center justify-between">
         <h1 class="text-xl font-bold">⚡ Nox Dashboard</h1>
@@ -49,22 +49,22 @@
     <!-- Dashboard Tab -->
     <div id="tab-dashboard" class="tab-content">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
-        <div class="card rounded-lg p-4">
+        <div class="card rounded-lg p-4 cursor-pointer hover:border-accent-blue" onclick="showTab('youtube')">
           <div class="text-gray-400 text-sm">YouTube Outliers</div>
           <div id="stat-youtube-count" class="text-2xl font-bold mt-1">-</div>
           <div id="stat-youtube-briefs" class="text-sm text-gray-500">-</div>
         </div>
-        <div class="card rounded-lg p-4">
+        <div class="card rounded-lg p-4 cursor-pointer hover:border-accent-blue" onclick="showTab('business')">
           <div class="text-gray-400 text-sm">Business Opportunities</div>
           <div id="stat-business-count" class="text-2xl font-bold mt-1">-</div>
           <div id="stat-business-high" class="text-sm text-gray-500">-</div>
         </div>
-        <div class="card rounded-lg p-4">
+        <div class="card rounded-lg p-4 cursor-pointer hover:border-accent-blue" onclick="showTab('investments')">
           <div class="text-gray-400 text-sm">Investments</div>
           <div id="stat-investments-count" class="text-2xl font-bold mt-1">-</div>
           <div id="stat-investments-watchlist" class="text-sm text-gray-500">-</div>
         </div>
-        <div class="card rounded-lg p-4">
+        <div class="card rounded-lg p-4 cursor-pointer hover:border-accent-blue" onclick="showTab('audits')">
           <div class="text-gray-400 text-sm">Avg Audit Grade</div>
           <div id="stat-avg-grade" class="text-2xl font-bold mt-1">-</div>
           <div class="text-sm text-gray-500">Last 30 days</div>
@@ -77,7 +77,11 @@
           <span id="brief-date" class="text-sm text-gray-400">--</span>
         </div>
         <div id="morning-brief-content" class="space-y-2">
-          <p class="text-gray-500 text-sm">Loading morning brief...</p>
+          <div class="skeleton-loader">
+            <div class="skeleton-line" style="width: 100%"></div>
+            <div class="skeleton-line" style="width: 80%"></div>
+            <div class="skeleton-line" style="width: 60%"></div>
+          </div>
         </div>
       </div>
 
@@ -97,17 +101,22 @@
       <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4 gap-3">
         <h2 class="text-xl font-semibold">🎬 YouTube Strategy</h2>
         <div class="flex gap-2">
-          <input type="text" id="youtube-search" placeholder="Search videos..." class="px-3 py-1 bg-dark-700 rounded border border-dark-600 text-sm">
+          <input type="text" id="youtube-search" placeholder="Search videos, channels, descriptions..." class="px-3 py-1 bg-dark-700 rounded border border-dark-600 text-sm md:w-64">
           <select id="youtube-niche-filter" class="px-3 py-1 bg-dark-700 rounded border border-dark-600 text-sm">
             <option value="">All Niches</option>
-            <option value="AI/Tech">AI/Tech</option>
-            <option value="Gaming">Gaming</option>
-            <option value="Business">Business</option>
+            <option value="🎮 Gaming">🎮 Gaming</option>
+            <option value="💰 Finance">💰 Finance</option>
+            <option value="⚡ Productivity">⚡ Productivity</option>
+            <option value="🎬 Production">🎬 Production</option>
           </select>
         </div>
       </div>
       <div id="youtube-outliers" class="space-y-3">
-        <div class="card rounded-lg p-4 text-center text-gray-500">Loading...</div>
+        <div class="skeleton-loader">
+          <div class="skeleton-card"></div>
+          <div class="skeleton-card"></div>
+          <div class="skeleton-card"></div>
+        </div>
       </div>
     </div>
 
@@ -122,7 +131,10 @@
         <div class="card rounded-lg p-3 text-center"><div class="text-2xl font-bold" id="pipe-won">-</div><div class="text-xs text-gray-400">Won</div></div>
       </div>
       <div id="business-opportunities" class="space-y-3">
-        <div class="card rounded-lg p-4 text-center text-gray-500">Loading...</div>
+        <div class="skeleton-loader">
+          <div class="skeleton-card"></div>
+          <div class="skeleton-card"></div>
+        </div>
       </div>
     </div>
 
@@ -133,20 +145,29 @@
         <div class="card rounded-lg p-4">
           <h3 class="font-semibold mb-3">Portfolio</h3>
           <div id="investments-positions" class="space-y-2">
-            <div class="text-gray-500 text-center">Loading...</div>
+            <div class="skeleton-loader">
+              <div class="skeleton-line" style="width: 100%"></div>
+              <div class="skeleton-line" style="width: 90%"></div>
+            </div>
           </div>
         </div>
         <div class="card rounded-lg p-4">
           <h3 class="font-semibold mb-3">Watchlist</h3>
           <div id="investments-watchlist" class="space-y-2">
-            <div class="text-gray-500 text-center">Loading...</div>
+            <div class="skeleton-loader">
+              <div class="skeleton-line" style="width: 100%"></div>
+              <div class="skeleton-line" style="width: 85%"></div>
+            </div>
           </div>
         </div>
       </div>
       <div class="card rounded-lg p-4">
         <h3 class="font-semibold mb-3">Market Intelligence</h3>
         <div id="investments-intelligence" class="space-y-2">
-          <div class="text-gray-500 text-center">Loading...</div>
+          <div class="skeleton-loader">
+            <div class="skeleton-line" style="width: 100%"></div>
+            <div class="skeleton-line" style="width: 95%"></div>
+          </div>
         </div>
       </div>
     </div>
@@ -155,7 +176,11 @@
     <div id="tab-tools" class="tab-content hidden">
       <h2 class="text-xl font-semibold mb-4">🛠️ Tools Registry</h2>
       <div id="tools-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        <div class="card rounded-lg p-4 text-center text-gray-500">Loading...</div>
+        <div class="skeleton-loader">
+          <div class="skeleton-card"></div>
+          <div class="skeleton-card"></div>
+          <div class="skeleton-card"></div>
+        </div>
       </div>
     </div>
 
@@ -166,7 +191,10 @@
         <input type="text" id="research-search" placeholder="Search notes..." class="px-3 py-1 bg-dark-700 rounded border border-dark-600 text-sm md:w-64">
       </div>
       <div id="research-notes" class="space-y-3">
-        <div class="card rounded-lg p-4 text-center text-gray-500">Loading...</div>
+        <div class="skeleton-loader">
+          <div class="skeleton-card"></div>
+          <div class="skeleton-card"></div>
+        </div>
       </div>
     </div>
 
@@ -174,16 +202,34 @@
     <div id="tab-audits" class="tab-content hidden">
       <h2 class="text-xl font-semibold mb-4">📋 Audit Reports</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6" id="audit-stats">
-        <div class="card rounded-lg p-4 text-center"><div class="text-gray-500">Loading...</div></div>
+        <div class="skeleton-loader">
+          <div class="skeleton-card"></div>
+        </div>
       </div>
       <div class="card rounded-lg p-4 mb-4">
         <canvas id="grade-chart" height="100"></canvas>
       </div>
       <div id="audit-list" class="space-y-3">
-        <div class="card rounded-lg p-4 text-center text-gray-500">Loading...</div>
+        <div class="skeleton-loader">
+          <div class="skeleton-card"></div>
+          <div class="skeleton-card"></div>
+        </div>
       </div>
     </div>
   </main>
+
+  <!-- Detail Modal -->
+  <div id="detail-modal" class="modal-overlay hidden">
+    <div class="modal-container" onclick="event.stopPropagation()">
+      <div class="modal-header">
+        <h3 id="modal-title" class="modal-title">Details</h3>
+        <button onclick="closeModal()" class="modal-close" aria-label="Close">&times;</button>
+      </div>
+      <div id="modal-content" class="modal-content">
+        <!-- Dynamic content -->
+      </div>
+    </div>
+  </div>
 
   <script src="app.js"></script>
 </body>

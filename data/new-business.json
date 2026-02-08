@@ -32,12 +32,36 @@
       "effort": "Medium",
       "nextStep": "Build simple web interface",
       "createdAt": "2026-02-07T23:00:00Z"
+    },
+    {
+      "id": "opp-004",
+      "name": "Discord Bot for Community Management",
+      "description": "Build a Discord bot for automated community moderation and engagement",
+      "alignment": "LOW",
+      "status": "passed",
+      "potentialRevenue": "$200/month",
+      "effort": "High",
+      "nextStep": "Archived - low alignment with current focus",
+      "createdAt": "2026-02-06T10:00:00Z"
+    },
+    {
+      "id": "opp-005",
+      "name": "AI Consulting for Small Business",
+      "description": "One-on-one consulting to help small businesses implement AI tools",
+      "alignment": "HIGH",
+      "status": "won",
+      "potentialRevenue": "$2000/month",
+      "effort": "Medium",
+      "nextStep": "Onboard first client",
+      "createdAt": "2026-02-05T14:00:00Z"
     }
   ],
   "pipeline": {
     "new": 2,
     "evaluating": 1,
     "pursuing": 0,
-    "launched": 0
-  }
+    "passed": 1,
+    "won": 1
+  },
+  "lastUpdated": "2026-02-08T06:20:00Z"
 }

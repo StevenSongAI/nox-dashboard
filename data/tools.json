@@ -1,5 +1,83 @@
 {
-  "tools": [],
+  "tools": [
+    {
+      "id": "tool-001",
+      "name": "Nox Dashboard",
+      "category": "Dashboard",
+      "description": "Central command center for tracking YouTube strategy, business opportunities, investments, and research notes",
+      "status": "active",
+      "lastUsed": "2026-02-08T06:00:00Z",
+      "tags": ["dashboard", "analytics", "overview"],
+      "runCommand": "open ~/Desktop/Nox Builds/nox-dashboard-repo/index.html",
+      "auditGrade": 92
+    },
+    {
+      "id": "tool-002",
+      "name": "OpenClaw Gateway",
+      "category": "Automation",
+      "description": "Local automation gateway for executing commands, managing nodes, and orchestrating agent workflows",
+      "status": "active",
+      "lastUsed": "2026-02-08T05:30:00Z",
+      "tags": ["automation", "gateway", "orchestration"],
+      "runCommand": "openclaw gateway start",
+      "auditGrade": 88
+    },
+    {
+      "id": "tool-003",
+      "name": "Claude Code",
+      "category": "Analysis",
+      "description": "Anthropic's coding assistant for software development, code review, and technical analysis tasks",
+      "status": "active",
+      "lastUsed": "2026-02-08T04:15:00Z",
+      "tags": ["coding", "ai", "development"],
+      "runCommand": "claude",
+      "auditGrade": 95
+    },
+    {
+      "id": "tool-004",
+      "name": "Perplexity Pro",
+      "category": "Research",
+      "description": "AI-powered search engine for deep research, fact-checking, and staying current on tech developments",
+      "status": "active",
+      "lastUsed": "2026-02-07T22:00:00Z",
+      "tags": ["research", "search", "ai"],
+      "runCommand": "https://perplexity.ai",
+      "auditGrade": 90
+    },
+    {
+      "id": "tool-005",
+      "name": "Cursor IDE",
+      "category": "Content",
+      "description": "AI-first code editor with built-in Claude integration for rapid development and refactoring",
+      "status": "active",
+      "lastUsed": "2026-02-08T03:45:00Z",
+      "tags": ["editor", "coding", "ai"],
+      "runCommand": "cursor",
+      "auditGrade": 94
+    },
+    {
+      "id": "tool-006",
+      "name": "ElevenLabs",
+      "category": "Content",
+      "description": "Voice synthesis platform for creating AI voiceovers, narration, and audio content",
+      "status": "active",
+      "lastUsed": "2026-02-06T18:30:00Z",
+      "tags": ["voice", "audio", "tts"],
+      "runCommand": "https://elevenlabs.io",
+      "auditGrade": 87
+    },
+    {
+      "id": "tool-007",
+      "name": "Gamma.app",
+      "category": "Content",
+      "description": "AI-powered presentation and document creation for pitch decks and research summaries",
+      "status": "active",
+      "lastUsed": "2026-02-05T14:20:00Z",
+      "tags": ["presentations", "documents", "design"],
+      "runCommand": "https://gamma.app",
+      "auditGrade": 89
+    }
+  ],
   "categories": [
     "Dashboard",
     "Research",
@@ -7,5 +85,5 @@
     "Analysis",
     "Automation"
   ],
-  "lastUpdated": "2026-02-08T00:00:00Z"
+  "lastUpdated": "2026-02-08T06:00:00Z"
 }

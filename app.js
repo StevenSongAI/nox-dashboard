@@ -280,8 +280,8 @@ function renderBusiness() {
   document.getElementById('pipe-new').textContent = pipeline.new || 0;
   document.getElementById('pipe-evaluating').textContent = pipeline.evaluating || 0;
   document.getElementById('pipe-pursuing').textContent = pipeline.pursuing || 0;
-  document.getElementById('pipe-passed').textContent = pipeline.passed || pipeline.launched || 0;
-  document.getElementById('pipe-won').textContent = pipeline.won || pipeline.launched || 0;
+  document.getElementById('pipe-passed').textContent = pipeline.passed || 0;
+  document.getElementById('pipe-won').textContent = pipeline.won || 0;
 
   const container = document.getElementById('business-opportunities');
   const opps = appData.newBusiness.opportunities || [];
@@ -378,13 +378,18 @@ function renderInvestments() {
   if (intelligence.length === 0) {
     intelContainer.innerHTML = `<div class="text-gray-500 text-center py-4">No intelligence reports yet.</div>`;
   } else {
-    intelContainer.innerHTML = intelligence.map(i => `
+    intelContainer.innerHTML = intelligence.map(i => {
+      const title = i.topic || `${i.ticker} ${i.type || 'Update'}`;
+      const summary = i.summary || i.content || '';
+      const date = i.addedAt || i.date;
+      return `
       <div class="p-2 bg-dark-700/50 rounded">
-        <div class="font-semibold">${i.topic} <span class="text-xs px-2 py-0.5 rounded ${i.impact === 'bullish' ? 'bg-accent-green/20 text-accent-green' : i.impact === 'bearish' ? 'bg-accent-red/20 text-accent-red' : 'bg-dark-600'}">${i.impact}</span></div>
-        <div class="text-sm mt-1">${i.summary}</div>
-        <div class="text-xs text-gray-400 mt-1">${formatTimeAgo(i.addedAt)}</div>
+        <div class="font-semibold">${title} <span class="text-xs px-2 py-0.5 rounded ${i.impact === 'bullish' ? 'bg-accent-green/20 text-accent-green' : i.impact === 'bearish' ? 'bg-accent-red/20 text-accent-red' : 'bg-dark-600'}">${i.impact}</span></div>
+        <div class="text-sm mt-1 line-clamp-2">${summary.substring(0, 150)}${summary.length > 150 ? '...' : ''}</div>
+        <div class="text-xs text-gray-400 mt-1">${formatTimeAgo(date)} · ${i.ticker || ''}</div>
       </div>
-    `).join('');
+    `;
+    }).join('');
   }
 }
 
@@ -432,11 +437,11 @@ function renderResearch() {
         <h3 class="font-semibold">${n.title}</h3>
         <span class="text-xs px-2 py-0.5 bg-dark-700 rounded">${n.category}</span>
       </div>
-      <p class="text-sm text-gray-300 mb-2">${n.summary}</p>
+      <p class="text-sm text-gray-300 mb-2 line-clamp-3">${n.summary || n.content?.substring(0, 200) || ''}...</p>
       <div class="flex flex-wrap gap-1 mb-2">
         ${(n.tags || []).map(t => `<span class="text-xs px-2 py-0.5 bg-accent-blue/20 text-accent-blue rounded">#${t}</span>`).join('')}
       </div>
-      <div class="text-xs text-gray-400">${formatTimeAgo(n.createdAt)}</div>
+      <div class="text-xs text-gray-400">${formatTimeAgo(n.createdAt || n.date)}</div>
     </div>
   `).join('');
 }
@@ -541,16 +546,34 @@ function formatTimeAgo(dateString) {
 }
 
 function setupFilters() {
+  // Combined filter state for YouTube
+  let youtubeFilterState = {
+    niche: '',
+    search: ''
+  };
+
+  function applyYouTubeFilters() {
+    document.querySelectorAll('#youtube-outliers > div').forEach(el => {
+      // Skip non-card elements (like empty state messages)
+      if (!el.classList.contains('card')) return;
+      
+      const nicheMatch = !youtubeFilterState.niche || el.dataset.niche === youtubeFilterState.niche;
+      const searchMatch = !youtubeFilterState.search || el.textContent.toLowerCase().includes(youtubeFilterState.search);
+      
+      el.style.display = (nicheMatch && searchMatch) ? 'block' : 'none';
+    });
+  }
+
   // YouTube niche filter
   document.getElementById('youtube-niche-filter')?.addEventListener('change', (e) => {
-    const niche = e.target.value;
-    document.querySelectorAll('#youtube-outliers > div').forEach(el => {
-      if (!niche || el.dataset.niche === niche) {
-        el.style.display = 'block';
-      } else {
-        el.style.display = 'none';
-      }
-    });
+    youtubeFilterState.niche = e.target.value;
+    applyYouTubeFilters();
+  });
+
+  // YouTube search
+  document.getElementById('youtube-search')?.addEventListener('input', (e) => {
+    youtubeFilterState.search = e.target.value.toLowerCase();
+    applyYouTubeFilters();
   });
 
   // Research search
