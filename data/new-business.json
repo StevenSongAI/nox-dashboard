@@ -54,14 +54,25 @@
       "effort": "Medium",
       "nextStep": "Onboard first client",
       "createdAt": "2026-02-05T14:00:00Z"
+    },
+    {
+      "id": "opp-006",
+      "name": "Creature Design Content Template Pack",
+      "description": "Productized Canva/Photoshop templates for creature design videos based on outlier patterns from research. Includes thumbnail templates, color palettes, and layout grids derived from high-performing videos.",
+      "alignment": "HIGH",
+      "status": "new",
+      "potentialRevenue": "$300-1000/month",
+      "effort": "Low",
+      "nextStep": "Create 5 template variations from top-performing formats",
+      "createdAt": "2026-02-08T14:10:00Z"
     }
   ],
   "pipeline": {
-    "new": 2,
+    "new": 3,
     "evaluating": 1,
     "pursuing": 0,
     "passed": 1,
     "won": 1
   },
-  "lastUpdated": "2026-02-08T06:20:00Z"
+  "lastUpdated": "2026-02-08T14:10:00Z"
 }
