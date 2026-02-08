@@ -30,7 +30,6 @@
       "sector": "EV/Auto",
       "ticker": "TSLA",
       "name": "Tesla",
-      "currentPrice": 245.50,
       "catalyst": "Robotaxi reveal, FSD progress",
       "source": "X.com / Tech news",
       "whyWatching": "Autonomous driving breakthrough could be major catalyst"
@@ -40,7 +39,6 @@
       "sector": "Semiconductors",
       "ticker": "AMD",
       "name": "AMD",
-      "currentPrice": 178.25,
       "catalyst": "Data center share growth",
       "source": "X.com / Industry",
       "whyWatching": "NVDA alternative play, MI300 chip demand"

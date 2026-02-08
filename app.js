@@ -979,11 +979,12 @@ function renderInvestments() {
     watchContainer.innerHTML = watchlist.map((w, idx) => {
       const ticker = w.ticker || w.symbol;
       const target = w.targetEntry || w.targetPrice;
-      const priceDisplay = w.currentPrice ? formatCurrency(w.currentPrice) : '-';
+      const targetDisplay = target ? formatCurrency(target) : '—';
+      const priceDisplay = w.currentPrice ? formatCurrency(w.currentPrice) : '—';
       return `
         <div class="p-2 bg-dark-700/50 rounded cursor-pointer hover:bg-dark-700" onclick="showWatchlistModal(${idx})">
           <div class="font-semibold">${ticker} · ${priceDisplay}</div>
-          <div class="text-sm text-gray-400">Target: ${formatCurrency(target)}</div>
+          <div class="text-sm text-gray-400">Target: ${targetDisplay}</div>
         </div>
       `;
     }).join('');
