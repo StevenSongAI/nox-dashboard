@@ -662,6 +662,12 @@ function renderYouTube() {
   const container = document.getElementById('youtube-outliers');
   const videos = appData.youtube.outlierVideos || [];
   
+  // Update Research Status stats
+  const lastScan = appData.meta?.lastUpdated?.youtube;
+  document.getElementById('last-outlier-scan').textContent = lastScan ? formatTimeAgo(lastScan) : 'Never';
+  document.getElementById('total-outliers').textContent = videos.length;
+  document.getElementById('total-briefs').textContent = appData.youtube.contentBriefs?.length || 0;
+  
   // Store for search
   youtubeVideoData = videos;
 
