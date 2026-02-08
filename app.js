@@ -639,7 +639,7 @@ function renderYouTubeSparkline() {
   });
 }
 
-// Business pipeline donut chart
+// Business pipeline chart - using horizontal bar for better visibility with small values
 function renderBusinessPipelineChart() {
   const canvas = document.getElementById('business-pipeline-chart');
   if (!canvas) return;
@@ -664,10 +664,11 @@ function renderBusinessPipelineChart() {
   // Don't render if all zeros
   if (data.every(v => v === 0)) return;
   
+  // Use horizontal bar chart for better visibility of small values
   businessPipelineChartInstance = new Chart(ctx, {
-    type: 'doughnut',
+    type: 'bar',
     data: {
-      labels: ['New', 'Evaluating', 'Pursuing', 'Passed', 'Won'],
+      labels: ['New', 'Eval', 'Pursuing', 'Passed', 'Won'],
       datasets: [{
         data: data,
         backgroundColor: [
@@ -677,23 +678,29 @@ function renderBusinessPipelineChart() {
           '#EF4444', // red - passed
           '#10B981'  // green - won
         ],
+        borderRadius: 4,
         borderWidth: 0
       }]
     },
     options: {
       responsive: true,
       maintainAspectRatio: false,
+      indexAxis: 'y', // Horizontal bars
       plugins: {
-        legend: {
-          position: 'right',
-          labels: {
-            color: '#e0e0e0',
-            font: { size: 10 },
-            boxWidth: 10
-          }
-        }
+        legend: { display: false }
       },
-      cutout: '60%'
+      scales: {
+        x: { 
+          display: true,
+          grid: { color: 'rgba(255,255,255,0.05)' },
+          ticks: { color: '#9ca3af', font: { size: 9 } }
+        },
+        y: { 
+          display: true,
+          grid: { display: false },
+          ticks: { color: '#e0e0e0', font: { size: 10 } }
+        }
+      }
     }
   });
 }
@@ -712,7 +719,20 @@ function renderInvestmentsSummaryChart() {
   }
   
   const positions = appData.investments.positions || [];
-  if (positions.length === 0) return;
+  
+  // Show empty state if no positions
+  if (positions.length === 0) {
+    // Clear canvas and show message
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.save();
+    ctx.fillStyle = '#9ca3af';
+    ctx.font = '12px sans-serif';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillText('No positions tracked', canvas.width / 2, canvas.height / 2);
+    ctx.restore();
+    return;
+  }
   
   const labels = positions.map(p => p.symbol || p.ticker);
   const gains = positions.map(p => p.gainPercent || 0);
@@ -1202,7 +1222,26 @@ function renderPortfolioChart() {
   }
   
   const positions = appData.investments.positions || [];
-  if (positions.length === 0) return;
+  
+  // Show empty state if no positions
+  if (positions.length === 0) {
+    // Clear canvas and show message
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.save();
+    ctx.fillStyle = '#9ca3af';
+    ctx.font = '12px sans-serif';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillText('No positions to display', canvas.width / 2, canvas.height / 2);
+    ctx.restore();
+    
+    // Update total value display
+    const totalEl = document.getElementById('portfolio-total-value');
+    if (totalEl) {
+      totalEl.textContent = '$0.00';
+    }
+    return;
+  }
   
   // Calculate total value and position values
   const totalValue = positions.reduce((sum, p) => sum + (p.totalValue || 0), 0);
@@ -2577,4 +2616,27 @@ function generateMapData() {
 
 function copySeed(seed) {
   navigator.clipboard.writeText(seed).then(() => alert('Seed copied to clipboard!'));
+}
+
+// Force CDN refresh by reloading with cache-busting parameter
+function forceCDNRefresh() {
+  console.log('[Nox Dashboard] Forcing CDN refresh...');
+  
+  // Show loading feedback
+  const footer = document.querySelector('footer');
+  if (footer) {
+    footer.innerHTML = `
+      <div class="text-xs text-gray-500 font-mono">
+        <span class="text-accent-yellow">⏳ Refreshing from CDN...</span>
+      </div>
+    `;
+  }
+  
+  // Clear cache and reload with timestamp
+  const timestamp = Date.now();
+  const currentUrl = new URL(window.location.href);
+  currentUrl.searchParams.set('refresh', timestamp);
+  
+  // Force reload from server (not cache)
+  window.location.href = currentUrl.toString();
 }
