@@ -258,14 +258,43 @@
     }
   ],
   "trendAnalysis": {
-    "lastUpdated": "2026-02-08T12:00:00Z",
-    "researchNeeded": true,
+    "lastUpdated": "2026-02-08T19:26:00Z",
+    "researchNeeded": false,
     "instructions": "Use viewstats.com Pro Tools > Outlier to research each competitor channel. Look for videos with outlier scores >2.0x. Document: title, views, outlier score, why it performed well, content angle for your channel.",
     "targetPatterns": [
       "I got a fictional pet simulation",
       "AI generated creatures",
       "Virtual pet experiences",
       "Creature design with AI"
+    ],
+    "synthesizedInsights": [
+      {
+        "id": "insight-001",
+        "pattern": "Educational + Entertainment Hybrid",
+        "evidence": "borocg's 'What Makes A Great Monster Design?' (1.26M views, 99.1 outlier) + drawsessions tutorials (631K views)",
+        "finding": "Creature design educational content significantly outperforms pure entertainment in this niche",
+        "actionable": "All AI creature content should include educational breakdown of design principles",
+        "confidence": "high",
+        "addedAt": "2026-02-08T19:26:00Z"
+      },
+      {
+        "id": "insight-002", 
+        "pattern": "Full-Length Feature Appeal",
+        "evidence": "boxofficemovies4k creature horror film (2.18M views, 103 outlier)",
+        "finding": "Long-form creature content (20+ min) has strong audience retention when narrative-driven",
+        "actionable": "Triple Threat format should target 15-18 min, not short-form",
+        "confidence": "high",
+        "addedAt": "2026-02-08T19:26:00Z"
+      },
+      {
+        "id": "insight-003",
+        "pattern": "Documentary Style Authority",
+        "evidence": "Nat Geo Desert Creatures (3.36M views) consistently performs despite lower outlier score",
+        "finding": "Nature documentary narration style builds trust and perceived value",
+        "actionable": "Use documentary-style voiceover for AI creature reveals - 'National Geographic of the AI world'",
+        "confidence": "medium",
+        "addedAt": "2026-02-08T19:26:00Z"
+      }
     ]
   },
   "researchInstructions": {
