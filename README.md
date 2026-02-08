@@ -1,29 +1,48 @@
 # Nox Dashboard
 
-Personal intelligence and work dashboard for Steven Song.
+A personal dashboard for tracking YouTube strategy, business opportunities, investments, tools, research, and audit reports.
 
-## URL
-https://stevensongai.github.io/nox-dashboard/
+## Structure
 
-## Data Structure
+```
+nox-dashboard/
+├── index.html          # Main dashboard UI with 7 tabs
+├── app.js              # Application logic and data rendering
+├── data/
+│   ├── youtube.json    # YouTube outlier videos and content briefs
+│   ├── new-business.json # Business opportunities and pipeline
+│   ├── investments.json  # Portfolio positions and watchlist
+│   ├── tools.json        # Registered tools and services
+│   ├── research.json     # Research notes
+│   ├── audits.json       # Audit reports and agent statistics
+│   └── meta.json         # Metadata and agent status
+└── README.md
+```
 
-All data lives in `/data/` as JSON files:
-- `youtube.json` - YouTube outlier research and content briefs
-- `new-business.json` - Business opportunities and pipeline
-- `investments.json` - Portfolio positions and watchlist
-- `tools.json` - Registry of all built tools
-- `research.json` - Research notes and intelligence
-- `audits.json` - Audit reports and agent performance
-- `meta.json` - Timestamps and agent status
+## Tabs
 
-## Agent Data Sync
-
-The agent updates this dashboard by:
-1. `git pull origin main`
-2. Edit the relevant JSON file in `data/`
-3. `git add . && git commit -m "update [section]" && git push`
-4. GitHub Pages auto-deploys on push to main
+1. **Dashboard** - Overview with morning brief and key metrics
+2. **YouTube** - Outlier videos, content briefs, and trend analysis
+3. **New Business** - Opportunities pipeline and evaluation
+4. **Investments** - Portfolio positions, watchlist, and market intelligence
+5. **Tools** - Registry of built tools and services
+6. **Research** - Research notes and findings
+7. **Audits** - Audit reports with grades and statistics
 
 ## Local Development
 
-Open `index.html` in any browser. No server needed.
+```bash
+# Start a local server
+python3 -m http.server 8000
+
+# Open in browser
+open http://localhost:8000
+```
+
+## Data Format
+
+All data is stored in JSON files in the `data/` directory. The dashboard fetches these files dynamically on load.
+
+## Deployment
+
+The dashboard is designed to be deployed to GitHub Pages. Push to the repository and enable GitHub Pages in settings.

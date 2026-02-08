@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 // Load all JSON data
 async function loadAllData() {
   try {
-    const [youtubeRes, businessRes, invRes, toolsRes, researchRes, auditsRes, metaRes] = await Promise.all([
+    const results = await Promise.allSettled([
       fetch('data/youtube.json'),
       fetch('data/new-business.json'),
       fetch('data/investments.json'),
@@ -37,13 +37,15 @@ async function loadAllData() {
       fetch('data/meta.json')
     ]);
 
-    if (youtubeRes.ok) appData.youtube = await youtubeRes.json();
-    if (businessRes.ok) appData.newBusiness = await businessRes.json();
-    if (invRes.ok) appData.investments = await invRes.json();
-    if (toolsRes.ok) appData.tools = await toolsRes.json();
-    if (researchRes.ok) appData.research = await researchRes.json();
-    if (auditsRes.ok) appData.audits = await auditsRes.json();
-    if (metaRes.ok) appData.meta = await metaRes.json();
+    const [youtubeRes, businessRes, invRes, toolsRes, researchRes, auditsRes, metaRes] = results.map(r => r.status === 'fulfilled' ? r.value : null);
+
+    if (youtubeRes?.ok) appData.youtube = await youtubeRes.json();
+    if (businessRes?.ok) appData.newBusiness = await businessRes.json();
+    if (invRes?.ok) appData.investments = await invRes.json();
+    if (toolsRes?.ok) appData.tools = await toolsRes.json();
+    if (researchRes?.ok) appData.research = await researchRes.json();
+    if (auditsRes?.ok) appData.audits = await auditsRes.json();
+    if (metaRes?.ok) appData.meta = await metaRes.json();
 
     updateAgentStatus();
   } catch (err) {
@@ -227,8 +229,8 @@ function renderBusiness() {
   document.getElementById('pipe-new').textContent = pipeline.new || 0;
   document.getElementById('pipe-evaluating').textContent = pipeline.evaluating || 0;
   document.getElementById('pipe-pursuing').textContent = pipeline.pursuing || 0;
-  document.getElementById('pipe-passed').textContent = pipeline.passed || 0;
-  document.getElementById('pipe-won').textContent = pipeline.won || 0;
+  document.getElementById('pipe-passed').textContent = pipeline.passed || pipeline.launched || 0;
+  document.getElementById('pipe-won').textContent = pipeline.won || pipeline.launched || 0;
 
   const container = document.getElementById('business-opportunities');
   const opps = appData.newBusiness.opportunities || [];
@@ -245,12 +247,12 @@ function renderBusiness() {
       <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2 mb-2">
         <div class="flex items-center gap-2">
           <span class="px-2 py-0.5 text-xs rounded ${getAlignmentClass(o.alignment)}">${o.alignment}</span>
-          <span class="px-2 py-0.5 bg-dark-700 text-xs rounded">${o.type}</span>
-          <span class="text-lg font-bold">${o.score}%</span>
+          <span class="px-2 py-0.5 bg-dark-700 text-xs rounded">${o.type || o.effort}</span>
+          <span class="text-sm text-gray-400">${o.potentialRevenue || ''}</span>
         </div>
-        <span class="text-sm text-gray-400">${formatTimeAgo(o.addedAt)}</span>
+        <span class="text-sm text-gray-400">${formatTimeAgo(o.createdAt || o.addedAt)}</span>
       </div>
-      <h3 class="font-semibold mb-1">${o.title}</h3>
+      <h3 class="font-semibold mb-1">${o.title || o.name}</h3>
       <p class="text-sm text-gray-300 mb-2">${o.description}</p>
       <p class="text-sm"><strong>Next step:</strong> ${o.nextStep}</p>
       <div class="mt-2 flex gap-2">
@@ -282,16 +284,19 @@ function renderInvestments() {
     posContainer.innerHTML = `<div class="text-gray-500 text-center py-4">No positions tracked yet.</div>`;
   } else {
     posContainer.innerHTML = positions.map(p => {
-      const gain = ((p.currentPrice - p.entryPrice) / p.entryPrice * 100).toFixed(1);
+      const gain = p.gainPercent !== undefined ? p.gainPercent : ((p.currentPrice - p.avgCost) / p.avgCost * 100);
       const gainClass = gain >= 0 ? 'text-accent-green' : 'text-accent-red';
+      const ticker = p.ticker || p.symbol;
+      const entry = p.entryPrice || p.avgCost;
+      const qty = p.quantity || p.shares;
       return `
         <div class="flex justify-between items-center p-2 bg-dark-700/50 rounded">
           <div>
-            <div class="font-semibold">${p.ticker} · ${p.name}</div>
-            <div class="text-sm text-gray-400">${p.quantity} @ $${p.entryPrice} → $${p.currentPrice}</div>
+            <div class="font-semibold">${ticker} · ${p.name}</div>
+            <div class="text-sm text-gray-400">${qty} @ $${entry} → $${p.currentPrice}</div>
           </div>
           <div class="text-right">
-            <div class="font-bold ${gainClass}">${gain}%</div>
+            <div class="font-bold ${gainClass}">${gain.toFixed ? gain.toFixed(1) : gain}%</div>
           </div>
         </div>
       `;
@@ -303,13 +308,18 @@ function renderInvestments() {
   if (watchlist.length === 0) {
     watchContainer.innerHTML = `<div class="text-gray-500 text-center py-4">No watchlist items.</div>`;
   } else {
-    watchContainer.innerHTML = watchlist.map(w => `
-      <div class="p-2 bg-dark-700/50 rounded">
-        <div class="font-semibold">${w.ticker} · $${w.currentPrice}</div>
-        <div class="text-sm text-gray-400">Target: $${w.targetEntry}</div>
-        <div class="text-sm mt-1">${w.thesis}</div>
-      </div>
-    `).join('');
+    watchContainer.innerHTML = watchlist.map(w => {
+      const ticker = w.ticker || w.symbol;
+      const target = w.targetEntry || w.targetPrice;
+      const thesis = w.thesis || w.notes;
+      return `
+        <div class="p-2 bg-dark-700/50 rounded">
+          <div class="font-semibold">${ticker} · $${w.currentPrice}</div>
+          <div class="text-sm text-gray-400">Target: $${target}</div>
+          <div class="text-sm mt-1">${thesis}</div>
+        </div>
+      `;
+    }).join('');
   }
 
   // Intelligence
@@ -393,11 +403,13 @@ function renderAudits() {
   } else {
     statsContainer.innerHTML = agents.map(agent => {
       const s = stats[agent];
+      const avgGrade = s.averageGrade || s.avgGrade || 0;
+      const trend = s.trend || 'stable';
       return `
         <div class="card rounded-lg p-4">
           <div class="text-sm text-gray-400 mb-1">${agent}</div>
-          <div class="text-3xl font-bold ${s.averageGrade >= 80 ? 'text-accent-green' : s.averageGrade >= 60 ? 'text-accent-yellow' : 'text-accent-red'}">${s.averageGrade}%</div>
-          <div class="text-sm">${s.totalAudits} audits · ${s.trend === 'improving' ? '↑' : s.trend === 'declining' ? '↓' : '→'} ${s.trend}</div>
+          <div class="text-3xl font-bold ${avgGrade >= 80 ? 'text-accent-green' : avgGrade >= 60 ? 'text-accent-yellow' : 'text-accent-red'}">${avgGrade}%</div>
+          <div class="text-sm">${s.totalAudits} audits · ${trend === 'improving' ? '↑' : trend === 'declining' ? '↓' : '→'} ${trend}</div>
         </div>
       `;
     }).join('');
@@ -444,9 +456,9 @@ function renderAudits() {
       <div class="card rounded-lg p-4">
         <div class="flex justify-between items-start">
           <div>
-            <div class="text-sm text-gray-400">${a.date} · ${a.agent}</div>
+            <div class="text-sm text-gray-400">${new Date(a.date).toLocaleDateString()} · ${a.agent}</div>
             <h3 class="font-semibold">${a.project}</h3>
-            <p class="text-sm text-gray-300 mt-1">${a.summary}</p>
+            <p class="text-sm text-gray-300 mt-1">${a.summary || a.findings}</p>
           </div>
           <span class="text-2xl font-bold ${a.grade >= 80 ? 'text-accent-green' : a.grade >= 60 ? 'text-accent-yellow' : 'text-accent-red'}">${a.grade}%</span>
         </div>
