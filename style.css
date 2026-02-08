@@ -1,0 +1,177 @@
+/* Nox Dashboard - Main Styles */
+
+/* Base */
+body {
+  background: #0f0f1a;
+  color: #e2e8f0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Tab Navigation */
+.tab-btn {
+  background: transparent;
+  border: none;
+  color: #9ca3af;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.tab-btn:hover {
+  color: #e2e8f0;
+  background: rgba(59, 130, 246, 0.1);
+}
+
+.tab-active {
+  border-bottom: 2px solid #3B82F6;
+  color: #3B82F6;
+}
+
+/* Cards */
+.card {
+  background: #1a1a2e;
+  border: 1px solid #252540;
+  border-radius: 0.5rem;
+  transition: border-color 0.2s;
+}
+
+.card:hover {
+  border-color: #3B82F6;
+}
+
+/* Grade Colors */
+.grade-high {
+  background: #10B981;
+  color: white;
+}
+
+.grade-med {
+  background: #F59E0B;
+  color: white;
+}
+
+.grade-low {
+  background: #EF4444;
+  color: white;
+}
+
+/* Status Badges */
+.status-new {
+  background: rgba(59, 130, 246, 0.2);
+  color: #3B82F6;
+}
+
+.status-active {
+  background: rgba(16, 185, 129, 0.2);
+  color: #10B981;
+}
+
+.status-paused {
+  background: rgba(245, 158, 11, 0.2);
+  color: #F59E0B;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f0f1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #252540;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3B82F6;
+}
+
+/* Loading States */
+.loading-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  color: #6b7280;
+  padding: 2rem;
+}
+
+/* Links */
+a {
+  color: #3B82F6;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Buttons */
+button {
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Form Elements */
+input, select, textarea {
+  background: #1a1a2e;
+  border: 1px solid #252540;
+  color: #e2e8f0;
+  border-radius: 0.375rem;
+  padding: 0.5rem 0.75rem;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #3B82F6;
+}
+
+/* Utility Classes */
+.hidden {
+  display: none !important;
+}
+
+.text-accent-green { color: #10B981; }
+.text-accent-blue { color: #3B82F6; }
+.text-accent-yellow { color: #F59E0B; }
+.text-accent-red { color: #EF4444; }
+.text-accent-purple { color: #8B5CF6; }
+
+.bg-dark-900 { background: #0f0f1a; }
+.bg-dark-800 { background: #1a1a2e; }
+.bg-dark-700 { background: #252540; }
+
+.bg-accent-blue/20 { background: rgba(59, 130, 246, 0.2); }
+.bg-accent-green/20 { background: rgba(16, 185, 129, 0.2); }
+.bg-accent-yellow/20 { background: rgba(245, 158, 11, 0.2); }
+.bg-accent-red/20 { background: rgba(239, 68, 68, 0.2); }
+
+.border-dark-700 { border-color: #252540; }
+.border-dark-600 { border-color: #374151; }
+
+.hover\:bg-dark-600:hover { background: #374151; }
+.hover\:bg-dark-700\/50:hover { background: rgba(37, 37, 64, 0.5); }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .tab-btn {
+    font-size: 0.75rem;
+    padding: 0.5rem;
+  }
+}

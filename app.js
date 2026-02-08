@@ -2,10 +2,10 @@
 // Loads data from JSON files and renders all tabs
 
 let appData = {
-  youtube: { outlierVideos: [], contentBriefs: [], trendAnalysis: [] },
+  youtube: { outlierVideos: [], contentBriefs: [], trendAnalysis: {} },
   newBusiness: { opportunities: [], pipeline: {} },
   investments: { positions: [], watchlist: [], intelligence: [] },
-  tools: [],
+  tools: { tools: [], categories: [], lastUpdated: '' },
   research: { notes: [] },
   audits: { audits: [], agentStats: {} },
   meta: { lastUpdated: {}, agentStatus: {} }
@@ -13,43 +13,94 @@ let appData = {
 
 // Initialize
 document.addEventListener('DOMContentLoaded', async () => {
+  console.log('[Nox Dashboard] DOM loaded, initializing...');
   await loadAllData();
+  console.log('[Nox Dashboard] Rendering dashboard...');
   renderDashboard();
+  console.log('[Nox Dashboard] Rendering YouTube...');
   renderYouTube();
+  console.log('[Nox Dashboard] Rendering business...');
   renderBusiness();
+  console.log('[Nox Dashboard] Rendering investments...');
   renderInvestments();
+  console.log('[Nox Dashboard] Rendering tools...');
   renderTools();
+  console.log('[Nox Dashboard] Rendering research...');
   renderResearch();
+  console.log('[Nox Dashboard] Rendering audits...');
   renderAudits();
+  console.log('[Nox Dashboard] Setting up filters...');
   setupFilters();
+  console.log('[Nox Dashboard] Initialization complete!');
 });
 
 // Load all JSON data
 async function loadAllData() {
+  console.log('[Nox Dashboard] Starting data load...');
   try {
-    const results = await Promise.allSettled([
-      fetch('data/youtube.json'),
-      fetch('data/new-business.json'),
-      fetch('data/investments.json'),
-      fetch('data/tools.json'),
-      fetch('data/research.json'),
-      fetch('data/audits.json'),
-      fetch('data/meta.json')
-    ]);
+    const dataFiles = [
+      { name: 'youtube', path: 'data/youtube.json' },
+      { name: 'new-business', path: 'data/new-business.json' },
+      { name: 'investments', path: 'data/investments.json' },
+      { name: 'tools', path: 'data/tools.json' },
+      { name: 'research', path: 'data/research.json' },
+      { name: 'audits', path: 'data/audits.json' },
+      { name: 'meta', path: 'data/meta.json' }
+    ];
+
+    const results = await Promise.allSettled(
+      dataFiles.map(df => {
+        console.log(`[Nox Dashboard] Fetching ${df.path}...`);
+        return fetch(df.path);
+      })
+    );
+
+    results.forEach((result, index) => {
+      const fileName = dataFiles[index].name;
+      const filePath = dataFiles[index].path;
+      if (result.status === 'fulfilled') {
+        console.log(`[Nox Dashboard] ${filePath}: ${result.value.ok ? 'OK' : 'FAILED'} (${result.value.status})`);
+      } else {
+        console.error(`[Nox Dashboard] ${filePath}: ERROR -`, result.reason);
+      }
+    });
 
     const [youtubeRes, businessRes, invRes, toolsRes, researchRes, auditsRes, metaRes] = results.map(r => r.status === 'fulfilled' ? r.value : null);
 
-    if (youtubeRes?.ok) appData.youtube = await youtubeRes.json();
-    if (businessRes?.ok) appData.newBusiness = await businessRes.json();
-    if (invRes?.ok) appData.investments = await invRes.json();
-    if (toolsRes?.ok) appData.tools = await toolsRes.json();
-    if (researchRes?.ok) appData.research = await researchRes.json();
-    if (auditsRes?.ok) appData.audits = await auditsRes.json();
-    if (metaRes?.ok) appData.meta = await metaRes.json();
+    if (youtubeRes?.ok) {
+      appData.youtube = await youtubeRes.json();
+      console.log('[Nox Dashboard] YouTube data loaded:', appData.youtube.outlierVideos?.length || 0, 'videos');
+    }
+    if (businessRes?.ok) {
+      appData.newBusiness = await businessRes.json();
+      console.log('[Nox Dashboard] Business data loaded:', appData.newBusiness.opportunities?.length || 0, 'opportunities');
+    }
+    if (invRes?.ok) {
+      appData.investments = await invRes.json();
+      console.log('[Nox Dashboard] Investments data loaded:', appData.investments.positions?.length || 0, 'positions');
+    }
+    if (toolsRes?.ok) {
+      const toolsData = await toolsRes.json();
+      appData.tools = Array.isArray(toolsData) ? { tools: toolsData, categories: [], lastUpdated: '' } : toolsData;
+      console.log('[Nox Dashboard] Tools data loaded:', appData.tools.tools?.length || 0, 'tools');
+    }
+    if (researchRes?.ok) {
+      appData.research = await researchRes.json();
+      console.log('[Nox Dashboard] Research data loaded:', appData.research.notes?.length || 0, 'notes');
+    }
+    if (auditsRes?.ok) {
+      appData.audits = await auditsRes.json();
+      console.log('[Nox Dashboard] Audits data loaded:', appData.audits.audits?.length || 0, 'audits');
+    }
+    if (metaRes?.ok) {
+      appData.meta = await metaRes.json();
+      console.log('[Nox Dashboard] Meta data loaded');
+    }
 
+    console.log('[Nox Dashboard] All data loaded successfully');
     updateAgentStatus();
   } catch (err) {
-    console.error('Failed to load data:', err);
+    console.error('[Nox Dashboard] Failed to load data:', err);
     showEmptyStates();
   }
 }
@@ -340,7 +391,8 @@ function renderInvestments() {
 // Tools tab
 function renderTools() {
   const container = document.getElementById('tools-grid');
-  const tools = appData.tools || [];
+  const toolsData = appData.tools || { tools: [] };
+  const tools = toolsData.tools || [];
 
   if (tools.length === 0) {
     container.innerHTML = `<div class="card rounded-lg p-8 text-center text-gray-500">
