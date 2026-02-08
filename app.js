@@ -678,8 +678,10 @@ function renderBusinessPipelineChart() {
           '#EF4444', // red - passed
           '#10B981'  // green - won
         ],
-        borderRadius: 4,
-        borderWidth: 0
+        borderRadius: 6,
+        borderWidth: 0,
+        barThickness: 25,
+        maxBarThickness: 30
       }]
     },
     options: {
@@ -687,21 +689,54 @@ function renderBusinessPipelineChart() {
       maintainAspectRatio: false,
       indexAxis: 'y', // Horizontal bars
       plugins: {
-        legend: { display: false }
+        legend: { display: false },
+        datalabels: {
+          display: true,
+          color: '#e0e0e0',
+          font: { size: 11, weight: 'bold' },
+          anchor: 'end',
+          align: 'end',
+          formatter: (value) => value > 0 ? value : ''
+        },
+        tooltip: {
+          callbacks: {
+            label: (context) => `${context.label}: ${context.raw} opportunities`
+          }
+        }
       },
       scales: {
         x: { 
           display: true,
-          grid: { color: 'rgba(255,255,255,0.05)' },
-          ticks: { color: '#9ca3af', font: { size: 9 } }
+          grid: { color: 'rgba(255,255,255,0.08)' },
+          ticks: { color: '#9ca3af', font: { size: 10 } },
+          beginAtZero: true
         },
         y: { 
           display: true,
           grid: { display: false },
-          ticks: { color: '#e0e0e0', font: { size: 10 } }
+          ticks: { color: '#e0e0e0', font: { size: 11, weight: '500' } }
         }
       }
-    }
+    },
+    plugins: [{
+      id: 'datalabels',
+      afterDatasetsDraw(chart) {
+        const { ctx } = chart;
+        chart.data.datasets.forEach((dataset, i) => {
+          const meta = chart.getDatasetMeta(i);
+          meta.data.forEach((bar, index) => {
+            const value = dataset.data[index];
+            if (value > 0) {
+              ctx.fillStyle = '#e0e0e0';
+              ctx.font = 'bold 11px sans-serif';
+              ctx.textAlign = 'left';
+              ctx.textBaseline = 'middle';
+              ctx.fillText(value.toString(), bar.x + 8, bar.y);
+            }
+          });
+        });
+      }
+    }]
   });
 }
 
