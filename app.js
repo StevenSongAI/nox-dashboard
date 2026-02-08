@@ -183,6 +183,8 @@ function renderMorningBrief() {
     `).join('');
   }
 }
+
+function calculateAvgGrade(audits) {
   if (!audits || audits.length === 0) return null;
   const sum = audits.reduce((a, b) => a + (b.grade || 0), 0);
   return Math.round(sum / audits.length);
