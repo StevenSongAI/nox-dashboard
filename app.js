@@ -957,11 +957,13 @@ function renderInvestments() {
       const ticker = p.ticker || p.symbol;
       const entry = p.entryPrice || p.avgCost;
       const qty = p.quantity || p.shares;
+      const entryDisplay = (entry && entry !== 0) ? formatCurrency(entry) : '-';
+      const currentDisplay = (p.currentPrice && p.currentPrice !== 0) ? formatCurrency(p.currentPrice) : '-';
       return `
         <div class="flex justify-between items-center p-2 bg-dark-700/50 rounded cursor-pointer hover:bg-dark-700" onclick="showPositionModal(${idx})">
           <div>
             <div class="font-semibold">${ticker} · ${p.name}</div>
-            <div class="text-sm text-gray-400">${formatNumber(qty)} @ ${formatCurrency(entry)} → ${formatCurrency(p.currentPrice)}</div>
+            <div class="text-sm text-gray-400">${formatNumber(qty)} @ ${entryDisplay} → ${currentDisplay}</div>
           </div>
           <div class="text-right">
             <div class="font-bold ${gainClass}">${gain.toFixed ? gain.toFixed(1) : gain}%</div>
@@ -979,8 +981,8 @@ function renderInvestments() {
     watchContainer.innerHTML = watchlist.map((w, idx) => {
       const ticker = w.ticker || w.symbol;
       const target = w.targetEntry || w.targetPrice;
-      const targetDisplay = target ? formatCurrency(target) : '—';
-      const priceDisplay = w.currentPrice ? formatCurrency(w.currentPrice) : '—';
+      const priceDisplay = (w.currentPrice && w.currentPrice !== 0) ? formatCurrency(w.currentPrice) : '-';
+      const targetDisplay = (target && target !== 0) ? formatCurrency(target) : '-';
       return `
         <div class="p-2 bg-dark-700/50 rounded cursor-pointer hover:bg-dark-700" onclick="showWatchlistModal(${idx})">
           <div class="font-semibold">${ticker} · ${priceDisplay}</div>
@@ -999,11 +1001,12 @@ function renderInvestments() {
       const title = i.topic || `${i.ticker} ${i.type || 'Update'}`;
       const summary = i.summary || i.content || '';
       const date = i.addedAt || i.date;
+      const tickerSuffix = i.ticker ? ` · ${i.ticker}` : '';
       return `
         <div class="p-2 bg-dark-700/50 rounded cursor-pointer hover:bg-dark-700" onclick="showIntelligenceModal(${idx})">
           <div class="font-semibold">${title} <span class="text-xs px-2 py-0.5 rounded ${i.impact === 'bullish' ? 'bg-accent-green/20 text-accent-green' : i.impact === 'bearish' ? 'bg-accent-red/20 text-accent-red' : 'bg-dark-600'}">${i.impact || 'neutral'}</span></div>
           <div class="text-sm mt-1 line-clamp-2">${summary.substring(0, 150)}${summary.length > 150 ? '...' : ''}</div>
-          <div class="text-xs text-gray-400 mt-1">${formatTimeAgo(date)} · ${i.ticker || ''}</div>
+          <div class="text-xs text-gray-400 mt-1">${formatTimeAgo(date)}${tickerSuffix}</div>
         </div>
       `;
     }).join('');
@@ -1644,7 +1647,7 @@ function formatTimeAgo(dateString) {
   if (diff < 60) return 'just now';
   if (diff < 3600) {
     const mins = Math.floor(diff / 60);
-    return `${mins} min${mins === 1 ? '' : 's'} ago`;
+    return `${mins} minute${mins === 1 ? '' : 's'} ago`;
   }
   if (diff < 86400) {
     const hours = Math.floor(diff / 3600);
