@@ -9,11 +9,11 @@
     "tools": "Dashboard and Mission Control on GitHub Pages"
   },
   "dataFreshness": {
-    "youtube": "2026-02-08 — 35 outliers, 7 briefs",
+    "youtube": "2026-02-08 — 41 outliers (6 from viewstats research), 7 briefs",
     "newBusiness": "2026-02-07 — 3 opportunities",
     "investments": "2026-02-07 — 2 positions, 2 watchlist",
-    "research": "2026-02-07 — needs population",
-    "audits": "2026-02-08 — 3 audits logged"
+    "research": "2026-02-08 — 6 creature design outliers added",
+    "audits": "2026-02-08 — 67 audits logged"
   },
   "recentFeedback": [
     {"date": "2026-02-07", "feedback": "Dashboard tabs don't work at all", "implication": "Fix JavaScript errors immediately"},
@@ -65,5 +65,5 @@
       "priority": "high"
     }
   ],
-  "nextPriority": "Research competitor channels via viewstats.com - RogersPets, petsimulatedworld, CreatureLab"
+  "nextPriority": "Continue monitoring competitor channels - research remaining 4 channels (RogersPets, petsimulatedworld, NightToons, WildPokedex)"
 }
