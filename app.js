@@ -123,6 +123,13 @@ document.addEventListener('DOMContentLoaded', async () => {
   console.log('[Nox Dashboard] Setting up global search...');
   setupGlobalSearch();
   
+  // Initialize tab from URL hash (deep linking)
+  console.log('[Nox Dashboard] Initializing tab state from URL...');
+  initTabFromHash();
+  
+  // Setup back/forward button handling
+  window.addEventListener('popstate', handlePopState);
+  
   console.log('[Nox Dashboard] Initialization complete!');
   
   // Setup modal click-outside-to-close
@@ -232,12 +239,31 @@ function updateAgentStatus() {
     `Last heartbeat: ${lastHeartbeat} · ${currentTask}`;
 }
 
-// Tab switching
+// Tab switching with URL hash update and deep linking
 function showTab(tabId) {
+  // Validate tab exists
+  const tabContent = document.getElementById(`tab-${tabId}`);
+  const tabBtn = document.getElementById(`tab-btn-${tabId}`);
+  
+  if (!tabContent || !tabBtn) {
+    console.warn(`[Nox Dashboard] Tab not found: ${tabId}`);
+    return;
+  }
+  
+  // Hide all tab content
   document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+  // Remove active state from all tab buttons
   document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('tab-active'));
-  document.getElementById(`tab-${tabId}`).classList.remove('hidden');
-  document.getElementById(`tab-btn-${tabId}`).classList.add('tab-active');
+  
+  // Show selected tab and mark button active
+  tabContent.classList.remove('hidden');
+  tabBtn.classList.add('tab-active');
+  
+  // Update URL hash for deep linking (without triggering hashchange)
+  const newHash = `#${tabId}`;
+  if (window.location.hash !== newHash) {
+    history.pushState({ tab: tabId }, '', newHash);
+  }
   
   // Re-render charts when switching to their respective tabs
   setTimeout(() => {
@@ -259,6 +285,39 @@ function showTab(tabId) {
         break;
     }
   }, 50);
+}
+
+// Initialize tab from URL hash on page load
+function initTabFromHash() {
+  const hash = window.location.hash.slice(1); // Remove #
+  const validTabs = ['dashboard', 'youtube', 'business', 'investments', 'tools', 'research', 'audits'];
+  
+  if (hash && validTabs.includes(hash)) {
+    console.log(`[Nox Dashboard] Restoring tab from hash: ${hash}`);
+    showTab(hash);
+    return hash;
+  }
+  
+  // Default to dashboard
+  showTab('dashboard');
+  return 'dashboard';
+}
+
+// Handle browser back/forward buttons
+function handlePopState(event) {
+  const hash = window.location.hash.slice(1);
+  const validTabs = ['dashboard', 'youtube', 'business', 'investments', 'tools', 'research', 'audits'];
+  
+  if (hash && validTabs.includes(hash)) {
+    // Update UI without pushing new state
+    document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+    document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('tab-active'));
+    document.getElementById(`tab-${hash}`)?.classList.remove('hidden');
+    document.getElementById(`tab-btn-${hash}`)?.classList.add('tab-active');
+  } else if (!hash) {
+    // No hash, show dashboard
+    showTab('dashboard');
+  }
 }
 
 // ==================== DETAIL MODAL SYSTEM ====================
@@ -2008,7 +2067,24 @@ function escapeRegex(string) {
 
 function handleGlobalSearchClick(type, id) {
   // Switch to the appropriate tab
-  showTab(type === 'youtube' ? 'youtube' : type);
+  const tabMap = {
+    'youtube': 'youtube',
+    'business': 'business', 
+    'investments': 'investments',
+    'tools': 'tools',
+    'research': 'research',
+    'audits': 'audits'
+  };
+  
+  const targetTab = tabMap[type];
+  if (targetTab) {
+    showTab(targetTab);
+    
+    // For YouTube results, also ensure the outliers section is shown
+    if (type === 'youtube') {
+      showYouTubeSection('outliers');
+    }
+  }
   
   // Clear search results
   clearGlobalSearch();
