@@ -77,8 +77,32 @@
       "source": "X.com / Morgan Stanley",
       "content": "Analyst downgrade citing 45x forward revenue multiple. Strong fundamentals but price reflects multiple years of growth.",
       "impact": "bearish"
+    },
+    {
+      "id": "intel-003",
+      "date": "2026-02-08T13:26:00Z",
+      "topic": "NVDA Price Action Feb 6",
+      "source": "Yahoo Finance",
+      "content": "NVDA closed at $185.41 (+7.92%) on Feb 6. After-hours: $185.19 (-0.12%). 52-week range $86.62-$212.19. Analyst target $253.62. Earnings Feb 25.",
+      "impact": "bullish"
+    },
+    {
+      "id": "intel-004",
+      "date": "2026-02-08T13:26:00Z",
+      "topic": "PLTR Strong Q4 + Cognizant Partnership",
+      "source": "Yahoo Finance",
+      "content": "PLTR closed at $135.90 (+4.53%). Strong Q4 results but stock declined 7.3% on valuation concerns. New Cognizant partnership for AI-driven healthcare modernization. Target $190.75.",
+      "impact": "neutral"
+    },
+    {
+      "id": "intel-005",
+      "date": "2026-02-08T13:26:00Z",
+      "topic": "AMD Record Earnings + AI Demand",
+      "source": "Yahoo Finance",
+      "content": "AMD closed at $208.44 (+8.28%) on Feb 6. Record earnings reported. Navigating supply constraints amid soaring AI demand. Bullish analyst outlook. Target $288.50. 52-week range $76.48-$267.08.",
+      "impact": "bullish"
     }
   ],
-  "lastUpdated": "2026-02-08T12:10:00Z",
+  "lastUpdated": "2026-02-08T13:26:00Z",
   "dataSource": "X.com via browser research (bird API disabled)"
 }
