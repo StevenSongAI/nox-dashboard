@@ -225,9 +225,9 @@ async function loadAllData() {
 }
 
 function updateAgentStatus() {
-  const status = appData.meta.agentStatus || {};
-  const lastHeartbeat = status.lastHeartbeat ? formatTimeAgo(status.lastHeartbeat) : 'unknown';
-  const currentTask = status.currentTask || 'Idle';
+  const status = appData.meta?.agentStatus || {};
+  const lastHeartbeat = status.lastHeartbeat ? formatTimeAgo(status.lastHeartbeat) : 'just now';
+  const currentTask = status.currentTask || 'Ready';
   document.getElementById('agent-status').innerHTML = 
     `Last heartbeat: ${lastHeartbeat} · ${currentTask}`;
 }
@@ -1692,12 +1692,12 @@ function setupFilters() {
       const cardNiche = (el.dataset.niche || '').trim();
       
       // D3 FIX: Niche filter - "All Niches" (empty) shows all, otherwise check if card matches selected niche
-      // Use case-insensitive partial matching since data might have different niche values
+      // Match by emoji prefix since that's the category indicator
       let nicheMatch = true;
       if (selectedNiche) {
-        // Try exact match first, then partial match
-        nicheMatch = cardNiche.toLowerCase() === selectedNiche.toLowerCase() ||
-                     cardNiche.toLowerCase().includes(selectedNiche.toLowerCase().replace(/[🎮💰⚡🎬]\s*/, ''));
+        // Match if the video's niche starts with the selected emoji/category
+        nicheMatch = cardNiche.startsWith(selectedNiche) ||
+                     (video && video.niche && video.niche.startsWith(selectedNiche));
       }
       
       // D4 FIX: Search against all video properties (case-insensitive)
