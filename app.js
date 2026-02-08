@@ -1002,12 +1002,12 @@ function renderInvestments() {
       const title = i.topic || `${i.ticker} ${i.type || 'Update'}`;
       const summary = i.summary || i.content || '';
       const date = i.addedAt || i.date;
-      const tickerSuffix = i.ticker ? ` · ${i.ticker}` : ' ·';
+      const tickerPart = i.ticker ? i.ticker : '';
       return `
         <div class="p-2 bg-dark-700/50 rounded cursor-pointer hover:bg-dark-700" onclick="showIntelligenceModal(${idx})">
           <div class="font-semibold">${title} <span class="text-xs px-2 py-0.5 rounded ${i.impact === 'bullish' ? 'bg-accent-green/20 text-accent-green' : i.impact === 'bearish' ? 'bg-accent-red/20 text-accent-red' : 'bg-dark-600'}">${i.impact || 'neutral'}</span></div>
           <div class="text-sm mt-1 line-clamp-2">${summary.substring(0, 150)}${summary.length > 150 ? '...' : ''}</div>
-          <div class="text-xs text-gray-400 mt-1">${formatTimeAgo(date)}${tickerSuffix}</div>
+          <div class="text-xs text-gray-400 mt-1">${formatTimeAgo(date)}${tickerPart ? ' · ' + tickerPart : ' ·'}</div>
         </div>
       `;
     }).join('');
