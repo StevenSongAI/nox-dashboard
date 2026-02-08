@@ -20,7 +20,45 @@ let investmentsChartInstance = null;
 let youtubeTrendChartInstance = null;
 let portfolioChartInstance = null;
 
-// Initialize
+// Stock price cache to avoid excessive API calls
+let stockPriceCache = {};
+let lastPriceFetch = 0;
+
+// Fetch real stock prices from Yahoo Finance
+async function fetchStockPrices(tickers) {
+  const now = Date.now();
+  // Cache prices for 5 minutes
+  if (now - lastPriceFetch < 300000 && Object.keys(stockPriceCache).length > 0) {
+    return stockPriceCache;
+  }
+  
+  try {
+    // Use Yahoo Finance query1 API (free, no key required)
+    const symbols = tickers.join(',');
+    const response = await fetch(`https://query1.finance.yahoo.com/v8/finance/chart/${symbols}?interval=1d&range=1d`);
+    
+    if (!response.ok) {
+      console.warn('[StockAPI] Yahoo Finance API failed:', response.status);
+      return stockPriceCache;
+    }
+    
+    const data = await response.json();
+    
+    if (data.chart && data.chart.result) {
+      data.chart.result.forEach(result => {
+        const ticker = result.meta.symbol;
+        const price = result.meta.regularMarketPrice || result.meta.previousClose;
+        stockPriceCache[ticker] = price;
+      });
+      lastPriceFetch = now;
+    }
+    
+    return stockPriceCache;
+  } catch (err) {
+    console.error('[StockAPI] Error fetching prices:', err);
+    return stockPriceCache;
+  }
+}
 document.addEventListener('DOMContentLoaded', async () => {
   console.log('[Nox Dashboard] DOM loaded, initializing...');
   await loadAllData();
@@ -937,10 +975,26 @@ let investmentsPositionData = [];
 let investmentsWatchlistData = [];
 let investmentsIntelligenceData = [];
 
-function renderInvestments() {
+async function renderInvestments() {
   const positions = appData.investments.positions || [];
   const watchlist = appData.investments.watchlist || [];
   const intelligence = appData.investments.intelligence || [];
+
+  // Fetch real stock prices for watchlist
+  const watchlistTickers = watchlist.map(w => w.ticker).filter(Boolean);
+  if (watchlistTickers.length > 0) {
+    try {
+      const prices = await fetchStockPrices(watchlistTickers);
+      // Attach prices to watchlist items
+      watchlist.forEach(w => {
+        if (prices[w.ticker]) {
+          w.currentPrice = prices[w.ticker];
+        }
+      });
+    } catch (err) {
+      console.warn('[Investments] Could not fetch stock prices:', err);
+    }
+  }
 
   investmentsPositionData = positions;
   investmentsWatchlistData = watchlist;
