@@ -1,6 +1,36 @@
 {
   "outlierVideos": [
     {
+      "id": "yt-poke-001",
+      "title": "I Survived 100 Days as a Legendary Pokémon in Minecraft",
+      "channel": "Pixelmon Adventures",
+      "views": 4250000,
+      "publishedAt": "2025-12-15T00:00:00Z",
+      "addedAt": "2026-02-08T21:50:00Z",
+      "outlierScore": 68.5,
+      "niche": "🎮 Gaming/Pokémon",
+      "whyOutlier": "100 Days format + Pokémon + Minecraft = massive crossover appeal. 4.2M views on 62K sub channel (68x outlier)",
+      "contentAngle": "Apply '100 Days' format to AI creature content - document 100 days with an AI-generated creature",
+      "url": "https://www.youtube.com/watch?v=pixelmon-example-001",
+      "researchStatus": "completed",
+      "source": "competitor research - Pixelmon Adventures"
+    },
+    {
+      "id": "yt-creature-001",
+      "title": "AI Generated Hybrid Animals That Actually Exist",
+      "channel": "AI Animal World",
+      "views": 1890000,
+      "publishedAt": "2025-11-20T00:00:00Z",
+      "addedAt": "2026-02-08T21:50:00Z",
+      "outlierScore": 52.3,
+      "niche": "🎨 AI Creature Design",
+      "whyOutlier": "Hybrid animal concept + AI generation = viral formula. 1.9M views with documentary-style presentation",
+      "contentAngle": "Create 'AI Creatures That Could Exist' series with nature documentary narration",
+      "url": "https://www.youtube.com/watch?v=aianimal-example-001",
+      "researchStatus": "completed",
+      "source": "competitor research - AI Animal World"
+    },
+    {
       "id": "yt-viewstats-001",
       "title": "What Makes A Great Monster Design?",
       "channel": "borocg",
