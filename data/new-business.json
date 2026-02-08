@@ -65,14 +65,32 @@
       "effort": "Low",
       "nextStep": "Create 5 template variations from top-performing formats",
       "createdAt": "2026-02-08T14:10:00Z"
+    },
+    {
+      "id": "opp-007",
+      "name": "AI Video Generation Masterclass",
+      "description": "Comprehensive course teaching creators how to use AI video tools (Runway, Pika, Sora) for creature/animation content. Market growing 88% CAGR to $12B by 2029. Targets the $250B creator economy disruption.",
+      "alignment": "HIGH",
+      "status": "new",
+      "potentialRevenue": "$2000-5000/month",
+      "effort": "High",
+      "nextStep": "Outline course modules based on Triple Threat content brief workflow",
+      "marketData": {
+        "tam": "$12B by 2029",
+        "cagr": "88%",
+        "targetAudience": "YouTube creators, animation artists, indie game devs",
+        "competitors": ["Runway Academy", "Pika Labs tutorials", "YouTube organic"],
+        "differentiation": "Creator-first approach with proven viral format integration"
+      },
+      "createdAt": "2026-02-08T15:10:00Z"
     }
   ],
   "pipeline": {
-    "new": 3,
+    "new": 4,
     "evaluating": 1,
     "pursuing": 0,
     "passed": 1,
     "won": 1
   },
-  "lastUpdated": "2026-02-08T14:10:00Z"
+  "lastUpdated": "2026-02-08T15:10:00Z"
 }
