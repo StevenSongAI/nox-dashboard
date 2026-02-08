@@ -27,23 +27,23 @@ document.addEventListener('DOMContentLoaded', async () => {
 // Load all JSON data
 async function loadAllData() {
   try {
-    const [youtube, newBusiness, investments, tools, research, audits, meta] = await Promise.all([
-      fetch('data/youtube.json').catch(() => ({ outlierVideos: [], contentBriefs: [], trendAnalysis: [] })),
-      fetch('data/new-business.json').catch(() => ({ opportunities: [], pipeline: {} })),
-      fetch('data/investments.json').catch(() => ({ positions: [], watchlist: [], intelligence: [] })),
-      fetch('data/tools.json').catch(() => []),
-      fetch('data/research.json').catch(() => ({ notes: [] })),
-      fetch('data/audits.json').catch(() => ({ audits: [], agentStats: {} })),
-      fetch('data/meta.json').catch(() => ({ lastUpdated: {}, agentStatus: {} }))
+    const [youtubeRes, businessRes, invRes, toolsRes, researchRes, auditsRes, metaRes] = await Promise.all([
+      fetch('data/youtube.json'),
+      fetch('data/new-business.json'),
+      fetch('data/investments.json'),
+      fetch('data/tools.json'),
+      fetch('data/research.json'),
+      fetch('data/audits.json'),
+      fetch('data/meta.json')
     ]);
 
-    appData.youtube = await youtube.json().catch(() => appData.youtube);
-    appData.newBusiness = await newBusiness.json().catch(() => appData.newBusiness);
-    appData.investments = await investments.json().catch(() => appData.investments);
-    appData.tools = await tools.json().catch(() => appData.tools);
-    appData.research = await research.json().catch(() => appData.research);
-    appData.audits = await audits.json().catch(() => appData.audits);
-    appData.meta = await meta.json().catch(() => appData.meta);
+    if (youtubeRes.ok) appData.youtube = await youtubeRes.json();
+    if (businessRes.ok) appData.newBusiness = await businessRes.json();
+    if (invRes.ok) appData.investments = await invRes.json();
+    if (toolsRes.ok) appData.tools = await toolsRes.json();
+    if (researchRes.ok) appData.research = await researchRes.json();
+    if (auditsRes.ok) appData.audits = await auditsRes.json();
+    if (metaRes.ok) appData.meta = await metaRes.json();
 
     updateAgentStatus();
   } catch (err) {

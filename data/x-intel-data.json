@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-08T04:26:57.622Z",
+  "timestamp": "2026-02-08T05:06:52.564Z",
   "categories": {
     "ai": [
       {
@@ -175,7 +175,7 @@
     "highMomentumCount": 10,
     "positiveSentimentCount": 13,
     "categoriesCovered": 4,
-    "lastUpdated": "2026-02-08T04:26:57.622Z"
+    "lastUpdated": "2026-02-08T05:06:52.564Z"
   },
   "history": [
     {
@@ -186,6 +186,16 @@
         "positiveSentimentCount": 13,
         "categoriesCovered": 4,
         "lastUpdated": "2026-02-08T04:26:57.622Z"
+      }
+    },
+    {
+      "timestamp": "2026-02-08T05:06:52.564Z",
+      "summary": {
+        "totalTopics": 16,
+        "highMomentumCount": 10,
+        "positiveSentimentCount": 13,
+        "categoriesCovered": 4,
+        "lastUpdated": "2026-02-08T05:06:52.564Z"
       }
     }
   ]
