@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script>
     tailwind.config = {
       darkMode: 'class',
@@ -32,14 +33,14 @@
     </div>
     <!-- Tab Navigation -->
     <nav class="max-w-7xl mx-auto px-4">
-      <div class="flex space-x-1 overflow-x-auto">
-        <button onclick="showTab('dashboard')" id="tab-btn-dashboard" class="tab-btn px-4 py-2 text-sm font-medium tab-active">🏠 Dashboard</button>
-        <button onclick="showTab('youtube')" id="tab-btn-youtube" class="tab-btn px-4 py-2 text-sm font-medium">🎬 YouTube</button>
-        <button onclick="showTab('business')" id="tab-btn-business" class="tab-btn px-4 py-2 text-sm font-medium">💼 New Business</button>
-        <button onclick="showTab('investments')" id="tab-btn-investments" class="tab-btn px-4 py-2 text-sm font-medium">📈 Investments</button>
-        <button onclick="showTab('tools')" id="tab-btn-tools" class="tab-btn px-4 py-2 text-sm font-medium">🛠️ Tools</button>
-        <button onclick="showTab('research')" id="tab-btn-research" class="tab-btn px-4 py-2 text-sm font-medium">🔬 Research</button>
-        <button onclick="showTab('audits')" id="tab-btn-audits" class="tab-btn px-4 py-2 text-sm font-medium">📋 Audits</button>
+      <div class="tabs-container">
+        <button onclick="showTab('dashboard')" id="tab-btn-dashboard" class="tab-btn text-sm font-medium tab-active">🏠 Dashboard</button>
+        <button onclick="showTab('youtube')" id="tab-btn-youtube" class="tab-btn text-sm font-medium">🎬 YouTube</button>
+        <button onclick="showTab('business')" id="tab-btn-business" class="tab-btn text-sm font-medium">💼 Business</button>
+        <button onclick="showTab('investments')" id="tab-btn-investments" class="tab-btn text-sm font-medium">📈 Investments</button>
+        <button onclick="showTab('tools')" id="tab-btn-tools" class="tab-btn text-sm font-medium">🛠️ Tools</button>
+        <button onclick="showTab('research')" id="tab-btn-research" class="tab-btn text-sm font-medium">🔬 Research</button>
+        <button onclick="showTab('audits')" id="tab-btn-audits" class="tab-btn text-sm font-medium">📋 Audits</button>
       </div>
     </nav>
   </header>
@@ -48,6 +49,7 @@
   <main class="max-w-7xl mx-auto px-4 py-6">
     <!-- Dashboard Tab -->
     <div id="tab-dashboard" class="tab-content">
+      <!-- Stats Cards -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
         <div class="card rounded-lg p-4 cursor-pointer hover:border-accent-blue" onclick="showTab('youtube')">
           <div class="text-gray-400 text-sm">YouTube Outliers</div>
@@ -70,6 +72,28 @@
           <div class="text-sm text-gray-500">Last 30 days</div>
         </div>
       </div>
+      <!-- Overview Charts Row -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+        <div class="card rounded-lg p-4">
+          <h3 class="text-sm font-semibold text-gray-400 mb-2">🎬 YouTube Trend</h3>
+          <div class="chart-container chart-sparkline">
+            <canvas id="youtube-sparkline"></canvas>
+          </div>
+        </div>
+        <div class="card rounded-lg p-4">
+          <h3 class="text-sm font-semibold text-gray-400 mb-2">💼 Pipeline</h3>
+          <div class="chart-container chart-small">
+            <canvas id="business-pipeline-chart"></canvas>
+          </div>
+        </div>
+        <div class="card rounded-lg p-4">
+          <h3 class="text-sm font-semibold text-gray-400 mb-2">📈 Portfolio</h3>
+          <div class="chart-container chart-small">
+            <canvas id="investments-summary-chart"></canvas>
+          </div>
+        </div>
+      </div>
+      
       <!-- Morning Brief -->
       <div class="card rounded-lg p-4 mb-4">
         <div class="flex justify-between items-center mb-3">
@@ -98,24 +122,109 @@
 
     <!-- YouTube Tab -->
     <div id="tab-youtube" class="tab-content hidden">
-      <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4 gap-3">
-        <h2 class="text-xl font-semibold">🎬 YouTube Strategy</h2>
-        <div class="flex gap-2">
-          <input type="text" id="youtube-search" placeholder="Search videos, channels, descriptions..." class="px-3 py-1 bg-dark-700 rounded border border-dark-600 text-sm md:w-64">
-          <select id="youtube-niche-filter" class="px-3 py-1 bg-dark-700 rounded border border-dark-600 text-sm">
-            <option value="">All Niches</option>
-            <option value="🎮 Gaming">🎮 Gaming</option>
-            <option value="💰 Finance">💰 Finance</option>
-            <option value="⚡ Productivity">⚡ Productivity</option>
-            <option value="🎬 Production">🎬 Production</option>
-          </select>
+      <!-- YouTube Tools Navigation -->
+      <div class="flex flex-wrap gap-2 mb-4">
+        <button onclick="showYouTubeSection('outliers')" id="yt-btn-outliers" class="px-3 py-1 bg-accent-blue rounded text-sm">🎯 Outlier Research</button>
+        <button onclick="showYouTubeSection('competitors')" id="yt-btn-competitors" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">👁️ Competitor Tracker</button>
+        <button onclick="showYouTubeSection('briefs')" id="yt-btn-briefs" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">📝 Content Briefs</button>
+        <button onclick="showYouTubeSection('tools')" id="yt-btn-tools" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">🛠️ YouTube Tools</button>
+      </div>
+
+      <!-- SECTION 1: Outlier Research -->
+      <div id="yt-section-outliers" class="yt-section">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4 gap-3">
+          <h2 class="text-xl font-semibold">🎯 Outlier Research</h2>
+          <div class="flex gap-2">
+            <input type="text" id="youtube-search" placeholder="Search videos, channels..." class="px-3 py-1 bg-dark-700 rounded border border-dark-600 text-sm md:w-64">
+            <select id="youtube-niche-filter" class="px-3 py-1 bg-dark-700 rounded border border-dark-600 text-sm">
+              <option value="">All Niches</option>
+              <option value="🎮 Gaming">🎮 Gaming</option>
+              <option value="💰 Finance">💰 Finance</option>
+              <option value="⚡ Productivity">⚡ Productivity</option>
+              <option value="🎬 Production">🎬 Production</option>
+            </select>
+            <button onclick="runOutlierScan()" class="px-3 py-1 bg-accent-green rounded text-sm hover:bg-green-600">🔍 Scan Viewstats</button>
+          </div>
+        </div>
+        
+        <div class="card rounded-lg p-4 mb-4 bg-dark-700/30">
+          <h3 class="font-semibold mb-2">📊 Research Status</h3>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+            <div><span class="text-gray-400">Last Scan:</span> <span id="last-outlier-scan">Never</span></div>
+            <div><span class="text-gray-400">Outliers Found:</span> <span id="total-outliers">0</span></div>
+            <div><span class="text-gray-400">Content Briefs:</span> <span id="total-briefs">0</span></div>
+            <div><span class="text-gray-400">Next Auto-Scan:</span> <span id="next-scan">7:00 AM</span></div>
+          </div>
+        </div>
+        
+        <div id="youtube-outliers" class="space-y-3">
+          <div class="skeleton-loader">
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+          </div>
         </div>
       </div>
-      <div id="youtube-outliers" class="space-y-3">
-        <div class="skeleton-loader">
-          <div class="skeleton-card"></div>
-          <div class="skeleton-card"></div>
-          <div class="skeleton-card"></div>
+
+      <!-- SECTION 2: Competitor Tracker -->
+      <div id="yt-section-competitors" class="yt-section hidden">
+        <div class="flex justify-between items-center mb-4">
+          <h2 class="text-xl font-semibold">👁️ Competitor Tracker</h2>
+          <button onclick="addCompetitor()" class="px-3 py-1 bg-accent-blue rounded text-sm hover:bg-blue-600">+ Add Channel</button>
+        </div>
+        
+        <div class="card rounded-lg p-4 mb-4">
+          <h3 class="font-semibold mb-3">📺 Tracked Channels</h3>
+          <div id="competitor-list" class="grid grid-cols-1 md:grid-cols-2 gap-3">
+            <!-- Competitors loaded from competitors.json -->
+          </div>
+        </div>
+        
+        <div class="card rounded-lg p-4">
+          <h3 class="font-semibold mb-3">🔥 Latest Uploads</h3>
+          <div id="competitor-uploads" class="space-y-2">
+            <p class="text-gray-500 text-sm">Select a channel to see latest uploads</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECTION 3: Content Briefs -->
+      <div id="yt-section-briefs" class="yt-section hidden">
+        <div class="flex justify-between items-center mb-4">
+          <h2 class="text-xl font-semibold">📝 Content Briefs</h2>
+          <button onclick="generateBrief()" class="px-3 py-1 bg-accent-green rounded text-sm hover:bg-green-600">+ Generate Brief</button>
+        </div>
+        <div id="content-briefs-list" class="space-y-3">
+          <div class="skeleton-loader">
+            <div class="skeleton-card"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECTION 4: YouTube Tools -->
+      <div id="yt-section-tools" class="yt-section hidden">
+        <h2 class="text-xl font-semibold mb-4">🛠️ YouTube Tools</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="card rounded-lg p-4">
+            <h3 class="font-semibold mb-2">Content Pipeline</h3>
+            <p class="text-sm text-gray-400 mb-3">Orchestrate video production from idea to upload</p>
+            <button onclick="launchTool('pipeline')" class="px-3 py-1 bg-dark-700 rounded text-sm hover:bg-dark-600">Launch →</button>
+          </div>
+          <div class="card rounded-lg p-4">
+            <h3 class="font-semibold mb-2">Performance Analyzer</h3>
+            <p class="text-sm text-gray-400 mb-3">Analyze video performance metrics and trends</p>
+            <button onclick="launchTool('analyzer')" class="px-3 py-1 bg-dark-700 rounded text-sm hover:bg-dark-600">Launch →</button>
+          </div>
+          <div class="card rounded-lg p-4">
+            <h3 class="font-semibold mb-2">Content Brief Generator</h3>
+            <p class="text-sm text-gray-400 mb-3">Generate video briefs from outlier research</p>
+            <button onclick="launchTool('brief-generator')" class="px-3 py-1 bg-dark-700 rounded text-sm hover:bg-dark-600">Launch →</button>
+          </div>
+          <div class="card rounded-lg p-4">
+            <h3 class="font-semibold mb-2">Map Scraper</h3>
+            <p class="text-sm text-gray-400 mb-3">Scrape Minecraft map data for gaming content</p>
+            <button onclick="launchTool('map-scraper')" class="px-3 py-1 bg-dark-700 rounded text-sm hover:bg-dark-600">Launch →</button>
+          </div>
         </div>
       </div>
     </div>
@@ -170,11 +279,30 @@
           </div>
         </div>
       </div>
+      
+      <!-- Portfolio Allocation Chart -->
+      <div class="card rounded-lg p-4 mb-4">
+        <div class="flex justify-between items-center mb-3">
+          <h3 class="font-semibold">Portfolio Allocation</h3>
+          <div id="portfolio-total-value" class="text-lg font-bold text-accent-green">--</div>
+        </div>
+        <div class="chart-container chart-portfolio">
+          <canvas id="portfolio-chart"></canvas>
+        </div>
+      </div>
     </div>
 
     <!-- Tools Tab -->
     <div id="tab-tools" class="tab-content hidden">
-      <h2 class="text-xl font-semibold mb-4">🛠️ Tools Registry</h2>
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4 gap-3">
+        <h2 class="text-xl font-semibold">🛠️ Tools Registry</h2>
+        <div class="flex gap-2">
+          <input type="text" id="tools-search" placeholder="Search tools..." class="px-3 py-1 bg-dark-700 rounded border border-dark-600 text-sm md:w-64">
+          <select id="tools-category-filter" class="px-3 py-1 bg-dark-700 rounded border border-dark-600 text-sm">
+            <option value="">All Categories</option>
+          </select>
+        </div>
+      </div>
       <div id="tools-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         <div class="skeleton-loader">
           <div class="skeleton-card"></div>
@@ -206,9 +334,23 @@
           <div class="skeleton-card"></div>
         </div>
       </div>
+      
+      <!-- Grade History Chart -->
       <div class="card rounded-lg p-4 mb-4">
-        <canvas id="grade-chart" height="100"></canvas>
+        <h3 class="text-sm font-semibold text-gray-400 mb-2">📈 Grade History by Agent</h3>
+        <div class="chart-container chart-large">
+          <canvas id="grade-chart"></canvas>
+        </div>
       </div>
+      
+      <!-- Agent Performance Comparison -->
+      <div class="card rounded-lg p-4 mb-4">
+        <h3 class="text-sm font-semibold text-gray-400 mb-2">📊 Agent Performance Comparison</h3>
+        <div class="chart-container chart-agent">
+          <canvas id="agent-performance-chart"></canvas>
+        </div>
+      </div>
+      
       <div id="audit-list" class="space-y-3">
         <div class="skeleton-loader">
           <div class="skeleton-card"></div>

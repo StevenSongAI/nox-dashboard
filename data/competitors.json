@@ -1,0 +1,115 @@
+{
+  "competitors": [
+    {
+      "id": "comp-001",
+      "channelId": "@RogersPets-w5s",
+      "name": "Rogers Pets",
+      "url": "https://www.youtube.com/@RogersPets-w5s",
+      "niche": "Pet Simulation",
+      "focus": "AI-generated fictional pets",
+      "addedAt": "2026-02-08T12:00:00Z",
+      "autoAdded": false,
+      "stats": {
+        "subscribers": "1.2M",
+        "totalViews": "450M",
+        "videoCount": 156
+      },
+      "latestVideos": []
+    },
+    {
+      "id": "comp-002",
+      "channelId": "@petsimulatedworld",
+      "name": "Pet Simulated World",
+      "url": "https://www.youtube.com/@petsimulatedworld",
+      "niche": "Pet Simulation",
+      "focus": "Virtual pet experiences",
+      "addedAt": "2026-02-08T12:00:00Z",
+      "autoAdded": false,
+      "stats": {
+        "subscribers": "890K",
+        "totalViews": "280M",
+        "videoCount": 203
+      },
+      "latestVideos": []
+    },
+    {
+      "id": "comp-003",
+      "channelId": "@sacredstuff",
+      "name": "Sacred Stuff",
+      "url": "https://www.youtube.com/@sacredstuff",
+      "niche": "Mystery/Unboxing",
+      "focus": "Curated mystery content",
+      "addedAt": "2026-02-08T12:00:00Z",
+      "autoAdded": false,
+      "stats": {
+        "subscribers": "2.1M",
+        "totalViews": "780M",
+        "videoCount": 89
+      },
+      "latestVideos": []
+    },
+    {
+      "id": "comp-004",
+      "channelId": "@NightToons-j8i",
+      "name": "Night Toons",
+      "url": "https://www.youtube.com/@NightToons-j8i",
+      "niche": "Animation/Gaming",
+      "focus": "Animated storytelling",
+      "addedAt": "2026-02-08T12:00:00Z",
+      "autoAdded": false,
+      "stats": {
+        "subscribers": "3.4M",
+        "totalViews": "1.2B",
+        "videoCount": 312
+      },
+      "latestVideos": []
+    },
+    {
+      "id": "comp-005",
+      "channelId": "@CreatureLab_real",
+      "name": "Creature Lab",
+      "url": "https://www.youtube.com/@CreatureLab_real",
+      "niche": "Creature Design",
+      "focus": "AI creature generation",
+      "addedAt": "2026-02-08T12:00:00Z",
+      "autoAdded": false,
+      "stats": {
+        "subscribers": "1.8M",
+        "totalViews": "520M",
+        "videoCount": 134
+      },
+      "latestVideos": []
+    },
+    {
+      "id": "comp-006",
+      "channelId": "@WildPokédex-uwu",
+      "name": "Wild Pokédex",
+      "url": "https://www.youtube.com/@WildPokédex-uwu",
+      "niche": "Gaming/Pokémon",
+      "focus": "Pokémon content with AI twist",
+      "addedAt": "2026-02-08T12:00:00Z",
+      "autoAdded": false,
+      "stats": {
+        "subscribers": "2.7M",
+        "totalViews": "950M",
+        "videoCount": 267
+      },
+      "latestVideos": []
+    }
+  ],
+  "outlierPatterns": [
+    {
+      "pattern": "I got a fictional pet simulation",
+      "category": "AI Pet Content",
+      "relevanceScore": 95,
+      "recommendedAction": "Create similar content with unique twist"
+    },
+    {
+      "pattern": "AI generated creatures",
+      "category": "AI Creature Design",
+      "relevanceScore": 90,
+      "recommendedAction": "Document AI creature creation process"
+    }
+  ],
+  "lastUpdated": "2026-02-08T12:00:00Z"
+}
