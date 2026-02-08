@@ -1,0 +1,17 @@
+{
+  "notes": [
+    {
+      "id": "res-001",
+      "title": "Claude 3.7 Sonnet Analysis",
+      "content": "New hybrid reasoning model with extended thinking mode. Key advantage: same model handles both quick responses and deep reasoning. API pricing unchanged. Potential disruption to OpenAI's o1/o3 positioning.",
+      "tags": ["Claude", "Anthropic", "AI models"],
+      "linkedTo": ["yt-002"],
+      "date": "2026-02-08",
+      "addedAt": "2026-02-08T12:26:00Z"
+    }
+  ],
+  "meta": {
+    "lastUpdated": "2026-02-08T12:26:00Z",
+    "totalNotes": 1
+  }
+}

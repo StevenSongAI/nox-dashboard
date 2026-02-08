@@ -1,0 +1,37 @@
+{
+  "positions": [
+    {
+      "ticker": "NVDA",
+      "name": "NVIDIA",
+      "type": "watch",
+      "notes": "Earnings Feb 26 - AI demand indicator",
+      "addedAt": "2026-02-08T12:26:00Z"
+    },
+    {
+      "ticker": "PLTR",
+      "name": "Palantir",
+      "type": "watch",
+      "notes": "Government AI contracts expanding",
+      "addedAt": "2026-02-08T12:26:00Z"
+    }
+  ],
+  "intelligence": [
+    {
+      "id": "inv-001",
+      "topic": "NVIDIA Earnings Preview",
+      "content": "Q4 FY2025 expectations: Revenue ~$38B, Data Center growth 75%+ YoY. Key watch: Blackwell ramp guidance and China export impact. Options market pricing 8% move.",
+      "source": "Consensus estimates",
+      "date": "2026-02-08",
+      "tags": ["NVDA", "earnings", "AI"]
+    }
+  ],
+  "watchlist": [
+    {"ticker": "TSLA", "reason": "Robotaxi announcement pending"},
+    {"ticker": "META", "reason": "AI capex acceleration"},
+    {"ticker": "GOOGL", "reason": "Gemini 2.0 adoption metrics"}
+  ],
+  "meta": {
+    "lastUpdated": "2026-02-08T12:26:00Z",
+    "totalPositions": 2
+  }
+}

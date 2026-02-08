@@ -1,0 +1,63 @@
+{
+  "outlierVideos": [
+    {
+      "id": "yt-001",
+      "title": "I Built an AI Agent That Codes Entire Apps",
+      "channel": "Fireship",
+      "views": "2.4M",
+      "published": "2025-01-15",
+      "whyItWorks": "High production value + timely AI topic + practical demo",
+      "tags": ["AI agents", "coding", "tutorial"],
+      "url": "https://youtube.com/watch?v=example1",
+      "addedAt": "2026-02-08T12:26:00Z"
+    },
+    {
+      "id": "yt-002", 
+      "title": "Claude 3.7 Sonnet: The End of Junior Developers?",
+      "channel": "ThePrimeagen",
+      "views": "890K",
+      "published": "2025-02-01",
+      "whyItWorks": "Controversial take + respected dev voice + timely release",
+      "tags": ["Claude", "AI coding", "career"],
+      "url": "https://youtube.com/watch?v=example2",
+      "addedAt": "2026-02-08T12:26:00Z"
+    },
+    {
+      "id": "yt-003",
+      "title": "How I Make $50K/Month with AI Automation",
+      "channel": "Income Stream Builders",
+      "views": "1.2M",
+      "published": "2025-01-28",
+      "whyItWorks": "Revenue proof + aspirational + actionable framework",
+      "tags": ["AI business", "automation", "income"],
+      "url": "https://youtube.com/watch?v=example3",
+      "addedAt": "2026-02-08T12:26:00Z"
+    }
+  ],
+  "contentBriefs": [
+    {
+      "id": "brief-001",
+      "title": "AI Agent Teams Content Series",
+      "angle": "Show multi-agent workflows solving real problems",
+      "targetAudience": "Developers and tech leaders",
+      "estimatedViews": "500K-1M",
+      "priority": "high",
+      "createdAt": "2026-02-08T12:26:00Z"
+    }
+  ],
+  "trendAnalysis": [
+    {
+      "id": "trend-001",
+      "trend": "AI Agent Orchestration",
+      "growth": "+340% searches YoY",
+      "opportunity": "Early mover advantage in education content",
+      "action": "Create comprehensive agent framework tutorial",
+      "addedAt": "2026-02-08T12:26:00Z"
+    }
+  ],
+  "meta": {
+    "lastUpdated": "2026-02-08T12:26:00Z",
+    "totalVideos": 3,
+    "totalBriefs": 1
+  }
+}

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nox Dashboard</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0f0f0f;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        .header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            padding: 20px;
+            border-bottom: 1px solid #333;
+        }
+        .header h1 { font-size: 24px; color: #00d4ff; }
+        .header .subtitle { color: #888; font-size: 14px; }
+        .nav {
+            display: flex;
+            gap: 10px;
+            padding: 15px 20px;
+            background: #1a1a1a;
+            border-bottom: 1px solid #333;
+            flex-wrap: wrap;
+        }
+        .nav button {
+            background: #2a2a2a;
+            color: #e0e0e0;
+            border: 1px solid #444;
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .nav button:hover, .nav button.active {
+            background: #00d4ff;
+            color: #000;
+            border-color: #00d4ff;
+        }
+        .container { padding: 20px; max-width: 1400px; margin: 0 auto; }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .card {
+            background: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+        .card h3 { color: #00d4ff; margin-bottom: 10px; }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .stat-box {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #333;
+        }
+        .stat-box .number { font-size: 32px; font-weight: bold; color: #00d4ff; }
+        .stat-box .label { color: #888; font-size: 14px; }
+        .tag {
+            display: inline-block;
+            background: #2a2a2a;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 12px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+        .tag.ai { background: #ff6b35; color: #fff; }
+        .tag.business { background: #4ecdc4; color: #000; }
+        .tag.investment { background: #ffe66d; color: #000; }
+        .priority-high { border-left: 4px solid #ff4757; }
+        .priority-medium { border-left: 4px solid #ffa502; }
+        .priority-low { border-left: 4px solid #2ed573; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { padding: 12px; text-align: left; border-bottom: 1px solid #333; }
+        th { color: #888; font-weight: 500; }
+        tr:hover { background: #222; }
+        .loading { color: #666; font-style: italic; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>⚡ Nox Dashboard</h1>
+        <div class="subtitle">Work Intelligence Hub — Last Updated: <span id="lastUpdated">--</span></div>
+    </div>
+    <div class="nav">
+        <button class="active" onclick="showTab('overview')">Overview</button>
+        <button onclick="showTab('youtube')">YouTube</button>
+        <button onclick="showTab('business')">Business</button>
+        <button onclick="showTab('investments')">Investments</button>
+        <button onclick="showTab('research')">Research</button>
+    </div>
+    <div class="container">
+        <div id="overview" class="tab-content active">
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <div class="number" id="stat-youtube">0</div>
+                    <div class="label">Outlier Videos</div>
+                </div>
+                <div class="stat-box">
+                    <div class="number" id="stat-opps">0</div>
+                    <div class="label">Business Opps</div>
+                </div>
+                <div class="stat-box">
+                    <div class="number" id="stat-research">0</div>
+                    <div class="label">Research Notes</div>
+                </div>
+                <div class="stat-box">
+                    <div class="number" id="stat-positions">0</div>
+                    <div class="label">Watchlist Items</div>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Current Priorities</h3>
+                <div id="priorities">Loading...</div>
+            </div>
+        </div>
+        <div id="youtube" class="tab-content">
+            <div class="card">
+                <h3>YouTube Outlier Videos</h3>
+                <table id="youtube-table">
+                    <thead><tr><th>Title</th><th>Channel</th><th>Views</th><th>Why It Works</th></tr></thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+        <div id="business" class="tab-content">
+            <div class="card">
+                <h3>Business Opportunities</h3>
+                <div id="business-list">Loading...</div>
+            </div>
+        </div>
+        <div id="investments" class="tab-content">
+            <div class="card">
+                <h3>Investment Watchlist</h3>
+                <div id="investments-list">Loading...</div>
+            </div>
+        </div>
+        <div id="research" class="tab-content">
+            <div class="card">
+                <h3>Research Notes</h3>
+                <div id="research-list">Loading...</div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let dashboardData = {};
+        async function loadData() {
+            try {
+                const [meta, state, youtube, business, investments, research] = await Promise.all([
+                    fetch('data/meta.json').then(r => r.json()),
+                    fetch('data/state.json').then(r => r.json()),
+                    fetch('data/youtube.json').then(r => r.json()),
+                    fetch('data/new-business.json').then(r => r.json()),
+                    fetch('data/investments.json').then(r => r.json()),
+                    fetch('data/research.json').then(r => r.json())
+                ]);
+                dashboardData = { meta, state, youtube, business, investments, research };
+                renderDashboard();
+            } catch(e) {
+                console.error('Failed to load data:', e);
+            }
+        }
+        function renderDashboard() {
+            document.getElementById('lastUpdated').textContent = new Date(dashboardData.meta.lastUpdated).toLocaleString();
+            document.getElementById('stat-youtube').textContent = dashboardData.youtube.meta.totalVideos;
+            document.getElementById('stat-opps').textContent = dashboardData.business.meta.totalOpportunities;
+            document.getElementById('stat-research').textContent = dashboardData.research.meta.totalNotes;
+            document.getElementById('stat-positions').textContent = dashboardData.investments.meta.totalPositions;
+            const priorities = Object.entries(dashboardData.state.currentPriorities || {})
+                .map(([k,v]) => `<div class="card priority-medium"><strong>${k}:</strong> ${v}</div>`).join('');
+            document.getElementById('priorities').innerHTML = priorities || 'No priorities set';
+            const ytRows = dashboardData.youtube.outlierVideos.map(v => 
+                `<tr><td>${v.title}</td><td>${v.channel}</td><td>${v.views}</td><td>${v.whyItWorks}</td></tr>`).join('');
+            document.querySelector('#youtube-table tbody').innerHTML = ytRows || '<tr><td colspan="4" class="loading">No data yet</td></tr>';
+        }
+        function showTab(tab) {
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.nav button').forEach(el => el.classList.remove('active'));
+            document.getElementById(tab).classList.add('active');
+            event.target.classList.add('active');
+        }
+        loadData();
+    </script>
+</body>
+</html>

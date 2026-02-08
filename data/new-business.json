@@ -1,0 +1,31 @@
+{
+  "opportunities": [
+    {
+      "id": "opp-001",
+      "name": "AI Agent Infrastructure SaaS",
+      "source": "X.com trend analysis",
+      "score": 85,
+      "market": "Developer tools",
+      "description": "Infrastructure for deploying and managing AI agent teams",
+      "nextAction": "Research competitors: LangChain, AutoGen, CrewAI",
+      "status": "researching",
+      "addedAt": "2026-02-08T12:26:00Z"
+    },
+    {
+      "id": "opp-002",
+      "name": "YouTube AI Content Pipeline Service",
+      "source": "Personal pain point",
+      "score": 78,
+      "market": "Creator economy",
+      "description": "Automated research + scripting + thumbnail generation for tech YouTubers",
+      "nextAction": "Validate with 3 creators",
+      "status": "ideation",
+      "addedAt": "2026-02-08T12:26:00Z"
+    }
+  ],
+  "meta": {
+    "lastUpdated": "2026-02-08T12:26:00Z",
+    "totalOpportunities": 2,
+    "pipelineValue": 0
+  }
+}
