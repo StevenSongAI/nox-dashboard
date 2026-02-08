@@ -112,8 +112,17 @@
       "source": "Market Research / Industry Analysis",
       "content": "AI video generation market projected to grow from $0.5B (2024) to $12B (2029) at 88% CAGR. Runway, Pika Labs, and Sora driving consumer adoption. YouTube creators increasingly adopting AI workflows for creature/animation content. Key players: OpenAI (Sora), RunwayML, Pika Labs, Stability AI. Content creator economy ($250B TAM) being disrupted by AI generation tools.",
       "impact": "bullish"
+    },
+    {
+      "id": "intel-007",
+      "date": "2026-02-08T18:46:00Z",
+      "topic": "Creator Economy Newsletter Monetization",
+      "source": "Business Opportunity Analysis",
+      "content": "AI/design niche newsletters (Ben's Bites, The Rundown) achieving $50K-200K ARR with 40%+ growth YoY. Creature design sub-niche appears underserved. Newsletter format creates high-LTV audience for digital product funnel (templates → courses). Beehiiv/Substack infrastructure reduces startup costs to near-zero. Cross-sell potential with existing template pack and masterclass opportunities.",
+      "impact": "bullish",
+      "relatedOpportunities": ["opp-006", "opp-007", "opp-008"]
     }
   ],
-  "lastUpdated": "2026-02-08T14:46:00Z",
+  "lastUpdated": "2026-02-08T18:46:00Z",
   "dataSource": "X.com via browser research (bird API disabled)"
 }
