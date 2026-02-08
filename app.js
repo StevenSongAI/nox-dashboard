@@ -32,27 +32,35 @@ async function fetchStockPrices(tickers) {
     return stockPriceCache;
   }
   
+  // Use a CORS proxy or direct Yahoo API with proper error handling
   try {
-    // Use Yahoo Finance query1 API (free, no key required)
-    const symbols = tickers.join(',');
-    const response = await fetch(`https://query1.finance.yahoo.com/v8/finance/chart/${symbols}?interval=1d&range=1d`);
-    
-    if (!response.ok) {
-      console.warn('[StockAPI] Yahoo Finance API failed:', response.status);
-      return stockPriceCache;
+    // Try fetching each ticker individually to handle CORS better
+    for (const ticker of tickers) {
+      try {
+        // Use Yahoo Finance v8 API with proper headers
+        const response = await fetch(`https://query1.finance.yahoo.com/v8/finance/chart/${ticker}?interval=1d&range=1d`, {
+          method: 'GET',
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+        
+        if (response.ok) {
+          const data = await response.json();
+          if (data.chart?.result?.[0]?.meta) {
+            const meta = data.chart.result[0].meta;
+            const price = meta.regularMarketPrice || meta.previousClose || meta.chartPreviousClose;
+            if (price && price > 0) {
+              stockPriceCache[ticker] = price;
+            }
+          }
+        }
+      } catch (tickerErr) {
+        console.warn(`[StockAPI] Failed to fetch ${ticker}:`, tickerErr.message);
+      }
     }
     
-    const data = await response.json();
-    
-    if (data.chart && data.chart.result) {
-      data.chart.result.forEach(result => {
-        const ticker = result.meta.symbol;
-        const price = result.meta.regularMarketPrice || result.meta.previousClose;
-        stockPriceCache[ticker] = price;
-      });
-      lastPriceFetch = now;
-    }
-    
+    lastPriceFetch = now;
     return stockPriceCache;
   } catch (err) {
     console.error('[StockAPI] Error fetching prices:', err);
@@ -1987,9 +1995,9 @@ function formatNumber(num) {
 
 // Format currency with $ and decimals
 function formatCurrency(amount) {
-  if (amount === undefined || amount === null) return '$0.00';
+  if (amount === undefined || amount === null || amount === '' || amount === 0) return '—';
   const num = parseFloat(amount);
-  if (isNaN(num)) return '$0.00';
+  if (isNaN(num) || num === 0) return '—';
   return '$' + num.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 }
 
