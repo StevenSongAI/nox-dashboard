@@ -979,9 +979,10 @@ function renderInvestments() {
     watchContainer.innerHTML = watchlist.map((w, idx) => {
       const ticker = w.ticker || w.symbol;
       const target = w.targetEntry || w.targetPrice;
+      const priceDisplay = w.currentPrice ? formatCurrency(w.currentPrice) : '-';
       return `
         <div class="p-2 bg-dark-700/50 rounded cursor-pointer hover:bg-dark-700" onclick="showWatchlistModal(${idx})">
-          <div class="font-semibold">${ticker} · ${formatCurrency(w.currentPrice)}</div>
+          <div class="font-semibold">${ticker} · ${priceDisplay}</div>
           <div class="text-sm text-gray-400">Target: ${formatCurrency(target)}</div>
         </div>
       `;
@@ -1640,9 +1641,18 @@ function formatTimeAgo(dateString) {
   const diff = Math.floor((now - date) / 1000);
 
   if (diff < 60) return 'just now';
-  if (diff < 3600) return Math.floor(diff / 60) + ' min ago';
-  if (diff < 86400) return Math.floor(diff / 3600) + ' hours ago';
-  if (diff < 604800) return Math.floor(diff / 86400) + ' days ago';
+  if (diff < 3600) {
+    const mins = Math.floor(diff / 60);
+    return `${mins} min${mins === 1 ? '' : 's'} ago`;
+  }
+  if (diff < 86400) {
+    const hours = Math.floor(diff / 3600);
+    return `${hours} hour${hours === 1 ? '' : 's'} ago`;
+  }
+  if (diff < 604800) {
+    const days = Math.floor(diff / 86400);
+    return `${days} day${days === 1 ? '' : 's'} ago`;
+  }
   return formatDate(dateString);
 }
 
