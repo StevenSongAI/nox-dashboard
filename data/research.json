@@ -1,17 +1,42 @@
 {
   "notes": [
     {
-      "id": "res-001",
-      "title": "Claude 3.7 Sonnet Analysis",
-      "content": "New hybrid reasoning model with extended thinking mode. Key advantage: same model handles both quick responses and deep reasoning. API pricing unchanged. Potential disruption to OpenAI's o1/o3 positioning.",
-      "tags": ["Claude", "Anthropic", "AI models"],
-      "linkedTo": ["yt-002"],
-      "date": "2026-02-08",
-      "addedAt": "2026-02-08T12:26:00Z"
+      "id": "note-001",
+      "title": "Claude 3.5 Sonnet Performance Analysis",
+      "date": "2026-02-07T18:00:00Z",
+      "tags": ["claude", "llm", "benchmarks", "anthropic"],
+      "content": "## Claude 3.5 Sonnet: Key Findings\n\n### Performance Improvements\n- **Coding**: 92% accuracy on HumanEval (up from 87% for Opus)\n- **Reasoning**: Significant gains on complex multi-step problems\n- **Speed**: ~2x faster response time compared to Opus\n- **Context**: Maintains 200K token context window\n\n### Use Cases Tested\n1. **Code Generation**: Python, TypeScript, Rust - excellent results\n2. **Architecture Design**: System design questions handled well\n3. **Debugging**: Strong at finding subtle bugs in complex code\n4. **Documentation**: Generates clear, structured docs\n\n### Comparison with GPT-4o\n- Claude 3.5 Sonnet edges ahead in code-specific tasks\n- GPT-4o still leads in general knowledge breadth\n- Claude's reasoning feels more transparent (better chain-of-thought)\n- Pricing: Claude 3.5 Sonnet is significantly cheaper than GPT-4o\n\n### Recommendation\nSwitch default coding agent to Claude 3.5 Sonnet. Keep GPT-4o for research-heavy tasks.",
+      "sourceUrls": [
+        "https://www.anthropic.com/news/claude-3-5-sonnet",
+        "https://arcprize.org/leaderboard"
+      ],
+      "category": "AI Research"
+    },
+    {
+      "id": "note-002",
+      "title": "AI Agent Orchestration Patterns",
+      "date": "2026-02-06T15:30:00Z",
+      "tags": ["agents", "architecture", "workflows", "orchestration"],
+      "content": "## Agent Orchestration: Patterns and Anti-Patterns\n\n### Successful Patterns\n\n**1. Hierarchical Task Decomposition**\n- Manager agent breaks down complex tasks\n- Worker agents execute sub-tasks in parallel\n- Results aggregated and validated\n- Works well for: research, content pipelines, code review\n\n**2. Sequential Pipelines with Feedback Loops**\n- Each stage passes output to next agent\n- Quality gates at each transition\n- Rollback capability if quality drops\n- Works well for: content creation, data processing\n\n**3. Competitive Red-Teaming**\n- Multiple agents propose solutions\n- Evaluation agent scores each\n- Winner proceeds, losers provide alternatives\n- Works well for: creative tasks, strategy development\n\n### Anti-Patterns to Avoid\n\n**1. Circular Dependencies**\n- Agents calling each other in loops\n- Hard to debug, resource intensive\n- Solution: Use a coordinator agent\n\n**2. Too Many Micro-Agents**\n- Over-fragmentation leads to coordination overhead\n- Solution: Combine related tasks, 3-5 agents max per workflow\n\n**3. Missing Context Passing**\n- Each agent starts fresh\n- Leads to inconsistent decisions\n- Solution: Shared state/context document\n\n### Tools Showing Promise\n- **AutoGen**: Microsoft's multi-agent framework\n- **CrewAI**: Python-based agent orchestration\n- **LangGraph**: State machine approach to agent flows\n- **OpenClaw**: Custom gateway for local agent management",
+      "sourceUrls": [
+        "https://microsoft.github.io/autogen/",
+        "https://github.com/crewAIInc/crewAI",
+        "https://langchain-ai.github.io/langgraph/"
+      ],
+      "category": "System Design"
+    },
+    {
+      "id": "note-003",
+      "title": "YouTube Algorithm Changes (Feb 2026)",
+      "date": "2026-02-05T12:00:00Z",
+      "tags": ["youtube", "algorithm", "content-strategy", "analytics"],
+      "content": "## YouTube Algorithm Updates - February 2026\n\n### Major Changes Observed\n\n**1. Shorts Integration with Long-Form**\n- Cross-promotion between Shorts and main channel increased\n- Shorts viewers now more likely to be recommended long-form\n- Strategy: Use Shorts as trailers for full videos\n\n**2. Watch Time Quality Over Quantity**\n- Total minutes watched less important than completion rate\n- 80% completion of 10-min video > 50% of 20-min video\n- Strategy: Tighter editing, respect viewer time\n\n**3. Comment Engagement Weight Increase**\n- Meaningful comments (3+ words) weighted 2x vs likes\n- Reply threads boost video significantly\n- Strategy: Ask specific questions in videos\n\n**4. Niche Authority Signals**\n- Consistent topic coverage boosts all videos in that niche\n- Channel tags and descriptions matter more\n- Strategy: Pick 2-3 core topics, own them\n\n### Content Opportunities\n\n| Format | Performance | Notes |\n|--------|-------------|-------|\n| AI Challenge Videos | 🔥 High | Personal stakes + unpredictable outcomes |\n| 100-Day Series | 🔥 High | Built-in retention mechanism |\n| Comparison Formats | ⬆️ Rising | Saves viewer research time |\n| Tutorial Content | ➡️ Stable | Evergreen but saturated |\n| Vlog Content | ⬇️ Down | Unless highly niche/personal |\n\n### Action Items\n- [ ] Audit current content for completion rate\n- [ ] Develop 3-video Shorts series as channel trailer\n- [ ] Create comment hooks for next 5 videos\n- [ ] Narrow channel focus to: AI Tools, Productivity Systems, Tech Experiments",
+      "sourceUrls": [
+        "https://www.youtube.com/trends",
+        "https://creatorinsider.youtube/"
+      ],
+      "category": "Content Strategy"
     }
   ],
-  "meta": {
-    "lastUpdated": "2026-02-08T12:26:00Z",
-    "totalNotes": 1
-  }
+  "lastUpdated": "2026-02-08T06:00:00Z"
 }

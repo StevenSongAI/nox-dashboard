@@ -1,37 +1,84 @@
 {
-  "positions": [
+  "marketOpportunities": [
     {
+      "id": "opp-001",
+      "sector": "AI Infrastructure",
       "ticker": "NVDA",
       "name": "NVIDIA",
-      "type": "watch",
-      "notes": "Earnings Feb 26 - AI demand indicator",
-      "addedAt": "2026-02-08T12:26:00Z"
+      "signal": "Earnings momentum",
+      "source": "X.com / Earnings",
+      "confidence": "high",
+      "notes": "Blackwell chip demand exceeding supply through mid-2026. Data center revenue +93% YoY.",
+      "addedAt": "2026-02-07T20:00:00Z"
     },
     {
+      "id": "opp-002",
+      "sector": "AI/Data Analytics",
       "ticker": "PLTR",
       "name": "Palantir",
-      "type": "watch",
-      "notes": "Government AI contracts expanding",
-      "addedAt": "2026-02-08T12:26:00Z"
+      "signal": "Valuation concern",
+      "source": "X.com / Analyst",
+      "confidence": "medium",
+      "notes": "Morgan Stanley downgrade. 45x forward revenue considered stretched.",
+      "addedAt": "2026-02-06T14:30:00Z"
+    }
+  ],
+  "watchlist": [
+    {
+      "id": "watch-001",
+      "sector": "EV/Auto",
+      "ticker": "TSLA",
+      "name": "Tesla",
+      "catalyst": "Robotaxi reveal, FSD progress",
+      "source": "X.com / Tech news",
+      "whyWatching": "Autonomous driving breakthrough could be major catalyst"
+    },
+    {
+      "id": "watch-002",
+      "sector": "Semiconductors",
+      "ticker": "AMD",
+      "name": "AMD",
+      "catalyst": "Data center share growth",
+      "source": "X.com / Industry",
+      "whyWatching": "NVDA alternative play, MI300 chip demand"
+    }
+  ],
+  "trends": [
+    {
+      "id": "trend-001",
+      "topic": "AI Agent Infrastructure",
+      "sentiment": "bullish",
+      "momentum": "accelerating",
+      "sources": ["X.com tech community", "Industry reports"],
+      "summary": "Enterprise demand for AI agents driving infrastructure spending"
+    },
+    {
+      "id": "trend-002",
+      "topic": "Gaming Content Evolution",
+      "sentiment": "bullish",
+      "momentum": "stable",
+      "sources": ["YouTube trends", "Creator economy"],
+      "summary": "AI-generated content, simulation videos gaining traction"
     }
   ],
   "intelligence": [
     {
-      "id": "inv-001",
-      "topic": "NVIDIA Earnings Preview",
-      "content": "Q4 FY2025 expectations: Revenue ~$38B, Data Center growth 75%+ YoY. Key watch: Blackwell ramp guidance and China export impact. Options market pricing 8% move.",
-      "source": "Consensus estimates",
-      "date": "2026-02-08",
-      "tags": ["NVDA", "earnings", "AI"]
+      "id": "intel-001",
+      "date": "2026-02-07T20:00:00Z",
+      "topic": "NVDA Supply Constraint",
+      "source": "X.com / Earnings call",
+      "content": "Blackwell chip demand exceeding supply through mid-2026. Management guided Q1 revenue above consensus.",
+      "impact": "bullish"
+    },
+    {
+      "id": "intel-002",
+      "date": "2026-02-06T14:30:00Z",
+      "topic": "PLTR Valuation Debate",
+      "source": "X.com / Morgan Stanley",
+      "content": "Analyst downgrade citing 45x forward revenue multiple. Strong fundamentals but price reflects multiple years of growth.",
+      "impact": "bearish"
     }
   ],
-  "watchlist": [
-    {"ticker": "TSLA", "reason": "Robotaxi announcement pending"},
-    {"ticker": "META", "reason": "AI capex acceleration"},
-    {"ticker": "GOOGL", "reason": "Gemini 2.0 adoption metrics"}
-  ],
-  "meta": {
-    "lastUpdated": "2026-02-08T12:26:00Z",
-    "totalPositions": 2
-  }
+  "lastUpdated": "2026-02-08T12:10:00Z",
+  "dataSource": "X.com via browser research (bird API disabled)"
 }

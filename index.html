@@ -1,196 +1,378 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nox Dashboard</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: #0f0f0f;
-            color: #e0e0e0;
-            line-height: 1.6;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nox Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            dark: { 900: '#0f0f1a', 800: '#1a1a2e', 700: '#252540' },
+            accent: { blue: '#3B82F6', green: '#10B981', purple: '#8B5CF6', yellow: '#F59E0B', red: '#EF4444' }
+          }
         }
-        .header {
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-            padding: 20px;
-            border-bottom: 1px solid #333;
-        }
-        .header h1 { font-size: 24px; color: #00d4ff; }
-        .header .subtitle { color: #888; font-size: 14px; }
-        .nav {
-            display: flex;
-            gap: 10px;
-            padding: 15px 20px;
-            background: #1a1a1a;
-            border-bottom: 1px solid #333;
-            flex-wrap: wrap;
-        }
-        .nav button {
-            background: #2a2a2a;
-            color: #e0e0e0;
-            border: 1px solid #444;
-            padding: 8px 16px;
-            border-radius: 6px;
-            cursor: pointer;
-            transition: all 0.2s;
-        }
-        .nav button:hover, .nav button.active {
-            background: #00d4ff;
-            color: #000;
-            border-color: #00d4ff;
-        }
-        .container { padding: 20px; max-width: 1400px; margin: 0 auto; }
-        .tab-content { display: none; }
-        .tab-content.active { display: block; }
-        .card {
-            background: #1a1a1a;
-            border: 1px solid #333;
-            border-radius: 8px;
-            padding: 20px;
-            margin-bottom: 15px;
-        }
-        .card h3 { color: #00d4ff; margin-bottom: 10px; }
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-            margin-bottom: 20px;
-        }
-        .stat-box {
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-            padding: 20px;
-            border-radius: 8px;
-            border: 1px solid #333;
-        }
-        .stat-box .number { font-size: 32px; font-weight: bold; color: #00d4ff; }
-        .stat-box .label { color: #888; font-size: 14px; }
-        .tag {
-            display: inline-block;
-            background: #2a2a2a;
-            padding: 4px 10px;
-            border-radius: 12px;
-            font-size: 12px;
-            margin-right: 5px;
-            margin-bottom: 5px;
-        }
-        .tag.ai { background: #ff6b35; color: #fff; }
-        .tag.business { background: #4ecdc4; color: #000; }
-        .tag.investment { background: #ffe66d; color: #000; }
-        .priority-high { border-left: 4px solid #ff4757; }
-        .priority-medium { border-left: 4px solid #ffa502; }
-        .priority-low { border-left: 4px solid #2ed573; }
-        table { width: 100%; border-collapse: collapse; }
-        th, td { padding: 12px; text-align: left; border-bottom: 1px solid #333; }
-        th { color: #888; font-weight: 500; }
-        tr:hover { background: #222; }
-        .loading { color: #666; font-style: italic; }
-    </style>
+      }
+    }
+  </script>
 </head>
-<body>
-    <div class="header">
-        <h1>⚡ Nox Dashboard</h1>
-        <div class="subtitle">Work Intelligence Hub — Last Updated: <span id="lastUpdated">--</span></div>
+<body class="min-h-screen">
+  <!-- Header -->
+  <header class="sticky top-0 z-40 bg-dark-900 border-b border-dark-700">
+    <div class="max-w-7xl mx-auto px-4 py-3">
+      <div class="flex items-center justify-between">
+        <h1 class="text-xl font-bold">⚡ Nox Dashboard</h1>
+        <div id="agent-status" class="text-sm text-gray-400">Loading...</div>
+      </div>
     </div>
-    <div class="nav">
-        <button class="active" onclick="showTab('overview')">Overview</button>
-        <button onclick="showTab('youtube')">YouTube</button>
-        <button onclick="showTab('business')">Business</button>
-        <button onclick="showTab('investments')">Investments</button>
-        <button onclick="showTab('research')">Research</button>
+    <!-- Tab Navigation -->
+    <nav class="max-w-7xl mx-auto px-4">
+      <div class="tabs-container">
+        <button onclick="showTab('dashboard')" id="tab-btn-dashboard" class="tab-btn text-sm font-medium tab-active">🏠 Dashboard</button>
+        <button onclick="showTab('youtube')" id="tab-btn-youtube" class="tab-btn text-sm font-medium">🎬 YouTube</button>
+        <button onclick="showTab('business')" id="tab-btn-business" class="tab-btn text-sm font-medium">💼 Business</button>
+        <button onclick="showTab('investments')" id="tab-btn-investments" class="tab-btn text-sm font-medium">📈 Investments</button>
+        <button onclick="showTab('tools')" id="tab-btn-tools" class="tab-btn text-sm font-medium">🛠️ Tools</button>
+        <button onclick="showTab('research')" id="tab-btn-research" class="tab-btn text-sm font-medium">🔬 Research</button>
+        <button onclick="showTab('audits')" id="tab-btn-audits" class="tab-btn text-sm font-medium">📋 Audits</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-7xl mx-auto px-4 py-6">
+    <!-- Dashboard Tab -->
+    <div id="tab-dashboard" class="tab-content">
+      <!-- Stats Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+        <div class="card rounded-lg p-4 cursor-pointer hover:border-accent-blue" onclick="showTab('youtube')">
+          <div class="text-gray-400 text-sm">YouTube Outliers</div>
+          <div id="stat-youtube-count" class="text-2xl font-bold mt-1">-</div>
+          <div id="stat-youtube-briefs" class="text-sm text-gray-500">-</div>
+        </div>
+        <div class="card rounded-lg p-4 cursor-pointer hover:border-accent-blue" onclick="showTab('business')">
+          <div class="text-gray-400 text-sm">Business Opportunities</div>
+          <div id="stat-business-count" class="text-2xl font-bold mt-1">-</div>
+          <div id="stat-business-high" class="text-sm text-gray-500">-</div>
+        </div>
+        <div class="card rounded-lg p-4 cursor-pointer hover:border-accent-blue" onclick="showTab('investments')">
+          <div class="text-gray-400 text-sm">Investments</div>
+          <div id="stat-investments-count" class="text-2xl font-bold mt-1">-</div>
+          <div id="stat-investments-watchlist" class="text-sm text-gray-500">-</div>
+        </div>
+        <div class="card rounded-lg p-4 cursor-pointer hover:border-accent-blue" onclick="showTab('audits')">
+          <div class="text-gray-400 text-sm">Avg Audit Grade</div>
+          <div id="stat-avg-grade" class="text-2xl font-bold mt-1">-</div>
+          <div class="text-sm text-gray-500">Last 30 days</div>
+        </div>
+      </div>
+      <!-- Overview Charts Row -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+        <div class="card rounded-lg p-4">
+          <h3 class="text-sm font-semibold text-gray-400 mb-2">🎬 YouTube Trend</h3>
+          <div class="chart-container chart-sparkline">
+            <canvas id="youtube-sparkline"></canvas>
+          </div>
+        </div>
+        <div class="card rounded-lg p-4">
+          <h3 class="text-sm font-semibold text-gray-400 mb-2">💼 Pipeline</h3>
+          <div class="chart-container chart-small">
+            <canvas id="business-pipeline-chart"></canvas>
+          </div>
+        </div>
+        <div class="card rounded-lg p-4">
+          <h3 class="text-sm font-semibold text-gray-400 mb-2">📈 Portfolio</h3>
+          <div class="chart-container chart-small">
+            <canvas id="investments-summary-chart"></canvas>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Morning Brief -->
+      <div class="card rounded-lg p-4 mb-4">
+        <div class="flex justify-between items-center mb-3">
+          <h2 class="text-lg font-semibold">📰 Morning Brief</h2>
+          <span id="brief-date" class="text-sm text-gray-400">--</span>
+        </div>
+        <div id="morning-brief-content" class="space-y-2">
+          <div class="skeleton-loader">
+            <div class="skeleton-line" style="width: 100%"></div>
+            <div class="skeleton-line" style="width: 80%"></div>
+            <div class="skeleton-line" style="width: 60%"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card rounded-lg p-4">
+        <h2 class="text-lg font-semibold mb-3">Quick Links</h2>
+        <div class="flex flex-wrap gap-2">
+          <button onclick="showTab('youtube')" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">🎬 YouTube Strategy</button>
+          <button onclick="showTab('business')" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">💼 Opportunities</button>
+          <button onclick="showTab('investments')" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">📈 Portfolio</button>
+          <button onclick="showTab('tools')" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">🛠️ Launch Tools</button>
+        </div>
+      </div>
     </div>
-    <div class="container">
-        <div id="overview" class="tab-content active">
-            <div class="stats-grid">
-                <div class="stat-box">
-                    <div class="number" id="stat-youtube">0</div>
-                    <div class="label">Outlier Videos</div>
-                </div>
-                <div class="stat-box">
-                    <div class="number" id="stat-opps">0</div>
-                    <div class="label">Business Opps</div>
-                </div>
-                <div class="stat-box">
-                    <div class="number" id="stat-research">0</div>
-                    <div class="label">Research Notes</div>
-                </div>
-                <div class="stat-box">
-                    <div class="number" id="stat-positions">0</div>
-                    <div class="label">Watchlist Items</div>
-                </div>
-            </div>
-            <div class="card">
-                <h3>Current Priorities</h3>
-                <div id="priorities">Loading...</div>
-            </div>
+
+    <!-- YouTube Tab -->
+    <div id="tab-youtube" class="tab-content hidden">
+      <!-- YouTube Tools Navigation -->
+      <div class="flex flex-wrap gap-2 mb-4">
+        <button onclick="showYouTubeSection('outliers')" id="yt-btn-outliers" class="px-3 py-1 bg-accent-blue rounded text-sm">🎯 Outlier Research</button>
+        <button onclick="showYouTubeSection('competitors')" id="yt-btn-competitors" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">👁️ Competitor Tracker</button>
+        <button onclick="showYouTubeSection('briefs')" id="yt-btn-briefs" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">📝 Content Briefs</button>
+        <button onclick="showYouTubeSection('tools')" id="yt-btn-tools" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">🛠️ YouTube Tools</button>
+      </div>
+
+      <!-- SECTION 1: Outlier Research -->
+      <div id="yt-section-outliers" class="yt-section">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4 gap-3">
+          <h2 class="text-xl font-semibold">🎯 Outlier Research</h2>
+          <div class="flex gap-2">
+            <input type="text" id="youtube-search" placeholder="Search videos, channels..." class="px-3 py-1 bg-dark-700 rounded border border-dark-600 text-sm md:w-64">
+            <select id="youtube-niche-filter" class="px-3 py-1 bg-dark-700 rounded border border-dark-600 text-sm">
+              <option value="">All Niches</option>
+              <option value="🎮 Gaming">🎮 Gaming</option>
+              <option value="💰 Finance">💰 Finance</option>
+              <option value="⚡ Productivity">⚡ Productivity</option>
+              <option value="🎬 Production">🎬 Production</option>
+            </select>
+            <button onclick="runOutlierScan()" class="px-3 py-1 bg-accent-green rounded text-sm hover:bg-green-600">🔍 Scan Viewstats</button>
+          </div>
         </div>
-        <div id="youtube" class="tab-content">
-            <div class="card">
-                <h3>YouTube Outlier Videos</h3>
-                <table id="youtube-table">
-                    <thead><tr><th>Title</th><th>Channel</th><th>Views</th><th>Why It Works</th></tr></thead>
-                    <tbody></tbody>
-                </table>
-            </div>
+        
+        <div class="card rounded-lg p-4 mb-4 bg-dark-700/30">
+          <h3 class="font-semibold mb-2">📊 Research Status</h3>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+            <div><span class="text-gray-400">Last Scan:</span> <span id="last-outlier-scan">Never</span></div>
+            <div><span class="text-gray-400">Outliers Found:</span> <span id="total-outliers">0</span></div>
+            <div><span class="text-gray-400">Content Briefs:</span> <span id="total-briefs">0</span></div>
+            <div><span class="text-gray-400">Next Auto-Scan:</span> <span id="next-scan">7:00 AM</span></div>
+          </div>
         </div>
-        <div id="business" class="tab-content">
-            <div class="card">
-                <h3>Business Opportunities</h3>
-                <div id="business-list">Loading...</div>
-            </div>
+        
+        <div id="youtube-outliers" class="space-y-3">
+          <div class="skeleton-loader">
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+          </div>
         </div>
-        <div id="investments" class="tab-content">
-            <div class="card">
-                <h3>Investment Watchlist</h3>
-                <div id="investments-list">Loading...</div>
-            </div>
+      </div>
+
+      <!-- SECTION 2: Competitor Tracker -->
+      <div id="yt-section-competitors" class="yt-section hidden">
+        <div class="flex justify-between items-center mb-4">
+          <h2 class="text-xl font-semibold">👁️ Competitor Tracker</h2>
+          <button onclick="addCompetitor()" class="px-3 py-1 bg-accent-blue rounded text-sm hover:bg-blue-600">+ Add Channel</button>
         </div>
-        <div id="research" class="tab-content">
-            <div class="card">
-                <h3>Research Notes</h3>
-                <div id="research-list">Loading...</div>
-            </div>
+        
+        <div class="card rounded-lg p-4 mb-4">
+          <h3 class="font-semibold mb-3">📺 Tracked Channels</h3>
+          <div id="competitor-list" class="grid grid-cols-1 md:grid-cols-2 gap-3">
+            <!-- Competitors loaded from competitors.json -->
+          </div>
         </div>
+        
+        <div class="card rounded-lg p-4">
+          <h3 class="font-semibold mb-3">🔥 Latest Uploads</h3>
+          <div id="competitor-uploads" class="space-y-2">
+            <p class="text-gray-500 text-sm">Select a channel to see latest uploads</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECTION 3: Content Briefs -->
+      <div id="yt-section-briefs" class="yt-section hidden">
+        <div class="flex justify-between items-center mb-4">
+          <h2 class="text-xl font-semibold">📝 Content Briefs</h2>
+          <button onclick="generateBrief()" class="px-3 py-1 bg-accent-green rounded text-sm hover:bg-green-600">+ Generate Brief</button>
+        </div>
+        <div id="content-briefs-list" class="space-y-3">
+          <div class="skeleton-loader">
+            <div class="skeleton-card"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECTION 4: YouTube Tools -->
+      <div id="yt-section-tools" class="yt-section hidden">
+        <h2 class="text-xl font-semibold mb-4">🛠️ YouTube Tools</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="card rounded-lg p-4">
+            <h3 class="font-semibold mb-2">Content Pipeline</h3>
+            <p class="text-sm text-gray-400 mb-3">Orchestrate video production from idea to upload</p>
+            <button onclick="launchTool('pipeline')" class="px-3 py-1 bg-dark-700 rounded text-sm hover:bg-dark-600">Launch →</button>
+          </div>
+          <div class="card rounded-lg p-4">
+            <h3 class="font-semibold mb-2">Performance Analyzer</h3>
+            <p class="text-sm text-gray-400 mb-3">Analyze video performance metrics and trends</p>
+            <button onclick="launchTool('analyzer')" class="px-3 py-1 bg-dark-700 rounded text-sm hover:bg-dark-600">Launch →</button>
+          </div>
+          <div class="card rounded-lg p-4">
+            <h3 class="font-semibold mb-2">Content Brief Generator</h3>
+            <p class="text-sm text-gray-400 mb-3">Generate video briefs from outlier research</p>
+            <button onclick="launchTool('brief-generator')" class="px-3 py-1 bg-dark-700 rounded text-sm hover:bg-dark-600">Launch →</button>
+          </div>
+          <div class="card rounded-lg p-4">
+            <h3 class="font-semibold mb-2">Map Scraper</h3>
+            <p class="text-sm text-gray-400 mb-3">Scrape Minecraft map data for gaming content</p>
+            <button onclick="launchTool('map-scraper')" class="px-3 py-1 bg-dark-700 rounded text-sm hover:bg-dark-600">Launch →</button>
+          </div>
+        </div>
+      </div>
     </div>
-    <script>
-        let dashboardData = {};
-        async function loadData() {
-            try {
-                const [meta, state, youtube, business, investments, research] = await Promise.all([
-                    fetch('data/meta.json').then(r => r.json()),
-                    fetch('data/state.json').then(r => r.json()),
-                    fetch('data/youtube.json').then(r => r.json()),
-                    fetch('data/new-business.json').then(r => r.json()),
-                    fetch('data/investments.json').then(r => r.json()),
-                    fetch('data/research.json').then(r => r.json())
-                ]);
-                dashboardData = { meta, state, youtube, business, investments, research };
-                renderDashboard();
-            } catch(e) {
-                console.error('Failed to load data:', e);
-            }
-        }
-        function renderDashboard() {
-            document.getElementById('lastUpdated').textContent = new Date(dashboardData.meta.lastUpdated).toLocaleString();
-            document.getElementById('stat-youtube').textContent = dashboardData.youtube.meta.totalVideos;
-            document.getElementById('stat-opps').textContent = dashboardData.business.meta.totalOpportunities;
-            document.getElementById('stat-research').textContent = dashboardData.research.meta.totalNotes;
-            document.getElementById('stat-positions').textContent = dashboardData.investments.meta.totalPositions;
-            const priorities = Object.entries(dashboardData.state.currentPriorities || {})
-                .map(([k,v]) => `<div class="card priority-medium"><strong>${k}:</strong> ${v}</div>`).join('');
-            document.getElementById('priorities').innerHTML = priorities || 'No priorities set';
-            const ytRows = dashboardData.youtube.outlierVideos.map(v => 
-                `<tr><td>${v.title}</td><td>${v.channel}</td><td>${v.views}</td><td>${v.whyItWorks}</td></tr>`).join('');
-            document.querySelector('#youtube-table tbody').innerHTML = ytRows || '<tr><td colspan="4" class="loading">No data yet</td></tr>';
-        }
-        function showTab(tab) {
-            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
-            document.querySelectorAll('.nav button').forEach(el => el.classList.remove('active'));
-            document.getElementById(tab).classList.add('active');
-            event.target.classList.add('active');
-        }
-        loadData();
-    </script>
+
+    <!-- Business Tab -->
+    <div id="tab-business" class="tab-content hidden">
+      <h2 class="text-xl font-semibold mb-4">💼 New Business Opportunities</h2>
+      <div id="business-pipeline" class="grid grid-cols-2 md:grid-cols-5 gap-2 mb-6">
+        <div class="card rounded-lg p-3 text-center"><div class="text-2xl font-bold" id="pipe-new">-</div><div class="text-xs text-gray-400">New</div></div>
+        <div class="card rounded-lg p-3 text-center"><div class="text-2xl font-bold" id="pipe-evaluating">-</div><div class="text-xs text-gray-400">Evaluating</div></div>
+        <div class="card rounded-lg p-3 text-center"><div class="text-2xl font-bold" id="pipe-pursuing">-</div><div class="text-xs text-gray-400">Pursuing</div></div>
+        <div class="card rounded-lg p-3 text-center"><div class="text-2xl font-bold" id="pipe-passed">-</div><div class="text-xs text-gray-400">Passed</div></div>
+        <div class="card rounded-lg p-3 text-center"><div class="text-2xl font-bold" id="pipe-won">-</div><div class="text-xs text-gray-400">Won</div></div>
+      </div>
+      <div id="business-opportunities" class="space-y-3">
+        <div class="skeleton-loader">
+          <div class="skeleton-card"></div>
+          <div class="skeleton-card"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Investments Tab -->
+    <div id="tab-investments" class="tab-content hidden">
+      <h2 class="text-xl font-semibold mb-4">📈 Investments</h2>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-6">
+        <div class="card rounded-lg p-4">
+          <h3 class="font-semibold mb-3">Portfolio</h3>
+          <div id="investments-positions" class="space-y-2">
+            <div class="skeleton-loader">
+              <div class="skeleton-line" style="width: 100%"></div>
+              <div class="skeleton-line" style="width: 90%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="card rounded-lg p-4">
+          <h3 class="font-semibold mb-3">Watchlist</h3>
+          <div id="investments-watchlist" class="space-y-2">
+            <div class="skeleton-loader">
+              <div class="skeleton-line" style="width: 100%"></div>
+              <div class="skeleton-line" style="width: 85%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card rounded-lg p-4">
+        <h3 class="font-semibold mb-3">Market Intelligence</h3>
+        <div id="investments-intelligence" class="space-y-2">
+          <div class="skeleton-loader">
+            <div class="skeleton-line" style="width: 100%"></div>
+            <div class="skeleton-line" style="width: 95%"></div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Portfolio Allocation Chart -->
+      <div class="card rounded-lg p-4 mb-4">
+        <div class="flex justify-between items-center mb-3">
+          <h3 class="font-semibold">Portfolio Allocation</h3>
+          <div id="portfolio-total-value" class="text-lg font-bold text-accent-green">--</div>
+        </div>
+        <div class="chart-container chart-portfolio">
+          <canvas id="portfolio-chart"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tools Tab -->
+    <div id="tab-tools" class="tab-content hidden">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4 gap-3">
+        <h2 class="text-xl font-semibold">🛠️ Tools Registry</h2>
+        <div class="flex gap-2">
+          <input type="text" id="tools-search" placeholder="Search tools..." class="px-3 py-1 bg-dark-700 rounded border border-dark-600 text-sm md:w-64">
+          <select id="tools-category-filter" class="px-3 py-1 bg-dark-700 rounded border border-dark-600 text-sm">
+            <option value="">All Categories</option>
+          </select>
+        </div>
+      </div>
+      <div id="tools-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="skeleton-loader">
+          <div class="skeleton-card"></div>
+          <div class="skeleton-card"></div>
+          <div class="skeleton-card"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Research Tab -->
+    <div id="tab-research" class="tab-content hidden">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4 gap-3">
+        <h2 class="text-xl font-semibold">🔬 Research Notes</h2>
+        <input type="text" id="research-search" placeholder="Search notes..." class="px-3 py-1 bg-dark-700 rounded border border-dark-600 text-sm md:w-64">
+      </div>
+      <div id="research-notes" class="space-y-3">
+        <div class="skeleton-loader">
+          <div class="skeleton-card"></div>
+          <div class="skeleton-card"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Audits Tab -->
+    <div id="tab-audits" class="tab-content hidden">
+      <h2 class="text-xl font-semibold mb-4">📋 Audit Reports</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6" id="audit-stats">
+        <div class="skeleton-loader">
+          <div class="skeleton-card"></div>
+        </div>
+      </div>
+      
+      <!-- Grade History Chart -->
+      <div class="card rounded-lg p-4 mb-4">
+        <h3 class="text-sm font-semibold text-gray-400 mb-2">📈 Grade History by Agent</h3>
+        <div class="chart-container chart-large">
+          <canvas id="grade-chart"></canvas>
+        </div>
+      </div>
+      
+      <!-- Agent Performance Comparison -->
+      <div class="card rounded-lg p-4 mb-4">
+        <h3 class="text-sm font-semibold text-gray-400 mb-2">📊 Agent Performance Comparison</h3>
+        <div class="chart-container chart-agent">
+          <canvas id="agent-performance-chart"></canvas>
+        </div>
+      </div>
+      
+      <div id="audit-list" class="space-y-3">
+        <div class="skeleton-loader">
+          <div class="skeleton-card"></div>
+          <div class="skeleton-card"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Detail Modal -->
+  <div id="detail-modal" class="modal-overlay hidden">
+    <div class="modal-container" onclick="event.stopPropagation()">
+      <div class="modal-header">
+        <h3 id="modal-title" class="modal-title">Details</h3>
+        <button onclick="closeModal()" class="modal-close" aria-label="Close">&times;</button>
+      </div>
+      <div id="modal-content" class="modal-content">
+        <!-- Dynamic content -->
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
 </body>
 </html>

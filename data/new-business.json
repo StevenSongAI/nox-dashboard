@@ -2,30 +2,66 @@
   "opportunities": [
     {
       "id": "opp-001",
-      "name": "AI Agent Infrastructure SaaS",
-      "source": "X.com trend analysis",
-      "score": 85,
-      "market": "Developer tools",
-      "description": "Infrastructure for deploying and managing AI agent teams",
-      "nextAction": "Research competitors: LangChain, AutoGen, CrewAI",
-      "status": "researching",
-      "addedAt": "2026-02-08T12:26:00Z"
+      "name": "AI Agent Dashboard SaaS",
+      "description": "Monetize the dashboard system as a SaaS for other AI agent users",
+      "alignment": "HIGH",
+      "status": "evaluating",
+      "potentialRevenue": "$500-2000/month",
+      "effort": "Medium",
+      "nextStep": "Create landing page and pricing",
+      "createdAt": "2026-02-07T23:00:00Z"
     },
     {
       "id": "opp-002",
-      "name": "YouTube AI Content Pipeline Service",
-      "source": "Personal pain point",
-      "score": 78,
-      "market": "Creator economy",
-      "description": "Automated research + scripting + thumbnail generation for tech YouTubers",
-      "nextAction": "Validate with 3 creators",
-      "status": "ideation",
-      "addedAt": "2026-02-08T12:26:00Z"
+      "name": "YouTube Outlier Research Service",
+      "description": "Offer outlier research as a service to other YouTubers",
+      "alignment": "MEDIUM",
+      "status": "new",
+      "potentialRevenue": "$100-500/month",
+      "effort": "Low",
+      "nextStep": "Validate demand with 3 creators",
+      "createdAt": "2026-02-07T23:00:00Z"
+    },
+    {
+      "id": "opp-003",
+      "name": "Automated Content Brief Generator",
+      "description": "Productize the content brief system into a tool for creators",
+      "alignment": "HIGH",
+      "status": "new",
+      "potentialRevenue": "$50-200/month",
+      "effort": "Medium",
+      "nextStep": "Build simple web interface",
+      "createdAt": "2026-02-07T23:00:00Z"
+    },
+    {
+      "id": "opp-004",
+      "name": "Discord Bot for Community Management",
+      "description": "Build a Discord bot for automated community moderation and engagement",
+      "alignment": "LOW",
+      "status": "passed",
+      "potentialRevenue": "$200/month",
+      "effort": "High",
+      "nextStep": "Archived - low alignment with current focus",
+      "createdAt": "2026-02-06T10:00:00Z"
+    },
+    {
+      "id": "opp-005",
+      "name": "AI Consulting for Small Business",
+      "description": "One-on-one consulting to help small businesses implement AI tools",
+      "alignment": "HIGH",
+      "status": "won",
+      "potentialRevenue": "$2000/month",
+      "effort": "Medium",
+      "nextStep": "Onboard first client",
+      "createdAt": "2026-02-05T14:00:00Z"
     }
   ],
-  "meta": {
-    "lastUpdated": "2026-02-08T12:26:00Z",
-    "totalOpportunities": 2,
-    "pipelineValue": 0
-  }
+  "pipeline": {
+    "new": 2,
+    "evaluating": 1,
+    "pursuing": 0,
+    "passed": 1,
+    "won": 1
+  },
+  "lastUpdated": "2026-02-08T06:20:00Z"
 }

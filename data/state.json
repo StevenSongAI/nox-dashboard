@@ -1,26 +1,69 @@
 {
-  "lastHeartbeat": "2026-02-08T12:46:00Z",
+  "lastHeartbeat": "2026-02-08T12:40:00Z",
   "totalHeartbeats": 2,
-  "lastAction": "Added 3 YouTube outliers (MCP Protocol, OpenAI Operator, AI Dev Teams) + 1 content brief + MCP trend analysis",
+  "lastAction": "Added 30 real outlier videos from ZMDE Gaming and StevenSongIRL channels",
   "currentPriorities": {
-    "youtube": "MCP protocol content - early mover opportunity",
-    "business": "Validate AI Agent Infrastructure SaaS opportunity",
-    "investments": "Watch NVIDIA earnings Feb 26 for AI demand signals"
+    "youtube": "Content brief generation from outlier patterns",
+    "business": "AI Agent Dashboard SaaS, YouTube research service, content brief generator",
+    "investments": "NVDA position strong, watching PLTR and AMD for entry",
+    "tools": "Dashboard and Mission Control on GitHub Pages"
   },
   "dataFreshness": {
-    "youtube": "2026-02-08 - 6 outliers, 2 briefs, 2 trends",
-    "newBusiness": "2026-02-08 - 2 opportunities scored",
-    "investments": "2026-02-08 - 2 positions, 3 watchlist items",
-    "research": "2026-02-08 - 1 note (Claude 3.7)",
-    "audits": "2026-02-08 - pending"
+    "youtube": "2026-02-08 — 35 outliers, 7 briefs",
+    "newBusiness": "2026-02-07 — 3 opportunities",
+    "investments": "2026-02-07 — 2 positions, 2 watchlist",
+    "research": "2026-02-07 — needs population",
+    "audits": "2026-02-08 — 3 audits logged"
   },
-  "recentFeedback": [],
-  "workThatLanded": [],
-  "workThatFlopped": [],
-  "lessonsLearned": [
-    "Dashboard repo needs GitHub Pages setup for browser access",
-    "All data must follow strict JSON schema for dashboard rendering",
-    "MCP protocol is trending - opportunity for early content"
+  "recentFeedback": [
+    {"date": "2026-02-07", "feedback": "Dashboard tabs don't work at all", "implication": "Fix JavaScript errors immediately"},
+    {"date": "2026-02-07", "feedback": "No content loaded in dashboard", "implication": "Populate data files before deployment"}
   ],
-  "nextPriority": "Set up GitHub remote and enable GitHub Pages"
+  "workThatLanded": [
+    {"what": "30 Real YouTube Outliers Added", "why": "Real research data from ZMDE (2.87M subs) and StevenSongIRL (169K subs)", "date": "2026-02-08"},
+    {"what": "Mission Control Dashboard", "why": "Activity feed, calendar, global search - complete visibility", "date": "2026-02-07"},
+    {"what": "Morning Brief Widget", "why": "88% audit grade, actionable summary at a glance", "date": "2026-02-07"}
+  ],
+  "workThatFlopped": [
+    {"what": "Dashboard tab click bug", "why": "JavaScript syntax error prevented tabs from working", "date": "2026-02-07", "fixed": true}
+  ],
+  "lessonsLearned": [
+    {"date": "2026-02-08", "lesson": "ZMDE's '1000 Years' format is a repeatable pattern - time compression drives engagement"},
+    {"date": "2026-02-08", "lesson": "StevenSongIRL's thief-bait format massively outperforms (15-40x subscriber count)"},
+    {"date": "2026-02-08", "lesson": "Price comparison format works best for high-stakes categories (cars > toys)"},
+    {"date": "2026-02-07", "lesson": "Always run syntax check (node --check) before pushing JavaScript"},
+    {"date": "2026-02-07", "lesson": "Dashboard is the default destination - all work feeds into it"},
+    {"date": "2026-02-07", "lesson": "APPEND new data, never replace entire JSON files"}
+  ],
+  "toolUsage": {
+    "activelyUsed": ["Dashboard", "Mission Control"],
+    "neverUsed": [],
+    "unknown": []
+  },
+  "stevensDislikes": [
+    "Broken functionality",
+    "Empty placeholder data",
+    "JavaScript syntax errors"
+  ],
+  "queuedImprovements": [
+    "Populate research.json with real notes",
+    "Add more YouTube outlier videos",
+    "Fix any remaining dashboard UI issues"
+  ],
+  "blockedTasks": [
+    {
+      "id": "blocked-001",
+      "task": "Research competitor channels via viewstats.com",
+      "description": "Use viewstats Pro Tools > Outlier to find high-performing videos from competitor channels",
+      "channels": ["@RogersPets-w5s", "@petsimulatedworld", "@CreatureLab_real", "@NightToons-j8i", "@sacredstuff", "@WildPokédex-uwu"],
+      "targetPatterns": ["I got a fictional pet simulation", "AI generated creatures"],
+      "blocked": false,
+      "reason": "Browser connection to viewstats unstable during login; web search also unavailable (missing API key)",
+      "blockingSince": "2026-02-08T12:50:00Z",
+      "unblockCondition": "Stable browser connection OR user provides outlier data OR web search API configured",
+      "workaround": "Created research-queue.json; awaiting user direction",
+      "priority": "high"
+    }
+  ],
+  "nextPriority": "Research competitor channels via viewstats.com - RogersPets, petsimulatedworld, CreatureLab"
 }
