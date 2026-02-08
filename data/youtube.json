@@ -32,29 +32,7 @@
       "tags": ["AI business", "automation", "income"],
       "url": "https://youtube.com/watch?v=example3",
       "addedAt": "2026-02-08T12:26:00Z"
-    }
-  ],
-  "contentBriefs": [
-    {
-      "id": "brief-001",
-      "title": "AI Agent Teams Content Series",
-      "angle": "Show multi-agent workflows solving real problems",
-      "targetAudience": "Developers and tech leaders",
-      "estimatedViews": "500K-1M",
-      "priority": "high",
-      "createdAt": "2026-02-08T12:26:00Z"
-    }
-  ],
-  "trendAnalysis": [
-    {
-      "id": "trend-001",
-      "trend": "AI Agent Orchestration",
-      "growth": "+340% searches YoY",
-      "opportunity": "Early mover advantage in education content",
-      "action": "Create comprehensive agent framework tutorial",
-      "addedAt": "2026-02-08T12:26:00Z"
-    }
-  ],
+    },
     {
       "id": "yt-004",
       "title": "MCP Servers Explained: The Protocol That Changes Everything",
