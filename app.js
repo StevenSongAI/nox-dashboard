@@ -1727,7 +1727,7 @@ function runOutlierScan() {
 // Render competitor list
 async function renderCompetitors() {
   try {
-    const response = await fetch('data/competitors.json');
+    const response = await fetch('data/competitors.json?v=' + Date.now());
     const data = await response.json();
     const competitors = data.competitors || [];
     
