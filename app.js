@@ -505,7 +505,7 @@ function renderMorningBrief() {
       <div class="empty-state" style="padding: 1.5rem;">
         <div class="empty-state-icon">📭</div>
         <div class="empty-state-title">No New Updates</div>
-        <div class="empty-state-desc" style="margin-bottom: 0;">The agent will populate data on the next heartbeat.</div>
+        <div class="empty-state-desc" style="margin-bottom: 0;">Dashboard is up to date. Check back later for new intelligence.</div>
       </div>
     `;
   } else {
@@ -800,7 +800,7 @@ function renderYouTube() {
   html += `<h3 class="text-lg font-semibold mb-3">🎯 Outlier Videos (${videos.length})</h3>`;
   
   if (videos.length === 0) {
-    html += buildEmptyState('🎬', 'No Outlier Videos Yet', 'The agent will populate this on the next heartbeat with trending videos that match your content strategy.');
+    html += buildEmptyState('🎬', 'No Outlier Videos Yet', 'Outlier videos will appear here when found via viewstats.com research. Use the Outlier Research tab to find high-performing videos.');
   } else {
     html += videos.map(v => `
       <div class="card card-clickable rounded-lg p-4 mb-3" data-niche="${v.niche || ''}" data-video-id="${v.id}" onclick="showVideoModal('${v.id}')">
@@ -1709,11 +1709,14 @@ function moveStatus(oppId, newStatus) {
 }
 
 function showEmptyStates() {
+  // Only show empty states if data has actually failed to load
+  // Don't override already rendered content
   document.querySelectorAll('.tab-content').forEach(tab => {
     const containers = tab.querySelectorAll('[id$="-outliers"], [id$="-opportunities"], [id$="-positions"], [id$="-grid"], [id$="-notes"], [id$="-list"]');
     containers.forEach(c => {
-      if (c.children.length === 0 || c.textContent.includes('Loading')) {
-        c.innerHTML = buildEmptyState('', 'No Data', 'The agent will populate this on the next heartbeat.');
+      // Only add empty state if container is truly empty and has no skeleton loader
+      if (c.children.length === 0 && !c.innerHTML.includes('skeleton')) {
+        c.innerHTML = buildEmptyState('', 'Loading...', 'Data is being fetched from GitHub. If this persists, check your connection or refresh.');
       }
     });
   });
