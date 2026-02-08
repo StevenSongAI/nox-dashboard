@@ -732,13 +732,14 @@ function renderYouTube() {
 
   // Content Briefs Section (D5 FIX)
   const contentBriefs = appData.youtube.contentBriefs || [];
+  contentBriefsData = contentBriefs; // Store for modal access
   if (contentBriefs.length > 0) {
     html += `
       <div class="mb-6">
         <h3 class="text-lg font-semibold mb-3">📝 Content Briefs (${contentBriefs.length})</h3>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-          ${contentBriefs.map(brief => `
-            <div class="card rounded-lg p-4">
+          ${contentBriefs.map((brief, idx) => `
+            <div class="card rounded-lg p-4 cursor-pointer hover:bg-dark-800" onclick="showBriefModal(${idx})">
               <div class="flex items-center gap-2 mb-2">
                 <span class="text-lg">${brief.niche || '🎬'}</span>
                 <span class="text-xs px-2 py-0.5 bg-accent-blue/20 text-accent-blue rounded">${brief.status || 'draft'}</span>
@@ -830,6 +831,40 @@ function showVideoModal(videoId) {
   if (video) {
     openModal(video.title, buildYouTubeModalContent(video));
   }
+}
+
+// Content brief data for modal access
+let contentBriefsData = [];
+
+function showBriefModal(idx) {
+  const brief = contentBriefsData[idx];
+  if (brief) {
+    openModal(brief.title, buildBriefModalContent(brief));
+  }
+}
+
+function buildBriefModalContent(brief) {
+  const fields = [
+    { label: 'Title', value: brief.title },
+    { label: 'Niche', value: brief.niche || 'General' },
+    { label: 'Status', value: brief.status || 'draft' },
+    { label: 'Angle', value: brief.angle || brief.summary || 'No angle specified' },
+    { label: 'Hook', value: brief.hook || 'No hook specified' },
+    { label: 'Target Length', value: brief.targetLength || 'Not specified' },
+    { label: 'Difficulty', value: brief.difficulty || 'Not specified' },
+    { label: 'Urgency', value: brief.urgency || 'Not specified' },
+    { label: 'Created', value: formatDate(brief.createdAt) }
+  ];
+  
+  if (brief.outline && brief.outline.length > 0) {
+    fields.push({ 
+      label: 'Outline', 
+      value: '<ol class="list-decimal ml-4 mt-1">' + brief.outline.map(item => `<li class="mb-1">${item}</li>`).join('') + '</ol>',
+      raw: true 
+    });
+  }
+  
+  return buildModalFields(fields);
 }
 
 // YouTube trend bar chart showing outlier scores
