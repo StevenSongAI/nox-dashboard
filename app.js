@@ -85,82 +85,110 @@ document.addEventListener('DOMContentLoaded', async () => {
   
   console.log('[Nox Dashboard] Setting up filters...');
   setupFilters();
+  
+  // D5 FIX: Setup global search
+  console.log('[Nox Dashboard] Setting up global search...');
+  setupGlobalSearch();
+  
   console.log('[Nox Dashboard] Initialization complete!');
   
   // Setup modal click-outside-to-close
   setupModalHandlers();
 });
 
-// Load all JSON data
+// GitHub raw content base URL for fallback
+const GITHUB_RAW_BASE = 'https://raw.githubusercontent.com/stevensongai/nox-dashboard/main';
+
+// Load all JSON data with fallback to GitHub raw
 async function loadAllData() {
   console.log('[Nox Dashboard] Starting data load...');
-  try {
-    const cacheBuster = '?v=' + Date.now();
-    const dataFiles = [
-      { name: 'youtube', path: 'data/youtube.json' + cacheBuster },
-      { name: 'new-business', path: 'data/new-business.json' + cacheBuster },
-      { name: 'investments', path: 'data/investments.json' + cacheBuster },
-      { name: 'tools', path: 'data/tools.json' + cacheBuster },
-      { name: 'research', path: 'data/research.json' + cacheBuster },
-      { name: 'audits', path: 'data/audits.json' + cacheBuster },
-      { name: 'meta', path: 'data/meta.json' + cacheBuster }
-    ];
+  const cacheBuster = '?v=' + Date.now();
+  
+  // Try local paths first, fallback to GitHub raw on failure
+  const dataFiles = [
+    { name: 'youtube', localPath: 'data/youtube.json', fallbackPath: `${GITHUB_RAW_BASE}/data/youtube.json` },
+    { name: 'new-business', localPath: 'data/new-business.json', fallbackPath: `${GITHUB_RAW_BASE}/data/new-business.json` },
+    { name: 'investments', localPath: 'data/investments.json', fallbackPath: `${GITHUB_RAW_BASE}/data/investments.json` },
+    { name: 'tools', localPath: 'data/tools.json', fallbackPath: `${GITHUB_RAW_BASE}/data/tools.json` },
+    { name: 'research', localPath: 'data/research.json', fallbackPath: `${GITHUB_RAW_BASE}/data/research.json` },
+    { name: 'audits', localPath: 'data/audits.json', fallbackPath: `${GITHUB_RAW_BASE}/data/audits.json` },
+    { name: 'meta', localPath: 'data/meta.json', fallbackPath: `${GITHUB_RAW_BASE}/data/meta.json` }
+  ];
 
-    const results = await Promise.allSettled(
-      dataFiles.map(df => {
-        console.log(`[Nox Dashboard] Fetching ${df.path}...`);
-        return fetch(df.path);
-      })
-    );
-
-    results.forEach((result, index) => {
-      const fileName = dataFiles[index].name;
-      const filePath = dataFiles[index].path;
-      if (result.status === 'fulfilled') {
-        console.log(`[Nox Dashboard] ${filePath}: ${result.value.ok ? 'OK' : 'FAILED'} (${result.value.status})`);
-      } else {
-        console.error(`[Nox Dashboard] ${filePath}: ERROR -`, result.reason);
+  // Helper to fetch with fallback
+  async function fetchWithFallback(df) {
+    try {
+      // Try local first with cache buster
+      const localUrl = df.localPath + cacheBuster;
+      console.log(`[Nox Dashboard] Fetching ${localUrl}...`);
+      let response = await fetch(localUrl);
+      
+      if (!response.ok) {
+        console.warn(`[Nox Dashboard] Local fetch failed for ${df.name}, trying GitHub raw...`);
+        // Fallback to GitHub raw
+        const fallbackUrl = df.fallbackPath + cacheBuster;
+        response = await fetch(fallbackUrl);
       }
-    });
-
-    const [youtubeRes, businessRes, invRes, toolsRes, researchRes, auditsRes, metaRes] = results.map(r => r.status === 'fulfilled' ? r.value : null);
-
-    if (youtubeRes?.ok) {
-      appData.youtube = await youtubeRes.json();
-      console.log('[Nox Dashboard] YouTube data loaded:', appData.youtube.outlierVideos?.length || 0, 'videos');
+      
+      if (!response.ok) {
+        console.error(`[Nox Dashboard] Both local and GitHub fetch failed for ${df.name}: ${response.status}`);
+      }
+      
+      return { name: df.name, response };
+    } catch (err) {
+      console.error(`[Nox Dashboard] Fetch error for ${df.name}:`, err);
+      return { name: df.name, response: null, error: err };
     }
-    if (businessRes?.ok) {
-      appData.newBusiness = await businessRes.json();
-      console.log('[Nox Dashboard] Business data loaded:', appData.newBusiness.opportunities?.length || 0, 'opportunities');
-    }
-    if (invRes?.ok) {
-      appData.investments = await invRes.json();
-      console.log('[Nox Dashboard] Investments data loaded:', appData.investments.positions?.length || 0, 'positions');
-    }
-    if (toolsRes?.ok) {
-      const toolsData = await toolsRes.json();
-      appData.tools = Array.isArray(toolsData) ? { tools: toolsData, categories: [], lastUpdated: '' } : toolsData;
-      console.log('[Nox Dashboard] Tools data loaded:', appData.tools.tools?.length || 0, 'tools');
-    }
-    if (researchRes?.ok) {
-      appData.research = await researchRes.json();
-      console.log('[Nox Dashboard] Research data loaded:', appData.research.notes?.length || 0, 'notes');
-    }
-    if (auditsRes?.ok) {
-      appData.audits = await auditsRes.json();
-      console.log('[Nox Dashboard] Audits data loaded:', appData.audits.audits?.length || 0, 'audits');
-    }
-    if (metaRes?.ok) {
-      appData.meta = await metaRes.json();
-      console.log('[Nox Dashboard] Meta data loaded');
-    }
-
-    console.log('[Nox Dashboard] All data loaded successfully');
-    updateAgentStatus();
-  } catch (err) {
-    console.error('[Nox Dashboard] Failed to load data:', err);
-    showEmptyStates();
   }
+
+  // Fetch all data files
+  const fetchResults = await Promise.all(dataFiles.map(fetchWithFallback));
+
+  // Process results
+  for (const result of fetchResults) {
+    if (result.response?.ok) {
+      try {
+        const data = await result.response.json();
+        switch (result.name) {
+          case 'youtube':
+            appData.youtube = data;
+            console.log('[Nox Dashboard] YouTube data loaded:', appData.youtube.outlierVideos?.length || 0, 'videos');
+            break;
+          case 'new-business':
+            appData.newBusiness = data;
+            console.log('[Nox Dashboard] Business data loaded:', appData.newBusiness.opportunities?.length || 0, 'opportunities');
+            break;
+          case 'investments':
+            appData.investments = data;
+            console.log('[Nox Dashboard] Investments data loaded:', appData.investments.positions?.length || 0, 'positions');
+            break;
+          case 'tools':
+            appData.tools = Array.isArray(data) ? { tools: data, categories: [], lastUpdated: '' } : data;
+            console.log('[Nox Dashboard] Tools data loaded:', appData.tools.tools?.length || 0, 'tools');
+            break;
+          case 'research':
+            appData.research = data;
+            console.log('[Nox Dashboard] Research data loaded:', appData.research.notes?.length || 0, 'notes');
+            break;
+          case 'audits':
+            appData.audits = data;
+            console.log('[Nox Dashboard] Audits data loaded:', appData.audits.audits?.length || 0, 'audits');
+            break;
+          case 'meta':
+            appData.meta = data;
+            console.log('[Nox Dashboard] Meta data loaded');
+            break;
+        }
+      } catch (parseErr) {
+        console.error(`[Nox Dashboard] Failed to parse ${result.name} JSON:`, parseErr);
+      }
+    } else {
+      console.warn(`[Nox Dashboard] Using empty/default data for ${result.name}`);
+    }
+  }
+
+  console.log('[Nox Dashboard] Data loading complete');
+  updateAgentStatus();
 }
 
 function updateAgentStatus() {
@@ -1610,7 +1638,7 @@ function buildEmptyState(icon, title, description) {
   `;
 }
 
-// D4 FIX: YouTube search - search against ALL video properties
+// D3 & D4 FIX: YouTube search and filter - fixed niche matching
 function setupFilters() {
   // Combined filter state for YouTube
   let youtubeFilterState = {
@@ -1621,15 +1649,25 @@ function setupFilters() {
   function applyYouTubeFilters() {
     const cards = document.querySelectorAll('#youtube-outliers > div.card');
     const searchTerm = youtubeFilterState.search.toLowerCase().trim();
+    const selectedNiche = youtubeFilterState.niche.trim();
+    
+    let visibleCount = 0;
     
     cards.forEach(el => {
       const videoId = el.dataset.videoId;
       const video = youtubeVideoData.find(v => v.id === videoId);
+      const cardNiche = (el.dataset.niche || '').trim();
       
-      // Niche filter
-      const nicheMatch = !youtubeFilterState.niche || el.dataset.niche === youtubeFilterState.niche;
+      // D3 FIX: Niche filter - "All Niches" (empty) shows all, otherwise check if card matches selected niche
+      // Use case-insensitive partial matching since data might have different niche values
+      let nicheMatch = true;
+      if (selectedNiche) {
+        // Try exact match first, then partial match
+        nicheMatch = cardNiche.toLowerCase() === selectedNiche.toLowerCase() ||
+                     cardNiche.toLowerCase().includes(selectedNiche.toLowerCase().replace(/[🎮💰⚡🎬]\s*/, ''));
+      }
       
-      // D4 FIX: Search against all video properties
+      // D4 FIX: Search against all video properties (case-insensitive)
       let searchMatch = true;
       if (searchTerm && video) {
         const searchableText = [
@@ -1644,19 +1682,40 @@ function setupFilters() {
         searchMatch = searchableText.includes(searchTerm);
       }
       
-      el.style.display = (nicheMatch && searchMatch) ? 'block' : 'none';
+      const shouldShow = nicheMatch && searchMatch;
+      el.style.display = shouldShow ? 'block' : 'none';
+      if (shouldShow) visibleCount++;
     });
+    
+    // Show "No results" message if all cards are hidden
+    const container = document.getElementById('youtube-outliers');
+    const existingNoResults = container?.querySelector('.no-results-message');
+    
+    if (visibleCount === 0 && cards.length > 0) {
+      if (!existingNoResults) {
+        const noResultsDiv = document.createElement('div');
+        noResultsDiv.className = 'no-results-message empty-state mt-4';
+        noResultsDiv.innerHTML = `
+          <div class="empty-state-icon">🔍</div>
+          <div class="empty-state-title">No matching videos</div>
+          <div class="empty-state-desc">Try adjusting your filters or search terms</div>
+        `;
+        container?.appendChild(noResultsDiv);
+      }
+    } else if (existingNoResults) {
+      existingNoResults.remove();
+    }
   }
 
-  // YouTube niche filter
+  // YouTube niche filter - D3 FIX
   document.getElementById('youtube-niche-filter')?.addEventListener('change', (e) => {
     youtubeFilterState.niche = e.target.value;
     applyYouTubeFilters();
   });
 
-  // YouTube search - D4 FIX: search all properties
+  // YouTube search - D4 FIX
   document.getElementById('youtube-search')?.addEventListener('input', (e) => {
-    youtubeFilterState.search = e.target.value.toLowerCase();
+    youtubeFilterState.search = e.target.value;
     applyYouTubeFilters();
   });
 
@@ -1701,6 +1760,161 @@ function setupFilters() {
     toolsFilterState.search = e.target.value.toLowerCase();
     applyToolsFilters();
   });
+}
+
+// ==================== D5 FIX: GLOBAL SEARCH ====================
+
+function setupGlobalSearch() {
+  const globalSearch = document.getElementById('global-search');
+  const globalSearchMobile = document.getElementById('global-search-mobile');
+  
+  const handleSearch = (query) => {
+    if (!query || query.trim().length < 2) {
+      clearGlobalSearch();
+      return;
+    }
+    performGlobalSearch(query.trim().toLowerCase());
+  };
+  
+  globalSearch?.addEventListener('input', (e) => handleSearch(e.target.value));
+  globalSearchMobile?.addEventListener('input', (e) => handleSearch(e.target.value));
+}
+
+function performGlobalSearch(query) {
+  const results = [];
+  const maxResults = 20;
+  
+  // Search YouTube videos
+  (appData.youtube?.outlierVideos || []).forEach(v => {
+    const text = [v.title, v.channel, v.whyOutlier, v.contentAngle, v.niche].join(' ').toLowerCase();
+    if (text.includes(query)) {
+      results.push({ type: 'youtube', item: v, matchText: v.title });
+    }
+  });
+  
+  // Search Business opportunities
+  (appData.newBusiness?.opportunities || []).forEach(o => {
+    const text = [o.name || o.title, o.description, o.nextStep].join(' ').toLowerCase();
+    if (text.includes(query)) {
+      results.push({ type: 'business', item: o, matchText: o.name || o.title });
+    }
+  });
+  
+  // Search Investments
+  (appData.investments?.positions || []).forEach(p => {
+    const text = [p.ticker, p.symbol, p.name].filter(Boolean).join(' ').toLowerCase();
+    if (text.includes(query)) {
+      results.push({ type: 'investments', item: p, matchText: `${p.ticker || p.symbol} - ${p.name}` });
+    }
+  });
+  
+  (appData.investments?.watchlist || []).forEach(w => {
+    const text = [w.ticker, w.symbol, w.name, w.thesis, w.notes].filter(Boolean).join(' ').toLowerCase();
+    if (text.includes(query)) {
+      results.push({ type: 'investments', item: w, matchText: `${w.ticker || w.symbol} - Watchlist` });
+    }
+  });
+  
+  // Search Tools
+  (appData.tools?.tools || []).forEach(t => {
+    const text = [t.name, t.description, t.category].join(' ').toLowerCase();
+    if (text.includes(query)) {
+      results.push({ type: 'tools', item: t, matchText: t.name });
+    }
+  });
+  
+  // Search Research
+  (appData.research?.notes || []).forEach(n => {
+    const text = [n.title, n.summary, n.content, n.category, ...(n.tags || [])].filter(Boolean).join(' ').toLowerCase();
+    if (text.includes(query)) {
+      results.push({ type: 'research', item: n, matchText: n.title });
+    }
+  });
+  
+  // Search Audits
+  (appData.audits?.audits || []).forEach(a => {
+    const text = [a.project, a.findings, a.summary, a.agent].filter(Boolean).join(' ').toLowerCase();
+    if (text.includes(query)) {
+      results.push({ type: 'audits', item: a, matchText: a.project });
+    }
+  });
+  
+  displayGlobalSearchResults(results.slice(0, maxResults), query);
+}
+
+function displayGlobalSearchResults(results, query) {
+  const resultsContainer = document.getElementById('global-search-results');
+  const resultsContent = document.getElementById('global-search-results-content');
+  
+  if (!resultsContainer || !resultsContent) return;
+  
+  if (results.length === 0) {
+    resultsContent.innerHTML = `
+      <div class="empty-state py-8">
+        <div class="empty-state-icon">🔍</div>
+        <div class="empty-state-title">No results found</div>
+        <div class="empty-state-desc">Try different search terms</div>
+      </div>
+    `;
+  } else {
+    const typeIcons = {
+      youtube: '🎬',
+      business: '💼',
+      investments: '📈',
+      tools: '🛠️',
+      research: '🔬',
+      audits: '📋'
+    };
+    
+    const typeLabels = {
+      youtube: 'YouTube',
+      business: 'Business',
+      investments: 'Investments',
+      tools: 'Tools',
+      research: 'Research',
+      audits: 'Audits'
+    };
+    
+    resultsContent.innerHTML = results.map(r => `
+      <div class="card card-clickable rounded-lg p-3" onclick="handleGlobalSearchClick('${r.type}', '${r.item.id || ''}')">
+        <div class="flex items-center gap-2">
+          <span class="text-lg">${typeIcons[r.type]}</span>
+          <span class="text-xs px-2 py-0.5 bg-dark-700 rounded text-gray-400">${typeLabels[r.type]}</span>
+        </div>
+        <div class="mt-1 font-semibold">${highlightMatch(r.matchText, query)}</div>
+      </div>
+    `).join('');
+  }
+  
+  resultsContainer.classList.remove('hidden');
+}
+
+function highlightMatch(text, query) {
+  if (!text) return '';
+  const regex = new RegExp(`(${escapeRegex(query)})`, 'gi');
+  return text.replace(regex, '<mark class="bg-accent-yellow text-black px-1 rounded">$1</mark>');
+}
+
+function escapeRegex(string) {
+  return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+function handleGlobalSearchClick(type, id) {
+  // Switch to the appropriate tab
+  showTab(type === 'youtube' ? 'youtube' : type);
+  
+  // Clear search results
+  clearGlobalSearch();
+}
+
+function clearGlobalSearch() {
+  const globalSearch = document.getElementById('global-search');
+  const globalSearchMobile = document.getElementById('global-search-mobile');
+  const resultsContainer = document.getElementById('global-search-results');
+  
+  if (globalSearch) globalSearch.value = '';
+  if (globalSearchMobile) globalSearchMobile.value = '';
+  if (resultsContainer) resultsContainer.classList.add('hidden');
 }
 
 function moveStatus(oppId, newStatus) {
