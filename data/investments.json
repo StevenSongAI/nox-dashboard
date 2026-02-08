@@ -30,6 +30,7 @@
       "sector": "EV/Auto",
       "ticker": "TSLA",
       "name": "Tesla",
+      "targetEntry": 220.00,
       "catalyst": "Robotaxi reveal, FSD progress",
       "source": "X.com / Tech news",
       "whyWatching": "Autonomous driving breakthrough could be major catalyst"
@@ -39,6 +40,7 @@
       "sector": "Semiconductors",
       "ticker": "AMD",
       "name": "AMD",
+      "targetEntry": 150.00,
       "catalyst": "Data center share growth",
       "source": "X.com / Industry",
       "whyWatching": "NVDA alternative play, MI300 chip demand"
