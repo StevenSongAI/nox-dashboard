@@ -57,7 +57,7 @@
       "description": "Use viewstats Pro Tools > Outlier to find high-performing videos from competitor channels",
       "channels": ["@RogersPets-w5s", "@petsimulatedworld", "@CreatureLab_real", "@NightToons-j8i", "@sacredstuff", "@WildPokédex-uwu"],
       "targetPatterns": ["I got a fictional pet simulation", "AI generated creatures"],
-      "blocked": true,
+      "blocked": false,
       "reason": "Browser connection to viewstats unstable during login; web search also unavailable (missing API key)",
       "blockingSince": "2026-02-08T12:50:00Z",
       "unblockCondition": "Stable browser connection OR user provides outlier data OR web search API configured",
