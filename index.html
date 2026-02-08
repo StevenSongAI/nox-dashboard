@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nox Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            dark: { 900: '#0f0f1a', 800: '#1a1a2e', 700: '#252540' },
+            accent: { blue: '#3B82F6', green: '#10B981', purple: '#8B5CF6', yellow: '#F59E0B', red: '#EF4444' }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { background: #0f0f1a; color: #e2e8f0; }
+    .tab-active { border-bottom: 2px solid #3B82F6; color: #3B82F6; }
+    .card { background: #1a1a2e; border: 1px solid #252540; }
+    .grade-high { background: #10B981; }
+    .grade-med { background: #F59E0B; }
+    .grade-low { background: #EF4444; }
+  </style>
+</head>
+<body class="min-h-screen">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-dark-900 border-b border-dark-700">
+    <div class="max-w-7xl mx-auto px-4 py-3">
+      <div class="flex items-center justify-between">
+        <h1 class="text-xl font-bold">⚡ Nox Dashboard</h1>
+        <div id="agent-status" class="text-sm text-gray-400">Loading...</div>
+      </div>
+    </div>
+    <!-- Tab Navigation -->
+    <nav class="max-w-7xl mx-auto px-4">
+      <div class="flex space-x-1 overflow-x-auto">
+        <button onclick="showTab('dashboard')" id="tab-btn-dashboard" class="tab-btn px-4 py-2 text-sm font-medium tab-active">🏠 Dashboard</button>
+        <button onclick="showTab('youtube')" id="tab-btn-youtube" class="tab-btn px-4 py-2 text-sm font-medium">🎬 YouTube</button>
+        <button onclick="showTab('business')" id="tab-btn-business" class="tab-btn px-4 py-2 text-sm font-medium">💼 New Business</button>
+        <button onclick="showTab('investments')" id="tab-btn-investments" class="tab-btn px-4 py-2 text-sm font-medium">📈 Investments</button>
+        <button onclick="showTab('tools')" id="tab-btn-tools" class="tab-btn px-4 py-2 text-sm font-medium">🛠️ Tools</button>
+        <button onclick="showTab('research')" id="tab-btn-research" class="tab-btn px-4 py-2 text-sm font-medium">🔬 Research</button>
+        <button onclick="showTab('audits')" id="tab-btn-audits" class="tab-btn px-4 py-2 text-sm font-medium">📋 Audits</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-7xl mx-auto px-4 py-6">
+    <!-- Dashboard Tab -->
+    <div id="tab-dashboard" class="tab-content">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+        <div class="card rounded-lg p-4">
+          <div class="text-gray-400 text-sm">YouTube Outliers</div>
+          <div id="stat-youtube-count" class="text-2xl font-bold mt-1">-</div>
+          <div id="stat-youtube-briefs" class="text-sm text-gray-500">-</div>
+        </div>
+        <div class="card rounded-lg p-4">
+          <div class="text-gray-400 text-sm">Business Opportunities</div>
+          <div id="stat-business-count" class="text-2xl font-bold mt-1">-</div>
+          <div id="stat-business-high" class="text-sm text-gray-500">-</div>
+        </div>
+        <div class="card rounded-lg p-4">
+          <div class="text-gray-400 text-sm">Investments</div>
+          <div id="stat-investments-count" class="text-2xl font-bold mt-1">-</div>
+          <div id="stat-investments-watchlist" class="text-sm text-gray-500">-</div>
+        </div>
+        <div class="card rounded-lg p-4">
+          <div class="text-gray-400 text-sm">Avg Audit Grade</div>
+          <div id="stat-avg-grade" class="text-2xl font-bold mt-1">-</div>
+          <div class="text-sm text-gray-500">Last 30 days</div>
+        </div>
+      </div>
+      <div class="card rounded-lg p-4">
+        <h2 class="text-lg font-semibold mb-3">Quick Links</h2>
+        <div class="flex flex-wrap gap-2">
+          <button onclick="showTab('youtube')" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">🎬 YouTube Strategy</button>
+          <button onclick="showTab('business')" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">💼 Opportunities</button>
+          <button onclick="showTab('investments')" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">📈 Portfolio</button>
+          <button onclick="showTab('tools')" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">🛠️ Launch Tools</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- YouTube Tab -->
+    <div id="tab-youtube" class="tab-content hidden">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4 gap-3">
+        <h2 class="text-xl font-semibold">🎬 YouTube Strategy</h2>
+        <div class="flex gap-2">
+          <input type="text" id="youtube-search" placeholder="Search videos..." class="px-3 py-1 bg-dark-700 rounded border border-dark-600 text-sm">
+          <select id="youtube-niche-filter" class="px-3 py-1 bg-dark-700 rounded border border-dark-600 text-sm">
+            <option value="">All Niches</option>
+            <option value="AI/Tech">AI/Tech</option>
+            <option value="Gaming">Gaming</option>
+            <option value="Business">Business</option>
+          </select>
+        </div>
+      </div>
+      <div id="youtube-outliers" class="space-y-3">
+        <div class="card rounded-lg p-4 text-center text-gray-500">Loading...</div>
+      </div>
+    </div>
+
+    <!-- Business Tab -->
+    <div id="tab-business" class="tab-content hidden">
+      <h2 class="text-xl font-semibold mb-4">💼 New Business Opportunities</h2>
+      <div id="business-pipeline" class="grid grid-cols-2 md:grid-cols-5 gap-2 mb-6">
+        <div class="card rounded-lg p-3 text-center"><div class="text-2xl font-bold" id="pipe-new">-</div><div class="text-xs text-gray-400">New</div></div>
+        <div class="card rounded-lg p-3 text-center"><div class="text-2xl font-bold" id="pipe-evaluating">-</div><div class="text-xs text-gray-400">Evaluating</div></div>
+        <div class="card rounded-lg p-3 text-center"><div class="text-2xl font-bold" id="pipe-pursuing">-</div><div class="text-xs text-gray-400">Pursuing</div></div>
+        <div class="card rounded-lg p-3 text-center"><div class="text-2xl font-bold" id="pipe-passed">-</div><div class="text-xs text-gray-400">Passed</div></div>
+        <div class="card rounded-lg p-3 text-center"><div class="text-2xl font-bold" id="pipe-won">-</div><div class="text-xs text-gray-400">Won</div></div>
+      </div>
+      <div id="business-opportunities" class="space-y-3">
+        <div class="card rounded-lg p-4 text-center text-gray-500">Loading...</div>
+      </div>
+    </div>
+
+    <!-- Investments Tab -->
+    <div id="tab-investments" class="tab-content hidden">
+      <h2 class="text-xl font-semibold mb-4">📈 Investments</h2>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-6">
+        <div class="card rounded-lg p-4">
+          <h3 class="font-semibold mb-3">Portfolio</h3>
+          <div id="investments-positions" class="space-y-2">
+            <div class="text-gray-500 text-center">Loading...</div>
+          </div>
+        </div>
+        <div class="card rounded-lg p-4">
+          <h3 class="font-semibold mb-3">Watchlist</h3>
+          <div id="investments-watchlist" class="space-y-2">
+            <div class="text-gray-500 text-center">Loading...</div>
+          </div>
+        </div>
+      </div>
+      <div class="card rounded-lg p-4">
+        <h3 class="font-semibold mb-3">Market Intelligence</h3>
+        <div id="investments-intelligence" class="space-y-2">
+          <div class="text-gray-500 text-center">Loading...</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tools Tab -->
+    <div id="tab-tools" class="tab-content hidden">
+      <h2 class="text-xl font-semibold mb-4">🛠️ Tools Registry</h2>
+      <div id="tools-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="card rounded-lg p-4 text-center text-gray-500">Loading...</div>
+      </div>
+    </div>
+
+    <!-- Research Tab -->
+    <div id="tab-research" class="tab-content hidden">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4 gap-3">
+        <h2 class="text-xl font-semibold">🔬 Research Notes</h2>
+        <input type="text" id="research-search" placeholder="Search notes..." class="px-3 py-1 bg-dark-700 rounded border border-dark-600 text-sm md:w-64">
+      </div>
+      <div id="research-notes" class="space-y-3">
+        <div class="card rounded-lg p-4 text-center text-gray-500">Loading...</div>
+      </div>
+    </div>
+
+    <!-- Audits Tab -->
+    <div id="tab-audits" class="tab-content hidden">
+      <h2 class="text-xl font-semibold mb-4">📋 Audit Reports</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6" id="audit-stats">
+        <div class="card rounded-lg p-4 text-center"><div class="text-gray-500">Loading...</div></div>
+      </div>
+      <div class="card rounded-lg p-4 mb-4">
+        <canvas id="grade-chart" height="100"></canvas>
+      </div>
+      <div id="audit-list" class="space-y-3">
+        <div class="card rounded-lg p-4 text-center text-gray-500">Loading...</div>
+      </div>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
