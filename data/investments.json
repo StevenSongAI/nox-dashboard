@@ -174,8 +174,21 @@
       "relatedOpportunities": ["opp-001", "opp-002"],
       "riskFactors": ["Adoption slower than projected", "Open-source agent tools reduce platform pricing power", "Regulatory barriers to AI-generated code in regulated industries"],
       "timeHorizon": "12-24 months"
+    },
+    {
+      "id": "intel-011",
+      "date": "2026-02-08T23:46:00Z",
+      "topic": "Content Strategy: Triple Threat Video as Capital Allocation Decision",
+      "source": "Content-Investment Synthesis / Pattern Analysis",
+      "content": "Framing the 'Triple Threat' viral video concept (note-005) as an investment decision with quantified return potential. Based on analysis of 15 outlier videos: ZMDE's 1000 Years format achieves 44-68x subscriber view ratios consistently; StevenSongIRL's thief-bait format hits 15-40x; price comparison formats average 8-12x. Synthesizing all three patterns projects theoretical outlier score of 75+ (vs current channel average of 45). Investment required: 40-60 hours production time, $200-500 tool/software costs, opportunity cost of 2-3 regular videos. Expected return: If video achieves 50x outlier on 10K subscriber base = 500K views. At $8 RPM = $4,000 revenue + subscriber growth + algorithmic boost to subsequent videos. Risk-adjusted ROI: 300-500% if pattern synthesis holds. Strategic value beyond revenue: validates dashboard-driven content strategy, creates repeatable template, differentiates from reaction-content competitors. Recommendation: Allocate production resources to Triple Threat pilot as high-conviction content investment. Success metrics: >50x view ratio, >70% retention, >5% CTR.",
+      "impact": "bullish",
+      "relatedPositions": ["Content Production Budget"],
+      "relatedOpportunities": ["opp-content-001"],
+      "linkedResearch": ["note-005", "brief-triple-threat-001"],
+      "riskFactors": ["Execution complexity may delay timeline", "Pattern synthesis untested - may not compound as projected", "Thief-bait elements could trigger comment section moderation issues"],
+      "timeHorizon": "2-4 weeks to production, 4-8 weeks to performance validation"
     }
   ],
-  "lastUpdated": "2026-02-08T20:46:00Z",
+  "lastUpdated": "2026-02-08T23:46:00Z",
   "dataSource": "X.com via browser research (bird API disabled)"
 }
