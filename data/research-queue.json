@@ -1,0 +1,28 @@
+{
+  "pendingResearch": [
+    {
+      "channel": "@RogersPets-w5s",
+      "priority": 1,
+      "task": "Open viewstats.com > Pro Tools > Outlier",
+      "target": "Find 'I got a fictional pet' style videos",
+      "outliersNeeded": 5
+    },
+    {
+      "channel": "@petsimulatedworld", 
+      "priority": 2,
+      "task": "Open viewstats.com > Pro Tools > Outlier",
+      "target": "Find pet simulation content",
+      "outliersNeeded": 5
+    },
+    {
+      "channel": "@CreatureLab_real",
+      "priority": 3,
+      "task": "Open viewstats.com > Pro Tools > Outlier", 
+      "target": "Find AI creature generation videos",
+      "outliersNeeded": 5
+    }
+  ],
+  "instructions": "Use browser to navigate to viewstats.com. Login with clawd profile. Use Pro Tools > Outlier. For each channel, identify videos with outlier score >2.0x. Extract: title, views, outlier score, why it performed well. Add to youtube.json outlierVideos array.",
+  "createdAt": "2026-02-08T12:30:00Z",
+  "status": "pending_browser_research"
+}
