@@ -1,0 +1,21 @@
+{
+  "timestamp": "2026-02-08T04:47:23.596Z",
+  "alerts": [
+    {
+      "type": "OPPORTUNITY",
+      "severity": "HIGH",
+      "message": "3 very-high momentum topic(s) detected",
+      "items": [
+        "AI Coding Agents",
+        "AI Game Development Tools",
+        "SaaS Micro-tools Trend"
+      ]
+    },
+    {
+      "type": "CONTENT_IDEA",
+      "severity": "MEDIUM",
+      "message": "AI Coding Agents trending - content opportunity",
+      "action": "Create video about AI coding tools"
+    }
+  ]
+}

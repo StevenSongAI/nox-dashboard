@@ -87,9 +87,102 @@ function renderDashboard() {
 
   const avgGrade = calculateAvgGrade(audits.audits);
   document.getElementById('stat-avg-grade').textContent = avgGrade ? `${avgGrade}%` : 'N/A';
+
+  renderMorningBrief();
 }
 
-function calculateAvgGrade(audits) {
+function renderMorningBrief() {
+  const today = new Date().toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
+  document.getElementById('brief-date').textContent = today;
+
+  const briefContainer = document.getElementById('morning-brief-content');
+  
+  // Generate brief items based on data
+  const items = [];
+  
+  // Check for high priority opportunities
+  const highOpps = appData.newBusiness.opportunities?.filter(o => o.alignment === 'HIGH' && o.status !== 'passed') || [];
+  if (highOpps.length > 0) {
+    items.push({
+      icon: '💼',
+      text: `${highOpps.length} high-priority business opportunities awaiting review`,
+      link: () => showTab('business'),
+      color: 'text-accent-green'
+    });
+  }
+  
+  // Check for new outlier videos
+  const recentOutliers = appData.youtube.outlierVideos?.filter(v => {
+    if (!v.addedAt) return false;
+    const daysSince = (Date.now() - new Date(v.addedAt).getTime()) / (1000 * 60 * 60 * 24);
+    return daysSince < 2;
+  }) || [];
+  if (recentOutliers.length > 0) {
+    items.push({
+      icon: '🎬',
+      text: `${recentOutliers.length} new YouTube outlier videos in the last 24 hours`,
+      link: () => showTab('youtube'),
+      color: 'text-accent-blue'
+    });
+  }
+  
+  // Check for audit grades
+  const recentAudits = appData.audits.audits?.filter(a => {
+    if (!a.date) return false;
+    const daysSince = (Date.now() - new Date(a.date).getTime()) / (1000 * 60 * 60 * 24);
+    return daysSince < 1;
+  }) || [];
+  if (recentAudits.length > 0) {
+    const avg = Math.round(recentAudits.reduce((s, a) => s + (a.grade || 0), 0) / recentAudits.length);
+    items.push({
+      icon: '📊',
+      text: `${recentAudits.length} work items audited today (avg grade: ${avg}%)`,
+      link: () => showTab('audits'),
+      color: avg >= 80 ? 'text-accent-green' : avg >= 60 ? 'text-accent-yellow' : 'text-accent-red'
+    });
+  }
+  
+  // Check for pending investments
+  const watchlist = appData.investments.watchlist || [];
+  if (watchlist.length > 0) {
+    items.push({
+      icon: '📈',
+      text: `${watchlist.length} investments on watchlist`,
+      link: () => showTab('investments'),
+      color: 'text-gray-300'
+    });
+  }
+
+  // Check for new research
+  const recentResearch = appData.research.notes?.filter(n => {
+    if (!n.createdAt) return false;
+    const daysSince = (Date.now() - new Date(n.createdAt).getTime()) / (1000 * 60 * 60 * 24);
+    return daysSince < 2;
+  }) || [];
+  if (recentResearch.length > 0) {
+    items.push({
+      icon: '🔬',
+      text: `${recentResearch.length} new research notes added`,
+      link: () => showTab('research'),
+      color: 'text-gray-300'
+    });
+  }
+
+  if (items.length === 0) {
+    briefContainer.innerHTML = `
+      <div class="text-gray-500 text-sm italic">
+        No new updates since last check. The agent will populate data on the next heartbeat.
+      </div>
+    `;
+  } else {
+    briefContainer.innerHTML = items.map(item => `
+      <div class="flex items-start gap-3 p-2 bg-dark-700/30 rounded cursor-pointer hover:bg-dark-700/50 transition" onclick="(${item.link})()">
+        <span class="text-lg">${item.icon}</span>
+        <span class="text-sm ${item.color}">${item.text}</span>
+      </div>
+    `).join('');
+  }
+}
   if (!audits || audits.length === 0) return null;
   const sum = audits.reduce((a, b) => a + (b.grade || 0), 0);
   return Math.round(sum / audits.length);
