@@ -1810,7 +1810,7 @@ function showYouTubeSection(section) {
 
 // Run outlier scan via viewstats
 function runOutlierScan() {
-  alert('Outlier scan initiated. This would open viewstats.com and scan for new outliers.\n\nIn the full implementation, this would:\n1. Open viewstats.com\n2. Navigate to Outlier tool\n3. Scan ZMDE Gaming and StevenSongIRL\n4. Auto-add relevant competitor channels\n5. Update dashboard data');
+  alert('⚠️ Viewstats Integration\n\nOutlier scan requires viewstats.com Pro Tools.\n\nTo scan manually:\n1. Open viewstats.com\n2. Navigate to Pro Tools > Outlier\n3. Search: ZMDE Gaming, StevenSongIRL\n4. Export results to dashboard');
 }
 
 // Render competitor list
@@ -1854,8 +1854,8 @@ function showCompetitorVideos(compId) {
   const container = document.getElementById('competitor-uploads');
   container.innerHTML = `
     <div class="text-center py-4">
-      <p class="text-gray-400">Loading videos for competitor ${compId}...</p>
-      <p class="text-xs text-gray-500 mt-2">In full implementation, this would fetch latest uploads via YouTube API</p>
+      <p class="text-gray-400">📺 Visit channel on YouTube for latest uploads</p>
+      <p class="text-xs text-gray-500 mt-2">Click the channel name in Competitor Tracker to open YouTube</p>
     </div>
   `;
 }
@@ -1864,7 +1864,7 @@ function showCompetitorVideos(compId) {
 function addCompetitor() {
   const url = prompt('Enter YouTube channel URL:');
   if (url) {
-    alert(`Competitor ${url} would be added.\n\nIn full implementation, this would:\n1. Validate the channel\n2. Fetch channel stats\n3. Add to competitors.json\n4. Start tracking uploads`);
+    alert('⚠️ YouTube API Integration Required\n\nFetching competitor videos requires YouTube API access.\n\nCurrent workaround:\n- Competitor channels are tracked manually\n- Videos added via research notes\n- Use YouTube Studio for competitor monitoring');
   }
 }
 
@@ -1905,17 +1905,39 @@ function renderContentBriefs() {
 
 // Generate new content brief
 function generateBrief() {
-  alert('Content brief generator would open.\n\nIn full implementation, this would:\n1. Analyze top outliers\n2. Generate video concepts\n3. Create hooks and outlines\n4. Save to content briefs');
+  alert('✅ Content Briefs Available\n\nView existing briefs in the YouTube tab > Content Briefs section.\n\nTo create new briefs:\n1. Analyze outlier videos\n2. Click "Generate Brief" on any outlier\n3. Edit and save to dashboard');
 }
 
 // Launch YouTube tool
 function launchTool(toolName) {
-  const toolPaths = {
-    'pipeline': '~/Desktop/Nox Builds/YouTube/content-pipeline-orchestrator/',
-    'analyzer': '~/Desktop/Nox Builds/YouTube/youtube-performance-analyzer/',
-    'brief-generator': '~/Desktop/Nox Builds/YouTube/content-brief-generator/',
-    'map-scraper': '~/Desktop/Nox Builds/YouTube/minecraft-map-scraper/'
+  const toolInfo = {
+    'pipeline': {
+      name: 'Content Pipeline Orchestrator',
+      location: '~/Desktop/Nox Builds/YouTube/content-pipeline-orchestrator/',
+      status: 'local-only'
+    },
+    'analyzer': {
+      name: 'YouTube Performance Analyzer', 
+      location: '~/Desktop/Nox Builds/YouTube/youtube-performance-analyzer/',
+      status: 'local-only'
+    },
+    'brief-generator': {
+      name: 'Content Brief Generator',
+      location: '~/Desktop/Nox Builds/YouTube/content-brief-generator/', 
+      status: 'local-only'
+    },
+    'map-scraper': {
+      name: 'Minecraft Map Scraper',
+      location: '~/Desktop/Nox Builds/YouTube/minecraft-map-scraper/',
+      status: 'local-only'
+    }
   };
   
-  alert(`Launching ${toolName}...\n\nTool location: ${toolPaths[toolName] || 'Unknown'}\n\nIn full implementation, this would open the tool interface or navigate to the tool location.`);
+  const tool = toolInfo[toolName];
+  if (!tool) {
+    alert('Tool not found');
+    return;
+  }
+  
+  alert(`⚠️ Desktop Tool Required\n\n${tool.name}\n\nThis tool runs locally on your Mac:\n${tool.location}\n\nOpen Terminal and run:\ncd "${tool.location}"\nnpm start\n\nOr double-click the app if packaged.`);
 }
