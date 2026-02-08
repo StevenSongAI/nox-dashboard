@@ -1,10 +1,43 @@
 {
-  "opportunities": [],
+  "opportunities": [
+    {
+      "id": "opp-001",
+      "name": "AI Agent Dashboard SaaS",
+      "description": "Monetize the dashboard system as a SaaS for other AI agent users",
+      "alignment": "HIGH",
+      "status": "evaluating",
+      "potentialRevenue": "$500-2000/month",
+      "effort": "Medium",
+      "nextStep": "Create landing page and pricing",
+      "createdAt": "2026-02-07T23:00:00Z"
+    },
+    {
+      "id": "opp-002",
+      "name": "YouTube Outlier Research Service",
+      "description": "Offer outlier research as a service to other YouTubers",
+      "alignment": "MEDIUM",
+      "status": "new",
+      "potentialRevenue": "$100-500/month",
+      "effort": "Low",
+      "nextStep": "Validate demand with 3 creators",
+      "createdAt": "2026-02-07T23:00:00Z"
+    },
+    {
+      "id": "opp-003",
+      "name": "Automated Content Brief Generator",
+      "description": "Productize the content brief system into a tool for creators",
+      "alignment": "HIGH",
+      "status": "new",
+      "potentialRevenue": "$50-200/month",
+      "effort": "Medium",
+      "nextStep": "Build simple web interface",
+      "createdAt": "2026-02-07T23:00:00Z"
+    }
+  ],
   "pipeline": {
-    "new": 0,
-    "evaluating": 0,
+    "new": 2,
+    "evaluating": 1,
     "pursuing": 0,
-    "passed": 0,
-    "won": 0
+    "launched": 0
   }
 }

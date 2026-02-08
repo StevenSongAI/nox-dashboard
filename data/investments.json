@@ -1,5 +1,41 @@
 {
-  "positions": [],
-  "watchlist": [],
-  "intelligence": []
+  "positions": [
+    {
+      "symbol": "NVDA",
+      "name": "NVIDIA Corporation",
+      "shares": 50,
+      "avgCost": 485.50,
+      "currentPrice": 742.30,
+      "totalValue": 37115.00,
+      "totalGain": 12840.00,
+      "gainPercent": 52.9
+    },
+    {
+      "symbol": "TSLA",
+      "name": "Tesla Inc",
+      "shares": 100,
+      "avgCost": 195.20,
+      "currentPrice": 218.45,
+      "totalValue": 21845.00,
+      "totalGain": 2325.00,
+      "gainPercent": 11.9
+    }
+  ],
+  "watchlist": [
+    {
+      "symbol": "PLTR",
+      "name": "Palantir Technologies",
+      "targetPrice": 75.00,
+      "currentPrice": 84.20,
+      "notes": "AI infrastructure play, wait for pullback"
+    },
+    {
+      "symbol": "AMD",
+      "name": "Advanced Micro Devices",
+      "targetPrice": 140.00,
+      "currentPrice": 168.90,
+      "notes": "NVDA alternative, entering data center"
+    }
+  ],
+  "lastUpdated": "2026-02-07T23:00:00Z"
 }

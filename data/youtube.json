@@ -1,5 +1,105 @@
 {
-  "outlierVideos": [],
-  "contentBriefs": [],
-  "trendAnalysis": []
+  "outlierVideos": [
+    {
+      "id": "yt-001",
+      "title": "I Built an AI That Controls My Life for 24 Hours",
+      "channel": "ZMDE Gaming",
+      "views": 2840000,
+      "publishedAt": "2026-01-25T12:00:00Z",
+      "addedAt": "2026-02-07T23:30:00Z",
+      "outlierScore": 3.2,
+      "niche": "🎮 Gaming",
+      "whyOutlier": "High production value + personal stakes narrative drives massive engagement",
+      "contentAngle": "Create AI-driven challenge content with real consequences",
+      "url": "https://youtube.com/watch?v=example1"
+    },
+    {
+      "id": "yt-002", 
+      "title": "I Survived 100 Days in Hardcore Minecraft with Mods",
+      "channel": "ZMDE Gaming",
+      "views": 4200000,
+      "publishedAt": "2026-01-20T15:00:00Z",
+      "addedAt": "2026-02-07T23:30:00Z",
+      "outlierScore": 2.8,
+      "niche": "🎮 Gaming",
+      "whyOutlier": "100-day format + hardcore mode creates natural tension",
+      "contentAngle": "Long-form survival series with escalating challenges",
+      "url": "https://youtube.com/watch?v=example2"
+    },
+    {
+      "id": "yt-003",
+      "title": "I Made $10,000 Trading Stocks Using Only AI Signals",
+      "channel": "StevenSongIRL",
+      "views": 890000,
+      "publishedAt": "2026-02-01T10:00:00Z",
+      "addedAt": "2026-02-07T23:30:00Z", 
+      "outlierScore": 2.4,
+      "niche": "💰 Finance",
+      "whyOutlier": "Specific dollar amount + AI angle attracts finance and tech audiences",
+      "contentAngle": "Document real money experiments with quantified results",
+      "url": "https://youtube.com/watch?v=example3"
+    },
+    {
+      "id": "yt-004",
+      "title": "Testing Every Productivity App So You Don't Have To",
+      "channel": "StevenSongIRL",
+      "views": 1560000,
+      "publishedAt": "2026-01-28T14:00:00Z",
+      "addedAt": "2026-02-07T23:30:00Z",
+      "outlierScore": 2.1,
+      "niche": "⚡ Productivity",
+      "whyOutlier": "Comprehensive comparison format saves viewer research time",
+      "contentAngle": "Do the exhaustive research and present clear winners",
+      "url": "https://youtube.com/watch?v=example4"
+    },
+    {
+      "id": "yt-005",
+      "title": "I Hired 5 Freelancers to Edit the Same Video",
+      "channel": "ZMDE Gaming",
+      "views": 2100000,
+      "publishedAt": "2026-01-15T16:00:00Z",
+      "addedAt": "2026-02-07T23:30:00Z",
+      "outlierScore": 2.6,
+      "niche": "🎬 Production",
+      "whyOutlier": "Comparison format reveals editing quality differences dramatically",
+      "contentAngle": "Test service providers side-by-side with identical inputs",
+      "url": "https://youtube.com/watch?v=example5"
+    }
+  ],
+  "contentBriefs": [
+    {
+      "id": "brief-001",
+      "title": "AI Challenge Content",
+      "summary": "Videos featuring AI controlling real-life decisions perform 3x average. Key elements: stakes, unpredictability, personal narrative.",
+      "opportunity": "HIGH",
+      "tags": ["AI", "challenge", "lifestyle"],
+      "createdAt": "2026-02-07T23:30:00Z"
+    },
+    {
+      "id": "brief-002",
+      "title": "100-Day Survival Series",
+      "summary": "Long-form survival content with daily progression creates binge-worthy series. Hardcore mode adds tension.",
+      "opportunity": "MEDIUM",
+      "tags": ["gaming", "series", "survival"],
+      "createdAt": "2026-02-07T23:30:00Z"
+    },
+    {
+      "id": "brief-003",
+      "title": "Money Experiment Documentaries",
+      "summary": "Following real money experiments with specific dollar amounts creates credibility and investment.",
+      "opportunity": "HIGH",
+      "tags": ["finance", "experiment", "documentation"],
+      "createdAt": "2026-02-07T23:30:00Z"
+    }
+  ],
+  "trendAnalysis": {
+    "lastUpdated": "2026-02-07T23:30:00Z",
+    "topPatterns": [
+      "AI-driven challenges with real stakes",
+      "Long-form survival series (30+ days)",
+      "Comparison formats testing multiple options",
+      "Specific dollar amounts in titles",
+      "Personal narrative + education hybrid"
+    ]
+  }
 }
