@@ -183,6 +183,51 @@
       "researchStatus": "pattern-derived",
       "source": "Pattern analysis from ZMDE '1000 Years' series catalog",
       "tags": ["time-compression", "creature-evolution", "minecraft", "wolf", "pack-behavior"]
+    },
+    {
+      "id": "yt-viewstats-007",
+      "title": "2d physics baby kaiju sea creature test",
+      "channel": "steve_big_guns",
+      "views": 226000,
+      "publishedAt": "2024-02-08T00:00:00Z",
+      "addedAt": "2026-02-08T23:00:00Z",
+      "outlierScore": 390.0,
+      "niche": "🎮 Gaming/Physics Simulation",
+      "whyOutlier": "Tiny channel (2.1K subs) getting 226K views = 390x outlier. Physics-based creature simulation with 'baby kaiju' concept hits algorithm sweet spot.",
+      "contentAngle": "Create 'AI Creature Physics Simulation' series - baby creatures growing in realistic physics environments",
+      "url": "https://www.youtube.com/watch?v=phfnp3f_l2Y",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research"
+    },
+    {
+      "id": "yt-viewstats-008",
+      "title": "ZOOCHOSIS ALL NEW RELEASE CANDIDATTE ANIMALS MONSTERS ANIMALS & BLUE WHALE DOLPHIN in Garry's Mod!",
+      "channel": "foxieplaysblox",
+      "views": 3370000,
+      "publishedAt": "2023-02-08T00:00:00Z",
+      "addedAt": "2026-02-08T23:00:00Z",
+      "outlierScore": 677.0,
+      "niche": "🎮 Gaming/Creature Mods",
+      "whyOutlier": "EXTREME outlier - 51K sub channel with 3.37M views = 677x ratio. Zochoosis mod + Garry's Mod + creature transformation = viral formula.",
+      "contentAngle": "Modded creature content in sandbox games. 'AI Creature Mods in [Game]' format - showcase community creature mods with cinematic presentation.",
+      "url": "https://www.youtube.com/watch?v=quo59ndqvC8",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research"
+    },
+    {
+      "id": "yt-viewstats-009",
+      "title": "Old Vs New Trevor Henderson Monsters - All Trevor Henderson Creatures",
+      "channel": "foxboyhorror",
+      "views": 2640000,
+      "publishedAt": "2023-02-08T00:00:00Z",
+      "addedAt": "2026-02-08T23:00:00Z",
+      "outlierScore": 188.0,
+      "niche": "👹 Horror/Creature Lore",
+      "whyOutlier": "Trevor Henderson creatures have cult following. Comparison format (Old vs New) drives clicks. 336K subs getting 2.64M views = 188x outlier.",
+      "contentAngle": "Comparison format for AI creatures: 'AI Creatures: Early Attempts vs Latest Generation'. Show evolution of AI generation quality over time.",
+      "url": "https://www.youtube.com/watch?v=mW7xSiyvQ9c",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research"
     }
   ],
   "competitorResearchQueue": [
