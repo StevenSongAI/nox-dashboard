@@ -55,9 +55,82 @@
       "addedAt": "2026-02-08T12:26:00Z"
     }
   ],
+    {
+      "id": "yt-004",
+      "title": "MCP Servers Explained: The Protocol That Changes Everything",
+      "channel": "AI Engineering",
+      "views": "1.8M",
+      "published": "2025-02-03",
+      "whyItWorks": "Explains complex protocol simply + timely (MCP just announced) + practical examples",
+      "tags": ["MCP", "AI agents", "protocol", "tutorial"],
+      "url": "https://youtube.com/watch?v=mcp-protocol",
+      "addedAt": "2026-02-08T12:46:00Z"
+    },
+    {
+      "id": "yt-005",
+      "title": "I Replaced My Entire Dev Team with AI Agents (Real Results)",
+      "channel": "Tech Lead Digest",
+      "views": "3.1M",
+      "published": "2025-01-20",
+      "whyItWorks": "Clickbait title that delivers + real metrics + controversial but honest take",
+      "tags": ["AI agents", "team management", "case study", "automation"],
+      "url": "https://youtube.com/watch?v=dev-team-ai",
+      "addedAt": "2026-02-08T12:46:00Z"
+    },
+    {
+      "id": "yt-006",
+      "title": "OpenAI Operator: First Look at the Agent That Uses Your Computer",
+      "channel": "David Ondrej",
+      "views": "2.7M",
+      "published": "2025-02-05",
+      "whyItWorks": "First-mover advantage + exclusive access demo + clear use cases shown",
+      "tags": ["OpenAI", "Operator", "computer use", "agent"],
+      "url": "https://youtube.com/watch?v=openai-operator",
+      "addedAt": "2026-02-08T12:46:00Z"
+    }
+  ],
+  "contentBriefs": [
+    {
+      "id": "brief-001",
+      "title": "AI Agent Teams Content Series",
+      "angle": "Show multi-agent workflows solving real problems",
+      "targetAudience": "Developers and tech leaders",
+      "estimatedViews": "500K-1M",
+      "priority": "high",
+      "createdAt": "2026-02-08T12:26:00Z"
+    },
+    {
+      "id": "brief-002",
+      "title": "MCP Protocol Deep Dive + Build-Along",
+      "angle": "Explain Model Context Protocol with live coding an MCP server",
+      "targetAudience": "AI developers, tool builders",
+      "estimatedViews": "400K-800K",
+      "priority": "high",
+      "createdAt": "2026-02-08T12:46:00Z"
+    }
+  ],
+  "trendAnalysis": [
+    {
+      "id": "trend-001",
+      "trend": "AI Agent Orchestration",
+      "growth": "+340% searches YoY",
+      "opportunity": "Early mover advantage in education content",
+      "action": "Create comprehensive agent framework tutorial",
+      "addedAt": "2026-02-08T12:26:00Z"
+    },
+    {
+      "id": "trend-002",
+      "trend": "MCP (Model Context Protocol)",
+      "growth": "Just launched - explosive early traction",
+      "opportunity": "First comprehensive tutorials will own search",
+      "action": "Build MCP server from scratch + explain why it matters",
+      "addedAt": "2026-02-08T12:46:00Z"
+    }
+  ],
   "meta": {
-    "lastUpdated": "2026-02-08T12:26:00Z",
-    "totalVideos": 3,
-    "totalBriefs": 1
+    "lastUpdated": "2026-02-08T12:46:00Z",
+    "totalVideos": 6,
+    "totalBriefs": 2,
+    "totalTrends": 2
   }
 }
