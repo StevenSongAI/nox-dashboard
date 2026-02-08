@@ -22,6 +22,19 @@
       "confidence": "medium",
       "notes": "Morgan Stanley downgrade. 45x forward revenue considered stretched.",
       "addedAt": "2026-02-06T14:30:00Z"
+    },
+    {
+      "id": "opp-003",
+      "sector": "AI Content/Crypto",
+      "ticker": "RENDER",
+      "name": "Render Network",
+      "signal": "Emerging opportunity",
+      "source": "Market Analysis / Trend Synthesis",
+      "confidence": "medium",
+      "notes": "AI video generation demand creating GPU compute shortage. Render provides decentralized GPU network. 88% CAGR in AI video market ($0.5B to $12B by 2029) drives underlying demand for compute infrastructure. Token up 340% YoY but volatile. Small position thesis: AI content creation boom → compute demand → Render network utilization.",
+      "addedAt": "2026-02-08T19:46:00Z",
+      "riskLevel": "high",
+      "positionSize": "speculative (<1% portfolio)"
     }
   ],
   "watchlist": [
@@ -62,6 +75,14 @@
       "momentum": "stable",
       "sources": ["YouTube trends", "Creator economy"],
       "summary": "AI-generated content, simulation videos gaining traction"
+    },
+    {
+      "id": "trend-003",
+      "topic": "AI Video x Crypto Compute",
+      "sentiment": "bullish",
+      "momentum": "early",
+      "sources": ["Market analysis", "AI video growth data"],
+      "summary": "AI video generation 88% CAGR creating GPU compute shortage. Decentralized compute networks (Render, Akash) positioned to benefit from demand surge."
     }
   ],
   "intelligence": [
@@ -121,8 +142,18 @@
       "content": "AI/design niche newsletters (Ben's Bites, The Rundown) achieving $50K-200K ARR with 40%+ growth YoY. Creature design sub-niche appears underserved. Newsletter format creates high-LTV audience for digital product funnel (templates → courses). Beehiiv/Substack infrastructure reduces startup costs to near-zero. Cross-sell potential with existing template pack and masterclass opportunities.",
       "impact": "bullish",
       "relatedOpportunities": ["opp-006", "opp-007", "opp-008"]
+    },
+    {
+      "id": "intel-008",
+      "date": "2026-02-08T19:46:00Z",
+      "topic": "AI Video Boom → GPU Compute Squeeze",
+      "source": "Trend Synthesis / Market Analysis",
+      "content": "Synthesizing intelligence: AI video generation growing 88% CAGR ($0.5B → $12B by 2029) is creating compute infrastructure bottlenecks. Centralized cloud providers (AWS, GCP) face GPU shortages. Decentralized GPU networks like Render (RNDR) and Akash (AKT) positioned to capture overflow demand. Token-based incentive models align compute providers with AI content creators. Risk: Crypto volatility. Opportunity: Exposure to AI infrastructure beyond traditional equities (NVDA, AMD). Render Network specifically enables GPU owners to monetize idle compute - direct beneficiary of AI video content boom. Watch for: major AI video platforms (Runway, Pika) announcing Render partnerships.",
+      "impact": "bullish",
+      "relatedPositions": ["RENDER"],
+      "riskFactors": ["Crypto volatility", "Regulatory uncertainty", "Technology adoption risk"]
     }
   ],
-  "lastUpdated": "2026-02-08T18:46:00Z",
+  "lastUpdated": "2026-02-08T19:46:00Z",
   "dataSource": "X.com via browser research (bird API disabled)"
 }
