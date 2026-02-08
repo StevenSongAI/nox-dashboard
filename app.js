@@ -50,14 +50,15 @@ document.addEventListener('DOMContentLoaded', async () => {
 async function loadAllData() {
   console.log('[Nox Dashboard] Starting data load...');
   try {
+    const cacheBuster = '?v=' + Date.now();
     const dataFiles = [
-      { name: 'youtube', path: 'data/youtube.json' },
-      { name: 'new-business', path: 'data/new-business.json' },
-      { name: 'investments', path: 'data/investments.json' },
-      { name: 'tools', path: 'data/tools.json' },
-      { name: 'research', path: 'data/research.json' },
-      { name: 'audits', path: 'data/audits.json' },
-      { name: 'meta', path: 'data/meta.json' }
+      { name: 'youtube', path: 'data/youtube.json' + cacheBuster },
+      { name: 'new-business', path: 'data/new-business.json' + cacheBuster },
+      { name: 'investments', path: 'data/investments.json' + cacheBuster },
+      { name: 'tools', path: 'data/tools.json' + cacheBuster },
+      { name: 'research', path: 'data/research.json' + cacheBuster },
+      { name: 'audits', path: 'data/audits.json' + cacheBuster },
+      { name: 'meta', path: 'data/meta.json' + cacheBuster }
     ];
 
     const results = await Promise.allSettled(
