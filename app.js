@@ -1829,13 +1829,13 @@ async function renderCompetitors() {
     }
     
     container.innerHTML = competitors.map(comp => `
-      <div class="card rounded-lg p-3 cursor-pointer hover:bg-dark-700/50" onclick="showCompetitorVideos('${comp.id}')">
+      <div class="card rounded-lg p-3 hover:bg-dark-700/50">
         <div class="flex justify-between items-start">
           <div>
-            <h4 class="font-semibold">${comp.name}</h4>
+            <h4 class="font-semibold"><a href="${comp.url}" target="_blank" class="hover:text-accent-blue">${comp.name}</a></h4>
             <p class="text-xs text-gray-400">${comp.niche} • ${comp.focus}</p>
           </div>
-          <span class="text-xs px-2 py-1 bg-dark-700 rounded">${comp.stats.subscribers}</span>
+          <span class="text-xs px-2 py-1 bg-dark-700 rounded cursor-pointer" onclick="showCompetitorVideos('${comp.id}')">${comp.stats.subscribers}</span>
         </div>
         <div class="flex gap-3 mt-2 text-xs text-gray-500">
           <span>${comp.stats.videoCount} videos</span>
