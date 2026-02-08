@@ -257,10 +257,11 @@ function buildPositionModalContent(position) {
 }
 
 function buildWatchlistModalContent(item) {
+  const target = item.targetEntry || item.targetPrice;
   const fields = [
     { label: 'Ticker', value: item.ticker || item.symbol },
     { label: 'Current Price', value: formatCurrency(item.currentPrice) },
-    { label: 'Target Entry', value: formatCurrency(item.targetEntry || item.targetPrice) },
+    { label: 'Target Entry', value: (target && target !== 0) ? formatCurrency(target) : '-' },
     { label: 'Thesis', value: item.thesis || item.notes, pre: true }
   ];
   
@@ -1001,7 +1002,7 @@ function renderInvestments() {
       const title = i.topic || `${i.ticker} ${i.type || 'Update'}`;
       const summary = i.summary || i.content || '';
       const date = i.addedAt || i.date;
-      const tickerSuffix = i.ticker ? ` · ${i.ticker}` : '';
+      const tickerSuffix = i.ticker ? ` · ${i.ticker}` : ' ·';
       return `
         <div class="p-2 bg-dark-700/50 rounded cursor-pointer hover:bg-dark-700" onclick="showIntelligenceModal(${idx})">
           <div class="font-semibold">${title} <span class="text-xs px-2 py-0.5 rounded ${i.impact === 'bullish' ? 'bg-accent-green/20 text-accent-green' : i.impact === 'bearish' ? 'bg-accent-red/20 text-accent-red' : 'bg-dark-600'}">${i.impact || 'neutral'}</span></div>
@@ -1646,8 +1647,8 @@ function formatTimeAgo(dateString) {
 
   if (diff < 60) return 'just now';
   if (diff < 3600) {
-    const mins = Math.floor(diff / 60);
-    return `${mins} minute${mins === 1 ? '' : 's'} ago`;
+    const minutes = Math.floor(diff / 60);
+    return `${minutes} minute${minutes === 1 ? '' : 's'} ago`;
   }
   if (diff < 86400) {
     const hours = Math.floor(diff / 3600);
