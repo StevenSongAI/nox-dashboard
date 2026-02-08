@@ -67,6 +67,31 @@ async function fetchStockPrices(tickers) {
     return stockPriceCache;
   }
 }
+
+// Refresh stock prices manually
+async function refreshStockPrices() {
+  const statusEl = document.getElementById('investments-price-status');
+  if (statusEl) {
+    statusEl.innerHTML = '<span class="text-yellow-500">⏳ Fetching...</span>';
+  }
+  
+  // Clear cache to force new fetch
+  lastPriceFetch = 0;
+  
+  // Re-render investments
+  await renderInvestments();
+  
+  // Check if we got prices
+  const hasPrices = investmentsWatchlistData.some(w => w.currentPrice && w.currentPrice > 0);
+  if (statusEl) {
+    if (hasPrices) {
+      statusEl.innerHTML = '<span class="text-accent-green">✓ Updated</span>';
+    } else {
+      statusEl.innerHTML = '<span class="text-gray-400">API unavailable</span>';
+    }
+  }
+}
+
 document.addEventListener('DOMContentLoaded', async () => {
   console.log('[Nox Dashboard] DOM loaded, initializing...');
   await loadAllData();
