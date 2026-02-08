@@ -101,8 +101,16 @@
       "source": "Yahoo Finance",
       "content": "AMD closed at $208.44 (+8.28%) on Feb 6. Record earnings reported. Navigating supply constraints amid soaring AI demand. Bullish analyst outlook. Target $288.50. 52-week range $76.48-$267.08.",
       "impact": "bullish"
+    },
+    {
+      "id": "intel-006",
+      "date": "2026-02-08T14:46:00Z",
+      "topic": "AI Video Generation Market Expansion",
+      "source": "Market Research / Industry Analysis",
+      "content": "AI video generation market projected to grow from $0.5B (2024) to $12B (2029) at 88% CAGR. Runway, Pika Labs, and Sora driving consumer adoption. YouTube creators increasingly adopting AI workflows for creature/animation content. Key players: OpenAI (Sora), RunwayML, Pika Labs, Stability AI. Content creator economy ($250B TAM) being disrupted by AI generation tools.",
+      "impact": "bullish"
     }
   ],
-  "lastUpdated": "2026-02-08T13:26:00Z",
+  "lastUpdated": "2026-02-08T14:46:00Z",
   "dataSource": "X.com via browser research (bird API disabled)"
 }
