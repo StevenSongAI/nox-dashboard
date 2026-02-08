@@ -24,20 +24,27 @@ let portfolioChartInstance = null;
 document.addEventListener('DOMContentLoaded', async () => {
   console.log('[Nox Dashboard] DOM loaded, initializing...');
   await loadAllData();
-  console.log('[Nox Dashboard] Rendering dashboard...');
-  renderDashboard();
-  console.log('[Nox Dashboard] Rendering YouTube...');
-  renderYouTube();
-  console.log('[Nox Dashboard] Rendering business...');
-  renderBusiness();
-  console.log('[Nox Dashboard] Rendering investments...');
-  renderInvestments();
-  console.log('[Nox Dashboard] Rendering tools...');
-  renderTools();
-  console.log('[Nox Dashboard] Rendering research...');
-  renderResearch();
-  console.log('[Nox Dashboard] Rendering audits...');
-  renderAudits();
+  
+  // Render all tabs with error isolation - if one fails, others still run
+  const renderers = [
+    { name: 'Dashboard', fn: renderDashboard },
+    { name: 'YouTube', fn: renderYouTube },
+    { name: 'Business', fn: renderBusiness },
+    { name: 'Investments', fn: renderInvestments },
+    { name: 'Tools', fn: renderTools },
+    { name: 'Research', fn: renderResearch },
+    { name: 'Audits', fn: renderAudits }
+  ];
+  
+  for (const { name, fn } of renderers) {
+    try {
+      console.log(`[Nox Dashboard] Rendering ${name}...`);
+      fn();
+    } catch (err) {
+      console.error(`[Nox Dashboard] Error rendering ${name}:`, err);
+    }
+  }
+  
   console.log('[Nox Dashboard] Setting up filters...');
   setupFilters();
   console.log('[Nox Dashboard] Initialization complete!');
@@ -354,17 +361,18 @@ function renderDashboard() {
   const investments = appData.investments;
   const audits = appData.audits;
 
-  document.getElementById('stat-youtube-count').textContent = formatNumber(youtube.outlierVideos.length);
-  document.getElementById('stat-youtube-briefs').textContent = `${formatNumber(youtube.contentBriefs.length)} briefs ready`;
+  // DEFENSIVE: Ensure data exists before accessing properties
+  document.getElementById('stat-youtube-count').textContent = formatNumber(youtube?.outlierVideos?.length);
+  document.getElementById('stat-youtube-briefs').textContent = `${formatNumber(youtube?.contentBriefs?.length)} briefs ready`;
 
-  document.getElementById('stat-business-count').textContent = formatNumber(business.opportunities.length);
-  const highPriority = business.opportunities.filter(o => o.alignment === 'HIGH').length;
+  document.getElementById('stat-business-count').textContent = formatNumber(business?.opportunities?.length);
+  const highPriority = business?.opportunities?.filter(o => o.alignment === 'HIGH').length || 0;
   document.getElementById('stat-business-high').textContent = `${formatNumber(highPriority)} high priority`;
 
-  document.getElementById('stat-investments-count').textContent = formatNumber(investments.positions.length);
-  document.getElementById('stat-investments-watchlist').textContent = `${formatNumber(investments.watchlist.length)} watching`;
+  document.getElementById('stat-investments-count').textContent = formatNumber(investments?.positions?.length);
+  document.getElementById('stat-investments-watchlist').textContent = `${formatNumber(investments?.watchlist?.length)} watching`;
 
-  const avgGrade = calculateAvgGrade(audits.audits);
+  const avgGrade = calculateAvgGrade(audits?.audits);
   document.getElementById('stat-avg-grade').textContent = avgGrade ? `${avgGrade}%` : 'N/A';
 
   renderMorningBrief();
@@ -660,13 +668,24 @@ let youtubeVideoData = [];
 
 function renderYouTube() {
   const container = document.getElementById('youtube-outliers');
-  const videos = appData.youtube.outlierVideos || [];
+  if (!container) {
+    console.warn('[Nox Dashboard] youtube-outliers container not found');
+    return;
+  }
+  
+  const videos = appData.youtube?.outlierVideos || [];
+  const briefs = appData.youtube?.contentBriefs || [];
+  const meta = appData.meta || {};
   
   // Update Research Status stats
-  const lastScan = appData.meta?.lastUpdated?.youtube;
-  document.getElementById('last-outlier-scan').textContent = lastScan ? formatTimeAgo(lastScan) : 'Never';
-  document.getElementById('total-outliers').textContent = videos.length;
-  document.getElementById('total-briefs').textContent = appData.youtube.contentBriefs?.length || 0;
+  const lastScan = meta?.lastUpdated?.youtube;
+  const lastScanEl = document.getElementById('last-outlier-scan');
+  const totalOutliersEl = document.getElementById('total-outliers');
+  const totalBriefsEl = document.getElementById('total-briefs');
+  
+  if (lastScanEl) lastScanEl.textContent = lastScan ? formatTimeAgo(lastScan) : 'Never';
+  if (totalOutliersEl) totalOutliersEl.textContent = videos.length;
+  if (totalBriefsEl) totalBriefsEl.textContent = briefs.length;
   
   // Store for search
   youtubeVideoData = videos;
