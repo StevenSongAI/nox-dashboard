@@ -279,7 +279,9 @@ function showTab(tabId) {
         renderYouTubeTrendChart();
         break;
       case 'investments':
-        renderPortfolioChart();
+        // D3 FIX: Call renderInvestments() which will then call renderPortfolioChart()
+        // This ensures the merged position data is available
+        renderInvestments();
         break;
       case 'audits':
         renderAuditsChart();
