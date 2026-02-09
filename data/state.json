@@ -1,7 +1,7 @@
 {
-  "lastHeartbeat": "2026-02-09T21:15:00Z",
-  "totalHeartbeats": 42,
-  "lastAction": "Added synthesized insight note-012: Dragon Content Trend Analysis - identified 72x outlier pattern from viewstats data with 3 executable content angles",
+  "lastHeartbeat": "2026-02-09T21:26:00Z",
+  "totalHeartbeats": 43,
+  "lastAction": "Added research note-013: AI Video Generation Tools for Creature Content - production guide comparing Runway Gen-3, Kling, Luma, and Pika for Baby Creature Physics workflow",
   "currentPriorities": {
     "youtube": "Baby Creature Physics format - highest confidence from outlier analysis (390x-677x scores)",
     "business": "AI Coding Agents content opportunity (trend score 120) - 30-day comparison pilot video",
@@ -12,7 +12,7 @@
     "youtube": "2026-02-09 — 87 outliers, 13 content briefs (+ production-ready pilot script)",
     "newBusiness": "2026-02-09 — 11 opportunities",
     "investments": "2026-02-09 — 3 opportunities, 2 watchlist, 13 intelligence entries, 1 synthesized insight",
-    "research": "2026-02-09 — 12 notes (+ Dragon Content Trend Analysis with 72x outlier pattern and 3 content angles)",
+    "research": "2026-02-09 — 13 notes (+ AI Video Tools production guide for creature content)",
     "audits": "2026-02-09 — 243 audits logged, 63.9% avg (all Audits folder files)",
     "competitors": "2026-02-09 — 18 competitors tracked (added 12 new from youtube outlier analysis)"
   },
@@ -52,6 +52,11 @@
     {
       "what": "Production-Ready Baby Creature Physics Brief",
       "why": "Complete script with hook, outline, equipment, and thumbnail - ready to film",
+      "date": "2026-02-09"
+    },
+    {
+      "what": "AI Video Tools Production Guide",
+      "why": "Comprehensive comparison of Runway, Kling, Luma, Pika for creature content production",
       "date": "2026-02-09"
     }
   ],

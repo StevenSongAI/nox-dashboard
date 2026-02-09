@@ -269,7 +269,32 @@
       "linkedContentBriefIds": [
         "brief-baby-physics-pilot-002"
       ]
+    },
+    {
+      "id": "note-013",
+      "title": "AI Video Generation Tools for Creature Content - 2025 Production Guide",
+      "date": "2026-02-09T21:26:00Z",
+      "tags": [
+        "ai-video",
+        "creature-animation",
+        "production-tools",
+        "runway",
+        "kling",
+        "luma",
+        "pika"
+      ],
+      "content": "## AI Video Generation Tools: Production Guide for Creature Content\n\n### Executive Summary\nFor Baby Creature Physics production and future creature content, these AI video tools can supplement or replace traditional 3D animation workflows.\n\n### Tool Comparison\n\n#### 1. Runway Gen-3 Alpha\n**Pricing:** $35/month (Standard), $95/month (Pro), $76/month (Unlimited)\n**Strengths:**\n- Best-in-class motion coherence\n- Strong character consistency across frames\n- Excellent text-to-video prompts\n- Image-to-video with motion brush (control specific regions)\n\n**Best For:**\n- Creature transformation sequences\n- Physics-based motion (falling, flying, crashing)\n- High-quality cinematic shots\n\n**Limitations:**\n- 10-16 second max generations\n- Can struggle with complex physics interactions\n- Water/fire effects occasionally artifact\n\n**Use Case for Steven:** Generate AI creature clips to composite into Minecraft/Unreal footage\n\n---\n\n#### 2. Kling AI (Kwai)\n**Pricing:** $23/month (Standard), $69/month (Pro)\n**Strengths:**\n- Best price-to-performance ratio\n- Strong camera movement controls\n- Good at creature/animal motion\n- 10-second generations\n\n**Best For:**\n- Budget-conscious productions\n- Creature locomotion (walking, running, flying)\n- Camera tracking shots\n\n**Limitations:**\n- Slightly less coherent than Runway\n- Limited free tier\n- UI less polished\n\n**Use Case for Steven:** Bulk generate creature variations for testing\n\n---\n\n#### 3. Luma Dream Machine\n**Pricing:** $29.99/month (Pro), $499/month for API\n**Strengths:**\n- Fastest generation speed (real-time preview)\n- Good integration with Luma's NeRF tech\n- Decent physics simulation\n\n**Best For:**\n- Rapid prototyping\n- Iterating on creature designs\n- 3D-aware generation\n\n**Limitations:**\n- Motion quality below Runway/Kling\n- Shorter generations (5 seconds)\n- Less control over output\n\n**Use Case for Steven:** Quick creature concept validation\n\n---\n\n#### 4. Pika Labs\n**Pricing:** $8/month (Standard), $58/month (Pro), $88/month (Unlimited)\n**Strengths:**\n- Lowest price point\n- Good for stylized/animated content\n- Active Discord community\n- Expand canvas feature\n\n**Best For:**\n- Anime/stylized creature content\n- Budget productions\n- Community support\n\n**Limitations:**\n- Weakest motion coherence\n- Less realistic output\n- Smaller feature set\n\n**Use Case for Steven:** Stylized dragon animations, thumbnail generation\n\n---\n\n### Production Workflow Recommendation\n\n**For Baby Creature Physics Pilot:**\n\n1. **Primary:** Unreal Engine 5 physics simulation (established workflow)\n2. **Supplemental:** Runway Gen-3 for cinematic creature close-ups\n3. **Thumbnails:** Pika Labs or Runway for stylized dragon shots\n4. **B-roll:** Kling for alternative creature angles\n\n**Future Production (Post-Pilot):**\n\nIf pilot succeeds and budget allows:\n- Runway Unlimited ($76/mo) for unlimited creature generations\n- Use AI video for "impossible" shots (dragon POV flying, microscopic physics)\n- Blend UE5 physics + AI video for hybrid aesthetic\n\n### Cost Analysis\n\n| Tool | Monthly Cost | Generations | Cost per 10s Clip |\n|------|--------------|-------------|-------------------|\n| Runway Pro | $76 | Unlimited | ~$0.50* |\n| Kling Pro | $69 | ~1000 | ~$0.07 |\n| Luma Pro | $30 | ~500 | ~$0.06 |\n| Pika Unlimited | $88 | Unlimited | ~$0.30* |\n\n*Assumes heavy usage amortizing subscription\n\n### Quality Ranking (Creature Content)\n\n1. **Runway Gen-3** - Best overall quality, worth the premium\n2. **Kling** - 85% of Runway quality at 70% of the price\n3. **Luma** - Good for quick tests, not final output\n4. **Pika** - Stylized content only\n\n### Integration with Existing Workflow\n\n**Current Workflow:**\nUE5 Physics → Screen Record → Edit → Upload\n\n**Enhanced Workflow:**\nUE5 Physics (primary) → AI Video (supplemental shots) → Composite → Edit → Upload\n\n**Tools Needed:**\n- DaVinci Resolve (free) or Premiere Pro for compositing\n- Basic green screen/chroma key for AI creature insertion\n- Optional: Topaz Video AI for upscaling to 4K\n\n### Action Items\n\n- [ ] Sign up for Runway Gen-3 free trial (125 credits)\n- [ ] Generate 5 test creature clips for Baby Dragon footage\n- [ ] Test compositing AI creature into UE5 physics scene\n- [ ] If quality acceptable, subscribe to Runway Unlimited for series production\n\n---\n\n*Research Date: 2026-02-09 | Next Review: After pilot video completion | Priority: Medium*",
+      "sourceUrls": [
+        "https://runwayml.com/",
+        "https://klingai.com/",
+        "https://lumalabs.ai/dream-machine",
+        "https://pika.art/"
+      ],
+      "category": "Production Tools",
+      "linkedContentBriefIds": [
+        "brief-baby-physics-pilot-002"
+      ]
     }
   ],
-  "lastUpdated": "2026-02-09T21:15:00Z"
+  "lastUpdated": "2026-02-09T21:26:00Z"
 }
