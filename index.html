@@ -31,7 +31,14 @@
     <div class="max-w-7xl mx-auto px-4 py-3">
       <div class="flex items-center justify-between">
         <h1 class="text-xl font-bold">⚡ Nox Dashboard</h1>
-        <div id="agent-status" class="text-sm text-gray-400">Loading...</div>
+        <div class="flex items-center gap-3">
+          <!-- D5 FIX: Global Search Input -->
+          <div class="relative hidden md:block">
+            <input type="text" id="global-search" placeholder="🔍 Search everything..." 
+                   class="px-3 py-1.5 bg-dark-700 rounded-lg border border-dark-600 text-sm w-48 lg:w-64 focus:border-accent-blue focus:outline-none transition-all">
+          </div>
+          <div id="agent-status" class="text-sm text-gray-400">Loading...</div>
+        </div>
       </div>
     </div>
     <!-- Tab Navigation -->
@@ -52,6 +59,21 @@
   <main class="max-w-7xl mx-auto px-4 py-6">
     <!-- Dashboard Tab -->
     <div id="tab-dashboard" class="tab-content">
+      <!-- D5 FIX: Mobile Global Search -->
+      <div class="md:hidden mb-4">
+        <input type="text" id="global-search-mobile" placeholder="🔍 Search everything..." 
+               class="w-full px-3 py-2 bg-dark-700 rounded-lg border border-dark-600 text-sm focus:border-accent-blue focus:outline-none">
+      </div>
+      
+      <!-- Global Search Results Container -->
+      <div id="global-search-results" class="hidden mb-6">
+        <div class="flex items-center justify-between mb-3">
+          <h2 class="text-lg font-semibold">🔍 Search Results</h2>
+          <button onclick="clearGlobalSearch()" class="text-sm text-gray-400 hover:text-white">Clear ✕</button>
+        </div>
+        <div id="global-search-results-content" class="space-y-3"></div>
+      </div>
+
       <!-- Stats Cards -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
         <div class="card rounded-lg p-4 cursor-pointer hover:border-accent-blue" onclick="showTab('youtube')">
@@ -101,7 +123,7 @@
       <div class="card rounded-lg p-4 mb-4">
         <div class="flex justify-between items-center mb-3">
           <h2 class="text-lg font-semibold">📰 Morning Brief</h2>
-          <span id="brief-date" class="text-sm text-gray-400">--</span>
+          <span id="brief-date" class="text-sm text-gray-400">-</span>
         </div>
         <div id="morning-brief-content" class="space-y-2">
           <div class="skeleton-loader">
@@ -115,10 +137,14 @@
       <div class="card rounded-lg p-4">
         <h2 class="text-lg font-semibold mb-3">Quick Links</h2>
         <div class="flex flex-wrap gap-2">
-          <button onclick="showTab('youtube')" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">🎬 YouTube Strategy</button>
-          <button onclick="showTab('business')" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">💼 Opportunities</button>
-          <button onclick="showTab('investments')" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">📈 Portfolio</button>
-          <button onclick="showTab('tools')" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">🛠️ Launch Tools</button>
+          <button onclick="showTab('youtube')" class="px-3 py-2 bg-dark-700 rounded hover:bg-dark-600 text-sm">🎬 YouTube Strategy</button>
+          <button onclick="showTab('business')" class="px-3 py-2 bg-dark-700 rounded hover:bg-dark-600 text-sm">💼 Opportunities</button>
+          <button onclick="showTab('investments')" class="px-3 py-2 bg-dark-700 rounded hover:bg-dark-600 text-sm">📈 Portfolio</button>
+          <button onclick="showTab('tools')" class="px-3 py-2 bg-dark-700 rounded hover:bg-dark-600 text-sm">🛠️ Launch Tools</button>
+          <button onclick="showTab('research')" class="px-3 py-2 bg-dark-700 rounded hover:bg-dark-600 text-sm">🔬 Research Notes</button>
+          <button onclick="showTab('audits')" class="px-3 py-2 bg-dark-700 rounded hover:bg-dark-600 text-sm">📋 Audit Reports</button>
+          <button onclick="showTab('youtube'); showYouTubeSection('outliers')" class="px-3 py-2 bg-dark-700 rounded hover:bg-dark-600 text-sm">🎯 Outlier Research</button>
+          <button onclick="showTab('business')" class="px-3 py-2 bg-dark-700 rounded hover:bg-dark-600 text-sm">📊 Pipeline View</button>
         </div>
       </div>
     </div>
@@ -139,15 +165,17 @@
           <h2 class="text-xl font-semibold">🎯 Outlier Research</h2>
           <div class="flex gap-2">
             <input type="text" id="youtube-search" placeholder="Search videos, channels..." class="px-3 py-1 bg-dark-700 rounded border border-dark-600 text-sm md:w-64">
-            <select id="youtube-niche-filter" class="px-3 py-1 bg-dark-700 rounded border border-dark-600 text-sm">
-              <option value="">All Niches</option>
-              <option value="🎮 Gaming">🎮 Gaming</option>
-              <option value="💰 Finance">💰 Finance</option>
-              <option value="⚡ Productivity">⚡ Productivity</option>
-              <option value="🎬 Production">🎬 Production</option>
-            </select>
-            <button onclick="runOutlierScan()" class="px-3 py-1 bg-accent-green rounded text-sm hover:bg-green-600">🔍 Scan Viewstats</button>
+            <button onclick="runOutlierScan()" id="scan-viewstats-btn" class="px-3 py-1 bg-accent-blue rounded text-sm hover:bg-blue-600" title="Manual research guide for viewstats.com">📖 Viewstats Guide</button>
           </div>
+        </div>
+        
+        <!-- Niche Filter Buttons -->
+        <div class="flex flex-wrap gap-2 mb-4">
+          <button onclick="filterByNiche('all')" id="niche-btn-all" class="niche-filter-btn px-3 py-1 bg-accent-blue rounded text-sm">All Niches</button>
+          <button onclick="filterByNiche('🎮 Gaming')" id="niche-btn-gaming" class="niche-filter-btn px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">🎮 Gaming</button>
+          <button onclick="filterByNiche('💰 Finance')" id="niche-btn-finance" class="niche-filter-btn px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">💰 Finance</button>
+          <button onclick="filterByNiche('⚡ Productivity')" id="niche-btn-productivity" class="niche-filter-btn px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">⚡ Productivity</button>
+          <button onclick="filterByNiche('🎬 Production')" id="niche-btn-production" class="niche-filter-btn px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">🎬 Production</button>
         </div>
         
         <div class="card rounded-lg p-4 mb-4 bg-dark-700/30">
@@ -156,7 +184,7 @@
             <div><span class="text-gray-400">Last Scan:</span> <span id="last-outlier-scan">Never</span></div>
             <div><span class="text-gray-400">Outliers Found:</span> <span id="total-outliers">0</span></div>
             <div><span class="text-gray-400">Content Briefs:</span> <span id="total-briefs">0</span></div>
-            <div><span class="text-gray-400">Next Auto-Scan:</span> <span id="next-scan">7:00 AM</span></div>
+            <div><span class="text-gray-400">Auto-Scan:</span> <span id="next-scan" class="text-gray-500">Not configured</span></div>
           </div>
         </div>
         
@@ -173,20 +201,21 @@
       <div id="yt-section-competitors" class="yt-section hidden">
         <div class="flex justify-between items-center mb-4">
           <h2 class="text-xl font-semibold">👁️ Competitor Tracker</h2>
-          <button onclick="addCompetitor()" class="px-3 py-1 bg-accent-blue rounded text-sm hover:bg-blue-600">+ Add Channel</button>
+          <button onclick="showAddCompetitorModal()" class="px-3 py-1 bg-accent-blue rounded text-sm hover:bg-blue-600">+ Add Channel</button>
         </div>
         
         <div class="card rounded-lg p-4 mb-4">
           <h3 class="font-semibold mb-3">📺 Tracked Channels</h3>
           <div id="competitor-list" class="grid grid-cols-1 md:grid-cols-2 gap-3">
-            <!-- Competitors loaded from competitors.json -->
+            <!-- Competitors loaded dynamically -->
+            <p class="text-gray-500 text-sm">No competitors tracked yet. Click "+ Add Channel" to start tracking.</p>
           </div>
         </div>
         
         <div class="card rounded-lg p-4">
           <h3 class="font-semibold mb-3">🔥 Latest Uploads</h3>
           <div id="competitor-uploads" class="space-y-2">
-            <p class="text-gray-500 text-sm">Select a channel to see latest uploads</p>
+            <p class="text-gray-500 text-sm">Select a channel to see tracked videos</p>
           </div>
         </div>
       </div>
@@ -195,7 +224,14 @@
       <div id="yt-section-briefs" class="yt-section hidden">
         <div class="flex justify-between items-center mb-4">
           <h2 class="text-xl font-semibold">📝 Content Briefs</h2>
-          <button onclick="generateBrief()" class="px-3 py-1 bg-accent-green rounded text-sm hover:bg-green-600">+ Generate Brief</button>
+          <button onclick="showGenerateBriefModal()" class="px-3 py-1 bg-accent-green rounded text-sm hover:bg-green-600">+ Generate Brief</button>
+        </div>
+        <!-- Briefs Filter -->
+        <div class="flex flex-wrap gap-2 mb-4">
+          <button onclick="filterBriefs('all')" id="brief-filter-all" class="brief-filter-btn px-3 py-1 bg-accent-blue rounded text-xs">All</button>
+          <button onclick="filterBriefs('draft')" id="brief-filter-draft" class="brief-filter-btn px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-xs">Draft</button>
+          <button onclick="filterBriefs('ready')" id="brief-filter-ready" class="brief-filter-btn px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-xs">Ready</button>
+          <button onclick="filterBriefs('produced')" id="brief-filter-produced" class="brief-filter-btn px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-xs">Produced</button>
         </div>
         <div id="content-briefs-list" class="space-y-3">
           <div class="skeleton-loader">
@@ -264,7 +300,15 @@
           </div>
         </div>
         <div class="card rounded-lg p-4">
-          <h3 class="font-semibold mb-3">Watchlist</h3>
+          <div class="flex justify-between items-center mb-3">
+            <h3 class="font-semibold">Watchlist</h3>
+            <div class="flex items-center gap-2">
+              <span id="investments-price-status" class="text-xs text-gray-400"></span>
+              <button onclick="refreshStockPrices()" class="text-xs px-2 py-1 bg-dark-700 rounded hover:bg-dark-600" title="Refresh prices from Yahoo Finance">
+                🔄 Refresh
+              </button>
+            </div>
+          </div>
           <div id="investments-watchlist" class="space-y-2">
             <div class="skeleton-loader">
               <div class="skeleton-line" style="width: 100%"></div>
@@ -319,7 +363,10 @@
     <div id="tab-research" class="tab-content hidden">
       <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4 gap-3">
         <h2 class="text-xl font-semibold">🔬 Research Notes</h2>
-        <input type="text" id="research-search" placeholder="Search notes..." class="px-3 py-1 bg-dark-700 rounded border border-dark-600 text-sm md:w-64">
+        <div class="flex gap-2">
+          <input type="text" id="research-search" placeholder="Search notes..." class="px-3 py-1 bg-dark-700 rounded border border-dark-600 text-sm md:w-64">
+          <button onclick="showAddNoteModal()" class="px-3 py-1 bg-accent-blue rounded text-sm hover:bg-blue-600">+ Add Note</button>
+        </div>
       </div>
       <div id="research-notes" class="space-y-3">
         <div class="skeleton-loader">
@@ -376,14 +423,14 @@
     </div>
   </div>
 
-  <script src="app.js"></script>
+  <script src="app.js?v=202602090300"></script>
   
   <!-- Footer with version timestamp for cache busting -->
   <footer class="max-w-7xl mx-auto px-4 py-3 mt-8 border-t border-dark-700 text-center">
     <div class="text-xs text-gray-500 font-mono">
-      <span id="deploy-version">v2026.02.08.1</span> | 
-      <span id="deploy-timestamp">Deployed: 2026-02-08 15:25 UTC</span> | 
-      <span class="text-accent-blue">[deploy] Force CDN refresh</span>
+      <span id="deploy-version">v2026.02.09.3</span> | 
+      <span id="deploy-timestamp">Deployed: 2026-02-09 03:00 UTC</span> | 
+      <a href="#" onclick="forceCDNRefresh(); return false;" class="text-accent-blue hover:underline cursor-pointer">[deploy] Force CDN refresh</a>
     </div>
   </footer>
 </body>

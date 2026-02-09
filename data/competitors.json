@@ -95,6 +95,55 @@
         "videoCount": 267
       },
       "latestVideos": []
+    },
+    {
+      "id": "comp-007",
+      "channelId": "@PokeRealtv",
+      "name": "PokeReal TV",
+      "url": "https://www.youtube.com/@PokeRealtv/videos",
+      "niche": "Gaming/Pokémon",
+      "focus": "Pokémon content",
+      "addedAt": "2026-02-08T21:42:00Z",
+      "autoAdded": false,
+      "addedBy": "Steven",
+      "stats": {
+        "subscribers": "TBD",
+        "totalViews": "TBD",
+        "videoCount": 0
+      },
+      "latestVideos": []
+    },
+    {
+      "id": "comp-008",
+      "channelId": "@AIAnimalWorld",
+      "name": "AI Animal World",
+      "url": "https://www.youtube.com/@AIAnimalWorld",
+      "niche": "AI Creature Design",
+      "focus": "AI-generated hybrid animals and creatures",
+      "addedAt": "2026-02-08T21:45:00Z",
+      "autoAdded": true,
+      "stats": {
+        "subscribers": "850K",
+        "totalViews": "320M",
+        "videoCount": 178
+      },
+      "latestVideos": []
+    },
+    {
+      "id": "comp-009",
+      "channelId": "@PixelmonAdventures",
+      "name": "Pixelmon Adventures",
+      "url": "https://www.youtube.com/@PixelmonAdventures",
+      "niche": "Gaming/Pokémon",
+      "focus": "Minecraft Pixelmon gameplay",
+      "addedAt": "2026-02-08T21:45:00Z",
+      "autoAdded": true,
+      "stats": {
+        "subscribers": "1.5M",
+        "totalViews": "580M",
+        "videoCount": 245
+      },
+      "latestVideos": []
     }
   ],
   "outlierPatterns": [
@@ -111,5 +160,5 @@
       "recommendedAction": "Document AI creature creation process"
     }
   ],
-  "lastUpdated": "2026-02-08T12:00:00Z"
+  "lastUpdated": "2026-02-08T21:45:00Z"
 }

@@ -83,10 +83,30 @@
         "differentiation": "Creator-first approach with proven viral format integration"
       },
       "createdAt": "2026-02-08T15:10:00Z"
+    },
+    {
+      "id": "opp-008",
+      "name": "AI Creature Design Weekly Newsletter",
+      "description": "Curated weekly newsletter covering AI creature design tools, prompts, and viral format breakdowns. Top-of-funnel asset that feeds template pack and masterclass sales. Beehiiv/Substack platform with automated social distribution.",
+      "alignment": "HIGH",
+      "status": "new",
+      "potentialRevenue": "$500-2000/month",
+      "effort": "Low",
+      "nextStep": "Set up Beehiiv account and create landing page",
+      "marketData": {
+        "tam": "Newsletter market $1B+",
+        "nicheTam": "AI art/design newsletters growing 40% YoY",
+        "targetAudience": "AI enthusiasts, creature designers, YouTubers, indie devs",
+        "competitors": ["Ben's Bites (AI)", "The Rundown (AI)", "Motion Design (animation)"],
+        "differentiation": "Hyper-focused on creature/character design niche - underserved segment",
+        "funnelPosition": "Top of funnel → Templates → Masterclass"
+      },
+      "synergies": ["opp-006", "opp-007"],
+      "createdAt": "2026-02-08T18:46:00Z"
     }
   ],
   "pipeline": {
-    "new": 4,
+    "new": 5,
     "evaluating": 1,
     "pursuing": 0,
     "passed": 1,

@@ -8,33 +8,44 @@
       "status": "active",
       "lastUsed": "2026-02-08T06:00:00Z",
       "tags": ["dashboard", "analytics", "overview"],
-      "runCommand": "open ~/Desktop/Nox Builds/nox-dashboard-repo/index.html",
+      "runCommand": "https://stevensongai.github.io/nox-dashboard/",
       "auditGrade": 92
     },
     {
       "id": "tool-002",
+      "name": "Mission Control",
+      "category": "Dashboard",
+      "description": "Work tracker for monitoring agent activity, audits, ralph chains, and live work feeds",
+      "status": "active",
+      "lastUsed": "2026-02-08T06:00:00Z",
+      "tags": ["work-tracker", "activity", "audits"],
+      "runCommand": "https://stevensongai.github.io/nox-work-tracker/",
+      "auditGrade": 88
+    },
+    {
+      "id": "tool-003",
       "name": "OpenClaw Gateway",
       "category": "Automation",
       "description": "Local automation gateway for executing commands, managing nodes, and orchestrating agent workflows",
       "status": "active",
       "lastUsed": "2026-02-08T05:30:00Z",
       "tags": ["automation", "gateway", "orchestration"],
-      "runCommand": "openclaw gateway start",
+      "runCommand": "https://docs.openclaw.ai",
       "auditGrade": 88
     },
     {
-      "id": "tool-003",
+      "id": "tool-004",
       "name": "Claude Code",
       "category": "Analysis",
       "description": "Anthropic's coding assistant for software development, code review, and technical analysis tasks",
       "status": "active",
       "lastUsed": "2026-02-08T04:15:00Z",
       "tags": ["coding", "ai", "development"],
-      "runCommand": "claude",
+      "runCommand": "https://claude.ai",
       "auditGrade": 95
     },
     {
-      "id": "tool-004",
+      "id": "tool-005",
       "name": "Perplexity Pro",
       "category": "Research",
       "description": "AI-powered search engine for deep research, fact-checking, and staying current on tech developments",
@@ -45,18 +56,18 @@
       "auditGrade": 90
     },
     {
-      "id": "tool-005",
+      "id": "tool-006",
       "name": "Cursor IDE",
       "category": "Content",
       "description": "AI-first code editor with built-in Claude integration for rapid development and refactoring",
       "status": "active",
       "lastUsed": "2026-02-08T03:45:00Z",
       "tags": ["editor", "coding", "ai"],
-      "runCommand": "cursor",
+      "runCommand": "https://cursor.com",
       "auditGrade": 94
     },
     {
-      "id": "tool-006",
+      "id": "tool-007",
       "name": "ElevenLabs",
       "category": "Content",
       "description": "Voice synthesis platform for creating AI voiceovers, narration, and audio content",
@@ -67,7 +78,7 @@
       "auditGrade": 87
     },
     {
-      "id": "tool-007",
+      "id": "tool-008",
       "name": "Gamma.app",
       "category": "Content",
       "description": "AI-powered presentation and document creation for pitch decks and research summaries",
@@ -85,5 +96,5 @@
     "Analysis",
     "Automation"
   ],
-  "lastUpdated": "2026-02-08T06:00:00Z"
+  "lastUpdated": "2026-02-08T21:00:00Z"
 }
