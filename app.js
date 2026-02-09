@@ -240,6 +240,7 @@ function updateAgentStatus() {
 }
 
 // Tab switching with URL hash update and deep linking
+// BATCH 2 FIX: Completely rewritten for reliable hash updates
 function showTab(tabId) {
   // Validate tab exists
   const tabContent = document.getElementById(`tab-${tabId}`);
@@ -259,10 +260,11 @@ function showTab(tabId) {
   tabContent.classList.remove('hidden');
   tabBtn.classList.add('tab-active');
   
-  // Update URL hash for deep linking (without triggering hashchange)
+  // BATCH 2 FIX: Always update URL hash, forcing history entry
   const newHash = `#${tabId}`;
   if (window.location.hash !== newHash) {
-    history.pushState({ tab: tabId }, '', newHash);
+    history.pushState({ tab: tabId, timestamp: Date.now() }, '', newHash);
+    console.log(`[Nox Dashboard] Tab switched to: ${tabId}, hash updated to: ${newHash}`);
   }
   
   // Re-render charts when switching to their respective tabs
@@ -304,16 +306,26 @@ function initTabFromHash() {
 }
 
 // Handle browser back/forward buttons
+// BATCH 2 FIX: Improved to handle popstate properly
 function handlePopState(event) {
   const hash = window.location.hash.slice(1);
   const validTabs = ['dashboard', 'youtube', 'business', 'investments', 'tools', 'research', 'audits'];
+  
+  console.log(`[Nox Dashboard] PopState triggered, hash: ${hash}, state:`, event.state);
   
   if (hash && validTabs.includes(hash)) {
     // Update UI without pushing new state
     document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
     document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('tab-active'));
-    document.getElementById(`tab-${hash}`)?.classList.remove('hidden');
-    document.getElementById(`tab-btn-${hash}`)?.classList.add('tab-active');
+    
+    const tabContent = document.getElementById(`tab-${hash}`);
+    const tabBtn = document.getElementById(`tab-btn-${hash}`);
+    
+    if (tabContent && tabBtn) {
+      tabContent.classList.remove('hidden');
+      tabBtn.classList.add('tab-active');
+      console.log(`[Nox Dashboard] Back/forward navigation to tab: ${hash}`);
+    }
   } else if (!hash) {
     // No hash, show dashboard
     showTab('dashboard');

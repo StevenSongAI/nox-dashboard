@@ -378,6 +378,51 @@
       "url": "https://www.youtube.com/watch?v=voHC6G9Yb34",
       "researchStatus": "completed",
       "source": "viewstats outlier research - direct from viewstats.com/pro/outliers"
+    },
+    {
+      "id": "yt-viewstats-020",
+      "title": "ALL MINECRAFT MOBS vs BOSS MOBS",
+      "channel": "petesoncraft",
+      "views": 1570000,
+      "publishedAt": "2024-02-08T00:00:00Z",
+      "addedAt": "2026-02-09T01:00:00Z",
+      "outlierScore": 49.9,
+      "niche": "🎮 Gaming/Creature Battle",
+      "whyOutlier": "MASSIVE 49.9x outlier - 1.57M views on channel with ~31K typical. 'All X vs Y' comparison format + creature battles = viral formula.",
+      "contentAngle": "Create 'AI Creature Battle Royale' - pit multiple AI-generated creatures against each other. Tournament bracket format with escalating challenges.",
+      "url": "https://www.youtube.com/watch?v=vjs-Oyp6aH0",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - direct from viewstats.com/pro/outliers"
+    },
+    {
+      "id": "yt-viewstats-021",
+      "title": "The AI Behind Animals",
+      "channel": "alteregosocial",
+      "views": 64000,
+      "publishedAt": "2024-09-08T00:00:00Z",
+      "addedAt": "2026-02-09T01:00:00Z",
+      "outlierScore": 39.7,
+      "niche": "🤖 AI/Educational",
+      "whyOutlier": "39.7x outlier - 64K views on 1.6K sub channel. AI + animals combination hits algorithm sweet spot. Educational angle on AI performs well.",
+      "contentAngle": "'The AI Behind [Creature Name]' - explain how AI generates creature behaviors/appearances. Educational + tech angle.",
+      "url": "https://www.youtube.com/watch?v=p8M6aeu9UTQ",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - direct from viewstats.com/pro/outliers"
+    },
+    {
+      "id": "yt-viewstats-022",
+      "title": "I Remade Every Mob Prehistoric in Minecraft",
+      "channel": "forkin_",
+      "views": 512000,
+      "publishedAt": "2024-06-08T00:00:00Z",
+      "addedAt": "2026-02-09T01:00:00Z",
+      "outlierScore": 26.7,
+      "niche": "🎮 Gaming/Creature Transformation",
+      "whyOutlier": "26.7x outlier - 512K views on 19K sub channel. 'I remade every X' format + prehistoric transformation = proven viral pattern.",
+      "contentAngle": "'I Remade [Creature] as Prehistoric/Alien/Mutant' - transformation format with AI creature evolution. Multiple variants from same base creature.",
+      "url": "https://www.youtube.com/watch?v=IYAdUO-Pl0c",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - direct from viewstats.com/pro/outliers"
     }
   ],
   "competitorResearchQueue": [
