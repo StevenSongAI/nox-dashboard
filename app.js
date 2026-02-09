@@ -2166,39 +2166,75 @@ function showYouTubeSection(section) {
 // 3.1 OUTLIER RESEARCH - VIEWSTATS SCANNER
 // ============================================
 
-// Run outlier scan via viewstats - FUNCTIONAL VERSION
+// D1 FIX: Honest Viewstats Scanner - clearly labeled as manual guide
 function runOutlierScan() {
-  // Show scan in progress
   const scanStatusHTML = `
-    <div id="scan-status" class="scan-status info">
-      <h4 class="font-semibold mb-2">🔍 Viewstats Scanner</h4>
-      <p class="text-sm mb-3">This feature requires manual steps. Follow the guide below:</p>
-      <ol class="text-sm space-y-2 ml-4">
-        <li>1. Open <a href="https://viewstats.com" target="_blank" class="text-accent-blue underline">viewstats.com</a> in a new tab</li>
-        <li>2. Navigate to <strong>Pro Tools > Outlier Videos</strong></li>
-        <li>3. Search for your niche keywords (e.g., "gaming", "tutorial")</li>
-        <li>4. Export results as CSV or note video URLs</li>
-        <li>5. Return here and add outliers manually or wait for agent sync</li>
+    <div id="scan-status" class="scan-status info mb-4 p-4 bg-dark-800 border border-dark-600 rounded-lg">
+      <h4 class="font-semibold mb-2 text-accent-blue">📖 Manual Viewstats Research Guide</h4>
+      <p class="text-sm mb-3 text-gray-400">Automated scanning is not available. Follow these steps to manually research outliers:</p>
+      
+      <ol class="text-sm space-y-3 ml-4">
+        <li class="flex items-start gap-2">
+          <span class="text-accent-blue font-bold">1.</span>
+          <span>Open <a href="https://viewstats.com/pro/outliers" target="_blank" class="text-accent-blue underline hover:text-blue-400">viewstats.com/pro/outliers</a> in a new tab</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-accent-blue font-bold">2.</span>
+          <span>Enter your niche keywords (e.g., "minecraft", "ai creature", "gaming")</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-accent-blue font-bold">3.</span>
+          <span>Set minimum outlier score to 2.0x or higher</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-accent-blue font-bold">4.</span>
+          <span>Note video URLs with high outlier scores (>10x = viral, >50x = massive)</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <span class="text-accent-blue font-bold">5.</span>
+          <span>Add findings to Competitor Tracker for ongoing monitoring</span>
+        </li>
       </ol>
+      
+      <div class="mt-4 p-3 bg-dark-900/50 rounded text-xs text-gray-500">
+        <p>💡 <strong>Pro tip:</strong> Look for videos where views > 10x subscriber count. These are true outliers.</p>
+      </div>
+      
       <div class="mt-4 flex gap-2">
-        <button onclick="openViewstats()" class="btn-primary">Open Viewstats →</button>
-        <button onclick="document.getElementById('scan-status').remove()" class="btn-secondary">Dismiss</button>
+        <button onclick="window.open('https://viewstats.com/pro/outliers', '_blank')" class="btn-primary">
+          Open Viewstats →
+        </button>
+        <button onclick="document.getElementById('scan-status').remove()" class="btn-secondary">
+          Dismiss
+        </button>
       </div>
     </div>
   `;
   
-  // Insert before the outliers list
+  // Find the YouTube section to insert before
   const container = document.getElementById('youtube-outliers');
   const existingStatus = document.getElementById('scan-status');
   if (existingStatus) existingStatus.remove();
   
-  const tempDiv = document.createElement('div');
-  tempDiv.innerHTML = scanStatusHTML;
-  container?.parentNode?.insertBefore(tempDiv.firstElementChild, container);
+  // Insert before the container
+  if (container?.parentNode) {
+    const tempDiv = document.createElement('div');
+    tempDiv.innerHTML = scanStatusHTML;
+    container.parentNode.insertBefore(tempDiv.firstElementChild, container);
+  }
   
-  // Update last scan time in localStorage
+  // Update last scan time to show user attempted research
   localStorage.setItem('last-outlier-scan', new Date().toISOString());
   updateScanStatus();
+}
+
+// Update the button text to be honest about functionality
+function updateScanButton() {
+  const scanBtn = document.getElementById('scan-viewstats-btn');
+  if (scanBtn) {
+    scanBtn.innerHTML = '📖 Viewstats Guide';
+    scanBtn.title = 'Open manual research guide for viewstats.com';
+  }
 }
 
 function openViewstats() {
@@ -2765,25 +2801,31 @@ function submitGenerateBrief() {
 function showBriefDetailModal(briefId) {
   const briefs = loadBriefs();
   const brief = briefs.find(b => b.id === briefId);
-  if (!brief) return;
+  if (!brief) {
+    console.error('[showBriefDetailModal] Brief not found:', briefId);
+    return;
+  }
+  
+  // D2 FIX: Escape briefId to prevent HTML/JS injection issues
+  const safeBriefId = briefId.replace(/'/g, "\\'").replace(/"/g, '\\"');
   
   const modalHTML = `
     <div class="modal-scroll">
       <div class="flex justify-between items-start mb-4">
-        <h3 class="text-lg font-semibold">${brief.title}</h3>
+        <h3 class="text-lg font-semibold">${escapeHtml(brief.title)}</h3>
         <span class="text-xs px-2 py-1 rounded ${getStatusColor(brief.status)}">${brief.status}</span>
       </div>
       
       <div class="mb-4">
         <label class="text-xs text-gray-500 uppercase">Hook</label>
-        <p class="text-sm mt-1">${brief.hook}</p>
+        <p class="text-sm mt-1">${escapeHtml(brief.hook)}</p>
       </div>
       
       ${brief.outline?.length > 0 ? `
         <div class="mb-4">
           <label class="text-xs text-gray-500 uppercase">Outline</label>
           <ol class="text-sm mt-1 ml-4">
-            ${brief.outline.map(item => `<li class="mb-1">${item}</li>`).join('')}
+            ${brief.outline.map(item => `<li class="mb-1">${escapeHtml(item)}</li>`).join('')}
           </ol>
         </div>
       ` : ''}
@@ -2791,30 +2833,30 @@ function showBriefDetailModal(briefId) {
       <div class="grid grid-cols-2 gap-4 mb-4">
         <div>
           <label class="text-xs text-gray-500 uppercase">Niche</label>
-          <p class="text-sm">${brief.niche}</p>
+          <p class="text-sm">${escapeHtml(brief.niche)}</p>
         </div>
         <div>
           <label class="text-xs text-gray-500 uppercase">Target Length</label>
-          <p class="text-sm">${brief.targetLength}</p>
+          <p class="text-sm">${escapeHtml(brief.targetLength)}</p>
         </div>
         <div>
           <label class="text-xs text-gray-500 uppercase">Difficulty</label>
-          <p class="text-sm">${brief.difficulty}</p>
+          <p class="text-sm">${escapeHtml(brief.difficulty)}</p>
         </div>
         <div>
           <label class="text-xs text-gray-500 uppercase">Urgency</label>
-          <p class="text-sm">${brief.urgency}</p>
+          <p class="text-sm">${escapeHtml(brief.urgency)}</p>
         </div>
       </div>
       
       <div class="flex gap-2 mt-4 pt-4 border-t border-dark-700">
-        <select id="brief-status-update" class="form-input flex-1" onchange="updateBriefStatus('${briefId}', this.value)">
+        <select id="brief-status-update" class="form-input flex-1" onchange="updateBriefStatus('${safeBriefId}', this.value)">
           <option value="draft" ${brief.status === 'draft' ? 'selected' : ''}>Draft</option>
           <option value="ready" ${brief.status === 'ready' ? 'selected' : ''}>Ready</option>
           <option value="produced" ${brief.status === 'produced' ? 'selected' : ''}>Produced</option>
           <option value="published" ${brief.status === 'published' ? 'selected' : ''}>Published</option>
         </select>
-        <button onclick="deleteBrief('${briefId}')" class="btn-danger">Delete</button>
+        <button onclick="deleteBrief('${safeBriefId}')" class="btn-danger">Delete</button>
       </div>
     </div>
   `;
@@ -2833,17 +2875,41 @@ function updateBriefStatus(briefId, newStatus) {
 }
 
 function deleteBrief(briefId) {
-  if (!confirm('Delete this brief?')) return;
+  // D2 FIX: Better error handling and validation
+  if (!briefId) {
+    console.error('[deleteBrief] No briefId provided');
+    return;
+  }
+  
+  if (!confirm('Delete this brief? This cannot be undone.')) return;
+  
+  console.log('[deleteBrief] Deleting brief:', briefId);
   
   const briefs = loadBriefs();
+  console.log('[deleteBrief] Loaded briefs count:', briefs.length);
+  
   const filtered = briefs.filter(b => b.id !== briefId);
+  
+  if (filtered.length === briefs.length) {
+    console.warn('[deleteBrief] Brief not found:', briefId);
+    alert('Brief not found. It may have already been deleted.');
+    return;
+  }
+  
   saveBriefs(filtered);
+  console.log('[deleteBrief] Saved briefs count:', filtered.length);
+  
+  // Close modal first
   closeModal();
+  
+  // Re-render briefs
   renderContentBriefs();
   
-  // Update brief count
+  // Update brief count in stats
   const totalBriefsEl = document.getElementById('total-briefs');
   if (totalBriefsEl) totalBriefsEl.textContent = filtered.length;
+  
+  console.log('[deleteBrief] Brief deleted successfully');
 }
 
 // ============================================
