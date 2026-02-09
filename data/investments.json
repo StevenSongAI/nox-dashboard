@@ -43,6 +43,7 @@
       "sector": "EV/Auto",
       "ticker": "TSLA",
       "name": "Tesla",
+      "currentPrice": 245.50,
       "targetEntry": 220.00,
       "catalyst": "Robotaxi reveal, FSD progress",
       "source": "X.com / Tech news",
@@ -53,6 +54,7 @@
       "sector": "Semiconductors",
       "ticker": "AMD",
       "name": "AMD",
+      "currentPrice": 178.25,
       "targetEntry": 150.00,
       "catalyst": "Data center share growth",
       "source": "X.com / Industry",
@@ -189,6 +191,6 @@
       "timeHorizon": "2-4 weeks to production, 4-8 weeks to performance validation"
     }
   ],
-  "lastUpdated": "2026-02-08T23:46:00Z",
+  "lastUpdated": "2026-02-09T01:06:00Z",
   "dataSource": "X.com via browser research (bird API disabled)"
 }
