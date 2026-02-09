@@ -1304,6 +1304,126 @@
       "url": "https://www.youtube.com/watch?v=v_jdRO-uFj4",
       "researchStatus": "completed",
       "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-088",
+      "title": "We Turned Into BABY DRAGONS In Minecraft!",
+      "channel": "nico",
+      "views": 991000,
+      "publishedAt": "2024-02-08T00:00:00Z",
+      "addedAt": "2026-02-09T23:29:24.739Z",
+      "outlierScore": 2.2,
+      "niche": "🐉 Minecraft/Dragon Transformation",
+      "whyOutlier": "2.2x outlier - 991K views on 4.7M sub channel. Transformation format (turning into baby dragons) drives engagement. Multiple players = more dynamic interactions.",
+      "contentAngle": "Create 'We Turned Into AI Baby Dragons' - multiplayer transformation with different dragon types and abilities",
+      "url": "https://www.youtube.com/watch?v=xiBCikNqOSU",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-089",
+      "title": "THE BABY RAINBOW DRAGONS!",
+      "channel": "crazycrafters",
+      "views": 84000,
+      "publishedAt": "2024-02-08T00:00:00Z",
+      "addedAt": "2026-02-09T23:29:24.739Z",
+      "outlierScore": 1.7,
+      "niche": "🐉 Minecraft/Rainbow Dragons",
+      "whyOutlier": "1.7x outlier - 84K views on 565K sub channel. Rainbow aesthetic + baby dragons creates visual appeal. Color variety adds discovery element.",
+      "contentAngle": "Create 'The AI RAINBOW DRAGONS' - showcase multicolored AI-generated dragons with unique elemental abilities tied to colors",
+      "url": "https://www.youtube.com/watch?v=HnIZlpxH6zk",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-090",
+      "title": "The WILD Dragon Family - Minecraft Dragons",
+      "channel": "littlelizardgaming",
+      "views": 120000,
+      "publishedAt": "2024-06-08T00:00:00Z",
+      "addedAt": "2026-02-09T23:29:24.739Z",
+      "outlierScore": 0.9,
+      "niche": "🐉 Minecraft/Wild Dragons",
+      "whyOutlier": "Recent upload (7 months ago) - 'WILD' descriptor implies untamed nature vs domesticated dragons. Dragon family content consistently performs.",
+      "contentAngle": "Create 'The WILD AI Dragon Family' - untamed AI dragons with survival/wild behaviors vs typical pet dragons",
+      "url": "https://www.youtube.com/watch?v=xTGGjS6dub0",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-091",
+      "title": "Our Baby Dragon is Sick! - Minecraft Dragons",
+      "channel": "littlelizardgaming",
+      "views": 389000,
+      "publishedAt": "2022-02-08T00:00:00Z",
+      "addedAt": "2026-02-09T23:29:24.739Z",
+      "outlierScore": 1.6,
+      "niche": "🐉 Minecraft/Dragon Care",
+      "whyOutlier": "1.6x outlier - 389K views on 4M sub channel. Sick pet narrative creates emotional stakes and care-taking gameplay loop.",
+      "contentAngle": "Create 'My AI Dragon is Sick!' - illness/healing narrative with AI creature care mechanics. Emotional investment drives retention.",
+      "url": "https://www.youtube.com/watch?v=NHWGWXWH7jw",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-092",
+      "title": "We ADOPTED Baby Dragons in Minecraft PE!",
+      "channel": "olioptv",
+      "views": 338000,
+      "publishedAt": "2022-02-08T00:00:00Z",
+      "addedAt": "2026-02-09T23:29:24.739Z",
+      "outlierScore": 4,
+      "niche": "🐉 Minecraft/Dragon Adoption",
+      "whyOutlier": "EXTREME 4x outlier - 338K views on 659K sub channel! 'ADOPTED' format + 'Baby Dragons' = viral combo. PE (Pocket Edition) reaches mobile audience.",
+      "contentAngle": "Create 'We ADOPTED AI Baby Dragons' - adoption narrative with care/training progression. Mobile-friendly content angle.",
+      "url": "https://www.youtube.com/watch?v=nDPRbn0wsEc",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-093",
+      "title": "How To Make A Baby Dragon In Minecraft",
+      "channel": "furioussss",
+      "views": 110000,
+      "publishedAt": "2022-02-08T00:00:00Z",
+      "addedAt": "2026-02-09T23:29:24.739Z",
+      "outlierScore": 10.1,
+      "niche": "🐉 Minecraft/Dragon Tutorial",
+      "whyOutlier": "EXTREME 10.1x outlier - 110K views on 3.3M sub channel. Tutorial format for creating baby dragons drives strong utility value.",
+      "contentAngle": "Create 'How To Make an AI Baby Dragon' - tutorial format teaching viewers to create AI-generated baby dragons. Educational + practical.",
+      "url": "https://www.youtube.com/watch?v=Y17CSQ7pJVI",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-094",
+      "title": "which dragon has more health?",
+      "channel": "axol",
+      "views": 1250000,
+      "publishedAt": "2023-02-08T00:00:00Z",
+      "addedAt": "2026-02-09T23:29:24.739Z",
+      "outlierScore": 3.6,
+      "niche": "🐉 Gaming/Dragon Comparison",
+      "whyOutlier": "MASSIVE 3.6x outlier - 1.25M views on 2.7M sub channel! Simple question format drives curiosity. Health stat comparison creates engagement.",
+      "contentAngle": "Create 'Which AI dragon has more health?' - comparison format pitting different AI creatures against each other. Stats + visuals.",
+      "url": "https://www.youtube.com/watch?v=iVyeeoWSi1A",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-095",
+      "title": "Evo Baby Dragon Speeds up your Units.",
+      "channel": "orangejuice",
+      "views": 347000,
+      "publishedAt": "2024-08-08T00:00:00Z",
+      "addedAt": "2026-02-09T23:29:24.739Z",
+      "outlierScore": 2.9,
+      "niche": "🎮 Gaming/Baby Dragon Evolution",
+      "whyOutlier": "2.9x outlier - 347K views on 3.6M sub channel. 'Evo' = evolution mechanic. Speed boost utility creates strategic gameplay value.",
+      "contentAngle": "Create 'Evo Baby AI Dragon' - evolution mechanics with strategic abilities. Gameplay utility drives engagement.",
+      "url": "https://www.youtube.com/watch?v=73ZdDY1z8tI",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
     }
   ],
   "competitorResearchQueue": [
@@ -1980,57 +2100,56 @@
     ],
     "cronSchedule": "7AM and 6PM daily"
   },
-    {
-      "id": "brief-baby-physics-pilot-002",
-      "title": "Baby Creature Physics - Production-Ready Pilot Script",
-      "summary": "Complete production guide for Baby Creature Physics pilot video. Combines highest-confidence outlier patterns (390x-677x scores) with specific execution details.",
-      "hook": "I put a baby dragon in a physics simulator... it broke the game",
-      "outline": [
-        "HOOK (0:00-0:30): Start with chaos - fully grown dragon smashing through physics objects. 'This all started with something much smaller...'",
-        "SETUP (0:30-2:00): Introduce the experiment. AI-generated baby dragon, realistic physics sandbox (Garry's Mod), prediction: cute or chaos?",
-        "FIRST CONTACT (2:00-5:00): Baby dragon reveal. Tiny, waddling, tries to fly but physics makes it tumble. First physics interactions - knocking over small objects.",
-        "GROWTH PHASE 1 (5:00-8:00): Time jump + size increase. Now adolescent. More destructive but still clumsy. Physics chain reactions start.",
-        "GROWTH PHASE 2 (8:00-11:00): Near-adult size. Intentional destruction. Dragon learns physics can be weaponized. Escalating set pieces.",
-        "CLIMAX (11:00-13:30): Dragon 'breaks' the simulation - physics engine can't handle the chaos. Glitch effects, floating objects, reality breaking.",
-        "RESOLUTION (13:30-15:00): Reset to baby dragon for cute final moment. 'Same dragon, 20 minutes ago.' Series tease: 'What if we tried this with a kaiju?'"
-      ],
-      "targetLength": "15 min",
-      "difficulty": "medium",
-      "urgency": "high",
-      "basedOn": [
-        "yt-viewstats-007 (390x outlier - baby kaiju physics)",
-        "yt-viewstats-008 (677x outlier - ZOOCHOSIS mod)",
-        "insight-008 Physics + Baby Creature pattern"
-      ],
-      "expectedOutlierScore": 400,
-      "targetRatio": "50-100x subscriber count",
-      "equipmentChecklist": [
-        "Garry's Mod ($10 Steam) or Unity/Blender physics",
-        "AI image gen for dragon design reference (Midjourney/SD)",
-        "OBS for screen recording (1080p60)",
-        "DaVinci Resolve or Premiere Pro for editing",
-        "Music: epidemic sound or artlist subscription"
-      ],
-      "thumbnailConcept": "Split frame: top = adorable baby dragon in peaceful pose, bottom = same dragon grown destroying city. Red arrow pointing down. Text: '15 MINUTES LATER'",
-      "titleOptions": [
-        "I Put a Baby Dragon in a Physics Simulator (It Broke Everything)",
-        "Growing a Baby Dragon in Realistic Physics (Big Mistake)",
-        "Baby Dragon + Physics Engine = Chaos"
-      ],
-      "editingNotes": [
-        "Fast cuts during physics chaos (every 1-2 seconds)",
-        "Slow motion on best physics moments",
-        "Add cartoonish sound effects for baby dragon (tiny roar = squeak)",
-        "Music: whimsical during baby phase, intense orchestral during destruction",
-        "Use zoom transitions for time jumps"
-      ],
-      "estimatedProductionTime": "20-25 hours",
-      "seriesPotential": "Dragon types: Fire, Ice, Electric, Void. Each = separate video.",
-      "confidence": "very high",
-      "status": "ready-to-produce",
-      "createdAt": "2026-02-09T20:46:00Z"
-    }
-  ],
+  "bonusBrief": {
+    "id": "brief-baby-physics-pilot-002",
+    "title": "Baby Creature Physics - Production-Ready Pilot Script",
+    "summary": "Complete production guide for Baby Creature Physics pilot video. Combines highest-confidence outlier patterns (390x-677x scores) with specific execution details.",
+    "hook": "I put a baby dragon in a physics simulator... it broke the game",
+    "outline": [
+      "HOOK (0:00-0:30): Start with chaos - fully grown dragon smashing through physics objects. 'This all started with something much smaller...'",
+      "SETUP (0:30-2:00): Introduce the experiment. AI-generated baby dragon, realistic physics sandbox (Garry's Mod), prediction: cute or chaos?",
+      "FIRST CONTACT (2:00-5:00): Baby dragon reveal. Tiny, waddling, tries to fly but physics makes it tumble. First physics interactions - knocking over small objects.",
+      "GROWTH PHASE 1 (5:00-8:00): Time jump + size increase. Now adolescent. More destructive but still clumsy. Physics chain reactions start.",
+      "GROWTH PHASE 2 (8:00-11:00): Near-adult size. Intentional destruction. Dragon learns physics can be weaponized. Escalating set pieces.",
+      "CLIMAX (11:00-13:30): Dragon 'breaks' the simulation - physics engine can't handle the chaos. Glitch effects, floating objects, reality breaking.",
+      "RESOLUTION (13:30-15:00): Reset to baby dragon for cute final moment. 'Same dragon, 20 minutes ago.' Series tease: 'What if we tried this with a kaiju?'"
+    ],
+    "targetLength": "15 min",
+    "difficulty": "medium",
+    "urgency": "high",
+    "basedOn": [
+      "yt-viewstats-007 (390x outlier - baby kaiju physics)",
+      "yt-viewstats-008 (677x outlier - ZOOCHOSIS mod)",
+      "insight-008 Physics + Baby Creature pattern"
+    ],
+    "expectedOutlierScore": 400,
+    "targetRatio": "50-100x subscriber count",
+    "equipmentChecklist": [
+      "Garry's Mod ($10 Steam) or Unity/Blender physics",
+      "AI image gen for dragon design reference (Midjourney/SD)",
+      "OBS for screen recording (1080p60)",
+      "DaVinci Resolve or Premiere Pro for editing",
+      "Music: epidemic sound or artlist subscription"
+    ],
+    "thumbnailConcept": "Split frame: top = adorable baby dragon in peaceful pose, bottom = same dragon grown destroying city. Red arrow pointing down. Text: '15 MINUTES LATER'",
+    "titleOptions": [
+      "I Put a Baby Dragon in a Physics Simulator (It Broke Everything)",
+      "Growing a Baby Dragon in Realistic Physics (Big Mistake)",
+      "Baby Dragon + Physics Engine = Chaos"
+    ],
+    "editingNotes": [
+      "Fast cuts during physics chaos (every 1-2 seconds)",
+      "Slow motion on best physics moments",
+      "Add cartoonish sound effects for baby dragon (tiny roar = squeak)",
+      "Music: whimsical during baby phase, intense orchestral during destruction",
+      "Use zoom transitions for time jumps"
+    ],
+    "estimatedProductionTime": "20-25 hours",
+    "seriesPotential": "Dragon types: Fire, Ice, Electric, Void. Each = separate video.",
+    "confidence": "very high",
+    "status": "ready-to-produce",
+    "createdAt": "2026-02-09T20:46:00Z"
+  },
   "synthesizedInsights": [
     {
       "id": "insight-early-am-001",
