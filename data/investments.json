@@ -319,6 +319,29 @@
       "addedAt": "2026-02-09T12:26:00Z"
     }
   ],
+    {
+      "id": "intel-013",
+      "date": "2026-02-09T21:46:00Z",
+      "topic": "AI Video Tools Competitive Landscape - Runway, Kling, Luma, Pika Analysis",
+      "source": "Research Synthesis / Note-013 Analysis",
+      "content": "Based on research note-013 comparing AI video generation tools: Runway Gen-3 leads in quality/consistency but highest cost ($76-144/month). Kling offers best quality-to-cost ratio for high-volume creators. Luma Dream Machine provides free tier suitable for beginners. Pika 2.0 best for stylized/character-consistent content. Market implications: Creator tooling fragmentation creates opportunity for workflow integration plays. Current cost barriers ($300-500/month for professional workflows) suggest pricing compression ahead as competition intensifies. Infrastructure plays (NVDA, AMD, RENDER) benefit regardless of which tool wins. Watch for: OpenAI Sora public release (could reset competitive dynamics), Adobe Firefly Video integration (threat to pure-play startups), Runway Series C funding announcement (valuation benchmark for sector).",
+      "impact": "bullish",
+      "relatedPositions": [
+        "RENDER"
+      ],
+      "relatedOpportunities": [
+        "opp-007"
+      ],
+      "riskFactors": [
+        "Tool pricing compression reduces startup valuations",
+        "Big Tech (Adobe, OpenAI) may crush pure-play competitors",
+        "Rapid model obsolescence - today's leader may be tomorrow's laggard"
+      ],
+      "linkedResearch": [
+        "note-013"
+      ]
+    }
+  ],
   "synthesizedInsights": [
     {
       "id": "inv-insight-001",
