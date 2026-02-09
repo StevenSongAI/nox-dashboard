@@ -94,6 +94,8 @@
       "category": "Content",
       "description": "Kanban-style content pipeline for tracking video ideas from concept to upload",
       "status": "active",
+      "lastUsed": "2026-02-09T15:30:00Z",
+      "tags": ["pipeline", "workflow", "content"],
       "runCommand": "pipeline",
       "auditGrade": 85
     },
@@ -103,6 +105,8 @@
       "category": "Analysis",
       "description": "Analyze YouTube video performance with sortable tables and trend charts",
       "status": "active",
+      "lastUsed": "2026-02-09T15:30:00Z",
+      "tags": ["analytics", "youtube", "performance"],
       "runCommand": "analyzer",
       "auditGrade": 82
     },
@@ -112,6 +116,8 @@
       "category": "Content",
       "description": "Generate structured content briefs from outlier video analysis",
       "status": "active",
+      "lastUsed": "2026-02-09T15:30:00Z",
+      "tags": ["briefs", "content", "generator"],
       "runCommand": "brief-generator",
       "auditGrade": 80
     },
@@ -121,6 +127,8 @@
       "category": "Research",
       "description": "Search and browse Minecraft maps with bookmark functionality",
       "status": "beta",
+      "lastUsed": "2026-02-09T15:30:00Z",
+      "tags": ["minecraft", "maps", "scraper"],
       "runCommand": "map-scraper",
       "auditGrade": 75
     }
