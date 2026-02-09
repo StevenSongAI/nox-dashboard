@@ -52,7 +52,7 @@
       "views": 2180000,
       "publishedAt": "2024-02-08T00:00:00Z",
       "addedAt": "2026-02-08T12:50:00Z",
-      "outlierScore": 103.0,
+      "outlierScore": 103,
       "niche": "🎬 Horror/Creatures",
       "whyOutlier": "Full creature feature film getting massive organic reach",
       "contentAngle": "Creature horror content has strong audience demand - consider short-form creature stories",
@@ -134,7 +134,12 @@
       "url": "https://www.youtube.com/watch?v=ZMDE-dragon-1000-years",
       "researchStatus": "completed",
       "source": "Pattern analysis from ZMDE catalog",
-      "tags": ["time-compression", "creature-evolution", "minecraft", "survival"]
+      "tags": [
+        "time-compression",
+        "creature-evolution",
+        "minecraft",
+        "survival"
+      ]
     },
     {
       "id": "yt-derived-002",
@@ -150,7 +155,13 @@
       "url": "https://www.youtube.com/watch?v=ZMDE-shark-1000-years",
       "researchStatus": "pattern-derived",
       "source": "Pattern analysis from ZMDE '1000 Years' series catalog",
-      "tags": ["time-compression", "creature-evolution", "minecraft", "shark", "ocean"]
+      "tags": [
+        "time-compression",
+        "creature-evolution",
+        "minecraft",
+        "shark",
+        "ocean"
+      ]
     },
     {
       "id": "yt-derived-003",
@@ -166,7 +177,13 @@
       "url": "https://www.youtube.com/watch?v=ZMDE-pokemon-1000-years",
       "researchStatus": "pattern-derived",
       "source": "Pattern analysis from ZMDE '1000 Years' series catalog",
-      "tags": ["time-compression", "creature-evolution", "minecraft", "pokemon", "gaming"]
+      "tags": [
+        "time-compression",
+        "creature-evolution",
+        "minecraft",
+        "pokemon",
+        "gaming"
+      ]
     },
     {
       "id": "yt-derived-004",
@@ -182,7 +199,13 @@
       "url": "https://www.youtube.com/watch?v=ZMDE-wolf-1000-years",
       "researchStatus": "pattern-derived",
       "source": "Pattern analysis from ZMDE '1000 Years' series catalog",
-      "tags": ["time-compression", "creature-evolution", "minecraft", "wolf", "pack-behavior"]
+      "tags": [
+        "time-compression",
+        "creature-evolution",
+        "minecraft",
+        "wolf",
+        "pack-behavior"
+      ]
     },
     {
       "id": "yt-viewstats-007",
@@ -191,7 +214,7 @@
       "views": 226000,
       "publishedAt": "2024-02-08T00:00:00Z",
       "addedAt": "2026-02-08T23:00:00Z",
-      "outlierScore": 390.0,
+      "outlierScore": 390,
       "niche": "🎮 Gaming/Physics Simulation",
       "whyOutlier": "Tiny channel (2.1K subs) getting 226K views = 390x outlier. Physics-based creature simulation with 'baby kaiju' concept hits algorithm sweet spot.",
       "contentAngle": "Create 'AI Creature Physics Simulation' series - baby creatures growing in realistic physics environments",
@@ -206,7 +229,7 @@
       "views": 3370000,
       "publishedAt": "2023-02-08T00:00:00Z",
       "addedAt": "2026-02-08T23:00:00Z",
-      "outlierScore": 677.0,
+      "outlierScore": 677,
       "niche": "🎮 Gaming/Creature Mods",
       "whyOutlier": "EXTREME outlier - 51K sub channel with 3.37M views = 677x ratio. Zochoosis mod + Garry's Mod + creature transformation = viral formula.",
       "contentAngle": "Modded creature content in sandbox games. 'AI Creature Mods in [Game]' format - showcase community creature mods with cinematic presentation.",
@@ -221,7 +244,7 @@
       "views": 2640000,
       "publishedAt": "2023-02-08T00:00:00Z",
       "addedAt": "2026-02-08T23:00:00Z",
-      "outlierScore": 188.0,
+      "outlierScore": 188,
       "niche": "👹 Horror/Creature Lore",
       "whyOutlier": "Trevor Henderson creatures have cult following. Comparison format (Old vs New) drives clicks. 336K subs getting 2.64M views = 188x outlier.",
       "contentAngle": "Comparison format for AI creatures: 'AI Creatures: Early Attempts vs Latest Generation'. Show evolution of AI generation quality over time.",
@@ -423,6 +446,51 @@
       "url": "https://www.youtube.com/watch?v=IYAdUO-Pl0c",
       "researchStatus": "completed",
       "source": "viewstats outlier research - direct from viewstats.com/pro/outliers"
+    },
+    {
+      "id": "yt-viewstats-023",
+      "title": "Evolution Of Godzilla | Life Cycle",
+      "channel": "worldinnumbers3d",
+      "views": 1060000,
+      "publishedAt": "2023-02-08T00:00:00Z",
+      "addedAt": "2026-02-09T02:10:00Z",
+      "outlierScore": 13.3,
+      "niche": "🦖 Kaiju/Creature Evolution",
+      "whyOutlier": "13.3x outlier - 1.06M views on 87K sub channel. Life cycle/evolution format with iconic kaiju creates massive appeal.",
+      "contentAngle": "Create AI creature life cycle videos - show evolution from birth to ultimate form with cinematic presentation",
+      "url": "https://www.youtube.com/watch?v=6yDY7bOdbRs",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - direct from viewstats.com/pro/outliers"
+    },
+    {
+      "id": "yt-viewstats-024",
+      "title": "All Alien Creatures & Evolution Compilation | Maxxive Jumpo",
+      "channel": "maxxivejumpo",
+      "views": 316000,
+      "publishedAt": "2024-02-08T00:00:00Z",
+      "addedAt": "2026-02-09T02:10:00Z",
+      "outlierScore": 28,
+      "niche": "👽 Alien/Creature Evolution",
+      "whyOutlier": "28x outlier - 316K views on 56K sub channel. Alien creature compilation + evolution format hits algorithm sweet spot.",
+      "contentAngle": "Create All AI Creatures & Evolution compilations - showcase multiple AI-generated creatures with evolution stages",
+      "url": "https://www.youtube.com/watch?v=f7cTlQ947bw",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - direct from viewstats.com/pro/outliers"
+    },
+    {
+      "id": "yt-viewstats-025",
+      "title": "New MINECRAFT Pokemon Region - Minecraft Inspired Fakemon",
+      "channel": "metalfear4",
+      "views": 565000,
+      "publishedAt": "2023-02-08T00:00:00Z",
+      "addedAt": "2026-02-09T02:10:00Z",
+      "outlierScore": 15.3,
+      "niche": "🎮 Gaming/Pokémon/Minecraft",
+      "whyOutlier": "15.3x outlier - 565K views on 143K sub channel. Minecraft + Pokémon crossover with custom fakemon designs = viral formula.",
+      "contentAngle": "Create AI-generated creatures inspired by Minecraft mobs - Minecraft Mob Evolutions with custom designs",
+      "url": "https://www.youtube.com/watch?v=FmMHgGEKmKU",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - direct from viewstats.com/pro/outliers"
     }
   ],
   "competitorResearchQueue": [
@@ -493,11 +561,20 @@
       "title": "AI Pet Simulation Content Strategy",
       "summary": "Rogers Pets and Pet Simulated World are leading the AI-generated pet niche. Focus on 'I got a fictional pet' format with simulation elements.",
       "hook": "I just adopted a pet that doesn't exist in real life... and it's growing faster than I expected",
-      "outline": ["Introduce AI-generated pet concept", "Show pet's unique abilities/behaviors", "Document daily simulation", "Unexpected developments", "Viewer engagement call"],
+      "outline": [
+        "Introduce AI-generated pet concept",
+        "Show pet's unique abilities/behaviors",
+        "Document daily simulation",
+        "Unexpected developments",
+        "Viewer engagement call"
+      ],
       "targetLength": "10-15 min",
       "difficulty": "medium",
       "urgency": "high",
-      "basedOn": ["@RogersPets-w5s", "@petsimulatedworld"],
+      "basedOn": [
+        "@RogersPets-w5s",
+        "@petsimulatedworld"
+      ],
       "status": "ready",
       "createdAt": "2026-02-08T12:00:00Z"
     },
@@ -506,11 +583,19 @@
       "title": "AI Creature Design Video",
       "summary": "Creature Lab shows AI creature generation is trending. Document the process of creating unique creatures with AI tools.",
       "hook": "I used AI to create a creature that could never exist... then I brought it to life",
-      "outline": ["Introduce creature concept", "Show AI generation process", "Design iterations", "Final creature reveal", "Backstory/lore creation"],
+      "outline": [
+        "Introduce creature concept",
+        "Show AI generation process",
+        "Design iterations",
+        "Final creature reveal",
+        "Backstory/lore creation"
+      ],
       "targetLength": "12-18 min",
       "difficulty": "medium",
       "urgency": "high",
-      "basedOn": ["@CreatureLab_real"],
+      "basedOn": [
+        "@CreatureLab_real"
+      ],
       "status": "ready",
       "createdAt": "2026-02-08T12:00:00Z"
     },
@@ -519,11 +604,18 @@
       "title": "Night Toons Style Animation",
       "summary": "Night Toons combines animation with storytelling. Create animated shorts with unexpected twists.",
       "hook": "This 2-minute animation has a twist that changes everything",
-      "outline": ["Setup familiar scenario", "Build tension/comedy", "Unexpected twist", "Resolution with payoff"],
+      "outline": [
+        "Setup familiar scenario",
+        "Build tension/comedy",
+        "Unexpected twist",
+        "Resolution with payoff"
+      ],
       "targetLength": "2-5 min",
       "difficulty": "high",
       "urgency": "medium",
-      "basedOn": ["@NightToons-j8i"],
+      "basedOn": [
+        "@NightToons-j8i"
+      ],
       "status": "draft",
       "createdAt": "2026-02-08T12:00:00Z"
     },
@@ -532,11 +624,19 @@
       "title": "Sacred Mystery Unboxing",
       "summary": "Sacred Stuff curates mystery content. Create high-stakes unboxing with unknown value items.",
       "hook": "I paid $500 for a mystery box from the dark web...",
-      "outline": ["Box acquisition setup", "Unboxing tension", "Item reveals", "Value assessment", "Next box tease"],
+      "outline": [
+        "Box acquisition setup",
+        "Unboxing tension",
+        "Item reveals",
+        "Value assessment",
+        "Next box tease"
+      ],
       "targetLength": "15-20 min",
       "difficulty": "low",
       "urgency": "medium",
-      "basedOn": ["@sacredstuff"],
+      "basedOn": [
+        "@sacredstuff"
+      ],
       "status": "draft",
       "createdAt": "2026-02-08T12:00:00Z"
     },
@@ -545,11 +645,19 @@
       "title": "Wild Pokédex AI Twist",
       "summary": "Wild Pokédex combines Pokémon with AI. Create realistic Pokémon scenarios using AI generation.",
       "hook": "What if Pokémon were real? I used AI to find out",
-      "outline": ["Pokémon selection", "AI realistic rendering", "Behavior simulation", "Battle/mechanic exploration", "Viewer favorite poll"],
+      "outline": [
+        "Pokémon selection",
+        "AI realistic rendering",
+        "Behavior simulation",
+        "Battle/mechanic exploration",
+        "Viewer favorite poll"
+      ],
       "targetLength": "10-14 min",
       "difficulty": "medium",
       "urgency": "medium",
-      "basedOn": ["@WildPokédex-uwu"],
+      "basedOn": [
+        "@WildPokédex-uwu"
+      ],
       "status": "draft",
       "createdAt": "2026-02-08T12:00:00Z"
     },
@@ -569,7 +677,11 @@
       "targetLength": "15-18 min",
       "difficulty": "high",
       "urgency": "high",
-      "basedOn": ["@ZMDE", "@StevenSongIRL", "viewstats pattern research"],
+      "basedOn": [
+        "@ZMDE",
+        "@StevenSongIRL",
+        "viewstats pattern research"
+      ],
       "expectedOutlierScore": 75,
       "targetRatio": "10x subscriber count",
       "status": "ready",
@@ -577,7 +689,7 @@
     }
   ],
   "trendAnalysis": {
-    "lastUpdated": "2026-02-08T19:26:00Z",
+    "lastUpdated": "2026-02-09T02:10:00Z",
     "researchNeeded": false,
     "instructions": "Use viewstats.com Pro Tools > Outlier to research each competitor channel. Look for videos with outlier scores >2.0x. Document: title, views, outlier score, why it performed well, content angle for your channel.",
     "targetPatterns": [
@@ -597,7 +709,7 @@
         "addedAt": "2026-02-08T19:26:00Z"
       },
       {
-        "id": "insight-002", 
+        "id": "insight-002",
         "pattern": "Full-Length Feature Appeal",
         "evidence": "boxofficemovies4k creature horror film (2.18M views, 103 outlier)",
         "finding": "Long-form creature content (20+ min) has strong audience retention when narrative-driven",
