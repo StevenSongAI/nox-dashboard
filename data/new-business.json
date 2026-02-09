@@ -103,14 +103,68 @@
       },
       "synergies": ["opp-006", "opp-007"],
       "createdAt": "2026-02-08T18:46:00Z"
+    },
+    {
+      "id": "opp-009",
+      "name": "AI Agent Workflow QA Service",
+      "description": "Quality assurance service for AI agent orchestration workflows. Red-team testing, defect detection, and builder verification for companies deploying multi-agent systems. Based on proven Ralph-chain methodology.",
+      "alignment": "HIGH",
+      "status": "new",
+      "potentialRevenue": "$3000-8000/month",
+      "effort": "Medium",
+      "nextStep": "Create case study from dashboard QA project results",
+      "marketData": {
+        "tam": "AI agent market $216B by 2030",
+        "problem": "90% of AI agent deployments fail due to lack of QA/testing",
+        "targetAudience": "AI startups, enterprise AI teams, agent workflow developers",
+        "competitors": ["Traditional QA firms (not AI-native)", "Internal testing teams"],
+        "differentiation": "AI-native QA methodology, subagent orchestration expertise, automated red-teaming"
+      },
+      "createdAt": "2026-02-09T11:30:00Z"
+    },
+    {
+      "id": "opp-010",
+      "name": "GitHub Pages Dashboard Templates",
+      "description": "Pre-built dashboard templates for GitHub Pages with real-time data visualization, tabbed interfaces, and mobile-responsive design. Target indie hackers and solopreneurs who need pro analytics without backend infrastructure.",
+      "alignment": "HIGH",
+      "status": "new",
+      "potentialRevenue": "$500-3000/month",
+      "effort": "Medium",
+      "nextStep": "Extract current dashboard into 3 reusable template variants",
+      "marketData": {
+        "tam": "GitHub Pages 40M+ users, static site generators growing 35% YoY",
+        "problem": "No-code tools are expensive ($20-100/month), custom dev is slow",
+        "targetAudience": "Indie hackers, content creators, small SaaS founders",
+        "competitors": ["Vercel templates", "Netlify templates", "Notion dashboards"],
+        "differentiation": "Zero backend required, free GitHub hosting, JSON-data driven, instant deploy"
+      },
+      "createdAt": "2026-02-09T11:35:00Z"
+    },
+    {
+      "id": "opp-011",
+      "name": "YouTube Analytics API Integration Service",
+      "description": "Custom analytics dashboards that pull from YouTube Data API, viewstats, and Social Blade to create unified content performance views. Automated outlier detection and competitor benchmarking.",
+      "alignment": "HIGH",
+      "status": "new",
+      "potentialRevenue": "$1500-4000/month",
+      "effort": "High",
+      "nextStep": "Prototype with Steven's channels as demo case",
+      "marketData": {
+        "tam": "Creator economy tools $250B market",
+        "problem": "Creators use 5+ tools to track performance, no unified view",
+        "targetAudience": "Mid-size YouTubers (100K-5M subs), MCNs, content strategists",
+        "competitors": ["VidIQ", "TubeBuddy", "viewstats Pro", "Social Blade"],
+        "differentiation": "Unified cross-platform view, custom outlier detection algorithms, white-label option"
+      },
+      "createdAt": "2026-02-09T11:40:00Z"
     }
   ],
   "pipeline": {
-    "new": 5,
+    "new": 8,
     "evaluating": 1,
     "pursuing": 0,
     "passed": 1,
     "won": 1
   },
-  "lastUpdated": "2026-02-08T15:10:00Z"
+  "lastUpdated": "2026-02-09T11:30:00Z"
 }
