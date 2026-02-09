@@ -2022,6 +2022,63 @@
       ],
       "createdAt": "2026-02-09T23:25:00Z",
       "updatedAt": "2026-02-09T23:25:00Z"
+    },
+    {
+      "id": "brief-ai-coding-agents-001",
+      "title": "AI Coding Agents: 30-Day Comparison Pilot",
+      "contentFormat": "Tech Comparison / Challenge",
+      "templatePattern": "I Used [Claude Code/Cursor/Copilot] for 30 Days - Here's What Happened",
+      "hookFormula": "Real developer tests AI coding agents on actual production work with measurable outcomes",
+      "summary": "AI coding agents are the fastest-growing developer tool category. Claude Code, Cursor, and GitHub Copilot are competing for market dominance. A real 30-day comparison using actual production tasks would capture significant developer audience interest. Trend score: 120.",
+      "hook": "I let AI write my code for 30 days straight. The results shocked my entire dev team.",
+      "outline": [
+        "0:00-0:45 Hook: Show dramatic before/after productivity metrics",
+        "0:45-2:00 Setup: Three AI agents (Claude Code, Cursor, Copilot), 30-day challenge rules",
+        "2:00-8:00 Week-by-week breakdown: Tasks completed, bugs introduced, time saved",
+        "8:00-12:00 Side-by-side comparison: Same task across all three agents",
+        "12:00-15:00 Surprising findings: Which agent excelled where, unexpected weaknesses",
+        "15:00-17:00 Final verdict: Best agent for specific use cases, overall winner",
+        "17:00-18:00 Outro: Call to action, tease follow-up with newer models"
+      ],
+      "targetLength": "18-22 min",
+      "difficulty": "medium",
+      "urgency": "high",
+      "trendScore": 120,
+      "marketContext": {
+        "category": "AI Developer Tools",
+        "growthRate": "300% YoY",
+        "targetAudience": "Software developers, tech enthusiasts, AI early adopters",
+        "searchVolume": "High - 'Claude Code vs Cursor' trending on X and YouTube"
+      },
+      "competitiveLandscape": [
+        "Claude Code: New entrant, high capability, terminal-based",
+        "Cursor: VS Code fork, strong autocomplete, growing fast",
+        "GitHub Copilot: Market leader, IDE integration, Microsoft backing"
+      ],
+      "uniqueAngle": "Real production work comparison, not toy examples. Actual metrics: tasks completed, LOC written, bugs caught/missed, developer satisfaction scores.",
+      "productionRequirements": {
+        "software": [
+          "Claude Code (Anthropic)",
+          "Cursor IDE",
+          "VS Code with Copilot"
+        ],
+        "trackingTools": [
+          "Time tracking (Toggl)",
+          "Git commits for comparison",
+          "Screen recording"
+        ],
+        "estimatedTime": "40-50 hours (includes 30-day challenge period)",
+        "estimatedCost": "$100-200 (API costs, software subscriptions)"
+      },
+      "expectedOutlierScore": 75,
+      "targetRatio": "10-15x subscriber count",
+      "basedOn": [
+        "STATE.json business opportunity (trend score 120)",
+        "X.com trending discussions on AI coding agents",
+        "YouTube tech comparison format performance"
+      ],
+      "status": "ready",
+      "createdAt": "2026-02-09T23:46:00Z"
     }
   ],
   "trendAnalysis": {
