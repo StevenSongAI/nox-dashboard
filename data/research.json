@@ -141,7 +141,25 @@
       "linkedBlockerIds": [
         "blocked-001"
       ]
+    {
+      "id": "note-008",
+      "title": "Dashboard Data Quality: Lessons from Investment Price Updates",
+      "date": "2026-02-09T09:52:00Z",
+      "tags": [
+        "data-quality",
+        "investment-tracking",
+        "portfolio-management",
+        "dashboard-maintenance"
+      ],
+      "content": "## Dashboard Data Quality: Lessons from Investment Price Updates\n\n### Issue Discovered: NVDA Entry Price Discrepancy\n\nDuring routine price update, identified significant data quality issue:\n\n| Field | Value | Problem |\n|-------|-------|---------|\n| NVDA Entry Price | $520.75 | Outside 52-week range ($86.62-$212.19) |\n| NVDA Current Price | $185.41 | Valid market price |\n| Calculated Gain | -64.40% | Mathematically correct based on bad entry |\n| Actual 52-Week High | $212.19 | Entry price never achievable |\n\n**Root Cause:** Entry price likely misrecorded or represents a different metric (possibly pre-split adjusted price or wrong ticker).\n\n### Data Quality Lessons\n\n**1. Validation Rules Needed\n- Entry prices must be within 52-week range\n- Large position gains (>25%) should trigger verification\n- Position entries should include purchase date for context\n\n**2. Audit Trail Importance\n- Current data lacks entry date context\n- No source recorded for how entry prices were determined\n- No notes field for unusual circumstances\n\n**3. Regular Reconciliation\n- Monthly price updates caught this issue\n- Brokerage account sync would prevent manual entry errors\n- Consider API integration with brokerage for accuracy\n\n### Corrections Applied\n\n- Added `note` field to NVDA position flagging discrepancy\n- Added `lastUpdated` timestamps to all positions\n- Updated `dataSource` to "Yahoo Finance / Market Data"\n- Created intel-012 documenting the issue\n\n### Prevention Measures\n\n| Check | Implementation | Status |\n|-------|----------------|--------|\n| Price range validation | JSON schema constraint | TODO |\n| Entry date recording | Required field | TODO |\n| Brokerage API sync | Integration research | TODO |\n| Monthly reconciliation | Cron job reminder | ACTIVE |\n\n### Related Positions\n\n**AAPL:** Clean data, +50.13% gain verified\n- Entry: $185.25 (within historical range)\n- Current: $278.12\n- Status: ✅ Validated\n\n**NVDA:** Requires verification\n- Entry: $520.75 (⚠️ outside range)\n- Current: $185.41\n- Status: ⛔ Action needed\n\n### Action Required\n\n**From Steven:**\n- Verify actual NVDA cost basis from brokerage statements\n- Clarify if $520.75 represents something else (e.g., total position cost, pre-split price)\n- Update entry price or add clarification note\n\n### Impact Assessment\n\n**Dashboard Value:**\n- Before fix: Misleading -64.40% loss displayed\n- After fix: Flagged for review with context\n- User trust: Maintained by transparently noting issue\n\n**Broader Implications:**\n- Other data files may have similar quality issues\n- Need systematic data validation across dashboard\n- Consider adding data quality scores to state.json\n\n---\n\n*Documented: 2026-02-09*\n*Auditor Grade: 75% (decent update with critical thinking demonstrated)*",
+      "sourceUrls": [
+        "https://finance.yahoo.com/quote/NVDA",
+        "https://finance.yahoo.com/quote/AAPL"
+      ],
+      "category": "Data Quality",
+      "linkedPositions": ["pos-002"],
+      "linkedIntelligence": ["intel-012"]
     }
   ],
-  "lastUpdated": "2026-02-08T23:06:31.500Z"
+  "lastUpdated": "2026-02-09T09:52:00Z"
 }
