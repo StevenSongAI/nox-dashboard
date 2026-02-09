@@ -8,7 +8,8 @@ let appData = {
   tools: { tools: [], categories: [], lastUpdated: '' },
   research: { notes: [] },
   audits: { audits: [], agentStats: {} },
-  meta: { lastUpdated: {}, agentStatus: {} }
+  meta: { lastUpdated: {}, agentStatus: {} },
+  competitors: { competitors: [], outlierPatterns: [] }
 };
 
 // Global chart instances (to prevent "Canvas already in use" errors)
@@ -152,7 +153,8 @@ async function loadAllData() {
     { name: 'tools', localPath: 'data/tools.json', fallbackPath: `${GITHUB_RAW_BASE}/data/tools.json` },
     { name: 'research', localPath: 'data/research.json', fallbackPath: `${GITHUB_RAW_BASE}/data/research.json` },
     { name: 'audits', localPath: 'data/audits.json', fallbackPath: `${GITHUB_RAW_BASE}/data/audits.json` },
-    { name: 'meta', localPath: 'data/meta.json', fallbackPath: `${GITHUB_RAW_BASE}/data/meta.json` }
+    { name: 'meta', localPath: 'data/meta.json', fallbackPath: `${GITHUB_RAW_BASE}/data/meta.json` },
+    { name: 'competitors', localPath: 'data/competitors.json', fallbackPath: `${GITHUB_RAW_BASE}/data/competitors.json` }
   ];
 
   // Helper to fetch with fallback
@@ -217,6 +219,10 @@ async function loadAllData() {
           case 'meta':
             appData.meta = data;
             console.log('[Nox Dashboard] Meta data loaded');
+            break;
+          case 'competitors':
+            appData.competitors = data;
+            console.log('[Nox Dashboard] Competitors data loaded:', appData.competitors.competitors?.length || 0, 'competitors');
             break;
         }
       } catch (parseErr) {
@@ -3347,25 +3353,14 @@ function applyNicheFilter() {
 // 3.3 COMPETITOR TRACKER
 // ============================================
 
-// Load competitors from localStorage
+// Load competitors from appData (loaded from JSON file)
 function loadCompetitors() {
-  const stored = localStorage.getItem('tracked-competitors');
-  if (stored) {
-    return JSON.parse(stored);
+  // Return competitors from the loaded appData
+  if (appData.competitors && appData.competitors.competitors && appData.competitors.competitors.length > 0) {
+    return appData.competitors.competitors;
   }
-  // Return default competitors if none stored
-  return [
-    {
-      id: 'comp-1',
-      name: 'MrBeast',
-      url: 'https://youtube.com/@MrBeast',
-      handle: '@MrBeast',
-      niche: 'Entertainment',
-      focus: 'Challenge Videos',
-      stats: { subscribers: '300M+', videoCount: '800+', totalViews: '50B+' },
-      addedAt: new Date().toISOString()
-    }
-  ];
+  // Return empty array if no data loaded yet
+  return [];
 }
 
 function saveCompetitors(competitors) {
