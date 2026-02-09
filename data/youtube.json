@@ -1139,6 +1139,34 @@
       "targetRatio": "10x subscriber count",
       "status": "ready",
       "createdAt": "2026-02-08T14:46:00Z"
+    },
+    {
+      "id": "brief-dragon-family-001",
+      "title": "AI Dragon Family Saga - Multi-Part Narrative Series",
+      "summary": "Dragon family content consistently achieves 5-20x outlier scores across multiple channels. The 'family' narrative creates emotional investment, ongoing storylines drive subscription/return visits, and 'secret family' twists add mystery elements.",
+      "hook": "I just discovered my AI dragon has a secret family... and they're not happy I found them",
+      "outline": [
+        "Part 1 Setup: Introduce primary AI dragon companion with personality",
+        "Discovery: Stumble upon hidden dragon family (eggs/nest/family unit)",
+        "Conflict: Family is protective/suspicious of human intruder",
+        "Part 2-4 Development: Build trust, help family, introduce family drama",
+        "Recurring Characters: Name each family member, give distinct personalities",
+        "Cliffhangers: End each episode with unresolved family tension"
+      ],
+      "targetLength": "12-15 min per episode",
+      "difficulty": "medium",
+      "urgency": "high",
+      "basedOn": [
+        "yt-viewstats-052 (16.1x - New Dragon Family)",
+        "yt-viewstats-056 (5.5x - Secret Family)",
+        "yt-viewstats-058 (2.9x - Training Baby Dragon)",
+        "shadroblox (20.8x - Dragon Family + Fangirls)"
+      ],
+      "expectedOutlierScore": 60,
+      "targetRatio": "8-15x subscriber count",
+      "seriesPotential": "6-10 episode arc",
+      "status": "ready",
+      "createdAt": "2026-02-09T11:46:00Z"
     }
   ],
   "trendAnalysis": {
