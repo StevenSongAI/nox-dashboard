@@ -1079,6 +1079,51 @@
       "url": "https://www.youtube.com/watch?v=irhNLRWwhv0",
       "researchStatus": "completed",
       "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-070",
+      "title": "A Baby NightFury is Born - Minecraft Dragons -Ep 1",
+      "channel": "littlelizardgaming",
+      "views": 1730000,
+      "publishedAt": "2021-02-08T00:00:00Z",
+      "addedAt": "2026-02-09T10:00:00Z",
+      "outlierScore": 108,
+      "niche": "🐉 Minecraft/Dragon Training",
+      "whyOutlier": "EXTREME 108x outlier - 1.73M views on 4.0M sub channel. How to Train Your Dragon IP + Minecraft gameplay = massive crossover appeal. First episode format implies series potential.",
+      "contentAngle": "Create 'I Hatched an AI Dragon' series - first episode format showing discovery/hatching of AI-generated dragon. Document growth and training progression across multiple episodes.",
+      "url": "https://www.youtube.com/watch?v=73ch2JZgvHs",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-071",
+      "title": "I Bought The VIRAL 15-in-1 Virtual Pet Box Bitzee",
+      "channel": "ragingraccoongaming",
+      "views": 516000,
+      "publishedAt": "2022-02-08T00:00:00Z",
+      "addedAt": "2026-02-09T10:00:00Z",
+      "outlierScore": 26.7,
+      "niche": "🎮 Virtual Pet/Unboxing",
+      "whyOutlier": "26.7x outlier - 516K views on 117K sub channel. Physical virtual pet unboxing combines nostalgia (Tamagotchi) with modern tech. 'VIRAL' in title signals social proof.",
+      "contentAngle": "Create 'I Bought The [Adjective] AI Pet [Product]' unboxing content. Physical AI pet devices or software unboxing with first-impression gameplay. Trend-jacking viral products.",
+      "url": "https://www.youtube.com/watch?v=MUiViw-8X1s",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-072",
+      "title": "Bone Island Evolution - All Common, Rare & Epic Monsters | My Singing Monsters",
+      "channel": "musicalmonsters",
+      "views": 1820000,
+      "publishedAt": "2023-02-08T00:00:00Z",
+      "addedAt": "2026-02-09T10:00:00Z",
+      "outlierScore": 85.8,
+      "niche": "🎮 Gaming/Creature Collection",
+      "whyOutlier": "EXTREME 85.8x outlier - 1.82M views on 181K sub channel. 'All X' completionist content + rarity tiers (Common/Rare/Epic) drives collection compulsion. My Singing Monsters has dedicated fanbase.",
+      "contentAngle": "Create 'Complete AI Creature Collection' videos with rarity tiers. Showcase Common → Rare → Epic → Legendary AI creature variants. Completionist content drives binge-watching.",
+      "url": "https://www.youtube.com/watch?v=MPfdehofB4Y",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
     }
   ],
   "competitorResearchQueue": [
