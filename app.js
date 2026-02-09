@@ -24,102 +24,174 @@ let portfolioChartInstance = null;
 // Stock price cache to avoid excessive API calls
 let stockPriceCache = {};
 let lastPriceFetch = 0;
+let apiErrorCount = 0;
+const MAX_API_ERRORS = 3;
 
-// Fetch real stock prices from Yahoo Finance with CORS proxy fallback
+// BATCH 2: Alpha Vantage API Configuration
+// ==========================================
+// Get your free API key from: https://www.alphavantage.co/support/#api-key
+// Free tier: 25 API calls/day, 5 calls/minute
+// Replace 'YOUR_API_KEY_HERE' with your actual key
+const ALPHA_VANTAGE_API_KEY = 'YOUR_API_KEY_HERE';
+const ALPHA_VANTAGE_BASE_URL = 'https://www.alphavantage.co/query';
+const CACHE_DURATION_MS = 300000; // 5 minutes
+
+/**
+ * Fetch real stock prices from Alpha Vantage API
+ * No CORS proxies, no mock data - real market prices only
+ * @param {string[]} tickers - Array of stock ticker symbols
+ * @returns {Object} - Map of ticker to price
+ */
 async function fetchStockPrices(tickers) {
   const now = Date.now();
-  // Cache prices for 5 minutes
-  if (now - lastPriceFetch < 300000 && Object.keys(stockPriceCache).length > 0) {
+  
+  // Check if API key is configured
+  if (ALPHA_VANTAGE_API_KEY === 'YOUR_API_KEY_HERE') {
+    console.warn('[StockAPI] API key not configured. Get free key at https://www.alphavantage.co/support/#api-key');
+    // Return cached prices if available, otherwise empty
     return stockPriceCache;
   }
   
-  // Try CORS proxies in order of preference
-  const corsProxies = [
-    'https://api.allorigins.win/raw?url=',
-    'https://corsproxy.io/?',
-    'https://api.codetabs.com/v1/proxy?quest='
-  ];
+  // Return cached prices if within cache duration
+  if (now - lastPriceFetch < CACHE_DURATION_MS && Object.keys(stockPriceCache).length > 0) {
+    console.log('[StockAPI] Returning cached prices (cache valid for 5 minutes)');
+    return stockPriceCache;
+  }
   
-  const yahooUrl = (ticker) => `https://query1.finance.yahoo.com/v8/finance/chart/${ticker}?interval=1d&range=1d`;
+  // Don't hammer API if we've hit errors
+  if (apiErrorCount >= MAX_API_ERRORS) {
+    console.warn(`[StockAPI] Too many errors (${apiErrorCount}), using cache. Reset in 10 minutes.`);
+    setTimeout(() => { apiErrorCount = 0; }, 600000);
+    return stockPriceCache;
+  }
   
   try {
+    console.log(`[StockAPI] Fetching prices for: ${tickers.join(', ')}`);
+    
+    // Rate limit: 5 calls per minute on free tier
+    // Process tickers one at a time to respect rate limits
     for (const ticker of tickers) {
-      let price = null;
-      
-      // Try each proxy
-      for (const proxy of corsProxies) {
-        try {
-          const response = await fetch(proxy + encodeURIComponent(yahooUrl(ticker)), {
-            method: 'GET',
-            headers: { 'Accept': 'application/json' }
-          });
-          
-          if (response.ok) {
-            const data = await response.json();
-            if (data.chart?.result?.[0]?.meta) {
-              const meta = data.chart.result[0].meta;
-              price = meta.regularMarketPrice || meta.previousClose || meta.chartPreviousClose;
-              if (price && price > 0) {
-                stockPriceCache[ticker] = price;
-                console.log(`[StockAPI] ${ticker}: $${price} (via proxy)`);
-                break; // Success, move to next ticker
-              }
-            }
-          }
-        } catch (proxyErr) {
-          console.warn(`[StockAPI] Proxy failed for ${ticker}:`, proxyErr.message);
-        }
+      // Skip if we already have fresh data for this ticker
+      if (stockPriceCache[ticker] && (now - lastPriceFetch) < CACHE_DURATION_MS) {
+        continue;
       }
       
-      // If all proxies failed, use fallback mock data
-      if (!price) {
-        const mockPrices = {
-          'AAPL': 182.50,
-          'NVDA': 875.25,
-          'TSLA': 175.80,
-          'AMD': 148.35,
-          'MSFT': 415.60,
-          'GOOGL': 165.40,
-          'AMZN': 178.90,
-          'META': 505.20,
-          'PLTR': 24.85,
-          'RENDER': 7.45
-        };
-        if (mockPrices[ticker]) {
-          stockPriceCache[ticker] = mockPrices[ticker];
-          console.log(`[StockAPI] ${ticker}: $${mockPrices[ticker]} (mock data)`);
+      try {
+        const url = `${ALPHA_VANTAGE_BASE_URL}?function=GLOBAL_QUOTE&symbol=${ticker}&apikey=${ALPHA_VANTAGE_API_KEY}`;
+        const response = await fetch(url, {
+          method: 'GET',
+          headers: { 'Accept': 'application/json' }
+        });
+        
+        if (!response.ok) {
+          throw new Error(`HTTP ${response.status}: ${response.statusText}`);
         }
+        
+        const data = await response.json();
+        
+        // Check for API error messages
+        if (data.Note || data.Information) {
+          console.warn(`[StockAPI] Rate limit or info: ${data.Note || data.Information}`);
+          apiErrorCount++;
+          break; // Stop fetching to respect rate limits
+        }
+        
+        // Extract price from Global Quote
+        const globalQuote = data['Global Quote'];
+        if (globalQuote && globalQuote['05. price']) {
+          const price = parseFloat(globalQuote['05. price']);
+          if (price && price > 0) {
+            stockPriceCache[ticker] = price;
+            console.log(`[StockAPI] ✓ ${ticker}: $${price.toFixed(2)}`);
+          }
+        } else {
+          console.warn(`[StockAPI] No price data for ${ticker}:`, data);
+        }
+        
+        // Rate limiting: Wait 12 seconds between calls (5 calls/minute max)
+        await new Promise(resolve => setTimeout(resolve, 12000));
+        
+      } catch (tickerErr) {
+        console.error(`[StockAPI] Error fetching ${ticker}:`, tickerErr.message);
+        apiErrorCount++;
       }
     }
     
     lastPriceFetch = now;
     return stockPriceCache;
+    
   } catch (err) {
-    console.error('[StockAPI] Error fetching prices:', err);
+    console.error('[StockAPI] Fatal error fetching prices:', err);
+    apiErrorCount++;
     return stockPriceCache;
   }
+}
+
+/**
+ * Check if stock prices are available
+ * @returns {boolean}
+ */
+function hasStockPrices() {
+  return Object.keys(stockPriceCache).length > 0;
+}
+
+/**
+ * Get cache status for UI display
+ * @returns {Object} - Status info
+ */
+function getStockCacheStatus() {
+  const now = Date.now();
+  const age = now - lastPriceFetch;
+  const isFresh = age < CACHE_DURATION_MS;
+  
+  return {
+    hasData: Object.keys(stockPriceCache).length > 0,
+    isFresh,
+    ageMinutes: Math.floor(age / 60000),
+    tickerCount: Object.keys(stockPriceCache).length,
+    apiKeyConfigured: ALPHA_VANTAGE_API_KEY !== 'YOUR_API_KEY_HERE'
+  };
 }
 
 // Refresh stock prices manually
 async function refreshStockPrices() {
   const statusEl = document.getElementById('investments-price-status');
+  
   if (statusEl) {
     statusEl.innerHTML = '<span class="text-yellow-500">⏳ Fetching...</span>';
+  }
+  
+  // Check if API key is configured
+  if (ALPHA_VANTAGE_API_KEY === 'YOUR_API_KEY_HERE') {
+    if (statusEl) {
+      statusEl.innerHTML = '<span class="text-accent-red">⚠️ API key needed</span>';
+    }
+    alert('Please configure your Alpha Vantage API key in app.js\n\nGet a free key at:\nhttps://www.alphavantage.co/support/#api-key');
+    return;
   }
   
   // Clear cache to force new fetch
   lastPriceFetch = 0;
   
-  // Re-render investments
-  await renderInvestments();
-  
-  // Check if we got prices
-  const hasPrices = investmentsWatchlistData.some(w => w.currentPrice && w.currentPrice > 0);
-  if (statusEl) {
-    if (hasPrices) {
-      statusEl.innerHTML = '<span class="text-accent-green">✓ Updated</span>';
-    } else {
-      statusEl.innerHTML = '<span class="text-gray-400">API unavailable</span>';
+  try {
+    // Re-render investments (which will fetch new prices)
+    await renderInvestments();
+    
+    // Check if we got prices
+    const hasPrices = investmentsWatchlistData.some(w => w.currentPrice && w.currentPrice > 0);
+    
+    if (statusEl) {
+      if (hasPrices) {
+        const now = new Date().toLocaleTimeString();
+        statusEl.innerHTML = `<span class="text-accent-green">✓ Updated ${now}</span>`;
+      } else {
+        statusEl.innerHTML = '<span class="text-gray-400">No price data</span>';
+      }
+    }
+  } catch (err) {
+    console.error('[Investments] Error refreshing prices:', err);
+    if (statusEl) {
+      statusEl.innerHTML = '<span class="text-accent-red">✗ Error</span>';
     }
   }
 }
@@ -476,29 +548,61 @@ function buildOpportunityModalContent(opp) {
 }
 
 function buildPositionModalContent(position) {
-  const gain = position.gainPercent !== undefined 
-    ? position.gainPercent 
-    : ((position.currentPrice - (position.entryPrice || position.avgCost)) / (position.entryPrice || position.avgCost) * 100);
+  const entryPrice = position.entryPrice || position.avgCost || 0;
+  const currentPrice = position.currentPrice || 0;
+  const qty = position.quantity || position.shares || 0;
+  
+  // Calculate gain/loss
+  let gain = position.gainPercent;
+  if (entryPrice > 0 && currentPrice > 0) {
+    gain = ((currentPrice - entryPrice) / entryPrice) * 100;
+  }
   const gainClass = gain >= 0 ? 'text-accent-green' : 'text-accent-red';
+  const gainSign = gain >= 0 ? '+' : '';
+  
+  // Calculate total values
+  const entryTotal = entryPrice > 0 ? entryPrice * qty : 0;
+  const currentTotal = currentPrice > 0 ? currentPrice * qty : 0;
+  const gainAmount = currentTotal - entryTotal;
   
   const fields = [
     { label: 'Ticker', value: position.ticker || position.symbol },
     { label: 'Name', value: position.name },
-    { label: 'Quantity', value: formatNumber(position.quantity || position.shares) },
-    { label: 'Average Cost', value: formatCurrency(position.entryPrice || position.avgCost) },
-    { label: 'Current Price', value: formatCurrency(position.currentPrice) },
-    { label: 'Gain/Loss', value: `<span class="${gainClass}">${gain.toFixed ? gain.toFixed(2) : gain}%</span>`, raw: true }
+    { label: 'Quantity', value: formatNumber(qty) },
+    { label: 'Average Cost', value: entryPrice > 0 ? formatCurrency(entryPrice) : '-' },
+    { label: 'Current Price', value: currentPrice > 0 ? formatCurrency(currentPrice) : '-' },
+    { label: 'Entry Value', value: entryTotal > 0 ? formatCurrency(entryTotal) : '-' },
+    { label: 'Current Value', value: currentTotal > 0 ? formatCurrency(currentTotal) : '-' },
+    { label: 'Gain/Loss %', value: `<span class="${gainClass}">${gain !== undefined ? gainSign + gain.toFixed(2) + '%' : '-'}</span>`, raw: true },
+    { label: 'Gain/Loss $', value: `<span class="${gainClass}">${gainAmount !== 0 ? (gainAmount > 0 ? '+' : '') + formatCurrency(gainAmount) : '-'}</span>`, raw: true }
   ];
   
   return buildModalFields(fields);
 }
 
 function buildWatchlistModalContent(item) {
-  const target = item.targetEntry || item.targetPrice;
+  const ticker = item.ticker || item.symbol;
+  const currentPrice = item.currentPrice || 0;
+  const target = item.targetEntry || item.targetPrice || 0;
+  
+  // Calculate distance to target
+  let distanceToTarget = null;
+  if (currentPrice > 0 && target > 0) {
+    distanceToTarget = ((currentPrice - target) / target) * 100;
+  }
+  
+  const priceDisplay = currentPrice > 0 ? formatCurrency(currentPrice) : 'Not available - click Refresh';
+  const targetDisplay = target > 0 ? formatCurrency(target) : '-';
+  const distanceDisplay = distanceToTarget !== null 
+    ? `<span class="${distanceToTarget <= 0 ? 'text-accent-green' : 'text-accent-red'}">${distanceToTarget > 0 ? '+' : ''}${distanceToTarget.toFixed(1)}% from target</span>`
+    : '-';
+  
   const fields = [
-    { label: 'Ticker', value: item.ticker || item.symbol },
-    { label: 'Current Price', value: (item.currentPrice && item.currentPrice !== 0) ? formatCurrency(item.currentPrice) : '-' },
-    { label: 'Target Entry', value: (target && target !== 0) ? formatCurrency(target) : '-' },
+    { label: 'Ticker', value: ticker },
+    { label: 'Name', value: item.name || ticker },
+    { label: 'Current Price', value: priceDisplay, raw: currentPrice === 0 },
+    { label: 'Target Entry', value: targetDisplay },
+    { label: 'Distance to Target', value: distanceDisplay, raw: true },
     { label: 'Thesis', value: item.thesis || item.notes, pre: true }
   ];
   
@@ -1461,22 +1565,47 @@ async function renderInvestments() {
   const watchlist = storedData.watchlist?.length > 0 ? storedData.watchlist : (jsonData.watchlist || []);
   const intelligence = storedData.intelligence?.length > 0 ? storedData.intelligence : (jsonData.intelligence || []);
 
-  // Fetch real stock prices for watchlist
-  const watchlistTickers = watchlist.map(w => w.ticker).filter(Boolean);
-  if (watchlistTickers.length > 0) {
+  // Get all unique tickers from positions and watchlist
+  const positionTickers = positions.map(p => p.ticker || p.symbol).filter(Boolean);
+  const watchlistTickers = watchlist.map(w => w.ticker || w.symbol).filter(Boolean);
+  const allTickers = [...new Set([...positionTickers, ...watchlistTickers])];
+  
+  // Fetch real stock prices
+  if (allTickers.length > 0 && ALPHA_VANTAGE_API_KEY !== 'YOUR_API_KEY_HERE') {
     try {
-      const prices = await fetchStockPrices(watchlistTickers);
-      // Attach prices to watchlist items
-      watchlist.forEach(w => {
-        if (prices[w.ticker]) {
-          w.currentPrice = prices[w.ticker];
+      const prices = await fetchStockPrices(allTickers);
+      
+      // Update positions with fetched prices
+      positions.forEach(p => {
+        const ticker = p.ticker || p.symbol;
+        if (prices[ticker]) {
+          p.currentPrice = prices[ticker];
+          // Recalculate gain/loss based on fetched price
+          const entryPrice = p.entryPrice || p.avgCost || 0;
+          if (entryPrice > 0) {
+            p.gainPercent = ((p.currentPrice - entryPrice) / entryPrice) * 100;
+            p.totalValue = (p.quantity || p.shares || 0) * p.currentPrice;
+          }
+          p.lastUpdated = new Date().toISOString();
         }
       });
-      // Save updated prices
+      
+      // Update watchlist with fetched prices
+      watchlist.forEach(w => {
+        const ticker = w.ticker || w.symbol;
+        if (prices[ticker]) {
+          w.currentPrice = prices[ticker];
+          w.lastUpdated = new Date().toISOString();
+        }
+      });
+      
+      // Save updated data
       saveInvestments({ positions, watchlist, intelligence });
     } catch (err) {
       console.warn('[Investments] Could not fetch stock prices:', err);
     }
+  } else if (allTickers.length > 0) {
+    console.log('[Investments] API key not configured, using static prices');
   }
 
   investmentsPositionData = positions;
@@ -1496,13 +1625,25 @@ async function renderInvestments() {
     posHtml += buildEmptyState('', 'No Positions', 'Click "Add" to track your first investment.');
   } else {
     posHtml += positions.map((p, idx) => {
-      const gain = p.gainPercent !== undefined ? p.gainPercent : ((p.currentPrice - (p.entryPrice || p.avgCost)) / (p.entryPrice || p.avgCost) * 100);
+      const entryPrice = p.entryPrice || p.avgCost || 0;
+      const currentPrice = p.currentPrice || 0;
+      let gain = p.gainPercent;
+      
+      // Recalculate gain if we have valid prices
+      if (entryPrice > 0 && currentPrice > 0) {
+        gain = ((currentPrice - entryPrice) / entryPrice) * 100;
+      }
+      
       const gainClass = gain >= 0 ? 'text-accent-green' : 'text-accent-red';
+      const gainSign = gain >= 0 ? '+' : '';
       const ticker = p.ticker || p.symbol;
-      const entry = p.entryPrice || p.avgCost;
-      const qty = p.quantity || p.shares;
-      const entryDisplay = (entry && entry !== 0) ? formatCurrency(entry) : '-';
-      const currentDisplay = (p.currentPrice && p.currentPrice !== 0) ? formatCurrency(p.currentPrice) : '-';
+      const qty = p.quantity || p.shares || 0;
+      
+      // Format prices - show '-' if 0 or invalid
+      const entryDisplay = entryPrice > 0 ? formatCurrency(entryPrice) : '-';
+      const currentDisplay = currentPrice > 0 ? formatCurrency(currentPrice) : '-';
+      const gainDisplay = gain !== undefined ? `${gainSign}${gain.toFixed(1)}%` : '-';
+      
       return `
         <div class="flex justify-between items-center p-2 bg-dark-700/50 rounded cursor-pointer hover:bg-dark-700" onclick="showPositionModal(${idx})">
           <div>
@@ -1510,7 +1651,7 @@ async function renderInvestments() {
             <div class="text-sm text-gray-400">${formatNumber(qty)} @ ${entryDisplay} → ${currentDisplay}</div>
           </div>
           <div class="text-right">
-            <div class="font-bold ${gainClass}">${gain.toFixed ? gain.toFixed(1) : gain}%</div>
+            <div class="font-bold ${gainClass}">${gainDisplay}</div>
           </div>
         </div>
       `;
@@ -1532,9 +1673,13 @@ async function renderInvestments() {
   } else {
     watchHtml += watchlist.map((w, idx) => {
       const ticker = w.ticker || w.symbol;
-      const target = w.targetEntry || w.targetPrice;
-      const priceDisplay = (w.currentPrice && w.currentPrice !== 0) ? formatCurrency(w.currentPrice) : '-';
-      const targetDisplay = (target && target !== 0) ? formatCurrency(target) : '-';
+      const target = w.targetEntry || w.targetPrice || 0;
+      const current = w.currentPrice || 0;
+      
+      // Only show price if it's a valid, non-zero number
+      const priceDisplay = current > 0 ? formatCurrency(current) : '-';
+      const targetDisplay = target > 0 ? formatCurrency(target) : '-';
+      
       return `
         <div class="p-2 bg-dark-700/50 rounded cursor-pointer hover:bg-dark-700" onclick="showWatchlistModal(${idx})">
           <div class="flex justify-between">
