@@ -374,6 +374,51 @@
       "url": "https://www.youtube.com/watch?v=FmMHgGEKmKU",
       "researchStatus": "completed",
       "source": "viewstats outlier research - direct from viewstats.com/pro/outliers"
+    },
+    {
+      "id": "yt-viewstats-026",
+      "title": "What if Pokemon had more Evolution Stages? Fuecoco | Crocalor | Skeledirge",
+      "channel": "sinpoke",
+      "views": 183000,
+      "publishedAt": "2024-02-08T00:00:00Z",
+      "addedAt": "2026-02-09T03:00:00Z",
+      "outlierScore": 676,
+      "niche": "🎮 Gaming/Pokémon/Evolution",
+      "whyOutlier": "EXTREME 676x outlier - 183K views on 9.9K sub channel. 'What if X had more Y' speculation format + Pokemon evolution = massive viral potential.",
+      "contentAngle": "Apply 'What if [AI creature] had more evolution stages?' format - show incremental AI-generated evolution stages beyond normal final form.",
+      "url": "https://www.youtube.com/watch?v=FO5a0rAkB20",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - direct from viewstats.com/pro/outliers"
+    },
+    {
+      "id": "yt-viewstats-027",
+      "title": "🐶 HOW TO TRANSFER PETS FROM PET SIM X TO PET SIM 99 (Pet Simulator X)",
+      "channel": "evanlandchannel",
+      "views": 182000,
+      "publishedAt": "2023-02-08T00:00:00Z",
+      "addedAt": "2026-02-09T03:00:00Z",
+      "outlierScore": 471,
+      "niche": "🎮 Pet Simulation/Roblox",
+      "whyOutlier": "MASSIVE 471x outlier - tutorial content solving specific player pain point. Pet Simulator franchise has dedicated fanbase hungry for transfer/upgrade guides.",
+      "contentAngle": "Tutorial format for AI pet content: 'How to transfer your AI pet to [new platform/version]' or upgrade/evolution mechanics explained.",
+      "url": "https://www.youtube.com/watch?v=Tg3LZWbeYe0",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - direct from viewstats.com/pro/outliers"
+    },
+    {
+      "id": "yt-viewstats-028",
+      "title": "Evolution Of Titanus Shimo | Life Cycle",
+      "channel": "worldinnumbers3d",
+      "views": 919000,
+      "publishedAt": "2024-02-08T00:00:00Z",
+      "addedAt": "2026-02-09T03:00:00Z",
+      "outlierScore": 37.9,
+      "niche": "🦖 Kaiju/Creature Evolution",
+      "whyOutlier": "37.9x outlier - 919K views on 87K sub channel. Life cycle format with kaiju creatures consistently performs. Third viral hit from same channel using same format.",
+      "contentAngle": "Life cycle evolution format for AI creatures - show complete progression from birth to ultimate form with cinematic presentation. 'Evolution of [AI Creature Name] | Life Cycle'",
+      "url": "https://www.youtube.com/watch?v=D5mv7j0kBu0",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - direct from viewstats.com/pro/outliers"
     }
   ],
   "competitorResearchQueue": [
@@ -572,7 +617,7 @@
     }
   ],
   "trendAnalysis": {
-    "lastUpdated": "2026-02-09T02:10:00Z",
+    "lastUpdated": "2026-02-09T03:00:00Z",
     "researchNeeded": false,
     "instructions": "Use viewstats.com Pro Tools > Outlier to research each competitor channel. Look for videos with outlier scores >2.0x. Document: title, views, outlier score, why it performed well, content angle for your channel.",
     "targetPatterns": [
@@ -617,6 +662,24 @@
         "actionable": "Create 'I Evolved an AI Creature for 100 Generations' series. Each video = different creature type. 10-gen milestones with dramatic visual changes.",
         "confidence": "high",
         "addedAt": "2026-02-08T21:06:00Z"
+      },
+      {
+        "id": "insight-005",
+        "pattern": "Tutorial Content Solving Specific Problems = Extreme Outliers",
+        "evidence": "evanlandchannel's Pet Sim transfer guide (471x) - specific utility content outperforms general entertainment",
+        "finding": "How-to content addressing specific game mechanics or platform transfers achieves massive outlier scores in gaming niche",
+        "actionable": "Create 'How to X with your AI pet' tutorials - specific utility drives shares and bookmarks",
+        "confidence": "high",
+        "addedAt": "2026-02-09T03:00:00Z"
+      },
+      {
+        "id": "insight-006",
+        "pattern": "Speculative Extension Format",
+        "evidence": "sinpoke's 'What if Pokemon had more Evolution Stages?' (676x) - highest outlier score found",
+        "finding": "'What if X had more Y' speculation format triggers imagination and drives massive engagement. Viewers love imagining beyond established canon.",
+        "actionable": "Apply to AI creatures: 'What if [creature] had 10 evolution stages?' or 'What if [creature] evolved backwards?'",
+        "confidence": "high",
+        "addedAt": "2026-02-09T03:00:00Z"
       }
     ]
   },

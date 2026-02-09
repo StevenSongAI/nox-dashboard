@@ -1081,3 +1081,99 @@ input:focus, select:focus, textarea:focus {
   background: rgba(37, 37, 64, 0.5);
   border: 1px solid #3a3a5c;
 }
+
+/* ============================================
+   BATCH 5 FIXES - Modal, Brief, and Persistence
+   ============================================ */
+
+/* Enhanced Modal Close Button */
+.modal-close {
+  position: relative;
+  overflow: hidden;
+}
+
+.modal-close::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(239, 68, 68, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s, height 0.3s;
+}
+
+.modal-close:active::after {
+  width: 100%;
+  height: 100%;
+}
+
+/* Morning Brief Empty State */
+.brief-empty-state {
+  background: rgba(37, 37, 64, 0.3);
+  border-radius: 0.5rem;
+  border: 1px dashed #3a3a5c;
+}
+
+.brief-empty-state .text-3xl {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+/* Research Note Card Actions */
+[data-note-id] .text-accent-blue:hover,
+[data-note-id] .text-red-400:hover {
+  text-decoration: underline;
+}
+
+/* Audit Card Actions */
+[data-audit-id] .text-accent-blue:hover,
+[data-audit-id] .text-red-400:hover {
+  text-decoration: underline;
+}
+
+/* Modal backdrop click area indicator */
+.modal-overlay {
+  cursor: default;
+}
+
+.modal-overlay .modal-container {
+  cursor: default;
+}
+
+/* Form button states */
+.btn-primary:disabled,
+.btn-primary[disabled] {
+  background: #4b5563;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Data persistence indicator (optional) */
+.data-saved-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.75rem;
+  color: #10B981;
+  animation: fadeInOut 2s ease;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* Research note category filter highlight */
+[data-category] {
+  transition: opacity 0.2s;
+}
+
+[data-category].filter-hidden {
+  opacity: 0.3;
+}

@@ -363,7 +363,10 @@
     <div id="tab-research" class="tab-content hidden">
       <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4 gap-3">
         <h2 class="text-xl font-semibold">🔬 Research Notes</h2>
-        <input type="text" id="research-search" placeholder="Search notes..." class="px-3 py-1 bg-dark-700 rounded border border-dark-600 text-sm md:w-64">
+        <div class="flex gap-2">
+          <input type="text" id="research-search" placeholder="Search notes..." class="px-3 py-1 bg-dark-700 rounded border border-dark-600 text-sm md:w-64">
+          <button onclick="showAddNoteModal()" class="px-3 py-1 bg-accent-blue rounded text-sm hover:bg-blue-600">+ Add Note</button>
+        </div>
       </div>
       <div id="research-notes" class="space-y-3">
         <div class="skeleton-loader">

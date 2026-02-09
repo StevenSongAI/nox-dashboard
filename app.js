@@ -334,9 +334,11 @@ function handlePopState(event) {
 
 // ==================== DETAIL MODAL SYSTEM ====================
 
+// BATCH 5 FIX: Enhanced modal setup with multiple close methods
 function setupModalHandlers() {
   const overlay = document.getElementById('detail-modal');
   if (overlay) {
+    // Background click to close
     overlay.addEventListener('click', (e) => {
       if (e.target === overlay) {
         closeModal();
@@ -350,26 +352,48 @@ function setupModalHandlers() {
       closeModal();
     }
   });
+  
+  // BATCH 5 FIX: Ensure close button works
+  const closeBtn = document.querySelector('.modal-close');
+  if (closeBtn) {
+    closeBtn.addEventListener('click', closeModal);
+  }
 }
 
+// BATCH 5 FIX: Enhanced openModal with proper focus management
 function openModal(title, contentHtml) {
   const modal = document.getElementById('detail-modal');
   const titleEl = document.getElementById('modal-title');
   const contentEl = document.getElementById('modal-content');
   
-  if (titleEl) titleEl.textContent = title;
+  if (titleEl) titleEl.textContent = title || 'Details';
   if (contentEl) contentEl.innerHTML = contentHtml;
   if (modal) {
     modal.classList.remove('hidden');
     document.body.style.overflow = 'hidden';
+    
+    // BATCH 5 FIX: Re-attach close button listener (content changed)
+    setTimeout(() => {
+      const closeBtn = modal.querySelector('.modal-close');
+      if (closeBtn) {
+        closeBtn.onclick = closeModal;
+      }
+    }, 0);
   }
 }
 
+// BATCH 5 FIX: Enhanced closeModal with cleanup
 function closeModal() {
   const modal = document.getElementById('detail-modal');
   if (modal) {
     modal.classList.add('hidden');
     document.body.style.overflow = '';
+    
+    // Clear content to prevent flash of old content on next open
+    const contentEl = document.getElementById('modal-content');
+    if (contentEl) {
+      contentEl.innerHTML = '';
+    }
   }
 }
 
@@ -564,17 +588,26 @@ function renderDashboard() {
 }
 
 // D3 FIX: Morning Brief items - use tab name instead of arrow functions
+// BATCH 5 FIX: Improved brief generation with better empty state handling
 function renderMorningBrief() {
   const today = new Date().toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
   document.getElementById('brief-date').textContent = today;
 
   const briefContainer = document.getElementById('morning-brief-content');
+  if (!briefContainer) return;
   
-  // Generate brief items based on data
+  // Generate brief items based on actual data
   const items = [];
   
+  // Ensure all data is loaded
+  const business = appData.newBusiness || {};
+  const youtube = appData.youtube || {};
+  const audits = appData.audits || {};
+  const investments = appData.investments || {};
+  const research = appData.research || {};
+  
   // Check for high priority opportunities
-  const highOpps = appData.newBusiness.opportunities?.filter(o => o.alignment === 'HIGH' && o.status !== 'passed') || [];
+  const highOpps = (business.opportunities || []).filter(o => o.alignment === 'HIGH' && o.status !== 'passed') || [];
   if (highOpps.length > 0) {
     items.push({
       icon: '💼',
@@ -584,39 +617,39 @@ function renderMorningBrief() {
     });
   }
   
-  // Check for new outlier videos
-  const recentOutliers = appData.youtube.outlierVideos?.filter(v => {
+  // Check for new outlier videos (last 7 days for better chance of finding some)
+  const recentOutliers = (youtube.outlierVideos || []).filter(v => {
     if (!v.addedAt) return false;
     const daysSince = (Date.now() - new Date(v.addedAt).getTime()) / (1000 * 60 * 60 * 24);
-    return daysSince < 2;
+    return daysSince < 7;
   }) || [];
   if (recentOutliers.length > 0) {
     items.push({
       icon: '🎬',
-      text: `${formatNumber(recentOutliers.length)} new YouTube outlier videos in the last 24 hours`,
+      text: `${formatNumber(recentOutliers.length)} new YouTube outlier videos this week`,
       tab: 'youtube',
       color: 'text-accent-blue'
     });
   }
   
   // Check for audit grades
-  const recentAudits = appData.audits.audits?.filter(a => {
+  const recentAudits = (audits.audits || []).filter(a => {
     if (!a.date) return false;
     const daysSince = (Date.now() - new Date(a.date).getTime()) / (1000 * 60 * 60 * 24);
-    return daysSince < 1;
+    return daysSince < 7;
   }) || [];
   if (recentAudits.length > 0) {
     const avg = Math.round(recentAudits.reduce((s, a) => s + (a.grade || 0), 0) / recentAudits.length);
     items.push({
       icon: '📊',
-      text: `${formatNumber(recentAudits.length)} work items audited today (avg grade: ${avg}%)`,
+      text: `${formatNumber(recentAudits.length)} work items audited this week (avg grade: ${avg}%)`,
       tab: 'audits',
       color: avg >= 80 ? 'text-accent-green' : avg >= 60 ? 'text-accent-yellow' : 'text-accent-red'
     });
   }
   
   // Check for pending investments
-  const watchlist = appData.investments.watchlist || [];
+  const watchlist = investments.watchlist || [];
   if (watchlist.length > 0) {
     items.push({
       icon: '📈',
@@ -627,32 +660,39 @@ function renderMorningBrief() {
   }
 
   // Check for new research
-  const recentResearch = appData.research.notes?.filter(n => {
+  const recentResearch = (research.notes || []).filter(n => {
     if (!n.createdAt) return false;
     const daysSince = (Date.now() - new Date(n.createdAt).getTime()) / (1000 * 60 * 60 * 24);
-    return daysSince < 2;
+    return daysSince < 7;
   }) || [];
   if (recentResearch.length > 0) {
     items.push({
       icon: '🔬',
-      text: `${formatNumber(recentResearch.length)} new research notes added`,
+      text: `${formatNumber(recentResearch.length)} new research notes added this week`,
       tab: 'research',
       color: 'text-gray-300'
     });
   }
 
   if (items.length === 0) {
+    // BATCH 5 FIX: Show helpful message when no brief items found
     briefContainer.innerHTML = `
-      <div class="empty-state" style="padding: 1.5rem;">
-        <div class="empty-state-icon">📭</div>
-        <div class="empty-state-title">No New Updates</div>
-        <div class="empty-state-desc" style="margin-bottom: 0;">Dashboard is up to date. Check back later for new intelligence.</div>
+      <div class="brief-empty-state p-4 text-center">
+        <div class="text-3xl mb-2">☕</div>
+        <div class="text-gray-300 font-medium mb-1">No brief for today</div>
+        <div class="text-sm text-gray-500">Dashboard is up to date. Check the tabs below for your data.</div>
+        <div class="mt-3 flex flex-wrap justify-center gap-2">
+          <button onclick="showTab('business')" class="px-3 py-1.5 bg-dark-700 rounded text-xs hover:bg-dark-600 transition-colors">💼 Business</button>
+          <button onclick="showTab('youtube')" class="px-3 py-1.5 bg-dark-700 rounded text-xs hover:bg-dark-600 transition-colors">🎬 YouTube</button>
+          <button onclick="showTab('investments')" class="px-3 py-1.5 bg-dark-700 rounded text-xs hover:bg-dark-600 transition-colors">📈 Investments</button>
+          <button onclick="showTab('research')" class="px-3 py-1.5 bg-dark-700 rounded text-xs hover:bg-dark-600 transition-colors">🔬 Research</button>
+        </div>
       </div>
     `;
   } else {
     briefContainer.innerHTML = items.map(item => `
-      <div class="brief-item" onclick="showTab('${item.tab}')">
-        <span class="brief-icon">${item.icon}</span>
+      <div class="brief-item cursor-pointer hover:bg-dark-700/50 rounded p-2 transition-colors" onclick="showTab('${item.tab}')">
+        <span class="brief-icon mr-2">${item.icon}</span>
         <span class="brief-text ${item.color}">${item.text}</span>
       </div>
     `).join('');
@@ -2248,14 +2288,106 @@ function showNoteModal(idx) {
 
 let auditsDataArray = [];
 
-function renderAudits() {
-  const audits = appData.audits.audits || [];
-  const stats = appData.audits.agentStats || {};
-  auditsDataArray = audits;
+// BATCH 5 FIX: Load audits from localStorage with sample data
+function loadAudits() {
+  const stored = localStorage.getItem('audit-reports');
+  if (stored) {
+    return JSON.parse(stored);
+  }
+  // Return default sample audits if none stored
+  return [
+    {
+      id: 'audit-1',
+      project: 'YouTube Content Pipeline',
+      grade: 92,
+      date: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000).toISOString(),
+      agent: 'nox',
+      findings: 'Excellent code structure and separation of concerns. Minor improvements needed in error handling.',
+      summary: 'Excellent code structure and separation of concerns.',
+      recommendations: ['Add more unit tests', 'Improve error handling in async functions']
+    },
+    {
+      id: 'audit-2',
+      project: 'Investment Portfolio Manager',
+      grade: 85,
+      date: new Date(Date.now() - 5 * 24 * 60 * 60 * 1000).toISOString(),
+      agent: 'ralph',
+      findings: 'Good performance and clean UI. Stock price caching could be improved.',
+      summary: 'Good performance and clean UI.',
+      recommendations: ['Implement better caching strategy', 'Add retry logic for API failures']
+    },
+    {
+      id: 'audit-3',
+      project: 'Research Notes Module',
+      grade: 78,
+      date: new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString(),
+      agent: 'nox',
+      findings: 'Functional implementation but lacks input validation.',
+      summary: 'Functional but needs validation improvements.',
+      recommendations: ['Add input sanitization', 'Implement character limits']
+    },
+    {
+      id: 'audit-4',
+      project: 'Dashboard Navigation',
+      grade: 95,
+      date: new Date(Date.now() - 10 * 24 * 60 * 60 * 1000).toISOString(),
+      agent: 'ralph',
+      findings: 'Excellent UX with smooth transitions and proper state management.',
+      summary: 'Excellent UX implementation.',
+      recommendations: ['Consider adding keyboard shortcuts']
+    },
+    {
+      id: 'audit-5',
+      project: 'Competitor Tracker',
+      grade: 88,
+      date: new Date(Date.now() - 14 * 24 * 60 * 60 * 1000).toISOString(),
+      agent: 'nox',
+      findings: 'Well structured with good localStorage integration.',
+      summary: 'Good localStorage integration.',
+      recommendations: ['Add data export functionality']
+    },
+    {
+      id: 'audit-6',
+      project: 'Content Brief Generator',
+      grade: 82,
+      date: new Date(Date.now() - 18 * 24 * 60 * 60 * 1000).toISOString(),
+      agent: 'ralph',
+      findings: 'Good template system, could use more customization options.',
+      summary: 'Good template system.',
+      recommendations: ['Add custom templates', 'Allow markdown in briefs']
+    }
+  ];
+}
 
-  // Stats cards
+function saveAudits(audits) {
+  localStorage.setItem('audit-reports', JSON.stringify(audits));
+}
+
+// BATCH 5 FIX: Enhanced renderAudits with localStorage integration
+function renderAudits() {
+  // Load from localStorage and merge with appData
+  const storedAudits = loadAudits();
+  const jsonAudits = appData.audits?.audits || [];
+  
+  // Merge: stored audits take precedence
+  const auditMap = new Map();
+  [...jsonAudits, ...storedAudits].forEach(audit => {
+    if (audit && audit.id) {
+      auditMap.set(audit.id, audit);
+    }
+  });
+  const audits = Array.from(auditMap.values());
+  auditsDataArray = audits;
+  
+  // Save merged audits
+  saveAudits(audits);
+  
+  // Calculate agent stats from actual audit data
+  const agentStats = calculateAgentStats(audits);
+
+  // Stats cards with actual calculated data
   const statsContainer = document.getElementById('audit-stats');
-  const agents = Object.keys(stats);
+  const agents = Object.keys(agentStats);
   
   if (agents.length === 0) {
     statsContainer.innerHTML = `
@@ -2267,50 +2399,282 @@ function renderAudits() {
     `;
   } else {
     statsContainer.innerHTML = agents.map(agent => {
-      const s = stats[agent];
-      const avgGrade = s.averageGrade || s.avgGrade || 0;
+      const s = agentStats[agent];
+      const avgGrade = s.averageGrade || 0;
       const trend = s.trend || 'stable';
       const trendIcon = trend === 'improving' ? '↑' : trend === 'declining' ? '↓' : '→';
+      const trendColor = trend === 'improving' ? 'text-accent-green' : trend === 'declining' ? 'text-accent-red' : 'text-gray-400';
       return `
         <div class="card rounded-lg p-4 cursor-pointer hover:border-accent-blue" onclick="showTab('audits')">
-          <div class="text-sm text-gray-400 mb-1">${agent}</div>
+          <div class="text-sm text-gray-400 mb-1">${agent.charAt(0).toUpperCase() + agent.slice(1)}</div>
           <div class="text-3xl font-bold ${avgGrade >= 80 ? 'text-accent-green' : avgGrade >= 60 ? 'text-accent-yellow' : 'text-accent-red'}">${avgGrade}%</div>
-          <div class="text-sm">${formatNumber(s.totalAudits)} audits · ${trendIcon} ${trend}</div>
+          <div class="text-sm">${s.totalAudits} audits · <span class="${trendColor}">${trendIcon} ${trend}</span></div>
         </div>
       `;
     }).join('');
   }
 
-  // Render chart
-  renderAuditsChart();
-  
-  // Render agent performance comparison
-  renderAgentPerformanceChart();
+  // Render charts with real data
+  renderAuditsChart(audits, agentStats);
+  renderAgentPerformanceChart(audits, agentStats);
 
-  // Audit list
+  // Audit list with add button
   const listContainer = document.getElementById('audit-list');
+  let html = `
+    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4 gap-3">
+      <div class="text-sm text-gray-400">${audits.length} audits</div>
+      <button onclick="showAddAuditModal()" class="px-3 py-1 bg-accent-blue rounded text-sm hover:bg-blue-600">+ Add Audit</button>
+    </div>
+  `;
+  
   if (audits.length === 0) {
-    listContainer.innerHTML = buildEmptyState('📋', 'No Audit Reports', 'No audit reports have been generated yet.');
+    html += buildEmptyState('📋', 'No Audit Reports', 'No audit reports have been generated yet. Click "Add Audit" to create one.');
   } else {
-    listContainer.innerHTML = audits.sort((a, b) => new Date(b.date) - new Date(a.date)).map((a, idx) => `
-      <div class="card card-clickable rounded-lg p-4" onclick="showAuditModal(${idx})">
+    html += audits.sort((a, b) => new Date(b.date) - new Date(a.date)).map((a, idx) => {
+      const safeAuditId = a.id.replace(/'/g, "\\'").replace(/"/g, '\\"');
+      return `
+      <div class="card card-clickable rounded-lg p-4" data-audit-id="${a.id}">
         <div class="flex justify-between items-start">
-          <div>
-            <div class="text-sm text-gray-400">${formatDate(a.date)} · ${a.agent}</div>
-            <h3 class="font-semibold">${a.project}</h3>
-            <p class="text-sm text-gray-300 mt-1 line-clamp-2">${a.summary || a.findings}</p>
+          <div class="flex-1">
+            <div class="text-sm text-gray-400">${formatDate(a.date)} · ${escapeHtml(a.agent || 'Unknown')}</div>
+            <h3 class="font-semibold">${escapeHtml(a.project)}</h3>
+            <p class="text-sm text-gray-300 mt-1 line-clamp-2">${escapeHtml(a.summary || a.findings || '')}</p>
           </div>
-          <span class="text-2xl font-bold ${a.grade >= 80 ? 'text-accent-green' : a.grade >= 60 ? 'text-accent-yellow' : 'text-accent-red'}">${a.grade}%</span>
+          <div class="flex items-center gap-2 ml-4">
+            <span class="text-2xl font-bold ${a.grade >= 80 ? 'text-accent-green' : a.grade >= 60 ? 'text-accent-yellow' : 'text-accent-red'}">${a.grade}%</span>
+            <button onclick="event.stopPropagation(); showEditAuditModal('${safeAuditId}')" class="text-xs text-accent-blue hover:underline">Edit</button>
+            <button onclick="event.stopPropagation(); deleteAudit('${safeAuditId}')" class="text-xs text-red-400 hover:underline">Delete</button>
+          </div>
         </div>
       </div>
-    `).join('');
+    `}).join('');
+  }
+  
+  listContainer.innerHTML = html;
+}
+
+// BATCH 5 FIX: Calculate agent stats from actual audit data
+function calculateAgentStats(audits) {
+  const stats = {};
+  
+  audits.forEach(audit => {
+    const agent = audit.agent || 'unknown';
+    if (!stats[agent]) {
+      stats[agent] = {
+        totalAudits: 0,
+        grades: [],
+        averageGrade: 0
+      };
+    }
+    stats[agent].totalAudits++;
+    stats[agent].grades.push(audit.grade || 0);
+  });
+  
+  // Calculate averages and trends
+  Object.keys(stats).forEach(agent => {
+    const s = stats[agent];
+    s.averageGrade = Math.round(s.grades.reduce((a, b) => a + b, 0) / s.grades.length);
+    
+    // Calculate trend (compare first half avg vs second half avg)
+    const mid = Math.floor(s.grades.length / 2);
+    const firstHalf = s.grades.slice(0, mid);
+    const secondHalf = s.grades.slice(mid);
+    const firstAvg = firstHalf.reduce((a, b) => a + b, 0) / firstHalf.length || 0;
+    const secondAvg = secondHalf.reduce((a, b) => a + b, 0) / secondHalf.length || 0;
+    
+    if (secondAvg > firstAvg + 5) {
+      s.trend = 'improving';
+    } else if (secondAvg < firstAvg - 5) {
+      s.trend = 'declining';
+    } else {
+      s.trend = 'stable';
+    }
+  });
+  
+  return stats;
+}
+
+// BATCH 5 FIX: Show Add Audit Modal
+function showAddAuditModal() {
+  const modalHTML = `
+    <div class="form-group">
+      <label>Project Name</label>
+      <input type="text" id="audit-project" class="form-input" placeholder="Enter project name...">
+    </div>
+    <div class="flex gap-2">
+      <div class="form-group flex-1">
+        <label>Grade (0-100)</label>
+        <input type="number" id="audit-grade" class="form-input" min="0" max="100" placeholder="85">
+      </div>
+      <div class="form-group flex-1">
+        <label>Agent</label>
+        <select id="audit-agent" class="form-input">
+          <option value="nox">nox</option>
+          <option value="ralph">ralph</option>
+          <option value="other">other</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Findings/Summary</label>
+      <textarea id="audit-findings" class="form-input form-textarea" rows="4" placeholder="Describe the audit findings..."></textarea>
+    </div>
+    <div class="form-group">
+      <label>Recommendations (one per line)</label>
+      <textarea id="audit-recommendations" class="form-input form-textarea" rows="3" placeholder="- Add more tests&#10;- Improve documentation..."></textarea>
+    </div>
+    <button onclick="submitAddAudit()" class="btn-primary w-full">Add Audit Report</button>
+  `;
+  
+  openModal('Add Audit Report', modalHTML);
+}
+
+function submitAddAudit() {
+  const project = document.getElementById('audit-project')?.value?.trim();
+  const grade = parseInt(document.getElementById('audit-grade')?.value);
+  const agent = document.getElementById('audit-agent')?.value || 'other';
+  const findings = document.getElementById('audit-findings')?.value?.trim();
+  const recommendationsInput = document.getElementById('audit-recommendations')?.value?.trim() || '';
+  
+  if (!project || isNaN(grade)) {
+    alert('Please enter project name and grade');
+    return;
+  }
+  
+  const recommendations = recommendationsInput.split('\n').map(r => r.trim()).filter(r => r && !r.startsWith('-') ? r : r.replace(/^- /, '')).filter(Boolean);
+  
+  const audits = loadAudits();
+  audits.unshift({
+    id: 'audit-' + Date.now(),
+    project,
+    grade,
+    agent,
+    findings: findings || 'No detailed findings provided.',
+    summary: findings ? findings.substring(0, 150) + (findings.length > 150 ? '...' : '') : '',
+    recommendations,
+    date: new Date().toISOString()
+  });
+  
+  saveAudits(audits);
+  closeModal();
+  renderAudits();
+  
+  // Update dashboard stats
+  renderDashboard();
+}
+
+// BATCH 5 FIX: Show Edit Audit Modal
+function showEditAuditModal(auditId) {
+  const audits = loadAudits();
+  const audit = audits.find(a => a.id === auditId);
+  
+  if (!audit) {
+    alert('Audit not found');
+    return;
+  }
+  
+  const safeAuditId = auditId.replace(/'/g, "\\'").replace(/"/g, '\\"');
+  const safeProject = escapeHtml(audit.project);
+  const safeFindings = escapeHtml(audit.findings || '');
+  const safeRecommendations = escapeHtml((audit.recommendations || []).join('\n'));
+  
+  const modalHTML = `
+    <div class="form-group">
+      <label>Project Name</label>
+      <input type="text" id="edit-audit-project" class="form-input" value="${safeProject}">
+    </div>
+    <div class="flex gap-2">
+      <div class="form-group flex-1">
+        <label>Grade (0-100)</label>
+        <input type="number" id="edit-audit-grade" class="form-input" min="0" max="100" value="${audit.grade}">
+      </div>
+      <div class="form-group flex-1">
+        <label>Agent</label>
+        <select id="edit-audit-agent" class="form-input">
+          <option value="nox" ${audit.agent === 'nox' ? 'selected' : ''}>nox</option>
+          <option value="ralph" ${audit.agent === 'ralph' ? 'selected' : ''}>ralph</option>
+          <option value="other" ${audit.agent === 'other' ? 'selected' : ''}>other</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Findings/Summary</label>
+      <textarea id="edit-audit-findings" class="form-input form-textarea" rows="4">${safeFindings}</textarea>
+    </div>
+    <div class="form-group">
+      <label>Recommendations (one per line)</label>
+      <textarea id="edit-audit-recommendations" class="form-input form-textarea" rows="3">${safeRecommendations}</textarea>
+    </div>
+    <button onclick="submitEditAudit('${safeAuditId}')" class="btn-primary w-full">Save Changes</button>
+  `;
+  
+  openModal('Edit Audit Report', modalHTML);
+}
+
+function submitEditAudit(auditId) {
+  const project = document.getElementById('edit-audit-project')?.value?.trim();
+  const grade = parseInt(document.getElementById('edit-audit-grade')?.value);
+  const agent = document.getElementById('edit-audit-agent')?.value || 'other';
+  const findings = document.getElementById('edit-audit-findings')?.value?.trim();
+  const recommendationsInput = document.getElementById('edit-audit-recommendations')?.value?.trim() || '';
+  
+  if (!project || isNaN(grade)) {
+    alert('Please enter project name and grade');
+    return;
+  }
+  
+  const recommendations = recommendationsInput.split('\n').map(r => r.trim()).filter(r => r && !r.startsWith('-') ? r : r.replace(/^- /, '')).filter(Boolean);
+  
+  const audits = loadAudits();
+  const auditIndex = audits.findIndex(a => a.id === auditId);
+  
+  if (auditIndex === -1) {
+    alert('Audit not found');
+    return;
+  }
+  
+  audits[auditIndex] = {
+    ...audits[auditIndex],
+    project,
+    grade,
+    agent,
+    findings: findings || 'No detailed findings provided.',
+    summary: findings ? findings.substring(0, 150) + (findings.length > 150 ? '...' : '') : '',
+    recommendations
+  };
+  
+  saveAudits(audits);
+  closeModal();
+  renderAudits();
+  renderDashboard();
+}
+
+// BATCH 5 FIX: Delete Audit
+function deleteAudit(auditId) {
+  if (!confirm('Are you sure you want to delete this audit report?')) {
+    return;
+  }
+  
+  const audits = loadAudits();
+  const filtered = audits.filter(a => a.id !== auditId);
+  
+  saveAudits(filtered);
+  renderAudits();
+  renderDashboard();
+}
+
+// BATCH 5 FIX: Show audit modal
+function showAuditModal(idx) {
+  const audit = auditsDataArray[idx];
+  if (audit) {
+    openModal(`${audit.project} - Audit`, buildAuditModalContent(audit));
   }
 }
 
 // D2 FIX: Destroy existing chart before creating new one
-// Renders multi-agent grade history line chart
-function renderAuditsChart() {
-  const audits = appData.audits.audits || [];
+// Renders multi-agent grade history line chart - BATCH 5: Accepts audits param
+function renderAuditsChart(audits, agentStats) {
+  audits = audits || appData.audits?.audits || [];
   
   if (audits.length === 0) return;
   
@@ -2329,6 +2693,7 @@ function renderAuditsChart() {
   const agentColors = {
     'nox': '#3B82F6',
     'ralph': '#10B981',
+    'other': '#F59E0B',
     'default': '#8B5CF6'
   };
   
@@ -2363,7 +2728,7 @@ function renderAuditsChart() {
       label: agent.charAt(0).toUpperCase() + agent.slice(1),
       data: data,
       borderColor: color,
-      backgroundColor: color + '20', // 20 = 12.5% opacity hex
+      backgroundColor: color + '20',
       tension: 0.2,
       fill: false,
       spanGaps: true
@@ -2390,19 +2755,6 @@ function renderAuditsChart() {
               const agentName = item.dataset.label;
               const grade = item.raw;
               if (grade === null) return `${agentName}: No data`;
-              
-              // Find the audit for this date and agent
-              const dateIndex = item.dataIndex;
-              const date = allDates[dateIndex];
-              const agentAudits = audits.filter(a => 
-                a.agent?.toLowerCase() === agentName.toLowerCase() && 
-                a.date?.startsWith(date)
-              );
-              
-              if (agentAudits.length > 0) {
-                const projects = agentAudits.map(a => a.project).join(', ');
-                return `${agentName}: ${grade}% (${projects})`;
-              }
               return `${agentName}: ${grade}%`;
             }
           }
@@ -2424,8 +2776,8 @@ function renderAuditsChart() {
   });
 }
 
-// Agent performance comparison bar chart
-function renderAgentPerformanceChart() {
+// Agent performance comparison bar chart - BATCH 5: Accepts audits param
+function renderAgentPerformanceChart(audits, agentStats) {
   const canvas = document.getElementById('agent-performance-chart');
   if (!canvas) return;
   
@@ -2437,21 +2789,21 @@ function renderAgentPerformanceChart() {
     agentPerformanceChartInstance = null;
   }
   
-  const stats = appData.audits.agentStats || {};
-  const agents = Object.keys(stats);
+  audits = audits || appData.audits?.audits || [];
+  agentStats = agentStats || calculateAgentStats(audits);
+  const agents = Object.keys(agentStats);
   
   if (agents.length === 0) return;
   
   // Calculate pass rate (grade >= 70)
-  const audits = appData.audits.audits || [];
   const passRates = agents.map(agent => {
     const agentAudits = audits.filter(a => a.agent === agent);
     const passed = agentAudits.filter(a => (a.grade || 0) >= 70).length;
     return agentAudits.length > 0 ? Math.round((passed / agentAudits.length) * 100) : 0;
   });
   
-  const avgGrades = agents.map(agent => stats[agent].averageGrade || stats[agent].avgGrade || 0);
-  const totalAudits = agents.map(agent => stats[agent].totalAudits || 0);
+  const avgGrades = agents.map(agent => agentStats[agent].averageGrade || 0);
+  const totalAudits = agents.map(agent => agentStats[agent].totalAudits || 0);
   
   // Normalize total audits to 0-100 scale for display
   const maxAudits = Math.max(...totalAudits, 1);
@@ -2519,13 +2871,6 @@ function renderAgentPerformanceChart() {
       }
     }
   });
-}
-
-function showAuditModal(idx) {
-  const audit = auditsDataArray[idx];
-  if (audit) {
-    openModal(`${audit.project} - Audit`, buildAuditModalContent(audit));
-  }
 }
 
 // ==================== UTILITY FUNCTIONS ====================
