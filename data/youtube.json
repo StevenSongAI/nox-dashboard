@@ -704,6 +704,51 @@
       "url": "https://www.youtube.com/watch?v=OzqjE1diPNM",
       "researchStatus": "completed",
       "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-045",
+      "title": "🐉✨ What if baby dragons existed? ✨🐉",
+      "channel": "ambientdreamescapes",
+      "views": 3570000,
+      "publishedAt": "2024-02-08T00:00:00Z",
+      "addedAt": "2026-02-09T04:00:00Z",
+      "outlierScore": 41.9,
+      "niche": "🐉 Dragon/Pet Simulation",
+      "whyOutlier": "EXTREME 41.9x outlier - 3.57M views on 565K sub channel. Speculative \"what if\" format with baby dragons triggers massive engagement. Ambient aesthetic + hypothetical scenario = viral formula.",
+      "contentAngle": "Create \"What if AI baby dragons existed?\" - speculative content showing AI-generated baby dragons in realistic scenarios. Combine wonder/awe with documentary-style presentation.",
+      "url": "https://www.youtube.com/watch?v=h8KcDdNAST8",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-046",
+      "title": "The Biggest Dragon Ever Seen! - Minecraft Dragons",
+      "channel": "littlelizardgaming",
+      "views": 570000,
+      "publishedAt": "2022-02-08T00:00:00Z",
+      "addedAt": "2026-02-09T04:00:00Z",
+      "outlierScore": 30.8,
+      "niche": "🎮 Gaming/Dragon Content",
+      "whyOutlier": "30.8x outlier - 570K views on 4M sub channel. \"Biggest ever\" superlative creates curiosity gap. Dragon content in Minecraft consistently overperforms.",
+      "contentAngle": "Apply \"biggest ever\" format to AI creatures: \"The Biggest AI Dragon Ever Generated\" - showcase massive scale AI creature with size comparisons and cinematic reveals.",
+      "url": "https://www.youtube.com/watch?v=tphemH1uJ2g",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-047",
+      "title": "1 vs 1 All Units Tournament - Animal Revolt Battle Simulator",
+      "channel": "kupchannel",
+      "views": 2690000,
+      "publishedAt": "2022-02-08T00:00:00Z",
+      "addedAt": "2026-02-09T04:00:00Z",
+      "outlierScore": 83.9,
+      "niche": "🎮 Creature Battle Simulation",
+      "whyOutlier": "MASSIVE 83.9x outlier - 2.69M views on 670K sub channel! Tournament format with ALL units creates completionist appeal. 1v1 bracket structure drives retention through multiple matchups.",
+      "contentAngle": "Create \"AI Creature Battle Tournament\" - bracket-style competition with AI-generated creatures. 1v1 battles with escalating stakes. Show full tournament progression in single video.",
+      "url": "https://www.youtube.com/watch?v=YI8LgC3JIvo",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
     }
   ],
   "competitorResearchQueue": [
@@ -992,6 +1037,7 @@
         "actionable": "Create 'How [AI Creature] Works' series - explain fictional biology, behavior, and mechanics in documentary style. Include 'How To' guides for specific AI creature interactions and mechanics.",
         "confidence": "high",
         "addedAt": "2026-02-09T06:46:00Z"
+      },
       {
         "id": "insight-010",
         "pattern": "AI Simulation Trap/Escape Format",
