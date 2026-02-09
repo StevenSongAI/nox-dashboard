@@ -9,9 +9,10 @@
       "shares": 50,
       "entryPrice": 185.25,
       "avgCost": 185.25,
-      "currentPrice": 185.25,
-      "totalValue": 9262.50,
-      "gainPercent": 0,
+      "currentPrice": 278.12,
+      "totalValue": 13906.00,
+      "gainPercent": 50.13,
+      "lastUpdated": "2026-02-09T09:48:00Z",
       "addedAt": "2026-02-08T20:00:00Z"
     },
     {
@@ -23,10 +24,12 @@
       "shares": 20,
       "entryPrice": 520.75,
       "avgCost": 520.75,
-      "currentPrice": 520.75,
-      "totalValue": 10415.00,
-      "gainPercent": 0,
-      "addedAt": "2026-02-08T20:00:00Z"
+      "currentPrice": 185.41,
+      "totalValue": 3708.20,
+      "gainPercent": -64.40,
+      "lastUpdated": "2026-02-09T09:48:00Z",
+      "addedAt": "2026-02-08T20:00:00Z",
+      "note": "Entry price appears incorrect - verify cost basis"
     }
   ],
   "marketOpportunities": [
@@ -83,11 +86,12 @@
       "sector": "Semiconductors",
       "ticker": "AMD",
       "name": "AMD",
-      "currentPrice": 178.25,
+      "currentPrice": 208.44,
       "targetEntry": 150.00,
-      "catalyst": "Data center share growth",
-      "source": "X.com / Industry",
-      "whyWatching": "NVDA alternative play, MI300 chip demand"
+      "catalyst": "Data center share growth, record earnings",
+      "source": "Yahoo Finance / Feb 6 close",
+      "whyWatching": "NVDA alternative play, MI300 chip demand. +8.28% on strong earnings.",
+      "lastUpdated": "2026-02-09T09:48:00Z"
     }
   ],
   "trends": [
@@ -218,8 +222,23 @@
       "linkedResearch": ["note-005", "brief-triple-threat-001"],
       "riskFactors": ["Execution complexity may delay timeline", "Pattern synthesis untested - may not compound as projected", "Thief-bait elements could trigger comment section moderation issues"],
       "timeHorizon": "2-4 weeks to production, 4-8 weeks to performance validation"
+    },
+    {
+      "id": "intel-012",
+      "date": "2026-02-09T09:48:00Z",
+      "topic": "Portfolio Price Update - AAPL Surges, NVDA Entry Cost Basis Question",
+      "source": "Yahoo Finance / Market Data",
+      "content": "AAPL: $278.12 (+50.1% from $185.25 entry) - Strong performance, total position value $13,906. NVDA: $185.41 current but entry price of $520.75 appears incorrect - 52-week range is $86.62-$212.19. Verify actual cost basis. Portfolio total: $17,614.20. Watchlist updates: AMD $208.44 (+8.28% on Feb 6), PLTR $135.90 (+4.53%). NVDA earnings Feb 25 - key catalyst. AAPL near 52-week high ($288.62), showing momentum.",
+      "impact": "bullish",
+      "relatedPositions": ["pos-001", "pos-002"],
+      "watchlistUpdates": {
+        "AMD": {"price": 208.44, "change": "+8.28%"},
+        "PLTR": {"price": 135.90, "change": "+4.53%"},
+        "TSLA": {"price": 245.50, "note": "unchanged"}
+      },
+      "alerts": ["NVDA entry price needs verification", "AAPL approaching 52-week high", "NVDA earnings Feb 25"]
     }
   ],
-  "lastUpdated": "2026-02-09T01:06:00Z",
-  "dataSource": "X.com via browser research (bird API disabled)"
+  "lastUpdated": "2026-02-09T09:48:00Z",
+  "dataSource": "Yahoo Finance / Market Data"
 }
