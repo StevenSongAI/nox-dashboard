@@ -360,6 +360,31 @@
         "videoCount": 0
       },
       "latestVideos": []
+    },
+    {
+      "id": "comp-022",
+      "channelId": "@I_Got_a_Pet",
+      "name": "I Got a Pet",
+      "url": "https://www.youtube.com/@I_Got_a_Pet",
+      "niche": "Pet Simulation",
+      "focus": "AI-generated pet dinosaur and creature content",
+      "addedAt": "2026-02-09T14:45:00Z",
+      "autoAdded": true,
+      "addedBy": "nox",
+      "source": "Traffic source from CSV analysis - video: 'I Got a Pet T Rex'",
+      "stats": {
+        "subscribers": "4.55K",
+        "totalViews": "TBD",
+        "videoCount": 0
+      },
+      "latestVideos": [
+        {
+          "videoId": "JyzRGfgew-M",
+          "title": "I Got a Pet T Rex",
+          "views": "430K",
+          "publishedAt": "2026-02-02T00:00:00Z"
+        }
+      ]
     }
   ],
   "outlierPatterns": [
@@ -376,5 +401,5 @@
       "recommendedAction": "Document AI creature creation process"
     }
   ],
-  "lastUpdated": "2026-02-09T14:30:00Z"
+  "lastUpdated": "2026-02-09T14:45:00Z"
 }
