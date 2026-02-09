@@ -899,6 +899,51 @@
       "url": "https://www.youtube.com/watch?v=SaaIKFft9YE",
       "researchStatus": "completed",
       "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-058",
+      "title": "Training our BABY DRAGON in Minecraft!",
+      "channel": "tycer",
+      "views": 1930000,
+      "publishedAt": "2024-06-08T00:00:00Z",
+      "addedAt": "2026-02-09T06:00:00Z",
+      "outlierScore": 2.9,
+      "niche": "🐉 Minecraft/Dragon Training",
+      "whyOutlier": "2.9x outlier - 1.93M views on 1.6M sub channel. Baby dragon training format creates nurturing gameplay loop. Training progression drives retention.",
+      "contentAngle": "Create 'Training My Baby AI Dragon' series - show progression from helpless hatchling to powerful dragon through training mini-games and care mechanics.",
+      "url": "https://www.youtube.com/watch?v=ItFy3NG0CUA",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-059",
+      "title": "The Graboids from Tremors Evolution Explored | First stage of the subterranean beast Explained",
+      "channel": "roanokegaming",
+      "views": 2140000,
+      "publishedAt": "2019-02-08T00:00:00Z",
+      "addedAt": "2026-02-09T06:00:00Z",
+      "outlierScore": 2.9,
+      "niche": "🎬 Creature Lore/Evolution",
+      "whyOutlier": "2.9x outlier - 2.14M views on 1.2M sub channel. Deep-dive lore analysis of iconic creature evolution. Nostalgic IP + educational content = strong performance.",
+      "contentAngle": "Create 'Evolution of [AI Creature] Explained' - deep-dive documentaries into fictional creature biology and evolutionary stages with AI-generated visuals.",
+      "url": "https://www.youtube.com/watch?v=p9hVENiVQ1Y",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-060",
+      "title": "Aibi Pocket Pet From LivingAI",
+      "channel": "outsider238",
+      "views": 336000,
+      "publishedAt": "2024-02-08T00:00:00Z",
+      "addedAt": "2026-02-09T06:00:00Z",
+      "outlierScore": 139,
+      "niche": "🤖 AI/Physical Pet Tech",
+      "whyOutlier": "EXTREME 139x outlier - 336K views on 107K sub channel! AI-powered physical pet device review. Tech + pet combo taps into both gadget interest and emotional connection.",
+      "contentAngle": "Review/showcase AI-powered pet devices and virtual companions. 'I Got an AI Pet' format but with physical AI robots and digital companions.",
+      "url": "https://www.youtube.com/watch?v=mAhtKQtjJME",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
     }
   ],
   "competitorResearchQueue": [
