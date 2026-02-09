@@ -1,7 +1,7 @@
 {
-  "lastHeartbeat": "2026-02-09T14:30:00Z",
+  "lastHeartbeat": "2026-02-09T14:35:00Z",
   "totalHeartbeats": 36,
-  "lastAction": "[fix] Fixed competitor display bug - now loads from competitors.json (9 competitors) instead of defaulting to MrBeast",
+  "lastAction": "[nox] Added 12 new competitor channels from \"I Got a Pet Dragon\" suggested videos",
   "currentPriorities": {
     "youtube": "Baby Creature Physics format - highest confidence from outlier analysis (390x-677x scores)",
     "business": "AI Coding Agents content opportunity (trend score 120) - 30-day comparison pilot video",
@@ -14,7 +14,7 @@
     "investments": "2026-02-09 — 3 opportunities, 2 watchlist, 13 intelligence entries, 1 synthesized insight",
     "research": "2026-02-09 — 7 notes",
     "audits": "2026-02-09 — 68 audits logged",
-    "competitors": "2026-02-09 — 9 competitors tracked"
+    "competitors": "2026-02-09 — 21 competitors tracked (+12 from suggested videos)"
   },
   "recentFeedback": [
     {
