@@ -1577,6 +1577,47 @@
       "notes": "Based on research note-006. AI Coding Agents have Trend Score 120 - highest momentum signal in tracked categories. Gap in market for systematic comparison vs surface-level tool reviews. Opportunity to establish methodology authority.",
       "createdAt": "2026-02-09T13:46:00Z",
       "status": "ready"
+    },
+    {
+      "id": "brief-baby-creature-physics-001",
+      "title": "Baby Creature Physics Simulation - Pilot Video",
+      "summary": "HIGHEST CONFIDENCE FORMAT from outlier analysis (390x-677x scores). Physics-based creature interactions with baby/miniature versions create dual engagement drivers: protective cuteness response + satisfying physics feedback loops.",
+      "hook": "I put a baby AI creature in a physics simulation... the chaos was adorable",
+      "outline": [
+        "Hook (0-30s): Show chaotic physics moment with tiny cute creature causing destruction",
+        "Setup (30s-2min): Explain the experiment - AI-generated baby creature in realistic physics environment",
+        "First Contact (2-5min): Creature introduction, personality traits, initial physics interactions",
+        "Escalation (5-10min): Increasing complexity - obstacles, challenges, surprising physics behavior",
+        "Climax (10-13min): Maximum chaos moment - creature 'breaks' the simulation unexpectedly",
+        "Resolution (13-15min): Final cute moment + series tease for different creature types"
+      ],
+      "targetLength": "15 min",
+      "difficulty": "medium",
+      "urgency": "high",
+      "basedOn": [
+        "steve_big_guns '2d physics baby kaiju' (390x outlier)",
+        "foxieplaysblox 'ZOOCHOSIS' (677x outlier)",
+        "insight-008 Physics + Baby Creature pattern"
+      ],
+      "expectedOutlierScore": 400,
+      "targetRatio": "50-100x subscriber count",
+      "keyIngredients": [
+        "Baby/miniature creature design (big eyes, small body, cute features)",
+        "Realistic physics simulation (Garry's Mod, custom engine, or sandbox game)",
+        "Cute-but-destructive contrast moments",
+        "Clear visual progression in chaos level",
+        "Emotional payoff at the end"
+      ],
+      "equipmentNeeds": [
+        "Screen recording software (OBS)",
+        "Physics sandbox (Garry's Mod recommended - $10 on Steam)",
+        "AI image gen for creature design reference",
+        "Video editor for cuts and pacing"
+      ],
+      "seriesPotential": "10+ episodes - different creature types (dragon, kaiju, mythical beasts)",
+      "confidence": "high",
+      "status": "ready-to-produce",
+      "createdAt": "2026-02-09T19:10:00Z"
     }
   ],
   "trendAnalysis": {
