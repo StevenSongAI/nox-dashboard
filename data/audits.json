@@ -76,12 +76,34 @@
       "fullReport": "Instruction quality outstanding: specific chart requirements with exact container sizes, clear file targets, comprehensive 14-item testing checklist. Research value strong - Chart.js appropriate choice, dark theme specs well-defined. Minor deductions: 5 height defects indicate specification could be more explicit about pixel-perfect requirements.",
       "feedback": "93% - Strong work. Add explicit 'exact height' language for future visual batches.",
       "category": "ralph-chain"
+    },
+    {
+      "id": "audit-008",
+      "agent": "nox",
+      "project": "Ralph-Loops Red Team v24 Audit",
+      "grade": 35,
+      "date": "2025-02-05T00:00:00Z",
+      "summary": "DEFECTS_FOUND: 9+ confirmed defects in current build",
+      "fullReport": "CRITICAL: 9+ defects confirmed. Phase 1: Competitor links still broken (NO clickable links), NO WebSocket/real-time database. Phase 2: INCOMPLETE - keyboard shortcuts partial, saved searches non-functional, NO boolean search operators. Phase 3: NOT STARTED - zero charts, NO content calendar, NO notifications system, NO PWA/mobile features.",
+      "feedback": "Build requires continued work. Phase 1: 7/8, Phase 2: 4/10, Phase 3: 0/4. Critical features missing.",
+      "category": "ralph-chain"
+    },
+    {
+      "id": "audit-009",
+      "agent": "nox",
+      "project": "Work Tracker File Watching Test",
+      "grade": 95,
+      "date": "2026-02-07T00:00:00Z",
+      "summary": "Test audit to verify Work Tracker.app file watching",
+      "fullReport": "Test audit file to verify Work Tracker.app file watching works correctly. If this audit appears in the app within 2 seconds, file watching is working.",
+      "feedback": "File watching functional - test passed.",
+      "category": "test"
     }
   ],
   "agentStats": {
     "nox": {
-      "totalAudits": 7,
-      "avgGrade": 84,
+      "totalAudits": 9,
+      "avgGrade": 80,
       "lastAudit": "2026-02-08T12:47:00Z",
       "trend": "volatile"
     },
