@@ -87,6 +87,42 @@
       "tags": ["presentations", "documents", "design"],
       "runCommand": "https://gamma.app",
       "auditGrade": 89
+    },
+    {
+      "id": "tool-009",
+      "name": "Content Pipeline",
+      "category": "Content",
+      "description": "Kanban-style content pipeline for tracking video ideas from concept to upload",
+      "status": "active",
+      "runCommand": "pipeline",
+      "auditGrade": 85
+    },
+    {
+      "id": "tool-010",
+      "name": "Performance Analyzer",
+      "category": "Analysis",
+      "description": "Analyze YouTube video performance with sortable tables and trend charts",
+      "status": "active",
+      "runCommand": "analyzer",
+      "auditGrade": 82
+    },
+    {
+      "id": "tool-011",
+      "name": "Content Brief Generator",
+      "category": "Content",
+      "description": "Generate structured content briefs from outlier video analysis",
+      "status": "active",
+      "runCommand": "brief-generator",
+      "auditGrade": 80
+    },
+    {
+      "id": "tool-012",
+      "name": "Minecraft Map Scraper",
+      "category": "Research",
+      "description": "Search and browse Minecraft maps with bookmark functionality",
+      "status": "beta",
+      "runCommand": "map-scraper",
+      "auditGrade": 75
     }
   ],
   "categories": [
