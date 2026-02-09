@@ -1,67 +1,26 @@
 {
-  "audits": [
-    {
-      "id": "audit-001",
-      "agent": "nox",
-      "project": "YouTube Outlier Research",
-      "grade": 98,
-      "date": "2026-02-08T07:05:00Z",
-      "summary": "Exceptional research with real channel analysis and pattern recognition",
-      "fullReport": "Agent conducted real research on ZMDE Gaming and StevenSongIRL, identified genuine outlier patterns (up to 41x subscriber count), extracted actionable insights, and properly structured data for dashboard.",
-      "feedback": "This is exactly the kind of proactive, research-driven work that makes the dashboard indispensable",
-      "category": "proactive-work"
-    },
-    {
-      "id": "audit-002",
-      "agent": "nox",
-      "project": "Dashboard Ralph-Loops QA",
-      "grade": 94,
-      "date": "2026-02-08T05:45:00Z",
-      "summary": "Completed 5-batch QA cycle with thorough defect identification",
-      "fullReport": "Batch 1: Core Architecture - 10 defects found, 6 fixed. Batch 2-5: Data rendering, filters, charts, responsive design all tested.",
-      "feedback": "Good systematic approach to QA",
-      "category": "ralph-chain"
-    },
-    {
-      "id": "audit-003",
-      "agent": "nox",
-      "project": "Morning Brief Widget",
-      "grade": 88,
-      "date": "2026-02-07T23:45:00Z",
-      "summary": "Successfully transforms dashboard from passive to actionable",
-      "fullReport": "Clean implementation with proper data filtering. Generates actionable brief items from 5 categories.",
-      "feedback": "88% - Genuinely useful addition. Could add persistence for seen items.",
-      "category": "proactive-work"
-    },
-    {
-      "id": "audit-004",
-      "agent": "nox",
-      "project": "X Intelligence Trend Analyzer",
-      "grade": 85,
-      "date": "2026-02-07T23:30:00Z",
-      "summary": "Bridges data-action gap with actionable briefings",
-      "fullReport": "Tool transforms static intelligence data into actionable outputs. Generates morning briefings and alerts.",
-      "feedback": "85% - Genuinely useful. Add live X.com API when available.",
-      "category": "proactive-work"
-    },
-    {
-      "id": "audit-005",
-      "agent": "nox",
-      "project": "Mission Control Dashboard",
-      "grade": 85,
-      "date": "2026-02-08T00:00:00Z",
-      "summary": "Major capability addition with 3 core features",
-      "fullReport": "Activity feed, calendar view, global search all implemented. Clean state management.",
-      "feedback": "85% - Transforms work tracking. Populate search index with real data.",
-      "category": "proactive-work"
-    }
-  ],
+  "audits": [],
+  "auditSummary": {
+    "totalFilesScanned": 220,
+    "totalGradesFound": 243,
+    "averageGrade": 63.9,
+    "minGrade": 0,
+    "maxGrade": 100,
+    "lastUpdated": "2026-02-09T16:20:00Z"
+  },
+  "gradeDistribution": {
+    "0-20%": 18,
+    "21-40%": 32,
+    "41-60%": 58,
+    "61-80%": 72,
+    "81-100%": 63
+  },
   "agentStats": {
     "nox": {
-      "totalAudits": 5,
-      "avgGrade": 90,
-      "lastAudit": "2026-02-08T07:05:00Z",
-      "trend": "improving"
+      "totalAudits": 243,
+      "avgGrade": 63.9,
+      "lastAudit": "2026-02-09T16:20:00Z",
+      "trend": "stable"
     },
     "health": {
       "totalAudits": 0,

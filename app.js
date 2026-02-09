@@ -258,12 +258,16 @@ function showTab(tabId) {
   }
   
   // Hide all tab content
-  document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+  document.querySelectorAll('.tab-content').forEach(el => {
+    el.classList.add('hidden');
+    el.setAttribute('hidden', '');
+  });
   // Remove active state from all tab buttons
   document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('tab-active'));
   
   // Show selected tab and mark button active
   tabContent.classList.remove('hidden');
+  tabContent.removeAttribute('hidden');
   tabBtn.classList.add('tab-active');
   
   // BATCH 2 FIX: Always update URL hash, forcing history entry
@@ -2165,14 +2169,6 @@ function deleteNote(noteId) {
   
   saveResearchNotes(filtered);
   renderResearch();
-}
-
-// Legacy function kept for compatibility
-function showNoteModal(idx) {
-  const note = researchNotesData[idx];
-  if (note) {
-    openModal(note.title, buildNoteModalContent(note));
-  }
 }
 
 // ==================== AUDITS TAB ====================

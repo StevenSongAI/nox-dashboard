@@ -1,7 +1,7 @@
 {
   "lastHeartbeat": "2026-02-09T14:28:00Z",
   "totalHeartbeats": 36,
-  "lastAction": "[nox] Added 1 new competitor from CSV traffic sources: 'I Got a Pet' (@I_Got_a_Pet) - 4.55K subscribers, 430K views on T-Rex video",
+  "lastAction": "Fixed research notes click-to-expand modal (removed duplicate showNoteModal function)",
   "currentPriorities": {
     "youtube": "Baby Creature Physics format - highest confidence from outlier analysis (390x-677x scores)",
     "business": "AI Coding Agents content opportunity (trend score 120) - 30-day comparison pilot video",
@@ -9,12 +9,12 @@
     "tools": "Dashboard and Mission Control on GitHub Pages"
   },
   "dataFreshness": {
-    "youtube": "2026-02-09 — 69 outliers, 11 briefs, 3 synthesized insights",
+    "youtube": "2026-02-09 — Restored 6 original competitors (Rogers Pets, Pet Simulated World, Sacred Stuff, Night Toons, Creature Lab, Wild Pokédex)",
     "newBusiness": "2026-02-09 — 11 opportunities",
     "investments": "2026-02-09 — 3 opportunities, 2 watchlist, 13 intelligence entries, 1 synthesized insight",
     "research": "2026-02-09 — 8 notes (+ traffic source analysis)",
-    "audits": "2026-02-09 — 68 audits logged",
-    "competitors": "2026-02-09 — 22 competitors tracked (+1 from CSV traffic sources)"
+    "audits": "2026-02-09 — 243 audits logged, 63.9% avg (all Audits folder files)",
+    "competitors": "2026-02-09 — 6 competitors tracked (restored original set from commit 0a5de14)"
   },
   "recentFeedback": [
     {

@@ -1083,8 +1083,165 @@ input:focus, select:focus, textarea:focus {
 }
 
 /* ============================================
-   BATCH 5 FIXES - Modal, Brief, and Persistence
+   BATCH 6 FIXES - Responsive, Accessibility, Focus
    ============================================ */
+
+/* Focus indicators for accessibility */
+:focus-visible {
+  outline: 2px solid #3B82F6;
+  outline-offset: 2px;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid #3B82F6;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.2);
+}
+
+/* Skip link for keyboard navigation */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #3B82F6;
+  color: white;
+  padding: 8px 16px;
+  z-index: 10000;
+  transition: top 0.3s;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Mobile viewport optimizations (375px) */
+@media (max-width: 375px) {
+  html {
+    font-size: 14px;
+  }
+  
+  .tabs-container {
+    padding: 0.25rem 0;
+  }
+  
+  .tab-btn {
+    padding: 6px 8px;
+    font-size: 0.75rem;
+    min-height: 36px;
+  }
+  
+  .card {
+    padding: 0.75rem;
+  }
+  
+  h1 {
+    font-size: 1.125rem;
+  }
+  
+  h2 {
+    font-size: 1rem;
+  }
+  
+  .chart-container {
+    min-height: 120px;
+  }
+  
+  .chart-sparkline {
+    height: 80px;
+  }
+  
+  .chart-small {
+    height: 120px;
+  }
+}
+
+/* Tablet and small desktop */
+@media (min-width: 376px) and (max-width: 767px) {
+  .tab-btn {
+    padding: 8px 10px;
+    font-size: 0.8rem;
+  }
+}
+
+/* Modal responsive adjustments */
+@media (max-width: 640px) {
+  .modal-container {
+    max-width: 95vw;
+    max-height: 90vh;
+    margin: 1rem;
+  }
+  
+  .modal-header {
+    padding: 1rem;
+  }
+  
+  .modal-content {
+    padding: 1rem;
+  }
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  .skeleton-line,
+  .skeleton-card {
+    animation: none;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .card {
+    border-width: 2px;
+  }
+  
+  .tab-btn {
+    border: 1px solid transparent;
+  }
+  
+  .tab-active {
+    border-color: #3B82F6;
+  }
+}
+
+/* Error toast animation */
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+#error-toast {
+  animation: slideIn 0.3s ease;
+}
+
+/* Loading state indicator */
+.app-loaded .skeleton-loader {
+  display: none;
+}
+
+/* Ensure charts are responsive */
+canvas {
+  max-width: 100%;
+  height: auto !important;
+}
 
 /* Enhanced Modal Close Button */
 .modal-close {
@@ -1176,4 +1333,126 @@ input:focus, select:focus, textarea:focus {
 
 [data-category].filter-hidden {
   opacity: 0.3;
+}
+
+/* ============================================
+   BATCH 6 FIXES - Enhanced Mobile & Accessibility
+   ============================================ */
+
+/* Mobile chart improvements */
+@media (max-width: 640px) {
+  .chart-container canvas {
+    max-height: 200px !important;
+  }
+  
+  .chart-sparkline {
+    height: 80px;
+  }
+  
+  .chart-small {
+    height: 120px;
+  }
+  
+  .chart-medium {
+    height: 180px;
+  }
+  
+  .chart-large {
+    height: 250px;
+  }
+  
+  /* Ensure text doesn't overflow on mobile */
+  .card {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  /* Smaller padding on mobile cards */
+  .card.p-4 {
+    padding: 0.75rem;
+  }
+  
+  /* Compact stats cards on mobile */
+  #stat-youtube-count,
+  #stat-business-count,
+  #stat-investments-count,
+  #stat-avg-grade {
+    font-size: 1.5rem;
+  }
+}
+
+/* Touch-friendly tap targets on mobile */
+@media (max-width: 768px) {
+  button,
+  .tab-btn,
+  input,
+  select,
+  textarea,
+  .card-clickable {
+    min-height: 44px;
+  }
+  
+  .tab-btn {
+    padding: 10px 12px;
+  }
+  
+  /* Larger touch targets for actions */
+  .empty-state-cta,
+  .modal-close,
+  [onclick] {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
+/* Ensure proper z-index stacking */
+.modal-overlay {
+  z-index: 1000;
+}
+
+header[role="banner"] {
+  z-index: 100;
+}
+
+/* Loading state improvements */
+.app-loading {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+/* Error state styling */
+.error-state {
+  border: 1px solid #EF4444;
+  background: rgba(239, 68, 68, 0.1);
+}
+
+/* Ensure footer is always at bottom */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+/* Print styles for better accessibility */
+@media print {
+  .tabs-container,
+  .modal-overlay,
+  button:not([type="submit"]),
+  .empty-state-cta {
+    display: none !important;
+  }
+  
+  .card {
+    border: 1px solid #ccc;
+    break-inside: avoid;
+  }
+  
+  body {
+    background: white;
+    color: black;
+  }
 }
