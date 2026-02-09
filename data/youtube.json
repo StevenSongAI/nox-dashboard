@@ -944,6 +944,51 @@
       "url": "https://www.youtube.com/watch?v=mAhtKQtjJME",
       "researchStatus": "completed",
       "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-061",
+      "title": "King Of The Jungle VS King Of Water - Who Is Real King - Animal Revolt Battle Simulator",
+      "channel": "arbschannel2501",
+      "views": 7640000,
+      "publishedAt": "2022-02-08T00:00:00Z",
+      "addedAt": "2026-02-09T07:13:00Z",
+      "outlierScore": 292,
+      "niche": "🦁 Animal Battle Simulation",
+      "whyOutlier": "EXTREME 292x outlier - 7.64M views on 180K sub channel! King vs King matchup creates ultimate authority battle. Lion vs aquatic apex predator format drives massive curiosity.",
+      "contentAngle": "Create 'King of [Environment] vs King of [Environment]' AI creature battles. Lion vs Shark, Eagle vs Dragon, T-Rex vs Mammoth - ultimate alpha creature matchups.",
+      "url": "https://www.youtube.com/watch?v=v1FfG4giivQ",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-062",
+      "title": "Monsters Size Comparison | 3d Animation Comparison | Real Scale Comparison",
+      "channel": "globaldata1",
+      "views": 4370000,
+      "publishedAt": "2022-02-08T00:00:00Z",
+      "addedAt": "2026-02-09T07:13:00Z",
+      "outlierScore": 84.9,
+      "niche": "👹 Monster/Size Comparison",
+      "whyOutlier": "MASSIVE 84.9x outlier - 4.37M views on 721K sub channel. Size comparison format with monsters creates satisfying visual progression. Real scale adds educational value.",
+      "contentAngle": "Create 'AI Creatures Size Comparison' - show various AI-generated creatures at their actual scale. Smallest to largest progression with human/city references for scale.",
+      "url": "https://www.youtube.com/watch?v=UAnMiiyAyD4",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-063",
+      "title": "Evolution Of THE DEER MONSTER in Melon Playground - 99 Days In The Forest",
+      "channel": "melonsquadchannel",
+      "views": 3050000,
+      "publishedAt": "2024-08-08T00:00:00Z",
+      "addedAt": "2026-02-09T07:13:00Z",
+      "outlierScore": 28.2,
+      "niche": "🦌 Sandbox Evolution/Melon Playground",
+      "whyOutlier": "EXTREME 28.2x outlier - 3.05M views on 253K sub channel! RECENT upload (6 months ago). Innocuous creature (deer) turned monstrous creates unexpected horror twist.",
+      "contentAngle": "Create 'Evolution of the [Innocent Creature] Monster' - take cute animals and evolve them into terrifying forms. Documentary-style narration of 99-day transformation.",
+      "url": "https://www.youtube.com/watch?v=fpuiIvnLUUg",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
     }
   ],
   "competitorResearchQueue": [
