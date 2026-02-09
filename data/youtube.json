@@ -1034,6 +1034,51 @@
       "url": "https://www.youtube.com/watch?v=NTekRMnr_CA",
       "researchStatus": "completed",
       "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-067",
+      "title": "A Baby NightFury is Born - Minecraft Dragons -Ep 1",
+      "channel": "littlelizardgaming",
+      "views": 1730000,
+      "publishedAt": "2021-02-08T00:00:00Z",
+      "addedAt": "2026-02-09T09:00:00Z",
+      "outlierScore": 108,
+      "niche": "🐉 Minecraft/Dragon Family",
+      "whyOutlier": "EXTREME 108x outlier - 1.73M views on 4M sub channel. Baby NightFury (How to Train Your Dragon) concept + episodic series format creates massive anticipation. Episode 1 implies series continuation.",
+      "contentAngle": "Create episodic 'Baby AI Dragon' series with named characters and ongoing storylines. Use recognizable dragon archetypes (NightFury style) but AI-generated. Episodic format drives subscription and return views.",
+      "url": "https://www.youtube.com/watch?v=73ch2JZgvHs",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-068",
+      "title": "My Tamagotchi Collection 🥚💗",
+      "channel": "theforestmori",
+      "views": 321000,
+      "publishedAt": "2019-02-08T00:00:00Z",
+      "addedAt": "2026-02-09T09:00:00Z",
+      "outlierScore": 49.7,
+      "niche": "🥚 Virtual Pet/Collection",
+      "whyOutlier": "MASSIVE 49.7x outlier - 321K views on 25K sub channel! Collection showcase format + nostalgic virtual pet content (Tamagotchi) = extreme engagement. Emoji in title adds visual appeal.",
+      "contentAngle": "Create 'My AI Creature Collection' showcase videos. Document collecting different AI-generated creatures, show their unique traits, and create a 'complete collection' goal. Nostalgia + completionism drives shares.",
+      "url": "https://www.youtube.com/watch?v=uO0KAtVuuTI",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-069",
+      "title": "How to Make a Virtual Pet in Scratch | Tutorial",
+      "channel": "scratchteam",
+      "views": 1860000,
+      "publishedAt": "2019-02-08T00:00:00Z",
+      "addedAt": "2026-02-09T09:00:00Z",
+      "outlierScore": 22.9,
+      "niche": "🎮 Tutorial/Virtual Pet",
+      "whyOutlier": "EXTREME 22.9x outlier - 1.86M views on 290K sub channel. Educational tutorial format teaching virtual pet creation drives massive utility value. 'How to make' + specific tool (Scratch) = searchable evergreen content.",
+      "contentAngle": "Create 'How to Make an AI Pet' tutorial series. Teach viewers to create their own AI creatures using accessible tools. Educational content has longer shelf life and drives consistent search traffic.",
+      "url": "https://www.youtube.com/watch?v=irhNLRWwhv0",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
     }
   ],
   "competitorResearchQueue": [
