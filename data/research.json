@@ -204,7 +204,51 @@
         "yt-zmde-kaiju-001",
         "yt-stevensong-dragon-001"
       ]
+    },
+    {
+      "id": "note-011",
+      "title": "Baby Creature Physics Pilot: Detailed Production Timeline & Resource Plan",
+      "date": "2026-02-09T21:06:00Z",
+      "tags": [
+        "production-timeline",
+        "baby-creature-physics",
+        "pilot-video",
+        "resource-planning",
+        "execution-ready"
+      ],
+      "content": "## Baby Creature Physics Pilot: Production Timeline & Resource Plan\n\n### Project Overview\n- **Video**: Baby Creature Physics Pilot (Production-Ready)\n- **Based On**: Content Brief brief-baby-physics-pilot-002\n- **Expected Outlier Score**: 400x (based on 390x-677x pattern evidence)\n- **Target Length**: 15 minutes\n- **Production Estimate**: 20-25 hours\n\n---\n\n### Pre-Production (Day 1-2: 4-6 hours)\n\n**Day 1: Asset Preparation (2-3 hours)**\n- [ ] Generate baby dragon designs in Midjourney/Stable Diffusion\n  - Prompt template: 'cute baby dragon, small wings, chubby body, photorealistic, 8k, cinematic lighting'\n  - Generate 10+ variations, select top 3\n- [ ] Create dragon evolution reference sheet\n  - Baby (current video size)\n  - Adolescent (2x size)\n  - Adult (4x size)\n  - Final form (8x size)\n- [ ] Design physics interaction objects\n  - Small objects (baby phase): boxes, barrels, crates\n  - Medium objects (adolescent): cars, walls, trees\n  - Large objects (adult): buildings, tanks, helicopters\n\n**Day 2: Environment Setup (2-3 hours)**\n- [ ] Install/configure Garry's Mod OR set up Unity physics scene\n- [ ] Source/create dragon 3D model (or use simple collision proxy)\n- [ ] Build test environments:\n  - Sandbox area for baby phase\n  - Small town for adolescent phase\n  - Cityscape for adult phase\n- [ ] Record test footage to verify physics behavior\n\n---\n\n### Production Phase 1: Baby Dragon Content (Day 3-4: 6-8 hours)\n\n**Day 3: Recording Session 1 (3-4 hours)**\n- [ ] Record HOOK segment (0:00-0:30)\n  - Start with fully grown dragon chaos\n  - Capture most dramatic physics moments\n  - Record 'This all started with something much smaller...' voiceover\n- [ ] Record SETUP segment (0:30-2:00)\n  - Introduce experiment premise\n  - Show AI-generated baby dragon designs\n  - Record prediction segment\n- [ ] Record FIRST CONTACT segment (2:00-5:00)\n  - Baby dragon waddling animations\n  - Failed flight attempts (tumbling physics)\n  - First object interactions (cute knocking over small items)\n  - Capture 3x more footage than needed\n\n**Day 4: Recording Session 2 (3-4 hours)**\n- [ ] Record GROWTH PHASE 1 (5:00-8:00)\n  - Adolescent dragon reveal (2x size increase)\n  - More destructive but clumsy behavior\n  - Physics chain reactions (domino effects)\n- [ ] Record GROWTH PHASE 2 (8:00-11:00)\n  - Near-adult size dragon\n  - Intentional destruction sequences\n  - Dragon 'learns' physics (behavior change)\n  - Escalating set pieces (progressive destruction)\n\n---\n\n### Production Phase 2: Climax & Resolution (Day 5: 4-5 hours)\n\n**Day 5: Recording Session 3 (4-5 hours)**\n- [ ] Record CLIMAX (11:00-13:30)\n  - Dragon reaches maximum size\n  - 'Breaks' the simulation\n  - Glitch effects preparation (post-production list)\n  - Floating objects, reality breaking visuals\n  - Capture wild physics bugs as 'features'\n- [ ] Record RESOLUTION (13:30-15:00)\n  - Cut back to baby dragon\n  - Cute final moment\n  - Series tease line: 'What if we tried this with a kaiju?'\n- [ ] Record pickup shots\n  - B-roll of dragon designs\n  - Transition shots\n  - End screen elements\n\n---\n\n### Post-Production (Day 6-8: 8-10 hours)\n\n**Day 6: Assembly Edit (3-4 hours)**\n- [ ] Import all footage to Premiere Pro/DaVinci Resolve\n- [ ] Rough cut following outline structure\n- [ ] Place voiceover scratch track\n- [ ] Timing check: verify 15-minute target\n- [ ] Identify gaps requiring pickup shots\n\n**Day 7: Picture Edit (3 hours)**\n- [ ] Implement fast cuts during chaos (1-2 second intervals)\n- [ ] Add slow-motion on best physics moments\n- [ ] Insert zoom transitions for time jumps\n- [ ] Match cuts between growth phases\n- [ ] Polish pacing: tighten dead air, extend best moments\n\n**Day 8: Sound Design & Effects (2-3 hours)**\n- [ ] Record final voiceover\n- [ ] Add sound effects:\n  - Baby dragon: cartoonish squeaks for tiny roar\n  - Physics impacts: satisfying thuds, crashes\n  - Growth transitions: transformation sounds\n  - Glitch effects: digital distortion\n- [ ] Music bed:\n  - Baby phase: whimsical, light\n  - Growth phase: building intensity\n  - Climax: intense orchestral\n  - Resolution: return to whimsical\n- [ ] Mix audio levels (dialogue clear, music supportive)\n\n---\n\n### Polish Phase (Day 9: 2-3 hours)\n\n**Day 9: Final Polish (2-3 hours)**\n- [ ] Color correction (consistent look across phases)\n- [ ] Visual effects:\n  - Add glitch effects for climax\n  - Motion graphics for growth transitions\n  - Text overlays for time jumps ('Day 50', 'Year 1', etc.)\n- [ ] Export test version\n- [ ] Watch full video, note final tweaks\n- [ ] Render final version (1080p60)\n\n---\n\n### Packaging (Day 10: 1-2 hours)\n\n**Day 10: Upload Prep (1-2 hours)**\n- [ ] Create thumbnail\n  - Split frame: top = baby dragon, bottom = destruction\n  - Red arrow pointing down\n  - Text: '15 MINUTES LATER'\n- [ ] Write description with keywords\n- [ ] Add tags: baby dragon, physics simulation, AI creature, Garry's Mod, satisfying\n- [ ] Create end screen with subscribe button\n- [ ] Schedule or publish\n\n---\n\n### Equipment & Software Checklist\n\n| Item | Purpose | Cost | Status |
+|------|---------|------|--------|
+| Garry's Mod | Physics sandbox | $10 Steam | Required |
+| OR Unity + Physics | Alternative engine | Free (Personal) | Alternative |
+| OBS Studio | Screen recording | Free | Required |
+| Premiere Pro OR DaVinci Resolve | Editing | $22/mo OR Free | Required |
+| Midjourney/Stable Diffusion | Dragon design | $10-30/mo | Required |
+| Epidemic Sound OR Artlist | Music licensing | $15/mo | Recommended |
+| Adobe Photoshop/GIMP | Thumbnail design | $22/mo OR Free | Required |
+\n---\n\n### Risk Mitigation\n\n| Risk | Mitigation | Contingency |
+|------|------------|-------------|
+| Physics engine crashes during recording | Save frequently, record in segments | Use simpler physics objects |
+| Dragon model looks bad | Generate 10+ AI options, pick best 3 | Use silhouette/collision proxy only |
+| Footage too short | Record 3x coverage minimum | Extend with slow-motion |
+| Edit too long | Hard cut at 15 min max | Split into 'Part 1/2' |
+| Audio quality poor | Record in quiet room, use pop filter | Voiceover studio as backup |
+\n---\n\n### Success Metrics (Post-Launch)\n\n| Metric | Target | Tracking |
+|--------|--------|----------|
+| CTR | >15% | YouTube Studio |
+| Avg View Duration | >8 min (50%+ retention) | YouTube Analytics |
+| Outlier Score | >200x | Views ÷ sub count |
+| Like Ratio | >5% | YouTube Studio |
+| Comment Sentiment | 80%+ positive | Manual review |
+| Shorts Crossover | >10% traffic from Shorts | Traffic sources |
+\n---\n\n### Series Expansion (If Pilot Succeeds)\n\n**Episode 2**: Ice Dragon (freezing physics, water interactions)\n**Episode 3**: Kaiju/Godzilla (city-scale destruction)\n**Episode 4**: Electric Dragon (lightning physics, circuits)\n**Episode 5**: Void Dragon (dark matter, anti-gravity physics)\n\nEach episode reuses workflow, reduces production time to 12-15 hours.\n\n---\n\n*Production Plan Created: 2026-02-09 | Based on Content Brief: brief-baby-physics-pilot-002 | Ready for Execution*",
+      "sourceUrls": [
+        "https://stevensongai.github.io/nox-dashboard/"
+      ],
+      "category": "Production Planning",
+      "linkedContentBriefIds": [
+        "brief-baby-physics-pilot-002"
+      ]
     }
   ],
-  "lastUpdated": "2026-02-09T20:30:00Z"
+  "lastUpdated": "2026-02-09T21:06:00Z"
 }
