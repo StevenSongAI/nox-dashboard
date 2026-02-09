@@ -163,8 +163,7 @@
         "comp-002",
         "comp-003"
       ]
-    }
-  ],
+    },
     {
       "id": "note-009",
       "title": "Ralph-Chain v2 Complete: Dashboard Fully Operational - Lessons & Next Steps",
@@ -182,7 +181,30 @@
       ],
       "category": "Process Intelligence",
       "linkedBlockerIds": []
+    },
+    {
+      "id": "note-010",
+      "title": "Mid-February Content Production Priorities: Data-Driven Action Plan",
+      "date": "2026-02-09T20:30:00Z",
+      "tags": [
+        "content-strategy",
+        "production-planning",
+        "analytics",
+        "ctr-optimization",
+        "action-items"
+      ],
+      "content": "## Mid-February Content Production Priorities: Data-Driven Action Plan\n\n### Executive Summary\n\nBased on analysis of YouTube traffic sources (9.88% avg CTR, 338K impressions), outlier video research (81 videos analyzed), and dashboard intelligence, three high-confidence content opportunities emerge for immediate production.\n\n### Priority 1: Pokémon Simulation Format (Highest CTR: 27.29%)\n\n**Evidence:**\n- 'I Simulated Pokémon In Real Life' achieved 27.29% CTR (2.7x channel average)\n- 1,596 views with 5:27 avg duration (quality traffic)\n- Zero competitors in tracked set using this exact format\n\n**Production Brief:**\n- **Title:** 'I Simulated Pokémon In Real Life (But They're Baby Versions)'\n- **Angle:** Baby Creature Physics + Pokémon IP (combines highest CTR with highest outlier pattern)\n- **Thumbnail:** Split-screen: realistic baby Pokémon vs pixelated game version\n- **Hook:** First 10 seconds show the simulation running\n- **Target CTR:** >20% (vs 9.88% channel average)\n\n---\n\n### Priority 2: Kaiju Evolution Series (Consistent 19-22% CTR)\n\n**Evidence:**\n- King Kong: 22.4% CTR, 1,538 views\n- Godzilla: 19.92% CTR, 1,586 views\n- '1000 Years' time compression format proven by ZMDE (10-50x subscriber views)\n\n**Production Brief:**\n- **Title:** 'I Evolved Godzilla for 1000 Years (He Became Unstoppable)'\n- **Angle:** Time compression + Kaiju + Physics simulation\n- **Structure:**\n  - Day 0-100: Baby Godzilla, establish rules\n  - Day 100-500: Evolution milestones (visual progression)\n  - Day 500-1000: Final forms, boss battles\n  - Final: Comparison montage of all stages\n- **Shorts Potential:** 10+ clips from evolution stages\n- **Target Outlier Score:** >75 (current avg: 45)\n\n---\n\n### Priority 3: Dragon Pet Format (Consistent Performer, Low Competition)\n\n**Evidence:**\n- 'I Got a Pet Ice Dragon': 23.32% CTR\n- 'I Simulated Toothless': 18.78% CTR, 1,229 views\n- Dragon content from competitors getting <50K views (gap for higher production value)\n\n**Production Brief:**\n- **Title:** 'I Got a Pet Ice Dragon (Don't Let It Touch Water)'\n- **Angle:** Pet simulation + elemental mechanics + consequences\n- **Hook:** Dragon touches water → ice spreads → problem escalates\n- **Educational Layer:** Explain ice physics, crystallization\n- **Target:** Family-friendly, high retention, shareable moments\n\n---\n\n### Production Schedule Recommendation\n\n| Week | Video | Priority | Expected CTR | Difficulty |\n|------|-------|----------|--------------|------------|\n| Feb 10-16 | Baby Pokémon Simulation | P1 | 20-25% | Medium |\n| Feb 17-23 | Kaiju Evolution Ep 1 | P2 | 18-22% | High |\n| Feb 24-Mar 2 | Ice Dragon Pet | P3 | 18-20% | Medium |\n\n### Resource Requirements\n\n**Per Video:**\n- AI generation: Midjourney/Stable Diffusion (4-6 hours)\n- Physics simulation: Blender or game engine (6-10 hours)\n- Editing: Premiere Pro (4-6 hours)\n- Thumbnail design: Photoshop (1 hour)\n- **Total:** 15-23 hours per video\n\n**Batch Optimization:**\n- Generate all creatures in one session (consistent style)\n- Record narration for 3 videos in one sitting\n- Edit sequentially to build workflow speed\n\n### Success Metrics\n\n| Metric | Target | Tracking Method |\n|--------|--------|-----------------|\n| CTR | >18% (2x channel avg) | YouTube Studio |\n| Outlier Score | >60 | Manual calculation |\n| Views/Sub Ratio | >10x | Views ÷ sub count |\n| Avg View Duration | >5:00 | YouTube Analytics |\n| Shorts Crossover | >15% | Traffic sources |\n\n### Risk Mitigation\n\n| Risk | Mitigation |\n|------|------------|\n| IP claims (Pokémon) | Transform designs 30%+ from canonical versions |\n| Production time overrun | Scope to 12-15 min max runtime |\n| AI art controversy | Lead with creative process, acknowledge tools transparently |\n| Viewer fatigue | Each video needs unique 'twist' (element, mechanic, stakes) |\n\n### Dashboard Tracking\n\nAll metrics tracked in nox-dashboard:\n- Production status in Mission Control\n- CTR comparison in YouTube tab\n- Competitor uploads in Competitors tab\n- Research notes linked to outlier IDs\n\n---\n\n*Production Plan Date: 2026-02-09 | Next Review: 2026-02-16 (post-P1 launch)*",
+      "sourceUrls": [
+        "https://www.youtube.com/@StevenSongIRL/analytics",
+        "https://stevensongai.github.io/nox-dashboard/"
+      ],
+      "category": "Production Planning",
+      "linkedOutlierIds": [
+        "yt-stevensong-pokemon-001",
+        "yt-zmde-kaiju-001",
+        "yt-stevensong-dragon-001"
+      ]
     }
   ],
-  "lastUpdated": "2026-02-09T19:46:00Z"
+  "lastUpdated": "2026-02-09T20:30:00Z"
 }
