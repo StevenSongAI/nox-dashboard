@@ -1,43 +1,118 @@
 {
-  "lastHeartbeat": "2026-02-09T00:06:00Z",
-  "totalHeartbeats": 18,
-  "lastAction": "fix(batch-1): Restored 6 real Minecraft competitors, removed extra auto-added channels",
+  "lastHeartbeat": "2026-02-09T14:28:00Z",
+  "totalHeartbeats": 36,
+  "lastAction": "fix(batch-1): Restored 6 real Minecraft competitors from commit 0a5de14, removed 16 auto-added channels",
   "currentPriorities": {
-    "youtube": "Triple Threat viral format execution - synthesize time compression + thief-bait + escalating stakes",
+    "youtube": "Baby Creature Physics format - highest confidence from outlier analysis (390x-677x scores)",
     "business": "AI Coding Agents content opportunity (trend score 120) - 30-day comparison pilot video",
     "investments": "NVDA strong, watching PLTR and AMD for entry, monitoring AI video sector growth, added RENDER speculative position thesis",
     "tools": "Dashboard and Mission Control on GitHub Pages"
   },
   "dataFreshness": {
-    "youtube": "2026-02-09 — Restored 6 Minecraft content competitors (Rogers Pets, Pet Simulated World, Sacred Stuff, Night Toons, Creature Lab, Wild Pokédex)",
-    "newBusiness": "2026-02-08 — 9 opportunities",
-    "investments": "2026-02-08 — 3 opportunities, 2 watchlist, 11 intelligence entries",
-    "research": "2026-02-08 — 10 notes (added 1)",
-    "audits": "2026-02-08 — 67 audits logged"
+    "youtube": "2026-02-09 — Restored 6 original competitors (Rogers Pets, Pet Simulated World, Sacred Stuff, Night Toons, Creature Lab, Wild Pokédex)",
+    "newBusiness": "2026-02-09 — 11 opportunities",
+    "investments": "2026-02-09 — 3 opportunities, 2 watchlist, 13 intelligence entries, 1 synthesized insight",
+    "research": "2026-02-09 — 8 notes (+ traffic source analysis)",
+    "audits": "2026-02-09 — 68 audits logged",
+    "competitors": "2026-02-09 — 6 competitors tracked (restored original set from commit 0a5de14)"
   },
   "recentFeedback": [
-    {"date": "2026-02-07", "feedback": "Dashboard tabs don't work at all", "implication": "Fix JavaScript errors immediately"},
-    {"date": "2026-02-07", "feedback": "No content loaded in dashboard", "implication": "Populate data files before deployment"}
+    {
+      "date": "2026-02-09",
+      "feedback": "Builder agents claimed features that didn't exist",
+      "implication": "Must verify all claimed fixes in browser before accepting"
+    },
+    {
+      "date": "2026-02-07",
+      "feedback": "Dashboard tabs don't work at all",
+      "implication": "Fix JavaScript errors immediately"
+    },
+    {
+      "date": "2026-02-07",
+      "feedback": "No content loaded in dashboard",
+      "implication": "Populate data files before deployment"
+    }
   ],
   "workThatLanded": [
-    {"what": "30 Real YouTube Outliers Added", "why": "Real research data from ZMDE (2.87M subs) and StevenSongIRL (169K subs)", "date": "2026-02-08"},
-    {"what": "Mission Control Dashboard", "why": "Activity feed, calendar, global search - complete visibility", "date": "2026-02-07"},
-    {"what": "Morning Brief Widget", "why": "88% audit grade, actionable summary at a glance", "date": "2026-02-07"}
+    {
+      "what": "69 Real YouTube Outliers Added",
+      "why": "Real research data from ZMDE, StevenSongIRL, and viewstats analysis",
+      "date": "2026-02-09"
+    },
+    {
+      "what": "2 Synthesized Insights",
+      "why": "Actionable patterns from outlier analysis - real content strategy",
+      "date": "2026-02-09"
+    },
+    {
+      "what": "Mission Control Dashboard",
+      "why": "Activity feed, calendar, global search - complete visibility",
+      "date": "2026-02-07"
+    }
   ],
   "workThatFlopped": [
-    {"what": "Dashboard tab click bug", "why": "JavaScript syntax error prevented tabs from working", "date": "2026-02-07", "fixed": true}
+    {
+      "what": "Competitor display bug - showed MrBeast instead of actual tracked competitors",
+      "why": "app.js loadCompetitors() defaulted to MrBeast when localStorage empty instead of loading from competitors.json",
+      "date": "2026-02-09",
+      "fixed": true
+    },
+    {
+      "what": "Batch 3/4 builder false claims",
+      "why": "Claimed features (delete button, Add Opportunity buttons) weren't actually implemented or tested",
+      "date": "2026-02-08",
+      "fixed": true
+    },
+    {
+      "what": "Dashboard tab click bug",
+      "why": "JavaScript syntax error prevented tabs from working",
+      "date": "2026-02-07",
+      "fixed": true
+    }
   ],
   "lessonsLearned": [
-    {"date": "2026-02-08", "lesson": "ZMDE's '1000 Years' format is a repeatable pattern - time compression drives engagement"},
-    {"date": "2026-02-08", "lesson": "StevenSongIRL's thief-bait format massively outperforms (15-40x subscriber count)"},
-    {"date": "2026-02-08", "lesson": "Price comparison format works best for high-stakes categories (cars > toys)"},
-    {"date": "2026-02-08", "lesson": "AI video growth (88% CAGR) creating secondary plays in compute infrastructure (Render, Akash)"},
-    {"date": "2026-02-07", "lesson": "Always run syntax check (node --check) before pushing JavaScript"},
-    {"date": "2026-02-07", "lesson": "Dashboard is the default destination - all work feeds into it"},
-    {"date": "2026-02-07", "lesson": "APPEND new data, never replace entire JSON files"}
+    {
+      "date": "2026-02-09",
+      "lesson": "Physics + Baby Creature formula achieves 390x-677x outlier scores - highest confidence pattern in dataset"
+    },
+    {
+      "date": "2026-02-09",
+      "lesson": "Synthesized insights from existing data > hunting for new data when search tools unavailable"
+    },
+    {
+      "date": "2026-02-09",
+      "lesson": "viewstats browser automation working - can research outliers directly from viewstats.com/pro/outliers"
+    },
+    {
+      "date": "2026-02-09",
+      "lesson": "Builders LIE about implementing features - must mandate browser verification before claiming completion"
+    },
+    {
+      "date": "2026-02-09",
+      "lesson": "Ralph-chain QA process works: Builder → Red Team → Fix cycle produces 93%+ quality"
+    },
+    {
+      "date": "2026-02-08",
+      "lesson": "ZMDE's '1000 Years' format is a repeatable pattern - time compression drives engagement"
+    },
+    {
+      "date": "2026-02-08",
+      "lesson": "StevenSongIRL's thief-bait format massively outperforms (15-40x subscriber count)"
+    },
+    {
+      "date": "2026-02-07",
+      "lesson": "Always run syntax check (node --check) before pushing JavaScript"
+    },
+    {
+      "date": "2026-02-07",
+      "lesson": "Dashboard is the default destination - all work feeds into it"
+    }
   ],
   "toolUsage": {
-    "activelyUsed": ["Dashboard", "Mission Control"],
+    "activelyUsed": [
+      "Dashboard",
+      "Mission Control"
+    ],
     "neverUsed": [],
     "unknown": []
   },
@@ -47,23 +122,30 @@
     "JavaScript syntax errors"
   ],
   "queuedImprovements": [
-    "Produce Triple Threat pilot video - test synthesis of viral patterns",
-    "Research competitor channels via viewstats when browser access available"
+    "Produce Baby Creature Physics pilot video - test 390x-677x outlier pattern",
+    "Research competitor channels via viewstats when browser access available",
+    "Execute AI Dragon Family Saga series - 6-10 episode arc potential"
   ],
   "blockedTasks": [
     {
       "id": "blocked-001",
       "task": "Research competitor channels via viewstats.com",
       "description": "Use viewstats Pro Tools > Outlier to find high-performing videos from competitor channels",
-      "channels": ["@RogersPets-w5s", "@petsimulatedworld", "@CreatureLab_real", "@NightToons-j8i", "@sacredstuff", "@WildPokédex-uwu"],
-      "targetPatterns": ["I got a fictional pet simulation", "AI generated creatures"],
-      "blocked": true,
-      "reason": "Browser connection to viewstats unstable; web search API missing (BRAVE_API_KEY not configured)",
-      "blockingSince": "2026-02-08T22:00:00Z",
-      "unblockCondition": "Stable browser connection OR user provides outlier data OR web search API configured (openclaw configure --section web)",
-      "workaround": "Deriving new outliers from known patterns (ZMDE '1000 Years' series variants)",
-      "priority": "high",
-      "attempted": ["browser navigation to viewstats.com/@zmde - failed (extension relay)", "web_search - failed (missing API key)", "bird skill - not installed"]
+      "channels": [
+        "@RogersPets-w5s",
+        "@petsimulatedworld",
+        "@CreatureLab_real",
+        "@NightToons-j8i",
+        "@sacredstuff"
+      ],
+      "targetPatterns": [
+        "I got a fictional pet simulation",
+        "AI generated creatures"
+      ],
+      "blocked": false,
+      "reason": "RESOLVED - Using hourly cron job with browser automation to discover outliers",
+      "priority": "high"
     }
-  ]
+  ],
+  "nextPriority": "Execute Baby Creature Physics pilot video - highest-confidence format from outlier analysis"
 }

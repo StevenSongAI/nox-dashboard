@@ -8,34 +8,9 @@ let appData = {
   tools: { tools: [], categories: [], lastUpdated: '' },
   research: { notes: [] },
   audits: { audits: [], agentStats: {} },
-  meta: { lastUpdated: {}, agentStatus: {} }
+  meta: { lastUpdated: {}, agentStatus: {} },
+  competitors: { competitors: [], outlierPatterns: [] }
 };
-
-// Safe render wrapper for error boundaries
-function safeRender(renderFn, fallbackText = 'Unable to display content') {
-  try {
-    return renderFn();
-  } catch (error) {
-    console.error('Render error:', error);
-    return `<div class="error-fallback">${fallbackText}</div>`;
-  }
-}
-
-// BATCH 6: Network error recovery
-let retryCount = 0;
-const MAX_RETRIES = 3;
-
-function shouldRetry() {
-  return retryCount < MAX_RETRIES;
-}
-
-function incrementRetry() {
-  retryCount++;
-}
-
-function resetRetry() {
-  retryCount = 0;
-}
 
 // Global chart instances (to prevent "Canvas already in use" errors)
 let gradeChartInstance = null;
@@ -50,117 +25,116 @@ let portfolioChartInstance = null;
 let stockPriceCache = {};
 let lastPriceFetch = 0;
 
-// D4 FIX: Mock stock prices only - no external API calls due to CORS on GitHub Pages
-const MOCK_STOCK_PRICES = {
-  'AAPL': { price: 185.92, change: 5.6, changePercent: 3.1 },
-  'MSFT': { price: 420.55, change: 8.2, changePercent: 1.9 },
-  'GOOGL': { price: 175.98, change: -2.1, changePercent: -1.2 },
-  'AMZN': { price: 186.45, change: 3.4, changePercent: 1.8 },
-  'TSLA': { price: 248.50, change: -5.2, changePercent: -2.1 },
-  'NVDA': { price: 875.28, change: 125.4, changePercent: 15.7 },
-  'META': { price: 505.75, change: 12.3, changePercent: 2.4 },
-  'NFLX': { price: 685.20, change: 18.5, changePercent: 2.7 },
-  'AMD': { price: 178.35, change: 4.2, changePercent: 2.4 },
-  'INTC': { price: 43.85, change: -0.5, changePercent: -1.1 },
-  'CRM': { price: 295.60, change: 6.8, changePercent: 2.3 },
-  'BABA': { price: 78.45, change: 1.2, changePercent: 1.5 },
-  'TSM': { price: 142.80, change: 3.5, changePercent: 2.5 },
-  'AVGO': { price: 1450.25, change: 28.4, changePercent: 2.0 },
-  'TXN': { price: 198.75, change: 2.1, changePercent: 1.1 },
-  'QCOM': { price: 175.40, change: 3.8, changePercent: 2.2 },
-  'AMAT': { price: 165.90, change: 4.5, changePercent: 2.8 },
-  'MU': { price: 98.75, change: 2.3, changePercent: 2.4 },
-  'LRCX': { price: 725.50, change: 15.2, changePercent: 2.1 },
-  'KLAC': { price: 685.30, change: 12.8, changePercent: 1.9 }
-};
-
-// D4 FIX: Mock stock prices only - no external API due to CORS restrictions on GitHub Pages
+// Fetch real stock prices from Yahoo Finance
 async function fetchStockPrices(tickers) {
-  // Use mock data only - no external API calls to avoid CORS
-  const results = {};
-  for (const ticker of tickers) {
-    const upperTicker = ticker.toUpperCase();
-    if (MOCK_STOCK_PRICES[upperTicker]) {
-      results[ticker] = MOCK_STOCK_PRICES[upperTicker];
-    } else {
-      // Generate realistic mock data for unknown tickers
-      const basePrice = 100 + Math.random() * 400;
-      const changePercent = (Math.random() - 0.5) * 10;
-      results[ticker] = {
-        price: basePrice,
-        change: basePrice * changePercent / 100,
-        changePercent: changePercent
-      };
-    }
+  const now = Date.now();
+  // Cache prices for 5 minutes
+  if (now - lastPriceFetch < 300000 && Object.keys(stockPriceCache).length > 0) {
+    return stockPriceCache;
   }
-  return results;
+  
+  // Use a CORS proxy or direct Yahoo API with proper error handling
+  try {
+    // Try fetching each ticker individually to handle CORS better
+    for (const ticker of tickers) {
+      try {
+        // Use Yahoo Finance v8 API with proper headers
+        const response = await fetch(`https://query1.finance.yahoo.com/v8/finance/chart/${ticker}?interval=1d&range=1d`, {
+          method: 'GET',
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+        
+        if (response.ok) {
+          const data = await response.json();
+          if (data.chart?.result?.[0]?.meta) {
+            const meta = data.chart.result[0].meta;
+            const price = meta.regularMarketPrice || meta.previousClose || meta.chartPreviousClose;
+            if (price && price > 0) {
+              stockPriceCache[ticker] = price;
+            }
+          }
+        }
+      } catch (tickerErr) {
+        console.warn(`[StockAPI] Failed to fetch ${ticker}:`, tickerErr.message);
+      }
+    }
+    
+    lastPriceFetch = now;
+    return stockPriceCache;
+  } catch (err) {
+    console.error('[StockAPI] Error fetching prices:', err);
+    return stockPriceCache;
+  }
 }
 
-// Refresh stock prices manually - D4 FIX: Always show Demo Data indicator
+// Refresh stock prices manually
 async function refreshStockPrices() {
   const statusEl = document.getElementById('investments-price-status');
   if (statusEl) {
-    statusEl.innerHTML = '<span class="text-yellow-500">⏳ Loading...</span>';
+    statusEl.innerHTML = '<span class="text-yellow-500">⏳ Fetching...</span>';
   }
   
-  // Clear cache to force refresh
+  // Clear cache to force new fetch
   lastPriceFetch = 0;
   
   // Re-render investments
   await renderInvestments();
   
-  // Show demo data indicator
+  // Check if we got prices
+  const hasPrices = investmentsWatchlistData.some(w => w.currentPrice && w.currentPrice > 0);
   if (statusEl) {
-    statusEl.innerHTML = '<span class="text-accent-blue">ⓘ Demo Data</span>';
+    if (hasPrices) {
+      statusEl.innerHTML = '<span class="text-accent-green">✓ Updated</span>';
+    } else {
+      statusEl.innerHTML = '<span class="text-gray-400">API unavailable</span>';
+    }
   }
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
-  const loadStartTime = performance.now();
+  console.log('[Nox Dashboard] DOM loaded, initializing...');
+  await loadAllData();
   
-  try {
-    await loadAllData();
-    
-    // Render all tabs with error isolation using safeRender wrapper
-    const renderers = [
-      { name: 'Dashboard', fn: renderDashboard, container: 'tab-dashboard' },
-      { name: 'YouTube', fn: renderYouTube, container: 'tab-youtube' },
-      { name: 'Business', fn: renderBusiness, container: 'tab-business' },
-      { name: 'Investments', fn: renderInvestments, container: 'tab-investments' },
-      { name: 'Tools', fn: renderTools, container: 'tab-tools' },
-      { name: 'Research', fn: renderResearch, container: 'tab-research' },
-      { name: 'Audits', fn: renderAudits, container: 'tab-audits' }
-    ];
-    
-    for (const { name, fn, container } of renderers) {
-      safeRender(fn, `Failed to load ${name} tab`, container);
+  // Render all tabs with error isolation - if one fails, others still run
+  const renderers = [
+    { name: 'Dashboard', fn: renderDashboard },
+    { name: 'YouTube', fn: renderYouTube },
+    { name: 'Business', fn: renderBusiness },
+    { name: 'Investments', fn: renderInvestments },
+    { name: 'Tools', fn: renderTools },
+    { name: 'Research', fn: renderResearch },
+    { name: 'Audits', fn: renderAudits }
+  ];
+  
+  for (const { name, fn } of renderers) {
+    try {
+      console.log(`[Nox Dashboard] Rendering ${name}...`);
+      fn();
+    } catch (err) {
+      console.error(`[Nox Dashboard] Error rendering ${name}:`, err);
     }
-    
-    setupFilters();
-    setupGlobalSearch();
-    initTabFromHash();
-    
-    window.addEventListener('popstate', handlePopState);
-    
-    // Setup modal click-outside-to-close
-    setupModalHandlers();
-    
-    // Setup keyboard navigation for tabs
-    setupKeyboardNavigation();
-    
-    // Performance measurement
-    const loadTime = Math.round(performance.now() - loadStartTime);
-    if (loadTime > 3000) {
-      console.warn(`[Nox Dashboard] Slow load detected: ${loadTime}ms`);
-    }
-    
-    // Mark as loaded
-    document.body.classList.add('app-loaded');
-    
-  } catch (err) {
-    console.error('[Nox Dashboard] Critical initialization error:', err);
-    showFatalError('Failed to initialize dashboard. Please refresh the page.');
   }
+  
+  console.log('[Nox Dashboard] Setting up filters...');
+  setupFilters();
+  
+  // D5 FIX: Setup global search
+  console.log('[Nox Dashboard] Setting up global search...');
+  setupGlobalSearch();
+  
+  // Initialize tab from URL hash (deep linking)
+  console.log('[Nox Dashboard] Initializing tab state from URL...');
+  initTabFromHash();
+  
+  // Setup back/forward button handling
+  window.addEventListener('popstate', handlePopState);
+  
+  console.log('[Nox Dashboard] Initialization complete!');
+  
+  // Setup modal click-outside-to-close
+  setupModalHandlers();
 });
 
 // GitHub raw content base URL for fallback
@@ -168,6 +142,7 @@ const GITHUB_RAW_BASE = 'https://raw.githubusercontent.com/stevensongai/nox-dash
 
 // Load all JSON data with fallback to GitHub raw
 async function loadAllData() {
+  console.log('[Nox Dashboard] Starting data load...');
   const cacheBuster = '?v=' + Date.now();
   
   // Try local paths first, fallback to GitHub raw on failure
@@ -178,7 +153,8 @@ async function loadAllData() {
     { name: 'tools', localPath: 'data/tools.json', fallbackPath: `${GITHUB_RAW_BASE}/data/tools.json` },
     { name: 'research', localPath: 'data/research.json', fallbackPath: `${GITHUB_RAW_BASE}/data/research.json` },
     { name: 'audits', localPath: 'data/audits.json', fallbackPath: `${GITHUB_RAW_BASE}/data/audits.json` },
-    { name: 'meta', localPath: 'data/meta.json', fallbackPath: `${GITHUB_RAW_BASE}/data/meta.json` }
+    { name: 'meta', localPath: 'data/meta.json', fallbackPath: `${GITHUB_RAW_BASE}/data/meta.json` },
+    { name: 'competitors', localPath: 'data/competitors.json', fallbackPath: `${GITHUB_RAW_BASE}/data/competitors.json` }
   ];
 
   // Helper to fetch with fallback
@@ -186,12 +162,18 @@ async function loadAllData() {
     try {
       // Try local first with cache buster
       const localUrl = df.localPath + cacheBuster;
+      console.log(`[Nox Dashboard] Fetching ${localUrl}...`);
       let response = await fetch(localUrl);
       
       if (!response.ok) {
+        console.warn(`[Nox Dashboard] Local fetch failed for ${df.name}, trying GitHub raw...`);
         // Fallback to GitHub raw
         const fallbackUrl = df.fallbackPath + cacheBuster;
         response = await fetch(fallbackUrl);
+      }
+      
+      if (!response.ok) {
+        console.error(`[Nox Dashboard] Both local and GitHub fetch failed for ${df.name}: ${response.status}`);
       }
       
       return { name: df.name, response };
@@ -212,32 +194,46 @@ async function loadAllData() {
         switch (result.name) {
           case 'youtube':
             appData.youtube = data;
+            console.log('[Nox Dashboard] YouTube data loaded:', appData.youtube.outlierVideos?.length || 0, 'videos');
             break;
           case 'new-business':
             appData.newBusiness = data;
+            console.log('[Nox Dashboard] Business data loaded:', appData.newBusiness.opportunities?.length || 0, 'opportunities');
             break;
           case 'investments':
             appData.investments = data;
+            console.log('[Nox Dashboard] Investments data loaded:', appData.investments.positions?.length || 0, 'positions');
             break;
           case 'tools':
             appData.tools = Array.isArray(data) ? { tools: data, categories: [], lastUpdated: '' } : data;
+            console.log('[Nox Dashboard] Tools data loaded:', appData.tools.tools?.length || 0, 'tools');
             break;
           case 'research':
             appData.research = data;
+            console.log('[Nox Dashboard] Research data loaded:', appData.research.notes?.length || 0, 'notes');
             break;
           case 'audits':
             appData.audits = data;
+            console.log('[Nox Dashboard] Audits data loaded:', appData.audits.audits?.length || 0, 'audits');
             break;
           case 'meta':
             appData.meta = data;
+            console.log('[Nox Dashboard] Meta data loaded');
+            break;
+          case 'competitors':
+            appData.competitors = data;
+            console.log('[Nox Dashboard] Competitors data loaded:', appData.competitors.competitors?.length || 0, 'competitors');
             break;
         }
       } catch (parseErr) {
         console.error(`[Nox Dashboard] Failed to parse ${result.name} JSON:`, parseErr);
       }
+    } else {
+      console.warn(`[Nox Dashboard] Using empty/default data for ${result.name}`);
     }
   }
 
+  console.log('[Nox Dashboard] Data loading complete');
   updateAgentStatus();
 }
 
@@ -250,44 +246,31 @@ function updateAgentStatus() {
 }
 
 // Tab switching with URL hash update and deep linking
-// BATCH 6 FIX: Enhanced with proper ARIA attributes and keyboard navigation
+// BATCH 2 FIX: Completely rewritten for reliable hash updates
 function showTab(tabId) {
   // Validate tab exists
   const tabContent = document.getElementById(`tab-${tabId}`);
   const tabBtn = document.getElementById(`tab-btn-${tabId}`);
   
   if (!tabContent || !tabBtn) {
-    console.error(`[Nox Dashboard] Tab not found: ${tabId}`);
+    console.warn(`[Nox Dashboard] Tab not found: ${tabId}`);
     return;
   }
   
-  // Hide all tab content and update ARIA
-  document.querySelectorAll('.tab-content').forEach(el => {
-    el.classList.add('hidden');
-    el.setAttribute('hidden', '');
-    el.setAttribute('aria-hidden', 'true');
-  });
-  
+  // Hide all tab content
+  document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
   // Remove active state from all tab buttons
-  document.querySelectorAll('.tab-btn').forEach(el => {
-    el.classList.remove('tab-active');
-    el.setAttribute('aria-selected', 'false');
-    el.setAttribute('tabindex', '-1');
-  });
+  document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('tab-active'));
   
   // Show selected tab and mark button active
   tabContent.classList.remove('hidden');
-  tabContent.removeAttribute('hidden');
-  tabContent.setAttribute('aria-hidden', 'false');
-  
   tabBtn.classList.add('tab-active');
-  tabBtn.setAttribute('aria-selected', 'true');
-  tabBtn.setAttribute('tabindex', '0');
   
-  // Update URL hash
+  // BATCH 2 FIX: Always update URL hash, forcing history entry
   const newHash = `#${tabId}`;
   if (window.location.hash !== newHash) {
     history.pushState({ tab: tabId, timestamp: Date.now() }, '', newHash);
+    console.log(`[Nox Dashboard] Tab switched to: ${tabId}, hash updated to: ${newHash}`);
   }
   
   // Re-render charts when switching to their respective tabs
@@ -302,6 +285,8 @@ function showTab(tabId) {
         renderYouTubeTrendChart();
         break;
       case 'investments':
+        // D3 FIX: Call renderInvestments() which will then call renderPortfolioChart()
+        // This ensures the merged position data is available
         renderInvestments();
         break;
       case 'audits':
@@ -310,9 +295,6 @@ function showTab(tabId) {
         break;
     }
   }, 50);
-  
-  // Focus the tab button for keyboard users
-  tabBtn.focus();
 }
 
 // Initialize tab from URL hash on page load
@@ -321,7 +303,7 @@ function initTabFromHash() {
   const validTabs = ['dashboard', 'youtube', 'business', 'investments', 'tools', 'research', 'audits'];
   
   if (hash && validTabs.includes(hash)) {
-    // Tab restoration from hash handled silently
+    console.log(`[Nox Dashboard] Restoring tab from hash: ${hash}`);
     showTab(hash);
     return hash;
   }
@@ -332,33 +314,25 @@ function initTabFromHash() {
 }
 
 // Handle browser back/forward buttons
+// BATCH 2 FIX: Improved to handle popstate properly
 function handlePopState(event) {
   const hash = window.location.hash.slice(1);
   const validTabs = ['dashboard', 'youtube', 'business', 'investments', 'tools', 'research', 'audits'];
   
+  console.log(`[Nox Dashboard] PopState triggered, hash: ${hash}, state:`, event.state);
+  
   if (hash && validTabs.includes(hash)) {
     // Update UI without pushing new state
-    document.querySelectorAll('.tab-content').forEach(el => {
-      el.classList.add('hidden');
-      el.setAttribute('hidden', '');
-      el.setAttribute('aria-hidden', 'true');
-    });
-    document.querySelectorAll('.tab-btn').forEach(el => {
-      el.classList.remove('tab-active');
-      el.setAttribute('aria-selected', 'false');
-      el.setAttribute('tabindex', '-1');
-    });
+    document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+    document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('tab-active'));
     
     const tabContent = document.getElementById(`tab-${hash}`);
     const tabBtn = document.getElementById(`tab-btn-${hash}`);
     
     if (tabContent && tabBtn) {
       tabContent.classList.remove('hidden');
-      tabContent.removeAttribute('hidden');
-      tabContent.setAttribute('aria-hidden', 'false');
       tabBtn.classList.add('tab-active');
-      tabBtn.setAttribute('aria-selected', 'true');
-      tabBtn.setAttribute('tabindex', '0');
+      console.log(`[Nox Dashboard] Back/forward navigation to tab: ${hash}`);
     }
   } else if (!hash) {
     // No hash, show dashboard
@@ -366,112 +340,9 @@ function handlePopState(event) {
   }
 }
 
-// BATCH 6: Keyboard navigation for tabs
-function setupKeyboardNavigation() {
-  const tabList = document.querySelector('.tabs-container');
-  if (!tabList) return;
-  
-  const tabs = Array.from(tabList.querySelectorAll('.tab-btn'));
-  
-  tabList.addEventListener('keydown', (e) => {
-    const currentTab = document.activeElement;
-    const currentIndex = tabs.indexOf(currentTab);
-    
-    if (currentIndex === -1) return;
-    
-    let newIndex;
-    
-    switch (e.key) {
-      case 'ArrowRight':
-      case 'ArrowDown':
-        e.preventDefault();
-        newIndex = (currentIndex + 1) % tabs.length;
-        break;
-      case 'ArrowLeft':
-      case 'ArrowUp':
-        e.preventDefault();
-        newIndex = (currentIndex - 1 + tabs.length) % tabs.length;
-        break;
-      case 'Home':
-        e.preventDefault();
-        newIndex = 0;
-        break;
-      case 'End':
-        e.preventDefault();
-        newIndex = tabs.length - 1;
-        break;
-      default:
-        return;
-    }
-    
-    const newTab = tabs[newIndex];
-    if (newTab) {
-      newTab.focus();
-      const tabId = newTab.id.replace('tab-btn-', '');
-      showTab(tabId);
-    }
-  });
-}
-
-// BATCH 6 FIX: Error handling functions
-function showErrorToast(message) {
-  const existing = document.getElementById('error-toast');
-  if (existing) existing.remove();
-  
-  const toast = document.createElement('div');
-  toast.id = 'error-toast';
-  toast.className = 'fixed bottom-4 right-4 bg-red-600 text-white px-4 py-3 rounded-lg shadow-lg z-50 flex items-center gap-2';
-  toast.setAttribute('role', 'alert');
-  toast.setAttribute('aria-live', 'assertive');
-  toast.innerHTML = `
-    <span>⚠️</span>
-    <span>${escapeHtml(message)}</span>
-    <button onclick="this.parentElement.remove()" class="ml-2 text-white hover:text-red-200" aria-label="Dismiss error">×</button>
-  `;
-  
-  document.body.appendChild(toast);
-  
-  // Auto-dismiss after 5 seconds
-  setTimeout(() => {
-    toast.style.opacity = '0';
-    toast.style.transition = 'opacity 0.3s';
-    setTimeout(() => toast.remove(), 300);
-  }, 5000);
-}
-
-function showFatalError(message) {
-  const container = document.querySelector('main') || document.body;
-  container.innerHTML = `
-    <div class="flex flex-col items-center justify-center min-h-[50vh] text-center p-8" role="alert">
-      <div class="text-6xl mb-4">😵</div>
-      <h2 class="text-2xl font-bold text-red-400 mb-2">Something went wrong</h2>
-      <p class="text-gray-400 mb-6 max-w-md">${escapeHtml(message)}</p>
-      <div class="flex gap-3">
-        <button onclick="location.reload()" class="px-4 py-2 bg-accent-blue rounded hover:bg-blue-600 transition-colors">
-          🔄 Refresh Page
-        </button>
-        <button onclick="clearLocalStorageAndReload()" class="px-4 py-2 bg-red-600 rounded hover:bg-red-700 transition-colors">
-          🗑️ Clear Cache & Refresh
-        </button>
-      </div>
-    </div>
-  `;
-}
-
-function clearLocalStorageAndReload() {
-  try {
-    localStorage.clear();
-  } catch (e) {
-    console.error('Failed to clear localStorage:', e);
-  }
-  location.reload();
-}
-
 // ==================== DETAIL MODAL SYSTEM ====================
 
-// BATCH 6 FIX: Enhanced modal with focus management and accessibility
-let lastFocusedElement = null;
-
+// BATCH 5 FIX: Enhanced modal setup with multiple close methods
 function setupModalHandlers() {
   const overlay = document.getElementById('detail-modal');
   if (overlay) {
@@ -486,59 +357,40 @@ function setupModalHandlers() {
   // Close on Escape key
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
-      const modal = document.getElementById('detail-modal');
-      if (modal && !modal.classList.contains('hidden')) {
-        closeModal();
-      }
+      closeModal();
     }
   });
   
-  // Focus trap within modal
-  document.addEventListener('keydown', (e) => {
-    const modal = document.getElementById('detail-modal');
-    if (!modal || modal.classList.contains('hidden')) return;
-    if (e.key !== 'Tab') return;
-    
-    const focusableElements = modal.querySelectorAll(
-      'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
-    );
-    const firstFocusable = focusableElements[0];
-    const lastFocusable = focusableElements[focusableElements.length - 1];
-    
-    if (e.shiftKey && document.activeElement === firstFocusable) {
-      e.preventDefault();
-      lastFocusable?.focus();
-    } else if (!e.shiftKey && document.activeElement === lastFocusable) {
-      e.preventDefault();
-      firstFocusable?.focus();
-    }
-  });
+  // BATCH 5 FIX: Ensure close button works
+  const closeBtn = document.querySelector('.modal-close');
+  if (closeBtn) {
+    closeBtn.addEventListener('click', closeModal);
+  }
 }
 
+// BATCH 5 FIX: Enhanced openModal with proper focus management
 function openModal(title, contentHtml) {
-  // Store last focused element to restore focus on close
-  lastFocusedElement = document.activeElement;
-  
   const modal = document.getElementById('detail-modal');
   const titleEl = document.getElementById('modal-title');
   const contentEl = document.getElementById('modal-content');
   
   if (titleEl) titleEl.textContent = title || 'Details';
   if (contentEl) contentEl.innerHTML = contentHtml;
-  
   if (modal) {
     modal.classList.remove('hidden');
     document.body.style.overflow = 'hidden';
     
-    // Focus the close button or first focusable element
+    // BATCH 5 FIX: Re-attach close button listener (content changed)
     setTimeout(() => {
       const closeBtn = modal.querySelector('.modal-close');
-      const firstInput = modal.querySelector('input, select, textarea');
-      (firstInput || closeBtn)?.focus();
+      if (closeBtn) {
+        closeBtn.onclick = closeModal;
+      }
     }, 0);
   }
 }
 
+// BATCH 5 FIX: Enhanced closeModal with cleanup
 function closeModal() {
   const modal = document.getElementById('detail-modal');
   if (modal) {
@@ -549,12 +401,6 @@ function closeModal() {
     const contentEl = document.getElementById('modal-content');
     if (contentEl) {
       contentEl.innerHTML = '';
-    }
-    
-    // Restore focus to the element that opened the modal
-    if (lastFocusedElement) {
-      lastFocusedElement.focus();
-      lastFocusedElement = null;
     }
   }
 }
@@ -1104,70 +950,63 @@ function calculateAvgGrade(audits) {
 let youtubeVideoData = [];
 
 function renderYouTube() {
-  try {
-    const container = document.getElementById('youtube-outliers');
-    if (!container) {
-      return;
-    }
-    
-    const videos = appData.youtube?.outlierVideos || [];
-    const briefs = loadBriefs(); // Load from localStorage
-    const meta = appData.meta || {};
-    
-    // Update Research Status stats
-    const lastScan = localStorage.getItem('last-outlier-scan');
-    const lastScanEl = document.getElementById('last-outlier-scan');
-    const totalOutliersEl = document.getElementById('total-outliers');
-    const totalBriefsEl = document.getElementById('total-briefs');
-    
-    if (lastScanEl) lastScanEl.textContent = lastScan ? formatTimeAgo(lastScan) : 'Never';
-    if (totalOutliersEl) totalOutliersEl.textContent = videos.length;
-    if (totalBriefsEl) totalBriefsEl.textContent = briefs.length;
-    
-    // Initialize auto-scan status
-    initAutoScanStatus();
-    
-    // Store for search
-    youtubeVideoData = videos;
-
-    let html = '';
-
-    // Outlier Videos Section - With Niche Filter
-    html += `<h3 class="text-lg font-semibold mb-3">🎯 Outlier Videos (${videos.length})</h3>`;
-    
-    if (videos.length === 0) {
-      html += buildEmptyState('🎬', 'No Outlier Videos Yet', 'Research trending videos to find outliers.', 'showTab(\'youtube\'); showYouTubeSection(\'outliers\'); runOutlierScan()');
-    } else {
-      html += videos.map(v => `
-        <div class="card card-clickable rounded-lg p-4 mb-3" data-niche="${v.niche || ''}" data-video-id="${v.id}" onclick="showVideoModal('${v.id}')">
-          <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-2">
-            <div class="flex-1">
-              <div class="flex items-center gap-2 mb-1">
-                <span class="text-lg">${v.niche || 'General'}</span>
-                <span class="px-2 py-0.5 bg-accent-blue/20 text-accent-blue text-xs rounded">${v.outlierScore?.toFixed(1) || '?'}x</span>
-              </div>
-              <h3 class="font-semibold mb-1">${v.title}</h3>
-              <p class="text-sm text-gray-400 mb-2">${v.channel} · ${formatViews(v.views)} views · ${formatTimeAgo(v.publishedAt)}</p>
-              <p class="text-sm"><strong>Why it's an outlier:</strong> ${v.whyOutlier}</p>
-              <p class="text-sm text-accent-blue mt-1"><strong>Angle for Steven:</strong> ${v.contentAngle}</p>
-            </div>
-            <a href="${v.url}" target="_blank" rel="noopener noreferrer" class="px-3 py-1 bg-accent-blue rounded text-white text-sm whitespace-nowrap hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-accent-blue" onclick="event.stopPropagation()">Watch →</a>
-          </div>
-        </div>
-      `).join('');
-    }
-
-    container.innerHTML = html;
-    
-    // Render trend chart
-    renderYouTubeTrendChart();
-  } catch (err) {
-    console.error('[renderYouTube] Error:', err);
-    const container = document.getElementById('youtube-outliers');
-    if (container) {
-      container.innerHTML = buildEmptyState('⚠️', 'Error Loading YouTube Data', 'Failed to load YouTube data. Please try refreshing.', 'location.reload()');
-    }
+  const container = document.getElementById('youtube-outliers');
+  if (!container) {
+    console.warn('[Nox Dashboard] youtube-outliers container not found');
+    return;
   }
+  
+  const videos = appData.youtube?.outlierVideos || [];
+  const briefs = loadBriefs(); // Load from localStorage
+  const meta = appData.meta || {};
+  
+  // Update Research Status stats
+  const lastScan = localStorage.getItem('last-outlier-scan');
+  const lastScanEl = document.getElementById('last-outlier-scan');
+  const totalOutliersEl = document.getElementById('total-outliers');
+  const totalBriefsEl = document.getElementById('total-briefs');
+  
+  if (lastScanEl) lastScanEl.textContent = lastScan ? formatTimeAgo(lastScan) : 'Never';
+  if (totalOutliersEl) totalOutliersEl.textContent = videos.length;
+  if (totalBriefsEl) totalBriefsEl.textContent = briefs.length;
+  
+  // Initialize auto-scan status
+  initAutoScanStatus();
+  
+  // Store for search
+  youtubeVideoData = videos;
+
+  let html = '';
+
+  // Outlier Videos Section - With Niche Filter
+  html += `<h3 class="text-lg font-semibold mb-3">🎯 Outlier Videos (${videos.length})</h3>`;
+  
+  if (videos.length === 0) {
+    html += buildEmptyState('🎬', 'No Outlier Videos Yet', 'Click "Scan Viewstats" to start researching or add outliers manually.');
+  } else {
+    html += videos.map(v => `
+      <div class="card card-clickable rounded-lg p-4 mb-3" data-niche="${v.niche || ''}" data-video-id="${v.id}" onclick="showVideoModal('${v.id}')">
+        <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-2">
+          <div class="flex-1">
+            <div class="flex items-center gap-2 mb-1">
+              <span class="text-lg">${v.niche || 'General'}</span>
+              <span class="px-2 py-0.5 bg-accent-blue/20 text-accent-blue text-xs rounded">${v.outlierScore?.toFixed(1) || '?'}x</span>
+            </div>
+            <h3 class="font-semibold mb-1">${v.title}</h3>
+            <p class="text-sm text-gray-400 mb-2">${v.channel} · ${formatViews(v.views)} views · ${formatTimeAgo(v.publishedAt)}</p>
+            <p class="text-sm"><strong>Why it's an outlier:</strong> ${v.whyOutlier}</p>
+            <p class="text-sm text-accent-blue mt-1"><strong>Angle for Steven:</strong> ${v.contentAngle}</p>
+          </div>
+          <a href="${v.url}" target="_blank" class="px-3 py-1 bg-accent-blue rounded text-white text-sm whitespace-nowrap hover:bg-blue-600" onclick="event.stopPropagation()">Watch →</a>
+        </div>
+      </div>
+    `).join('');
+  }
+
+  container.innerHTML = html;
+  
+  // Render trend chart
+  renderYouTubeTrendChart();
 }
 
 function showVideoModal(videoId) {
@@ -1348,77 +1187,69 @@ function calculatePipelineCounts(opportunities) {
 }
 
 function renderBusiness() {
-  try {
-    // BATCH 4 FIX: Load from localStorage and merge with appData
-    const storedOpportunities = loadOpportunities();
-    const jsonOpportunities = appData.newBusiness.opportunities || [];
-    
-    // Merge: stored opportunities take precedence
-    const oppMap = new Map();
-    [...jsonOpportunities, ...storedOpportunities].forEach(opp => {
-      oppMap.set(opp.id, opp);
-    });
-    const allOpportunities = Array.from(oppMap.values());
-    
-    businessOpportunityData = allOpportunities;
-    
-    // BATCH 4 FIX: Calculate pipeline counts dynamically
-    const pipeline = calculatePipelineCounts(allOpportunities);
-    document.getElementById('pipe-new').textContent = formatNumber(pipeline.new);
-    document.getElementById('pipe-evaluating').textContent = formatNumber(pipeline.evaluating);
-    document.getElementById('pipe-pursuing').textContent = formatNumber(pipeline.pursuing);
-    document.getElementById('pipe-passed').textContent = formatNumber(pipeline.passed);
-    document.getElementById('pipe-won').textContent = formatNumber(pipeline.won);
+  // BATCH 4 FIX: Load from localStorage and merge with appData
+  const storedOpportunities = loadOpportunities();
+  const jsonOpportunities = appData.newBusiness.opportunities || [];
+  
+  // Merge: stored opportunities take precedence
+  const oppMap = new Map();
+  [...jsonOpportunities, ...storedOpportunities].forEach(opp => {
+    oppMap.set(opp.id, opp);
+  });
+  const allOpportunities = Array.from(oppMap.values());
+  
+  businessOpportunityData = allOpportunities;
+  
+  // BATCH 4 FIX: Calculate pipeline counts dynamically
+  const pipeline = calculatePipelineCounts(allOpportunities);
+  document.getElementById('pipe-new').textContent = formatNumber(pipeline.new);
+  document.getElementById('pipe-evaluating').textContent = formatNumber(pipeline.evaluating);
+  document.getElementById('pipe-pursuing').textContent = formatNumber(pipeline.pursuing);
+  document.getElementById('pipe-passed').textContent = formatNumber(pipeline.passed);
+  document.getElementById('pipe-won').textContent = formatNumber(pipeline.won);
 
-    const container = document.getElementById('business-opportunities');
+  const container = document.getElementById('business-opportunities');
 
-    // BATCH 4 FIX: Add "Add Opportunity" button
-    let html = `
-      <div class="flex justify-between items-center mb-4">
-        <div class="text-sm text-gray-400">${allOpportunities.length} opportunities</div>
-        <button onclick="showAddOpportunityModal()" class="px-3 py-1 bg-accent-blue rounded text-sm hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-accent-blue">+ Add Opportunity</button>
-      </div>
-    `;
+  // BATCH 4 FIX: Add "Add Opportunity" button
+  let html = `
+    <div class="flex justify-between items-center mb-4">
+      <div class="text-sm text-gray-400">${allOpportunities.length} opportunities</div>
+      <button onclick="showAddOpportunityModal()" class="px-3 py-1 bg-accent-blue rounded text-sm hover:bg-blue-600">+ Add Opportunity</button>
+    </div>
+  `;
 
-    if (allOpportunities.length === 0) {
-      html += buildEmptyState('💼', 'No Opportunities Yet', 'Click "Add Opportunity" to create your first business opportunity.', 'showAddOpportunityModal()');
-    } else {
-      html += allOpportunities.map(o => `
-        <div class="card card-clickable rounded-lg p-4" data-status="${o.status}" data-opp-id="${o.id}" onclick="showOpportunityModal('${o.id}')">
-          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2 mb-2">
-            <div class="flex items-center gap-2 flex-wrap">
-              <span class="alignment-${o.alignment?.toLowerCase()}" role="status">${o.alignment}</span>
-              <span class="px-2 py-0.5 bg-dark-700 text-xs rounded">${o.type || o.effort}</span>
-              <span class="text-sm text-gray-400">${o.potentialRevenue || ''}</span>
-            </div>
-            <span class="text-sm text-gray-400">${formatTimeAgo(o.createdAt || o.addedAt)}</span>
+  if (allOpportunities.length === 0) {
+    html += buildEmptyState('💼', 'No Opportunities Yet', 'Click "Add Opportunity" to create your first business opportunity.');
+  } else {
+    html += allOpportunities.map(o => `
+      <div class="card card-clickable rounded-lg p-4" data-status="${o.status}" data-opp-id="${o.id}" onclick="showOpportunityModal('${o.id}')">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2 mb-2">
+          <div class="flex items-center gap-2 flex-wrap">
+            <span class="alignment-${o.alignment?.toLowerCase()}">${o.alignment}</span>
+            <span class="px-2 py-0.5 bg-dark-700 text-xs rounded">${o.type || o.effort}</span>
+            <span class="text-sm text-gray-400">${o.potentialRevenue || ''}</span>
           </div>
-          <h3 class="font-semibold mb-1">${o.title || o.name}</h3>
-          <p class="text-sm text-gray-300 mb-2">${o.description}</p>
-          <p class="text-sm"><strong>Next step:</strong> ${o.nextStep}</p>
-          <div class="mt-2 flex flex-wrap gap-2" onclick="event.stopPropagation()">
-            <select onchange="moveStatus('${o.id}', this.value)" class="text-xs px-2 py-1 bg-dark-700 rounded border border-dark-600" aria-label="Change status">
-              <option value="" disabled selected>Move to...</option>
-              <option value="new">New</option>
-              <option value="evaluating">Evaluating</option>
-              <option value="pursuing">Pursuing</option>
-              <option value="passed">Passed</option>
-              <option value="won">Won</option>
-            </select>
-            <button onclick="deleteOpportunity('${o.id}')" class="text-xs px-2 py-1 bg-red-900/50 text-red-400 rounded hover:bg-red-900 focus:outline-none focus:ring-2 focus:ring-red-500">Delete</button>
-          </div>
+          <span class="text-sm text-gray-400">${formatTimeAgo(o.createdAt || o.addedAt)}</span>
         </div>
-      `).join('');
-    }
-    
-    container.innerHTML = html;
-  } catch (err) {
-    console.error('[renderBusiness] Error:', err);
-    const container = document.getElementById('business-opportunities');
-    if (container) {
-      container.innerHTML = buildEmptyState('⚠️', 'Error Loading Business Data', 'Failed to load opportunities.', 'renderBusiness()');
-    }
+        <h3 class="font-semibold mb-1">${o.title || o.name}</h3>
+        <p class="text-sm text-gray-300 mb-2">${o.description}</p>
+        <p class="text-sm"><strong>Next step:</strong> ${o.nextStep}</p>
+        <div class="mt-2 flex flex-wrap gap-2" onclick="event.stopPropagation()">
+          <select onchange="moveStatus('${o.id}', this.value)" class="text-xs px-2 py-1 bg-dark-700 rounded border border-dark-600">
+            <option value="" disabled selected>Move to...</option>
+            <option value="new">New</option>
+            <option value="evaluating">Evaluating</option>
+            <option value="pursuing">Pursuing</option>
+            <option value="passed">Passed</option>
+            <option value="won">Won</option>
+          </select>
+          <button onclick="deleteOpportunity('${o.id}')" class="text-xs px-2 py-1 bg-red-900/50 text-red-400 rounded hover:bg-red-900">Delete</button>
+        </div>
+      </div>
+    `).join('');
   }
+  
+  container.innerHTML = html;
 }
 
 // BATCH 4 FIX: Add Opportunity Modal
@@ -1530,14 +1361,16 @@ let investmentsPositionData = [];
 let investmentsWatchlistData = [];
 let investmentsIntelligenceData = [];
 
-// BATCH 4 FIX: Load investments from localStorage
-// D3 FIX: Removed hardcoded default positions - only return stored data or empty arrays
+// BATCH 4 FIX: Load investments from appData (JSON file)
+// D3 FIX: Load from appData.investments instead of localStorage
 function loadInvestments() {
-  const stored = localStorage.getItem('investments-data');
-  if (stored) {
-    return JSON.parse(stored);
+  if (appData.investments) {
+    return {
+      positions: appData.investments.positions || [],
+      watchlist: appData.investments.watchlist || [],
+      intelligence: appData.investments.intelligence || []
+    };
   }
-  // Return empty structure - no sample data injection
   return {
     positions: [],
     watchlist: [],
@@ -1584,135 +1417,124 @@ async function refreshStockPrices() {
 }
 
 async function renderInvestments() {
-  try {
-    // BATCH 4 FIX: Load from localStorage and merge with appData
-    const storedData = loadInvestments();
-    const jsonData = appData.investments || {};
-    
-    // Merge: stored data takes precedence
-    const positions = storedData.positions?.length > 0 ? storedData.positions : (jsonData.positions || []);
-    const watchlist = storedData.watchlist?.length > 0 ? storedData.watchlist : (jsonData.watchlist || []);
-    const intelligence = storedData.intelligence?.length > 0 ? storedData.intelligence : (jsonData.intelligence || []);
+  // BATCH 4 FIX: Load from localStorage and merge with appData
+  const storedData = loadInvestments();
+  const jsonData = appData.investments || {};
+  
+  // Merge: stored data takes precedence
+  const positions = storedData.positions?.length > 0 ? storedData.positions : (jsonData.positions || []);
+  const watchlist = storedData.watchlist?.length > 0 ? storedData.watchlist : (jsonData.watchlist || []);
+  const intelligence = storedData.intelligence?.length > 0 ? storedData.intelligence : (jsonData.intelligence || []);
 
-    // Fetch real stock prices for watchlist - D4 FIX: Use mock data only, show Demo Data indicator
-    const watchlistTickers = watchlist.map(w => w.ticker).filter(Boolean);
-    if (watchlistTickers.length > 0) {
-      try {
-        const prices = await fetchStockPrices(watchlistTickers);
-        // Attach prices to watchlist items
-        watchlist.forEach(w => {
-          if (prices[w.ticker]) {
-            w.currentPrice = prices[w.ticker].price;
-          }
-        });
-        // Save updated prices
-        saveInvestments({ positions, watchlist, intelligence });
-        
-        // D4 FIX: Always show Demo Data indicator
-        const statusEl = document.getElementById('investments-price-status');
-        if (statusEl) {
-          statusEl.innerHTML = '<span class="text-accent-blue">ⓘ Demo Data</span>';
+  // Fetch real stock prices for watchlist
+  const watchlistTickers = watchlist.map(w => w.ticker).filter(Boolean);
+  if (watchlistTickers.length > 0) {
+    try {
+      const prices = await fetchStockPrices(watchlistTickers);
+      // Attach prices to watchlist items
+      watchlist.forEach(w => {
+        if (prices[w.ticker]) {
+          w.currentPrice = prices[w.ticker];
         }
-      } catch (err) {
-        console.error('[renderInvestments] Error fetching prices:', err);
-      }
+      });
+      // Save updated prices
+      saveInvestments({ positions, watchlist, intelligence });
+    } catch (err) {
+      console.warn('[Investments] Could not fetch stock prices:', err);
     }
-
-    investmentsPositionData = positions;
-    investmentsWatchlistData = watchlist;
-    investmentsIntelligenceData = intelligence;
-
-    // BATCH 4 FIX: Add "Add Holding" button to Positions
-    const posContainer = document.getElementById('investments-positions');
-    let posHtml = `
-      <div class="flex justify-between items-center mb-3">
-        <div class="text-sm text-gray-400">${positions.length} positions</div>
-        <button onclick="showAddHoldingModal()" class="text-xs px-2 py-1 bg-accent-blue rounded hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-accent-blue">+ Add</button>
-      </div>
-    `;
-    
-    if (positions.length === 0) {
-      posHtml += buildEmptyState('', 'No Positions', 'Click "Add" to track your first investment.', 'showAddHoldingModal()');
-    } else {
-      posHtml += positions.map((p, idx) => {
-        const gain = p.gainPercent !== undefined ? p.gainPercent : ((p.currentPrice - (p.entryPrice || p.avgCost)) / (p.entryPrice || p.avgCost) * 100);
-        const gainClass = gain >= 0 ? 'text-accent-green' : 'text-accent-red';
-        const ticker = p.ticker || p.symbol;
-        const entry = p.entryPrice || p.avgCost;
-        const qty = p.quantity || p.shares;
-        const entryDisplay = (entry && entry !== 0) ? formatCurrency(entry) : '-';
-        const currentDisplay = (p.currentPrice && p.currentPrice !== 0) ? formatCurrency(p.currentPrice) : '-';
-        return `
-          <div class="flex justify-between items-center p-2 bg-dark-700/50 rounded cursor-pointer hover:bg-dark-700" onclick="showPositionModal(${idx})">
-            <div>
-              <div class="font-semibold">${ticker} · ${p.name}</div>
-              <div class="text-sm text-gray-400">${formatNumber(qty)} @ ${entryDisplay} → ${currentDisplay}</div>
-            </div>
-            <div class="text-right">
-              <div class="font-bold ${gainClass}">${gain.toFixed ? gain.toFixed(1) : gain}%</div>
-            </div>
-          </div>
-        `;
-      }).join('');
-    }
-    posContainer.innerHTML = posHtml;
-
-    // BATCH 4 FIX: Add "Add to Watchlist" button
-    const watchContainer = document.getElementById('investments-watchlist');
-    let watchHtml = `
-      <div class="flex justify-between items-center mb-3">
-        <div class="text-sm text-gray-400">${watchlist.length} watching</div>
-        <button onclick="showAddWatchlistModal()" class="text-xs px-2 py-1 bg-accent-blue rounded hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-accent-blue">+ Add</button>
-      </div>
-    `;
-    
-    if (watchlist.length === 0) {
-      watchHtml += buildEmptyState('', 'No Watchlist Items', 'Click "Add" to track potential investments.', 'showAddWatchlistModal()');
-    } else {
-      watchHtml += watchlist.map((w, idx) => {
-        const ticker = w.ticker || w.symbol;
-        const target = w.targetEntry || w.targetPrice;
-        const priceDisplay = (w.currentPrice && w.currentPrice !== 0) ? formatCurrency(w.currentPrice) : '-';
-        const targetDisplay = (target && target !== 0) ? formatCurrency(target) : '-';
-        return `
-          <div class="p-2 bg-dark-700/50 rounded cursor-pointer hover:bg-dark-700" onclick="showWatchlistModal(${idx})">
-            <div class="flex justify-between">
-              <span class="font-semibold">${ticker}</span>
-              <span class="text-sm">${priceDisplay}</span>
-            </div>
-            <div class="text-sm text-gray-400">Target: ${targetDisplay}</div>
-          </div>
-        `;
-      }).join('');
-    }
-    watchContainer.innerHTML = watchHtml;
-
-    // Intelligence
-    const intelContainer = document.getElementById('investments-intelligence');
-    if (intelligence.length === 0) {
-      intelContainer.innerHTML = buildEmptyState('', 'No Intelligence Reports', 'Market intelligence will appear here.');
-    } else {
-      intelContainer.innerHTML = intelligence.map((i, idx) => {
-        const title = i.topic || `${i.ticker} ${i.type || 'Update'}`;
-        const summary = i.summary || i.content || '';
-        const date = i.addedAt || i.date;
-        const tickerPart = i.ticker ? i.ticker : '';
-        return `
-          <div class="p-2 bg-dark-700/50 rounded cursor-pointer hover:bg-dark-700" onclick="showIntelligenceModal(${idx})">
-            <div class="font-semibold">${title} <span class="text-xs px-2 py-0.5 rounded ${i.impact === 'bullish' ? 'bg-accent-green/20 text-accent-green' : i.impact === 'bearish' ? 'bg-accent-red/20 text-accent-red' : 'bg-dark-600'}">${i.impact || 'neutral'}</span></div>
-            <div class="text-sm mt-1 line-clamp-2">${summary.substring(0, 150)}${summary.length > 150 ? '...' : ''}</div>
-            <div class="text-xs text-gray-400 mt-1">${formatTimeAgo(date)}${tickerPart ? ' · ' + tickerPart : ''}</div>
-          </div>
-        `;
-      }).join('');
-    }
-    
-    // Render portfolio chart
-    renderPortfolioChart();
-  } catch (err) {
-    console.error('[renderInvestments] Error:', err);
-    showErrorToast('Failed to load investments data');
   }
+
+  investmentsPositionData = positions;
+  investmentsWatchlistData = watchlist;
+  investmentsIntelligenceData = intelligence;
+
+  // BATCH 4 FIX: Add "Add Holding" button to Positions
+  const posContainer = document.getElementById('investments-positions');
+  let posHtml = `
+    <div class="flex justify-between items-center mb-3">
+      <div class="text-sm text-gray-400">${positions.length} positions</div>
+      <button onclick="showAddHoldingModal()" class="text-xs px-2 py-1 bg-accent-blue rounded hover:bg-blue-600">+ Add</button>
+    </div>
+  `;
+  
+  if (positions.length === 0) {
+    posHtml += buildEmptyState('', 'No Positions', 'Click "Add" to track your first investment.');
+  } else {
+    posHtml += positions.map((p, idx) => {
+      const gain = p.gainPercent !== undefined ? p.gainPercent : ((p.currentPrice - (p.entryPrice || p.avgCost)) / (p.entryPrice || p.avgCost) * 100);
+      const gainClass = gain >= 0 ? 'text-accent-green' : 'text-accent-red';
+      const ticker = p.ticker || p.symbol;
+      const entry = p.entryPrice || p.avgCost;
+      const qty = p.quantity || p.shares;
+      const entryDisplay = (entry && entry !== 0) ? formatCurrency(entry) : '-';
+      const currentDisplay = (p.currentPrice && p.currentPrice !== 0) ? formatCurrency(p.currentPrice) : '-';
+      return `
+        <div class="flex justify-between items-center p-2 bg-dark-700/50 rounded cursor-pointer hover:bg-dark-700" onclick="showPositionModal(${idx})">
+          <div>
+            <div class="font-semibold">${ticker} · ${p.name}</div>
+            <div class="text-sm text-gray-400">${formatNumber(qty)} @ ${entryDisplay} → ${currentDisplay}</div>
+          </div>
+          <div class="text-right">
+            <div class="font-bold ${gainClass}">${gain.toFixed ? gain.toFixed(1) : gain}%</div>
+          </div>
+        </div>
+      `;
+    }).join('');
+  }
+  posContainer.innerHTML = posHtml;
+
+  // BATCH 4 FIX: Add "Add to Watchlist" button
+  const watchContainer = document.getElementById('investments-watchlist');
+  let watchHtml = `
+    <div class="flex justify-between items-center mb-3">
+      <div class="text-sm text-gray-400">${watchlist.length} watching</div>
+      <button onclick="showAddWatchlistModal()" class="text-xs px-2 py-1 bg-accent-blue rounded hover:bg-blue-600">+ Add</button>
+    </div>
+  `;
+  
+  if (watchlist.length === 0) {
+    watchHtml += buildEmptyState('', 'No Watchlist Items', 'Click "Add" to track potential investments.');
+  } else {
+    watchHtml += watchlist.map((w, idx) => {
+      const ticker = w.ticker || w.symbol;
+      const target = w.targetEntry || w.targetPrice;
+      const priceDisplay = (w.currentPrice && w.currentPrice !== 0) ? formatCurrency(w.currentPrice) : '-';
+      const targetDisplay = (target && target !== 0) ? formatCurrency(target) : '-';
+      return `
+        <div class="p-2 bg-dark-700/50 rounded cursor-pointer hover:bg-dark-700" onclick="showWatchlistModal(${idx})">
+          <div class="flex justify-between">
+            <span class="font-semibold">${ticker}</span>
+            <span class="text-sm">${priceDisplay}</span>
+          </div>
+          <div class="text-sm text-gray-400">Target: ${targetDisplay}</div>
+        </div>
+      `;
+    }).join('');
+  }
+  watchContainer.innerHTML = watchHtml;
+
+  // Intelligence
+  const intelContainer = document.getElementById('investments-intelligence');
+  if (intelligence.length === 0) {
+    intelContainer.innerHTML = buildEmptyState('', 'No Intelligence Reports', 'Market intelligence will appear here.');
+  } else {
+    intelContainer.innerHTML = intelligence.map((i, idx) => {
+      const title = i.topic || `${i.ticker} ${i.type || 'Update'}`;
+      const summary = i.summary || i.content || '';
+      const date = i.addedAt || i.date;
+      const tickerPart = i.ticker ? i.ticker : '';
+      return `
+        <div class="p-2 bg-dark-700/50 rounded cursor-pointer hover:bg-dark-700" onclick="showIntelligenceModal(${idx})">
+          <div class="font-semibold">${title} <span class="text-xs px-2 py-0.5 rounded ${i.impact === 'bullish' ? 'bg-accent-green/20 text-accent-green' : i.impact === 'bearish' ? 'bg-accent-red/20 text-accent-red' : 'bg-dark-600'}">${i.impact || 'neutral'}</span></div>
+          <div class="text-sm mt-1 line-clamp-2">${summary.substring(0, 150)}${summary.length > 150 ? '...' : ''}</div>
+          <div class="text-xs text-gray-400 mt-1">${formatTimeAgo(date)}${tickerPart ? ' · ' + tickerPart : ''}</div>
+        </div>
+      `;
+    }).join('');
+  }
+  
+  // Render portfolio chart
+  renderPortfolioChart();
 }
 
 // BATCH 4 FIX: Add Holding Modal
@@ -1763,7 +1585,7 @@ async function submitAddHolding() {
     try {
       const prices = await fetchStockPrices([ticker]);
       if (prices[ticker]) {
-        currentPrice = prices[ticker].price;
+        currentPrice = prices[ticker];
       } else {
         currentPrice = cost; // Default to cost basis
       }
@@ -1837,7 +1659,7 @@ async function submitAddWatchlist() {
   try {
     const prices = await fetchStockPrices([ticker]);
     if (prices[ticker]) {
-      currentPrice = prices[ticker].price;
+      currentPrice = prices[ticker];
     }
   } catch (err) {
     console.warn('Could not fetch price for', ticker);
@@ -1980,95 +1802,13 @@ function renderPortfolioChart() {
 
 let toolsDataArray = [];
 
-// BATCH 4 FIX: Load tools from localStorage with default 8 tools
+// BATCH 4 FIX: Load tools from appData (JSON file) instead of localStorage
 function loadTools() {
-  const stored = localStorage.getItem('tools-registry');
-  if (stored) {
-    return JSON.parse(stored);
+  // Use tools from appData (loaded from tools.json)
+  if (appData.tools && appData.tools.tools && appData.tools.tools.length > 0) {
+    return appData.tools.tools;
   }
-  // Return default 8 tools if none stored
-  return [
-    {
-      id: 'tool-1',
-      name: 'Content Pipeline',
-      description: 'Orchestrate video production from idea to upload. Track scripts, production checklist, and upload details.',
-      category: 'YouTube',
-      status: 'active',
-      auditGrade: 92,
-      runCommand: 'launchTool("pipeline")',
-      icon: '🎬'
-    },
-    {
-      id: 'tool-2',
-      name: 'Performance Analyzer',
-      description: 'Analyze video performance metrics, view trends, and engagement statistics across your channel.',
-      category: 'YouTube',
-      status: 'active',
-      auditGrade: 88,
-      runCommand: 'launchTool("analyzer")',
-      icon: '📊'
-    },
-    {
-      id: 'tool-3',
-      name: 'Brief Generator',
-      description: 'Generate detailed content briefs from outlier research with hooks, outlines, and target lengths.',
-      category: 'YouTube',
-      status: 'active',
-      auditGrade: 85,
-      runCommand: 'launchTool("brief-generator")',
-      icon: '📝'
-    },
-    {
-      id: 'tool-4',
-      name: 'Map Scraper',
-      description: 'Scrape Minecraft map data and generate gaming content ideas from popular maps.',
-      category: 'Gaming',
-      status: 'beta',
-      auditGrade: 78,
-      runCommand: 'launchTool("map-scraper")',
-      icon: '🗺️'
-    },
-    {
-      id: 'tool-5',
-      name: 'Opportunity Tracker',
-      description: 'Track business opportunities through your pipeline from new leads to closed deals.',
-      category: 'Business',
-      status: 'active',
-      auditGrade: 90,
-      runCommand: 'showTab("business")',
-      icon: '💼'
-    },
-    {
-      id: 'tool-6',
-      name: 'Portfolio Manager',
-      description: 'Manage investment portfolio, track gains/losses, and monitor watchlist targets.',
-      category: 'Finance',
-      status: 'active',
-      auditGrade: 87,
-      runCommand: 'showTab("investments")',
-      icon: '📈'
-    },
-    {
-      id: 'tool-7',
-      name: 'Research Notes',
-      description: 'Capture and organize research notes with markdown support and tagging.',
-      category: 'Productivity',
-      status: 'active',
-      auditGrade: 91,
-      runCommand: 'showTab("research")',
-      icon: '🔬'
-    },
-    {
-      id: 'tool-8',
-      name: 'Audit Dashboard',
-      description: 'Review code audits, track grades over time, and compare agent performance.',
-      category: 'Development',
-      status: 'active',
-      auditGrade: 93,
-      runCommand: 'showTab("audits")',
-      icon: '📋'
-    }
-  ];
+  return [];
 }
 
 function saveTools(tools) {
@@ -2076,61 +1816,53 @@ function saveTools(tools) {
 }
 
 function renderTools() {
-  try {
-    const container = document.getElementById('tools-grid');
-    const categoryFilter = document.getElementById('tools-category-filter');
+  const container = document.getElementById('tools-grid');
+  const categoryFilter = document.getElementById('tools-category-filter');
+  
+  // BATCH 4 FIX: Load from localStorage
+  const tools = loadTools();
+  const categories = [...new Set(tools.map(t => t.category).filter(Boolean))];
+  toolsDataArray = tools;
+
+  // Populate category filter dropdown
+  if (categoryFilter) {
+    // Clear existing options except "All Categories"
+    categoryFilter.innerHTML = '<option value="">All Categories</option>';
     
-    // BATCH 4 FIX: Load from localStorage
-    const tools = loadTools();
-    const categories = [...new Set(tools.map(t => t.category).filter(Boolean))];
-    toolsDataArray = tools;
-
-    // Populate category filter dropdown
-    if (categoryFilter) {
-      // Clear existing options except "All Categories"
-      categoryFilter.innerHTML = '<option value="">All Categories</option>';
-      
-      // Add category options
-      categories.forEach(cat => {
-        const option = document.createElement('option');
-        option.value = cat;
-        option.textContent = cat;
-        categoryFilter.appendChild(option);
-      });
-    }
-
-    if (tools.length === 0) {
-      container.innerHTML = buildEmptyState('🛠️', 'No Tools Registered', 'The agent will add them as they are built and deployed.');
-      return;
-    }
-
-    // BATCH 4 FIX: Enhanced tool cards with launch action
-    container.innerHTML = tools.map((t, idx) => `
-      <div class="card card-clickable rounded-lg p-4" data-category="${t.category || ''}" data-tool-id="${t.id}">
-        <div class="flex justify-between items-start mb-2">
-          <div class="flex items-center gap-2">
-            <span class="text-2xl">${t.icon || '🛠️'}</span>
-            <h3 class="font-semibold">${t.name}</h3>
-          </div>
-          <span class="text-xs px-2 py-0.5 rounded ${t.status === 'active' ? 'bg-accent-green/20 text-accent-green' : t.status === 'beta' ? 'bg-accent-yellow/20 text-accent-yellow' : 'bg-accent-red/20 text-accent-red'}" role="status">${t.status}</span>
-        </div>
-        <p class="text-sm text-gray-400 mb-3">${t.description}</p>
-        <div class="flex justify-between items-center mb-3">
-          <div class="text-xs text-gray-500">${t.category} · Audit: ${t.auditGrade || 'N/A'}%</div>
-        </div>
-        <div class="flex gap-2">
-          <button onclick="${t.runCommand}" class="flex-1 px-3 py-2 bg-accent-blue rounded text-sm hover:bg-blue-600 transition-colors focus:outline-none focus:ring-2 focus:ring-accent-blue">Launch →</button>
-          <button onclick="showToolModal(${idx})" class="px-3 py-2 bg-dark-700 rounded text-sm hover:bg-dark-600 focus:outline-none focus:ring-2 focus:ring-dark-600">Details</button>
-        </div>
-      </div>
-    `).join('');
-  } catch (err) {
-    console.error('[renderTools] Error:', err);
-    const container = document.getElementById('tools-grid');
-    if (container) {
-      container.innerHTML = buildEmptyState('⚠️', 'Error Loading Tools', 'Failed to load tools registry.', 'renderTools()');
-    }
+    // Add category options
+    categories.forEach(cat => {
+      const option = document.createElement('option');
+      option.value = cat;
+      option.textContent = cat;
+      categoryFilter.appendChild(option);
+    });
   }
+
+  if (tools.length === 0) {
+    container.innerHTML = buildEmptyState('🛠️', 'No Tools Registered', 'The agent will add them as they are built and deployed.');
+    return;
+  }
+
+  // BATCH 4 FIX: Enhanced tool cards with launch action
+  container.innerHTML = tools.map((t, idx) => `
+    <div class="card card-clickable rounded-lg p-4" data-category="${t.category || ''}" data-tool-id="${t.id}">
+      <div class="flex justify-between items-start mb-2">
+        <div class="flex items-center gap-2">
+          <span class="text-2xl">${t.icon || '🛠️'}</span>
+          <h3 class="font-semibold">${t.name}</h3>
+        </div>
+        <span class="text-xs px-2 py-0.5 rounded ${t.status === 'active' ? 'bg-accent-green/20 text-accent-green' : t.status === 'beta' ? 'bg-accent-yellow/20 text-accent-yellow' : 'bg-accent-red/20 text-accent-red'}">${t.status}</span>
+      </div>
+      <p class="text-sm text-gray-400 mb-3">${t.description}</p>
+      <div class="flex justify-between items-center mb-3">
+        <div class="text-xs text-gray-500">${t.category} · Audit: ${t.auditGrade || 'N/A'}%</div>
+      </div>
+      <div class="flex gap-2">
+        <button onclick="launchTool('${t.runCommand?.replace(/'/g, "\\'") || ''}')" class="flex-1 px-3 py-2 bg-accent-blue rounded text-sm hover:bg-blue-600 transition-colors">Launch →</button>
+        <button onclick="showToolModal(${idx})" class="px-3 py-2 bg-dark-700 rounded text-sm hover:bg-dark-600">Details</button>
+      </div>
+    </div>
+  `).join('');
 }
 
 function showToolModal(idx) {
@@ -2220,7 +1952,7 @@ function renderResearch() {
       const safeNoteId = n.id.replace(/'/g, "\\'").replace(/"/g, '\\"');
       
       return `
-      <div class="card card-clickable rounded-lg p-4" data-note-id="${n.id}" data-category="${n.category || ''}">
+      <div class="card card-clickable rounded-lg p-4" data-note-id="${n.id}" data-category="${n.category || ''}" onclick="showNoteModal('${safeNoteId}')">
         <div class="flex justify-between items-start mb-2">
           <h3 class="font-semibold">${escapeHtml(n.title)}</h3>
           <div class="flex items-center gap-2">
@@ -2303,6 +2035,39 @@ function submitAddNote() {
   saveResearchNotes(notes);
   closeModal();
   renderResearch();
+}
+
+// FIX: Show Note Modal (read-only view for clicking on notes)
+function showNoteModal(noteId) {
+  const notes = loadResearchNotes();
+  const note = notes.find(n => n.id === noteId);
+  
+  if (!note) {
+    alert('Note not found');
+    return;
+  }
+  
+  const content = note.summary || note.content || 'No content';
+  const renderedContent = typeof marked !== 'undefined' 
+    ? marked.parse(content)
+    : escapeHtml(content);
+  
+  const modalHTML = `
+    <div class="mb-4">
+      <div class="flex justify-between items-start mb-2">
+        <span class="text-xs px-2 py-0.5 bg-dark-700 rounded">${escapeHtml(note.category || 'Uncategorized')}</span>
+        <span class="text-xs text-gray-400">${formatTimeAgo(note.createdAt || note.date)}</span>
+      </div>
+      <div class="flex flex-wrap gap-1 mb-4">
+        ${(note.tags || []).map(t => `<span class="text-xs px-2 py-0.5 bg-accent-blue/20 text-accent-blue rounded">#${escapeHtml(t)}</span>`).join('')}
+      </div>
+    </div>
+    <div class="prose prose-invert max-w-none text-sm text-gray-300" style="max-height: 60vh; overflow-y: auto;">
+      ${renderedContent}
+    </div>
+  `;
+  
+  openModal(note.title, modalHTML);
 }
 
 // BATCH 5 FIX: Show Edit Note Modal
@@ -2941,19 +2706,15 @@ function renderAgentPerformanceChart(audits, agentStats) {
 
 // ==================== UTILITY FUNCTIONS ====================
 
-function buildEmptyState(icon, title, description, actionOnClick) {
-  const actionButton = actionOnClick ? `
-    <button class="empty-state-cta mt-4" onclick="${actionOnClick}">
-      🔄 Try Again
-    </button>
-  ` : '';
-  
+function buildEmptyState(icon, title, description) {
   return `
     <div class="empty-state">
       <div class="empty-state-icon">${icon}</div>
       <div class="empty-state-title">${title}</div>
       <div class="empty-state-desc">${description}</div>
-      ${actionButton}
+      <button class="empty-state-cta" onclick="location.reload()">
+        🔄 Refresh Data
+      </button>
     </div>
   `;
 }
@@ -3545,25 +3306,14 @@ function applyNicheFilter() {
 // 3.3 COMPETITOR TRACKER
 // ============================================
 
-// Load competitors from localStorage
+// Load competitors from appData (loaded from JSON file)
 function loadCompetitors() {
-  const stored = localStorage.getItem('tracked-competitors');
-  if (stored) {
-    return JSON.parse(stored);
+  // Return competitors from the loaded appData
+  if (appData.competitors && appData.competitors.competitors && appData.competitors.competitors.length > 0) {
+    return appData.competitors.competitors;
   }
-  // Return default competitors if none stored
-  return [
-    {
-      id: 'comp-1',
-      name: 'MrBeast',
-      url: 'https://youtube.com/@MrBeast',
-      handle: '@MrBeast',
-      niche: 'Entertainment',
-      focus: 'Challenge Videos',
-      stats: { subscribers: '300M+', videoCount: '800+', totalViews: '50B+' },
-      addedAt: new Date().toISOString()
-    }
-  ];
+  // Return empty array if no data loaded yet
+  return [];
 }
 
 function saveCompetitors(competitors) {
@@ -4108,7 +3858,10 @@ function deleteBrief(briefId) {
   
   if (!confirm('Delete this brief? This cannot be undone.')) return;
   
+  console.log('[deleteBrief] Deleting brief:', briefId);
+  
   const briefs = loadBriefs();
+  console.log('[deleteBrief] Loaded briefs count:', briefs.length);
   
   const filtered = briefs.filter(b => b.id !== briefId);
   
@@ -4119,6 +3872,8 @@ function deleteBrief(briefId) {
   }
   
   saveBriefs(filtered);
+  console.log('[deleteBrief] Saved briefs count:', filtered.length);
+  
   // Close modal first
   closeModal();
   
@@ -4128,6 +3883,8 @@ function deleteBrief(briefId) {
   // Update brief count in stats
   const totalBriefsEl = document.getElementById('total-briefs');
   if (totalBriefsEl) totalBriefsEl.textContent = filtered.length;
+  
+  console.log('[deleteBrief] Brief deleted successfully');
 }
 
 // ============================================
@@ -4135,6 +3892,12 @@ function deleteBrief(briefId) {
 // ============================================
 
 function launchTool(toolName) {
+  // FIX: Check if toolName is a URL (starts with http)
+  if (toolName && toolName.startsWith('http')) {
+    window.open(toolName, '_blank');
+    return;
+  }
+  
   if (toolName === 'pipeline') {
     showContentPipeline();
   } else if (toolName === 'analyzer') {
@@ -4862,6 +4625,8 @@ function copySeed(seed) {
 
 // Force CDN refresh by reloading with cache-busting parameter
 function forceCDNRefresh() {
+  console.log('[Nox Dashboard] Forcing CDN refresh...');
+  
   // Show loading feedback
   const footer = document.querySelector('footer');
   if (footer) {
