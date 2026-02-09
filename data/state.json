@@ -1,7 +1,7 @@
 {
-  "lastHeartbeat": "2026-02-09T04:46:00Z",
-  "totalHeartbeats": 19,
-  "lastAction": "[cron] Added synthesized insight #007 - Compilation/Collection Format pattern from analysis of 38 outlier videos. Identified 'All X' completionist content as high-performing format.",
+  "lastHeartbeat": "2026-02-09T06:26:00Z",
+  "totalHeartbeats": 20,
+  "lastAction": "[learning cycle] Added synthesized insight #008 - Physics Simulation + Miniature Creatures pattern from analysis of 38 outlier videos.",
   "currentPriorities": {
     "youtube": "Triple Threat viral format execution - synthesize time compression + thief-bait + escalating stakes",
     "business": "AI Coding Agents content opportunity (trend score 120) - 30-day comparison pilot video",
@@ -9,11 +9,11 @@
     "tools": "Dashboard and Mission Control on GitHub Pages"
   },
   "dataFreshness": {
-    "youtube": "2026-02-09 — 38 outliers, 6 briefs, 7 synthesized insights",
+    "youtube": "2026-02-09 — 38 outliers, 6 briefs, 8 synthesized insights",
     "newBusiness": "2026-02-08 — 9 opportunities",
     "investments": "2026-02-08 — 3 opportunities, 2 watchlist, 11 intelligence entries",
-    "research": "2026-02-08 — 10 notes (added 1)",
-    "audits": "2026-02-08 — 67 audits logged"
+    "research": "2026-02-08 — 10 notes",
+    "audits": "2026-02-09 — 68 audits logged"
   },
   "recentFeedback": [
     {"date": "2026-02-09", "feedback": "Builder agents claimed features that didn't exist", "implication": "Must verify all claimed fixes in browser before accepting"},
@@ -21,7 +21,7 @@
     {"date": "2026-02-07", "feedback": "No content loaded in dashboard", "implication": "Populate data files before deployment"}
   ],
   "workThatLanded": [
-    {"what": "30 Real YouTube Outliers Added", "why": "Real research data from ZMDE (2.87M subs) and StevenSongIRL (169K subs)", "date": "2026-02-08"},
+    {"what": "38 Real YouTube Outliers Added", "why": "Real research data from ZMDE, StevenSongIRL, and viewstats analysis", "date": "2026-02-09"},
     {"what": "Mission Control Dashboard", "why": "Activity feed, calendar, global search - complete visibility", "date": "2026-02-07"},
     {"what": "Morning Brief Widget", "why": "88% audit grade, actionable summary at a glance", "date": "2026-02-07"}
   ],
@@ -30,13 +30,13 @@
     {"what": "Dashboard tab click bug", "why": "JavaScript syntax error prevented tabs from working", "date": "2026-02-07", "fixed": true}
   ],
   "lessonsLearned": [
+    {"date": "2026-02-09", "lesson": "Physics simulation content achieves extreme outlier scores (390x, 677x) when combined with miniature creatures"},
+    {"date": "2026-02-09", "lesson": "'Baby [creature]' format triggers protective response + physics creates satisfying visual loops"},
     {"date": "2026-02-09", "lesson": "Builders LIE about implementing features - must mandate browser verification before claiming completion"},
-    {"date": "2026-02-09", "lesson": "Delete button functionality requires localStorage filter + re-render - test with actual browser interaction"},
     {"date": "2026-02-09", "lesson": "Ralph-chain QA process works: Builder → Red Team → Fix cycle produces 93%+ quality"},
     {"date": "2026-02-08", "lesson": "ZMDE's '1000 Years' format is a repeatable pattern - time compression drives engagement"},
     {"date": "2026-02-08", "lesson": "StevenSongIRL's thief-bait format massively outperforms (15-40x subscriber count)"},
     {"date": "2026-02-08", "lesson": "Price comparison format works best for high-stakes categories (cars > toys)"},
-    {"date": "2026-02-08", "lesson": "AI video growth (88% CAGR) creating secondary plays in compute infrastructure (Render, Akash)"},
     {"date": "2026-02-07", "lesson": "Always run syntax check (node --check) before pushing JavaScript"},
     {"date": "2026-02-07", "lesson": "Dashboard is the default destination - all work feeds into it"},
     {"date": "2026-02-07", "lesson": "APPEND new data, never replace entire JSON files"}
@@ -66,11 +66,11 @@
       "reason": "RESOLVED - Using hourly cron job with web_search to discover outliers",
       "blockingSince": "2026-02-08T22:00:00Z",
       "unblockedAt": "2026-02-09T04:00:00Z",
-      "unblockCondition": "Hourly YouTube cron job successfully finding outliers via web search",
-      "workaround": "Hourly automated research cron - 38 outliers discovered, 7 insights synthesized",
+      "unblockCondition": "Hourly automated research cron - 38 outliers discovered, 8 insights synthesized",
+      "workaround": "Hourly automated research cron - 38 outliers discovered, 8 insights synthesized",
       "priority": "high",
       "attempted": ["browser navigation - failed", "web_search cron - SUCCESS", "hourly automation - WORKING"]
     }
   ],
-  "nextPriority": "Complete Ralph-chain Batch 6 (UI/UX Polish) and verify all features in browser"
+  "nextPriority": "Continue researching YouTube outliers - target 50 total outliers and 10 synthesized insights"
 }
