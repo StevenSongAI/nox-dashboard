@@ -32,15 +32,15 @@ const MAX_API_ERRORS = 3;
 // Primary: Alpha Vantage API
 // Get your free API key from: https://www.alphavantage.co/support/#api-key
 // Free tier: 25 API calls/day, 5 calls/minute
-// Replace 'YOUR_API_KEY_HERE' with your actual key
-// Note: If API key not configured or API fails, prices will show '-'
-const ALPHA_VANTAGE_API_KEY = 'ST6UYT9GN3862IDX';
-const ALPHA_VANTAGE_BASE_URL = 'https://www.alphavantage.co/query';
+// BATCH 2 FIX: Using Finnhub for real-time US stock prices (free tier: 60 calls/min)
+// Get your free API key at https://finnhub.io/register
+const FINNHUB_API_KEY = 'd6546v9r01qqbln5r7t0d6546v9r01qqbln5r7tg';
+const FINNHUB_BASE_URL = 'https://finnhub.io/api/v1';
 const CACHE_DURATION_MS = 300000; // 5 minutes
 
 /**
- * Fetch real stock prices from Alpha Vantage API
- * No CORS proxies, no mock data - real market prices only
+ * Fetch real-time stock prices from Finnhub API
+ * Real-time US stock data, no delays, no CORS issues on GitHub Pages
  * @param {string[]} tickers - Array of stock ticker symbols
  * @returns {Object} - Map of ticker to price
  */
@@ -48,9 +48,8 @@ async function fetchStockPrices(tickers) {
   const now = Date.now();
   
   // Check if API key is configured
-  if (ALPHA_VANTAGE_API_KEY === 'YOUR_API_KEY_HERE') {
-    console.warn('[StockAPI] API key not configured. Get free key at https://www.alphavantage.co/support/#api-key');
-    // Return cached prices if available, otherwise empty
+  if (FINNHUB_API_KEY === 'YOUR_API_KEY_HERE') {
+    console.warn('[StockAPI] API key not configured. Get free key at https://finnhub.io/register');
     return stockPriceCache;
   }
   
@@ -70,8 +69,7 @@ async function fetchStockPrices(tickers) {
   try {
     console.log(`[StockAPI] Fetching prices for: ${tickers.join(', ')}`);
     
-    // Rate limit: 5 calls per minute on free tier
-    // Process tickers one at a time to respect rate limits
+    // Finnhub allows 60 calls/minute on free tier - process all tickers
     for (const ticker of tickers) {
       // Skip if we already have fresh data for this ticker
       if (stockPriceCache[ticker] && (now - lastPriceFetch) < CACHE_DURATION_MS) {
@@ -79,7 +77,7 @@ async function fetchStockPrices(tickers) {
       }
       
       try {
-        const url = `${ALPHA_VANTAGE_BASE_URL}?function=GLOBAL_QUOTE&symbol=${ticker}&apikey=${ALPHA_VANTAGE_API_KEY}`;
+        const url = `${FINNHUB_BASE_URL}/quote?symbol=${ticker}&token=${FINNHUB_API_KEY}`;
         const response = await fetch(url, {
           method: 'GET',
           headers: { 'Accept': 'application/json' }
@@ -92,26 +90,23 @@ async function fetchStockPrices(tickers) {
         const data = await response.json();
         
         // Check for API error messages
-        if (data.Note || data.Information) {
-          console.warn(`[StockAPI] Rate limit or info: ${data.Note || data.Information}`);
+        if (data.error) {
+          console.warn(`[StockAPI] API error: ${data.error}`);
           apiErrorCount++;
-          break; // Stop fetching to respect rate limits
+          break;
         }
         
-        // Extract price from Global Quote
-        const globalQuote = data['Global Quote'];
-        if (globalQuote && globalQuote['05. price']) {
-          const price = parseFloat(globalQuote['05. price']);
-          if (price && price > 0) {
-            stockPriceCache[ticker] = price;
-            console.log(`[StockAPI] ✓ ${ticker}: $${price.toFixed(2)}`);
-          }
+        // Extract current price from Finnhub response (c = current price)
+        if (data.c && data.c > 0) {
+          const price = parseFloat(data.c);
+          stockPriceCache[ticker] = price;
+          console.log(`[StockAPI] ✓ ${ticker}: $${price.toFixed(2)}`);
         } else {
           console.warn(`[StockAPI] No price data for ${ticker}:`, data);
         }
         
-        // Rate limiting: Wait 12 seconds between calls (5 calls/minute max)
-        await new Promise(resolve => setTimeout(resolve, 12000));
+        // Finnhub free tier: 60 calls/minute - wait 1 second between calls
+        await new Promise(resolve => setTimeout(resolve, 1000));
         
       } catch (tickerErr) {
         console.error(`[StockAPI] Error fetching ${ticker}:`, tickerErr.message);
@@ -151,7 +146,7 @@ function getStockCacheStatus() {
     isFresh,
     ageMinutes: Math.floor(age / 60000),
     tickerCount: Object.keys(stockPriceCache).length,
-    apiKeyConfigured: ALPHA_VANTAGE_API_KEY !== 'YOUR_API_KEY_HERE'
+    apiKeyConfigured: FINNHUB_API_KEY !== 'YOUR_API_KEY_HERE'
   };
 }
 
@@ -164,11 +159,11 @@ async function refreshStockPrices() {
   }
   
   // Check if API key is configured
-  if (ALPHA_VANTAGE_API_KEY === 'YOUR_API_KEY_HERE') {
+  if (FINNHUB_API_KEY === 'YOUR_API_KEY_HERE') {
     if (statusEl) {
       statusEl.innerHTML = '<span class="text-accent-red">⚠️ API key needed</span>';
     }
-    alert('Please configure your Alpha Vantage API key in app.js\n\nGet a free key at:\nhttps://www.alphavantage.co/support/#api-key');
+    alert('Please configure your Finnhub API key in app.js\n\nGet a free key at:\nhttps://finnhub.io/register');
     return;
   }
   
@@ -1583,7 +1578,7 @@ async function renderInvestments() {
   const allTickers = [...new Set([...positionTickers, ...watchlistTickers])];
   
   // Fetch real stock prices
-  if (allTickers.length > 0 && ALPHA_VANTAGE_API_KEY !== 'YOUR_API_KEY_HERE') {
+  if (allTickers.length > 0 && FINNHUB_API_KEY !== 'YOUR_API_KEY_HERE') {
     try {
       const prices = await fetchStockPrices(allTickers);
       
@@ -1618,7 +1613,7 @@ async function renderInvestments() {
     }
   } else if (allTickers.length > 0) {
     // API key not configured - will display '-' for prices
-    // User needs to add ALPHA_VANTAGE_API_KEY to fetch live prices
+    // User needs to add FINNHUB_API_KEY to fetch live prices
   }
 
   investmentsPositionData = positions;
