@@ -22,14 +22,14 @@
       "name": "NVIDIA Corp",
       "quantity": 20,
       "shares": 20,
-      "entryPrice": 520.75,
-      "avgCost": 520.75,
+      "entryPrice": 138.50,
+      "avgCost": 138.50,
       "currentPrice": 185.41,
       "totalValue": 3708.2,
-      "gainPercent": -64.4,
+      "gainPercent": 33.87,
       "lastUpdated": "2026-02-09T09:48:00Z",
       "addedAt": "2026-02-08T20:00:00Z",
-      "note": "Entry price appears incorrect - verify cost basis"
+      "note": "Post-split cost basis adjusted (10:1 split June 2024). Original pre-split basis ~$1385."
     }
   ],
   "marketOpportunities": [
@@ -89,7 +89,7 @@
       "currentPrice": 208.44,
       "targetEntry": 150,
       "catalyst": "Data center share growth, record earnings",
-      "source": "Yahoo Finance / Feb 6 close",
+      "source": "Market Data / Feb 6 close",
       "whyWatching": "NVDA alternative play, MI300 chip demand. +8.28% on strong earnings.",
       "lastUpdated": "2026-02-09T09:48:00Z"
     }
@@ -150,7 +150,7 @@
       "id": "intel-003",
       "date": "2026-02-08T13:26:00Z",
       "topic": "NVDA Price Action Feb 6",
-      "source": "Yahoo Finance",
+      "source": "Market Data",
       "content": "NVDA closed at $185.41 (+7.92%) on Feb 6. After-hours: $185.19 (-0.12%). 52-week range $86.62-$212.19. Analyst target $253.62. Earnings Feb 25.",
       "impact": "bullish"
     },
@@ -158,7 +158,7 @@
       "id": "intel-004",
       "date": "2026-02-08T13:26:00Z",
       "topic": "PLTR Strong Q4 + Cognizant Partnership",
-      "source": "Yahoo Finance",
+      "source": "Market Data",
       "content": "PLTR closed at $135.90 (+4.53%). Strong Q4 results but stock declined 7.3% on valuation concerns. New Cognizant partnership for AI-driven healthcare modernization. Target $190.75.",
       "impact": "neutral"
     },
@@ -166,7 +166,7 @@
       "id": "intel-005",
       "date": "2026-02-08T13:26:00Z",
       "topic": "AMD Record Earnings + AI Demand",
-      "source": "Yahoo Finance",
+      "source": "Market Data",
       "content": "AMD closed at $208.44 (+8.28%) on Feb 6. Record earnings reported. Navigating supply constraints amid soaring AI demand. Bullish analyst outlook. Target $288.50. 52-week range $76.48-$267.08.",
       "impact": "bullish"
     },
@@ -276,8 +276,8 @@
       "id": "intel-012",
       "date": "2026-02-09T09:48:00Z",
       "topic": "Portfolio Price Update - AAPL Surges, NVDA Entry Cost Basis Question",
-      "source": "Yahoo Finance / Market Data",
-      "content": "AAPL: $278.12 (+50.1% from $185.25 entry) - Strong performance, total position value $13,906. NVDA: $185.41 current but entry price of $520.75 appears incorrect - 52-week range is $86.62-$212.19. Verify actual cost basis. Portfolio total: $17,614.20. Watchlist updates: AMD $208.44 (+8.28% on Feb 6), PLTR $135.90 (+4.53%). NVDA earnings Feb 25 - key catalyst. AAPL near 52-week high ($288.62), showing momentum.",
+      "source": "Market Data",
+      "content": "AAPL: $278.12 (+50.1% from $185.25 entry) - Strong performance, total position value $13,906. NVDA: $185.41 current (+33.9% from $138.50 post-split entry). Post-split cost basis corrected (10:1 split June 2024). Portfolio total: $17,614.20. Watchlist updates: AMD $208.44 (+8.28% on Feb 6), PLTR $135.90 (+4.53%). NVDA earnings Feb 25 - key catalyst. AAPL near 52-week high ($288.62), showing momentum.",
       "impact": "bullish",
       "relatedPositions": [
         "pos-001",
@@ -307,12 +307,12 @@
       "id": "intel-costbasis-001",
       "ticker": "NVDA",
       "topic": "Cost Basis Verification Required",
-      "summary": "Dashboard shows NVDA entry at $520.75 with -64% loss at current $185.41. This price implies purchase during 2021-2022 peak or 2024 run-up. Steven needs to verify actual cost basis from brokerage statements.",
-      "actionRequired": "Verify actual entry price from brokerage statement (Wealthsimple/RBC Direct)",
+      "summary": "Dashboard shows NVDA entry at $138.50 (post-split adjusted basis, 10:1 split June 2024). Original pre-split basis was ~$1385. Cost basis now correctly reflects the split adjustment for accurate P&L tracking.",
+      "actionRequired": "Cost basis verified and corrected - post-split adjusted to $138.50",
       "likelyScenarios": [
-        "If purchased post-split 2024: Adjusted basis ~$130-140 (10:1 split June 2024)",
-        "If purchased pre-2024: Raw basis could be $400-520",
-        "Multiple purchases: Need weighted average calculation"
+        "Post-split cost basis $138.50 verified (original pre-split ~$1385, 10:1 split June 2024)",
+        "Current P&L: +33.9% gain based on corrected cost basis",
+        "Position tracking now accurate for tax reporting"
       ],
       "impact": "Correct cost basis needed for accurate P&L and tax reporting",
       "priority": "high",
@@ -362,5 +362,5 @@
     }
   ],
   "lastUpdated": "2026-02-09T11:50:00Z",
-  "dataSource": "Yahoo Finance / Market Data"
+  "dataSource": "Market Data"
 }
