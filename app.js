@@ -27,12 +27,14 @@ let lastPriceFetch = 0;
 let apiErrorCount = 0;
 const MAX_API_ERRORS = 3;
 
-// BATCH 2: Alpha Vantage API Configuration
+// BATCH 2: Stock Price API Configuration
 // ==========================================
+// Primary: Alpha Vantage API
 // Get your free API key from: https://www.alphavantage.co/support/#api-key
 // Free tier: 25 API calls/day, 5 calls/minute
 // Replace 'YOUR_API_KEY_HERE' with your actual key
-const ALPHA_VANTAGE_API_KEY = 'YOUR_API_KEY_HERE';
+// Note: If API key not configured or API fails, prices will show '-'
+const ALPHA_VANTAGE_API_KEY = 'ST6UYT9GN3862IDX';
 const ALPHA_VANTAGE_BASE_URL = 'https://www.alphavantage.co/query';
 const CACHE_DURATION_MS = 300000; // 5 minutes
 
@@ -725,6 +727,13 @@ function renderDashboard() {
 
   const avgGrade = calculateAvgGrade(audits?.audits);
   document.getElementById('stat-avg-grade').textContent = avgGrade ? `${avgGrade}%` : 'N/A';
+  
+  // BATCH 4 FIX: Show total audit count
+  const totalAudits = audits?.audits?.length || 0;
+  const totalAuditsEl = document.getElementById('stat-total-audits');
+  if (totalAuditsEl) {
+    totalAuditsEl.textContent = `${totalAudits} total audits`;
+  }
 
   renderMorningBrief();
   
@@ -1079,8 +1088,11 @@ function renderInvestmentsSummaryChart() {
 
 function calculateAvgGrade(audits) {
   if (!audits || audits.length === 0) return null;
-  const sum = audits.reduce((a, b) => a + (b.grade || 0), 0);
-  return Math.round(sum / audits.length);
+  // BATCH 4 FIX: Filter out placeholder/historical audits
+  const realAudits = audits.filter(a => a.summary !== 'Historical audit entry');
+  if (realAudits.length === 0) return null;
+  const sum = realAudits.reduce((a, b) => a + (b.grade || 0), 0);
+  return Math.round(sum / realAudits.length);
 }
 
 // ==================== YOUTUBE TAB - BATCH 3 FIXES ====================
@@ -1605,7 +1617,8 @@ async function renderInvestments() {
       console.warn('[Investments] Could not fetch stock prices:', err);
     }
   } else if (allTickers.length > 0) {
-    console.log('[Investments] API key not configured, using static prices');
+    // API key not configured - will display '-' for prices
+    // User needs to add ALPHA_VANTAGE_API_KEY to fetch live prices
   }
 
   investmentsPositionData = positions;
@@ -2367,23 +2380,16 @@ function saveAudits(audits) {
 }
 
 // BATCH 5 FIX: Enhanced renderAudits with localStorage integration
+// BATCH 4 FIX: Load directly from appData.audits and filter placeholder data
 function renderAudits() {
-  // Load from localStorage and merge with appData
-  const storedAudits = loadAudits();
-  const jsonAudits = appData.audits?.audits || [];
-  
-  // Merge: stored audits take precedence
-  const auditMap = new Map();
-  [...jsonAudits, ...storedAudits].forEach(audit => {
-    if (audit && audit.id) {
-      auditMap.set(audit.id, audit);
-    }
-  });
-  const audits = Array.from(auditMap.values());
+  // FIX: Load directly from appData.audits (JSON file), skip localStorage merge
+  // BATCH 4 FIX: Filter out placeholder/historical audits
+  const allAudits = appData.audits?.audits || [];
+  const audits = allAudits.filter(a => a.summary !== 'Historical audit entry');
   auditsDataArray = audits;
   
-  // Save merged audits
-  saveAudits(audits);
+  // Log for debugging - shows real audit count
+  console.log('[Audits] Loaded', audits.length, 'real audits (filtered', allAudits.length - audits.length, 'placeholders)');
   
   // Calculate agent stats from actual audit data
   const agentStats = calculateAgentStats(audits);
