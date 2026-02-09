@@ -659,6 +659,51 @@
       "url": "https://www.youtube.com/watch?v=GiTjxTajoPg",
       "researchStatus": "completed",
       "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-045",
+      "title": "If Every Pokémon Could Evolve",
+      "channel": "mandjtv",
+      "views": 1610000,
+      "publishedAt": "2024-08-08T00:00:00Z",
+      "addedAt": "2026-02-09T08:00:00Z",
+      "outlierScore": 1.8,
+      "niche": "🎮 Gaming/Pokémon/Speculation",
+      "whyOutlier": "1.8x outlier - 1.61M views on 2.6M sub channel. 'What if every X' format + Pokemon speculation drives massive engagement. Recent upload (4 months) performing well.",
+      "contentAngle": "Create 'What if every AI creature could evolve?' - speculative content showing multiple AI creature evolution paths. Catalog format with variety.",
+      "url": "https://www.youtube.com/watch?v=fXBGpvyYWnM",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-046",
+      "title": "How To Get EVERY Huge Pet RIGHT NOW in Pet Simulator 99",
+      "channel": "realredninja",
+      "views": 111000,
+      "publishedAt": "2023-02-08T00:00:00Z",
+      "addedAt": "2026-02-09T08:00:00Z",
+      "outlierScore": 12.3,
+      "niche": "🎮 Pet Simulation/Roblox",
+      "whyOutlier": "EXTREME 12.3x outlier - 111K views on 836K sub channel. 'How to get EVERY X RIGHT NOW' urgency format + pet simulation = high engagement. Urgency drives immediate action.",
+      "contentAngle": "Apply urgency format to AI pet content: 'How to get [RARE AI Creature] RIGHT NOW' - time-limited or exclusive AI pet acquisition guides.",
+      "url": "https://www.youtube.com/watch?v=5lhuAiBRwRQ",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-047",
+      "title": "11 Cthulhus Seen in Movies and Games - Cthulhu Evolution",
+      "channel": "mindq4328",
+      "views": 652000,
+      "publishedAt": "2022-02-08T00:00:00Z",
+      "addedAt": "2026-02-09T08:00:00Z",
+      "outlierScore": 4.1,
+      "niche": "🐙 Horror/Creature Evolution",
+      "whyOutlier": "4.1x outlier - 652K views on 444K sub channel. Lovecraftian creature compilation + evolution format drives engagement. Niche horror content with dedicated fanbase.",
+      "contentAngle": "Create 'X AI Creatures from Movies/Games' - compile AI-generated versions of famous creatures. Evolution format shows progression across media.",
+      "url": "https://www.youtube.com/watch?v=OzqjE1diPNM",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
     }
   ],
   "competitorResearchQueue": [
