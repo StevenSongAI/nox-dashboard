@@ -661,7 +661,7 @@
       "source": "viewstats outlier research - hourly cron"
     },
     {
-      "id": "yt-viewstats-045",
+      "id": "yt-viewstats-048",
       "title": "If Every Pokémon Could Evolve",
       "channel": "mandjtv",
       "views": 1610000,
@@ -676,7 +676,7 @@
       "source": "viewstats outlier research - hourly cron"
     },
     {
-      "id": "yt-viewstats-046",
+      "id": "yt-viewstats-049",
       "title": "How To Get EVERY Huge Pet RIGHT NOW in Pet Simulator 99",
       "channel": "realredninja",
       "views": 111000,
@@ -691,7 +691,7 @@
       "source": "viewstats outlier research - hourly cron"
     },
     {
-      "id": "yt-viewstats-047",
+      "id": "yt-viewstats-050",
       "title": "11 Cthulhus Seen in Movies and Games - Cthulhu Evolution",
       "channel": "mindq4328",
       "views": 652000,
@@ -1046,6 +1046,15 @@
         "actionable": "Create 'I Trapped AI [Creature] in [Simulation Type]' series. Variations: escape rooms, mazes, obstacle courses, survival scenarios. Show AI learning/adapting over time. Include cliffhangers: 'Will it escape? Find out in Part 2!'",
         "confidence": "high",
         "addedAt": "2026-02-09T07:10:00Z"
+      },
+      {
+        "id": "insight-011",
+        "pattern": "Tournament Bracket + 1v1 Battles = Completionist Retention",
+        "evidence": "kupchannel '1 vs 1 All Units Tournament' (83.9x outlier, 2.69M views). ambientdreamescapes 'What if baby dragons existed?' (41.9x). littlelizardgaming 'Biggest Dragon Ever' (30.8x).",
+        "finding": "Tournament format with bracket progression drives massive retention - viewers stay to see who wins. 'Baby creature' speculation triggers protective emotions. 'Biggest ever' superlatives create curiosity gaps. Combining all three elements (tournament + baby creatures + scale comparisons) could achieve extreme outlier scores.",
+        "actionable": "Create 'Baby AI Creature Battle Tournament' - bracket-style competition starting with baby versions, evolving through rounds, culminating in massive final forms. Each round shows growth progression. Title formula: 'I Raised Baby [Creatures] for a Tournament - The Final Form is MASSIVE'",
+        "confidence": "high",
+        "addedAt": "2026-02-09T09:00:00Z"
       }
     ]
   },
