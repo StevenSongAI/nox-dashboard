@@ -830,6 +830,15 @@
         "actionable": "Apply to AI creatures: 'What if [creature] had 10 evolution stages?' or 'What if [creature] evolved backwards?'",
         "confidence": "high",
         "addedAt": "2026-02-09T03:00:00Z"
+      },
+      {
+        "id": "insight-007",
+        "pattern": "Compilation/Collection Format - Completionist Content",
+        "evidence": "Multiple high-performing outliers using 'All X' format: ALL MINECRAFT MOBS vs BOSS MOBS (49.9x), ALL AQUATIC CREATURES (14.2x), Every Type Of Zombie Ever (6.5x), All Pacific Rim Kaiju Evolution (10.5x)",
+        "finding": "Viewers have strong completionist desire - wanting to see comprehensive collections of creature types. 'All X' promises complete information in one video.",
+        "actionable": "Create 'All AI [Creature Type]' series - comprehensive catalogs of AI creature variations. Episode ideas: 'All AI Dragons,' 'All AI Sea Creatures,' 'All AI Mythical Beasts'",
+        "confidence": "high",
+        "addedAt": "2026-02-09T04:46:00Z"
       }
     ]
   },
