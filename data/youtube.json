@@ -1274,6 +1274,36 @@
       "url": "https://www.youtube.com/watch?v=QLI0XOFpK0A",
       "researchStatus": "completed",
       "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-082",
+      "title": "Dragon War - Chinese Dragon VS Western Dragon - Animal Revolt Battle Simulator",
+      "channel": "arbschannel2501",
+      "views": 1360000,
+      "publishedAt": "2022-02-08T00:00:00Z",
+      "addedAt": "2026-02-09T20:05:00Z",
+      "outlierScore": 53.9,
+      "niche": "🐉 Dragon/Battle Simulation",
+      "whyOutlier": "EXTREME 53.9x outlier - 1.36M views on 180K sub channel! East vs West dragon matchup creates cultural mythology clash. Battle format drives engagement.",
+      "contentAngle": "Create 'Chinese AI Dragon VS Western AI Dragon' battles. Cultural dragon mythology comparison with epic battle simulation. Visual spectacle of different dragon archetypes fighting.",
+      "url": "https://www.youtube.com/watch?v=Z6_sw7P10ao",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-083",
+      "title": "ROBLOX PET SIMULATOR X",
+      "channel": "gravycatman",
+      "views": 3130000,
+      "publishedAt": "2020-02-08T00:00:00Z",
+      "addedAt": "2026-02-09T20:05:00Z",
+      "outlierScore": 6.7,
+      "niche": "🎮 Pet Simulation/Roblox",
+      "whyOutlier": "6.7x outlier - 3.13M views on 4.3M sub channel. Early Pet Simulator X content captured game launch hype. Big YouTuber + trending game = massive reach.",
+      "contentAngle": "Launch content when AI pet platforms drop. Early adopter advantage captures algorithm boost for trending topics. 'First look' format drives anticipation.",
+      "url": "https://www.youtube.com/watch?v=v_jdRO-uFj4",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
     }
   ],
   "competitorResearchQueue": [
