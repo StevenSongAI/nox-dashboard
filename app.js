@@ -1354,93 +1354,17 @@ let investmentsWatchlistData = [];
 let investmentsIntelligenceData = [];
 
 // BATCH 4 FIX: Load investments from localStorage
+// D3 FIX: Removed hardcoded default positions - only return stored data or empty arrays
 function loadInvestments() {
   const stored = localStorage.getItem('investments-data');
   if (stored) {
     return JSON.parse(stored);
   }
-  // Return default data if none stored
+  // Return empty structure - no sample data injection
   return {
-    positions: [
-      {
-        id: 'pos-1',
-        ticker: 'AAPL',
-        symbol: 'AAPL',
-        name: 'Apple Inc.',
-        quantity: 50,
-        shares: 50,
-        entryPrice: 175.50,
-        avgCost: 175.50,
-        currentPrice: 185.25,
-        totalValue: 9262.50,
-        gainPercent: 5.56,
-        addedAt: new Date().toISOString()
-      },
-      {
-        id: 'pos-2',
-        ticker: 'NVDA',
-        symbol: 'NVDA',
-        name: 'NVIDIA Corp',
-        quantity: 20,
-        shares: 20,
-        entryPrice: 450.00,
-        avgCost: 450.00,
-        currentPrice: 520.75,
-        totalValue: 10415.00,
-        gainPercent: 15.72,
-        addedAt: new Date().toISOString()
-      }
-    ],
-    watchlist: [
-      {
-        id: 'watch-1',
-        ticker: 'TSLA',
-        symbol: 'TSLA',
-        name: 'Tesla Inc.',
-        currentPrice: 245.50,
-        targetEntry: 220.00,
-        targetPrice: 220.00,
-        thesis: 'EV market leader, waiting for dip entry',
-        notes: 'Buy if it drops below $220',
-        addedAt: new Date().toISOString()
-      },
-      {
-        id: 'watch-2',
-        ticker: 'MSFT',
-        symbol: 'MSFT',
-        name: 'Microsoft Corp',
-        currentPrice: 380.25,
-        targetEntry: 350.00,
-        targetPrice: 350.00,
-        thesis: 'Strong AI positioning with OpenAI partnership',
-        notes: 'Long-term hold candidate',
-        addedAt: new Date().toISOString()
-      }
-    ],
-    intelligence: [
-      {
-        id: 'intel-1',
-        topic: 'Fed Rate Decision',
-        ticker: 'SPY',
-        type: 'Macro Update',
-        impact: 'bullish',
-        summary: 'Fed signals potential rate cuts in Q2. Growth stocks likely to benefit.',
-        content: 'Fed signals potential rate cuts in Q2. Growth stocks likely to benefit.',
-        addedAt: new Date().toISOString(),
-        date: new Date().toISOString()
-      },
-      {
-        id: 'intel-2',
-        topic: 'AI Chip Demand Surge',
-        ticker: 'NVDA',
-        type: 'Sector Update',
-        impact: 'bullish',
-        summary: 'Datacenter revenue up 400% YoY. Supply still constrained.',
-        content: 'Datacenter revenue up 400% YoY. Supply still constrained.',
-        addedAt: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000).toISOString(),
-        date: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000).toISOString()
-      }
-    ]
+    positions: [],
+    watchlist: [],
+    intelligence: []
   };
 }
 
@@ -1772,6 +1696,7 @@ function showIntelligenceModal(idx) {
 }
 
 // Portfolio allocation pie/donut chart
+// D3 FIX: Use investmentsPositionData instead of appData.investments.positions
 function renderPortfolioChart() {
   const canvas = document.getElementById('portfolio-chart');
   if (!canvas) return;
@@ -1784,7 +1709,8 @@ function renderPortfolioChart() {
     portfolioChartInstance = null;
   }
   
-  const positions = appData.investments.positions || [];
+  // D3 FIX: Use the merged data from investmentsPositionData instead of raw appData
+  const positions = investmentsPositionData || appData.investments?.positions || [];
   
   // Show empty state if no positions
   if (positions.length === 0) {
@@ -2023,24 +1949,14 @@ function showToolModal(idx) {
 let researchNotesData = [];
 
 // BATCH 5 FIX: Load research notes from localStorage
+// D1 FIX: Removed sample note injection - only return stored notes or empty array
 function loadResearchNotes() {
   const stored = localStorage.getItem('research-notes');
   if (stored) {
     return JSON.parse(stored);
   }
-  // Return default notes if none stored
-  return [
-    {
-      id: 'note-1',
-      title: 'Getting Started with Research Notes',
-      category: 'General',
-      content: 'This is a sample research note. You can create, edit, and delete notes. Notes support markdown formatting and can be categorized.\n\n## Features:\n- Create notes with title and content\n- Categorize by topic\n- Add tags for organization\n- Edit existing notes\n- Delete when no longer needed',
-      summary: 'Sample note demonstrating research notes functionality',
-      tags: ['getting-started', 'tutorial'],
-      createdAt: new Date().toISOString(),
-      updatedAt: new Date().toISOString()
-    }
-  ];
+  // Return empty array - no sample data injection
+  return [];
 }
 
 function saveResearchNotes(notes) {
@@ -2288,75 +2204,15 @@ function showNoteModal(idx) {
 
 let auditsDataArray = [];
 
-// BATCH 5 FIX: Load audits from localStorage with sample data
+// BATCH 5 FIX: Load audits from localStorage
+// D2 FIX: Removed sample audit injection - only return stored audits or empty array
 function loadAudits() {
   const stored = localStorage.getItem('audit-reports');
   if (stored) {
     return JSON.parse(stored);
   }
-  // Return default sample audits if none stored
-  return [
-    {
-      id: 'audit-1',
-      project: 'YouTube Content Pipeline',
-      grade: 92,
-      date: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000).toISOString(),
-      agent: 'nox',
-      findings: 'Excellent code structure and separation of concerns. Minor improvements needed in error handling.',
-      summary: 'Excellent code structure and separation of concerns.',
-      recommendations: ['Add more unit tests', 'Improve error handling in async functions']
-    },
-    {
-      id: 'audit-2',
-      project: 'Investment Portfolio Manager',
-      grade: 85,
-      date: new Date(Date.now() - 5 * 24 * 60 * 60 * 1000).toISOString(),
-      agent: 'ralph',
-      findings: 'Good performance and clean UI. Stock price caching could be improved.',
-      summary: 'Good performance and clean UI.',
-      recommendations: ['Implement better caching strategy', 'Add retry logic for API failures']
-    },
-    {
-      id: 'audit-3',
-      project: 'Research Notes Module',
-      grade: 78,
-      date: new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString(),
-      agent: 'nox',
-      findings: 'Functional implementation but lacks input validation.',
-      summary: 'Functional but needs validation improvements.',
-      recommendations: ['Add input sanitization', 'Implement character limits']
-    },
-    {
-      id: 'audit-4',
-      project: 'Dashboard Navigation',
-      grade: 95,
-      date: new Date(Date.now() - 10 * 24 * 60 * 60 * 1000).toISOString(),
-      agent: 'ralph',
-      findings: 'Excellent UX with smooth transitions and proper state management.',
-      summary: 'Excellent UX implementation.',
-      recommendations: ['Consider adding keyboard shortcuts']
-    },
-    {
-      id: 'audit-5',
-      project: 'Competitor Tracker',
-      grade: 88,
-      date: new Date(Date.now() - 14 * 24 * 60 * 60 * 1000).toISOString(),
-      agent: 'nox',
-      findings: 'Well structured with good localStorage integration.',
-      summary: 'Good localStorage integration.',
-      recommendations: ['Add data export functionality']
-    },
-    {
-      id: 'audit-6',
-      project: 'Content Brief Generator',
-      grade: 82,
-      date: new Date(Date.now() - 18 * 24 * 60 * 60 * 1000).toISOString(),
-      agent: 'ralph',
-      findings: 'Good template system, could use more customization options.',
-      summary: 'Good template system.',
-      recommendations: ['Add custom templates', 'Allow markdown in briefs']
-    }
-  ];
+  // Return empty array - no sample data injection
+  return [];
 }
 
 function saveAudits(audits) {

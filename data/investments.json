@@ -1,5 +1,34 @@
 {
-  "positions": [],
+  "positions": [
+    {
+      "id": "pos-001",
+      "ticker": "AAPL",
+      "symbol": "AAPL",
+      "name": "Apple Inc.",
+      "quantity": 50,
+      "shares": 50,
+      "entryPrice": 185.25,
+      "avgCost": 185.25,
+      "currentPrice": 185.25,
+      "totalValue": 9262.50,
+      "gainPercent": 0,
+      "addedAt": "2026-02-08T20:00:00Z"
+    },
+    {
+      "id": "pos-002",
+      "ticker": "NVDA",
+      "symbol": "NVDA",
+      "name": "NVIDIA Corp",
+      "quantity": 20,
+      "shares": 20,
+      "entryPrice": 520.75,
+      "avgCost": 520.75,
+      "currentPrice": 520.75,
+      "totalValue": 10415.00,
+      "gainPercent": 0,
+      "addedAt": "2026-02-08T20:00:00Z"
+    }
+  ],
   "marketOpportunities": [
     {
       "id": "opp-001",
