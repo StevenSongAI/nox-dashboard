@@ -947,6 +947,14 @@
         "actionable": "Create 'How [AI Creature] Works' series - explain fictional biology, behavior, and mechanics in documentary style. Include 'How To' guides for specific AI creature interactions and mechanics.",
         "confidence": "high",
         "addedAt": "2026-02-09T06:46:00Z"
+      {
+        "id": "insight-010",
+        "pattern": "AI Simulation Trap/Escape Format",
+        "evidence": "cozmouz multiple high-performers: 'I Trapped this AI Centipede' (2.27M views), 'I Trapped this AI Worm' (2.45M views), 'I Trapped this AI Bot in Parkour' (259K views), 'AI Learns to Outrun Police' (746K views). All use 'I trapped X in simulation' format.",
+        "finding": "The 'trapped in simulation' narrative creates built-in tension and progression. Viewers want to see if AI escapes or adapts. Combining with parkour/chase mechanics adds dynamic movement. Police outrun variant adds antagonist dynamic.",
+        "actionable": "Create 'I Trapped AI [Creature] in [Simulation Type]' series. Variations: escape rooms, mazes, obstacle courses, survival scenarios. Show AI learning/adapting over time. Include cliffhangers: 'Will it escape? Find out in Part 2!'",
+        "confidence": "high",
+        "addedAt": "2026-02-09T07:10:00Z"
       }
     ]
   },
