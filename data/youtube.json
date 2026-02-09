@@ -989,6 +989,51 @@
       "url": "https://www.youtube.com/watch?v=fpuiIvnLUUg",
       "researchStatus": "completed",
       "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-064",
+      "title": "I Bought The VIRAL 15-in-1 Virtual Pet Box Bitzee",
+      "channel": "ragingraccoongaming",
+      "views": 516000,
+      "publishedAt": "2023-02-08T00:00:00Z",
+      "addedAt": "2026-02-09T13:00:00Z",
+      "outlierScore": 26.7,
+      "niche": "🎮 Virtual Pet/Unboxing",
+      "whyOutlier": "EXTREME 26.7x outlier - 516K views on 117K sub channel. VIRAL physical virtual pet product unboxing. 15-in-1 format promises value/completeness.",
+      "contentAngle": "Create 'I Bought the VIRAL AI Pet [Product]' unboxing content. Physical AI-powered pets + unboxing format = viral potential. Focus on surprise features and emotional reactions.",
+      "url": "https://www.youtube.com/watch?v=MUiViw-8X1s",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-065",
+      "title": "1vs1 Kaiju Monster Battle | Who is The Winner - Animal Revolt Battle Simulator",
+      "channel": "battlexsimulator",
+      "views": 676000,
+      "publishedAt": "2022-02-08T00:00:00Z",
+      "addedAt": "2026-02-09T13:00:00Z",
+      "outlierScore": 136,
+      "niche": "🦖 Kaiju/Battle Simulation",
+      "whyOutlier": "MASSIVE 136x outlier - 676K views on 123K sub channel! 1v1 bracket format creates tournament anticipation. Viewer curiosity about 'who wins' drives retention through multiple matchups.",
+      "contentAngle": "Create 'AI Creature 1v1 Tournament' bracket-style battles. Single-elimination format with AI-generated creatures. Each round shows different creature matchups. Finale = ultimate champion reveal.",
+      "url": "https://www.youtube.com/watch?v=gMZpqG2L2LA",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-066",
+      "title": "Can I Survive 7 Days On Monster Island [Animal Revolt Battle Simulator]",
+      "channel": "arbsdaily",
+      "views": 934000,
+      "publishedAt": "2023-02-08T00:00:00Z",
+      "addedAt": "2026-02-09T13:00:00Z",
+      "outlierScore": 72.1,
+      "niche": "🎮 Survival/Simulation",
+      "whyOutlier": "EXTREME 72.1x outlier - 934K views on 83K sub channel! Survival challenge format + monster island = high stakes. Day-by-day progression creates episodic tension.",
+      "contentAngle": "Create 'Can I Survive 7 Days with AI Creatures' series. Daily survival challenges with escalating difficulty. Each day introduces new AI creature threats. Final day = boss encounter.",
+      "url": "https://www.youtube.com/watch?v=NTekRMnr_CA",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
     }
   ],
   "competitorResearchQueue": [
