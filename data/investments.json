@@ -317,8 +317,7 @@
       "impact": "Correct cost basis needed for accurate P&L and tax reporting",
       "priority": "high",
       "addedAt": "2026-02-09T12:26:00Z"
-    }
-  ],
+    },
     {
       "id": "intel-013",
       "date": "2026-02-09T21:46:00Z",
