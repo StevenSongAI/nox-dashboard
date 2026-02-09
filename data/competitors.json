@@ -411,6 +411,75 @@
           "outlierScore": 390
         }
       ]
+    },
+    {
+      "id": "comp-019",
+      "channelId": "@eystreem",
+      "name": "EYstreem",
+      "url": "https://www.youtube.com/@eystreem",
+      "niche": "Gaming/Minecraft",
+      "focus": "Minecraft myths, challenges, and creature content",
+      "addedAt": "2026-02-09T19:55:00Z",
+      "autoAdded": true,
+      "source": "csv traffic analysis",
+      "stats": {
+        "subscribers": "13.3M",
+        "totalViews": "4.2B",
+        "videoCount": 2500
+      },
+      "latestVideos": [
+        {
+          "title": "Can I Hatch a Demogorgon's Egg?",
+          "views": "786K",
+          "videoId": "4K--_3txFHI"
+        }
+      ]
+    },
+    {
+      "id": "comp-020",
+      "channelId": "@ToonyLoonyTV",
+      "name": "ToonyLoonyTV",
+      "url": "https://www.youtube.com/@ToonyLoonyTV",
+      "niche": "AI Pet Simulation",
+      "focus": "AI-generated Pokémon pet simulation content",
+      "addedAt": "2026-02-09T19:55:00Z",
+      "autoAdded": true,
+      "source": "csv traffic analysis",
+      "stats": {
+        "subscribers": "901",
+        "totalViews": "135K",
+        "videoCount": 5
+      },
+      "latestVideos": [
+        {
+          "title": "I Simulated ICE Pokémon In Real Life",
+          "views": "135K",
+          "videoId": "hCxcNMHENnQ"
+        }
+      ]
+    },
+    {
+      "id": "comp-021",
+      "channelId": "@Bembunny",
+      "name": "Bembunny",
+      "url": "https://www.youtube.com/@Bembunny",
+      "niche": "AI Pet Simulation",
+      "focus": "AI-generated Pokémon pet simulation - Meowth/Persian",
+      "addedAt": "2026-02-09T19:55:00Z",
+      "autoAdded": true,
+      "source": "csv traffic analysis",
+      "stats": {
+        "subscribers": "231",
+        "totalViews": "31K",
+        "videoCount": 3
+      },
+      "latestVideos": [
+        {
+          "title": "I Got a Pet Meowth",
+          "views": "31K",
+          "videoId": "NcFZwor4dMk"
+        }
+      ]
     }
   ],
   "outlierPatterns": [
@@ -451,5 +520,5 @@
       "recommendedAction": "Create how-to guides for AI pet mechanics"
     }
   ],
-  "lastUpdated": "2026-02-09T18:30:00Z"
+  "lastUpdated": "2026-02-09T19:55:00Z"
 }
