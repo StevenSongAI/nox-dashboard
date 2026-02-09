@@ -1361,14 +1361,16 @@ let investmentsPositionData = [];
 let investmentsWatchlistData = [];
 let investmentsIntelligenceData = [];
 
-// BATCH 4 FIX: Load investments from localStorage
-// D3 FIX: Removed hardcoded default positions - only return stored data or empty arrays
+// BATCH 4 FIX: Load investments from appData (JSON file)
+// D3 FIX: Load from appData.investments instead of localStorage
 function loadInvestments() {
-  const stored = localStorage.getItem('investments-data');
-  if (stored) {
-    return JSON.parse(stored);
+  if (appData.investments) {
+    return {
+      positions: appData.investments.positions || [],
+      watchlist: appData.investments.watchlist || [],
+      intelligence: appData.investments.intelligence || []
+    };
   }
-  // Return empty structure - no sample data injection
   return {
     positions: [],
     watchlist: [],
@@ -1800,95 +1802,13 @@ function renderPortfolioChart() {
 
 let toolsDataArray = [];
 
-// BATCH 4 FIX: Load tools from localStorage with default 8 tools
+// BATCH 4 FIX: Load tools from appData (JSON file) instead of localStorage
 function loadTools() {
-  const stored = localStorage.getItem('tools-registry');
-  if (stored) {
-    return JSON.parse(stored);
+  // Use tools from appData (loaded from tools.json)
+  if (appData.tools && appData.tools.tools && appData.tools.tools.length > 0) {
+    return appData.tools.tools;
   }
-  // Return default 8 tools if none stored
-  return [
-    {
-      id: 'tool-1',
-      name: 'Content Pipeline',
-      description: 'Orchestrate video production from idea to upload. Track scripts, production checklist, and upload details.',
-      category: 'YouTube',
-      status: 'active',
-      auditGrade: 92,
-      runCommand: 'launchTool("pipeline")',
-      icon: '🎬'
-    },
-    {
-      id: 'tool-2',
-      name: 'Performance Analyzer',
-      description: 'Analyze video performance metrics, view trends, and engagement statistics across your channel.',
-      category: 'YouTube',
-      status: 'active',
-      auditGrade: 88,
-      runCommand: 'launchTool("analyzer")',
-      icon: '📊'
-    },
-    {
-      id: 'tool-3',
-      name: 'Brief Generator',
-      description: 'Generate detailed content briefs from outlier research with hooks, outlines, and target lengths.',
-      category: 'YouTube',
-      status: 'active',
-      auditGrade: 85,
-      runCommand: 'launchTool("brief-generator")',
-      icon: '📝'
-    },
-    {
-      id: 'tool-4',
-      name: 'Map Scraper',
-      description: 'Scrape Minecraft map data and generate gaming content ideas from popular maps.',
-      category: 'Gaming',
-      status: 'beta',
-      auditGrade: 78,
-      runCommand: 'launchTool("map-scraper")',
-      icon: '🗺️'
-    },
-    {
-      id: 'tool-5',
-      name: 'Opportunity Tracker',
-      description: 'Track business opportunities through your pipeline from new leads to closed deals.',
-      category: 'Business',
-      status: 'active',
-      auditGrade: 90,
-      runCommand: 'showTab("business")',
-      icon: '💼'
-    },
-    {
-      id: 'tool-6',
-      name: 'Portfolio Manager',
-      description: 'Manage investment portfolio, track gains/losses, and monitor watchlist targets.',
-      category: 'Finance',
-      status: 'active',
-      auditGrade: 87,
-      runCommand: 'showTab("investments")',
-      icon: '📈'
-    },
-    {
-      id: 'tool-7',
-      name: 'Research Notes',
-      description: 'Capture and organize research notes with markdown support and tagging.',
-      category: 'Productivity',
-      status: 'active',
-      auditGrade: 91,
-      runCommand: 'showTab("research")',
-      icon: '🔬'
-    },
-    {
-      id: 'tool-8',
-      name: 'Audit Dashboard',
-      description: 'Review code audits, track grades over time, and compare agent performance.',
-      category: 'Development',
-      status: 'active',
-      auditGrade: 93,
-      runCommand: 'showTab("audits")',
-      icon: '📋'
-    }
-  ];
+  return [];
 }
 
 function saveTools(tools) {
@@ -1938,7 +1858,7 @@ function renderTools() {
         <div class="text-xs text-gray-500">${t.category} · Audit: ${t.auditGrade || 'N/A'}%</div>
       </div>
       <div class="flex gap-2">
-        <button onclick="${t.runCommand}" class="flex-1 px-3 py-2 bg-accent-blue rounded text-sm hover:bg-blue-600 transition-colors">Launch →</button>
+        <button onclick="launchTool('${t.runCommand?.replace(/'/g, "\\'") || ''}')" class="flex-1 px-3 py-2 bg-accent-blue rounded text-sm hover:bg-blue-600 transition-colors">Launch →</button>
         <button onclick="showToolModal(${idx})" class="px-3 py-2 bg-dark-700 rounded text-sm hover:bg-dark-600">Details</button>
       </div>
     </div>
@@ -2032,7 +1952,7 @@ function renderResearch() {
       const safeNoteId = n.id.replace(/'/g, "\\'").replace(/"/g, '\\"');
       
       return `
-      <div class="card card-clickable rounded-lg p-4" data-note-id="${n.id}" data-category="${n.category || ''}">
+      <div class="card card-clickable rounded-lg p-4" data-note-id="${n.id}" data-category="${n.category || ''}" onclick="showNoteModal('${safeNoteId}')">
         <div class="flex justify-between items-start mb-2">
           <h3 class="font-semibold">${escapeHtml(n.title)}</h3>
           <div class="flex items-center gap-2">
@@ -2115,6 +2035,39 @@ function submitAddNote() {
   saveResearchNotes(notes);
   closeModal();
   renderResearch();
+}
+
+// FIX: Show Note Modal (read-only view for clicking on notes)
+function showNoteModal(noteId) {
+  const notes = loadResearchNotes();
+  const note = notes.find(n => n.id === noteId);
+  
+  if (!note) {
+    alert('Note not found');
+    return;
+  }
+  
+  const content = note.summary || note.content || 'No content';
+  const renderedContent = typeof marked !== 'undefined' 
+    ? marked.parse(content)
+    : escapeHtml(content);
+  
+  const modalHTML = `
+    <div class="mb-4">
+      <div class="flex justify-between items-start mb-2">
+        <span class="text-xs px-2 py-0.5 bg-dark-700 rounded">${escapeHtml(note.category || 'Uncategorized')}</span>
+        <span class="text-xs text-gray-400">${formatTimeAgo(note.createdAt || note.date)}</span>
+      </div>
+      <div class="flex flex-wrap gap-1 mb-4">
+        ${(note.tags || []).map(t => `<span class="text-xs px-2 py-0.5 bg-accent-blue/20 text-accent-blue rounded">#${escapeHtml(t)}</span>`).join('')}
+      </div>
+    </div>
+    <div class="prose prose-invert max-w-none text-sm text-gray-300" style="max-height: 60vh; overflow-y: auto;">
+      ${renderedContent}
+    </div>
+  `;
+  
+  openModal(note.title, modalHTML);
 }
 
 // BATCH 5 FIX: Show Edit Note Modal
@@ -3939,6 +3892,12 @@ function deleteBrief(briefId) {
 // ============================================
 
 function launchTool(toolName) {
+  // FIX: Check if toolName is a URL (starts with http)
+  if (toolName && toolName.startsWith('http')) {
+    window.open(toolName, '_blank');
+    return;
+  }
+  
   if (toolName === 'pipeline') {
     showContentPipeline();
   } else if (toolName === 'analyzer') {
