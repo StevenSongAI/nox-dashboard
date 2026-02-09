@@ -1366,6 +1366,51 @@
       "researchMethod": "viewstats.com Pro Tools > Outlier",
       "targetPattern": "Pokémon + AI generation",
       "addedAt": "2026-02-08T12:00:00Z"
+    },
+    {
+      "id": "yt-viewstats-088",
+      "title": "How I BECAME A DRAGON in Minecraft!",
+      "channel": "littlelizardgaming",
+      "views": 635000,
+      "publishedAt": "2021-02-08T00:00:00Z",
+      "addedAt": "2026-02-09T21:00:00Z",
+      "outlierScore": 72.1,
+      "niche": "🐉 Minecraft/Dragon Transformation",
+      "whyOutlier": "EXTREME 72.1x outlier - transformation format + dragon content drives massive engagement. 'Became a dragon' perspective flip creates immersive narrative.",
+      "contentAngle": "Create 'How I Became an AI Dragon' - transformation from human to dragon perspective with AI-generated progression visuals.",
+      "url": "https://www.youtube.com/watch?v=vZFdKwxrOPw",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-089",
+      "title": "Dragon War - Chinese Dragon VS Western Dragon - Animal Revolt Battle Simulator",
+      "channel": "arbschannel2501",
+      "views": 1360000,
+      "publishedAt": "2021-02-08T00:00:00Z",
+      "addedAt": "2026-02-09T21:00:00Z",
+      "outlierScore": 53.9,
+      "niche": "🐉 Dragon Battle Simulation",
+      "whyOutlier": "MASSIVE 53.9x outlier - cultural dragon rivalry (East vs West) + battle simulation = viral formula. 1.36M views on 180K sub channel.",
+      "contentAngle": "Create dragon battle simulations: 'Chinese Dragon vs Western Dragon' or 'AI Dragon Tournament' - cultural variants with epic battles.",
+      "url": "https://www.youtube.com/watch?v=Z6_sw7P10ao",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-090",
+      "title": "🐉✨ What if baby dragons existed? ✨🐉",
+      "channel": "ambientdreamescapes",
+      "views": 3570000,
+      "publishedAt": "2023-02-08T00:00:00Z",
+      "addedAt": "2026-02-09T21:00:00Z",
+      "outlierScore": 41.9,
+      "niche": "🐉 Dragon/Speculative Fiction",
+      "whyOutlier": "EXTREME 41.9x outlier - speculative 'what if' format with baby dragons triggers massive wonder/engagement. 3.57M views on 565K sub channel.",
+      "contentAngle": "Create 'What if AI baby dragons existed?' - speculative content showing realistic scenarios with AI-generated baby dragons. Wonder + aesthetic appeal.",
+      "url": "https://www.youtube.com/watch?v=h8KcDdNAST8",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
     }
   ],
   "contentBriefs": [
