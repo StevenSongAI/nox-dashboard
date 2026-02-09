@@ -2167,14 +2167,6 @@ function deleteNote(noteId) {
   renderResearch();
 }
 
-// Legacy function kept for compatibility
-function showNoteModal(idx) {
-  const note = researchNotesData[idx];
-  if (note) {
-    openModal(note.title, buildNoteModalContent(note));
-  }
-}
-
 // ==================== AUDITS TAB ====================
 
 let auditsDataArray = [];
