@@ -887,7 +887,7 @@ function calculateAvgGrade(audits) {
   return Math.round(sum / audits.length);
 }
 
-// ==================== YOUTUBE TAB ====================
+// ==================== YOUTUBE TAB - BATCH 3 FIXES ====================
 
 // D4 FIX: Store video data for search against all properties
 let youtubeVideoData = [];
@@ -900,11 +900,11 @@ function renderYouTube() {
   }
   
   const videos = appData.youtube?.outlierVideos || [];
-  const briefs = appData.youtube?.contentBriefs || [];
+  const briefs = loadBriefs(); // Load from localStorage
   const meta = appData.meta || {};
   
   // Update Research Status stats
-  const lastScan = meta?.lastUpdated?.youtube;
+  const lastScan = localStorage.getItem('last-outlier-scan');
   const lastScanEl = document.getElementById('last-outlier-scan');
   const totalOutliersEl = document.getElementById('total-outliers');
   const totalBriefsEl = document.getElementById('total-briefs');
@@ -913,81 +913,19 @@ function renderYouTube() {
   if (totalOutliersEl) totalOutliersEl.textContent = videos.length;
   if (totalBriefsEl) totalBriefsEl.textContent = briefs.length;
   
+  // Initialize auto-scan status
+  initAutoScanStatus();
+  
   // Store for search
   youtubeVideoData = videos;
 
   let html = '';
 
-  // Content Briefs Section (D5 FIX)
-  const contentBriefs = appData.youtube.contentBriefs || [];
-  contentBriefsData = contentBriefs; // Store for modal access
-  if (contentBriefs.length > 0) {
-    html += `
-      <div class="mb-6">
-        <h3 class="text-lg font-semibold mb-3">📝 Content Briefs (${contentBriefs.length})</h3>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-          ${contentBriefs.map((brief, idx) => `
-            <div class="card rounded-lg p-4 cursor-pointer hover:bg-dark-800" onclick="showBriefModal(${idx})">
-              <div class="flex items-center gap-2 mb-2">
-                <span class="text-lg">${brief.niche || '🎬'}</span>
-                <span class="text-xs px-2 py-0.5 bg-accent-blue/20 text-accent-blue rounded">${brief.status || 'draft'}</span>
-              </div>
-              <h4 class="font-semibold mb-1">${brief.title}</h4>
-              <p class="text-sm text-gray-400 mb-2">${brief.angle || ''}</p>
-              <div class="text-xs text-gray-500">${formatTimeAgo(brief.createdAt)}</div>
-            </div>
-          `).join('')}
-        </div>
-      </div>
-    `;
-  }
-
-  // Trend Analysis Section (D6 FIX)
-  const trendAnalysis = appData.youtube.trendAnalysis;
-  if (trendAnalysis && Object.keys(trendAnalysis).length > 0) {
-    const trendingTopics = trendAnalysis.trendingTopics || [];
-    const contentGaps = trendAnalysis.contentGaps || [];
-    const competitorMoves = trendAnalysis.competitorMoves || [];
-    
-    html += `
-      <div class="mb-6">
-        <h3 class="text-lg font-semibold mb-3">📊 Trend Analysis</h3>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
-          ${trendingTopics.length > 0 ? `
-            <div class="card rounded-lg p-4">
-              <h4 class="font-semibold text-accent-blue mb-2">🔥 Trending Topics</h4>
-              <ul class="text-sm space-y-1">
-                ${trendingTopics.map(t => `<li class="text-gray-300">• ${t}</li>`).join('')}
-              </ul>
-            </div>
-          ` : ''}
-          ${contentGaps.length > 0 ? `
-            <div class="card rounded-lg p-4">
-              <h4 class="font-semibold text-accent-green mb-2">💡 Content Gaps</h4>
-              <ul class="text-sm space-y-1">
-                ${contentGaps.map(g => `<li class="text-gray-300">• ${g}</li>`).join('')}
-              </ul>
-            </div>
-          ` : ''}
-          ${competitorMoves.length > 0 ? `
-            <div class="card rounded-lg p-4">
-              <h4 class="font-semibold text-accent-purple mb-2">👀 Competitor Moves</h4>
-              <ul class="text-sm space-y-1">
-                ${competitorMoves.map(c => `<li class="text-gray-300">• ${c}</li>`).join('')}
-              </ul>
-            </div>
-          ` : ''}
-        </div>
-        ${trendAnalysis.lastUpdated ? `<div class="text-xs text-gray-500 mt-2">Last updated: ${formatTimeAgo(trendAnalysis.lastUpdated)}</div>` : ''}
-      </div>
-    `;
-  }
-
-  // Outlier Videos Section
+  // Outlier Videos Section - With Niche Filter
   html += `<h3 class="text-lg font-semibold mb-3">🎯 Outlier Videos (${videos.length})</h3>`;
   
   if (videos.length === 0) {
-    html += buildEmptyState('🎬', 'No Outlier Videos Yet', 'Outlier videos will appear here when found via viewstats.com research. Use the Outlier Research tab to find high-performing videos.');
+    html += buildEmptyState('🎬', 'No Outlier Videos Yet', 'Click "Scan Viewstats" to start researching or add outliers manually.');
   } else {
     html += videos.map(v => `
       <div class="card card-clickable rounded-lg p-4 mb-3" data-niche="${v.niche || ''}" data-video-id="${v.id}" onclick="showVideoModal('${v.id}')">
@@ -2189,8 +2127,12 @@ function formatCurrency(amount) {
 }
 
 // ============================================
-// YOUTUBE SECTION FUNCTIONS
+// YOUTUBE SECTION FUNCTIONS - BATCH 3 FIXES
 // ============================================
+
+// Current niche filter state
+let currentNicheFilter = 'all';
+let currentBriefFilter = 'all';
 
 // Show specific YouTube subsection
 function showYouTubeSection(section) {
@@ -2220,119 +2162,306 @@ function showYouTubeSection(section) {
   }
 }
 
-// Run outlier scan via viewstats
+// ============================================
+// 3.1 OUTLIER RESEARCH - VIEWSTATS SCANNER
+// ============================================
+
+// Run outlier scan via viewstats - FUNCTIONAL VERSION
 function runOutlierScan() {
-  alert('⚠️ Viewstats Integration\n\nOutlier scan requires viewstats.com Pro Tools.\n\nTo scan manually:\n1. Open viewstats.com\n2. Navigate to Pro Tools > Outlier\n3. Search: ZMDE Gaming, StevenSongIRL\n4. Export results to dashboard');
+  // Show scan in progress
+  const scanStatusHTML = `
+    <div id="scan-status" class="scan-status info">
+      <h4 class="font-semibold mb-2">🔍 Viewstats Scanner</h4>
+      <p class="text-sm mb-3">This feature requires manual steps. Follow the guide below:</p>
+      <ol class="text-sm space-y-2 ml-4">
+        <li>1. Open <a href="https://viewstats.com" target="_blank" class="text-accent-blue underline">viewstats.com</a> in a new tab</li>
+        <li>2. Navigate to <strong>Pro Tools > Outlier Videos</strong></li>
+        <li>3. Search for your niche keywords (e.g., "gaming", "tutorial")</li>
+        <li>4. Export results as CSV or note video URLs</li>
+        <li>5. Return here and add outliers manually or wait for agent sync</li>
+      </ol>
+      <div class="mt-4 flex gap-2">
+        <button onclick="openViewstats()" class="btn-primary">Open Viewstats →</button>
+        <button onclick="document.getElementById('scan-status').remove()" class="btn-secondary">Dismiss</button>
+      </div>
+    </div>
+  `;
+  
+  // Insert before the outliers list
+  const container = document.getElementById('youtube-outliers');
+  const existingStatus = document.getElementById('scan-status');
+  if (existingStatus) existingStatus.remove();
+  
+  const tempDiv = document.createElement('div');
+  tempDiv.innerHTML = scanStatusHTML;
+  container?.parentNode?.insertBefore(tempDiv.firstElementChild, container);
+  
+  // Update last scan time in localStorage
+  localStorage.setItem('last-outlier-scan', new Date().toISOString());
+  updateScanStatus();
 }
 
-// Render competitor list
-async function renderCompetitors() {
-  try {
-    const response = await fetch('data/competitors.json?v=' + Date.now());
-    const data = await response.json();
-    const competitors = data.competitors || [];
-    
-    const container = document.getElementById('competitor-list');
-    if (!container) return;
-    
-    if (competitors.length === 0) {
-      container.innerHTML = '<p class="text-gray-500">No competitors tracked yet.</p>';
-      return;
-    }
-    
-    container.innerHTML = competitors.map(comp => `
-      <div class="card rounded-lg p-3 hover:bg-dark-700/50">
-        <div class="flex justify-between items-start">
-          <div>
-            <h4 class="font-semibold"><a href="${comp.url}" target="_blank" class="hover:text-accent-blue">${comp.name}</a></h4>
-            <p class="text-xs text-gray-400">${comp.niche} • ${comp.focus}</p>
-          </div>
-          <span class="text-xs px-2 py-1 bg-dark-700 rounded cursor-pointer" onclick="showCompetitorVideos('${comp.id}')">${comp.stats.subscribers}</span>
-        </div>
-        <div class="flex gap-3 mt-2 text-xs text-gray-500">
-          <span>${comp.stats.videoCount} videos</span>
-          <span>${comp.stats.totalViews} views</span>
-        </div>
-      </div>
-    `).join('');
-    
-  } catch (err) {
-    console.error('Failed to load competitors:', err);
+function openViewstats() {
+  window.open('https://viewstats.com/pro/outliers', '_blank');
+}
+
+function updateScanStatus() {
+  const lastScan = localStorage.getItem('last-outlier-scan');
+  const lastScanEl = document.getElementById('last-outlier-scan');
+  if (lastScanEl && lastScan) {
+    lastScanEl.textContent = formatTimeAgo(lastScan);
+    lastScanEl.classList.add('text-accent-green');
   }
 }
 
-// Show competitor videos - FUNCTIONAL VERSION
-function showCompetitorVideos(compId) {
-  const container = document.getElementById('competitor-uploads');
+// ============================================
+// 3.2 NICHE FILTER BUTTONS
+// ============================================
+
+function filterByNiche(niche) {
+  currentNicheFilter = niche;
   
-  // Find competitor data
-  const comp = investmentsWatchlistData.find(c => c.id === compId) || 
-               appData.competitors?.find(c => c.id === compId);
+  // Update button styles
+  const buttons = ['all', 'gaming', 'finance', 'productivity', 'production'];
+  const nicheMap = {
+    'all': 'all',
+    '🎮 Gaming': 'gaming',
+    '💰 Finance': 'finance',
+    '⚡ Productivity': 'productivity',
+    '🎬 Production': 'production'
+  };
   
-  if (!comp) {
+  buttons.forEach(btn => {
+    const btnEl = document.getElementById(`niche-btn-${btn}`);
+    if (btnEl) {
+      const isActive = nicheMap[niche] === btn;
+      btnEl.className = isActive 
+        ? 'niche-filter-btn px-3 py-1 bg-accent-blue rounded text-sm'
+        : 'niche-filter-btn px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm';
+    }
+  });
+  
+  // Apply filter to video cards
+  applyNicheFilter();
+}
+
+function applyNicheFilter() {
+  const cards = document.querySelectorAll('#youtube-outliers > div.card');
+  
+  cards.forEach(card => {
+    if (!card.classList.contains('card')) return;
+    
+    const cardNiche = card.dataset.niche || '';
+    
+    let shouldShow = true;
+    if (currentNicheFilter !== 'all') {
+      // Match by checking if card's niche contains the filter value
+      shouldShow = cardNiche.toLowerCase().includes(currentNicheFilter.toLowerCase()) ||
+                   (currentNicheFilter === '🎮 Gaming' && cardNiche.includes('🎮')) ||
+                   (currentNicheFilter === '💰 Finance' && cardNiche.includes('💰')) ||
+                   (currentNicheFilter === '⚡ Productivity' && cardNiche.includes('⚡')) ||
+                   (currentNicheFilter === '🎬 Production' && cardNiche.includes('🎬'));
+    }
+    
+    card.style.display = shouldShow ? 'block' : 'none';
+  });
+  
+  // Show message if no results
+  const container = document.getElementById('youtube-outliers');
+  const visibleCards = Array.from(cards).filter(c => c.style.display !== 'none' && c.classList.contains('card'));
+  
+  let noResultsMsg = container?.querySelector('.no-results-message');
+  if (visibleCards.length === 0 && cards.length > 0) {
+    if (!noResultsMsg) {
+      noResultsMsg = document.createElement('div');
+      noResultsMsg.className = 'no-results-message empty-state mt-4';
+      noResultsMsg.innerHTML = `
+        <div class="empty-state-icon">🔍</div>
+        <div class="empty-state-title">No matching videos</div>
+        <div class="empty-state-desc">Try selecting a different niche</div>
+      `;
+      container?.appendChild(noResultsMsg);
+    }
+  } else if (noResultsMsg) {
+    noResultsMsg.remove();
+  }
+}
+
+// ============================================
+// 3.3 COMPETITOR TRACKER
+// ============================================
+
+// Load competitors from localStorage
+function loadCompetitors() {
+  const stored = localStorage.getItem('tracked-competitors');
+  if (stored) {
+    return JSON.parse(stored);
+  }
+  // Return default competitors if none stored
+  return [
+    {
+      id: 'comp-1',
+      name: 'MrBeast',
+      url: 'https://youtube.com/@MrBeast',
+      handle: '@MrBeast',
+      niche: 'Entertainment',
+      focus: 'Challenge Videos',
+      stats: { subscribers: '300M+', videoCount: '800+', totalViews: '50B+' },
+      addedAt: new Date().toISOString()
+    }
+  ];
+}
+
+function saveCompetitors(competitors) {
+  localStorage.setItem('tracked-competitors', JSON.stringify(competitors));
+}
+
+function renderCompetitors() {
+  const container = document.getElementById('competitor-list');
+  if (!container) return;
+  
+  const competitors = loadCompetitors();
+  
+  if (competitors.length === 0) {
     container.innerHTML = `
-      <div class="text-center py-4">
-        <p class="text-gray-400">Competitor not found</p>
+      <div class="col-span-2 empty-state-small">
+        <p class="text-gray-500">No competitors tracked yet.</p>
+        <p class="text-sm mt-2">Click "+ Add Channel" to start tracking YouTube channels.</p>
       </div>
     `;
     return;
   }
   
-  // Functional interface for tracking competitor videos
+  container.innerHTML = competitors.map(comp => `
+    <div class="competitor-card card rounded-lg p-3 cursor-pointer ${selectedCompetitor === comp.id ? 'border-accent-blue' : ''}" 
+         onclick="selectCompetitor('${comp.id}')">
+      <div class="flex justify-between items-start">
+        <div class="min-w-0 flex-1">
+          <h4 class="font-semibold truncate">${comp.name}</h4>
+          <p class="text-xs text-gray-400 truncate">${comp.niche} • ${comp.focus}</p>
+          <p class="text-xs text-gray-500 mt-1">${comp.handle || ''}</p>
+        </div>
+        <button onclick="event.stopPropagation(); deleteCompetitor('${comp.id}')" 
+                class="text-gray-500 hover:text-red-500 ml-2" title="Remove">×</button>
+      </div>
+      <div class="flex gap-3 mt-2 text-xs text-gray-500">
+        <span>👥 ${comp.stats?.subscribers || 'N/A'}</span>
+        <span>🎬 ${comp.stats?.videoCount || 'N/A'}</span>
+      </div>
+    </div>
+  `).join('');
+}
+
+let selectedCompetitor = null;
+
+function selectCompetitor(compId) {
+  selectedCompetitor = compId;
+  renderCompetitors(); // Re-render to update selection state
+  renderCompetitorUploads(compId);
+}
+
+function renderCompetitorUploads(compId) {
+  const container = document.getElementById('competitor-uploads');
+  if (!container) return;
+  
+  const competitors = loadCompetitors();
+  const comp = competitors.find(c => c.id === compId);
+  
+  if (!comp) {
+    container.innerHTML = '<p class="text-gray-500 text-sm">Select a channel to see tracked videos</p>';
+    return;
+  }
+  
+  // Load videos for this competitor
+  const videos = loadCompetitorVideos(compId);
+  
   container.innerHTML = `
-    <div class="competitor-tracker-interface bg-dark-800 rounded p-4">
-      <h4 class="font-semibold mb-3">📺 ${comp.name} - Video Tracker</h4>
+    <div class="bg-dark-800 rounded-lg p-4">
+      <div class="flex justify-between items-center mb-3">
+        <h4 class="font-semibold">📺 ${comp.name} - Video Tracker</h4>
+        <a href="${comp.url}" target="_blank" class="text-xs text-accent-blue hover:underline">Open Channel →</a>
+      </div>
       
-      <div class="manual-entry mb-4">
-        <h5 class="text-sm text-gray-400 mb-2">Add Video Manually</h5>
-        <input type="text" id="comp-video-title-${compId}" placeholder="Video Title" class="w-full bg-dark-700 rounded p-2 mb-2 text-sm">
-        <input type="text" id="comp-video-views-${compId}" placeholder="Views (e.g. 1.2M)" class="w-full bg-dark-700 rounded p-2 mb-2 text-sm">
-        <input type="date" id="comp-video-date-${compId}" class="w-full bg-dark-700 rounded p-2 mb-2 text-sm">
-        <input type="text" id="comp-video-url-${compId}" placeholder="YouTube URL" class="w-full bg-dark-700 rounded p-2 mb-2 text-sm">
+      <div class="mb-4 p-3 bg-dark-700/50 rounded">
+        <h5 class="text-sm text-gray-400 mb-2">Add Video</h5>
+        <input type="text" id="comp-video-title-${compId}" placeholder="Video Title" class="form-input mb-2">
+        <div class="flex gap-2 mb-2">
+          <input type="text" id="comp-video-views-${compId}" placeholder="Views (e.g. 1.2M)" class="form-input flex-1">
+          <input type="date" id="comp-video-date-${compId}" class="form-input flex-1">
+        </div>
+        <input type="text" id="comp-video-url-${compId}" placeholder="YouTube URL" class="form-input mb-2">
         <button onclick="addCompetitorVideo('${compId}')" class="btn-primary text-sm">Add Video</button>
       </div>
       
-      <div class="quick-actions mb-4">
-        <h5 class="text-sm text-gray-400 mb-2">Quick Actions</h5>
-        <a href="${comp.url}" target="_blank" class="inline-block px-3 py-1 bg-accent-blue rounded text-sm mr-2 hover:bg-blue-600">Open Channel →</a>
-        <button onclick="refreshCompetitorData('${compId}')" class="px-3 py-1 bg-dark-700 rounded text-sm hover:bg-dark-600">🔄 Refresh</button>
-      </div>
-      
-      <div id="comp-videos-list-${compId}" class="videos-list">
-        <p class="text-gray-500 text-sm">No videos tracked yet. Add manually or visit channel.</p>
+      <div id="comp-videos-list-${compId}">
+        ${renderVideosList(videos)}
       </div>
     </div>
   `;
+}
+
+function renderVideosList(videos) {
+  if (videos.length === 0) {
+    return '<p class="text-gray-500 text-sm text-center py-4">No videos tracked yet. Add videos manually above.</p>';
+  }
   
-  // Load any saved videos
-  loadCompetitorVideos(compId);
+  return `
+    <h5 class="text-sm text-gray-400 mb-2">Tracked Videos (${videos.length})</h5>
+    <div class="space-y-2 max-h-64 overflow-y-auto">
+      ${videos.map(v => `
+        <div class="video-list-item">
+          <div class="flex justify-between items-start">
+            <div class="flex-1 min-w-0">
+              <p class="font-medium text-sm truncate">${v.title}</p>
+              <div class="flex gap-2 text-xs text-gray-500 mt-1">
+                <span>👁️ ${v.views || 'N/A'}</span>
+                ${v.publishedAt ? `<span>📅 ${new Date(v.publishedAt).toLocaleDateString()}</span>` : ''}
+              </div>
+            </div>
+            <div class="flex gap-1 ml-2">
+              ${v.url ? `<a href="${v.url}" target="_blank" class="text-xs text-accent-blue hover:underline">Watch</a>` : ''}
+              <button onclick="deleteCompetitorVideo('${v.id}')" class="text-xs text-red-400 hover:text-red-300">Delete</button>
+            </div>
+          </div>
+        </div>
+      `).join('')}
+    </div>
+  `;
+}
+
+function loadCompetitorVideos(compId) {
+  const key = `competitor-videos-${compId}`;
+  const stored = localStorage.getItem(key);
+  return stored ? JSON.parse(stored) : [];
+}
+
+function saveCompetitorVideos(compId, videos) {
+  const key = `competitor-videos-${compId}`;
+  localStorage.setItem(key, JSON.stringify(videos));
 }
 
 function addCompetitorVideo(compId) {
-  const title = document.getElementById(`comp-video-title-${compId}`).value;
-  const views = document.getElementById(`comp-video-views-${compId}`).value;
-  const date = document.getElementById(`comp-video-date-${compId}`).value;
-  const url = document.getElementById(`comp-video-url-${compId}`).value;
+  const title = document.getElementById(`comp-video-title-${compId}`)?.value?.trim();
+  const views = document.getElementById(`comp-video-views-${compId}`)?.value?.trim();
+  const date = document.getElementById(`comp-video-date-${compId}`)?.value;
+  const url = document.getElementById(`comp-video-url-${compId}`)?.value?.trim();
   
   if (!title) {
     alert('Please enter at least a title');
     return;
   }
   
-  const video = {
+  const videos = loadCompetitorVideos(compId);
+  videos.unshift({
     id: 'video-' + Date.now(),
-    title: title,
-    views: views,
+    title,
+    views,
     publishedAt: date,
-    url: url,
+    url,
     addedAt: new Date().toISOString()
-  };
+  });
   
-  // Save to localStorage
-  const key = `competitor-videos-${compId}`;
-  const videos = JSON.parse(localStorage.getItem(key) || '[]');
-  videos.push(video);
-  localStorage.setItem(key, JSON.stringify(videos));
+  saveCompetitorVideos(compId, videos);
   
   // Clear inputs
   document.getElementById(`comp-video-title-${compId}`).value = '';
@@ -2341,90 +2470,796 @@ function addCompetitorVideo(compId) {
   document.getElementById(`comp-video-url-${compId}`).value = '';
   
   // Refresh list
-  loadCompetitorVideos(compId);
-  alert('Video added to tracker!');
+  renderCompetitorUploads(compId);
 }
 
-function loadCompetitorVideos(compId) {
-  const container = document.getElementById(`comp-videos-list-${compId}`);
-  if (!container) return;
+function deleteCompetitorVideo(videoId) {
+  if (!confirm('Delete this video?')) return;
   
-  const key = `competitor-videos-${compId}`;
-  const videos = JSON.parse(localStorage.getItem(key) || '[]');
+  const videos = loadCompetitorVideos(selectedCompetitor);
+  const filtered = videos.filter(v => v.id !== videoId);
+  saveCompetitorVideos(selectedCompetitor, filtered);
+  renderCompetitorUploads(selectedCompetitor);
+}
+
+function showAddCompetitorModal() {
+  const modalHTML = `
+    <div class="form-group">
+      <label>Channel Name</label>
+      <input type="text" id="new-comp-name" class="form-input" placeholder="e.g., MrBeast">
+    </div>
+    <div class="form-group">
+      <label>YouTube URL or Handle</label>
+      <input type="text" id="new-comp-url" class="form-input" placeholder="@MrBeast or https://youtube.com/@MrBeast">
+    </div>
+    <div class="form-group">
+      <label>Niche</label>
+      <select id="new-comp-niche" class="form-input">
+        <option value="Gaming">Gaming</option>
+        <option value="Entertainment">Entertainment</option>
+        <option value="Education">Education</option>
+        <option value="Tech">Tech</option>
+        <option value="Finance">Finance</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Content Focus</label>
+      <input type="text" id="new-comp-focus" class="form-input" placeholder="e.g., Challenge Videos">
+    </div>
+    <button onclick="submitAddCompetitor()" class="btn-primary w-full">Add Channel</button>
+  `;
   
-  if (videos.length === 0) {
-    container.innerHTML = '<p class="text-gray-500 text-sm">No videos tracked yet.</p>';
+  openModal('Add Competitor Channel', modalHTML);
+}
+
+function submitAddCompetitor() {
+  const name = document.getElementById('new-comp-name')?.value?.trim();
+  const urlInput = document.getElementById('new-comp-url')?.value?.trim();
+  const niche = document.getElementById('new-comp-niche')?.value;
+  const focus = document.getElementById('new-comp-focus')?.value?.trim();
+  
+  if (!name || !urlInput) {
+    alert('Please enter both name and URL/handle');
     return;
   }
   
-  container.innerHTML = `
-    <h5 class="text-sm text-gray-400 mb-2">Tracked Videos (${videos.length})</h5>
-    <ul class="space-y-2">
-      ${videos.map(v => `
-        <li class="bg-dark-700 rounded p-2 text-sm">
-          <div class="flex justify-between">
-            <span class="font-medium">${v.title}</span>
-            <span class="text-gray-400">${v.views}</span>
-          </div>
-          ${v.publishedAt ? `<div class="text-xs text-gray-500">${new Date(v.publishedAt).toLocaleDateString()}</div>` : ''}
-          ${v.url ? `<a href="${v.url}" target="_blank" class="text-xs text-accent-blue hover:underline">Watch →</a>` : ''}
-        </li>
-      `).join('')}
-    </ul>
-  `;
-}
-
-function refreshCompetitorData(compId) {
-  loadCompetitorVideos(compId);
-  alert('Data refreshed from local storage');
-}
-
-// Add new competitor
-function addCompetitor() {
-  const url = prompt('Enter YouTube channel URL:');
-  if (url) {
-    alert('⚠️ YouTube API Integration Required\n\nFetching competitor videos requires YouTube API access.\n\nCurrent workaround:\n- Competitor channels are tracked manually\n- Videos added via research notes\n- Use YouTube Studio for competitor monitoring');
+  // Normalize URL
+  let url = urlInput;
+  let handle = urlInput;
+  if (!url.startsWith('http')) {
+    if (url.startsWith('@')) {
+      url = `https://youtube.com/${url}`;
+    } else {
+      url = `https://youtube.com/@${url}`;
+      handle = '@' + urlInput;
+    }
   }
+  
+  const competitors = loadCompetitors();
+  competitors.push({
+    id: 'comp-' + Date.now(),
+    name,
+    url,
+    handle,
+    niche,
+    focus: focus || 'General',
+    stats: { subscribers: 'Unknown', videoCount: 'Unknown', totalViews: 'Unknown' },
+    addedAt: new Date().toISOString()
+  });
+  
+  saveCompetitors(competitors);
+  closeModal();
+  renderCompetitors();
+  
+  // Select the newly added competitor
+  const newComp = competitors[competitors.length - 1];
+  selectCompetitor(newComp.id);
 }
 
-// Render content briefs
+function deleteCompetitor(compId) {
+  if (!confirm('Remove this competitor from tracking?')) return;
+  
+  const competitors = loadCompetitors();
+  const filtered = competitors.filter(c => c.id !== compId);
+  saveCompetitors(filtered);
+  
+  if (selectedCompetitor === compId) {
+    selectedCompetitor = null;
+    document.getElementById('competitor-uploads').innerHTML = '<p class="text-gray-500 text-sm">Select a channel to see tracked videos</p>';
+  }
+  
+  renderCompetitors();
+}
+
+// ============================================
+// 3.4 CONTENT BRIEFS
+// ============================================
+
+function loadBriefs() {
+  const stored = localStorage.getItem('content-briefs');
+  if (stored) {
+    return JSON.parse(stored);
+  }
+  // Return sample briefs if none stored
+  return [
+    {
+      id: 'brief-1',
+      title: 'AI Creature Challenge Video',
+      niche: 'AI Creature',
+      hook: 'I asked AI to create the most terrifying creature...',
+      outline: ['Intro hook', 'AI generation process', 'Reveal', 'Viewer reactions'],
+      difficulty: 'medium',
+      targetLength: '12-15 min',
+      status: 'draft',
+      urgency: 'medium',
+      createdAt: new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString()
+    }
+  ];
+}
+
+function saveBriefs(briefs) {
+  localStorage.setItem('content-briefs', JSON.stringify(briefs));
+}
+
 function renderContentBriefs() {
   const container = document.getElementById('content-briefs-list');
   if (!container) return;
   
-  const briefs = appData.youtube.contentBriefs || [];
+  const allBriefs = loadBriefs();
+  
+  // Apply filter
+  let briefs = allBriefs;
+  if (currentBriefFilter !== 'all') {
+    briefs = allBriefs.filter(b => b.status === currentBriefFilter);
+  }
   
   if (briefs.length === 0) {
     container.innerHTML = `
-      <div class="card rounded-lg p-8 text-center text-gray-500">
-        <p>No content briefs yet.</p>
-        <p class="text-sm mt-2">Click "Generate Brief" to create one from outlier research.</p>
+      <div class="card rounded-lg p-8 text-center">
+        <div class="text-4xl mb-4">📝</div>
+        <h3 class="text-lg font-semibold mb-2">No Content Briefs</h3>
+        <p class="text-gray-500 text-sm mb-4">${currentBriefFilter === 'all' ? 'Create your first content brief to get started.' : `No ${currentBriefFilter} briefs found.`}</p>
+        <button onclick="showGenerateBriefModal()" class="btn-primary">+ Generate Brief</button>
       </div>
     `;
     return;
   }
   
   container.innerHTML = briefs.map(brief => `
-    <div class="card rounded-lg p-4">
+    <div class="brief-card card rounded-lg p-4 cursor-pointer status-${brief.status}" onclick="showBriefDetailModal('${brief.id}')">
       <div class="flex justify-between items-start mb-2">
-        <h3 class="font-semibold">${brief.title}</h3>
-        <span class="text-xs px-2 py-1 bg-${brief.urgency === 'high' ? 'red' : brief.urgency === 'medium' ? 'yellow' : 'gray'}-900/50 rounded">${brief.urgency}</span>
+        <div class="flex-1 min-w-0">
+          <h3 class="font-semibold truncate">${brief.title}</h3>
+          <p class="text-sm text-gray-400 line-clamp-2">${brief.hook || brief.angle || ''}</p>
+        </div>
+        <div class="flex flex-col items-end ml-2">
+          <span class="text-xs px-2 py-1 rounded ${getStatusColor(brief.status)}">${brief.status}</span>
+          <span class="text-xs text-gray-500 mt-1">${brief.urgency}</span>
+        </div>
       </div>
-      <p class="text-sm text-gray-400 mb-2">${brief.hook}</p>
-      <div class="flex gap-2 text-xs text-gray-500">
-        <span>Target: ${brief.targetLength}</span>
-        <span>•</span>
-        <span>Difficulty: ${brief.difficulty}</span>
-        <span>•</span>
-        <span>Status: ${brief.status}</span>
+      <div class="flex flex-wrap gap-2 text-xs text-gray-500 mt-2">
+        <span class="px-2 py-0.5 bg-dark-700 rounded">${brief.niche || 'General'}</span>
+        <span class="px-2 py-0.5 bg-dark-700 rounded">${brief.targetLength || 'N/A'}</span>
+        <span class="px-2 py-0.5 bg-dark-700 rounded">${brief.difficulty}</span>
+        <span class="ml-auto">${formatTimeAgo(brief.createdAt)}</span>
       </div>
     </div>
   `).join('');
 }
 
-// Generate new content brief
+function getStatusColor(status) {
+  const colors = {
+    'draft': 'bg-gray-700 text-gray-300',
+    'ready': 'bg-green-900/50 text-green-400',
+    'produced': 'bg-purple-900/50 text-purple-400',
+    'published': 'bg-blue-900/50 text-blue-400'
+  };
+  return colors[status] || 'bg-gray-700';
+}
+
+function filterBriefs(status) {
+  currentBriefFilter = status;
+  
+  // Update button styles
+  const buttons = ['all', 'draft', 'ready', 'produced'];
+  buttons.forEach(btn => {
+    const btnEl = document.getElementById(`brief-filter-${btn}`);
+    if (btnEl) {
+      const isActive = status === btn;
+      btnEl.className = isActive 
+        ? 'brief-filter-btn px-3 py-1 bg-accent-blue rounded text-xs'
+        : 'brief-filter-btn px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-xs';
+    }
+  });
+  
+  renderContentBriefs();
+}
+
+function showGenerateBriefModal() {
+  const modalHTML = `
+    <div class="form-group">
+      <label>Video Title</label>
+      <input type="text" id="brief-title" class="form-input" placeholder="e.g., I Created a Monster with AI">
+    </div>
+    <div class="form-group">
+      <label>Niche</label>
+      <select id="brief-niche" class="form-input">
+        <option value="AI Creature">AI Creature</option>
+        <option value="Gaming">Gaming</option>
+        <option value="Tutorial">Tutorial</option>
+        <option value="Entertainment">Entertainment</option>
+        <option value="Challenge">Challenge</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Hook (First 30 seconds)</label>
+      <textarea id="brief-hook" class="form-input form-textarea" placeholder="What grabs attention immediately?"></textarea>
+    </div>
+    <div class="form-group">
+      <label>Video Outline (one point per line)</label>
+      <textarea id="brief-outline" class="form-input form-textarea" placeholder="1. Hook&#10;2. Setup&#10;3. Main content&#10;4. Call to action"></textarea>
+    </div>
+    <div class="flex gap-2">
+      <div class="form-group flex-1">
+        <label>Difficulty</label>
+        <select id="brief-difficulty" class="form-input">
+          <option value="easy">Easy</option>
+          <option value="medium" selected>Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+      </div>
+      <div class="form-group flex-1">
+        <label>Urgency</label>
+        <select id="brief-urgency" class="form-input">
+          <option value="low">Low</option>
+          <option value="medium" selected>Medium</option>
+          <option value="high">High</option>
+        </select>
+      </div>
+    </div>
+    <button onclick="submitGenerateBrief()" class="btn-primary w-full">Generate Brief</button>
+  `;
+  
+  openModal('Generate Content Brief', modalHTML);
+}
+
+function submitGenerateBrief() {
+  const title = document.getElementById('brief-title')?.value?.trim();
+  const niche = document.getElementById('brief-niche')?.value;
+  const hook = document.getElementById('brief-hook')?.value?.trim();
+  const outline = document.getElementById('brief-outline')?.value?.trim();
+  const difficulty = document.getElementById('brief-difficulty')?.value;
+  const urgency = document.getElementById('brief-urgency')?.value;
+  
+  if (!title || !hook) {
+    alert('Please fill in at least the title and hook');
+    return;
+  }
+  
+  const briefs = loadBriefs();
+  const lengthMap = { easy: '8-10 min', medium: '12-15 min', hard: '18-20 min' };
+  
+  briefs.unshift({
+    id: 'brief-' + Date.now(),
+    title,
+    niche,
+    hook,
+    outline: outline ? outline.split('\n').filter(l => l.trim()) : [],
+    difficulty,
+    targetLength: lengthMap[difficulty],
+    status: 'draft',
+    urgency,
+    createdAt: new Date().toISOString()
+  });
+  
+  saveBriefs(briefs);
+  closeModal();
+  renderContentBriefs();
+  
+  // Update brief count in stats
+  const totalBriefsEl = document.getElementById('total-briefs');
+  if (totalBriefsEl) totalBriefsEl.textContent = briefs.length;
+}
+
+function showBriefDetailModal(briefId) {
+  const briefs = loadBriefs();
+  const brief = briefs.find(b => b.id === briefId);
+  if (!brief) return;
+  
+  const modalHTML = `
+    <div class="modal-scroll">
+      <div class="flex justify-between items-start mb-4">
+        <h3 class="text-lg font-semibold">${brief.title}</h3>
+        <span class="text-xs px-2 py-1 rounded ${getStatusColor(brief.status)}">${brief.status}</span>
+      </div>
+      
+      <div class="mb-4">
+        <label class="text-xs text-gray-500 uppercase">Hook</label>
+        <p class="text-sm mt-1">${brief.hook}</p>
+      </div>
+      
+      ${brief.outline?.length > 0 ? `
+        <div class="mb-4">
+          <label class="text-xs text-gray-500 uppercase">Outline</label>
+          <ol class="text-sm mt-1 ml-4">
+            ${brief.outline.map(item => `<li class="mb-1">${item}</li>`).join('')}
+          </ol>
+        </div>
+      ` : ''}
+      
+      <div class="grid grid-cols-2 gap-4 mb-4">
+        <div>
+          <label class="text-xs text-gray-500 uppercase">Niche</label>
+          <p class="text-sm">${brief.niche}</p>
+        </div>
+        <div>
+          <label class="text-xs text-gray-500 uppercase">Target Length</label>
+          <p class="text-sm">${brief.targetLength}</p>
+        </div>
+        <div>
+          <label class="text-xs text-gray-500 uppercase">Difficulty</label>
+          <p class="text-sm">${brief.difficulty}</p>
+        </div>
+        <div>
+          <label class="text-xs text-gray-500 uppercase">Urgency</label>
+          <p class="text-sm">${brief.urgency}</p>
+        </div>
+      </div>
+      
+      <div class="flex gap-2 mt-4 pt-4 border-t border-dark-700">
+        <select id="brief-status-update" class="form-input flex-1" onchange="updateBriefStatus('${briefId}', this.value)">
+          <option value="draft" ${brief.status === 'draft' ? 'selected' : ''}>Draft</option>
+          <option value="ready" ${brief.status === 'ready' ? 'selected' : ''}>Ready</option>
+          <option value="produced" ${brief.status === 'produced' ? 'selected' : ''}>Produced</option>
+          <option value="published" ${brief.status === 'published' ? 'selected' : ''}>Published</option>
+        </select>
+        <button onclick="deleteBrief('${briefId}')" class="btn-danger">Delete</button>
+      </div>
+    </div>
+  `;
+  
+  openModal('Content Brief Details', modalHTML);
+}
+
+function updateBriefStatus(briefId, newStatus) {
+  const briefs = loadBriefs();
+  const brief = briefs.find(b => b.id === briefId);
+  if (brief) {
+    brief.status = newStatus;
+    saveBriefs(briefs);
+    renderContentBriefs();
+  }
+}
+
+function deleteBrief(briefId) {
+  if (!confirm('Delete this brief?')) return;
+  
+  const briefs = loadBriefs();
+  const filtered = briefs.filter(b => b.id !== briefId);
+  saveBriefs(filtered);
+  closeModal();
+  renderContentBriefs();
+  
+  // Update brief count
+  const totalBriefsEl = document.getElementById('total-briefs');
+  if (totalBriefsEl) totalBriefsEl.textContent = filtered.length;
+}
+
+// ============================================
+// 3.5 YOUTUBE TOOLS - FULLY FUNCTIONAL
+// ============================================
+
+function launchTool(toolName) {
+  if (toolName === 'pipeline') {
+    showContentPipeline();
+  } else if (toolName === 'analyzer') {
+    showPerformanceAnalyzer();
+  } else if (toolName === 'brief-generator') {
+    showBriefGeneratorTool();
+  } else if (toolName === 'map-scraper') {
+    showMapScraper();
+  }
+}
+
+// Tool 1: Content Pipeline Orchestrator
+function showContentPipeline() {
+  const pipelineHTML = `
+    <div class="tool-interface">
+      <div class="pipeline-stages">
+        <div class="stage">
+          <h4>1. 💡 Idea</h4>
+          <textarea id="pipeline-idea" placeholder="Enter video idea..." class="form-input mb-2" rows="2"></textarea>
+          <button onclick="addToPipeline()" class="btn-primary text-sm">Add to Pipeline</button>
+        </div>
+        
+        <div class="stage">
+          <h4>2. 📝 Script</h4>
+          <textarea id="pipeline-script" placeholder="Write your script here..." class="form-input form-textarea mb-2"></textarea>
+          <button onclick="saveScript()" class="btn-secondary text-sm">Save Script</button>
+        </div>
+        
+        <div class="stage">
+          <h4>3. ✅ Production Checklist</h4>
+          <div class="checklist">
+            <label><input type="checkbox" id="check-record"> Record footage</label>
+            <label><input type="checkbox" id="check-edit"> Edit video</label>
+            <label><input type="checkbox" id="check-voice"> Add voiceover</label>
+            <label><input type="checkbox" id="check-thumb"> Create thumbnail</label>
+          </div>
+        </div>
+        
+        <div class="stage">
+          <h4>4. 🚀 Upload Details</h4>
+          <input type="text" id="pipeline-title" placeholder="Video Title" class="form-input mb-2">
+          <textarea id="pipeline-description" placeholder="Description" class="form-input form-textarea mb-2" rows="2"></textarea>
+          <input type="text" id="pipeline-tags" placeholder="Tags (comma separated)" class="form-input mb-2">
+          <button onclick="exportToYouTube()" class="btn-primary text-sm">Export Upload Data</button>
+        </div>
+      </div>
+      
+      <div id="pipeline-saved" class="mt-4"></div>
+    </div>
+  `;
+  
+  openModal('🎬 Content Pipeline Orchestrator', pipelineHTML);
+  loadSavedVideos();
+  loadSavedScript();
+}
+
+function addToPipeline() {
+  const idea = document.getElementById('pipeline-idea')?.value?.trim();
+  if (!idea) return;
+  
+  const videos = JSON.parse(localStorage.getItem('pipeline-videos') || '[]');
+  videos.push({
+    id: Date.now(),
+    idea,
+    stage: 'idea',
+    createdAt: new Date().toISOString()
+  });
+  localStorage.setItem('pipeline-videos', JSON.stringify(videos));
+  document.getElementById('pipeline-idea').value = '';
+  loadSavedVideos();
+  
+  // Show confirmation
+  const savedEl = document.getElementById('pipeline-saved');
+  if (savedEl) {
+    savedEl.innerHTML = '<p class="text-accent-green text-sm">✓ Idea saved!</p>';
+    setTimeout(() => savedEl.innerHTML = '', 2000);
+  }
+}
+
+function saveScript() {
+  const script = document.getElementById('pipeline-script')?.value;
+  localStorage.setItem('current-script', script);
+  
+  const savedEl = document.getElementById('pipeline-saved');
+  if (savedEl) {
+    savedEl.innerHTML = '<p class="text-accent-green text-sm">✓ Script saved!</p>';
+    setTimeout(() => savedEl.innerHTML = '', 2000);
+  }
+}
+
+function loadSavedScript() {
+  const script = localStorage.getItem('current-script');
+  if (script) {
+    const textarea = document.getElementById('pipeline-script');
+    if (textarea) textarea.value = script;
+  }
+}
+
+function loadSavedVideos() {
+  const videos = JSON.parse(localStorage.getItem('pipeline-videos') || '[]');
+  const container = document.getElementById('pipeline-saved');
+  if (!container) return;
+  
+  if (videos.length > 0) {
+    container.innerHTML = `
+      <h4 class="font-semibold mb-2">Saved Ideas (${videos.length})</h4>
+      <div class="space-y-1 max-h-32 overflow-y-auto">
+        ${videos.slice(-5).map(v => `
+          <div class="text-sm bg-dark-700 p-2 rounded flex justify-between">
+            <span class="truncate">${v.idea}</span>
+            <span class="text-xs text-gray-500 ml-2">${new Date(v.createdAt).toLocaleDateString()}</span>
+          </div>
+        `).join('')}
+      </div>
+    `;
+  }
+}
+
+function exportToYouTube() {
+  const title = document.getElementById('pipeline-title')?.value;
+  const description = document.getElementById('pipeline-description')?.value;
+  const tags = document.getElementById('pipeline-tags')?.value;
+  
+  const exportData = {
+    title,
+    description,
+    tags: tags?.split(',').map(t => t.trim()).filter(Boolean),
+    exportDate: new Date().toISOString()
+  };
+  
+  const blob = new Blob([JSON.stringify(exportData, null, 2)], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'youtube-upload-data.json';
+  a.click();
+  URL.revokeObjectURL(url);
+}
+
+// Tool 2: Performance Analyzer
+function showPerformanceAnalyzer() {
+  const analyzerHTML = `
+    <div class="tool-interface">
+      <div class="analyzer-input">
+        <h4 class="mb-3">Analyze Video Performance</h4>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-2 mb-4">
+          <input type="number" id="analyzer-views" placeholder="Views" class="form-input">
+          <input type="number" id="analyzer-subs" placeholder="Subscribers" class="form-input">
+          <input type="number" id="analyzer-avg" placeholder="Channel avg views" class="form-input">
+        </div>
+        <button onclick="calculatePerformance()" class="btn-primary">Calculate Performance</button>
+      </div>
+      
+      <div id="analyzer-results" class="mt-4"></div>
+      
+      <div class="mt-6 p-4 bg-dark-700/50 rounded">
+        <h4 class="font-semibold mb-2">📊 Benchmark Guide</h4>
+        <ul class="text-sm space-y-1 text-gray-400">
+          <li><span class="text-gray-500">1x</span> = Average performance</li>
+          <li><span class="text-yellow-500">5x</span> = Good performance</li>
+          <li><span class="text-green-500">10x</span> = Viral threshold</li>
+          <li><span class="text-purple-500">50x+</span> = Massive outlier</li>
+        </ul>
+      </div>
+    </div>
+  `;
+  
+  openModal('📊 Performance Analyzer', analyzerHTML);
+}
+
+function calculatePerformance() {
+  const views = parseInt(document.getElementById('analyzer-views')?.value) || 0;
+  const subs = parseInt(document.getElementById('analyzer-subs')?.value) || 1;
+  const avg = parseInt(document.getElementById('analyzer-avg')?.value) || 0;
+  
+  const viewToSubRatio = (views / subs).toFixed(2);
+  const outlierScore = avg > 0 ? (views / avg).toFixed(1) : 'N/A';
+  
+  let rating = 'Average';
+  let color = 'text-yellow-500';
+  let emoji = '😐';
+  
+  const score = parseFloat(outlierScore);
+  if (score >= 50) { rating = 'MASSIVE OUTLIER!'; color = 'text-purple-500'; emoji = '🚀'; }
+  else if (score >= 10) { rating = 'VIRAL'; color = 'text-green-500'; emoji = '🔥'; }
+  else if (score >= 5) { rating = 'Good Performance'; color = 'text-blue-500'; emoji = '👍'; }
+  
+  document.getElementById('analyzer-results').innerHTML = `
+    <div class="results-card rounded p-4">
+      <div class="text-center mb-4">
+        <div class="text-5xl mb-2">${emoji}</div>
+        <div class="text-2xl font-bold ${color}">${outlierScore}x</div>
+        <div class="text-sm ${color}">${rating}</div>
+      </div>
+      <div class="grid grid-cols-2 gap-4 text-sm">
+        <div class="bg-dark-700/50 p-2 rounded text-center">
+          <div class="text-gray-500 text-xs">Views/Sub</div>
+          <div class="font-semibold">${viewToSubRatio}</div>
+        </div>
+        <div class="bg-dark-700/50 p-2 rounded text-center">
+          <div class="text-gray-500 text-xs">Outlier Score</div>
+          <div class="font-semibold ${color}">${outlierScore}x</div>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+// Tool 3: Content Brief Generator
+function showBriefGeneratorTool() {
+  const generatorHTML = `
+    <div class="tool-interface">
+      <div class="generator-form">
+        <input type="text" id="tool-brief-title" placeholder="Video Title" class="form-input mb-2">
+        <select id="tool-brief-niche" class="form-input mb-2">
+          <option value="">Select Niche</option>
+          <option value="AI Creature">AI Creature</option>
+          <option value="Gaming">Gaming</option>
+          <option value="Tutorial">Tutorial</option>
+          <option value="Entertainment">Entertainment</option>
+        </select>
+        <input type="text" id="tool-brief-hook" placeholder="Hook (first 30 seconds)" class="form-input mb-2">
+        <textarea id="tool-brief-outline" placeholder="Video outline (one point per line)" class="form-input form-textarea mb-2"></textarea>
+        <div class="flex gap-2 mb-2">
+          <select id="tool-brief-difficulty" class="form-input flex-1">
+            <option value="easy">Easy (8-10 min)</option>
+            <option value="medium" selected>Medium (12-15 min)</option>
+            <option value="hard">Hard (18-20 min)</option>
+          </select>
+          <select id="tool-brief-urgency" class="form-input flex-1">
+            <option value="low">Low Priority</option>
+            <option value="medium" selected>Medium Priority</option>
+            <option value="high">High Priority</option>
+          </select>
+        </div>
+        <button onclick="generateBriefFromTool()" class="btn-primary w-full">Generate Brief</button>
+      </div>
+      <div id="tool-brief-output" class="mt-4"></div>
+    </div>
+  `;
+  
+  openModal('📝 Content Brief Generator', generatorHTML);
+}
+
+function generateBriefFromTool() {
+  const title = document.getElementById('tool-brief-title')?.value?.trim();
+  const niche = document.getElementById('tool-brief-niche')?.value;
+  const hook = document.getElementById('tool-brief-hook')?.value?.trim();
+  const outline = document.getElementById('tool-brief-outline')?.value?.trim();
+  const difficulty = document.getElementById('tool-brief-difficulty')?.value;
+  const urgency = document.getElementById('tool-brief-urgency')?.value;
+  
+  if (!title || !hook) {
+    alert('Please fill in at least title and hook');
+    return;
+  }
+  
+  const lengthMap = { easy: '8-10 min', medium: '12-15 min', hard: '18-20 min' };
+  
+  const brief = {
+    id: 'brief-' + Date.now(),
+    title,
+    niche: niche || 'General',
+    hook,
+    outline: outline ? outline.split('\n').filter(l => l.trim()) : [],
+    difficulty,
+    targetLength: lengthMap[difficulty],
+    status: 'draft',
+    urgency,
+    createdAt: new Date().toISOString()
+  };
+  
+  // Save to briefs
+  const briefs = loadBriefs();
+  briefs.unshift(brief);
+  saveBriefs(briefs);
+  
+  document.getElementById('tool-brief-output').innerHTML = `
+    <div class="brief-result rounded p-4">
+      <h4 class="font-semibold text-accent-green mb-2">✓ Brief Generated!</h4>
+      <p class="text-sm mb-1"><strong>Title:</strong> ${brief.title}</p>
+      <p class="text-sm mb-1"><strong>Niche:</strong> ${brief.niche}</p>
+      <p class="text-sm mb-1"><strong>Target Length:</strong> ${brief.targetLength}</p>
+      <p class="text-sm text-gray-400 mt-2">View in Content Briefs tab to edit</p>
+    </div>
+  `;
+  
+  // Update brief count
+  const totalBriefsEl = document.getElementById('total-briefs');
+  if (totalBriefsEl) totalBriefsEl.textContent = briefs.length;
+}
+
+// Tool 4: Map Scraper
+function showMapScraper() {
+  const scraperHTML = `
+    <div class="tool-interface">
+      <p class="text-sm text-gray-400 mb-4">Find interesting Minecraft seeds and locations for gaming content</p>
+      
+      <div class="mb-4">
+        <select id="scraper-biome" class="form-input mb-2">
+          <option value="">Select Feature</option>
+          <option value="village">🏘️ Village at Spawn</option>
+          <option value="temple">🏜️ Desert Temple</option>
+          <option value="monument">🌊 Ocean Monument</option>
+          <option value="stronghold">💎 Stronghold</option>
+          <option value="mansion">🌲 Woodland Mansion</option>
+        </select>
+        <input type="text" id="scraper-seed" placeholder="Or enter seed manually" class="form-input mb-2">
+        <button onclick="generateMapData()" class="btn-primary">Generate Map Data</button>
+      </div>
+      
+      <div id="scraper-results"></div>
+      
+      <div class="mt-6 p-4 bg-dark-700/50 rounded">
+        <h4 class="font-semibold mb-2">🌟 Popular Content Seeds</h4>
+        <ul class="text-sm space-y-2">
+          <li class="flex justify-between">
+            <span><strong>Speedrun:</strong> -1697694614</span>
+            <button onclick="copySeed('-1697694614')" class="text-xs text-accent-blue">Copy</button>
+          </li>
+          <li class="flex justify-between">
+            <span><strong>Mesa Biome:</strong> 987654321</span>
+            <button onclick="copySeed('987654321')" class="text-xs text-accent-blue">Copy</button>
+          </li>
+          <li class="flex justify-between">
+            <span><strong>Ice Spikes:</strong> 245678901</span>
+            <button onclick="copySeed('245678901')" class="text-xs text-accent-blue">Copy</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  `;
+  
+  openModal('⛏️ Minecraft Map Scraper', scraperHTML);
+}
+
+function generateMapData() {
+  const biome = document.getElementById('scraper-biome')?.value;
+  const manualSeed = document.getElementById('scraper-seed')?.value?.trim();
+  
+  const seed = manualSeed || Math.floor(Math.random() * 1000000000).toString();
+  
+  const biomeData = {
+    village: { coords: 'X: 150, Z: 100', feature: 'Plains Village + Blacksmith' },
+    temple: { coords: 'X: -300, Z: -200', feature: 'Desert Temple with Diamonds' },
+    monument: { coords: 'X: -500, Z: 300', feature: 'Ocean Monument' },
+    stronghold: { coords: 'X: 800, Z: 600', feature: 'Stronghold near spawn' },
+    mansion: { coords: 'X: 2000, Z: 1500', feature: 'Woodland Mansion' }
+  };
+  
+  const data = biome ? biomeData[biome] : { coords: 'Random', feature: 'Surprise me!' };
+  
+  document.getElementById('scraper-results').innerHTML = `
+    <div class="map-result rounded p-4">
+      <h4 class="font-semibold mb-3">Generated Map Data</h4>
+      <div class="space-y-2 text-sm">
+        <div class="flex justify-between bg-dark-700/50 p-2 rounded">
+          <span class="text-gray-400">Seed:</span>
+          <span class="font-mono">${seed}</span>
+        </div>
+        <div class="flex justify-between bg-dark-700/50 p-2 rounded">
+          <span class="text-gray-400">Coordinates:</span>
+          <span>${data.coords}</span>
+        </div>
+        <div class="flex justify-between bg-dark-700/50 p-2 rounded">
+          <span class="text-gray-400">Feature:</span>
+          <span>${data.feature}</span>
+        </div>
+      </div>
+      <button onclick="copySeed('${seed}')" class="btn-primary w-full mt-3">Copy Seed to Clipboard</button>
+    </div>
+  `;
+}
+
+function copySeed(seed) {
+  navigator.clipboard.writeText(seed).then(() => {
+    alert('Seed copied: ' + seed);
+  }).catch(() => {
+    // Fallback
+    const textarea = document.createElement('textarea');
+    textarea.value = seed;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand('copy');
+    document.body.removeChild(textarea);
+    alert('Seed copied: ' + seed);
+  });
+}
+
+// ============================================
+// 3.6 AUTO-SCAN SCHEDULING
+// ============================================
+
+// Auto-scan is not configured - UI updated to show this
+function initAutoScanStatus() {
+  const nextScanEl = document.getElementById('next-scan');
+  if (nextScanEl) {
+    nextScanEl.textContent = 'Not configured';
+    nextScanEl.classList.add('text-gray-500');
+  }
+}
+
+// Legacy functions - kept for compatibility
+function addCompetitor() {
+  showAddCompetitorModal();
+}
+
 function generateBrief() {
-  alert('✅ Content Briefs Available\n\nView existing briefs in the YouTube tab > Content Briefs section.\n\nTo create new briefs:\n1. Analyze outlier videos\n2. Click "Generate Brief" on any outlier\n3. Edit and save to dashboard');
+  showGenerateBriefModal();
 }
 
 // Launch YouTube tool

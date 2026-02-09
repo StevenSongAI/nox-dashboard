@@ -165,16 +165,17 @@
           <h2 class="text-xl font-semibold">🎯 Outlier Research</h2>
           <div class="flex gap-2">
             <input type="text" id="youtube-search" placeholder="Search videos, channels..." class="px-3 py-1 bg-dark-700 rounded border border-dark-600 text-sm md:w-64">
-            <select id="youtube-niche-filter" class="px-3 py-1 bg-dark-700 rounded border border-dark-600 text-sm">
-              <option value="">All Niches</option>
-              <option value="🎮">🎮 Gaming</option>
-              <option value="🎨">🎨 Art/Creature Design</option>
-              <option value="🐾">🐾 Pet Simulation</option>
-              <option value="🎬">🎬 Horror/Creatures</option>
-              <option value="🌍">🌍 Nature Documentary</option>
-            </select>
             <button onclick="runOutlierScan()" class="px-3 py-1 bg-accent-green rounded text-sm hover:bg-green-600">🔍 Scan Viewstats</button>
           </div>
+        </div>
+        
+        <!-- Niche Filter Buttons -->
+        <div class="flex flex-wrap gap-2 mb-4">
+          <button onclick="filterByNiche('all')" id="niche-btn-all" class="niche-filter-btn px-3 py-1 bg-accent-blue rounded text-sm">All Niches</button>
+          <button onclick="filterByNiche('🎮 Gaming')" id="niche-btn-gaming" class="niche-filter-btn px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">🎮 Gaming</button>
+          <button onclick="filterByNiche('💰 Finance')" id="niche-btn-finance" class="niche-filter-btn px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">💰 Finance</button>
+          <button onclick="filterByNiche('⚡ Productivity')" id="niche-btn-productivity" class="niche-filter-btn px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">⚡ Productivity</button>
+          <button onclick="filterByNiche('🎬 Production')" id="niche-btn-production" class="niche-filter-btn px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">🎬 Production</button>
         </div>
         
         <div class="card rounded-lg p-4 mb-4 bg-dark-700/30">
@@ -183,7 +184,7 @@
             <div><span class="text-gray-400">Last Scan:</span> <span id="last-outlier-scan">Never</span></div>
             <div><span class="text-gray-400">Outliers Found:</span> <span id="total-outliers">0</span></div>
             <div><span class="text-gray-400">Content Briefs:</span> <span id="total-briefs">0</span></div>
-            <div><span class="text-gray-400">Next Auto-Scan:</span> <span id="next-scan">7:00 AM</span></div>
+            <div><span class="text-gray-400">Auto-Scan:</span> <span id="next-scan" class="text-gray-500">Not configured</span></div>
           </div>
         </div>
         
@@ -200,20 +201,21 @@
       <div id="yt-section-competitors" class="yt-section hidden">
         <div class="flex justify-between items-center mb-4">
           <h2 class="text-xl font-semibold">👁️ Competitor Tracker</h2>
-          <button onclick="addCompetitor()" class="px-3 py-1 bg-accent-blue rounded text-sm hover:bg-blue-600">+ Add Channel</button>
+          <button onclick="showAddCompetitorModal()" class="px-3 py-1 bg-accent-blue rounded text-sm hover:bg-blue-600">+ Add Channel</button>
         </div>
         
         <div class="card rounded-lg p-4 mb-4">
           <h3 class="font-semibold mb-3">📺 Tracked Channels</h3>
           <div id="competitor-list" class="grid grid-cols-1 md:grid-cols-2 gap-3">
-            <!-- Competitors loaded from competitors.json -->
+            <!-- Competitors loaded dynamically -->
+            <p class="text-gray-500 text-sm">No competitors tracked yet. Click "+ Add Channel" to start tracking.</p>
           </div>
         </div>
         
         <div class="card rounded-lg p-4">
           <h3 class="font-semibold mb-3">🔥 Latest Uploads</h3>
           <div id="competitor-uploads" class="space-y-2">
-            <p class="text-gray-500 text-sm">Select a channel to see latest uploads</p>
+            <p class="text-gray-500 text-sm">Select a channel to see tracked videos</p>
           </div>
         </div>
       </div>
@@ -222,7 +224,14 @@
       <div id="yt-section-briefs" class="yt-section hidden">
         <div class="flex justify-between items-center mb-4">
           <h2 class="text-xl font-semibold">📝 Content Briefs</h2>
-          <button onclick="generateBrief()" class="px-3 py-1 bg-accent-green rounded text-sm hover:bg-green-600">+ Generate Brief</button>
+          <button onclick="showGenerateBriefModal()" class="px-3 py-1 bg-accent-green rounded text-sm hover:bg-green-600">+ Generate Brief</button>
+        </div>
+        <!-- Briefs Filter -->
+        <div class="flex flex-wrap gap-2 mb-4">
+          <button onclick="filterBriefs('all')" id="brief-filter-all" class="brief-filter-btn px-3 py-1 bg-accent-blue rounded text-xs">All</button>
+          <button onclick="filterBriefs('draft')" id="brief-filter-draft" class="brief-filter-btn px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-xs">Draft</button>
+          <button onclick="filterBriefs('ready')" id="brief-filter-ready" class="brief-filter-btn px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-xs">Ready</button>
+          <button onclick="filterBriefs('produced')" id="brief-filter-produced" class="brief-filter-btn px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-xs">Produced</button>
         </div>
         <div id="content-briefs-list" class="space-y-3">
           <div class="skeleton-loader">
@@ -411,7 +420,7 @@
     </div>
   </div>
 
-  <script src="app.js?v=202602082000"></script>
+  <script src="app.js?v=202602082100"></script>
   
   <!-- Footer with version timestamp for cache busting -->
   <footer class="max-w-7xl mx-auto px-4 py-3 mt-8 border-t border-dark-700 text-center">
