@@ -614,6 +614,51 @@
       "url": "https://www.youtube.com/watch?v=c2bYJ4X72mo",
       "researchStatus": "completed",
       "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-042",
+      "title": "AI Learns to Outrun Police Officers",
+      "channel": "cozmouz",
+      "views": 746000,
+      "publishedAt": "2023-02-08T00:00:00Z",
+      "addedAt": "2026-02-09T07:06:49.504Z",
+      "outlierScore": 70.7,
+      "niche": "🎮 AI Simulation",
+      "whyOutlier": "EXTREME 70.7x outlier - 746K views on 93K sub channel. AI training + police chase scenario creates high-stakes narrative. Cozmouz consistently achieves 50x+ outliers with AI simulation content.",
+      "contentAngle": "AI training scenarios with relatable human challenges (police chase, bank robbery, races). Gamified AI learning creates engaging visual progression.",
+      "url": "https://www.youtube.com/watch?v=O3Gw7mtrgrs",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-043",
+      "title": "I Trapped this AI Bot in a Parkour Simulation",
+      "channel": "cozmouz",
+      "views": 259000,
+      "publishedAt": "2024-02-08T00:00:00Z",
+      "addedAt": "2026-02-09T07:06:49.504Z",
+      "outlierScore": 16.6,
+      "niche": "🎮 AI Simulation / Parkour",
+      "whyOutlier": "16.6x outlier - 259K views on 93K sub channel. Parkour + AI bot training = engaging skill progression content. Bot learning format performs consistently.",
+      "contentAngle": "Create 'I Trapped this AI [Creature] in [Challenge]' series. Parkour, escape rooms, obstacle courses all work. Show AI learning/failing progression.",
+      "url": "https://www.youtube.com/watch?v=CalwKr4dREY",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-044",
+      "title": "All HIDDEN SECRETS In Pet Simulator 99!",
+      "channel": "zedwinyt",
+      "views": 1020000,
+      "publishedAt": "2023-02-08T00:00:00Z",
+      "addedAt": "2026-02-09T07:06:49.504Z",
+      "outlierScore": 9.7,
+      "niche": "🎮 Pet Simulation/Roblox",
+      "whyOutlier": "9.7x outlier - 1.02M views on 89K sub channel. 'Hidden secrets' format + pet simulation = massive curiosity driver. Same channel hit 66.7x with tutorial content.",
+      "contentAngle": "Apply 'Hidden Secrets' format to AI pet content: 'Hidden Features of AI Pets' or 'Secret AI Pet Abilities No One Knows About'. Mystery + discovery drives engagement.",
+      "url": "https://www.youtube.com/watch?v=GiTjxTajoPg",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
     }
   ],
   "competitorResearchQueue": [
