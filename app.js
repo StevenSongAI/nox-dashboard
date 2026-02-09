@@ -460,7 +460,16 @@ function buildToolModalContent(tool) {
     { label: 'Run Command', value: tool.runCommand, code: true }
   ];
   
-  return buildModalFields(fields);
+  // BATCH 4 FIX: Add launch button to modal
+  const launchButton = `
+    <div class="mt-4 pt-4 border-t border-dark-700">
+      <button onclick="${tool.runCommand}; closeModal();" class="btn-primary w-full">
+        ${tool.icon || '🚀'} Launch ${tool.name}
+      </button>
+    </div>
+  `;
+  
+  return buildModalFields(fields) + launchButton;
 }
 
 function buildNoteModalContent(note) {
@@ -1076,42 +1085,210 @@ function renderYouTubeTrendChart() {
 
 let businessOpportunityData = [];
 
+// BATCH 4 FIX: Load opportunities from localStorage
+function loadOpportunities() {
+  const stored = localStorage.getItem('business-opportunities');
+  if (stored) {
+    return JSON.parse(stored);
+  }
+  // Return default opportunities if none stored
+  return [
+    {
+      id: 'opp-1',
+      title: 'AI Consulting Service',
+      name: 'AI Consulting Service',
+      description: 'Offer AI automation consulting to small businesses',
+      alignment: 'HIGH',
+      status: 'new',
+      type: 'Service',
+      effort: 'Medium',
+      potentialRevenue: '$5K-10K/mo',
+      nextStep: 'Create service package and pricing',
+      createdAt: new Date().toISOString()
+    },
+    {
+      id: 'opp-2',
+      title: 'YouTube Sponsorships',
+      name: 'YouTube Sponsorships',
+      description: 'Partner with gaming brands for sponsored content',
+      alignment: 'MEDIUM',
+      status: 'evaluating',
+      type: 'Partnership',
+      effort: 'Low',
+      potentialRevenue: '$2K-5K/mo',
+      nextStep: 'Research potential brand partners',
+      createdAt: new Date(Date.now() - 3 * 24 * 60 * 60 * 1000).toISOString()
+    }
+  ];
+}
+
+function saveOpportunities(opportunities) {
+  localStorage.setItem('business-opportunities', JSON.stringify(opportunities));
+}
+
+// BATCH 4 FIX: Calculate pipeline counts from opportunities
+function calculatePipelineCounts(opportunities) {
+  const counts = { new: 0, evaluating: 0, pursuing: 0, passed: 0, won: 0 };
+  opportunities.forEach(opp => {
+    const status = opp.status?.toLowerCase() || 'new';
+    if (counts.hasOwnProperty(status)) {
+      counts[status]++;
+    }
+  });
+  return counts;
+}
+
 function renderBusiness() {
-  const pipeline = appData.newBusiness.pipeline || {};
-  document.getElementById('pipe-new').textContent = formatNumber(pipeline.new || 0);
-  document.getElementById('pipe-evaluating').textContent = formatNumber(pipeline.evaluating || 0);
-  document.getElementById('pipe-pursuing').textContent = formatNumber(pipeline.pursuing || 0);
-  document.getElementById('pipe-passed').textContent = formatNumber(pipeline.passed || 0);
-  document.getElementById('pipe-won').textContent = formatNumber(pipeline.won || 0);
+  // BATCH 4 FIX: Load from localStorage and merge with appData
+  const storedOpportunities = loadOpportunities();
+  const jsonOpportunities = appData.newBusiness.opportunities || [];
+  
+  // Merge: stored opportunities take precedence
+  const oppMap = new Map();
+  [...jsonOpportunities, ...storedOpportunities].forEach(opp => {
+    oppMap.set(opp.id, opp);
+  });
+  const allOpportunities = Array.from(oppMap.values());
+  
+  businessOpportunityData = allOpportunities;
+  
+  // BATCH 4 FIX: Calculate pipeline counts dynamically
+  const pipeline = calculatePipelineCounts(allOpportunities);
+  document.getElementById('pipe-new').textContent = formatNumber(pipeline.new);
+  document.getElementById('pipe-evaluating').textContent = formatNumber(pipeline.evaluating);
+  document.getElementById('pipe-pursuing').textContent = formatNumber(pipeline.pursuing);
+  document.getElementById('pipe-passed').textContent = formatNumber(pipeline.passed);
+  document.getElementById('pipe-won').textContent = formatNumber(pipeline.won);
 
   const container = document.getElementById('business-opportunities');
-  const opps = appData.newBusiness.opportunities || [];
-  businessOpportunityData = opps;
 
-  if (opps.length === 0) {
-    container.innerHTML = buildEmptyState('💼', 'No Opportunities Yet', 'The agent will add them on the next heartbeat based on market research and your preferences.');
-    return;
-  }
+  // BATCH 4 FIX: Add "Add Opportunity" button
+  let html = `
+    <div class="flex justify-between items-center mb-4">
+      <div class="text-sm text-gray-400">${allOpportunities.length} opportunities</div>
+      <button onclick="showAddOpportunityModal()" class="px-3 py-1 bg-accent-blue rounded text-sm hover:bg-blue-600">+ Add Opportunity</button>
+    </div>
+  `;
 
-  container.innerHTML = opps.map(o => `
-    <div class="card card-clickable rounded-lg p-4" data-status="${o.status}" data-opp-id="${o.id}" onclick="showOpportunityModal('${o.id}')">
-      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2 mb-2">
-        <div class="flex items-center gap-2 flex-wrap">
-          <span class="alignment-${o.alignment?.toLowerCase()}">${o.alignment}</span>
-          <span class="px-2 py-0.5 bg-dark-700 text-xs rounded">${o.type || o.effort}</span>
-          <span class="text-sm text-gray-400">${o.potentialRevenue || ''}</span>
+  if (allOpportunities.length === 0) {
+    html += buildEmptyState('💼', 'No Opportunities Yet', 'Click "Add Opportunity" to create your first business opportunity.');
+  } else {
+    html += allOpportunities.map(o => `
+      <div class="card card-clickable rounded-lg p-4" data-status="${o.status}" data-opp-id="${o.id}" onclick="showOpportunityModal('${o.id}')">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2 mb-2">
+          <div class="flex items-center gap-2 flex-wrap">
+            <span class="alignment-${o.alignment?.toLowerCase()}">${o.alignment}</span>
+            <span class="px-2 py-0.5 bg-dark-700 text-xs rounded">${o.type || o.effort}</span>
+            <span class="text-sm text-gray-400">${o.potentialRevenue || ''}</span>
+          </div>
+          <span class="text-sm text-gray-400">${formatTimeAgo(o.createdAt || o.addedAt)}</span>
         </div>
-        <span class="text-sm text-gray-400">${formatTimeAgo(o.createdAt || o.addedAt)}</span>
+        <h3 class="font-semibold mb-1">${o.title || o.name}</h3>
+        <p class="text-sm text-gray-300 mb-2">${o.description}</p>
+        <p class="text-sm"><strong>Next step:</strong> ${o.nextStep}</p>
+        <div class="mt-2 flex flex-wrap gap-2" onclick="event.stopPropagation()">
+          <select onchange="moveStatus('${o.id}', this.value)" class="text-xs px-2 py-1 bg-dark-700 rounded border border-dark-600">
+            <option value="" disabled selected>Move to...</option>
+            <option value="new">New</option>
+            <option value="evaluating">Evaluating</option>
+            <option value="pursuing">Pursuing</option>
+            <option value="passed">Passed</option>
+            <option value="won">Won</option>
+          </select>
+          <button onclick="deleteOpportunity('${o.id}')" class="text-xs px-2 py-1 bg-red-900/50 text-red-400 rounded hover:bg-red-900">Delete</button>
+        </div>
       </div>
-      <h3 class="font-semibold mb-1">${o.title || o.name}</h3>
-      <p class="text-sm text-gray-300 mb-2">${o.description}</p>
-      <p class="text-sm"><strong>Next step:</strong> ${o.nextStep}</p>
-      <div class="mt-2 flex gap-2" onclick="event.stopPropagation()">
-        <button onclick="moveStatus('${o.id}', 'evaluating')" class="text-xs px-2 py-1 bg-dark-700 rounded hover:bg-dark-600">→ Evaluating</button>
-        <button onclick="moveStatus('${o.id}', 'pursuing')" class="text-xs px-2 py-1 bg-dark-700 rounded hover:bg-dark-600">→ Pursuing</button>
+    `).join('');
+  }
+  
+  container.innerHTML = html;
+}
+
+// BATCH 4 FIX: Add Opportunity Modal
+function showAddOpportunityModal() {
+  const modalHTML = `
+    <div class="form-group">
+      <label>Opportunity Name</label>
+      <input type="text" id="opp-name" class="form-input" placeholder="e.g., AI Consulting Service">
+    </div>
+    <div class="form-group">
+      <label>Description</label>
+      <textarea id="opp-description" class="form-input form-textarea" placeholder="What is this opportunity about?"></textarea>
+    </div>
+    <div class="flex gap-2">
+      <div class="form-group flex-1">
+        <label>Alignment</label>
+        <select id="opp-alignment" class="form-input">
+          <option value="HIGH">HIGH</option>
+          <option value="MEDIUM" selected>MEDIUM</option>
+          <option value="LOW">LOW</option>
+        </select>
+      </div>
+      <div class="form-group flex-1">
+        <label>Type/Effort</label>
+        <select id="opp-type" class="form-input">
+          <option value="Service">Service</option>
+          <option value="Product">Product</option>
+          <option value="Partnership">Partnership</option>
+          <option value="Content">Content</option>
+        </select>
       </div>
     </div>
-  `).join('');
+    <div class="form-group">
+      <label>Potential Revenue</label>
+      <input type="text" id="opp-revenue" class="form-input" placeholder="e.g., $5K-10K/mo">
+    </div>
+    <div class="form-group">
+      <label>Next Step</label>
+      <input type="text" id="opp-next-step" class="form-input" placeholder="What should you do next?">
+    </div>
+    <button onclick="submitAddOpportunity()" class="btn-primary w-full">Add Opportunity</button>
+  `;
+  
+  openModal('Add Business Opportunity', modalHTML);
+}
+
+function submitAddOpportunity() {
+  const name = document.getElementById('opp-name')?.value?.trim();
+  const description = document.getElementById('opp-description')?.value?.trim();
+  const alignment = document.getElementById('opp-alignment')?.value;
+  const type = document.getElementById('opp-type')?.value;
+  const revenue = document.getElementById('opp-revenue')?.value?.trim();
+  const nextStep = document.getElementById('opp-next-step')?.value?.trim();
+  
+  if (!name) {
+    alert('Please enter an opportunity name');
+    return;
+  }
+  
+  const opportunities = loadOpportunities();
+  opportunities.push({
+    id: 'opp-' + Date.now(),
+    title: name,
+    name: name,
+    description: description || 'No description provided',
+    alignment: alignment || 'MEDIUM',
+    status: 'new',
+    type: type || 'Service',
+    effort: type || 'Medium',
+    potentialRevenue: revenue || 'TBD',
+    nextStep: nextStep || 'Define next steps',
+    createdAt: new Date().toISOString()
+  });
+  
+  saveOpportunities(opportunities);
+  closeModal();
+  renderBusiness();
+}
+
+// BATCH 4 FIX: Delete opportunity
+function deleteOpportunity(oppId) {
+  if (!confirm('Delete this opportunity?')) return;
+  
+  const opportunities = loadOpportunities();
+  const filtered = opportunities.filter(o => o.id !== oppId);
+  saveOpportunities(filtered);
+  renderBusiness();
 }
 
 function showOpportunityModal(oppId) {
@@ -1136,10 +1313,144 @@ let investmentsPositionData = [];
 let investmentsWatchlistData = [];
 let investmentsIntelligenceData = [];
 
+// BATCH 4 FIX: Load investments from localStorage
+function loadInvestments() {
+  const stored = localStorage.getItem('investments-data');
+  if (stored) {
+    return JSON.parse(stored);
+  }
+  // Return default data if none stored
+  return {
+    positions: [
+      {
+        id: 'pos-1',
+        ticker: 'AAPL',
+        symbol: 'AAPL',
+        name: 'Apple Inc.',
+        quantity: 50,
+        shares: 50,
+        entryPrice: 175.50,
+        avgCost: 175.50,
+        currentPrice: 185.25,
+        totalValue: 9262.50,
+        gainPercent: 5.56,
+        addedAt: new Date().toISOString()
+      },
+      {
+        id: 'pos-2',
+        ticker: 'NVDA',
+        symbol: 'NVDA',
+        name: 'NVIDIA Corp',
+        quantity: 20,
+        shares: 20,
+        entryPrice: 450.00,
+        avgCost: 450.00,
+        currentPrice: 520.75,
+        totalValue: 10415.00,
+        gainPercent: 15.72,
+        addedAt: new Date().toISOString()
+      }
+    ],
+    watchlist: [
+      {
+        id: 'watch-1',
+        ticker: 'TSLA',
+        symbol: 'TSLA',
+        name: 'Tesla Inc.',
+        currentPrice: 245.50,
+        targetEntry: 220.00,
+        targetPrice: 220.00,
+        thesis: 'EV market leader, waiting for dip entry',
+        notes: 'Buy if it drops below $220',
+        addedAt: new Date().toISOString()
+      },
+      {
+        id: 'watch-2',
+        ticker: 'MSFT',
+        symbol: 'MSFT',
+        name: 'Microsoft Corp',
+        currentPrice: 380.25,
+        targetEntry: 350.00,
+        targetPrice: 350.00,
+        thesis: 'Strong AI positioning with OpenAI partnership',
+        notes: 'Long-term hold candidate',
+        addedAt: new Date().toISOString()
+      }
+    ],
+    intelligence: [
+      {
+        id: 'intel-1',
+        topic: 'Fed Rate Decision',
+        ticker: 'SPY',
+        type: 'Macro Update',
+        impact: 'bullish',
+        summary: 'Fed signals potential rate cuts in Q2. Growth stocks likely to benefit.',
+        content: 'Fed signals potential rate cuts in Q2. Growth stocks likely to benefit.',
+        addedAt: new Date().toISOString(),
+        date: new Date().toISOString()
+      },
+      {
+        id: 'intel-2',
+        topic: 'AI Chip Demand Surge',
+        ticker: 'NVDA',
+        type: 'Sector Update',
+        impact: 'bullish',
+        summary: 'Datacenter revenue up 400% YoY. Supply still constrained.',
+        content: 'Datacenter revenue up 400% YoY. Supply still constrained.',
+        addedAt: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000).toISOString(),
+        date: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000).toISOString()
+      }
+    ]
+  };
+}
+
+function saveInvestments(data) {
+  localStorage.setItem('investments-data', JSON.stringify(data));
+}
+
+// BATCH 4 FIX: Enhanced refresh with loading state and error handling
+async function refreshStockPrices() {
+  const statusEl = document.getElementById('investments-price-status');
+  
+  if (statusEl) {
+    statusEl.innerHTML = '<span class="text-yellow-500">⏳ Fetching prices...</span>';
+  }
+  
+  // Clear cache to force new fetch
+  lastPriceFetch = 0;
+  stockPriceCache = {};
+  
+  try {
+    // Re-render investments (which will fetch new prices)
+    await renderInvestments();
+    
+    // Check if we got any prices
+    const hasPrices = investmentsWatchlistData.some(w => w.currentPrice && w.currentPrice > 0);
+    
+    if (statusEl) {
+      if (hasPrices) {
+        statusEl.innerHTML = '<span class="text-accent-green">✓ Updated ' + new Date().toLocaleTimeString() + '</span>';
+      } else {
+        statusEl.innerHTML = '<span class="text-gray-400">API unavailable - using cached</span>';
+      }
+    }
+  } catch (err) {
+    console.error('[Investments] Error refreshing prices:', err);
+    if (statusEl) {
+      statusEl.innerHTML = '<span class="text-red-400">✗ Error: ' + (err.message || 'API failed') + '</span>';
+    }
+  }
+}
+
 async function renderInvestments() {
-  const positions = appData.investments.positions || [];
-  const watchlist = appData.investments.watchlist || [];
-  const intelligence = appData.investments.intelligence || [];
+  // BATCH 4 FIX: Load from localStorage and merge with appData
+  const storedData = loadInvestments();
+  const jsonData = appData.investments || {};
+  
+  // Merge: stored data takes precedence
+  const positions = storedData.positions?.length > 0 ? storedData.positions : (jsonData.positions || []);
+  const watchlist = storedData.watchlist?.length > 0 ? storedData.watchlist : (jsonData.watchlist || []);
+  const intelligence = storedData.intelligence?.length > 0 ? storedData.intelligence : (jsonData.intelligence || []);
 
   // Fetch real stock prices for watchlist
   const watchlistTickers = watchlist.map(w => w.ticker).filter(Boolean);
@@ -1152,6 +1463,8 @@ async function renderInvestments() {
           w.currentPrice = prices[w.ticker];
         }
       });
+      // Save updated prices
+      saveInvestments({ positions, watchlist, intelligence });
     } catch (err) {
       console.warn('[Investments] Could not fetch stock prices:', err);
     }
@@ -1161,13 +1474,20 @@ async function renderInvestments() {
   investmentsWatchlistData = watchlist;
   investmentsIntelligenceData = intelligence;
 
-  // Positions
+  // BATCH 4 FIX: Add "Add Holding" button to Positions
   const posContainer = document.getElementById('investments-positions');
+  let posHtml = `
+    <div class="flex justify-between items-center mb-3">
+      <div class="text-sm text-gray-400">${positions.length} positions</div>
+      <button onclick="showAddHoldingModal()" class="text-xs px-2 py-1 bg-accent-blue rounded hover:bg-blue-600">+ Add</button>
+    </div>
+  `;
+  
   if (positions.length === 0) {
-    posContainer.innerHTML = buildEmptyState('', 'No Positions', 'No investment positions tracked yet.');
+    posHtml += buildEmptyState('', 'No Positions', 'Click "Add" to track your first investment.');
   } else {
-    posContainer.innerHTML = positions.map((p, idx) => {
-      const gain = p.gainPercent !== undefined ? p.gainPercent : ((p.currentPrice - p.avgCost) / p.avgCost * 100);
+    posHtml += positions.map((p, idx) => {
+      const gain = p.gainPercent !== undefined ? p.gainPercent : ((p.currentPrice - (p.entryPrice || p.avgCost)) / (p.entryPrice || p.avgCost) * 100);
       const gainClass = gain >= 0 ? 'text-accent-green' : 'text-accent-red';
       const ticker = p.ticker || p.symbol;
       const entry = p.entryPrice || p.avgCost;
@@ -1187,30 +1507,42 @@ async function renderInvestments() {
       `;
     }).join('');
   }
+  posContainer.innerHTML = posHtml;
 
-  // Watchlist
+  // BATCH 4 FIX: Add "Add to Watchlist" button
   const watchContainer = document.getElementById('investments-watchlist');
+  let watchHtml = `
+    <div class="flex justify-between items-center mb-3">
+      <div class="text-sm text-gray-400">${watchlist.length} watching</div>
+      <button onclick="showAddWatchlistModal()" class="text-xs px-2 py-1 bg-accent-blue rounded hover:bg-blue-600">+ Add</button>
+    </div>
+  `;
+  
   if (watchlist.length === 0) {
-    watchContainer.innerHTML = buildEmptyState('', 'No Watchlist Items', 'No investments on watchlist yet.');
+    watchHtml += buildEmptyState('', 'No Watchlist Items', 'Click "Add" to track potential investments.');
   } else {
-    watchContainer.innerHTML = watchlist.map((w, idx) => {
+    watchHtml += watchlist.map((w, idx) => {
       const ticker = w.ticker || w.symbol;
       const target = w.targetEntry || w.targetPrice;
       const priceDisplay = (w.currentPrice && w.currentPrice !== 0) ? formatCurrency(w.currentPrice) : '-';
       const targetDisplay = (target && target !== 0) ? formatCurrency(target) : '-';
       return `
         <div class="p-2 bg-dark-700/50 rounded cursor-pointer hover:bg-dark-700" onclick="showWatchlistModal(${idx})">
-          <div class="font-semibold">${ticker} · ${priceDisplay}</div>
+          <div class="flex justify-between">
+            <span class="font-semibold">${ticker}</span>
+            <span class="text-sm">${priceDisplay}</span>
+          </div>
           <div class="text-sm text-gray-400">Target: ${targetDisplay}</div>
         </div>
       `;
     }).join('');
   }
+  watchContainer.innerHTML = watchHtml;
 
   // Intelligence
   const intelContainer = document.getElementById('investments-intelligence');
   if (intelligence.length === 0) {
-    intelContainer.innerHTML = buildEmptyState('', 'No Intelligence Reports', 'No market intelligence reports yet.');
+    intelContainer.innerHTML = buildEmptyState('', 'No Intelligence Reports', 'Market intelligence will appear here.');
   } else {
     intelContainer.innerHTML = intelligence.map((i, idx) => {
       const title = i.topic || `${i.ticker} ${i.type || 'Update'}`;
@@ -1229,6 +1561,153 @@ async function renderInvestments() {
   
   // Render portfolio chart
   renderPortfolioChart();
+}
+
+// BATCH 4 FIX: Add Holding Modal
+function showAddHoldingModal() {
+  const modalHTML = `
+    <div class="form-group">
+      <label>Ticker Symbol</label>
+      <input type="text" id="holding-ticker" class="form-input" placeholder="e.g., AAPL">
+    </div>
+    <div class="form-group">
+      <label>Company Name</label>
+      <input type="text" id="holding-name" class="form-input" placeholder="e.g., Apple Inc.">
+    </div>
+    <div class="flex gap-2">
+      <div class="form-group flex-1">
+        <label>Quantity/Shares</label>
+        <input type="number" id="holding-quantity" class="form-input" placeholder="100">
+      </div>
+      <div class="form-group flex-1">
+        <label>Average Cost</label>
+        <input type="number" id="holding-cost" class="form-input" placeholder="150.00" step="0.01">
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Current Price (optional)</label>
+      <input type="number" id="holding-price" class="form-input" placeholder="Will fetch automatically" step="0.01">
+    </div>
+    <button onclick="submitAddHolding()" class="btn-primary w-full">Add Holding</button>
+  `;
+  
+  openModal('Add Portfolio Holding', modalHTML);
+}
+
+async function submitAddHolding() {
+  const ticker = document.getElementById('holding-ticker')?.value?.trim().toUpperCase();
+  const name = document.getElementById('holding-name')?.value?.trim();
+  const quantity = parseFloat(document.getElementById('holding-quantity')?.value);
+  const cost = parseFloat(document.getElementById('holding-cost')?.value);
+  let currentPrice = parseFloat(document.getElementById('holding-price')?.value);
+  
+  if (!ticker || !name || !quantity || !cost) {
+    alert('Please fill in all required fields');
+    return;
+  }
+  
+  // Try to fetch current price if not provided
+  if (!currentPrice || isNaN(currentPrice)) {
+    try {
+      const prices = await fetchStockPrices([ticker]);
+      if (prices[ticker]) {
+        currentPrice = prices[ticker];
+      } else {
+        currentPrice = cost; // Default to cost basis
+      }
+    } catch (err) {
+      currentPrice = cost;
+    }
+  }
+  
+  const data = loadInvestments();
+  const totalValue = quantity * currentPrice;
+  const gainPercent = ((currentPrice - cost) / cost) * 100;
+  
+  data.positions.push({
+    id: 'pos-' + Date.now(),
+    ticker,
+    symbol: ticker,
+    name,
+    quantity,
+    shares: quantity,
+    entryPrice: cost,
+    avgCost: cost,
+    currentPrice,
+    totalValue,
+    gainPercent,
+    addedAt: new Date().toISOString()
+  });
+  
+  saveInvestments(data);
+  closeModal();
+  renderInvestments();
+}
+
+// BATCH 4 FIX: Add Watchlist Modal
+function showAddWatchlistModal() {
+  const modalHTML = `
+    <div class="form-group">
+      <label>Ticker Symbol</label>
+      <input type="text" id="watch-ticker" class="form-input" placeholder="e.g., TSLA">
+    </div>
+    <div class="form-group">
+      <label>Company Name (optional)</label>
+      <input type="text" id="watch-name" class="form-input" placeholder="e.g., Tesla Inc.">
+    </div>
+    <div class="form-group">
+      <label>Target Entry Price</label>
+      <input type="number" id="watch-target" class="form-input" placeholder="200.00" step="0.01">
+    </div>
+    <div class="form-group">
+      <label>Thesis/Notes</label>
+      <textarea id="watch-thesis" class="form-input form-textarea" placeholder="Why are you watching this?"></textarea>
+    </div>
+    <button onclick="submitAddWatchlist()" class="btn-primary w-full">Add to Watchlist</button>
+  `;
+  
+  openModal('Add to Watchlist', modalHTML);
+}
+
+async function submitAddWatchlist() {
+  const ticker = document.getElementById('watch-ticker')?.value?.trim().toUpperCase();
+  const name = document.getElementById('watch-name')?.value?.trim() || ticker;
+  const target = parseFloat(document.getElementById('watch-target')?.value);
+  const thesis = document.getElementById('watch-thesis')?.value?.trim();
+  
+  if (!ticker) {
+    alert('Please enter a ticker symbol');
+    return;
+  }
+  
+  // Try to fetch current price
+  let currentPrice = 0;
+  try {
+    const prices = await fetchStockPrices([ticker]);
+    if (prices[ticker]) {
+      currentPrice = prices[ticker];
+    }
+  } catch (err) {
+    console.warn('Could not fetch price for', ticker);
+  }
+  
+  const data = loadInvestments();
+  data.watchlist.push({
+    id: 'watch-' + Date.now(),
+    ticker,
+    symbol: ticker,
+    name,
+    currentPrice,
+    targetEntry: target || 0,
+    targetPrice: target || 0,
+    thesis: thesis || 'No thesis provided',
+    notes: thesis || 'No notes',
+    addedAt: new Date().toISOString()
+  });
+  
+  saveInvestments(data);
+  closeModal();
+  renderInvestments();
 }
 
 function showPositionModal(idx) {
@@ -1347,15 +1826,111 @@ function renderPortfolioChart() {
 
 let toolsDataArray = [];
 
+// BATCH 4 FIX: Load tools from localStorage with default 8 tools
+function loadTools() {
+  const stored = localStorage.getItem('tools-registry');
+  if (stored) {
+    return JSON.parse(stored);
+  }
+  // Return default 8 tools if none stored
+  return [
+    {
+      id: 'tool-1',
+      name: 'Content Pipeline',
+      description: 'Orchestrate video production from idea to upload. Track scripts, production checklist, and upload details.',
+      category: 'YouTube',
+      status: 'active',
+      auditGrade: 92,
+      runCommand: 'launchTool("pipeline")',
+      icon: '🎬'
+    },
+    {
+      id: 'tool-2',
+      name: 'Performance Analyzer',
+      description: 'Analyze video performance metrics, view trends, and engagement statistics across your channel.',
+      category: 'YouTube',
+      status: 'active',
+      auditGrade: 88,
+      runCommand: 'launchTool("analyzer")',
+      icon: '📊'
+    },
+    {
+      id: 'tool-3',
+      name: 'Brief Generator',
+      description: 'Generate detailed content briefs from outlier research with hooks, outlines, and target lengths.',
+      category: 'YouTube',
+      status: 'active',
+      auditGrade: 85,
+      runCommand: 'launchTool("brief-generator")',
+      icon: '📝'
+    },
+    {
+      id: 'tool-4',
+      name: 'Map Scraper',
+      description: 'Scrape Minecraft map data and generate gaming content ideas from popular maps.',
+      category: 'Gaming',
+      status: 'beta',
+      auditGrade: 78,
+      runCommand: 'launchTool("map-scraper")',
+      icon: '🗺️'
+    },
+    {
+      id: 'tool-5',
+      name: 'Opportunity Tracker',
+      description: 'Track business opportunities through your pipeline from new leads to closed deals.',
+      category: 'Business',
+      status: 'active',
+      auditGrade: 90,
+      runCommand: 'showTab("business")',
+      icon: '💼'
+    },
+    {
+      id: 'tool-6',
+      name: 'Portfolio Manager',
+      description: 'Manage investment portfolio, track gains/losses, and monitor watchlist targets.',
+      category: 'Finance',
+      status: 'active',
+      auditGrade: 87,
+      runCommand: 'showTab("investments")',
+      icon: '📈'
+    },
+    {
+      id: 'tool-7',
+      name: 'Research Notes',
+      description: 'Capture and organize research notes with markdown support and tagging.',
+      category: 'Productivity',
+      status: 'active',
+      auditGrade: 91,
+      runCommand: 'showTab("research")',
+      icon: '🔬'
+    },
+    {
+      id: 'tool-8',
+      name: 'Audit Dashboard',
+      description: 'Review code audits, track grades over time, and compare agent performance.',
+      category: 'Development',
+      status: 'active',
+      auditGrade: 93,
+      runCommand: 'showTab("audits")',
+      icon: '📋'
+    }
+  ];
+}
+
+function saveTools(tools) {
+  localStorage.setItem('tools-registry', JSON.stringify(tools));
+}
+
 function renderTools() {
   const container = document.getElementById('tools-grid');
   const categoryFilter = document.getElementById('tools-category-filter');
-  const toolsData = appData.tools || { tools: [], categories: [] };
-  const tools = toolsData.tools || [];
-  const categories = toolsData.categories || [];
+  
+  // BATCH 4 FIX: Load from localStorage
+  const tools = loadTools();
+  const categories = [...new Set(tools.map(t => t.category).filter(Boolean))];
   toolsDataArray = tools;
 
-  // D9 FIX: Populate category filter dropdown
+  // Populate category filter dropdown
   if (categoryFilter) {
     // Clear existing options except "All Categories"
     categoryFilter.innerHTML = '<option value="">All Categories</option>';
@@ -1367,17 +1942,6 @@ function renderTools() {
       option.textContent = cat;
       categoryFilter.appendChild(option);
     });
-    
-    // Also extract unique categories from tools if not provided
-    const toolCategories = [...new Set(tools.map(t => t.category).filter(Boolean))];
-    toolCategories.forEach(cat => {
-      if (!categories.includes(cat)) {
-        const option = document.createElement('option');
-        option.value = cat;
-        option.textContent = cat;
-        categoryFilter.appendChild(option);
-      }
-    });
   }
 
   if (tools.length === 0) {
@@ -1385,16 +1949,24 @@ function renderTools() {
     return;
   }
 
-  // D9 FIX: Add data-category attribute for filtering
+  // BATCH 4 FIX: Enhanced tool cards with launch action
   container.innerHTML = tools.map((t, idx) => `
-    <div class="card card-clickable rounded-lg p-4" data-category="${t.category || ''}" onclick="showToolModal(${idx})">
+    <div class="card card-clickable rounded-lg p-4" data-category="${t.category || ''}" data-tool-id="${t.id}">
       <div class="flex justify-between items-start mb-2">
-        <h3 class="font-semibold">${t.name}</h3>
-        <span class="text-xs px-2 py-0.5 rounded ${t.status === 'active' ? 'bg-accent-green/20 text-accent-green' : 'bg-accent-red/20 text-accent-red'}">${t.status}</span>
+        <div class="flex items-center gap-2">
+          <span class="text-2xl">${t.icon || '🛠️'}</span>
+          <h3 class="font-semibold">${t.name}</h3>
+        </div>
+        <span class="text-xs px-2 py-0.5 rounded ${t.status === 'active' ? 'bg-accent-green/20 text-accent-green' : t.status === 'beta' ? 'bg-accent-yellow/20 text-accent-yellow' : 'bg-accent-red/20 text-accent-red'}">${t.status}</span>
       </div>
-      <p class="text-sm text-gray-400 mb-2">${t.description}</p>
-      <div class="text-xs text-gray-500 mb-2">${t.category} · Audit: ${t.auditGrade || 'N/A'}%</div>
-      <code class="text-xs bg-dark-900 p-1 rounded block">${t.runCommand}</code>
+      <p class="text-sm text-gray-400 mb-3">${t.description}</p>
+      <div class="flex justify-between items-center mb-3">
+        <div class="text-xs text-gray-500">${t.category} · Audit: ${t.auditGrade || 'N/A'}%</div>
+      </div>
+      <div class="flex gap-2">
+        <button onclick="${t.runCommand}" class="flex-1 px-3 py-2 bg-accent-blue rounded text-sm hover:bg-blue-600 transition-colors">Launch →</button>
+        <button onclick="showToolModal(${idx})" class="px-3 py-2 bg-dark-700 rounded text-sm hover:bg-dark-600">Details</button>
+      </div>
     </div>
   `).join('');
 }
@@ -2051,8 +2623,22 @@ function clearGlobalSearch() {
 }
 
 function moveStatus(oppId, newStatus) {
-  // This would update local state only - agent reads on next sync
-  alert(`Marked ${oppId} as ${newStatus}. The agent will sync this change on next heartbeat.`);
+  // BATCH 4 FIX: Actually update the opportunity status in localStorage
+  const opportunities = loadOpportunities();
+  const opp = opportunities.find(o => o.id === oppId);
+  
+  if (opp) {
+    opp.status = newStatus;
+    saveOpportunities(opportunities);
+    renderBusiness();
+    
+    // Show success feedback
+    const statusEl = document.getElementById('pipe-' + newStatus);
+    if (statusEl) {
+      statusEl.classList.add('text-accent-green');
+      setTimeout(() => statusEl.classList.remove('text-accent-green'), 500);
+    }
+  }
 }
 
 function showEmptyStates() {
