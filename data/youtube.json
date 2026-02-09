@@ -1346,6 +1346,57 @@
       "notes": "Based on viewstats outlier analysis showing 390x-677x outlier scores for baby creature physics content. This represents the highest-confidence format in the dataset.",
       "createdAt": "2026-02-09T13:30:00Z",
       "status": "ready_for_production"
+    },
+    {
+      "id": "brief-ai-coding-agents-001",
+      "title": "AI Coding Agents 30-Day Challenge - Systematic Comparison",
+      "contentFormat": "Tool Comparison / Systematic Review",
+      "templatePattern": "I Replaced My Coding Agent with [X] Different AI Agents for 30 Days",
+      "hookFormula": "Real metrics, real failures, real results - no hype, just data",
+      "targetOutlierScore": 60,
+      "inspiredBy": [
+        "note-006 AI Coding Agents research",
+        "trend score 120 signal from X intelligence"
+      ],
+      "productionRequirements": {
+        "software": [
+          "Mission Control dashboard for tracking",
+          "Screen recording (OBS)",
+          "Spreadsheet for metrics"
+        ],
+        "aiTools": [
+          "Claude Code",
+          "Cursor",
+          "GitHub Copilot",
+          "Windsurf",
+          "Aider"
+        ],
+        "estimatedTime": "40-60 hours",
+        "estimatedCost": "$100-200 (API costs, subscriptions)"
+      },
+      "contentStructure": [
+        "0:00-0:30 Hook: 'I spent 30 days and $200 testing every AI coding agent so you don't have to'",
+        "0:30-2:00 Methodology: How we measured success (tasks completed, errors, time saved)",
+        "2:00-8:00 Agent 1-2 deep dives: Strengths, weaknesses, real examples",
+        "8:00-14:00 Agent 3-4 analysis: Surprising winners and losers",
+        "14:00-17:00 Head-to-head comparison on identical tasks",
+        "17:00-19:00 Final verdict: Which agent for which use case + cost breakdown",
+        "19:00-20:00 Dashboard reveal: How we tracked everything (Mission Control plug)"
+      ],
+      "psychologicalTriggers": [
+        "Authority (systematic methodology)",
+        "Scarcity (30 days of research condensed)",
+        "Practical value (saves viewer time/money)",
+        "Curiosity (which agent won?)"
+      ],
+      "differentiation": "Unlike Fireship (surface overviews) or ThePrimeTime (opinion), this uses YOUR dashboard methodology for systematic measurement. Real data beats hot takes.",
+      "synergies": [
+        "opp-009 AI Agent Workflow QA Service",
+        "Mission Control dashboard feature"
+      ],
+      "notes": "Based on research note-006. AI Coding Agents have Trend Score 120 - highest momentum signal in tracked categories. Gap in market for systematic comparison vs surface-level tool reviews. Opportunity to establish methodology authority.",
+      "createdAt": "2026-02-09T13:46:00Z",
+      "status": "ready"
     }
   ],
   "trendAnalysis": {
