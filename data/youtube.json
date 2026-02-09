@@ -1963,6 +1963,65 @@
       "confidence": "high",
       "status": "ready-to-produce",
       "createdAt": "2026-02-09T19:10:00Z"
+    },
+    {
+      "id": "brief-pet-trex-001",
+      "title": "I Got a Pet T-Rex - Minecraft Cinematic Production",
+      "series": "StevenSongIRL",
+      "format": "Minecraft Cinematic + IRL Commentary",
+      "hook": "I spawned a baby T-Rex in Minecraft... then things got out of hand",
+      "status": "pre-production",
+      "productionStage": "Map Artist Recruitment",
+      "targetLength": "9 minutes",
+      "budget": "$150 (map build)",
+      "timeline": "5 days target (was 14 days)",
+      "bottleneck": "Map artist hiring - BuiltByBit account created, pending manual verification",
+      "script": {
+        "act1": "Discovery - Finding the T-Rex egg in a hidden jungle temple",
+        "act2": "Hatching - Baby T-Rex emerges, cute interactions, feeding",
+        "act3": "Growth - Time lapse, T-Rex grows, needs bigger enclosure",
+        "act4": "Problem - T-Rex escapes, chaos in the village",
+        "act5": "Resolution - Build proper dinosaur sanctuary, tame the beast"
+      },
+      "mapRequirements": {
+        "environment": "Prehistoric jungle with temple ruins",
+        "enclosure": "T-Rex paddock (100x100 blocks minimum)",
+        "village": "Small Minecraft village nearby for chaos scene",
+        "cinematicPaths": "5 key camera angles for dramatic shots"
+      },
+      "targetArtistProfile": {
+        "platforms": ["BuiltByBit", "Fiverr", "Planet Minecraft"],
+        "skills": ["Environment building", "Cinematic quality", "Organic terrain"],
+        "budget": "$150 fixed",
+        "candidatesContacted": 0,
+        "candidatesResponded": 0
+      },
+      "titleOptions": [
+        "I Got a Pet T-Rex in Minecraft (Big Mistake)",
+        "My Baby T-Rex Grew Up Too Fast...",
+        "I Spawned a T-Rex in Minecraft - It Broke Everything"
+      ],
+      "thumbnailConcept": "Split screen: Top = cute baby T-Rex hatching, Bottom = giant T-Rex destroying village. Red arrow with '15 MINUTES LATER' text",
+      "expectedPerformance": {
+        "outlierScoreTarget": 100,
+        "viewTarget": "500K-1M",
+        "confidence": "high (proven format)",
+        "basedOn": ["StevenSongIRL historical performance", "Pet simulation trend", "Minecraft cinematic niche"]
+      },
+      "deliverables": [
+        "Cinematic Minecraft world file",
+        "9-minute edited video",
+        "Custom thumbnail",
+        "End-screen with subscribe CTA"
+      ],
+      "nextActions": [
+        "Complete BuiltByBit account registration",
+        "Message top 3 map artists",
+        "Finalize script shot-by-shot",
+        "Prepare voiceover recording"
+      ],
+      "createdAt": "2026-02-09T23:25:00Z",
+      "updatedAt": "2026-02-09T23:25:00Z"
     }
   ],
   "trendAnalysis": {
