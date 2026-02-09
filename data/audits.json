@@ -54,14 +54,36 @@
       "fullReport": "Activity feed, calendar view, global search all implemented. Clean state management.",
       "feedback": "85% - Transforms work tracking. Populate search index with real data.",
       "category": "proactive-work"
+    },
+    {
+      "id": "audit-006",
+      "agent": "nox",
+      "project": "Ralph-Chain Batch 2 - Stock Data Integration",
+      "grade": 44,
+      "date": "2026-02-08T12:47:00Z",
+      "summary": "MOVED_ON_WITH_DEFECTS - Failed to address data integrity issues",
+      "fullReport": "CRITICAL FAIL: Orchestrator treated $0.00 as display/formatting issue rather than data integrity problem. Zero research performed on data sources. 3 iterations wasted on cosmetic dash formatting while actual feature (showing real stock prices) remained broken. Root cause: conflated 'rendering' with 'display formatting' - missed that rendering requires VALID DATA.",
+      "feedback": "RETRAIN on data-driven testing principles. A dashboard displaying '-' instead of $0.00 is NOT fixed - it's hiding the problem. High severity defect (INV-001) persists - investments watchlist does not display actual stock prices.",
+      "category": "ralph-chain"
+    },
+    {
+      "id": "audit-007",
+      "agent": "nox",
+      "project": "Ralph-Chain Batch 4 - Charts & Visualizations",
+      "grade": 93,
+      "date": "2026-02-08T06:55:00Z",
+      "summary": "Excellent orchestration for visualization batch",
+      "fullReport": "Instruction quality outstanding: specific chart requirements with exact container sizes, clear file targets, comprehensive 14-item testing checklist. Research value strong - Chart.js appropriate choice, dark theme specs well-defined. Minor deductions: 5 height defects indicate specification could be more explicit about pixel-perfect requirements.",
+      "feedback": "93% - Strong work. Add explicit 'exact height' language for future visual batches.",
+      "category": "ralph-chain"
     }
   ],
   "agentStats": {
     "nox": {
-      "totalAudits": 5,
-      "avgGrade": 90,
-      "lastAudit": "2026-02-08T07:05:00Z",
-      "trend": "improving"
+      "totalAudits": 7,
+      "avgGrade": 84,
+      "lastAudit": "2026-02-08T12:47:00Z",
+      "trend": "volatile"
     },
     "health": {
       "totalAudits": 0,
