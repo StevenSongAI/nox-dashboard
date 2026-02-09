@@ -9,10 +9,10 @@
       "shares": 50,
       "entryPrice": 185.25,
       "avgCost": 185.25,
-      "currentPrice": 278.12,
-      "totalValue": 13906,
-      "gainPercent": 50.13,
-      "lastUpdated": "2026-02-09T09:48:00Z",
+      "currentPrice": 273.04,
+      "totalValue": 13652,
+      "gainPercent": 47.39,
+      "lastUpdated": "2026-02-09T20:15:00Z",
       "addedAt": "2026-02-08T20:00:00Z"
     },
     {
@@ -24,10 +24,10 @@
       "shares": 20,
       "entryPrice": 138.50,
       "avgCost": 138.50,
-      "currentPrice": 185.41,
-      "totalValue": 3708.2,
-      "gainPercent": 33.87,
-      "lastUpdated": "2026-02-09T09:48:00Z",
+      "currentPrice": 191.32,
+      "totalValue": 3826.4,
+      "gainPercent": 38.14,
+      "lastUpdated": "2026-02-09T20:15:00Z",
       "addedAt": "2026-02-08T20:00:00Z",
       "note": "Post-split cost basis adjusted (10:1 split June 2024). Original pre-split basis ~$1385."
     }
