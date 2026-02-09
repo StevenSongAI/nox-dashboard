@@ -4305,22 +4305,9 @@ function generateBrief() {
   showGenerateBriefModal();
 }
 
-// Launch YouTube tool
 // ==================== YOUTUBE TOOLS - FULLY FUNCTIONAL ====================
 
 // Tool 1: Content Pipeline Orchestrator
-function launchTool(toolName) {
-  if (toolName === 'pipeline') {
-    showContentPipeline();
-  } else if (toolName === 'analyzer') {
-    showPerformanceAnalyzer();
-  } else if (toolName === 'brief-generator') {
-    showBriefGenerator();
-  } else if (toolName === 'map-scraper') {
-    showMapScraper();
-  }
-}
-
 function showContentPipeline() {
   const pipelineHTML = `
     <div class="tool-interface">
