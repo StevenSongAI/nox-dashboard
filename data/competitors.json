@@ -95,6 +95,322 @@
         "videoCount": 267
       },
       "latestVideos": []
+    },
+    {
+      "id": "comp-007",
+      "channelId": "@cozmouz",
+      "name": "cozmouz",
+      "url": "https://www.youtube.com/@cozmouz",
+      "niche": "AI Simulation",
+      "focus": "AI creature simulation and evolution content",
+      "addedAt": "2026-02-09T18:00:00Z",
+      "autoAdded": true,
+      "source": "youtube outlier analysis",
+      "stats": {
+        "subscribers": "93.2K",
+        "totalViews": "12M",
+        "videoCount": 17
+      },
+      "latestVideos": [
+        {
+          "title": "I Trapped this AI Worm in a Simulation for 1000 Years",
+          "views": "2.4M",
+          "outlierScore": 26.3
+        },
+        {
+          "title": "I Trapped this AI Centipede in a Simulation for 1000 Years",
+          "views": "2.2M",
+          "outlierScore": 24.4
+        }
+      ]
+    },
+    {
+      "id": "comp-008",
+      "channelId": "@LittleLizardGaming",
+      "name": "Little Lizard Adventures",
+      "url": "https://www.youtube.com/@LittleLizardGaming",
+      "niche": "Minecraft/Dragon Content",
+      "focus": "Minecraft dragon family and pet content",
+      "addedAt": "2026-02-09T18:00:00Z",
+      "autoAdded": true,
+      "source": "youtube outlier analysis",
+      "stats": {
+        "subscribers": "3.99M",
+        "totalViews": "2.1B",
+        "videoCount": 3100
+      },
+      "latestVideos": [
+        {
+          "title": "The New Dragon Family! - Minecraft Dragons",
+          "views": "5.26M",
+          "outlierScore": 16.1
+        },
+        {
+          "title": "A Baby NightFury is Born - Minecraft Dragons -Ep 1",
+          "views": "1.73M",
+          "outlierScore": 108
+        }
+      ]
+    },
+    {
+      "id": "comp-009",
+      "channelId": "@I_Got_a_Pet",
+      "name": "I Got a Pet",
+      "url": "https://www.youtube.com/@I_Got_a_Pet",
+      "niche": "Pet Simulation",
+      "focus": "T-Rex dinosaur pet simulation - cinematic creature series",
+      "addedAt": "2026-02-09T18:00:00Z",
+      "autoAdded": true,
+      "source": "manual research - T-Rex channel",
+      "stats": {
+        "subscribers": "4.56K",
+        "totalViews": "431K",
+        "videoCount": 1
+      },
+      "latestVideos": [
+        {
+          "title": "I Got a Pet T Rex",
+          "views": "431K",
+          "outlierScore": 94.5
+        }
+      ]
+    },
+    {
+      "id": "comp-010",
+      "channelId": "@Ponchokings",
+      "name": "Ponchokings",
+      "url": "https://www.youtube.com/@Ponchokings",
+      "niche": "Pet Simulation/Roblox",
+      "focus": "Roblox Pet Story developer and content creator",
+      "addedAt": "2026-02-09T18:00:00Z",
+      "autoAdded": true,
+      "source": "youtube outlier analysis",
+      "stats": {
+        "subscribers": "71.9K",
+        "totalViews": "8.5M",
+        "videoCount": 97
+      },
+      "latestVideos": [
+        {
+          "title": "Pet Story - Roblox",
+          "views": "1.66M",
+          "outlierScore": 64.2
+        },
+        {
+          "title": "Pet Story Roblox Trailer",
+          "views": "1.15M",
+          "outlierScore": 45.3
+        }
+      ]
+    },
+    {
+      "id": "comp-011",
+      "channelId": "@WorldInNumbers3D",
+      "name": "World In Numbers 3D",
+      "url": "https://www.youtube.com/@WorldInNumbers3D",
+      "niche": "Kaiju/Creature Evolution",
+      "focus": "3D creature evolution and size comparison videos",
+      "addedAt": "2026-02-09T18:00:00Z",
+      "autoAdded": true,
+      "source": "youtube outlier analysis",
+      "stats": {
+        "subscribers": "87.3K",
+        "totalViews": "25M",
+        "videoCount": 340
+      },
+      "latestVideos": [
+        {
+          "title": "Evolution Of Godzilla | Life Cycle",
+          "views": "1.06M",
+          "outlierScore": 13.3
+        },
+        {
+          "title": "Evolution Of Titanus Shimo | Life Cycle",
+          "views": "919K",
+          "outlierScore": 37.9
+        }
+      ]
+    },
+    {
+      "id": "comp-012",
+      "channelId": "@KupChannel",
+      "name": "Kup",
+      "url": "https://www.youtube.com/@KupChannel",
+      "niche": "Creature Battle Simulation",
+      "focus": "Animal Revolt Battle Simulator tournament content",
+      "addedAt": "2026-02-09T18:00:00Z",
+      "autoAdded": true,
+      "source": "youtube outlier analysis",
+      "stats": {
+        "subscribers": "670K",
+        "totalViews": "180M",
+        "videoCount": 825
+      },
+      "latestVideos": [
+        {
+          "title": "1 vs 1 All Units Tournament - Animal Revolt Battle Simulator",
+          "views": "2.69M",
+          "outlierScore": 83.9
+        },
+        {
+          "title": "Ice Scourge vs All Units - Animal Revolt Battle Simulator",
+          "views": "872K",
+          "outlierScore": 32
+        }
+      ]
+    },
+    {
+      "id": "comp-013",
+      "channelId": "@ZedWinYT",
+      "name": "ZedWin",
+      "url": "https://www.youtube.com/@ZedWinYT",
+      "niche": "Pet Simulation/Roblox",
+      "focus": "Pet Simulator 99 tutorials and guides",
+      "addedAt": "2026-02-09T18:00:00Z",
+      "autoAdded": true,
+      "source": "youtube outlier analysis",
+      "stats": {
+        "subscribers": "89K",
+        "totalViews": "12M",
+        "videoCount": 79
+      },
+      "latestVideos": [
+        {
+          "title": "How To Get EVERY HUGE PET In Pet Simulator 99!",
+          "views": "1.43M",
+          "outlierScore": 66.7
+        },
+        {
+          "title": "All HIDDEN SECRETS In Pet Simulator 99!",
+          "views": "1.02M",
+          "outlierScore": 9.7
+        }
+      ]
+    },
+    {
+      "id": "comp-014",
+      "channelId": "@drawsessions",
+      "name": "drawsessions",
+      "url": "https://www.youtube.com/@drawsessions",
+      "niche": "Art Tutorial",
+      "focus": "Creature design and drawing tutorials",
+      "addedAt": "2026-02-09T18:00:00Z",
+      "autoAdded": true,
+      "source": "youtube outlier analysis",
+      "stats": {
+        "subscribers": "450K",
+        "totalViews": "45M",
+        "videoCount": 120
+      },
+      "latestVideos": [
+        {
+          "title": "Drawing Creatures Gets EASY When You Learn This",
+          "views": "368K",
+          "outlierScore": 20.3
+        },
+        {
+          "title": "Shading Basics to Pro Results — Using Only One Pencil",
+          "views": "631K",
+          "outlierScore": 44.7
+        }
+      ]
+    },
+    {
+      "id": "comp-015",
+      "channelId": "@foxboyhorror",
+      "name": "foxboyhorror",
+      "url": "https://www.youtube.com/@foxboyhorror",
+      "niche": "Horror/Creature Lore",
+      "focus": "Trevor Henderson creatures and horror content",
+      "addedAt": "2026-02-09T18:00:00Z",
+      "autoAdded": true,
+      "source": "youtube outlier analysis",
+      "stats": {
+        "subscribers": "336K",
+        "totalViews": "85M",
+        "videoCount": 156
+      },
+      "latestVideos": [
+        {
+          "title": "Old Vs New Trevor Henderson Monsters - All Trevor Henderson Creatures",
+          "views": "2.64M",
+          "outlierScore": 188
+        }
+      ]
+    },
+    {
+      "id": "comp-016",
+      "channelId": "@maxxivejumpo",
+      "name": "Maxxive Jumpo",
+      "url": "https://www.youtube.com/@maxxivejumpo",
+      "niche": "Alien/Creature Evolution",
+      "focus": "Creature evolution compilations and kaiju content",
+      "addedAt": "2026-02-09T18:00:00Z",
+      "autoAdded": true,
+      "source": "youtube outlier analysis",
+      "stats": {
+        "subscribers": "56K",
+        "totalViews": "8M",
+        "videoCount": 89
+      },
+      "latestVideos": [
+        {
+          "title": "All Alien Creatures & Evolution Compilation | Maxxive Jumpo",
+          "views": "316K",
+          "outlierScore": 28
+        },
+        {
+          "title": "All Pacific Rim Kaiju Monsters Evolution",
+          "views": "89K",
+          "outlierScore": 10.5
+        }
+      ]
+    },
+    {
+      "id": "comp-017",
+      "channelId": "@ambientdreamescapes",
+      "name": "Ambient Dream Escapes",
+      "url": "https://www.youtube.com/@ambientdreamescapes",
+      "niche": "Dragon/Pet Simulation",
+      "focus": "Baby dragon and speculative creature content",
+      "addedAt": "2026-02-09T18:00:00Z",
+      "autoAdded": true,
+      "source": "youtube outlier analysis",
+      "stats": {
+        "subscribers": "565K",
+        "totalViews": "120M",
+        "videoCount": 234
+      },
+      "latestVideos": [
+        {
+          "title": "What if baby dragons existed?",
+          "views": "3.57M",
+          "outlierScore": 41.9
+        }
+      ]
+    },
+    {
+      "id": "comp-018",
+      "channelId": "@steve_big_guns",
+      "name": "steve_big_guns",
+      "url": "https://www.youtube.com/@steve_big_guns",
+      "niche": "Gaming/Physics Simulation",
+      "focus": "2D physics baby kaiju creature tests",
+      "addedAt": "2026-02-09T18:00:00Z",
+      "autoAdded": true,
+      "source": "youtube outlier analysis",
+      "stats": {
+        "subscribers": "2.1K",
+        "totalViews": "350K",
+        "videoCount": 12
+      },
+      "latestVideos": [
+        {
+          "title": "2d physics baby kaiju sea creature test",
+          "views": "226K",
+          "outlierScore": 390
+        }
+      ]
     }
   ],
   "outlierPatterns": [
@@ -109,7 +425,31 @@
       "category": "AI Creature Design",
       "relevanceScore": 90,
       "recommendedAction": "Document AI creature creation process"
+    },
+    {
+      "pattern": "1000 Years time compression",
+      "category": "AI Simulation",
+      "relevanceScore": 88,
+      "recommendedAction": "Apply time compression to AI creature evolution"
+    },
+    {
+      "pattern": "Baby creature physics simulation",
+      "category": "Physics Simulation",
+      "relevanceScore": 92,
+      "recommendedAction": "Create baby AI creature physics content"
+    },
+    {
+      "pattern": "Dragon family narrative",
+      "category": "Minecraft/Dragon",
+      "relevanceScore": 85,
+      "recommendedAction": "Create AI dragon family story arcs"
+    },
+    {
+      "pattern": "Pet Simulator tutorials",
+      "category": "Gaming/Tutorial",
+      "relevanceScore": 80,
+      "recommendedAction": "Create how-to guides for AI pet mechanics"
     }
   ],
-  "lastUpdated": "2026-02-09T15:28:00Z"
+  "lastUpdated": "2026-02-09T18:30:00Z"
 }
