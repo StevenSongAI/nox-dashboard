@@ -1179,7 +1179,12 @@ let researchNotesData = [];
 
 function renderResearch() {
   const container = document.getElementById('research-notes');
-  const notes = appData.research.notes || [];
+  // D1 FIX: Filter out sample/tutorial notes from display (handles localStorage cached data)
+  const allNotes = appData.research.notes || [];
+  const notes = allNotes.filter(n => {
+    const tags = n.tags || [];
+    return !(tags.includes('getting-started') && tags.includes('tutorial'));
+  });
   researchNotesData = notes;
 
   if (notes.length === 0) {
