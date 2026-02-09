@@ -1982,44 +1982,261 @@ function showToolModal(idx) {
 
 let researchNotesData = [];
 
-function renderResearch() {
-  const container = document.getElementById('research-notes');
-  const notes = appData.research.notes || [];
-  researchNotesData = notes;
-
-  if (notes.length === 0) {
-    container.innerHTML = buildEmptyState('🔬', 'No Research Notes', 'The agent will add them as research is conducted.');
-    return;
+// BATCH 5 FIX: Load research notes from localStorage
+function loadResearchNotes() {
+  const stored = localStorage.getItem('research-notes');
+  if (stored) {
+    return JSON.parse(stored);
   }
-
-  container.innerHTML = notes.map((n, idx) => {
-    // D7 FIX: Use marked.parse() for markdown rendering
-    const content = n.summary || n.content || '';
-    const displayLimit = 300;
-    const truncatedContent = content.length > displayLimit 
-      ? content.substring(0, displayLimit) + '...'
-      : content;
-    
-    // Use marked.parse() if available, fallback to plain text
-    const renderedContent = typeof marked !== 'undefined' 
-      ? marked.parse(truncatedContent)
-      : escapeHtml(truncatedContent);
-    
-    return `
-    <div class="card card-clickable rounded-lg p-4" data-note-id="${n.id}" onclick="showNoteModal(${idx})">
-      <div class="flex justify-between items-start mb-2">
-        <h3 class="font-semibold">${n.title}</h3>
-        <span class="text-xs px-2 py-0.5 bg-dark-700 rounded">${n.category}</span>
-      </div>
-      <div class="text-sm text-gray-300 mb-2 line-clamp-3">${renderedContent}</div>
-      <div class="flex flex-wrap gap-1 mb-2">
-        ${(n.tags || []).map(t => `<span class="text-xs px-2 py-0.5 bg-accent-blue/20 text-accent-blue rounded">#${t}</span>`).join('')}
-      </div>
-      <div class="text-xs text-gray-400">${formatTimeAgo(n.createdAt || n.date)}</div>
-    </div>
-  `}).join('');
+  // Return default notes if none stored
+  return [
+    {
+      id: 'note-1',
+      title: 'Getting Started with Research Notes',
+      category: 'General',
+      content: 'This is a sample research note. You can create, edit, and delete notes. Notes support markdown formatting and can be categorized.\n\n## Features:\n- Create notes with title and content\n- Categorize by topic\n- Add tags for organization\n- Edit existing notes\n- Delete when no longer needed',
+      summary: 'Sample note demonstrating research notes functionality',
+      tags: ['getting-started', 'tutorial'],
+      createdAt: new Date().toISOString(),
+      updatedAt: new Date().toISOString()
+    }
+  ];
 }
 
+function saveResearchNotes(notes) {
+  localStorage.setItem('research-notes', JSON.stringify(notes));
+}
+
+// BATCH 5 FIX: Enhanced renderResearch with CRUD operations
+function renderResearch() {
+  const container = document.getElementById('research-notes');
+  
+  // Load from localStorage and merge with appData
+  const storedNotes = loadResearchNotes();
+  const jsonNotes = appData.research?.notes || [];
+  
+  // Merge: stored notes take precedence for duplicates
+  const noteMap = new Map();
+  [...jsonNotes, ...storedNotes].forEach(note => {
+    if (note && note.id) {
+      noteMap.set(note.id, note);
+    }
+  });
+  const notes = Array.from(noteMap.values());
+  researchNotesData = notes;
+  
+  // Save merged notes
+  saveResearchNotes(notes);
+
+  // Build HTML with add button
+  let html = `
+    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4 gap-3">
+      <div class="text-sm text-gray-400">${notes.length} notes</div>
+      <button onclick="showAddNoteModal()" class="px-3 py-1 bg-accent-blue rounded text-sm hover:bg-blue-600">+ Add Note</button>
+    </div>
+  `;
+
+  if (notes.length === 0) {
+    html += buildEmptyState('🔬', 'No Research Notes', 'Click "Add Note" to create your first research note.');
+  } else {
+    html += notes.map((n, idx) => {
+      const content = n.summary || n.content || '';
+      const displayLimit = 300;
+      const truncatedContent = content.length > displayLimit 
+        ? content.substring(0, displayLimit) + '...'
+        : content;
+      
+      const renderedContent = typeof marked !== 'undefined' 
+        ? marked.parse(truncatedContent)
+        : escapeHtml(truncatedContent);
+      
+      // Escape note ID for onclick
+      const safeNoteId = n.id.replace(/'/g, "\\'").replace(/"/g, '\\"');
+      
+      return `
+      <div class="card card-clickable rounded-lg p-4" data-note-id="${n.id}" data-category="${n.category || ''}">
+        <div class="flex justify-between items-start mb-2">
+          <h3 class="font-semibold">${escapeHtml(n.title)}</h3>
+          <div class="flex items-center gap-2">
+            <span class="text-xs px-2 py-0.5 bg-dark-700 rounded">${escapeHtml(n.category || 'Uncategorized')}</span>
+            <button onclick="event.stopPropagation(); showEditNoteModal('${safeNoteId}')" class="text-xs text-accent-blue hover:underline">Edit</button>
+            <button onclick="event.stopPropagation(); deleteNote('${safeNoteId}')" class="text-xs text-red-400 hover:underline">Delete</button>
+          </div>
+        </div>
+        <div class="text-sm text-gray-300 mb-2 line-clamp-3">${renderedContent}</div>
+        <div class="flex flex-wrap gap-1 mb-2">
+          ${(n.tags || []).map(t => `<span class="text-xs px-2 py-0.5 bg-accent-blue/20 text-accent-blue rounded">#${escapeHtml(t)}</span>`).join('')}
+        </div>
+        <div class="text-xs text-gray-400">${formatTimeAgo(n.createdAt || n.date)}</div>
+      </div>
+    `}).join('');
+  }
+  
+  container.innerHTML = html;
+}
+
+// BATCH 5 FIX: Show Add Note Modal
+function showAddNoteModal() {
+  const modalHTML = `
+    <div class="form-group">
+      <label>Note Title</label>
+      <input type="text" id="note-title" class="form-input" placeholder="Enter note title...">
+    </div>
+    <div class="form-group">
+      <label>Category</label>
+      <select id="note-category" class="form-input">
+        <option value="General">General</option>
+        <option value="YouTube">YouTube</option>
+        <option value="Business">Business</option>
+        <option value="Investments">Investments</option>
+        <option value="Technology">Technology</option>
+        <option value="Ideas">Ideas</option>
+        <option value="Strategy">Strategy</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Tags (comma separated)</label>
+      <input type="text" id="note-tags" class="form-input" placeholder="tag1, tag2, tag3...">
+    </div>
+    <div class="form-group">
+      <label>Content (supports markdown)</label>
+      <textarea id="note-content" class="form-input form-textarea" rows="8" placeholder="Write your research notes here..."></textarea>
+    </div>
+    <button onclick="submitAddNote()" class="btn-primary w-full">Create Note</button>
+  `;
+  
+  openModal('Add Research Note', modalHTML);
+}
+
+function submitAddNote() {
+  const title = document.getElementById('note-title')?.value?.trim();
+  const category = document.getElementById('note-category')?.value || 'General';
+  const tagsInput = document.getElementById('note-tags')?.value?.trim() || '';
+  const content = document.getElementById('note-content')?.value?.trim();
+  
+  if (!title) {
+    alert('Please enter a note title');
+    return;
+  }
+  
+  const tags = tagsInput.split(',').map(t => t.trim()).filter(Boolean);
+  const now = new Date().toISOString();
+  
+  const notes = loadResearchNotes();
+  notes.unshift({
+    id: 'note-' + Date.now(),
+    title,
+    category,
+    content: content || '',
+    summary: content ? content.substring(0, 200) + (content.length > 200 ? '...' : '') : '',
+    tags,
+    createdAt: now,
+    updatedAt: now
+  });
+  
+  saveResearchNotes(notes);
+  closeModal();
+  renderResearch();
+}
+
+// BATCH 5 FIX: Show Edit Note Modal
+function showEditNoteModal(noteId) {
+  const notes = loadResearchNotes();
+  const note = notes.find(n => n.id === noteId);
+  
+  if (!note) {
+    alert('Note not found');
+    return;
+  }
+  
+  // Escape for HTML attributes
+  const safeNoteId = noteId.replace(/'/g, "\\'").replace(/"/g, '\\"');
+  const safeTitle = escapeHtml(note.title);
+  const safeContent = escapeHtml(note.content || '');
+  const safeCategory = escapeHtml(note.category || 'General');
+  const safeTags = escapeHtml((note.tags || []).join(', '));
+  
+  const modalHTML = `
+    <div class="form-group">
+      <label>Note Title</label>
+      <input type="text" id="edit-note-title" class="form-input" value="${safeTitle}">
+    </div>
+    <div class="form-group">
+      <label>Category</label>
+      <select id="edit-note-category" class="form-input">
+        <option value="General" ${note.category === 'General' ? 'selected' : ''}>General</option>
+        <option value="YouTube" ${note.category === 'YouTube' ? 'selected' : ''}>YouTube</option>
+        <option value="Business" ${note.category === 'Business' ? 'selected' : ''}>Business</option>
+        <option value="Investments" ${note.category === 'Investments' ? 'selected' : ''}>Investments</option>
+        <option value="Technology" ${note.category === 'Technology' ? 'selected' : ''}>Technology</option>
+        <option value="Ideas" ${note.category === 'Ideas' ? 'selected' : ''}>Ideas</option>
+        <option value="Strategy" ${note.category === 'Strategy' ? 'selected' : ''}>Strategy</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Tags (comma separated)</label>
+      <input type="text" id="edit-note-tags" class="form-input" value="${safeTags}">
+    </div>
+    <div class="form-group">
+      <label>Content (supports markdown)</label>
+      <textarea id="edit-note-content" class="form-input form-textarea" rows="8">${safeContent}</textarea>
+    </div>
+    <button onclick="submitEditNote('${safeNoteId}')" class="btn-primary w-full">Save Changes</button>
+  `;
+  
+  openModal('Edit Research Note', modalHTML);
+}
+
+function submitEditNote(noteId) {
+  const title = document.getElementById('edit-note-title')?.value?.trim();
+  const category = document.getElementById('edit-note-category')?.value || 'General';
+  const tagsInput = document.getElementById('edit-note-tags')?.value?.trim() || '';
+  const content = document.getElementById('edit-note-content')?.value?.trim();
+  
+  if (!title) {
+    alert('Please enter a note title');
+    return;
+  }
+  
+  const tags = tagsInput.split(',').map(t => t.trim()).filter(Boolean);
+  
+  const notes = loadResearchNotes();
+  const noteIndex = notes.findIndex(n => n.id === noteId);
+  
+  if (noteIndex === -1) {
+    alert('Note not found');
+    return;
+  }
+  
+  notes[noteIndex] = {
+    ...notes[noteIndex],
+    title,
+    category,
+    content: content || '',
+    summary: content ? content.substring(0, 200) + (content.length > 200 ? '...' : '') : '',
+    tags,
+    updatedAt: new Date().toISOString()
+  };
+  
+  saveResearchNotes(notes);
+  closeModal();
+  renderResearch();
+}
+
+// BATCH 5 FIX: Delete Note
+function deleteNote(noteId) {
+  if (!confirm('Are you sure you want to delete this note?')) {
+    return;
+  }
+  
+  const notes = loadResearchNotes();
+  const filtered = notes.filter(n => n.id !== noteId);
+  
+  saveResearchNotes(filtered);
+  renderResearch();
+}
+
+// Legacy function kept for compatibility
 function showNoteModal(idx) {
   const note = researchNotesData[idx];
   if (note) {
@@ -3392,11 +3609,9 @@ function showBriefDetailModal(briefId) {
     return;
   }
   
-  // D2 FIX: Escape briefId to prevent HTML/JS injection issues
-  const safeBriefId = briefId.replace(/'/g, "\\'").replace(/"/g, '\\"');
-  
+  // D2 FIX: Use data attribute instead of inline onclick to avoid escaping issues
   const modalHTML = `
-    <div class="modal-scroll">
+    <div class="modal-scroll" data-brief-id="${briefId}">
       <div class="flex justify-between items-start mb-4">
         <h3 class="text-lg font-semibold">${escapeHtml(brief.title)}</h3>
         <span class="text-xs px-2 py-1 rounded ${getStatusColor(brief.status)}">${brief.status}</span>
@@ -3436,18 +3651,27 @@ function showBriefDetailModal(briefId) {
       </div>
       
       <div class="flex gap-2 mt-4 pt-4 border-t border-dark-700">
-        <select id="brief-status-update" class="form-input flex-1" onchange="updateBriefStatus('${safeBriefId}', this.value)">
+        <select id="brief-status-update" class="form-input flex-1" data-brief-id="${briefId}">
           <option value="draft" ${brief.status === 'draft' ? 'selected' : ''}>Draft</option>
           <option value="ready" ${brief.status === 'ready' ? 'selected' : ''}>Ready</option>
           <option value="produced" ${brief.status === 'produced' ? 'selected' : ''}>Produced</option>
           <option value="published" ${brief.status === 'published' ? 'selected' : ''}>Published</option>
         </select>
-        <button onclick="deleteBrief('${safeBriefId}')" class="btn-danger">Delete</button>
+        <button id="btn-delete-brief" class="btn-danger">Delete</button>
       </div>
     </div>
   `;
   
   openModal('Content Brief Details', modalHTML);
+  
+  // D2 FIX: Attach event listeners after modal is open to avoid escaping issues
+  document.getElementById('brief-status-update')?.addEventListener('change', function(e) {
+    updateBriefStatus(briefId, e.target.value);
+  });
+  
+  document.getElementById('btn-delete-brief')?.addEventListener('click', function() {
+    deleteBrief(briefId);
+  });
 }
 
 function updateBriefStatus(briefId, newStatus) {
