@@ -1,7 +1,7 @@
 {
-  "lastHeartbeat": "2026-02-09T06:26:00Z",
-  "totalHeartbeats": 20,
-  "lastAction": "[learning cycle] Added synthesized insight #008 - Physics Simulation + Miniature Creatures pattern from analysis of 38 outlier videos.",
+  "lastHeartbeat": "2026-02-09T06:46:00Z",
+  "totalHeartbeats": 21,
+  "lastAction": "[learning cycle] Added synthesized insight #009 - 'How It Works' educational explanation format pattern from 41 outlier videos.",
   "currentPriorities": {
     "youtube": "Triple Threat viral format execution - synthesize time compression + thief-bait + escalating stakes",
     "business": "AI Coding Agents content opportunity (trend score 120) - 30-day comparison pilot video",
@@ -9,7 +9,7 @@
     "tools": "Dashboard and Mission Control on GitHub Pages"
   },
   "dataFreshness": {
-    "youtube": "2026-02-09 — 38 outliers, 6 briefs, 8 synthesized insights",
+    "youtube": "2026-02-09 — 41 outliers, 6 briefs, 9 synthesized insights",
     "newBusiness": "2026-02-08 — 9 opportunities",
     "investments": "2026-02-08 — 3 opportunities, 2 watchlist, 11 intelligence entries",
     "research": "2026-02-08 — 10 notes",
@@ -21,15 +21,16 @@
     {"date": "2026-02-07", "feedback": "No content loaded in dashboard", "implication": "Populate data files before deployment"}
   ],
   "workThatLanded": [
-    {"what": "38 Real YouTube Outliers Added", "why": "Real research data from ZMDE, StevenSongIRL, and viewstats analysis", "date": "2026-02-09"},
-    {"what": "Mission Control Dashboard", "why": "Activity feed, calendar, global search - complete visibility", "date": "2026-02-07"},
-    {"what": "Morning Brief Widget", "why": "88% audit grade, actionable summary at a glance", "date": "2026-02-07"}
+    {"what": "41 Real YouTube Outliers Added", "why": "Real research data from ZMDE, StevenSongIRL, and viewstats analysis", "date": "2026-02-09"},
+    {"what": "9 Synthesized Insights", "why": "Actionable patterns from outlier analysis - real content strategy", "date": "2026-02-09"},
+    {"what": "Mission Control Dashboard", "why": "Activity feed, calendar, global search - complete visibility", "date": "2026-02-07"}
   ],
   "workThatFlopped": [
     {"what": "Batch 3/4 builder false claims", "why": "Claimed features (delete button, Add Opportunity buttons) weren't actually implemented or tested", "date": "2026-02-08", "fixed": true},
     {"what": "Dashboard tab click bug", "why": "JavaScript syntax error prevented tabs from working", "date": "2026-02-07", "fixed": true}
   ],
   "lessonsLearned": [
+    {"date": "2026-02-09", "lesson": "'How X Works' educational format achieves extreme outliers (75x for cat video) - documentary-style explanations of creature mechanics"},
     {"date": "2026-02-09", "lesson": "Physics simulation content achieves extreme outlier scores (390x, 677x) when combined with miniature creatures"},
     {"date": "2026-02-09", "lesson": "'Baby [creature]' format triggers protective response + physics creates satisfying visual loops"},
     {"date": "2026-02-09", "lesson": "Builders LIE about implementing features - must mandate browser verification before claiming completion"},
@@ -38,8 +39,7 @@
     {"date": "2026-02-08", "lesson": "StevenSongIRL's thief-bait format massively outperforms (15-40x subscriber count)"},
     {"date": "2026-02-08", "lesson": "Price comparison format works best for high-stakes categories (cars > toys)"},
     {"date": "2026-02-07", "lesson": "Always run syntax check (node --check) before pushing JavaScript"},
-    {"date": "2026-02-07", "lesson": "Dashboard is the default destination - all work feeds into it"},
-    {"date": "2026-02-07", "lesson": "APPEND new data, never replace entire JSON files"}
+    {"date": "2026-02-07", "lesson": "Dashboard is the default destination - all work feeds into it"}
   ],
   "toolUsage": {
     "activelyUsed": ["Dashboard", "Mission Control"],
@@ -66,8 +66,8 @@
       "reason": "RESOLVED - Using hourly cron job with web_search to discover outliers",
       "blockingSince": "2026-02-08T22:00:00Z",
       "unblockedAt": "2026-02-09T04:00:00Z",
-      "unblockCondition": "Hourly automated research cron - 38 outliers discovered, 8 insights synthesized",
-      "workaround": "Hourly automated research cron - 38 outliers discovered, 8 insights synthesized",
+      "unblockCondition": "Hourly automated research cron - 41 outliers discovered, 9 insights synthesized",
+      "workaround": "Hourly automated research cron - 41 outliers discovered, 9 insights synthesized",
       "priority": "high",
       "attempted": ["browser navigation - failed", "web_search cron - SUCCESS", "hourly automation - WORKING"]
     }

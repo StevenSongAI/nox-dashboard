@@ -893,6 +893,15 @@
         "actionable": "Create 'Baby AI [Creature] Physics Simulation' series. Use simple physics engines or sandbox games to show AI creatures interacting with realistic physics. Focus on cute-but-destructive contrast.",
         "confidence": "high",
         "addedAt": "2026-02-09T06:26:00Z"
+      },
+      {
+        "id": "insight-009",
+        "pattern": "Educational Explanation - 'How It Works' Format",
+        "evidence": "catloversforum_en 'How a cat works' (75.3x outlier, 3.84M views on 51K subs). cannymem 'How a dog works' (5.4x). sxuiroblox 'How To Make A Pet System' (3.1x). zedwinyt 'How To Get EVERY HUGE PET' (66.7x).",
+        "finding": "Simple 'How X Works' educational format achieves massive outlier scores, especially with pets/creatures. The cat video at 75x is one of the highest outliers found. Tutorial-style content solving specific problems (66.7x) combines education with utility.",
+        "actionable": "Create 'How [AI Creature] Works' series - explain fictional biology, behavior, and mechanics in documentary style. Include 'How To' guides for specific AI creature interactions and mechanics.",
+        "confidence": "high",
+        "addedAt": "2026-02-09T06:46:00Z"
       }
     ]
   },
