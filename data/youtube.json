@@ -569,6 +569,51 @@
       "url": "https://www.youtube.com/watch?v=wbhSBtg-dYg",
       "researchStatus": "completed",
       "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-039",
+      "title": "Create Your Own Pokemon with A.I. - ComfyUI IPAdapter Workflow included",
+      "channel": "fictions-ai",
+      "views": 100000,
+      "publishedAt": "2023-02-08T00:00:00Z",
+      "addedAt": "2026-02-09T05:06:00Z",
+      "outlierScore": 36.6,
+      "niche": "🎮 AI/Pokémon",
+      "whyOutlier": "36.6x outlier - 100K views on 269K sub channel. AI + Pokemon combination hits algorithm sweet spot. Tutorial format with workflow included drives engagement.",
+      "contentAngle": "Create 'Design Your Own AI Creatures' tutorials with downloadable workflows. Combine popular IP (Pokemon) with AI generation for maximum reach.",
+      "url": "https://www.youtube.com/watch?v=VsEYyxnjOnY",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-040",
+      "title": "Top 10 Most Amazing Creatures on Earth",
+      "channel": "doublemuakyt",
+      "views": 55000,
+      "publishedAt": "2024-02-08T00:00:00Z",
+      "addedAt": "2026-02-09T05:06:00Z",
+      "outlierScore": 40.7,
+      "niche": "🌍 Nature/Creatures",
+      "whyOutlier": "EXTREME 40.7x outlier - 55K views on 109K sub channel. 'Top 10' list format + creature content = proven viral formula. Small channel punching above its weight.",
+      "contentAngle": "Apply 'Top 10' list format to AI creatures: 'Top 10 Most DANGEROUS AI Creatures' or 'Top 10 Rarest AI Pets'. List format drives clicks and retention.",
+      "url": "https://www.youtube.com/watch?v=Tzm3OE7wH7k",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-041",
+      "title": "How To Get EVERY HUGE PET In Pet Simulator 99!",
+      "channel": "zedwinyt",
+      "views": 1430000,
+      "publishedAt": "2023-02-08T00:00:00Z",
+      "addedAt": "2026-02-09T05:06:00Z",
+      "outlierScore": 66.7,
+      "niche": "🎮 Pet Simulation/Roblox",
+      "whyOutlier": "MASSIVE 66.7x outlier - 1.43M views on 89K sub channel! 'How to get EVERY X' format + pet simulation = extreme engagement. Tutorial solving collection completion pain point.",
+      "contentAngle": "Create 'How to Get EVERY [AI Creature Type]' content - collection completion guides for AI pet simulations. '100% completion' drives obsessive engagement.",
+      "url": "https://www.youtube.com/watch?v=c2bYJ4X72mo",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
     }
   ],
   "competitorResearchQueue": [
