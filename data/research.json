@@ -141,7 +141,29 @@
       "linkedBlockerIds": [
         "blocked-001"
       ]
+    },
+    {
+      "id": "note-008",
+      "title": "YouTube Traffic Source Analysis: YT_RELATED Performance Deep-Dive",
+      "date": "2026-02-09T14:28:00Z",
+      "tags": [
+        "youtube-analytics",
+        "traffic-sources",
+        "ctr-analysis",
+        "content-performance",
+        "competitor-intelligence"
+      ],
+      "content": "## YouTube Traffic Source Analysis: YT_RELATED Performance Deep-Dive\\n\\n### Dataset Overview\\n- **Source**: YouTube Traffic Source Report (YT_RELATED)\\n- **Period**: Recent 30-day window\\n- **Total Impressions**: 338,645\\n- **Overall CTR**: 9.88%\\n- **Total Views**: 44,807\\n- **Avg View Duration**: 5:32\\n- **Total Watch Time**: 4,140.49 hours\\n\\n### Top Performing Content (By CTR)\\n\\n| Rank | Video Title | CTR | Views | Avg Duration | Pattern |\\n|------|-------------|-----|-------|--------------|---------|\\n| 1 | I Simulated Pokémon In Real Life | 27.29% | 1,596 | 5:27 | Pokémon + Simulation |\\n| 2 | I Got a Pet T Rex | 23.96% | 376 | 6:33 | Pet + Dinosaur |\\n| 3 | I Got a Pet Ice Dragon In Real Life | 23.32% | 244 | 3:35 | Pet + Dragon |\\n| 4 | I Simulated King Kong In Real Life | 22.4% | 1,538 | 5:40 | Kaiju + Simulation |\\n| 5 | I Pretended To Have a Bulbasaur In Real Life | 21.22% | 191 | 7:37 | Pokémon + Pretend |\\n| 6 | I Found a Leaf Cat in My Garden | 12.27% | 74 | 5:50 | Discovery + Creature |\\n| 7 | I Simulated Toothless in Real Life | 18.78% | 1,229 | 6:05 | HTTYD + Simulation |\\n| 8 | I Got a Pet Godzilla | 19.92% | 1,586 | 4:34 | Kaiju + Pet |\\n| 9 | I Simulated ICE Pokémon In Real Life | 20.22% | 342 | 6:51 | Pokémon + Element |\\n| 10 | Can I Hatch a Demogorgon's Egg? | 13.47% | 918 | 5:57 | Stranger Things + Hatch |\\n\\n### Key Insights\\n\\n**1. Pokémon Content Dominates High-CTR Performance**\\n- 4 of top 10 videos feature Pokémon\\n- CTR range: 12.72% - 27.29%\\n- 'Simulated' format outperforms 'Got a Pet' format for Pokémon content\\n\\n**2. Kaiju/Godzilla Content Has Strong Appeal**\\n- King Kong: 22.4% CTR, 1,538 views\\n- Godzilla: 19.92% CTR, 1,586 views\\n- Both achieve high view counts with strong CTR\\n\\n**3. Dragon Content Shows Consistent Performance**\\n- Toothless: 18.78% CTR, 1,229 views\\n- Ice Dragon: 23.32% CTR, 244 views (smaller sample)\\n- Dragon + 'Pet' format resonates with audience\\n\\n**4. High-CTR Correlates with View Duration**\\n- Top CTR videos average 5:30+ duration\\n- Audience that clicks is highly engaged\\n- Suggests strong thumbnail/title to content match\\n\\n### Traffic Source Channels Identified\\n\\n**Verified Competitor Channels (Already Tracked):**\\n- Pet Simulated World (@petsimulatedworld) - King Kong content\\n- Roger's Pets (@RogersPets-w5s) - Toothless content\\n- Sacred Stuff (@sacredstuff) - Godzilla/Pokémon content\\n\\n**All three confirmed in competitors.json tracker.**\\n\\n### Content Strategy Implications\\n\\n**Immediate Opportunities:**\\n1. **Double down on Pokémon simulation** - Highest CTR category\\n2. **Expand kaiju portfolio** - Godzilla/King Kong both strong\\n3. **Test hybrid concepts** - Pokémon + Dragon fusion content\\n4. **Leverage 'Simulated' format** - Outperforms 'Got a Pet' for IP content\\n\\n**Thumbnail/Title Patterns from High Performers:**\\n- 'I Simulated [IP] In Real Life' - 27.29% CTR\\n- 'I Got a Pet [Creature]' - 19-24% CTR range\\n- Element modifiers boost CTR (ICE Pokémon: 20.22%)\\n- Question format viable (Demogorgon egg: 13.47%)\\n\\n**Watch Time Analysis:**\\n- High-CTR videos retain viewers for 5+ minutes\\n- No correlation between CTR and view duration drop-off\\n- Quality traffic from YT_RELATED source\\n\\n### Competitive Intelligence\\n\\n**Adjacent Content Performing in Related Videos:**\\n- Creature Lab style: 'I Simulated [X] In Real Life'\\n- Rogers Pets style: 'I Got a Pet [X]'\\n- Night Toons style: Animation + gaming hybrid\\n\\n**Whitespace Opportunity:**\\n- No competitors combining 'Baby Creature + Physics' (highest outlier pattern)\\n- Gap for '1000 Years' evolution format in this niche\\n- Underserved: AI creature educational content\\n\\n### Recommended Actions\\n\\n**This Week:**\\n1. Create 'I Simulated [Baby Dragon] In Real Life' - combine top CTR pattern with outlier data\\n2. Produce Pokémon + Dragon hybrid concept\\n3. Test 'ICE' elemental modifier on existing content\\n\\n**Next 2 Weeks:**\\n1. Audit thumbnails for top 5 competitors in traffic sources\\n2. A/B test 'Simulated' vs 'Got a Pet' titles\\n3. Develop kaiju evolution series (leverage 20%+ CTR)\\n\\n**Metrics to Track:**\\n- CTR by content category (target: maintain >15%)\\n- View duration from YT_RELATED traffic\\n- Competitor video upload frequency\\n- Cross-pollination between Pokémon and kaiju audiences\\n\\n---\\n\\n*Source: YouTube Analytics Traffic Source Report | Analysis Date: 2026-02-09*",
+      "sourceUrls": [
+        "https://www.youtube.com/@StevenSongIRL/analytics"
+      ],
+      "category": "Analytics Intelligence",
+      "linkedCompetitorIds": [
+        "comp-001",
+        "comp-002",
+        "comp-003"
+      ]
     }
   ],
-  "lastUpdated": "2026-02-08T23:06:31.500Z"
+  "lastUpdated": "2026-02-09T14:30:00Z"
 }
