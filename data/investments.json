@@ -474,6 +474,28 @@
       ],
       "positionStrategy": "HOLD",
       "linkedIntelligence": ["intel-018", "intel-017", "intel-015"]
+    },
+    {
+      "id": "intel-020",
+      "date": "2026-02-10T06:30:00Z",
+      "topic": "20-Min Heartbeat: Investment Intel Update - NVDA 15 Days to Earnings",
+      "source": "Heartbeat Protocol / Market Intelligence",
+      "content": "Scheduled heartbeat update for investment portfolio:\n\n**Portfolio Snapshot (Feb 10, 2026)**\n- Total Value: $17,453\n- AAPL: $13,652 (+47.39% gain) - 78% of portfolio\n- NVDA: $3,801 (+37.21% gain) - 22% of portfolio\n- Combined Return: +45.2% since entry\n\n**NVDA Earnings Countdown: 15 Days**\nEvent: Q4 FY2026 Earnings - February 25, 2026 (After Hours)\n\n**Key Metrics to Watch:**\n- Data Center Revenue: Consensus $19.5B (+73% YoY)\n- Blackwell Status: Production ramp, customer commitments\n- Q1 Guidance: Critical for full-year estimates\n- Gross Margin: Targeting 73-74% (down from 74.6%)\n- China Impact: Export restriction quantification\n\n**Recent Activity:**\n- NVDA closed at $190.04 on Feb 9 (+2.50%)\n- Volume elevated at 195M shares (vs 181M avg)\n- Analyst target: $253.62 (+33% upside potential)\n- 52-week range: $86.62 - $212.19 (currently at 89% of high)\n\n**Position Strategy: HOLD**\n- No position changes within 15 days of earnings\n- Expected volatility: ±8-12% post-announcement\n- Bull case: Blackwell demand exceeds supply → $220+ target\n- Bear case: Supply constraints limit growth → $160 support\n\n**Watchlist Updates:**\n- AMD: $208.44 (+8.28% post-earnings) - Awaiting $180 pullback for entry\n- PLTR: $135.90 - Valuation stretched at 45x forward revenue, target $100\n- TSLA: $245.50 - Monitoring robotaxi catalyst timeline\n\n**Linked Content:**\n- Dashboard fully operational after Ralph-chain fixes (Feb 9)\n- Content-investment convergence: T-Rex video production progressing\n- Next major update: Post-NVDA earnings (Feb 26)",
+      "impact": "neutral",
+      "relatedPositions": ["pos-001", "pos-002"],
+      "alerts": [
+        "NVDA earnings 15 days out - maintain HOLD position",
+        "Portfolio showing strong +45% combined gains",
+        "AMD entry target $180 - wait for pullback"
+      ],
+      "positionStrategy": "HOLD",
+      "earningsCountdown": {
+        "ticker": "NVDA",
+        "date": "2026-02-25",
+        "daysRemaining": 15,
+        "expectedVolatility": "±8-12%"
+      },
+      "linkedIntelligence": ["intel-019", "intel-018", "intel-017"]
     }
   ],
   "synthesizedInsights": [
