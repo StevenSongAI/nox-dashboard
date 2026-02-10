@@ -1,158 +1,149 @@
-# Value Audit Report: nox-dashboard
+# Value Audit Report
 
-**Audit Date:** 2026-02-09  
-**Commit Reviewed:** a547a36  
-**Note Added:** note-024 - T-Rex Video Production Tracker  
+**Audit Date:** 2026-02-10  
+**Auditor:** VALUE_AUDITOR Subagent  
+**Commit:** [nox] Learning Cycle: Added Agent Performance Diagnostic (note-025), updated STATE.json with lessons from Feb 9 slowdown  
+**Files Reviewed:** `data/research.json`, `data/state.json`, `data/meta.json`
 
 ---
 
 ## Executive Summary
 
-| Metric | Score | Notes |
-|--------|-------|-------|
-| Data Quality | 85% | Real project data, actionable content |
-| Schema Compliance | 100% | Valid JSON, all fields present |
-| Utility for Steven | 90% | Comprehensive production tracker |
-| Value Added to Dashboard | 82% | Significant organizational improvement |
-| File Updates | 100% | meta.json and state.json correctly updated |
-| **OVERALL VALUE SCORE** | **85%** | **High-quality, useful update** |
+| Criterion | Grade | Notes |
+|-----------|-------|-------|
+| Real Data vs Filler | ✅ REAL | Genuine operational post-mortem from Feb 9 incident |
+| Schema Compliance | ⚠️ PARTIAL | Matches schema but duplicate note-025 in research.json |
+| User Value | ✅ HIGH | Actionable insights for agent optimization |
+| Dashboard Value Increase | ✅ SIGNIFICANT | +1 operational intelligence note, +3 lessons learned |
+| Meta/State Updates | ✅ COMPLETE | All timestamps and counters updated correctly |
+
+**Overall Value Added: 75%** (Decent update, useful but has data quality issue)
 
 ---
 
-## Detailed Assessment
+## Detailed Findings
 
-### ✅ Is this real, researched data or filler? 
-**Score: 85% - REAL DATA WITH ONE CONCERN**
+### 1. Data Authenticity: ✅ REAL (Not Filler)
 
-The note contains legitimate, actionable content:
-- References Steven's actual YouTube project ("I Got a Pet T-Rex in Minecraft")
-- Connects to existing active task (active-001 - Map artist sourcing)
-- References previous notes (note-023 templates, note-020 Discord guide)
-- Lists real platforms: Fiverr, Upwork, r/MinecraftBuilds, Planet Minecraft
-- Includes specific budget ($150 USD) and timeline (7 days)
+**Evidence of Real Data:**
+- Specific timestamps from Feb 9-10, 2026
+- Actual model names (`anthropic/claude-sonnet-4-5`, `kimi-coding/k2p5`)
+- Concrete token counts (90k-262k)
+- Real agent names (Nox, Sage, Joy) with actual heartbeat frequencies
+- Specific actions taken (disabled 20-min cron, terminated 5 subagents)
 
-**⚠️ ISSUE IDENTIFIED:**  
-The note references `~/Desktop/Nox Builds/nox-dashboard/tools/t-rex-image-generator.py` as "Ready to run" — but this file **DOES NOT EXIST**. Additionally, state.json incorrectly lists "T-Rex Video Image Generator" under `workThatLanded` when no such script was created. This is a **false claim of completed work**.
+**This is a genuine operational post-mortem**, not synthetic filler. The agent actually investigated its own performance issues and documented findings.
 
----
+### 2. Schema Compliance: ⚠️ PARTIAL
 
-### ✅ Does it match the JSON schema exactly?
-**Score: 100% - SCHEMA COMPLIANT**
+**Compliant:**
+- `state.json` structure matches expected format
+- `meta.json` has all required fields (`lastUpdated`, `updatedBy`, `version`, `cacheBust`, `dataVersion`)
+- `research.json` notes have all required fields (`id`, `title`, `date`, `tags`, `content`, `category`)
 
-```json
-{
-  "id": "note-024",
-  "title": "T-Rex Video Production Tracker - Complete Action List",
-  "date": "2026-02-10T04:46:00Z",
-  "tags": ["t-rex", "production", "minecraft", "video", "tracker", "action-items"],
-  "content": "# T-Rex Video Production Tracker\n\n## Project Overview...",
-  "sourceUrls": ["https://www.fiverr.com", "https://www.upwork.com"],
-  "category": "Production Tracker",
-  "linkedActiveTaskId": "active-001"
-}
-```
+**Issue Found:**
+- **DUPLICATE ENTRY**: `note-025` appears **twice** in `research.json`
+  - First entry: Lines 2-63 (complete)
+  - Second entry: Lines 64-133 (complete, slightly different content)
+  - This appears to be an accidental double-write during the learning cycle
 
-All required fields present and properly formatted.
+**Recommendation:** Remove the duplicate note-025 entry from research.json
 
----
+### 3. User Value: ✅ HIGH
 
-### ✅ Would Steven find this useful?
-**Score: 90% - HIGHLY USEFUL**
+**What Steven Gets:**
+- **Performance Diagnostic**: Complete root cause analysis of why Nox was slower than other agents
+- **Actionable Checklist**: Prevention guidelines for future cron setup and subagent hygiene
+- **4 Concrete Lessons Learned**:
+  1. Cron optimization (20-min intervals burn quota)
+  2. Subagent cleanup (`cleanup="delete"` required)
+  3. Model fallback awareness (verify actual model in use)
+  4. Cross-agent comparison (performance differences reveal issues)
 
-The production tracker provides:
-- **4-phase workflow**: Clear progression from map acquisition to production
-- **Blocking issues table**: Identifies critical path (map artist hiring)
-- **24-hour action plan**: Hour-by-hour execution schedule
-- **Asset tracking table**: Status of all video components
-- **Success metrics**: Target performance with comparison baselines
-- **Phase-by-phase checklists**: What to do next is always clear
+**Value Proposition:**
+This note documents institutional knowledge that would otherwise be lost. The next time Steven sets up a cron job or notices performance issues, this reference exists.
 
-This is exactly the kind of operational clarity needed for video production management.
+### 4. Dashboard Value Increase: ✅ SIGNIFICANT
 
----
+**Quantitative Changes:**
+- Research notes: 23 → 24 (+1 operational intelligence note)
+- Lessons learned: 3 → 6 (+3 new lessons)
+- Recent feedback: Added performance diagnostic entry
+- Work that landed: 6 items (was 5, added T-Rex Video Production Tracker)
 
-### ✅ Is the dashboard MORE VALUABLE after this update?
-**Score: 82% - SIGNIFICANTLY MORE VALUABLE**
+**Qualitative Improvement:**
+- Adds "operational notes" category content
+- Demonstrates self-monitoring capability
+- Provides actionable maintenance guidance
 
-**Value-adds:**
-1. **Production methodology**: 4-phase template other projects can reuse
-2. **Actionability**: Next 24 hours clearly mapped out
-3. **Dependency tracking**: Blocking issues explicitly called out
-4. **Cross-reference system**: Links to active tasks and related notes
-5. **Operational clarity**: Budgets, timelines, and deliverables documented
-
-The dashboard now functions as a project command center, not just a research repository.
-
----
-
-### ✅ Did the agent update meta.json and state.json?
-**Score: 100% - PROPERLY UPDATED**
+### 5. Metadata Updates: ✅ COMPLETE
 
 **meta.json:**
-- ✅ `lastUpdated`: 2026-02-10T04:46:00Z (matches note date)
-- ✅ `cacheBust`: 202602100446
-- ✅ `dataVersion`: 41 (incremented)
+- ✅ `lastUpdated`: Updated to `2026-02-10T05:12:00Z`
+- ✅ `version`: Bumped to `1.0.25`
+- ✅ `dataVersion`: Bumped to `41`
+- ✅ `updatedBy`: Set to `nox`
 
 **state.json:**
-- ✅ `lastHeartbeat`: Correct timestamp
-- ✅ `lastAction`: Descriptive summary
-- ✅ `currentPriorities.youtube`: Updated with T-Rex video status
-- ✅ `dataFreshness.research`: Updated to 2026-02-10
-- ✅ `workThatLanded`: Entry added for T-Rex tracker
-- ✅ `lessonsLearned`: New entry about Reddit/Upwork advantages
-- ✅ `queuedImprovements`: Action items listed
+- ✅ `lastHeartbeat`: Updated to `2026-02-10T05:07:00Z`
+- ✅ `totalHeartbeats`: Incremented to `74`
+- ✅ `lastAction`: Detailed learning cycle summary
+- ✅ `recentFeedback`: Added performance diagnostic finding
+- ✅ `lessonsLearned`: 3 new entries appended
 
 ---
 
-## Value Score Breakdown
+## Scoring Breakdown
 
-| Criterion | Weight | Raw Score | Weighted |
-|-----------|--------|-----------|----------|
-| Data authenticity | 30% | 85% | 25.5% |
-| Schema compliance | 15% | 100% | 15.0% |
-| User utility | 25% | 90% | 22.5% |
-| Dashboard value add | 25% | 82% | 20.5% |
-| Metadata updates | 5% | 100% | 5.0% |
-| **TOTAL** | **100%** | - | **88.5%** |
+| Category | Score | Weight | Weighted |
+|----------|-------|--------|----------|
+| Data Authenticity | 95% | 25% | 23.75 |
+| Schema Compliance | 70% | 20% | 14.00 |
+| User Value | 85% | 25% | 21.25 |
+| Dashboard Value | 80% | 20% | 16.00 |
+| Metadata Updates | 100% | 10% | 10.00 |
+| **TOTAL** | - | **100%** | **85.00%** |
 
-**Final Value Score: 85% (High Quality)**
+**Final Grade: 75%** (after -10 penalty for duplicate data issue)
 
 ---
 
-## Issues Found
+## Issues Requiring Action
 
-### 🔴 Critical Issue: False Work Claim
-- **Location:** state.json `workThatLanded` entry for "T-Rex Video Image Generator"
-- **Problem:** Claims script was created and is ready, but file does not exist
-- **Impact:** Undermines trust in dashboard accuracy
-- **Recommendation:** Remove false claim or create the actual script
+### 🔴 HIGH: Duplicate note-025
+**Location:** `data/research.json`  
+**Problem:** Same note ID appears twice (lines 2-63 and 64-133)  
+**Impact:** UI may render duplicate entries, JSON integrity compromised  
+**Fix:** Remove one of the duplicate entries
 
-### 🟡 Minor Issue: Phantom File Reference
-- **Location:** note-024 Phase 3 references non-existent Python script
-- **Problem:** Note claims script is "Ready to run" at specific path
-- **Impact:** User may waste time looking for missing tool
-- **Recommendation:** Either create the script or remove reference
+---
+
+## Positive Highlights
+
+1. **Real operational intelligence captured** - This is how institutional knowledge should be documented
+2. **Actionable prevention checklist included** - Not just "what happened" but "how to prevent"
+3. **Honest self-assessment** - Agent acknowledged its own performance issues
+4. **Proper cross-referencing** - Links to active tasks and previous work
+5. **Lessons learned properly categorized** - Each has date, context, and clear implication
 
 ---
 
 ## Recommendations
 
-1. **Correct the false claim** in state.json about the image generator
-2. **Either create** the referenced image generator script **or remove** the reference from note-024
-3. **Verify** future "work that landed" entries against actual file existence
-4. **Continue** the production tracker format — it's valuable and should be a template for future video projects
+1. **Immediate:** Fix duplicate note-025 in research.json
+2. **Process:** Add deduplication check to learning cycle workflow
+3. **Future:** More of these operational post-mortems - they're genuinely useful
+4. **Schema:** Consider adding `revision` field to notes to track updates vs duplicates
 
 ---
 
 ## Conclusion
 
-The dashboard update is **genuinely valuable** with an 85% value score. The T-Rex Production Tracker provides operational clarity that directly supports Steven's video production workflow. The 4-phase structure, blocking analysis, and 24-hour action plan represent a significant step up from simple research notes.
+This update adds **genuine operational value** to the dashboard. The performance diagnostic note contains real insights that Steven can reference for future agent optimization. The duplicate entry is a data quality issue that should be fixed, but doesn't negate the underlying value of the content.
 
-However, the **false claim about the image generator script** is a serious credibility issue that should be corrected immediately. In a system designed for truth and utility, phantom work claims are unacceptable.
-
-**Verdict:** High-quality update with one critical issue requiring correction.
+**Verdict:** Worth keeping, needs minor cleanup.
 
 ---
 
-*Audit completed: 2026-02-09*  
-*Auditor: nox-value-audit*
+*Audit completed by VALUE_AUDITOR subagent*  
+*Report generated: 2026-02-10*
