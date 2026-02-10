@@ -1968,6 +1968,7 @@
       "source": "viewstats outlier research - hourly cron"
     }
   ],
+  "outlierVideosUpdatedAt": "2026-02-10T05:26:00Z",
   "contentBriefs": [
     {
       "id": "brief-pet-001",
@@ -2436,6 +2437,27 @@
       ],
       "status": "ready",
       "createdAt": "2026-02-09T23:46:00Z"
+    },
+    {
+      "id": "brief-military-creature-001",
+      "title": "Military vs AI Creature Epic Battles",
+      "summary": "1200x outlier proves military hardware vs fantasy creatures has extraordinary viral potential. 32.6M views from 1.1M subscriber channel. Format: AI-generated creature attacks military unit, escalating response scenario.",
+      "hook": "The military just encountered a creature that shouldnt exist... and they brought everything",
+      "outline": [
+        "Establish - Military patrol discovers creature",
+        "Escalation - Creature resists small arms",
+        "Crisis - Creature evolves/adapts",
+        "Climax - Full military response (tanks, helicopters)",
+        "Resolution - Unexpected outcome"
+      ],
+      "targetLength": "12-18 min",
+      "difficulty": "medium",
+      "urgency": "high",
+      "basedOn": [
+        "creaturefeaturesclips-dragon-wars"
+      ],
+      "status": "ready",
+      "createdAt": "2026-02-10T05:26:00Z"
     }
   ],
   "trendAnalysis": {
@@ -2686,5 +2708,10 @@
   "meta": {
     "lastUpdated": "2026-02-10T04:04:27.428925Z",
     "totalOutliers": 114
+  },
+  "stats": {
+    "totalOutliers": 118,
+    "totalBriefs": 15,
+    "lastResearch": "2026-02-10T05:26:00Z"
   }
 }
