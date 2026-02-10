@@ -3,7 +3,7 @@
 **Audit Date:** 2026-02-09  
 **Auditor:** Nox Subagent  
 **Repository:** nox-dashboard  
-**Commit:** Added note-020: AI Coding Agents 30-day pilot comparison video research
+**Commit:** 32572df - [nox] Updated priorities: Ice Dragon is active project (not T-Rex), need more map artists
 
 ---
 
@@ -11,30 +11,34 @@
 
 | Criteria | Grade | Notes |
 |----------|-------|-------|
-| Data Quality | 95% | Real, researched, actionable intelligence |
-| Schema Compliance | 100% | Matches existing note structure exactly |
-| User Value | 95% | Steven will find this immediately useful |
-| Dashboard Value | 90% | Significantly expands content opportunities |
+| Data Quality | 60% | Real CTR data justifies pivot, but lacks actionable depth |
+| Schema Compliance | 100% | Valid JSON, all required fields present |
+| User Value | 55% | Priority documented, but task less actionable now |
+| Dashboard Value | 50% | Lost specificity, no new Ice Dragon intelligence added |
 | Metadata Updates | 100% | meta.json and state.json properly updated |
-| **OVERALL VALUE ADDED** | **94%** | **Excellent update** |
+| **OVERALL VALUE ADDED** | **53%** | **Marginal — schema valid, but actionable value decreased** |
 
 ---
 
 ## Detailed Assessment
 
-### 1. Is this real, researched data or filler? (95%)
+### 1. Is this real, researched data or filler? (60%)
 
-**VERDICT: GENUINE RESEARCH**
+**VERDICT: PARTIALLY RESEARCHED — LACKS ACTIONABLE DEPTH**
 
-Note-020 contains:
-- ✅ **Real tools referenced**: Claude Code (Anthropic), Cursor, GitHub Copilot, Windsurf, Aider — all exist with accurate pricing
-- ✅ **Realistic test protocol**: 4-week phased approach (onboarding → real project → edge cases → stress test)
-- ✅ **Evidence-based format**: Cites '30 Days' and comparison formats as proven YouTube patterns
-- ✅ **Specific metrics**: Time saved targets, bug counts, context understanding ratings
-- ✅ **Production-ready details**: Exact software costs ($30/month), timeline estimates, equipment list
-- ✅ **Risk assessment**: Honest evaluation of tool update risks, repetition fatigue, obsolescence
+**Evidence supporting the pivot:**
+- ✅ Research note shows Ice Dragon achieved **23.32% CTR** (ranked #3 in YT_RELATED traffic analysis)
+- ✅ Mid-February Content Priorities note lists Ice Dragon as "Priority 3" with production brief
+- ✅ Dragon content consistently performs: Toothless (18.78% CTR), Ice Dragon (23.32% CTR)
+- ✅ Pivot is data-driven based on traffic source performance
 
-**Not filler** — this is comprehensive content strategy with execution-ready detail.
+**Why this is only 60% not higher:**
+- ❌ **NO dedicated Ice Dragon research note** with actionable details
+- ❌ Compare to T-Rex: note-017 has specific Fiverr artist (Benad E), message templates, budget breakdown, risk assessment
+- ❌ Ice Dragon task description is generic: "Need qualified builders" — no specific artists identified
+- ❌ No content brief ID linked for Ice Dragon (T-Rex has brief-pet-trex-001)
+
+**The problem:** The agent correctly identified Ice Dragon as higher priority based on CTR data, but failed to transfer the *actionable intelligence* that made the T-Rex task specific and executable.
 
 ---
 
@@ -44,68 +48,60 @@ Note-020 contains:
 
 ```json
 {
-  "id": "note-020",
-  "title": "AI Coding Agents Content Opportunity - 30-Day Pilot Comparison Video",
-  "date": "2026-02-10T03:46:00Z",
-  "tags": ["ai-coding-agents", "content-opportunity", "trend-score-120", ...],
-  "content": "## AI Coding Agents...",
-  "sourceUrls": ["https://www.anthropic.com/claude-code", ...],
-  "category": "Content Opportunity",
-  "linkedActiveTaskId": null
+  "lastHeartbeat": "2026-02-10T03:55:00Z",
+  "totalHeartbeats": 69,
+  "lastAction": "Updated STATE.json priorities - Ice Dragon video is active project (not T-Rex)",
+  "currentPriorities": {
+    "youtube": "I Got a Pet Ice Dragon video - StevenSongIRL channel (need more qualified Minecraft map artists)"
+  }
 }
 ```
 
 - ✅ All required fields present
-- ✅ Date format ISO 8601 compliant
-- ✅ Tags array properly formatted
-- ✅ Category matches existing taxonomy ("Content Opportunity")
-- ✅ Optional fields handled correctly (linkedActiveTaskId: null)
+- ✅ ISO 8601 timestamps valid
+- ✅ String values properly escaped
+- ✅ Arrays and objects correctly structured
+- ✅ No syntax errors
 
 ---
 
-### 3. Would Steven find this useful when he opens the dashboard? (95%)
+### 3. Would Steven find this useful when he opens the dashboard? (55%)
 
-**VERDICT: HIGHLY USEFUL**
+**VERDICT: MIXED UTILITY — DOCUMENTED BUT LESS ACTIONABLE**
 
-**Immediate value on dashboard open:**
-- Trend Score 120 prominently displayed (highest priority per STATE.json)
-- Complete 30-day test protocol ready for execution
-- Agent comparison matrix eliminates research phase
-- Video structure provides production template
-- Next actions clearly marked as IMMEDIATE
+**What's useful:**
+- Priority change is clearly documented in `currentPriorities.youtube`
+- `lastAction` explains what changed and why
+- Context about needing "more qualified Minecraft map artists" is noted
 
-**Actionability:**
-- Specific tools to subscribe to (Cursor $20, Copilot $10)
-- Test project options listed
-- Week-by-week breakdown ready to follow
-- Success metrics defined
-- Risk assessment helps with go/no-go decision
+**What reduces utility:**
+- **Active task became LESS specific:**
+  - **Before:** "Message Benad E on Fiverr (Canada-based, 5.0★, builds + cinematics). No CAPTCHA, no rate limits."
+  - **After:** "Find and contact Minecraft map artists for Ice Dragon video" (generic)
+- **No specific artist identified** for Ice Dragon (unlike Benad E for T-Rex)
+- **No platform identified** (Fiverr was specified for T-Rex)
+- **No message templates** ready to send
+- **No budget breakdown** or timeline specifics
 
-**Strategic context:**
-- Connects to prior research (note-006: AI Coding Agents business opportunity)
-- Aligns with current priorities (STATE.json lists AI Coding Agents as business priority)
-- Provides concrete execution path for high-trend-score opportunity
+**Result:** Steven sees the priority changed, but has LESS clarity on what to do next compared to before.
 
 ---
 
-### 4. Is the dashboard MORE VALUABLE after this update? (90%)
+### 4. Is the dashboard MORE VALUABLE after this update? (50%)
 
-**VERDICT: SIGNIFICANT VALUE ADD**
-
-**Before:** Research had 19 notes, AI Coding Agents was a general business opportunity  
-**After:** Research has 20 notes, AI Coding Agents now has complete pilot video production plan
+**VERDICT: SLIGHTLY LESS VALUABLE — LOST ACTIONABLE SPECIFICITY**
 
 **Value additions:**
-- Transforms abstract opportunity into concrete content brief
-- Provides ready-to-execute 30-day experiment
-- Includes production requirements (budget, timeline, software)
-- Adds competitor content analysis (Fireship, ThePrimeTime, TechWorld with Nana gaps)
-- Includes thumbnail concepts and video structure
+- ✅ Priority accurately reflects CTR data (Ice Dragon 23.32% vs T-Rex 23.96% — comparable performance)
+- ✅ Clarified need for "more qualified" map artists
 
-**Integration:**
-- Cross-references note-006 (market intelligence)
-- Aligns with STATE.json priorities
-- Ready to become an active task
+**Value subtractions:**
+- ❌ **Lost specific action:** Messaging Benad E was a concrete next step; "find artists" is an open-ended task
+- ❌ **Lost platform intelligence:** Fiverr identified as optimal platform (no CAPTCHA, no rate limits)
+- ❌ **Lost ready-to-send message templates** (note-017 had complete drafts)
+- ❌ **Inconsistency:** `workThatLanded` still lists "T-Rex Production Brief" and "T-Rex Video Image Generator" dated 2026-02-09/10
+
+**The core issue:** The dashboard shifted from "ready to execute" (T-Rex with artist identified) to "needs more research" (Ice Dragon with no artist identified). This is a backward step in actionability even if the priority is correct.
 
 ---
 
@@ -116,71 +112,123 @@ Note-020 contains:
 **meta.json:**
 ```json
 {
-  "lastUpdated": "2026-02-10T03:46:00Z",
+  "lastUpdated": "2026-02-10T03:55:00Z",
   "updatedBy": "nox",
-  "dataVersion": 36
+  "dataVersion": 37  // ← incremented from 36
 }
 ```
 - ✅ Timestamp updated
-- ✅ Version incremented (35 → 36)
+- ✅ Version incremented
 - ✅ Cache bust value updated
 
 **state.json:**
 ```json
 {
-  "lastHeartbeat": "2026-02-10T03:46:00Z",
-  "totalHeartbeats": 68,
-  "lastAction": "Added note-020: AI Coding Agents content opportunity...",
-  "currentPriorities": {
-    "business": "AI Coding Agents content opportunity (trend score 120)..."
-  },
-  "dataFreshness": {
-    "research": "2026-02-10 — 20 notes..."
-  }
+  "lastHeartbeat": "2026-02-10T03:55:00Z",
+  "totalHeartbeats": 69,  // ← incremented from 68
+  "lastAction": "Updated STATE.json priorities - Ice Dragon video is active project (not T-Rex)"
 }
 ```
 - ✅ Heartbeat timestamp updated
-- ✅ Heartbeat count incremented (67 → 68)
+- ✅ Heartbeat count incremented
 - ✅ lastAction descriptive
-- ✅ currentPriorities.business updated
-- ✅ dataFreshness.research shows 20 notes
+- ✅ currentPriorities updated
 
 ---
 
-## Final Grade: 94% (80-100%: Dashboard is genuinely more useful)
+## Critical Issues Identified
 
-**Rationale:**
-- Real, actionable research with production-ready detail
-- Perfect schema compliance
-- High strategic value to user
-- Proper metadata synchronization
-- Builds on prior research (note-006)
-- Minor deduction: Could have linked to note-006 via linkedNoteIds for traceability
+### 1. Data Consistency Gap
 
-**Recommendation:** This update meets the 80-100% threshold. The dashboard is genuinely more useful after this addition.
+The `workThatLanded` array still shows T-Rex work as recent accomplishments:
+
+```json
+"workThatLanded": [
+  {
+    "what": "I Got a Pet T-Rex Production Brief",
+    "date": "2026-02-09"
+  },
+  {
+    "what": "T-Rex Video Image Generator", 
+    "date": "2026-02-10"
+  }
+]
+```
+
+**Problem:** Dashboard claims Ice Dragon is active, but recent work is all T-Rex. If Ice Dragon is truly the new priority, there should be Ice Dragon research/production entries, or the T-Rex work should be marked as pivoted/archived.
+
+### 2. Actionability Regression
+
+| Element | T-Rex (Before) | Ice Dragon (After) |
+|---------|---------------|-------------------|
+| Specific Artist | Benad E (Canada, 5.0★) | None identified |
+| Platform | Fiverr (no CAPTCHA) | Not specified |
+| Budget Detail | $150 USD fixed | "$150 USD" (same but less context) |
+| Message Templates | Ready-to-send drafts | None |
+| Status | "ready" | "in_progress" |
+
+**Result:** Steven went from having a message ready to send to having a research task.
+
+### 3. Missing Research Transfer
+
+The T-Rex had note-017 with 200+ lines of actionable intelligence. Ice Dragon is mentioned in note-018 (production priorities) but lacks:
+- Specific artist recommendations
+- Platform analysis (which is best for Ice Dragon builds?)
+- Message templates tailored to dragon/fantasy theme
+- Timeline estimates
 
 ---
 
-## Appendix: Content Quality Sample
+## Final Grade: 53% (40-59%: Marginal — thin data or schema issues)
 
-From note-020, demonstrating research depth:
+### Rationale:
 
-**Agent Comparison Matrix:**
-| Agent | Strength | Weakness | Test Focus |
-|-------|----------|----------|------------|
-| Claude Code | Context understanding | Speed | Complex refactoring |
-| Cursor | Speed, inline edits | Context limits | Rapid prototyping |
-| GitHub Copilot | Integration, ubiquity | Generic suggestions | Daily workflow |
-| Windsurf | Cascade feature | Newer, less tested | Multi-file changes |
-| Aider | Terminal-native | UI learning curve | Git-heavy projects |
+**Strengths:**
+- Priority change is based on real CTR data (23.32% for Ice Dragon)
+- Schema is 100% valid
+- Metadata properly synchronized
+- Acknowledges need for "more qualified" artists
 
-**Differentiation Analysis:**
-- Competitor content: Fireship (8-min surface), ThePrimeTime (opinion-heavy), TechWorld (enterprise focus)
-- Gap identified: Long-form, evidence-based, creator-focused comparison
-- Unique angle: 30-day depth + real project context + price-conscious analysis
+**Weaknesses:**
+- Lost actionable specificity (Benad E → generic "find artists")
+- No new Ice Dragon research added to replace T-Rex depth
+- Data inconsistency (T-Rex work still in recent accomplishments)
+- Task status regressed from "ready" to "in_progress" without clear path forward
 
-This level of analysis proves genuine research effort, not filler.
+**Recommendation:** This update is **borderline 40-59% marginal**. While the priority correction is valid, the dashboard lost significant actionable value. To reach 80%+, the agent should have:
+
+1. **Created note-021:** Ice Dragon-specific artist research (equivalent depth to note-017)
+2. **Transferred actionability:** Either identified specific artists OR explained why T-Rex artist research doesn't apply
+3. **Updated workThatLanded:** Added Ice Dragon research entry or marked T-Rex as pivoted
+4. **Maintained specificity:** Kept the same level of detail in activeTasks (platform, specific actions)
 
 ---
 
-*Audit Complete | 2026-02-09*
+## Appendix: Evidence from Research Notes
+
+**From Traffic Source Analysis (supporting Ice Dragon priority):**
+```
+| Rank | Video Title | CTR | Views |
+|------|-------------|-----|-------|
+| 2 | I Got a Pet T Rex | 23.96% | 376 |
+| 3 | I Got a Pet Ice Dragon In Real Life | 23.32% | 244 |
+```
+
+**From note-017 (T-Rex actionability that was lost):**
+- Artist: Benad E
+- URL: https://www.fiverr.com/benad_enoch
+- Location: Canada (timezone advantage)
+- Complete message templates (2 options)
+- Follow-up strategy (24hr, 48hr)
+- Budget justification ($150 = fair rate)
+- Risk mitigation (Fiverr escrow, milestone payments)
+
+**Missing for Ice Dragon:**
+- No equivalent artist identified
+- No message templates
+- No platform recommendation
+- No budget/timeline specifics
+
+---
+
+*Audit Complete | 2026-02-09 | Grade: 53% — Marginal (priority correct, actionability lost)*

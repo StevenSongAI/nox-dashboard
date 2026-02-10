@@ -413,7 +413,21 @@
       "category": "Production Status",
       "linkedActiveTaskId": "active-001",
       "linkedResearchIds": ["note-016", "note-017", "note-011"]
+    },
+    {
+      "id": "note-021",
+      "title": "Ice Dragon Video - Minecraft Map Artist Outreach (Qualified Leads)",
+      "date": "2026-02-10T03:55:00Z",
+      "tags": ["ice-dragon", "minecraft", "map-artists", "outreach", "steven-song-irl", "actionable"],
+      "content": "## Ice Dragon Video - Minecraft Map Artist Outreach\n\n### Project Overview\n- **Video:** I Got a Pet Ice Dragon (StevenSongIRL)\n- **Budget:** $150 USD\n- **Timeline:** 3-4 days\n- **Style:** Icy/winter environments, dragon-friendly spaces\n\n---\n\n## TIER 1: Direct Contact Available\n\n### 1. BlockWorks (blockworks.co.uk)\n**Status:** Professional studio, contact form on website\n**Website:** https://www.blockworks.co.uk\n**Contact:** contact@blockworks.co.uk\n**Style:** High-quality cinematic builds\n**Priority:** HIGH\n\n### 2. Builders Anonymous Discord\n**URL:** https://discord.gg/buildersanonymous\n**Why Qualified:** 50K+ builders, dedicated #commissions channel\n**Reach Out:** Join server, post in #commissions\n**Priority:** HIGH\n\n### 3. Minecraft Builder's Community\n**URL:** https://discord.gg/mcbuilders\n**Why Qualified:** Active commission marketplace\n**Reach Out:** Post in #looking-for-builders\n**Priority:** HIGH\n\n### 4. MythicalSausage (Twitter)\n**Handle:** @MythicalSausage\n**Status:** 200K+ followers, DMs open\n**Style:** Fantasy kingdoms, organic builds\n**Priority:** MEDIUM-HIGH\n\n### 5. Jeracraft (Planet Minecraft)\n**Profile:** https://www.planetminecraft.com/member/jeracraft/\n**Contact:** Via PMC private message\n**Style:** Massive fantasy landscapes\n**Priority:** MEDIUM\n\n---\n\n## OUTREACH MESSAGE TEMPLATE\n\n**Subject:** Minecraft Map Commission - YouTube Video ($150 Budget)\n\n```\nHi [Name],\n\nI'm Steven from StevenSongIRL (YouTube channel). I'm producing a \"I Got a Pet Ice Dragon\" video and need a custom Minecraft map built.\n\nPROJECT DETAILS:\n- Theme: Icy/winter environment for ice dragon pet\n- Key Areas Needed:\n  * Frozen lake with ice cave (egg discovery)\n  * Ice castle or fortress (dragon's home)\n  * Snowy village nearby\n  * Open areas for dragon flight/chases\n- Budget: $150 USD\n- Timeline: 3-4 days\n- Deliverable: World file (.mcworld or folder)\n\nSTYLE NOTES:\n- Cinematic framing in mind\n- Cinematic paths/camera-friendly angles\n- 1.20+ compatible\n- Can use/modify existing schematic as base\n\nAre you available for this type of commission? Happy to share reference images and discuss details.\n\nBest,\nSteven\n```\n\n---\n\n## DISCORD POST TEMPLATE\n\n```\n🔹 COMMISSION AVAILABLE 🔹\n\nLooking for a Minecraft builder for YouTube video content!\n\n📋 PROJECT:\n• Theme: Icy winter environment (ice dragon video)\n• Budget: $150 USD\n• Timeline: 3-4 days\n• Deliverable: World file\n\n🏰 NEED:\n• Frozen lake with ice cave\n• Ice castle/fortress  \n• Snowy village\n• Cinematic-friendly layouts\n\n💬 DM me if interested! Portfolio/examples appreciated.\n\n#Minecraft #CommissionsOpen #MinecraftBuilds\n```\n\n---\n\n## IMMEDIATE ACTION ITEMS\n\n1. [ ] Email BlockWorks (contact@blockworks.co.uk)\n2. [ ] Join Builders Anonymous Discord, post commission\n3. [ ] Join MC Builders Discord, post commission\n4. [ ] Twitter DM @MythicalSausage\n5. [ ] PMC PM to Jeracraft\n\n---\n\n## SUCCESS CRITERIA\n\n- **Minimum:** 1 qualified artist confirmed\n- **Target:** 2-3 artists for ongoing work\n- **Timeline:** 24-48 hours for responses\n\n---\n\n*Full lead list: ~/Desktop/Nox Builds/Youtube/Ice Dragon Video/ICE_DRAGON_ARTIST_OUTREACH.md*",
+      "sourceUrls": [
+        "https://www.blockworks.co.uk",
+        "https://discord.gg/buildersanonymous",
+        "https://stevensongai.github.io/nox-dashboard/"
+      ],
+      "category": "Actionable Intelligence",
+      "linkedProjectId": "ice-dragon-video"
     }
   ],
-  "lastUpdated": "2026-02-10T03:26:00Z"
+  "lastUpdated": "2026-02-10T03:55:00Z"
 }
