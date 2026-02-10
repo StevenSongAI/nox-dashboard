@@ -1814,6 +1814,51 @@
       "url": "https://www.youtube.com/watch?v=lwtf3_9JXws",
       "researchStatus": "completed",
       "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-124",
+      "title": "Looks like a dragon",
+      "channel": "squabblecat",
+      "views": 86000,
+      "publishedAt": "2023-02-08T00:00:00Z",
+      "addedAt": "2026-02-10T11:00:00Z",
+      "outlierScore": 263,
+      "niche": "🐉 Dragon/Short-form",
+      "whyOutlier": "EXTREME 263x outlier - 86K views on 5.3K sub channel! Simple mysterious title + dragon content = massive viral potential. Low production value but high intrigue.",
+      "contentAngle": "Create 'Looks like a [AI Creature]' series - mysterious, simple titles that spark curiosity. Short-form content showing AI creatures in ambiguous/realistic scenarios.",
+      "url": "https://www.youtube.com/watch?v=4aE1aUV6MHY",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-125",
+      "title": "FEED THE DRAGON",
+      "channel": "squirrelgirldgt",
+      "views": 696000,
+      "publishedAt": "2023-02-08T00:00:00Z",
+      "addedAt": "2026-02-10T11:00:00Z",
+      "outlierScore": 36,
+      "niche": "🐉 Dragon/Pet Care",
+      "whyOutlier": "MASSIVE 36x outlier - 696K views on 105K sub channel! 'FEED THE X' format creates imperative urgency. Dragon pet care content taps into nurturing instincts.",
+      "contentAngle": "Create 'FEED THE [AI CREATURE]' series - regular feeding/care episodes for AI pets. Imperative title format drives clicks. Combine with growth mechanics showing creature evolution.",
+      "url": "https://www.youtube.com/watch?v=ad-5XC-p-CA",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-126",
+      "title": "Started From an Egg And Became a Dragon - Day Of Dragons - Gameplay",
+      "channel": "ryanxwest",
+      "views": 457000,
+      "publishedAt": "2023-02-08T00:00:00Z",
+      "addedAt": "2026-02-10T11:00:00Z",
+      "outlierScore": 29.4,
+      "niche": "🐉 Dragon/Evolution Gaming",
+      "whyOutlier": "EXTREME 29.4x outlier - 457K views on 22K sub channel! 'Started from X became Y' progression format + egg-to-dragon life cycle = compelling narrative arc.",
+      "contentAngle": "Create 'Started From an Egg And Became [AI Creature]' series - document full life cycle from egg to adult. Time-lapse progression with key milestones. Day Of Dragons format proves demand.",
+      "url": "https://www.youtube.com/watch?v=H4qpM-jfExc",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
     }
   ],
   "competitorResearchQueue": [
@@ -2990,12 +3035,12 @@
     }
   ],
   "meta": {
-    "lastUpdated": "2026-02-10T10:46:00Z",
-    "totalOutliers": 113
+    "lastUpdated": "2026-02-10T11:00:00Z",
+    "totalOutliers": 116
   },
   "stats": {
-    "totalOutliers": 113,
+    "totalOutliers": 116,
     "totalBriefs": 15,
-    "lastResearch": "2026-02-10T10:46:00Z"
+    "lastResearch": "2026-02-10T11:00:00Z"
   }
 }
