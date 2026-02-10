@@ -24,10 +24,10 @@
       "shares": 20,
       "entryPrice": 138.50,
       "avgCost": 138.50,
-      "currentPrice": 191.32,
-      "totalValue": 3826.4,
-      "gainPercent": 38.14,
-      "lastUpdated": "2026-02-09T20:15:00Z",
+      "currentPrice": 190.04,
+      "totalValue": 3800.80,
+      "gainPercent": 37.21,
+      "lastUpdated": "2026-02-09T24:46:00Z",
       "addedAt": "2026-02-08T20:00:00Z",
       "note": "Post-split cost basis adjusted (10:1 split June 2024). Original pre-split basis ~$1385."
     }
@@ -407,6 +407,35 @@
         "AMD post-earnings momentum - wait for pullback"
       ],
       "linkedIntelligence": ["intel-015"]
+    },
+    {
+      "id": "intel-017",
+      "date": "2026-02-09T24:46:00Z",
+      "topic": "NVDA Rally Continues: +2.5% to $190.04 - Pre-Earnings Momentum Building",
+      "source": "Market Data / Yahoo Finance",
+      "content": "NVDA surged +2.50% (+$4.63) to close at $190.04 on Feb 9, with after-hours trading at $189.74 (-0.16%). Rally driven by broader tech sector strength (Dow closed above 50,000) and continued AI infrastructure demand optimism.\n\n**Key Metrics Update:**\n- Current Price: $190.04 (vs $191.32 in previous close - slight discrepancy likely timing-related)\n- Day Range: $184.00 - $193.66 (wide range indicates volatility)\n- Volume: 195.2M (above avg 181.4M) - elevated interest\n- Market Cap: $4.627T\n- P/E: 47.04 (TTM)\n- Forward P/E: 24.10 (implies expected earnings growth)\n- 52-Week Range: $86.62 - $212.19 (currently at 89% of 52-week high)\n- Analyst Target: $253.62 (33% upside potential)\n\n**Portfolio Impact:**\n- 20 shares @ $190.04 = $3,801 (vs $3,826 at $191.32)
+- Gain from entry: +37.2% (vs +38.14% previously)\n- Position remains strong ahead of Feb 25 earnings\n\n**Market Context:**\n- Dow closed above 50,000 for first time\n- Tech stocks broadly rallying\n- AI disruption concerns remain but investor appetite strong\n- NVDA 3-year return: +751% vs S&P +70%\n- NVDA 5-year return: +1,236% vs S&P +78%\n\n**Earnings Countdown: 15 Days**\nKey catalysts approaching:\n- Feb 25: Q4 FY2026 earnings (after hours)\n- Blackwell demand updates critical\n- Market pricing in strong data center revenue\n- Volatility expected ±8-12% post-announcement\n\n**Analyst Activity:**\n- Jefferies maintained Buy (Jan 16), raised target $250→$275\n- Bernstein: Outperform rating (82/100 score)\n- Average target: $253.62\n- Range: $140 (low) - $352 (high)\n\n**Position Strategy Unchanged:**\nHOLD through earnings. No new adds this close to event. Let winner run while managing event risk.",
+      "impact": "bullish",
+      "relatedPositions": ["pos-002"],
+      "alerts": [
+        "NVDA +2.5% rally - pre-earnings momentum building",
+        "Volume elevated at 195M shares",
+        "15 days to earnings - maintain HOLD",
+        "Analyst target $253 implies 33% upside"
+      ],
+      "metrics": {
+        "price": 190.04,
+        "change": 4.63,
+        "changePercent": 2.50,
+        "volume": 195213912,
+        "avgVolume": 181435903,
+        "marketCap": "4.627T",
+        "peRatio": 47.04,
+        "forwardPE": 24.10,
+        "fiftyTwoWeekLow": 86.62,
+        "fiftyTwoWeekHigh": 212.19,
+        "analystTarget": 253.62
+      }
     }
   ],
   "synthesizedInsights": [
