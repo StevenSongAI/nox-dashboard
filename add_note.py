@@ -1,38 +1,26 @@
 import json
+from datetime import datetime
 
-# Read current research.json
 with open('data/research.json', 'r') as f:
     data = json.load(f)
 
-# New note to add
 new_note = {
-    "id": "note-022",
-    "title": "Minecraft Map Artist Sourcing Guide - 12 Additional Channels Beyond Fiverr",
-    "date": "2026-02-10T04:10:00Z",
-    "tags": [
-        "minecraft",
-        "map-artists",
-        "sourcing",
-        "ice-dragon",
-        "contact-info",
-        "action-items"
-    ],
-    "content": "## Minecraft Map Artist Sourcing Guide - 12 Additional Channels\n\n### Overview\nCurrent outreach (Fiverr - Benad E, BuiltByBit, Discord) has platform friction. This guide provides alternative channels with direct contact methods to accelerate Ice Dragon video production.\n\n---\n\n## CATEGORY 1: Freelance Platforms (Direct Contact)\n\n### 1. Upwork (upwork.com)\n**Contact Method**: Platform messaging (no CAPTCHA, email notifications)\n**Search Terms**: \"Minecraft builder\", \"Minecraft world\", \"Minecraft cinematic\"\n**Advantages**: Professional freelancers with portfolios, Escrow payment protection, Time tracking for hourly projects, Direct email once project starts\n\n**Recommended Approach**: Post a job: \"Minecraft Map Builder for YouTube Cinematic - $150 Fixed\", Review proposals (typically 5-15 within 24h), Interview top 3 via Upwork messenger, Hire with milestone payment (50% start, 50% delivery)\n\n**Expected Response Rate**: 80%+ (platform incentivizes quick responses)\n\n### 2. PeoplePerHour (peopleperhour.com)\n**Contact Method**: Direct messaging + email notifications\n**Advantages**: UK/EU focused (timezone overlap), Lower competition than Fiverr/Upwork\n\n### 3. Guru (guru.com)\n**Contact Method**: WorkRoom messaging + direct email\n**Advantages**: Lower fees than other platforms, Good for ongoing relationships\n\n---\n\n## CATEGORY 2: Minecraft-Specific Marketplaces\n\n### 4. MC-Market (mc-market.org)\n**Contact Method**: Forum PM + Discord links in profiles\n**Requirements**: Free account (email verification only)\n**Section**: \"Services\" -> \"Building Services\"\n**Advantages**: Minecraft-native community, Builders understand cinematic needs\n\n**Recommended Approach**: Create account with YouTube channel in bio, Post in \"Looking for Builders\" subforum, Include budget ($150), timeline (5 days), project type\n\n### 5. Planet Minecraft (planetminecraft.com)\n**Contact Method**: Site PM + external links in profiles\n**Advantages**: Largest Minecraft creative community, Portfolio-based discovery\n\n**Recommended Approach**: Search \"jungle ruins\", \"prehistoric\", \"temple\", Check builder profiles for \"Commissions: Open\", Use PMC PM system or external contact\n\n---\n\n## CATEGORY 3: Reddit Communities (No CAPTCHA)\n\n### 6. r/MinecraftBuilds (500K+ subscribers)\n**Contact Method**: Reddit DM (no CAPTCHA, email optional)\n**Recommended Approach**: Create post: \"[Commission] Looking for Minecraft Builder - $150 Budget - YouTube Project\", Include style reference, budget, timeline, usage, Review portfolios in comments, DM promising builders\n\n### 7. r/MinecraftBuddies\n**Contact Method**: Reddit DM\n**Focus**: Collaboration and commissions\n\n### 8. r/MinecraftServer\n**Contact Method**: Reddit DM\n**Focus**: Server builds (good for large-scale)\n\n---\n\n## CATEGORY 4: Social Media Direct Contact\n\n### 9. Twitter/X Search\n**Contact Method**: DM or reply (public contact info common)\n**Search Queries**: \"Minecraft builder commissions open\", \"Minecraft build for hire\", \"Minecraft architect available\"\n**Filter**: Latest (past week)\n\n### 10. Instagram (#minecraftbuilds)\n**Contact Method**: DM or email in bio\n**Hashtags**: #minecraftbuilds #minecraftbuilder #minecraftcommission\n\n### 11. DeviantArt\n**Contact Method**: Site notes + external links\n**Search**: \"Minecraft\", \"voxel art\", \"game environment\"\n\n---\n\n## CATEGORY 5: Direct Outreach (Highest Success Rate)\n\n### 12. YouTube Comments Strategy\n**Target**: Small Minecraft build channels (1K-50K subs)\n**Contact Method**: Comment + about page email\n**Approach**: Find channels with \"Minecraft timelapse\" content, Comment on recent video: \"Incredible work! Do you take commissions?\", Check About page for business email, Send professional inquiry\n\n---\n\n## PRIORITY ACTION SEQUENCE\n\n### Immediate (Next 2 Hours)\n1. Upwork: Post job listing ($150, fixed price)\n2. r/MinecraftBuilds: Create commission post\n3. MC-Market: Create account, post in Services\n\n### Short-term (24 Hours)\n4. Twitter/X: DM 5 builders found via search\n5. Planet Minecraft: PM 3 builders with open commissions\n6. YouTube: Comment on 5 build timelapse channels\n\n---\n\n## SUCCESS METRICS\n\n| Channel | Target Contacts | Expected Response | Timeline |\n|---------|-----------------|-------------------|----------|\n| Upwork | 1 job post | 5-15 proposals | 24h |\n| Reddit | 1 post + 3 DMs | 3-5 responses | 24-48h |\n| Twitter/X | 5 DMs | 2-3 responses | 24-72h |\n| MC-Market | 1 post | 2-4 responses | 48h |\n| PMC | 3 PMs | 1-2 responses | 48-72h |\n\n**Total Expected Qualified Leads**: 15-31 responses\n**Conversion to Hire**: 1 confirmed artist\n\n---\n\n*Research Note Created: 2026-02-10 | Priority: HIGH | Status: Ready for Execution | Linked Task: active-001*",
-    "sourceUrls": [
-        "https://www.upwork.com",
-        "https://www.mc-market.org",
-        "https://www.planetminecraft.com",
-        "https://www.reddit.com/r/MinecraftBuilds"
-    ],
-    "category": "Actionable Intelligence",
-    "linkedActiveTaskId": "active-001"
+    "id": "note-036",
+    "title": "Higgsfield AI Image Generation Automation - Test Results & UI Mapping",
+    "date": "2026-02-10T20:00:00Z",
+    "tags": ["automation", "higgsfield", "image-generation", "playwright", "testing"],
+    "content": "# Higgsfield AI Image Generation Automation - Test Results\n\n## Summary\nSuccessfully mapped Higgsfield AI image generation UI for automated batch processing. Script connects via Chrome DevTools Protocol (CDP) to existing logged-in browser session.\n\n## UI Elements Identified\n\n### 1. Navigation\n- URL: https://higgsfield.ai/create-image\n- Login verification: Check for \"Personal\" workspace button\n\n### 2. Model Selection\n- Default: Higgsfield Soul\n- Target: Nano Banana Pro (for 4K image quality)\n- Selector: button with text \"Higgsfield Soul\" → click → select \"Nano Banana Pro\"\n\n### 3. Prompt Input\n- Element: textbox with accessible name \"Upload image as a prompt or Describe the scene you imagine\"\n- Method: get_by_role(\"textbox\", name=...)\n- Note: Field accepts both text and image uploads\n\n### 4. Reference Image Upload\n- Button: Image icon button inside prompt input area (first button before textbox)\n- Workflow: Click → expect_file_chooser() → set_files(image_path)\n- Upload time: ~3 seconds\n\n### 5. Aspect Ratio\n- Default: 3:4\n- Target: 16:9 (for YouTube/video content)\n- Selector: button with current ratio text → opens listbox dialog\n- Options: 9:16, 3:4, 2:3, 1:1, 4:3, 16:9, 3:2\n\n### 6. Generate Button\n- Text: \"Generate 2\" (when unlimited mode active)\n- Selector: button:has-text(\"Generate\")\n\n### 7. Unlimited Mode Toggle\n- Located near \"Unlim\" text\n- Type: Switch/toggle button\n\n## Technical Implementation\n\n### Browser Connection\n```python\nbrowser = p.chromium.connect_over_cdp(\"http://localhost:18800\")\n```\n- Uses OpenClaw-managed Chrome profile (pre-authenticated)\n- Maintains login state across sessions\n- CDP port configured in config.yaml\n\n### Automation Script Status\n- ✅ CSV parsing (4 shots, 24 prompts for Scene 1 test)\n- ✅ Folder structure creation\n- ✅ Browser connection via CDP\n- ✅ Login verification\n- ✅ Model selection\n- ✅ Prompt entry\n- ⏳ Reference image upload (in testing)\n- ⏳ Aspect ratio selection\n- ⏳ Unlimited mode toggle\n- ⏳ Generate button click\n- ⏳ Image download\n\n## Project Configuration\n\n### Test CSV Structure\n- Scene #: 1\n- Scene Title: The Egg\n- Line: Opening/Hatching/First Look/Bonding\n- Shot #: 1.1, 1.2, 1.3, 1.4\n- Prompts A-F per shot (24 total generations)\n\n## Next Steps\n1. Complete upload_reference_image() method testing\n2. Fix aspect ratio dropdown selection\n3. Verify unlimited mode toggle\n4. Test full generation workflow\n5. Add retry logic for failed generations\n6. Implement batch processing with concurrency control",
+    "sourceUrls": ["https://higgsfield.ai/create-image"],
+    "category": "Technical Documentation",
+    "linkedYouTubeIds": [],
+    "confidence": 85,
+    "auditScore": None,
+    "auditorNotes": "Pending full workflow test completion"
 }
 
-# Insert at beginning of notes array (most recent first)
-data['notes'].insert(0, new_note)
+data['notes'].append(new_note)
 
-# Write back
 with open('data/research.json', 'w') as f:
     json.dump(data, f, indent=2)
 
-print(f"SUCCESS: Added note-022. Total notes: {len(data['notes'])}")
+print("Added note-036 to research.json")
