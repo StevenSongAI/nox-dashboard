@@ -2011,9 +2011,54 @@
       "url": "https://www.youtube.com/watch?v=TM9fMwejXJU",
       "researchStatus": "completed",
       "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-097",
+      "title": "ARBS Dragon of Revolution Lava Dragon is fighting for evolution - Animal Revolt Battle Simulator",
+      "channel": "arbsdinosaur",
+      "views": 634000,
+      "publishedAt": "2022-02-08T00:00:00Z",
+      "addedAt": "2026-02-10T03:00:00Z",
+      "outlierScore": 144,
+      "niche": "🐉 Gaming/Dragon Evolution",
+      "whyOutlier": "EXTREME 144x outlier - 634K views on 254K sub channel! Dragon + evolution + battle simulator = triple viral formula. 'Fighting for evolution' creates progression narrative.",
+      "contentAngle": "Create 'AI Dragon Fighting for Evolution' - show dragon gaining experience/levels through battles, visual evolution stages with each victory.",
+      "url": "https://www.youtube.com/watch?v=CMEqypseDUw",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-098",
+      "title": "Bakugan: Every Dragonoid Evolution",
+      "channel": "aquosfrost",
+      "views": 3180000,
+      "publishedAt": "2022-02-08T00:00:00Z",
+      "addedAt": "2026-02-10T03:00:00Z",
+      "outlierScore": 372,
+      "niche": "🐉 Gaming/Nostalgia Evolution",
+      "whyOutlier": "MASSIVE 372x outlier - 3.18M views on 43K sub channel! Nostalgic IP + comprehensive evolution catalog = extreme engagement. Every/Evolution format proven again.",
+      "contentAngle": "Create 'Every AI Dragon Evolution' - comprehensive catalog showing all evolution stages from various AI models. Nostalgia-driven content with systematic progression.",
+      "url": "https://www.youtube.com/watch?v=m_NwDdBZ01k",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-099",
+      "title": "All DRAGONS in Hungry Dragon (New Update 2024) Unlock All Dragons",
+      "channel": "lyfpgamer",
+      "views": 477000,
+      "publishedAt": "2024-02-08T00:00:00Z",
+      "addedAt": "2026-02-10T03:00:00Z",
+      "outlierScore": 102,
+      "niche": "🐉 Gaming/Dragon Collection",
+      "whyOutlier": "MASSIVE 102x outlier - 477K views on 669K sub channel. 'All X' collection format + dragon content + new update = triple threat. Completionist appeal drives retention.",
+      "contentAngle": "Create 'All AI Dragons [Model/Version]' - showcase complete collection of dragons from specific AI tool/version. Update series when new models release.",
+      "url": "https://www.youtube.com/watch?v=UC_5PiheOLQ",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
     }
   ],
-  "outlierVideosUpdatedAt": "2026-02-10T05:26:00Z",
+  "outlierVideosUpdatedAt": "2026-02-10T03:00:00Z",
   "contentBriefs": [
     {
       "id": "brief-pet-001",
@@ -2755,8 +2800,8 @@
     "totalOutliers": 114
   },
   "stats": {
-    "totalOutliers": 126,
+    "totalOutliers": 99,
     "totalBriefs": 15,
-    "lastResearch": "2026-02-10T07:00:00Z"
+    "lastResearch": "2026-02-10T03:00:00Z"
   }
 }
