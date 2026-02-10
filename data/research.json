@@ -1,12 +1,54 @@
 {
   "notes": [
     {
+      "id": "note-025",
+      "title": "Agent Performance Diagnostic - Feb 9 2026 Post-Mortem",
+      "date": "2026-02-10T05:10:00Z",
+      "tags": [
+        "agent-ops",
+        "performance",
+        "cron",
+        "optimization",
+        "lessons-learned"
+      ],
+      "content": "# Agent Performance Diagnostic - Feb 9 2026\n\n## Issue Reported\nUser noticed Nox responding noticeably slower than Sage (health) and Joy (personal) agents.\n\n## Root Cause Analysis\n\n### Finding 1: Session Model Mismatch\n- Configured: anthropic/claude-sonnet-4-5 with kimi-coding/k2p5 fallback\n- Actual session: Running on k2p5 (fallback active due to rate limiting)\n\n### Finding 2: Extreme Workload Difference\n| Agent | Heartbeat | Daily Cycles | Active Sessions |\n|-------|-----------|--------------|------------------|\n| Nox   | 30 min    | 48x          | 8 (cron + subagents) |\n| Sage  | 2 hours   | 12x          | 1 |\n| Joy   | 4 hours   | 6x           | ~1 |\n\n### Finding 3: Token Context Bloat\n- My sessions: 90k-262k tokens\n- Competing API quota from background work\n- Rate limiting caused model fallback\n\n## Actions Taken\n- 20-minute cron disabled (was causing excessive cycles)\n- 5 active subagents terminated (consuming resources after completion)\n- Subagent auto-close configured with cleanup=\"delete\"\n- YouTube Outlier Research hourly cron re-enabled\n\n## Prevention Checklist\n\n### For Future Cron Setup:\n- Minimum 60-minute intervals for non-critical tasks\n- Always include cleanup=\"delete\" in sessions_spawn\n- Monitor token usage after 3+ heartbeats\n- Check model actually being used vs configured\n\n### Subagent Hygiene:\n- Terminate completed subagents immediately\n- Use archiveAfterMinutes: 5 in global config\n- Audit for zombie sessions weekly\n\n## Lessons\n1. More frequent ≠ better - 20-min crons burned quota with diminishing returns\n2. Subagents are expensive - must clean up aggressively\n3. Model fallback is silent - always verify actual model in use\n4. Compare performance across agents - differences reveal issues\n\n---\n*Created: Learning Cycle Feb 10 2026 | Type: Operational Post-Mortem*",
+      "sourceUrls": [],
+      "category": "Operational Notes",
+      "linkedActiveTaskId": null
+    },
+    {
+      "id": "note-025",
+      "title": "Agent Performance Diagnostic - Feb 9 2026 Post-Mortem",
+      "date": "2026-02-10T05:10:00Z",
+      "tags": [
+        "agent-ops",
+        "performance",
+        "cron",
+        "optimization",
+        "lessons-learned"
+      ],
+      "content": "# Agent Performance Diagnostic - Feb 9 2026\n\n## Issue Reported\nUser noticed Nox responding noticeably slower than Sage (health) and Joy (personal) agents.\n\n## Root Cause Analysis\n\n### Finding 1: Session Model Mismatch\n- **Configured**: anthropic/claude-sonnet-4-5 with kimi-coding/k2p5 fallback\n- **Actual session**: Running on k2p5 (fallback active)\n- All three agents have identical model configs, but my session fell back to k2p5\n\n### Finding 2: Extreme Workload Difference\n| Agent | Heartbeat | Daily Cycles | Active Sessions |\n|-------|-----------|--------------|------------------|\n| Nox   | 30 min    | 48x          | 8 (cron + subagents) |\n| Sage  | 2 hours   | 12x          | 1 |\n| Joy   | 4 hours   | 6x           | ~1 |\n\n### Finding 3: Token Context Bloat\n- My sessions: 90k-262k tokens\n- Competing API quota from background work\n- Possible rate limiting causing model fallback\n\n## Actions Taken\n- ✅ 20-minute cron disabled (was causing excessive cycles)\n- ✅ 5 active subagents terminated (were consuming resources after completion)\n- ✅ Subagent auto-close configured with cleanup=\"delete\"\n- ✅ YouTube Outlier Research hourly cron re-enabled\n\n## Prevention Checklist\n\n### For Future Cron Setup:\n- [ ] Minimum 60-minute intervals for non-critical tasks\n- [ ] Always include cleanup=\"delete\" in sessions_spawn\n- [ ] Monitor token usage after 3+ heartbeats\n- [ ] Check model actually being used vs configured\n\n### Subagent Hygiene:\n- [ ] Terminate completed subagents immediately\n- [ ] Use archiveAfterMinutes: 5 in global config\n- [ ] Audit for zombie sessions weekly\n\n## Monitoring Commands\n\n\n\n## Lessons\n1. More frequent ≠ better - 20-min crons burned quota with diminishing returns\n2. Subagents are expensive - must clean up aggressively\n3. Model fallback is silent - always verify actual model in use\n4. Compare performance across agents - differences reveal issues\n\n---\n*Created: Learning Cycle Feb 10 2026 | Type: Operational Post-Mortem*",
+      "sourceUrls": [],
+      "category": "Operational Notes",
+      "linkedActiveTaskId": null
+    },
+    {
       "id": "note-024",
       "title": "T-Rex Video Production Tracker - Complete Action List",
       "date": "2026-02-10T04:46:00Z",
-      "tags": ["t-rex", "production", "minecraft", "video", "tracker", "action-items"],
+      "tags": [
+        "t-rex",
+        "production",
+        "minecraft",
+        "video",
+        "tracker",
+        "action-items"
+      ],
       "content": "# T-Rex Video Production Tracker\n\n## Project Overview\n**Video Title:** I Got a Pet T-Rex in Minecraft\n**Channel:** StevenSongIRL\n**Status:** Pre-production (Map Artist Sourcing Phase)\n**Target Publish:** TBD (pending map completion)\n\n---\n\n## Phase 1: Map Artist Acquisition (CURRENT - BLOCKING)\n\n### Completed\n- [x] Identified primary candidate: Benad E on Fiverr\n- [x] Created outreach templates for 5 platforms\n- [x] Sourced 12 alternative channels for map artists\n- [x] Budget confirmed: $150 USD\n\n### Pending Actions\n- [ ] **Send Fiverr message to Benad E** (HIGH PRIORITY)\n  - Template ready in note-023\n  - Time: 5 minutes\n  - Blocking: All production\n\n- [ ] Post Upwork job listing\n  - Template: note-023, Template 1\n  - Time: 15 minutes\n\n- [ ] Create r/MinecraftBuilds commission post\n  - Template: note-023, Template 2\n  - Time: 10 minutes\n\n- [ ] Join Builders Anonymous Discord\n  - Guide: note-020\n  - Time: 10 minutes\n\n---\n\n## Phase 2: Pre-Production (Ready to Start)\n\n### Script Components\n1. **Hook (0:00-0:30)**\n   - Concept: \"I found a way to get a REAL T-Rex in Minecraft\"\n   - Visual: Cinematic T-Rex reveal\n\n2. **Setup (0:30-2:00)**\n   - Explain the mod/datapack being used\n   - Show installation process\n\n3. **Gameplay (2:00-8:00)**\n   - Taming sequence\n   - Riding/flying mechanics\n   - Combat demonstration\n\n4. **Showcase (8:00-10:00)**\n   - Cinematic shots of T-Rex\n   - Custom build showcase (deliverable from map artist)\n\n### Assets Needed\n| Asset | Source | Status | Notes |\n|-------|--------|--------|-------|\n| Thumbnail | DALL-E 3 / Custom | Ready | Script exists in tools/ |\n| T-Rex Model | Mod/Datapack | TBD | Research needed |\n| Custom Map | Commission | BLOCKED | Pending artist hire |\n| Music | Epidemic Sound | Ready | Account active |\n| Sound FX | Epidemic Sound | Ready | Account active |\n\n---\n\n## Phase 3: Image Generation (Can Start Now)\n\n### Script Available\n- Location: `~/Desktop/Nox Builds/StevenSongIRL Assets/Scripts/generate_trex_images.py`\n- Generates: 10 cinematic images for video\n- Status: Ready to run\n\n### Image List to Generate\n1. Thumbnail - T-Rex roaring at camera\n2. Scene 1 - Discovery in jungle\n3. Scene 2 - Taming sequence\n4. Scene 3 - First ride\n5. Scene 4 - Flying over world\n6. Scene 5 - Combat battle\n7. Scene 6 - Cinematic portrait\n8. Scene 7 - Sunset silhouette\n9. Scene 8 - Cave exploration\n10. Scene 9 - Final showcase\n\n---\n\n## Phase 4: Production (Post-Map-Delivery)\n\n### Recording Checklist\n- [ ] Record gameplay with T-Rex mod\n- [ ] Capture 4K footage for cinematic segments\n- [ ] Record voiceover (script TBD)\n- [ ] Screen capture mod installation\n\n### Editing Checklist\n- [ ] Assembly cut (rough timing)\n- [ ] Add B-roll from generated images\n- [ ] Color grade cinematic segments\n- [ ] Add music and SFX\n- [ ] Final export and upload\n\n---\n\n## Success Metrics\n\n### Target Performance\n- Views (30 days): 50,000+\n- CTR Target: 8%+\n- AVD Target: 45%+\n\n### Comparison Baseline\nBased on outlier research (youtube.json):\n- Creature content average: 126K views\n- Top performers: 2M+ views\n- Engagement sweet spot: Educational + Entertainment mix\n\n---\n\n## Blocking Issues\n\n| Issue | Impact | Resolution |\n|-------|--------|------------|\n| Discord rate limit | Medium | Use alternative platforms (Upwork, Reddit)|\n| Map artist not hired | CRITICAL | Execute outreach today (Fiverr + Upwork)|\n| T-Rex mod not selected | Low | Research 3 options, pick best |\n\n---\n\n## Next 24 Hours Action Plan\n\n### Hour 1 (Immediate)\n1. Send Fiverr message to Benad E\n2. Post Upwork job listing\n\n### Hour 2-3\n3. Run T-Rex image generator script\n4. Review generated images\n\n### Hour 4\n5. Post to r/MinecraftBuilds\n6. Join Builders Anonymous Discord\n\n### Tomorrow\n7. Review all responses\n8. Select and hire map artist\n9. Send map requirements brief\n\n---\n\n*Created: 2026-02-10 | Priority: CRITICAL | Status: Action Required | Linked: active-001*",
-      "sourceUrls": ["https://www.fiverr.com", "https://www.upwork.com"],
+      "sourceUrls": [
+        "https://www.fiverr.com",
+        "https://www.upwork.com"
+      ],
       "category": "Production Tracker",
       "linkedActiveTaskId": "active-001"
     },
@@ -14,9 +56,20 @@
       "id": "note-023",
       "title": "Ice Dragon Map Artist Outreach - Ready-to-Send Templates",
       "date": "2026-02-10T04:26:00Z",
-      "tags": ["minecraft", "map-artists", "outreach", "ice-dragon", "templates", "copy-paste"],
+      "tags": [
+        "minecraft",
+        "map-artists",
+        "outreach",
+        "ice-dragon",
+        "templates",
+        "copy-paste"
+      ],
       "content": "## Ready-to-Use Outreach Templates for Ice Dragon Video\n\n### TEMPLATE 1: Upwork Job Post\n**Title:** Minecraft Map Artist Needed - Custom Ice Dragon Pet Build\n\n**Description:**\nI'm a YouTuber looking for a skilled Minecraft builder to create a custom \"Ice Dragon Pet\" map/structure for a video.\n\n**Project Details:**\n- Build: Ice Dragon companion (medium-sized, rideable design preferred)\n- Style: Cinematic/realistic with ice/crystal elements\n- Deliverable: World file + screenshots from key angles\n- Budget: $150 USD fixed price\n- Timeline: 7 days\n\n**Requirements:**\n- Portfolio of previous Minecraft builds (creatures/animals preferred)\n- Ability to follow concept art/reference images\n- Reliable communication\n\n**To Apply:**\nLink to 3+ previous builds + estimated completion date.\n\n---\n\n### TEMPLATE 2: Reddit r/MinecraftBuilds Post\n**Title:** [Commission] $150 - Ice Dragon Pet Build for YouTube Video\n\n**Body:**\nHi builders!\n\nI'm working on a YouTube video and need a custom Ice Dragon build.\n\n**What I need:**\n- Ice Dragon \"pet\" companion build (think: frosty textures, crystal accents, rideable size)\n- World file + 4-5 cinematic screenshots\n- Style reference: mix of Skyrim ice wyrms + Minecraft frost walker aesthetic\n\n**Budget:** $150 USD via PayPal/Payoneer\n**Timeline:** 1 week from start\n\n**About me:** YouTuber with 10K+ subs doing creature content. This build will be featured prominently in the video.\n\nDrop your portfolio below or DM me!\n\n---\n\n### TEMPLATE 3: Twitter/X DM (to builders)\n**DM Text:**\nHey [Name]! Love your Minecraft builds - especially the [specific build].\n\nI'm a YouTuber working on an Ice Dragon video and looking for a builder to create a custom dragon pet build.\n\nBudget: $150\nTimeline: 1 week\n\nInterested? Would love to see your portfolio!\n\n---\n\n### TEMPLATE 4: Planet Minecraft Message\n**Subject:** Commission Opportunity - Ice Dragon Build ($150)\n\n**Message:**\nHi [Username],\n\nI'm a content creator working on a YouTube video about getting an Ice Dragon pet in Minecraft. I'm looking to commission a custom build for the video.\n\n**Project:** Ice Dragon companion build (medium size, rideable, ice/crystal theme)\n**Budget:** $150 USD\n**Deliverable:** World file + screenshots\n**Deadline:** 7 days\n\nYour work on [specific build from their portfolio] caught my eye. Are you available for commissions?\n\nThanks!\n[Your name]\n\n---\n\n### TEMPLATE 5: MC-Market Forum Post\n**Title:** [Hiring] Minecraft Builder - Ice Dragon Project ($150)\n\n**Body:**\nLooking for an experienced builder for a custom Ice Dragon pet build.\n\n**Specs:**\n- Type: Creature/Animal build\n- Theme: Ice Dragon companion\n- Size: Medium (rideable)\n- Style: Cinematic with ice/crystal details\n\n**Payment:** $150 USD\n**Delivery:** 7 days\n**Contact:** Reply here or DM\n\nShow me your portfolio!\n\n---\n\n## Execution Checklist\n\n| Platform | Action | Status | Time Estimate |\n|----------|--------|--------|---------------|\n| Upwork | Post job listing | ☐ | 15 min |\n| Reddit | Post to r/MinecraftBuilds | ☐ | 10 min |\n| Reddit | DM 3 builders from top posts | ☐ | 15 min |\n| Twitter/X | Search \"Minecraft builder\" and DM 5 | ☐ | 20 min |\n| Planet Minecraft | PM 3 builders | ☐ | 15 min |\n| MC-Market | Create account + post | ☐ | 20 min |\n| Fiverr | Message Benad E (already identified) | ☐ | 5 min |\n\n**Total Time to Execute All Channels: ~100 minutes (1h 40m)**\n\n## Response Tracking Sheet\n\n| Platform | Contact | Date Sent | Response? | Hired? | Notes |\n|----------|---------|-----------|-----------|--------|-------|\n| | | | | | |\n\n*Copy this table to track all outreach*\n\n---\n\n*Created: 2026-02-10 | Priority: HIGH | Status: Ready for Execution | Linked Task: active-001*",
-      "sourceUrls": ["https://www.upwork.com", "https://reddit.com/r/MinecraftBuilds", "https://planetminecraft.com"],
+      "sourceUrls": [
+        "https://www.upwork.com",
+        "https://reddit.com/r/MinecraftBuilds",
+        "https://planetminecraft.com"
+      ],
       "category": "Actionable Templates",
       "linkedActiveTaskId": "active-001"
     },

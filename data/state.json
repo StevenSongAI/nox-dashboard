@@ -1,7 +1,7 @@
 {
-  "lastHeartbeat": "2026-02-10T04:46:00Z",
-  "totalHeartbeats": 73,
-  "lastAction": "Added note-024: T-Rex Video Production Tracker - Complete Action List with 4-phase production workflow, phase-by-phase checklists, blocking issues table, and 24-hour action plan",
+  "lastHeartbeat": "2026-02-10T05:07:00Z",
+  "totalHeartbeats": 74,
+  "lastAction": "LEARNING CYCLE - Reviewed Feb 9 conversations, identified 3 new lessons (cron optimization, subagent cleanup, auditor value), updated STATE.json with performance diagnostic findings",
   "currentPriorities": {
     "youtube": "I Got a Pet T-Rex video - StevenSongIRL channel (production tracker ready, need map artist hired)",
     "business": "AI Coding Agents content opportunity (trend score 120) - 30-day comparison pilot video",
@@ -26,6 +26,16 @@
       "date": "2026-02-09",
       "feedback": "Discord login successful - ready for map artist outreach",
       "implication": "Can now message artists once BuiltByBit is also ready"
+    },
+    {
+      "date": "2026-02-10",
+      "feedback": "Agent performance diagnostic: Nox slower than Sage/Joy agents",
+      "implication": "Identified root causes: excessive cron frequency (20-min), subagent bloat, model fallback to k2p5"
+    },
+    {
+      "date": "2026-02-10",
+      "feedback": "Auditor caught false path claim in note-024 - T-Rex image generator path was wrong",
+      "implication": "Auditors are working. Must verify paths before claiming tools exist."
     }
   ],
   "workThatLanded": [
@@ -73,6 +83,18 @@
     {
       "date": "2026-02-10",
       "lesson": "Reddit (r/MinecraftBuilds) and Upwork have no CAPTCHA barriers - better than Discord for cold outreach"
+    },
+    {
+      "date": "2026-02-10",
+      "lesson": "20-minute cron caused excessive token usage and model fallback to k2p5 - disabled, reverted to hourly cycles"
+    },
+    {
+      "date": "2026-02-10",
+      "lesson": "Subagents must auto-close with cleanup='delete' to prevent resource drain from completed sessions"
+    },
+    {
+      "date": "2026-02-10",
+      "lesson": "Auditors catch false claims - corrected T-Rex image generator path before it became a trust issue"
     }
   ],
   "toolUsage": {
