@@ -1694,6 +1694,81 @@
       "url": "https://www.youtube.com/watch?v=voHC6G9Yb34",
       "researchStatus": "completed",
       "source": "viewstats outlier research"
+    },
+    {
+      "id": "yt-viewstats-116",
+      "title": "Evolution Of Salmon To Become Bloop VS Reptiles and Animals - Animal Revolt Battle Simulator",
+      "channel": "dinosaursimulationlab",
+      "views": 1910000,
+      "publishedAt": "2023-02-08T00:00:00Z",
+      "addedAt": "2026-02-10T06:00:00Z",
+      "outlierScore": 68.9,
+      "niche": "🎮 Creature Evolution/Battle Sim",
+      "whyOutlier": "MASSIVE 68.9x outlier - 1.91M views on 504K sub channel! Salmon-to-Bloop evolution arc creates satisfying progression. Animal Revolt Battle Simulator content consistently overperforms.",
+      "contentAngle": "Create 'Evolution of AI [Creature] vs [Category]' - small-to-giant transformation with battle payoff. Fish/amphibian creatures work well for evolution narratives.",
+      "url": "https://www.youtube.com/watch?v=mngQ1_wAd6A",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-117",
+      "title": "What if Pokemon had more Evolution Stages? Sprigatito | Floragato | Meowscarada",
+      "channel": "sinpoke",
+      "views": 756000,
+      "publishedAt": "2024-02-08T00:00:00Z",
+      "addedAt": "2026-02-10T06:00:00Z",
+      "outlierScore": 7600,
+      "niche": "🎮 Gaming/Pokémon/Speculation",
+      "whyOutlier": "EXTREME 7,600x outlier!! - 756K views on 10K sub channel. 'What if X had more Y' speculation format + Pokemon evolution = viral gold. Second hit from same channel using same formula (676x on Fuecoco).",
+      "contentAngle": "Speculative evolution content: 'What if AI creatures had MORE evolution stages?' Show hypothetical Stage 3/4/5 evolutions beyond normal final forms.",
+      "url": "https://www.youtube.com/watch?v=YgYidbyfE88",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-118",
+      "title": "Brainrot Evolution in Roblox",
+      "channel": "tussyplays",
+      "views": 3410000,
+      "publishedAt": "2024-05-08T00:00:00Z",
+      "addedAt": "2026-02-10T06:00:00Z",
+      "outlierScore": 9.2,
+      "niche": "🎮 Roblox/Creature Evolution",
+      "whyOutlier": "9.2x outlier - 3.41M views on 307K sub channel. 'Brainrot' meme aesthetic + evolution format + Roblox = massive engagement. Meme culture crossover with gaming.",
+      "contentAngle": "Create 'Brainrot AI Creature Evolution' - lean into absurdist/meme aesthetics with AI creature transformations. Gen Z humor + evolution format.",
+      "url": "https://www.youtube.com/watch?v=jNrPGvzYo38",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-119",
+      "title": "The Strongest Flying Dragon Has EVOLVED! Who Can Stop It Now? - Animal Revolt Battle Simulator",
+      "channel": "arbsdinosaur",
+      "views": 123000,
+      "publishedAt": "2024-08-08T00:00:00Z",
+      "addedAt": "2026-02-10T06:00:00Z",
+      "outlierScore": 14.5,
+      "niche": "🐉 Dragon/Evolution Battle",
+      "whyOutlier": "14.5x outlier - 123K views on 254K sub channel. 'Who can stop it now?' framing creates challenge narrative. Flying dragon evolution taps into power fantasy.",
+      "contentAngle": "'The Strongest AI [Creature] Has Evolved!' format - create escalating power progression with invincibility arc, then introduce counter-challenges.",
+      "url": "https://www.youtube.com/watch?v=Ws87Be8aGfs",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-120",
+      "title": "Mega Elephant of Evolution VS All Dinosaurs VS Animal Evolve - Elephant Evolve Mammoths ARBS Game",
+      "channel": "arbsdinosaur",
+      "views": 254000,
+      "publishedAt": "2023-02-08T00:00:00Z",
+      "addedAt": "2026-02-10T06:00:00Z",
+      "outlierScore": 11.2,
+      "niche": "🎮 Creature Evolution/Battle",
+      "whyOutlier": "11.2x outlier - 254K views on 254K sub channel (1:1 ratio). Mega evolution + elephant (gentle giant turning powerful) + triple-threat battle format = engagement driver.",
+      "contentAngle": "'Mega [Creature] of Evolution VS ALL [Category]' - triple-threat format with evolved super-form creature taking on entire categories of opponents.",
+      "url": "https://www.youtube.com/watch?v=DuQPHgohB1U",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
     }
   ],
   "competitorResearchQueue": [
@@ -2635,8 +2710,8 @@
     "totalOutliers": 114
   },
   "stats": {
-    "totalOutliers": 118,
+    "totalOutliers": 123,
     "totalBriefs": 15,
-    "lastResearch": "2026-02-10T05:26:00Z"
+    "lastResearch": "2026-02-10T06:00:00Z"
   }
 }
