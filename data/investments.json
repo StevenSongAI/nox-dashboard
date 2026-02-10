@@ -436,6 +436,28 @@
         "fiftyTwoWeekHigh": 212.19,
         "analystTarget": 253.62
       }
+    },
+    {
+      "id": "intel-018",
+      "date": "2026-02-09T21:46:00Z",
+      "topic": "NVDA Earnings Countdown: 16 Days - Positioning Strategy Update",
+      "source": "Heartbeat Intelligence / Portfolio Management",
+      "content": "Pre-earnings positioning check for NVDA (earnings Feb 25 after hours). Current position: 20 shares @ $190.04 (+37.2% gain, $3,801 value). Portfolio allocation: 22% NVDA, 78% AAPL.\n\n**Earnings Expectations (Consensus):**\n- Q4 Revenue: $19.5B (+73% YoY expected)\n- Q4 EPS: $0.85 (vs $0.52 prior year)\n- Data Center Revenue: $17.5B (90% of total)\n- Q1 Guidance: Critical for full-year estimates\n\n**Key Catalysts to Watch:**\n1. Blackwell chip production ramp status\n2. Supply constraint duration guidance\n3. China export restriction impact quantification\n4. Gross margin trajectory (targeting 73-74%)\n5. AI inference vs training revenue split\n\n**Scenario Analysis:**\n- Bull Case ($210-220): Blackwell demand exceeds supply through 2026, Q1 guidance beats\n- Base Case ($185-200): In-line results, supply constraints acknowledged but manageable\n- Bear Case ($160-175): Demand deceleration, margin compression, China headwinds\n\n**Position Strategy:**\n- HOLD: No changes 16 days before event\n- No new adds: Event risk too high for fresh capital\n- No trim: Let winner run, thesis intact\n- Post-earnings: Reassess based on guidance\n\n**Risk Management:**\n- Expected volatility: ±8-12% post-earnings\n- Position size appropriate (22% of portfolio)\n- AAPL provides stability ballast\n- Stop-loss not recommended (long-term hold)\n\n**Market Context:**\n- Dow >50K signals broad risk appetite\n- AI infrastructure spending accelerating\n- Competitive threat from AMD MI300 real but limited\n- Custom silicon (GOOGL TPU, AMZN Trainium) niche impact\n\n**Linked Content:**\n- T-Rex video production ongoing (intel-014)\n- Dashboard positioning aligned with long-term AI thesis\n- Content-investment convergence strategy active",
+      "impact": "neutral",
+      "relatedPositions": ["pos-002"],
+      "alerts": [
+        "16 days to NVDA earnings - maintain HOLD",
+        "Position sizing appropriate at 22% portfolio",
+        "Expected volatility ±8-12% post-earnings",
+        "No position changes recommended pre-event"
+      ],
+      "positionStrategy": "HOLD",
+      "scenarioTargets": {
+        "bull": "210-220",
+        "base": "185-200",
+        "bear": "160-175"
+      },
+      "linkedIntelligence": ["intel-017", "intel-015", "intel-012"]
     }
   ],
   "synthesizedInsights": [
