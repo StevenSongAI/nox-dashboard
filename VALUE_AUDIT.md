@@ -1,135 +1,192 @@
-# YouTube Outlier Research - VALUE AUDIT
+# Value Audit Report - Nox Dashboard
 
 **Audit Date:** 2026-02-10  
-**Auditor:** Value Auditor Agent  
-**Commit:** af550a1 - `[cron] Added 4 outlier videos from viewstats: ARBS battles, Dragon Wars (1200x!), Creatures of Sonaria, Roblox pet system`
+**Auditor:** Value Auditor (Subagent)  
+**Commit:** `[nox] Learning Cycle: Added Military vs Creature content brief (brief-military-creature-001) based on 1200x Dragon Wars outlier`
 
 ---
 
-## EXECUTIVE SUMMARY
+## Executive Summary
 
-| Metric | Score |
-|--------|-------|
-| **Data Authenticity** | ✅ VERIFIED - All 4 videos are real YouTube videos |
-| **Video ID Validity** | ✅ CONFIRMED - All URLs resolve to correct videos |
-| **Content Relevance** | ✅ HIGH - All 4 match Steven's niches (creatures, gaming, virtual pets) |
-| **File Integrity** | ⚠️ PARTIAL - Data appended correctly, but DUPLICATES exist |
-| **Meta Updates** | ✅ COMPLETE - meta.json and state.json properly updated |
-| **OVERALL GRADE** | **75%** |
+| Criteria | Grade | Notes |
+|----------|-------|-------|
+| Real Researched Data | ✅ 100% | Based on genuine 1200x outlier (yt-viewstats-065/113) |
+| JSON Schema Match | ⚠️ 60% | Uses OLD brief format, missing enriched fields |
+| Usefulness to Steven | ⚠️ 60% | Good concept, but thin execution |
+| Dashboard Value Added | ⚠️ 40% | Outlier already captured; brief adds minimal insight |
+| Meta/State Updates | ✅ 100% | Properly updated timestamps, version 1.0.27, dataVersion 42 |
 
----
-
-## DETAILED FINDINGS
-
-### 1. Data Authenticity: ✅ VERIFIED
-
-All 4 video URLs were fetched and verified as real YouTube videos:
-
-| ID | Title | Channel | Status |
-|----|-------|---------|--------|
-| yt-viewstats-112 | Challenge Creepy Monster Lava + Monster Plant and Water - ARBS | arbsgodzilla | ✅ Real |
-| yt-viewstats-113 | Army Helicopters Attempt To Kill The Dragons \| Dragon Wars \| Creature Features | creaturefeaturesclips | ✅ Real |
-| yt-viewstats-114 | This NEW CREATURE GAME is INSANE... | zotoyt | ✅ Real |
-| yt-viewstats-115 | How To Make A Pet System in Roblox Studio! | sxuiroblox | ✅ Real |
-
-### 2. Outlier Scores & View Counts: ✅ REALISTIC
-
-| Video | Outlier Score | Views | Assessment |
-|-------|--------------|-------|------------|
-| ARBS Monster Battles | 86.8x | 1.30M | Realistic - ARBS content often goes viral |
-| Dragon Wars | **1,200x** | 32.6M | Exceptional but realistic for creaturefeaturesclips |
-| Creatures of Sonaria | 12.1x | 1.43M | Conservative, realistic |
-| Roblox Pet System | 129x | 183K | High outlier for tutorial content, plausible |
-
-**Note:** The 1,200x outlier for Dragon Wars is extreme but justified - military vs dragon content has broad appeal and the Creature Features channel specializes in viral creature clips.
-
-### 3. Niche Alignment: ✅ EXCELLENT
-
-All 4 videos align with Steven's content pillars:
-
-- **🎮 ARBS Monster Battles** → Creature battle simulation (high engagement format)
-- **🐉 Dragon Wars** → Dragon/military fantasy content (proven viral formula)
-- **🎮 Creatures of Sonaria** → Creature gaming/survival games
-- **🐾 Roblox Pet System** → Virtual pets + game development tutorials
-
-### 4. File Operations: ⚠️ ISSUES FOUND
-
-#### ✅ Correct Operations:
-- **youtube.json**: 4 entries APPENDED (not replaced) - 60 lines added
-- **meta.json**: Updated with `youtubeUpdated: "2026-02-10T05:12:36Z"`
-- **state.json**: `lastAction` correctly describes the work
-- **Commit message**: Accurate description of changes
-
-#### ❌ Data Quality Issue - DUPLICATES DETECTED:
-
-The following videos appear TWICE in the database:
-
-| Video | Original ID | Duplicate ID | Issue |
-|-------|-------------|--------------|-------|
-| ARBS Monster Battles | yt-viewstats-066 | yt-viewstats-112 | Same video, different IDs |
-| Dragon Wars | yt-viewstats-065 | yt-viewstats-113 | Same video, different IDs |
-
-**Root Cause:** The viewstats crawler re-discovered videos that were already in the database (added 2026-02-09) and added them again with new sequential IDs (added 2026-02-10).
-
-**Impact:** Low - No data loss, but inflated entry count.
-
-### 5. Schema Compliance: ✅ VALID
-
-All entries follow the established schema:
-- `id`: Sequential (112-115)
-- `title`: Accurate
-- `channel`: Correct
-- `views`: Integer format
-- `publishedAt`: ISO timestamp
-- `addedAt`: ISO timestamp with research timestamp
-- `outlierScore`: Float
-- `niche`: Emoji + category format
-- `whyOutlier`: Descriptive analysis
-- `contentAngle`: Actionable insight
-- `url`: Valid YouTube URL
-- `researchStatus`: "completed"
-- `source`: "viewstats outlier research"
+### **OVERALL SCORE: 55% (Marginal)**
 
 ---
 
-## RECOMMENDATIONS
+## Detailed Assessment
+
+### 1. Data Authenticity: ✅ EXCELLENT
+
+**Source Verification:**
+- **Outlier Video:** `yt-viewstats-065` and `yt-viewstats-113` (duplicated entries)
+  - Title: "Army Helicopters Attempt To Kill The Dragons | Dragon Wars | Creature Features"
+  - Channel: creaturefeaturesclips
+  - Views: 32,600,000
+  - Outlier Score: **1200x** (one of highest in dataset)
+  - Added: 2026-02-09T21:10:00Z and 2026-02-10T05:12:29Z
+  - Content Angle: "Create 'Army vs AI Dragon' scenarios - modern military weapons against fantasy creatures"
+
+**Verdict:** The data is 100% real, researched from viewstats.com. The 1200x outlier is legitimate and one of the strongest signals in the entire dataset.
+
+---
+
+### 2. Schema Compliance: ⚠️ INCONSISTENT
+
+**Brief Structure Comparison:**
+
+| Field | brief-military-creature-001 | brief-baby-physics-001 (Newer) | Status |
+|-------|----------------------------|--------------------------------|--------|
+| id | ✅ | ✅ | Match |
+| title | ✅ | ✅ | Match |
+| summary | ✅ | ✅ | Match |
+| hook | ✅ | ✅ | Match |
+| outline | ✅ | ✅ | Match |
+| targetLength | ✅ | ✅ | Match |
+| difficulty | ✅ | ✅ | Match |
+| urgency | ✅ | ✅ | Match |
+| basedOn | ✅ | ✅ | Match |
+| status | ✅ | ✅ | Match |
+| createdAt | ✅ | ✅ | Match |
+| contentFormat | ❌ MISSING | ✅ | **Gap** |
+| templatePattern | ❌ MISSING | ✅ | **Gap** |
+| hookFormula | ❌ MISSING | ✅ | **Gap** |
+| productionRequirements | ❌ MISSING | ✅ | **Gap** |
+| expectedOutlierScore | ❌ MISSING | ✅ | **Gap** |
+| targetRatio | ❌ MISSING | ✅ | **Gap** |
+| keyIngredients | ❌ MISSING | ✅ | **Gap** |
+
+**Verdict:** The brief uses the **OLD schema format** (similar to brief-pet-001, brief-creature-001 from Feb 8). Recent briefs (brief-baby-physics-001, brief-baby-creature-physics-001) use an enriched format with production requirements, expected metrics, and psychological triggers. This creates inconsistency in the dashboard.
+
+---
+
+### 3. Usefulness to Steven: ⚠️ THIN
+
+**What the Brief Contains:**
+- 5-sentence summary referencing the 1200x outlier
+- Generic hook: "The military just encountered a creature that shouldnt exist..."
+- 5-step outline (Establish → Escalation → Crisis → Climax → Resolution)
+- Basic metadata (12-18 min, medium difficulty, high urgency)
+
+**What's Missing vs. Other Briefs:**
+- No specific creature types recommended
+- No production software/tools listed
+- No expected performance metrics
+- No psychological trigger analysis
+- No title options or thumbnail concepts
+- No equipment checklist
+- No editing notes
+
+**Comparison:** 
+- `brief-baby-creature-physics-001`: 25+ fields including equipment checklist, editing notes, thumbnail concepts, title options, series potential
+- `brief-military-creature-001`: 12 fields, minimal actionable detail
+
+**Verdict:** Useful concept, but execution is thin. Steven would need to do significant additional work to turn this into a production-ready video plan.
+
+---
+
+### 4. Value Added to Dashboard: ⚠️ REDUNDANT
+
+**Pre-existing Coverage:**
+
+The 1200x outlier was **already captured** in outlierVideos with a detailed contentAngle:
+```json
+{
+  "id": "yt-viewstats-065",
+  "title": "Army Helicopters Attempt To Kill The Dragons | Dragon Wars | Creature Features",
+  "outlierScore": 1200,
+  "contentAngle": "Create 'Army vs AI Dragon' scenarios - modern military weapons against fantasy creatures. David vs Goliath with helicopters."
+}
+```
+
+**What the Brief Adds:**
+- Generic 5-step outline (standard narrative structure)
+- Brief summary restating the outlier data
+- Status: "ready" (but lacks production details to actually be ready)
+
+**What Would Have Added Real Value:**
+- Specific military units vs creature matchups (tanks vs dragon, jets vs kaiju)
+- Software recommendations (ARBS, Garry's Mod, custom physics)
+- Expected performance projections
+- Title variations: "Army vs AI Dragon: Who Wins?", "I Unleashed a Dragon on the Military"
+- Thumbnail concepts with split-screen formats
+- Series potential (Army vs Different Creatures)
+
+**Verdict:** The brief adds minimal value beyond what's already in the outlierVideos array. It's essentially a restatement of the contentAngle with a generic outline template.
+
+---
+
+### 5. Meta/State Updates: ✅ EXCELLENT
+
+**meta.json:**
+```json
+{
+  "lastUpdated": "2026-02-10T05:26:00Z",
+  "updatedBy": "nox",
+  "version": "1.0.27",
+  "dataVersion": 42,
+  "youtubeUpdated": "2026-02-10T05:26:00Z"
+}
+```
+
+**state.json:**
+```json
+{
+  "lastHeartbeat": "2026-02-10T05:26:00Z",
+  "totalHeartbeats": 75,
+  "lastAction": "Learning Cycle: Added Military vs Creature content brief...",
+  "dataFreshness": {
+    "youtube": "2026-02-10 — 118 outliers, 15 content briefs (NEW: Military vs Creature brief)"
+  }
+}
+```
+
+**Verdict:** Perfect updates. Timestamps consistent, version incremented, state reflects the change accurately.
+
+---
+
+## Recommendations
 
 ### Immediate Actions:
-1. **Remove duplicates** (IDs 065 and 066) or mark as deprecated
-2. **Add deduplication logic** to the viewstats crawler to check existing video URLs before adding
+1. **Enrich the brief** to match current schema:
+   - Add `contentFormat`: "Military Simulation / Creature Battle"
+   - Add `templatePattern`: "Military vs [AI Creature] - Who Wins?"
+   - Add `productionRequirements` with software recommendations (ARBS, Garry's Mod)
+   - Add `expectedOutlierScore`: 100+ (based on 1200x source)
+   - Add `titleOptions` array with 3-5 title variations
+   - Add `thumbnailConcept` description
 
-### Process Improvements:
-1. Implement a `videoId` field using YouTube's video ID (e.g., `bllFS6qwHSo`) for easier deduplication
-2. Add a pre-commit hook to check for duplicate URLs in youtube.json
-3. Consider a database migration to clean up existing duplicates
+2. **Deduplicate outlierVideos** - yt-viewstats-065 and yt-viewstats-113 are duplicates
 
----
+3. **Future briefs** should follow the enriched schema used in brief-baby-creature-physics-001
 
-## AUDIT SCORING BREAKDOWN
-
-| Criterion | Weight | Score | Notes |
-|-----------|--------|-------|-------|
-| Real data from viewstats | 30% | 30/30 | All videos verified real |
-| Video IDs match YouTube | 20% | 20/20 | All URLs confirmed valid |
-| Realistic metrics | 15% | 15/15 | Outlier scores plausible |
-| Niche alignment | 15% | 15/15 | All 4 match Steven's interests |
-| Proper file updates | 10% | 5/10 | Appended correctly, but duplicates |
-| Meta/state updates | 10% | 10/10 | Both files updated |
-| **TOTAL** | **100%** | **75%** | |
+### Why This Matters:
+- Inconsistent schema makes dashboard harder to parse programmatically
+- Thin briefs require Steven to do extra work to extract value
+- Missing production details = brief is "ready" in status but not actually ready to produce
 
 ---
 
-## CONCLUSION
+## Grade Justification: 55% (Marginal)
 
-**GRADE: 75% (60-79% bracket: Decent data, minor issues)**
+| Factor | Weight | Score | Weighted |
+|--------|--------|-------|----------|
+| Real Data | 30% | 100% | 30 |
+| Schema Match | 20% | 60% | 12 |
+| Usefulness | 25% | 60% | 15 |
+| Value Added | 15% | 40% | 6 |
+| Meta/State | 10% | 100% | 10 |
+| **TOTAL** | 100% | - | **73 → ADJUSTED TO 55%** |
 
-The research is **legitimate and valuable**. The 4 new outlier videos were correctly extracted from viewstats.com, properly formatted, and appropriately appended to the database. The content angles provided are actionable and aligned with Steven's niches.
-
-The **duplicate entries** (2 of the 4 "new" videos were already in the database) are the primary issue. This suggests the crawler needs deduplication logic. However, no data was lost or corrupted, and the duplicates don't invalidate the research quality.
-
-**The value added is REAL - not filler.** The Dragon Wars video (1,200x outlier) alone is a significant finding that could inspire high-performing content.
+**Adjustment Rationale:** While the weighted average is 73%, the **redundancy penalty** applies: the outlier was already captured with nearly identical contentAngle. The brief adds minimal net-new insight, justifying a downward adjustment to 55%.
 
 ---
 
-*Audit completed by Value Auditor Agent*  
-*Report generated: 2026-02-10*
+*Audit completed by Value Auditor subagent*  
+*Report location: ~/Desktop/Nox Builds/nox-dashboard/VALUE_AUDIT.md*
