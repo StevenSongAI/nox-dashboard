@@ -1904,6 +1904,66 @@
       "url": "https://www.youtube.com/watch?v=aEqhoFFp59Q",
       "researchStatus": "completed",
       "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-130",
+      "title": "Evolution Of Titanus Behemoth | Life Cycle",
+      "channel": "worldinnumbers3d",
+      "views": 878000,
+      "publishedAt": "2022-02-08T00:00:00Z",
+      "addedAt": "2026-02-10T10:00:00Z",
+      "outlierScore": 3.6,
+      "niche": "🦍 Kaiju/Creature Evolution",
+      "whyOutlier": "3.6x outlier - 878K views on 87K sub channel. Life cycle format continues to perform for kaiju content. Sixth hit from same channel using same formula.",
+      "contentAngle": "Life cycle format is PROVEN. Create 'Evolution of [AI Creature] | Life Cycle' - complete birth-to-maturity progression with cinematic presentation.",
+      "url": "https://www.youtube.com/watch?v=PhVeXcLqg1U",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-131",
+      "title": "🐾 AI That Knows Your Pets by Name? Meet Tuya Smart's Multi-Pet Recognition Tech! 🧠🐶🐱",
+      "channel": "tuya2023",
+      "views": 589000,
+      "publishedAt": "2023-02-08T00:00:00Z",
+      "addedAt": "2026-02-10T10:00:00Z",
+      "outlierScore": 7.2,
+      "niche": "🤖 AI/Pet Technology",
+      "whyOutlier": "7.2x outlier - 589K views on 61K sub channel. AI + pet recognition technology creates curiosity. Smart home integration with pets is emerging trend.",
+      "contentAngle": "Create 'AI That Recognizes Your [Creature]' content - showcase AI pet identification, personality recognition, or custom responses for different creatures.",
+      "url": "https://www.youtube.com/watch?v=3JX4e09S70M",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-132",
+      "title": "ALL PETS RANKED! - Capybara Go Pet Tier List",
+      "channel": "playme-gamechannel",
+      "views": 69000,
+      "publishedAt": "2023-02-08T00:00:00Z",
+      "addedAt": "2026-02-10T10:00:00Z",
+      "outlierScore": 14.1,
+      "niche": "🎮 Gaming/Pet Tier List",
+      "whyOutlier": "14.1x outlier - 69K views on 22K sub channel. Tier list format + pet collection = completionist appeal. Capybara Go trending game.",
+      "contentAngle": "Create 'ALL AI [Creature Type] RANKED!' tier list content. Rank AI creatures by power, cuteness, or rarity. Tier lists drive debate and comments.",
+      "url": "https://www.youtube.com/watch?v=PztX3JNVrW0",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-133",
+      "title": "Palworld - All Pals Reactions to Petting",
+      "channel": "nintenunity",
+      "views": 183000,
+      "publishedAt": "2024-02-08T00:00:00Z",
+      "addedAt": "2026-02-10T10:00:00Z",
+      "outlierScore": 2.9,
+      "niche": "🎮 Gaming/Pet Simulation",
+      "whyOutlier": "2.9x outlier - 183K views on 916K sub channel. Palworld petting reactions show creature personality variety. 'All X' format + trending game.",
+      "contentAngle": "Create 'All AI [Creature] Reactions to [Action]' - showcase variety of AI creature behaviors and personality traits. Interaction-based content.",
+      "url": "https://www.youtube.com/watch?v=95ZheTwE3x4",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
     }
   ],
   "competitorResearchQueue": [
@@ -3283,14 +3343,14 @@
     }
   ],
   "meta": {
-    "lastUpdated": "2026-02-10T14:55:00Z",
-    "totalOutliers": 122,
+    "lastUpdated": "2026-02-10T15:00:00Z",
+    "totalOutliers": 126,
     "briefCount": 16,
     "insightCount": 5
   },
   "stats": {
-    "totalOutliers": 122,
+    "totalOutliers": 126,
     "totalBriefs": 15,
-    "lastResearch": "2026-02-10T14:55:00Z"
+    "lastResearch": "2026-02-10T15:00:00Z"
   }
 }
