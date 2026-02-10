@@ -1,6 +1,37 @@
 {
   "notes": [
     {
+      "id": "note-017",
+      "title": "Fiverr Map Artist Outreach - Benad E: Actionable Intelligence & Message Templates",
+      "date": "2026-02-09T20:10:00Z",
+      "tags": [
+        "fiverr",
+        "map-artist",
+        "outreach",
+        "trex-video",
+        "action-items",
+        "minecraft"
+      ],
+      "content": "## Fiverr Map Artist Outreach - Benad E\n\n### Target Profile: Benad E\n- **Platform**: Fiverr\n- **Profile**: https://www.fiverr.com/benad_enoch\n- **Location**: Canada (timezone advantage - minimal communication delay)\n- **Rating**: 5.0★ (established, reliable)\n- **Specialty**: Minecraft builds + cinematics\n- **Budget**: $150 USD (fixed)\n\n### Why This Artist\n\n**1. Location Match**: Canada-based means similar timezone to Steven (EST), enabling real-time communication during build process.\n\n**2. Skill Alignment**: Builds + cinematics combination means they understand cinematic framing and camera angles - critical for YouTube content.\n\n**3. Platform Advantage**: Fiverr has no CAPTCHA barriers, no rate limits, and built-in payment protection. Unlike BuiltByBit (verification pending) or Discord (rate limited).\n\n**4. Competitive Pricing**: $150 budget likely sufficient for a 100x100 block environment based on typical Fiverr Minecraft build rates ($50-200 for custom worlds).\n\n---\n\n### Message Template (Ready to Send)\n\n**Subject**: Custom Minecraft Map Commission - YouTube Cinematic Project\n\n**Body**:\nHi Benad,\n\nI came across your Fiverr profile and was impressed by your Minecraft builds with cinematic quality. I'm a YouTuber (169K subs) looking to commission a custom Minecraft map for a video production.\n\n**Project Overview**:\n- Theme: Prehistoric jungle with temple ruins\n- Key Areas Needed:\n  * Jungle temple ruin (egg discovery scene)\n  * T-Rex paddock/enclosure (100x100 blocks minimum)\n  * Small village nearby (for chaos scene)\n  * Cinematic paths/camera angles built in\n\n**Deliverables**:\n- World file (.mcworld or .zip)\n- 5 key camera positions marked\n- Spawn point configured\n- Optimized for 1.20+\n\n**Timeline**: 5 days preferred\n**Budget**: $150 USD\n\nI noticed you do cinematics as well - do you include camera path setup in your builds, or would that be a separate service?\n\nLet me know if this project interests you and your availability. Happy to discuss details further!\n\nBest,\n[Steven]\n\n---\n\n### Alternative Opening (If Want Shorter)\n\n**Subject**: Minecraft Map Build - $150 Budget, 5-Day Timeline\n\n**Body**:\nHi Benad,\n\nI'm looking for a Minecraft builder for a YouTube video project:\n\n**What I Need**:\n- Prehistoric jungle map with temple ruins\n- T-Rex enclosure (100x100 blocks)\n- Small village nearby\n- Cinematic camera paths built in\n\n**Budget**: $150\n**Timeline**: 5 days\n**Use**: YouTube video (169K channel)\n\nAre you available for this type of commission? I can share reference images and more details if you're interested.\n\nThanks,\n[Steven]\n\n---\n\n### Follow-Up Strategy\n\n**If No Response in 24 Hours**:\n- Send gentle follow-up: \"Hi Benad, just following up on my previous message about the Minecraft map commission. Let me know if you're interested or if you need any clarification on the project scope. Thanks!\"\n\n**If No Response in 48 Hours**:\n- Move to backup artist (document in dashboard)\n- Consider increasing budget to $175-200 for faster response\n\n**If Artist Declines**:\n- Ask for referral to similar builders\n- Request feedback on budget/timeline expectations\n- Document reason in STATE.json blockedTasks\n\n---\n\n### Project Scope Clarification\n\n**Must-Have (Core Deliverable)**:\n- Prehistoric jungle environment\n- Temple ruins structure (egg discovery scene)\n- T-Rex paddock (minimum 100x100 blocks)\n- Small village (10-15 buildings)\n- World file export\n\n**Nice-to-Have (Negotiable)**:\n- Custom resource pack\n- Command block mechanics\n- Cinematic camera path markers\n- Interior details for temple\n- Particle effects/atmosphere\n\n**Out of Scope (Don't Mention Initially)**:\n- Custom models/mobs\n- Plugin development\n- Server setup\n- Ongoing maintenance\n\n---\n\n### Budget Justification\n\n**Why $150 is Fair**:\n- 100x100 block area = 10,000 blocks minimum\n- At 30 seconds per block (placement + detailing) = ~83 hours of work\n- $150 / 83 hours = $1.80/hour (below minimum wage, but offset by portfolio value)\n- YouTube exposure to 169K subscribers adds promotional value\n\n**If Artist Requests More**:\n- Counter at $175 (negotiation range)\n- Maximum budget: $200\n- Reduce scope if needed (smaller village, less detailing)\n\n---\n\n### Risk Mitigation\n\n**Payment Protection**:\n- Use Fiverr's built-in escrow\n- Don't pay outside platform\n- Request milestone: 50% at rough draft, 50% at completion\n\n**Quality Assurance**:\n- Request work-in-progress screenshots at 25%, 50%, 75%\n- Specify revision rounds (typically 2-3 included)\n- Define 'complete' criteria upfront\n\n**Timeline Protection**:\n- Build in 1-day buffer (request 4-day delivery, plan for 5)\n- Have backup plan if artist misses deadline\n- Confirm artist's current workload before committing\n\n---\n\n### Success Metrics\n\n| Metric | Target | Tracking |
+|--------|--------|----------|
+| Response Rate | 1 artist contacted | Fiverr inbox |
+| Response Time | <24 hours | Timestamp |
+| Price Negotiation | <$200 final | Fiverr order |
+| Delivery | On-time | Due date |
+| Quality | Meets requirements | Visual inspection |
+| Video Performance | >50K views | YouTube Analytics |
+\n---\n\n### Next Actions (IMMEDIATE)\n\n1. **Send Message**: Copy template above, customize, send to Benad E\n2. **Set Reminder**: 24-hour follow-up if no response\n3. **Prepare Backup**: Research 2-3 alternative Fiverr artists\n4. **Gather References**: Screenshot reference images for jungle/temple style\n5. **Update STATE.json**: Move from 'active-001' to 'in-progress' when artist responds\n\n---\n\n### Linked Resources\n- Content Brief: brief-pet-trex-001\n- Budget: Allocated in STATE.json\n- Timeline: Blocks T-Rex video production (5 days from artist confirmation)\n\n---\n\n*Research Note Created: 2026-02-09 | Priority: HIGH | Status: Ready for Execution*",
+      "sourceUrls": [
+        "https://www.fiverr.com/benad_enoch",
+        "https://stevensongai.github.io/nox-dashboard/"
+      ],
+      "category": "Actionable Intelligence",
+      "linkedContentBriefIds": [
+        "brief-pet-trex-001"
+      ],
+      "linkedActiveTaskId": "active-001"
+    },
+    {
       "id": "note-016",
       "title": "'I Got a Pet' Video Format - Production Guide",
       "date": "2026-02-10T01:05:00Z",
