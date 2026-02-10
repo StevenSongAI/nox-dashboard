@@ -518,6 +518,33 @@
         "expectedVolatility": "±8-12%"
       },
       "linkedIntelligence": ["intel-020", "intel-019", "intel-018"]
+    },
+    {
+      "id": "intel-022",
+      "date": "2026-02-10T10:26:00Z",
+      "topic": "NVDA Earnings Prep: 15-Day Action Plan + Decision Matrix",
+      "source": "Investment Intelligence Synthesis / Pre-Earnings Protocol",
+      "content": "Strategic preparation guide for NVDA Q4 earnings (Feb 25 AH). Converts intelligence into actionable decision framework.\n\n## 15-Day Countdown Action Plan\n\n### Days 15-10 (Now - Feb 15): Intelligence Gathering\n- [ ] Monitor daily price action for unusual volume spikes\n- [ ] Track analyst estimate revisions (check for upgrades/downgrades)\n- [ ] Watch for competitor news (AMD, INTC, custom silicon developments)\n- [ ] Review options market implied move (typically ±8-12%)\n\n### Days 9-5 (Feb 16-20): Scenario Planning\n- [ ] Confirm position sizing comfort (current: 22% of portfolio)\n- [ ] Pre-determine response to each scenario (see Decision Matrix below)\n- [ ] Ensure cash reserves available for opportunistic adds\n- [ ] Set calendar reminder for earnings day (Feb 25, 4:30 PM ET)\n\n### Days 4-1 (Feb 21-24): Final Preparation\n- [ ] No new position entries (event risk too high)\n- [ ] Review stop-loss discipline (none set - long-term hold)\n- [ ] Prepare post-earnings analysis template\n- [ ] Check after-hours trading capability for immediate reaction\n\n## Decision Matrix: Post-Earnings Response\n\n| Scenario | Price Target | Response | Rationale |\n|----------|--------------|----------|-----------|\n| **Bull Case** ($210-220) | $253 analyst target | HOLD | Let winner run, re-assess at $220 |\n| **Base Case** ($185-200) | $190-195 range | HOLD | Thesis intact, no action needed |\n| **Bear Case** ($160-175) | $160 support test | EVALUATE ADD | Consider adding if thesis unchanged |\n| **Disaster** (<$150) | Major breakdown | REVIEW EXIT | Fundamental thesis broken? |\n\n## Key Metrics to Verify Post-Earnings\n\n1. **Data Center Revenue Growth**: Must maintain 70%+ YoY\n2. **Blackwell Guidance**: Timeline for production ramp critical\n3. **Q1 Revenue Guide**: Street expects ~$21B (implied +65% YoY)\n4. **Gross Margin Trend**: 73-74% range acceptable, below 70% concerning\n5. **China Revenue Impact**: Quantify export restriction headwinds\n\n## Position Risk Assessment\n\n**Current Risk Level: MODERATE**\n- Position size appropriate (22% of portfolio, not >30%)\n- AAPL provides ballast (78% of portfolio, lower beta)\n- No margin used - no forced liquidation risk\n- Time horizon: Long-term (12+ months)\n\n**Risk Mitigation:**\n- No stop-loss (would lock in losses on volatility)\n- No options (avoid decay and complexity)\n- Cash reserves available for opportunistic adds\n- Diversified across two holdings (AAPL, NVDA)\n\n## Linked Intelligence\n- Earnings expectations: intel-021, intel-020, intel-018\n- Scenario analysis: intel-015, intel-018\n- Portfolio positioning: intel-012, intel-017",
+      "impact": "neutral",
+      "relatedPositions": ["pos-002"],
+      "alerts": [
+        "15 days to earnings - begin daily monitoring",
+        "Decision matrix prepared for post-earnings response",
+        "No position changes until Feb 26+"
+      ],
+      "positionStrategy": "HOLD",
+      "actionItems": [
+        "Monitor daily volume/price action through Feb 25",
+        "Pre-determine response to bull/base/bear scenarios",
+        "Prepare post-earnings analysis framework"
+      ],
+      "earningsCountdown": {
+        "ticker": "NVDA",
+        "date": "2026-02-25",
+        "daysRemaining": 15,
+        "expectedVolatility": "±8-12%"
+      },
+      "linkedIntelligence": ["intel-021", "intel-020", "intel-018", "intel-015"]
     }
   ],
   "synthesizedInsights": [
@@ -562,6 +589,6 @@
       "addedAt": "2026-02-09T11:50:00Z"
     }
   ],
-  "lastUpdated": "2026-02-10T08:46:00Z",
+  "lastUpdated": "2026-02-10T10:26:00Z",
   "dataSource": "Market Data"
 }
