@@ -3235,17 +3235,62 @@
       ],
       "priority": "high",
       "addedAt": "2026-02-10T11:07:40.059276Z"
+    },
+    {
+      "id": "yt-viewstats-067",
+      "title": "How I BECAME A DRAGON in Minecraft!",
+      "channel": "littlelizardgaming",
+      "views": 635000,
+      "publishedAt": "2022-02-08T00:00:00Z",
+      "addedAt": "2026-02-10T14:55:00Z",
+      "outlierScore": 72.1,
+      "niche": "🐉 Gaming/Dragon Transformation",
+      "whyOutlier": "EXTREME 72.1x outlier - 635K views on 4.0M sub channel. 'I became a' format + dragon transformation = viral formula. Becoming the creature creates immersive fantasy fulfillment.",
+      "contentAngle": "Create 'I Became an AI Dragon' - transformation narrative showing protagonist becoming AI-generated dragon and experiencing dragon abilities/perspective. Roleplay + transformation format.",
+      "url": "https://www.youtube.com/watch?v=vZFdKwxrOPw",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-068",
+      "title": "Dragon War - Chinese Dragon VS Western Dragon - Animal Revolt Battle Simulator",
+      "channel": "arbschannel2501",
+      "views": 1360000,
+      "publishedAt": "2022-02-08T00:00:00Z",
+      "addedAt": "2026-02-10T14:55:00Z",
+      "outlierScore": 53.9,
+      "niche": "🐉 Gaming/Dragon Battle",
+      "whyOutlier": "MASSIVE 53.9x outlier - 1.36M views on 180K sub channel. East vs West cultural dragon battle creates massive curiosity gap. Chinese dragon (serpentine, benevolent) vs Western dragon (winged, fire-breathing) = epic showdown.",
+      "contentAngle": "Create 'Chinese AI Dragon VS Western AI Dragon' - cultural mythology battle. Eastern dragon (serpentine, weather-associated) vs Western dragon (winged, fire-breathing). Cultural comparison drives engagement.",
+      "url": "https://www.youtube.com/watch?v=Z6_sw7P10ao",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-069",
+      "title": "Brainrot Evolution in Roblox",
+      "channel": "tussyplays",
+      "views": 3410000,
+      "publishedAt": "2024-05-08T00:00:00Z",
+      "addedAt": "2026-02-10T14:55:00Z",
+      "outlierScore": 9.2,
+      "niche": "🎮 Roblox/Evolution",
+      "whyOutlier": "9.2x outlier - 3.41M views on 307K sub channel. 'Brainrot' meme format + evolution = Gen Z engagement. Absurdist humor with progression mechanics appeals to younger demographic.",
+      "contentAngle": "Create 'AI Creature Brainrot Evolution' - absurdist/meme-style evolution content. Lean into internet humor and surreal transformations. Gen Z audience responds to irony + nostalgia.",
+      "url": "https://www.youtube.com/watch?v=jNrPGvzYo38",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
     }
   ],
   "meta": {
-    "lastUpdated": "2026-02-10T13:00:00Z",
-    "totalOutliers": 119,
+    "lastUpdated": "2026-02-10T14:55:00Z",
+    "totalOutliers": 122,
     "briefCount": 16,
     "insightCount": 5
   },
   "stats": {
-    "totalOutliers": 119,
+    "totalOutliers": 122,
     "totalBriefs": 15,
-    "lastResearch": "2026-02-10T13:00:00Z"
+    "lastResearch": "2026-02-10T14:55:00Z"
   }
 }
