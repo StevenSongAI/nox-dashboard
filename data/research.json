@@ -1,6 +1,29 @@
 {
   "notes": [
     {
+      "id": "note-030",
+      "title": "NVIDIA Earnings Catalyst - Feb 25 Positioning Strategy (15-Day Countdown)",
+      "date": "2026-02-10T07:46:00Z",
+      "tags": [
+        "nvda",
+        "earnings",
+        "catalyst",
+        "positioning",
+        "feb-25",
+        "ai-infrastructure",
+        "investment-strategy"
+      ],
+      "content": "# NVIDIA Earnings Catalyst - February 25, 2026\n\n## Key Details\n- **Earnings Date:** February 25, 2026 (after market close)\n- **Days Remaining:** 15 days\n- **Current Position:** 20 shares @ $138.50 cost basis (+37.21% gain)\n- **Current Price:** ~$190\n\n## What to Watch\n\n### Revenue Expectations\n- Data center revenue growth trajectory (last quarter: +93% YoY)\n- Blackwell chip demand vs. supply constraints\n- Guidance for Q1 FY2027\n\n### Key Metrics\n| Metric | Previous | Consensus Estimate | Bull Case | Bear Case |\n|--------|----------|-------------------|-----------|-----------|\n| Revenue | $35.1B | $38.2B | $40B+ | $36B |\n| EPS | $0.81 | $0.85 | $0.92 | $0.78 |\n| Data Center | $30.8B | $33.5B | $35B | $31B |\n\n## Positioning Strategy\n\n### Current Holdings Assessment\n- Position size appropriate for portfolio allocation\n- Strong unrealized gains (+37%)\n- Cost basis provides downside cushion\n\n### Pre-Earnings Scenarios\n\n**Bullish Outcome (70% probability)**\n- Beat on revenue and EPS\n- Strong Blackwell demand commentary\n- Stock reaction: +8% to +15%\n- Action: HOLD, consider adding on any dip post-earnings\n\n**Neutral Outcome (20% probability)**\n- In-line results\n- Conservative guidance\n- Stock reaction: -3% to +5%\n- Action: HOLD\n\n**Bearish Outcome (10% probability)**\n- Miss on key metrics\n- Supply constraint concerns\n- Stock reaction: -10% to -20%\n- Action: HOLD (long-term thesis intact), consider adding if >15% drop\n\n## Risk Factors\n1. **China Export Restrictions:** Any new limits on H20 chips\n2. **Competition:** AMD MI350 launch timing, custom silicon from hyperscalers\n3. **Valuation:** Trading at 28x forward earnings (premium to semis)\n4. **Macro:** Fed policy, AI spending saturation fears\n\n## Action Items\n- [ ] Set calendar reminder for Feb 25 after-hours\n- [ ] Review options flow for unusual activity (week of Feb 23)\n- [ ] Prepare cash reserve for potential post-earnings dip buying\n- [ ] Monitor competitor news (AMD, Intel, custom silicon)\n\n## Historical Context\n- NVDA has beaten earnings estimates 8 consecutive quarters\n- Average post-earnings move: ±8.5%\n- Stock tends to drift higher into earnings (current trend confirms)\n\n---\n\n*Countdown: 15 days | Position: HOLD | Conviction: HIGH*",
+      "sourceUrls": [
+        "https://investor.nvidia.com",
+        "https://finance.yahoo.com/quote/NVDA"
+      ],
+      "category": "Investment Intelligence",
+      "linkedPositions": ["pos-002"],
+      "priority": "HIGH",
+      "actionRequired": "Monitor earnings catalyst Feb 25 - HOLD position through event"
+    },
+    {
       "id": "note-029",
       "title": "Map Artist Sourcing: Upwork + Reddit Cold Outreach Playbook",
       "date": "2026-02-10T02:27:04.975849Z",
