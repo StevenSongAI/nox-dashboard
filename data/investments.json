@@ -591,7 +591,7 @@
       "date": "2026-02-10T12:26:00Z",
       "topic": "Morning Heartbeat: Portfolio Status + NVDA Earnings Countdown (13 Days)",
       "source": "Heartbeat Protocol / Market Intelligence",
-      "content": "Morning portfolio check-in (7:26 AM ET Feb 10): Portfolio ~$17,450 total (+45% gains). AAPL: 50 shares @ ~$273 (+47%). NVDA: 20 shares @ ~$190 (+37%). NVDA earnings 13 days out (Feb 25 AH). Strategy: HOLD - no changes within 13 days of earnings. Expected volatility ±8-12% post-announcement. Watchlist: AMD target $180, PLTR target $100. Key catalysts: Blackwell production ramp, supply constraints, China impact, Q1 guidance.",
+      "content": "Morning portfolio check-in (7:26 AM ET Feb 10): Portfolio ~$17,450 total (+45% gains). AAPL: 50 shares @ ~$273 (+47%). NVDA: 20 shares @ ~$190 (+37%). NVDA earnings 13 days out (Feb 25 AH). Strategy: HOLD - no changes within 13 days of earnings. Expected volatility \u00b18-12% post-announcement. Watchlist: AMD target $180, PLTR target $100. Key catalysts: Blackwell production ramp, supply constraints, China impact, Q1 guidance.",
       "impact": "neutral",
       "relatedPositions": [
         "pos-001",
@@ -607,7 +607,7 @@
         "ticker": "NVDA",
         "date": "2026-02-25",
         "daysRemaining": 13,
-        "expectedVolatility": "±8-12%"
+        "expectedVolatility": "\u00b18-12%"
       },
       "linkedIntelligence": [
         "intel-022",
@@ -620,7 +620,7 @@
       "date": "2026-02-10T12:46:00Z",
       "topic": "Heartbeat Update: NVDA 15-Day Earnings Countdown + Content Pipeline Status",
       "source": "Heartbeat Protocol / Portfolio + Production Tracking",
-      "content": "Scheduled heartbeat update (7:46 AM ET Feb 10):\n\n**Portfolio Status**\n- AAPL: 50 shares @ $273.04 (+47.39% gain) - Total: $13,652\n- NVDA: 20 shares @ $190.04 (+37.21% gain) - Total: $3,801\n- Combined Value: $17,453 (+45.2% unrealized)\n\n**NVDA Earnings Countdown: 15 Days (Feb 25 AH)**\nPosition strategy remains HOLD through earnings event. No additions or trims within 15 days of catalyst. Expected post-announcement volatility: ±8-12%. Key metrics to watch: Q4 Data Center Revenue (consensus $19.5B), Blackwell production ramp guidance, Q1 forward guidance, China export restriction impact.\n\n**Content Pipeline Update**\n- T-Rex Video (StevenSongIRL): Pre-production, map artist recruitment active. BuiltByBit account pending verification. Fiverr outreach queued (HIGH PRIORITY).\n- Dashboard Status: Fully operational post-Ralph-chain fixes. All tabs functional.\n- AI Coding Agents Brief: Ready for production (Trend Score 120).\n\n**Active Priorities**\n1. Complete map artist hiring for T-Rex video\n2. Monitor NVDA position through Feb 25 earnings\n3. Produce AI Coding Agents comparison pilot\n\nNo portfolio changes recommended until post-earnings (Feb 26+).",
+      "content": "Scheduled heartbeat update (7:46 AM ET Feb 10):\n\n**Portfolio Status**\n- AAPL: 50 shares @ $273.04 (+47.39% gain) - Total: $13,652\n- NVDA: 20 shares @ $190.04 (+37.21% gain) - Total: $3,801\n- Combined Value: $17,453 (+45.2% unrealized)\n\n**NVDA Earnings Countdown: 15 Days (Feb 25 AH)**\nPosition strategy remains HOLD through earnings event. No additions or trims within 15 days of catalyst. Expected post-announcement volatility: \u00b18-12%. Key metrics to watch: Q4 Data Center Revenue (consensus $19.5B), Blackwell production ramp guidance, Q1 forward guidance, China export restriction impact.\n\n**Content Pipeline Update**\n- T-Rex Video (StevenSongIRL): Pre-production, map artist recruitment active. BuiltByBit account pending verification. Fiverr outreach queued (HIGH PRIORITY).\n- Dashboard Status: Fully operational post-Ralph-chain fixes. All tabs functional.\n- AI Coding Agents Brief: Ready for production (Trend Score 120).\n\n**Active Priorities**\n1. Complete map artist hiring for T-Rex video\n2. Monitor NVDA position through Feb 25 earnings\n3. Produce AI Coding Agents comparison pilot\n\nNo portfolio changes recommended until post-earnings (Feb 26+).",
       "impact": "neutral",
       "relatedPositions": [
         "pos-001",
@@ -636,7 +636,7 @@
         "ticker": "NVDA",
         "date": "2026-02-25",
         "daysRemaining": 15,
-        "expectedVolatility": "±8-12%"
+        "expectedVolatility": "\u00b18-12%"
       },
       "contentPipeline": {
         "trexVideo": "pre-production - map artist hiring",
@@ -644,6 +644,35 @@
         "babyCreaturePhysics": "brief ready"
       },
       "linkedIntelligence": [
+        "intel-023",
+        "intel-022"
+      ]
+    },
+    {
+      "id": "intel-025",
+      "date": "2026-02-10T13:47:06Z",
+      "topic": "Heartbeat Intelligence: NVDA Earnings 15-Day Countdown + Portfolio Status",
+      "source": "Heartbeat Protocol / Market Intelligence",
+      "content": "Scheduled heartbeat update (8:46 AM ET Feb 10): Portfolio ~,450 total (+45% gains). AAPL: 50 shares @ .04 (+47%). NVDA: 20 shares @ .04 (+37%). NVDA earnings 15 days out (Feb 25 AH). Strategy: HOLD - no changes within 15 days of earnings. Expected volatility \u00b18-12% post-announcement. Watchlist: AMD target , PLTR target . Content pipeline: T-Rex video map artist recruitment active, AI Coding Agents 30-day comparison pilot ready to launch. Dashboard fully operational.",
+      "impact": "neutral",
+      "relatedPositions": [
+        "pos-001",
+        "pos-002"
+      ],
+      "alerts": [
+        "NVDA earnings 15 days - maintain HOLD",
+        "Portfolio +45% unrealized gains",
+        "T-Rex video production: map artist hiring priority"
+      ],
+      "positionStrategy": "HOLD",
+      "earningsCountdown": {
+        "ticker": "NVDA",
+        "date": "2026-02-25",
+        "daysRemaining": 15,
+        "expectedVolatility": "\u00b18-12%"
+      },
+      "linkedIntelligence": [
+        "intel-024",
         "intel-023",
         "intel-022"
       ]
@@ -691,6 +720,6 @@
       "addedAt": "2026-02-09T11:50:00Z"
     }
   ],
-  "lastUpdated": "2026-02-10T12:26:00Z",
+  "lastUpdated": "2026-02-10T13:47:06Z",
   "dataSource": "Market Data"
 }
