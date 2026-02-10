@@ -1859,6 +1859,51 @@
       "url": "https://www.youtube.com/watch?v=H4qpM-jfExc",
       "researchStatus": "completed",
       "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-127",
+      "title": "All Alien Creatures & Evolution Compilation | Maxxive Jumpo",
+      "channel": "maxxivejumpo",
+      "views": 317000,
+      "publishedAt": "2024-02-08T00:00:00Z",
+      "addedAt": "2026-02-10T07:04:00Z",
+      "outlierScore": 28,
+      "niche": "👽 Alien/Creature Evolution",
+      "whyOutlier": "28x outlier - 317K views on 56K sub channel. Alien creature compilation + evolution format hits algorithm sweet spot. Third viral hit from maxxivejumpo using similar formula.",
+      "contentAngle": "Create All AI Creatures & Evolution compilations - showcase multiple AI-generated creatures with evolution stages. Compilation format drives binge-watching.",
+      "url": "https://www.youtube.com/watch?v=f7cTlQ947bw",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-128",
+      "title": "Evolution Of Drownviper | Life Cycle",
+      "channel": "worldinnumbers3d",
+      "views": 88000,
+      "publishedAt": "2022-02-08T00:00:00Z",
+      "addedAt": "2026-02-10T07:04:00Z",
+      "outlierScore": 3,
+      "niche": "🐍 Creature Evolution/Life Cycle",
+      "whyOutlier": "3x outlier - 88K views on 87K sub channel. Life cycle format continues to perform for creature content. Fifth hit from same channel using life cycle formula.",
+      "contentAngle": "Life cycle format is PROVEN. Create 'Evolution of [AI Creature] | Life Cycle' - complete birth-to-maturity progression with cinematic presentation.",
+      "url": "https://www.youtube.com/watch?v=X82fPJbHW1s",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-129",
+      "title": "All Evolutionary Stages Of MonsterVerse Godzilla - 8 Forms EXPLAINED",
+      "channel": "mindq4328",
+      "views": 408000,
+      "publishedAt": "2022-02-08T00:00:00Z",
+      "addedAt": "2026-02-10T07:04:00Z",
+      "outlierScore": 4.7,
+      "niche": "🦖 Kaiju/Evolution Analysis",
+      "whyOutlier": "4.7x outlier - 408K views on 444K sub channel. 'All stages' + 'explained' format combines completionist appeal with educational value. MonsterVerse Godzilla has dedicated fanbase.",
+      "contentAngle": "Create 'All Evolutionary Stages of [AI Creature] - X Forms EXPLAINED' - comprehensive catalog with educational breakdown of each evolution stage.",
+      "url": "https://www.youtube.com/watch?v=aEqhoFFp59Q",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
     }
   ],
   "competitorResearchQueue": [
