@@ -157,10 +157,29 @@
         "differentiation": "Unified cross-platform view, custom outlier detection algorithms, white-label option"
       },
       "createdAt": "2026-02-09T11:40:00Z"
+    },
+    {
+      "id": "opp-012",
+      "name": "Minecraft Map Commission Marketplace",
+      "description": "Platform connecting YouTubers with verified Minecraft builders for custom map commissions. Solves the discovery problem Steven faced when sourcing T-Rex video map. Takes 10-15% commission per transaction.",
+      "alignment": "HIGH",
+      "status": "new",
+      "potentialRevenue": "$1000-5000/month",
+      "effort": "High",
+      "nextStep": "Validate demand by surveying 10 YouTubers who do Minecraft content",
+      "marketData": {
+        "tam": "Minecraft content market $500M+ annually",
+        "problem": "YouTubers struggle to find reliable builders; builders struggle to find paid work",
+        "targetAudience": "Minecraft YouTubers (100K+ subs), professional Minecraft builders, map artists",
+        "competitors": ["Fiverr (generalist)", "BuiltByBit (small audience)", "Discord servers (unreliable)"],
+        "differentiation": "Vetted builders, escrow payments, dispute resolution, specialized for Minecraft content creators"
+      },
+      "validationSignal": "Steven's own pain finding T-Rex map builder validates demand",
+      "createdAt": "2026-02-10T03:10:00Z"
     }
   ],
   "pipeline": {
-    "new": 8,
+    "new": 9,
     "evaluating": 1,
     "pursuing": 0,
     "passed": 1,
