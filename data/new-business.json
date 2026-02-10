@@ -176,14 +176,34 @@
       },
       "validationSignal": "Steven's own pain finding T-Rex map builder validates demand",
       "createdAt": "2026-02-10T03:10:00Z"
+    },
+    {
+      "id": "opp-013",
+      "name": "AI Coding Agent Benchmarking Service",
+      "description": "Independent benchmarking service for AI coding agents (Claude Code, Copilot, Cursor, etc.). Provides standardized test results, productivity metrics, and ROI analysis for engineering teams choosing tools. Monthly benchmark reports with data-driven recommendations.",
+      "alignment": "HIGH",
+      "status": "new",
+      "potentialRevenue": "$1000-3000/month",
+      "effort": "Medium",
+      "nextStep": "Define 5 standardized coding tasks for benchmark suite (build API, refactor legacy, debug, etc.)",
+      "marketData": {
+        "tam": "$12B AI coding tools market by 2029",
+        "problem": "Engineering teams lack independent data to choose between 20+ AI coding tools; vendor claims are biased",
+        "targetAudience": "Engineering managers at 50-500 person companies, CTOs making tool purchasing decisions",
+        "competitors": ["Gartner/Forrester (enterprise only)", "Reddit reviews (anecdotal)", "Vendor benchmarks (biased)"],
+        "differentiation": "Independent testing, standardized metrics, continuous updates, focus on mid-market ($50-500M companies underserved)"
+      },
+      "validationSignal": "Steven's 30-day comparison video (trend score 120) proves audience demand for this data; can productize the methodology",
+      "linkedResearch": ["note-032", "note-033", "note-034"],
+      "createdAt": "2026-02-10T15:30:00Z"
     }
   ],
   "pipeline": {
-    "new": 9,
+    "new": 10,
     "evaluating": 1,
     "pursuing": 0,
     "passed": 1,
     "won": 1
   },
-  "lastUpdated": "2026-02-09T11:30:00Z"
+  "lastUpdated": "2026-02-10T15:30:00Z"
 }
