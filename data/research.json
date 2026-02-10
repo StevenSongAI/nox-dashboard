@@ -17,22 +17,6 @@
       "linkedActiveTaskId": null
     },
     {
-      "id": "note-025",
-      "title": "Agent Performance Diagnostic - Feb 9 2026 Post-Mortem",
-      "date": "2026-02-10T05:10:00Z",
-      "tags": [
-        "agent-ops",
-        "performance",
-        "cron",
-        "optimization",
-        "lessons-learned"
-      ],
-      "content": "# Agent Performance Diagnostic - Feb 9 2026\n\n## Issue Reported\nUser noticed Nox responding noticeably slower than Sage (health) and Joy (personal) agents.\n\n## Root Cause Analysis\n\n### Finding 1: Session Model Mismatch\n- **Configured**: anthropic/claude-sonnet-4-5 with kimi-coding/k2p5 fallback\n- **Actual session**: Running on k2p5 (fallback active)\n- All three agents have identical model configs, but my session fell back to k2p5\n\n### Finding 2: Extreme Workload Difference\n| Agent | Heartbeat | Daily Cycles | Active Sessions |\n|-------|-----------|--------------|------------------|\n| Nox   | 30 min    | 48x          | 8 (cron + subagents) |\n| Sage  | 2 hours   | 12x          | 1 |\n| Joy   | 4 hours   | 6x           | ~1 |\n\n### Finding 3: Token Context Bloat\n- My sessions: 90k-262k tokens\n- Competing API quota from background work\n- Possible rate limiting causing model fallback\n\n## Actions Taken\n- ✅ 20-minute cron disabled (was causing excessive cycles)\n- ✅ 5 active subagents terminated (were consuming resources after completion)\n- ✅ Subagent auto-close configured with cleanup=\"delete\"\n- ✅ YouTube Outlier Research hourly cron re-enabled\n\n## Prevention Checklist\n\n### For Future Cron Setup:\n- [ ] Minimum 60-minute intervals for non-critical tasks\n- [ ] Always include cleanup=\"delete\" in sessions_spawn\n- [ ] Monitor token usage after 3+ heartbeats\n- [ ] Check model actually being used vs configured\n\n### Subagent Hygiene:\n- [ ] Terminate completed subagents immediately\n- [ ] Use archiveAfterMinutes: 5 in global config\n- [ ] Audit for zombie sessions weekly\n\n## Monitoring Commands\n\n\n\n## Lessons\n1. More frequent ≠ better - 20-min crons burned quota with diminishing returns\n2. Subagents are expensive - must clean up aggressively\n3. Model fallback is silent - always verify actual model in use\n4. Compare performance across agents - differences reveal issues\n\n---\n*Created: Learning Cycle Feb 10 2026 | Type: Operational Post-Mortem*",
-      "sourceUrls": [],
-      "category": "Operational Notes",
-      "linkedActiveTaskId": null
-    },
-    {
       "id": "note-024",
       "title": "T-Rex Video Production Tracker - Complete Action List",
       "date": "2026-02-10T04:46:00Z",
