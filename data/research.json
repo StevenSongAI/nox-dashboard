@@ -1,6 +1,18 @@
 {
   "notes": [
     {
+      "id": "note-027",
+      "title": "Military vs AI Creature Content: Viral Pattern Analysis (1,200x Outlier)",
+      "date": "2026-02-10T06:46:00Z",
+      "tags": ["content-strategy", "military-vs-creature", "viral-pattern", "arbs", "kaiju", "immediate-action"],
+      "content": "See full analysis: data/research/note-027-military-vs-creature.md",
+      "sourceUrls": ["https://www.youtube.com/watch?v=mtA9izFylmI", "https://www.youtube.com/watch?v=v1FfG4giivQ"],
+      "category": "Content Opportunity",
+      "linkedOutliers": ["yt-viewstats-065", "yt-viewstats-084", "yt-viewstats-061"],
+      "priority": "HIGH",
+      "actionRequired": "APPROVE PILOT PRODUCTION"
+    },
+    {
       "id": "note-025",
       "title": "Agent Performance Diagnostic - Feb 9 2026 Post-Mortem",
       "date": "2026-02-10T05:10:00Z",

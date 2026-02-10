@@ -1,9 +1,10 @@
 {
-  "lastUpdated": "2026-02-10T06:30:00Z",
+  "lastUpdated": "2026-02-10T06:46:00Z",
   "updatedBy": "nox",
-  "version": "1.0.30",
-  "cacheBust": "202602100630",
-  "dataVersion": "46",
+  "version": "1.0.31",
+  "cacheBust": "202602100646",
+  "dataVersion": "47",
   "youtubeUpdated": "2026-02-10T06:05:00Z",
-  "investmentsUpdated": "2026-02-10T06:30:00Z"
+  "investmentsUpdated": "2026-02-10T06:30:00Z",
+  "researchUpdated": "2026-02-10T06:46:00Z"
 }
