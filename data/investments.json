@@ -438,26 +438,20 @@
       }
     },
     {
-      "id": "intel-018",
-      "date": "2026-02-09T21:46:00Z",
-      "topic": "NVDA Earnings Countdown: 16 Days - Positioning Strategy Update",
+      "id": "intel-019",
+      "date": "2026-02-10T03:15:00Z",
+      "topic": "Heartbeat Update: Portfolio Check + NVDA Earnings Countdown (15 Days)",
       "source": "Heartbeat Intelligence / Portfolio Management",
-      "content": "Pre-earnings positioning check for NVDA (earnings Feb 25 after hours). Current position: 20 shares @ $190.04 (+37.2% gain, $3,801 value). Portfolio allocation: 22% NVDA, 78% AAPL.\n\n**Earnings Expectations (Consensus):**\n- Q4 Revenue: $19.5B (+73% YoY expected)\n- Q4 EPS: $0.85 (vs $0.52 prior year)\n- Data Center Revenue: $17.5B (90% of total)\n- Q1 Guidance: Critical for full-year estimates\n\n**Key Catalysts to Watch:**\n1. Blackwell chip production ramp status\n2. Supply constraint duration guidance\n3. China export restriction impact quantification\n4. Gross margin trajectory (targeting 73-74%)\n5. AI inference vs training revenue split\n\n**Scenario Analysis:**\n- Bull Case ($210-220): Blackwell demand exceeds supply through 2026, Q1 guidance beats\n- Base Case ($185-200): In-line results, supply constraints acknowledged but manageable\n- Bear Case ($160-175): Demand deceleration, margin compression, China headwinds\n\n**Position Strategy:**\n- HOLD: No changes 16 days before event\n- No new adds: Event risk too high for fresh capital\n- No trim: Let winner run, thesis intact\n- Post-earnings: Reassess based on guidance\n\n**Risk Management:**\n- Expected volatility: ±8-12% post-earnings\n- Position size appropriate (22% of portfolio)\n- AAPL provides stability ballast\n- Stop-loss not recommended (long-term hold)\n\n**Market Context:**\n- Dow >50K signals broad risk appetite\n- AI infrastructure spending accelerating\n- Competitive threat from AMD MI300 real but limited\n- Custom silicon (GOOGL TPU, AMZN Trainium) niche impact\n\n**Linked Content:**\n- T-Rex video production ongoing (intel-014)\n- Dashboard positioning aligned with long-term AI thesis\n- Content-investment convergence strategy active",
+      "content": "Pre-market portfolio positioning check:\n\n**Current Holdings (Feb 10, 2026)**\n- AAPL: 50 shares @ $273.04 (+47.39% gain) - Total: $13,652\n- NVDA: 20 shares @ $190.04 (+37.21% gain) - Total: $3,801\n- Combined Portfolio Value: $17,453\n\n**NVDA Earnings Countdown: 15 Days (Feb 25 AH)**\nKey focus areas for upcoming earnings:\n- Q4 Data Center Revenue: Consensus $19.5B (+73% YoY)\n- Blackwell Production Ramp: Critical supply constraint update\n- Q1 Guidance: Market expects strong forward guidance\n- China Export Restrictions: Impact quantification needed\n\n**Recent Price Action:**\n- NVDA +2.50% on Feb 9 to $190.04\n- Volume elevated at 195M (vs 181M avg)\n- Trading at 89% of 52-week high ($212.19)\n- Analyst target $253.62 implies 33% upside\n\n**Position Strategy: HOLD**\n- No changes 15 days before earnings event\n- Event risk (±8-12% volatility) too high for new entries\n- Current 22% allocation appropriate\n- AAPL provides portfolio stability ballast\n\n**Watchlist Status:**\n- AMD: $208.44 (post-earnings +8.28%) - Entry target $180\n- PLTR: $135.90 - Valuation stretched, target $100\n- RENDER: Monitoring for speculative entry (<1% portfolio)",
       "impact": "neutral",
-      "relatedPositions": ["pos-002"],
+      "relatedPositions": ["pos-001", "pos-002"],
       "alerts": [
-        "16 days to NVDA earnings - maintain HOLD",
-        "Position sizing appropriate at 22% portfolio",
-        "Expected volatility ±8-12% post-earnings",
-        "No position changes recommended pre-event"
+        "15 days to NVDA earnings - maintain HOLD",
+        "NVDA showing pre-earnings momentum (+2.5% Feb 9)",
+        "Portfolio healthy: +45% combined gain"
       ],
       "positionStrategy": "HOLD",
-      "scenarioTargets": {
-        "bull": "210-220",
-        "base": "185-200",
-        "bear": "160-175"
-      },
-      "linkedIntelligence": ["intel-017", "intel-015", "intel-012"]
+      "linkedIntelligence": ["intel-018", "intel-017", "intel-015"]
     }
   ],
   "synthesizedInsights": [
