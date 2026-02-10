@@ -2846,6 +2846,62 @@
         "alpha",
         "creatures"
       ]
+    },
+    {
+      "id": "brief-018",
+      "title": "What If AI Creatures Had 10 Evolution Stages? - Extreme Outlier Format",
+      "summary": "Apply the proven 676x outlier 'speculative extension' format to AI creatures - show incremental evolution stages beyond normal final forms. Based on sinpoke's 'What if Pokemon had more Evolution Stages?' which achieved 676x outlier with 183K views on 9.9K sub channel.",
+      "hook": "This AI creature has 10 evolution stages... Stage 10 broke my computer",
+      "outline": [
+        "HOOK (0:00-0:45): Flash-forward to Stage 10 creature - massive, reality-warping, terrifying. 'This is what happens when evolution doesn't stop...'",
+        "SETUP (0:45-2:30): Introduce base creature (cute baby dragon or mythical beast). Explain normal evolution stops at Stage 3. Today we go to Stage 10.",
+        "STAGES 1-3 (2:30-5:00): Normal evolution progression. Cute → Cool → Powerful. Familiar territory for viewers.",
+        "STAGES 4-6 (5:00-8:30): Entering uncharted territory. Creature becomes kaiju-sized. Environmental effects start (weather changes, terrain destruction).",
+        "STAGES 7-8 (8:30-11:00): Cosmic scale evolution. Creature affects gravity, atmosphere changes. Visuals become increasingly surreal/eldritch.",
+        "STAGES 9-10 (11:00-14:00): Reality-breaking final forms. Abstract concepts given physical form. Glitch effects, dimensional rifts. Stage 10 = viewer can't comprehend what they're seeing.",
+        "FINALE (14:00-15:30): Collapse back to Stage 1 baby form. Wholesome ending contrast. Series tease: 'What creature should we break next?'"
+      ],
+      "targetLength": "15-16 min",
+      "difficulty": "medium",
+      "urgency": "high",
+      "basedOn": [
+        "yt-viewstats-026 (676x outlier - Pokemon evolution stages)",
+        "insight-006 Speculative Extension Format"
+      ],
+      "expectedOutlierScore": 400,
+      "targetRatio": "100-200x subscriber count",
+      "equipmentChecklist": [
+        "AI image generation (Midjourney/DALL-E/Stable Diffusion)",
+        "Video editing software (DaVinci Resolve/Premiere)",
+        "Sound effects library (epidemic sound/artlist)",
+        "Music: escalating intensity from whimsical to cosmic horror"
+      ],
+      "thumbnailConcept": "Grid showing 10 stages left-to-right. Stage 1 = adorable tiny creature. Stage 10 = massive reality-warping entity. Red arrow pointing to Stage 10. Text: '10 STAGES'",
+      "titleOptions": [
+        "What If AI Creatures Had 10 Evolution Stages? (Stage 10 is TERRIFYING)",
+        "I Generated 10 Evolution Stages of a Dragon... It Got Out of Hand",
+        "AI Creature Evolution: Stage 1 to Stage 10 (Cosmic Horror Warning)",
+        "What If Evolution Never Stopped? - 10 Stages of AI Creatures"
+      ],
+      "editingNotes": [
+        "Quick cuts between stages (1 second each) for Stages 1-5",
+        "Slow down for Stages 6-8 (2-3 seconds each) - let viewers absorb scale",
+        "Dramatic pause before revealing Stage 9 and 10",
+        "Sound design: creature sounds escalate from cute chirps to cosmic drones",
+        "Use glitch/distortion effects for final stages to show reality breaking"
+      ],
+      "estimatedProductionTime": "12-16 hours",
+      "seriesPotential": "Creature types: Dragon, Phoenix, Kraken, Griffin, T-Rex, Unicorn. Each = separate video with unique evolution paths.",
+      "confidence": "very high",
+      "status": "ready",
+      "createdAt": "2026-02-10T12:15:00Z",
+      "tags": [
+        "evolution",
+        "stages",
+        "speculative",
+        "creatures",
+        "transformation"
+      ]
     }
   ],
   "trendAnalysis": {
@@ -3142,60 +3198,9 @@
     "briefCount": 16,
     "insightCount": 5
   },
-  "contentBriefs": [
-    {
-      "id": "brief-017-evolution-stages",
-      "title": "What If AI Creatures Had 10 Evolution Stages? - Extreme Outlier Format",
-      "angle": "Apply the proven 676x outlier 'speculative extension' format to AI creatures - show incremental evolution stages beyond normal final forms",
-      "hook": "This AI creature has 10 evolution stages... Stage 10 broke my computer",
-      "outline": [
-        "HOOK (0:00-0:45): Flash-forward to Stage 10 creature - massive, reality-warping, terrifying. 'This is what happens when evolution doesn't stop...'",
-        "SETUP (0:45-2:30): Introduce base creature (cute baby dragon or mythical beast). Explain normal evolution stops at Stage 3. Today we go to Stage 10.",
-        "STAGES 1-3 (2:30-5:00): Normal evolution progression. Cute → Cool → Powerful. Familiar territory for viewers.",
-        "STAGES 4-6 (5:00-8:30): Entering uncharted territory. Creature becomes kaiju-sized. Environmental effects start (weather changes, terrain destruction).",
-        "STAGES 7-8 (8:30-11:00): Cosmic scale evolution. Creature affects gravity, atmosphere changes. Visuals become increasingly surreal/eldritch.",
-        "STAGES 9-10 (11:00-14:00): Reality-breaking final forms. Abstract concepts given physical form. Glitch effects, dimensional rifts. Stage 10 = viewer can't comprehend what they're seeing.",
-        "FINALE (14:00-15:30): Collapse back to Stage 1 baby form. Wholesome ending contrast. Series tease: 'What creature should we break next?'"
-      ],
-      "targetLength": "15-16 min",
-      "difficulty": "medium",
-      "urgency": "high",
-      "basedOn": [
-        "yt-viewstats-026 (676x outlier - Pokemon evolution stages)",
-        "insight-006 Speculative Extension Format"
-      ],
-      "expectedOutlierScore": 400,
-      "targetRatio": "100-200x subscriber count",
-      "equipmentChecklist": [
-        "AI image generation (Midjourney/DALL-E/Stable Diffusion)",
-        "Video editing software (DaVinci Resolve/Premiere)",
-        "Sound effects library (epidemic sound/artlist)",
-        "Music: escalating intensity from whimsical to cosmic horror"
-      ],
-      "thumbnailConcept": "Grid showing 10 stages left-to-right. Stage 1 = adorable tiny creature. Stage 10 = massive reality-warping entity. Red arrow pointing to Stage 10. Text: '10 STAGES'",
-      "titleOptions": [
-        "What If AI Creatures Had 10 Evolution Stages? (Stage 10 is TERRIFYING)",
-        "I Generated 10 Evolution Stages of a Dragon... It Got Out of Hand",
-        "AI Creature Evolution: Stage 1 to Stage 10 (Cosmic Horror Warning)",
-        "What If Evolution Never Stopped? - 10 Stages of AI Creatures"
-      ],
-      "editingNotes": [
-        "Quick cuts between stages (1 second each) for Stages 1-5",
-        "Slow down for Stages 6-8 (2-3 seconds each) - let viewers absorb scale",
-        "Dramatic pause before revealing Stage 9 and 10",
-        "Sound design: creature sounds escalate from cute chirps to cosmic drones",
-        "Use glitch/distortion effects for final stages to show reality breaking"
-      ],
-      "estimatedProductionTime": "12-16 hours",
-      "seriesPotential": "Creature types: Dragon, Phoenix, Kraken, Griffin, T-Rex, Unicorn. Each = separate video with unique evolution paths.",
-      "confidence": "very high",
-      "status": "ready-to-produce",
-      "createdAt": "2026-02-10T12:10:00Z"
-    }
-  ],
   "stats": {
-    "totalOutliers": 127,
-    "totalBriefs": 17,
-    "lastResearch": "2026-02-10T12:10:00Z"
+    "totalOutliers": 116,
+    "totalBriefs": 15,
+    "lastResearch": "2026-02-10T11:00:00Z"
   }
 }
