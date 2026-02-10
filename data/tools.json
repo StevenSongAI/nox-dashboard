@@ -131,6 +131,30 @@
       "tags": ["minecraft", "maps", "scraper"],
       "runCommand": "map-scraper",
       "auditGrade": 75
+    },
+    {
+      "id": "tool-013",
+      "name": "Storyboard Generator",
+      "category": "Content",
+      "description": "Browser-based storyboard creator with scene breakdowns, timing estimates, and export to JSON/Markdown. Generates visual storyboards for video planning.",
+      "status": "active",
+      "lastUsed": "2026-02-10T15:30:00Z",
+      "tags": ["storyboard", "video-planning", "content", "browser-tool"],
+      "runCommand": "tools/storyboard-generator.html",
+      "auditGrade": 90,
+      "url": "https://stevensongai.github.io/nox-dashboard/tools/storyboard-generator.html"
+    },
+    {
+      "id": "tool-014",
+      "name": "Voiceover Generator",
+      "category": "Content",
+      "description": "Browser-based voiceover script generator with timing, delivery notes, and multiple voice style presets. Exports to TXT/JSON for recording sessions.",
+      "status": "active",
+      "lastUsed": "2026-02-10T15:30:00Z",
+      "tags": ["voiceover", "script", "audio", "content", "browser-tool"],
+      "runCommand": "tools/voiceover-generator.html",
+      "auditGrade": 90,
+      "url": "https://stevensongai.github.io/nox-dashboard/tools/voiceover-generator.html"
     }
   ],
   "categories": [
@@ -140,5 +164,5 @@
     "Analysis",
     "Automation"
   ],
-  "lastUpdated": "2026-02-08T21:00:00Z"
+  "lastUpdated": "2026-02-10T15:30:00Z"
 }

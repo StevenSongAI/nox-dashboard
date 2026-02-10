@@ -1,11 +1,12 @@
 {
-  "lastUpdated": "2026-02-10T11:07:50.802591Z",
+  "lastUpdated": "2026-02-10T15:45:00Z",
   "updatedBy": "nox",
-  "version": "1.0.45",
-  "cacheBust": "20260210T110",
-  "dataVersion": "62",
-  "youtubeUpdated": "2026-02-10T11:07:50.802591Z",
+  "version": "1.0.46",
+  "cacheBust": "202602101545",
+  "dataVersion": "63",
+  "youtubeUpdated": "2026-02-10T11:07:50Z",
   "investmentsUpdated": "2026-02-10T10:26:00Z",
   "researchUpdated": "2026-02-10T15:00:00Z",
-  "newBusinessUpdated": "2026-02-10T15:30:00Z"
+  "newBusinessUpdated": "2026-02-10T15:30:00Z",
+  "toolsUpdated": "2026-02-10T15:45:00Z"
 }
