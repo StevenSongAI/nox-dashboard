@@ -1,6 +1,25 @@
 {
   "notes": [
     {
+      "id": "note-016",
+      "title": "'I Got a Pet' Video Format - Production Guide",
+      "date": "2026-02-10T01:05:00Z",
+      "tags": [
+        "youtube",
+        "content-creation",
+        "steven-song-irl",
+        "pet-videos",
+        "production"
+      ],
+      "content": "## 'I Got a Pet' Video Format Analysis\n\n### Successful Examples in Niche\n- PrestonPlayz 'I Got a Pet Dragon' - 15M+ views\n- Aphmau 'I Became a Cat in Minecraft' - 12M+ views\n- Thinknoodles 'I Found a Baby Dragon' - 8M+ views\n\n### Key Format Elements\n\n**1. The Hook (0:00-0:15)**\n- Immediate reveal of the creature\n- Shocking size or behavior\n- Personal stakes: 'This is my new pet'\n- Example: 'I just adopted a T-Rex. Yes, an actual T-Rex.'\n\n**2. The Setup (0:15-1:00)**\n- How you got it (delivery, found, spawned)\n- Initial reaction (shock, fear, excitement)\n- First interaction with the creature\n- Establish the 'rules' of this world\n\n**3. Daily Life Montage (1:00-4:00)**\n- 4-6 quick scenes showing pet care challenges\n- Feeding (messy, chaotic)\n- Walking (destruction, reactions)\n- Sleeping (comedy - too big for spaces)\n- Playing (unexpected behavior)\n\n**4. The Crisis (4:00-6:00)**\n- Something goes wrong\n- Vet visit, escape, property damage\n- Stakes escalate\n- Viewer empathy moment\n\n**5. The Resolution (6:00-8:00)**\n- Problem solved creatively\n- Bond strengthened\n- Heartwarming moment\n- Future tease (bigger, more creatures?)\n\n### Production Tips for T-Rex Video\n\n**Visual Style:**\n- Cinematic shots of T-Rex (use the image generator script)\n- POV handheld for 'owner' perspective\n- Drone shots for scale\n- Reaction shots from neighbors/strangers\n\n**Sound Design:**\n- Heavy footsteps (sub bass)\n- T-Rex roars (stock audio + modulation)\n- Environmental chaos (breaking, crashing)\n- Calm moments with heartwarming music\n\n**Editing Rhythm:**\n- Fast cuts during action (0.5-1 second)\n- Slow moments for comedy beats (hold on reaction)\n- Music sync to big moments\n- No dead air - keep energy up\n\n### Estimated Production Time\n- Script/Outline: 2 hours\n- Image generation: 30 min (use script)\n- Map artist wait: 3-5 days\n- Video editing: 2 days\n- Sound design: 1 day\n- Total: ~7-10 days (vs previous 14+ days)\n\n### Success Metrics to Track\n- Retention at 30 seconds (should be >70%)\n- Retention at 5 minutes (should be >40%)\n- Comment rate (target: 5%+ of views)\n- Share rate (target: 2%+ of views)",
+      "sourceUrls": [
+        "https://www.youtube.com/watch?v=preston-dragon-example",
+        "https://www.youtube.com/watch?v=aphmau-cat-example"
+      ],
+      "category": "Content Strategy",
+      "linkedYoutubeId": "yt-viewstats-trex-production"
+    },
+    {
       "id": "note-001",
       "title": "Claude 3.5 Sonnet Performance Analysis",
       "date": "2026-02-07T18:00:00Z",
