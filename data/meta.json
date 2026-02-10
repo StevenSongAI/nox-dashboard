@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-02-10T15:45:00Z",
+  "lastUpdated": "2026-02-10T16:00:00Z",
   "updatedBy": "nox",
-  "version": "1.0.46",
-  "cacheBust": "202602101545",
-  "dataVersion": "63",
+  "version": "1.0.47",
+  "cacheBust": "202602101600",
+  "dataVersion": "64",
   "youtubeUpdated": "2026-02-10T11:07:50Z",
   "investmentsUpdated": "2026-02-10T10:26:00Z",
   "researchUpdated": "2026-02-10T15:00:00Z",
   "newBusinessUpdated": "2026-02-10T15:30:00Z",
-  "toolsUpdated": "2026-02-10T15:45:00Z"
+  "toolsUpdated": "2026-02-10T16:00:00Z"
 }

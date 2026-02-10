@@ -354,20 +354,200 @@
 
     <!-- Tools Tab -->
     <div id="tab-tools" class="tab-content hidden" role="tabpanel" aria-labelledby="tab-btn-tools" hidden>
-      <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4 gap-3">
-        <h2 class="text-xl font-semibold">🛠️ Tools Registry</h2>
-        <div class="flex gap-2">
-          <input type="text" id="tools-search" placeholder="Search tools..." class="px-3 py-1 bg-dark-700 rounded border border-dark-600 text-sm md:w-64" aria-label="Search tools">
-          <select id="tools-category-filter" class="px-3 py-1 bg-dark-700 rounded border border-dark-600 text-sm" aria-label="Filter tools by category">
-            <option value="">All Categories</option>
-          </select>
+      <!-- Tool Navigation -->
+      <div class="flex flex-wrap gap-2 mb-4">
+        <button onclick="showToolsSection('registry')" id="tools-btn-registry" class="px-3 py-1 bg-accent-blue rounded text-sm">📋 Tool Registry</button>
+        <button onclick="showToolsSection('storyboard')" id="tools-btn-storyboard" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">🎬 Storyboard Generator</button>
+        <button onclick="showToolsSection('voiceover')" id="tools-btn-voiceover" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">🎙️ Voiceover Generator</button>
+      </div>
+
+      <!-- Tool Registry Section -->
+      <div id="tools-section-registry" class="tools-section">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4 gap-3">
+          <h2 class="text-xl font-semibold">🛠️ Tools Registry</h2>
+          <div class="flex gap-2">
+            <input type="text" id="tools-search" placeholder="Search tools..." class="px-3 py-1 bg-dark-700 rounded border border-dark-600 text-sm md:w-64" aria-label="Search tools">
+            <select id="tools-category-filter" class="px-3 py-1 bg-dark-700 rounded border border-dark-600 text-sm" aria-label="Filter tools by category">
+              <option value="">All Categories</option>
+            </select>
+          </div>
+        </div>
+        <div id="tools-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div class="skeleton-loader">
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+          </div>
         </div>
       </div>
-      <div id="tools-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        <div class="skeleton-loader">
-          <div class="skeleton-card"></div>
-          <div class="skeleton-card"></div>
-          <div class="skeleton-card"></div>
+
+      <!-- Storyboard Generator Section -->
+      <div id="tools-section-storyboard" class="tools-section hidden">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4 gap-3">
+          <h2 class="text-xl font-semibold">🎬 Storyboard Generator</h2>
+          <div class="flex gap-2">
+            <button onclick="loadStoryboardPreset('creature')" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">🦖 Creature</button>
+            <button onclick="loadStoryboardPreset('comparison')" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">⚖️ Comparison</button>
+            <button onclick="loadStoryboardPreset('tutorial')" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">📚 Tutorial</button>
+          </div>
+        </div>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+          <!-- Configuration Panel -->
+          <div class="card rounded-lg p-4">
+            <h3 class="text-lg font-semibold mb-4 text-accent-blue">⚙️ Configuration</h3>
+            
+            <div class="form-group mb-4">
+              <label class="block text-sm text-gray-400 mb-1">Video Title</label>
+              <input type="text" id="sb-title" class="w-full px-3 py-2 bg-dark-700 rounded border border-dark-600 text-sm" placeholder="e.g., I Got a Pet T-Rex">
+            </div>
+            
+            <div class="form-group mb-4">
+              <label class="block text-sm text-gray-400 mb-1">Video Type</label>
+              <select id="sb-type" class="w-full px-3 py-2 bg-dark-700 rounded border border-dark-600 text-sm">
+                <option value="gaming">Gaming/Minecraft</option>
+                <option value="creature">AI Creature/Pet</option>
+                <option value="comparison">Tool Comparison</option>
+                <option value="reaction">Reaction/Analysis</option>
+                <option value="tutorial">Tutorial/How-to</option>
+              </select>
+            </div>
+            
+            <div class="form-group mb-4">
+              <label class="block text-sm text-gray-400 mb-1">Target Duration</label>
+              <select id="sb-duration" class="w-full px-3 py-2 bg-dark-700 rounded border border-dark-600 text-sm">
+                <option value="short">Short (2-5 min)</option>
+                <option value="medium" selected>Medium (8-12 min)</option>
+                <option value="long">Long (15-20 min)</option>
+              </select>
+            </div>
+            
+            <div class="form-group mb-4">
+              <label class="block text-sm text-gray-400 mb-1">Key Concept</label>
+              <textarea id="sb-concept" class="w-full px-3 py-2 bg-dark-700 rounded border border-dark-600 text-sm" rows="3" placeholder="Describe the main idea..."></textarea>
+            </div>
+            
+            <div class="form-group mb-4">
+              <label class="block text-sm text-gray-400 mb-1">Hook/Opening</label>
+              <input type="text" id="sb-hook" class="w-full px-3 py-2 bg-dark-700 rounded border border-dark-600 text-sm" placeholder="First 5 seconds hook...">
+            </div>
+            
+            <button onclick="generateStoryboard()" class="w-full px-4 py-2 bg-accent-blue rounded font-medium hover:bg-blue-600 transition-colors">Generate Storyboard</button>
+            
+            <div class="mt-4 pt-4 border-t border-dark-600">
+              <button onclick="exportStoryboardJSON()" class="w-full px-4 py-2 bg-dark-700 rounded text-sm hover:bg-dark-600 transition-colors mb-2">Export JSON</button>
+              <button onclick="exportStoryboardMD()" class="w-full px-4 py-2 bg-dark-700 rounded text-sm hover:bg-dark-600 transition-colors">Export Markdown</button>
+            </div>
+          </div>
+          
+          <!-- Storyboard Preview -->
+          <div class="lg:col-span-2">
+            <div id="sb-preview" class="space-y-3">
+              <div class="card rounded-lg p-8 text-center text-gray-500">
+                <svg class="w-16 h-16 mx-auto mb-4 opacity-30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <rect x="3" y="3" width="18" height="18" rx="2" stroke-width="1.5"/>
+                  <path d="M3 9h18M9 21V9" stroke-width="1.5"/>
+                </svg>
+                <p>Configure your video settings and click Generate to create a storyboard</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Voiceover Generator Section -->
+      <div id="tools-section-voiceover" class="tools-section hidden">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4 gap-3">
+          <h2 class="text-xl font-semibold">🎙️ Voiceover Generator</h2>
+          <div class="flex gap-2" id="voice-presets">
+            <button onclick="setVoiceStyle('energetic')" class="voice-preset-btn px-3 py-1 bg-accent-blue rounded text-sm active" data-voice="energetic">⚡ Energetic</button>
+            <button onclick="setVoiceStyle('calm')" class="voice-preset-btn px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm" data-voice="calm">😌 Calm</button>
+            <button onclick="setVoiceStyle('dramatic')" class="voice-preset-btn px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm" data-voice="dramatic">🎭 Dramatic</button>
+            <button onclick="setVoiceStyle('educational')" class="voice-preset-btn px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm" data-voice="educational">📚 Educational</button>
+          </div>
+        </div>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+          <!-- Input Panel -->
+          <div class="card rounded-lg p-4">
+            <h3 class="text-lg font-semibold mb-4 text-accent-blue">📝 Script Input</h3>
+            
+            <div class="form-group mb-4">
+              <label class="block text-sm text-gray-400 mb-1">Video Title</label>
+              <input type="text" id="vo-title" class="w-full px-3 py-2 bg-dark-700 rounded border border-dark-600 text-sm" placeholder="Enter video title...">
+            </div>
+            
+            <div class="form-group mb-4">
+              <label class="block text-sm text-gray-400 mb-1">Target Duration</label>
+              <select id="vo-duration" class="w-full px-3 py-2 bg-dark-700 rounded border border-dark-600 text-sm">
+                <option value="180">Short (3 minutes)</option>
+                <option value="600" selected>Medium (10 minutes)</option>
+                <option value="900">Long (15 minutes)</option>
+                <option value="1200">Extended (20 minutes)</option>
+              </select>
+            </div>
+            
+            <div class="form-group mb-4">
+              <label class="block text-sm text-gray-400 mb-1">Content / Bullet Points</label>
+              <textarea id="vo-content" class="w-full px-3 py-2 bg-dark-700 rounded border border-dark-600 text-sm" rows="10" placeholder="Paste your bullet points, ideas, or rough script here..."></textarea>
+            </div>
+            
+            <div class="grid grid-cols-2 gap-2 mb-4">
+              <button onclick="loadVOTemplate('intro')" class="px-3 py-2 bg-dark-700 rounded text-sm hover:bg-dark-600">🎯 Hook Intro</button>
+              <button onclick="loadVOTemplate('story')" class="px-3 py-2 bg-dark-700 rounded text-sm hover:bg-dark-600">📖 Story Arc</button>
+              <button onclick="loadVOTemplate('list')" class="px-3 py-2 bg-dark-700 rounded text-sm hover:bg-dark-600">📋 List Format</button>
+              <button onclick="loadVOTemplate('review')" class="px-3 py-2 bg-dark-700 rounded text-sm hover:bg-dark-600">⭐ Review</button>
+            </div>
+            
+            <button onclick="generateVoiceoverScript()" class="w-full px-4 py-2 bg-accent-blue rounded font-medium hover:bg-blue-600 transition-colors">Generate Script</button>
+            
+            <div id="vo-stats" class="hidden mt-4 grid grid-cols-3 gap-2 p-3 bg-dark-700 rounded">
+              <div class="text-center">
+                <div id="vo-stat-words" class="text-xl font-bold text-accent-blue">0</div>
+                <div class="text-xs text-gray-400">Words</div>
+              </div>
+              <div class="text-center">
+                <div id="vo-stat-time" class="text-xl font-bold text-accent-blue">0:00</div>
+                <div class="text-xs text-gray-400">Est. Time</div>
+              </div>
+              <div class="text-center">
+                <div id="vo-stat-segments" class="text-xl font-bold text-accent-blue">0</div>
+                <div class="text-xs text-gray-400">Segments</div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Preview Panel -->
+          <div class="card rounded-lg p-4">
+            <h3 class="text-lg font-semibold mb-4 text-accent-blue">🎬 Script Preview</h3>
+            
+            <div id="vo-preview" class="space-y-3 max-h-[500px] overflow-y-auto">
+              <div class="text-center text-gray-500 py-8">
+                <svg class="w-16 h-16 mx-auto mb-4 opacity-30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z" stroke-width="1.5"/>
+                  <path d="M19 10v2a7 7 0 0 1-14 0v-2" stroke-width="1.5"/>
+                  <line x1="12" y1="19" x2="12" y2="22" stroke-width="1.5"/>
+                </svg>
+                <p>Enter your content and click Generate to create a structured voiceover script</p>
+              </div>
+            </div>
+            
+            <div id="vo-tips" class="mt-4 p-3 bg-dark-700/50 rounded border border-green-800/50">
+              <h4 class="text-sm font-semibold text-green-400 mb-2">🎤 Delivery Tips</h4>
+              <ul class="text-xs text-gray-400 space-y-1" id="vo-tips-list">
+                <li>• Speak clearly and at a moderate pace (150 words/min)</li>
+                <li>• Pause after key points for emphasis</li>
+                <li>• Vary tone to maintain engagement</li>
+                <li>• Record in a quiet space with good acoustics</li>
+              </ul>
+            </div>
+            
+            <div class="mt-4 grid grid-cols-3 gap-2">
+              <button onclick="exportVOText()" class="px-3 py-2 bg-dark-700 rounded text-sm hover:bg-dark-600">Export TXT</button>
+              <button onclick="exportVOJSON()" class="px-3 py-2 bg-dark-700 rounded text-sm hover:bg-dark-600">Export JSON</button>
+              <button onclick="copyVOToClipboard()" class="px-3 py-2 bg-dark-700 rounded text-sm hover:bg-dark-600">Copy</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -436,7 +616,8 @@
     </div>
   </div>
 
-  <script src="app.js?v=202602091240"></script>
+  <script src="app.js?v=202602101600"></script>
+  <script src="tools-integrated.js?v=202602101600"></script>
   
   <!-- Footer with version timestamp for cache busting -->
   <footer class="max-w-7xl mx-auto px-4 py-4 mt-8 border-t border-dark-700 text-center" role="contentinfo">
