@@ -9,10 +9,10 @@
       "shares": 50,
       "entryPrice": 185.25,
       "avgCost": 185.25,
-      "currentPrice": 273.04,
-      "totalValue": 13652,
-      "gainPercent": 47.39,
-      "lastUpdated": "2026-02-09T20:15:00Z",
+      "currentPrice": 274.55,
+      "totalValue": 13727.50,
+      "gainPercent": 48.21,
+      "lastUpdated": "2026-02-10T15:30:00Z",
       "addedAt": "2026-02-08T20:00:00Z"
     },
     {
@@ -24,9 +24,9 @@
       "shares": 20,
       "entryPrice": 138.5,
       "avgCost": 138.5,
-      "currentPrice": 189.08,
-      "totalValue": 3781.60,
-      "gainPercent": 36.52,
+      "currentPrice": 189.18,
+      "totalValue": 3783.60,
+      "gainPercent": 36.56,
       "lastUpdated": "2026-02-10T15:30:00Z",
       "addedAt": "2026-02-08T20:00:00Z",
       "note": "Post-split cost basis adjusted (10:1 split June 2024). Original pre-split basis ~$1385."
@@ -727,6 +727,34 @@
         "daysToEarnings": 15
       },
       "linkedIntelligence": ["intel-026", "intel-025", "intel-022"]
+    },
+    {
+      "id": "intel-028",
+      "date": "2026-02-10T15:30:00Z",
+      "topic": "Feb 10 Mid-Day Update - NVDA/AAPL Price Action",
+      "source": "Yahoo Finance / Market Data",
+      "content": "Portfolio mid-day update (Feb 10, 10:30 AM ET):\n\n**NVDA: $189.18 (-$0.66, -0.35%)**\n- Slight pullback from $189.84 previous close\n- Intraday range: $188.12-$192.48\n- Volume: 40.4M (below 181M average, early session)\n- Position: 20 shares @ $189.18 = $3,783.60 (+36.56% gain)\n\n**AAPL: $274.55 (+$0.51, +0.19%)**\n- Continuing momentum near 52-week highs\n- Position: 50 shares @ $274.55 = $13,727.50 (+48.21% gain)\n\n**Portfolio Summary:**\n- Total Value: $17,511.10\n- Combined Unrealized Gain: +45.4%\n- AAPL: 78.4% of portfolio | NVDA: 21.6%\n\n**NVDA Earnings Countdown: 15 Days (Feb 25 AH)**\n- Current price at 89% of 52-week high ($212.19)\n- Analyst target: $253.62 (+34% upside potential)\n- Position strategy: HOLD through earnings\n- Expected post-announcement volatility: ±8-12%",
+      "impact": "neutral",
+      "relatedPositions": ["pos-001", "pos-002"],
+      "alerts": [
+        "NVDA -0.35% mid-day, normal pre-earnings consolidation",
+        "AAPL +0.19%, continuing strength near highs",
+        "Portfolio +45.4% combined gains",
+        "15 days to NVDA earnings - maintain HOLD"
+      ],
+      "positionStrategy": "HOLD",
+      "metrics": {
+        "nvdaPrice": 189.18,
+        "nvdaChange": -0.66,
+        "nvdaChangePercent": -0.35,
+        "aaplPrice": 274.55,
+        "aaplChange": 0.51,
+        "aaplChangePercent": 0.19,
+        "portfolioValue": 17511.10,
+        "portfolioGainPercent": 45.4,
+        "daysToEarnings": 15
+      },
+      "linkedIntelligence": ["intel-027", "intel-026", "intel-022"]
     }
   ],
   "synthesizedInsights": [
