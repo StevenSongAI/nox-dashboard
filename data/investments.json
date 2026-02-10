@@ -24,10 +24,10 @@
       "shares": 20,
       "entryPrice": 138.5,
       "avgCost": 138.5,
-      "currentPrice": 190.04,
-      "totalValue": 3800.8,
-      "gainPercent": 37.21,
-      "lastUpdated": "2026-02-09T24:46:00Z",
+      "currentPrice": 189.08,
+      "totalValue": 3781.60,
+      "gainPercent": 36.52,
+      "lastUpdated": "2026-02-10T15:30:00Z",
       "addedAt": "2026-02-08T20:00:00Z",
       "note": "Post-split cost basis adjusted (10:1 split June 2024). Original pre-split basis ~$1385."
     }
@@ -698,6 +698,35 @@
         "expectedVolatility": "±8-12%"
       },
       "linkedIntelligence": ["intel-025", "intel-024", "intel-022"]
+    },
+    {
+      "id": "intel-027",
+      "date": "2026-02-10T15:30:00Z",
+      "topic": "NVDA Feb 10 Market Update - Price Action & Analyst Activity",
+      "source": "Yahoo Finance / Market Data",
+      "content": "NVDA trading at $189.08 (-0.51%) as of Feb 10, 10:27 AM ET. Previous close $190.04. Intraday range: $188.12-$192.48. Volume 40.4M (below 181M avg, early session). Market cap $4.604T.\n\n**Key Developments:**\n- Jim Cramer highlighting NVDA getting 'big cut' of mega-cap AI CapEx spending\n- Bernstein rated top analyst (82/100) with Outperform rating\n- Jefferies maintained Buy (Jan 16), raised PT $250→$275\n- Analyst consensus: $253.62 avg target (34% upside), range $140-$352\n\n**Valuation Metrics:**\n- P/E (TTM): 46.69 | Forward P/E: 24.69\n- Profit Margin: 53.01% | ROE: 107.36%\n- Revenue (TTM): $187.14B | Net Income: $99.2B\n- Total Cash: $60.61B | Free Cash Flow: $53.28B\n\n**Earnings Countdown: 15 Days (Feb 25 AH)**\nPosition: 20 shares @ $138.50 cost basis = +37.2% unrealized gain. Portfolio value $3,780. Strategy remains HOLD through earnings event.",
+      "impact": "bullish",
+      "relatedPositions": ["pos-002"],
+      "alerts": [
+        "NVDA -0.51% early session, normal pre-earnings volatility",
+        "Analyst target $253 implies 34% upside",
+        "Jim Cramer bullish on AI CapEx beneficiary thesis",
+        "15 days to earnings - maintain HOLD"
+      ],
+      "positionStrategy": "HOLD",
+      "metrics": {
+        "currentPrice": 189.08,
+        "dayChange": -0.96,
+        "dayChangePercent": -0.51,
+        "volume": 40409436,
+        "avgVolume": 181397331,
+        "marketCap": "4.604T",
+        "peRatio": 46.69,
+        "forwardPE": 24.69,
+        "analystTarget": 253.62,
+        "daysToEarnings": 15
+      },
+      "linkedIntelligence": ["intel-026", "intel-025", "intel-022"]
     }
   ],
   "synthesizedInsights": [
