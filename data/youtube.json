@@ -1769,6 +1769,51 @@
       "url": "https://www.youtube.com/watch?v=DuQPHgohB1U",
       "researchStatus": "completed",
       "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-121",
+      "title": "Fallout New Vegas Creature Tier List",
+      "channel": "reapeeron",
+      "views": 96000,
+      "publishedAt": "2023-02-08T00:00:00Z",
+      "addedAt": "2026-02-10T07:00:00Z",
+      "outlierScore": 125,
+      "niche": "🎮 Gaming/Creature Tier List",
+      "whyOutlier": "EXTREME 125x outlier - 96K views on 90K sub channel. Tier list format + Fallout creature analysis creates completionist appeal. Nostalgic IP drives engagement.",
+      "contentAngle": "Create 'AI Creature Tier List' series - rank AI-generated creatures by power, danger, or rarity. Tier list format drives debate and comments.",
+      "url": "https://www.youtube.com/watch?v=UnBrSlmZAvM",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-122",
+      "title": "Ark But I Turn Into Every Creature I Beat",
+      "channel": "schwalbeyt",
+      "views": 736000,
+      "publishedAt": "2022-02-08T00:00:00Z",
+      "addedAt": "2026-02-10T07:00:00Z",
+      "outlierScore": 49.3,
+      "niche": "🎮 Gaming/Creature Transformation",
+      "whyOutlier": "MASSIVE 49.3x outlier - 736K views on 209K sub channel. Transformation mechanic + Ark survival gameplay creates progression hook. 'Turn into' format triggers curiosity.",
+      "contentAngle": "Create 'I Turn Into Every AI Creature I Generate' - transformation format where each defeated/generated creature becomes playable. Progression through creature collection.",
+      "url": "https://www.youtube.com/watch?v=8s76LiMpRSQ",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-123",
+      "title": "THE ALIEN CREATURE | Hollywood Sci-Fi Action Full Movie",
+      "channel": "veeoverseasfilms",
+      "views": 423000,
+      "publishedAt": "2023-02-08T00:00:00Z",
+      "addedAt": "2026-02-10T07:00:00Z",
+      "outlierScore": 322,
+      "niche": "🎬 Sci-Fi/Creature Feature",
+      "whyOutlier": "EXTREME 322x outlier - 423K views on 61K sub channel! Full movie format with alien creature content achieves massive reach. Independent film channel punching way above weight.",
+      "contentAngle": "Full-length AI creature movie format has proven viral potential. Create 'The AI Creature Movie' - narrative-driven short film showcasing AI-generated creature story.",
+      "url": "https://www.youtube.com/watch?v=lwtf3_9JXws",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
     }
   ],
   "competitorResearchQueue": [
@@ -2710,8 +2755,8 @@
     "totalOutliers": 114
   },
   "stats": {
-    "totalOutliers": 123,
+    "totalOutliers": 126,
     "totalBriefs": 15,
-    "lastResearch": "2026-02-10T06:00:00Z"
+    "lastResearch": "2026-02-10T07:00:00Z"
   }
 }
