@@ -3070,6 +3070,54 @@
       ],
       "status": "concept",
       "createdAt": "2026-02-10T10:40:40.839004"
+    },
+    {
+      "id": "brief-019",
+      "title": "What If [Pet/Creature] Had More Evolution Stages?",
+      "format": "Speculation + Visual Evolution Series",
+      "addedAt": "2026-02-10T23:41:42.054743Z",
+      "niche": "🎮 Gaming/Pets/Evolution",
+      "basedOn": [
+        "Pokemon evolution outlier (676x), Fuecoco evolution stages"
+      ],
+      "hook": "What if your favorite [creature] could evolve multiple times? Show 5-7 stages from baby to ultimate form",
+      "structure": [
+        "Title card: 'What if X had MORE evolutions?'",
+        "Stage 1: Baby/Infant form (cute, small)",
+        "Stage 2-3: Juvenile forms (getting bigger/cooler)",
+        "Stage 4-5: Adult forms (power fantasy)",
+        "Stage 6-7: Ultimate/Legendary forms (over-the-top designs)",
+        "Side-by-side comparison of all stages"
+      ],
+      "contentAngles": [
+        {
+          "angle": "Ice Dragon Evolution Stages",
+          "description": "Baby ice dragon → Juvenile ice wyvern → Adult frost dragon → Legendary ice titan (7 stages total)",
+          "viral_score": 95,
+          "production": "AI image generation (DALL-E 3 or Midjourney) + simple transitions"
+        },
+        {
+          "angle": "T-Rex Evolution Timeline",
+          "description": "Hatchling → Juvenile hunter → Adult apex → Ultimate monster king (evolutionary progression)",
+          "viral_score": 90,
+          "production": "Reuse existing T-Rex assets, add evolution concept"
+        },
+        {
+          "angle": "Minecraft Mob Evolutions",
+          "description": "Creeper → Charged Creeper → Mega Creeper → God Creeper (4-5 stages)",
+          "viral_score": 85,
+          "production": "Minecraft aesthetic + creature design AI"
+        }
+      ],
+      "whyItWorks": "676x outlier proves format - speculation ('what if?') + visual progression + familiar IP (Pokemon) = viral formula. Low production (AI images + voiceover).",
+      "productionCost": "Low ($20-40 for AI credits + VO)",
+      "estimatedViews": "100K-500K if executed well",
+      "priority": "high",
+      "status": "ready",
+      "relatedOutliers": [
+        "sinpoke Pokemon evolution video (676x)",
+        "metalfear4 Minecraft Pokemon (15.3x)"
+      ]
     }
   ],
   "trendAnalysis": {
