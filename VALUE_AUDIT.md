@@ -1,163 +1,148 @@
-# Value Audit Report
+# Value Audit: Dashboard Update Review
 
 **Date:** 2026-02-09  
-**Commit:** d28abd4  
-**Auditor:** VALUE_AUDIT subagent
+**Commit:** bcfa87a  
+**Commit Message:** "[nox] Added intel-019: NVDA earnings countdown (15 days), portfolio check"  
+**Files Modified:** data/investments.json, data/meta.json, data/state.json
 
 ---
 
-## Summary
+## Executive Summary
 
-| Metric | Score |
-|--------|-------|
-| **Data Quality** | ✅ Real, researched data |
-| **JSON Schema Compliance** | ✅ Valid JSON, matches existing patterns |
-| **Usefulness to Steven** | ✅ High - relevant business opportunity + clean data |
-| **Value Added** | ✅ Dashboard more valuable after update |
-| **Meta/State Updates** | ✅ Both updated correctly |
-| **Malformed JSON Fix** | ✅ Necessary and correctly executed |
-| **OVERALL GRADE** | **85%** |
+| Metric | Grade | Notes |
+|--------|-------|-------|
+| Data Quality | 70% | Real market data, accurate prices |
+| Schema Compliance | 90% | Valid JSON, proper structure |
+| Value Add | 15% | **NET NEGATIVE** - Deleted valuable intel-018 |
+| Usefulness to Steven | 20% | Info already known, no new insight |
+| Meta/State Updates | 100% | Properly updated |
 
----
-
-## Detailed Findings
-
-### 1. Malformed JSON Fix (CRITICAL)
-
-**Status:** ✅ CORRECTLY EXECUTED
-
-**Problem Found:**
-The previous version of `youtube.json` had orphaned JSON content appearing AFTER the file's closing brackets. The file was properly terminated with `}\n]` but then had additional video entry data (starting with `"views": 516000,`) appended after the file close.
-
-```
-// Before (broken):
-    }          ← last valid entry end
-  ]            ← array close
-}              ← file close
-      "views": 516000,    ← ORPHANED - no object wrapper!
-      ...
-```
-
-**Fix Applied:**
-The orphaned content was properly wrapped into a complete video object (yt-viewstats-083) and inserted before the array closing bracket. The fix preserved all data while making the JSON valid.
-
-**Verification:**
-```bash
-$ cat data/youtube.json | python3 -c "import json,sys; json.load(sys.stdin)"
-JSON is VALID ✓
-```
+### Overall Grade: 35% (Filler/Regression)
 
 ---
 
-### 2. New Business Opportunity (opp-012)
+## Detailed Assessment
 
-**Status:** ✅ REAL, RESEARCHED, HIGH-VALUE
+### 1. Data Quality - Real or Filler? (70%)
 
-**Opportunity:** Minecraft Map Commission Marketplace
+**Verdict:** Real data, but not researched
 
-**Why This is Real Data (Not Filler):**
+The prices and dates referenced in intel-019 are factually accurate:
+- NVDA at $190.04 (matches market data)
+- AAPL at $273.04 (matches market data)
+- Feb 25 earnings date is correct
+- Analyst target $253.62 is in line with consensus
 
-| Evidence | Assessment |
-|----------|------------|
-| **Validation Signal** | Steven's actual pain point sourcing T-Rex video map |
-| **Market Data** | $500M+ Minecraft content market |
-| **Problem Statement** | Real problem: YouTubers struggle to find builders; builders struggle to find work |
-| **Competitor Analysis** | 3 real competitors identified with differentiation strategy |
-| **Revenue Model** | 10-15% commission - standard marketplace take rate |
-| **Next Step** | Concrete validation plan (survey 10 YouTubers) |
+**However:** This data appears to be recycled from previous entries (intel-017, intel-015) rather than freshly researched. The "+2.50% on Feb 9" and volume data are direct carryovers from intel-017.
 
-**Schema Compliance:** ✅ Matches all existing opportunity fields:
-- `id`, `name`, `description`, `alignment`, `status`, `potentialRevenue`, `effort`, `nextStep`
-- `marketData` object with `tam`, `problem`, `targetAudience`, `competitors`, `differentiation`
-- `validationSignal` field (new but consistent)
-- ISO 8601 timestamps
+### 2. Schema Compliance (90%)
 
-**Value to Steven:**
-- Directly addresses a pain point he's currently experiencing
-- HIGH alignment with his YouTube/Minecraft content strategy
-- Could generate $1K-5K/month if validated
+**Verdict:** Valid structure
 
----
+- Proper `id` format: "intel-019"
+- Valid ISO date: "2026-02-10T03:15:00Z"
+- Correct field types and nesting
+- `relatedPositions`, `alerts`, `linkedIntelligence` arrays properly formatted
 
-### 3. YouTube Outlier Data Quality
+**Minor issue:** `linkedIntelligence` references "intel-018" which no longer exists (see Critical Issue below).
 
-**Status:** ✅ REAL RESEARCH FROM VIEWSTATS.COM
+### 3. Critical Issue: intel-018 DELETED (Major Regression)
 
-All entries in `youtube.json` are:
-- Sourced from actual viewstats.com outlier research
-- Include real YouTube video URLs (verified accessible)
-- Have actual view counts and outlier scores
-- Include actionable content angles specific to Steven's AI creature niche
-- Timestamps correlate with research sessions
+**This is the primary problem with this update.**
 
-Sample verified entry (yt-viewstats-083):
-- **Video:** "I Bought the World's Most VIRAL AI Pet (15-in-1 Unboxing)"
-- **Channel:** unboxtherapyclone
-- **Views:** 516,000
-- **Outlier Score:** 26.7x
-- **Content Angle:** Physical AI pet unboxing format for viral potential
+The agent **replaced** intel-018 with intel-019. Intel-018 contained:
+- Detailed scenario analysis (Bull/Base/Bear cases with price targets)
+- Earnings expectations with YoY comparisons
+- Risk management framework
+- Market context and competitive analysis
+- Multiple linked intelligence references
 
----
-
-### 4. Meta & State Updates
-
-**meta.json:** ✅ Updated
+**What was lost:**
 ```json
 {
-  "lastUpdated": "2026-02-10T03:10:00Z",
-  "updatedBy": "nox",
-  "dataVersion": "32"
+  "id": "intel-018",
+  "topic": "NVDA Earnings Countdown: 16 Days - Positioning Strategy Update",
+  "content": "...scenario analysis...risk management..."
+  "scenarioTargets": {
+    "bull": "210-220",
+    "base": "185-200",
+    "bear": "160-175"
+  }
 }
 ```
 
-**state.json:** ✅ Updated
-- `lastHeartbeat` and `lastAction` reflect the changes
-- `dataFreshness.youtube` notes the JSON fix
-- `dataFreshness.newBusiness` notes the new opportunity
-- Pipeline counts updated (new: 9, from 8)
+**What replaced it:**
+```json
+{
+  "id": "intel-019", 
+  "topic": "Heartbeat Update: Portfolio Check + NVDA Earnings Countdown (15 Days)",
+  "content": "...lightweight summary..."
+}
+```
+
+The ONLY material difference is changing "16 days" to "15 days" and removing the valuable scenario analysis.
+
+### 4. Usefulness to Steven (20%)
+
+**Verdict:** Minimal new value
+
+When Steven opens the dashboard, intel-019 tells him:
+- NVDA earnings are in 15 days (he already knew this from intel-016, intel-017, intel-018)
+- Portfolio is at +45% combined gain (unchanged from previous)
+- HOLD strategy (already stated multiple times)
+
+**No new insights. No new data. No new analysis.**
+
+### 5. Meta.json and State.json Updates (100%)
+
+**Verdict:** Properly updated
+
+- `meta.json`: Updated timestamp and dataVersion (32→33)
+- `state.json`: Updated heartbeat count (64→65), lastAction, dataFreshness
+- All tracking fields correctly maintained
 
 ---
 
-## Scoring Breakdown
+## The Core Problem
 
-| Criteria | Points | Notes |
-|----------|--------|-------|
-| Real Data (not filler) | 25/25 | Both opp-012 and outlier data are researched |
-| JSON Schema Match | 20/20 | Valid JSON, consistent schema |
-| Usefulness to Steven | 25/25 | Addresses real pain point, actionable |
-| Dashboard Value Added | 15/15 | More complete data + new business idea |
-| Meta/State Updates | 5/5 | Both files updated correctly |
-| Malformed JSON Fix | 5/5 | Necessary fix, correctly executed |
-| **TOTAL** | **95/100** | **Grade: A (85% after adjustments)** |
+This update represents a **content regression**, not an improvement. The agent:
 
-*Adjusted to 85% because:*
-- The opp-012 `createdAt` timestamp (2026-02-10) is in the future relative to commit date (Feb 9)
-- Minor: Could have added more validation details to opp-012
+1. ❌ **Deleted** intel-018 with rich scenario analysis
+2. ❌ **Replaced** it with intel-019 - a thinner summary
+3. ❌ **Broke** the linkedIntelligence reference (points to deleted intel-018)
+4. ✅ Only meaningful change: "16 days" → "15 days"
+
+The dashboard is **LESS VALUABLE** after this update because valuable analytical content was removed.
 
 ---
 
 ## Recommendations
 
-1. **Monitor opp-012 validation:** The survey of 10 YouTubers should be prioritized to validate demand before investing development time.
+### Immediate Actions
+1. **Restore intel-018** - It contained valuable scenario analysis that should not have been deleted
+2. **Fix broken reference** - intel-019.linksTo references intel-018 which no longer exists
+3. **Consider intel-019 redundant** - If kept, it should be in addition to intel-018, not a replacement
 
-2. **YouTube data enrichment:** Consider adding `researchStatus` tracking to identify which outliers have been turned into actual content.
-
-3. **JSON validation CI:** Consider adding a pre-commit hook to validate JSON before commits to prevent future malformed JSON issues.
-
----
-
-## Conclusion
-
-**GRADE: 85% (High Value)**
-
-This update genuinely improves the dashboard:
-- Fixed a real data integrity issue
-- Added a high-quality business opportunity based on actual user pain
-- Maintained data schema consistency
-- Updated all metadata files
-
-The dashboard is MORE VALUABLE after this update. Steven will find actionable insights when he opens it.
+### Process Improvements
+1. **Never delete intelligence entries** - Add new entries; don't replace valuable analysis with thinner updates
+2. **Countdown updates should be lightweight** - A 1-day change doesn't warrant a full intel entry; update existing entry or use a dedicated countdown field
+3. **Preserve analytical depth** - Scenario analysis, price targets, and risk frameworks are valuable
 
 ---
 
-*Audit completed: 2026-02-09 22:20 EST*
+## Final Grade: 35% (Filler with Regression)
+
+This update:
+- ✅ Uses real data
+- ✅ Follows schema
+- ✅ Updates tracking files
+- ❌ **Deletes valuable intelligence**
+- ❌ Provides no new insight
+- ❌ Makes dashboard less useful
+
+**The -50 point penalty for deleting intel-018 outweighs the minor value of updating the countdown.**
+
+---
+
+*Audit completed by: Value Auditor Agent*  
+*Date: 2026-02-09*
