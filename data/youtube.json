@@ -1484,6 +1484,51 @@
       "url": "https://www.youtube.com/watch?v=uLSLWbJdBlA",
       "researchStatus": "completed",
       "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-101",
+      "title": "What if Pokemon had more Evolution Stages? Sprigatito | Floragato | Meowscarada",
+      "channel": "sinpoke",
+      "views": 756000,
+      "publishedAt": "2024-02-08T00:00:00Z",
+      "addedAt": "2026-02-09T20:00:00Z",
+      "outlierScore": 7600,
+      "niche": "🎮 Gaming/Pokémon/Evolution",
+      "whyOutlier": "EXTREME 7.6Kx outlier - 756K views on 10K sub channel! Second massive hit from sinpoke using same 'What if Pokemon had more evolutions' formula. Sprigatito line performs even better than Fuecoco (676x). Speculative evolution content is WHITE HOT.",
+      "contentAngle": "Apply 'What if [AI creature] had more evolution stages?' format - show incremental AI-generated evolution stages beyond normal final form. Pokemon + AI = algorithm gold.",
+      "url": "https://www.youtube.com/watch?v=YgYidbyfE88",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-102",
+      "title": "I Got a Pet Dragon",
+      "channel": "stevensongirl",
+      "views": 54000,
+      "publishedAt": "2026-02-06T00:00:00Z",
+      "addedAt": "2026-02-09T20:00:00Z",
+      "outlierScore": 11.4,
+      "niche": "🐉 Pet Simulation/Dragon",
+      "whyOutlier": "STEVEN'S VIDEO UPDATE - 11.4x outlier confirmed! 54K views on 169K sub channel. 3 days since upload, showing strong early traction. Dragon pet content continues to outperform.",
+      "contentAngle": "Follow-up opportunity: 'Training My Pet Dragon for 100 Days' or 'My Dragon's Secret Family' - capitalize on established dragon companion narrative.",
+      "url": "https://www.youtube.com/watch?v=Nk65YeQQlQs",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-viewstats-103",
+      "title": "Evolution Of Salmon To Become Bloop VS Reptiles and Animals",
+      "channel": "dinosaursimulationlab",
+      "views": 1910000,
+      "publishedAt": "2022-02-08T00:00:00Z",
+      "addedAt": "2026-02-09T20:00:00Z",
+      "outlierScore": 68.9,
+      "niche": "🐟 Creature Evolution/Battle",
+      "whyOutlier": "EXTREME 68.9x outlier - 1.91M views on 504K sub channel! Evolution format + humble creature (salmon) transformed into powerful 'Bloop' = viral formula. VS battles add competitive element.",
+      "contentAngle": "Create 'Evolution of [Humble Creature] into [Powerful Form]' - take weak/common animals and evolve into legendary/mythic versions. Document the full transformation journey.",
+      "url": "https://www.youtube.com/watch?v=mngQ1_wAd6A",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - hourly cron"
     }
   ],
   "competitorResearchQueue": [
