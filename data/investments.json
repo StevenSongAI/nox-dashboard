@@ -676,6 +676,28 @@
         "intel-023",
         "intel-022"
       ]
+    },
+    {
+      "id": "intel-026",
+      "date": "2026-02-10T14:52:00Z",
+      "topic": "Heartbeat: NVDA Earnings 15-Day Countdown + Pre-Market Positioning",
+      "source": "Heartbeat Protocol / Portfolio Intelligence",
+      "content": "Scheduled heartbeat update (9:52 AM ET Feb 10):\n\n**Portfolio Status**\n- Total Value: ~$17,453 (+45.2% unrealized gains)\n- AAPL: 50 shares @ $273.04 (+47.39% / +$4,390) - 78% of portfolio\n- NVDA: 20 shares @ $190.04 (+37.21% / +$1,031) - 22% of portfolio\n\n**NVDA Earnings Countdown: 15 Days**\nEvent: Q4 FY2026 Earnings - February 25, 2026 (After Hours)\n\n**Key Metrics:**\n- Current Price: $190.04 (89% of 52-week high)\n- Day Range: $184.00 - $193.66 (volatility increasing)\n- Volume: 195.2M (above 181M average) - elevated pre-earnings interest\n- Analyst Target: $253.62 (+33% upside potential)\n- P/E: 47.04 | Forward P/E: 24.10\n\n**Earnings Expectations:**\n- Q4 Revenue: $19.5B consensus (+73% YoY)\n- Q4 EPS: $0.85 (vs $0.52 prior year)\n- Data Center: $17.5B expected (90% of revenue)\n- Gross Margin: 73-74% guidance range\n\n**Position Strategy: HOLD**\n- No changes within 15 days of earnings event\n- Expected post-announcement volatility: ±8-12%\n- Scenario targets: Bull $210-220 | Base $185-200 | Bear $160-175\n- AAPL provides portfolio stability ballast (78% allocation)\n\n**Watchlist:**\n- AMD: $208.44 - Entry target $180 (wait for post-earnings pullback)\n- PLTR: $135.90 - Entry target $100 (valuation stretched at 45x forward revenue)\n- TSLA: $245.50 - Monitoring robotaxi catalyst timeline\n\n**Content Pipeline:**\n- T-Rex video: Map artist recruitment priority (BuiltByBit + Fiverr)\n- AI Coding Agents brief: Ready for production (Trend Score 120)\n- Dashboard: Fully operational post-Ralph-chain completion",
+      "impact": "neutral",
+      "relatedPositions": ["pos-001", "pos-002"],
+      "alerts": [
+        "NVDA earnings 15 days out - maintain HOLD position",
+        "Portfolio showing strong +45% combined gains",
+        "AMD entry target $180 - wait for pullback"
+      ],
+      "positionStrategy": "HOLD",
+      "earningsCountdown": {
+        "ticker": "NVDA",
+        "date": "2026-02-25",
+        "daysRemaining": 15,
+        "expectedVolatility": "±8-12%"
+      },
+      "linkedIntelligence": ["intel-025", "intel-024", "intel-022"]
     }
   ],
   "synthesizedInsights": [
@@ -718,56 +740,6 @@
         "intel-012"
       ],
       "addedAt": "2026-02-09T11:50:00Z"
-    }
-  ],
-      {
-      "id": "intel-026",
-      "date": "2026-02-10T14:52:00Z",
-      "topic": "Heartbeat: NVDA Earnings 15-Day Countdown + Pre-Market Positioning",
-      "source": "Heartbeat Protocol / Portfolio Intelligence",
-      "content": "Scheduled heartbeat update (9:52 AM ET Feb 10):\n\n**Portfolio Status**
-- Total Value: ~$17,453 (+45.2% unrealized gains)
-- AAPL: 50 shares @ $273.04 (+47.39% / +$4,390) - 78% of portfolio
-- NVDA: 20 shares @ $190.04 (+37.21% / +$1,031) - 22% of portfolio
-\n**NVDA Earnings Countdown: 15 Days**
-Event: Q4 FY2026 Earnings - February 25, 2026 (After Hours)\n\n**Key Metrics:**
-- Current Price: $190.04 (89% of 52-week high)
-- Day Range: $184.00 - $193.66 (volatility increasing)
-- Volume: 195.2M (above 181M average) - elevated pre-earnings interest
-- Analyst Target: $253.62 (+33% upside potential)
-- P/E: 47.04 | Forward P/E: 24.10
-\n**Earnings Expectations:**
-- Q4 Revenue: $19.5B consensus (+73% YoY)
-- Q4 EPS: $0.85 (vs $0.52 prior year)
-- Data Center: $17.5B expected (90% of revenue)
-- Gross Margin: 73-74% guidance range
-\n**Position Strategy: HOLD**
-- No changes within 15 days of earnings event
-- Expected post-announcement volatility: ±8-12%
-- Scenario targets: Bull $210-220 | Base $185-200 | Bear $160-175
-- AAPL provides portfolio stability ballast (78% allocation)
-\n**Watchlist:**
-- AMD: $208.44 - Entry target $180 (wait for post-earnings pullback)
-- PLTR: $135.90 - Entry target $100 (valuation stretched at 45x forward revenue)
-- TSLA: $245.50 - Monitoring robotaxi catalyst timeline\n\n**Content Pipeline:**
-- T-Rex video: Map artist recruitment priority (BuiltByBit + Fiverr)
-- AI Coding Agents brief: Ready for production (Trend Score 120)
-- Dashboard: Fully operational post-Ralph-chain completion",
-      "impact": "neutral",
-      "relatedPositions": ["pos-001", "pos-002"],
-      "alerts": [
-        "NVDA earnings 15 days out - maintain HOLD position",
-        "Portfolio showing strong +45% combined gains",
-        "AMD entry target $180 - wait for pullback"
-      ],
-      "positionStrategy": "HOLD",
-      "earningsCountdown": {
-        "ticker": "NVDA",
-        "date": "2026-02-25",
-        "daysRemaining": 15,
-        "expectedVolatility": "±8-12%"
-      },
-      "linkedIntelligence": ["intel-025", "intel-024", "intel-022"]
     }
   ],
   "lastUpdated": "2026-02-10T14:52:00Z",
