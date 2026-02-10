@@ -1,6 +1,18 @@
 {
   "notes": [
     {
+      "id": "note-028",
+      "title": "AI Coding Agent Market Analysis - February 2026 Opportunity Window",
+      "date": "2026-02-10T07:06:00Z",
+      "tags": ["ai-coding", "claude-4", "agent-trends", "content-opportunity", "trend-score-120", "30-day-pilot"],
+      "content": "See full analysis: data/research/note-028-ai-coding-agents.md",
+      "sourceUrls": ["https://www.anthropic.com/news", "https://github.com/features/copilot"],
+      "category": "Trend Analysis",
+      "linkedOutliers": ["yt-viewstats-015", "yt-viewstats-042"],
+      "priority": "HIGH",
+      "actionRequired": "APPROVE 30-DAY COMPARISON PILOT VIDEO"
+    },
+    {
       "id": "note-027",
       "title": "Military vs AI Creature Content: Viral Pattern Analysis (1,200x Outlier)",
       "date": "2026-02-10T06:46:00Z",
