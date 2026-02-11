@@ -3037,6 +3037,43 @@
       "estimatedProductionTime": "40-60 hours (30 days testing + 10-15 hours editing + 5 hours scripting)",
       "createdAt": "2026-02-11T08:38:36.110858",
       "status": "draft"
+    },
+    {
+      "id": "brief-025",
+      "title": "Hot Island vs Cold Island: 1000-Year Civilization Battle",
+      "concept": "Place 1 million villagers on two extreme climate islands (frozen wasteland vs volcanic desert) and simulate 1000 years of civilization development. Cold villagers become industrial engineers, hot villagers become luxury-obsessed. Ends with massive plot twist: Cold infiltrated and manipulated Hot Island from the beginning (Cinder Protocol).",
+      "inspirationVideo": null,
+      "viralScore": 98,
+      "productionCost": "$200-400",
+      "estimatedRevenue": "$2000-5000",
+      "difficulty": "hard",
+      "productionTime": "4-6 weeks",
+      "keyElements": [
+        "Extreme survival mechanics (thermal shock, dehydration)",
+        "Civilization tech progression (bone tools \u2192 brass machinery \u2192 advanced golems)",
+        "Comedy voiceover in Grox style (self-aware meta commentary, absurdist humor)",
+        "Long-game conspiracy plot (Cinder's manipulation revealed at Year 1000)",
+        "Visual spectacle (ice sculptures, lava swimming, steam-powered jetpacks)",
+        "Character-driven narrative (Greg dynasty, Hearth-Mother, Well-Digger, Chef)",
+        "Climactic twist ending (Cold vs Hot role reversal, world saved by engineered self-sacrifice)"
+      ],
+      "targetAudience": "Minecraft simulation fans, story-driven gaming content viewers, Ages 13-25",
+      "tags": [
+        "minecraft civilization",
+        "extreme survival",
+        "comedy voiceover",
+        "plot twist",
+        "1000 years",
+        "hot vs cold"
+      ],
+      "scriptStatus": "complete",
+      "scriptPath": "~/Desktop/Nox Builds/hot_vs_cold_voiceover.md",
+      "scriptWordCount": 6800,
+      "relatedContent": [
+        "outlier-022"
+      ],
+      "addedAt": "2026-02-11T15:23:18.755429+00:00",
+      "notes": "Full 6,800-word Grox-style voiceover script completed 2026-02-11. Requires: Minecraft civilization simulator, complex command blocks, custom villager AI, thermal mechanics mod. High production value but massive viral potential (98 score). Story-driven format proven by Grox's manhunt series (3M+ views). Plot twist ending differentiates from standard simulation content."
     }
   ],
   "trendAnalysis": {
