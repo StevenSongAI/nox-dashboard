@@ -79,7 +79,11 @@
         "tam": "$12B by 2029",
         "cagr": "88%",
         "targetAudience": "YouTube creators, animation artists, indie game devs",
-        "competitors": ["Runway Academy", "Pika Labs tutorials", "YouTube organic"],
+        "competitors": [
+          "Runway Academy",
+          "Pika Labs tutorials",
+          "YouTube organic"
+        ],
         "differentiation": "Creator-first approach with proven viral format integration"
       },
       "createdAt": "2026-02-08T15:10:00Z"
@@ -97,11 +101,18 @@
         "tam": "Newsletter market $1B+",
         "nicheTam": "AI art/design newsletters growing 40% YoY",
         "targetAudience": "AI enthusiasts, creature designers, YouTubers, indie devs",
-        "competitors": ["Ben's Bites (AI)", "The Rundown (AI)", "Motion Design (animation)"],
+        "competitors": [
+          "Ben's Bites (AI)",
+          "The Rundown (AI)",
+          "Motion Design (animation)"
+        ],
         "differentiation": "Hyper-focused on creature/character design niche - underserved segment",
-        "funnelPosition": "Top of funnel → Templates → Masterclass"
+        "funnelPosition": "Top of funnel \u2192 Templates \u2192 Masterclass"
       },
-      "synergies": ["opp-006", "opp-007"],
+      "synergies": [
+        "opp-006",
+        "opp-007"
+      ],
       "createdAt": "2026-02-08T18:46:00Z"
     },
     {
@@ -117,7 +128,10 @@
         "tam": "AI agent market $216B by 2030",
         "problem": "90% of AI agent deployments fail due to lack of QA/testing",
         "targetAudience": "AI startups, enterprise AI teams, agent workflow developers",
-        "competitors": ["Traditional QA firms (not AI-native)", "Internal testing teams"],
+        "competitors": [
+          "Traditional QA firms (not AI-native)",
+          "Internal testing teams"
+        ],
         "differentiation": "AI-native QA methodology, subagent orchestration expertise, automated red-teaming"
       },
       "createdAt": "2026-02-09T11:30:00Z"
@@ -135,7 +149,11 @@
         "tam": "GitHub Pages 40M+ users, static site generators growing 35% YoY",
         "problem": "No-code tools are expensive ($20-100/month), custom dev is slow",
         "targetAudience": "Indie hackers, content creators, small SaaS founders",
-        "competitors": ["Vercel templates", "Netlify templates", "Notion dashboards"],
+        "competitors": [
+          "Vercel templates",
+          "Netlify templates",
+          "Notion dashboards"
+        ],
         "differentiation": "Zero backend required, free GitHub hosting, JSON-data driven, instant deploy"
       },
       "createdAt": "2026-02-09T11:35:00Z"
@@ -153,7 +171,12 @@
         "tam": "Creator economy tools $250B market",
         "problem": "Creators use 5+ tools to track performance, no unified view",
         "targetAudience": "Mid-size YouTubers (100K-5M subs), MCNs, content strategists",
-        "competitors": ["VidIQ", "TubeBuddy", "viewstats Pro", "Social Blade"],
+        "competitors": [
+          "VidIQ",
+          "TubeBuddy",
+          "viewstats Pro",
+          "Social Blade"
+        ],
         "differentiation": "Unified cross-platform view, custom outlier detection algorithms, white-label option"
       },
       "createdAt": "2026-02-09T11:40:00Z"
@@ -171,7 +194,11 @@
         "tam": "Minecraft content market $500M+ annually",
         "problem": "YouTubers struggle to find reliable builders; builders struggle to find paid work",
         "targetAudience": "Minecraft YouTubers (100K+ subs), professional Minecraft builders, map artists",
-        "competitors": ["Fiverr (generalist)", "BuiltByBit (small audience)", "Discord servers (unreliable)"],
+        "competitors": [
+          "Fiverr (generalist)",
+          "BuiltByBit (small audience)",
+          "Discord servers (unreliable)"
+        ],
         "differentiation": "Vetted builders, escrow payments, dispute resolution, specialized for Minecraft content creators"
       },
       "validationSignal": "Steven's own pain finding T-Rex map builder validates demand",
@@ -190,20 +217,52 @@
         "tam": "$12B AI coding tools market by 2029",
         "problem": "Engineering teams lack independent data to choose between 20+ AI coding tools; vendor claims are biased",
         "targetAudience": "Engineering managers at 50-500 person companies, CTOs making tool purchasing decisions",
-        "competitors": ["Gartner/Forrester (enterprise only)", "Reddit reviews (anecdotal)", "Vendor benchmarks (biased)"],
+        "competitors": [
+          "Gartner/Forrester (enterprise only)",
+          "Reddit reviews (anecdotal)",
+          "Vendor benchmarks (biased)"
+        ],
         "differentiation": "Independent testing, standardized metrics, continuous updates, focus on mid-market ($50-500M companies underserved)"
       },
       "validationSignal": "Steven's 30-day comparison video (trend score 120) proves audience demand for this data; can productize the methodology",
-      "linkedResearch": ["note-032", "note-033", "note-034"],
+      "linkedResearch": [
+        "note-032",
+        "note-033",
+        "note-034"
+      ],
       "createdAt": "2026-02-10T15:30:00Z"
+    },
+    {
+      "id": "opp-014",
+      "name": "AI-Generated Video Editing Service",
+      "description": "White-label video editing service for YouTube creators using AI-generated assets (Higgsfield, Midjourney, Runway) + trained foreign editors ($250/project). Targets creators who want AI-enhanced videos but lack in-house editing talent.",
+      "alignment": "HIGH",
+      "status": "new",
+      "potentialRevenue": "$2000-8000/month",
+      "effort": "Medium",
+      "nextStep": "Hire and train 2-3 editors via Upwork, complete Steven's first project as case study",
+      "marketData": {
+        "tam": "$250B creator economy, $5B video editing services",
+        "problem": "Most creators can't afford US editors ($50-150/hr), don't have time to learn AI tools, struggle with quality foreign editors",
+        "targetAudience": "Mid-size YouTubers (50K-500K subs), content studios scaling production, AI-curious creators",
+        "competitors": [
+          "Fiverr editors (quality inconsistent)",
+          "US editing agencies ($2000-5000/video)",
+          "In-house editors (hard to hire/train)"
+        ],
+        "differentiation": "Trained foreign editors ($250/project) + AI asset generation workflow + proven quality (Steven's videos as portfolio)"
+      },
+      "validationSignal": "Steven scaling from 1 video/week to 2-3/week by hiring foreign editors - same pain point affects thousands of creators",
+      "linkedProject": "stevensongirl editor recruitment (Upwork account active, test project ready)",
+      "createdAt": "2026-02-11T16:28:53.069943+00:00"
     }
   ],
   "pipeline": {
-    "new": 10,
+    "new": 11,
     "evaluating": 1,
     "pursuing": 0,
     "passed": 1,
     "won": 1
   },
-  "lastUpdated": "2026-02-10T15:30:00Z"
+  "lastUpdated": "2026-02-11T16:28:53.070148+00:00"
 }
