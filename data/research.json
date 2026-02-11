@@ -151,8 +151,30 @@
         "opp-011"
       ],
       "createdAt": "2026-02-11T08:34:27.616041"
+    },
+    {
+      "id": "note-040",
+      "title": "SeeDream 2 - Storyboard-Based Video Generation for Production Workflow",
+      "date": "2026-02-11T17:40:04.701251+00:00",
+      "tags": [
+        "AI-video",
+        "automation",
+        "production-workflow",
+        "storyboard",
+        "editor-workflow"
+      ],
+      "content": "# SeeDream 2 - Storyboard-Based Video Generation Analysis\n\n## Discovery Context\n**Source:** Steven shared X.com link (lucatac0) on 2026-02-11 12:32 PM\n**Quote:** \"If seedream 2 can work with storyboards, this could cut down editing time tremendously\"\n**Timing:** Identified during active editor recruitment phase (job posted 12:11 PM today)\n\n## Strategic Importance\nThis tool could fundamentally change the stevensongirl production pipeline by reducing the manual shot generation workload that editors currently handle.\n\n## Current Production Bottleneck\n**Existing Workflow (stevensongirl):**\n1. Steven: Generate idea + script outline\n2. Nox: Generate draft images via Higgsfield batch script\n3. **BOTTLENECK \u2192 Human editor:** Fill gaps, generate missing shots, create clips\n4. Editor: Edit with music/SFX (Epidemic Sound)\n5. Steven: Final review pass\n\n**Editor Pain Points:**\n- Must generate additional shots to fill narrative gaps\n- Time-consuming manual asset creation\n- Requires AI tool proficiency (Higgsfield/Midjourney/Runway)\n- Creative decisions on shot generation\n\n## SeeDream 2 Potential Impact\n\n### If It Works With Storyboards:\n\u2705 **Reduced Editor Workload:** Automated shot generation from narrative flow\n\u2705 **Faster Production:** 1 video/week \u2192 2-3/week goal becomes achievable\n\u2705 **Lower Cost Per Video:** Less editor time at $250/video\n\u2705 **Better Editor Utilization:** Focus on composition/pacing instead of generation\n\n### Critical Questions to Research:\n1. **Storyboard Input Format:** What format does SeeDream 2 accept?\n   - Text descriptions?\n   - Scene breakdown?\n   - Image references?\n   - Timing/duration markers?\n\n2. **Output Quality:** How does it compare to current tools?\n   - vs Higgsfield (current primary tool)\n   - vs Midjourney (high-quality alternative)\n   - vs Runway (video-native tool)\n\n3. **Integration Feasibility:** Can it slot into existing workflow?\n   - Batch processing capability?\n   - API access or browser automation?\n   - Reference character consistency?\n\n4. **Pricing Model:** Cost structure vs Higgsfield\n   - Per-generation cost?\n   - Subscription vs credits?\n   - Batch discounts?\n\n5. **Content Types:** Does it work for Ice Dragon/T-Rex narratives?\n   - Creature-focused content\n   - Evolution sequences\n   - Minecraft environment integration\n\n## Impact on Active Editor Hiring\n\n**Current Status:**\n- Job posted on Upwork today (12:11 PM)\n- $250 fixed-price per video\n- Screening criteria: Portfolio + AI tool experience + director's eye\n\n**If SeeDream 2 is Viable:**\n- **Shift requirements:** Less AI generation skill needed, more composition/pacing skill\n- **Adjust test project:** Include SeeDream 2 workflow evaluation\n- **Update training materials:** New tool in editor workflow\n- **Modify screening:** Focus on storyboard interpretation skills\n\n**Timeline Consideration:**\nJob just posted today - applications will start arriving soon. If SeeDream 2 is production-ready, better to adjust hiring criteria NOW before finalizing candidates.\n\n## Next Steps (Priority: HIGH)\n\n### 1. Technical Research\n- Find SeeDream 2 documentation/demos\n- Test with Ice Dragon storyboard\n- Compare output quality to Higgsfield\n- Evaluate batch processing capability\n\n### 2. Production Viability Test\n- Generate 10 test shots using SeeDream 2\n- Compare to equivalent Higgsfield shots\n- Measure time savings\n- Assess quality trade-offs\n\n### 3. Cost Analysis\n- Price per shot comparison\n- Monthly subscription vs credits\n- ROI calculation at 2-3 videos/week scale\n\n### 4. Workflow Integration\n- Document SeeDream 2 \u2192 Editor handoff\n- Update production workflow diagram\n- Create editor training materials\n\n### 5. Hiring Impact Assessment\n- Adjust job posting if needed (still early)\n- Update screening questions\n- Modify test project requirements\n\n## Risk Assessment\n\n**If SeeDream 2 Works:**\n\u2705 Massive productivity gain\n\u2705 Lower editor costs\n\u2705 Faster scaling to 2-3 videos/week\n\n**If SeeDream 2 Doesn't Work:**\n\u274c Wasted research time (minimal - ~2 hours)\n\u274c No workflow change (status quo continues)\n\u274c Editor hiring proceeds as planned\n\n**Risk/Reward:** Heavily skewed toward investigating. Potential 50% workflow efficiency gain vs. minimal downside.\n\n## Strategic Alignment\n\n**Aligns With:**\n- Editor recruitment goal (active task)\n- Production scaling target (1 \u2192 2-3 videos/week)\n- Cost optimization (dashboard business opportunity opp-014)\n- Workflow automation (existing Higgsfield automation proves feasibility)\n\n**Priority Justification:**\nThis could change the editor job requirements BEFORE finalizing hires. Perfect timing for investigation.\n\n## Linked Intelligence\n- Active task: \"Hire and train 2-3 video editors for stevensongirl channel\"\n- opp-014: AI-Generated Video Editing Service (validates editor hiring strategy)\n- note-039: Higgsfield 888-image batch success (proves automation feasibility)\n- Current editor job: Just posted 12:11 PM today - still time to adjust requirements\n\n## Recommendation\n**Prioritize SeeDream 2 research before screening editor applications.** If it works, we can hire editors with different skill profiles (less generation, more composition/pacing). If it doesn't work, we proceed with current hiring criteria. Timing is optimal.\n",
+      "sourceUrls": [
+        "https://x.com/lucatac0/status/2021298549644788087"
+      ],
+      "category": "Production Workflow Research",
+      "linkedYouTubeIds": [],
+      "confidence": 75,
+      "status": "active_research",
+      "priority": "high",
+      "project": "stevensongirl Production Scaling"
     }
   ],
-  "totalNotes": 8,
-  "lastUpdated": "2026-02-11T08:34:27.616043"
+  "totalNotes": 9,
+  "lastUpdated": "2026-02-11T17:40:04.701474+00:00"
 }
