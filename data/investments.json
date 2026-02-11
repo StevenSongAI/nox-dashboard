@@ -789,6 +789,25 @@
       "actionable": "AAPL strong technical position near highs. Q1 beat suggests momentum into 2026. Consider trimming position if approaching analyst high target ($350) or hold for $293 target (+5.3% upside). Next catalyst: Q2 earnings April 30.",
       "source": "Yahoo Finance",
       "confidence": "high"
+    },
+    {
+      "id": "intel-004",
+      "symbol": "AAPL",
+      "date": "2026-02-11T20:39:43.920033+00:00",
+      "title": "AAPL Q1 FY26 Record Earnings - Revenue $143.76B, Strong Product Demand",
+      "content": "# Apple Q1 FY26 Earnings - Record Performance\n\n## Key Metrics (as of Feb 11, 2026)\n- **Current Price:** $276.02 (+0.86% today, +19.18% over 1 year)\n- **Q1 FY26 Revenue:** $143.76B (record-breaking)\n- **Q1 FY26 Earnings:** $42.1B\n- **Market Cap:** $4.057T\n- **Next Earnings:** April 30, 2026\n\n## Analyst Sentiment\n- **Average Price Target:** $293.07 (+6.2% upside from current)\n- **Recent Action:** Jefferies raised PT from $276.47 \u2192 $286.54 (Hold rating, Jan 30)\n- **Consensus:** Outperform bias, strong institutional support\n\n## Performance vs S&P 500\n- **1-Year:** AAPL +19.18% vs S&P +14.42% (outperformance +4.76%)\n- **3-Year:** AAPL +85.43% vs S&P +69.75% (outperformance +15.68%)\n- **5-Year:** AAPL +109.72% vs S&P +77.29% (outperformance +32.43%)\n\n## Strategic Highlights\n- Record-breaking Q1 earnings driven by strong iPhone demand\n- Focusing on strategic partnerships (new card issuer)\n- Stable dividend policy: $1.04 annually (0.38% yield)\n- Ex-dividend date: Feb 9, 2026 (just passed)\n- Potential stock breakout amid strong product demand\n\n## Steven's Position Analysis\n- **Holdings:** $143K CAD (~$103K USD at 1.39 CAD/USD)\n- **Shares (estimated):** ~373 shares at $276.02\n- **Unrealized gain:** Strong positive (19.18% 1-year)\n- **Next dividend:** Q2 2026 (May/June timeframe)\n\n## Investment Thesis\nApple continues to execute at scale - Q1 FY26 revenue of $143.76B demonstrates sustained demand for iPhones and services ecosystem. The stock is trading near fair value (P/E 34.90 vs sector avg ~30), but analyst consensus sees 6% upside to $293 target. Strong cash generation ($106.31B levered FCF) supports ongoing buybacks and dividends.\n\n**Recommendation:** HOLD - Position is performing well (+19% YoY), analysts see modest upside, and April 30 earnings could be another catalyst. No action needed unless price hits $293+ (take profit) or drops below $260 (accumulate).\n",
+      "category": "earnings_report",
+      "impact": "positive",
+      "actionRequired": false,
+      "tags": [
+        "AAPL",
+        "earnings",
+        "Q1-FY26",
+        "record-revenue",
+        "hold-recommendation"
+      ],
+      "source": "Yahoo Finance, Jefferies, Market Data",
+      "confidence": 95
     }
   ],
   "synthesizedInsights": [
@@ -833,6 +852,6 @@
       "addedAt": "2026-02-09T11:50:00Z"
     }
   ],
-  "lastUpdated": "2026-02-11T16:33:22.651235+00:00",
+  "lastUpdated": "2026-02-11T20:39:43.920271+00:00",
   "dataSource": "Market Data"
 }
