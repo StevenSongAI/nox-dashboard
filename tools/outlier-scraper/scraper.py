@@ -79,8 +79,8 @@ class ViewStatsScraper:
     def _scrape_category(self, category_slug: str) -> list[dict]:
         """Scrape outlier videos from a single ViewStats category."""
         url = f"{self.BASE_URL}?category={category_slug}"
-        self.page.goto(url, wait_until="domcontentloaded", timeout=30000)
-        time.sleep(5)  # Wait for JS rendering
+        self.page.goto(url, wait_until="domcontentloaded", timeout=60000)
+        time.sleep(8)  # Wait for JS rendering — ViewStats is heavy
 
         # Check if we're on the login page
         if "/login" in self.page.url:
@@ -440,6 +440,7 @@ def main():
     parser.add_argument("--viewstats-only", action="store_true", help="Only scrape ViewStats")
     parser.add_argument("--youtube-only", action="store_true", help="Only scrape YouTube")
     parser.add_argument("--dry-run", action="store_true", help="Print actions without scraping")
+    parser.add_argument("--login", action="store_true", help="Open ViewStats login page and wait")
     args = parser.parse_args()
 
     # Load config
@@ -488,6 +489,24 @@ def main():
         context = browser.contexts[0] if browser.contexts else browser.new_context()
         page = context.new_page()
         print("✓ Connected to browser")
+
+        # Login mode — open ViewStats login and wait
+        if args.login:
+            print("\n🔐 Opening ViewStats login page...")
+            page.goto("https://www.viewstats.com/login", wait_until="domcontentloaded", timeout=30000)
+            print("   Log in to ViewStats in the browser window.")
+            print("   Press Enter here when done...")
+            input()
+            
+            # Verify login
+            page.goto("https://www.viewstats.com/pro/outliers", wait_until="domcontentloaded", timeout=30000)
+            time.sleep(3)
+            if "/login" not in page.url:
+                print("   ✅ Logged in successfully!")
+            else:
+                print("   ✗ Still not logged in. Try again.")
+            page.close()
+            return
 
         all_data = []
 
