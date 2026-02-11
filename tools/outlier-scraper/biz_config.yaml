@@ -1,0 +1,106 @@
+# Nox Business Intelligence Scraper Configuration
+
+# X.com search settings
+x:
+  queries:
+    # Pain points & complaints
+    - query: "AI video tool frustrated OR broken OR terrible OR worst"
+      category: pain_points
+    - query: "need a tool that OR wish there was OR someone build"
+      category: pain_points
+    - query: "YouTube automation frustrating OR difficult OR broken"
+      category: pain_points
+    
+    # Emerging tools & trends
+    - query: "just launched OR just shipped OR new AI tool"
+      category: emerging_tools
+    - query: "AI coding agent review OR comparison OR benchmark"
+      category: emerging_tools
+    - query: "Cursor OR Windsurf OR Claude Code OR Copilot review"
+      category: ai_coding
+    
+    # Business opportunities
+    - query: "looking for YouTube consultant OR YouTube strategy"
+      category: opportunities
+    - query: "AI content creation agency OR service"
+      category: opportunities
+    - query: "Minecraft builder commission OR hire"
+      category: opportunities
+    
+    # Industry trends
+    - query: "AI video generation 2026 OR Runway OR Pika OR Sora"
+      category: industry
+    - query: "YouTube algorithm 2026 change OR update"
+      category: industry
+    - query: "creator economy trend OR prediction 2026"
+      category: industry
+
+  count_per_query: 20
+
+# Reddit settings
+reddit:
+  subreddits:
+    # Business & SaaS
+    - name: SaaS
+      sort: hot
+      category: business
+    - name: Entrepreneur
+      sort: hot
+      category: business
+    - name: startups
+      sort: hot
+      category: business
+    
+    # AI & Tech
+    - name: artificial
+      sort: hot
+      category: ai_trends
+    - name: LocalLLaMA
+      sort: hot
+      category: ai_trends
+    - name: ChatGPT
+      sort: hot
+      category: ai_trends
+    
+    # Content creation
+    - name: NewTubers
+      sort: hot
+      category: youtube
+    - name: youtubers
+      sort: hot
+      category: youtube
+    - name: PartneredYoutube
+      sort: hot
+      category: youtube
+    
+    # Gaming & Minecraft
+    - name: Minecraft
+      sort: hot
+      category: gaming
+    - name: MinecraftBuilds
+      sort: hot
+      category: gaming
+    - name: gaming
+      sort: hot
+      category: gaming
+
+  search_queries:
+    - query: "AI video tool complaint"
+      category: pain_points
+    - query: "YouTube automation script"
+      category: opportunities
+    - query: "AI coding agent best"
+      category: emerging_tools
+
+  posts_per_sub: 15
+
+# Storage
+storage:
+  raw_data_dir: "biz_raw_data"
+  max_days_retention: 7
+
+# Dashboard integration
+dashboard:
+  repo_path: "~/Desktop/Nox Builds/nox-dashboard"
+  business_json: "data/new-business.json"
+  meta_json: "data/meta.json"
