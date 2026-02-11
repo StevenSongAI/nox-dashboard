@@ -2966,6 +2966,77 @@
       "priority": "extreme",
       "createdAt": "2026-02-11T09:50:00.097628+00:00",
       "notes": "This is the HIGHEST PERFORMING format discovered in recent ViewStats research. 4900x multiplier is exceptional. The Ice Dragon video is already structured for this format (7 stages planned). Execute this immediately."
+    },
+    {
+      "id": "brief-021",
+      "title": "I Tested Every AI Coding Assistant for 30 Days (Which One Actually Works?)",
+      "category": "Tech Review / Comparison",
+      "targetAudience": "Software developers, engineering managers, indie hackers evaluating AI tools",
+      "viralPotential": 92,
+      "productionCost": "$50-200",
+      "estimatedROI": "High - Evergreen content, affiliate opportunities",
+      "keyAngles": [
+        {
+          "angle": "Honest Battle Test Format",
+          "rationale": "30-day real-world usage beats marketing claims. Developers trust long-form experience over vendor benchmarks.",
+          "exampleHook": "I spent $500 and 200 hours testing EVERY AI coding tool. Here's what actually happened..."
+        },
+        {
+          "angle": "Cost-Benefit Breakdown",
+          "rationale": "Engineering managers need ROI data to justify tool purchases. Show dollar-per-productivity-gain analysis.",
+          "exampleHook": "This $10/month tool saved me 15 hours. This $200/month tool saved me 3 hours. Here's the math..."
+        },
+        {
+          "angle": "The One Everyone Gets Wrong",
+          "rationale": "Contrarian take on Cursor/Copilot dominance. Lesser-known tools (Cody, Continue, Windsurf) might outperform for specific use cases.",
+          "exampleHook": "Everyone uses Cursor. But this $8/month alternative crushed it at refactoring legacy code..."
+        }
+      ],
+      "contentStructure": {
+        "intro": "0:00-1:00 - Hook: 'I quit my IDE for 30 days and used only AI assistants. Here's what broke.'",
+        "setup": "1:00-3:00 - Testing methodology: 6 tools, same codebase (Node.js API + React frontend), tracked time/bugs/cost",
+        "testTools": [
+          "GitHub Copilot ($10/mo)",
+          "Cursor ($20/mo)",
+          "Windsurf (Free tier)",
+          "Cody by Sourcegraph ($9/mo)",
+          "Continue (Free, local)",
+          "Amazon Q Developer ($19/mo)"
+        ],
+        "evaluation": "3:00-12:00 - Tool-by-tool breakdown with screen recordings of actual usage (debugging, refactoring, new features)",
+        "results": "12:00-15:00 - Winner announced + tier list (S/A/B/C/D tiers based on productivity gain per dollar)",
+        "cta": "15:00-16:00 - 'Want the full comparison spreadsheet? Link in description. Subscribe for more honest dev tool reviews.'"
+      },
+      "visualStrategy": {
+        "thumbnail": "Split-screen: frustrated developer on left, same dev smiling on right. Text overlay: '30 DAYS LATER' with tool logos visible",
+        "bRoll": [
+          "Screen recordings of each tool in action (code completion, debugging, refactoring)",
+          "Time-lapse of coding sessions with productivity metrics overlay",
+          "Cost breakdown animations (bar charts comparing $/hour saved)",
+          "Before/After code quality comparisons"
+        ],
+        "onScreenGraphics": "Persistent scoreboard showing cumulative stats for each tool (lines written, bugs caught, time saved)"
+      },
+      "outcomeMetrics": {
+        "successIndicators": [
+          "CTR >10% (compelling thumbnail + hook)",
+          "AVD >8 minutes (detailed comparison keeps viewers engaged)",
+          "Affiliate revenue from tool signups (partner with Cursor, Sourcegraph, GitHub)",
+          "Community engagement (devs sharing their own experiences in comments)"
+        ],
+        "distribution": [
+          "YouTube Main",
+          "Dev Twitter/X (thread with key findings)",
+          "r/programming, r/webdev (case study post)",
+          "Hacker News (if methodology is rigorous enough)"
+        ]
+      },
+      "linksToPreviousWork": [
+        "opp-013 (AI Coding Agent Benchmarking Service - this video validates demand for independent testing)"
+      ],
+      "estimatedProductionTime": "40-60 hours (30 days testing + 10-15 hours editing + 5 hours scripting)",
+      "createdAt": "2026-02-11T08:38:36.110858",
+      "status": "draft"
     }
   ],
   "trendAnalysis": {
