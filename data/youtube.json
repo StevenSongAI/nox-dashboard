@@ -2843,6 +2843,57 @@
         "sinpoke Pokemon evolution video (676x)",
         "metalfear4 Minecraft Pokemon (15.3x)"
       ]
+    },
+    {
+      "id": "brief-evolution-stages-001",
+      "title": "What If [Creature] Had More Evolution Stages? - Mega-Viral Format",
+      "summary": "The 'What if X had more evolution stages?' format achieved 4900x and 676x outlier scores from a 10K subscriber channel (sinpoke). This is speculation + visual progression + familiar IP. Pokemon evolution content dominates with top outlier scores.",
+      "hook": "What if your favorite Pokemon/creature evolved 7 times instead of 3? I used AI to find out...",
+      "outline": [
+        "Hook (0-30s): Show final evolution form teaser - mysterious/dramatic reveal",
+        "Setup (30s-2min): Explain the concept - original has 2-3 stages, we're adding 4-7 more",
+        "Evolution Stages (2-12min): Progressive reveals - each stage shows clear visual evolution",
+        "  - Stage 1-3: Canon evolutions (quick recap)",
+        "  - Stage 4-5: Early speculation (plausible extensions)",
+        "  - Stage 6-7: Ultimate forms (dramatic power creep)",
+        "Design Logic (12-14min): Explain design decisions - why each stage looks the way it does",
+        "Comparison (14-16min): Side-by-side all stages, power scaling visualization",
+        "Viewer Poll (16-17min): 'Which stage is your favorite?' engagement hook"
+      ],
+      "targetLength": "16-18 min",
+      "difficulty": "medium",
+      "urgency": "extreme",
+      "production": {
+        "toolRequired": "Higgsfield Nano Banana Pro (or equivalent AI image generator)",
+        "estimatedCost": "$20-40 (AI image credits for 7+ evolution stages)",
+        "timeToProduceAssets": "2-4 hours (batch generation)",
+        "editingComplexity": "Low-Medium (mostly static images with transitions)"
+      },
+      "basedOn": [
+        "yt-viewstats-137 (4900x - Sprigatito evolution stages, 757K views on 10K subs)",
+        "yt-viewstats-026 (676x - Fuecoco evolution stages, 184K views on 10K subs)",
+        "Same creator (sinpoke) proves format is replicable"
+      ],
+      "expectedOutlierScore": 95,
+      "viralScore": 95,
+      "productionCost": "Low ($20-40)",
+      "targetRatio": "50-500x subscriber count",
+      "whyItWorks": [
+        "Speculation content creates curiosity gap",
+        "Visual progression is inherently satisfying",
+        "Familiar IP (Pokemon) provides built-in audience",
+        "Format is replicable across ANY creature (Ice Dragon, T-Rex, Minecraft mobs, Kaiju)",
+        "AI tools make production fast and cheap"
+      ],
+      "applicationToStevenProjects": {
+        "iceDragon": "Already planning 7-stage evolution - PERFECT FIT. This format is proven viral.",
+        "tRex": "7 stages: Baby T-Rex \u2192 Juvenile \u2192 Adult \u2192 Alpha \u2192 Titan \u2192 Ancient \u2192 Apex Predator",
+        "minecraftMobs": "Creeper evolution stages, Enderman evolution stages, Zombie evolution stages"
+      },
+      "status": "production-ready",
+      "priority": "extreme",
+      "createdAt": "2026-02-11T09:50:00.097628+00:00",
+      "notes": "This is the HIGHEST PERFORMING format discovered in recent ViewStats research. 4900x multiplier is exceptional. The Ice Dragon video is already structured for this format (7 stages planned). Execute this immediately."
     }
   ],
   "trendAnalysis": {
