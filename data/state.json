@@ -20,6 +20,11 @@
   "recentFeedback": [
     {
       "date": "2026-02-11",
+      "feedback": "Content briefs based on videos I'm already making are redundant. Content briefs have been pretty low effort and useless. If they don't improve, remove them from the dashboard.",
+      "implication": "CRITICAL: Only add content briefs if they provide genuine strategic value. Must be backed by outlier research, not speculation. Never create briefs for videos already in production. Low-effort briefs without research are worse than no briefs."
+    },
+    {
+      "date": "2026-02-11",
       "feedback": "ZMDE is one of my channels too, remove that from scrapers",
       "implication": "Removed ZMDE from YouTube scraper and cleaned 9 ZMDE videos from dashboard. Must verify channel ownership before monitoring."
     },
@@ -113,12 +118,26 @@
   ],
   "workThatFlopped": [
     {
+      "what": "Hot vs Cold content brief (brief-025)",
+      "why": "Created brief for video Steven is already making. Redundant. Content briefs have been 'pretty low effort and useless' - need to either improve quality or remove feature entirely.",
+      "date": "2026-02-11"
+    },
+    {
+      "what": "AI Coding Agents content brief (brief-021)",
+      "why": "Created brief for video Steven is already making. Scored 72% audit - lacking outlier research backing, just a planning document without strategic value.",
+      "date": "2026-02-11"
+    },
+    {
       "what": "NVDA Q4 Earnings Intelligence",
       "why": "Added comprehensive earnings preview for a stock Steven doesn't own. Should have verified portfolio first.",
       "date": "2026-02-11"
     }
   ],
   "lessonsLearned": [
+    {
+      "date": "2026-02-11",
+      "lesson": "Content briefs must provide genuine strategic value or they're useless. Never create briefs for videos already in production (Hot vs Cold, AI Coding Agents). Only add briefs backed by outlier research with clear opportunity signal. Low-effort speculation briefs damage dashboard credibility."
+    },
     {
       "date": "2026-02-11",
       "lesson": "Always ask which channels are Steven's before adding them to scrapers. @StevenSongIRL and @ZMDE are both his channels."
@@ -185,7 +204,9 @@
   "stevensDislikes": [
     "Broken functionality",
     "Empty placeholder data",
-    "JavaScript syntax errors"
+    "JavaScript syntax errors",
+    "Redundant content briefs for videos already in production",
+    "Low-effort content briefs without outlier research"
   ],
   "queuedImprovements": [
     "Document Higgsfield async batch optimization pattern",
