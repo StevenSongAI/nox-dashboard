@@ -10,7 +10,7 @@
       "entryPrice": 185.25,
       "avgCost": 185.25,
       "currentPrice": 274.55,
-      "totalValue": 13727.50,
+      "totalValue": 13727.5,
       "gainPercent": 48.21,
       "lastUpdated": "2026-02-10T15:30:00Z",
       "addedAt": "2026-02-08T20:00:00Z"
@@ -25,7 +25,7 @@
       "entryPrice": 138.5,
       "avgCost": 138.5,
       "currentPrice": 189.18,
-      "totalValue": 3783.60,
+      "totalValue": 3783.6,
       "gainPercent": 36.56,
       "lastUpdated": "2026-02-10T15:30:00Z",
       "addedAt": "2026-02-08T20:00:00Z",
@@ -591,7 +591,7 @@
       "date": "2026-02-10T12:26:00Z",
       "topic": "Morning Heartbeat: Portfolio Status + NVDA Earnings Countdown (13 Days)",
       "source": "Heartbeat Protocol / Market Intelligence",
-      "content": "Morning portfolio check-in (7:26 AM ET Feb 10): Portfolio ~$17,450 total (+45% gains). AAPL: 50 shares @ ~$273 (+47%). NVDA: 20 shares @ ~$190 (+37%). NVDA earnings 13 days out (Feb 25 AH). Strategy: HOLD - no changes within 13 days of earnings. Expected volatility \u00b18-12% post-announcement. Watchlist: AMD target $180, PLTR target $100. Key catalysts: Blackwell production ramp, supply constraints, China impact, Q1 guidance.",
+      "content": "Morning portfolio check-in (7:26 AM ET Feb 10): Portfolio ~$17,450 total (+45% gains). AAPL: 50 shares @ ~$273 (+47%). NVDA: 20 shares @ ~$190 (+37%). NVDA earnings 13 days out (Feb 25 AH). Strategy: HOLD - no changes within 13 days of earnings. Expected volatility ±8-12% post-announcement. Watchlist: AMD target $180, PLTR target $100. Key catalysts: Blackwell production ramp, supply constraints, China impact, Q1 guidance.",
       "impact": "neutral",
       "relatedPositions": [
         "pos-001",
@@ -607,7 +607,7 @@
         "ticker": "NVDA",
         "date": "2026-02-25",
         "daysRemaining": 13,
-        "expectedVolatility": "\u00b18-12%"
+        "expectedVolatility": "±8-12%"
       },
       "linkedIntelligence": [
         "intel-022",
@@ -620,7 +620,7 @@
       "date": "2026-02-10T12:46:00Z",
       "topic": "Heartbeat Update: NVDA 15-Day Earnings Countdown + Content Pipeline Status",
       "source": "Heartbeat Protocol / Portfolio + Production Tracking",
-      "content": "Scheduled heartbeat update (7:46 AM ET Feb 10):\n\n**Portfolio Status**\n- AAPL: 50 shares @ $273.04 (+47.39% gain) - Total: $13,652\n- NVDA: 20 shares @ $190.04 (+37.21% gain) - Total: $3,801\n- Combined Value: $17,453 (+45.2% unrealized)\n\n**NVDA Earnings Countdown: 15 Days (Feb 25 AH)**\nPosition strategy remains HOLD through earnings event. No additions or trims within 15 days of catalyst. Expected post-announcement volatility: \u00b18-12%. Key metrics to watch: Q4 Data Center Revenue (consensus $19.5B), Blackwell production ramp guidance, Q1 forward guidance, China export restriction impact.\n\n**Content Pipeline Update**\n- T-Rex Video (StevenSongIRL): Pre-production, map artist recruitment active. BuiltByBit account pending verification. Fiverr outreach queued (HIGH PRIORITY).\n- Dashboard Status: Fully operational post-Ralph-chain fixes. All tabs functional.\n- AI Coding Agents Brief: Ready for production (Trend Score 120).\n\n**Active Priorities**\n1. Complete map artist hiring for T-Rex video\n2. Monitor NVDA position through Feb 25 earnings\n3. Produce AI Coding Agents comparison pilot\n\nNo portfolio changes recommended until post-earnings (Feb 26+).",
+      "content": "Scheduled heartbeat update (7:46 AM ET Feb 10):\n\n**Portfolio Status**\n- AAPL: 50 shares @ $273.04 (+47.39% gain) - Total: $13,652\n- NVDA: 20 shares @ $190.04 (+37.21% gain) - Total: $3,801\n- Combined Value: $17,453 (+45.2% unrealized)\n\n**NVDA Earnings Countdown: 15 Days (Feb 25 AH)**\nPosition strategy remains HOLD through earnings event. No additions or trims within 15 days of catalyst. Expected post-announcement volatility: ±8-12%. Key metrics to watch: Q4 Data Center Revenue (consensus $19.5B), Blackwell production ramp guidance, Q1 forward guidance, China export restriction impact.\n\n**Content Pipeline Update**\n- T-Rex Video (StevenSongIRL): Pre-production, map artist recruitment active. BuiltByBit account pending verification. Fiverr outreach queued (HIGH PRIORITY).\n- Dashboard Status: Fully operational post-Ralph-chain fixes. All tabs functional.\n- AI Coding Agents Brief: Ready for production (Trend Score 120).\n\n**Active Priorities**\n1. Complete map artist hiring for T-Rex video\n2. Monitor NVDA position through Feb 25 earnings\n3. Produce AI Coding Agents comparison pilot\n\nNo portfolio changes recommended until post-earnings (Feb 26+).",
       "impact": "neutral",
       "relatedPositions": [
         "pos-001",
@@ -636,7 +636,7 @@
         "ticker": "NVDA",
         "date": "2026-02-25",
         "daysRemaining": 15,
-        "expectedVolatility": "\u00b18-12%"
+        "expectedVolatility": "±8-12%"
       },
       "contentPipeline": {
         "trexVideo": "pre-production - map artist hiring",
@@ -653,7 +653,7 @@
       "date": "2026-02-10T13:47:06Z",
       "topic": "Heartbeat Intelligence: NVDA Earnings 15-Day Countdown + Portfolio Status",
       "source": "Heartbeat Protocol / Market Intelligence",
-      "content": "Scheduled heartbeat update (8:46 AM ET Feb 10): Portfolio ~$17,450 total (+45% gains). AAPL: 50 shares @ $273.04 (+47%). NVDA: 20 shares @ $190.04 (+37%). NVDA earnings 15 days out (Feb 25 AH). Strategy: HOLD - no changes within 15 days of earnings. Expected volatility \u00b18-12% post-announcement. Watchlist: AMD target $180, PLTR target $100. Content pipeline: T-Rex video map artist recruitment active, AI Coding Agents 30-day comparison pilot ready to launch. Dashboard fully operational.",
+      "content": "Scheduled heartbeat update (8:46 AM ET Feb 10): Portfolio ~$17,450 total (+45% gains). AAPL: 50 shares @ $273.04 (+47%). NVDA: 20 shares @ $190.04 (+37%). NVDA earnings 15 days out (Feb 25 AH). Strategy: HOLD - no changes within 15 days of earnings. Expected volatility ±8-12% post-announcement. Watchlist: AMD target $180, PLTR target $100. Content pipeline: T-Rex video map artist recruitment active, AI Coding Agents 30-day comparison pilot ready to launch. Dashboard fully operational.",
       "impact": "neutral",
       "relatedPositions": [
         "pos-001",
@@ -669,7 +669,7 @@
         "ticker": "NVDA",
         "date": "2026-02-25",
         "daysRemaining": 15,
-        "expectedVolatility": "\u00b18-12%"
+        "expectedVolatility": "±8-12%"
       },
       "linkedIntelligence": [
         "intel-024",
@@ -684,7 +684,10 @@
       "source": "Heartbeat Protocol / Portfolio Intelligence",
       "content": "Scheduled heartbeat update (9:52 AM ET Feb 10):\n\n**Portfolio Status**\n- Total Value: ~$17,453 (+45.2% unrealized gains)\n- AAPL: 50 shares @ $273.04 (+47.39% / +$4,390) - 78% of portfolio\n- NVDA: 20 shares @ $190.04 (+37.21% / +$1,031) - 22% of portfolio\n\n**NVDA Earnings Countdown: 15 Days**\nEvent: Q4 FY2026 Earnings - February 25, 2026 (After Hours)\n\n**Key Metrics:**\n- Current Price: $190.04 (89% of 52-week high)\n- Day Range: $184.00 - $193.66 (volatility increasing)\n- Volume: 195.2M (above 181M average) - elevated pre-earnings interest\n- Analyst Target: $253.62 (+33% upside potential)\n- P/E: 47.04 | Forward P/E: 24.10\n\n**Earnings Expectations:**\n- Q4 Revenue: $19.5B consensus (+73% YoY)\n- Q4 EPS: $0.85 (vs $0.52 prior year)\n- Data Center: $17.5B expected (90% of revenue)\n- Gross Margin: 73-74% guidance range\n\n**Position Strategy: HOLD**\n- No changes within 15 days of earnings event\n- Expected post-announcement volatility: ±8-12%\n- Scenario targets: Bull $210-220 | Base $185-200 | Bear $160-175\n- AAPL provides portfolio stability ballast (78% allocation)\n\n**Watchlist:**\n- AMD: $208.44 - Entry target $180 (wait for post-earnings pullback)\n- PLTR: $135.90 - Entry target $100 (valuation stretched at 45x forward revenue)\n- TSLA: $245.50 - Monitoring robotaxi catalyst timeline\n\n**Content Pipeline:**\n- T-Rex video: Map artist recruitment priority (BuiltByBit + Fiverr)\n- AI Coding Agents brief: Ready for production (Trend Score 120)\n- Dashboard: Fully operational post-Ralph-chain completion",
       "impact": "neutral",
-      "relatedPositions": ["pos-001", "pos-002"],
+      "relatedPositions": [
+        "pos-001",
+        "pos-002"
+      ],
       "alerts": [
         "NVDA earnings 15 days out - maintain HOLD position",
         "Portfolio showing strong +45% combined gains",
@@ -697,7 +700,11 @@
         "daysRemaining": 15,
         "expectedVolatility": "±8-12%"
       },
-      "linkedIntelligence": ["intel-025", "intel-024", "intel-022"]
+      "linkedIntelligence": [
+        "intel-025",
+        "intel-024",
+        "intel-022"
+      ]
     },
     {
       "id": "intel-027",
@@ -706,7 +713,9 @@
       "source": "Yahoo Finance / Market Data",
       "content": "NVDA trading at $189.08 (-0.51%) as of Feb 10, 10:27 AM ET. Previous close $190.04. Intraday range: $188.12-$192.48. Volume 40.4M (below 181M avg, early session). Market cap $4.604T.\n\n**Key Developments:**\n- Jim Cramer highlighting NVDA getting 'big cut' of mega-cap AI CapEx spending\n- Bernstein rated top analyst (82/100) with Outperform rating\n- Jefferies maintained Buy (Jan 16), raised PT $250→$275\n- Analyst consensus: $253.62 avg target (34% upside), range $140-$352\n\n**Valuation Metrics:**\n- P/E (TTM): 46.69 | Forward P/E: 24.69\n- Profit Margin: 53.01% | ROE: 107.36%\n- Revenue (TTM): $187.14B | Net Income: $99.2B\n- Total Cash: $60.61B | Free Cash Flow: $53.28B\n\n**Earnings Countdown: 15 Days (Feb 25 AH)**\nPosition: 20 shares @ $138.50 cost basis = +37.2% unrealized gain. Portfolio value $3,780. Strategy remains HOLD through earnings event.",
       "impact": "bullish",
-      "relatedPositions": ["pos-002"],
+      "relatedPositions": [
+        "pos-002"
+      ],
       "alerts": [
         "NVDA -0.51% early session, normal pre-earnings volatility",
         "Analyst target $253 implies 34% upside",
@@ -726,7 +735,11 @@
         "analystTarget": 253.62,
         "daysToEarnings": 15
       },
-      "linkedIntelligence": ["intel-026", "intel-025", "intel-022"]
+      "linkedIntelligence": [
+        "intel-026",
+        "intel-025",
+        "intel-022"
+      ]
     },
     {
       "id": "intel-028",
@@ -735,7 +748,10 @@
       "source": "Yahoo Finance / Market Data",
       "content": "Portfolio mid-day update (Feb 10, 10:30 AM ET):\n\n**NVDA: $189.18 (-$0.66, -0.35%)**\n- Slight pullback from $189.84 previous close\n- Intraday range: $188.12-$192.48\n- Volume: 40.4M (below 181M average, early session)\n- Position: 20 shares @ $189.18 = $3,783.60 (+36.56% gain)\n\n**AAPL: $274.55 (+$0.51, +0.19%)**\n- Continuing momentum near 52-week highs\n- Position: 50 shares @ $274.55 = $13,727.50 (+48.21% gain)\n\n**Portfolio Summary:**\n- Total Value: $17,511.10\n- Combined Unrealized Gain: +45.4%\n- AAPL: 78.4% of portfolio | NVDA: 21.6%\n\n**NVDA Earnings Countdown: 15 Days (Feb 25 AH)**\n- Current price at 89% of 52-week high ($212.19)\n- Analyst target: $253.62 (+34% upside potential)\n- Position strategy: HOLD through earnings\n- Expected post-announcement volatility: ±8-12%",
       "impact": "neutral",
-      "relatedPositions": ["pos-001", "pos-002"],
+      "relatedPositions": [
+        "pos-001",
+        "pos-002"
+      ],
       "alerts": [
         "NVDA -0.35% mid-day, normal pre-earnings consolidation",
         "AAPL +0.19%, continuing strength near highs",
@@ -750,11 +766,49 @@
         "aaplPrice": 274.55,
         "aaplChange": 0.51,
         "aaplChangePercent": 0.19,
-        "portfolioValue": 17511.10,
+        "portfolioValue": 17511.1,
         "portfolioGainPercent": 45.4,
         "daysToEarnings": 15
       },
-      "linkedIntelligence": ["intel-027", "intel-026", "intel-022"]
+      "linkedIntelligence": [
+        "intel-027",
+        "intel-026",
+        "intel-022"
+      ]
+    },
+    {
+      "id": "intel-030",
+      "addedAt": "2026-02-11T00:14:53.738105+00:00",
+      "symbol": "NVDA",
+      "source": "Yahoo Finance + market analysis",
+      "type": "earnings_preview",
+      "title": "NVDA Q4 FY2025 Earnings Preview - Feb 25, 2026",
+      "summary": "NVIDIA earnings scheduled for Feb 25, 2026 (15 days out). Current price $188.54, down from 52-week high of $212.19. Analyst 1-year target: $253.62 (+34% upside). Market cap: $4.59T. PE ratio: 46.55 (premium valuation).",
+      "keyPoints": [
+        "Earnings date confirmed: Feb 25, 2026",
+        "Current price: $188.54 (after-hours: $188.81)",
+        "52-week range: $86.62 - $212.19 (currently -11% from high)",
+        "Analyst consensus target: $253.62 (+34% upside potential)",
+        "Market cap: $4.59 trillion",
+        "PE ratio: 46.55 (premium to tech sector avg ~30)",
+        "Strong AI positioning: Data center accelerated computing platforms driving growth",
+        "Recent collaborations indicate robust AI demand"
+      ],
+      "implications": [
+        "Stock trading 11% below 52-week high — potential entry/add opportunity before earnings",
+        "Premium valuation (PE 46.55) priced for continued growth — earnings miss could trigger selloff",
+        "Analyst targets suggest 34% upside — market expects continued AI dominance",
+        "Earnings volatility likely: NVDA historically moves 5-10% post-earnings"
+      ],
+      "actionableInsight": "HOLD current position through earnings. If considering adding: Wait for earnings reaction. Premium valuation leaves little margin for error. Strong AI fundamentals support long-term hold, but short-term volatility expected around Feb 25.",
+      "tags": [
+        "earnings",
+        "AI",
+        "data-center",
+        "high-conviction"
+      ],
+      "sentiment": "bullish-cautious",
+      "confidenceLevel": "high"
     }
   ],
   "synthesizedInsights": [
