@@ -1841,6 +1841,29 @@
       "url": "https://www.youtube.com/watch?v=95ZheTwE3x4",
       "researchStatus": "completed",
       "source": "viewstats outlier research - hourly cron"
+    },
+    {
+      "id": "yt-zmde-001",
+      "videoId": "uRDBco-cSK4",
+      "title": "Scientists Trapped 1000 AIs in Minecraft. They Created A Civilization.",
+      "channel": "ZMDE Gaming",
+      "channelId": "@ZMDE",
+      "publishedAt": "2026-02-11",
+      "viewCount": 0,
+      "score": null,
+      "category": "AI Civilization Simulation",
+      "tags": [
+        "minecraft",
+        "ai",
+        "simulation",
+        "civilization",
+        "1000-ais"
+      ],
+      "addedAt": "2026-02-11T18:18:02.142367+00:00",
+      "source": "Steven manual addition",
+      "formatType": "AI Civilization",
+      "viralMechanism": "AI emergent behavior + scale (1000 AIs)",
+      "notes": "AI civilization experiment format - 1000 AIs trapped in Minecraft create emergent society. Fits ZMDE's simulation content strategy."
     }
   ],
   "competitorResearchQueue": [
@@ -3509,5 +3532,7 @@
     "totalOutliers": 126,
     "totalBriefs": 15,
     "lastResearch": "2026-02-10T15:00:00Z"
-  }
+  },
+  "totalOutliers": 125,
+  "lastUpdated": "2026-02-11T18:18:02.142556+00:00"
 }

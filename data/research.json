@@ -173,8 +173,34 @@
       "status": "active_research",
       "priority": "high",
       "project": "stevensongirl Production Scaling"
+    },
+    {
+      "id": "note-041",
+      "title": "AI Music Scoring & Sound Effects Tools - Production Workflow Research",
+      "date": "2026-02-11T18:19:08.092562+00:00",
+      "tags": [
+        "AI-music",
+        "sound-effects",
+        "production-tools",
+        "workflow-automation",
+        "audio-generation"
+      ],
+      "content": "# AI Music Scoring & Sound Effects Tools Research\n\n## Executive Summary\nMultiple AI tools can now generate royalty-free music and sound effects from text descriptions. This could significantly reduce editor workload for music selection and SFX creation in stevensongirl videos.\n\n## Current Workflow Bottleneck\n**Editor currently does:**\n- Browse Epidemic Sound library for appropriate tracks (15-30 min per video)\n- Match music mood to scene pacing\n- Select/create sound effects for key moments\n- Sync audio to video timing\n\n**Time spent on audio per video:** 2-4 hours\n\n## Top AI Audio Tools\n\n### 1. ElevenLabs Sound Effects (Recommended)\n**URL:** https://elevenlabs.io/sound-effects\n**Capability:** Text-to-sound effects generation\n**Pricing:** Free tier available, paid plans for heavy use\n**Pros:**\n- Instant generation (4 samples in seconds)\n- Precise text control (e.g., \"dragon roar, deep, cinematic\")\n- Royalty-free\n- Already using ElevenLabs for TTS (Chris voice)\n**Cons:**\n- No musical scoring (SFX only)\n**Best For:** Creature sounds, environment audio, action SFX\n\n### 2. Suno AI Music\n**URL:** https://suno.com\n**Capability:** Full song generation from text prompts\n**Pricing:** Free tier (10 songs/day), Pro $10/month\n**Pros:**\n- Generates complete songs with lyrics or instrumental\n- Multiple styles (epic cinematic, ambient, electronic)\n- Commercial license available\n- Can specify mood, tempo, instruments\n**Cons:**\n- Songs can be hit-or-miss\n- Less control over specific timing\n**Best For:** Background music, intro/outro themes\n\n### 3. Udio AI Music\n**URL:** https://udio.com\n**Capability:** Music generation with high fidelity\n**Pricing:** Free tier, paid plans available\n**Pros:**\n- Professional quality output\n- Good for cinematic/epic scores\n- Customizable length and style\n**Cons:**\n- Newer tool, less mature than Suno\n**Best For:** Cinematic scores for dramatic scenes\n\n### 4. AIVA (Artificial Intelligence Virtual Artist)\n**URL:** https://aiva.ai\n**Capability:** Classical/cinematic music composition\n**Pricing:** Free for non-commercial, licenses for commercial use\n**Pros:**\n- Orchestral/cinematic focus\n- MIDI export for editing\n- Style presets (trailer, documentary, etc.)\n**Cons:**\n- More traditional/classical leaning\n- Less modern/pop styles\n**Best For:** Epic orchestral scores, documentary-style music\n\n### 5. Soundraw\n**URL:** https://soundraw.io\n**Capability:** AI music generation with editing controls\n**Pricing:** $16.99/month for creators\n**Pros:**\n- Customize song structure (intro, build, drop, etc.)\n- Stem separation (isolate instruments)\n- Direct video timing controls\n**Cons:**\n- Paid only (no free tier)\n**Best For:** Precise timing control, customizable tracks\n\n## Workflow Integration Recommendations\n\n### Phase 1: Sound Effects (Immediate Win)\n**Tool:** ElevenLabs Sound Effects\n**Integration:**\n1. Editor uses text prompts to generate creature sounds, environment audio\n2. Example prompts for Ice Dragon video:\n   - \"dragon wing flap, massive, cinematic\"\n   - \"ice crackling, magical, deep\"\n   - \"roar, deep, menacing, reverb\"\n   - \"wind howling through mountains\"\n3. Download and sync to video\n**Time Savings:** 30-60 min per video\n\n### Phase 2: Background Music (High Impact)\n**Tool:** Suno or Soundraw\n**Integration:**\n1. Generate 3-5 instrumental tracks matching video mood\n2. Test against footage\n3. Select best fit, adjust timing in editor\n**Example prompts:**\n- \"Epic cinematic orchestral, building tension, 2 minutes, no vocals\"\n- \"Ambient magical atmosphere, mysterious, 3 minutes\"\n- \"Action electronic, fast tempo, intense, 90 seconds\"\n**Time Savings:** 1-2 hours per video (vs browsing Epidemic Sound)\n\n### Phase 3: Full Audio Automation (Future)\n**Vision:** AI generates music + SFX based on scene analysis\n- Upload video segment\n- AI analyzes mood, pacing, action\n- Auto-generates matching audio\n- Editor fine-tunes\n**Tools to Watch:** Runway ML (expanding audio features), Pika Labs\n\n## Cost Comparison\n\n| Tool | Monthly Cost | Usage | ROI |\n|------|-------------|-------|-----|\n| ElevenLabs SFX | Free-$22 | Unlimited SFX | High (saves 30-60 min/video) |\n| Suno | Free-$10 | 10-500 songs | High (saves 1-2 hrs/video) |\n| Soundraw | $17 | Unlimited | Medium (more control, but paid) |\n| Epidemic Sound | $15 | Library access | Current tool, keep for variety |\n\n**Recommended Stack:**\n- ElevenLabs SFX (free tier sufficient)\n- Suno Pro ($10/month for commercial license)\n- Keep Epidemic Sound as backup for specific tracks\n\n## Testing Plan\n\n### Week 1: ElevenLabs SFX\n- Test with Ice Dragon video\n- Generate 10-15 key sound effects\n- Measure time vs manual selection\n- Quality assessment\n\n### Week 2: Suno Music\n- Generate 3 background tracks for T-Rex video\n- Compare to Epidemic Sound selection\n- Test commercial licensing\n- Editor feedback\n\n### Week 3: Integration\n- Update editor workflow documentation\n- Add AI audio tools to editor test project\n- Measure total time savings per video\n\n## Expected Impact\n\n**Time Savings Per Video:**\n- Music selection: 1-2 hours \u2192 15-30 min (AI generation + selection)\n- SFX creation: 30-60 min \u2192 10-15 min (text generation)\n- **Total: 2-3 hours saved per video**\n\n**Editor Hiring Impact:**\n- Less audio expertise required\n- Focus shifts to pacing/composition\n- Could reduce editor cost or increase output\n\n## Next Steps\n1. Test ElevenLabs SFX with Ice Dragon scenes\n2. Generate sample tracks with Suno for T-Rex\n3. Update editor job requirements to include AI audio tools\n4. Add to editor training materials\n\n## Linked to Active Tasks\n- opp-015: SeeDream 2 evaluation (both are workflow automation tools)\n- active-002: Editor hiring (update requirements if AI audio tools viable)\n- stevensongirl Production Scaling project\n",
+      "sourceUrls": [
+        "https://elevenlabs.io/sound-effects",
+        "https://suno.com",
+        "https://udio.com",
+        "https://aiva.ai",
+        "https://soundraw.io"
+      ],
+      "category": "Production Tools Research",
+      "linkedYouTubeIds": [],
+      "confidence": 85,
+      "status": "ready_to_test",
+      "priority": "high",
+      "project": "stevensongirl Production Scaling"
     }
   ],
-  "totalNotes": 9,
-  "lastUpdated": "2026-02-11T17:40:04.701474+00:00"
+  "totalNotes": 10,
+  "lastUpdated": "2026-02-11T18:19:08.092766+00:00"
 }
