@@ -765,6 +765,30 @@
         "intel-026",
         "intel-022"
       ]
+    },
+    {
+      "id": "intel-003",
+      "symbol": "AAPL",
+      "date": "2026-02-11T16:33:22.651044+00:00",
+      "type": "market_update",
+      "title": "AAPL Trading Near 52-Week High \u2014 Q1 FY26 Beat Expectations",
+      "summary": "Apple trading at $278.22 (up 1.66% today), approaching 52-week high of $288.62. Q1 FY26 revenue $143.76B, earnings $42.1B exceeded estimates. Next earnings April 30, 2026. Analysts target $293.07 average (+5.3% upside).",
+      "details": [
+        "**Current Price:** $278.22 (+$4.54, +1.66% today)",
+        "**52-Week Range:** $169.21 - $288.62 (currently 96.4% of range)",
+        "**Market Cap:** $4.089T",
+        "**Recent Performance:** 1-year return +20.12% vs S&P 500 +14.36%",
+        "**Q1 FY26 Results:** Revenue $143.76B, Earnings $42.1B",
+        "**Next Earnings:** April 30, 2026",
+        "**Analyst Consensus:** Average target $293.07 (+5.3% upside)",
+        "**Recent Rating:** Jefferies raised price target to $286.54 (Hold rating, 1/30/2026)",
+        "**Valuation:** P/E 35.17 (TTM), Forward P/E 32.36",
+        "**Catalysts:** Xcode software updates, Apple Card partnership, App Store regulatory changes"
+      ],
+      "impact": "positive",
+      "actionable": "AAPL strong technical position near highs. Q1 beat suggests momentum into 2026. Consider trimming position if approaching analyst high target ($350) or hold for $293 target (+5.3% upside). Next catalyst: Q2 earnings April 30.",
+      "source": "Yahoo Finance",
+      "confidence": "high"
     }
   ],
   "synthesizedInsights": [
@@ -809,6 +833,6 @@
       "addedAt": "2026-02-09T11:50:00Z"
     }
   ],
-  "lastUpdated": "2026-02-10T14:52:00Z",
+  "lastUpdated": "2026-02-11T16:33:22.651235+00:00",
   "dataSource": "Market Data"
 }
