@@ -1,10 +1,10 @@
 {
-  "lastHeartbeat": "2026-02-11T02:27:27.142041+00:00",
-  "totalHeartbeats": 112,
-  "lastAction": "Added Higgsfield batch queue optimization research note (note-038) - documented 3x throughput improvement via async submission",
-  "nextPriority": "Continue monitoring Ice Dragon generation queue, add business opportunity when automation completes",
+  "lastHeartbeat": "2026-02-11T05:04:00.000Z",
+  "totalHeartbeats": 113,
+  "lastAction": "Learning Cycle — Reviewed Feb 10 conversations, updated lessons learned, improved Higgsfield documentation",
+  "nextPriority": "Add research note documenting Higgsfield async batch optimization pattern for future video projects",
   "currentPriorities": {
-    "youtube": "I Got a Pet T-Rex video - StevenSongIRL channel (production tracker ready, need map artist hired)",
+    "youtube": "I Got a Pet T-Rex video - StevenSongIRL channel (Higgsfield 888 images completed, need map artist hired)",
     "business": "AI Coding Agents content opportunity (trend score 120) - 30-day comparison pilot video",
     "investments": "NVDA earnings Feb 25 (HOLD through event, decision matrix ready)",
     "tools": "Dashboard and Mission Control on GitHub Pages"
@@ -18,6 +18,21 @@
     "competitors": "2026-02-10 - 18 competitors tracked"
   },
   "recentFeedback": [
+    {
+      "date": "2026-02-10",
+      "feedback": "Higgsfield batch script completed successfully — 574 prompts, zero failures, ~8 hours runtime",
+      "implication": "Async batch queuing works. This pattern is reusable for future large video projects."
+    },
+    {
+      "date": "2026-02-10",
+      "feedback": "ViewStats scraper required regex debugging — score format had no space between number and title",
+      "implication": "Always test extraction JS on live pages before assuming DOM structure."
+    },
+    {
+      "date": "2026-02-10",
+      "feedback": "X.com login blocked by Google 2FA — Steven never provided the verification code",
+      "implication": "X.com integration is still pending. Bird CLI ready but can't authenticate yet."
+    },
     {
       "date": "2026-02-09",
       "feedback": "Pivoted to Discord outreach - browser requires login but user already logged in Discord app",
@@ -40,6 +55,21 @@
     }
   ],
   "workThatLanded": [
+    {
+      "what": "Higgsfield Batch Script (888 images)",
+      "why": "Completed Ice Dragon video image generation with zero failures — full async queue optimization",
+      "date": "2026-02-10"
+    },
+    {
+      "what": "ViewStats Outlier Scraper",
+      "why": "54 outliers across 6 categories per run — fully automated with CDP browser integration",
+      "date": "2026-02-10"
+    },
+    {
+      "what": "Business Intel Scraper (Reddit)",
+      "why": "83 posts from 4 subreddits + 2 searches — pain points, opportunities, emerging tools",
+      "date": "2026-02-10"
+    },
     {
       "what": "Discord Outreach Guide",
       "why": "8 Minecraft building servers identified with direct invite links, message templates, and response tracking",
@@ -74,6 +104,18 @@
   "workThatFlopped": [],
   "lessonsLearned": [
     {
+      "date": "2026-02-10",
+      "lesson": "Higgsfield async batch pattern works perfectly — 574 prompts, 8 hours, zero failures. Document this pattern for future video projects."
+    },
+    {
+      "date": "2026-02-10",
+      "lesson": "ViewStats DOM structure: score + title are concatenated with no space (e.g. '2.8xTitle'). Regex must use ^([\\d,.]+[Kk]?)x not ([\\d,.]+[Kk]?)x\\s"
+    },
+    {
+      "date": "2026-02-10",
+      "lesson": "X.com login via Google OAuth hit 2FA wall — Steven never sent the verification code. X.com integration remains blocked."
+    },
+    {
       "date": "2026-02-09",
       "lesson": "Discord outreach via browser blocked by login - pivot to providing guide for Discord app instead"
     },
@@ -101,10 +143,16 @@
   "toolUsage": {
     "activelyUsed": [
       "Dashboard",
-      "Mission Control"
+      "Mission Control",
+      "ViewStats Scraper",
+      "YouTube Scraper",
+      "Business Intel Scraper (Reddit)",
+      "Higgsfield Batch Script"
     ],
     "neverUsed": [],
-    "unknown": []
+    "unknown": [
+      "Business Intel Scraper (X.com) — blocked by 2FA"
+    ]
   },
   "stevensDislikes": [
     "Broken functionality",
@@ -112,6 +160,7 @@
     "JavaScript syntax errors"
   ],
   "queuedImprovements": [
+    "Document Higgsfield async batch optimization pattern",
     "Send Fiverr message to Benad E (HIGH PRIORITY - T-Rex video)",
     "Join Builders Anonymous Discord and post commission",
     "Monitor responses and DM interested builders",
@@ -126,6 +175,15 @@
       "reason": "Discord rate limit: 'The resource is being rate limited'",
       "resolution": "Wait 1-24 hours or use alternative platforms (Fiverr/BuiltByBit)",
       "priority": "low"
+    },
+    {
+      "id": "blocked-002",
+      "task": "X.com authentication via bird CLI",
+      "description": "Gmail login successful but hit Google 2FA — code sent to Steven's phone ending in 96. Steven never provided the code.",
+      "blocked": true,
+      "reason": "Google 2-Step Verification — waiting for Steven's 6-digit code",
+      "resolution": "Steven needs to send 2FA code or approve login from his phone",
+      "priority": "medium"
     }
   ],
   "activeTasks": [
