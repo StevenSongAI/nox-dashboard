@@ -106,98 +106,75 @@ class ViewStatsScraper:
         outliers = []
 
         try:
-            # Extract data using JavaScript — ViewStats renders a table/grid of outlier videos
-            data = self.page.evaluate("""() => {
+            # ViewStats renders outlier cards as <a> links with href containing /pro/outliers/{videoId}
+            # Each card has: score (e.g. "10.4Kx"), title (paragraph), channel (paragraph), 
+            # metadata text ("9.0K subs 75K views • 2 years ago")
+            data = self.page.evaluate(r"""() => {
                 const results = [];
                 
-                // ViewStats outlier cards/rows — try multiple selectors
-                const cards = document.querySelectorAll('[class*="outlier"], [class*="video-card"], tr[class*="row"], [class*="VideoCard"]');
-                
-                if (cards.length === 0) {
-                    // Fallback: try to get data from any table rows
-                    const rows = document.querySelectorAll('table tbody tr, [role="row"]');
-                    rows.forEach(row => {
-                        const cells = row.querySelectorAll('td, [role="cell"], div');
-                        const links = row.querySelectorAll('a[href*="youtube.com"], a[href*="youtu.be"]');
-                        const text = row.textContent || '';
-                        
-                        // Look for outlier score pattern (e.g., "125x", "50.3x")
-                        const scoreMatch = text.match(/([\d,.]+)x/);
-                        
-                        if (scoreMatch) {
-                            const entry = {
-                                title: '',
-                                score: parseFloat(scoreMatch[1].replace(',', '')),
-                                views: '',
-                                channel: '',
-                                videoUrl: '',
-                                thumbnailUrl: '',
-                                publishedAt: '',
-                                rawText: text.substring(0, 500)
-                            };
-                            
-                            // Extract title from links or first prominent text
-                            const titleEl = row.querySelector('a[href*="youtube"], h3, h4, [class*="title"]');
-                            if (titleEl) {
-                                entry.title = titleEl.textContent.trim();
-                                if (titleEl.href) entry.videoUrl = titleEl.href;
-                            }
-                            
-                            // Extract channel name
-                            const channelEl = row.querySelector('[class*="channel"], [class*="author"]');
-                            if (channelEl) entry.channel = channelEl.textContent.trim();
-                            
-                            // Extract view count
-                            const viewsMatch = text.match(/([\d,.]+[KMB]?)\s*views/i);
-                            if (viewsMatch) entry.views = viewsMatch[1];
-                            
-                            // Extract thumbnail
-                            const img = row.querySelector('img[src*="ytimg"], img[src*="thumbnail"]');
-                            if (img) entry.thumbnailUrl = img.src;
-                            
-                            // Extract YouTube URL from any link
-                            if (!entry.videoUrl && links.length > 0) {
-                                entry.videoUrl = links[0].href;
-                            }
-                            
-                            if (entry.score >= 1) {
-                                results.push(entry);
-                            }
-                        }
-                    });
-                }
+                // Find all outlier card links — they link to /pro/outliers/{videoId}
+                const cards = document.querySelectorAll('a[href*="/pro/outliers/"]');
+                const seen = new Set();
                 
                 cards.forEach(card => {
-                    const text = card.textContent || '';
-                    const scoreMatch = text.match(/([\d,.]+)x/);
+                    const href = card.getAttribute('href') || '';
+                    // Extract video ID from href like /pro/outliers/l2wj6lJtg_8?category=...
+                    const videoIdMatch = href.match(/\/pro\/outliers\/([^?&]+)/);
+                    if (!videoIdMatch) return;
+                    const videoId = videoIdMatch[1];
                     
+                    // Skip duration-only links (short text like "01:31")
+                    const text = card.textContent.trim();
+                    if (text.length < 20) return;
+                    
+                    // Deduplicate by videoId (each card has 2 links: thumbnail + info)
+                    if (seen.has(videoId)) return;
+                    seen.add(videoId);
+                    
+                    const entry = {
+                        videoId: videoId,
+                        videoUrl: 'https://www.youtube.com/watch?v=' + videoId,
+                        title: '',
+                        score: 0,
+                        channel: '',
+                        subs: '',
+                        views: '',
+                        publishedAt: '',
+                        thumbnailUrl: ''
+                    };
+                    
+                    // Score is the first text element (e.g. "2.8x", "10.4Kx", "404x")
+                    const scoreMatch = text.match(/^([\d,.]+[Kk]?)x/);
                     if (scoreMatch) {
-                        const entry = {
-                            title: '',
-                            score: parseFloat(scoreMatch[1].replace(',', '')),
-                            views: '',
-                            channel: '',
-                            videoUrl: '',
-                            thumbnailUrl: '',
-                            publishedAt: '',
-                            rawText: text.substring(0, 500)
-                        };
-                        
-                        const titleEl = card.querySelector('a, h3, h4, [class*="title"]');
-                        if (titleEl) {
-                            entry.title = titleEl.textContent.trim();
-                            if (titleEl.href) entry.videoUrl = titleEl.href;
+                        let scoreStr = scoreMatch[1].replace(',', '');
+                        if (scoreStr.toLowerCase().endsWith('k')) {
+                            entry.score = parseFloat(scoreStr.slice(0, -1)) * 1000;
+                        } else {
+                            entry.score = parseFloat(scoreStr);
                         }
-                        
-                        const channelEl = card.querySelector('[class*="channel"], [class*="author"]');
-                        if (channelEl) entry.channel = channelEl.textContent.trim();
-                        
-                        const img = card.querySelector('img');
-                        if (img) entry.thumbnailUrl = img.src;
-                        
-                        if (entry.score >= 1) {
-                            results.push(entry);
-                        }
+                    }
+                    
+                    // Paragraphs: first = title, second = channel
+                    const paragraphs = card.querySelectorAll('p');
+                    if (paragraphs.length >= 1) entry.title = paragraphs[0].textContent.trim();
+                    if (paragraphs.length >= 2) entry.channel = paragraphs[1].textContent.trim();
+                    
+                    // Metadata: "3.1M subs 3.61M views • 4 years ago"
+                    const subsMatch = text.match(/([\d.]+[KMB]?)\s*subs/i);
+                    if (subsMatch) entry.subs = subsMatch[1];
+                    
+                    const viewsMatch = text.match(/([\d.]+[KMB]?)\s*views/i);
+                    if (viewsMatch) entry.views = viewsMatch[1];
+                    
+                    const ageMatch = text.match(/•\s*(.+ago)/i);
+                    if (ageMatch) entry.publishedAt = ageMatch[1].trim();
+                    
+                    // Thumbnail
+                    const img = card.querySelector('img');
+                    if (img && img.src) entry.thumbnailUrl = img.src;
+                    
+                    if (entry.title && entry.score > 0) {
+                        results.push(entry);
                     }
                 });
                 
@@ -485,9 +462,32 @@ def main():
             print("  Make sure OpenClaw browser is running (openclaw browser start)")
             sys.exit(1)
 
-        # Use existing context or create new page
+        # Use existing context — CDP requires reusing context for cookies
         context = browser.contexts[0] if browser.contexts else browser.new_context()
+        # Open a new page in the same context for scraping
         page = context.new_page()
+        
+        # If ViewStats cookies aren't available on new pages (CDP limitation),
+        # try to copy cookies from an existing ViewStats page
+        existing_pages = context.pages
+        vs_page = None
+        for p in existing_pages:
+            if "viewstats.com" in (p.url or ""):
+                vs_page = p
+                break
+        
+        if vs_page and vs_page != page:
+            try:
+                cookies = context.cookies("https://www.viewstats.com")
+                if not cookies:
+                    # CDP contexts sometimes need cookies added manually
+                    # Navigate the existing VS page to extract cookies via JS
+                    raw_cookies = vs_page.evaluate("() => document.cookie")
+                    if raw_cookies:
+                        print(f"  ℹ Using cookies from existing ViewStats tab")
+            except Exception:
+                pass
+        
         print("✓ Connected to browser")
 
         # Login mode — open ViewStats login and wait
