@@ -5,45 +5,35 @@
       "ticker": "AAPL",
       "symbol": "AAPL",
       "name": "Apple Inc.",
-      "quantity": 50,
-      "shares": 50,
-      "entryPrice": 185.25,
-      "avgCost": 185.25,
+      "quantity": 380,
+      "shares": 380,
+      "entryPrice": 274.55,
+      "avgCost": 274.55,
       "currentPrice": 274.55,
-      "totalValue": 13727.5,
-      "gainPercent": 48.21,
-      "lastUpdated": "2026-02-10T15:30:00Z",
-      "addedAt": "2026-02-08T20:00:00Z"
+      "totalValue": 104329.0,
+      "gainPercent": 0.0,
+      "lastUpdated": "2026-02-11T12:07:00.469217+00:00",
+      "addedAt": "2026-02-11T12:00:00Z",
+      "note": "Approximate position based on $143K CAD total value. Entry price unknown - using current price as placeholder."
     },
     {
       "id": "pos-002",
-      "ticker": "NVDA",
-      "symbol": "NVDA",
-      "name": "NVIDIA Corp",
-      "quantity": 20,
-      "shares": 20,
-      "entryPrice": 138.5,
-      "avgCost": 138.5,
-      "currentPrice": 189.18,
-      "totalValue": 3783.6,
-      "gainPercent": 36.56,
-      "lastUpdated": "2026-02-10T15:30:00Z",
-      "addedAt": "2026-02-08T20:00:00Z",
-      "note": "Post-split cost basis adjusted (10:1 split June 2024). Original pre-split basis ~$1385."
+      "ticker": "BTC",
+      "symbol": "BTC-USD",
+      "name": "Bitcoin",
+      "quantity": 0.5,
+      "shares": 0.5,
+      "entryPrice": 98500,
+      "avgCost": 98500,
+      "currentPrice": 98500,
+      "totalValue": 49250.0,
+      "gainPercent": 0.0,
+      "lastUpdated": "2026-02-11T12:07:00.469416+00:00",
+      "addedAt": "2026-02-11T12:00:00Z",
+      "note": "Entry price unknown - using current price as placeholder."
     }
   ],
   "marketOpportunities": [
-    {
-      "id": "opp-001",
-      "sector": "AI Infrastructure",
-      "ticker": "NVDA",
-      "name": "NVIDIA",
-      "signal": "Earnings momentum",
-      "source": "X.com / Earnings",
-      "confidence": "high",
-      "notes": "Blackwell chip demand exceeding supply through mid-2026. Data center revenue +93% YoY.",
-      "addedAt": "2026-02-07T20:00:00Z"
-    },
     {
       "id": "opp-002",
       "sector": "AI/Data Analytics",
@@ -774,56 +764,6 @@
         "intel-027",
         "intel-026",
         "intel-022"
-      ]
-    },
-    {
-      "id": "intel-030",
-      "addedAt": "2026-02-11T00:14:53.738105+00:00",
-      "symbol": "NVDA",
-      "source": "Yahoo Finance + market analysis",
-      "type": "earnings_preview",
-      "title": "NVDA Q4 FY2025 Earnings Preview - Feb 25, 2026",
-      "summary": "NVIDIA earnings scheduled for Feb 25, 2026 (15 days out). Current price $188.54, down from 52-week high of $212.19. Analyst 1-year target: $253.62 (+34% upside). Market cap: $4.59T. PE ratio: 46.55 (premium valuation).",
-      "keyPoints": [
-        "Earnings date confirmed: Feb 25, 2026",
-        "Current price: $188.54 (after-hours: $188.81)",
-        "52-week range: $86.62 - $212.19 (currently -11% from high)",
-        "Analyst consensus target: $253.62 (+34% upside potential)",
-        "Market cap: $4.59 trillion",
-        "PE ratio: 46.55 (premium to tech sector avg ~30)",
-        "Strong AI positioning: Data center accelerated computing platforms driving growth",
-        "Recent collaborations indicate robust AI demand"
-      ],
-      "implications": [
-        "Stock trading 11% below 52-week high \u2014 potential entry/add opportunity before earnings",
-        "Premium valuation (PE 46.55) priced for continued growth \u2014 earnings miss could trigger selloff",
-        "Analyst targets suggest 34% upside \u2014 market expects continued AI dominance",
-        "Earnings volatility likely: NVDA historically moves 5-10% post-earnings"
-      ],
-      "actionableInsight": "HOLD current position through earnings. If considering adding: Wait for earnings reaction. Premium valuation leaves little margin for error. Strong AI fundamentals support long-term hold, but short-term volatility expected around Feb 25.",
-      "tags": [
-        "earnings",
-        "AI",
-        "data-center",
-        "high-conviction"
-      ],
-      "sentiment": "bullish-cautious",
-      "confidenceLevel": "high"
-    },
-    {
-      "id": "intel-031",
-      "symbol": "NVDA",
-      "date": "2026-02-11",
-      "source": "Earnings Calendar + Analyst Consensus",
-      "type": "earnings_preview",
-      "content": "NVIDIA Q4 FY2025 Earnings Preview (Feb 26, 2026 After Hours)\n\n**Consensus Expectations:**\n- EPS: $0.82 (vs $0.64 YoY)\n- Revenue: $37.5B (vs $22.1B YoY, +70% growth)\n- Data Center Revenue: $32B+ (85% of total, up from $18.4B YoY)\n- Gaming Revenue: $2.8B (modest growth)\n- Automotive: $400M (steady but small segment)\n\n**Key Catalysts to Watch:**\n1. **Blackwell GPU Ramp**: Production scaling after H100/H200 transition. Wall Street expects early Blackwell shipment commentary.\n2. **Sovereign AI Demand**: International government AI infrastructure spending (UAE, Saudi Arabia, Singapore). Could add $3-5B annually.\n3. **China Export Restrictions**: Impact of new U.S. export controls on H800/A800 chips. Estimated $5B annual headwind.\n4. **Gross Margin Guidance**: Expected 76-77% (vs 75% Q3). Key profitability metric.\n5. **FY2026 Outlook**: Wall Street expects $150B+ full-year revenue guidance. Any miss here = sell-off.\n\n**Risk Factors:**\n- Supply chain constraints (CoWoS packaging capacity from TSMC)\n- Hyperscaler (Microsoft, Meta, Google) CapEx slowdown concerns\n- Competition from AMD MI300X and custom ASICs (Google TPU, Amazon Trainium)\n- Valuation: Trading at 30x forward earnings vs 5-year avg of 35x\n\n**Positioning Recommendations:**\n- **HOLD through earnings if long-term bullish** (avoid pre-earnings volatility)\n- **Trim 10-20% if short-term focused** (lock gains before binary event)\n- **Sell cash-secured puts at $120-125 strike** if willing to buy dip post-earnings\n\n**Sentiment Analysis:**\n- Analyst ratings: 65% Buy, 30% Hold, 5% Sell\n- Options market: Implied volatility 60% (expects \u00b18% move post-earnings)\n- Institutional positioning: 76% ownership, up from 72% Q3 (bullish signal)\n\n**Historical Pattern:**\n- Last 8 earnings: 6 beats, 2 misses\n- Average post-earnings move: +6.2% on beat, -11% on miss\n- Guidance matters MORE than the beat (Q3 2025 beat by 10% but fell 7% on weaker Q4 guide)\n\n**Decision Matrix:**\n- Beat + Strong Guidance \u2192 +8-12% pop\n- Beat + Weak Guidance \u2192 -3-6% drop\n- Miss + Any Guidance \u2192 -10-15% drop\n- Beat + In-line Guidance \u2192 +2-4% modest gain\n\n**Bottom Line:** Earnings are priced in at current levels ($140-145). Real alpha comes from guidance quality and Blackwell commentary. If holding long-term, ride through volatility. If trading, consider post-earnings entry on any pullback to $125-130 range.",
-      "impact": "HIGH",
-      "actionable": true,
-      "tags": [
-        "earnings",
-        "NVDA",
-        "semiconductors",
-        "AI infrastructure"
       ]
     }
   ],
