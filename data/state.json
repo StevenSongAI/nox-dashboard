@@ -1,7 +1,7 @@
 {
-  "lastHeartbeat": "2026-02-11T12:07:44.593964+00:00",
-  "totalHeartbeats": 119,
-  "lastAction": "CORRECTED investments.json - removed incorrect NVDA position, updated to actual holdings: $143K CAD AAPL, 0.5 BTC, cash",
+  "lastHeartbeat": "2026-02-11T12:12:21.342536+00:00",
+  "totalHeartbeats": 120,
+  "lastAction": "Removed 9 ZMDE videos from dashboard - ZMDE is Steven's channel, scraper updated to exclude it",
   "nextPriority": "Business opportunities - review and validate top 3 revenue opportunities from pipeline",
   "currentPriorities": {
     "youtube": "I Got a Pet T-Rex video - StevenSongIRL channel (Higgsfield 888 images completed, need map artist hired)",
@@ -10,7 +10,7 @@
     "tools": "Dashboard and Mission Control on GitHub Pages"
   },
   "dataFreshness": {
-    "youtube": "2026-02-11 - 133 outliers (15 added from scraper), 20 content briefs",
+    "youtube": "2026-02-11 - 124 outliers (removed 9 ZMDE videos)",
     "newBusiness": "2026-02-10 - 13 opportunities",
     "investments": "2026-02-11 - Corrected holdings (AAPL $143K CAD, 0.5 BTC)",
     "research": "2026-02-11 - 4 notes (latest: Higgsfield optimization)",
@@ -18,6 +18,11 @@
     "competitors": "2026-02-10 - 18 competitors tracked"
   },
   "recentFeedback": [
+    {
+      "date": "2026-02-11",
+      "feedback": "ZMDE is one of my channels too, remove that from scrapers",
+      "implication": "Removed ZMDE from YouTube scraper and cleaned 9 ZMDE videos from dashboard. Must verify channel ownership before monitoring."
+    },
     {
       "date": "2026-02-11",
       "feedback": "I don't have NVIDIA stock - only $143K CAD Apple and 0.5 BTC",
@@ -114,6 +119,10 @@
     }
   ],
   "lessonsLearned": [
+    {
+      "date": "2026-02-11",
+      "lesson": "Always ask which channels are Steven's before adding them to scrapers. @StevenSongIRL and @ZMDE are both his channels."
+    },
     {
       "date": "2026-02-11",
       "lesson": "Never assume portfolio holdings - always verify actual positions before adding investment intelligence. I added NVDA earnings analysis for a stock Steven doesn't own. Catastrophic error."
