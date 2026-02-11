@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Map Artists - Nox Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0a0e1a;
+            color: #e0e0e0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #00d4ff;
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+
+        .subtitle {
+            color: #888;
+            margin-bottom: 30px;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card {
+            background: #1a1f35;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #2a3f5f;
+        }
+
+        .stat-value {
+            font-size: 2.5em;
+            color: #00d4ff;
+            font-weight: bold;
+        }
+
+        .stat-label {
+            color: #888;
+            margin-top: 5px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #1a1f35;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        thead {
+            background: #0f1420;
+        }
+
+        th {
+            padding: 15px;
+            text-align: left;
+            color: #00d4ff;
+            font-weight: 600;
+            border-bottom: 2px solid #2a3f5f;
+        }
+
+        td {
+            padding: 15px;
+            border-bottom: 1px solid #2a3f5f;
+        }
+
+        tr:hover {
+            background: #252b45;
+        }
+
+        a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .discord {
+            color: #7289da;
+            font-family: monospace;
+        }
+
+        .location {
+            color: #aaa;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            color: #666;
+        }
+
+        .refresh-info {
+            color: #666;
+            font-size: 0.9em;
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>⛏️ Minecraft Map Artists</h1>
+        <p class="subtitle">Overseas talent pool for custom Minecraft map building</p>
+
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-value" id="totalCount">0</div>
+                <div class="stat-label">Total Candidates</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="discordCount">0</div>
+                <div class="stat-label">With Discord</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="portfolioCount">0</div>
+                <div class="stat-label">With Portfolio</div>
+            </div>
+        </div>
+
+        <div id="artistsTable"></div>
+
+        <p class="refresh-info">
+            Auto-scraped every 3 hours • Filtered at 3 AM daily • 
+            <a href="#" onclick="location.reload()">Refresh</a>
+        </p>
+    </div>
+
+    <script>
+        async function loadArtists() {
+            try {
+                const response = await fetch('data/minecraft_map_artists.csv');
+                const text = await response.text();
+                
+                const lines = text.trim().split('\n');
+                if (lines.length <= 1) {
+                    document.getElementById('artistsTable').innerHTML = `
+                        <div class="empty-state">
+                            <p>No candidates yet. Scraper runs every 3 hours.</p>
+                            <p style="margin-top: 10px;">First results will appear after the next scrape cycle.</p>
+                        </div>
+                    `;
+                    return;
+                }
+
+                const headers = lines[0].split(',');
+                const artists = lines.slice(1).map(line => {
+                    const values = line.split(',');
+                    return {
+                        name: values[0],
+                        portfolio: values[1],
+                        location: values[2],
+                        discord: values[3]
+                    };
+                });
+
+                // Update stats
+                document.getElementById('totalCount').textContent = artists.length;
+                document.getElementById('discordCount').textContent = artists.filter(a => a.discord).length;
+                document.getElementById('portfolioCount').textContent = artists.filter(a => a.portfolio).length;
+
+                // Build table
+                let tableHTML = `
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Location</th>
+                                <th>Discord</th>
+                                <th>Portfolio</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                `;
+
+                artists.forEach(artist => {
+                    tableHTML += `
+                        <tr>
+                            <td><strong>${artist.name}</strong></td>
+                            <td class="location">${artist.location || 'Unknown'}</td>
+                            <td class="discord">${artist.discord || '—'}</td>
+                            <td><a href="${artist.portfolio}" target="_blank">View Portfolio</a></td>
+                        </tr>
+                    `;
+                });
+
+                tableHTML += `
+                        </tbody>
+                    </table>
+                `;
+
+                document.getElementById('artistsTable').innerHTML = tableHTML;
+
+            } catch (error) {
+                console.error('Error loading artists:', error);
+                document.getElementById('artistsTable').innerHTML = `
+                    <div class="empty-state">
+                        <p>Error loading data. Check console for details.</p>
+                    </div>
+                `;
+            }
+        }
+
+        loadArtists();
+    </script>
+</body>
+</html>
