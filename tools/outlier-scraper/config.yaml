@@ -1,0 +1,55 @@
+# Nox Outlier Scraper Configuration
+
+# ViewStats settings
+viewstats:
+  # Categories to scrape outliers from
+  categories:
+    - gaming
+    - science-technology
+    - entertainment
+    - pets-animals
+    - howto-style
+    - people-blogs
+  
+  # Outlier page settings
+  min_outlier_score: 5  # Minimum X multiplier to capture
+  max_pages: 3          # Pages to scrape per category
+  
+  # Time filters: "24h", "7d", "30d"
+  time_filter: "7d"
+
+# YouTube search settings
+youtube:
+  # Search queries to monitor (rotated hourly)
+  queries:
+    - "ice dragon"
+    - "pet evolution stages"
+    - "baby creature"
+    - "AI coding agent comparison"
+    - "minecraft creature mod"
+    - "what if pokemon had more evolutions"
+    - "T-Rex simulation"
+    - "AI video generation tutorial"
+    - "creature physics simulation"
+    - "pet simulator"
+  
+  # Sort by: relevance, date, viewCount, rating
+  sort_by: "date"
+  max_results: 20
+
+# Data storage
+storage:
+  raw_data_dir: "raw_data"
+  max_days_retention: 7  # Keep raw data for 7 days
+
+# Browser settings  
+browser:
+  cdp_url: "http://localhost:18800"
+  user_data_dir: null  # Use OpenClaw managed browser
+  headless: false
+
+# Dashboard integration
+dashboard:
+  repo_path: "~/Desktop/Nox Builds/nox-dashboard"
+  youtube_json: "data/youtube.json"
+  meta_json: "data/meta.json"
