@@ -199,6 +199,71 @@
       "status": "ready_to_test",
       "priority": "high",
       "project": "stevensongirl Production Scaling"
+    },
+    {
+      "id": "note-042",
+      "title": "OpenAI Agent Production Patterns (Feb 2026)",
+      "date": "2026-02-12",
+      "category": "AI Infrastructure",
+      "tags": [
+        "agents",
+        "production",
+        "openai",
+        "best-practices",
+        "workflow-optimization"
+      ],
+      "source": "https://developers.openai.com/blog/skills-shell-tips",
+      "keyFindings": [
+        "Skills + Shell + Compaction = production-ready long-running agents",
+        "Glean case study: 73% \u2192 85% accuracy (+12%), 18.1% faster time-to-first-token using skills",
+        "Write skill descriptions like routing logic with 'Use when' vs 'Don't use when' boundaries",
+        "Add negative examples to reduce misfires (Glean saw 20% accuracy drop initially, recovered with edge cases)",
+        "Put templates inside skills (free when unused, loaded only on invocation)",
+        "Design for long runs early: container reuse + compaction as default primitives",
+        "Skills + networking = high-risk combo (strict allowlists, assume untrusted output)",
+        "Use domain_secrets for auth to avoid credential leakage",
+        "Three patterns: A) Install\u2192Fetch\u2192Artifact, B) Skills+Shell for repeatability, C) Skills as enterprise SOPs"
+      ],
+      "actionableInsights": [
+        {
+          "insight": "Stop asking 'should I...?' - define decision boundaries upfront",
+          "application": "Heartbeat workflows, dashboard updates, content generation - state the contract before executing"
+        },
+        {
+          "insight": "Negative examples prevent routing failures",
+          "application": "Add 'Don't update dashboard if...' sections to workflow docs, document failure modes explicitly"
+        },
+        {
+          "insight": "Templates belong in skills, not system prompts",
+          "application": "Move audit templates, content brief formats, and report structures into reusable skill documents"
+        },
+        {
+          "insight": "Deterministic invocation for production workflows",
+          "application": "Editor screening, dashboard updates, ralph-chain - explicit workflow contracts instead of exploration"
+        },
+        {
+          "insight": "Skills as living SOPs (standard operating procedures)",
+          "application": "Turn HEARTBEAT.md, dashboard update patterns, and content brief generation into versioned, template-driven skills"
+        }
+      ],
+      "relevanceToProjects": [
+        {
+          "project": "Nox Work Agent",
+          "impact": "High - currently using workflow docs (HEARTBEAT.md) but not skill-ified with templates/negative examples. Could improve reliability and reduce token usage.",
+          "priority": "Implement skill patterns for recurring workflows (dashboard updates, content generation)"
+        },
+        {
+          "project": "stevensongirl Video Production",
+          "impact": "Medium - editor training materials could be skill-based workflows with templates and guardrails",
+          "priority": "Create editor onboarding skill with production standards, output formats, quality criteria"
+        },
+        {
+          "project": "Future Agent Projects",
+          "impact": "High - foundational patterns for any long-running agent work (data analysis, content generation, automation)",
+          "priority": "Default architecture: Skills for procedures, Shell for execution, Compaction for continuity"
+        }
+      ],
+      "content": "# OpenAI Agent Production Patterns (Feb 2026)\n\n**Source:** OpenAI Developers Blog - \"Shell + Skills + Compaction: Tips for long-running agents that do real work\"\n**Date:** February 11, 2026\n**URL:** https://developers.openai.com/blog/skills-shell-tips\n\n## Executive Summary\n\nOpenAI released production-grade primitives for building reliable long-running agents:\n- **Skills:** Reusable, versioned instructions (playbooks) that agents load on-demand\n- **Hosted Shell:** Sandboxed containers with controlled internet access for real execution\n- **Server-side Compaction:** Automatic context management for multi-hour workflows\n\n**Key stat:** Glean (early customer) improved accuracy from 73% \u2192 85% (+12 points) and reduced time-to-first-token by 18.1% using skills-based workflows.\n\n## 10 Production Tips\n\n### 1. Write skill descriptions like routing logic\n- **Don't:** Write marketing copy\n- **Do:** Include \"Use when\" vs \"Don't use when\" blocks\n- **Why:** Skill description is the model's decision boundary\n\n### 2. Add negative examples to reduce misfires\n- **Problem:** Making skills available can initially reduce correct triggering\n- **Solution:** Explicit \"Don't call this skill when...\" cases plus edge coverage\n- **Evidence:** Glean saw 20% accuracy drop initially, then recovered with negative examples\n\n### 3. Put templates inside skills (free when unused)\n- **Stop:** Cramming templates into system prompts\n- **Do:** Templates in skills are loaded only when invoked\n- **Benefit:** No token inflation for unrelated queries, available exactly when needed\n\n### 4. Design for long runs early\n- **Container reuse:** Stable dependencies, cached files, intermediate outputs\n- **Pass previous_response_id:** Continue work in same thread\n- **Compaction as default:** Not an emergency fallback\n\n### 5. Deterministic workflows: Explicitly invoke the skill\n- **When:** Production workflows with clear contracts\n- **How:** \"Use the <skill name> skill.\"\n- **Why:** Turns fuzzy routing into explicit contract\n\n### 6. Skills + networking = high-risk combo\n- **Risk:** Data exfiltration path\n- **Mitigation:** Strict network allowlists, assume tool output is untrusted\n- **Default posture:** Skills allowed, Shell allowed, Network enabled only with minimal allowlist\n\n### 7. Use /mnt/data as handoff boundary\n- **Pattern:** Tools write to disk \u2192 models reason over disk \u2192 developers retrieve from disk\n- **Standard location:** /mnt/data for all artifacts (reports, cleaned datasets, finished spreadsheets)\n\n### 8. Allowlists are two-layer (org-level + request-level)\n- **Org-level:** Maximum allowed destinations (admin-configured)\n- **Request-level:** Subset of org allowlist (per-request network_policy)\n- **Implication:** Keep both small and stable\n\n### 9. Use domain_secrets for auth\n- **Why:** Model never sees raw credentials\n- **How:** Model sees placeholders ($API_KEY), sidecar injects real values only for approved destinations\n\n### 10. Same APIs work locally and in cloud\n- **Skills:** Work with hosted shell and local shell mode\n- **Shell:** Has local execution mode (you execute shell_call yourself)\n- **Dev loop:** Start local (fast iteration) \u2192 move to hosted (repeatability, isolation)\n\n## Three Build Patterns\n\n### Pattern A: Install \u2192 Fetch \u2192 Write Artifact\n- Install dependencies \u2192 Scrape/API call \u2192 Write report to /mnt/data/report.md\n- **Use case:** Simple deliverables with clean review boundary\n\n### Pattern B: Skills + Shell for Repeatable Workflows\n- Encode workflow (steps, guardrails, templates) in skill \u2192 Mount into shell \u2192 Execute deterministically\n- **Use cases:** Spreadsheet analysis, dataset cleaning, standardized report generation\n\n### Pattern C: Skills as Enterprise Workflow Carriers (Advanced)\n- Skills close the gap between single-tool invocation and multi-tool orchestration\n- **Glean example:** Salesforce skill increased accuracy 73% \u2192 85%, reduced TTFT by 18.1%\n- **Tactics:** Careful routing, negative examples, embedded templates/examples\n- **Use cases:** Account planning, escalation triage, brand-aligned content generation\n\n## Glean Case Study Details\n\n**Company:** Glean (early skills customer)\n**Implementation:** Salesforce-oriented skill for enterprise workflows\n\n**Results:**\n- Accuracy: 73% \u2192 85% (+12 percentage points)\n- Time-to-first-token: 18.1% reduction\n- Initial accuracy drop: ~20% when skills first enabled\n- Recovery method: Added negative examples + edge case coverage in descriptions\n\n**Key tactics:**\n- Careful routing logic in skill descriptions\n- Negative examples (\"Don't use when...\")\n- Templates and examples embedded in skills (not system prompts)\n\n**Use cases implemented:**\n- Account planning\n- Escalation triage\n- Recurring business tasks\n- Brand-aligned content generation\n\n**Key insight:** Skills become living SOPs (standard operating procedures) - updated as org evolves, executed consistently by agents.\n\n## Application to Current Projects\n\n### Nox Work Agent (High Priority)\n\n**Current state:**\n- Using workflow docs (HEARTBEAT.md, AGENTS.md) but not skill-ified\n- Templates inline in generation code\n- Decision boundaries exist but not formalized with negative examples\n\n**Improvements:**\n1. Convert HEARTBEAT.md into a skill with:\n   - Clear routing: \"Use when heartbeat poll received\"\n   - Negative examples: \"Don't update dashboard if data is <6h old\"\n   - Templates: Audit report format, update message structure\n2. Extract dashboard update patterns into reusable skill\n3. Content brief generation \u2192 template-driven skill with outlier research requirements\n\n**Expected impact:** Improved reliability, reduced token usage, fewer low-quality outputs\n\n### stevensongirl Video Production (Medium Priority)\n\n**Current state:**\n- Editor training materials in markdown docs\n- No standardized onboarding workflow\n\n**Improvements:**\n1. Create editor onboarding skill:\n   - Production standards (music, pacing, composition)\n   - Output format templates\n   - Quality criteria and review checklist\n2. Higgsfield generation skill with:\n   - Prompt engineering guidelines\n   - Batch optimization patterns\n   - Error handling procedures\n\n**Expected impact:** Faster editor training, more consistent output quality\n\n### Future Agent Projects (Foundation)\n\n**Default architecture:**\n- Skills for procedures (what to do, when, how)\n- Shell for execution (install, run, write artifacts)\n- Compaction for continuity (long runs without manual context surgery)\n\n**Avoid:** Brittle megadocs, prompt spaghetti, one-shot workflows for multi-step jobs\n\n## Immediate Action Items\n\n1. **Stop asking \"should I...?\"**\n   - Define decision boundaries upfront\n   - Example: \"Dashboard needs fresh YouTube outliers. Checking scraper data...\" vs \"Should I add YouTube outliers?\"\n\n2. **Add negative examples to HEARTBEAT.md**\n   - \"Don't update dashboard if data is <6 hours old\"\n   - \"Don't create content briefs for videos already in production\"\n   - \"Don't add investment intelligence for stocks Steven already owns\"\n\n3. **Extract templates from inline code**\n   - Audit report template \u2192 separate skill document\n   - Dashboard update message structure \u2192 reusable template\n   - Content brief format \u2192 skill with outlier research requirements\n\n4. **Document failure modes explicitly**\n   - What flopped and why (workThatFlopped in state.json already does this)\n   - Edge cases for each workflow type\n\n5. **Skill-ify recurring workflows**\n   - HEARTBEAT.md \u2192 formal skill (procedures, templates, guardrails)\n   - Dashboard update patterns \u2192 versioned skill\n   - Content brief generation \u2192 template-driven skill\n\n## Security Considerations\n\n**High-risk combo:** Skills + networking\n- **Risk:** Data exfiltration path if agent can both execute procedures and access internet\n- **Mitigation:** Strict allowlists, assume tool output is untrusted\n- **Default posture:** Network enabled only with minimal allowlist, per request\n\n**Credential handling:**\n- Use domain_secrets (model sees $API_KEY placeholders, sidecar injects real values)\n- Never put raw credentials in prompts or skills\n\n**Container security:**\n- Hosted shell provides isolation\n- /mnt/data is the standard handoff boundary (not arbitrary filesystem access)\n\n## Links & Resources\n\n- **Main article:** https://developers.openai.com/blog/skills-shell-tips\n- **Skills docs:** https://developers.openai.com/api/docs/guides/tools-skills\n- **Shell docs:** https://developers.openai.com/api/docs/guides/tools-shell\n- **Compaction docs:** https://developers.openai.com/api/docs/guides/context-management\n- **Agent Skills standard:** (open standard referenced in article)\n\n## Related Research\n\n- SeeDream 2 (note-040): Storyboard-to-video automation - could be implemented as a skill\n- Higgsfield batch optimization (workThatLanded): Already follows Pattern A (install \u2192 fetch \u2192 artifact)\n- Editor recruitment workflow (active-002): Could be Pattern B (skill + shell for repeatable hiring)\n\n---\n\n**Created:** 2026-02-12\n**Status:** Actionable - ready to implement skill patterns in current workflows\n**Priority:** High - foundational improvement to agent reliability and efficiency"
     }
   ],
   "totalNotes": 10,
