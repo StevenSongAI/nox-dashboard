@@ -1,23 +1,29 @@
 {
-  "lastHeartbeat": "2026-02-12T02:05:18.768376+00:00",
-  "totalHeartbeats": 131,
-  "lastAction": "Added OpenAI agent production patterns research note (note-042) - 10 production tips + 3 build patterns for reliable long-running agents",
-  "nextPriority": "Monitor Upwork editor applications - job posted 12:11 PM, begin screening when applications arrive",
+  "lastHeartbeat": "2026-02-12T04:34:00.828014+00:00",
+  "totalHeartbeats": 133,
+  "lastAction": "Added business opportunity opp-016 (AI Agent Production Patterns Consulting) based on OpenAI blog + Glean case study (73% \u2192 85% accuracy). Market-validated consulting service for productionizing AI agents using Skills+Shell+Compaction patterns. $5K-15K/month potential.",
+  "nextPriority": "ESCALATED: X.com authentication (Google 2FA code) - now blocking TWO complete systems (business intelligence pipeline + Minecraft map artist sourcing). Once resolved, business intelligence pipeline deploys immediately (4 crons, 20 search queries, overnight subagent analysis).",
   "currentPriorities": {
+    "authentication": "X.com 2FA blocker (HIGH) - affecting business intelligence pipeline + Minecraft map artists",
     "youtube": "stevensongirl channel scaling to 2-3 videos/week (need 2-3 trained editors hired)",
-    "business": "AI-Generated Video Editing Service opportunity - validate by hiring/training editors for Steven's projects first",
+    "business": "X.com business intelligence pipeline ready to deploy (3x daily scraping, overnight analysis, ~600 tweets/day) + AI-Generated Video Editing Service (validate via stevensongirl hiring)",
     "investments": "NEW opportunities only (no performance updates on AAPL/BTC holdings)",
     "tools": "SeeDream 2 evaluation (HIGH PRIORITY) - could change editor requirements if storyboard automation works"
   },
   "dataFreshness": {
     "youtube": "2026-02-11 - 125 outliers + AI civilization video",
-    "newBusiness": "2026-02-11 - 15 opportunities (latest: SeeDream 2 tool evaluation)",
+    "newBusiness": "2026-02-12 - 16 opportunities (latest: Agent Production Patterns Consulting)",
     "investments": "2026-02-11 - 4 intelligence entries (latest: AAPL Q1 FY26 earnings)",
     "research": "2026-02-12 - 11 notes (latest: OpenAI agent production patterns)",
     "audits": "2026-02-10 - 249 audits logged, 67% avg",
     "competitors": "2026-02-10 - 18 competitors tracked"
   },
   "recentFeedback": [
+    {
+      "date": "2026-02-12",
+      "feedback": "Steven shared OpenAI production patterns blog post with directive: 'Read this for me and step your game up'",
+      "implication": "CRITICAL: This was a quality standards directive, not information sharing. Expected immediate implementation of production patterns: routing logic (USE WHEN/DON'T USE WHEN), negative examples to prevent misfires, templates for consistency. Glean case study showed 73% \u2192 85% accuracy using these patterns. Applied 3 tips same day. Quality over speed from now on."
+    },
     {
       "date": "2026-02-11",
       "feedback": "Reporting on stocks I already bought is useless information. Update instructions so this stops happening.",
@@ -75,6 +81,21 @@
     }
   ],
   "workThatLanded": [
+    {
+      "what": "OpenAI Production Patterns Implementation",
+      "why": "Immediately applied 3 production tips after Steven's 'step your game up' directive: routing logic for all dashboard updates (USE WHEN/DON'T USE WHEN), negative examples in HEARTBEAT.md to prevent misfires, templates for consistent quality (VALUE_AUDIT, CONTENT_BRIEF, BUSINESS_OPPORTUNITY). Documented in note-042. Glean-inspired quality improvements.",
+      "date": "2026-02-12"
+    },
+    {
+      "what": "X.com Business Intelligence Pipeline",
+      "why": "Complete automated system for continuous trend monitoring: 3x daily scraping (9 AM, 5 PM, 1 AM) with 20 search queries (emerging trends, new tech, pain points, opportunities), overnight subagent analysis (2:30 AM) that reviews ~600 tweets/day and updates dashboard with validated insights. 4 crons added, full infrastructure ready to deploy once X.com authenticated.",
+      "date": "2026-02-12"
+    },
+    {
+      "what": "X.com Integration for Minecraft Map Artists",
+      "why": "Added X.com as 5th source to Minecraft map artist scraper pipeline. 3 search queries configured ('minecraft map artist commission', 'minecraft builder portfolio', 'minecraft map maker'). Uses OpenClaw browser tool with openclaw profile (per AGENTS.md protocol). Infrastructure complete, awaiting X.com authentication.",
+      "date": "2026-02-12"
+    },
     {
       "what": "Higgsfield Batch Script (888 images)",
       "why": "Completed Ice Dragon video image generation with zero failures \u2014 full async queue optimization",
@@ -159,6 +180,18 @@
     }
   ],
   "lessonsLearned": [
+    {
+      "date": "2026-02-12",
+      "lesson": "OpenAI Production Patterns Directive: 'Step your game up' means implementing production-level quality standards immediately. Glean case study showed 73% \u2192 85% accuracy using routing logic + negative examples. Applied 3 tips same day: routing logic for all updates, negative examples in HEARTBEAT.md, templates for consistency. Quality over speed."
+    },
+    {
+      "date": "2026-02-12",
+      "lesson": "X.com authentication blocker is now affecting TWO projects (Minecraft map artist sourcing + business intelligence pipeline). Should have escalated the 2FA blocker more aggressively. When authentication blocks multiple initiatives, it becomes HIGH priority, not medium."
+    },
+    {
+      "date": "2026-02-12",
+      "lesson": "Infrastructure before execution: Built complete X.com business intelligence pipeline (scraper, overnight analysis, 4 crons, 20 search queries) BEFORE authentication was complete. Allows immediate deployment once blocker is resolved. Documentation-first approach pays off."
+    },
     {
       "date": "2026-02-11",
       "lesson": "Content briefs must provide genuine strategic value or they're useless. Never create briefs for videos already in production (Hot vs Cold, AI Coding Agents). Only add briefs backed by outlier research with clear opportunity signal. Low-effort speculation briefs damage dashboard credibility."
@@ -269,11 +302,12 @@
     {
       "id": "blocked-002",
       "task": "X.com authentication via bird CLI",
-      "description": "Gmail login successful but hit Google 2FA \u2014 code sent to Steven's phone ending in 96. Steven never provided the code.",
+      "description": "Gmail login successful but hit Google 2FA \u2014 code sent to Steven's phone ending in 96. Steven never provided the code. NOW BLOCKING TWO PROJECTS: (1) Minecraft map artist sourcing (5th scraper source), (2) Business intelligence pipeline (3x daily scraping + overnight analysis with 20 search queries for trends/tech/pain points/opportunities).",
       "blocked": true,
       "reason": "Google 2-Step Verification \u2014 waiting for Steven's 6-digit code",
-      "resolution": "Steven needs to send 2FA code or approve login from his phone",
-      "priority": "medium"
+      "resolution": "Steven needs to send 2FA code or approve login from his phone. ESCALATED: This blocker is now affecting multiple high-value initiatives.",
+      "priority": "HIGH",
+      "impact": "Cannot deploy X.com business intelligence pipeline (4 crons ready, ~$15-30/month value) or enhance Minecraft scraper (5th source for map artist talent). Two complete systems idle until auth resolved."
     }
   ],
   "activeTasks": [

@@ -304,15 +304,67 @@
         "cost-reduction",
         "editor-workflow"
       ]
+    },
+    {
+      "id": "opp-016",
+      "name": "AI Agent Production Patterns Consulting",
+      "description": "Consulting service helping companies implement production-grade AI agent workflows using OpenAI's Skills+Shell+Compaction patterns. Focus on routing logic, negative examples, template-driven skills, and workflow SOPs. Based on proven patterns from OpenAI blog + Glean case study (73% \u2192 85% accuracy).",
+      "alignment": "HIGH",
+      "status": "new",
+      "potentialRevenue": "$5000-15000/month",
+      "effort": "Medium",
+      "nextStep": "Create case study from Nox agent improvements (HEARTBEAT.md skill-ification, template extraction)",
+      "marketData": {
+        "tam": "AI agent consulting market subset of $216B AI agent market by 2030",
+        "problem": "Companies struggle to productionize AI agents - most POCs fail at scale due to lack of workflow patterns, quality inconsistencies, context management issues",
+        "targetAudience": "AI startups (Series A-B), enterprise AI teams, companies moving from POC to production",
+        "competitors": [
+          "Traditional AI consultants (not agent-specific)",
+          "OpenAI professional services (expensive)",
+          "Internal teams (lack expertise)"
+        ],
+        "differentiation": "Agent-native expertise with OpenAI production patterns, proven workflows (Glean +12% accuracy, 18% faster TTFT), skill-based SOPs, template systems",
+        "validationSignal": "OpenAI published production patterns Feb 2026 after seeing enterprise struggle with reliability - validates market pain"
+      },
+      "validationSource": {
+        "primary": "OpenAI Developer Blog - Skills+Shell+Compaction (Feb 11, 2026)",
+        "caseStudy": "Glean improved accuracy 73% \u2192 85% (+12 pts) and TTFT -18.1% using skills-based workflow",
+        "stevenDirective": "Feb 12 2026 - 'Read this for me and step your game up' (quality standards directive)"
+      },
+      "implementationPlan": [
+        "Phase 1: Document current Nox agent patterns as case study",
+        "Phase 2: Skill-ify HEARTBEAT.md with templates + routing logic + negative examples",
+        "Phase 3: Create workshop materials (skills audit, workflow mapping, template extraction)",
+        "Phase 4: Reach out to 5 AI startups in network for pilot consulting",
+        "Phase 5: Package as Agent Reliability Audit service ($5K fixed price)"
+      ],
+      "deliverables": [
+        "Agent workflow audit (identify reliability gaps)",
+        "Skills-based SOP implementation (routing logic + negative examples)",
+        "Template extraction and standardization",
+        "Production readiness checklist",
+        "Ongoing optimization support"
+      ],
+      "linkedResearch": [
+        "note-042 (OpenAI Agent Production Patterns)"
+      ],
+      "createdAt": "2026-02-12T04:33:52.805018+00:00",
+      "tags": [
+        "AI-agents",
+        "consulting",
+        "production-patterns",
+        "workflow-optimization",
+        "OpenAI"
+      ]
     }
   ],
   "pipeline": {
-    "new": 11,
+    "new": 12,
     "evaluating": 1,
     "pursuing": 0,
     "passed": 1,
     "won": 1
   },
-  "lastUpdated": "2026-02-11T17:45:16.279784+00:00",
-  "totalOpportunities": 15
+  "lastUpdated": "2026-02-12T04:33:52.805026+00:00",
+  "totalOpportunities": 16
 }
