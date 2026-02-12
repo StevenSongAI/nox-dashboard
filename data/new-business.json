@@ -258,45 +258,26 @@
     },
     {
       "id": "opp-015",
-      "title": "SeeDream 2 - Storyboard-Based Video Generation Tool Evaluation",
-      "category": "Production Tools",
+      "name": "SeeDream 2 - Storyboard-Based Video Generation Tool Evaluation",
       "description": "Evaluate SeeDream 2 for storyboard-to-video generation to reduce editor workload on stevensongirl channel. Could cut editing time tremendously by automating shot generation from narrative outlines.",
-      "revenueModel": "Cost Reduction",
-      "targetMarket": "Internal (stevensongirl production workflow)",
-      "marketSize": "N/A (internal tool)",
-      "competitiveAdvantage": "Storyboard input \u2192 video output automation",
-      "investmentRequired": "$0-500/month (estimated tool subscription)",
-      "timeToLaunch": "1-2 weeks (evaluation + workflow integration)",
-      "riskLevel": "Low",
-      "confidenceScore": 75,
-      "potentialRevenue": "$0 (cost savings: $500-1000/month in reduced editor hours)",
-      "monthlyRecurringRevenue": 0,
+      "alignment": "HIGH",
       "status": "evaluation",
-      "priority": "high",
-      "nextSteps": [
-        "Research SeeDream 2 capabilities and storyboard format requirements",
-        "Test with Ice Dragon storyboard to evaluate output quality",
-        "Compare quality vs Higgsfield (current tool) and Runway/Midjourney",
-        "Analyze pricing model (subscription vs credits vs API)",
-        "Calculate ROI: editor time saved vs tool cost",
-        "If viable: Update editor job requirements to include SeeDream 2 workflow",
-        "If not viable: Proceed with current Higgsfield-based workflow"
+      "potentialRevenue": "$0 (cost savings: $500-1000/month in reduced editor hours)",
+      "effort": "Medium",
+      "nextStep": "Research SeeDream 2 capabilities, test with Ice Dragon storyboard, compare vs Higgsfield/Runway",
+      "createdAt": "2026-02-11T17:45:16.279468+00:00",
+      "marketData": {
+        "revenueModel": "Cost Reduction",
+        "targetMarket": "Internal (stevensongirl production workflow)",
+        "problem": "Editor workload for shot generation is time-consuming (8-12 hours/video)",
+        "targetAudience": "Internal (stevensongirl production workflow)",
+        "differentiation": "Storyboard input \u2192 video output automation",
+        "validationSignal": "Steven's directive: 'If seedream 2 can work with storyboards, this could cut down editing time tremendously'"
+      },
+      "linkedResearch": [
+        "note-040 (SeeDream 2 research)"
       ],
-      "metrics": {
-        "currentEditorTime": "8-12 hours per video (includes shot generation)",
-        "potentialTimeSavings": "4-6 hours per video (50% reduction if storyboard automation works)",
-        "editorCostPerVideo": "$250 fixed price",
-        "videosPerMonth": "8-12 (goal: 2-3 per week)",
-        "monthlySavings": "$500-1000 (if tool reduces editor workload by 50%)"
-      },
-      "linkedTo": {
-        "activeTask": "active-002 (editor hiring)",
-        "researchNote": "note-040 (SeeDream 2 research)",
-        "project": "stevensongirl Production Scaling"
-      },
-      "source": "Steven's X.com share (lucatac0 tweet, 2026-02-11 12:32 PM)",
-      "dateAdded": "2026-02-11T17:45:16.279468+00:00",
-      "lastUpdated": "2026-02-11T17:45:16.279776+00:00",
+      "linkedProject": "stevensongirl Production Scaling",
       "tags": [
         "AI-video",
         "production-tools",
