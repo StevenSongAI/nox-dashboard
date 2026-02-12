@@ -1,6 +1,28 @@
 {
   "notes": [
     {
+      "id": "note-045",
+      "title": "Kling 3.0 Multishot: 1-Image Workflow Discovery",
+      "date": "2026-02-12T21:26:51.279549+00:00",
+      "tags": [
+        "kling-3.0",
+        "multishot",
+        "workflow",
+        "video-production",
+        "ai-video-generation"
+      ],
+      "content": "Kling 3.0 Multishot: 1-Image Workflow Discovery\n\n## Discovery Context\nSteven discovered an optimized Kling 3.0 workflow that accelerates multi-shot video production compared to full storyboard approaches.\n\n## Key Insight\nKling 3.0 can generate multi-shot clips from **a single reference image** rather than requiring complete storyboards with 6-10 images per scene.\n\n## Workflow Comparison\n\n### Previous Approach (Storyboard-Based)\n1. Generate 6-10 reference images per scene\n2. Arrange in storyboard layout\n3. Upload to Kling 3.0\n4. Generate multi-shot output\n- **Time investment**: High (image generation + arrangement)\n- **Complexity**: Multiple assets to manage\n- **Use case**: Complex narrative sequences with specific shot requirements\n\n### New Approach (1-Image Multishot)\n1. Generate 1 hero image representing the scene\n2. Upload single image to Kling 3.0\n3. Generate multi-shot output with camera variations\n- **Time investment**: Low (1 image only)\n- **Complexity**: Minimal asset management\n- **Use case**: Faster iteration, exploratory production, time-sensitive content\n\n## Production Impact\n\n### Speed Improvements\n- **Image generation**: 6-10 images \u2192 1 image (83-90% time reduction)\n- **Asset management**: Simpler file organization\n- **Iteration speed**: Faster A/B testing of concepts\n\n### Quality Trade-offs\n- **Control**: Less precise shot composition (Kling interprets from 1 image)\n- **Consistency**: May vary more between shots without explicit references\n- **Flexibility**: Better for organic motion, worse for choreographed sequences\n\n## Strategic Implications\n\n### Editor Hiring\n- **Training complexity**: Editors need to understand when to use 1-image vs storyboard approach\n- **Workflow flexibility**: Faster turnaround for responsive content (trending topics)\n- **Production capacity**: Same editor can handle more projects with faster workflow\n\n### Content Strategy\n- **Rapid response**: Can produce trend-jacking content faster\n- **Experimentation**: Lower barrier to testing new formats\n- **Volume scaling**: stevensongirl can increase from 1 video/week \u2192 2-3/week with same resource investment\n\n### Tool Selection\n- **Kling 3.0 advantages**: Multishot from 1 image (unique capability vs Runway/Pika)\n- **Already accessible**: Available on Higgsfield (Steven's current platform)\n- **No new costs**: Uses existing Higgsfield subscription\n\n## When to Use Each Approach\n\n### Use 1-Image Multishot When:\n- Time-sensitive content (trending topics, news-jacking)\n- Exploratory production (testing new formats)\n- High-volume output needed (2-3 videos/week)\n- Budget-conscious (fewer image generation costs)\n\n### Use Full Storyboard When:\n- Precise narrative control required\n- Complex choreography or specific shot sequences\n- Character consistency critical across cuts\n- Premium/flagship content justifying extra time investment\n\n## Next Steps\n1. Test 1-image multishot with Ice Dragon assets (if still relevant)\n2. Document results for editor training materials\n3. Update editor job description with workflow requirements\n4. A/B test both approaches on stevensongirl content to measure quality impact\n\n## Linked Intelligence\n- note-044: SeeDance 2.0 storyboard automation research (alternative approach)\n- active-002: Upwork editor recruitment (workflow training context)\n- Kling 3.0 launched Feb 4, 2026 - multishot with up to 6 camera cuts supported\n\n## Confidence Score: 90%\nBased on Steven's direct discovery and testing. Workflow validated through Higgsfield platform accessibility.",
+      "sourceUrls": [
+        "https://higgsfield.ai/ (Kling 3.0 platform)"
+      ],
+      "category": "Production Workflow",
+      "linkedYouTubeIds": [],
+      "linkedBusinessOpps": [
+        "active-002"
+      ],
+      "confidence": 90
+    },
+    {
       "id": "note-037",
       "title": "Content-Investment Convergence Strategy - Q1 2026 Thesis",
       "date": "2026-02-10T15:46:00Z",
