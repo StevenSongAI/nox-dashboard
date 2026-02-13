@@ -329,6 +329,30 @@
       "source": "Motley Fool / Morgan Stanley",
       "content": "AppLovin (APP) is an AI-powered ad-tech platform with 89% upside implied by median Wall Street target. Core product is Axon, an ML-based ad targeting engine called 'best-in-class' by Morgan Stanley. Recently expanded from mobile gaming ads into web-based e-commerce advertising (massive TAM expansion). Competitive moat: owns Max mediation platform generating proprietary data that continuously improves Axon's targeting. This is a DATA FLYWHEEL business - more publishers \u2192 more data \u2192 better targeting \u2192 more advertisers \u2192 more publishers. Steven doesn't own this. Current price ~$84, median target $152. Risk: high valuation if e-commerce expansion underperforms. Confidence: 7/10.",
       "impact": "bullish"
+    },
+    {
+      "id": "intel-030",
+      "date": "2026-02-13T09:00:00Z",
+      "topic": "NEW BUY: CoreWeave (CRWV) - #1 AI Cloud with 105% Analyst Upside",
+      "source": "H.C. Wainwright / SemiAnalysis",
+      "content": "CoreWeave (CRWV) is the leading AI cloud provider, ranked #1 by SemiAnalysis above Amazon, Microsoft, and Alphabet for GPU cloud performance. Stock down 53% from highs creating buying opportunity. Analyst Kevin Dede (H.C. Wainwright) has  price target (105% upside from  current price). Median target  (36% upside). Trading at 8.4x sales despite 94% revenue growth through 2027. Business model: provides cloud infrastructure purpose-built for AI workloads (training/inference) with superior power density, memory, and cooling vs traditional clouds. Primary risk: debt load from data center buildout. Steven does not own this. Confidence: 8/10 - best-in-class provider at discounted valuation.",
+      "impact": "bullish"
+    },
+    {
+      "id": "intel-031",
+      "date": "2026-02-13T09:00:00Z",
+      "topic": "NEW BUY: Atlassian (TEAM) - Work Management AI with 130% Analyst Upside",
+      "source": "Morgan Stanley / Gartner",
+      "content": "Atlassian (TEAM) is a work management/collaboration software company with AI assistant Rovo. Morgan Stanley analyst Keith Weiss has  price target (130% upside from  current). Median target  (65% upside). Stock down 57% from highs - market wrongly fears AI coding tools will reduce DevOps demand, but Morgan Stanley says the opposite: AI productivity will INCREASE developer count, driving MORE demand for DevOps tools. Recognized by Gartner as leader in DevOps and collaborative work management. Morgan Stanley: one of best positioned to monetize AI agents. 22% earnings growth through FY2027, beating consensus by avg 16% in last 6 quarters. Trading at 35x earnings (reasonable given beat rate). Steven does not own this. Confidence: 7/10 - high upside but execution-dependent.",
+      "impact": "bullish"
+    },
+    {
+      "id": "intel-032",
+      "date": "2026-02-13T09:00:00Z",
+      "topic": "NEW BUY: Nebius (NBIS) - AI Data Centers with Explosive Growth (\"Sold Out\")",
+      "source": "Nasdaq / Motley Fool Analysis",
+      "content": "Nebius (NBIS) is an AI infrastructure company (spun out of Russian Yandex post-sanctions) providing GPU-equipped data centers. Company reports it has \"sold out\" all available capacity with unprecedented demand. Expects -9B annual run rate (ARR) by end of 2026, up from M in Q3 (12-16x growth in 12 months). Analysts predict stock could DOUBLE in 2026. Trading at 60x sales but growing fastest among AI infrastructure peers - forward valuation is cheapest when adjusted for growth rate. Business model: rents computing power + GPU space to clients, owns some facilities. Competitive advantage: leadership team with decades of data center experience. Steven does not own this. Confidence: 7/10 - highest growth but also highest valuation risk.",
+      "impact": "bullish"
     }
   ],
   "synthesizedInsights": [
@@ -373,6 +397,6 @@
       "addedAt": "2026-02-09T11:50:00Z"
     }
   ],
-  "lastUpdated": "2026-02-11T20:39:43.920271+00:00",
+  "lastUpdated": "2026-02-13T09:02:37.260681+00:00",
   "dataSource": "Market Data"
 }
