@@ -1,6 +1,34 @@
 {
   "notes": [
     {
+      "id": "note-047",
+      "title": "Seedance 2.0 Multi-Lens Storytelling - Technical Deep Dive",
+      "date": "2026-02-13T18:15:00.000000+00:00",
+      "tags": [
+        "seedance-2.0",
+        "bytedance",
+        "multi-lens",
+        "video-generation",
+        "ai-video",
+        "multi-shot"
+      ],
+      "content": "Seedance 2.0 Multi-Lens Storytelling - Technical Deep Dive\n\n## Overview\nByteDance launched Seedance 2.0 on February 12, 2026, generating significant buzz as China's second 'DeepSeek moment' in AI. The model went viral for its 'multi-lens storytelling' capability and high-fidelity 'palace drama' clips.\n\n## Key Technical Capabilities\n\n### Multi-Lens Storytelling\n- **Core feature**: Generates cinematic sequences with multiple camera angles from single prompts\n- **Viral demonstration**: 'Palace drama' clips showcasing dramatic multi-angle narrative sequences\n- **Use case**: Professional film, e-commerce, and advertising productions\n\n### Multi-Shot Generation\n- **Single model output**: Cinema-grade video with synchronized audio\n- **Phoneme-perfect lip-sync**: Supports 8+ languages natively\n- **Resolution**: 2K video quality with native audio generation\n- **Input flexibility**: Processes text, imagery, sound, and motion simultaneously\n\n### Multi-Reference Blending\n- **Unique capability**: Upload multiple reference images at once\n- **AI blending**: Combines multiple references into single polished video\n- **Workflow advantage**: No need for complex prompts to describe visual elements\n\n## Comparison to Existing Tools\n\n| Feature | Seedance 2.0 | Kling 3.0 | Runway Gen-4 | Sora |\n|---------|--------------|-----------|--------------|------|\n| Multi-lens storytelling | ✅ Native | ✅ Multishot | ⚠️ Limited | ✅ Supported |\n| Native audio generation | ✅ Yes | ❌ No | ❌ No | ⚠️ Limited |\n| Lip-sync | ✅ 8+ languages | ❌ No | ⚠️ Basic | ⚠️ Basic |\n| Multi-reference upload | ✅ Yes | ❌ No | ❌ No | ❌ No |\n| Resolution | ✅ 2K | ✅ 1080p+ | ✅ 1080p | ✅ 1080p+ |\n| Open weights | ❌ No | ❌ No | ❌ No | ❌ No |\n\n## Strategic Implications\n\n### For Content Production\n- **Multi-lens advantage**: Could reduce editing time by generating edited sequences directly\n- **Audio sync**: Eliminates separate voiceover/dubbing workflow\n- **Reference blending**: Faster iteration with visual references vs text prompting\n\n### Comparison to Current Workflow (Kling 3.0)\n- **Kling strength**: Multishot from 1 image (proven, accessible via Higgsfield)\n- **Seedance advantage**: Native audio + lip-sync + multi-reference\n- **Trade-off**: Kling is production-ready now; Seedance requires new platform adoption\n\n## Access & Availability\n- **Platform**: Seedance 2.0 AI (seedance2ai.app)\n- **Launch date**: February 12, 2026\n- **Origin**: ByteDance (TikTok parent company)\n- **Market impact**: Drawing DeepSeek-level attention in China\n\n## Testing Recommendation\n\n### Priority: HIGH\nPer state.json nextPriority, testing Seedance 2.0 multi-lens for stevensongirl workflow is immediate priority.\n\n### Test Cases\n1. **Multi-lens narrative**: Generate 3-shot sequence of creature evolution\n2. **Audio sync**: Test lip-sync with voiceover script\n3. **Reference blending**: Upload 2-3 character images, generate interaction scene\n4. **Quality comparison**: Same prompt in Kling 3.0 vs Seedance 2.0\n\n### Evaluation Criteria\n- Production speed vs Kling 3.0\n- Quality of multi-shot continuity\n- Audio generation quality\n- Cost per video (if pricing available)\n- Platform stability/reliability\n\n## Potential Workflow Integration\n\n### If Seedance Outperforms Kling\n- Migrate stevensongirl production to Seedance 2.0\n- Train editors on multi-lens prompting\n- Leverage native audio for faster turnaround\n\n### If Kling Remains Superior\n- Continue Kling 3.0 multishot workflow\n- Monitor Seedance for future iterations\n- Potential hybrid: Seedance for audio, Kling for video\n\n## Related Intelligence\n- note-045: Kling 3.0 Multishot 1-Image Workflow (current production method)\n- note-022: Seedance 2.0 launch coverage (initial announcement)\n- active-002: Upwork editor recruitment (tool selection affects training)\n\n## Sources\n- Reuters: 'ByteDance's new AI video model goes viral as China looks for second DeepSeek moment' (Feb 12, 2026)\n- NxCode: 'Seedance 2.0 Complete Guide' (Feb 12, 2026)\n- LatestLY: 'What Is Seedance 2.0?' (Feb 12, 2026)\n- Seedance 2.0 Official: seedance2ai.app\n\n## Confidence Score: 85%\nBased on multiple source verification (Reuters, NxCode, official site). Technical claims validated across sources. Actual performance testing needed for production validation.",
+      "sourceUrls": [
+        "https://www.reuters.com/business/media-telecom/bytedances-new-ai-video-model-goes-viral-china-looks-second-deepseek-moment-2026-02-12/",
+        "https://www.nxcode.io/resources/news/seedance-2-0-complete-guide-ai-video-generation-2026",
+        "https://www.latestly.com/technology/what-is-seedance-2-0-all-about-bytedances-new-ai-video-model-going-viral-in-china-as-elon-musk-says-its-happening-fast-7311969.html",
+        "https://www.seedance2ai.app/"
+      ],
+      "category": "AI Video Tools",
+      "linkedYouTubeIds": [],
+      "linkedBusinessOpps": [
+        "active-002"
+      ],
+      "confidence": 85,
+      "status": "complete",
+      "priority": "high"
+    },
+    {
       "id": "note-046",
       "title": "Adaptive Queue Management Pattern - Kling 3.0 Batch Generator",
       "date": "2026-02-13T05:04:00.000000+00:00",
