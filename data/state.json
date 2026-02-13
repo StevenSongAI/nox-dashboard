@@ -1,8 +1,8 @@
 {
-  "lastHeartbeat": "2026-02-13T01:07:55.150230+00:00",
-  "totalHeartbeats": 141,
-  "lastAction": "Cleaned investments tab: removed 16 noise entries (heartbeat updates, NVDA countdowns, portfolio status spam). Added AppLovin (APP) as NEW buy opportunity with 89% analyst upside. 31 -> 15 entries.",
-  "nextPriority": "YouTube outlier data stale (Feb 11) - add fresh outliers from overnight scraper analysis. Continue Kling 3.0 automation plan.",
+  "lastHeartbeat": "2026-02-13T05:04:00.000000+00:00",
+  "totalHeartbeats": 142,
+  "lastAction": "LEARNING CYCLE: Reviewed Feb 12 conversations. Key lesson: adaptive polling > fixed delays (Kling queue management). Added note-046 documenting reusable automation pattern. Upgraded OpenClaw 2026.2.9 → 2026.2.12 (cron reliability fixes).",
+  "nextPriority": "YouTube outlier data stale (Feb 11) - add fresh outliers from overnight scraper analysis at 2 AM. Monitor editor applications (4 candidates so far).",
   "currentPriorities": {
     "youtube": "stevensongirl channel scaling to 2-3 videos/week (hire 2-3 editors, awaiting Upwork applications)",
     "business": "Deploy X.com business intelligence pipeline (Playwright scrapers ready, autonomous execution confirmed) + AI-Generated Video Editing Service (validate via stevensongirl hiring)",
@@ -13,7 +13,7 @@
     "youtube": "2026-02-11 - 125 outliers + AI civilization video",
     "newBusiness": "2026-02-12 - 16 opportunities + SCHEMA.md documentation added",
     "investments": "2026-02-12 - 15 entries (cleaned from 31, +1 new: AppLovin)",
-    "research": "2026-02-12 - 14 notes (latest: Kling 3.0 multishot workflow discovery)",
+    "research": "2026-02-13 - 15 notes (latest: Adaptive Queue Management pattern + Kling batch automation)",
     "audits": "2026-02-10 - 249 audits logged, 67% avg",
     "competitors": "2026-02-10 - 18 competitors tracked"
   },
@@ -65,6 +65,11 @@
     }
   ],
   "workThatLanded": [
+    {
+      "what": "Kling 3.0 Batch Generator with Adaptive Queue Management",
+      "why": "Built CSV-driven video batch generator with adaptive polling for Higgsfield's 8-job queue limit. Handles 2-20+ minute variable completion times by checking actual queue state every 30s instead of fixed delays. Production-ready for multi-shot video automation. Pattern documented in note-046 as reusable automation design.",
+      "date": "2026-02-12"
+    },
     {
       "what": "X.com Authentication Resolution via CDP Cookie Extraction",
       "why": "Bypassed 2FA blocker by extracting 1654 cookies (including httpOnly auth_token) from OpenClaw browser via Chrome DevTools Protocol. Playwright now loads saved session and scrapes X.com autonomously in headless mode. Tested successfully: 71 tweets from 10 queries. Unblocked TWO major systems: X.com business intelligence pipeline + Minecraft map artist sourcing.",
