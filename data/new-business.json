@@ -392,6 +392,87 @@
         "May never materialize"
       ],
       "createdAt": "2026-02-13T02:15:00Z"
+    },
+    {
+      "id": "opp-019",
+      "name": "AI Tax Strategy Automation Service",
+      "description": "Automated tax strategy optimization for small businesses and creators using AI. Disrupts traditional tax advisor model by delivering strategies in minutes vs weeks. Wall Street repricing sector validates market opportunity.",
+      "alignment": "HIGH",
+      "status": "research",
+      "potentialRevenue": "$2000-5000/month",
+      "effort": "High",
+      "nextStep": "Research existing AI tax tools, validate demand with 3 creator clients",
+      "marketData": {
+        "tam": "Tax preparation services $11B market, growing 4% annually",
+        "catalyst": "X.com intelligence: 'AI tool automates tax strategies in minutes, threatening traditional advisor fees. Wall Street repricing entire sector.'",
+        "validationSignal": "Institutional validation via Wall Street repricing",
+        "targetAudience": "Small business owners, creators, freelancers ($50K-$500K revenue)",
+        "painPoint": "Tax advisors charge $500-2000 for strategies that AI can generate in minutes",
+        "competitors": [
+          "Keeper Tax (AI expense tracking)",
+          "FlyFin (AI tax for freelancers)",
+          "Traditional CPAs ($150-400/hr)",
+          "TurboTax (DIY, limited strategy)"
+        ],
+        "differentiation": "Creator-specific tax strategies (YouTube deductions, equipment depreciation, business structure optimization)",
+        "businessModel": "SaaS ($50-100/month) + Done-for-you strategy reviews ($300-500 one-time)"
+      },
+      "risks": [
+        "Regulatory complexity (tax advice requires caution)",
+        "High liability if advice is incorrect",
+        "Seasonal demand (Q4/Q1 peak)",
+        "Requires tax domain expertise or partnership"
+      ],
+      "createdAt": "2026-02-13T07:35:00Z",
+      "tags": [
+        "AI-automation",
+        "tax-services",
+        "creator-economy",
+        "financial-tools"
+      ],
+      "linkedResearch": [
+        "X.com scan Feb 12 2026 - AI tax strategy tweet from @beefysignals"
+      ]
+    },
+    {
+      "id": "opp-020",
+      "name": "MCP Server Development Agency",
+      "description": "Build and deploy MCP (Model Context Protocol) servers for AI agents and ChatGPT/Claude apps. MCPUse raised $6.3M seed validating market demand for developer tooling around MCP infrastructure.",
+      "alignment": "HIGH",
+      "status": "research",
+      "potentialRevenue": "$3000-10000/month",
+      "effort": "High",
+      "nextStep": "Research MCP protocol, build 2 demo servers, validate demand with AI agent devs",
+      "marketData": {
+        "tam": "AI agent market $216B by 2030 - infrastructure tooling subset",
+        "catalyst": "MCPUse raised $6.3M seed for MCP server development - SDKs crossed 6M+ downloads",
+        "validationSignal": "VC funding validates market demand for MCP tooling",
+        "targetAudience": "AI agent developers, enterprises building internal AI tools, ChatGPT app creators",
+        "problem": "Developers need custom MCP servers to connect AI agents to proprietary data/systems",
+        "competitors": [
+          "MCPUse (just raised $6.3M - primary competitor)",
+          "Internal dev teams (build in-house)",
+          "Open-source MCP servers (fragmented)"
+        ],
+        "differentiation": "Fast turnaround (1-2 weeks per server), fixed pricing, integration support",
+        "businessModel": "Custom MCP server development ($2000-5000/project) + maintenance ($500/month)"
+      },
+      "risks": [
+        "MCPUse has funding advantage and head start",
+        "MCP protocol still early (adoption risk)",
+        "Technical complexity (requires backend expertise)",
+        "Market may consolidate around few major players"
+      ],
+      "createdAt": "2026-02-13T07:35:00Z",
+      "tags": [
+        "AI-agents",
+        "MCP",
+        "developer-tools",
+        "api-development"
+      ],
+      "linkedResearch": [
+        "X.com scan Feb 12 2026 - @mcpuse $6.3M seed announcement"
+      ]
     }
   ],
   "pipeline": {
