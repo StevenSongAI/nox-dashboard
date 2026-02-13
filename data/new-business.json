@@ -337,6 +337,61 @@
         "workflow-optimization",
         "OpenAI"
       ]
+    },
+    {
+      "id": "opp-017",
+      "name": "AI Agent Financial Services - Agentic Wallet Tooling",
+      "description": "Build developer tooling for AI agents managing crypto/financial assets. Inspired by Coinbase Agentic Wallets launch (Feb 2026). Target: agent developers needing payment capabilities.",
+      "alignment": "LOW",
+      "status": "research",
+      "potentialRevenue": "$500-2000/month",
+      "effort": "High",
+      "nextStep": "Research Coinbase API + validate demand in AI agent dev community",
+      "marketData": {
+        "catalyst": "Coinbase launched Agentic Wallets for autonomous AI agents",
+        "marketSignal": "X.com viral discussion, multiple high-engagement tweets",
+        "targetAudience": "AI agent developers, web3 x AI projects",
+        "competitors": [
+          "Coinbase (platform)",
+          "Manual wallet APIs"
+        ],
+        "differentiation": "SDK layer on top of Coinbase - workflow templates, agent-to-agent protocols"
+      },
+      "risks": [
+        "Coinbase may build competitive tooling",
+        "Regulatory uncertainty",
+        "Narrow market (AI + crypto)",
+        "Requires blockchain expertise Steven lacks"
+      ],
+      "createdAt": "2026-02-13T02:15:00Z"
+    },
+    {
+      "id": "opp-018",
+      "name": "Enterprise AI Agent Training/Consulting (Microsoft Virtual Employees)",
+      "description": "Monitor Microsoft's predicted $300/month virtual employee AI agent subscriptions. Research opportunity for complementary training/consulting services around enterprise AI agent adoption.",
+      "alignment": "LOW",
+      "status": "watch",
+      "potentialRevenue": "$0 (research only)",
+      "effort": "Low",
+      "nextStep": "Monitor Microsoft announcements, validate $300/month prediction",
+      "marketData": {
+        "catalyst": "X.com speculation: Microsoft may charge $300/month per AI agent in Office",
+        "marketSignal": "Speculation only, not confirmed",
+        "potentialMarket": "Enterprise AI if prediction accurate",
+        "competitors": [
+          "Microsoft",
+          "Anthropic Claude for Work",
+          "OpenAI Enterprise"
+        ],
+        "differentiation": "Training/onboarding for enterprise deployments"
+      },
+      "risks": [
+        "Based on speculation, not confirmed roadmap",
+        "Enterprise sales misaligned with Steven's model",
+        "Requires B2B expertise",
+        "May never materialize"
+      ],
+      "createdAt": "2026-02-13T02:15:00Z"
     }
   ],
   "pipeline": {
