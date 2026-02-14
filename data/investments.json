@@ -353,6 +353,19 @@
       "source": "Nasdaq / Motley Fool Analysis",
       "content": "Nebius (NBIS) is an AI infrastructure company (spun out of Russian Yandex post-sanctions) providing GPU-equipped data centers. Company reports it has \"sold out\" all available capacity with unprecedented demand. Expects -9B annual run rate (ARR) by end of 2026, up from M in Q3 (12-16x growth in 12 months). Analysts predict stock could DOUBLE in 2026. Trading at 60x sales but growing fastest among AI infrastructure peers - forward valuation is cheapest when adjusted for growth rate. Business model: rents computing power + GPU space to clients, owns some facilities. Competitive advantage: leadership team with decades of data center experience. Steven does not own this. Confidence: 7/10 - highest growth but also highest valuation risk.",
       "impact": "bullish"
+    },
+    {
+      "id": "intel-033",
+      "date": "2026-02-14T09:45:00Z",
+      "topic": "NEW BUY: Adobe (ADBE) - Creative AI Leader at 54% Discount (Morningstar 5-Star)",
+      "source": "Morningstar / Feb 11, 2026",
+      "content": "Adobe (ADBE) is the most undervalued AI stock on Morningstar's list with a 5-star rating and 54% discount to fair value ($560 fair value estimate vs current price ~$258). Company dominates content creation software with Photoshop, Illustrator, and Creative Cloud. Key AI catalyst: Firefly (generative AI suite) attracts new users and extends competitive moat. Adobe Express broadens funnel with lower-cost entry point. Wide economic moat rating from Morningstar. Uncertainty: High (creates opportunity). Steven does not own this. Stock has been beaten down despite AI monetization progress. Confidence: 8/10 - established leader, clear AI strategy, significant undervaluation.",
+      "impact": "bullish",
+      "riskFactors": [
+        "High uncertainty rating from Morningstar",
+        "Competition from Canva and other design tools",
+        "AI adoption may cannibalize traditional Creative Cloud subscriptions"
+      ]
     }
   ],
   "synthesizedInsights": [

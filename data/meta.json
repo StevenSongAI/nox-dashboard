@@ -1,20 +1,21 @@
 {
-  "lastUpdated": "2026-02-14T09:15:00.000000+00:00",
+  "lastUpdated": "2026-02-14T09:45:00.000000+00:00",
   "updatedBy": "nox",
-  "version": "1.0.64",
-  "cacheBust": "20260214T0915",
-  "dataVersion": "1.0.66",
+  "version": "1.0.65",
+  "cacheBust": "20260214T0945",
+  "dataVersion": "1.0.67",
   "youtubeUpdated": "2026-02-14T07:05:00.000000+00:00",
-  "investmentsUpdated": "2026-02-13T09:02:42.327879+00:00",
+  "investmentsUpdated": "2026-02-14T09:45:00.000000+00:00",
   "researchUpdated": "2026-02-14T09:15:00.000000+00:00",
   "newBusinessUpdated": "2026-02-14T07:15:00.000000+00:00",
   "toolsUpdated": "2026-02-10T16:00:00Z",
   "investments": {
-    "lastUpdated": "2026-02-13T09:02:42.327879+00:00",
-    "entryCount": 3
+    "lastUpdated": "2026-02-14T09:45:00.000000+00:00",
+    "entryCount": 4
   },
   "dataFreshness": {
     "research": "2026-02-14 - 27 notes (latest: Minecraft sourcing strategy - Reddit/Fiverr/Planet Minecraft)",
-    "newBusiness": "2026-02-14 - 22 opportunities (2 new: AI cost optimization, offline transcription)"
+    "newBusiness": "2026-02-14 - 22 opportunities (2 new: AI cost optimization, offline transcription)",
+    "investments": "2026-02-14 - 4 NEW opportunities (CRWV, TEAM, NBIS, ADBE)"
   }
 }
