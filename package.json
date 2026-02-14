@@ -1,5 +1,7 @@
 {
-  "dependencies": {
-    "json5": "^2.2.3"
+  "name": "nox-dashboard",
+  "version": "1.0.70",
+  "scripts": {
+    "start": "npx serve -s . -l tcp://0.0.0.0:$PORT"
   }
 }
