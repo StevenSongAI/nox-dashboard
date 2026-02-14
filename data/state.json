@@ -117,6 +117,10 @@
   "lessonsLearned": [
     {
       "date": "2026-02-14",
+      "lesson": "NEVER add entries with placeholder URLs (search-* patterns). ViewStats scraper output lacks real video IDs - only titles/channels/scores. Must verify URLs exist before adding to dashboard. Auditor flagged 28% grade for this error."
+    },
+    {
+      "date": "2026-02-14",
       "lesson": "Kimi k2.5 UNRELIABLE for auditor subagents - consistent 0-token failures. Claude Sonnet 100% reliable (tested Feb 13). WORKFLOW CHANGE: Default to anthropic/claude-sonnet-4-5 for ALL sessions_spawn auditor calls. This is a systemic reliability issue, not a one-off."
     },
     {
