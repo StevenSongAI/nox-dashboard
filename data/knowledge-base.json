@@ -1,0 +1,68 @@
+{
+  "schemaVersion": "1.0.0",
+  "lastUpdated": "2026-02-13T22:00:00Z",
+  "stats": {
+    "totalSources": 12,
+    "totalChunks": 156,
+    "byType": {
+      "article": 5,
+      "video": 4,
+      "tweet": 2,
+      "pdf": 0,
+      "text": 1
+    }
+  },
+  "recentSources": [
+    {
+      "id": "kb-001",
+      "title": "Seedance 2.0: ByteDance's Multi-Lens AI Video Generator",
+      "url": "https://www.kimi.com/share/19c4c095-26c2-8d81-8000-00007f195c24",
+      "sourceType": "article",
+      "summary": "New AI video tool from ByteDance featuring native multi-lens storytelling, audio generation, and faster production workflows.",
+      "tags": ["ai-video", "seedance", "bytedance", "multi-lens"],
+      "addedAt": "2026-02-13T15:00:00Z",
+      "chunkCount": 8
+    },
+    {
+      "id": "kb-002",
+      "title": "YouTube View Acceleration: Why Videos Plateau at 2-3K Views",
+      "url": "https://x.com/saimagnate",
+      "sourceType": "tweet",
+      "summary": "Critical discovery: 60-second retention > 55% = YouTube promotion. 60s retention < 40% = algorithm stops. Explains stevensongirl plateau pattern.",
+      "tags": ["youtube", "algorithm", "retention", "views"],
+      "addedAt": "2026-02-12T10:00:00Z",
+      "chunkCount": 5
+    },
+    {
+      "id": "kb-003",
+      "title": "Kimi k2.5 + Seedance 2 Storyboard Automation",
+      "url": "https://x.com/crystalsssup/status/2021835107326472561",
+      "sourceType": "video",
+      "summary": "Automated storyboard generation: 78 camera setups extracted from Psycho in 45 seconds. Complete shot breakdown with prompts.",
+      "tags": ["kimi", "seedance", "storyboard", "automation"],
+      "addedAt": "2026-02-11T14:00:00Z",
+      "chunkCount": 12
+    },
+    {
+      "id": "kb-004",
+      "title": "MiniMax M2.5: Benchmarks and Cost Analysis",
+      "url": "https://www.minimaxi.com/",
+      "sourceType": "article",
+      "summary": "$0.15/M input tokens, $1.20/M output tokens. Best for repetitive agentic tasks. Comparison vs Opus for different workloads.",
+      "tags": ["llm", "minimax", "benchmarks", "cost-optimization"],
+      "addedAt": "2026-02-10T16:00:00Z",
+      "chunkCount": 6
+    },
+    {
+      "id": "kb-005",
+      "title": "Matthew Berman's OpenClaw 25+ Use Cases",
+      "url": "https://gist.github.com/mberman84/065631c62d6d8f30ecb14748c00fc6d9",
+      "sourceType": "article",
+      "summary": "Comprehensive breakdown of Berman's OpenClaw setup: Personal CRM, Knowledge Base, Video Pipeline, Usage Tracker, Automations, etc.",
+      "tags": ["openclaw", "automation", "crm", "productivity"],
+      "addedAt": "2026-02-13T20:00:00Z",
+      "chunkCount": 24
+    }
+  ],
+  "topTags": ["ai-video", "youtube", "automation", "llm", "cost-optimization"]
+}

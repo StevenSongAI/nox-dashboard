@@ -64,6 +64,8 @@
         <button onclick="showTab('tools')" id="tab-btn-tools" class="tab-btn text-sm font-medium" role="tab" aria-selected="false" aria-controls="tab-tools" tabindex="-1" aria-label="Tools tab">🛠️ Tools</button>
         <button onclick="showTab('services')" id="tab-btn-services" class="tab-btn text-sm font-medium" role="tab" aria-selected="false" aria-controls="tab-services" tabindex="-1" aria-label="Services tab">🚀 Services</button>
         <button onclick="showTab('automations')" id="tab-btn-automations" class="tab-btn text-sm font-medium" role="tab" aria-selected="false" aria-controls="tab-automations" tabindex="-1" aria-label="Automations tab">⚙️ Automations</button>
+        <button onclick="showTab('tasks')" id="tab-btn-tasks" class="tab-btn text-sm font-medium" role="tab" aria-selected="false" aria-controls="tab-tasks" tabindex="-1" aria-label="Tasks tab">📝 Tasks</button>
+        <button onclick="showTab('knowledge')" id="tab-btn-knowledge" class="tab-btn text-sm font-medium" role="tab" aria-selected="false" aria-controls="tab-knowledge" tabindex="-1" aria-label="Knowledge tab">📚 Knowledge</button>
         <button onclick="showTab('research')" id="tab-btn-research" class="tab-btn text-sm font-medium" role="tab" aria-selected="false" aria-controls="tab-research" tabindex="-1" aria-label="Research tab">🔬 Research</button>
         <button onclick="showTab('audits')" id="tab-btn-audits" class="tab-btn text-sm font-medium" role="tab" aria-selected="false" aria-controls="tab-audits" tabindex="-1" aria-label="Audits tab">📋 Audits</button>
       </div>
@@ -797,6 +799,122 @@
         </div>
       </div>
     </div>
+
+    <!-- Tasks Tab -->
+    <div id="tab-tasks" class="tab-content hidden" role="tabpanel" aria-labelledby="tab-btn-tasks" hidden>
+      <div class="flex justify-between items-center mb-4">
+        <h2 class="text-xl font-semibold">📝 Task Management</h2>
+        <div class="flex gap-2">
+          <select id="tasks-status-filter" class="px-3 py-1.5 bg-dark-700 rounded-lg border border-dark-600 text-sm" onchange="renderTasks()">
+            <option value="all">All Status</option>
+            <option value="pending">Pending</option>
+            <option value="approved">Approved</option>
+            <option value="in_progress">In Progress</option>
+            <option value="done">Done</option>
+          </select>
+          <select id="tasks-priority-filter" class="px-3 py-1.5 bg-dark-700 rounded-lg border border-dark-600 text-sm" onchange="renderTasks()">
+            <option value="all">All Priority</option>
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+          </select>
+        </div>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
+        <div class="card rounded-lg p-4">
+          <div class="text-gray-400 text-sm">Pending</div>
+          <div id="tasks-count-pending" class="text-2xl font-bold mt-1 text-yellow-400">-</div>
+        </div>
+        <div class="card rounded-lg p-4">
+          <div class="text-gray-400 text-sm">In Progress</div>
+          <div id="tasks-count-in_progress" class="text-2xl font-bold mt-1 text-accent-blue">-</div>
+        </div>
+        <div class="card rounded-lg p-4">
+          <div class="text-gray-400 text-sm">Done Today</div>
+          <div id="tasks-count-done" class="text-2xl font-bold mt-1 text-green-400">-</div>
+        </div>
+        <div class="card rounded-lg p-4">
+          <div class="text-gray-400 text-sm">Due Today</div>
+          <div id="tasks-count-due-today" class="text-2xl font-bold mt-1 text-red-400">-</div>
+        </div>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+        <div class="task-column" data-status="pending">
+          <div class="flex justify-between items-center mb-2">
+            <h3 class="text-sm font-semibold text-yellow-400">⏳ Pending</h3>
+            <span id="tasks-badge-pending" class="text-xs bg-yellow-900/50 px-2 py-0.5 rounded">0</span>
+          </div>
+          <div id="tasks-cards-pending" class="space-y-2"></div>
+        </div>
+        <div class="task-column" data-status="approved">
+          <div class="flex justify-between items-center mb-2">
+            <h3 class="text-sm font-semibold text-blue-400">✓ Approved</h3>
+            <span id="tasks-badge-approved" class="text-xs bg-blue-900/50 px-2 py-0.5 rounded">0</span>
+          </div>
+          <div id="tasks-cards-approved" class="space-y-2"></div>
+        </div>
+        <div class="task-column" data-status="in_progress">
+          <div class="flex justify-between items-center mb-2">
+            <h3 class="text-sm font-semibold text-accent-blue">⚡ In Progress</h3>
+            <span id="tasks-badge-in_progress" class="text-xs bg-accent-blue/30 px-2 py-0.5 rounded">0</span>
+          </div>
+          <div id="tasks-cards-in_progress" class="space-y-2"></div>
+        </div>
+        <div class="task-column" data-status="done">
+          <div class="flex justify-between items-center mb-2">
+            <h3 class="text-sm font-semibold text-green-400">✅ Done</h3>
+            <span id="tasks-badge-done" class="text-xs bg-green-900/50 px-2 py-0.5 rounded">0</span>
+          </div>
+          <div id="tasks-cards-done" class="space-y-2"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Knowledge Base Tab -->
+    <div id="tab-knowledge" class="tab-content hidden" role="tabpanel" aria-labelledby="tab-btn-knowledge" hidden>
+      <div class="flex justify-between items-center mb-4">
+        <h2 class="text-xl font-semibold">📚 Knowledge Base</h2>
+        <div class="text-sm text-gray-400" id="kb-stats-summary">Loading...</div>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+        <div class="card rounded-lg p-4">
+          <div class="text-gray-400 text-sm">Total Sources</div>
+          <div id="kb-total-sources" class="text-2xl font-bold mt-1">-</div>
+        </div>
+        <div class="card rounded-lg p-4">
+          <div class="text-gray-400 text-sm">Total Chunks</div>
+          <div id="kb-total-chunks" class="text-2xl font-bold mt-1 text-accent-blue">-</div>
+        </div>
+        <div class="card rounded-lg p-4">
+          <div class="text-gray-400 text-sm">Last Added</div>
+          <div id="kb-last-added" class="text-2xl font-bold mt-1 text-green-400">-</div>
+        </div>
+      </div>
+      
+      <div class="card rounded-lg p-4 mb-6">
+        <div class="flex gap-2 mb-4">
+          <input type="text" id="kb-search" placeholder="🔍 Search knowledge base..." 
+                 class="flex-1 px-3 py-2 bg-dark-700 rounded-lg border border-dark-600 text-sm focus:border-accent-blue focus:outline-none"
+                 onkeypress="if(event.key==='Enter')searchKnowledge()">
+          <button onclick="searchKnowledge()" class="px-4 py-2 bg-accent-blue rounded-lg text-sm hover:bg-blue-600 transition-colors">Search</button>
+        </div>
+        <div class="flex flex-wrap gap-2 mb-4" id="kb-tags">
+          <!-- Tags populated by JS -->
+        </div>
+      </div>
+      
+      <div class="card rounded-lg p-4">
+        <h3 class="text-sm font-semibold text-gray-400 mb-4">Recent Sources</h3>
+        <div id="kb-sources-list" class="space-y-3">
+          <div class="skeleton-loader">
+            <div class="skeleton-card"></div>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 
   <!-- Detail Modal -->
@@ -814,6 +932,7 @@
 
   <script src="app.js?v=202602101600"></script>
   <script src="app-batch1.js?v=202602132140"></script>
+  <script src="app-batch2.js?v=202602132200"></script>
   <script src="tools-integrated.js?v=202602101600"></script>
   
   <!-- Footer with version timestamp for cache busting -->

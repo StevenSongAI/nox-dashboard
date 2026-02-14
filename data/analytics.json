@@ -1,0 +1,116 @@
+{
+  "schemaVersion": "1.0.0",
+  "lastUpdated": "2026-02-13T22:00:00Z",
+  "channelId": "@StevenSongIRL",
+  "channelName": "stevensongirl",
+  "dailyStats": [
+    {
+      "date": "2026-02-13",
+      "views": 52000,
+      "watchTimeMinutes": 15600,
+      "avgViewDuration": 180,
+      "subscribersGained": 145,
+      "subscribersTotal": 125000,
+      "impressions": 285000,
+      "ctr": 5.8
+    },
+    {
+      "date": "2026-02-12",
+      "views": 48000,
+      "watchTimeMinutes": 14200,
+      "avgViewDuration": 178,
+      "subscribersGained": 132,
+      "subscribersTotal": 124855,
+      "impressions": 265000,
+      "ctr": 5.5
+    },
+    {
+      "date": "2026-02-11",
+      "views": 51000,
+      "watchTimeMinutes": 15100,
+      "avgViewDuration": 177,
+      "subscribersGained": 138,
+      "subscribersTotal": 124723,
+      "impressions": 278000,
+      "ctr": 5.7
+    },
+    {
+      "date": "2026-02-10",
+      "views": 45000,
+      "watchTimeMinutes": 13300,
+      "avgViewDuration": 177,
+      "subscribersGained": 125,
+      "subscribersTotal": 124585,
+      "impressions": 250000,
+      "ctr": 5.4
+    },
+    {
+      "date": "2026-02-09",
+      "views": 47000,
+      "watchTimeMinutes": 13800,
+      "avgViewDuration": 176,
+      "subscribersGained": 118,
+      "subscribersTotal": 124460,
+      "impressions": 258000,
+      "ctr": 5.3
+    },
+    {
+      "date": "2026-02-08",
+      "views": 43000,
+      "watchTimeMinutes": 12600,
+      "avgViewDuration": 176,
+      "subscribersGained": 110,
+      "subscribersTotal": 124342,
+      "impressions": 240000,
+      "ctr": 5.2
+    },
+    {
+      "date": "2026-02-07",
+      "views": 42000,
+      "watchTimeMinutes": 12200,
+      "avgViewDuration": 174,
+      "subscribersGained": 105,
+      "subscribersTotal": 124232,
+      "impressions": 235000,
+      "ctr": 5.1
+    }
+  ],
+  "movingAverages": {
+    "views7d": 46857,
+    "views30d": 44200,
+    "subsGained7d": 125,
+    "subsGained30d": 118,
+    "ctr7d": 5.43
+  },
+  "competitorSnapshots": [
+    {
+      "channelId": "@RogersPets-w5s",
+      "channelName": "Roger's Pets",
+      "subscribers": 1200000,
+      "recentUploads": 3,
+      "uploadCadence": "2.1/week",
+      "lastChecked": "2026-02-13T20:00:00Z"
+    },
+    {
+      "channelId": "@EpicEvolution",
+      "channelName": "Epic Evolution",
+      "subscribers": 850000,
+      "recentUploads": 2,
+      "uploadCadence": "1.8/week",
+      "lastChecked": "2026-02-13T20:00:00Z"
+    },
+    {
+      "channelId": "@WildlifeWonder",
+      "channelName": "Wildlife Wonder",
+      "subscribers": 2100000,
+      "recentUploads": 4,
+      "uploadCadence": "3.2/week",
+      "lastChecked": "2026-02-13T20:00:00Z"
+    }
+  ],
+  "trends": {
+    "viewsChange7d": 12.5,
+    "subsChange7d": 18.2,
+    "ctrChange7d": 8.1
+  }
+}

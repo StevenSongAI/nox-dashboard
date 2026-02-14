@@ -1,0 +1,117 @@
+{
+  "schemaVersion": "1.0.0",
+  "lastUpdated": "2026-02-13T22:00:00Z",
+  "tasks": [
+    {
+      "id": "task-001",
+      "title": "Review Dibyendu M. portfolio",
+      "description": "Review Bloombrain agency portfolio for AI-enhanced cinematic storytelling",
+      "status": "pending",
+      "priority": "high",
+      "source": "crm",
+      "sourceRef": "contact-001",
+      "assignee": "steven",
+      "dueDate": "2026-02-14",
+      "createdAt": "2026-02-13T21:00:00Z",
+      "completedAt": null,
+      "tags": ["editor", "hiring", "portfolio"],
+      "linkedIds": ["contact-001"]
+    },
+    {
+      "id": "task-002",
+      "title": "Send test project to shortlisted editors",
+      "description": "Create and send test video project to Mehmet K. and Jesudemilade A.",
+      "status": "in_progress",
+      "priority": "high",
+      "source": "manual",
+      "sourceRef": null,
+      "assignee": "steven",
+      "dueDate": "2026-02-15",
+      "createdAt": "2026-02-11T18:00:00Z",
+      "completedAt": null,
+      "tags": ["editor", "hiring", "test-project"],
+      "linkedIds": ["contact-004", "contact-005"]
+    },
+    {
+      "id": "task-003",
+      "title": "Add billing method to Upwork",
+      "description": "Required to message candidates. URL: https://www.upwork.com/nx/payments/deposit-methods",
+      "status": "pending",
+      "priority": "high",
+      "source": "manual",
+      "sourceRef": null,
+      "assignee": "steven",
+      "dueDate": "2026-02-14",
+      "createdAt": "2026-02-13T19:00:00Z",
+      "completedAt": null,
+      "tags": ["upwork", "billing", "blocker"],
+      "linkedIds": []
+    },
+    {
+      "id": "task-004",
+      "title": "Produce 'What If [Pet] Had More Evolution Stages?' video",
+      "description": "Validated 95 viral score idea. Content brief exists. Assign to editor once hired.",
+      "status": "approved",
+      "priority": "medium",
+      "source": "pipeline",
+      "sourceRef": "idea-001",
+      "assignee": "nox",
+      "dueDate": "2026-02-20",
+      "createdAt": "2026-02-12T14:00:00Z",
+      "completedAt": null,
+      "tags": ["video", "production", "evolution"],
+      "linkedIds": ["idea-001", "brief-025"]
+    },
+    {
+      "id": "task-005",
+      "title": "Complete Ice Dragon video production",
+      "description": "95/248 images downloaded. Finish Higgsfield generation and hand to editor.",
+      "status": "in_progress",
+      "priority": "medium",
+      "source": "manual",
+      "sourceRef": null,
+      "assignee": "nox",
+      "dueDate": "2026-02-16",
+      "createdAt": "2026-02-10T10:00:00Z",
+      "completedAt": null,
+      "tags": ["video", "production", "ice-dragon", "active"],
+      "linkedIds": ["project-001"]
+    },
+    {
+      "id": "task-006",
+      "title": "Monitor ViewStats for new outliers",
+      "description": "Check hourly scraper output for new viral video patterns in AI/Gaming niches",
+      "status": "done",
+      "priority": "low",
+      "source": "automation",
+      "sourceRef": "viewstats-scraper",
+      "assignee": "nox",
+      "dueDate": null,
+      "createdAt": "2026-02-13T00:00:00Z",
+      "completedAt": "2026-02-13T17:00:00Z",
+      "tags": ["automation", "research", "daily"],
+      "linkedIds": []
+    }
+  ],
+  "stats": {
+    "total": 6,
+    "byStatus": {
+      "pending": 2,
+      "approved": 1,
+      "in_progress": 2,
+      "done": 1,
+      "cancelled": 0
+    },
+    "byPriority": {
+      "high": 3,
+      "medium": 2,
+      "low": 1
+    },
+    "byAssignee": {
+      "steven": 2,
+      "nox": 4
+    },
+    "overdue": 0,
+    "dueToday": 2
+  }
+}

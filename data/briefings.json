@@ -1,0 +1,66 @@
+{
+  "schemaVersion": "1.0.0",
+  "lastUpdated": "2026-02-13T22:00:00Z",
+  "briefings": [
+    {
+      "id": "brief-2026-02-13",
+      "date": "2026-02-13T07:00:00Z",
+      "weeklyScore": 72,
+      "monthlyScore": 68,
+      "blendedScore": 70,
+      "recommendations": [
+        {
+          "title": "Prioritize editor hiring to unblock video production",
+          "description": "2 validated video ideas are ready for production (95 and 88 viral scores) but blocked by lack of editors. Current bottleneck: Upwork billing method not added. 30 freelancers invited, 10 proposals received, top candidates identified.",
+          "impact": 90,
+          "effort": 30,
+          "confidence": 85,
+          "priority": 87.5,
+          "status": "new",
+          "consensusNotes": "High impact, low effort fix. Unblocks $500+ in video production pipeline."
+        },
+        {
+          "title": "Investigate Seedance 2.0 for multi-shot video workflow",
+          "description": "New ByteDance tool offers native multi-lens storytelling and audio generation. Could reduce production time by 30-40% compared to current Higgsfield+Kling pipeline.",
+          "impact": 75,
+          "effort": 50,
+          "confidence": 70,
+          "priority": 72.5,
+          "status": "new",
+          "consensusNotes": "Promising but unproven. Recommend test project before full adoption."
+        },
+        {
+          "title": "Scale evolution-themed content based on 676x outlier",
+          "description": "Pokemon evolution stages video hit 676x viral score. Your T-Rex evolution video is already in production (idea-001). Queue 2-3 additional evolution videos to capitalize on proven format.",
+          "impact": 85,
+          "effort": 60,
+          "confidence": 80,
+          "priority": 80.0,
+          "status": "new",
+          "consensusNotes": "Strong signal from outlier research. Low risk given validation data."
+        },
+        {
+          "title": "Monitor NVIDIA earnings (Feb 26) for investment signal",
+          "description": "NVDA reports Feb 26. Current position: 0 shares. Consider entry if earnings beat and guidance strong. Alternative: CRWV (CoreWeave) for AI infrastructure exposure.",
+          "impact": 60,
+          "effort": 20,
+          "confidence": 65,
+          "priority": 57.5,
+          "status": "new",
+          "consensusNotes": "Optional opportunity. Not urgent given existing AAPL/BTC holdings."
+        }
+      ],
+      "signalCount": 47,
+      "modelUsed": "claude-opus-4-6",
+      "sourcesAnalyzed": ["youtube-outliers", "x-intelligence", "business-opps", "investments", "research-notes"]
+    }
+  ],
+  "stats": {
+    "totalBriefings": 1,
+    "avgWeeklyScore": 72,
+    "avgMonthlyScore": 68,
+    "recommendationsActioned": 0,
+    "recommendationsDismissed": 0,
+    "recommendationsPending": 4
+  }
+}
