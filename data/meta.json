@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-02-14T17:35:00.000000+00:00",
+  "lastUpdated": "2026-02-14T16:40:00.000000+00:00",
   "updatedBy": "nox",
-  "version": "1.0.68",
-  "cacheBust": "20260214T1735",
-  "dataVersion": "1.0.69",
+  "version": "1.0.69",
+  "cacheBust": "20260214T1640",
+  "dataVersion": "1.0.70",
   "youtubeUpdated": "2026-02-14T07:05:00.000000+00:00",
   "investmentsUpdated": "2026-02-14T09:45:00.000000+00:00",
-  "researchUpdated": "2026-02-14T17:35:00.000000+00:00",
+  "researchUpdated": "2026-02-14T16:40:00.000000+00:00",
   "newBusinessUpdated": "2026-02-14T07:15:00.000000+00:00",
   "toolsUpdated": "2026-02-10T16:00:00Z",
   "investments": {
@@ -14,12 +14,12 @@
     "entryCount": 4
   },
   "dataFreshness": {
-    "research": "2026-02-14 - 30 notes (latest: AI Agent Payments Infrastructure - x402 + Cloudflare)",
+    "research": "2026-02-14 - 31 notes (latest: Kling 3.0 Launch - Multi-Shot Storyboard)",
     "newBusiness": "2026-02-14 - 22 opportunities (2 new: AI cost optimization, offline transcription)",
     "investments": "2026-02-14 - 4 NEW opportunities (CRWV, TEAM, NBIS, ADBE)"
   },
   "research": {
-    "lastUpdated": "2026-02-14T17:35:00.000000+00:00",
-    "totalNotes": 30
+    "lastUpdated": "2026-02-14T16:40:00.000000+00:00",
+    "totalNotes": 31
   }
 }
