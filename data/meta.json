@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-02-14T07:45:00.000000+00:00",
+  "lastUpdated": "2026-02-14T09:15:00.000000+00:00",
   "updatedBy": "nox",
-  "version": "1.0.63",
-  "cacheBust": "20260214T0745",
-  "dataVersion": "1.0.65",
+  "version": "1.0.64",
+  "cacheBust": "20260214T0915",
+  "dataVersion": "1.0.66",
   "youtubeUpdated": "2026-02-14T07:05:00.000000+00:00",
   "investmentsUpdated": "2026-02-13T09:02:42.327879+00:00",
-  "researchUpdated": "2026-02-14T07:45:00.000000+00:00",
+  "researchUpdated": "2026-02-14T09:15:00.000000+00:00",
   "newBusinessUpdated": "2026-02-14T07:15:00.000000+00:00",
   "toolsUpdated": "2026-02-10T16:00:00Z",
   "investments": {
@@ -14,7 +14,7 @@
     "entryCount": 3
   },
   "dataFreshness": {
-    "research": "2026-02-14 - 26 notes (latest: Minecraft artist analysis, 0/9 quality matches)",
+    "research": "2026-02-14 - 27 notes (latest: Minecraft sourcing strategy - Reddit/Fiverr/Planet Minecraft)",
     "newBusiness": "2026-02-14 - 22 opportunities (2 new: AI cost optimization, offline transcription)"
   }
 }
