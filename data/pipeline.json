@@ -1,0 +1,74 @@
+{
+  "schemaVersion": "1.0.0",
+  "lastUpdated": "2026-02-13T21:30:00Z",
+  "stages": [
+    "idea_captured",
+    "validated",
+    "brief_created",
+    "editor_assigned",
+    "in_production",
+    "published",
+    "performance_review"
+  ],
+  "ideas": [
+    {
+      "id": "idea-001",
+      "title": "What If [Pet/Creature] Had More Evolution Stages?",
+      "source": "outlier_research",
+      "sourceUrls": ["https://youtube.com/watch?v=..."],
+      "viralScore": 95,
+      "status": "validated",
+      "stage": "brief_created",
+      "targetChannel": "stevensongirl",
+      "estimatedCost": 250,
+      "estimatedViews": "100K+",
+      "assignedEditor": null,
+      "createdAt": "2026-02-12",
+      "updatedAt": "2026-02-13",
+      "validation": {
+        "outlierCount": 3,
+        "avgViralScore": 90,
+        "competitorAnalysis": "676x Pokemon evolution video proves format. Multiple 50x+ outliers in creature evolution niche."
+      },
+      "briefId": "brief-025",
+      "notes": "Ready for production. Based on Pokemon 676x outlier."
+    },
+    {
+      "id": "idea-002",
+      "title": "I Got a Pet [Creature] But It's Evolution is INSANE",
+      "source": "outlier_research",
+      "sourceUrls": ["https://youtube.com/watch?v=..."],
+      "viralScore": 88,
+      "status": "validated",
+      "stage": "ready_to_produce",
+      "targetChannel": "stevensongirl",
+      "estimatedCost": 250,
+      "estimatedViews": "75K+",
+      "assignedEditor": null,
+      "createdAt": "2026-02-13",
+      "updatedAt": "2026-02-13",
+      "validation": {
+        "outlierCount": 2,
+        "avgViralScore": 85,
+        "competitorAnalysis": "1.9M views in 2 days on similar format. High engagement."
+      },
+      "briefId": null,
+      "notes": "Strong viral signal. Consider for next production batch."
+    }
+  ],
+  "stats": {
+    "totalIdeas": 2,
+    "byStage": {
+      "idea_captured": 0,
+      "validated": 0,
+      "brief_created": 1,
+      "ready_to_produce": 1,
+      "editor_assigned": 0,
+      "in_production": 0,
+      "published": 0,
+      "performance_review": 0
+    },
+    "avgViralScore": 91.5,
+    "totalEstimatedCost": 500
+  }
+}

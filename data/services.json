@@ -1,0 +1,104 @@
+{
+  "schemaVersion": "1.0.0",
+  "lastUpdated": "2026-02-13T21:30:00Z",
+  "services": [
+    {
+      "id": "higgsfield-batch",
+      "name": "Higgsfield Batch Generator",
+      "description": "Generate 888 images from CSV prompts. Adaptive queue management for 8-job limit.",
+      "accessLevel": "editor",
+      "path": "/tools/higgsfield-batch.html",
+      "status": "available",
+      "usageCount": 12,
+      "category": "Image Generation",
+      "lastUsed": "2026-02-10"
+    },
+    {
+      "id": "kling-multishot",
+      "name": "Kling Multi-Shot Generator",
+      "description": "Generate multi-shot clips from single image. 1-image → multi-shot workflow.",
+      "accessLevel": "editor",
+      "path": "/tools/kling-multishot.html",
+      "status": "available",
+      "usageCount": 8,
+      "category": "Video Generation",
+      "lastUsed": "2026-02-12"
+    },
+    {
+      "id": "viewstats-scraper",
+      "name": "ViewStats Outlier Scraper",
+      "description": "Scrape 5 categories (AI, Gaming, Entertainment, How-To, Science) for viral videos.",
+      "accessLevel": "admin",
+      "path": "/tools/viewstats-scraper.html",
+      "status": "available",
+      "usageCount": 146,
+      "category": "Data Collection",
+      "lastUsed": "2026-02-13",
+      "automated": true
+    },
+    {
+      "id": "youtube-scraper",
+      "name": "YouTube Viral Scraper",
+      "description": "Search viral content queries for outlier videos. 5 fixed + 3 random discovery methods.",
+      "accessLevel": "admin",
+      "path": "/tools/youtube-scraper.html",
+      "status": "available",
+      "usageCount": 146,
+      "category": "Data Collection",
+      "lastUsed": "2026-02-13",
+      "automated": true
+    },
+    {
+      "id": "x-intelligence",
+      "name": "X.com Intelligence Scraper",
+      "description": "Collect business intelligence from X.com. 10 queries, ~70 tweets per run.",
+      "accessLevel": "admin",
+      "path": "/tools/x-intelligence.html",
+      "status": "available",
+      "usageCount": 89,
+      "category": "Data Collection",
+      "lastUsed": "2026-02-13",
+      "automated": true
+    },
+    {
+      "id": "minecraft-scraper",
+      "name": "Minecraft Map Artist Scraper",
+      "description": "Scrape 5 sources (PMC, Reddit, Fiverr, BuiltByBit, X) for builder talent.",
+      "accessLevel": "admin",
+      "path": "/tools/minecraft-scraper.html",
+      "status": "available",
+      "usageCount": 34,
+      "category": "Talent Sourcing",
+      "lastUsed": "2026-02-13",
+      "automated": true
+    },
+    {
+      "id": "content-brief-generator",
+      "name": "Content Brief Generator",
+      "description": "Generate production-ready content briefs from outlier research.",
+      "accessLevel": "admin",
+      "path": "/tools/content-brief-generator.html",
+      "status": "available",
+      "usageCount": 15,
+      "category": "Content Creation",
+      "lastUsed": "2026-02-11"
+    },
+    {
+      "id": "audit-tracker",
+      "name": "Value Audit Tracker",
+      "description": "Track audit scores and quality metrics across all dashboard updates.",
+      "accessLevel": "admin",
+      "path": "/tools/audit-tracker.html",
+      "status": "available",
+      "usageCount": 249,
+      "category": "Quality Assurance",
+      "lastUsed": "2026-02-13"
+    }
+  ],
+  "stats": {
+    "totalServices": 8,
+    "available": 8,
+    "maintenance": 0,
+    "totalUsage": 727
+  }
+}

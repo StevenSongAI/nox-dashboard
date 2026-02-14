@@ -1,0 +1,169 @@
+{
+  "schemaVersion": "1.0.0",
+  "lastUpdated": "2026-02-13T21:30:00Z",
+  "contacts": [
+    {
+      "id": "contact-001",
+      "name": "Dibyendu M.",
+      "type": "editor_candidate",
+      "status": "applied",
+      "source": "Upwork",
+      "location": "Bangladesh",
+      "earnings": "$200K+",
+      "skills": ["Runway", "Midjourney", "Pika", "Veo", "Luma"],
+      "hourlyRate": "$20-30",
+      "lastContact": "2026-02-13",
+      "nextAction": "Review portfolio",
+      "priority": "high",
+      "notes": "Bloombrain agency. Perfect fit message with AI + cinematic portfolio. Strong narrative approach.",
+      "portfolioUrl": "https://bloombrain.xyz/ai",
+      "communications": [
+        {
+          "date": "2026-02-13",
+          "type": "application_received",
+          "content": "Hi, This is a perfect fit. I specialize in AI-enhanced cinematic storytelling and long-form YouTube editing with strong pacing, sound design, and narrative structure."
+        }
+      ],
+      "tags": ["agency", "ai-expert", "cinematic", "high-earner"]
+    },
+    {
+      "id": "contact-002",
+      "name": "Gamage Nilan N.",
+      "type": "editor_candidate",
+      "status": "applied",
+      "source": "Upwork",
+      "location": "Sri Lanka",
+      "earnings": "$2K+",
+      "skills": ["Midjourney", "Runway", "Veo 03"],
+      "hourlyRate": "$25",
+      "lastContact": "2026-02-13",
+      "nextAction": "Screen for director's eye",
+      "priority": "high",
+      "notes": "5+ years experience. Emphasizes director's eye for composition, pacing, AI-assisted storytelling. Detailed questions about workflow.",
+      "communications": [
+        {
+          "date": "2026-02-13",
+          "type": "application_received",
+          "content": "Hello Nox, I carefully reviewed your channel direction, and I understand you need more than basic editing, you need someone with a director's eye for composition, pacing, and AI-assisted storytelling."
+        }
+      ],
+      "tags": ["experienced", "directors-eye", "detailed-questions"]
+    },
+    {
+      "id": "contact-003",
+      "name": "Rahul V.",
+      "type": "editor_candidate",
+      "status": "invited",
+      "source": "Upwork",
+      "location": "India",
+      "earnings": "$100K+",
+      "skills": ["AI Video", "Viral Ads", "Post-Editing"],
+      "hourlyRate": "$33",
+      "lastContact": "2026-02-13",
+      "nextAction": "Await response",
+      "priority": "high",
+      "notes": "Top Rated Plus. 76 Video Post-Editing jobs completed. $100K+ earned. Very experienced.",
+      "communications": [],
+      "tags": ["top-rated", "high-earner", "experienced"]
+    },
+    {
+      "id": "contact-004",
+      "name": "Mehmet K.",
+      "type": "editor_candidate",
+      "status": "shortlisted",
+      "source": "Upwork",
+      "location": "Albania",
+      "earnings": "$5K+",
+      "skills": ["Video Editing", "Midjourney", "Runway", "Premiere Pro", "After Effects"],
+      "hourlyRate": "$20",
+      "lastContact": "2026-02-11",
+      "nextAction": "Send test project",
+      "priority": "high",
+      "notes": "100% Job Success, 14 jobs, $5K+ earned. 3 similar jobs completed. Strong portfolio.",
+      "communications": [
+        {
+          "date": "2026-02-11",
+          "type": "application_received",
+          "content": "Professional video editor with AI tool experience. Ready for test project."
+        }
+      ],
+      "tags": ["proven", "ai-workflows", "similar-experience"]
+    },
+    {
+      "id": "contact-005",
+      "name": "Jesudemilade A.",
+      "type": "editor_candidate",
+      "status": "shortlisted",
+      "source": "Upwork",
+      "location": "Nigeria",
+      "earnings": "$3K+",
+      "skills": ["AI Filmmaking", "Kling", "Runway", "Veo3"],
+      "hourlyRate": "$20",
+      "lastContact": "2026-02-11",
+      "nextAction": "Send test project",
+      "priority": "high",
+      "notes": "93% Job Success, 18 jobs, Top Rated Seller. Strong AI storytelling background.",
+      "communications": [],
+      "tags": ["top-rated", "ai-storytelling", "cinematic"]
+    },
+    {
+      "id": "contact-006",
+      "name": "Majit Bosri H.",
+      "type": "editor_candidate",
+      "status": "invited",
+      "source": "Upwork",
+      "location": "Bangladesh",
+      "earnings": "$80K+",
+      "skills": ["AI Video Creator", "AI UGC", "VSL", "Video Ads"],
+      "hourlyRate": "$35",
+      "lastContact": "2026-02-13",
+      "nextAction": "Await response",
+      "priority": "medium",
+      "notes": "Very high earner ($80K+). Available now. May be overqualified or expensive.",
+      "communications": [],
+      "tags": ["high-earner", "ugc-expert", "available"]
+    },
+    {
+      "id": "contact-007",
+      "name": "Sajib K.",
+      "type": "editor_candidate",
+      "status": "invited",
+      "source": "Upwork",
+      "location": "Bangladesh",
+      "earnings": "$40K+",
+      "skills": ["AI Video Creator", "HeyGen", "Synthesia"],
+      "hourlyRate": "$10",
+      "lastContact": "2026-02-13",
+      "nextAction": "Await response",
+      "priority": "medium",
+      "notes": "17 Video Editing jobs completed. Strong experience with AI avatars.",
+      "communications": [],
+      "tags": ["ai-avatar", "experienced", "affordable"]
+    }
+  ],
+  "pipelines": {
+    "editor_hiring": {
+      "stages": ["applied", "screening", "test_project", "interview", "hired", "active"],
+      "counts": {
+        "applied": 10,
+        "screening": 2,
+        "test_project": 0,
+        "interview": 0,
+        "hired": 0,
+        "active": 0
+      }
+    }
+  },
+  "stats": {
+    "totalContacts": 7,
+    "byStatus": {
+      "applied": 2,
+      "invited": 3,
+      "shortlisted": 2
+    },
+    "bySource": {
+      "Upwork": 7
+    },
+    "highPriority": 5
+  }
+}

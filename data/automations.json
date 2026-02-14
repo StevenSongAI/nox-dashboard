@@ -1,0 +1,105 @@
+{
+  "schemaVersion": "1.0.0",
+  "lastUpdated": "2026-02-13T21:30:00Z",
+  "automations": [
+    {
+      "id": "viewstats-scraper",
+      "name": "ViewStats Hourly Scrape",
+      "schedule": "0 * * * *",
+      "lastRun": "2026-02-13T17:00:00Z",
+      "nextRun": "2026-02-13T18:00:00Z",
+      "status": "active",
+      "outputFile": "viewstats_hourly_output.json",
+      "nextAction": "2 AM overnight analysis",
+      "runCount": 146,
+      "successRate": 98.5,
+      "category": "Data Collection"
+    },
+    {
+      "id": "youtube-scraper",
+      "name": "YouTube Hourly Scrape",
+      "schedule": "30 * * * *",
+      "lastRun": "2026-02-13T17:30:00Z",
+      "nextRun": "2026-02-13T18:30:00Z",
+      "status": "active",
+      "outputFile": "youtube_hourly_output.json",
+      "nextAction": "2 AM overnight analysis",
+      "runCount": 146,
+      "successRate": 97.2,
+      "category": "Data Collection"
+    },
+    {
+      "id": "x-intelligence-morning",
+      "name": "X.com Intelligence - Morning",
+      "schedule": "0 9 * * *",
+      "lastRun": "2026-02-13T09:00:00Z",
+      "nextRun": "2026-02-14T09:00:00Z",
+      "status": "active",
+      "outputFile": "raw_tweets_{timestamp}.json",
+      "nextAction": "2:15 AM overnight analysis",
+      "runCount": 45,
+      "successRate": 94.0,
+      "category": "Data Collection"
+    },
+    {
+      "id": "x-intelligence-evening",
+      "name": "X.com Intelligence - Evening",
+      "schedule": "0 17 * * *",
+      "lastRun": "2026-02-13T17:00:00Z",
+      "nextRun": "2026-02-14T17:00:00Z",
+      "status": "active",
+      "outputFile": "raw_tweets_{timestamp}.json",
+      "nextAction": "2:15 AM overnight analysis",
+      "runCount": 45,
+      "successRate": 94.0,
+      "category": "Data Collection"
+    },
+    {
+      "id": "x-intelligence-night",
+      "name": "X.com Intelligence - Night",
+      "schedule": "0 1 * * *",
+      "lastRun": "2026-02-13T01:00:00Z",
+      "nextRun": "2026-02-14T01:00:00Z",
+      "status": "active",
+      "outputFile": "raw_tweets_{timestamp}.json",
+      "nextAction": "2:15 AM overnight analysis",
+      "runCount": 45,
+      "successRate": 94.0,
+      "category": "Data Collection"
+    },
+    {
+      "id": "youtube-analysis",
+      "name": "YouTube/ViewStats Overnight Analysis",
+      "schedule": "0 2 * * *",
+      "lastRun": "2026-02-13T02:00:00Z",
+      "nextRun": "2026-02-14T02:00:00Z",
+      "status": "active",
+      "output": "Dashboard updates",
+      "nextAction": "Add outliers to youtube.json",
+      "runCount": 45,
+      "successRate": 89.0,
+      "category": "Analysis"
+    },
+    {
+      "id": "x-analysis",
+      "name": "X.com Intelligence Analysis",
+      "schedule": "15 2 * * *",
+      "lastRun": "2026-02-13T02:15:00Z",
+      "nextRun": "2026-02-14T02:15:00Z",
+      "status": "active",
+      "output": "Dashboard updates",
+      "nextAction": "Add insights to research.json, new-business.json",
+      "runCount": 45,
+      "successRate": 85.0,
+      "category": "Analysis"
+    }
+  ],
+  "stats": {
+    "totalAutomations": 7,
+    "active": 7,
+    "paused": 0,
+    "error": 0,
+    "totalRuns": 557,
+    "avgSuccessRate": 94.8
+  }
+}

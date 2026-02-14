@@ -1,0 +1,63 @@
+{
+  "schemaVersion": "1.0.0",
+  "lastUpdated": "2026-02-13T21:30:00Z",
+  "monthlyBudget": 2000,
+  "currentSpend": 1250,
+  "alerts": [
+    {
+      "threshold": 80,
+      "triggered": false,
+      "message": "Budget at 80%"
+    },
+    {
+      "threshold": 100,
+      "triggered": false,
+      "message": "Budget exceeded"
+    }
+  ],
+  "providers": [
+    {
+      "name": "OpenAI",
+      "monthlyCost": 45.50,
+      "usage": "2.3M tokens"
+    },
+    {
+      "name": "Higgsfield",
+      "monthlyCost": 320.00,
+      "usage": "888 images generated"
+    },
+    {
+      "name": "Kling AI",
+      "monthlyCost": 85.00,
+      "usage": "42 video clips"
+    },
+    {
+      "name": "Upwork (Editors)",
+      "monthlyCost": 500.00,
+      "usage": "2 test projects"
+    }
+  ],
+  "projects": [
+    {
+      "id": "project-001",
+      "name": "Ice Dragon Evolution",
+      "channel": "stevensongirl",
+      "status": "in_production",
+      "costs": {
+        "higgsfield": 120.00,
+        "kling": 35.00,
+        "openai": 12.50,
+        "editor": 250.00,
+        "total": 417.50
+      },
+      "estimatedViews": 100000,
+      "cpm": 4.18,
+      "roi": "estimated"
+    }
+  ],
+  "projections": {
+    "monthlyBurnRate": 1250,
+    "daysRemaining": 15,
+    "projectedTotal": 1875
+  }
+}
