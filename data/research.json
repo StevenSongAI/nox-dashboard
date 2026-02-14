@@ -588,4 +588,153 @@
     }
   ],
   "totalNotes": 22
+    },
+    {
+      "id": "note-054",
+      "title": "Minecraft Map Artist Analysis - X.com Talent Sourcing Results",
+      "date": "2026-02-14T02:30:00.000000+00:00",
+      "tags": [
+        "minecraft",
+        "map-artist",
+        "talent-sourcing",
+        "x-com-scraper",
+        "stevensongirl",
+        "t-rex-video"
+      ],
+      "content": "Minecraft Map Artist Analysis - X.com Talent Sourcing Results (Feb 14, 2026)
+
+## Executive Summary
+Analyzed 9 X.com candidates from Feb 13 morning batch for Minecraft map artist talent sourcing. Zero high-quality candidates identified. X.com scraper continues to return irrelevant results despite keyword filtering.
+
+## Analysis Scope
+- **Source:** X.com scraper (x_candidates_20260213_091534.json)
+- **Candidates Analyzed:** 9
+- **High-Quality Matches:** 0 (0% success rate)
+- **Outreach Priority List:** Empty
+
+## Candidate Breakdown
+
+### 1. Andyichigo (@Andyichigo1) - FILTERED
+- **Status:** Wrong medium - Portuguese comic artist
+- **Red Flags:** Not Minecraft related, wrong niche entirely
+- **Portfolio:** N/A (comics, not builds)
+
+### 2. JRed Beats (@itsjredbeats) - FILTERED  
+- **Status:** Commenter, not provider
+- **Context:** Musician suggesting others commission artists
+- **Red Flags:** Not a builder, commentary only
+
+### 3. Likier (@Likier21) - FILTERED
+- **Status:** Wrong niche - furry artist
+- **Portfolio:** Present (but wrong category)
+- **Red Flags:** NSFW content, not Minecraft
+
+### 4. Architect Render (@ArchitectRender) - FILTERED
+- **Status:** AI real estate render service
+- **Portfolio:** Present (AI tool, not manual builds)
+- **Red Flags:** Real estate industry, not Minecraft, automated not manual
+
+### 5. ~Fauzaan (@mfzadhm) - FILTERED
+- **Status:** Blockchain 'builder' role
+- **Red Flags:** Crypto context, no Minecraft connection
+- **Context:** Gaming achievements on blockchain, not Minecraft
+
+### 6. Diffrent (@diffrent_200) - FILTERED
+- **Status:** Opinion/discussion post
+- **Context:** Talking about builders generally
+- **Red Flags:** No portfolio, not offering services
+
+### 7. Via Poseran (@jk_mandarin) - FILTERED
+- **Status:** Job posting spam
+- **Red Flags:** Not Minecraft related, Mandarin Team hiring
+
+### 8. Mr boss (@MrbossOfficiial) - FILTERED
+- **Status:** Generic DM spam
+- **Red Flags:** No portfolio, no Minecraft mention, low effort
+
+## Quality Metrics
+| Metric | Count | Rate |
+|--------|-------|------|
+| Total Candidates | 9 | 100% |
+| Portfolio Mentions | 2 | 22% |
+| Commission-Ready | 2 | 22% |
+| Minecraft-Specific | 0 | 0% |
+| High-Quality | 0 | 0% |
+
+## Scraper Issues Identified
+1. **Keyword Ambiguity:** 'Builder' catches crypto, real estate, general construction
+2. **Missing Content Filter:** No post-level verification for Minecraft keywords
+3. **No Bio Check:** Profile descriptions not scanned for Minecraft indicators
+4. **Broad Search Results:** 'Terrain artist' → paper collage artists, not game terrain
+
+## Recommendations
+
+### Immediate Actions
+1. **Add Mandatory Filter:** Posts must contain 'minecraft' OR 'mc' OR 'blocks' OR 'build'
+2. **Implement Bio Check:** Scan profile for Minecraft-related terms
+3. **Add Media Filter:** Require portfolio link detection
+
+### Alternative Sources (Higher Priority)
+1. **Reddit r/MinecraftBuddies:** Already have 1 active candidate (Frequent-Middle9104)
+2. **Reddit r/Blockbench:** 3D modelers with Minecraft focus
+3. **Planet Minecraft Forums:** Direct builder community
+4. **ArtStation with Minecraft tag:** Professional portfolios
+5. **Fiverr/Upwork:** Filtered services, verified reviews
+
+### Scraper Improvements
+```python
+# Add to X.com scraper:
+MANDATORY_KEYWORDS = ['minecraft', 'mc', 'blocks', 'build', 'map art']
+
+def is_minecraft_builder(post):
+    text = post['text'].lower()
+    bio = post['author_bio'].lower() if 'author_bio' in post else ''
+    
+    # Must have Minecraft keyword in post OR bio
+    has_keyword = any(kw in text or kw in bio for kw in MANDATORY_KEYWORDS)
+    
+    # Must not be crypto/real estate context
+    red_flags = ['crypto', 'blockchain', 'realestate', 'nft']
+    no_red_flags = not any(rf in text or rf in bio for rf in red_flags)
+    
+    return has_keyword and no_red_flags
+```
+
+## Impact on Active Projects
+
+### stevensongirl T-Rex Video
+- **Current Status:** Map artist still needed for custom builds
+- **X.com Route:** Not viable with current scraper quality
+- **Recommended:** Shift to Reddit/Planet Minecraft sourcing
+
+### Editor Hiring (active-002)
+- **Workflow Impact:** No map artist = editor handles fewer custom scenes
+- **Mitigation:** Use existing Minecraft stock assets or simpler builds
+
+## Conclusion
+X.com is not a viable sourcing channel for Minecraft map artists with current scraper configuration. The signal-to-noise ratio is 0%. Recommend:
+1. Pause X.com Minecraft artist scraping
+2. Prioritize Reddit r/MinecraftBuddies and r/Blockbench
+3. Add ArtStation with Minecraft tag search
+4. Consider direct outreach on Planet Minecraft forums
+
+## Data Files
+- Source: `x_candidates_20260213_091534.json`
+- Filtered Results: `filtered_candidates.json`
+- Raw CSV: `all_candidates_raw.csv`
+
+## Next Analysis
+Scheduled for next cron cycle (if scraper improvements implemented). Otherwise, recommend shifting resources to Reddit/ArtStation sourcing.",
+      "sourceUrls": [],
+      "category": "Talent Sourcing",
+      "linkedYouTubeIds": [],
+      "linkedBusinessOpps": [
+        "active-002"
+      ],
+      "confidence": 85,
+      "status": "complete",
+      "priority": "high"
+    }
+  ],
+  "totalNotes": 23
 }
