@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "lastUpdated": "2026-02-14T20:40:00Z",
+    "totalArtists": 5,
+    "sources": ["Fiverr", "Planet Minecraft"],
+    "status": "ready_for_outreach"
+  },
+  "artists": [
+    {
+      "id": "mca-001",
+      "name": "whaloebuilds",
+      "portfolioUrl": "https://www.fiverr.com/whaloebuilds/create-you-realistic-world-painter-map-for-minecraft",
+      "source": "Fiverr",
+      "location": "Fiverr",
+      "discord": null,
+      "pricing": "$40 custom WorldPainter map",
+      "specialty": "Realistic WorldPainter maps",
+      "experience": null,
+      "status": "pending_contact",
+      "notes": "7-day delivery mentioned in research"
+    },
+    {
+      "id": "mca-002",
+      "name": "admyn77",
+      "portfolioUrl": "https://www.fiverr.com/admyn77/make-you-a-custom-minecraft-map-in-world-painter",
+      "source": "Fiverr",
+      "location": "Fiverr",
+      "discord": null,
+      "pricing": "$10-50 (1000x1000 to 10000x10000 blocks)",
+      "specialty": "Custom Minecraft maps (variable sizes)",
+      "experience": null,
+      "status": "pending_contact",
+      "notes": "Scalable pricing based on map size"
+    },
+    {
+      "id": "mca-003",
+      "name": "evershadowvii",
+      "portfolioUrl": "https://www.fiverr.com/evershadowvii/create-a-minecraft-terrain-map-using-world-painter",
+      "source": "Fiverr",
+      "location": "Fiverr",
+      "discord": null,
+      "pricing": "$5 starting terrain maps",
+      "specialty": "Terrain maps (budget option)",
+      "experience": null,
+      "status": "pending_contact",
+      "notes": "Lowest price point - good for testing"
+    },
+    {
+      "id": "mca-004",
+      "name": "chi_bot",
+      "portfolioUrl": "https://www.fiverr.com/chi_bot/create-a-world-painter-map-for-you",
+      "source": "Fiverr",
+      "location": "Fiverr",
+      "discord": null,
+      "pricing": "$30 (10+ years experience)",
+      "specialty": "WorldPainter maps",
+      "experience": "10+ years",
+      "status": "pending_contact",
+      "notes": "Most experienced - 10+ years"
+    },
+    {
+      "id": "mca-005",
+      "name": "Regnozes",
+      "portfolioUrl": "https://www.planetminecraft.com/forums/minecraft/servers/world-painter-artist-for-hire-526366/",
+      "source": "Planet Minecraft",
+      "location": "Planet Minecraft Forums",
+      "discord": "Regnozes#4631",
+      "pricing": "Contact for pricing",
+      "specialty": "WorldPainter artist",
+      "experience": null,
+      "status": "pending_contact",
+      "notes": "Has Discord - direct contact possible"
+    }
+  ],
+  "outreachTemplates": {
+    "fiverr": "Hi [name], I'm working on a YouTube video project that needs a custom Minecraft map. I found your WorldPainter work and it looks great. I need a [map type] approximately [size] blocks. Timeline is flexible. Can you tell me about your availability and pricing for something like this?",
+    "planetMinecraft": "Hi [name], I came across your post on Planet Minecraft forums. I'm working on a YouTube video project and need a custom WorldPainter map. Would you be interested in discussing this? I'm looking for [map type] around [size] blocks."
+  },
+  "budgetRecommendation": {
+    "smallMap": "$20-40 (1000x1000 blocks)",
+    "mediumMap": "$75-100 (3000x3000 blocks - Ice Dragon scale)",
+    "largeMap": "$150-200 (5000x5000+ blocks)"
+  }
+}
