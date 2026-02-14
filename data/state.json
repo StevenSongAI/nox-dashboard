@@ -1,8 +1,8 @@
 {
   "lastHeartbeat": "2026-02-14T07:00:00.000Z",
   "totalHeartbeats": 147,
-  "lastAction": "Overnight YouTube/ViewStats analysis (2:00 AM cron) - Added 4 new outlier videos to dashboard from past 24h scraper data. Scores: 345x, 326x, 318x, 160x. All relevant to AI/creature/gaming niches.",
-  "nextPriority": "Spawn VALUE_AUDITOR for overnight analysis review.",
+  "lastAction": "Overnight ViewStats analysis REVERTED - Removed 4 placeholder entries with fake URLs (auditor flagged 28% grade). Workflow gap: scraper lacks real video IDs.",
+  "nextPriority": "Fix ViewStats scraper to capture real video URLs, not just search queries.",
   "currentPriorities": {
     "youtube": "stevensongirl channel scaling to 2-3 videos/week (10 editor applicants received, 4 shortlisted - awaiting billing method to message candidates)",
     "business": "X.com business intelligence pipeline operational (3x daily scraping, overnight analysis working), AI-Generated Video Editing Service hiring in progress",
@@ -10,7 +10,7 @@
     "tools": "Kling multishot workflow (1 image → multi-shot clips), Kling 3.0 on Higgsfield available, batch generator with adaptive queue management built"
   },
   "dataFreshness": {
-    "youtube": "2026-02-14 - 129 outliers (+4 from overnight ViewStats analysis: 345x AI Cricket, 326x Herping, 318x Retail Tech, 160x Existential Cat)",
+    "youtube": "2026-02-14 - 125 outliers (REVERTED: 4 placeholder entries removed due to fake URLs)",
     "newBusiness": "2026-02-13 - 20 opportunities (4 from X.com overnight analysis)",
     "investments": "2026-02-13 - 15 entries (3 NEW opportunities: CRWV, TEAM, NBIS)",
     "research": "2026-02-13 - 23 notes (Seedance 2.0 multi-lens, Kimi k2.5 reliability issue documented)",
