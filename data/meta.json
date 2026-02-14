@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-02-14T19:50:14.647875+00:00",
+  "lastUpdated": "2026-02-14T15:00:33.157338",
   "updatedBy": "nox",
-  "version": "1.0.73",
-  "cacheBust": "20260214T1950",
-  "dataVersion": "1.0.73",
+  "version": "1.0.74",
+  "cacheBust": "20260214T1500",
+  "dataVersion": "1.0.74",
   "youtubeUpdated": "2026-02-14T07:05:00.000000+00:00",
   "investmentsUpdated": "2026-02-14T09:45:00.000000+00:00",
-  "researchUpdated": "2026-02-14T19:00:00.000000+00:00",
+  "researchUpdated": "2026-02-14T15:00:33.157338",
   "newBusinessUpdated": "2026-02-14T07:15:00.000000+00:00",
   "toolsUpdated": "2026-02-10T16:00:00Z",
   "investments": {
@@ -14,7 +14,7 @@
     "entryCount": 4
   },
   "dataFreshness": {
-    "research": "2026-02-14 - 35 notes (latest: Video Editor Hiring Best Practices)",
+    "research": "2026-02-14 - 37 notes (latest: YouTube Algorithm 2026)",
     "newBusiness": "2026-02-14 - 22 opportunities (2 new: AI cost optimization, offline transcription)",
     "investments": "2026-02-14 - 4 NEW opportunities (CRWV, TEAM, NBIS, ADBE)"
   },
@@ -22,5 +22,5 @@
     "lastUpdated": "2026-02-14T19:00:00.000000+00:00",
     "totalNotes": 35
   },
-  "totalNotes": 36
+  "totalNotes": 37
 }
