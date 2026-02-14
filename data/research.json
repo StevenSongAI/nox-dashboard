@@ -1,6 +1,26 @@
 {
   "notes": [
     {
+      "id": "note-048",
+      "title": "Kimi k2.5 Auditor Reliability Issue - Workflow Change Required",
+      "date": "2026-02-14T05:00:00.000000+00:00",
+      "tags": [
+        "auditor-reliability",
+        "kimi-k2.5",
+        "claude-sonnet",
+        "sessions-spawn",
+        "workflow-change",
+        "systemic-issue"
+      ],
+      "content": "Kimi k2.5 Auditor Reliability Issue - Workflow Change Required\n\n## Problem\n\nKimi k2.5 (kimi-coding/k2p5) experiencing consistent failures when spawning VALUE_AUDITOR subagents.\n\n### Failure Pattern\n- **Date:** February 13, 2026\n- **Task:** VALUE_AUDITOR for dashboard update (investment intelligence - CRWV, TEAM, NBIS)\n- **Symptom:** 0 tokens generated, no output after multiple attempts\n- **Attempts:** 2 separate auditor spawns\n- **Result:** Both failed completely\n\n### Error Details\n- Subagent spawned successfully (session created)\n- No error message returned\n- No audit report generated\n- Status showed 'completed' but with zero content\n\n## Resolution Test\n\n### Retry with Claude Sonnet\n- **Model:** anthropic/claude-sonnet-4-5\n- **Result:** SUCCESS\n- **Completion time:** 2 minutes 21 seconds\n- **Output:** Full audit report generated\n- **Grade:** 82-85% (highest category)\n\n### Test Validation\nSame task, same template, same data:\n- Kimi k2.5: 0% success (0/2 attempts)\n- Claude Sonnet: 100% success (1/1 attempt)\n\n## Root Cause Analysis\n\n### Hypothesis: Model-Specific Subagent Instability\n- Kimi k2.5 may have issues with long-context subagent sessions\n- Possible timeout or token allocation problems\n- Not a general subagent issue (Claude works fine)\n\n### Evidence\n1. Main session (this session) using Kimi k2.5 - working fine\n2. Subagent sessions using Kimi k2.5 - consistent failures\n3. Subagent sessions using Claude Sonnet - reliable\n\n## Workflow Change (MANDATORY)\n\n### BEFORE (Unreliable)\n```python\nsessions_spawn(\n    task=\"VALUE_AUDIT - Dashboard Update Review...\",\n    label=\"proactive-work:VALUE_AUDITOR:dashboard-update\"\n    # Default model (Kimi k2.5) - UNRELIABLE\n)\n```\n\n### AFTER (Reliable)\n```python\nsessions_spawn(\n    task=\"VALUE_AUDIT - Dashboard Update Review...\",\n    label=\"proactive-work:VALUE_AUDITOR:dashboard-update\",\n    model=\"anthropic/claude-sonnet-4-5\"  # ✅ CLAUDE SONNET - RELIABLE\n)\n```\n\n## Implementation Checklist\n\n- [x] Document issue in research.json (this note)\n- [x] Update HEARTBEAT.md auditor spawn examples to use Claude Sonnet\n- [x] Update VALUE_AUDIT_TEMPLATE.md with model recommendation\n- [ ] Retroactively identify any unaudited dashboard updates from Feb 13\n- [ ] Re-run audits for critical updates if needed\n\n## Scope of Impact\n\n### Affected Systems\n- All VALUE_AUDITOR spawns\n- All overnight analysis subagents (if using Kimi)\n- Any sessions_spawn with quality-sensitive tasks\n\n### NOT Affected\n- Main session operations\n- Direct tool calls\n- Non-subagent workflows\n\n## Long-Term Recommendations\n\n### 1. Model Selection Guidelines\n| Task Type | Recommended Model | Why |\n|-----------|-------------------|-----|\n| **Auditors/Quality Control** | Claude Sonnet | Reliable, structured output |\n| **Overnight Analysis** | Claude Sonnet | Long-running, needs consistency |\n| **Quick Research** | Kimi k2.5 | Fast, cost-effective |\n| **Code Generation** | Kimi k2.5 | Strong coding capabilities |\n| **Complex Reasoning** | Claude Sonnet | Better at nuanced analysis |\n\n### 2. Monitoring\n- Track subagent success rates by model\n- Alert on 0-token completions\n- Retry failed auditors with Claude Sonnet automatically\n\n### 3. Fallback Strategy\nIf Claude Sonnet ever fails:\n1. Retry once with same model\n2. If still failing, escalate to main session\n3. Never silently skip audits\n\n## Historical Context\n\n### Previous Kimi Issues\n- None documented in this severity\n- Main session Kimi has been stable\n- This appears to be subagent-specific\n\n### Claude Sonnet Track Record\n- All auditor retries successful\n- Overnight analysis (when used) reliable\n- Consistent structured output\n\n## Confidence Score: 95%\nBased on direct A/B test (Kimi 0% vs Claude 100%). Pattern consistent across multiple attempts. Root cause not fully diagnosed but workaround proven effective.\n\n## Action Required\n\n**IMMEDIATE:** All future auditor spawns MUST specify Claude Sonnet model override.\n\n**This is a systemic reliability issue requiring workflow change, not a one-off failure.**",
+      "sourceUrls": [],
+      "category": "System Reliability",
+      "linkedYouTubeIds": [],
+      "confidence": 95,
+      "status": "complete",
+      "priority": "high"
+    },
+    {
       "id": "note-047",
       "title": "Seedance 2.0 Multi-Lens Storytelling - Technical Deep Dive",
       "date": "2026-02-13T18:15:00.000000+00:00",

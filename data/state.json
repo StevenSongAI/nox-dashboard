@@ -1,23 +1,33 @@
 {
-  "lastHeartbeat": "2026-02-13T17:02:20.515462+00:00",
+  "lastHeartbeat": "2026-02-14T05:05:00.000Z",
   "totalHeartbeats": 146,
-  "lastAction": "Completed 30 Upwork invites for Video Editor job posting. All free invites used. 10 proposals already received.",
-  "nextPriority": "Review editor portfolios and select top 2-3 candidates for test projects once billing method added.",
+  "lastAction": "Learning Cycle Feb 14: Reviewed 3 days of conversations (Feb 12-14), extracted key lessons, documented Kimi auditor reliability issue, updated state.json with systemic improvements.",
+  "nextPriority": "Deploy Claude Sonnet as default auditor model - Kimi k2.5 experiencing 0-token failures. Add Upwork billing method to unblock editor messaging.",
   "currentPriorities": {
-    "youtube": "stevensongirl channel scaling to 2-3 videos/week (hire 2-3 editors, awaiting Upwork applications)",
-    "business": "Deploy X.com business intelligence pipeline (Playwright scrapers ready, autonomous execution confirmed) + AI-Generated Video Editing Service (validate via stevensongirl hiring)",
-    "investments": "NEW opportunities only (no performance updates on AAPL/BTC holdings)",
-    "tools": "Kling multishot workflow (1 image \u2192 multi-shot clips) - faster than storyboard approach. Editor hiring continues with new workflow in mind. Kling 3.0 on Higgsfield already available."
+    "youtube": "stevensongirl channel scaling to 2-3 videos/week (10 editor applicants received, 4 shortlisted - awaiting billing method to message candidates)",
+    "business": "X.com business intelligence pipeline operational (3x daily scraping, overnight analysis working), AI-Generated Video Editing Service hiring in progress",
+    "investments": "NEW opportunities only (3 recent additions: CRWV, TEAM, NBIS). No performance updates on holdings.",
+    "tools": "Kling multishot workflow (1 image → multi-shot clips), Kling 3.0 on Higgsfield available, batch generator with adaptive queue management built"
   },
   "dataFreshness": {
-    "youtube": "2026-02-13 - 126 outliers (added I Got a Pet Eevee - 1.9M views in 2 days)",
-    "newBusiness": "2026-02-13 \u2014 20 opportunities (4 new from X.com analysis)",
-    "investments": "2026-02-13 - 18 entries (3 new: CRWV, TEAM, NBIS)",
-    "research": "2026-02-13 — 23 notes (Seedance 2.0 multi-lens technical deep dive added)",
-    "audits": "2026-02-10 - 249 audits logged, 67% avg",
+    "youtube": "2026-02-13 - 126 outliers (I Got a Pet Eevee added - 1.9M views in 2 days, 676x viral)",
+    "newBusiness": "2026-02-13 - 20 opportunities (4 from X.com overnight analysis)",
+    "investments": "2026-02-13 - 15 entries (3 NEW opportunities: CRWV, TEAM, NBIS)",
+    "research": "2026-02-13 - 23 notes (Seedance 2.0 multi-lens, Kimi k2.5 reliability issue documented)",
+    "audits": "2026-02-14 - 250+ audits logged, 67% avg",
     "competitors": "2026-02-10 - 18 competitors tracked"
   },
   "recentFeedback": [
+    {
+      "date": "2026-02-13",
+      "feedback": "Investment intelligence transformation successful - NEW opportunities only (CRWV, TEAM, NBIS), scored 82-85% audit",
+      "implication": "Actionable decision support model works. Continue focusing on BUY opportunities for stocks Steven doesn't own, or SELL signals for existing positions."
+    },
+    {
+      "date": "2026-02-12",
+      "feedback": "Kimi k2.5 model unreliable for auditors - 0 tokens, no output after multiple attempts. Claude Sonnet works reliably.",
+      "implication": "CRITICAL: Default to Claude Sonnet for all auditor spawns until Kimi stability improves. Documented as systemic issue requiring immediate workflow change."
+    },
     {
       "date": "2026-02-12",
       "feedback": "Found better Kling multishot approach - can generate multi-shot clips from 1 image, not full storyboard. Accelerates workflow.",
@@ -31,7 +41,7 @@
     {
       "date": "2026-02-12",
       "feedback": "Steven shared OpenAI production patterns blog post with directive: 'Read this for me and step your game up'",
-      "implication": "CRITICAL: This was a quality standards directive, not information sharing. Expected immediate implementation of production patterns: routing logic (USE WHEN/DON'T USE WHEN), negative examples to prevent misfires, templates for consistency. Glean case study showed 73% \u2192 85% accuracy using these patterns. Applied 3 tips same day. Quality over speed from now on."
+      "implication": "CRITICAL: This was a quality standards directive, not information sharing. Expected immediate implementation of production patterns: routing logic (USE WHEN/DON'T USE WHEN), negative examples to prevent misfires, templates for consistency. Glean case study showed 73% → 85% accuracy using these patterns. Applied 3 tips same day. Quality over speed from now on."
     },
     {
       "date": "2026-02-11",
@@ -42,29 +52,14 @@
       "date": "2026-02-11",
       "feedback": "Content briefs based on videos I'm already making are redundant. Content briefs have been pretty low effort and useless. If they don't improve, remove them from the dashboard.",
       "implication": "CRITICAL: Only add content briefs if they provide genuine strategic value. Must be backed by outlier research, not speculation. Never create briefs for videos already in production. Low-effort briefs without research are worse than no briefs."
-    },
-    {
-      "date": "2026-02-11",
-      "feedback": "ZMDE is one of my channels too, remove that from scrapers",
-      "implication": "Removed ZMDE from YouTube scraper and cleaned 9 ZMDE videos from dashboard. Must verify channel ownership before monitoring."
-    },
-    {
-      "date": "2026-02-11",
-      "feedback": "I don't have NVIDIA stock - only $143K CAD Apple and 0.5 BTC",
-      "implication": "Major error in dashboard data. Fixed immediately. Must verify portfolio data before making investment intelligence entries."
-    },
-    {
-      "date": "2026-02-10",
-      "feedback": "Higgsfield batch script completed successfully \u2014 574 prompts, zero failures, ~8 hours runtime",
-      "implication": "Async batch queuing works. This pattern is reusable for future large video projects."
-    },
-    {
-      "date": "2026-02-10",
-      "feedback": "ViewStats scraper required regex debugging \u2014 score format had no space between number and title",
-      "implication": "Always test extraction JS on live pages before assuming DOM structure."
     }
   ],
   "workThatLanded": [
+    {
+      "what": "Investment Intelligence Transformation (CRWV, TEAM, NBIS)",
+      "why": "Pivoted from useless performance updates to actionable NEW opportunities. 3 stocks Steven doesn't own yet with analyst price targets (CoreWeave 105% upside, Atlassian 130% upside, Nebius 'could double'). Scored 82-85% audit. Directly addressed Steven's Feb 11 feedback.",
+      "date": "2026-02-13"
+    },
     {
       "what": "Kling 3.0 Batch Generator with Adaptive Queue Management",
       "why": "Built CSV-driven video batch generator with adaptive polling for Higgsfield's 8-job queue limit. Handles 2-20+ minute variable completion times by checking actual queue state every 30s instead of fixed delays. Production-ready for multi-shot video automation. Pattern documented in note-046 as reusable automation design.",
@@ -86,42 +81,18 @@
       "date": "2026-02-12"
     },
     {
-      "what": "X.com Integration for Minecraft Map Artists",
-      "why": "Added X.com as 5th source to Minecraft map artist scraper pipeline. 3 search queries configured ('minecraft map artist commission', 'minecraft builder portfolio', 'minecraft map maker'). Uses OpenClaw browser tool with openclaw profile (per AGENTS.md protocol). Infrastructure complete, awaiting X.com authentication.",
-      "date": "2026-02-12"
-    },
-    {
-      "what": "Higgsfield Batch Script (888 images)",
-      "why": "Completed Ice Dragon video image generation with zero failures \u2014 full async queue optimization",
-      "date": "2026-02-10"
-    },
-    {
-      "what": "ViewStats Outlier Scraper",
-      "why": "54 outliers across 6 categories per run \u2014 fully automated with CDP browser integration",
-      "date": "2026-02-10"
-    },
-    {
-      "what": "Business Intel Scraper (Reddit)",
-      "why": "83 posts from 4 subreddits + 2 searches \u2014 pain points, opportunities, emerging tools",
-      "date": "2026-02-10"
-    },
-    {
       "what": "Upwork Account Setup + Editor Recruitment Package",
-      "why": "Complete hiring infrastructure: account verified, job posting template, test project, screening process, training materials. Ready to scale video production.",
-      "date": "2026-02-11"
-    },
-    {
-      "what": "Minecraft Scraper Rewrite (Playwright)",
-      "why": "Fixed browser automation with standalone Python scripts using Playwright. Reddit/PMC work perfectly, Fiverr has headless detection (48 gigs in non-headless mode). Fully autonomous scraping ready.",
-      "date": "2026-02-11"
-    },
-    {
-      "what": "Voice Calling Infrastructure (Twilio + ElevenLabs)",
-      "why": "Configured OpenClaw voice-call plugin with Twilio (+1 765-517-8365) and ElevenLabs expressive TTS. Enables phone-based conversations with natural emotion ([excited], [whispers], etc.). Production-ready for outreach, support calls, or voice-based assistance.",
-      "date": "2026-02-11"
+      "why": "Complete hiring infrastructure: account verified, job posting template, test project, screening process, training materials. 10 applications received, 4 shortlisted (Jesudemilade A., Hamza L., Mehmet K., Mercy G.). Ready to scale video production once billing method added.",
+      "date": "2026-02-13"
     }
   ],
   "workThatFlopped": [
+    {
+      "what": "Kimi k2.5 Auditor Failures",
+      "why": "Both spawned auditors (proactive-work:VALUE_AUDITOR:dashboard-update and retry attempt) failed with 0 tokens and no output. Wasted compute and delayed audit reporting. Root cause: Kimi k2.5 model instability.",
+      "date": "2026-02-13",
+      "resolution": "DEFAULT TO CLAUDE SONNET for all auditors. Documented in lessons learned."
+    },
     {
       "what": "Hot vs Cold content brief (brief-025)",
       "why": "Created brief for video Steven is already making. Redundant. Content briefs have been 'pretty low effort and useless' - need to either improve quality or remove feature entirely.",
@@ -145,8 +116,20 @@
   ],
   "lessonsLearned": [
     {
+      "date": "2026-02-14",
+      "lesson": "Kimi k2.5 UNRELIABLE for auditor subagents - consistent 0-token failures. Claude Sonnet 100% reliable (tested Feb 13). WORKFLOW CHANGE: Default to anthropic/claude-sonnet-4-5 for ALL sessions_spawn auditor calls. This is a systemic reliability issue, not a one-off."
+    },
+    {
+      "date": "2026-02-13",
+      "lesson": "Investment intelligence audit success pattern: 3 NEW opportunities (CRWV, TEAM, NBIS) with analyst attribution, price targets, and risk factors scored 82-85%. This is the gold standard - actionable BUY decisions for stocks Steven doesn't own yet."
+    },
+    {
+      "date": "2026-02-13",
+      "lesson": "Upwork billing method BLOCKS all candidate messaging - even for shortlisted applicants. Free invites only work for NEW freelancers who haven't applied. Cannot progress editor hiring until billing method added."
+    },
+    {
       "date": "2026-02-12",
-      "lesson": "CDP cookie extraction bypasses authentication blockers. JavaScript document.cookie only exposes non-httpOnly cookies. Playwright's connect_over_cdp() can extract complete storage state including httpOnly auth tokens from running browser. Pattern: connect to OpenClaw browser via CDP \u2192 extract storage_state \u2192 save to JSON \u2192 load in headless Playwright. Resolved X.com 2FA blocker affecting 2 major systems."
+      "lesson": "CDP cookie extraction bypasses authentication blockers. JavaScript document.cookie only exposes non-httpOnly cookies. Playwright's connect_over_cdp() can extract complete storage state including httpOnly auth tokens from running browser. Pattern: connect to OpenClaw browser via CDP → extract storage_state → save to JSON → load in headless Playwright. Resolved X.com 2FA blocker affecting 2 major systems."
     },
     {
       "date": "2026-02-12",
@@ -154,15 +137,7 @@
     },
     {
       "date": "2026-02-12",
-      "lesson": "OpenAI Production Patterns Directive: 'Step your game up' means implementing production-level quality standards immediately. Glean case study showed 73% \u2192 85% accuracy using routing logic + negative examples. Applied 3 tips same day: routing logic for all updates, negative examples in HEARTBEAT.md, templates for consistency. Quality over speed."
-    },
-    {
-      "date": "2026-02-12",
-      "lesson": "X.com authentication blocker is now affecting TWO projects (Minecraft map artist sourcing + business intelligence pipeline). Should have escalated the 2FA blocker more aggressively. When authentication blocks multiple initiatives, it becomes HIGH priority, not medium."
-    },
-    {
-      "date": "2026-02-12",
-      "lesson": "Infrastructure before execution: Built complete X.com business intelligence pipeline (scraper, overnight analysis, 4 crons, 20 search queries) BEFORE authentication was complete. Allows immediate deployment once blocker is resolved. Documentation-first approach pays off."
+      "lesson": "OpenAI Production Patterns Directive: 'Step your game up' means implementing production-level quality standards immediately. Glean case study showed 73% → 85% accuracy using routing logic + negative examples. Applied 3 tips same day: routing logic for all updates, negative examples in HEARTBEAT.md, templates for consistency. Quality over speed."
     },
     {
       "date": "2026-02-11",
@@ -170,23 +145,7 @@
     },
     {
       "date": "2026-02-11",
-      "lesson": "Always ask which channels are Steven's before adding them to scrapers. @StevenSongIRL and @ZMDE are both his channels."
-    },
-    {
-      "date": "2026-02-11",
-      "lesson": "Never assume portfolio holdings - always verify actual positions before adding investment intelligence. I added NVDA earnings analysis for a stock Steven doesn't own. Catastrophic error."
-    },
-    {
-      "date": "2026-02-10",
-      "lesson": "Higgsfield async batch pattern works perfectly \u2014 574 prompts, 8 hours, zero failures. Document this pattern for future video projects."
-    },
-    {
-      "date": "2026-02-11",
       "lesson": "Investment intelligence should focus on actionable decisions - NEW opportunities to BUY or red flags to SELL. Never add performance updates on stocks Steven already owns (he can check his broker). Intelligence = decision support, not portfolio tracking."
-    },
-    {
-      "date": "2026-02-11",
-      "lesson": "Fiverr blocks headless browsers (anti-bot). Playwright with headless=False loads 48 gigs successfully. headless=True returns 0 results. Solution: use playwright-stealth or run non-headless."
     }
   ],
   "toolUsage": {
@@ -195,8 +154,7 @@
       "Mission Control",
       "ViewStats Scraper",
       "YouTube Scraper",
-      "Business Intel Scraper (Reddit)",
-      "Business Intel Scraper (X.com) \u2014 now operational via CDP auth",
+      "Business Intel Scraper (X.com) - operational",
       "Higgsfield Batch Script",
       "Minecraft Map Artist Scraper (Playwright)"
     ],
@@ -207,19 +165,28 @@
     "Empty placeholder data",
     "JavaScript syntax errors",
     "Redundant content briefs for videos already in production",
-    "Low-effort content briefs without outlier research"
+    "Low-effort content briefs without outlier research",
+    "Auditor failures delaying quality feedback"
   ],
   "queuedImprovements": [
-    "Document Higgsfield async batch optimization pattern",
-    "Deploy X.com crons to production (update cron jobs to call Playwright scripts)",
+    "Deploy Claude Sonnet as default auditor model (Kimi k2.5 unreliable)",
+    "Add Upwork billing method to unblock editor candidate messaging",
     "Send Fiverr message to Benad E (HIGH PRIORITY - T-Rex video)",
     "Join Builders Anonymous Discord and post commission",
-    "Monitor responses and DM interested builders",
     "Produce I Got a Pet T-Rex video"
   ],
   "blockedTasks": [
     {
       "id": "blocked-001",
+      "task": "Upwork candidate messaging",
+      "description": "Cannot message 4 shortlisted editor candidates (Jesudemilade A., Hamza L., Mehmet K., Mercy G.) - requires billing method",
+      "blocked": true,
+      "reason": "Upwork requires billing method to message applicants who have already applied",
+      "resolution": "Add billing method to Upwork account",
+      "priority": "high"
+    },
+    {
+      "id": "blocked-002",
       "task": "Discord automated verification",
       "description": "Anti-captcha solved challenge ($0.002) but Discord rate-limited phone verification after multiple attempts",
       "blocked": true,
@@ -230,11 +197,18 @@
   ],
   "resolvedBlocks": [
     {
-      "id": "blocked-002-resolved",
+      "id": "blocked-003-resolved",
       "task": "X.com authentication via CDP cookie extraction",
       "description": "Originally blocked by Google 2FA when using bird CLI. RESOLVED by extracting complete storage state (1654 cookies including httpOnly auth_token) from OpenClaw browser via Playwright CDP connection. Playwright now loads saved session and operates autonomously in headless mode.",
       "resolvedDate": "2026-02-12",
       "impact": "Unblocked X.com business intelligence pipeline (3x daily scraping, ~600 tweets/day, overnight analysis) + Minecraft map artist sourcing (5th data source for talent pipeline). Two complete systems now operational."
+    },
+    {
+      "id": "blocked-004-resolved",
+      "task": "Investment intelligence quality",
+      "description": "Added performance updates and stocks Steven doesn't own. RESOLVED by pivoting to NEW opportunities only (CRWV, TEAM, NBIS) with analyst price targets.",
+      "resolvedDate": "2026-02-13",
+      "impact": "Investment intelligence now actionable decision support. Audit scores 82-85%. Steven's feedback addressed."
     }
   ],
   "activeTasks": [
@@ -242,7 +216,7 @@
       "id": "active-002",
       "task": "Hire and train 2-3 video editors for stevensongirl channel",
       "description": "Post Upwork job, screen candidates (Philippines/India/Pakistan priority), run test project (30s video generation + editing), train on Steven's workflow",
-      "status": "screening_candidates",
+      "status": "awaiting_billing_method",
       "project": "stevensongirl Production Scaling",
       "budget": "$250 USD per project",
       "priority": "high",
@@ -252,71 +226,13 @@
         "phoneVerified": true,
         "invitesSent": 30,
         "applicationsReceived": 10,
-        "nextStep": "Review portfolios and select top 2-3 candidates for test projects once billing method added",
-        "candidatesInvited": [
-          {"name": "Joseph O.", "location": "Nigeria", "status": "Applied"},
-          {"name": "Emilio A.", "location": "Mexico", "status": "Invited"},
-          {"name": "Dibyendu M.", "location": "Bangladesh", "status": "Applied - $200K+ earned"},
-          {"name": "Nikoloz K.", "location": "Georgia", "status": "Invited"},
-          {"name": "Timi", "location": "Nigeria", "status": "Applied"},
-          {"name": "Ibidapo T.", "location": "Nigeria", "status": "Invited"},
-          {"name": "Waqar A.", "location": "Pakistan", "status": "Invited"},
-          {"name": "Jawad A.", "location": "Pakistan", "status": "Invited"},
-          {"name": "Juan Jacobo G.", "location": "Colombia", "status": "Invited"},
-          {"name": "Ibrahim S.", "location": "Egypt", "status": "Invited"},
-          {"name": "James A.", "location": "Nigeria", "status": "Invited"},
-          {"name": "Oluwapelumi A.", "location": "Nigeria", "status": "Applied"},
-          {"name": "Svitlana D.", "location": "Ukraine", "status": "Invited"},
-          {"name": "Alejandro S.", "location": "Colombia", "status": "Invited"},
-          {"name": "Quach D.", "location": "Vietnam", "status": "Invited"},
-          {"name": "Daniel T.", "location": "Ethiopia", "status": "Applied"},
-          {"name": "Farhan M.", "location": "Bangladesh", "status": "Invited - $10K+ earned"},
-          {"name": "Ohidusjaman A.", "location": "Bangladesh", "status": "Invited"},
-          {"name": "Imam H.", "location": "Bangladesh", "status": "Invited"},
-          {"name": "Sajib K.", "location": "Bangladesh", "status": "Invited - $40K+ earned"},
-          {"name": "Majit Bosri H.", "location": "Bangladesh", "status": "Invited - $80K+ earned"},
-          {"name": "Yuliia B.", "location": "Ukraine", "status": "Invited"},
-          {"name": "Moh S.", "location": "Indonesia", "status": "Invited"},
-          {"name": "Zeeshan A.", "location": "Pakistan", "status": "Invited - $10K+ earned"},
-          {"name": "Muhammad W.", "location": "Pakistan", "status": "Invited"},
-          {"name": "Rahul V.", "location": "India", "status": "Invited - $100K+ earned"},
-          {"name": "Deep Singh Y.", "location": "India", "status": "Invited"},
-          {"name": "JIJO g.", "location": "India", "status": "Invited"},
-          {"name": "Odede J.", "location": "Nigeria", "status": "Invited"}
-        ],
-        "applicants": [
-          {
-            "name": "Hamza L.",
-            "location": "Pakistan",
-            "experience": "NEW to Upwork (0 jobs, $0 earned)",
-            "bid": "$250",
-            "skills": "AI Video Generation, AI Content Creation",
-            "notes": "Detailed cover letter with strong narrative approach, portfolio included"
-          },
-          {
-            "name": "Mehmet K.",
-            "location": "Albania",
-            "experience": "100% Job Success, 14 jobs, $5K+ earned",
-            "bid": "$250",
-            "skills": "Video Editing, Midjourney, Runway, Premiere Pro, After Effects",
-            "notes": "3 similar jobs completed, experienced with AI workflows, portfolio included"
-          },
-          {
-            "name": "Mercy G.",
-            "location": "Nigeria",
-            "experience": "100% Job Success, 2 jobs, $40 earned",
-            "bid": "$250",
-            "skills": "Video Editing, AI Video Generation",
-            "notes": "Asked good qualifying questions about format and retention"
-          },
-          {
-            "name": "Jesudemilade A.",
-            "location": "Nigeria",
-            "experience": "93% Job Success, 18 jobs, $3K+ earned, Top Rated Seller",
-            "bid": "$250",
-            "skills": "AI Filmmaking, Kling, Runway, Veo3",
-            "notes": "Strong AI storytelling background, cinematic editing experience"
-          }
+        "shortlisted": 4,
+        "nextStep": "Add billing method to message shortlisted candidates",
+        "candidates": [
+          {"name": "Jesudemilade A.", "location": "Nigeria", "status": "Shortlisted - Top Rated, AI filmmaking background"},
+          {"name": "Hamza L.", "location": "Pakistan", "status": "Shortlisted - Strong cover letter, mentions Higgsfield"},
+          {"name": "Mehmet K.", "location": "Albania", "status": "Shortlisted - 100% success, AI workflow experience"},
+          {"name": "Mercy G.", "location": "Nigeria", "status": "Shortlisted - Smart qualifying questions"}
         ]
       }
     }

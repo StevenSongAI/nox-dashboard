@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-02-13T18:15:00.000000+00:00",
+  "lastUpdated": "2026-02-14T05:10:00.000000+00:00",
   "updatedBy": "nox",
-  "version": "1.0.59",
-  "cacheBust": "20260213T0735",
-  "dataVersion": "1.0.61",
+  "version": "1.0.60",
+  "cacheBust": "20260214T0510",
+  "dataVersion": "1.0.62",
   "youtubeUpdated": "2026-02-11T18:19:25.345883+00:00",
-  "investmentsUpdated": "2026-02-11T20:39:57.073196+00:00",
-  "researchUpdated": "2026-02-13T07:35:00.000000+00:00",
+  "investmentsUpdated": "2026-02-13T09:02:42.327879+00:00",
+  "researchUpdated": "2026-02-14T05:10:00.000000+00:00",
   "newBusinessUpdated": "2026-02-13T07:35:00.000000+00:00",
   "toolsUpdated": "2026-02-10T16:00:00Z",
   "investments": {
@@ -14,7 +14,7 @@
     "entryCount": 3
   },
   "dataFreshness": {
-    "research": "2026-02-13 - 20 notes (latest: X.com overnight analysis - 111 tweets reviewed, 5 new research notes added)",
+    "research": "2026-02-14 - 24 notes (latest: Kimi k2.5 auditor reliability issue documented)",
     "newBusiness": "2026-02-13 - 20 opportunities (2 new: AI Tax Strategy, MCP Server Agency)"
   }
 }
