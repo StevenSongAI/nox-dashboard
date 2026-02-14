@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-14T09:45:00.000000+00:00",
+  "lastUpdated": "2026-02-14T11:55:09.405614+00:00",
   "updatedBy": "nox",
   "version": "1.0.65",
   "cacheBust": "20260214T0945",
@@ -17,5 +17,9 @@
     "research": "2026-02-14 - 27 notes (latest: Minecraft sourcing strategy - Reddit/Fiverr/Planet Minecraft)",
     "newBusiness": "2026-02-14 - 22 opportunities (2 new: AI cost optimization, offline transcription)",
     "investments": "2026-02-14 - 4 NEW opportunities (CRWV, TEAM, NBIS, ADBE)"
+  },
+  "research": {
+    "lastUpdated": "2026-02-14T11:55:09.405614+00:00",
+    "totalNotes": 27
   }
 }
