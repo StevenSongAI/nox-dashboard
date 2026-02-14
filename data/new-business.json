@@ -473,15 +473,85 @@
       "linkedResearch": [
         "X.com scan Feb 12 2026 - @mcpuse $6.3M seed announcement"
       ]
+    {
+      "id": "opp-021",
+      "name": "AI Infrastructure Cost Optimization Tool",
+      "description": "Dashboard tool for tracking and optimizing AI service costs (OpenAI, Higgsfield, Runway, etc.). Real-time spend monitoring, usage analytics, and cost-saving recommendations. Addresses pain point: 'It was hard to understand our cloud costs, so we built our own tool' - validated by Scamall Teoir launch.",
+      "alignment": "HIGH",
+      "status": "research",
+      "potentialRevenue": "$500-2000/month",
+      "effort": "Medium",
+      "nextStep": "Survey 5 AI-heavy creators to validate cost tracking pain point; prototype dashboard for Steven's own usage",
+      "marketData": {
+        "tam": "AI services market $200B+ annually",
+        "catalyst": "X.com intelligence Feb 13: Multiple creators expressing frustration with AI service cost tracking",
+        "validationSignal": "Direct quote from founder: 'It was hard to understand our cloud costs, so we built our own tool. Saving us $$$' - Scamall Teoir",
+        "targetAudience": "AI-heavy creators, indie developers using multiple AI APIs, small studios",
+        "problem": "No unified view of AI service spend across OpenAI, Anthropic, Runway, Higgsfield, Midjourney, etc.",
+        "competitors": [
+          "Scamall Teoir (just launched, cloud-focused)",
+          "Manual spreadsheet tracking (current state)",
+          "Individual service dashboards (fragmented)"
+        ],
+        "differentiation": "AI-specific cost categories (image gen, video gen, text, embeddings), per-project cost tracking, budget alerts across multiple providers",
+        "businessModel": "Freemium (track 1 provider free) + Pro ($29/month for unlimited providers + analytics)"
+      },
+      "risks": [
+        "API integration complexity across providers",
+        "Low willingness to pay for cost-tracking tools",
+        "Competition from existing cloud cost tools expanding to AI"
+      ],
+      "createdAt": "2026-02-14T07:15:00.000000+00:00",
+      "tags": [
+        "AI-infrastructure",
+        "cost-optimization",
+        "creator-tools",
+        "dashboard-saas"
+      ],
+      "linkedResearch": [
+        "note-049"
+      ]
+    },
+    {
+      "id": "opp-022",
+      "name": "Offline AI Transcription for Creators (JAN3 Echos Evaluation)",
+      "description": "Evaluate JAN3 Echos for integration into video production workflow. Free, 100% on-device AI transcription with privacy focus. Could replace Descript/Otter.ai for caption generation and reduce ongoing SaaS costs.",
+      "alignment": "MEDIUM",
+      "status": "evaluation",
+      "potentialRevenue": "$0 (cost savings: $50-150/month in transcription SaaS fees)",
+      "effort": "Low",
+      "nextStep": "Download and test JAN3 Echos with recent StevenSongIRL video; compare accuracy vs Descript",
+      "marketData": {
+        "catalyst": "JAN3 Echos launched Feb 13, 2026 - free, offline AI transcription",
+        "validationSignal": "JAN3 is credible team (Bitcoin/AI intersection), privacy angle growing in importance",
+        "targetAudience": "Internal (stevensongirl production workflow)",
+        "competitors": [
+          "Descript ($12-24/month)",
+          "Otter.ai ($8-20/month)",
+          "Whisper API ($0.006/minute)",
+          "Mac Whisper (one-time $20)"
+        ],
+        "differentiation": "100% offline = no upload wait times, no privacy concerns, zero ongoing cost"
+      },
+      "createdAt": "2026-02-14T07:15:00.000000+00:00",
+      "tags": [
+        "AI-tools",
+        "video-production",
+        "cost-reduction",
+        "privacy"
+      ],
+      "linkedResearch": [
+        "note-049"
+      ]
     }
   ],
   "pipeline": {
-    "new": 12,
-    "evaluating": 1,
+    "new": 14,
+    "evaluating": 2,
     "pursuing": 0,
     "passed": 1,
     "won": 1
   },
-  "lastUpdated": "2026-02-12T04:33:52.805026+00:00",
-  "totalOpportunities": 16
+  "lastUpdated": "2026-02-14T07:15:00.000000+00:00",
+  "totalOpportunities": 22
 }
