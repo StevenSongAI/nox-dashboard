@@ -1,7 +1,7 @@
 {
-  "lastHeartbeat": "2026-02-14T16:05:00.000000+00:00",
-  "totalHeartbeats": 154,
-  "lastAction": "Updated competitors.json timestamp (Feb 9 → Feb 14) and added review notes. Competitive landscape reviewed - 21 channels remain core competitive set.",
+  "lastHeartbeat": "2026-02-14T16:15:00.000000+00:00",
+  "totalHeartbeats": 155,
+  "lastAction": "Added research note-058: Seedance 2.0 Launch + Hollywood AI Piracy Battle. X.com scraper detected ByteDance's new AI video model (Feb 9) and MPA/SAG-AFTRA backlash over AI piracy concerns. 85% confidence - timely industry intelligence.",
   "nextPriority": "Outreach to top 3 Fiverr Minecraft map artists (whaloebuilds, chi_bot, admyn77) for T-Rex video map commission",
   "currentPriorities": {
     "youtube": "stevensongirl channel scaling to 2-3 videos/week (10 editor applicants received, 4 shortlisted - awaiting billing method to message candidates)",
@@ -13,7 +13,7 @@
     "youtube": "2026-02-14 - 125 outliers (REVERTED: 4 placeholder entries removed due to fake URLs)",
     "newBusiness": "2026-02-14 - 22 opportunities (2 new: AI cost optimization, offline transcription)",
     "investments": "2026-02-14 - 16 entries (4 NEW opportunities: CRWV, TEAM, NBIS, ADBE)",
-    "research": "2026-02-14 - 28 notes (AI cartoon trend added)",
+    "research": "2026-02-14 - 29 notes (Seedance 2.0 + Hollywood AI battle added)",
     "audits": "2026-02-14 - 250+ audits logged, 67% avg",
     "competitors": "2026-02-14 - 21 competitors tracked (reviewed, no new additions)",
     "minecraftArtists": "2026-02-14 - 5 artists in CSV (Fiverr + Planet Minecraft)"
