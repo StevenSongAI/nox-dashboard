@@ -404,7 +404,7 @@ function showTab(tabId) {
 // Initialize tab from URL hash on page load
 function initTabFromHash() {
   const hash = window.location.hash.slice(1); // Remove #
-  const validTabs = ['dashboard', 'youtube', 'business', 'investments', 'tools', 'research', 'audits'];
+  const validTabs = ['dashboard', 'youtube', 'business', 'investments', 'crm', 'pipeline', 'usage', 'tools', 'services', 'automations', 'research', 'audits'];
   
   if (hash && validTabs.includes(hash)) {
     console.log(`[Nox Dashboard] Restoring tab from hash: ${hash}`);
@@ -421,7 +421,7 @@ function initTabFromHash() {
 // BATCH 2 FIX: Improved to handle popstate properly
 function handlePopState(event) {
   const hash = window.location.hash.slice(1);
-  const validTabs = ['dashboard', 'youtube', 'business', 'investments', 'tools', 'research', 'audits'];
+  const validTabs = ['dashboard', 'youtube', 'business', 'investments', 'crm', 'pipeline', 'usage', 'tools', 'services', 'automations', 'research', 'audits'];
   
   console.log(`[Nox Dashboard] PopState triggered, hash: ${hash}, state:`, event.state);
   

@@ -58,7 +58,12 @@
         <button onclick="showTab('youtube')" id="tab-btn-youtube" class="tab-btn text-sm font-medium" role="tab" aria-selected="false" aria-controls="tab-youtube" tabindex="-1" aria-label="YouTube tab">🎬 YouTube</button>
         <button onclick="showTab('business')" id="tab-btn-business" class="tab-btn text-sm font-medium" role="tab" aria-selected="false" aria-controls="tab-business" tabindex="-1" aria-label="Business tab">💼 Business</button>
         <button onclick="showTab('investments')" id="tab-btn-investments" class="tab-btn text-sm font-medium" role="tab" aria-selected="false" aria-controls="tab-investments" tabindex="-1" aria-label="Investments tab">📈 Investments</button>
+        <button onclick="showTab('crm')" id="tab-btn-crm" class="tab-btn text-sm font-medium" role="tab" aria-selected="false" aria-controls="tab-crm" tabindex="-1" aria-label="CRM tab">👥 CRM</button>
+        <button onclick="showTab('pipeline')" id="tab-btn-pipeline" class="tab-btn text-sm font-medium" role="tab" aria-selected="false" aria-controls="tab-pipeline" tabindex="-1" aria-label="Pipeline tab">📊 Pipeline</button>
+        <button onclick="showTab('usage')" id="tab-btn-usage" class="tab-btn text-sm font-medium" role="tab" aria-selected="false" aria-controls="tab-usage" tabindex="-1" aria-label="Usage tab">💰 Usage</button>
         <button onclick="showTab('tools')" id="tab-btn-tools" class="tab-btn text-sm font-medium" role="tab" aria-selected="false" aria-controls="tab-tools" tabindex="-1" aria-label="Tools tab">🛠️ Tools</button>
+        <button onclick="showTab('services')" id="tab-btn-services" class="tab-btn text-sm font-medium" role="tab" aria-selected="false" aria-controls="tab-services" tabindex="-1" aria-label="Services tab">🚀 Services</button>
+        <button onclick="showTab('automations')" id="tab-btn-automations" class="tab-btn text-sm font-medium" role="tab" aria-selected="false" aria-controls="tab-automations" tabindex="-1" aria-label="Automations tab">⚙️ Automations</button>
         <button onclick="showTab('research')" id="tab-btn-research" class="tab-btn text-sm font-medium" role="tab" aria-selected="false" aria-controls="tab-research" tabindex="-1" aria-label="Research tab">🔬 Research</button>
         <button onclick="showTab('audits')" id="tab-btn-audits" class="tab-btn text-sm font-medium" role="tab" aria-selected="false" aria-controls="tab-audits" tabindex="-1" aria-label="Audits tab">📋 Audits</button>
       </div>
@@ -601,6 +606,197 @@
         </div>
       </div>
     </div>
+
+    <!-- CRM Tab -->
+    <div id="tab-crm" class="tab-content hidden" role="tabpanel" aria-labelledby="tab-btn-crm" hidden>
+      <div class="flex justify-between items-center mb-4">
+        <h2 class="text-xl font-semibold">👥 CRM - Contact Management</h2>
+        <div class="flex gap-2">
+          <select id="crm-status-filter" class="px-3 py-1.5 bg-dark-700 rounded-lg border border-dark-600 text-sm" onchange="renderCRM()">
+            <option value="all">All Status</option>
+            <option value="applied">Applied</option>
+            <option value="screening">Screening</option>
+            <option value="test_project">Test Project</option>
+            <option value="interview">Interview</option>
+            <option value="hired">Hired</option>
+            <option value="active">Active</option>
+          </select>
+          <select id="crm-priority-filter" class="px-3 py-1.5 bg-dark-700 rounded-lg border border-dark-600 text-sm" onchange="renderCRM()">
+            <option value="all">All Priority</option>
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+          </select>
+        </div>
+      </div>
+      <div id="crm-kanban" class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-4">
+        <div class="crm-column" data-status="applied">
+          <div class="flex justify-between items-center mb-2">
+            <h3 class="text-sm font-semibold text-blue-400">📥 Applied</h3>
+            <span id="crm-count-applied" class="text-xs bg-blue-900/50 px-2 py-0.5 rounded">0</span>
+          </div>
+          <div id="crm-cards-applied" class="space-y-2"></div>
+        </div>
+        <div class="crm-column" data-status="screening">
+          <div class="flex justify-between items-center mb-2">
+            <h3 class="text-sm font-semibold text-yellow-400">🔍 Screening</h3>
+            <span id="crm-count-screening" class="text-xs bg-yellow-900/50 px-2 py-0.5 rounded">0</span>
+          </div>
+          <div id="crm-cards-screening" class="space-y-2"></div>
+        </div>
+        <div class="crm-column" data-status="test_project">
+          <div class="flex justify-between items-center mb-2">
+            <h3 class="text-sm font-semibold text-purple-400">🧪 Test Project</h3>
+            <span id="crm-count-test_project" class="text-xs bg-purple-900/50 px-2 py-0.5 rounded">0</span>
+          </div>
+          <div id="crm-cards-test_project" class="space-y-2"></div>
+        </div>
+        <div class="crm-column" data-status="interview">
+          <div class="flex justify-between items-center mb-2">
+            <h3 class="text-sm font-semibold text-orange-400">🎤 Interview</h3>
+            <span id="crm-count-interview" class="text-xs bg-orange-900/50 px-2 py-0.5 rounded">0</span>
+          </div>
+          <div id="crm-cards-interview" class="space-y-2"></div>
+        </div>
+        <div class="crm-column" data-status="hired">
+          <div class="flex justify-between items-center mb-2">
+            <h3 class="text-sm font-semibold text-green-400">✅ Hired</h3>
+            <span id="crm-count-hired" class="text-xs bg-green-900/50 px-2 py-0.5 rounded">0</span>
+          </div>
+          <div id="crm-cards-hired" class="space-y-2"></div>
+        </div>
+        <div class="crm-column" data-status="active">
+          <div class="flex justify-between items-center mb-2">
+            <h3 class="text-sm font-semibold text-accent-blue">🎬 Active</h3>
+            <span id="crm-count-active" class="text-xs bg-accent-blue/30 px-2 py-0.5 rounded">0</span>
+          </div>
+          <div id="crm-cards-active" class="space-y-2"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pipeline Tab -->
+    <div id="tab-pipeline" class="tab-content hidden" role="tabpanel" aria-labelledby="tab-btn-pipeline" hidden>
+      <div class="flex justify-between items-center mb-4">
+        <h2 class="text-xl font-semibold">📊 Video Idea Pipeline</h2>
+        <div class="text-sm text-gray-400" id="pipeline-stats">Loading...</div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+        <div class="pipeline-stage card rounded-lg p-4" data-stage="idea_captured">
+          <div class="flex justify-between items-center mb-3">
+            <h3 class="text-sm font-semibold text-gray-400">💡 Idea Captured</h3>
+            <span id="pipeline-count-idea_captured" class="text-xs bg-dark-700 px-2 py-0.5 rounded">0</span>
+          </div>
+          <div id="pipeline-cards-idea_captured" class="space-y-2"></div>
+        </div>
+        <div class="pipeline-stage card rounded-lg p-4" data-stage="validated">
+          <div class="flex justify-between items-center mb-3">
+            <h3 class="text-sm font-semibold text-yellow-400">✓ Validated</h3>
+            <span id="pipeline-count-validated" class="text-xs bg-yellow-900/30 px-2 py-0.5 rounded">0</span>
+          </div>
+          <div id="pipeline-cards-validated" class="space-y-2"></div>
+        </div>
+        <div class="pipeline-stage card rounded-lg p-4" data-stage="ready_to_produce">
+          <div class="flex justify-between items-center mb-3">
+            <h3 class="text-sm font-semibold text-green-400">🎬 Ready to Produce</h3>
+            <span id="pipeline-count-ready_to_produce" class="text-xs bg-green-900/30 px-2 py-0.5 rounded">0</span>
+          </div>
+          <div id="pipeline-cards-ready_to_produce" class="space-y-2"></div>
+        </div>
+        <div class="pipeline-stage card rounded-lg p-4" data-stage="in_production">
+          <div class="flex justify-between items-center mb-3">
+            <h3 class="text-sm font-semibold text-accent-blue">⚡ In Production</h3>
+            <span id="pipeline-count-in_production" class="text-xs bg-accent-blue/30 px-2 py-0.5 rounded">0</span>
+          </div>
+          <div id="pipeline-cards-in_production" class="space-y-2"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Usage Tab -->
+    <div id="tab-usage" class="tab-content hidden" role="tabpanel" aria-labelledby="tab-btn-usage" hidden>
+      <h2 class="text-xl font-semibold mb-4">💰 Usage Tracker</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+        <div class="card rounded-lg p-4">
+          <div class="text-gray-400 text-sm">Monthly Budget</div>
+          <div id="usage-budget" class="text-2xl font-bold mt-1">$2,000</div>
+          <div class="mt-2 w-full bg-dark-700 rounded-full h-2">
+            <div id="usage-budget-bar" class="bg-green-500 h-2 rounded-full" style="width: 62%"></div>
+          </div>
+          <div id="usage-budget-text" class="text-sm text-gray-500 mt-1">62% used ($1,250)</div>
+        </div>
+        <div class="card rounded-lg p-4">
+          <div class="text-gray-400 text-sm">Current Spend</div>
+          <div id="usage-spend" class="text-2xl font-bold mt-1 text-accent-blue">$1,250</div>
+          <div id="usage-projected" class="text-sm text-gray-500 mt-1">Projected: $1,875</div>
+        </div>
+        <div class="card rounded-lg p-4">
+          <div class="text-gray-400 text-sm">Avg Cost Per Project</div>
+          <div id="usage-avg-cost" class="text-2xl font-bold mt-1 text-green-400">$417</div>
+          <div class="text-sm text-gray-500 mt-1">3 active projects</div>
+        </div>
+      </div>
+      <div class="card rounded-lg p-4 mb-6">
+        <h3 class="text-sm font-semibold text-gray-400 mb-4">Provider Breakdown</h3>
+        <div id="usage-providers" class="space-y-3">
+          <div class="skeleton-loader">
+            <div class="skeleton-line" style="width: 100%"></div>
+            <div class="skeleton-line" style="width: 80%"></div>
+          </div>
+        </div>
+      </div>
+      <div class="card rounded-lg p-4">
+        <h3 class="text-sm font-semibold text-gray-400 mb-4">Project Costs</h3>
+        <div id="usage-projects" class="space-y-3">
+          <div class="skeleton-loader">
+            <div class="skeleton-card"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services Tab -->
+    <div id="tab-services" class="tab-content hidden" role="tabpanel" aria-labelledby="tab-btn-services" hidden>
+      <h2 class="text-xl font-semibold mb-4">🚀 Services Directory</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4" id="services-grid">
+        <div class="skeleton-loader">
+          <div class="skeleton-card"></div>
+          <div class="skeleton-card"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Automations Tab -->
+    <div id="tab-automations" class="tab-content hidden" role="tabpanel" aria-labelledby="tab-btn-automations" hidden>
+      <h2 class="text-xl font-semibold mb-4">⚙️ Automation Hub</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6" id="automations-grid">
+        <div class="skeleton-loader">
+          <div class="skeleton-card"></div>
+          <div class="skeleton-card"></div>
+        </div>
+      </div>
+      <div class="card rounded-lg p-4">
+        <h3 class="text-sm font-semibold text-gray-400 mb-4">📊 Automation Stats</h3>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div class="text-center">
+            <div id="auto-total" class="text-2xl font-bold text-accent-blue">-</div>
+            <div class="text-sm text-gray-400">Total</div>
+          </div>
+          <div class="text-center">
+            <div id="auto-active" class="text-2xl font-bold text-green-400">-</div>
+            <div class="text-sm text-gray-400">Active</div>
+          </div>
+          <div class="text-center">
+            <div id="auto-total-runs" class="text-2xl font-bold text-yellow-400">-</div>
+            <div class="text-sm text-gray-400">Total Runs</div>
+          </div>
+          <div class="text-center">
+            <div id="auto-success-rate" class="text-2xl font-bold text-purple-400">-</div>
+            <div class="text-sm text-gray-400">Success Rate</div>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 
   <!-- Detail Modal -->
@@ -617,6 +813,7 @@
   </div>
 
   <script src="app.js?v=202602101600"></script>
+  <script src="app-batch1.js?v=202602132140"></script>
   <script src="tools-integrated.js?v=202602101600"></script>
   
   <!-- Footer with version timestamp for cache busting -->
