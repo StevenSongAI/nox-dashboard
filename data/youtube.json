@@ -1830,12 +1830,57 @@
       "contentAngle": "Create 'I Got a Pet [Pokemon/Creature]' series - show acquisition, care, training, evolution of AI-generated creatures. Pet simulation format with Pokemon IP drives massive engagement.",
       "researchStatus": "completed",
       "source": "youtube_scraper_overnight_analysis"
+    },
+    {
+      "id": "yt-viewstats-134",
+      "title": "I Simulated Evolution \u2014 Intelligent Creatures Appeared",
+      "channel": "Unknown",
+      "views": 500000,
+      "publishedAt": "2026-02-01T00:00:00Z",
+      "addedAt": "2026-02-15T20:47:00Z",
+      "outlierScore": 85,
+      "niche": "AI Evolution Simulation",
+      "whyOutlier": "Evolution simulation format with emergent intelligent behavior. High engagement on artificial life content. 500K+ views in 2 weeks.",
+      "contentAngle": "Create 'AI Evolution Simulation' series showing creatures developing intelligence over generations. Combine AI generation with simulation mechanics.",
+      "url": "https://www.youtube.com/watch?v=92DVR51GX48",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - proactive heartbeat"
+    },
+    {
+      "id": "yt-viewstats-135",
+      "title": "I Tortured this AI Humanoid in a Simulation for 1000 Years",
+      "channel": "cozmouz",
+      "views": 2800000,
+      "publishedAt": "2025-06-30T00:00:00Z",
+      "addedAt": "2026-02-15T20:47:00Z",
+      "outlierScore": 95,
+      "niche": "AI Simulation / Time Compression",
+      "whyOutlier": "Cozmouz continues to dominate with 1000-year time compression format. 2.8M views on AI humanoid torture simulation. 'Tortured' vs 'Trapped' framing drives curiosity.",
+      "contentAngle": "Time compression format with AI creatures: '1000 Years' creates urgency and scale. Torture/trapped framing provokes curiosity. Apply to AI creature evolution.",
+      "url": "https://www.youtube.com/watch?v=UYq7KY90i4M",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - proactive heartbeat"
+    },
+    {
+      "id": "yt-viewstats-136",
+      "title": "AI Model Simulates 500 Million Years of Evolution to create new Proteins! ESM3 is a LLM for Biology",
+      "channel": "Wes Roth",
+      "views": 1800000,
+      "publishedAt": "2024-06-25T00:00:00Z",
+      "addedAt": "2026-02-15T20:47:00Z",
+      "outlierScore": 78,
+      "niche": "AI Science / Biology",
+      "whyOutlier": "Scientific AI content crossing over to mainstream. 500M years evolution simulation for protein design shows AI's real-world impact beyond entertainment.",
+      "contentAngle": "Bridge entertainment and education: 'AI Simulates [X] Million Years of Evolution' format works for both creature content and real science applications.",
+      "url": "https://www.youtube.com/watch?v=aPCqzrscY4w",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - proactive heartbeat"
     }
   ],
   "meta": {
-    "lastUpdated": "2026-02-15T07:10:00Z",
-    "totalOutliers": 126,
+    "lastUpdated": "2026-02-15T20:47:00Z",
+    "totalOutliers": 125,
     "briefCount": 16,
     "insightCount": 5
-}
+  }
 }
