@@ -1,7 +1,7 @@
 {
-  "lastHeartbeat": "2026-02-15T07:00:00Z",
+  "lastHeartbeat": "2026-02-15T07:10:00Z",
   "totalHeartbeats": 184,
-  "lastAction": "YouTube/ViewStats overnight analysis - added 3 new outliers (326x herping, 119x esports, 160x AI cat)",
+  "lastAction": "ViewStats overnight analysis: 3 outliers identified but NOT added - scraper data missing video URLs and had corrupted channel names. Need better data source."
   "nextPriority": "Contact Minecraft map artists for Ice Dragon project (Regnozes on Discord has direct contact)",
   "learningCycle": {
     "lastRun": "2026-02-15T05:08:00Z",
@@ -15,10 +15,10 @@
     "tools": "Work Tracker pagination deployed; Seedance 2.0 tracked with native audio capabilities; Kling 3.0 documented"
   },
   "dataFreshness": {
-    "youtube": "2026-02-15 - 129 outliers (3 new from overnight analysis)",
+    "youtube": "2026-02-15 - 126 outliers (ViewStats analysis: 0 added due to missing URLs)",
     "newBusiness": "2026-02-14 - 22 opportunities",
     "investments": "2026-02-14 - 16 entries (4 NEW opportunities)",
-    "research": "2026-02-14 - 38 notes",
+    "research": "2026-02-15 - ViewStats scraper needs URL extraction fix",
     "audits": "2026-02-14 - 250+ audits logged, 67% avg",
     "competitors": "2026-02-14 - 21 competitors tracked",
     "minecraftArtists": "2026-02-14 - 5 artists with contact info, pricing, outreach templates",

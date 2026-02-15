@@ -1830,62 +1830,17 @@
       "contentAngle": "Create 'I Got a Pet [Pokemon/Creature]' series - show acquisition, care, training, evolution of AI-generated creatures. Pet simulation format with Pokemon IP drives massive engagement.",
       "researchStatus": "completed",
       "source": "youtube_scraper_overnight_analysis"
-    },
-    {
-      "id": "yt-viewstats-134",
-      "title": "We went HERPING and what we found will change our lives forever",
-      "channel": "reptileoutdoors",
-      "views": 114000,
-      "publishedAt": "2024-02-08T00:00:00Z",
-      "addedAt": "2026-02-15T07:00:00Z",
-      "outlierScore": 326,
-      "niche": "🦎 Creatures / Reptiles",
-      "whyOutlier": "EXTREME 326x outlier - 114K views on small channel. Reptile/herping content with dramatic discovery narrative drives massive engagement. Outdoor creature exploration format.",
-      "contentAngle": "Create AI creature discovery expeditions - 'We found [AI creature] in the wild' format. Combine realistic creature reveal with documentary-style outdoor adventure.",
-      "url": "https://www.youtube.com/watch?v=SEARCH_REPTILE_OUTDOORS_HERPING",
-      "researchStatus": "completed",
-      "source": "viewstats outlier research - overnight cron Feb 15"
-    },
-    {
-      "id": "yt-viewstats-135",
-      "title": "DPC 2023 WEU Spring Tour Division I",
-      "channel": "09:06:56",
-      "views": 81000,
-      "publishedAt": "2023-02-08T00:00:00Z",
-      "addedAt": "2026-02-15T07:00:00Z",
-      "outlierScore": 119,
-      "niche": "🎮 Gaming / Esports",
-      "whyOutlier": "MASSIVE 119x outlier - 81K views on small channel. Dota 2 esports content with tournament format drives dedicated gaming audience engagement.",
-      "contentAngle": "AI creature tournament formats - bracket-style competitions with AI-generated creatures. Esports presentation style for creature battles.",
-      "url": "https://www.youtube.com/watch?v=SEARCH_DPC_2023_WEU",
-      "researchStatus": "completed",
-      "source": "viewstats outlier research - overnight cron Feb 15"
-    },
-    {
-      "id": "yt-viewstats-136",
-      "title": "Cat Has Existential Crisis",
-      "channel": "45",
-      "views": 51000,
-      "publishedAt": "2024-02-08T00:00:00Z",
-      "addedAt": "2026-02-15T07:00:00Z",
-      "outlierScore": 160,
-      "niche": "🐱 AI / Entertainment",
-      "whyOutlier": "EXTREME 160x outlier - 51K views on tiny channel. Absurdist AI-generated or edited cat content with philosophical angle drives curiosity and shares.",
-      "contentAngle": "Create absurdist AI creature content with philosophical narratives - 'When [AI creature] questions its existence' format. Meme-able + thought-provoking combination.",
-      "url": "https://www.youtube.com/watch?v=SEARCH_CAT_EXISTENTIAL_CRISIS",
-      "researchStatus": "completed",
-      "source": "viewstats outlier research - overnight cron Feb 15"
     }
   ],
   "meta": {
-    "lastUpdated": "2026-02-15T07:00:00Z",
-    "totalOutliers": 129,
+    "lastUpdated": "2026-02-15T07:10:00Z",
+    "totalOutliers": 126,
     "briefCount": 16,
     "insightCount": 5
   },
   "stats": {
-    "totalOutliers": 129,
+    "totalOutliers": 126,
     "totalBriefs": 15,
-    "lastResearch": "2026-02-15T07:00:00Z"
+    "lastResearch": "2026-02-15T07:10:00Z"
   }
 }
