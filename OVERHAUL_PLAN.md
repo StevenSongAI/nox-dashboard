@@ -24,44 +24,238 @@ The dashboard becomes a **clean information display** — not a complex tool, bu
 
 ## 1. New Architecture
 
-### 1.1 Simplified Structure
+### 1.1 Full-Stack Architecture (BEST PRACTICE)
+
 ```
-nox-dashboard/
-├── index.html          # Single file, ~300 lines (was 953)
-├── app.js              # Modular, ~800 lines (was 4809)
-├── style.css           # Clean minimal styles, ~200 lines (was 858)
-├── data/
-│   ├── youtube.json    # Outliers, competitors, content briefs
-│   ├── business.json   # Opportunities, pipeline, deals
-│   ├── investments.json # Positions, watchlist, intelligence
-│   └── activity.json   # NEW: All logged activity from messages/scraping
-└── assets/
-    └── (favicon only)
+┌─────────────────────────────────────────────────────────────────────────┐
+│                           NOX DASHBOARD v2.0                            │
+├─────────────────────────────────────────────────────────────────────────┤
+│                                                                         │
+│  ┌─────────────────────┐         ┌─────────────────────────────────┐   │
+│  │   FRONTEND          │         │   BACKEND (Railway)             │   │
+│  │   GitHub Pages      │◀───────▶│   Node.js + Express             │   │
+│  │   (Static hosting)  │  HTTP   │   (API Server)                  │   │
+│  │                     │         │                                 │   │
+│  │  • React SPA        │         │  • REST API endpoints            │   │
+│  │  • Clean UI         │         │  • Authentication (API keys)     │   │
+│  │  • Real-time updates│         │  • Request validation            │   │
+│  │  • Responsive       │         │  • Error handling                │   │
+│  └─────────────────────┘         └──────────────┬──────────────────┘   │
+│                                                 │                       │
+│                                                 │  PostgreSQL           │
+│                                                 │  (Managed DB)         │
+│                                                 │                       │
+│                                                 │  • ACID transactions  │
+│                                                 │  • Indexed queries    │
+│                                                 │  • Full-text search   │
+│                                                 │  • Backup/restore     │
+│                                                 └───────────────────────┘
+│                                                                         │
+└─────────────────────────────────────────────────────────────────────────┘
 ```
 
-### 1.2 New Data Schema: activity.json
-```json
+### 1.2 Why This Architecture is BEST
+
+**Frontend (GitHub Pages):**
+- Free, fast CDN for static assets
+- No server maintenance
+- Automatic HTTPS
+- Zero downtime deploys
+
+**Backend (Railway + Node.js/Express):**
+- Real-time data updates (no 1-2 min delay)
+- Proper API authentication (API keys)
+- Request validation and sanitization
+- Structured logging and error handling
+- Horizontal scaling if needed
+
+**Database (PostgreSQL):**
+- ACID compliance (no data corruption)
+- Complex queries with indexes (fast search)
+- Full-text search built-in
+- Row-level security possible
+- Automated backups (point-in-time recovery)
+- Connection pooling for performance
+
+### 1.3 Project Structure
+
+```
+nox-dashboard/
+├── frontend/                    # React SPA (GitHub Pages)
+│   ├── public/
+│   │   └── index.html
+│   ├── src/
+│   │   ├── components/          # Reusable UI components
+│   │   │   ├── Card.jsx
+│   │   │   ├── FilterPills.jsx
+│   │   │   └── SearchBar.jsx
+│   │   ├── views/               # Page-level components
+│   │   │   ├── YouTubeView.jsx
+│   │   │   ├── BusinessView.jsx
+│   │   │   ├── InvestmentsView.jsx
+│   │   │   └── ActivityView.jsx
+│   │   ├── hooks/               # Custom React hooks
+│   │   │   ├── useEntries.js
+│   │   │   └── useSearch.js
+│   │   ├── api/                 # API client
+│   │   │   └── client.js
+│   │   ├── App.jsx
+│   │   └── index.js
+│   ├── package.json
+│   └── tailwind.config.js
+│
+├── backend/                     # Node.js API (Railway)
+│   ├── src/
+│   │   ├── config/
+│   │   │   └── database.js      # PostgreSQL connection
+│   │   ├── models/              # Database models
+│   │   │   ├── Entry.js
+│   │   │   └── User.js
+│   │   ├── routes/              # API routes
+│   │   │   ├── entries.js
+│   │   │   ├── search.js
+│   │   │   └── health.js
+│   │   ├── middleware/
+│   │   │   ├── auth.js          # API key validation
+│   │   │   ├── validation.js    # Request validation
+│   │   │   └── errorHandler.js
+│   │   ├── services/            # Business logic
+│   │   │   ├── entryService.js
+│   │   │   └── searchService.js
+│   │   └── app.js               # Express app setup
+│   ├── migrations/              # Database migrations
+│   ├── tests/
+│   ├── package.json
+│   └── Dockerfile
+│
+└── README.md
+```
+
+### 1.4 Database Schema (PostgreSQL)
+
+```sql
+-- Core entries table (stores all dashboard data)
+CREATE TABLE entries (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
+    updated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
+    
+    -- Categorization
+    category VARCHAR(50) NOT NULL CHECK (category IN ('youtube', 'business', 'investments')),
+    type VARCHAR(50) NOT NULL, -- outlier_video, opportunity, position, etc.
+    
+    -- Content
+    title VARCHAR(500) NOT NULL,
+    content TEXT,
+    summary TEXT, -- Auto-generated summary
+    
+    -- Source tracking
+    source VARCHAR(100) NOT NULL, -- 'user_message', 'viewstats_scraper', 'x_com', etc.
+    source_url VARCHAR(1000),
+    source_id VARCHAR(200), -- External ID (e.g., YouTube video ID)
+    
+    -- Metadata (flexible JSON for different entry types)
+    metadata JSONB DEFAULT '{}',
+    
+    -- Quality signals
+    confidence INTEGER CHECK (confidence >= 0 AND confidence <= 100),
+    verified BOOLEAN DEFAULT FALSE,
+    
+    -- For soft deletes
+    deleted_at TIMESTAMP WITH TIME ZONE
+);
+
+-- Indexes for performance
+CREATE INDEX idx_entries_category ON entries(category);
+CREATE INDEX idx_entries_type ON entries(type);
+CREATE INDEX idx_entries_source ON entries(source);
+CREATE INDEX idx_entries_created_at ON entries(created_at DESC);
+CREATE INDEX idx_entries_verified ON entries(verified);
+
+-- Full-text search index
+CREATE INDEX idx_entries_search ON entries USING gin(to_tsvector('english', title || ' ' || COALESCE(content, '')));
+
+-- Scraping jobs table (tracks automated scraping)
+CREATE TABLE scraping_jobs (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    started_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
+    completed_at TIMESTAMP WITH TIME ZONE,
+    source VARCHAR(100) NOT NULL, -- 'viewstats', 'x_com', etc.
+    status VARCHAR(50) NOT NULL, -- 'running', 'completed', 'failed'
+    entries_found INTEGER DEFAULT 0,
+    entries_added INTEGER DEFAULT 0,
+    error_message TEXT
+);
+
+-- API keys table (for authentication)
+CREATE TABLE api_keys (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    key_hash VARCHAR(255) NOT NULL UNIQUE,
+    name VARCHAR(100),
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
+    last_used_at TIMESTAMP WITH TIME ZONE,
+    is_active BOOLEAN DEFAULT TRUE
+);
+```
+
+### 1.5 API Endpoints
+
+```
+GET    /api/entries              # List entries (with filters)
+GET    /api/entries/:id          # Get single entry
+POST   /api/entries              # Create new entry
+PATCH  /api/entries/:id          # Update entry
+DELETE /api/entries/:id          # Soft delete entry
+
+GET    /api/entries/search?q=... # Full-text search
+GET    /api/entries/stats        # Dashboard stats
+
+GET    /api/scraping/jobs        # List scraping jobs
+POST   /api/scraping/jobs        # Start new scraping job
+
+GET    /health                   # Health check
+```
+
+### 1.6 Request/Response Examples
+
+**Create Entry:**
+```http
+POST /api/entries
+Authorization: Bearer <API_KEY>
+Content-Type: application/json
+
 {
-  "entries": [
-    {
-      "id": "act-001",
-      "timestamp": "2026-02-15T09:00:00Z",
-      "source": "user_message|scraping|research",
-      "category": "youtube|business|investments",
-      "type": "outlier_video|opportunity|intelligence|note",
-      "title": "Entry title",
-      "content": "Full content or summary",
-      "metadata": { ... },
-      "confidence": 95,
-      "verified": true
-    }
-  ],
-  "meta": {
-    "lastUpdated": "2026-02-15T09:00:00Z",
-    "totalEntries": 156
-  }
+  "category": "youtube",
+  "type": "outlier_video",
+  "title": "What If Pokemon Had Realistic Evolution",
+  "content": "Found via ViewStats...",
+  "source": "viewstats_scraper",
+  "source_url": "https://youtube.com/watch?v=...",
+  "metadata": {
+    "channel": "RogersPets",
+    "views": 2400000,
+    "outlierScore": 99.1
+  },
+  "confidence": 95
 }
 ```
+
+**Search:**
+```http
+GET /api/entries/search?q=ai+agents&category=business&limit=20
+
+Response:
+{
+  "results": [...],
+  "total": 156,
+  "page": 1,
+  "limit": 20
+}
+```
+
+---
+
+## 2. UI/UX Redesign
 
 ### 1.3 Data Persistence Strategy
 
@@ -141,7 +335,98 @@ async function persistData(category, newEntry) {
 
 ---
 
-## 2. UI/UX Redesign
+## 2. Data Persistence (PostgreSQL)
+
+### 2.1 Database Connection
+
+**PostgreSQL on Railway:**
+- Managed database with automated backups
+- Connection pooling via `pg` library
+- SSL/TLS encryption in transit
+- Row-level security for multi-user (future)
+
+**Connection String:**
+```javascript
+// backend/src/config/database.js
+const { Pool } = require('pg');
+
+const pool = new Pool({
+  connectionString: process.env.DATABASE_URL,
+  ssl: { rejectUnauthorized: false },
+  max: 20, // Maximum pool size
+  idleTimeoutMillis: 30000,
+  connectionTimeoutMillis: 2000,
+});
+
+module.exports = pool;
+```
+
+### 2.2 Data Operations
+
+**Create Entry:**
+```javascript
+// API call from agent
+const entry = await api.post('/entries', {
+  category: 'youtube',
+  type: 'outlier_video',
+  title: 'Video Title',
+  content: 'Research findings...',
+  source: 'viewstats_scraper',
+  metadata: { views: 1000000, outlierScore: 99 },
+  confidence: 95
+});
+
+// Data is immediately persisted to PostgreSQL
+// Available via API instantly (no redeploy delay)
+```
+
+**Query with Filters:**
+```javascript
+// Get recent YouTube outliers
+const outliers = await api.get('/entries', {
+  params: {
+    category: 'youtube',
+    type: 'outlier_video',
+    verified: true,
+    limit: 50,
+    sort: 'created_at:desc'
+  }
+});
+```
+
+**Full-Text Search:**
+```javascript
+// Search across all content
+const results = await api.get('/entries/search?q=AI+agent+infrastructure');
+```
+
+### 2.3 Backup Strategy
+
+**Railway Automated Backups:**
+- Daily automated backups (point-in-time recovery)
+- 7-day retention on free tier, 30-day on paid
+- One-click restore from Railway dashboard
+
+**Manual Export (if needed):**
+```bash
+# Export entire database
+pg_dump $DATABASE_URL > backup_$(date +%Y%m%d).sql
+
+# Export specific category
+pg_dump --table=entries --where="category='youtube'" $DATABASE_URL > youtube_backup.sql
+```
+
+### 2.4 Migration Strategy
+
+**Existing JSON data → PostgreSQL:**
+1. Write migration script to parse JSON files
+2. Insert into `entries` table with proper categorization
+3. Verify data integrity post-migration
+4. Archive JSON files (keep for history)
+
+---
+
+## 3. UI/UX Redesign
 
 ### 2.1 New Layout: Clean & Minimal
 
