@@ -121,6 +121,15 @@
   ],
   "intelligence": [
     {
+      "id": "intel-020",
+      "date": "2026-02-15T20:40:00Z",
+      "topic": "AI Infrastructure $690B Capex Sprint 2026",
+      "source": "Futurum / MYJ Capital / CNBC",
+      "content": "US hyperscalers (Microsoft, Alphabet, Amazon, Meta, Oracle) planning $660B-$690B in 2026 AI capex, doubling 2025 spending. Global AI investment projected to reach $2.52T in 2026. Key beneficiaries: NVDA (chips), data center REITs, cloud infrastructure. Mistral AI announced $1.43B Sweden infrastructure investment. Structural shift creating multi-year supercycle.",
+      "impact": "bullish",
+      "tickers": ["NVDA", "AMD", "SMCI", "VST", "DGT"]
+    },
+    {
       "id": "intel-001",
       "date": "2026-02-07T20:00:00Z",
       "topic": "NVDA Supply Constraint",
