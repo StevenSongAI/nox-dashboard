@@ -1,14 +1,15 @@
 {
-  "lastUpdated": "2026-02-14T20:39:02.134102Z",
+  "lastUpdated": "2026-02-15T00:24:00Z",
   "updatedBy": "nox",
-  "version": "1.0.02141539",
-  "cacheBust": "20260214T2025",
-  "dataVersion": "1.0.75",
+  "version": "1.0.02150024",
+  "cacheBust": "20260215T0024",
+  "dataVersion": "1.0.76",
   "youtubeUpdated": "2026-02-14T07:05:00.000000+00:00",
   "investmentsUpdated": "2026-02-14T09:45:00.000000+00:00",
   "researchUpdated": "2026-02-14T20:25:00.000000",
   "newBusinessUpdated": "2026-02-14T07:15:00.000000+00:00",
-  "toolsUpdated": "2026-02-10T16:00:00Z",
+  "toolsUpdated": "2026-02-15T00:17:00Z",
+  "workTrackerUpdated": "2026-02-15T00:17:00Z",
   "investments": {
     "lastUpdated": "2026-02-14T09:45:00.000000+00:00",
     "entryCount": 4
@@ -16,7 +17,8 @@
   "dataFreshness": {
     "research": "2026-02-14 - 38 notes (latest: Seedance 2.0 Best Practices Tutorial)",
     "newBusiness": "2026-02-14 - 22 opportunities (2 new: AI cost optimization, offline transcription)",
-    "investments": "2026-02-14 - 4 NEW opportunities (CRWV, TEAM, NBIS, ADBE)"
+    "investments": "2026-02-14 - 4 NEW opportunities (CRWV, TEAM, NBIS, ADBE)",
+    "workTracker": "2026-02-15 - FIXED: pagination, deduplication, virtual scrolling"
   },
   "research": {
     "lastUpdated": "2026-02-14T20:25:00.000000",
