@@ -543,15 +543,54 @@
       "linkedResearch": [
         "note-049"
       ]
+    {
+      "id": "opp-023",
+      "name": "Code-to-Story AI Tool - Developer Education Market",
+      "description": "AI tool that converts any code into narrative story format for educational purposes. Developer wish-list item identified via X.com intelligence - turns complex code into accessible explanations.",
+      "alignment": "MEDIUM",
+      "status": "research",
+      "potentialRevenue": "$500-2000/month",
+      "effort": "Medium",
+      "nextStep": "Validate demand with 5 developer educators, research existing solutions",
+      "marketData": {
+        "tam": "Developer education tools $5B+ market",
+        "catalyst": "X.com intelligence Feb 14: @Lil_Tee18 tweet 'I wish there was a tool that turns any code into a story'",
+        "validationSignal": "Organic developer pain point expressed on X.com",
+        "targetAudience": "Developer educators, coding bootcamps, technical writers, CS students",
+        "painPoint": "Explaining complex code to beginners requires narrative framing - no tool automates this",
+        "competitors": [
+          "GitHub Copilot (code generation, not explanation)",
+          "Code comments/documentation (manual)",
+          "Technical blog posts (manual creation)"
+        ],
+        "differentiation": "Automated narrative generation from code - story format makes technical concepts accessible",
+        "businessModel": "SaaS ($10-30/month) + API usage for enterprise"
+      },
+      "risks": [
+        "Technical complexity of code parsing + narrative generation",
+        "May be feature rather than standalone product",
+        "GitHub/Microsoft could add this to Copilot",
+        "Developer skepticism of AI explanations"
+      ],
+      "createdAt": "2026-02-15T07:25:00.000000+00:00",
+      "tags": [
+        "AI-tools",
+        "developer-education",
+        "code-narrative",
+        "X-com-intel"
+      ],
+      "linkedResearch": [
+        "note-065 (X.com Feb 14 analysis)"
+      ]
     }
   ],
   "pipeline": {
-    "new": 14,
+    "new": 15,
     "evaluating": 2,
     "pursuing": 0,
     "passed": 1,
     "won": 1
   },
-  "lastUpdated": "2026-02-14T07:15:00.000000+00:00",
-  "totalOpportunities": 22
+  "lastUpdated": "2026-02-15T07:25:00.000000+00:00",
+  "totalOpportunities": 23
 }
