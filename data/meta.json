@@ -6,7 +6,7 @@
   "dataVersion": "1.0.82",
   "youtubeUpdated": "2026-02-15T20:47:00Z",
   "investmentsUpdated": "2026-02-15T20:40:00Z",
-  "researchUpdated": "2026-02-15T07:50:00.000000+00:00",
+  "researchUpdated": "2026-02-15T21:35:00Z",
   "newBusinessUpdated": "2026-02-15T07:35:00.000000+00:00",
   "toolsUpdated": "2026-02-15T00:17:00Z",
   "workTrackerUpdated": "2026-02-15T00:17:00Z",
@@ -16,7 +16,7 @@
     "entryCount": 5
   },
   "dataFreshness": {
-    "research": "2026-02-15 - 41 notes (latest: x402 Protocol, Cloudflare Markdown for Agents)",
+    "research": "2026-02-15 - 41 notes + NEW: last30days-skill integrated (Reddit/X/YouTube/Web research with cron-driven watchlists)",
     "newBusiness": "2026-02-15 - 24 opportunities (1 new: AI Agent Payment Infrastructure)",
     "investments": "2026-02-15 - NEW: AI Infrastructure $690B capex sprint (NVDA, AMD beneficiaries)",
     "workTracker": "2026-02-15 - FIXED: pagination, deduplication, virtual scrolling",
