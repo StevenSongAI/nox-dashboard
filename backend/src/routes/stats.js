@@ -221,4 +221,91 @@ router.get('/confidence', async (req, res, next) => {
   }
 });
 
+/**
+ * GET /api/stats/dashboard
+ * Get dashboard overview stats (total entries, by category, recent activity)
+ * Used by frontend dashboard hooks
+ */
+router.get('/dashboard', async (req, res, next) => {
+  try {
+    // Total entries count
+    const totalResult = await dbQuery(
+      'SELECT COUNT(*) as total FROM entries WHERE deleted_at IS NULL'
+    );
+    const totalEntries = parseInt(totalResult.rows[0].total);
+
+    // Entries by category
+    const categoryResult = await dbQuery(
+      `SELECT 
+        category, 
+        COUNT(*) as count,
+        COUNT(*) FILTER (WHERE created_at >= NOW() - INTERVAL '7 days') as recent_count
+       FROM entries 
+       WHERE deleted_at IS NULL
+       GROUP BY category 
+       ORDER BY count DESC`
+    );
+
+    // Recent activity (last 10 entries created/updated)
+    const recentActivityResult = await dbQuery(
+      `SELECT 
+        e.id,
+        e.title,
+        e.category,
+        e.confidence,
+        e.created_at,
+        e.updated_at,
+        CASE 
+          WHEN e.updated_at > e.created_at + INTERVAL '1 second' THEN 'updated'
+          ELSE 'created'
+        END as activity_type,
+        COALESCE(s.view_count, 0) as view_count
+       FROM entries e
+       LEFT JOIN entry_stats s ON e.id = s.entry_id
+       WHERE e.deleted_at IS NULL
+       ORDER BY GREATEST(e.created_at, e.updated_at) DESC
+       LIMIT 10`
+    );
+
+    // Activity counts for last 7 days
+    const weeklyActivityResult = await dbQuery(
+      `SELECT 
+        DATE_TRUNC('day', created_at) as date,
+        COUNT(*) as count
+       FROM entries
+       WHERE created_at >= NOW() - INTERVAL '7 days'
+         AND deleted_at IS NULL
+       GROUP BY DATE_TRUNC('day', created_at)
+       ORDER BY date ASC`
+    );
+
+    res.json({
+      success: true,
+      data: {
+        totalEntries,
+        categories: categoryResult.rows.map(row => ({
+          category: row.category,
+          count: parseInt(row.count),
+          recentCount: parseInt(row.recent_count)
+        })),
+        recentActivity: recentActivityResult.rows.map(row => ({
+          id: row.id,
+          title: row.title,
+          category: row.category,
+          confidence: row.confidence,
+          activityType: row.activity_type,
+          timestamp: row.activity_type === 'updated' ? row.updated_at : row.created_at,
+          viewCount: parseInt(row.view_count)
+        })),
+        weeklyActivity: weeklyActivityResult.rows.map(row => ({
+          date: row.date,
+          count: parseInt(row.count)
+        }))
+      }
+    });
+  } catch (error) {
+    next(error);
+  }
+});
+
 module.exports = router;

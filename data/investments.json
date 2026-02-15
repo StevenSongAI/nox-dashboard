@@ -53,7 +53,7 @@
       "signal": "Emerging opportunity",
       "source": "Market Analysis / Trend Synthesis",
       "confidence": "medium",
-      "notes": "AI video generation demand creating GPU compute shortage. Render provides decentralized GPU network. 88% CAGR in AI video market ($0.5B to $12B by 2029) drives underlying demand for compute infrastructure. Token up 340% YoY but volatile. Small position thesis: AI content creation boom  compute demand  Render network utilization.",
+      "notes": "AI video generation demand creating GPU compute shortage. Render provides decentralized GPU network. 88% CAGR in AI video market ($0.5B to $12B by 2029) drives underlying demand for compute infrastructure. Token up 340% YoY but volatile. Small position thesis: AI content creation boom → compute demand → Render network utilization.",
       "addedAt": "2026-02-08T19:46:00Z",
       "riskLevel": "high",
       "positionSize": "speculative (<1% portfolio)"
@@ -117,9 +117,32 @@
         "AI video growth data"
       ],
       "summary": "AI video generation 88% CAGR creating GPU compute shortage. Decentralized compute networks (Render, Akash) positioned to benefit from demand surge."
+    },
+    {
+      "id": "trend-004",
+      "topic": "Global AI Investment Surge 2026",
+      "sentiment": "bullish",
+      "momentum": "accelerating",
+      "sources": [
+        "Deloitte Insights",
+        "SemiAnalysis",
+        "Meta earnings"
+      ],
+      "summary": "Global AI investment projected to reach $2.52T in 2026 (+44% YoY). Meta alone investing 'hundreds of billions' with Prometheus supercluster launch. AI-optimized server spending up 49%. Multi-year infrastructure supercycle underway."
     }
   ],
   "intelligence": [
+    {
+      "id": "intel-034",
+      "date": "2026-02-15T23:46:00Z",
+      "topic": "UPDATE: Global AI Investment $2.52T in 2026 - Infrastructure Supercycle Confirmed",
+      "source": "Deloitte / AInvest / Meta / Data Center Dynamics",
+      "content": "Fresh intelligence confirms AI infrastructure supercycle accelerating: (1) Global AI investment projected $2.52T in 2026 (+44% YoY), (2) AI-optimized server spending growing 49% as data center demand surges, (3) Meta announced 'hundreds of billions' in AI infrastructure with multi-gigawatt Prometheus supercluster launching 2026, (4) AMD targeting $1T data center market by 2030 with 39% YoY growth in Q4 2025, (5) SemiAnalysis ranks CoreWeave #1 AI cloud above Amazon/Microsoft/Alphabet. NVDA at $182.81 (Feb 15 close) ahead of Feb 25 earnings. Key risk: limited margin for error at current valuations - any slowdown signals could trigger multiple contraction. Positioning: Maintain NVDA through earnings, watch for AMD pullback to $180 for tactical adds. Infrastructure plays (NVDA, AMD, CoreWeave, Nebius) all beneficiaries regardless of which AI models win.",
+      "impact": "bullish",
+      "tickers": ["NVDA", "AMD", "CRWV", "NBIS"],
+      "riskFactors": ["NVDA earnings volatility Feb 25", "High valuations limit margin for error", "Supply constraints may cap revenue growth"],
+      "confidence": "high"
+    },
     {
       "id": "intel-020",
       "date": "2026-02-15T20:40:00Z",
@@ -182,7 +205,7 @@
       "date": "2026-02-08T18:46:00Z",
       "topic": "Creator Economy Newsletter Monetization",
       "source": "Business Opportunity Analysis",
-      "content": "AI/design niche newsletters (Ben's Bites, The Rundown) achieving $50K-200K ARR with 40%+ growth YoY. Creature design sub-niche appears underserved. Newsletter format creates high-LTV audience for digital product funnel (templates  courses). Beehiiv/Substack infrastructure reduces startup costs to near-zero. Cross-sell potential with existing template pack and masterclass opportunities.",
+      "content": "AI/design niche newsletters (Ben's Bites, The Rundown) achieving $50K-200K ARR with 40%+ growth YoY. Creature design sub-niche appears underserved. Newsletter format creates high-LTV audience for digital product funnel (templates → courses). Beehiiv/Substack infrastructure reduces startup costs to near-zero. Cross-sell potential with existing template pack and masterclass opportunities.",
       "impact": "bullish",
       "relatedOpportunities": [
         "opp-006",
@@ -193,9 +216,9 @@
     {
       "id": "intel-008",
       "date": "2026-02-08T19:46:00Z",
-      "topic": "AI Video Boom  GPU Compute Squeeze",
+      "topic": "AI Video Boom → GPU Compute Squeeze",
       "source": "Trend Synthesis / Market Analysis",
-      "content": "Synthesizing intelligence: AI video generation growing 88% CAGR ($0.5B  $12B by 2029) is creating compute infrastructure bottlenecks. Centralized cloud providers (AWS, GCP) face GPU shortages. Decentralized GPU networks like Render (RNDR) and Akash (AKT) positioned to capture overflow demand. Token-based incentive models align compute providers with AI content creators. Risk: Crypto volatility. Opportunity: Exposure to AI infrastructure beyond traditional equities (NVDA, AMD). Render Network specifically enables GPU owners to monetize idle compute - direct beneficiary of AI video content boom. Watch for: major AI video platforms (Runway, Pika) announcing Render partnerships.",
+      "content": "Synthesizing intelligence: AI video generation growing 88% CAGR ($0.5B → $12B by 2029) is creating compute infrastructure bottlenecks. Centralized cloud providers (AWS, GCP) face GPU shortages. Decentralized GPU networks like Render (RNDR) and Akash (AKT) positioned to capture overflow demand. Token-based incentive models align compute providers with AI content creators. Risk: Crypto volatility. Opportunity: Exposure to AI infrastructure beyond traditional equities (NVDA, AMD). Render Network specifically enables GPU owners to monetize idle compute - direct beneficiary of AI video content boom. Watch for: major AI video platforms (Runway, Pika) announcing Render partnerships.",
       "impact": "bullish",
       "relatedPositions": [
         "RENDER"
@@ -313,7 +336,7 @@
       "date": "2026-02-09T22:06:00Z",
       "topic": "Baby Creature Physics: Content-Investment Thesis Update",
       "source": "Pattern Analysis / Outlier Data Synthesis",
-      "content": "Synthesizing YouTube outlier analysis with investment positioning. Pattern insight-008 (Baby Creature Physics) shows 390x-677x outlier scores across 2 verified videos. Production brief ready (brief-baby-physics-pilot-002) with full script. Investment framing: Content production as capital allocation with asymmetric return profile. Production cost: ~$300 (tools, assets, time). Success case: 50x view ratio on 10K base = 500K views  $8 RPM = $4,000 + subscriber growth + algorithmic boost. Failure case: Standard video performance (~1x ratio) = ~10K views, no loss beyond time invested. Asymmetric payoff structure creates positive expected value even with modest success probability. Strategic value: Validates dashboard-driven content strategy, creates repeatable template, differentiates from competitors. Execution timeline: 2 weeks pre-production, 1 week filming, 1 week post. Go/no-go decision point: Feb 16 (confirm equipment/tool access).",
+      "content": "Synthesizing YouTube outlier analysis with investment positioning. Pattern insight-008 (Baby Creature Physics) shows 390x-677x outlier scores across 2 verified videos. Production brief ready (brief-baby-physics-pilot-002) with full script. Investment framing: Content production as capital allocation with asymmetric return profile. Production cost: ~$300 (tools, assets, time). Success case: 50x view ratio on 10K base = 500K views → $8 RPM = $4,000 + subscriber growth + algorithmic boost. Failure case: Standard video performance (~1x ratio) = ~10K views, no loss beyond time invested. Asymmetric payoff structure creates positive expected value even with modest success probability. Strategic value: Validates dashboard-driven content strategy, creates repeatable template, differentiates from competitors. Execution timeline: 2 weeks pre-production, 1 week filming, 1 week post. Go/no-go decision point: Feb 16 (confirm equipment/tool access).",
       "impact": "bullish",
       "investmentType": "Content Production",
       "capitalRequired": "$300-500 + 40-60 hours",
@@ -336,7 +359,7 @@
       "date": "2026-02-12T23:00:00Z",
       "topic": "NEW BUY: AppLovin (APP) - AI Ad-Tech with 89% Analyst Upside",
       "source": "Motley Fool / Morgan Stanley",
-      "content": "AppLovin (APP) is an AI-powered ad-tech platform with 89% upside implied by median Wall Street target. Core product is Axon, an ML-based ad targeting engine called 'best-in-class' by Morgan Stanley. Recently expanded from mobile gaming ads into web-based e-commerce advertising (massive TAM expansion). Competitive moat: owns Max mediation platform generating proprietary data that continuously improves Axon's targeting. This is a DATA FLYWHEEL business - more publishers \u2192 more data \u2192 better targeting \u2192 more advertisers \u2192 more publishers. Steven doesn't own this. Current price ~$84, median target $152. Risk: high valuation if e-commerce expansion underperforms. Confidence: 7/10.",
+      "content": "AppLovin (APP) is an AI-powered ad-tech platform with 89% upside implied by median Wall Street target. Core product is Axon, an ML-based ad targeting engine called 'best-in-class' by Morgan Stanley. Recently expanded from mobile gaming ads into web-based e-commerce advertising (massive TAM expansion). Competitive moat: owns Max mediation platform generating proprietary data that continuously improves Axon's targeting. This is a DATA FLYWHEEL business - more publishers → more data → better targeting → more advertisers → more publishers. Steven doesn't own this. Current price ~$84, median target $152. Risk: high valuation if e-commerce expansion underperforms. Confidence: 7/10.",
       "impact": "bullish"
     },
     {
@@ -344,7 +367,7 @@
       "date": "2026-02-13T09:00:00Z",
       "topic": "NEW BUY: CoreWeave (CRWV) - #1 AI Cloud with 105% Analyst Upside",
       "source": "H.C. Wainwright / SemiAnalysis",
-      "content": "CoreWeave (CRWV) is the leading AI cloud provider, ranked #1 by SemiAnalysis above Amazon, Microsoft, and Alphabet for GPU cloud performance. Stock down 53% from highs creating buying opportunity. Analyst Kevin Dede (H.C. Wainwright) has  price target (105% upside from  current price). Median target  (36% upside). Trading at 8.4x sales despite 94% revenue growth through 2027. Business model: provides cloud infrastructure purpose-built for AI workloads (training/inference) with superior power density, memory, and cooling vs traditional clouds. Primary risk: debt load from data center buildout. Steven does not own this. Confidence: 8/10 - best-in-class provider at discounted valuation.",
+      "content": "CoreWeave (CRWV) is the leading AI cloud provider, ranked #1 by SemiAnalysis above Amazon, Microsoft, and Alphabet for GPU cloud performance. Stock down 53% from highs creating buying opportunity. Analyst Kevin Dede (H.C. Wainwright) has $89 price target (105% upside from ~$43 current price). Median target $56 (36% upside). Trading at 8.4x sales despite 94% revenue growth through 2027. Business model: provides cloud infrastructure purpose-built for AI workloads (training/inference) with superior power density, memory, and cooling vs traditional clouds. Primary risk: debt load from data center buildout. Steven does not own this. Confidence: 8/10 - best-in-class provider at discounted valuation.",
       "impact": "bullish"
     },
     {
@@ -352,7 +375,7 @@
       "date": "2026-02-13T09:00:00Z",
       "topic": "NEW BUY: Atlassian (TEAM) - Work Management AI with 130% Analyst Upside",
       "source": "Morgan Stanley / Gartner",
-      "content": "Atlassian (TEAM) is a work management/collaboration software company with AI assistant Rovo. Morgan Stanley analyst Keith Weiss has  price target (130% upside from  current). Median target  (65% upside). Stock down 57% from highs - market wrongly fears AI coding tools will reduce DevOps demand, but Morgan Stanley says the opposite: AI productivity will INCREASE developer count, driving MORE demand for DevOps tools. Recognized by Gartner as leader in DevOps and collaborative work management. Morgan Stanley: one of best positioned to monetize AI agents. 22% earnings growth through FY2027, beating consensus by avg 16% in last 6 quarters. Trading at 35x earnings (reasonable given beat rate). Steven does not own this. Confidence: 7/10 - high upside but execution-dependent.",
+      "content": "Atlassian (TEAM) is a work management/collaboration software company with AI assistant Rovo. Morgan Stanley analyst Keith Weiss has $375 price target (130% upside from ~$162 current). Median target $210 (65% upside). Stock down 57% from highs - market wrongly fears AI coding tools will reduce DevOps demand, but Morgan Stanley says the opposite: AI productivity will INCREASE developer count, driving MORE demand for DevOps tools. Recognized by Gartner as leader in DevOps and collaborative work management. Morgan Stanley: one of best positioned to monetize AI agents. 22% earnings growth through FY2027, beating consensus by avg 16% in last 6 quarters. Trading at 35x earnings (reasonable given beat rate). Steven does not own this. Confidence: 7/10 - high upside but execution-dependent.",
       "impact": "bullish"
     },
     {
@@ -360,7 +383,7 @@
       "date": "2026-02-13T09:00:00Z",
       "topic": "NEW BUY: Nebius (NBIS) - AI Data Centers with Explosive Growth (\"Sold Out\")",
       "source": "Nasdaq / Motley Fool Analysis",
-      "content": "Nebius (NBIS) is an AI infrastructure company (spun out of Russian Yandex post-sanctions) providing GPU-equipped data centers. Company reports it has \"sold out\" all available capacity with unprecedented demand. Expects -9B annual run rate (ARR) by end of 2026, up from M in Q3 (12-16x growth in 12 months). Analysts predict stock could DOUBLE in 2026. Trading at 60x sales but growing fastest among AI infrastructure peers - forward valuation is cheapest when adjusted for growth rate. Business model: rents computing power + GPU space to clients, owns some facilities. Competitive advantage: leadership team with decades of data center experience. Steven does not own this. Confidence: 7/10 - highest growth but also highest valuation risk.",
+      "content": "Nebius (NBIS) is an AI infrastructure company (spun out of Russian Yandex post-sanctions) providing GPU-equipped data centers. Company reports it has 'sold out' all available capacity with unprecedented demand. Expects $1-2B annual run rate (ARR) by end of 2026, up from ~$150M in Q3 (12-16x growth in 12 months). Analysts predict stock could DOUBLE in 2026. Trading at 60x sales but growing fastest among AI infrastructure peers - forward valuation is cheapest when adjusted for growth rate. Business model: rents computing power + GPU space to clients, owns some facilities. Competitive advantage: leadership team with decades of data center experience. Steven does not own this. Confidence: 7/10 - highest growth but also highest valuation risk.",
       "impact": "bullish"
     },
     {
@@ -384,7 +407,7 @@
       "confidence": "high",
       "timeHorizon": "12-24 months",
       "keyDrivers": [
-        "AI video generation market: $0.5B  $12B by 2029 (88% CAGR)",
+        "AI video generation market: $0.5B → $12B by 2029 (88% CAGR)",
         "GPU compute shortage creating demand for decentralized networks",
         "AI coding agents entering rapid adoption (Trend Score 120)",
         "Current portfolio positioned across infrastructure layer"
@@ -419,6 +442,6 @@
       "addedAt": "2026-02-09T11:50:00Z"
     }
   ],
-  "lastUpdated": "2026-02-13T09:02:37.260681+00:00",
+  "lastUpdated": "2026-02-15T23:46:00Z",
   "dataSource": "Market Data"
 }

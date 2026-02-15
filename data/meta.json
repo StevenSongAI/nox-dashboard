@@ -1,24 +1,24 @@
 {
-  "lastUpdated": "2026-02-15T20:47:00Z",
+  "lastUpdated": "2026-02-15T23:46:00Z",
   "updatedBy": "nox",
-  "version": "1.0.02152047",
-  "cacheBust": "20260215T2047",
-  "dataVersion": "1.0.82",
+  "version": "1.0.02152346",
+  "cacheBust": "20260215T2346",
+  "dataVersion": "1.0.83",
   "youtubeUpdated": "2026-02-15T20:47:00Z",
-  "investmentsUpdated": "2026-02-15T20:40:00Z",
+  "investmentsUpdated": "2026-02-15T23:46:00Z",
   "researchUpdated": "2026-02-15T21:35:00Z",
   "newBusinessUpdated": "2026-02-15T07:35:00.000000+00:00",
   "toolsUpdated": "2026-02-15T00:17:00Z",
   "workTrackerUpdated": "2026-02-15T00:17:00Z",
   "minecraftArtistsUpdated": "2026-02-15T19:16:00Z",
   "investments": {
-    "lastUpdated": "2026-02-15T20:40:00Z",
-    "entryCount": 5
+    "lastUpdated": "2026-02-15T23:46:00Z",
+    "entryCount": 6
   },
   "dataFreshness": {
     "research": "2026-02-15 - 41 notes + NEW: last30days-skill integrated (Reddit/X/YouTube/Web research with cron-driven watchlists)",
     "newBusiness": "2026-02-15 - 24 opportunities (1 new: AI Agent Payment Infrastructure)",
-    "investments": "2026-02-15 - NEW: AI Infrastructure $690B capex sprint (NVDA, AMD beneficiaries)",
+    "investments": "2026-02-15 - UPDATE: Global AI investment $2.52T in 2026 confirmed, NVDA earnings Feb 25 preview, Meta Prometheus supercluster",
     "workTracker": "2026-02-15 - FIXED: pagination, deduplication, virtual scrolling",
     "minecraftArtists": "2026-02-15 - 7 artists (2 new), Ice Dragon outreach templates, Regnozes Discord priority",
     "youtube": "2026-02-15 - 125 outliers (3 new from proactive heartbeat)"

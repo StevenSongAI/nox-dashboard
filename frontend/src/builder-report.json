@@ -1,0 +1,92 @@
+{
+  "batch": "BUGFIX-BUSINESS-001",
+  "task": "Fix 'move to' dropdown menu in business tab",
+  "timestamp": "2026-02-15T18:35:00-05:00",
+  "status": "completed",
+  "findings": {
+    "root_causes": [
+      {
+        "issue": "EntryDetail component prop mismatch",
+        "description": "Most views (BusinessView, InvestmentsView, ActivityView, YouTubeView) passed 'entryId' prop, but EntryDetail expected 'entry' and 'isOpen' props",
+        "impact": "Component would not display correctly when opened from these views"
+      },
+      {
+        "issue": "Missing 'move to' functionality",
+        "description": "No UI or API integration existed to move entries between categories",
+        "impact": "Users could not move entries from one category to another (e.g., business → investments)"
+      }
+    ],
+    "files_examined": [
+      "frontend/src/views/BusinessView.jsx",
+      "frontend/src/views/InvestmentsView.jsx",
+      "frontend/src/views/ActivityView.jsx",
+      "frontend/src/views/DashboardView.jsx",
+      "frontend/src/components/Card.jsx",
+      "frontend/src/components/EntryDetail.jsx",
+      "frontend/src/hooks/useEntries.js",
+      "frontend/src/api/client.js",
+      "backend/src/routes/entries.js",
+      "backend/src/middleware/auth.js"
+    ]
+  },
+  "fixes_applied": {
+    "file": "frontend/src/components/EntryDetail.jsx",
+    "changes": [
+      {
+        "type": "enhancement",
+        "description": "Added dual-mode support for EntryDetail component",
+        "details": "Component now accepts EITHER (entryId + onClose) OR (entry + isOpen + onClose) props, maintaining backward compatibility with DashboardView while fixing BusinessView and other views"
+      },
+      {
+        "type": "feature",
+        "description": "Added 'Move to' dropdown UI",
+        "details": "Added dropdown button in footer with options: YouTube, Business, Investments, Activity. Current category shown as disabled. Dropdown closes when clicking outside."
+      },
+      {
+        "type": "feature",
+        "description": "Added move API integration",
+        "details": "Calls PUT /api/entries/:id with new category. Requires X-API-Key header from localStorage. Shows loading state, success message, and auto-closes modal on success."
+      },
+      {
+        "type": "enhancement",
+        "description": "Added loading and error states",
+        "details": "Component now shows loading spinner when fetching entry by ID, and displays errors if fetch or move operations fail"
+      },
+      {
+        "type": "bugfix",
+        "description": "Fixed sanitizeHtml import",
+        "details": "Changed import from 'sanitizeHtml' to 'sanitizeHTML' to match the actual export name in utils/sanitize.js"
+      }
+    ]
+  },
+  "technical_details": {
+    "api_endpoint": "PUT /api/entries/:id",
+    "auth_header": "X-API-Key (from localStorage)",
+    "move_options": [
+      { "value": "youtube", "label": "YouTube" },
+      { "value": "business", "label": "Business" },
+      { "value": "investments", "label": "Investments" },
+      { "value": "activity", "label": "Activity" }
+    ],
+    "state_management": {
+      "isMoveDropdownOpen": "Controls dropdown visibility",
+      "isMoving": "Tracks API call in progress",
+      "moveError": "Stores any error from move operation",
+      "moveSuccess": "Tracks successful move for UI feedback"
+    }
+  },
+  "testing_notes": {
+    "build_status": "✅ Successful",
+    "manual_testing_recommended": [
+      "Click an entry in Business tab to open modal",
+      "Click 'Move to' button and select a different category",
+      "Verify entry moves and modal closes with success message",
+      "Verify moved entry no longer appears in original category view",
+      "Test error handling by simulating network failure"
+    ]
+  },
+  "backwards_compatibility": {
+    "status": "maintained",
+    "notes": "DashboardView continues to work with (entry + isOpen + onClose) props. All other views work with (entryId + onClose) props."
+  }
+}

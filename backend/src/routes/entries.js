@@ -291,4 +291,142 @@ router.delete('/:id',
   }
 );
 
+/**
+ * GET /api/entries/:id/stats
+ * Get engagement stats (view count, metrics) for a specific entry
+ */
+router.get('/:id/stats', async (req, res, next) => {
+  try {
+    const { id } = req.params;
+
+    // First check if entry exists
+    const entryResult = await dbQuery(
+      'SELECT id, title, category, created_at FROM entries WHERE id = $1 AND deleted_at IS NULL',
+      [id]
+    );
+
+    if (entryResult.rows.length === 0) {
+      return res.status(404).json({
+        success: false,
+        error: 'Entry not found'
+      });
+    }
+
+    const entry = entryResult.rows[0];
+
+    // Get or initialize stats
+    let statsResult;
+    try {
+      statsResult = await dbQuery(
+        `SELECT 
+          view_count,
+          unique_viewers,
+          last_viewed_at,
+          avg_time_spent_seconds,
+          engagement_score
+         FROM entry_stats 
+         WHERE entry_id = $1`,
+        [id]
+      );
+    } catch (statsError) {
+      // entry_stats table may not exist yet - return default stats
+      statsResult = { rows: [] };
+    }
+
+    const stats = statsResult.rows[0] || {
+      view_count: 0,
+      unique_viewers: 0,
+      last_viewed_at: null,
+      avg_time_spent_seconds: 0,
+      engagement_score: 0
+    };
+
+    // Calculate derived metrics
+    const daysSinceCreated = Math.max(1, Math.floor(
+      (Date.now() - new Date(entry.created_at)) / (1000 * 60 * 60 * 24)
+    ));
+    const viewsPerDay = (parseInt(stats.view_count) / daysSinceCreated).toFixed(2);
+
+    res.json({
+      success: true,
+      data: {
+        entryId: id,
+        entryTitle: entry.title,
+        entryCategory: entry.category,
+        viewCount: parseInt(stats.view_count),
+        uniqueViewers: parseInt(stats.unique_viewers),
+        lastViewedAt: stats.last_viewed_at,
+        avgTimeSpentSeconds: parseInt(stats.avg_time_spent_seconds) || 0,
+        engagementScore: parseFloat(stats.engagement_score) || 0,
+        viewsPerDay: parseFloat(viewsPerDay),
+        daysSinceCreated
+      }
+    });
+  } catch (error) {
+    next(error);
+  }
+});
+
+/**
+ * POST /api/entries/:id/view
+ * Track a view for an entry
+ */
+router.post('/:id/view', async (req, res, next) => {
+  try {
+    const { id } = req.params;
+    const { timeSpentSeconds = 0 } = req.body;
+    const viewerIp = req.ip || req.connection.remoteAddress;
+
+    // Check if entry exists
+    const entryResult = await dbQuery(
+      'SELECT id FROM entries WHERE id = $1 AND deleted_at IS NULL',
+      [id]
+    );
+
+    if (entryResult.rows.length === 0) {
+      return res.status(404).json({
+        success: false,
+        error: 'Entry not found'
+      });
+    }
+
+    // Try to update stats (will fail gracefully if table doesn't exist)
+    try {
+      // Upsert entry stats
+      await dbQuery(
+        `INSERT INTO entry_stats 
+          (entry_id, view_count, unique_viewers, last_viewed_at, avg_time_spent_seconds, updated_at)
+         VALUES 
+          ($1, 1, 1, NOW(), $2, NOW())
+         ON CONFLICT (entry_id) 
+         DO UPDATE SET
+          view_count = entry_stats.view_count + 1,
+          last_viewed_at = NOW(),
+          avg_time_spent_seconds = (entry_stats.avg_time_spent_seconds * entry_stats.view_count + $2) / (entry_stats.view_count + 1),
+          updated_at = NOW()`,
+        [id, timeSpentSeconds]
+      );
+
+      // Log activity
+      await dbQuery(
+        `INSERT INTO activity_log 
+          (action, entity_type, entity_id, details, created_at)
+         VALUES 
+          ('view', 'entry', $1, $2, NOW())`,
+        [id, JSON.stringify({ timeSpentSeconds, viewerIp: viewerIp ? viewerIp.toString().replace(/\d+$/, 'xxx') : null })]
+      );
+    } catch (statsError) {
+      // Table may not exist - still return success
+      console.warn('Entry stats tracking not available:', statsError.message);
+    }
+
+    res.json({
+      success: true,
+      message: 'View tracked'
+    });
+  } catch (error) {
+    next(error);
+  }
+});
+
 module.exports = router;
