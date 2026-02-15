@@ -1838,9 +1838,18 @@
     "briefCount": 16,
     "insightCount": 5
   },
-  "stats": {
-    "totalOutliers": 126,
-    "totalBriefs": 15,
-    "lastResearch": "2026-02-15T07:10:00Z"
-  }
-}
+    {
+      "id": "yt-x-viral-001",
+      "title": "Tim Danilov Viral Format - Niche Authority Template",
+      "channel": "Various (New Channel Success: 300K views/8 days)",
+      "views": 300000,
+      "publishedAt": "2026-02-06T00:00:00Z",
+      "addedAt": "2026-02-15T07:55:00Z",
+      "outlierScore": 3000,
+      "niche": "📊 Niche Authority/Educational",
+      "whyOutlier": "EXTREME outlier - 300K views on brand new channel in 8 days using predicted format. Tim Danilov predicted 35 days ago, now validated. Niche Authority format dominating Meta/TikTok algorithms.",
+      "contentAngle": "Apply Niche Authority format to AI creature content: position as definitive AI creature education channel. Database-driven viral angle selection.",
+      "url": "https://x.com/timdanilovhi/status/...",
+      "researchStatus": "action_required",
+      "source": "X.com intelligence analysis"
+    }
