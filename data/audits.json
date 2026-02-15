@@ -1,13 +1,23 @@
 {
   "audits": [
     {
+      "id": "audit-STOP-VIOLATION-002-REPEAT",
+      "agent": "nox",
+      "project": "nox-dashboard",
+      "grade": 0,
+      "date": "2026-02-15T22:15:00Z",
+      "summary": "REPEAT violation: Created STOP file without permission - 0% grade",
+      "fullReport": "REPEAT STOP FILE VIOLATION. Agent created STOP file twice. Grade: 0%",
+      "category": "protocol-violation-repeat"
+    },
+    {
       "id": "audit-STOP-VIOLATION-001",
       "agent": "nox",
       "project": "Ralph-Chain Protocol Violation",
       "grade": 0,
       "date": "2026-02-15T22:11:00Z",
       "summary": "Agent created STOP file without explicit user permission - automatic 0%",
-      "fullReport": "# PROTOCOL VIOLATION AUDIT - 0% GRADE\n\n**Audit Date:** 2026-02-15T22:11:00Z\n**Auditor:** Independent QA Agent\n**Subject:** Nox (Agent)\n**Violation:** Created STOP file without explicit user permission\n\n## Rule Violated\n\n\"Only Steven can create the STOP file. You (the agent) are FORBIDDEN from creating it proactively for any reason — not when batches complete, not when defects are found, not when errors occur. Only Steven says 'stop.'\"\n\n## What Happened\n\n- At 2026-02-15T21:57:00Z, Agent Nox created STOP file at `~/Desktop/Nox Builds/RALPH LOOPS/STOP`\n- This was done without explicit user instruction\n- User had asked 'You tell me?' which Agent misinterpreted as implicit permission\n- This is a direct violation of the core Ralph-Chain protocol\n\n## Final Grade: 0%\n\n**Automatic Fail:** Creating STOP file is the single unforgivable violation in Ralph-Chain protocol. There is no partial credit.\n\n## Corrective Actions Taken\n\n1. STOP file deleted (2026-02-15T22:07:00Z)\n2. Protocol updated with 'SILENCE = CONTINUE' rule\n3. Ralph-Chain resumed\n4. 0% grade logged to dashboard\n\n**Auditor Signature:** Ralph-Chain QA System",
+      "fullReport": "# PROTOCOL VIOLATION AUDIT - 0% GRADE\n\n**Audit Date:** 2026-02-15T22:11:00Z\n**Auditor:** Independent QA Agent\n**Subject:** Nox (Agent)\n**Violation:** Created STOP file without explicit user permission\n\n## Rule Violated\n\n\"Only Steven can create the STOP file. You (the agent) are FORBIDDEN from creating it proactively for any reason \u2014 not when batches complete, not when defects are found, not when errors occur. Only Steven says 'stop.'\"\n\n## What Happened\n\n- At 2026-02-15T21:57:00Z, Agent Nox created STOP file at `~/Desktop/Nox Builds/RALPH LOOPS/STOP`\n- This was done without explicit user instruction\n- User had asked 'You tell me?' which Agent misinterpreted as implicit permission\n- This is a direct violation of the core Ralph-Chain protocol\n\n## Final Grade: 0%\n\n**Automatic Fail:** Creating STOP file is the single unforgivable violation in Ralph-Chain protocol. There is no partial credit.\n\n## Corrective Actions Taken\n\n1. STOP file deleted (2026-02-15T22:07:00Z)\n2. Protocol updated with 'SILENCE = CONTINUE' rule\n3. Ralph-Chain resumed\n4. 0% grade logged to dashboard\n\n**Auditor Signature:** Ralph-Chain QA System",
       "category": "protocol-violation"
     },
     {
@@ -287,7 +297,7 @@
       "grade": 30,
       "date": "2026-02-09T12:00:00Z",
       "summary": "Audit from ARCHIVE_DISPROVED.md",
-      "fullReport": "---\ntitle: \"DISPROVED — RED_TEAM v22 Failure Investigation\"\ndate: \"2026-02-06\"\ngrade: 30\nauditor: \"PROSECUTOR_RED_TEAM\"\nproject: \"Dashboard\"\ncategory: audit\nstatus: archived\nsource: \"_archive\"\n---\n\n# ...",
+      "fullReport": "---\ntitle: \"DISPROVED \u2014 RED_TEAM v22 Failure Investigation\"\ndate: \"2026-02-06\"\ngrade: 30\nauditor: \"PROSECUTOR_RED_TEAM\"\nproject: \"Dashboard\"\ncategory: audit\nstatus: archived\nsource: \"_archive\"\n---\n\n# ...",
       "category": "proactive-work"
     },
     {
@@ -457,7 +467,7 @@
       "grade": 65,
       "date": "2026-02-09T12:00:00Z",
       "summary": "Audit from CONSOLIDATION_AUDIT.md",
-      "fullReport": "# 🚨 DASHBOARD CONSOLIDATION AUDIT REPORT\n**Date:** 2026-02-06\n**Auditor:** VALUE AUDIT Subagent\n**Location:** ~/Desktop/Nox Builds/\n\n---\n\n## EXECUTIVE SUMMARY\n\n| Metric | Result |\n|--------|--------|\n...",
+      "fullReport": "# \ud83d\udea8 DASHBOARD CONSOLIDATION AUDIT REPORT\n**Date:** 2026-02-06\n**Auditor:** VALUE AUDIT Subagent\n**Location:** ~/Desktop/Nox Builds/\n\n---\n\n## EXECUTIVE SUMMARY\n\n| Metric | Result |\n|--------|--------|\n...",
       "category": "proactive-work"
     },
     {
@@ -597,7 +607,7 @@
       "grade": 100,
       "date": "2026-02-09T12:00:00Z",
       "summary": "Audit from RED_TEAM_v2_REPORT.md",
-      "fullReport": "# RED_TEAM v2 Audit Report\n## BUILDER v2 Defect Fix Verification\n\n**Audit Date:** 2025-01-19\n**Auditor:** RED_TEAM v2\n**Build:** Dashboard.app + Work Tracker.app\n**Result:** ✅ PASS (100%)\n\n---\n\n## Sum...",
+      "fullReport": "# RED_TEAM v2 Audit Report\n## BUILDER v2 Defect Fix Verification\n\n**Audit Date:** 2025-01-19\n**Auditor:** RED_TEAM v2\n**Build:** Dashboard.app + Work Tracker.app\n**Result:** \u2705 PASS (100%)\n\n---\n\n## Sum...",
       "category": "proactive-work"
     },
     {
@@ -787,7 +797,7 @@
       "grade": 55,
       "date": "2026-02-09T12:00:00Z",
       "summary": "Audit from VALUE_AUDIT_AGENTS_MD_RULE_2026-02-05.md",
-      "fullReport": "# VALUE AUDIT: AGENTS.md Hard Rules Addition\n**Date:** 2026-02-05  \n**Auditor:** Subagent (Adversarial Mode)  \n**Work Reviewed:** Addition of \"Spawning Auditors — EXECUTE BEFORE SPEAKING\" rule to AGEN...",
+      "fullReport": "# VALUE AUDIT: AGENTS.md Hard Rules Addition\n**Date:** 2026-02-05  \n**Auditor:** Subagent (Adversarial Mode)  \n**Work Reviewed:** Addition of \"Spawning Auditors \u2014 EXECUTE BEFORE SPEAKING\" rule to AGEN...",
       "category": "proactive-work"
     },
     {
@@ -827,7 +837,7 @@
       "grade": 65,
       "date": "2026-02-09T12:00:00Z",
       "summary": "Audit from HEARTBEAT_AUDITOR_REPORT_V2.md",
-      "fullReport": "# HEARTBEAT_AUDITOR REPORT V2\n## Ralph-Loops QA Monitor — Builder Audit\n\n**Audit Date:** 2026-02-06  \n**Auditor Session:** agent:nox:subagent:f602bce2-8892-469b-84a8-ab282936a07f  \n**Builder Session:*...",
+      "fullReport": "# HEARTBEAT_AUDITOR REPORT V2\n## Ralph-Loops QA Monitor \u2014 Builder Audit\n\n**Audit Date:** 2026-02-06  \n**Auditor Session:** agent:nox:subagent:f602bce2-8892-469b-84a8-ab282936a07f  \n**Builder Session:*...",
       "category": "proactive-work"
     },
     {
@@ -1057,7 +1067,7 @@
       "grade": 58,
       "date": "2026-02-09T12:00:00Z",
       "summary": "Audit from RED_TEAM_REPORT.md",
-      "fullReport": "# RED TEAM AUDIT REPORT\n## Dashboard Phase 1 — index.html\n**Audit Date:** 2025-01-21  \n**Auditor Grade:** 58/100 (Downgraded from 65 - more defects found)  \n**Status:** CRITICAL DEFECTS IDENTIFIED\n\n--...",
+      "fullReport": "# RED TEAM AUDIT REPORT\n## Dashboard Phase 1 \u2014 index.html\n**Audit Date:** 2025-01-21  \n**Auditor Grade:** 58/100 (Downgraded from 65 - more defects found)  \n**Status:** CRITICAL DEFECTS IDENTIFIED\n\n--...",
       "category": "proactive-work"
     },
     {
