@@ -1,119 +1,153 @@
-const { pool } = require('../config/database');
 const crypto = require('crypto');
 
-// Middleware to validate API key
-async function validateApiKey(req, res, next) {
-  try {
-    // Check header first, then cookie
-    const authHeader = req.headers.authorization;
-    const cookieKey = req.cookies?.apiKey;
-    
-    const apiKey = authHeader?.startsWith('Bearer ')
-      ? authHeader.slice(7)
-      : authHeader || cookieKey;
-    
-    if (!apiKey) {
-      return res.status(401).json({ 
-        error: 'Unauthorized',
-        message: 'API key required. Provide it in Authorization header: Bearer YOUR_KEY'
-      });
-    }
+// In-memory key storage for testing
+const apiKeys = new Map(); // id -> { hash, name, createdAt, lastUsedAt, revoked, isAdmin }
 
-    if (!apiKey || apiKey.length < 32) {
-      return res.status(401).json({ 
-        error: 'Unauthorized',
-        message: 'Invalid API key format'
-      });
-    }
+// Store admin key hash separately for verification
+let adminKeyHash = null;
 
-    // Hash the key for comparison
-    const keyHash = crypto.createHash('sha256').update(apiKey).digest('hex');
-
-    // Check database
-    const result = await pool.query(
-      'SELECT * FROM api_keys WHERE key_hash = $1 AND is_active = TRUE',
-      [keyHash]
-    );
-
-    if (result.rows.length === 0) {
-      return res.status(403).json({ 
-        error: 'Forbidden',
-        message: 'Invalid or revoked API key'
-      });
-    }
-
-    // Update last used timestamp
-    await pool.query(
-      'UPDATE api_keys SET last_used_at = NOW() WHERE id = $1',
-      [result.rows[0].id]
-    );
-
-    // Attach key info to request
-    req.apiKey = result.rows[0];
-    next();
-  } catch (err) {
-    next(err);
+/**
+ * Initialize admin key
+ * Call this on server startup to set the admin key
+ */
+const initializeAdminKey = (adminApiKey) => {
+  if (adminApiKey) {
+    adminKeyHash = crypto.createHash('sha256').update(adminApiKey).digest('hex');
   }
-}
+};
 
-// Middleware for optional auth (for GET endpoints)
-async function optionalAuth(req, res, next) {
-  try {
-    const authHeader = req.headers.authorization;
-    const cookieKey = req.cookies?.apiKey;
+/**
+ * Authentication Middleware
+ * Validates API key from X-API-Key header
+ */
+const authenticateApiKey = (req, res, next) => {
+  const apiKey = req.headers['x-api-key'];
+  
+  if (!apiKey) {
+    return res.status(401).json({
+      success: false,
+      error: 'Unauthorized - API key required'
+    });
+  }
+
+  // Hash the provided key for comparison
+  const providedHash = crypto.createHash('sha256').update(apiKey).digest('hex');
+  
+  // Check if it's the admin key
+  if (adminKeyHash && providedHash === adminKeyHash) {
+    req.isAdmin = true;
+    req.keyId = 'admin';
+    return next();
+  }
+  
+  // Find key by hash
+  let foundKey = null;
+  let keyId = null;
+  
+  for (const [id, keyData] of apiKeys.entries()) {
+    if (keyData.hash === providedHash) {
+      foundKey = keyData;
+      keyId = id;
+      break;
+    }
+  }
+
+  if (!foundKey) {
+    return res.status(401).json({
+      success: false,
+      error: 'Unauthorized - Invalid API key'
+    });
+  }
+
+  if (foundKey.revoked) {
+    return res.status(403).json({
+      success: false,
+      error: 'Forbidden - API key has been revoked'
+    });
+  }
+
+  // Update last used timestamp
+  foundKey.lastUsedAt = new Date().toISOString();
+  apiKeys.set(keyId, foundKey);
+
+  req.keyId = keyId;
+  req.isAdmin = foundKey.isAdmin || false;
+  next();
+};
+
+/**
+ * Admin Authorization Middleware
+ * Requires admin privileges to access sensitive endpoints
+ */
+const requireAdmin = (req, res, next) => {
+  if (!req.isAdmin) {
+    return res.status(403).json({
+      success: false,
+      error: 'Forbidden - Admin privileges required'
+    });
+  }
+  next();
+};
+
+/**
+ * Simple in-memory rate limiter
+ */
+const rateLimits = new Map();
+
+const rateLimiter = (options = {}) => {
+  const { windowMs = 15 * 60 * 1000, maxRequests = 100, keyPrefix = '' } = options;
+  
+  return (req, res, next) => {
+    const key = `${keyPrefix}:${req.ip}`;
+    const now = Date.now();
     
-    const apiKey = authHeader?.startsWith('Bearer ')
-      ? authHeader.slice(7)
-      : authHeader || cookieKey;
-    
-    if (!apiKey) {
-      req.apiKey = null;
+    if (!rateLimits.has(key)) {
+      rateLimits.set(key, { count: 1, resetTime: now + windowMs });
       return next();
     }
-
-    const keyHash = crypto.createHash('sha256').update(apiKey).digest('hex');
-
-    const result = await pool.query(
-      'SELECT * FROM api_keys WHERE key_hash = $1 AND is_active = TRUE',
-      [keyHash]
-    );
-
-    if (result.rows.length > 0) {
-      req.apiKey = result.rows[0];
-      await pool.query(
-        'UPDATE api_keys SET last_used_at = NOW() WHERE id = $1',
-        [result.rows[0].id]
-      );
-    } else {
-      req.apiKey = null;
+    
+    const limit = rateLimits.get(key);
+    
+    // Reset if window has passed
+    if (now > limit.resetTime) {
+      limit.count = 1;
+      limit.resetTime = now + windowMs;
+      return next();
     }
-
+    
+    // Check limit
+    if (limit.count >= maxRequests) {
+      return res.status(429).json({
+        success: false,
+        error: 'Too many requests - rate limit exceeded',
+        retryAfter: Math.ceil((limit.resetTime - now) / 1000)
+      });
+    }
+    
+    limit.count++;
     next();
-  } catch (err) {
-    next(err);
-  }
-}
+  };
+};
 
-// Middleware to require admin access for key generation
-function requireAdmin(req, res, next) {
-  const adminKey = process.env.ADMIN_API_KEY;
-  const providedKey = req.headers['x-admin-key'];
-  
-  if (!adminKey) {
-    return res.status(500).json({ 
-      error: 'Server configuration error',
-      message: 'Admin key not configured'
-    });
-  }
-  
-  if (providedKey !== adminKey) {
-    return res.status(403).json({ 
-      error: 'Forbidden',
-      message: 'Admin access required'
-    });
-  }
-  
-  next();
-}
+// Rate limiter configs
+const authRateLimiter = rateLimiter({
+  windowMs: 15 * 60 * 1000,
+  maxRequests: 50,
+  keyPrefix: 'auth'
+});
 
-module.exports = { validateApiKey, optionalAuth, requireAdmin };
+const generalRateLimiter = rateLimiter({
+  windowMs: 15 * 60 * 1000,
+  maxRequests: 100,
+  keyPrefix: 'general'
+});
+
+module.exports = {
+  authenticateApiKey,
+  requireAdmin,
+  initializeAdminKey,
+  rateLimiter,
+  authRateLimiter,
+  generalRateLimiter,
+  apiKeys
+};

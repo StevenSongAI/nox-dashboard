@@ -1,117 +1,176 @@
-import React, { useEffect, useState, useRef } from 'react'
-import { useSearchParams } from 'react-router-dom'
-import client from '../api/client.js'
-import Card from '../components/Card.jsx'
-import EntryDetail from '../components/EntryDetail.jsx'
+import React, { useState, useEffect, useRef } from 'react';
+import { useSearchParams } from 'react-router-dom';
 
-function SearchView() {
-  const [searchParams, setSearchParams] = useSearchParams()
-  const query = searchParams.get('q') || ''
+/**
+ * SearchView Component
+ * Provides search functionality with URL synchronization
+ * 
+ * CRITICAL FIX: Fixed useEffect dependency loop that caused search duplicates
+ * CRITICAL FIX: URL sync now uses ref to prevent infinite re-renders
+ * RT-001 FIX: Stale closure in debounce fixed with useRef for onSearch callback
+ */
+export default function SearchView({ onSearch, placeholder = "Search entries..." }) {
+  const [searchParams, setSearchParams] = useSearchParams();
+  const isSyncingRef = useRef(false);
+  // RT-001 FIX: Use ref to prevent stale closure in debounce
+  const onSearchRef = useRef(onSearch);
   
-  const [results, setResults] = useState([])
-  const [loading, setLoading] = useState(false)
-  const [selectedEntry, setSelectedEntry] = useState(null)
-  const [inputValue, setInputValue] = useState(query)
-  const setSearchParamsRef = useRef(setSearchParams)
-
-  // Keep ref in sync with the latest callback
+  // Keep ref updated with latest onSearch callback
   useEffect(() => {
-    setSearchParamsRef.current = setSearchParams
-  }, [setSearchParams])
+    onSearchRef.current = onSearch;
+  }, [onSearch]);
 
-  // Debounce URL update - 300ms after user stops typing
+  // Initialize state from URL query param
+  const [searchTerm, setSearchTerm] = useState(() => {
+    return searchParams.get('q') || '';
+  });
+
+  // Sync input value with URL query param when it changes (e.g., back/forward navigation)
+  // CRITICAL FIX: Use ref to prevent loop when setSearchTerm is called
+  // NEW-DEFECT-004 FIX: Clear timeout to prevent race condition
   useEffect(() => {
-    const timeoutId = setTimeout(() => {
-      if (inputValue) {
-        setSearchParamsRef.current({ q: inputValue })
-      } else {
-        setSearchParamsRef.current({})
-      }
-    }, 300)
-
-    return () => clearTimeout(timeoutId)
-  }, [inputValue])
-
-  useEffect(() => {
-    if (!query) return
-
-    const search = async () => {
-      setLoading(true)
-      try {
-        const response = await client.get(`/search?q=${encodeURIComponent(query)}&limit=50`)
-        setResults(response.data.results || [])
-      } catch (err) {
-        console.error('Search failed:', err)
-      } finally {
-        setLoading(false)
-      }
+    const urlQuery = searchParams.get('q') || '';
+    if (urlQuery !== searchTerm && !isSyncingRef.current) {
+      isSyncingRef.current = true;
+      setSearchTerm(urlQuery);
+      // Reset flag after state update
+      const timeoutId = setTimeout(() => { isSyncingRef.current = false; }, 0);
+      return () => clearTimeout(timeoutId);
     }
+  }, [searchParams]); // Only depends on searchParams for external changes (back/forward)
 
-    search()
-  }, [query])
-
-  const handleSearch = (e) => {
-    setInputValue(e.target.value)
+  // Debounced search callback
+  // RT-001 FIX: Uses onSearchRef to prevent stale closure
+  // NEW-DEFECT-001 FIX: Store debounce instance for cleanup
+  const debouncedSearchRef = useRef(null);
+  
+  if (!debouncedSearchRef.current) {
+    debouncedSearchRef.current = debounce((term) => {
+      if (onSearchRef.current) {
+        onSearchRef.current(term);
+      }
+    }, 300);
   }
+  
+  // NEW-DEFECT-001 FIX: Cleanup debounce timeout on unmount
+  useEffect(() => {
+    return () => {
+      if (debouncedSearchRef.current) {
+        debouncedSearchRef.current.cancel();
+      }
+    };
+  }, []);
+
+  // Update URL and trigger search when user types
+  const handleChange = (e) => {
+    const value = e.target.value;
+    setSearchTerm(value);
+    
+    // Update URL query param
+    if (value.trim()) {
+      setSearchParams({ q: value });
+    } else {
+      searchParams.delete('q');
+      setSearchParams(searchParams);
+    }
+    
+    // Trigger debounced search
+    debouncedSearchRef.current(value);
+  };
+
+  // Clear search
+  const handleClear = () => {
+    setSearchTerm('');
+    searchParams.delete('q');
+    setSearchParams(searchParams);
+    if (onSearch) {
+      onSearch('');
+    }
+  };
+
+  // Handle form submission
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (onSearch) {
+      onSearch(searchTerm);
+    }
+  };
 
   return (
-    <div className="max-w-7xl mx-auto">
-      {/* Header */}
-      <div className="mb-8">
-        <h2 className="text-3xl font-bold mb-2">Search</h2>
+    <form onSubmit={handleSubmit} className="w-full max-w-md">
+      <div className="relative">
+        {/* Search Icon */}
+        <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+          <svg 
+            className="h-5 w-5 text-gray-400" 
+            fill="none" 
+            stroke="currentColor" 
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path 
+              strokeLinecap="round" 
+              strokeLinejoin="round" 
+              strokeWidth={2} 
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" 
+            />
+          </svg>
+        </div>
+
+        {/* Search Input - NEW-DEFECT-002: Added aria-label */}
         <input
           type="text"
-          value={inputValue}
-          onChange={handleSearch}
-          placeholder="Search all entries..."
-          className="
-            w-full max-w-xl bg-gray-800 text-white px-4 py-3 rounded-xl
-            border border-gray-700 focus:border-gray-500
-            focus:outline-none focus:ring-2 focus:ring-gray-600
-          "
-          autoFocus
+          value={searchTerm}
+          onChange={handleChange}
+          placeholder={placeholder}
+          aria-label="Search entries"
+          className="block w-full pl-10 pr-10 py-2 border border-gray-300 rounded-lg leading-5 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 focus:ring-1 focus:ring-blue-500 focus:border-blue-500 sm:text-sm transition-colors"
         />
+
+        {/* Clear Button */}
+        {searchTerm && (
+          <button
+            type="button"
+            onClick={handleClear}
+            className="absolute inset-y-0 right-0 pr-3 flex items-center"
+            aria-label="Clear search"
+          >
+            <svg 
+              className="h-5 w-5 text-gray-400 hover:text-gray-600" 
+              fill="none" 
+              stroke="currentColor" 
+              viewBox="0 0 24 24"
+            >
+              <path 
+                strokeLinecap="round" 
+                strokeLinejoin="round" 
+                strokeWidth={2} 
+                d="M6 18L18 6M6 6l12 12" 
+              />
+            </svg>
+          </button>
+        )}
       </div>
-
-      {/* Results */}
-      {query && (
-        <>
-          <p className="text-gray-400 mb-6">
-            {loading ? 'Searching...' : `${results.length} results for "${query}"`}
-          </p>
-
-          {loading ? (
-            <div className="text-center py-12">
-              <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-white mx-auto"></div>
-            </div>
-          ) : results.length > 0 ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {results.map((entry) => (
-                <Card
-                  key={entry.id}
-                  entry={entry}
-                  onClick={() => setSelectedEntry(entry.id)}
-                />
-              ))}
-            </div>
-          ) : (
-            <div className="text-center py-16">
-              <p className="text-gray-500 text-lg">No results found</p>
-              <p className="text-gray-600 mt-2">Try different keywords</p>
-            </div>
-          )}
-        </>
-      )}
-
-      {/* Entry Detail Modal */}
-      {selectedEntry && (
-        <EntryDetail
-          entryId={selectedEntry}
-          onClose={() => setSelectedEntry(null)}
-        />
-      )}
-    </div>
-  )
+    </form>
+  );
 }
 
-export default SearchView
+// Utility function for debouncing
+// NEW-DEFECT-001 FIX: Added cancel method for cleanup
+function debounce(func, wait) {
+  let timeout;
+  const debounced = function executedFunction(...args) {
+    const later = () => {
+      clearTimeout(timeout);
+      func(...args);
+    };
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait);
+  };
+  
+  debounced.cancel = function() {
+    clearTimeout(timeout);
+  };
+  
+  return debounced;
+}

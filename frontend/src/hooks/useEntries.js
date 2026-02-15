@@ -1,116 +1,210 @@
-import { useState, useEffect, useCallback } from 'react'
-import client from '../api/client.js'
+import { useState, useEffect, useCallback, useRef } from 'react';
 
-export function useEntries(category = '', type = '', search = '', limit = 20) {
-  const [entries, setEntries] = useState([])
-  const [loading, setLoading] = useState(true)
-  const [error, setError] = useState(null)
+/**
+ * useEntries Hook
+ * Domain-specific hook for fetching and managing entry data
+ * 
+ * @param {Object} options - Configuration options
+ * @param {number} options.initialPage - Initial page number (default: 1)
+ * @param {number} options.limit - Items per page (default: 20)
+ * @param {string} options.initialCategory - Initial category filter (default: 'all')
+ * @returns {Object} Entries state and control functions
+ */
+export function useEntries(options = {}) {
+  const { initialPage = 1, limit = 20, initialCategory = 'all' } = options;
+  
+  const [entries, setEntries] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
+  const [category, setCategory] = useState(initialCategory);
+  const [page, setPage] = useState(initialPage);
   const [pagination, setPagination] = useState({
-    total: 0,
-    hasMore: false,
-    offset: 0
-  })
+    page: initialPage,
+    limit,
+    hasNext: false,
+    hasPrev: false,
+    totalCount: 0,
+    totalPages: 1
+  });
 
-  const fetchEntries = useCallback(async (offset = 0) => {
-    setLoading(true)
-    setError(null)
-
+  /**
+   * Fetch entries with optional filters
+   */
+  const fetchEntries = useCallback(async (fetchOptions = {}) => {
+    const { 
+      pageNum = page, 
+      cat = category, 
+      searchTerm = '', 
+      signal 
+    } = fetchOptions;
+    
+    setLoading(true);
+    setError(null);
+    
     try {
-      const params = new URLSearchParams()
-      if (category) params.append('category', category)
-      if (type) params.append('type', type)
-      if (search) params.append('search', search)
-      params.append('limit', limit)
-      params.append('offset', offset)
-
-      const response = await client.get(`/entries?${params}`)
+      const params = new URLSearchParams({
+        page: pageNum.toString(),
+        limit: limit.toString()
+      });
       
-      if (offset === 0) {
-        setEntries(response.data.entries)
-      } else {
-        // Deduplicate entries when loading more - prevent duplicates (DEFECT-004)
-        setEntries(prev => {
-          const existingIds = new Set(prev.map(e => e.id))
-          const newEntries = response.data.entries.filter(e => !existingIds.has(e.id))
-          return [...prev, ...newEntries]
-        })
+      if (cat !== 'all') {
+        params.append('category', cat);
       }
-
-      setPagination({
-        total: response.data.pagination?.total || 0,
-        hasMore: response.data.pagination?.hasMore || false,
-        offset: offset + response.data.entries.length
-      })
+      
+      if (searchTerm) {
+        params.append('search', searchTerm);
+      }
+      
+      const response = await fetch(`/api/entries?${params}`, { signal });
+      const data = await response.json();
+      
+      if (!data.success) {
+        throw new Error(data.error || 'Failed to fetch entries');
+      }
+      
+      setEntries(data.data);
+      setPagination(data.pagination);
+      setPage(pageNum);
+      return data;
     } catch (err) {
-      setError(err.message || 'Failed to fetch entries')
+      if (err.name !== 'AbortError') {
+        setError(err.message);
+      }
+      throw err;
     } finally {
-      setLoading(false)
+      setLoading(false);
     }
-  }, [category, type, search, limit])
+  }, [page, category, limit]);
 
+  /**
+   * Refresh current page
+   */
+  const refresh = useCallback(() => {
+    return fetchEntries({ pageNum: page, cat: category });
+  }, [fetchEntries, page, category]);
+
+  /**
+   * Go to specific page
+   */
+  const goToPage = useCallback((pageNum) => {
+    return fetchEntries({ pageNum, cat: category });
+  }, [fetchEntries, category]);
+
+  /**
+   * Go to next page
+   */
+  const nextPage = useCallback(() => {
+    if (pagination.hasNext) {
+      return fetchEntries({ pageNum: page + 1, cat: category });
+    }
+  }, [fetchEntries, pagination.hasNext, page, category]);
+
+  /**
+   * Go to previous page
+   */
+  const prevPage = useCallback(() => {
+    if (pagination.hasPrev) {
+      return fetchEntries({ pageNum: page - 1, cat: category });
+    }
+  }, [fetchEntries, pagination.hasPrev, page, category]);
+
+  /**
+   * Change category filter
+   */
+  const changeCategory = useCallback((newCategory) => {
+    setCategory(newCategory);
+    return fetchEntries({ pageNum: 1, cat: newCategory });
+  }, [fetchEntries]);
+
+  // DEFECT-RT-003 FIX: Initial fetch with ref to prevent stale closure
+  const isInitialMount = useRef(true);
+  
   useEffect(() => {
-    fetchEntries(0)
-  }, [fetchEntries])
-
-  const loadMore = () => {
-    if (!loading && pagination.hasMore) {
-      fetchEntries(pagination.offset)
+    if (isInitialMount.current) {
+      isInitialMount.current = false;
+      const controller = new AbortController();
+      // Use a function that captures current state at call time
+      const doFetch = async () => {
+        try {
+          await fetchEntries({ signal: controller.signal });
+        } catch (err) {
+          // Error handled in fetchEntries
+        }
+      };
+      doFetch();
+      
+      return () => controller.abort();
     }
-  }
+  }, [fetchEntries]);
 
-  return { entries, loading, error, pagination, loadMore, refetch: () => fetchEntries(0) }
+  return {
+    // State
+    entries,
+    loading,
+    error,
+    category,
+    page,
+    pagination,
+    
+    // Actions
+    setEntries,
+    fetchEntries,
+    refresh,
+    goToPage,
+    nextPage,
+    prevPage,
+    changeCategory,
+    setError
+  };
 }
 
-export function useEntry(id) {
-  const [entry, setEntry] = useState(null)
-  const [loading, setLoading] = useState(true)
-  const [error, setError] = useState(null)
+/**
+ * useEntry Hook
+ * Fetch and manage a single entry
+ * 
+ * @param {string} entryId - The entry ID to fetch
+ * @returns {Object} Single entry state and control functions
+ */
+export function useEntry(entryId) {
+  const [entry, setEntry] = useState(null);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
+
+  const fetchEntry = useCallback(async (id) => {
+    if (!id) return;
+    
+    setLoading(true);
+    setError(null);
+    
+    try {
+      const response = await fetch(`/api/entries/${id}`);
+      const data = await response.json();
+      
+      if (!data.success) {
+        throw new Error(data.error || 'Failed to fetch entry');
+      }
+      
+      setEntry(data.data);
+      return data.data;
+    } catch (err) {
+      setError(err.message);
+      throw err;
+    } finally {
+      setLoading(false);
+    }
+  }, []);
 
   useEffect(() => {
-    if (!id) {
-      setLoading(false)
-      return
+    if (entryId) {
+      fetchEntry(entryId);
     }
+  }, [entryId, fetchEntry]);
 
-    setLoading(true)
-    setError(null)
-
-    const fetchEntry = async () => {
-      try {
-        const response = await client.get(`/entries/${id}`)
-        setEntry(response.data)
-      } catch (err) {
-        setError(err.message || 'Failed to fetch entry')
-      } finally {
-        setLoading(false)
-      }
-    }
-
-    fetchEntry()
-  }, [id])
-
-  return { entry, loading, error }
-}
-
-export function useStats() {
-  const [stats, setStats] = useState(null)
-  const [loading, setLoading] = useState(true)
-  const [error, setError] = useState(null)
-
-  useEffect(() => {
-    const fetchStats = async () => {
-      try {
-        const response = await client.get('/stats')
-        setStats(response.data)
-      } catch (err) {
-        setError(err.message || 'Failed to fetch stats')
-      } finally {
-        setLoading(false)
-      }
-    }
-
-    fetchStats()
-  }, [])
-
-  return { stats, loading, error }
+  return {
+    entry,
+    loading,
+    error,
+    fetchEntry,
+    setEntry
+  };
 }

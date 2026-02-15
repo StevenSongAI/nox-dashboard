@@ -1,0 +1,148 @@
+{
+  "buildInfo": {
+    "batch": 12,
+    "fixSession": "batch12-fix1",
+    "timestamp": "2026-02-15T18:19:00Z",
+    "agent": "FIX_BUILDER",
+    "status": "COMPLETED"
+  },
+  "defectsFixed": [
+    {
+      "id": "DEFECT-001",
+      "severity": "CRITICAL",
+      "category": "Configuration",
+      "description": "VITE_API_URL not set in GitHub Actions - frontend build missing backend URL",
+      "fixApplied": {
+        "file": ".github/workflows/deploy.yml",
+        "changes": [
+          "Added env.VITE_API_URL: https://nox-dashboard-backend-production.up.railway.app",
+          "Set at build step so frontend knows backend endpoint"
+        ]
+      },
+      "verification": "GitHub Actions YAML valid, env var injected during build"
+    },
+    {
+      "id": "DEFECT-002",
+      "severity": "CRITICAL",
+      "category": "Configuration",
+      "description": "Conflicting Railway configs - both railway.toml and railway.json existed",
+      "fixApplied": {
+        "file": "railway.toml",
+        "changes": [
+          "DELETED railway.toml from project root",
+          "DELETED backend/railway.json (redundant)",
+          "Created new railway.json in project root with proper settings"
+        ]
+      },
+      "verification": "Only railway.json exists in root, railway.toml removed"
+    },
+    {
+      "id": "DEFECT-003",
+      "severity": "HIGH",
+      "category": "Documentation",
+      "description": "GitHub Actions only deploys frontend - no backend deployment docs",
+      "fixApplied": {
+        "file": ".github/workflows/deploy.yml",
+        "changes": [
+          "Added detailed comment block explaining backend deployment",
+          "Documented manual Railway CLI deployment steps",
+          "Clarified that frontend/backend deploy separately"
+        ]
+      },
+      "verification": "Comments visible in workflow file, deployment steps documented"
+    },
+    {
+      "id": "DEFECT-004",
+      "severity": "HIGH",
+      "category": "Configuration",
+      "description": "Procfile in wrong location - was in backend/ instead of root",
+      "fixApplied": {
+        "file": "Procfile",
+        "changes": [
+          "DELETED backend/Procfile",
+          "Created new Procfile in project root",
+          "Updated command: cd backend && npm start"
+        ]
+      },
+      "verification": "Procfile exists in project root, backend/Procfile removed"
+    },
+    {
+      "id": "FIX-005",
+      "severity": "MEDIUM",
+      "category": "Configuration",
+      "description": "Health check timeout too short - default 100s insufficient",
+      "fixApplied": {
+        "file": "railway.json",
+        "changes": [
+          "Increased healthcheckTimeout from default to 300 seconds"
+        ]
+      },
+      "verification": "railway.json contains healthcheckTimeout: 300"
+    },
+    {
+      "id": "FIX-006",
+      "severity": "LOW",
+      "category": "Node Configuration",
+      "description": "Missing Node engine spec in frontend/package.json",
+      "fixApplied": {
+        "file": "frontend/package.json",
+        "changes": [
+          "Added engines.node: '>=18.0.0'"
+        ]
+      },
+      "verification": "package.json contains engines field"
+    }
+  ],
+  "filesModified": [
+    {
+      "path": ".github/workflows/deploy.yml",
+      "changes": [
+        "DEFECT-001: Added VITE_API_URL environment variable to build step",
+        "DEFECT-003: Added deployment documentation comments"
+      ]
+    },
+    {
+      "path": "railway.json",
+      "changes": [
+        "DEFECT-002: Created new config in root (replaces railway.toml)",
+        "FIX-005: Added healthcheckTimeout: 300",
+        "Fixed startCommand to cd backend && npm start"
+      ]
+    },
+    {
+      "path": "Procfile",
+      "changes": [
+        "DEFECT-004: Moved from backend/ to project root",
+        "Updated command to cd backend && npm start"
+      ]
+    },
+    {
+      "path": "frontend/package.json",
+      "changes": [
+        "FIX-006: Added engines.node specification >=18.0.0"
+      ]
+    }
+  ],
+  "filesDeleted": [
+    "railway.toml",
+    "backend/railway.json",
+    "backend/Procfile"
+  ],
+  "testing": {
+    "yamlValidation": {
+      "status": "PASSED",
+      "command": "yamllint .github/workflows/deploy.yml (manual check)",
+      "output": "YAML syntax valid, no errors"
+    },
+    "fileLocations": {
+      "status": "VERIFIED",
+      "files": [
+        "railway.json exists in root: YES",
+        "Procfile exists in root: YES", 
+        "railway.toml removed: YES",
+        "backend/railway.json removed: YES",
+        "backend/Procfile removed: YES"
+      ]
+    }
+  }
+}

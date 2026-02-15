@@ -1,0 +1,79 @@
+{
+  "batch": 4,
+  "status": "COMPLETE",
+  "timestamp": "2026-02-15T10:41:00-05:00",
+  "fixes": [
+    {
+      "defect": "DEFECT-001",
+      "severity": "HIGH",
+      "title": "Confidence accepts strings instead of numbers",
+      "file": "src/validators/entryValidator.js",
+      "changes": [
+        "Added .isNumeric() check before .isInt()",
+        "Added custom validator to reject string values (typeof check)",
+        "Applied to both validateCreateEntry and validateUpdateEntry"
+      ],
+      "test_cases": [
+        "POST /api/entries with confidence: '50' → 400 error",
+        "POST /api/entries with confidence: 50 → success",
+        "PATCH /api/entries/:id with confidence: '75' → 400 error",
+        "PATCH /api/entries/:id with confidence: 75 → success"
+      ]
+    },
+    {
+      "defect": "DEFECT-002",
+      "severity": "MEDIUM",
+      "title": "Soft-deleted entries return 404",
+      "file": "src/routes/entries.js",
+      "changes": [
+        "GET /api/entries now supports ?includeDeleted=true query param",
+        "GET /api/entries/:id now supports ?includeDeleted=true query param",
+        "Both endpoints only filter deleted_at IS NULL by default",
+        "Count query also respects includeDeleted flag"
+      ],
+      "test_cases": [
+        "GET /api/entries/:id (deleted entry) → 404",
+        "GET /api/entries/:id?includeDeleted=true (deleted entry) → 200 with entry",
+        "GET /api/entries?includeDeleted=true → includes soft-deleted entries"
+      ]
+    },
+    {
+      "defect": "DEFECT-003",
+      "severity": "MEDIUM",
+      "title": "No pagination limit max",
+      "file": "src/routes/entries.js",
+      "changes": [
+        "Added MAX_LIMIT = 100 constant",
+        "Added ABUSE_LIMIT = 1000 constant",
+        "If limit > 100, clamped to 100",
+        "If limit > 1000, return 400 error with message"
+      ],
+      "test_cases": [
+        "GET /api/entries?limit=200 → returns 100 items",
+        "GET /api/entries?limit=5000 → 400 error 'Limit exceeds maximum allowed'",
+        "GET /api/entries?limit=50 → returns 50 items (unchanged)"
+      ]
+    },
+    {
+      "defect": "DEFECT-004",
+      "severity": "LOW",
+      "title": "Full-text search misses some matches",
+      "file": "src/routes/entries.js",
+      "changes": [
+        "Changed to_tsvector from 'english' to 'simple' (main query)",
+        "Changed plainto_tsquery from 'english' to 'simple' (main query)",
+        "Changed to_tsvector from 'english' to 'simple' (count query)",
+        "Changed plainto_tsquery from 'english' to 'simple' (count query)"
+      ],
+      "test_cases": [
+        "Search for words with different stemming should now match",
+        "Special characters and partial matches may work better"
+      ]
+    }
+  ],
+  "files_modified": [
+    "src/validators/entryValidator.js",
+    "src/routes/entries.js"
+  ],
+  "notes": "All fixes are straightforward and low-risk. The confidence validation now properly rejects string values while maintaining the 0-100 range check. The includeDeleted parameter allows admin/recovery use cases. Pagination limits prevent abuse while allowing reasonable page sizes. Full-text search using 'simple' instead of 'english' should match more results without stemming rules."
+}
