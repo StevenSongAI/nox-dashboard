@@ -82,6 +82,42 @@
       "source": "Market Data / Feb 6 close",
       "whyWatching": "NVDA alternative play, MI300 chip demand. +8.28% on strong earnings.",
       "lastUpdated": "2026-02-09T09:48:00Z"
+    },
+    {
+      "id": "watch-003",
+      "sector": "AI Infrastructure",
+      "ticker": "CRWV",
+      "name": "CoreWeave",
+      "currentPrice": 77.14,
+      "targetEntry": 70,
+      "catalyst": "Q3 bookings +85% QoQ, AI data center demand",
+      "source": "Citi analyst coverage",
+      "whyWatching": "Citi Buy rating $135 target (75% upside). Q3 bookings grew 85% QoQ. SemiAnalysis ranks #1 AI cloud.",
+      "lastUpdated": "2026-02-15T23:20:00Z"
+    },
+    {
+      "id": "watch-004",
+      "sector": "AI Infrastructure",
+      "ticker": "NBIS",
+      "name": "Nebius Group",
+      "currentPrice": 42.85,
+      "targetEntry": 38,
+      "catalyst": "AI data center infrastructure demand",
+      "source": "Wall Street consensus",
+      "whyWatching": "Wall Street highly bullish on NBIS. Robust demand for AI data center infrastructure.",
+      "lastUpdated": "2026-02-15T23:20:00Z"
+    },
+    {
+      "id": "watch-005",
+      "sector": "Software/AI",
+      "ticker": "ADBE",
+      "name": "Adobe",
+      "currentPrice": 485.32,
+      "targetEntry": 450,
+      "catalyst": "Firefly Video integration, AI creative tools",
+      "source": "Market Analysis",
+      "whyWatching": "Firefly Video integration threatens pure-play AI video startups. Creative AI moat.",
+      "lastUpdated": "2026-02-15T23:20:00Z"
     }
   ],
   "trends": [
