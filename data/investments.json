@@ -502,7 +502,13 @@
       "title": "NVDA Pre-Earnings Update - Feb 15 Price Action Analysis",
       "date": "2026-02-16T03:46:00Z",
       "category": "earnings",
-      "tags": ["NVDA", "earnings", "Feb25", "price_target", "analyst_consensus"],
+      "tags": [
+        "NVDA",
+        "earnings",
+        "Feb25",
+        "price_target",
+        "analyst_consensus"
+      ],
       "content": "## NVDA Pre-Earnings Update - February 15, 2026\n\n**Current Price:** ~$185 (as of Feb 9 data)\n**Earnings Date:** February 25, 2026 (10 days away)\n**Analyst Consensus:** STRONG BUY (37 analysts)\n**Price Target:** $257.35 (38% upside potential)\n\n### Earnings Expectations\n- **Q4 EPS Estimate:** $1.49 (vs $0.81 same quarter prior year = +84% growth)\n- **Full Year 2026 EPS:** $4.69 expected\n- **Forward P/E:** 40.7x (reasonable for 84% growth rate)\n\n### Key Bullish Factors\n1. **Strong Analyst Support:** 37 analysts maintain Buy consensus\n2. **Growth Trajectory:** 84% YoY earnings growth expected\n3. **AI Infrastructure Supercycle:** $2.52T global AI investment in 2026\n4. **Data Center Dominance:** Still 80%+ market share in AI training chips\n5. **Blackwell Architecture:** Full production ramping, driving next-gen demand\n\n### Risk Factors Pre-Earnings\n1. **High Expectations:** $1.49 EPS means zero room for disappointment\n2. **China Export Restrictions:** Continue to weigh on revenue\n3. **Valuation Compression Risk:** Trading at 40x forward earnings - any miss could trigger 15-20% drop\n4. **Competition:** AMD MI300 gaining traction, custom silicon (Google TPU, Amazon Trainium)\n\n### Technical Levels to Watch\n- **$135 Support:** 50-day moving average - breakdown here opens $120\n- **$200 Resistance:** Psychological barrier + recent highs\n- **$257 Target:** Consensus analyst target\n\n### Actionable Guidance\n**Existing Position:** Hold through earnings. The 84% growth and $2.52T AI investment supercycle thesis remains intact. High conviction name despite near-term volatility.\n\n**New Entry:** HIGH RISK. Consider waiting for post-earnings dip if you don't own it. If adding before earnings, position size 50% of target allocation only.\n\n**Earnings Scenarios:**\n- **Beat & Raise:** Stock tests $200-210 (rally 10-15%)\n- **Inline:** Pullback to $170-175 support\n- **Miss:** Could see $140-150 quickly (25% correction)\n\n**Confidence: 8/10** - Strong fundamentals, but elevated expectations create binary outcome risk.\n**Urgency: Medium-High** - Earnings in 10 days, position sizing decisions needed now.",
       "source": "MarketBeat / Nasdaq / Motley Fool / Public.com",
       "sourceUrls": [
@@ -517,6 +523,27 @@
       "addedAt": "2026-02-16T03:46:00Z",
       "catalystDate": "2026-02-25",
       "catalyst": "Q4 FY2026 Earnings Report"
+    },
+    {
+      "id": "intel-035",
+      "date": "2026-02-16T14:47:32Z",
+      "topic": "NVDA Earnings Preview: 9 Days Out - Price Action at Key Support",
+      "source": "Yahoo Finance / Market Data / Analyst Estimates",
+      "content": "NVDA closed at $182.78 on Feb 13, down -2.24% (-$4.19). Pullback places stock near technical support zone ahead of critical Feb 25 earnings. Key metrics: 52-week range $86.62-$212.19 (currently mid-range), Forward P/E compressed to 23.75 vs Trailing P/E 45.25, Market cap $4.44T. Analyst consensus target $253.88 implies 39% upside. YTD performance: NVDA -1.99% vs S&P 500 +0.14%, underperforming broader market. Earnings preview: Wall Street expects Q4 FY26 revenue ~$38B, driven by Blackwell chip demand. Supply constraints remain tailwind through mid-2026. Risk: High expectations create limited margin for error \u2014 any guidance miss could trigger volatility. Opportunity: Current pullback to $180-182 range offers tactical entry ahead of earnings catalyst. Consider: 1) Maintain existing positions through earnings, 2) Add tactical exposure on weakness below $180, 3) Set stop-loss at $165 (major support). Earnings call Feb 25 after market close \u2014 guidance for Q1 FY27 will be critical.",
+      "impact": "bullish",
+      "tickers": [
+        "NVDA",
+        "AMD",
+        "CRWV",
+        "NBIS"
+      ],
+      "riskFactors": [
+        "Earnings volatility risk - high expectations built in",
+        "Forward P/E 23.75 still premium vs semiconductors median",
+        "YTD underperformance vs S&P 500 suggests waning momentum",
+        "Blackwell supply constraints could limit revenue beat magnitude"
+      ],
+      "confidence": "high"
     }
   ],
   "synthesizedInsights": [

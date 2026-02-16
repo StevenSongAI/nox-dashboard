@@ -64,9 +64,9 @@ module.exports = {
   checkDatabaseHealth: async () => {
     try {
       const result = await pool.query('SELECT NOW()');
-      return { healthy: true, timestamp: result.rows[0].now };
+      return { connected: true, timestamp: result.rows[0].now };
     } catch (err) {
-      return { healthy: false, error: err.message };
+      return { connected: false, error: err.message };
     }
   }
 };
