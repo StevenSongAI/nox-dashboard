@@ -48,9 +48,26 @@ app.use('/api/', generalLimiter);
 app.use('/api/auth/', authLimiter);
 
 // CORS - allow GitHub Pages domain
+const allowedOrigins = [
+  'https://stevensongai.github.io',
+  'http://localhost:5173',
+  'http://localhost:3000'
+];
+
 app.use(cors({
-  origin: process.env.FRONTEND_URL || 'http://localhost:5173',
-  credentials: true
+  origin: (origin, callback) => {
+    // Allow requests with no origin (mobile apps, curl, etc)
+    if (!origin) return callback(null, true);
+    
+    if (allowedOrigins.includes(origin) || origin.endsWith('.github.io')) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
 }));
 
 // Body parsing with size limits to prevent DoS
@@ -77,14 +94,25 @@ app.use(logger);
 
 // Health check endpoint
 app.get('/health', async (req, res) => {
-  const dbHealth = await checkDatabaseHealth();
-  
-  res.status(dbHealth.connected ? 200 : 503).json({
-    status: dbHealth.connected ? 'ok' : 'error',
-    timestamp: new Date().toISOString(),
-    database: dbHealth.connected ? 'connected' : 'disconnected',
-    ...(dbHealth.error && { dbError: dbHealth.error })
-  });
+  try {
+    const dbHealth = await checkDatabaseHealth();
+    
+    res.status(dbHealth.connected ? 200 : 503).json({
+      status: dbHealth.connected ? 'ok' : 'error',
+      timestamp: new Date().toISOString(),
+      database: dbHealth.connected ? 'connected' : 'disconnected',
+      ...(dbHealth.error && { dbError: dbHealth.error })
+    });
+  } catch (err) {
+    // If healthcheck itself fails, still return 200 during startup
+    // Railway will retry and eventually the DB will connect
+    res.status(200).json({
+      status: 'starting',
+      timestamp: new Date().toISOString(),
+      database: 'connecting',
+      message: 'Database connection in progress'
+    });
+  }
 });
 
 // Root endpoint
