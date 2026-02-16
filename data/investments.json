@@ -596,6 +596,23 @@
       "catalyst": "Q4 FY2026 Earnings"
     },
     {
+      "id": "intel-039",
+      "date": "2026-02-16T20:16:00Z",
+      "topic": "NVDA Feb 16: China Sales Resuming + Hyperscaler Capex Confirmation - Double Catalyst",
+      "source": "The Motley Fool / Company Guidance / Market Analysis",
+      "content": "Fresh pre-earnings catalyst confirmation (Feb 16 evening): (1) China chip sales RESUMING - Nvidia expected to restore $8B quarterly revenue guidance previously blocked by Trump administration export restrictions. AMD already guided China sales in their outlook, signaling regulatory clearance for peer companies. (2) Hyperscaler capex confirmed at RECORD LEVELS: Alphabet $175-185B (up from prior guidance), Amazon $200B, Meta $115-135B. Combined Big Tech AI spend approaching $500B in 2026. (3) Stock at $182.81 (-2.21%) presents tactical entry ahead of Feb 25 earnings. Key insight: Two underappreciated catalysts - China revenue restoration ($8B/quarter = $32B annualized potential) + hyperscaler demand confirmation create setup for beat-and-raise scenario. Market focused on Blackwell ramp but missing these demand tailwinds. Steven positioning: Existing NVDA position benefits from both catalysts. No action required - hold through earnings. Fresh capital: Consider adding on any weakness below $180 before Feb 25 close. APP watchlist: Entry target remains $380 (currently $390.55).",
+      "impact": "bullish",
+      "tickers": ["NVDA", "AMD", "APP"],
+      "riskFactors": [
+        "China export clearance not yet officially confirmed - remains speculation until earnings call",
+        "Hyperscaler capex sustainability questioned by bears (Seeking Alpha warning)",
+        "High expectations limit margin for error on earnings day"
+      ],
+      "confidence": "high",
+      "catalystDate": "2026-02-25",
+      "catalyst": "Q4 FY2026 Earnings - China guidance + hyperscaler demand confirmation"
+    },
+    {
       "id": "intel-038",
       "date": "2026-02-16T18:16:00Z",
       "topic": "NVDA Feb 16 Update: 25x Forward Earnings, Cheaper Than GOOGL/AVGO, 61% Growth Forecast",
