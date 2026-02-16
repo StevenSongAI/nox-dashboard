@@ -53,7 +53,7 @@
       "signal": "Emerging opportunity",
       "source": "Market Analysis / Trend Synthesis",
       "confidence": "medium",
-      "notes": "AI video generation demand creating GPU compute shortage. Render provides decentralized GPU network. 88% CAGR in AI video market ($0.5B to $12B by 2029) drives underlying demand for compute infrastructure. Token up 340% YoY but volatile. Small position thesis: AI content creation boom → compute demand → Render network utilization.",
+      "notes": "AI video generation demand creating GPU compute shortage. Render provides decentralized GPU network. 88% CAGR in AI video market ($0.5B to $12B by 2029) drives underlying demand for compute infrastructure. Token up 340% YoY but volatile. Small position thesis: AI content creation boom \u2192 compute demand \u2192 Render network utilization.",
       "addedAt": "2026-02-08T19:46:00Z",
       "riskLevel": "high",
       "positionSize": "speculative (<1% portfolio)"
@@ -139,8 +139,17 @@
       "source": "Deloitte / AInvest / Meta / Data Center Dynamics",
       "content": "Fresh intelligence confirms AI infrastructure supercycle accelerating: (1) Global AI investment projected $2.52T in 2026 (+44% YoY), (2) AI-optimized server spending growing 49% as data center demand surges, (3) Meta announced 'hundreds of billions' in AI infrastructure with multi-gigawatt Prometheus supercluster launching 2026, (4) AMD targeting $1T data center market by 2030 with 39% YoY growth in Q4 2025, (5) SemiAnalysis ranks CoreWeave #1 AI cloud above Amazon/Microsoft/Alphabet. NVDA at $182.81 (Feb 15 close) ahead of Feb 25 earnings. Key risk: limited margin for error at current valuations - any slowdown signals could trigger multiple contraction. Positioning: Maintain NVDA through earnings, watch for AMD pullback to $180 for tactical adds. Infrastructure plays (NVDA, AMD, CoreWeave, Nebius) all beneficiaries regardless of which AI models win.",
       "impact": "bullish",
-      "tickers": ["NVDA", "AMD", "CRWV", "NBIS"],
-      "riskFactors": ["NVDA earnings volatility Feb 25", "High valuations limit margin for error", "Supply constraints may cap revenue growth"],
+      "tickers": [
+        "NVDA",
+        "AMD",
+        "CRWV",
+        "NBIS"
+      ],
+      "riskFactors": [
+        "NVDA earnings volatility Feb 25",
+        "High valuations limit margin for error",
+        "Supply constraints may cap revenue growth"
+      ],
       "confidence": "high"
     },
     {
@@ -150,7 +159,13 @@
       "source": "Futurum / MYJ Capital / CNBC",
       "content": "US hyperscalers (Microsoft, Alphabet, Amazon, Meta, Oracle) planning $660B-$690B in 2026 AI capex, doubling 2025 spending. Global AI investment projected to reach $2.52T in 2026. Key beneficiaries: NVDA (chips), data center REITs, cloud infrastructure. Mistral AI announced $1.43B Sweden infrastructure investment. Structural shift creating multi-year supercycle.",
       "impact": "bullish",
-      "tickers": ["NVDA", "AMD", "SMCI", "VST", "DGT"]
+      "tickers": [
+        "NVDA",
+        "AMD",
+        "SMCI",
+        "VST",
+        "DGT"
+      ]
     },
     {
       "id": "intel-001",
@@ -205,7 +220,7 @@
       "date": "2026-02-08T18:46:00Z",
       "topic": "Creator Economy Newsletter Monetization",
       "source": "Business Opportunity Analysis",
-      "content": "AI/design niche newsletters (Ben's Bites, The Rundown) achieving $50K-200K ARR with 40%+ growth YoY. Creature design sub-niche appears underserved. Newsletter format creates high-LTV audience for digital product funnel (templates → courses). Beehiiv/Substack infrastructure reduces startup costs to near-zero. Cross-sell potential with existing template pack and masterclass opportunities.",
+      "content": "AI/design niche newsletters (Ben's Bites, The Rundown) achieving $50K-200K ARR with 40%+ growth YoY. Creature design sub-niche appears underserved. Newsletter format creates high-LTV audience for digital product funnel (templates \u2192 courses). Beehiiv/Substack infrastructure reduces startup costs to near-zero. Cross-sell potential with existing template pack and masterclass opportunities.",
       "impact": "bullish",
       "relatedOpportunities": [
         "opp-006",
@@ -216,9 +231,9 @@
     {
       "id": "intel-008",
       "date": "2026-02-08T19:46:00Z",
-      "topic": "AI Video Boom → GPU Compute Squeeze",
+      "topic": "AI Video Boom \u2192 GPU Compute Squeeze",
       "source": "Trend Synthesis / Market Analysis",
-      "content": "Synthesizing intelligence: AI video generation growing 88% CAGR ($0.5B → $12B by 2029) is creating compute infrastructure bottlenecks. Centralized cloud providers (AWS, GCP) face GPU shortages. Decentralized GPU networks like Render (RNDR) and Akash (AKT) positioned to capture overflow demand. Token-based incentive models align compute providers with AI content creators. Risk: Crypto volatility. Opportunity: Exposure to AI infrastructure beyond traditional equities (NVDA, AMD). Render Network specifically enables GPU owners to monetize idle compute - direct beneficiary of AI video content boom. Watch for: major AI video platforms (Runway, Pika) announcing Render partnerships.",
+      "content": "Synthesizing intelligence: AI video generation growing 88% CAGR ($0.5B \u2192 $12B by 2029) is creating compute infrastructure bottlenecks. Centralized cloud providers (AWS, GCP) face GPU shortages. Decentralized GPU networks like Render (RNDR) and Akash (AKT) positioned to capture overflow demand. Token-based incentive models align compute providers with AI content creators. Risk: Crypto volatility. Opportunity: Exposure to AI infrastructure beyond traditional equities (NVDA, AMD). Render Network specifically enables GPU owners to monetize idle compute - direct beneficiary of AI video content boom. Watch for: major AI video platforms (Runway, Pika) announcing Render partnerships.",
       "impact": "bullish",
       "relatedPositions": [
         "RENDER"
@@ -336,7 +351,7 @@
       "date": "2026-02-09T22:06:00Z",
       "topic": "Baby Creature Physics: Content-Investment Thesis Update",
       "source": "Pattern Analysis / Outlier Data Synthesis",
-      "content": "Synthesizing YouTube outlier analysis with investment positioning. Pattern insight-008 (Baby Creature Physics) shows 390x-677x outlier scores across 2 verified videos. Production brief ready (brief-baby-physics-pilot-002) with full script. Investment framing: Content production as capital allocation with asymmetric return profile. Production cost: ~$300 (tools, assets, time). Success case: 50x view ratio on 10K base = 500K views → $8 RPM = $4,000 + subscriber growth + algorithmic boost. Failure case: Standard video performance (~1x ratio) = ~10K views, no loss beyond time invested. Asymmetric payoff structure creates positive expected value even with modest success probability. Strategic value: Validates dashboard-driven content strategy, creates repeatable template, differentiates from competitors. Execution timeline: 2 weeks pre-production, 1 week filming, 1 week post. Go/no-go decision point: Feb 16 (confirm equipment/tool access).",
+      "content": "Synthesizing YouTube outlier analysis with investment positioning. Pattern insight-008 (Baby Creature Physics) shows 390x-677x outlier scores across 2 verified videos. Production brief ready (brief-baby-physics-pilot-002) with full script. Investment framing: Content production as capital allocation with asymmetric return profile. Production cost: ~$300 (tools, assets, time). Success case: 50x view ratio on 10K base = 500K views \u2192 $8 RPM = $4,000 + subscriber growth + algorithmic boost. Failure case: Standard video performance (~1x ratio) = ~10K views, no loss beyond time invested. Asymmetric payoff structure creates positive expected value even with modest success probability. Strategic value: Validates dashboard-driven content strategy, creates repeatable template, differentiates from competitors. Execution timeline: 2 weeks pre-production, 1 week filming, 1 week post. Go/no-go decision point: Feb 16 (confirm equipment/tool access).",
       "impact": "bullish",
       "investmentType": "Content Production",
       "capitalRequired": "$300-500 + 40-60 hours",
@@ -359,7 +374,7 @@
       "date": "2026-02-12T23:00:00Z",
       "topic": "NEW BUY: AppLovin (APP) - AI Ad-Tech with 89% Analyst Upside",
       "source": "Motley Fool / Morgan Stanley",
-      "content": "AppLovin (APP) is an AI-powered ad-tech platform with 89% upside implied by median Wall Street target. Core product is Axon, an ML-based ad targeting engine called 'best-in-class' by Morgan Stanley. Recently expanded from mobile gaming ads into web-based e-commerce advertising (massive TAM expansion). Competitive moat: owns Max mediation platform generating proprietary data that continuously improves Axon's targeting. This is a DATA FLYWHEEL business - more publishers → more data → better targeting → more advertisers → more publishers. Steven doesn't own this. Current price ~$84, median target $152. Risk: high valuation if e-commerce expansion underperforms. Confidence: 7/10.",
+      "content": "AppLovin (APP) is an AI-powered ad-tech platform with 89% upside implied by median Wall Street target. Core product is Axon, an ML-based ad targeting engine called 'best-in-class' by Morgan Stanley. Recently expanded from mobile gaming ads into web-based e-commerce advertising (massive TAM expansion). Competitive moat: owns Max mediation platform generating proprietary data that continuously improves Axon's targeting. This is a DATA FLYWHEEL business - more publishers \u2192 more data \u2192 better targeting \u2192 more advertisers \u2192 more publishers. Steven doesn't own this. Current price ~$84, median target $152. Risk: high valuation if e-commerce expansion underperforms. Confidence: 7/10.",
       "impact": "bullish"
     },
     {
@@ -398,6 +413,32 @@
         "Competition from Canva and other design tools",
         "AI adoption may cannibalize traditional Creative Cloud subscriptions"
       ]
+    },
+    {
+      "id": "intel-nvda-022",
+      "ticker": "NVDA",
+      "type": "earnings_preview",
+      "title": "NVDA Q4 Earnings Preview - Feb 25 Catalyst Analysis",
+      "date": "2026-02-15T21:47:56.005427Z",
+      "category": "earnings",
+      "tags": [
+        "NVDA",
+        "earnings",
+        "semiconductor",
+        "AI",
+        "catalyst",
+        "Feb25"
+      ],
+      "content": "## NVDA Earnings Feb 25 - Critical Setup Analysis\n\n**Earnings Date:** February 25, 2025 (post-market)  \n**Analyst Consensus:** Q4 Revenue ~$38.9B (+70% YoY)  \n**Data Center Revenue:** Expected 87% of total sales  \n**Current Price Target:** $264.20 (MarketBeat consensus)\n\n### Technical Setup\n- **Support:** $135 (50-day moving average) - reliable floor during pullbacks\n- **Resistance:** $150 (psychological level) - selling pressure emerged late Jan\n- **RSI:** 58 (cooled from 70+ overbought levels - improved setup)\n- **Volume Pattern:** Spikes to 350M+ shares on down days vs 280M average - institutional repositioning signal\n\n### Key Risk Factors\n1. **Limited Margin for Error:** Current valuations offer little room for disappointment\n2. **Growth Deceleration Risk:** Transitioning from triple-digit to sustainable growth (70% still impressive)\n3. **Multiple Compression Threat:** Any margin compression could trigger significant multiple contraction\n4. **Export Restrictions:** China headwinds persist, though $30B+ upside if ban lifts\n\n### Options Market Signal\n- **Put-Call Ratio:** 0.82 (up from 0.65 in December)\n- **Interpretation:** Growing hedging activity - institutional caution increasing\n\n### Bullish Factors\n- Morgan Stanley overweight rating, $160 price target\n- Sustained enterprise AI adoption continues\n- AI revolution \"early innings\" narrative intact\n- China sales resumption potential ($30B+ annual run-rate)\n\n### Actionable Guidance\n**Pre-Earnings (Now - Feb 25):**\n- Existing position: Consider protective puts or trim if oversized\n- New entry: High risk - wait for post-earnings clarity\n- Watch $135 support level - breakdown signals deeper correction\n\n**Post-Earnings Scenarios:**\n- **Beat + Raise:** Stock rallies toward $150-160 resistance\n- **Inline Guidance:** Possible pullback to $130-135 support zone\n- **Miss or Weak Guidance:** Multiple compression to $110-120 range\n\n### AMD Correlation Play\nAMD pulled back 21% post-earnings. Healthiest scenario: controlled pullback to low-$200s/high-$190s before next leg toward $280-300 target. Watch for NVDA sympathy selling creating AMD entry opportunity.\n\n**Source:** MarketBeat, Morgan Stanley, TLT.ng analysis, HeyGoTrade  \n**Confidence:** High (data-driven analysis)  \n**Urgency:** High (earnings in ~10 days)",
+      "sourceUrls": [
+        "https://www.marketbeat.com/stocks/NASDAQ/NVDA/forecast/",
+        "https://tlt.ng/nvidia-stock-analysis-nvda-wobbles-ahead-of-key-earnings-report/amp/",
+        "https://www.heygotrade.com/en/market-outlook/amd-stock-analysis-today"
+      ],
+      "confidence": 85,
+      "status": "active_research",
+      "priority": "high",
+      "addedAt": "2026-02-15T21:47:56.005434Z"
     }
   ],
   "synthesizedInsights": [
@@ -407,7 +448,7 @@
       "confidence": "high",
       "timeHorizon": "12-24 months",
       "keyDrivers": [
-        "AI video generation market: $0.5B → $12B by 2029 (88% CAGR)",
+        "AI video generation market: $0.5B \u2192 $12B by 2029 (88% CAGR)",
         "GPU compute shortage creating demand for decentralized networks",
         "AI coding agents entering rapid adoption (Trend Score 120)",
         "Current portfolio positioned across infrastructure layer"
@@ -442,6 +483,6 @@
       "addedAt": "2026-02-09T11:50:00Z"
     }
   ],
-  "lastUpdated": "2026-02-15T23:46:00Z",
+  "lastUpdated": "2026-02-15T21:47:56.005436Z",
   "dataSource": "Market Data"
 }
