@@ -1,31 +1,31 @@
 {
-  "lastUpdated": "2026-02-16T20:46:00Z",
+  "lastUpdated": "2026-02-16T21:20:00Z",
   "updatedBy": "nox-heartbeat",
-  "version": "1.0.02162046",
-  "cacheBust": "20260216T204",
-  "dataVersion": "2026.02.16.7",
+  "version": "1.0.02162120",
+  "cacheBust": "20260216T212",
+  "dataVersion": "2026.02.16.8",
   "youtubeUpdated": "2026-02-16T15:57:11Z",
-  "investmentsUpdated": "2026-02-16T20:46:00Z",
-  "researchUpdated": "2026-02-16T14:36:00.000000+00:00",
+  "investmentsUpdated": "2026-02-16T21:20:00Z",
+  "researchUpdated": "2026-02-16T21:20:00Z",
   "newBusinessUpdated": "2026-02-16T19:50:00Z",
   "toolsUpdated": "2026-02-15T00:17:00Z",
   "workTrackerUpdated": "2026-02-15T00:17:00Z",
   "minecraftArtistsUpdated": "2026-02-15T19:16:00Z",
   "investments": {
-    "lastUpdated": "2026-02-16T20:46:00Z",
-    "entryCount": 32
+    "lastUpdated": "2026-02-16T21:20:00Z",
+    "entryCount": 33
   },
   "dataFreshness": {
-    "research": "2026-02-16 - 44 notes",
+    "research": "2026-02-16 - 45 notes (+1: Seedance 2.0 Disney legal threat analysis)",
     "newBusiness": "2026-02-15 - 24 opportunities",
-    "investments": "2026-02-16 - 32 intelligence items (+1: NVDA pre-earnings analyst beat predictions)",
+    "investments": "2026-02-16 - 33 intelligence items (+1: APP Q4 earnings beat)",
     "workTracker": "2026-02-15 - pagination + deduplication live",
     "minecraftArtists": "2026-02-15 - 7 artists",
     "youtube": "2026-02-16 - 143 outliers"
   },
   "research": {
-    "lastUpdated": "2026-02-16T14:36:00.000000+00:00",
-    "totalNotes": 44
+    "lastUpdated": "2026-02-16T21:20:00Z",
+    "totalNotes": 45
   },
   "totalNotes": 33
 }

@@ -201,6 +201,21 @@
       "confidence": "high"
     },
     {
+      "id": "intel-035",
+      "date": "2026-02-16T21:20:00Z",
+      "topic": "AppLovin (APP) Q4 2025 Earnings Beat - 10.58% Surprise Despite 36% YTD Decline",
+      "source": "Public.com / Investor Data",
+      "content": "AppLovin reported Q4 2025 earnings on Feb 11, posting EPS of $3.24 vs analyst expectations of $2.93 - a 10.58% beat. This marks continued execution on AXON 2.0 AI advertising platform. Despite the beat, APP remains down 36% YTD, creating potential entry opportunity. Company maintains 79% EBITDA margins and 72% FCF margins. Current price ~$390 vs analyst target $652 (67% upside). Simply Wall St estimates fair value at $989 (60% undervalued). Key catalyst: Q1 2026 earnings and AXON platform expansion. Risk: Ad-tech sector volatility and competitive pressure from Google/Amazon. Positioning: Evaluate entry below $380 as per watchlist target.",
+      "impact": "bullish",
+      "tickers": ["APP"],
+      "riskFactors": [
+        "Ad-tech sector volatility",
+        "Competition from Google/Amazon ad platforms",
+        "Small-cap growth multiple compression risk"
+      ],
+      "confidence": "high"
+    },
+    {
       "id": "intel-020",
       "date": "2026-02-15T20:40:00Z",
       "topic": "AI Infrastructure $690B Capex Sprint 2026",
