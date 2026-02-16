@@ -1,6 +1,22 @@
 // Nox Dashboard - App Logic
 // Loads data from JSON files and renders all tabs
 
+/**
+ * Safe render wrapper for error handling in component rendering
+ * @param {Function} fn - Function to execute safely
+ * @param {string} context - Context name for error reporting
+ * @param {*} defaultValue - Default value to return on error
+ * @returns {*} - Result of fn or defaultValue on error
+ */
+function safeRender(fn, context = 'unknown', defaultValue = '') {
+  try {
+    return fn();
+  } catch (err) {
+    // Silent error handler - no console output
+    return defaultValue;
+  }
+}
+
 let appData = {
   youtube: { outlierVideos: [], contentBriefs: [], trendAnalysis: {} },
   newBusiness: { opportunities: [], pipeline: {} },
@@ -34,7 +50,8 @@ const MAX_API_ERRORS = 3;
 // Free tier: 25 API calls/day, 5 calls/minute
 // BATCH 2 FIX: Using Finnhub for real-time US stock prices (free tier: 60 calls/min)
 // Get your free API key at https://finnhub.io/register
-const FINNHUB_API_KEY = 'd6546v9r01qqbln5r7t0d6546v9r01qqbln5r7tg';
+// DEMO MODE: If no API key is set, demo data indicator will be shown
+const FINNHUB_API_KEY = 'YOUR_API_KEY_HERE';  // Configure your API key here
 const FINNHUB_BASE_URL = 'https://finnhub.io/api/v1';
 const CACHE_DURATION_MS = 300000; // 5 minutes
 
@@ -49,25 +66,25 @@ async function fetchStockPrices(tickers) {
   
   // Check if API key is configured
   if (FINNHUB_API_KEY === 'YOUR_API_KEY_HERE') {
-    console.warn('[StockAPI] API key not configured. Get free key at https://finnhub.io/register');
+    // API key not configured - using cached data
     return stockPriceCache;
   }
   
   // Return cached prices if within cache duration
   if (now - lastPriceFetch < CACHE_DURATION_MS && Object.keys(stockPriceCache).length > 0) {
-    console.log('[StockAPI] Returning cached prices (cache valid for 5 minutes)');
+    // Using cached prices (cache valid for 5 minutes)
     return stockPriceCache;
   }
   
   // Don't hammer API if we've hit errors
   if (apiErrorCount >= MAX_API_ERRORS) {
-    console.warn(`[StockAPI] Too many errors (${apiErrorCount}), using cache. Reset in 10 minutes.`);
+    // Too many errors, using cache. Reset in 10 minutes.
     setTimeout(() => { apiErrorCount = 0; }, 600000);
     return stockPriceCache;
   }
   
   try {
-    console.log(`[StockAPI] Fetching prices for: ${tickers.join(', ')}`);
+    // Fetching prices for tickers
     
     // Finnhub allows 60 calls/minute on free tier - process all tickers
     for (const ticker of tickers) {
@@ -91,7 +108,6 @@ async function fetchStockPrices(tickers) {
         
         // Check for API error messages
         if (data.error) {
-          console.warn(`[StockAPI] API error: ${data.error}`);
           apiErrorCount++;
           break;
         }
@@ -100,16 +116,14 @@ async function fetchStockPrices(tickers) {
         if (data.c && data.c > 0) {
           const price = parseFloat(data.c);
           stockPriceCache[ticker] = price;
-          console.log(`[StockAPI] ✓ ${ticker}: $${price.toFixed(2)}`);
         } else {
-          console.warn(`[StockAPI] No price data for ${ticker}:`, data);
+          // No price data for ticker
         }
         
         // Finnhub free tier: 60 calls/minute - wait 1 second between calls
         await new Promise(resolve => setTimeout(resolve, 1000));
         
       } catch (tickerErr) {
-        console.error(`[StockAPI] Error fetching ${ticker}:`, tickerErr.message);
         apiErrorCount++;
       }
     }
@@ -118,7 +132,6 @@ async function fetchStockPrices(tickers) {
     return stockPriceCache;
     
   } catch (err) {
-    console.error('[StockAPI] Fatal error fetching prices:', err);
     apiErrorCount++;
     return stockPriceCache;
   }
@@ -186,7 +199,6 @@ async function refreshStockPrices() {
       }
     }
   } catch (err) {
-    console.error('[Investments] Error refreshing prices:', err);
     if (statusEl) {
       statusEl.innerHTML = '<span class="text-accent-red">✗ Error</span>';
     }
@@ -194,7 +206,6 @@ async function refreshStockPrices() {
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
-  console.log('[Nox Dashboard] DOM loaded, initializing...');
   await loadAllData();
   
   // Render all tabs with error isolation - if one fails, others still run
@@ -209,29 +220,19 @@ document.addEventListener('DOMContentLoaded', async () => {
   ];
   
   for (const { name, fn } of renderers) {
-    try {
-      console.log(`[Nox Dashboard] Rendering ${name}...`);
-      fn();
-    } catch (err) {
-      console.error(`[Nox Dashboard] Error rendering ${name}:`, err);
-    }
+    safeRender(fn, name);
   }
   
-  console.log('[Nox Dashboard] Setting up filters...');
   setupFilters();
   
   // D5 FIX: Setup global search
-  console.log('[Nox Dashboard] Setting up global search...');
   setupGlobalSearch();
   
   // Initialize tab from URL hash (deep linking)
-  console.log('[Nox Dashboard] Initializing tab state from URL...');
   initTabFromHash();
   
   // Setup back/forward button handling
   window.addEventListener('popstate', handlePopState);
-  
-  console.log('[Nox Dashboard] Initialization complete!');
   
   // Setup modal click-outside-to-close
   setupModalHandlers();
@@ -242,7 +243,6 @@ const GITHUB_RAW_BASE = 'https://raw.githubusercontent.com/stevensongai/nox-dash
 
 // Load all JSON data with fallback to GitHub raw
 async function loadAllData() {
-  console.log('[Nox Dashboard] Starting data load...');
   const cacheBuster = '?v=' + Date.now();
   
   // Try local paths first, fallback to GitHub raw on failure
@@ -262,23 +262,16 @@ async function loadAllData() {
     try {
       // Try local first with cache buster
       const localUrl = df.localPath + cacheBuster;
-      console.log(`[Nox Dashboard] Fetching ${localUrl}...`);
       let response = await fetch(localUrl);
       
       if (!response.ok) {
-        console.warn(`[Nox Dashboard] Local fetch failed for ${df.name}, trying GitHub raw...`);
         // Fallback to GitHub raw
         const fallbackUrl = df.fallbackPath + cacheBuster;
         response = await fetch(fallbackUrl);
       }
       
-      if (!response.ok) {
-        console.error(`[Nox Dashboard] Both local and GitHub fetch failed for ${df.name}: ${response.status}`);
-      }
-      
       return { name: df.name, response };
     } catch (err) {
-      console.error(`[Nox Dashboard] Fetch error for ${df.name}:`, err);
       return { name: df.name, response: null, error: err };
     }
   }
@@ -294,46 +287,37 @@ async function loadAllData() {
         switch (result.name) {
           case 'youtube':
             appData.youtube = data;
-            console.log('[Nox Dashboard] YouTube data loaded:', appData.youtube.outlierVideos?.length || 0, 'videos');
             break;
           case 'new-business':
             appData.newBusiness = data;
-            console.log('[Nox Dashboard] Business data loaded:', appData.newBusiness.opportunities?.length || 0, 'opportunities');
             break;
           case 'investments':
             appData.investments = data;
-            console.log('[Nox Dashboard] Investments data loaded:', appData.investments.positions?.length || 0, 'positions');
             break;
           case 'tools':
             appData.tools = Array.isArray(data) ? { tools: data, categories: [], lastUpdated: '' } : data;
-            console.log('[Nox Dashboard] Tools data loaded:', appData.tools.tools?.length || 0, 'tools');
             break;
           case 'research':
             appData.research = data;
-            console.log('[Nox Dashboard] Research data loaded:', appData.research.notes?.length || 0, 'notes');
             break;
           case 'audits':
             appData.audits = data;
-            console.log('[Nox Dashboard] Audits data loaded:', appData.audits.audits?.length || 0, 'audits');
             break;
           case 'meta':
             appData.meta = data;
-            console.log('[Nox Dashboard] Meta data loaded');
             break;
           case 'competitors':
             appData.competitors = data;
-            console.log('[Nox Dashboard] Competitors data loaded:', appData.competitors.competitors?.length || 0, 'competitors');
             break;
         }
       } catch (parseErr) {
-        console.error(`[Nox Dashboard] Failed to parse ${result.name} JSON:`, parseErr);
+        // Failed to parse JSON - continue with empty data
       }
     } else {
-      console.warn(`[Nox Dashboard] Using empty/default data for ${result.name}`);
+      // Using empty/default data for failed fetches
     }
   }
-
-  console.log('[Nox Dashboard] Data loading complete');
+  
   updateAgentStatus();
 }
 
@@ -346,14 +330,12 @@ function updateAgentStatus() {
 }
 
 // Tab switching with URL hash update and deep linking
-// BATCH 2 FIX: Completely rewritten for reliable hash updates
 function showTab(tabId) {
   // Validate tab exists
   const tabContent = document.getElementById(`tab-${tabId}`);
   const tabBtn = document.getElementById(`tab-btn-${tabId}`);
   
   if (!tabContent || !tabBtn) {
-    console.warn(`[Nox Dashboard] Tab not found: ${tabId}`);
     return;
   }
   
@@ -365,37 +347,46 @@ function showTab(tabId) {
   // Remove active state from all tab buttons
   document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('tab-active'));
   
+  // D3 FIX: Update aria-selected and tabindex for accessibility
+  document.querySelectorAll('.tab-btn').forEach(el => {
+    el.setAttribute('aria-selected', 'false');
+    el.setAttribute('tabindex', '-1');
+  });
+  
   // Show selected tab and mark button active
   tabContent.classList.remove('hidden');
   tabContent.removeAttribute('hidden');
   tabBtn.classList.add('tab-active');
   
+  // D3 FIX: Set active tab accessibility attributes
+  tabBtn.setAttribute('aria-selected', 'true');
+  tabBtn.setAttribute('tabindex', '0');
+  
   // BATCH 2 FIX: Always update URL hash, forcing history entry
   const newHash = `#${tabId}`;
   if (window.location.hash !== newHash) {
     history.pushState({ tab: tabId, timestamp: Date.now() }, '', newHash);
-    console.log(`[Nox Dashboard] Tab switched to: ${tabId}, hash updated to: ${newHash}`);
   }
   
   // Re-render charts when switching to their respective tabs
   setTimeout(() => {
     switch(tabId) {
       case 'dashboard':
-        renderYouTubeSparkline();
-        renderBusinessPipelineChart();
-        renderInvestmentsSummaryChart();
+        safeRender(() => renderYouTubeSparkline(), 'renderYouTubeSparkline');
+        safeRender(() => renderBusinessPipelineChart(), 'renderBusinessPipelineChart');
+        safeRender(() => renderInvestmentsSummaryChart(), 'renderInvestmentsSummaryChart');
         break;
       case 'youtube':
-        renderYouTubeTrendChart();
+        safeRender(() => renderYouTubeTrendChart(), 'renderYouTubeTrendChart');
         break;
       case 'investments':
         // D3 FIX: Call renderInvestments() which will then call renderPortfolioChart()
         // This ensures the merged position data is available
-        renderInvestments();
+        safeRender(() => renderInvestments(), 'renderInvestments');
         break;
       case 'audits':
-        renderAuditsChart();
-        renderAgentPerformanceChart();
+        safeRender(() => renderAuditsChart(), 'renderAuditsChart');
+        safeRender(() => renderAgentPerformanceChart(), 'renderAgentPerformanceChart');
         break;
     }
   }, 50);
@@ -407,7 +398,6 @@ function initTabFromHash() {
   const validTabs = ['dashboard', 'youtube', 'business', 'investments', 'tools', 'research', 'audits'];
   
   if (hash && validTabs.includes(hash)) {
-    console.log(`[Nox Dashboard] Restoring tab from hash: ${hash}`);
     showTab(hash);
     return hash;
   }
@@ -418,17 +408,18 @@ function initTabFromHash() {
 }
 
 // Handle browser back/forward buttons
-// BATCH 2 FIX: Improved to handle popstate properly
 function handlePopState(event) {
   const hash = window.location.hash.slice(1);
   const validTabs = ['dashboard', 'youtube', 'business', 'investments', 'tools', 'research', 'audits'];
   
-  console.log(`[Nox Dashboard] PopState triggered, hash: ${hash}, state:`, event.state);
-  
   if (hash && validTabs.includes(hash)) {
     // Update UI without pushing new state
     document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
-    document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('tab-active'));
+    document.querySelectorAll('.tab-btn').forEach(el => {
+      el.classList.remove('tab-active');
+      el.setAttribute('aria-selected', 'false');
+      el.setAttribute('tabindex', '-1');
+    });
     
     const tabContent = document.getElementById(`tab-${hash}`);
     const tabBtn = document.getElementById(`tab-btn-${hash}`);
@@ -436,7 +427,8 @@ function handlePopState(event) {
     if (tabContent && tabBtn) {
       tabContent.classList.remove('hidden');
       tabBtn.classList.add('tab-active');
-      console.log(`[Nox Dashboard] Back/forward navigation to tab: ${hash}`);
+      tabBtn.setAttribute('aria-selected', 'true');
+      tabBtn.setAttribute('tabindex', '0');
     }
   } else if (!hash) {
     // No hash, show dashboard
@@ -733,9 +725,9 @@ function renderDashboard() {
   renderMorningBrief();
   
   // Render dashboard charts
-  renderYouTubeSparkline();
-  renderBusinessPipelineChart();
-  renderInvestmentsSummaryChart();
+  safeRender(() => renderYouTubeSparkline(), 'renderYouTubeSparkline');
+  safeRender(() => renderBusinessPipelineChart(), 'renderBusinessPipelineChart');
+  safeRender(() => renderInvestmentsSummaryChart(), 'renderInvestmentsSummaryChart');
 }
 
 // D3 FIX: Morning Brief items - use tab name instead of arrow functions
@@ -1098,7 +1090,6 @@ let youtubeVideoData = [];
 function renderYouTube() {
   const container = document.getElementById('youtube-outliers');
   if (!container) {
-    console.warn('[Nox Dashboard] youtube-outliers container not found');
     return;
   }
   
@@ -1152,7 +1143,7 @@ function renderYouTube() {
   container.innerHTML = html;
   
   // Render trend chart
-  renderYouTubeTrendChart();
+  safeRender(() => renderYouTubeTrendChart(), 'renderYouTubeTrendChart');
 }
 
 function showVideoModal(videoId) {
@@ -1333,16 +1324,19 @@ function calculatePipelineCounts(opportunities) {
 }
 
 function renderBusiness() {
-  // BATCH 4 FIX: Load from localStorage and merge with appData
-  const storedOpportunities = loadOpportunities();
-  const jsonOpportunities = appData.newBusiness.opportunities || [];
+  // BATCH 4 FIX: Load from localStorage first, then fill in with appData
+  const storedOpportunities = loadOpportunities().filter(o => !o._deleted);
+  const storedIds = new Set(storedOpportunities.map(o => o.id));
   
-  // Merge: stored opportunities take precedence
-  const oppMap = new Map();
-  [...jsonOpportunities, ...storedOpportunities].forEach(opp => {
-    oppMap.set(opp.id, opp);
-  });
-  const allOpportunities = Array.from(oppMap.values());
+  // Only add JSON opportunities that aren't already in localStorage
+  const jsonOpportunities = (appData.newBusiness.opportunities || []).filter(
+    o => !storedIds.has(o.id)
+  );
+  
+  // Combine: stored first, then new JSON items
+  const allOpportunities = [...storedOpportunities, ...jsonOpportunities];
+  
+  console.log('renderBusiness: stored=' + storedOpportunities.length + ', json=' + jsonOpportunities.length + ', total=' + allOpportunities.length);
   
   businessOpportunityData = allOpportunities;
   
@@ -1472,17 +1466,30 @@ function submitAddOpportunity() {
   
   saveOpportunities(opportunities);
   closeModal();
-  renderBusiness();
+  safeRender(() => renderBusiness(), 'renderBusiness');
 }
 
 // BATCH 4 FIX: Delete opportunity
 function deleteOpportunity(oppId) {
+  console.log('deleteOpportunity called:', oppId);
   if (!confirm('Delete this opportunity?')) return;
   
-  const opportunities = loadOpportunities();
-  const filtered = opportunities.filter(o => o.id !== oppId);
+  // Load current opportunities
+  let opportunities = loadOpportunities();
+  
+  // Check if opp exists in JSON data but not localStorage
+  const jsonOpp = appData.newBusiness?.opportunities?.find(o => o.id === oppId);
+  if (jsonOpp && !opportunities.find(o => o.id === oppId)) {
+    // Add to localStorage first, then mark as deleted
+    opportunities.push({...jsonOpp, _deleted: true});
+  }
+  
+  // Filter out the deleted opportunity
+  const filtered = opportunities.filter(o => o.id !== oppId || !o._deleted);
+  
+  console.log('Before delete:', opportunities.length, 'After delete:', filtered.length);
   saveOpportunities(filtered);
-  renderBusiness();
+  safeRender(() => renderBusiness(), 'renderBusiness');
 }
 
 function showOpportunityModal(oppId) {
@@ -1542,7 +1549,7 @@ async function refreshStockPrices() {
   
   try {
     // Re-render investments (which will fetch new prices)
-    await renderInvestments();
+    await safeRender(() => renderInvestments(), 'renderInvestments');
     
     // Check if we got any prices
     const hasPrices = investmentsWatchlistData.some(w => w.currentPrice && w.currentPrice > 0);
@@ -1555,7 +1562,6 @@ async function refreshStockPrices() {
       }
     }
   } catch (err) {
-    console.error('[Investments] Error refreshing prices:', err);
     if (statusEl) {
       statusEl.innerHTML = '<span class="text-red-400">✗ Error: ' + (err.message || 'API failed') + '</span>';
     }
@@ -1609,7 +1615,7 @@ async function renderInvestments() {
       // Save updated data
       saveInvestments({ positions, watchlist, intelligence });
     } catch (err) {
-      console.warn('[Investments] Could not fetch stock prices:', err);
+      // Could not fetch stock prices - continue with cached data
     }
   } else if (allTickers.length > 0) {
     // API key not configured - will display '-' for prices
@@ -1620,9 +1626,26 @@ async function renderInvestments() {
   investmentsWatchlistData = watchlist;
   investmentsIntelligenceData = intelligence;
 
+  // D4 FIX: Determine if using demo/fallback data (no live prices available)
+  const hasLivePrices = positions.some(p => p.currentPrice && p.currentPrice > 0) || 
+                        watchlist.some(w => w.currentPrice && w.currentPrice > 0);
+  const isDemoData = !hasLivePrices && (positions.length > 0 || watchlist.length > 0);
+
   // BATCH 4 FIX: Add "Add Holding" button to Positions
   const posContainer = document.getElementById('investments-positions');
-  let posHtml = `
+  
+  // D4 FIX: Add Demo Data indicator banner if using fallback data
+  let demoDataBanner = '';
+  if (isDemoData) {
+    demoDataBanner = `
+      <div class="mb-3 px-3 py-2 bg-accent-yellow/20 border border-accent-yellow/50 rounded text-sm text-accent-yellow flex items-center gap-2">
+        <span>📊</span>
+        <span><strong>Demo Data</strong> — Stock prices unavailable. Add Finnhub API key for live data.</span>
+      </div>
+    `;
+  }
+  
+  let posHtml = demoDataBanner + `
     <div class="flex justify-between items-center mb-3">
       <div class="text-sm text-gray-400">${positions.length} positions</div>
       <button onclick="showAddHoldingModal()" class="text-xs px-2 py-1 bg-accent-blue rounded hover:bg-blue-600">+ Add</button>
@@ -1850,7 +1873,7 @@ async function submitAddWatchlist() {
       currentPrice = prices[ticker];
     }
   } catch (err) {
-    console.warn('Could not fetch price for', ticker);
+    // Could not fetch price - continue with 0
   }
   
   const data = loadInvestments();
@@ -2222,7 +2245,7 @@ function submitAddNote() {
   
   saveResearchNotes(notes);
   closeModal();
-  renderResearch();
+  safeRender(() => renderResearch(), 'renderResearch');
 }
 
 // FIX: Show Note Modal (read-only view for clicking on notes)
@@ -2339,7 +2362,7 @@ function submitEditNote(noteId) {
   
   saveResearchNotes(notes);
   closeModal();
-  renderResearch();
+  safeRender(() => renderResearch(), 'renderResearch');
 }
 
 // BATCH 5 FIX: Delete Note
@@ -2352,7 +2375,7 @@ function deleteNote(noteId) {
   const filtered = notes.filter(n => n.id !== noteId);
   
   saveResearchNotes(filtered);
-  renderResearch();
+  safeRender(() => renderResearch(), 'renderResearch');
 }
 
 // ==================== AUDITS TAB ====================
@@ -2382,9 +2405,6 @@ function renderAudits() {
   const allAudits = appData.audits?.audits || [];
   const audits = allAudits.filter(a => a.summary !== 'Historical audit entry');
   auditsDataArray = audits;
-  
-  // Log for debugging - shows real audit count
-  console.log('[Audits] Loaded', audits.length, 'real audits (filtered', allAudits.length - audits.length, 'placeholders)');
   
   // Calculate agent stats from actual audit data
   const agentStats = calculateAgentStats(audits);
@@ -2561,10 +2581,10 @@ function submitAddAudit() {
   
   saveAudits(audits);
   closeModal();
-  renderAudits();
+  safeRender(() => renderAudits(), 'renderAudits');
   
   // Update dashboard stats
-  renderDashboard();
+  safeRender(() => renderDashboard(), 'renderDashboard');
 }
 
 // BATCH 5 FIX: Show Edit Audit Modal
@@ -2649,8 +2669,8 @@ function submitEditAudit(auditId) {
   
   saveAudits(audits);
   closeModal();
-  renderAudits();
-  renderDashboard();
+  safeRender(() => renderAudits(), 'renderAudits');
+  safeRender(() => renderDashboard(), 'renderDashboard');
 }
 
 // BATCH 5 FIX: Delete Audit
@@ -2663,8 +2683,8 @@ function deleteAudit(auditId) {
   const filtered = audits.filter(a => a.id !== auditId);
   
   saveAudits(filtered);
-  renderAudits();
-  renderDashboard();
+  safeRender(() => renderAudits(), 'renderAudits');
+  safeRender(() => renderDashboard(), 'renderDashboard');
 }
 
 // BATCH 5 FIX: Show audit modal
@@ -3189,11 +3209,23 @@ function clearGlobalSearch() {
 }
 
 function moveStatus(oppId, newStatus) {
-  // BATCH 4 FIX: Actually update the opportunity status in localStorage
-  const opportunities = loadOpportunities();
-  const opp = opportunities.find(o => o.id === oppId);
+  console.log('moveStatus called:', oppId, newStatus);
+  
+  // Load current opportunities
+  let opportunities = loadOpportunities();
+  let opp = opportunities.find(o => o.id === oppId);
+  
+  // If not in localStorage, check JSON data
+  if (!opp) {
+    const jsonOpp = appData.newBusiness?.opportunities?.find(o => o.id === oppId);
+    if (jsonOpp) {
+      opp = {...jsonOpp};
+      opportunities.push(opp);
+    }
+  }
   
   if (opp) {
+    console.log('Found opportunity, updating status from', opp.status, 'to', newStatus);
     opp.status = newStatus;
     saveOpportunities(opportunities);
     renderBusiness();
@@ -3204,6 +3236,8 @@ function moveStatus(oppId, newStatus) {
       statusEl.classList.add('text-accent-green');
       setTimeout(() => statusEl.classList.remove('text-accent-green'), 500);
     }
+  } else {
+    console.error('Opportunity not found:', oppId);
   }
 }
 
@@ -3943,7 +3977,6 @@ function showBriefDetailModal(briefId) {
   const briefs = loadBriefs();
   const brief = briefs.find(b => b.id === briefId);
   if (!brief) {
-    console.error('[showBriefDetailModal] Brief not found:', briefId);
     return;
   }
   
@@ -4025,27 +4058,20 @@ function updateBriefStatus(briefId, newStatus) {
 function deleteBrief(briefId) {
   // D2 FIX: Better error handling and validation
   if (!briefId) {
-    console.error('[deleteBrief] No briefId provided');
     return;
   }
   
   if (!confirm('Delete this brief? This cannot be undone.')) return;
   
-  console.log('[deleteBrief] Deleting brief:', briefId);
-  
   const briefs = loadBriefs();
-  console.log('[deleteBrief] Loaded briefs count:', briefs.length);
-  
   const filtered = briefs.filter(b => b.id !== briefId);
   
   if (filtered.length === briefs.length) {
-    console.warn('[deleteBrief] Brief not found:', briefId);
     alert('Brief not found. It may have already been deleted.');
     return;
   }
   
   saveBriefs(filtered);
-  console.log('[deleteBrief] Saved briefs count:', filtered.length);
   
   // Close modal first
   closeModal();
@@ -4056,8 +4082,6 @@ function deleteBrief(briefId) {
   // Update brief count in stats
   const totalBriefsEl = document.getElementById('total-briefs');
   if (totalBriefsEl) totalBriefsEl.textContent = filtered.length;
-  
-  console.log('[deleteBrief] Brief deleted successfully');
 }
 
 // ============================================
@@ -4487,8 +4511,6 @@ function generateBrief() {
 // Tool 1: Content Pipeline Orchestrator
 // Force CDN refresh by reloading with cache-busting parameter
 function forceCDNRefresh() {
-  console.log('[Nox Dashboard] Forcing CDN refresh...');
-  
   // Show loading feedback
   const footer = document.querySelector('footer');
   if (footer) {
