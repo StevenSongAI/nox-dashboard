@@ -4529,4 +4529,33 @@ function forceCDNRefresh() {
   // Force reload from server (not cache)
   window.location.href = currentUrl.toString();
 }
+
+// ==================== GLOBAL EXPORTS FOR INLINE HANDLERS ====================
+// Ensure functions are available globally for onclick/onchange handlers
+window.deleteOpportunity = deleteOpportunity;
+window.moveStatus = moveStatus;
+window.showOpportunityModal = showOpportunityModal;
+window.showAddOpportunityModal = showAddOpportunityModal;
+window.deleteNote = deleteNote;
+window.deleteAudit = deleteAudit;
+window.deleteCompetitor = deleteCompetitor;
+window.deleteCompetitorVideo = deleteCompetitorVideo;
+window.editCompetitor = editCompetitor;
+window.editNote = editNote;
+window.editAudit = editAudit;
+window.showCompetitorDetail = showCompetitorDetail;
+window.showCompetitorVideos = showCompetitorVideos;
+window.toggleVideoSelection = toggleVideoSelection;
+window.showCompetitorOutliers = showCompetitorOutliers;
+window.addToOutliers = addToOutliers;
+window.showOutlierDetail = showOutlierDetail;
+window.showIntelligenceDetail = showIntelligenceDetail;
+window.showPositionDetail = showPositionDetail;
+window.showWatchlistDetail = showWatchlistDetail;
+window.showToolDetail = showToolDetail;
+window.showCategoryTools = showCategoryTools;
+window.generateBrief = generateBrief;
+window.forceCDNRefresh = forceCDNRefresh;
+
+console.log('Nox Dashboard: Functions exported to window object');
 // Cache bust: Mon  9 Feb 2026 14:46:41 EST
