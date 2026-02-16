@@ -746,6 +746,26 @@
       "priceTarget": "$260",
       "currentPrice": "$182.81",
       "impliedUpside": "42%"
+    },
+    {
+      "id": "intel-043",
+      "date": "2026-02-16T23:20:00Z",
+      "topic": "Goldman Sachs Projects $2B NVDA Revenue Beat - 'Beat-and-Raise Quarter' Expected",
+      "source": "Goldman Sachs / Eand.co / Market Analysis",
+      "content": "Fresh analyst intelligence: Goldman Sachs reiterates bullish stance on NVDA ahead of Feb 25 earnings, projecting a 'beat-and-raise quarter' with potential $2 billion revenue beat. Key details: (1) Despite stock slipping 2% on recent profit-taking, institutional conviction remains high, (2) Wolfe Research's Chris Caso lifted Fiscal 2028 EPS estimate to ~$11.50 (exceeds consensus by $1.50), citing pricing strength from Rubin/Rubin Ultra chip ramp, (3) KeyBanc's John Vinh emphasizes CUDA software moat as sustainable competitive advantage limiting rival threats, (4) NVDA at 25x forward earnings trades at discount to GOOGL (28x) and AVGO (34x) despite superior 61% growth rate - valuation disconnect creates opportunity, (5) 37 Buy ratings with $260.38 average price target implies 42% upside. Positioning implication: Goldman's $2B beat projection aligns with Street-high revenue estimates of $67.5B vs $65.6B consensus. If realized, this would represent second consecutive quarter of $2B+ beats, reinforcing AI infrastructure demand durability thesis. Steven action: Continue holding NVDA through earnings - Goldman projection adds conviction to existing position.",
+      "impact": "bullish",
+      "tickers": ["NVDA"],
+      "riskFactors": [
+        "Profit-taking pressure into earnings",
+        "High expectations already priced in",
+        "Guidance commentary on China exports critical"
+      ],
+      "confidence": "high",
+      "catalystDate": "2026-02-25",
+      "catalyst": "Q4 FY2026 Earnings - Goldman Sachs projects $2B revenue beat",
+      "priceTarget": "$260",
+      "currentPrice": "$183",
+      "impliedUpside": "42%"
     }
   ],
   "synthesizedInsights": [
