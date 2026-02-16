@@ -650,17 +650,75 @@
         "AI Funding Tracker - Feb 2026"
       ],
       "createdAt": "2026-02-16T16:55:00Z"
+    },
+    {
+      "id": "opp-026",
+      "name": "Autonomous AI SDR Agency",
+      "description": "Done-for-you autonomous sales development representative (SDR) service using AI agents. Handles prospecting, outreach, lead qualification, and appointment setting 24/7. Targets B2B SaaS companies spending $50K-150K annually per human SDR.",
+      "alignment": "HIGH",
+      "status": "new",
+      "potentialRevenue": "$5000-15000/month",
+      "effort": "Medium",
+      "nextStep": "Build demo AI SDR for one niche (AI tools market), validate with 3 B2B SaaS companies",
+      "marketData": {
+        "tam": "$50B+ B2B sales automation market",
+        "catalyst": "AI agent market exploding - Anthropic raising $20B at $350B valuation, Perplexity at $9B (Feb 2026)",
+        "validationSignal": "15 profitable AI agent startup ideas validated by Presta research; SDR replacement is top opportunity",
+        "targetAudience": "B2B SaaS companies (5-20 SDR teams), professional services firms, enterprise software vendors",
+        "painPoint": "Human SDRs cost $50K-150K/year each, have availability constraints, inconsistent quality, high turnover",
+        "competitors": [
+          "Traditional SDR agencies ($3K-8K/month per rep)",
+          "Outreach/Salesloft (tools, not done-for-you)",
+          "Human SDR teams (expensive, scaling challenges)"
+        ],
+        "differentiation": "AI-native workflow with 70-80% cost reduction vs human SDRs, 24/7 operation, consistent quality, instant scaling",
+        "businessModel": "Per-seat monthly subscription ($2000-5000/month) with tiered features based on volume and integration complexity"
+      },
+      "financials": {
+        "customerCost": "$2000-5000/month per AI SDR seat",
+        "customerSavings": "70-80% vs human SDR ($50K-150K/year)",
+        "paybackPeriod": "Immediate (cost savings from month 1)",
+        "targetMetrics": "Match or exceed human SDR meeting booking rates within 30-day pilot"
+      },
+      "implementationPlan": [
+        "Phase 1: Build AI SDR agent with CRM/email/LinkedIn integration (2 weeks)",
+        "Phase 2: Train on one vertical - AI tools/software companies (1 week)",
+        "Phase 3: Run parallel pilot with 3 B2B SaaS companies (30 days)",
+        "Phase 4: Document ROI case studies and testimonials",
+        "Phase 5: Scale to additional verticals (professional services, healthcare tech)"
+      ],
+      "techStack": [
+        "LLM for personalized messaging",
+        "CRM APIs (Salesforce, HubSpot)",
+        "Email platforms (Apollo, Outreach)",
+        "LinkedIn automation",
+        "Sentiment analysis for lead scoring",
+        "Calendar integration for appointment setting"
+      ],
+      "researchSources": [
+        "https://wearepresta.com/ai-agent-startup-ideas-2026-15-profitable-opportunities-to-launch-now/",
+        "The Motley Fool - Top 8 AI Start-ups in 2026 (Feb 2026)",
+        "Exploding Topics - 25 Fastest Growing Companies 2026"
+      ],
+      "createdAt": "2026-02-16T19:50:00Z",
+      "tags": [
+        "AI-agents",
+        "B2B-SaaS",
+        "sales-automation",
+        "high-margin",
+        "proven-market"
+      ]
     }
   ],
   "pipeline": {
-    "new": 15,
+    "new": 16,
     "evaluating": 2,
     "pursuing": 0,
     "passed": 1,
     "won": 1
   },
-  "lastUpdated": "2026-02-15T07:35:00Z",
-  "totalOpportunities": 24,
+  "lastUpdated": "2026-02-16T19:50:00Z",
+  "totalOpportunities": 25,
   "meta": {
     "totalCount": 25,
     "lastUpdated": "2026-02-16T16:55:00Z",
