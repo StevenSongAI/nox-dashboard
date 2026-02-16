@@ -1893,11 +1893,41 @@
       "whyOutlier": "First major video covering Claude's Agent Teams feature - demonstrates multi-agent collaboration for coding tasks",
       "contentAngle": "Create tutorial showing Claude Agent Teams for video production workflows - storyboard generation, asset creation, editing automation",
       "researchStatus": "completed"
+    },
+    {
+      "id": "yt-viewstats-137",
+      "title": "We went HERPING and what we found will change our lives forever",
+      "channel": "reptileoutdoors",
+      "views": 114000,
+      "publishedAt": "2026-02-13T20:00:26.914896+00:00",
+      "addedAt": "2026-02-16T07:00:00Z",
+      "outlierScore": 326,
+      "niche": "🦎 Creatures/Reptiles",
+      "whyOutlier": "EXTREME 326x outlier - herping (reptile hunting) content with discovery narrative. Real creature encounters drive massive engagement.",
+      "contentAngle": "Apply 'what we found will change our lives' discovery format to AI creatures. Cinematic creature reveal with emotional stakes.",
+      "url": "https://www.youtube.com/watch?v=unknown",
+      "researchStatus": "pending",
+      "source": "viewstats hourly scraper - 2026-02-13"
+    },
+    {
+      "id": "yt-viewstats-138",
+      "title": "Cat Has Existential Crisis",
+      "channel": "45",
+      "views": 51000,
+      "publishedAt": "2026-02-13T20:00:19.129010+00:00",
+      "addedAt": "2026-02-16T07:00:00Z",
+      "outlierScore": 160,
+      "niche": "🤖 AI/Character",
+      "whyOutlier": "MASSIVE 160x outlier - anthropomorphic AI content with philosophical angle. 'Existential crisis' framing creates intrigue and relatability.",
+      "contentAngle": "Create 'AI Creature Has Existential Crisis' - anthropomorphized AI pets/creatures with emotional depth and philosophical narratives.",
+      "url": "https://www.youtube.com/watch?v=unknown",
+      "researchStatus": "pending",
+      "source": "viewstats hourly scraper - 2026-02-13"
     }
   ],
   "meta": {
-    "lastUpdated": "2026-02-15T20:47:00Z",
-    "totalOutliers": 125,
+    "lastUpdated": "2026-02-16T07:00:00Z",
+    "totalOutliers": 127,
     "briefCount": 16,
     "insightCount": 5
   }
