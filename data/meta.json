@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-02-16T21:46:00Z",
+  "lastUpdated": "2026-02-16T17:17:58.362560",
   "updatedBy": "nox-heartbeat",
   "version": "1.0.02162146",
   "cacheBust": "20260216T214",
   "dataVersion": "2026.02.16.9",
-  "youtubeUpdated": "2026-02-16T15:57:11Z",
+  "youtubeUpdated": "2026-02-16T17:17:58.362560",
   "investmentsUpdated": "2026-02-16T21:46:00Z",
   "researchUpdated": "2026-02-16T21:20:00Z",
   "newBusinessUpdated": "2026-02-16T19:50:00Z",
@@ -21,7 +21,7 @@
     "investments": "2026-02-16 - 34 intelligence items (+1: NVDA China sales + hyperscaler capex analysis, APP price update)",
     "workTracker": "2026-02-15 - pagination + deduplication live",
     "minecraftArtists": "2026-02-15 - 7 artists",
-    "youtube": "2026-02-16 - 143 outliers"
+    "youtube": "2026-02-16 - 143 outliers, 1 content brief"
   },
   "research": {
     "lastUpdated": "2026-02-16T21:20:00Z",

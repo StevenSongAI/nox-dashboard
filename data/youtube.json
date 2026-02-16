@@ -2155,5 +2155,62 @@
     "totalOutliers": 138,
     "briefCount": 16,
     "insightCount": 5
-  }
+  },
+  "contentBriefs": [
+    {
+      "id": "brief-001",
+      "title": "AI Creature Evolution: '1000 Years' Time Compression Format",
+      "format": "AI Simulation / Creature Evolution",
+      "basedOnOutliers": [
+        "yt-viewstats-010",
+        "yt-viewstats-011"
+      ],
+      "viralScores": [
+        24.4,
+        26.3
+      ],
+      "concept": "Trap an AI-generated creature in a simulation and show its evolution over 1000 years, with each year representing a generation",
+      "targetAudience": "AI enthusiasts, gaming audience, creature design fans",
+      "productionComplexity": "Medium",
+      "estimatedCost": "$30-60 (AI image generation + video editing)",
+      "contentAngles": [
+        "Simple segmented creatures work best (worms, centipedes, snakes) - body segments clearly show generational changes",
+        "Start with primitive form, add complexity each 'year'",
+        "Use time-lapse effect between generations",
+        "Include environmental challenges that drive evolution",
+        "End with dramatic final form reveal"
+      ],
+      "scriptStructure": {
+        "hook": "Meet [Creature Name], trapped in this simulation for 1000 years...",
+        "setup": "Each year = one generation. Will it survive? Will it evolve?",
+        "progression": "Show key evolution milestones (Year 100, 250, 500, 750, 1000)",
+        "climax": "Final form reveal - dramatically different from start",
+        "outro": "What should I trap next? Comment below"
+      },
+      "thumbnailIdeas": [
+        "Split screen: Primitive vs Final form",
+        "Creature emerging from simulation vortex",
+        "'1000 YEARS' text with creature transformation timeline"
+      ],
+      "viralMechanics": {
+        "whyItWorks": "Time compression creates narrative tension. Visual transformation satisfies curiosity. 'What happens next' drives retention.",
+        "retentionHook": "Viewers stay to see final evolution form",
+        "shareTrigger": "Unexpected evolution paths create shareable moments"
+      },
+      "toolsNeeded": [
+        "Midjourney/Stable Diffusion",
+        "Video editor (CapCut/Premiere)",
+        "AI upscaler for consistency"
+      ],
+      "estimatedProductionTime": "4-6 hours",
+      "competitiveAdvantage": "AI-generated creatures = infinite variety. No two videos identical. Can create series with different creature types.",
+      "status": "ready_to_produce",
+      "priority": "high",
+      "createdAt": "2026-02-16T17:17:36.252085",
+      "sourceOutlierUrls": [
+        "https://www.youtube.com/watch?v=dqL66xD2b2s",
+        "https://www.youtube.com/watch?v=oFqwcngsts8"
+      ]
+    }
+  ]
 }
