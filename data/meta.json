@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-02-16T16:55:00Z",
+  "lastUpdated": "2026-02-16T17:46:00Z",
   "updatedBy": "nox-heartbeat",
   "version": "1.0.02161556",
-  "cacheBust": "20260216T1556",
-  "dataVersion": "2026.02.16.1",
+  "cacheBust": "20260216T1746",
+  "dataVersion": "2026.02.16.2",
   "youtubeUpdated": "2026-02-16T15:57:11Z",
-  "investmentsUpdated": "2026-02-16T17:20:00Z",
+  "investmentsUpdated": "2026-02-16T17:46:00Z",
   "researchUpdated": "2026-02-16T14:36:00.000000+00:00",
   "newBusinessUpdated": "2026-02-15T07:35:00.000000+00:00",
   "toolsUpdated": "2026-02-15T00:17:00Z",
@@ -18,7 +18,7 @@
   "dataFreshness": {
     "research": "2026-02-16 - 44 notes (+1: X.com scraper backlog analysis)",
     "newBusiness": "2026-02-15 - 24 opportunities",
-    "investments": "2026-02-16 - 25 intelligence items (+1: NVDA analyst consensus upgrade)",
+    "investments": "2026-02-16 - 26 intelligence items (+1: NVDA $260 analyst consensus)",
     "workTracker": "2026-02-15 - pagination + deduplication live",
     "minecraftArtists": "2026-02-15 - 7 artists",
     "youtube": "2026-02-16 - 143 outliers (+5 from scraper backlog)"

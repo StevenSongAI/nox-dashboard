@@ -529,9 +529,12 @@
       "date": "2026-02-16T17:20:00Z",
       "topic": "NVDA Analyst Consensus Upgrade - UBS Raises Target Pre-Earnings",
       "source": "TipRanks / MarketBeat / UBS Research / Seeking Alpha",
-      "content": "Fresh analyst activity ahead of Feb 25 earnings: (1) UBS raised NVDA price target from $235 to $245 (4% increase), maintaining Buy rating - analyst specifically called out full-rack solutions and AI Enterprise software growth as upside drivers, (2) TipRanks consensus: 37 Buy, 1 Hold, 1 Sell = Strong Buy rating with average target $260.38 (42.4% upside from ~$183), (3) MarketBeat consensus target $264.20 based on 50 analyst ratings, (4) Mean price target across all analysts: $255.34, (5) Revenue guidance preview: Q4 FY26 expected $65B ±2% with potential beat to $67.3B driven by integrated rack sales and Nvidia AI Enterprise software revenue. Key insight: Analysts are raising targets INTO earnings (not waiting for results), suggesting confidence in beat-and-raise scenario. Operating leverage improving due to higher-margin rack sales + software mix shift. Steven positioning: NVDA is existing position - hold through earnings, consider tactical adds on any weakness below $180. Earnings call Feb 25 after close.",
+      "content": "Fresh analyst activity ahead of Feb 25 earnings: (1) UBS raised NVDA price target from $235 to $245 (4% increase), maintaining Buy rating - analyst specifically called out full-rack solutions and AI Enterprise software growth as upside drivers, (2) TipRanks consensus: 37 Buy, 1 Hold, 1 Sell = Strong Buy rating with average target $260.38 (42.4% upside from ~$183), (3) MarketBeat consensus target $264.20 based on 50 analyst ratings, (4) Mean price target across all analysts: $255.34, (5) Revenue guidance preview: Q4 FY26 expected $65B \u00b12% with potential beat to $67.3B driven by integrated rack sales and Nvidia AI Enterprise software revenue. Key insight: Analysts are raising targets INTO earnings (not waiting for results), suggesting confidence in beat-and-raise scenario. Operating leverage improving due to higher-margin rack sales + software mix shift. Steven positioning: NVDA is existing position - hold through earnings, consider tactical adds on any weakness below $180. Earnings call Feb 25 after close.",
       "impact": "bullish",
-      "tickers": ["NVDA", "AMD"],
+      "tickers": [
+        "NVDA",
+        "AMD"
+      ],
       "riskFactors": [
         "Analyst upgrades create elevated expectations - limited margin for error",
         "$260+ targets assume flawless execution on Blackwell ramp",
@@ -559,6 +562,26 @@
         "Blackwell supply constraints could limit revenue beat magnitude"
       ],
       "confidence": "high"
+    },
+    {
+      "id": "intel-037",
+      "date": "2026-02-16T17:46:00Z",
+      "topic": "NVDA Pre-Earnings Analyst Consensus - $260 Target, 42% Upside, Strong Buy Rating",
+      "source": "TipRanks / MarketBeat / UBS Research",
+      "content": "Fresh pre-earnings intelligence (Feb 16): (1) TipRanks consensus: 37 Buy, 1 Hold, 1 Sell = Strong Buy rating with average target $260.38 (42.4% upside from current ~$183), (2) MarketBeat consensus target $264.20 based on 50 analyst ratings, (3) Mean price target across all analysts: $255.34, (4) UBS raised target to $245 citing full-rack solutions and AI Enterprise software growth, (5) Q4 FY26 revenue expected $38.9B (+70% YoY) with potential beat to $40B+ driven by integrated rack sales. Key insight: Analysts are raising targets INTO earnings (not waiting for results), suggesting confidence in beat-and-raise scenario. Operating leverage improving due to higher-margin rack sales + software mix shift. Earnings call Feb 25 after close. Steven positioning: NVDA is existing position - hold through earnings, consider tactical adds on any weakness below $180. Risk: High expectations create binary outcome - any miss could trigger 15-20% correction.",
+      "impact": "bullish",
+      "tickers": [
+        "NVDA",
+        "AMD"
+      ],
+      "riskFactors": [
+        "Analyst upgrades create elevated expectations - limited margin for error",
+        "$260+ targets assume flawless execution on Blackwell ramp",
+        "Earnings binary outcome risk - miss could trigger 15-20% correction"
+      ],
+      "confidence": "high",
+      "catalystDate": "2026-02-25",
+      "catalyst": "Q4 FY2026 Earnings"
     }
   ],
   "synthesizedInsights": [
@@ -603,6 +626,6 @@
       "addedAt": "2026-02-09T11:50:00Z"
     }
   ],
-  "lastUpdated": "2026-02-15T21:47:56.005436Z",
+  "lastUpdated": "2026-02-16T17:46:00Z",
   "dataSource": "Market Data"
 }
