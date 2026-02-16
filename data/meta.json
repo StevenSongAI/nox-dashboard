@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-02-16T14:36:00Z",
+  "lastUpdated": "2026-02-16T15:57:11Z",
   "updatedBy": "nox",
-  "version": "1.0.02161436",
-  "cacheBust": "20260216T1436",
-  "dataVersion": "1.0.85",
-  "youtubeUpdated": "2026-02-16T14:36:00.000000+00:00",
+  "version": "1.0.02161556",
+  "cacheBust": "20260216T1556",
+  "dataVersion": "1.0.86",
+  "youtubeUpdated": "2026-02-16T15:57:11Z",
   "investmentsUpdated": "2026-02-16T14:47:42Z",
   "researchUpdated": "2026-02-16T14:36:00.000000+00:00",
   "newBusinessUpdated": "2026-02-15T07:35:00.000000+00:00",
@@ -21,7 +21,7 @@
     "investments": "2026-02-16 - 24 intelligence items",
     "workTracker": "2026-02-15 - pagination + deduplication live",
     "minecraftArtists": "2026-02-15 - 7 artists",
-    "youtube": "2026-02-16 - 138 outliers (+11 from backlog)"
+    "youtube": "2026-02-16 - 143 outliers (+5 from scraper backlog)"
   },
   "research": {
     "lastUpdated": "2026-02-16T14:36:00.000000+00:00",
