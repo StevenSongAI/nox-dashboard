@@ -118,6 +118,18 @@
       "source": "Market Analysis",
       "whyWatching": "Firefly Video integration threatens pure-play AI video startups. Creative AI moat.",
       "lastUpdated": "2026-02-15T23:20:00Z"
+    },
+    {
+      "id": "watch-006",
+      "sector": "AI Advertising",
+      "ticker": "APP",
+      "name": "AppLovin",
+      "currentPrice": 390.55,
+      "targetEntry": 380,
+      "catalyst": "Q1 2026 earnings, AXON 2.0 AI platform expansion",
+      "source": "Simply Wall St / MarketBeat",
+      "whyWatching": "60% undervalued at current levels ($390 vs $989 fair value). 79% EBITDA margins, 72% FCF margin. AI ad-tech leader beaten down 36% YTD. Analyst target $652 (67% upside).",
+      "lastUpdated": "2026-02-16T18:46:00Z"
     }
   ],
   "trends": [
@@ -605,6 +617,27 @@
       "confidence": "high",
       "catalystDate": "2026-02-25",
       "catalyst": "Q4 FY2026 Earnings - Binary Catalyst"
+    },
+    {
+      "id": "intel-039",
+      "date": "2026-02-16T18:46:00Z",
+      "topic": "AppLovin (APP) Update: 60% Undervalued at $390 - AI Ad-Tech Leader After Pullback",
+      "source": "Simply Wall St / Motley Fool / MarketBeat / 247 Wall St",
+      "content": "AppLovin (APP) deep-dive update following 37% YTD decline: (1) Current price ~$390.55 vs fair value estimate $989.24 = 60.5% undervalued per Simply Wall St analysis, (2) Analyst consensus target $651.77 (67% upside), 10-year forecast $856.06, (3) Q4 2025 results: Revenue $1.66B (+66% YoY), Net income $1.1B (+84% YoY), Full year 2025: $5.5B revenue (+70%), $3.3B net income (+111%), (4) Free cash flow: $3.95B in 2025 (72% FCF margin - exceptional cash generation), (5) Q1 2026 guidance: $1.745B-$1.775B revenue, (6) AXON 2.0 AI platform driving 79% EBITDA margins - among highest in tech, (7) Stock down 36% YTD and 48% from Dec highs despite beating earnings - market concerned about AI competition. Key insight: Fundamentals remain exceptional with AI-driven ad targeting moat. Pullback creates entry opportunity for high-conviction position. Steven does not own APP - this is a new opportunity. Risk: High valuation multiple creates volatility. Entry strategy: Dollar-cost average on weakness below $380. Time horizon: 12-18 months to target.",
+      "impact": "bullish",
+      "tickers": [
+        "APP"
+      ],
+      "riskFactors": [
+        "High valuation - any slowdown could trigger 25%+ correction",
+        "AI competition from Google/Meta ad platforms intensifying",
+        "e-commerce ad expansion execution risk",
+        "Stock down 36% YTD - momentum remains negative"
+      ],
+      "confidence": "high",
+      "priceTarget": "$651.77",
+      "currentPrice": "$390.55",
+      "impliedUpside": "67%"
     }
   ],
   "synthesizedInsights": [
@@ -649,6 +682,6 @@
       "addedAt": "2026-02-09T11:50:00Z"
     }
   ],
-  "lastUpdated": "2026-02-16T17:46:00Z",
+  "lastUpdated": "2026-02-16T18:46:00Z",
   "dataSource": "Market Data"
 }
