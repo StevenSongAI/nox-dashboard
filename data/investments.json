@@ -124,12 +124,12 @@
       "sector": "AI Advertising",
       "ticker": "APP",
       "name": "AppLovin",
-      "currentPrice": 390.55,
+      "currentPrice": 375.99,
       "targetEntry": 380,
       "catalyst": "Q1 2026 earnings, AXON 2.0 AI platform expansion",
-      "source": "Simply Wall St / MarketBeat",
-      "whyWatching": "60% undervalued at current levels ($390 vs $989 fair value). 79% EBITDA margins, 72% FCF margin. AI ad-tech leader beaten down 36% YTD. Analyst target $652 (67% upside).",
-      "lastUpdated": "2026-02-16T18:46:00Z"
+      "source": "Yahoo Finance / StockAnalysis.com",
+      "whyWatching": "ENTRY OPPORTUNITY OPEN: Trading at $375.99 (below $380 target). Upgraded to BUY after 31% price correction. 60% undervalued at current levels ($376 vs $989 fair value). 79% EBITDA margins, 72% FCF margin. AI ad-tech leader beaten down 36% YTD creates entry window. Analyst target $652 (67% upside).",
+      "lastUpdated": "2026-02-16T21:46:00Z"
     }
   ],
   "trends": [
@@ -719,6 +719,33 @@
       "priceTarget": "$260.38",
       "currentPrice": "$183",
       "impliedUpside": "42%"
+    },
+    {
+      "id": "intel-042",
+      "date": "2026-02-16T21:46:00Z",
+      "topic": "NVDA Bull Case Intensifies: China Sales Returning + Hyperscaler Capex at Record Highs",
+      "source": "Motley Fool / AMD Guidance / Company Reports",
+      "content": "Fresh bullish catalysts for NVDA ahead of Feb 25 earnings: (1) CHINA SALES RESUMING: After Trump administration chip export shutdown in April 2025, NVDA appears cleared to resume China exports. AMD already included China chip sales in guidance, suggesting NVDA will follow. China revenue guidance for Q2 FY2026 was $8B - if this returns to Q1 guidance, it represents massive growth step-up market isn't pricing in. (2) HYPERSCALER CAPEX EXPLOSION: Alphabet $175-185B (2026), Amazon $200B, Meta $115-135B - total AI infrastructure spending from top 3 clients alone exceeds $500B. These are NVDA's biggest customers and their capex growth is accelerating, not slowing. (3) VALUATION PARADOX: NVDA at $182.81 trades at 25x forward earnings despite 61% growth - historically cheap for this growth rate. Cheaper than GOOGL (28x) and AVGO (34x) despite faster growth. Stock has been stuck in $180 range since August despite consecutive blowout quarters - creating compressed spring setup. (4) MOTLEY FOOL OUTLOOK: Expects 'blowout quarter' on Feb 25 with particular focus on guidance. If China sales + hyperscaler demand confirm in guidance, stock could break $200 resistance quickly. Key insight: Market is treating NVDA like mature tech while fundamentals scream growth stock. Two potential catalysts (China return + guidance beat) could re-rate stock to $220-240 range. Steven positioning: Maintain existing NVDA through earnings. Current price offers asymmetric risk/reward - limited downside to $165 support, upside to $240+ on beat/raise scenario.",
+      "impact": "bullish",
+      "tickers": [
+        "NVDA",
+        "AMD",
+        "GOOGL",
+        "AMZN",
+        "META"
+      ],
+      "riskFactors": [
+        "China export policy could reverse again",
+        "$1.52 EPS expectations leave zero margin for error",
+        "Guidance miss could trigger 15-20% correction",
+        "Hyperscaler capex cuts would derail thesis"
+      ],
+      "confidence": "high",
+      "catalystDate": "2026-02-25",
+      "catalyst": "Q4 FY2026 Earnings - China sales guidance + hyperscaler demand confirmation",
+      "priceTarget": "$260",
+      "currentPrice": "$182.81",
+      "impliedUpside": "42%"
     }
   ],
   "synthesizedInsights": [
@@ -763,6 +790,6 @@
       "addedAt": "2026-02-09T11:50:00Z"
     }
   ],
-  "lastUpdated": "2026-02-16T20:46:00Z",
+  "lastUpdated": "2026-02-16T21:46:00Z",
   "dataSource": "Market Data"
 }

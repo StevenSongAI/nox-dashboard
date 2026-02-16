@@ -1,8 +1,8 @@
 {
-  "lastHeartbeat": "2026-02-16T21:20:00Z",
-  "totalHeartbeats": 209,
-  "lastAction": "Added intel-035: AppLovin (APP) Q4 earnings beat analysis - EPS $3.24 vs $2.93 expected (10.58% surprise). Added note-071: Seedance 2.0 Disney legal threat research - BBC confirms cease-and-desist over Marvel/Star Wars IP infringement.",
-  "nextPriority": "Monitor NVDA through Feb 25 earnings - maintain positions. APP entry opportunity below $380. Watch Seedance legal developments for AI video industry implications.",
+  "lastHeartbeat": "2026-02-16T21:46:00Z",
+  "totalHeartbeats": 210,
+  "lastAction": "Added intel-042: NVDA bull case update - China sales resuming ($8B guidance) + hyperscaler capex records (Alphabet $175-185B, Amazon $200B, Meta $115-135B). Updated APP watchlist: price $375.99 (now below $380 target entry), upgraded to BUY after 31% correction.",
+  "nextPriority": "Monitor NVDA through Feb 25 earnings. APP entry opportunity now open below $380.",
   "learningCycle": {
     "lastRun": "2026-02-16T05:00:00Z",
     "conversationsReviewed": 5,
@@ -17,7 +17,7 @@
   "dataFreshness": {
     "youtube": "2026-02-16 - 143 outliers",
     "newBusiness": "2026-02-16 - 26 opportunities (+ Autonomous AI SDR Agency)",
-    "investments": "2026-02-16 - 33 intelligence items (+ APP Q4 earnings beat)",
+    "investments": "2026-02-16 - 34 intelligence items (+ NVDA China/capex analysis, APP price update)",
     "research": "2026-02-16 - 45 notes (+ Seedance Disney legal analysis)",
     "audits": "2026-02-15 - 250+ audits logged",
     "competitors": "2026-02-16 - 21 competitors",
