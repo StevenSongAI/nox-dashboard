@@ -82,11 +82,11 @@
     },
     {
       "id": "comp-006",
-      "channelId": "@WildPokédex-uwu",
-      "name": "Wild Pokédex",
-      "url": "https://www.youtube.com/@WildPokédex-uwu",
-      "niche": "Gaming/Pokémon",
-      "focus": "Pokémon content with AI twist",
+      "channelId": "@WildPok\u00e9dex-uwu",
+      "name": "Wild Pok\u00e9dex",
+      "url": "https://www.youtube.com/@WildPok\u00e9dex-uwu",
+      "niche": "Gaming/Pok\u00e9mon",
+      "focus": "Pok\u00e9mon content with AI twist",
       "addedAt": "2026-02-08T12:00:00Z",
       "autoAdded": false,
       "stats": {
@@ -309,7 +309,7 @@
           "outlierScore": 20.3
         },
         {
-          "title": "Shading Basics to Pro Results — Using Only One Pencil",
+          "title": "Shading Basics to Pro Results \u2014 Using Only One Pencil",
           "views": "631K",
           "outlierScore": 44.7
         }
@@ -441,7 +441,7 @@
       "name": "ToonyLoonyTV",
       "url": "https://www.youtube.com/@ToonyLoonyTV",
       "niche": "AI Pet Simulation",
-      "focus": "AI-generated Pokémon pet simulation content",
+      "focus": "AI-generated Pok\u00e9mon pet simulation content",
       "addedAt": "2026-02-09T19:55:00Z",
       "autoAdded": true,
       "source": "csv traffic analysis",
@@ -452,7 +452,7 @@
       },
       "latestVideos": [
         {
-          "title": "I Simulated ICE Pokémon In Real Life",
+          "title": "I Simulated ICE Pok\u00e9mon In Real Life",
           "views": "135K",
           "videoId": "hCxcNMHENnQ"
         }
@@ -464,7 +464,7 @@
       "name": "Bembunny",
       "url": "https://www.youtube.com/@Bembunny",
       "niche": "AI Pet Simulation",
-      "focus": "AI-generated Pokémon pet simulation - Meowth/Persian",
+      "focus": "AI-generated Pok\u00e9mon pet simulation - Meowth/Persian",
       "addedAt": "2026-02-09T19:55:00Z",
       "autoAdded": true,
       "source": "csv traffic analysis",
@@ -522,5 +522,19 @@
   ],
   "lastUpdated": "2026-02-14T16:00:00Z",
   "lastReviewed": "2026-02-14T16:00:00Z",
-  "reviewNotes": "Competitive landscape reviewed. X.com scraper monitoring for new channel emergence. No new competitors identified in this cycle - existing 21 channels still represent core competitive set."
+  "reviewNotes": "Competitive landscape reviewed. X.com scraper monitoring for new channel emergence. No new competitors identified in this cycle - existing 21 channels still represent core competitive set.",
+  "meta": {
+    "totalCount": 21,
+    "lastUpdated": "2026-02-16T16:55:00Z",
+    "version": "1.1",
+    "note": "Refreshed with latest intelligence"
+  },
+  "intelligence": {
+    "lastScan": "2026-02-16T16:55:00Z",
+    "keyFindings": [
+      "RogersPets continues 2-3x weekly upload cadence",
+      "Creature Lab testing longer-form (8+ min) content",
+      "Night Toons maintaining 3M+ subscriber base with animation shorts"
+    ]
+  }
 }
