@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-02-16T17:22:41.897752",
+  "lastUpdated": "2026-02-16T22:50:00.000000+00:00",
   "updatedBy": "heartbeat-agent",
-  "version": "1.0.02162146",
-  "cacheBust": "20260216T214",
-  "dataVersion": "2026.02.16.9",
+  "version": "1.0.02162250",
+  "cacheBust": "20260216T2250",
+  "dataVersion": "2026.02.16.10",
   "youtubeUpdated": "2026-02-16T17:17:58.362560",
   "investmentsUpdated": "2026-02-16T21:46:00Z",
-  "researchUpdated": "2026-02-16T21:20:00Z",
+  "researchUpdated": "2026-02-16T22:50:00Z",
   "newBusinessUpdated": "2026-02-16T19:50:00Z",
   "toolsUpdated": "2026-02-15T00:17:00Z",
   "workTrackerUpdated": "2026-02-15T00:17:00Z",
@@ -16,7 +16,7 @@
     "entryCount": 34
   },
   "dataFreshness": {
-    "research": "2026-02-16 - 45 notes",
+    "research": "2026-02-16 - 47 notes (+ Seedance voice suspension)",
     "newBusiness": "2026-02-15 - 24 opportunities",
     "investments": "2026-02-16 - 34 intelligence items (+1: NVDA China sales + hyperscaler capex analysis, APP price update)",
     "workTracker": "2026-02-15 - pagination + deduplication live",
@@ -24,8 +24,8 @@
     "youtube": "2026-02-16 - 143 outliers, 1 content brief"
   },
   "research": {
-    "lastUpdated": "2026-02-16T21:20:00Z",
-    "totalNotes": 45
+    "lastUpdated": "2026-02-16T22:50:00Z",
+    "totalNotes": 47
   },
   "totalNotes": 34
 }
