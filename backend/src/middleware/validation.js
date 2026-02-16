@@ -350,6 +350,28 @@ function validateSourceUrl(req, res, next) {
   next();
 }
 
+/**
+ * Validation rules for API key creation
+ */
+const keyValidationRules = [
+  // Add validation rules here if needed
+];
+
+/**
+ * Handle validation errors from express-validator
+ */
+function handleValidationErrors(req, res, next) {
+  const { validationResult } = require('express-validator');
+  const errors = validationResult(req);
+  if (!errors.isEmpty()) {
+    return res.status(400).json({
+      error: 'Validation failed',
+      details: errors.array()
+    });
+  }
+  next();
+}
+
 module.exports = {
   sanitizeContent,
   blockPrototypePollution,
@@ -357,6 +379,8 @@ module.exports = {
   validateMetadata,
   validateCategory,
   validateSourceUrl,
+  keyValidationRules,
+  handleValidationErrors,
   // Export constants for testing
   MAX_TITLE_LENGTH,
   MAX_DESCRIPTION_LENGTH,

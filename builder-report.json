@@ -1,33 +1,33 @@
 {
-  "batch": "MISSING-COMPONENTS-001",
-  "timestamp": "2026-02-15T23:44:00Z",
-  "status": "VERIFIED",
-  "summary": "Both components already exist and are fully implemented",
-  "components": [
+  "batch": "DEPLOYMENT-CONFIG-002",
+  "status": "completed",
+  "defects_fixed": [
     {
-      "path": "~/Desktop/Nox Builds/nox-dashboard/frontend/src/components/OutlierRankedList.jsx",
-      "status": "EXISTS",
-      "features": {
-        "rankOutliers": true,
-        "sortableColumns": true,
-        "seenUnseenTabs": true,
-        "localStorageTracking": true,
-        "clickToMarkSeen": true
-      },
-      "sortOptions": ["viewCount", "viralScore", "engagementRate", "date", "title"],
-      "tabs": ["unseen", "seen", "all"]
+      "id": 1,
+      "title": "Vite config missing base URL for GitHub Pages",
+      "path": "~/Desktop/Nox Builds/nox-dashboard/frontend/vite.config.js",
+      "changes": [
+        "Changed base: '/' to base: '/nox-dashboard/'"
+      ],
+      "status": "fixed"
     },
     {
-      "path": "~/Desktop/Nox Builds/nox-dashboard/frontend/src/components/EntryDetail.jsx",
-      "status": "EXISTS",
-      "features": {
-        "moveToDropdown": true,
-        "categoryOptions": ["youtube", "business", "investments", "activity"],
-        "apiIntegration": true,
-        "method": "PUT /api/entries/:id"
-      }
+      "id": 2,
+      "title": "FilterPills lacks ARIA accessibility",
+      "path": "~/Desktop/Nox Builds/nox-dashboard/frontend/src/components/FilterPills.jsx",
+      "changes": [
+        "Added role='tablist' and aria-label='Filter options' to container",
+        "Added role='tab' to all filter buttons",
+        "Changed aria-pressed to aria-selected for proper tab semantics",
+        "Added tabIndex management (selected=0, unselected=-1)",
+        "Implemented full keyboard navigation (Arrow keys, Home, End)"
+      ],
+      "status": "fixed"
     }
   ],
-  "verification": "Files verified to exist on disk - no rebuild necessary",
-  "actionTaken": "None - components already present and complete"
+  "files_modified": [
+    "frontend/vite.config.js",
+    "frontend/src/components/FilterPills.jsx"
+  ],
+  "timestamp": "2026-02-15T18:50:00-05:00"
 }

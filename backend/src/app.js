@@ -97,7 +97,7 @@ app.get('/', (req, res) => {
 });
 
 // API Routes
-app.use('/api/auth', authRouter);
+app.use('/api/auth', authRouter.router);
 app.use('/api/entries', entriesRouter);
 app.use('/api/search', searchRouter);
 app.use('/api/stats', statsRouter);
@@ -190,7 +190,7 @@ process.on('unhandledRejection', (reason, promise) => {
   // Continue running but log the error
 });
 
-// Start the server
-startServer();
+// Start the server (disabled - use index.js as entry point)
+// startServer();
 
 module.exports = { app, startServer, gracefulShutdown };

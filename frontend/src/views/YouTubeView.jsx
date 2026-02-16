@@ -5,6 +5,7 @@ import Card from '../components/Card.jsx'
 import SearchBar from '../components/SearchBar.jsx'
 import FilterPills from '../components/FilterPills.jsx'
 import EntryDetail from '../components/EntryDetail.jsx'
+import OutlierRankedList from '../components/OutlierRankedList.jsx'
 
 const typeFilters = [
   { value: 'outlier_video', label: 'Outliers' },
@@ -81,16 +82,33 @@ function YouTubeView() {
         </div>
       )}
 
-      {/* Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {entries.map((entry) => (
-          <Card
-            key={entry.id}
-            entry={entry}
-            onClick={() => setSelectedEntry(entry.id)}
-          />
-        ))}
-      </div>
+      {/* Grid or Outlier List */}
+      {selectedType === 'outlier_video' ? (
+        <OutlierRankedList 
+          outliers={entries.map(e => ({
+            id: e.id,
+            title: e.title,
+            channelName: e.metadata?.channelName || 'Unknown',
+            thumbnailUrl: e.metadata?.thumbnailUrl || '',
+            viewCount: e.metadata?.viewCount || 0,
+            viralScore: e.metadata?.viralScore || 0,
+            engagementRate: e.metadata?.engagementRate || 0,
+            date: e.created_at,
+            url: e.source_url
+          }))}
+          onOutlierClick={(outlier) => setSelectedEntry(outlier.id)}
+        />
+      ) : (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {entries.map((entry) => (
+            <Card
+              key={entry.id}
+              entry={entry}
+              onClick={() => setSelectedEntry(entry.id)}
+            />
+          ))}
+        </div>
+      )}
 
       {/* Entry Detail Modal */}
       <EntryDetail 

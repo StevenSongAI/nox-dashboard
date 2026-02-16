@@ -180,7 +180,8 @@ router.put('/:id',
         confidence,
         tags,
         source_url,
-        metadata
+        metadata,
+        status
       } = req.body;
 
       // Build dynamic update query
@@ -219,6 +220,10 @@ router.put('/:id',
       if (metadata !== undefined) {
         updates.push(`metadata = $${paramIndex++}`);
         values.push(metadata);
+      }
+      if (status !== undefined) {
+        updates.push(`status = $${paramIndex++}`);
+        values.push(status);
       }
 
       if (updates.length === 0) {

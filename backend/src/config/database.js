@@ -45,5 +45,28 @@ module.exports = {
   getClient: async () => {
     const client = await pool.connect();
     return client;
+  },
+  
+  // Initialize pool - no-op since pool is created on startup
+  initializePool: async () => {
+    // Pool is already initialized, just verify connection
+    const client = await pool.connect();
+    client.release();
+    return true;
+  },
+  
+  // Close pool for graceful shutdown
+  closePool: async () => {
+    await pool.end();
+  },
+  
+  // Check database health
+  checkDatabaseHealth: async () => {
+    try {
+      const result = await pool.query('SELECT NOW()');
+      return { healthy: true, timestamp: result.rows[0].now };
+    } catch (err) {
+      return { healthy: false, error: err.message };
+    }
   }
 };

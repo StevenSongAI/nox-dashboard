@@ -10,6 +10,7 @@ const SORT_OPTIONS = {
   ENGAGEMENT: { key: 'engagementRate', label: 'Engagement Rate' },
   DATE: { key: 'date', label: 'Date' },
   TITLE: { key: 'title', label: 'Title' },
+  SEEN_STATUS: { key: 'seenStatus', label: 'Seen Status' },
 };
 
 // Sort direction
@@ -115,8 +116,16 @@ export default function OutlierRankedList({
     const sorted = [...filteredOutliers];
     
     sorted.sort((a, b) => {
-      let aVal = a[sortBy];
-      let bVal = b[sortBy];
+      let aVal, bVal;
+      
+      // Handle seen status sorting
+      if (sortBy === 'seenStatus') {
+        aVal = seenIds.has(a.id) ? 1 : 0;
+        bVal = seenIds.has(b.id) ? 1 : 0;
+      } else {
+        aVal = a[sortBy];
+        bVal = b[sortBy];
+      }
       
       // Handle string comparison
       if (typeof aVal === 'string') {
@@ -136,7 +145,7 @@ export default function OutlierRankedList({
     });
     
     return sorted;
-  }, [filteredOutliers, sortBy, sortDir]);
+  }, [filteredOutliers, sortBy, sortDir, seenIds]);
 
   // Counts for tabs
   const unseenCount = outliers.filter(o => !seenIds.has(o.id)).length;
