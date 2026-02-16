@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-02-15T21:48:07.672801Z",
+  "lastUpdated": "2026-02-16T03:17:57.354086+00:00",
   "updatedBy": "nox",
   "version": "1.0.02152346",
   "cacheBust": "20260215T2346",
   "dataVersion": "1.0.83",
-  "youtubeUpdated": "2026-02-15T20:47:00Z",
-  "investmentsUpdated": "2026-02-15T23:46:00Z",
+  "youtubeUpdated": "2026-02-16T03:17:57.354086+00:00",
+  "investmentsUpdated": "2026-02-16T03:17:57.354086+00:00",
   "researchUpdated": "2026-02-16T00:19:05Z",
   "newBusinessUpdated": "2026-02-15T07:35:00.000000+00:00",
   "toolsUpdated": "2026-02-15T00:17:00Z",
@@ -18,10 +18,10 @@
   "dataFreshness": {
     "research": "2026-02-16 - 42 notes + NEW: Software company AI rebranding trend analysis",
     "newBusiness": "2026-02-15 - 24 opportunities (1 new: AI Agent Payment Infrastructure)",
-    "investments": "2026-02-15 - UPDATE: Global AI investment $2.52T in 2026 confirmed, NVDA earnings Feb 25 preview, Meta Prometheus supercluster",
+    "investments": "2026-02-15 - 23 intelligence items (+1: AMD pullback opportunity)",
     "workTracker": "2026-02-15 - FIXED: pagination, deduplication, virtual scrolling",
     "minecraftArtists": "2026-02-15 - 7 artists (2 new), Ice Dragon outreach templates, Regnozes Discord priority",
-    "youtube": "2026-02-15 - 125 outliers (3 new from proactive heartbeat)"
+    "youtube": "2026-02-15 - 126 outliers (+1: Claude Agent Teams)"
   },
   "research": {
     "lastUpdated": "2026-02-15T02:39:51.642919Z",

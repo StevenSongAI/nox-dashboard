@@ -439,6 +439,25 @@
       "status": "active_research",
       "priority": "high",
       "addedAt": "2026-02-15T21:47:56.005434Z"
+    },
+    {
+      "id": "intel-amd-023",
+      "ticker": "AMD",
+      "type": "buy_opportunity",
+      "title": "AMD Pullback Entry Opportunity Post-Earnings",
+      "summary": "AMD down 21% post-earnings creates potential entry. Analyst consensus shows $288 price target (38% upside). High volatility = long-term entry opportunity during pullbacks.",
+      "content": "AMD corrected over 21% following recent earnings, but analysts see this as overdone. Current price ~$208 vs consensus target $288 = 38% upside potential. Key points: (1) Valuation was stretched before pullback - now more reasonable, (2) Rival NVDA trades at 24x forward earnings with greater market share, (3) Data center MI300 chip demand remains strong, (4) 33 analysts covering with positive long-term outlook. Risk: Further downside possible if market conditions worsen. Opportunity: High volatility creates entry points for long-term investors.",
+      "sources": [
+        "Motley Fool - AMD turnaround analysis",
+        "TipRanks - 33 analyst consensus",
+        "MarketBeat - $288 price target"
+      ],
+      "confidence": "medium",
+      "actionable": true,
+      "recommendedAction": "Watch for entry around $150-170 range on further weakness. Set alert.",
+      "addedAt": "2026-02-16T03:17:46.361699+00:00",
+      "catalystDate": "2026-02-25",
+      "catalyst": "NVDA earnings sympathy selling may create better AMD entry"
     }
   ],
   "synthesizedInsights": [
