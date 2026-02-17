@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-17T15:41:00-05:00",
+  "lastUpdated": "2026-02-17T20:46:00-05:00",
   "notes": [
     {
       "id": "note-001",
@@ -255,6 +255,23 @@
         "NVDA"
       ],
       "addedAt": "2026-02-17T20:41:00Z"
+    },
+    {
+      "id": "note-019",
+      "category": "Market Intelligence",
+      "title": "February 2026 AI Mega-Funding Surge: $30B Anthropic, $315M Runway, $255M Fundamental",
+      "content": "Fresh research (Feb 17, 2026): February has become the hottest AI funding month on record with 17 US-based AI startups raising $100M+ mega-rounds in just 6 weeks. KEY DEALS: (1) ANTHROPIC - $30B Series G at $380B valuation (Feb 12), investors include Founders Fund, Coatue, NVIDIA. Now the 2nd most valuable AI company behind OpenAI. (2) RUNWAY - $315M Series E at $5.3B valuation (Feb 10), led by General Atlantic, NVIDIA/Fidelity/Felicis participated. Pivoting to 'world models' for video generation. (3) FUNDAMENTAL - $255M Series A at $1.4B (Feb 5), Oak HC/FT and Salesforce Ventures backing new big data analysis approach. (4) GOODFIRE - $150M Series B at $1.25B (Feb 5), B Capital leading AI research lab focused on interpretability. (5) SIMILE - $100M Series A (Feb 12), Index Ventures leading AI that mimics human decisions. MARKET CONTEXT: US AI startups raised $76B in mega-rounds in 2025. 2026 pacing to exceed that with $31B+ already deployed in February alone. NVIDIA appearing as investor in multiple rounds (Anthropic, Runway) - strategic positioning beyond just chips. SIGNAL: AI infrastructure layer (compute, models, data) consolidating into few mega-players with massive balance sheets. Mid-tier AI companies being forced to either raise mega-rounds or get acquired. For content creators: Anthropic's $380B valuation makes Claude a 'safe bet' for tutorials - unlikely to disappear. Runway's pivot to world models suggests video AI shifting from 'generate clip' to 'generate world' - new content format opportunities.",
+      "source": "TechCrunch / Intellizence (Feb 17, 2026)",
+      "tags": [
+        "ai-funding",
+        "anthropic",
+        "runway",
+        "venture-capital",
+        "market-trends",
+        "nvidia"
+      ],
+      "confidence": "high",
+      "dateAdded": "2026-02-17T20:46:00Z"
     }
   ]
 }
