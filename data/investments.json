@@ -181,6 +181,21 @@
   ],
   "intelligence": [
     {
+      "id": "intel-046",
+      "date": "2026-02-17T00:50:00Z",
+      "topic": "NVDA Q4 FY26 Earnings Preview: Three Analysts Predict Big Beat - $2B+ Revenue Surprise Expected",
+      "source": "UBS / Wolfe Research / KeyBanc / Wall Street Consensus",
+      "content": "NVDA reports Q4 FY26 earnings February 25 with Wall Street projecting $1.52 EPS (up 71% YoY) and $65.58B revenue (up 67%). Top analysts predicting significant beat: UBS analyst Timothy Arcuri expects $67.5B revenue (vs $65.6B consensus) = $2B+ surprise. Wolfe Research's Chris Caso lifted FY2028 EPS estimate to $11.50 (exceeds consensus by $1.50), citing pricing strength as Rubin/Rubin Ultra chips ramp. KeyBanc's John Vinh emphasizes CUDA software moat as competitive advantage limiting rival threats. Stock slipped 2% in 2026 on AI competition worries but valuation compelling: NVDA trades at 25x forward earnings despite 61% growth forecast - BELOW Alphabet (28x) and Broadcom (34x). Consensus: 37 Buys with $260.38 average price target = 42.4% upside from current levels. Goldman Sachs also projecting $2B revenue beat driven by hyperscale data center demand. Alphabet's $175-185B 2026 capex plan reinforces AI infrastructure spending tailwinds. Positioning: Maintain through earnings. Risk: High expectations create limited margin for error - any guidance miss could trigger 10-15% selloff.",
+      "impact": "bullish",
+      "tickers": ["NVDA"],
+      "riskFactors": [
+        "High expectations limit margin for error",
+        "Guidance miss could trigger 10-15% selloff",
+        "AI competition concerns persist"
+      ],
+      "confidence": "high"
+    },
+    {
       "id": "intel-034",
       "date": "2026-02-15T23:46:00Z",
       "topic": "UPDATE: Global AI Investment $2.52T in 2026 - Infrastructure Supercycle Confirmed",
