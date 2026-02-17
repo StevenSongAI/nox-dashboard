@@ -124,12 +124,12 @@
       "sector": "AI Advertising",
       "ticker": "APP",
       "name": "AppLovin",
-      "currentPrice": 375.99,
+      "currentPrice": 390.55,
       "targetEntry": 380,
-      "catalyst": "Q1 2026 earnings, AXON 2.0 AI platform expansion",
-      "source": "Yahoo Finance / StockAnalysis.com",
-      "whyWatching": "ENTRY OPPORTUNITY OPEN: Trading at $375.99 (below $380 target). Upgraded to BUY after 31% price correction. 60% undervalued at current levels ($376 vs $989 fair value). 79% EBITDA margins, 72% FCF margin. AI ad-tech leader beaten down 36% YTD creates entry window. Analyst target $652 (67% upside).",
-      "lastUpdated": "2026-02-16T21:46:00Z"
+      "catalyst": "Q1 2026 earnings, AXON 2.0 AI platform expansion, Strong Buy rating",
+      "source": "StockAnalysis.com / TradingView / Market Data",
+      "whyWatching": "STRONG BUY CONFIRMED: $705 price target = 80% upside. Forward PE 24.84x cheap for 115% EPS growth. Trading at $390 (above $380 target but below $400 Buy threshold). Q4 EPS beat 9.89%. High margins: 79% EBITDA, 72% FCF. Entry on any pullback below $380.",
+      "lastUpdated": "2026-02-17T00:20:00Z"
     }
   ],
   "trends": [
@@ -787,6 +787,25 @@
       "priceTarget": "$260.38",
       "currentPrice": "$183",
       "impliedUpside": "42.4%"
+    },
+    {
+      "id": "intel-045",
+      "date": "2026-02-17T00:20:00Z",
+      "topic": "APP Strong Buy Confirmation - $705 Price Target, 80% Upside Potential",
+      "source": "StockAnalysis.com / TradingView / Market Data",
+      "content": "Fresh intelligence (Feb 16 close): APP rated Strong Buy with $705.17 analyst price target = +80.56% upside from current $390.55. Key metrics confirm bull case: (1) Forward PE 24.84x vs 38.90x trailing - earnings growth accelerating, (2) Q4 EPS $3.24 vs $2.93 estimate = 9.89% beat, (3) Next quarter EPS estimate $3.38, (4) Revenue $5.48B (+16.4% YoY), Net Income +111%, EPS +115%, (5) 79% EBITDA margins, 72% FCF margins per prior analysis, (6) Market cap $132.13B with 338.31M shares, (7) 52-week range $200.50-$745.61 - stock recovered from lows but still 48% below ATH, (8) Stock rated Buy under $400 per StockAnalysis.com. Entry strategy: Current price $390 is above $380 target but still below $400 threshold. Any pullback below $380 creates entry opportunity. Position sizing: 3-5% portfolio allocation appropriate given high growth but ad-tech volatility. APP provides pure-play AI advertising exposure as AXON 2.0 platform gains adoption.",
+      "impact": "bullish",
+      "tickers": ["APP"],
+      "riskFactors": [
+        "Ad-tech sector volatility - small cap growth multiple compression risk",
+        "Competition from Google/Amazon ad platforms",
+        "Macro slowdown could reduce advertising spend",
+        "High beta 2.49 - twice as volatile as market"
+      ],
+      "confidence": "high",
+      "priceTarget": "$705.17",
+      "currentPrice": "$390.55",
+      "impliedUpside": "80.56%"
     }
   ],
   "synthesizedInsights": [
