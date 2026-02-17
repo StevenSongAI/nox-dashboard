@@ -2258,6 +2258,85 @@
       "linkedResearchIds": [
         "note-073"
       ]
+    },
+    {
+      "id": "brief-003",
+      "title": "I Got a Pet [Creature]: Real-Life Fictional Creature Care Simulation",
+      "format": "AI Creature Simulation / Virtual Pet",
+      "basedOnOutliers": [
+        "outlier-auto-ezgpENL26UY",
+        "outlier-auto-YMVRTFVDcZk",
+        "outlier-auto-WblIcCIkrMg"
+      ],
+      "viralScores": [
+        75,
+        65,
+        65
+      ],
+      "concept": "Use AI image generation + video editing to create the illusion of owning and caring for a fictional creature (Pokemon, dragons, game characters) in real life. Document daily activities, feeding, playtime, and bonding moments.",
+      "targetAudience": "Pokemon fans, gamers, AI art enthusiasts, virtual pet nostalgics (Tamagotchi generation)",
+      "productionComplexity": "Low-Medium",
+      "estimatedCost": "$20-40 (AI image generation + optional video generation)",
+      "contentAngles": [
+        "Day in the life format: Morning feeding, playtime, bedtime routine",
+        "Problem-solving: 'My Pikachu won't listen' / 'Training my Charizard'",
+        "Public reaction: Taking creature to park, store, friend's house",
+        "Care tutorials: 'What to feed your virtual dragon'",
+        "Growth documentation: Baby form → Adult form over multiple videos",
+        "Crossover episodes: Two creators' creatures meet"
+      ],
+      "scriptStructure": {
+        "hook": "This is [Creature Name]. I found him yesterday and now he's living in my house...",
+        "setup": "Show the creature's living space, explain the 'rules' of this virtual world",
+        "activity": "Daily care routine - feeding, playing, training",
+        "complication": "Something goes wrong (creature escapes, makes mess, won't behave)",
+        "resolution": "Solve the problem, bond with creature",
+        "outro": "What should we do tomorrow? Comment with ideas"
+      },
+      "thumbnailIdeas": [
+        "Creature peeking from behind real-world object (door, couch, fridge)",
+        "Split screen: Real hand reaching toward AI creature",
+        "'POV: You just got a pet [Creature]' with creature sleeping in bed",
+        "Reaction thumbnail: Creator's shocked face + creature doing something cute/chaotic"
+      ],
+      "viralMechanics": {
+        "whyItWorks": "Nostalgia (Pokemon/virtual pets) + Wish fulfillment (owning impossible pet) + ASMR-like care routines drive retention. Comment suggestions create community engagement.",
+        "retentionHook": "Viewers want to see what the creature does next and how the 'relationship' develops",
+        "shareTrigger": "Recognizable characters (Pikachu, Toothless) trigger fan sharing. Unexpected behaviors create shareable moments."
+      },
+      "toolsNeeded": [
+        "Midjourney/Stable Diffusion/DALL-E for creature generation",
+        "Kling AI / Runway / Luma Dream Machine for creature animation (optional)",
+        "CapCut/Premiere for compositing creature into real footage",
+        "Green screen or consistent lighting for matching"
+      ],
+      "estimatedProductionTime": "3-5 hours per video",
+      "competitiveAdvantage": "Infinite creature options (any Pokemon, dragon, game character). Series potential - each creature becomes a 'character' viewers follow. Lower production cost than 3D animation.",
+      "status": "ready_to_produce",
+      "priority": "high",
+      "createdAt": "2026-02-17T04:20:00Z",
+      "sourceOutlierUrls": [
+        "https://www.youtube.com/watch?v=ezgpENL26UY",
+        "https://www.youtube.com/watch?v=YMVRTFVDcZk",
+        "https://www.youtube.com/watch?v=WblIcCIkrMg"
+      ],
+      "referenceHighPerformers": [
+        {
+          "title": "I Got a Pet Dinosaur (kinda)",
+          "url": "https://www.youtube.com/watch?v=QLI0XOFpK0A",
+          "views": 21700000,
+          "channel": "terragreen1",
+          "whyItWorked": "Proven 21M view format - dinosaur in house creates immediate visual intrigue"
+        },
+        {
+          "title": "I Got a Pet Eevee",
+          "url": "https://www.youtube.com/watch?v=EY_awFVthW4",
+          "views": 1900000,
+          "viralScore": 90,
+          "channel": "Poke Realms",
+          "whyItWorked": "Pokemon nostalgia + believable AI integration + daily care format"
+        }
+      ]
     }
   ]
 }

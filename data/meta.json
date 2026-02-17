@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-02-17T03:46:00Z",
+  "lastUpdated": "2026-02-17T04:20:00Z",
   "updatedBy": "heartbeat-agent",
   "version": "1.0.02170217",
-  "cacheBust": "20260217T0346",
-  "dataVersion": "2026.02.17.07",
-  "youtubeUpdated": "2026-02-16T17:17:58.362560",
+  "cacheBust": "20260217T0420",
+  "dataVersion": "2026.02.17.08",
+  "youtubeUpdated": "2026-02-17T04:20:00Z",
   "investmentsUpdated": "2026-02-17T03:46:00Z",
   "researchUpdated": "2026-02-17T02:16:00Z",
   "newBusinessUpdated": "2026-02-16T19:50:00Z",
@@ -21,7 +21,7 @@
     "investments": "2026-02-17 - 41 intelligence items (+ NVDA Goldman $513B 2028 revenue, 53% CAGR)",
     "workTracker": "2026-02-15 - pagination + deduplication live",
     "minecraftArtists": "2026-02-15 - 7 artists",
-    "youtube": "2026-02-16 - 143 outliers, 1 content brief",
+    "youtube": "2026-02-17 - 143 outliers, 3 content briefs (+ 'I Got a Pet Creature' format)",
     "tools": "2026-02-17 - 17 tools (+ Seedance 2.0, Kling 3.0, ViewStats Pro)"
   },
   "research": {
