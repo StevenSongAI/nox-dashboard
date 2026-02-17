@@ -945,6 +945,27 @@
       "priceTarget": "$667",
       "currentPrice": "$390",
       "impliedUpside": "81.8%"
+    },
+    {
+      "id": "intel-050",
+      "date": "2026-02-17T06:16:00Z",
+      "topic": "NVDA Path to $300: FY2028 EPS $9.90 at 30x Multiple = 64% Upside - Motley Fool Analysis",
+      "source": "Motley Fool / YCharts / Consensus Estimates",
+      "content": "Fresh February 16 analysis from Motley Fool outlines NVDA's path to $300/share (64% upside from $183): (1) EARNINGS TRAJECTORY: FY2026 EPS expected $4.69 (57% YoY growth), FY2027 EPS growth projected 65%, FY2028 EPS expected to reach $9.90, (2) VALUATION MATH: At 30x earnings multiple (discount to Nasdaq-100's 31.5x), $9.90 EPS implies $297 stock price, (3) BLACKWELL MARGIN RECOVERY: Gross margins compressed to 71-73% in early FY2026 due to production ramp, but management guiding to mid-70% range in FY2027 as production hits full swing and cost structure improves, (4) VERA RUBIN CATALYST: Next-generation Vera Rubin processors launching later in 2026 expected to deliver exponential performance improvements over Blackwell, driving upgrade cycle and sustaining pricing power, (5) Q4 FY2026 EARNINGS FEB 25: First nine months earnings up 50% YoY, full-year consensus $4.69 EPS implies strong Q4 finish, (6) BACKLOG EXPANDING: Motley Fool citing 'sizable backlog that's reportedly expanding due to inflow of more orders' - demand remains robust despite competition fears, (7) 6-MONTH UNDERPERFORMANCE: NVDA flat over past 6 months vs PHLX Semiconductor Index +39% - potential catch-up trade as earnings confirm trajectory. Key insight: Two independent analyses (Goldman Sachs $513B 2028 revenue / Motley Fool $9.90 FY2028 EPS) converge on similar upside targets ($260-300). NVDA trading at forward P/E near 24x despite 53-65% growth rates represents significant valuation disconnect. Feb 25 earnings is the catalyst to close this gap - beat/raise scenario could see rapid repricing toward $220-240 range with path to $300 over 12-18 months. Steven positioning: Hold through earnings, maintain conviction in $300 target over 24-month horizon.",
+      "impact": "bullish",
+      "tickers": ["NVDA"],
+      "riskFactors": [
+        "$9.90 FY2028 EPS assumes flawless execution on Blackwell and Rubin ramps",
+        "30x multiple assumes market continues paying premium for AI growth - multiple compression possible",
+        "Competition from AMD, custom silicon could erode market share faster than expected",
+        "Any demand slowdown or capex cut from hyperscalers would invalidate projections"
+      ],
+      "confidence": "high",
+      "catalystDate": "2026-02-25",
+      "catalyst": "Q4 FY2026 Earnings - Validation of FY2027-2028 trajectory",
+      "priceTarget": "$297-300",
+      "currentPrice": "$183",
+      "impliedUpside": "64%"
     }
   ],
   "synthesizedInsights": [
