@@ -1,33 +1,33 @@
 {
-  "lastUpdated": "2026-02-17T20:46:00Z",
+  "lastUpdated": "2026-02-17T21:46:00Z",
   "updatedBy": "heartbeat-agent",
-  "version": "2026.02.17.18",
-  "cacheBust": "20260217T2017",
-  "dataVersion": "2026.02.17.28",
+  "version": "2026.02.17.19",
+  "cacheBust": "20260217T2146",
+  "dataVersion": "2026.02.17.29",
   "youtubeUpdated": "2026-02-17T04:20:00Z",
-  "investmentsUpdated": "2026-02-17T20:17:00Z",
+  "investmentsUpdated": "2026-02-17T21:46:00Z",
   "researchUpdated": "2026-02-17T20:46:00Z",
   "newBusinessUpdated": "2026-02-17T04:46:00Z",
   "toolsUpdated": "2026-02-17T09:47:00Z",
   "workTrackerUpdated": "2026-02-15T00:17:00Z",
   "minecraftArtistsUpdated": "2026-02-15T19:16:00Z",
   "investments": {
-    "lastUpdated": "2026-02-17T20:17:00Z",
-    "entryCount": 60
+    "lastUpdated": "2026-02-17T21:46:00Z",
+    "entryCount": 63
   },
   "dataFreshness": {
-    "research": "2026-02-17 - 17 notes (+ AI Datacenter Capex analysis for NVDA/APP)",
-    "newBusiness": "2026-02-17 - 27 opportunities (+ AI Video World Models content series)",
-    "investments": "2026-02-17 - 60 intelligence items (+ Citigroup $270 PT, Q4/Q1 beat projections)",
+    "research": "2026-02-17 - 19 notes",
+    "newBusiness": "2026-02-17 - 27 opportunities",
+    "investments": "2026-02-17 - 63 intelligence items (+ UBS raises PT to $245, Citibank maintains $270 Buy)",
     "workTracker": "2026-02-15 - pagination + deduplication live",
     "minecraftArtists": "2026-02-15 - 7 artists",
-    "youtube": "2026-02-17 - 143 outliers, 3 content briefs (+ 'I Got a Pet Creature' format)",
-    "tools": "2026-02-17 - 20 tools (+ Google Veo 3, OpenAI Sora 2, Runway Gen-4)"
+    "youtube": "2026-02-17 - 144 outliers",
+    "tools": "2026-02-17 - 20 tools"
   },
   "research": {
     "lastUpdated": "2026-02-17T20:46:00Z",
     "totalNotes": 19,
     "lastNoteId": "note-019"
   },
-  "totalNotes": 17
+  "totalNotes": 19
 }

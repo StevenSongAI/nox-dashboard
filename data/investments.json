@@ -181,6 +181,27 @@
   ],
   "intelligence": [
     {
+      "id": "intel-063",
+      "date": "2026-02-17T21:46:00Z",
+      "topic": "NVDA Feb 17 Evening Update: UBS Raises PT to $245 (+4%), Citibank Reaffirms $270 Buy, Consensus $264 = 45% Upside",
+      "source": "UBS / Citibank / TipRanks / MarketBeat / Finbold (Feb 17, 2026)",
+      "content": "Fresh NVDA pre-earnings intelligence (Feb 17, 4:46 PM ET): UBS UPGRADE - Analyst Timothy Arcuri raised price target from $235 to $245 (+4%), maintaining Buy rating. Sentiment heading into Q4 earnings appears positive, especially with Nvidia's GTC event approaching. CITIBANK REAFFIRMATION - Banking giant maintained 'Buy' rating with $270 price target (published 7 hours ago), implying roughly 50% upside from NVDA's last closing price of ~$182. ANALYST CONSENSUS: $264.20 average price target across all analysts = 45% upside potential. Range includes bull case targets of $360-520 from more optimistic analysts. EARNINGS CONTEXT: Feb 25 earnings now 5 trading days away. Motley Fool notes beats have been smaller recently but attributes this to NVDA management having greater visibility into future quarters due to massive backlog of orders - meaning they can offer better guidance which analysts use to set estimates. This suggests consensus estimates may already be 'front-loaded' with management optimism. POSITIONING GUIDANCE: Steven has no NVDA position. With consensus $264 target (45% upside), UBS raising to $245, and Citibank at $270, analyst alignment is bullish. Feb 25 earnings catalyst imminent. Options: (1) 50% position before earnings if high conviction on Q4/Q1 guidance beats, (2) Wait for post-earnings dip (historically 55% odds of decline week-of despite beats), (3) Full position on sub-$175 pullback. Catalyst: Earnings Feb 25, GTC conference mid-March. Risk: High expectations with 90.9% historical beat rate - limited margin for error.",
+      "impact": "bullish",
+      "tickers": ["NVDA"],
+      "riskFactors": [
+        "High expectations with 90.9% beat rate - limited margin for error",
+        "Stock fell 6 of past 11 earnings weeks despite beats - sell-the-news pattern",
+        "Consensus estimates may already reflect optimistic guidance from management",
+        "Trade war / China chip restrictions remain overhang"
+      ],
+      "confidence": "high",
+      "priceTarget": "$264.20 (consensus), $245 (UBS), $270 (Citibank)",
+      "currentPrice": "$182",
+      "impliedUpside": "45% (consensus), 48% (UBS), 48% (Citibank)",
+      "catalystDate": "2026-02-25",
+      "catalyst": "Q4 FY2026 Earnings - 5 days away, UBS raises PT to $245, Citibank maintains $270 Buy"
+    },
+    {
       "id": "intel-062",
       "date": "2026-02-17T20:17:00Z",
       "topic": "NVDA Citigroup $270 Price Target (50% Upside): Q4 $67B Beat Expected, Q1 $73B Guidance Ahead of Consensus",
