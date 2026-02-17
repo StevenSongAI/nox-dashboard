@@ -21,8 +21,8 @@ pool.on('error', (err) => {
   process.exit(1);
 });
 
-// RAILWAY FIX: Retry connection with exponential backoff
-async function testConnectionWithRetry(maxRetries = 10, baseDelay = 2000) {
+// RAILWAY FIX: Aggressive retry connection for Railway's 60s healthcheck window
+async function testConnectionWithRetry(maxRetries = 30, baseDelay = 500) {
   for (let attempt = 1; attempt <= maxRetries; attempt++) {
     try {
       const client = await pool.connect();
@@ -30,12 +30,12 @@ async function testConnectionWithRetry(maxRetries = 10, baseDelay = 2000) {
       client.release();
       return true;
     } catch (err) {
-      const delay = baseDelay * Math.pow(1.5, attempt - 1);
+      // Fixed 500ms delay - no exponential backoff, just rapid retry
       console.error(`Database connection attempt ${attempt}/${maxRetries} failed:`, err.message);
       
       if (attempt < maxRetries) {
-        console.log(`Retrying in ${Math.round(delay)}ms...`);
-        await new Promise(resolve => setTimeout(resolve, delay));
+        console.log(`Retrying in ${baseDelay}ms...`);
+        await new Promise(resolve => setTimeout(resolve, baseDelay));
       } else {
         console.error('Max retries reached. Could not connect to database.');
         throw err;

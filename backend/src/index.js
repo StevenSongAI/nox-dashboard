@@ -4,8 +4,8 @@ const logger = require('./utils/logger');
 const { initializePool, checkDatabaseHealth } = require('./config/database');
 
 const PORT = process.env.PORT || 3001;
-const MAX_RETRIES = 30;
-const RETRY_DELAY = 3000; // 3 seconds
+const MAX_RETRIES = 60; // 60 retries x 500ms = 30 seconds max
+const RETRY_DELAY = 500; // 500ms between retries
 
 // Initialize database and start server with retry logic
 async function startServer() {
