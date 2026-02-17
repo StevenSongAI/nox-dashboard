@@ -181,6 +181,26 @@
   ],
   "intelligence": [
     {
+      "id": "intel-055",
+      "date": "2026-02-17T09:16:00Z",
+      "topic": "APP Fresh Price Target Analysis: 18 Analysts Strong Buy Consensus, $734 Target = 90% Upside",
+      "source": "StockAnalysis.com / TipRanks / Zacks / Market Data",
+      "content": "Fresh APP intelligence (Feb 17, 4:16 AM): STRONG BUY CONSENSUS INTACT. Multiple analyst aggregators confirm bullish outlook despite recent price weakness. StockAnalysis.com: 18 analysts rate APP 'Strong Buy' with average price target $734.39 = 90.57% upside from current ~$391 levels. TipRanks: 19 Wall Street analysts averaging $678.50 target (high $775, low $500). Zacks short-term view: $398.58 average (range $180-$545) reflecting near-term uncertainty. KEY INSIGHT: Wide target dispersion ($500-$775) reflects debate on SaaSpocalypse severity vs AI advertising growth. Bull case ($775): AXON 2.0 dominates AI ad mediation, CloudX threat overblown, margins sustain 80%+. Bear case ($180): Meta/CloudX disintermediate mediation layer, growth decelerates to 20%. Most likely scenario ($650-734 consensus): Temporary competitive fears overdone, institutional accumulation signals smart money confidence. Company fundamentals remain exceptional - $1.66B quarterly revenue (+66% YoY), 84% EBITDA margins, $3.95B annual FCF. Positioning guidance: At $391 vs $380 target, Steven faces entry decision. Options: (1) Wait for sub-$380 pullback to $350-370 range for full position, (2) Take 25-50% position now ($391) and scale in on weakness, (3) Full position now if conviction on $650+ target outweighs near-term volatility. Risk: Stock in confirmed downtrend - momentum suggests possible $350 test before recovery. Catalyst: Q1 2026 earnings in April will clarify competitive dynamics.",
+      "impact": "bullish",
+      "tickers": ["APP"],
+      "riskFactors": [
+        "Wide analyst target dispersion ($180-$775) reflects fundamental uncertainty on competitive threats",
+        "Stock in confirmed downtrend - momentum suggests further downside possible",
+        "Q1 2026 earnings in April critical - guidance miss could trigger 20%+ decline",
+        "SaaSpocalypse narrative may persist creating multiple compression pressure"
+      ],
+      "confidence": "medium-high",
+      "priceTarget": "$734 (StockAnalysis avg), $679 (TipRanks avg), $667 (consensus)",
+      "currentPrice": "$391",
+      "impliedUpside": "71-90%",
+      "catalystDate": "Q1 2026 earnings April 2026"
+    },
+    {
       "id": "intel-054",
       "date": "2026-02-17T08:16:00Z",
       "topic": "APP Analyst Downgrades: Wells Fargo $735→$543, BTIG $771→$640, Weiss to Hold - Mixed Signals",
