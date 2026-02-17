@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-17T12:47:00-05:00",
+  "lastUpdated": "2026-02-17T15:41:00-05:00",
   "notes": [
     {
       "id": "note-001",
@@ -208,7 +208,7 @@
       "id": "note-016",
       "category": "YouTube Strategy",
       "title": "I Got a Pet Creature Format: Additional Viral Examples Discovered",
-      "content": "Heartbeat research (Feb 17, 2026): Discovered 3 additional 'I Got a Pet Creature' format videos supporting the content brief created yesterday. NEW FINDINGS: (1) 'I Got a Pet Dinosaur' (youtube.com/watch?v=3421fe6JlYY) - Published March 15, 2025. Features a prehistoric-looking pet with tank setup and care guide. Format: introduce exotic pet, show habitat setup, demonstrate care routine. (2) 'I Got a Pet Dragon...' (youtube.com/watch?v=FCVuWcU475c) - Published April 20, 2025. Features red-eyed crocodile skink (dragon-like lizard). Format hook: 'But will it be a good pet?' creates curiosity gap. (3) 'I Got A PET Dinosaur…' (youtube.com/watch?v=A7C_jx41m9E) - Published April 11, 2025. Similar dinosaur pet concept. PATTERN ANALYSIS: All 3 videos published within 5 weeks (March-April 2025), suggesting this format is currently trending. Common elements: (a) Title formula 'I Got a Pet [Creature]' - personal, discovery-oriented, (b) Real exotic pets positioned as fantasy creatures (dinosaurs, dragons), (c) Setup/care content provides educational value, (d) 3-8 minute runtime range. FORMAT VIABILITY FOR STEVENSONGIRL: High. Unlike the AI-generated creature simulations (which require video generation tools), these use real exotic pets. Alternative angle for stevensongirl: 'I Got a Pet [Minecraft Creature]' - use AI video to show acquiring a virtual pet in Minecraft, then blend with real-world pet care parallels. Could also do 'I Got a Pet Dinosaur in Minecraft' using mob mods. Production estimate: 2-4 hours using screen capture + AI-enhanced segments. Cost: $0-20 (no paid AI video needed if using real Minecraft footage). Sources: YouTube direct URLs (view counts need manual verification via browser).",
+      "content": "Heartbeat research (Feb 17, 2026): Discovered 3 additional 'I Got a Pet Creature' format videos supporting the content brief created yesterday. NEW FINDINGS: (1) 'I Got a Pet Dinosaur' (youtube.com/watch?v=3421fe6JlYY) - Published March 15, 2025. Features a prehistoric-looking pet with tank setup and care guide. Format: introduce exotic pet, show habitat setup, demonstrate care routine. (2) 'I Got a Pet Dragon...' (youtube.com/watch?v=FCVuWcU475c) - Published April 20, 2025. Features red-eyed crocodile skink (dragon-like lizard). Format hook: 'But will it be a good pet?' creates curiosity gap. (3) 'I Got A PET Dinosaur\u2026' (youtube.com/watch?v=A7C_jx41m9E) - Published April 11, 2025. Similar dinosaur pet concept. PATTERN ANALYSIS: All 3 videos published within 5 weeks (March-April 2025), suggesting this format is currently trending. Common elements: (a) Title formula 'I Got a Pet [Creature]' - personal, discovery-oriented, (b) Real exotic pets positioned as fantasy creatures (dinosaurs, dragons), (c) Setup/care content provides educational value, (d) 3-8 minute runtime range. FORMAT VIABILITY FOR STEVENSONGIRL: High. Unlike the AI-generated creature simulations (which require video generation tools), these use real exotic pets. Alternative angle for stevensongirl: 'I Got a Pet [Minecraft Creature]' - use AI video to show acquiring a virtual pet in Minecraft, then blend with real-world pet care parallels. Could also do 'I Got a Pet Dinosaur in Minecraft' using mob mods. Production estimate: 2-4 hours using screen capture + AI-enhanced segments. Cost: $0-20 (no paid AI video needed if using real Minecraft footage). Sources: YouTube direct URLs (view counts need manual verification via browser).",
       "source": "web_research_2026-02-17",
       "tags": [
         "youtube",
@@ -236,6 +236,25 @@
         "hyperscalers"
       ],
       "addedAt": "2026-02-17T18:07:52Z"
+    },
+    {
+      "id": "note-018",
+      "category": "AI Infrastructure",
+      "title": "Luma AI $900M Series C: Saudi Arabia Compute Shift and Geopolitical AI Distribution",
+      "content": "Fresh intelligence (Feb 17, 2026): Luma AI (video generation startup) announced major strategic shift - moving compute infrastructure to Saudi Arabia with access to 35,000 Nvidia Blackwell chips. This represents a significant geopolitical realignment in AI infrastructure. KEY DETAILS: (1) $900 MILLION SERIES C - Led by HUMAIN (Saudi PIF-backed AI company) and partners, announced Nov 2025. This is one of the largest AI video generation funding rounds. (2) 2 GIGAWATT AI SUPERCLUSTER - Luma AI will become anchor tenant in Saudi Arabia's planned AI infrastructure, giving them massive compute capacity for training world models. (3) 35,000 BLACKWELL CHIPS - HUMAIN secured US approval to purchase 35,000 Nvidia Blackwell chips from Nvidia, announced during Crown Prince Mohammed bin Salman's visit to President Trump. (4) FIRST ARABIC WORLD MODEL - Luma is partnering to build the world's first Arabic-native world model, trained on Middle Eastern cultural content and Arabic language. GEOPOLITICAL IMPLICATIONS: This signals a broader trend of compute becoming geopolitically distributed. As US export controls tighten on AI chips to China, alternative hubs are emerging. Saudi Arabia is positioning itself as a neutral ground with access to US chips (unlike China) but willingness to host controversial AI companies. For AI startups facing US regulatory uncertainty, Saudi offers: (a) Access to advanced chips (Blackwell), (b) Massive capital (PIF has $925B AUM), (c) Less regulatory friction than US/EU. LUMA AI STRATEGIC POSITION: With this funding and compute access, Luma becomes a credible challenger to Runway, Pika, and Chinese video AI tools. Their 'Dream Machine' tool already has traction. The Arabic world model angle gives them differentiation in an underserved market (400M+ Arabic speakers). COMPETITIVE LANDSCAPE IMPACT: Video AI is becoming a geopolitically fragmented market: (1) US tools (Runway, Pika, OpenAI Sora) - facing regulatory pressure on training data, (2) Chinese tools (Kling, Seedance) - facing export controls and platform bans, (3) Saudi-hosted tools (Luma) - emerging third option with access to Western chips but fewer content restrictions. INVESTMENT IMPLICATIONS: If Luma AI eventually goes public or gets acquired, this Saudi compute deal gives them durable competitive advantage (chip access others can't get). For NVDA: Another 35,000 Blackwell chips sold = +$700M+ revenue (assuming $20K/chip). Saudi Arabia emerging as major AI chip buyer alongside hyperscalers. SOURCES: Techstartups.com (Feb 17, 2026), PRNewswire (Nov 19, 2025), Euronews (Feb 6, 2026).",
+      "source": "web_research_2026-02-17",
+      "tags": [
+        "AI-infrastructure",
+        "Luma-AI",
+        "Saudi-Arabia",
+        "geopolitics",
+        "compute",
+        "Blackwell",
+        "video-AI",
+        "investment",
+        "NVDA"
+      ],
+      "addedAt": "2026-02-17T20:41:00Z"
     }
   ]
 }
