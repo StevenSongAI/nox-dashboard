@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-17T20:46:00-05:00",
+  "lastUpdated": "2026-02-17T16:48:00-05:00",
   "notes": [
     {
       "id": "note-001",
@@ -272,6 +272,22 @@
       ],
       "confidence": "high",
       "dateAdded": "2026-02-17T20:46:00Z"
+    },
+    {
+      "id": "note-020",
+      "category": "YouTube Strategy",
+      "title": "YouTube AI Creation Tools 2026: Auto-dubbing Expansion",
+      "content": "YouTube CEO announced AI creation tools expansion for 2026. Key updates: (1) Auto-dubbing now available to all YouTube Partner Program creators, (2) 6 million daily viewers now watch at least 10 minutes of auto-dubbed content, (3) In-app shopping integration coming. Implications for stevensongirl: Auto-dubbing could enable multi-language content without additional production cost. 6M daily viewers engaging with dubbed content suggests audience acceptance. Opportunity to test auto-dubbed versions of popular videos for international markets (Spanish, Portuguese, Hindi). No additional AI video generation cost - YouTube provides this natively. Risk: Auto-dubbed content may have lower engagement than native-language content. Recommendation: Test auto-dubbing on 2-3 top-performing videos, compare retention metrics vs original English versions.",
+      "source": "web_research_2026-02-17",
+      "tags": [
+        "youtube",
+        "ai-tools",
+        "auto-dubbing",
+        "stevensongirl",
+        "content-strategy",
+        "international"
+      ],
+      "addedAt": "2026-02-17T21:48:00Z"
     }
   ]
 }
