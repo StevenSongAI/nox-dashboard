@@ -181,6 +181,27 @@
   ],
   "intelligence": [
     {
+      "id": "intel-064",
+      "date": "2026-02-17T22:16:00Z",
+      "topic": "NVDA Wedbush $350 Price Target (+91% Upside): Dan Ives 'Outperform' - Highest Street Target Yet",
+      "source": "Wedbush Securities / Dan Ives / MarketBeat / TipRanks / Motley Fool (Feb 17, 2026)",
+      "content": "Fresh NVDA pre-earnings intelligence (Feb 17, 5:16 PM ET): WEDBUSH UPGRADE - Analyst Dan Ives (top-ranked tech analyst) reiterated 'Outperform' rating with $350 price target, calling 2026 the year NVDA 'firmly plants its AI flag.' This is the HIGHEST price target on the Street = 91% upside from current $182. STREET CONSENSUS: $260.38 average target (42% upside), 37 Buy / 1 Hold / 1 Sell ratings = Strong Buy. Previous targets: Citibank $270, UBS $245. Wedbush $350 is 35% above consensus. Q4 EARNINGS SETUP (Feb 25, 4 trading days): Wall Street expects $65.58B revenue (+67% YoY), $1.52 EPS (+71% YoY). Goldman Sachs predicts $67.5B = $2B+ beat. Q1 FY2027 guidance critical - consensus $70.8B (+61%). BLACKWELL DEMAND 'INSANE': Jensen Huang at CES 2026 described AI computing demand as 'insane' on presentation slides. November interview called Blackwell platform demand 'off the charts.' Production scaling to meet massive backlog. HYPERSCALER CAPEX SURGE: Microsoft, Amazon, Alphabet, Meta announced further increases to 2026 capital expenditures, majority directed to AI data centers = direct NVDA revenue driver. Global AI investment projected $2.52T in 2026 (+44% YoY). EARNINGS TRACK RECORD: 90.9% beat rate (20 of 22 quarters). However, stock fell 6 of past 11 earnings weeks despite beats (sell-the-news pattern). POSITIONING GUIDANCE: Steven has no NVDA position. With Feb 25 earnings 4 days away and Wedbush $350 target (+91% upside), entry decision critical. OPTIONS: (1) 50% position before earnings if high conviction on Q4/Q1 guidance beats - Wedbush/Goldman predict $67B+ vs $65.6B consensus, (2) Wait for post-earnings dip (historically 55% odds of decline week-of), (3) Full position on sub-$175 pullback. CATALYSTS: Earnings Feb 25, GTC conference mid-March (Rubin chip roadmap). RISK: High expectations with 90.9% beat rate - limited margin for error. Wedbush $350 target depends on flawless execution through 2026-2027.",
+      "impact": "bullish",
+      "tickers": ["NVDA"],
+      "riskFactors": [
+        "Wedbush $350 target is 35% above consensus - outlier prediction with higher risk of disappointment",
+        "Stock fell 6 of past 11 earnings weeks despite beats - sell-the-news pattern",
+        "High expectations with 90.9% beat rate - limited margin for error",
+        "Trade war / China chip restrictions remain overhang"
+      ],
+      "confidence": "high",
+      "priceTarget": "$350 (Wedbush), $264.20 (consensus), $270 (Citibank), $245 (UBS)",
+      "currentPrice": "$182",
+      "impliedUpside": "91% (Wedbush), 45% (consensus)",
+      "catalystDate": "2026-02-25",
+      "catalyst": "Q4 FY2026 Earnings - 4 days away, Wedbush $350 target highest on Street, Dan Ives 'AI flag' thesis"
+    },
+    {
       "id": "intel-063",
       "date": "2026-02-17T21:46:00Z",
       "topic": "NVDA Feb 17 Evening Update: UBS Raises PT to $245 (+4%), Citibank Reaffirms $270 Buy, Consensus $264 = 45% Upside",
