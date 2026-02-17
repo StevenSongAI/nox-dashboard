@@ -188,6 +188,39 @@
       "tags": ["youtube", "analytics", "outliers", "research", "mrbeast"],
       "runCommand": "https://viewstats.com",
       "auditGrade": 92
+    },
+    {
+      "id": "tool-018",
+      "name": "Google Veo 3",
+      "category": "Content",
+      "description": "Google's AI video generator with native audio generation. Creates clips with synchronized sound effects and background audio. Strong motion quality and physics simulation.",
+      "status": "active",
+      "lastUsed": "2026-02-17T09:45:00Z",
+      "tags": ["ai-video", "generation", "audio", "google", "sound-effects"],
+      "runCommand": "https://deepmind.google/technologies/veo/veo-3/",
+      "auditGrade": 89
+    },
+    {
+      "id": "tool-019",
+      "name": "OpenAI Sora 2",
+      "category": "Content",
+      "description": "OpenAI's latest video generation model with hyperreal motion and native audio. New dedicated app for video creation with improved physics and cinematic quality.",
+      "status": "active",
+      "lastUsed": "2026-02-17T09:45:00Z",
+      "tags": ["ai-video", "generation", "audio", "openai", "hyperreal"],
+      "runCommand": "https://sora.com",
+      "auditGrade": 91
+    },
+    {
+      "id": "tool-020",
+      "name": "Runway Gen-4",
+      "category": "Content",
+      "description": "Runway's newest video generation model with unprecedented accuracy in motion and scene consistency. Enhanced character consistency and camera controls for professional workflows.",
+      "status": "active",
+      "lastUsed": "2026-02-17T09:45:00Z",
+      "tags": ["ai-video", "generation", "runway", "motion", "professional"],
+      "runCommand": "https://runwayml.com",
+      "auditGrade": 90
     }
   ],
   "categories": [
@@ -197,5 +230,5 @@
     "Analysis",
     "Automation"
   ],
-  "lastUpdated": "2026-02-17T02:46:00Z"
+  "lastUpdated": "2026-02-17T09:47:00Z"
 }

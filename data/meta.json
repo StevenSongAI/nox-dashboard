@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-02-17T09:16:00Z",
+  "lastUpdated": "2026-02-17T09:47:00Z",
   "updatedBy": "cron:8734b58d-e35c-4224-b71f-bebed41472c0",
   "version": "1.0.02170217",
-  "cacheBust": "20260217T0916",
-  "dataVersion": "2026.02.17.15",
+  "cacheBust": "20260217T0947",
+  "dataVersion": "2026.02.17.16",
   "youtubeUpdated": "2026-02-17T04:20:00Z",
   "investmentsUpdated": "2026-02-17T09:16:00Z",
   "researchUpdated": "2026-02-17T08:50:00Z",
   "newBusinessUpdated": "2026-02-17T04:46:00Z",
-  "toolsUpdated": "2026-02-17T02:46:00Z",
+  "toolsUpdated": "2026-02-17T09:47:00Z",
   "workTrackerUpdated": "2026-02-15T00:17:00Z",
   "minecraftArtistsUpdated": "2026-02-15T19:16:00Z",
   "investments": {
@@ -22,7 +22,7 @@
     "workTracker": "2026-02-15 - pagination + deduplication live",
     "minecraftArtists": "2026-02-15 - 7 artists",
     "youtube": "2026-02-17 - 143 outliers, 3 content briefs (+ 'I Got a Pet Creature' format)",
-    "tools": "2026-02-17 - 17 tools (+ Seedance 2.0, Kling 3.0, ViewStats Pro)"
+    "tools": "2026-02-17 - 20 tools (+ Google Veo 3, OpenAI Sora 2, Runway Gen-4)"
   },
   "research": {
     "lastUpdated": "2026-02-17T08:50:00Z",
