@@ -1,24 +1,24 @@
 {
-  "lastUpdated": "2026-02-17T12:20:00Z",
+  "lastUpdated": "2026-02-17T13:16:00Z",
   "updatedBy": "cron:8734b58d-e35c-4224-b71f-bebed41472c0",
   "version": "1.0.02170217",
-  "cacheBust": "20260217T1220",
-  "dataVersion": "2026.02.17.19",
+  "cacheBust": "20260217T1316",
+  "dataVersion": "2026.02.17.20",
   "youtubeUpdated": "2026-02-17T04:20:00Z",
-  "investmentsUpdated": "2026-02-17T11:16:00Z",
+  "investmentsUpdated": "2026-02-17T13:16:00Z",
   "researchUpdated": "2026-02-17T12:47:00Z",
   "newBusinessUpdated": "2026-02-17T04:46:00Z",
   "toolsUpdated": "2026-02-17T09:47:00Z",
   "workTrackerUpdated": "2026-02-15T00:17:00Z",
   "minecraftArtistsUpdated": "2026-02-15T19:16:00Z",
   "investments": {
-    "lastUpdated": "2026-02-17T11:16:00Z",
-    "entryCount": 51
+    "lastUpdated": "2026-02-17T13:16:00Z",
+    "entryCount": 52
   },
   "dataFreshness": {
     "research": "2026-02-17 - 51 notes (+ Seedance 2.0 Hollywood copyright crisis analysis)",
     "newBusiness": "2026-02-17 - 27 opportunities (+ AI Video World Models content series)",
-    "investments": "2026-02-17 - 51 intelligence items (+ NVDA analyst consensus: 37 Buy ratings, $260 target)",
+    "investments": "2026-02-17 - 52 intelligence items (+ NVDA Nova Capital 65% upside call + Bridgewater $253M boost)",
     "workTracker": "2026-02-15 - pagination + deduplication live",
     "minecraftArtists": "2026-02-15 - 7 artists",
     "youtube": "2026-02-17 - 143 outliers, 3 content briefs (+ 'I Got a Pet Creature' format)",
