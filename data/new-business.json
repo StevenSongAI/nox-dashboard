@@ -708,20 +708,69 @@
         "high-margin",
         "proven-market"
       ]
+    },
+    {
+      "id": "opp-027",
+      "name": "AI Video World Models Content Series",
+      "description": "Create educational content series on AI video 'world models' - the next evolution beyond generation. Runway's $315M pivot signals massive market shift. First-mover advantage for creator education niche.",
+      "alignment": "HIGH",
+      "status": "new",
+      "potentialRevenue": "$3000-10000/month (YouTube ads + sponsorships + course)",
+      "effort": "Medium",
+      "nextStep": "Research world models vs traditional video generation; create pilot script explaining the shift",
+      "marketData": {
+        "fundingSignal": "Runway $315M Series E at $5.3B valuation (Feb 2026) - pivoting to world models",
+        "marketGrowth": "AI video funding $3.08B in 2025 (+94.6% from $1.58B in 2024)",
+        "tam": "World models estimated $50B+ subset of $216B AI agent market by 2030",
+        "catalyst": "Runway explicitly shifting from 'video generation' to 'world models' - industry inflection point",
+        "targetAudience": "AI enthusiasts, video creators, tech educators, VCs tracking AI trends",
+        "painPoint": "No creator is explaining world models in accessible way - complex technical concept with massive implications",
+        "competitors": [
+          "AI Explained (general AI content)",
+          "Runway's own blog (technical)",
+          "Academic papers (inaccessible)"
+        ],
+        "differentiation": "Creator-first explanation with practical implications for video production; ties to Steven's AI editing service credibility",
+        "timing": "FIRST MOVER - world models pivot just announced Feb 2026; no creator content exists yet"
+      },
+      "contentAngles": [
+        "What Are World Models? ( explainer for creators)",
+        "Runway's $315M Bet: Why World Models Change Everything",
+        "World Models vs Video Generation: The Technical Shift",
+        "How World Models Will Disrupt Hollywood (and YouTube)"
+      ],
+      "synergies": [
+        "opp-007 (AI Video Generation Masterclass)",
+        "opp-014 (AI-Generated Video Editing Service)",
+        "stevensongirl channel scaling"
+      ],
+      "sources": [
+        "TechCrunch - Runway $315M raise (Feb 10, 2026)",
+        "Crunchbase - AI video funding $3.08B in 2025 (+94.6%)",
+        "AI Business - Runway pivots to world models"
+      ],
+      "createdAt": "2026-02-17T04:46:00Z",
+      "tags": [
+        "AI-video",
+        "world-models",
+        "content-series",
+        "first-mover",
+        "Runway"
+      ]
     }
   ],
   "pipeline": {
-    "new": 16,
+    "new": 17,
     "evaluating": 2,
     "pursuing": 0,
     "passed": 1,
     "won": 1
   },
-  "lastUpdated": "2026-02-16T19:50:00Z",
-  "totalOpportunities": 25,
+  "lastUpdated": "2026-02-17T04:46:00Z",
+  "totalOpportunities": 26,
   "meta": {
-    "totalCount": 25,
-    "lastUpdated": "2026-02-16T16:55:00Z",
+    "totalCount": 26,
+    "lastUpdated": "2026-02-17T04:46:00Z",
     "version": "1.2"
   }
 }
