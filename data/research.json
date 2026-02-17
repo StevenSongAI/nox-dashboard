@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-17T02:15:00-05:00",
+  "lastUpdated": "2026-02-17T08:50:00-05:00",
   "notes": [
     {
       "id": "note-001",
@@ -7,7 +7,11 @@
       "title": "Seedance 2.0 Controversy",
       "content": "ByteDance's video AI tool launched but API availability disputed. Some claim partnership faked. Signal: Video AI space has hype but API access is bottleneck. Opportunity in reliable video generation APIs.",
       "source": "x_intel_2026-02-14",
-      "tags": ["video-ai", "bytedance", "api"]
+      "tags": [
+        "video-ai",
+        "bytedance",
+        "api"
+      ]
     },
     {
       "id": "note-002",
@@ -15,7 +19,12 @@
       "title": "Cursor vs Claude Code vs Codex Battle",
       "content": "Active debate about which AI coding tool is superior. Cursor praised for visual UI, Claude Code for terminal power, Codex for accessibility. OpenClaw drama and MCP-powered UI being discussed.",
       "source": "x_intel_2026-02-12",
-      "tags": ["ai-coding", "cursor", "claude", "codex"]
+      "tags": [
+        "ai-coding",
+        "cursor",
+        "claude",
+        "codex"
+      ]
     },
     {
       "id": "note-003",
@@ -23,7 +32,11 @@
       "title": "OpenAI Advertising Strategy",
       "content": "OpenAI wants advertisers to prompt-to-create ads, skip agencies. Asad Awan (monetization lead) discussing 'The Thinking Behind Ads in ChatGPT'. Signal: AI companies becoming media companies, competing with agencies.",
       "source": "x_intel_2026-02-12",
-      "tags": ["openai", "advertising", "strategy"]
+      "tags": [
+        "openai",
+        "advertising",
+        "strategy"
+      ]
     },
     {
       "id": "note-004",
@@ -31,7 +44,12 @@
       "title": "Viral Video Format: Niche Authority",
       "content": "Meta/TikTok algorithms obsessed with 'Niche Authority' format. Recime dominating with viral machine approach. Top winner: guy in specific niche delivering authority content. Pattern: expertise + personality + native format = viral.",
       "source": "x_intel_2026-02-14",
-      "tags": ["viral", "content-strategy", "meta", "tiktok"]
+      "tags": [
+        "viral",
+        "content-strategy",
+        "meta",
+        "tiktok"
+      ]
     },
     {
       "id": "note-005",
@@ -39,7 +57,11 @@
       "title": "Tool Exhaustion is Real",
       "content": "Multiple tweets about 'tool exhaustion' - too many tools for various tasks. Quote: 'I get exhausted using every one of them daily.' Signal: Opportunity in tool consolidation, unified workflows, or AI that manages tool switching.",
       "source": "x_intel_2026-02-14",
-      "tags": ["pain-point", "productivity", "consolidation"]
+      "tags": [
+        "pain-point",
+        "productivity",
+        "consolidation"
+      ]
     },
     {
       "id": "note-006",
@@ -47,7 +69,11 @@
       "title": "16 AI Agents Built C Compiler in 14 Days",
       "content": "Autonomous (not assisted) agent swarm built production C compiler. Signal: Phase change from AI-as-tool to AI-as-workforce. Productivity curve going vertical.",
       "source": "x_intel_2026-02-13",
-      "tags": ["ai-agents", "swarm", "breakthrough"]
+      "tags": [
+        "ai-agents",
+        "swarm",
+        "breakthrough"
+      ]
     },
     {
       "id": "note-007",
@@ -55,7 +81,11 @@
       "title": "Anthropic Super Bowl Ad",
       "content": "Anthropic buying Super Bowl ad = moment AI stopped being developer tool, became consumer brand war. Comparison to Cola Wars but product gets smarter every quarter.",
       "source": "x_intel_2026-02-14",
-      "tags": ["anthropic", "marketing", "competition"]
+      "tags": [
+        "anthropic",
+        "marketing",
+        "competition"
+      ]
     },
     {
       "id": "note-008",
@@ -63,7 +93,12 @@
       "title": "Zhipu AI GLM-5: China NVIDIA-Free",
       "content": "744B parameter model trained entirely on Huawei Ascend chips. 77.8% on SWE-bench (nearly matching Claude Opus 4.5). Signal: NVIDIA monopoly cracking, alternative chip stacks viable.",
       "source": "x_intel_2026-02-13",
-      "tags": ["china", "nvidia", "open-source", "competition"]
+      "tags": [
+        "china",
+        "nvidia",
+        "open-source",
+        "competition"
+      ]
     },
     {
       "id": "note-009",
@@ -71,7 +106,12 @@
       "title": "Faceless Channels + Viral Format = Growth",
       "content": "Creator posted viral format video 8 days ago, got 300k views on brand new channel. Database of viral formats being sold as product. Signal: Format research is productizable.",
       "source": "x_intel_2026-02-14",
-      "tags": ["youtube", "faceless", "viral", "strategy"]
+      "tags": [
+        "youtube",
+        "faceless",
+        "viral",
+        "strategy"
+      ]
     },
     {
       "id": "note-010",
@@ -79,7 +119,11 @@
       "title": "Wish List from Developers",
       "content": "Tool to turn code into story; Maltego for Termux (mobile OSINT); gradient auto-applier for Apple Notes; better RSS/bookmarking; theme-based word suggestion tool. All signal unmet needs.",
       "source": "x_intel_2026-02-14",
-      "tags": ["pain-point", "wish-list", "developer-tools"]
+      "tags": [
+        "pain-point",
+        "wish-list",
+        "developer-tools"
+      ]
     },
     {
       "id": "note-011",
@@ -87,7 +131,13 @@
       "title": "Grok API Price Disruption",
       "content": "Grok API launched at $0.20/million tokens vs competitors at higher prices. Significant price pressure on AI API market. xAI going for market share over margins. Signal: API pricing war beginning, margins compressing.",
       "source": "x_intel_2026-02-17",
-      "tags": ["xai", "grok", "pricing", "api", "competition"]
+      "tags": [
+        "xai",
+        "grok",
+        "pricing",
+        "api",
+        "competition"
+      ]
     },
     {
       "id": "note-012",
@@ -95,7 +145,28 @@
       "title": "Codex Windows Alpha Release",
       "content": "OpenAI Codex now in Windows alpha. Expanding beyond web/terminal to native Windows development. Competing directly with Cursor and Claude Code for Windows developers.",
       "source": "x_intel_2026-02-17",
-      "tags": ["openai", "codex", "windows", "ai-coding"]
+      "tags": [
+        "openai",
+        "codex",
+        "windows",
+        "ai-coding"
+      ]
+    },
+    {
+      "id": "note-013",
+      "category": "YouTube Strategy",
+      "title": "Ish Minecraft Civilization: 19M+ View 'Massively Multiplayer Reality TV' Format",
+      "content": "Discovered viral Minecraft content format from creator 'Ish' - 2.5 hour 'Civilization' videos achieving 10M, 20M, 38M views. Latest video published July 2025 has 19M+ views. Format: 1,000 players on two islands simulate civilization over multi-day event, edited into narrative 'reality TV' episodes. Key mechanics: (1) Player applications (8,000+ apply, 1,000 selected) create scarcity/community investment, (2) 'No repeat main character' rule forces fresh narratives each video, (3) Player-driven conflict emerges naturally (betrayals, wars, trials), (4) 2-year edit cycles create feature-film quality. Players describe it as 'learnable artform' - roleplay skills + social dynamics = compelling content. Next event 'Purge' themed has 60,000+ applications for 1,300 spots. Signal: Long-form Minecraft content (2+ hours) can achieve massive engagement when structured as narrative reality TV with real player drama. Format viable for stevensongirl channel: lower production complexity than Ish (no 1000-player servers needed), core elements adaptable (pet creature narratives, simulated societies, player/character arcs). Source: https://www.pushtotalk.gg/p/the-best-youtube-video-of-2025-was-filmed-in-minecraft",
+      "source": "web_research_2026-02-17",
+      "tags": [
+        "youtube",
+        "minecraft",
+        "viral-format",
+        "stevensongirl",
+        "content-strategy",
+        "long-form"
+      ],
+      "addedAt": "2026-02-17T08:50:00Z"
     }
   ]
 }

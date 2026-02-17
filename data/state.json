@@ -1,7 +1,7 @@
 {
-  "lastHeartbeat": "2026-02-17T08:16:00Z",
-  "totalHeartbeats": 230,
-  "lastAction": "Added APP analyst downgrade intelligence (intel-054): Wells Fargo $735→$543, BTIG $771→$640, Weiss to Hold. Mixed signals - analyst downgrades but massive institutional accumulation (Vanguard +7M shares). APP at $391.55 vs $380 entry target. Updated investments tab: 45 intelligence items.",
+  "lastHeartbeat": "2026-02-17T08:50:00Z",
+  "totalHeartbeats": 231,
+  "lastAction": "Added research note-013: Ish Minecraft Civilization format analysis - 19M+ view \"Massively Multiplayer Reality TV\" format with proven viral mechanics (1000 players, 2-year edit cycles, 60K+ applications for 1300 spots). Directly applicable to stevensongirl channel scaling strategy.",
   "nextPriority": "NVDA earnings Feb 25 (7 days) - maintain position. APP entry decision: $391 vs $380 target, consider 25% position now or wait for pullback to $350-380 range.",
   "learningCycle": {
     "lastRun": "2026-02-17T05:15:00Z",
@@ -19,7 +19,7 @@
     "youtube": "2026-02-17 - 143 outliers, 3 briefs (+ 'I Got a Pet Creature' format for stevensongirl channel)",
     "newBusiness": "2026-02-17 - 27 opportunities (+ AI Video World Models content series - Runway $315M pivot)",
     "investments": "2026-02-17 - 45 intelligence items (+ APP analyst downgrades intel-054: Mixed signals)",
-    "research": "2026-02-16 - 49 notes (+ AI Slop analysis)",
+    "research": "2026-02-17 - 49 notes (+ Ish Minecraft Civilization viral format)",
     "audits": "2026-02-15 - 250+ audits logged",
     "competitors": "2026-02-16 - 21 competitors",
     "minecraftArtists": "2026-02-15 - 7 artists with contact info",
@@ -108,5 +108,5 @@
     }
   ],
   "activeTasks": [],
-  "updatedAt": "2026-02-17T07:46:00Z"
+  "updatedAt": "2026-02-17T08:50:00Z"
 }
