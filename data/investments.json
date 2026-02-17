@@ -1462,6 +1462,27 @@
       "impliedUpside": "42-91%",
       "catalystDate": "2026-02-25",
       "catalyst": "Q4 FY2026 Earnings + GTC March 16-19 - Double-catalyst setup with confirmed dates"
+    },
+    {
+      "id": "intel-067",
+      "date": "2026-02-17T23:46:00Z",
+      "topic": "NVDA Feb 25 Earnings: TipRanks Strong Buy Consensus - 37 Buys, $260 Target, Dan Ives $250 PT",
+      "source": "TipRanks / MarketBeat / Dan Ives Wedbush / Seeking Alpha (Feb 17, 2026)",
+      "content": "Fresh NVDA pre-earnings intelligence (Feb 17, 6:46 PM ET): TIPRANKS CONSENSUS UPDATE - 37 Buy ratings, 1 Hold, 1 Sell = Strong Buy consensus rating. Average price target $260.38 = 42.4% upside potential from current levels. This is EXTRAORDINARY analyst alignment with 97% bullish bias. DAN IVES WEDBUSH UPDATE (5 hours ago): Top-ranked tech analyst reiterates Positive (Buy) rating with $250 price target = 38% upside. Ives maintains NVDA has 'one of the largest opportunity sets ahead' and is sticking with bullish thesis despite recent consolidation. MARKETBEAT CONSENSUS: $264.20 average target aligns with TipRanks data, confirming analyst clustering around $260+ targets. SEEKING ALPHA STRONG BUY: Article titled 'Nvidia Should Double-Beat Again (Earnings Preview)' maintains Buy rating, citing consolidation as healthy ahead of February earnings. NVDA remains a Buy with expectations for another quarter of beating both revenue and EPS estimates. EARNINGS SETUP (Feb 25, 6 days): Consensus $1.52 EPS (+71% YoY), $65.58B revenue (+67% YoY). Analyst predictions converging on $67B+ revenue = $1.5B+ beat expected by bullish analysts. Q1 FY2027 guidance consensus $70.8B (+61%). POSITIONING GUIDANCE: Steven has no NVDA position. With 37 Buy ratings, $260 consensus target (42% upside), Dan Ives $250 target (38% upside), and 6 days to earnings, entry timing is critical. OPTIONS: (1) 50% position before earnings if high conviction on $67B+ revenue beat, (2) Wait for post-earnings dip (historically 55% odds despite beats), (3) Full position on sub-$180 pullback. Catalyst: Feb 25 earnings, Q1 guidance, March 16 GTC. Risk: 90.9% historical beat rate = high expectations = limited margin for error.",
+      "impact": "bullish",
+      "tickers": ["NVDA"],
+      "riskFactors": [
+        "90.9% historical beat rate = high expectations limit margin for error",
+        "55% historical odds of stock decline during earnings week despite beats",
+        "Dan Ives $250 target is conservative vs $260+ consensus",
+        "Trade war / China chip restrictions remain overhang"
+      ],
+      "confidence": "high",
+      "priceTarget": "$260.38 (TipRanks consensus), $250 (Dan Ives), $264.20 (MarketBeat)",
+      "currentPrice": "$182",
+      "impliedUpside": "42% (consensus), 38% (Ives)",
+      "catalystDate": "2026-02-25",
+      "catalyst": "Q4 FY2026 Earnings - 37 Buy ratings, Dan Ives $250 PT, $67B+ revenue beat expected"
     }
   ],
   "synthesizedInsights": [
