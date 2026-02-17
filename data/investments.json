@@ -181,6 +181,26 @@
   ],
   "intelligence": [
     {
+      "id": "intel-053",
+      "date": "2026-02-17T07:46:00Z",
+      "topic": "NVDA Analyst Consensus Update: $259.73 Average Target = 42% Upside, Bull Case $491",
+      "source": "Fintel / MarketBeat / 247 Wall St / StockAnalysis",
+      "content": "Fresh analyst consensus update (Feb 17, 7 days to earnings): Fintel reports average one-year price target of $259.73 (range $139.38-$454.42). MarketBeat consensus: $264.20. Both converge around $260 target = 42% upside from current ~$183 levels. 247 Wall St bull case: $491 possible with $240B net income if revenue materializes and margins hold. Wall Street maintains 37 Buy ratings, 1 Hold, 1 Sell. Key insight: Multiple independent sources (Fintel, MarketBeat, UBS, Wolfe) all pointing to $260+ target post-earnings. Bull case adds 168% upside potential if AI infrastructure supercycle exceeds expectations. Positioning: Steven watching NVDA for entry. Earnings Feb 25 binary catalyst - beat could trigger run toward $220-240 range, guidance raise needed for $260+. Maintain through earnings, no new position before Feb 25 given post-earnings drop pattern (6 of last 11 earnings declined).",
+      "impact": "bullish",
+      "tickers": ["NVDA"],
+      "riskFactors": [
+        "NVDA has fallen 6 of past 11 earnings weeks despite beats",
+        "High expectations baked in - limited margin for error",
+        "$491 bull case requires flawless execution over 12+ months",
+        "Trade war / China restrictions remain overhang"
+      ],
+      "confidence": "high",
+      "priceTarget": "$259.73 (Fintel avg), $264.20 (MarketBeat), $260.38 (Wall St consensus)",
+      "currentPrice": "$183",
+      "impliedUpside": "42% base case, 168% bull case",
+      "catalystDate": "2026-02-25"
+    },
+    {
       "id": "intel-052",
       "date": "2026-02-17T06:46:00Z",
       "topic": "AppLovin (APP) Seeking Alpha Upgrade: Explosive AdTech Growth at 69% Discount - $660 Target",
