@@ -1,24 +1,24 @@
 {
-  "lastUpdated": "2026-02-17T14:47:13.382300Z",
+  "lastUpdated": "2026-02-17T20:17:00Z",
   "updatedBy": "heartbeat-agent",
   "version": "1.0.02170217",
-  "cacheBust": "20260217T1925",
-  "dataVersion": "2026.02.17.26",
+  "cacheBust": "20260217T2017",
+  "dataVersion": "2026.02.17.27",
   "youtubeUpdated": "2026-02-17T04:20:00Z",
-  "investmentsUpdated": "2026-02-17T19:25:00Z",
+  "investmentsUpdated": "2026-02-17T20:17:00Z",
   "researchUpdated": "2026-02-17T18:08:31Z",
   "newBusinessUpdated": "2026-02-17T04:46:00Z",
   "toolsUpdated": "2026-02-17T09:47:00Z",
   "workTrackerUpdated": "2026-02-15T00:17:00Z",
   "minecraftArtistsUpdated": "2026-02-15T19:16:00Z",
   "investments": {
-    "lastUpdated": "2026-02-17T19:25:00Z",
-    "entryCount": 59
+    "lastUpdated": "2026-02-17T20:17:00Z",
+    "entryCount": 60
   },
   "dataFreshness": {
     "research": "2026-02-17 - 17 notes (+ AI Datacenter Capex analysis for NVDA/APP)",
     "newBusiness": "2026-02-17 - 27 opportunities (+ AI Video World Models content series)",
-    "investments": "2026-02-17 - 59 intelligence items (+ intraday NVDA $186.12 update + Q1 guidance expectations)",
+    "investments": "2026-02-17 - 60 intelligence items (+ Citigroup $270 PT, Q4/Q1 beat projections)",
     "workTracker": "2026-02-15 - pagination + deduplication live",
     "minecraftArtists": "2026-02-15 - 7 artists",
     "youtube": "2026-02-17 - 143 outliers, 3 content briefs (+ 'I Got a Pet Creature' format)",
