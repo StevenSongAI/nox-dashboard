@@ -2,6 +2,7 @@
  * Database Configuration
  * 
  * DEFECT-004 FIX: Pool proxy properly exposes end() method
+ * RAILWAY FIX: Added connection retry logic for service startup
  */
 const { Pool } = require('pg');
 
@@ -20,14 +21,34 @@ pool.on('error', (err) => {
   process.exit(1);
 });
 
-// Test connection on startup
-pool.connect((err, client, release) => {
-  if (err) {
-    console.error('Error acquiring client', err.stack);
-  } else {
-    console.log('Database connected successfully');
-    release();
+// RAILWAY FIX: Retry connection with exponential backoff
+async function testConnectionWithRetry(maxRetries = 10, baseDelay = 2000) {
+  for (let attempt = 1; attempt <= maxRetries; attempt++) {
+    try {
+      const client = await pool.connect();
+      console.log(`Database connected successfully on attempt ${attempt}`);
+      client.release();
+      return true;
+    } catch (err) {
+      const delay = baseDelay * Math.pow(1.5, attempt - 1);
+      console.error(`Database connection attempt ${attempt}/${maxRetries} failed:`, err.message);
+      
+      if (attempt < maxRetries) {
+        console.log(`Retrying in ${Math.round(delay)}ms...`);
+        await new Promise(resolve => setTimeout(resolve, delay));
+      } else {
+        console.error('Max retries reached. Could not connect to database.');
+        throw err;
+      }
+    }
   }
+  return false;
+}
+
+// Test connection on startup with retry
+testConnectionWithRetry().catch(err => {
+  console.error('Fatal: Could not establish database connection after retries:', err.message);
+  // Don't exit here - let the application decide how to handle this
 });
 
 // DEFECT-004 FIX: Export pool directly so all methods (including end()) are accessible
