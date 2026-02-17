@@ -181,6 +181,26 @@
   ],
   "intelligence": [
     {
+      "id": "intel-050",
+      "date": "2026-02-17T05:46:00Z",
+      "topic": "NVDA Feb 25 Earnings: Three Analysts Predict .5B+ Revenue Beat - UBS Sees .5B vs .6B Consensus",
+      "source": "UBS / Wolfe Research / KeyBanc / Motley Fool / TipRanks",
+      "content": "Fresh pre-earnings intelligence (Feb 17, 8 days out): Three top analysts predict significant Q4 FY26 beat. UBS analyst Timothy Arcuri forecasts .5B revenue (vs .6B Wall Street consensus) = .5B+ surprise. Arcuri also expects Q1 FY27 revenue guidance of B vs investor estimates of -75B. Wolfe Research analyst Chris Caso lifted FY2028 EPS estimate to .50 (exceeds consensus by .50), citing pricing strength as Rubin/Rubin Ultra chips ramp production. KeyBanc analyst John Vinh emphasizes CUDA software moat as competitive advantage limiting rival threats. Valuation compelling: NVDA trades at 25x forward earnings despite 61% growth forecast - CHEAPER than Alphabet (28x) and Broadcom (34x) despite faster growth. Wall Street consensus: 37 Buy ratings, 1 Hold, 1 Sell with .38 average price target = 42.4% upside. Risk: Recent pattern shows AI stocks dropping post-earnings despite beats (AMD -17%, AMZN -5.4%). NVDA has fallen 6 of past 11 earnings in the week following report. Positioning: Maintain through earnings. Consider tactical adds below . Earnings binary outcome risk remains elevated.",
+      "impact": "bullish",
+      "tickers": [
+        "NVDA"
+      ],
+      "riskFactors": [
+        "AI stocks dropping post-earnings despite beats - AMD -17%, AMZN -5.4%",
+        "NVDA has fallen 6 of past 11 earnings in week following report",
+        "High expectations limit margin for error",
+        "Guidance miss could trigger 15-20% selloff"
+      ],
+      "confidence": "high",
+      "catalystDate": "2026-02-25",
+      "catalyst": "Q4 FY2026 Earnings - Revenue consensus .6B, UBS predicts .5B"
+    },
+    {
       "id": "intel-047",
       "date": "2026-02-17T01:20:00Z",
       "topic": "AppLovin (APP) Fresh Intelligence: Institutional Accumulation + 84% EBITDA Margins - SaaSpocalypse Overdone?",
@@ -972,6 +992,7 @@
   "lastUpdated": "2026-02-16T21:46:00Z",
   "dataSource": "Market Data",
   "meta": {
-    "lastUpdated": "2026-02-17T01:47:23.858236"
+    "lastUpdated": "2026-02-17T05:46:00Z",
+    "version": "1.0.0"
   }
 }
