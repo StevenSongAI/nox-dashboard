@@ -1,24 +1,24 @@
 {
-  "lastUpdated": "2026-02-17T07:46:00Z",
+  "lastUpdated": "2026-02-17T08:16:00Z",
   "updatedBy": "cron:8734b58d-e35c-4224-b71f-bebed41472c0",
   "version": "1.0.02170217",
-  "cacheBust": "20260217T0746",
-  "dataVersion": "2026.02.17.12",
+  "cacheBust": "20260217T0816",
+  "dataVersion": "2026.02.17.13",
   "youtubeUpdated": "2026-02-17T04:20:00Z",
-  "investmentsUpdated": "2026-02-17T06:16:00Z",
+  "investmentsUpdated": "2026-02-17T08:16:00Z",
   "researchUpdated": "2026-02-17T02:16:00Z",
   "newBusinessUpdated": "2026-02-17T04:46:00Z",
   "toolsUpdated": "2026-02-17T02:46:00Z",
   "workTrackerUpdated": "2026-02-15T00:17:00Z",
   "minecraftArtistsUpdated": "2026-02-15T19:16:00Z",
   "investments": {
-    "lastUpdated": "2026-02-17T07:46:00Z",
-    "entryCount": 44
+    "lastUpdated": "2026-02-17T08:16:00Z",
+    "entryCount": 45
   },
   "dataFreshness": {
     "research": "2026-02-17 - 48 notes (+ AI Slop phenomenon study)",
     "newBusiness": "2026-02-17 - 27 opportunities (+ AI Video World Models content series)",
-    "investments": "2026-02-17 - 44 intelligence items (+ NVDA $259.73 consensus target via intel-053: 42% upside)",
+    "investments": "2026-02-17 - 45 intelligence items (+ APP analyst downgrade intel-054: Mixed signals)",
     "workTracker": "2026-02-15 - pagination + deduplication live",
     "minecraftArtists": "2026-02-15 - 7 artists",
     "youtube": "2026-02-17 - 143 outliers, 3 content briefs (+ 'I Got a Pet Creature' format)",

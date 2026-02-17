@@ -181,6 +181,26 @@
   ],
   "intelligence": [
     {
+      "id": "intel-054",
+      "date": "2026-02-17T08:16:00Z",
+      "topic": "APP Analyst Downgrades: Wells Fargo $735→$543, BTIG $771→$640, Weiss to Hold - Mixed Signals",
+      "source": "Defense World / Stock Observer / MarketBeat / 13F Filings",
+      "content": "Fresh APP intelligence (Feb 17 pre-market): MIXED SIGNALS - Analyst downgrades vs institutional accumulation. BEARISH: (1) Wells Fargo cut target from $735 to $543 but maintains Overweight rating, (2) BTIG Research cut target from $771 to $640 but maintains Buy rating, (3) Weiss Ratings downgraded from Buy (B-) to Hold (C+). BULLISH: (1) Vanguard Group acquired 7,051,663 shares (massive institutional vote of confidence), (2) ABN Amro purchased 1,900 shares (+27.7% position increase), (3) Lazard Freres acquired new $2.5M stake, (4) Mediolanum boosted holdings 73.5%, (5) Thames Capital increased position 114.8%, (6) CIBC Asset Management raised holdings 14.8%, (7) Rakuten Securities lifted position 118%. Current price ~$391.55 (opened Monday), still above $380 entry target. 41.85% institutional ownership. Key insight: Analysts trimming targets but maintaining bullish ratings (Overweight/Buy) while institutions aggressively accumulating suggests smart money sees value at current levels. Downgrades appear to be target normalization after run-up, not thesis changes. Steven positioning: APP at $391 vs $380 target - still waiting for pullback or consider 25% position now and scale in on weakness. Risk: Momentum remains negative, could test $350 before recovery.",
+      "impact": "neutral-bullish",
+      "tickers": ["APP"],
+      "riskFactors": [
+        "Multiple analyst downgrades could signal shifting sentiment",
+        "Stock in confirmed downtrend - could test $350 support",
+        "SaaSpocalypse narrative may persist creating multiple compression",
+        "Target cuts suggest previous expectations too optimistic"
+      ],
+      "confidence": "medium",
+      "priceTarget": "$640 (BTIG), $543 (Wells Fargo), $667 (consensus)",
+      "currentPrice": "$391.55",
+      "impliedUpside": "70% (consensus)",
+      "catalystDate": "Q1 2026 earnings April 2026"
+    },
+    {
       "id": "intel-053",
       "date": "2026-02-17T07:46:00Z",
       "topic": "NVDA Analyst Consensus Update: $259.73 Average Target = 42% Upside, Bull Case $491",

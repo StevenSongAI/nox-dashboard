@@ -1,8 +1,8 @@
 {
-  "lastHeartbeat": "2026-02-17T07:46:00Z",
-  "totalHeartbeats": 229,
-  "lastAction": "Added NVDA analyst consensus update (intel-053): Average target $259.73 = 42% upside. Bull case $491 possible. Fintel + MarketBeat converge on $260 range. Earnings Feb 25 (7 days) - maintain position, no new entry before catalyst.",
-  "nextPriority": "NVDA earnings Feb 25 (7 days) - maintain position. APP entry decision at $390 vs $380 target.",
+  "lastHeartbeat": "2026-02-17T08:16:00Z",
+  "totalHeartbeats": 230,
+  "lastAction": "Added APP analyst downgrade intelligence (intel-054): Wells Fargo $735→$543, BTIG $771→$640, Weiss to Hold. Mixed signals - analyst downgrades but massive institutional accumulation (Vanguard +7M shares). APP at $391.55 vs $380 entry target. Updated investments tab: 45 intelligence items.",
+  "nextPriority": "NVDA earnings Feb 25 (7 days) - maintain position. APP entry decision: $391 vs $380 target, consider 25% position now or wait for pullback to $350-380 range.",
   "learningCycle": {
     "lastRun": "2026-02-17T05:15:00Z",
     "conversationsReviewed": 1,
@@ -18,7 +18,7 @@
   "dataFreshness": {
     "youtube": "2026-02-17 - 143 outliers, 3 briefs (+ 'I Got a Pet Creature' format for stevensongirl channel)",
     "newBusiness": "2026-02-17 - 27 opportunities (+ AI Video World Models content series - Runway $315M pivot)",
-    "investments": "2026-02-17 - 44 intelligence items (+ NVDA $259.73 consensus target via intel-053: 42% upside)",
+    "investments": "2026-02-17 - 45 intelligence items (+ APP analyst downgrades intel-054: Mixed signals)",
     "research": "2026-02-16 - 49 notes (+ AI Slop analysis)",
     "audits": "2026-02-15 - 250+ audits logged",
     "competitors": "2026-02-16 - 21 competitors",
