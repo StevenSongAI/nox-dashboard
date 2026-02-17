@@ -904,6 +904,27 @@
       "priceTarget": "$260-300",
       "currentPrice": "$183",
       "impliedUpside": "42-64%"
+    },
+    {
+      "id": "intel-049",
+      "date": "2026-02-17T05:15:00Z",
+      "topic": "APP Price Targets Raised: Scotiabank $775, Consensus $667 (81.8% Upside) - Entry Timing Update",
+      "source": "Scotiabank / BTIG / Wedbush / 247 Wall St / MarketBeat",
+      "content": "Fresh analyst activity on AppLovin (APP) - price targets raised across the board despite recent volatility: (1) SCOTIABANK RAISES TO $775: Upgraded from $750, maintaining bullish stance on AI advertising platform, (2) WEDBUSH RAISES TO $640: Increased from $465, citing 'Outperform' rating on leading mobile gaming ad position and AI-driven platform expansion into e-commerce, (3) BTIG $640: Trimmed from $771 but maintains Buy rating, (4) CONSENSUS TARGET $666.92: Wall Street average implies 81.8% upside from current levels, up from prior $651.77 consensus, (5) ANALYST SENTIMENT: 28 analysts covering, majority recommend Buy with 7 Strong Buy ratings. Key insight: Despite 'SaaSpocalypse' fears and 36% YTD decline, institutional investors and analysts remain bullish. Price target increases suggest sell-off overdone. Entry strategy update: Current $390 vs $380 target - stock holding above entry level despite volatility. If APP doesn't pull back below $380 in next 5-7 days, consider entering 50% position at current levels and averaging down on any weakness. Risk remains elevated but reward profile improving with raised targets.",
+      "impact": "bullish",
+      "tickers": [
+        "APP"
+      ],
+      "riskFactors": [
+        "Stock remains volatile - could test $350 before recovery",
+        "SaaSpocalypse narrative may persist despite fundamentals",
+        "High expectations from raised targets create execution pressure",
+        "Ad-tech sector headwinds from economic uncertainty"
+      ],
+      "confidence": "medium",
+      "priceTarget": "$667",
+      "currentPrice": "$390",
+      "impliedUpside": "81.8%"
     }
   ],
   "synthesizedInsights": [
