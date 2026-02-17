@@ -1,24 +1,24 @@
 {
-  "lastUpdated": "2026-02-17T00:50:00.000000+00:00",
+  "lastUpdated": "2026-02-17T01:20:00.000000+00:00",
   "updatedBy": "heartbeat-agent",
-  "version": "1.0.02170050",
-  "cacheBust": "20260217T0050",
-  "dataVersion": "2026.02.17.02",
+  "version": "1.0.02170120",
+  "cacheBust": "20260217T0120",
+  "dataVersion": "2026.02.17.03",
   "youtubeUpdated": "2026-02-16T17:17:58.362560",
-  "investmentsUpdated": "2026-02-17T00:50:00Z",
+  "investmentsUpdated": "2026-02-17T01:20:00Z",
   "researchUpdated": "2026-02-16T22:50:00Z",
   "newBusinessUpdated": "2026-02-16T19:50:00Z",
   "toolsUpdated": "2026-02-15T00:17:00Z",
   "workTrackerUpdated": "2026-02-15T00:17:00Z",
   "minecraftArtistsUpdated": "2026-02-15T19:16:00Z",
   "investments": {
-    "lastUpdated": "2026-02-17T00:50:00Z",
-    "entryCount": 38
+    "lastUpdated": "2026-02-17T01:20:00Z",
+    "entryCount": 39
   },
   "dataFreshness": {
     "research": "2026-02-16 - 47 notes (+ Seedance voice suspension)",
     "newBusiness": "2026-02-15 - 24 opportunities",
-    "investments": "2026-02-17 - 38 intelligence items (+ NVDA Q4 preview: $2B+ beat expected)",
+    "investments": "2026-02-17 - 39 intelligence items (+ APP institutional buying: Vanguard +7M shares, 84% EBITDA margins)",
     "workTracker": "2026-02-15 - pagination + deduplication live",
     "minecraftArtists": "2026-02-15 - 7 artists",
     "youtube": "2026-02-16 - 143 outliers, 1 content brief"

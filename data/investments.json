@@ -126,10 +126,10 @@
       "name": "AppLovin",
       "currentPrice": 390.55,
       "targetEntry": 380,
-      "catalyst": "Q1 2026 earnings, AXON 2.0 AI platform expansion, Strong Buy rating",
-      "source": "StockAnalysis.com / TradingView / Market Data",
-      "whyWatching": "STRONG BUY CONFIRMED: $705 price target = 80% upside. Forward PE 24.84x cheap for 115% EPS growth. Trading at $390 (above $380 target but below $400 Buy threshold). Q4 EPS beat 9.89%. High margins: 79% EBITDA, 72% FCF. Entry on any pullback below $380.",
-      "lastUpdated": "2026-02-17T00:20:00Z"
+      "catalyst": "Q1 2026 earnings, AXON 2.0 AI platform expansion, Institutional accumulation, 84% EBITDA margins",
+      "source": "Defense World / Vanguard / Northwestern Mutual / Simply Wall St",
+      "whyWatching": "STRONG BUY: $652 target = 67% upside. Q4 EPS $3.24 beat by 10.58%. 84% EBITDA margins (record). INSTITUTIONAL BUYING: Vanguard +7M shares, Northwestern Mutual +$6.2M. 60% undervalued at current price. SaaSpocalypse fears overdone - data flywheel moat intact. Entry below $380 or accumulate now?",
+      "lastUpdated": "2026-02-17T01:20:00Z"
     }
   ],
   "trends": [
@@ -180,6 +180,25 @@
     }
   ],
   "intelligence": [
+    {
+      "id": "intel-047",
+      "date": "2026-02-17T01:20:00Z",
+      "topic": "AppLovin (APP) Fresh Intelligence: Institutional Accumulation + 84% EBITDA Margins - SaaSpocalypse Overdone?",
+      "source": "Defense World / Stock Observer / FinancialContent / Daily Political / Ticker Report",
+      "content": "Fresh APP intelligence (Feb 16 PM): (1) INSTITUTIONAL BUYING ACCELERATING: ABN Amro Investment Solutions purchased 1,900 shares, Vanguard Group acquired 7,051,663 shares, Northwestern Mutual Investment Management invested $6.20M (8,629 shares). Smart money accumulating despite 36% YTD decline. (2) Q4 2025 results CONFIRMED exceptional: $3.24 EPS vs $2.96 consensus (+10.58% beat), $1.66B revenue (+66% YoY), AXON 2.0 AI engine driving record 84% adjusted EBITDA margins - among highest in all of tech. (3) Analyst target consensus: $651.77 (67% upside from ~$390 current). UBS maintains $740 target, Goldman Sachs cut to $585, Jefferies lowered to $700 from $860. (4) 'SaaSpocalypse' narrative overdone? Article notes CloudX competitor and Meta internal tools threatening ad mediation platforms - but APP's data flywheel (Max mediation + Axon targeting) creates defensive moat. Market pricing in terminal value destruction that may not materialize. (5) Fundamentals remain bulletproof: 79% EBITDA margin, 72% FCF margin, $3.95B annual free cash flow. Stock at $390 vs fair value $989 (Simply Wall St) = 60% undervalued. Key insight: Institutional accumulation + exceptional margins suggest market has overreacted to competitive fears. Steven positioning: APP on watchlist at $380 entry target. Current price $390.55 - wait for pullback below $380 or add small position now? Risk: Momentum remains negative, could see $350 before recovery.",
+      "impact": "bullish",
+      "tickers": ["APP"],
+      "riskFactors": [
+        "SaaSpocalypse fears may persist - further multiple compression possible",
+        "Competition from CloudX and Meta internal tools real but magnitude uncertain",
+        "Stock in downtrend - catching falling knife risk",
+        "Any Q1 guidance miss could trigger additional 20% decline"
+      ],
+      "confidence": "high",
+      "priceTarget": "$651.77",
+      "currentPrice": "$390.55",
+      "impliedUpside": "67%"
+    },
     {
       "id": "intel-046",
       "date": "2026-02-17T00:50:00Z",
