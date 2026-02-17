@@ -181,6 +181,27 @@
   ],
   "intelligence": [
     {
+      "id": "intel-057",
+      "date": "2026-02-17T10:46:00Z",
+      "topic": "NVDA Feb 25 Earnings Preview (7 Days): Goldman Predicts $67.5B Revenue = $2B+ Beat, Stock at $182.78",
+      "source": "Goldman Sachs / Motley Fool / StockInvest / Wall Street Consensus",
+      "content": "Fresh NVDA pre-earnings intelligence (Feb 17, 5:46 AM ET): 7 DAYS TO EARNINGS - Feb 25 after market close. CURRENT PRICE: $182.78 (Feb 13 close). WALL STREET CONSENSUS: $65.55B revenue (+67% YoY), $1.52 EPS (+71% YoY). GOLDMAN SACHS PREDICTION: $67.5B revenue = $2B+ beat vs consensus. Key driver: Hyperscale data center demand accelerating as Meta, Google, Amazon, Microsoft ramp AI infrastructure spending. REVENUE BEAT HISTORY: NVDA has beaten revenue estimates 11 consecutive quarters. Forward guidance will be critical - Q1 FY27 estimates currently $72-75B range. VALUATION COMPELLING: Trading at 25x forward earnings despite 61% growth forecast - CHEAPER than Alphabet (28x) and Broadcom (34x) despite faster growth. ANALYST CONSENSUS TARGET: $253-260 = 42% upside from current levels. Bull case from 247 Wall St: $491 possible if AI infrastructure supercycle exceeds expectations. EARNINGS RISK PATTERN: NVDA stock has fallen 6 of past 11 earnings weeks despite delivering beats (sell-the-news dynamic). Recent AI peer drops post-earnings: AMD -17%, AMZN -5.4%. POSITIONING GUIDANCE: Steven has no NVDA position yet. OPTIONS: (1) Wait for post-earnings dip if history repeats and buy below $170, (2) Take 50% position before earnings if conviction on $2B+ beat is high, (3) Full position on any sub-$175 pullback. Catalyst: Rubin/Rubin Ultra chip ramp updates, data center pricing strength, China restrictions commentary. Risk: High expectations limit margin for error - any guidance miss could trigger 10-15% selloff.",
+      "impact": "bullish",
+      "tickers": ["NVDA"],
+      "riskFactors": [
+        "NVDA has fallen 6 of past 11 earnings weeks despite beats - sell-the-news pattern",
+        "High expectations baked in - limited margin for error on guidance",
+        "AI peer stocks dropping post-earnings - AMD -17%, AMZN -5.4%",
+        "Trade war / China chip restrictions remain overhang"
+      ],
+      "confidence": "high",
+      "priceTarget": "$253-260 (consensus), $491 (bull case)",
+      "currentPrice": "$182.78",
+      "impliedUpside": "42% base case, 168% bull case",
+      "catalystDate": "2026-02-25",
+      "catalyst": "Q4 FY2026 Earnings - Goldman predicts $67.5B vs $65.55B consensus"
+    },
+    {
       "id": "intel-056",
       "date": "2026-02-17T10:16:00Z",
       "topic": "APP 'SaaSpocalypse' Analysis: Goldman Cuts to $585 Neutral Despite Record 84% Margins - Disintermediation Fears Overdone?",
