@@ -181,6 +181,27 @@
   ],
   "intelligence": [
     {
+      "id": "intel-061",
+      "date": "2026-02-17T14:16:00Z",
+      "topic": "NVDA Q1 FY2027 Guidance Preview: $70.8B Revenue Expected (+61%), $1.65 EPS (+104%) + Post-Earnings Performance Analysis",
+      "source": "Motley Fool / Yahoo Finance / Market Data (Feb 17, 2026)",
+      "content": "Fresh NVDA earnings intelligence (Feb 17, 9:16 AM ET): Q1 FY2027 GUIDANCE EXPECTATIONS - Wall Street consensus for Q1 FY2027 (ends April 2026): $70.8B revenue (+61% YoY), $1.65 adjusted EPS (+104% YoY). This follows Q4 FY2026 expectations of $65.58B revenue (+67% YoY) and $1.52 EPS (+71% YoY). The guidance number will be critical - sometimes affects stock more than current quarter results since investors focus on future. POST-EARNINGS STOCK PERFORMANCE ANALYSIS (11 quarters since ChatGPT launched): Data shows NO correlation between earnings beat magnitude and stock price reaction. Despite NVDA beating earnings in 20 of 22 quarters (90.9% rate), stock has FALLEN in 6 of the past 11 earnings weeks. Examples: Q3 FY2026 had 3% beat but stock fell 3.2% next day. Q4 FY2025 had 5% beat but stock plunged 8.5% next day. Q1 FY2024 had 18% beat and stock soared 24.4%. The pattern is unpredictable. KEY INSIGHT FOR ENTRY TIMING: If you're a long-term investor, focus on fundamentals not short-term price action. NVDA's Blackwell demand is 'insane' per Jensen Huang, hyperscaler capex is accelerating to $650-700B in 2026, and the company has a massive backlog. Short-term traders face 55% historical probability of decline during earnings week despite beat. POSITIONING GUIDANCE: Steven has no NVDA position. With Feb 25 earnings 8 days away, decision tree: (1) Enter 50% position now at $182.81 if you believe the $2B+ revenue beat will drive rally, (2) Wait for post-earnings potential dip (historically 55% odds of decline week-of), (3) Full position on sub-$175 pullback. Q1 guidance will be the key catalyst - $70.8B consensus implies continued hypergrowth.",
+      "impact": "bullish",
+      "tickers": ["NVDA"],
+      "riskFactors": [
+        "55% historical probability of stock decline during earnings week despite beat",
+        "Q1 guidance is the key variable - miss on forward guidance could trigger selloff",
+        "$70.8B Q1 consensus is aggressive - 61% growth expected despite already massive base",
+        "Short-term price action unpredictable despite strong fundamentals"
+      ],
+      "confidence": "high",
+      "priceTarget": "$260.38 (consensus)",
+      "currentPrice": "$182.81",
+      "impliedUpside": "42%",
+      "catalystDate": "2026-02-25",
+      "catalyst": "Q4 FY2026 Earnings + Q1 FY2027 Guidance - $70.8B revenue expected"
+    },
+    {
       "id": "intel-060",
       "date": "2026-02-17T13:46:00Z",
       "topic": "NVDA Earnings Track Record: 90.9% Beat Rate (20 of 22 Quarters) + Blackwell Demand 'Insane' - Fresh Feb 17 Intelligence",
