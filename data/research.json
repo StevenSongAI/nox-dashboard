@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-17T08:50:00-05:00",
+  "lastUpdated": "2026-02-17T11:50:00-05:00",
   "notes": [
     {
       "id": "note-001",
@@ -167,6 +167,25 @@
         "long-form"
       ],
       "addedAt": "2026-02-17T08:50:00Z"
+    },
+    {
+      "id": "note-014",
+      "category": "AI Tools",
+      "title": "2025 AI Video Generator Landscape: Production-Ready Tools Comparison",
+      "content": "Fresh research on top AI video generators for 2025 content creation. Sora 2 (OpenAI): Embedded C2PA content credentials, visible watermarks, hyperreal motion with native audio. Best for cinematic quality and brand-safe content. Runway Gen-4: Unprecedented motion accuracy and scene consistency, enhanced character consistency, professional camera controls. Best for professional workflows and consistent characters. Google Veo 3: Native audio generation with synchronized sound effects, strong physics simulation, integrated with YouTube Shorts 'Fast' mode. Best for creators wanting audio sync without post-processing. Kling 3.0 (Kuaishou): 1080p resolution, 10-second clips, strong character consistency features, good motion quality. Best for character-driven narratives. Seedance 2.0 (ByteDance): 1080p output, Lip Sync for talking heads, camera motion controls. Best for social-native content with audio. Key Insight: 2025 marks shift from experimental to broadcast-quality generation. All major platforms now offer 1080p+ resolution. Native audio generation (Veo 3, Sora 2, Seedance) eliminates need for separate audio tools. Character consistency remains differentiator - Runway Gen-4 and Kling 3.0 lead here. Content creator recommendation: Use Runway Gen-4 for character-consistent narratives, Veo 3 for audio-synced clips, Sora 2 for cinematic quality. All support content credentials for platform compliance. Sources: Tom's Guide comparison, Skywork AI analysis, InVideo reality check.",
+      "source": "web_research_2026-02-17",
+      "tags": [
+        "ai-video",
+        "content-creation",
+        "tools",
+        "comparison",
+        "sora",
+        "runway",
+        "veo",
+        "kling",
+        "seedance"
+      ],
+      "addedAt": "2026-02-17T11:50:00Z"
     }
   ]
 }
