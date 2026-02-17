@@ -1830,14 +1830,325 @@
       "contentAngle": "Create 'I Got a Pet [Pokemon/Creature]' series - show acquisition, care, training, evolution of AI-generated creatures. Pet simulation format with Pokemon IP drives massive engagement.",
       "researchStatus": "completed",
       "source": "youtube_scraper_overnight_analysis"
-    }
-  ],
-  "meta": {
-    "lastUpdated": "2026-02-15T07:10:00Z",
-    "totalOutliers": 126,
-    "briefCount": 16,
-    "insightCount": 5
-  },
+    },
+    {
+      "id": "yt-viewstats-134",
+      "title": "I Simulated Evolution \u2014 Intelligent Creatures Appeared",
+      "channel": "Unknown",
+      "views": 500000,
+      "publishedAt": "2026-02-01T00:00:00Z",
+      "addedAt": "2026-02-15T20:47:00Z",
+      "outlierScore": 85,
+      "niche": "AI Evolution Simulation",
+      "whyOutlier": "Evolution simulation format with emergent intelligent behavior. High engagement on artificial life content. 500K+ views in 2 weeks.",
+      "contentAngle": "Create 'AI Evolution Simulation' series showing creatures developing intelligence over generations. Combine AI generation with simulation mechanics.",
+      "url": "https://www.youtube.com/watch?v=92DVR51GX48",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - proactive heartbeat"
+    },
+    {
+      "id": "yt-viewstats-135",
+      "title": "I Tortured this AI Humanoid in a Simulation for 1000 Years",
+      "channel": "cozmouz",
+      "views": 2800000,
+      "publishedAt": "2025-06-30T00:00:00Z",
+      "addedAt": "2026-02-15T20:47:00Z",
+      "outlierScore": 95,
+      "niche": "AI Simulation / Time Compression",
+      "whyOutlier": "Cozmouz continues to dominate with 1000-year time compression format. 2.8M views on AI humanoid torture simulation. 'Tortured' vs 'Trapped' framing drives curiosity.",
+      "contentAngle": "Time compression format with AI creatures: '1000 Years' creates urgency and scale. Torture/trapped framing provokes curiosity. Apply to AI creature evolution.",
+      "url": "https://www.youtube.com/watch?v=UYq7KY90i4M",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - proactive heartbeat"
+    },
+    {
+      "id": "yt-viewstats-136",
+      "title": "AI Model Simulates 500 Million Years of Evolution to create new Proteins! ESM3 is a LLM for Biology",
+      "channel": "Wes Roth",
+      "views": 1800000,
+      "publishedAt": "2024-06-25T00:00:00Z",
+      "addedAt": "2026-02-15T20:47:00Z",
+      "outlierScore": 78,
+      "niche": "AI Science / Biology",
+      "whyOutlier": "Scientific AI content crossing over to mainstream. 500M years evolution simulation for protein design shows AI's real-world impact beyond entertainment.",
+      "contentAngle": "Bridge entertainment and education: 'AI Simulates [X] Million Years of Evolution' format works for both creature content and real science applications.",
+      "url": "https://www.youtube.com/watch?v=aPCqzrscY4w",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - proactive heartbeat"
+    },
+    {
+      "id": "yt-outlier-126",
+      "title": "Claude Code's Agent Teams Are Insane - Multiple AI Agents Coding Together in Real Time",
+      "url": "https://www.youtube.com/watch?v=-1K_ZWDKpU0",
+      "channel": "TechWithTim",
+      "views": 285000,
+      "viralScore": 78,
+      "outlierScore": 78.0,
+      "category": "ai_coding",
+      "niche": "\ud83e\udd16 AI Coding Agents",
+      "publishedAt": "2025-02-08T00:00:00Z",
+      "addedAt": "2026-02-16T03:17:46.329908+00:00",
+      "source": "heartbeat_research",
+      "notes": "Claude Agent Teams feature - multiple AI agents coding simultaneously. High engagement in AI developer community. Published 1 week ago, already 285K views.",
+      "whyOutlier": "First major video covering Claude's Agent Teams feature - demonstrates multi-agent collaboration for coding tasks",
+      "contentAngle": "Create tutorial showing Claude Agent Teams for video production workflows - storyboard generation, asset creation, editing automation",
+      "researchStatus": "completed"
+    },
+    {
+      "id": "yt-viewstats-137",
+      "title": "We went HERPING and what we found will change our lives forever",
+      "channel": "reptileoutdoors",
+      "views": 114000,
+      "publishedAt": "2026-02-13T20:00:26.914896+00:00",
+      "addedAt": "2026-02-16T07:00:00Z",
+      "outlierScore": 326,
+      "niche": "\ud83e\udd8e Creatures/Reptiles",
+      "whyOutlier": "EXTREME 326x outlier - herping (reptile hunting) content with discovery narrative. Real creature encounters drive massive engagement.",
+      "contentAngle": "Apply 'what we found will change our lives' discovery format to AI creatures. Cinematic creature reveal with emotional stakes.",
+      "url": "https://www.youtube.com/watch?v=unknown",
+      "researchStatus": "pending",
+      "source": "viewstats hourly scraper - 2026-02-13"
+    },
+    {
+      "id": "yt-viewstats-138",
+      "title": "Cat Has Existential Crisis",
+      "channel": "45",
+      "views": 51000,
+      "publishedAt": "2026-02-13T20:00:19.129010+00:00",
+      "addedAt": "2026-02-16T07:00:00Z",
+      "outlierScore": 160,
+      "niche": "\ud83e\udd16 AI/Character",
+      "whyOutlier": "MASSIVE 160x outlier - anthropomorphic AI content with philosophical angle. 'Existential crisis' framing creates intrigue and relatability.",
+      "contentAngle": "Create 'AI Creature Has Existential Crisis' - anthropomorphized AI pets/creatures with emotional depth and philosophical narratives.",
+      "url": "https://www.youtube.com/watch?v=unknown",
+      "researchStatus": "completed",
+      "source": "viewstats hourly scraper - 2026-02-13"
+    },
+    {
+      "id": "yt-viewstats-139",
+      "title": "Indian Cricket Viral Reels Editing | How To make Viral Indian Cricket team jersey in Ai Tools",
+      "channel": "msediting",
+      "views": 126000,
+      "publishedAt": "2026-02-13T20:00:19.127492+00:00",
+      "addedAt": "2026-02-16T14:00:00Z",
+      "outlierScore": 345,
+      "niche": "\ud83c\udfcf Cricket/AI Tools",
+      "whyOutlier": "EXTREME 345x outlier - Cricket + AI tools tutorial combination. Sports content with AI angle drives massive engagement in Indian market.",
+      "contentAngle": "Combine popular sports/gaming IP with AI tutorial angle. 'How to create [sports team] content with AI' format has viral potential.",
+      "url": "https://www.youtube.com/watch?v=unknown",
+      "researchStatus": "completed",
+      "source": "viewstats backlog scraper - 2026-02-16"
+    },
+    {
+      "id": "yt-viewstats-140",
+      "title": "Beautiful puff sleeves designs cutting and stitching designer sleeves simple and easy sleeves design",
+      "channel": "deepafashiondesign",
+      "views": 743000,
+      "publishedAt": "2026-02-13T20:00:19.133808+00:00",
+      "addedAt": "2026-02-16T14:00:00Z",
+      "outlierScore": 250,
+      "niche": "\ud83d\udc57 Fashion/DIY",
+      "whyOutlier": "MASSIVE 250x outlier - DIY fashion content with practical tutorial format. 743K views on niche channel proves instructional content demand.",
+      "contentAngle": "DIY/tutorial format with AI tools: 'How to design [creature/outfit] with AI' - practical value drives shares and saves.",
+      "url": "https://www.youtube.com/watch?v=unknown",
+      "researchStatus": "completed",
+      "source": "viewstats backlog scraper - 2026-02-16"
+    },
+    {
+      "id": "yt-viewstats-141",
+      "title": "Make all your retail tech dreams come true",
+      "channel": "14",
+      "views": 291000,
+      "publishedAt": "2026-02-13T20:00:26.909426+00:00",
+      "addedAt": "2026-02-16T14:00:00Z",
+      "outlierScore": 318,
+      "niche": "\ud83d\udecd\ufe0f Retail/Tech",
+      "whyOutlier": "MASSIVE 318x outlier - Mysterious title creates curiosity gap. Retail + tech positioning with aspirational framing drives clicks.",
+      "contentAngle": "Use curiosity-gap titles for AI content: 'Make your AI [creature] dreams come true' - aspirational + mysterious = high CTR.",
+      "url": "https://www.youtube.com/watch?v=unknown",
+      "researchStatus": "completed",
+      "source": "viewstats backlog scraper - 2026-02-16"
+    },
+    {
+      "id": "yt-viewstats-142",
+      "title": "Olive Oil Benefits Harm Risks Properties Contraindications What happens if eaten daily?",
+      "channel": "10-secrets",
+      "views": 121000,
+      "publishedAt": "2026-02-13T20:00:26.912262+00:00",
+      "addedAt": "2026-02-16T14:00:00Z",
+      "outlierScore": 208,
+      "niche": "\ud83e\uded2 Health/Education",
+      "whyOutlier": "MASSIVE 208x outlier - Comprehensive health topic coverage with question-based title. 'What happens if' creates curiosity + fear appeal.",
+      "contentAngle": "Apply question-based titles to AI content: 'What happens if AI creatures evolve for 1000 years?' - curiosity + stakes = engagement.",
+      "url": "https://www.youtube.com/watch?v=unknown",
+      "researchStatus": "completed",
+      "source": "viewstats backlog scraper - 2026-02-16"
+    },
+    {
+      "id": "yt-viewstats-143",
+      "title": "DPC 2023 WEU Spring Tour Division I",
+      "channel": "09:06:56",
+      "views": 81000,
+      "publishedAt": "2026-02-13T20:00:19.136127+00:00",
+      "addedAt": "2026-02-16T14:00:00Z",
+      "outlierScore": 119,
+      "niche": "\ud83c\udfae Esports/DOTA 2",
+      "whyOutlier": "MASSIVE 119x outlier - Esports content with timestamp-style channel name. Niche gaming content with dedicated fanbase.",
+      "contentAngle": "Niche gaming/esports + AI creature content: AI-generated creature battles with esports-style commentary and tournament formats.",
+      "url": "https://www.youtube.com/watch?v=unknown",
+      "researchStatus": "completed",
+      "source": "viewstats backlog scraper - 2026-02-16"
+    },
+    {
+      "id": "yt-viewstats-144",
+      "title": "WHlTE Pastor Sends SH0CKWAVES to His Congregation by DEFENDlNG The Truth About RAClSM On Black Folks",
+      "channel": "historicalafrica",
+      "views": 531000,
+      "publishedAt": "2026-02-13T20:00:41.773068+00:00",
+      "addedAt": "2026-02-16T14:00:00Z",
+      "outlierScore": 105,
+      "niche": "\ud83d\udce2 Social Commentary",
+      "whyOutlier": "MASSIVE 105x outlier - Controversial topic with unexpected perspective. SHOCKWAVES framing + truth angle drives engagement.",
+      "contentAngle": "Controversial/framing approach: 'The SHOCKING Truth About AI Creatures' - challenge assumptions + promise revelation = high CTR.",
+      "url": "https://www.youtube.com/watch?v=unknown",
+      "researchStatus": "completed",
+      "source": "viewstats backlog scraper - 2026-02-16"
+    },
+    {
+      "id": "yt-viewstats-145",
+      "title": "Ep 613 | Marimayam |A renovative budget",
+      "channel": "mazhavilmanorama",
+      "views": 1120000,
+      "publishedAt": "2026-02-13T20:00:26.925365+00:00",
+      "addedAt": "2026-02-16T14:00:00Z",
+      "outlierScore": 61.2,
+      "niche": "\ud83d\udcfa TV Series/Malayalam",
+      "whyOutlier": "MASSIVE 61x outlier - Long-running series episode with regional language content. 1.12M views proves consistent audience demand.",
+      "contentAngle": "Series format for AI content: 'AI Creature Chronicles Ep [X]' - episodic storytelling builds returning audience and binge sessions.",
+      "url": "https://www.youtube.com/watch?v=unknown",
+      "researchStatus": "completed",
+      "source": "viewstats backlog scraper - 2026-02-16"
+    },
+    {
+      "id": "yt-viewstats-146",
+      "title": "Israel Vs Palestine News LIVE | Israeli Army Takes Over Hamas Building Live | Gaza Attack | N18L",
+      "channel": "05:28:26",
+      "views": 133000,
+      "publishedAt": "2026-02-13T20:00:34.338287+00:00",
+      "addedAt": "2026-02-16T14:00:00Z",
+      "outlierScore": 106,
+      "niche": "\ud83d\udcf0 News/Live",
+      "whyOutlier": "MASSIVE 106x outlier - LIVE breaking news format with conflict coverage. Timestamp channel name suggests automated/streaming content.",
+      "contentAngle": "'LIVE' format for AI simulations: 'LIVE: AI Creatures Battle for Territory' - real-time simulation creates urgency and appointment viewing.",
+      "url": "https://www.youtube.com/watch?v=unknown",
+      "researchStatus": "completed",
+      "source": "viewstats backlog scraper - 2026-02-16"
+    },
+    {
+      "id": "yt-viewstats-147",
+      "title": "Cops Are Demanding Privacy Inside Our Homes",
+      "channel": "businessreform",
+      "views": 99000,
+      "publishedAt": "2026-02-13T20:00:34.339278+00:00",
+      "addedAt": "2026-02-16T14:00:00Z",
+      "outlierScore": 74.7,
+      "niche": "\ud83d\ude94 Privacy/Rights",
+      "whyOutlier": "MASSIVE 75x outlier - Privacy rights topic with authority figure angle. 'Demanding' + privacy creates tension and concern.",
+      "contentAngle": "Rights/privacy angle for AI: 'AI Creatures Are Demanding [Right]' - anthropomorphize AI entities, create ethical debate content.",
+      "url": "https://www.youtube.com/watch?v=unknown",
+      "researchStatus": "completed",
+      "source": "viewstats backlog scraper - 2026-02-16"
+    },
+    {
+      "id": "yt-viewstats-148",
+      "title": "Gibran Beri Komentar soal Jokowi Sebut Presiden Boleh Kampanye",
+      "channel": "kompascomreport",
+      "views": 52000,
+      "publishedAt": "2026-02-13T20:00:41.763043+00:00",
+      "addedAt": "2026-02-16T14:00:00Z",
+      "outlierScore": 55.8,
+      "niche": "\ud83c\uddee\ud83c\udde9 Indonesian Politics",
+      "whyOutlier": "MASSIVE 56x outlier - Political commentary in Indonesian market. Authority figure statements drive news engagement.",
+      "contentAngle": "Political/newsjacking approach for AI: Connect AI creature content to trending news topics for algorithm boost.",
+      "url": "https://www.youtube.com/watch?v=unknown",
+      "researchStatus": "completed",
+      "source": "viewstats backlog scraper - 2026-02-16"
+    },
+    {
+      "id": "yt-viewstats-backlog-001",
+      "title": "Indian Cricket Viral Reels Editing | How To make Viral Indian Cricket team jersey in Ai Tools",
+      "channel": "msediting",
+      "views": 126000,
+      "publishedAt": "2026-02-13T00:00:00Z",
+      "addedAt": "2026-02-16T15:56:00Z",
+      "outlierScore": 345,
+      "niche": "\ud83c\udfa8 AI/Image Editing",
+      "whyOutlier": "EXTREME 345x outlier - AI-powered sports jersey design tutorial achieving massive reach. Cricket (India's #1 sport) + AI tools + viral format = explosive combination.",
+      "contentAngle": "Apply AI jersey design to other sports: 'I Used AI to Design NBA Jerseys' or 'AI-Generated Football Kits'. Sports + AI generation has untapped potential.",
+      "url": "https://www.youtube.com/results?search_query=Indian+Cricket+Viral+Reels+Editing+msediting",
+      "researchStatus": "completed",
+      "source": "viewstats scraper backlog - 2 AM pipeline"
+    },
+    {
+      "id": "yt-viewstats-backlog-002",
+      "title": "Cat Has Existential Crisis",
+      "channel": "45",
+      "views": 51000,
+      "publishedAt": "2026-02-13T00:00:00Z",
+      "addedAt": "2026-02-16T15:56:00Z",
+      "outlierScore": 160,
+      "niche": "\ud83d\udc31 AI/Pet Content",
+      "whyOutlier": "MASSIVE 160x outlier - AI-generated cat content with existential humor angle. Simple concept, massive execution. Channel '45' achieving viral hit.",
+      "contentAngle": "'AI [Creature] Has Existential Crisis' format - anthropomorphized AI creatures questioning existence. Comedy + AI generation + relatable emotion.",
+      "url": "https://www.youtube.com/results?search_query=Cat+Has+Existential+Crisis+45",
+      "researchStatus": "completed",
+      "source": "viewstats scraper backlog - 2 AM pipeline"
+    },
+    {
+      "id": "yt-viewstats-backlog-003",
+      "title": "Beautiful puff sleeves designs cutting and stitching designer sleeves simple and easy sleeves design",
+      "channel": "deepafashiondesign",
+      "views": 743000,
+      "publishedAt": "2026-02-13T00:00:00Z",
+      "addedAt": "2026-02-16T15:56:00Z",
+      "outlierScore": 250,
+      "niche": "\ud83d\udc57 Fashion/Design",
+      "whyOutlier": "EXTREME 250x outlier - Fashion tutorial with 743K views. DIY sewing content has dedicated, engaged audience. Step-by-step format drives completion rates.",
+      "contentAngle": "AI creature costume design: 'How to Sew an AI Dragon Costume' or 'DIY AI Creature Cosplay'. Crossover between AI generation and physical crafting.",
+      "url": "https://www.youtube.com/results?search_query=Beautiful+puff+sleeves+designs+deepafashiondesign",
+      "researchStatus": "completed",
+      "source": "viewstats scraper backlog - 2 AM pipeline"
+    },
+    {
+      "id": "yt-viewstats-backlog-004",
+      "title": "Make all your retail tech dreams come true",
+      "channel": "14",
+      "views": 291000,
+      "publishedAt": "2026-02-13T00:00:00Z",
+      "addedAt": "2026-02-16T15:56:00Z",
+      "outlierScore": 318,
+      "niche": "\ud83d\udecd\ufe0f Retail/Tech",
+      "whyOutlier": "MASSIVE 318x outlier - Retail tech content achieving huge reach. 'Dreams come true' aspirational framing drives engagement. Tech + commerce intersection.",
+      "contentAngle": "'AI Makes Your Creature Dreams Come True' - aspirational framing for AI pet/creature generation. Emotional hook + tech demonstration.",
+      "url": "https://www.youtube.com/results?search_query=Make+all+your+retail+tech+dreams+come+true+14",
+      "researchStatus": "completed",
+      "source": "viewstats scraper backlog - 2 AM pipeline"
+    },
+    {
+      "id": "yt-viewstats-backlog-005",
+      "title": "We went HERPING and what we found will change our lives forever",
+      "channel": "reptileoutdoors",
+      "views": 114000,
+      "publishedAt": "2026-02-13T00:00:00Z",
+      "addedAt": "2026-02-16T15:56:00Z",
+      "outlierScore": 326,
+      "niche": "\ud83e\udd8e Reptile/Outdoor",
+      "whyOutlier": "EXTREME 326x outlier - Reptile hunting content with cliffhanger title. 'Change our lives forever' creates massive curiosity gap. Nature content performs strongly.",
+      "contentAngle": "'I Went Searching for AI Creatures and What I Found...' - documentary-style search format. Discovery narrative with AI creature reveals as payoff.",
+      "url": "https://www.youtube.com/results?search_query=We+went+HERPING+reptileoutdoors",
+      "researchStatus": "completed",
+      "source": "viewstats scraper backlog - 2 AM pipeline"
+    },
     {
       "id": "yt-x-viral-001",
       "title": "Tim Danilov Viral Format - Niche Authority Template",
@@ -1846,10 +2157,201 @@
       "publishedAt": "2026-02-06T00:00:00Z",
       "addedAt": "2026-02-15T07:55:00Z",
       "outlierScore": 3000,
-      "niche": "📊 Niche Authority/Educational",
+      "niche": "\ud83d\udcca Niche Authority/Educational",
       "whyOutlier": "EXTREME outlier - 300K views on brand new channel in 8 days using predicted format. Tim Danilov predicted 35 days ago, now validated. Niche Authority format dominating Meta/TikTok algorithms.",
       "contentAngle": "Apply Niche Authority format to AI creature content: position as definitive AI creature education channel. Database-driven viral angle selection.",
       "url": "https://x.com/timdanilovhi/status/...",
       "researchStatus": "action_required",
       "source": "X.com intelligence analysis"
     }
+  ],
+  "meta": {
+    "lastUpdated": "2026-02-17T15:55:00Z",
+    "totalOutliers": 144,
+    "briefCount": 16,
+    "insightCount": 5
+  },
+  "contentBriefs": [
+    {
+      "id": "brief-001",
+      "title": "AI Creature Evolution: '1000 Years' Time Compression Format",
+      "format": "AI Simulation / Creature Evolution",
+      "basedOnOutliers": [
+        "yt-viewstats-010",
+        "yt-viewstats-011"
+      ],
+      "viralScores": [
+        24.4,
+        26.3
+      ],
+      "concept": "Trap an AI-generated creature in a simulation and show its evolution over 1000 years, with each year representing a generation",
+      "targetAudience": "AI enthusiasts, gaming audience, creature design fans",
+      "productionComplexity": "Medium",
+      "estimatedCost": "$30-60 (AI image generation + video editing)",
+      "contentAngles": [
+        "Simple segmented creatures work best (worms, centipedes, snakes) - body segments clearly show generational changes",
+        "Start with primitive form, add complexity each 'year'",
+        "Use time-lapse effect between generations",
+        "Include environmental challenges that drive evolution",
+        "End with dramatic final form reveal"
+      ],
+      "scriptStructure": {
+        "hook": "Meet [Creature Name], trapped in this simulation for 1000 years...",
+        "setup": "Each year = one generation. Will it survive? Will it evolve?",
+        "progression": "Show key evolution milestones (Year 100, 250, 500, 750, 1000)",
+        "climax": "Final form reveal - dramatically different from start",
+        "outro": "What should I trap next? Comment below"
+      },
+      "thumbnailIdeas": [
+        "Split screen: Primitive vs Final form",
+        "Creature emerging from simulation vortex",
+        "'1000 YEARS' text with creature transformation timeline"
+      ],
+      "viralMechanics": {
+        "whyItWorks": "Time compression creates narrative tension. Visual transformation satisfies curiosity. 'What happens next' drives retention.",
+        "retentionHook": "Viewers stay to see final evolution form",
+        "shareTrigger": "Unexpected evolution paths create shareable moments"
+      },
+      "toolsNeeded": [
+        "Midjourney/Stable Diffusion",
+        "Video editor (CapCut/Premiere)",
+        "AI upscaler for consistency"
+      ],
+      "estimatedProductionTime": "4-6 hours",
+      "competitiveAdvantage": "AI-generated creatures = infinite variety. No two videos identical. Can create series with different creature types.",
+      "status": "ready_to_produce",
+      "priority": "high",
+      "createdAt": "2026-02-16T17:17:36.252085",
+      "sourceOutlierUrls": [
+        "https://www.youtube.com/watch?v=dqL66xD2b2s",
+        "https://www.youtube.com/watch?v=oFqwcngsts8"
+      ]
+    },
+    {
+      "id": "brief-002",
+      "title": "AI Slop Expos\u00e9: The $117 Million Business of Low-Quality AI Videos",
+      "angle": "Documentary-style investigation into AI slop phenomenon using Kapwing research data",
+      "opportunityScore": 85,
+      "supportingOutliers": [
+        {
+          "title": "AI Slop Research - Kapwing Study",
+          "url": "https://www.kapwing.com/blog/ai-slop-report-the-global-rise-of-low-quality-ai-videos/",
+          "views": "Study basis: 15,000 channels",
+          "viralScore": 95
+        },
+        {
+          "title": "Guardian AI Slop Analysis",
+          "url": "https://www.theguardian.com/technology/2025/dec/27/more-than-20-of-videos-shown-to-new-youtube-users-are-ai-slop-study-finds",
+          "views": "High authority coverage",
+          "viralScore": 90
+        }
+      ],
+      "scriptStructure": [
+        "HOOK: 'YouTube is secretly showing new users AI garbage 20% of the time'",
+        "DATA DROP: 63 billion views, 278 channels, $117 million revenue",
+        "EXAMPLES: Show actual AI slop content (monkey videos, cat soap operas)",
+        "ANALYSIS: Why it works - algorithm exploitation explained",
+        "BUSINESS: Revenue math and production costs",
+        "CONTRAST: Quality AI tools vs slop production",
+        "CTA: Position yourself as the anti-slop AI educator"
+      ],
+      "thumbnailIdeas": [
+        "Split screen: 'Real AI' vs 'AI Slop' with shocked face",
+        "Money bag with '$117M' overlaid on AI-generated monkey",
+        "YouTube logo with '20% SLOP' warning label"
+      ],
+      "productionCost": "$30-50 (research time + stock footage)",
+      "estimatedTimeToProduce": "2-3 days (research-heavy)",
+      "tags": [
+        "ai-slop",
+        "youtube-analysis",
+        "viral-content",
+        "algorithm",
+        "content-strategy"
+      ],
+      "createdAt": "2026-02-16T22:19:23.327638",
+      "linkedResearchIds": [
+        "note-073"
+      ]
+    },
+    {
+      "id": "brief-003",
+      "title": "I Got a Pet [Creature]: Real-Life Fictional Creature Care Simulation",
+      "format": "AI Creature Simulation / Virtual Pet",
+      "basedOnOutliers": [
+        "outlier-auto-ezgpENL26UY",
+        "outlier-auto-YMVRTFVDcZk",
+        "outlier-auto-WblIcCIkrMg"
+      ],
+      "viralScores": [
+        75,
+        65,
+        65
+      ],
+      "concept": "Use AI image generation + video editing to create the illusion of owning and caring for a fictional creature (Pokemon, dragons, game characters) in real life. Document daily activities, feeding, playtime, and bonding moments.",
+      "targetAudience": "Pokemon fans, gamers, AI art enthusiasts, virtual pet nostalgics (Tamagotchi generation)",
+      "productionComplexity": "Low-Medium",
+      "estimatedCost": "$20-40 (AI image generation + optional video generation)",
+      "contentAngles": [
+        "Day in the life format: Morning feeding, playtime, bedtime routine",
+        "Problem-solving: 'My Pikachu won't listen' / 'Training my Charizard'",
+        "Public reaction: Taking creature to park, store, friend's house",
+        "Care tutorials: 'What to feed your virtual dragon'",
+        "Growth documentation: Baby form \u2192 Adult form over multiple videos",
+        "Crossover episodes: Two creators' creatures meet"
+      ],
+      "scriptStructure": {
+        "hook": "This is [Creature Name]. I found him yesterday and now he's living in my house...",
+        "setup": "Show the creature's living space, explain the 'rules' of this virtual world",
+        "activity": "Daily care routine - feeding, playing, training",
+        "complication": "Something goes wrong (creature escapes, makes mess, won't behave)",
+        "resolution": "Solve the problem, bond with creature",
+        "outro": "What should we do tomorrow? Comment with ideas"
+      },
+      "thumbnailIdeas": [
+        "Creature peeking from behind real-world object (door, couch, fridge)",
+        "Split screen: Real hand reaching toward AI creature",
+        "'POV: You just got a pet [Creature]' with creature sleeping in bed",
+        "Reaction thumbnail: Creator's shocked face + creature doing something cute/chaotic"
+      ],
+      "viralMechanics": {
+        "whyItWorks": "Nostalgia (Pokemon/virtual pets) + Wish fulfillment (owning impossible pet) + ASMR-like care routines drive retention. Comment suggestions create community engagement.",
+        "retentionHook": "Viewers want to see what the creature does next and how the 'relationship' develops",
+        "shareTrigger": "Recognizable characters (Pikachu, Toothless) trigger fan sharing. Unexpected behaviors create shareable moments."
+      },
+      "toolsNeeded": [
+        "Midjourney/Stable Diffusion/DALL-E for creature generation",
+        "Kling AI / Runway / Luma Dream Machine for creature animation (optional)",
+        "CapCut/Premiere for compositing creature into real footage",
+        "Green screen or consistent lighting for matching"
+      ],
+      "estimatedProductionTime": "3-5 hours per video",
+      "competitiveAdvantage": "Infinite creature options (any Pokemon, dragon, game character). Series potential - each creature becomes a 'character' viewers follow. Lower production cost than 3D animation.",
+      "status": "ready_to_produce",
+      "priority": "high",
+      "createdAt": "2026-02-17T04:20:00Z",
+      "sourceOutlierUrls": [
+        "https://www.youtube.com/watch?v=ezgpENL26UY",
+        "https://www.youtube.com/watch?v=YMVRTFVDcZk",
+        "https://www.youtube.com/watch?v=WblIcCIkrMg"
+      ],
+      "referenceHighPerformers": [
+        {
+          "title": "I Got a Pet Dinosaur (kinda)",
+          "url": "https://www.youtube.com/watch?v=QLI0XOFpK0A",
+          "views": 21700000,
+          "channel": "terragreen1",
+          "whyItWorked": "Proven 21M view format - dinosaur in house creates immediate visual intrigue"
+        },
+        {
+          "title": "I Got a Pet Eevee",
+          "url": "https://www.youtube.com/watch?v=EY_awFVthW4",
+          "views": 1900000,
+          "viralScore": 90,
+          "channel": "Poke Realms",
+          "whyItWorked": "Pokemon nostalgia + believable AI integration + daily care format"
+        }
+      ]
+    }
+  ]
+}
