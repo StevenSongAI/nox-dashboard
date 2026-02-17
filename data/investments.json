@@ -1293,7 +1293,9 @@
       "source": "Motley Fool / Yahoo Finance / TipRanks (Feb 17, 2026 2:16 PM ET)",
       "content": "FRESH AFTERNOON INTELLIGENCE (5 days to earnings): PRICE ACTION: NVDA trading at $186.12, up +1.81% (+$3.31) as of Feb 17 2:16 PM ET. Q4 FY2026 CONSENSUS: $65.58B revenue (+67% YoY), $1.52 EPS (+71% YoY) - Nvidia guided $65B. Q1 FY2027 GUIDANCE EXPECTED: Wall Street expects $70.8B revenue (+61%) and $1.65 EPS (+104%) - this forward guidance will be critical for stock reaction. EARNINGS TRACK RECORD: 20 of 22 quarters beat estimates = 90.9% beat rate. Recent beats averaged 5.2% (last 4 quarters: 8%, 5%, 4%, 3%). POST-EARNINGS STOCK PERFORMANCE: No correlation between beat size and stock move. NVDA fell 6 of 11 recent earnings weeks despite beats (sell-the-news pattern). Blackwell demand 'off the charts' and 'insane' per Jensen Huang. HYPERSCALER CAPEX: Big tech doubling AI infrastructure spend to $650-700B in 2026. WALL STREET CONSENSUS: 37 Buy ratings, 1 Hold, 1 Sell. Average price target $260.38 = 40% upside from current $186.12. ENTRY DECISION: 5 days to Feb 25 earnings. Options: (1) Enter position now at $186 if high conviction in big beat, (2) Wait for post-earnings dip (historically 55% chance of decline despite beat), (3) Enter on pullback below $180. Key catalysts: Blackwell ramp update, Q1 FY27 guidance magnitude, Vera Rubin chip roadmap.",
       "impact": "bullish",
-      "tickers": ["NVDA"],
+      "tickers": [
+        "NVDA"
+      ],
       "riskFactors": [
         "NVDA fell 6 of past 11 earnings weeks despite beats - sell-the-news pattern",
         "High expectations with 90.9% beat rate - limited margin for error",
@@ -1307,6 +1309,29 @@
       "impliedUpside": "40%",
       "catalystDate": "2026-02-25",
       "catalyst": "Q4 FY2026 Earnings + Q1 FY27 Guidance - Q1 expected $70.8B (+61%)"
+    },
+    {
+      "id": "intel-065",
+      "date": "2026-02-17T19:46:00Z",
+      "topic": "NVDA Feb 25 Earnings: Fresh After-Hours Intelligence - Price Target $264.20, Top Analysts Bullish",
+      "source": "MarketBeat / TipRanks / Investing.com / Defense World (Feb 17, 2026)",
+      "content": "FRESH FEB 17 EVENING INTELLIGENCE (5 days to earnings): PRICE TARGET UPDATE: MarketBeat shows consensus price target $264.20 (up from $260.38 prior). At current ~$186, this implies 42% upside. TOP ANALYSTS BULLISH: TipRanks reports top analysts are bullish on NVDA ahead of Feb 25 Q4 earnings. Semiconductor giant scheduled to announce Q4 FY2026 results February 25. 2026 PERFORMANCE: NVDA up 35% over past year but down nearly 2% YTD 2026 amid competition concerns - creating better entry ahead of earnings. INSTITUTIONAL SUPPORT: Parthenon LLC holds $3.48M NVDA position (reported Feb 17). General investor guides continue featuring NVDA due to long-term AI secular tailwinds. UNDervaluation SIGNAL: Investing.com analysis shows NVDA looks undervalued as analyst targets keep moving higher. Institutional buying ratio at $4.50 per $1 sold (early 2026), up from $3.50 trailing 12-month average. This buying provides solid support base on pullbacks, limiting downside risk. COMPETITION CONCERNS: Negative sentiment around big-tech capex slowing resurfacing - analysts warn spending pullback could dent AI infrastructure demand. However, hyperscaler capex guidance remains strong ($650-700B 2026). COHERE UPDATE: NVIDIA-backed Cohere beat 2025 revenue targets (reported Feb 13) - validates AI software ecosystem play. POSITIONING GUIDANCE: 5 days to earnings. Steven has no NVDA position. NVDA at ~$186 with $264 price target = 42% upside. Entry options: (1) Enter now if high conviction in earnings beat, (2) Wait for post-earnings dip (55% historical odds despite beat), (3) Enter on sub-$180 pullback. Key catalysts: Q1 FY27 guidance magnitude, Blackwell ramp update, Vera Rubin roadmap.",
+      "impact": "bullish",
+      "tickers": [
+        "NVDA"
+      ],
+      "riskFactors": [
+        "NVDA fell 6 of past 11 earnings weeks despite beats - sell-the-news pattern",
+        "Competition concerns (AMD, custom silicon) pressuring 2026 performance",
+        "Big-tech capex slowdown fears resurfacing",
+        "High expectations with 90.9% beat rate - limited margin for error"
+      ],
+      "confidence": "high",
+      "priceTarget": "$264.20 (MarketBeat consensus)",
+      "currentPrice": "$186.12",
+      "impliedUpside": "42%",
+      "catalystDate": "2026-02-25",
+      "catalyst": "Q4 FY2026 Earnings - Top analysts bullish, $264.20 PT, institutional accumulation"
     }
   ],
   "synthesizedInsights": [
