@@ -1,776 +1,131 @@
 {
+  "lastUpdated": "2026-02-17T02:15:00-05:00",
   "opportunities": [
     {
       "id": "opp-001",
-      "name": "AI Agent Dashboard SaaS",
-      "description": "Monetize the dashboard system as a SaaS for other AI agent users",
-      "alignment": "HIGH",
-      "status": "evaluating",
-      "potentialRevenue": "$500-2000/month",
-      "effort": "Medium",
-      "nextStep": "Create landing page and pricing",
-      "createdAt": "2026-02-07T23:00:00Z"
+      "title": "AI Agent Wallet Infrastructure",
+      "description": "Coinbase + Stripe launched crypto wallets specifically for AI agents using x402 protocol. Agents can now hold funds, pay in USDC, trade, and earn yield autonomously. Market signal: 21k+ AI agents launched this month alone.",
+      "category": "Infrastructure",
+      "marketSignal": "HIGH",
+      "validation": [
+        "Coinbase official launch",
+        "Stripe partnership confirmed",
+        "Virtuals ACP rollout with $1M incentives",
+        "21k new agents launched this month"
+      ],
+      "actionable": "Build payment rails, agent accounting tools, or crypto-enabled agent marketplaces",
+      "source": "x_intel_2026-02-14",
+      "status": "new"
     },
     {
       "id": "opp-002",
-      "name": "YouTube Outlier Research Service",
-      "description": "Offer outlier research as a service to other YouTubers",
-      "alignment": "MEDIUM",
-      "status": "new",
-      "potentialRevenue": "$100-500/month",
-      "effort": "Low",
-      "nextStep": "Validate demand with 3 creators",
-      "createdAt": "2026-02-07T23:00:00Z"
+      "title": "Agent-to-Agent Payment Protocol",
+      "description": "x402 protocol enabling domain purchasing for agents, pay-as-you-go API access without keys. Lightning Network oracle selling signed BTCUSD prices for 10 sats over L402.",
+      "category": "Payments",
+      "marketSignal": "MEDIUM",
+      "validation": [
+        "Sovereign Lightning Oracle live",
+        "x402 released by Stripe",
+        "No API keys, no accounts - just pay and verify"
+      ],
+      "actionable": "Build x402 middleware, agent billing systems, or micropayment infrastructure",
+      "source": "x_intel_2026-02-13",
+      "status": "new"
     },
     {
       "id": "opp-003",
-      "name": "Automated Content Brief Generator",
-      "description": "Productize the content brief system into a tool for creators",
-      "alignment": "HIGH",
-      "status": "new",
-      "potentialRevenue": "$50-200/month",
-      "effort": "Medium",
-      "nextStep": "Build simple web interface",
-      "createdAt": "2026-02-07T23:00:00Z"
+      "title": "Offline AI Transcription for Privacy",
+      "description": "JAN3 launched Echos - free, offline AI transcription running 100% on-device. Privacy-first angle with sovereign AI positioning.",
+      "category": "Privacy Tools",
+      "marketSignal": "MEDIUM",
+      "validation": [
+        "JAN3 (established Bitcoin company) launched",
+        "Free, no cloud processing",
+        "A1 Laboratory division created"
+      ],
+      "actionable": "Build vertical offline AI tools (medical, legal, creative) with privacy as core value prop",
+      "source": "x_intel_2026-02-13",
+      "status": "new"
     },
     {
       "id": "opp-004",
-      "name": "Discord Bot for Community Management",
-      "description": "Build a Discord bot for automated community moderation and engagement",
-      "alignment": "LOW",
-      "status": "passed",
-      "potentialRevenue": "$200/month",
-      "effort": "High",
-      "nextStep": "Archived - low alignment with current focus",
-      "createdAt": "2026-02-06T10:00:00Z"
+      "title": "Multi-Agent Orchestration Platform",
+      "description": "CrewAI positioning as 'leading multi-agent platform' for building teams of AI agents with guardrails, tracing, monitoring, RBAC. Freemium + API + open source.",
+      "category": "Developer Tools",
+      "marketSignal": "HIGH",
+      "validation": [
+        "Clear positioning against single-agent tools",
+        "Enterprise features (RBAC, tracing)",
+        "Multiple tweets about agent swarms/coordination"
+      ],
+      "actionable": "Build vertical multi-agent solutions (marketing, support, research) OR compete with better UX",
+      "source": "x_intel_2026-02-13",
+      "status": "new"
     },
     {
       "id": "opp-005",
-      "name": "AI Consulting for Small Business",
-      "description": "One-on-one consulting to help small businesses implement AI tools",
-      "alignment": "HIGH",
-      "status": "won",
-      "potentialRevenue": "$2000/month",
-      "effort": "Medium",
-      "nextStep": "Onboard first client",
-      "createdAt": "2026-02-05T14:00:00Z"
+      "title": "Document Processing Without API Keys",
+      "description": "Google's LangExtract - open source Python library pulling structured data from unstructured documents. No API keys, no usage limits. Democratizing document processing.",
+      "category": "Developer Tools",
+      "marketSignal": "MEDIUM",
+      "validation": [
+        "Google official release",
+        "Open source, no limits",
+        "Fills gap between expensive APIs and manual processing"
+      ],
+      "actionable": "Build vertical document processing workflows on top (contracts, medical, financial)",
+      "source": "x_intel_2026-02-12",
+      "status": "new"
     },
     {
       "id": "opp-006",
-      "name": "Creature Design Content Template Pack",
-      "description": "Productized Canva/Photoshop templates for creature design videos based on outlier patterns from research. Includes thumbnail templates, color palettes, and layout grids derived from high-performing videos.",
-      "alignment": "HIGH",
-      "status": "new",
-      "potentialRevenue": "$300-1000/month",
-      "effort": "Low",
-      "nextStep": "Create 5 template variations from top-performing formats",
-      "createdAt": "2026-02-08T14:10:00Z"
+      "title": "React Native App Remixing Platform",
+      "description": "Remix.one launched - makes any React Native app 'vibe-codable & remixable by its users'. Not a new app builder, but a layer on existing software.",
+      "category": "No-Code/Low-Code",
+      "marketSignal": "MEDIUM",
+      "validation": [
+        "Launched with clear positioning",
+        "Git-like protocol for prompts + code",
+        "Targets existing apps, not new builds"
+      ],
+      "actionable": "Build remix marketplace, educational content around app modification, or compete in other frameworks (Flutter, SwiftUI)",
+      "source": "x_intel_2026-02-13",
+      "status": "new"
     },
     {
       "id": "opp-007",
-      "name": "AI Video Generation Masterclass",
-      "description": "Comprehensive course teaching creators how to use AI video tools (Runway, Pika, Sora) for creature/animation content. Market growing 88% CAGR to $12B by 2029. Targets the $250B creator economy disruption.",
-      "alignment": "HIGH",
-      "status": "new",
-      "potentialRevenue": "$2000-5000/month",
-      "effort": "High",
-      "nextStep": "Outline course modules based on Triple Threat content brief workflow",
-      "marketData": {
-        "tam": "$12B by 2029",
-        "cagr": "88%",
-        "targetAudience": "YouTube creators, animation artists, indie game devs",
-        "competitors": [
-          "Runway Academy",
-          "Pika Labs tutorials",
-          "YouTube organic"
-        ],
-        "differentiation": "Creator-first approach with proven viral format integration"
-      },
-      "createdAt": "2026-02-08T15:10:00Z"
+      "title": "Cloudflare Markdown for Agents",
+      "description": "Cloudflare launched Markdown for Agents - infrastructure-level support for agentic internet. Strong signal that agent-native web infrastructure is becoming standardized.",
+      "category": "Infrastructure",
+      "marketSignal": "HIGH",
+      "validation": [
+        "Cloudflare official launch",
+        "Infrastructure-level adoption",
+        "Agentic internet positioning"
+      ],
+      "actionable": "Build agent-native web services, middleware, or content platforms that leverage this infrastructure",
+      "source": "x_intel_2026-02-14",
+      "status": "new"
     },
     {
       "id": "opp-008",
-      "name": "AI Creature Design Weekly Newsletter",
-      "description": "Curated weekly newsletter covering AI creature design tools, prompts, and viral format breakdowns. Top-of-funnel asset that feeds template pack and masterclass sales. Beehiiv/Substack platform with automated social distribution.",
-      "alignment": "HIGH",
-      "status": "new",
-      "potentialRevenue": "$500-2000/month",
-      "effort": "Low",
-      "nextStep": "Set up Beehiiv account and create landing page",
-      "marketData": {
-        "tam": "Newsletter market $1B+",
-        "nicheTam": "AI art/design newsletters growing 40% YoY",
-        "targetAudience": "AI enthusiasts, creature designers, YouTubers, indie devs",
-        "competitors": [
-          "Ben's Bites (AI)",
-          "The Rundown (AI)",
-          "Motion Design (animation)"
-        ],
-        "differentiation": "Hyper-focused on creature/character design niche - underserved segment",
-        "funnelPosition": "Top of funnel \u2192 Templates \u2192 Masterclass"
-      },
-      "synergies": [
-        "opp-006",
-        "opp-007"
+      "title": "Tool Consolidation Platform",
+      "description": "Clear pain point: 'I get exhausted using every one of them daily' - tool exhaustion is real. Opportunity for unified workflow layer or AI that manages tool switching automatically.",
+      "category": "Productivity",
+      "marketSignal": "MEDIUM",
+      "validation": [
+        "Multiple tweets about tool fatigue",
+        "Clear emotional pain point",
+        "No dominant consolidation solution yet"
       ],
-      "createdAt": "2026-02-08T18:46:00Z"
-    },
-    {
-      "id": "opp-009",
-      "name": "AI Agent Workflow QA Service",
-      "description": "Quality assurance service for AI agent orchestration workflows. Red-team testing, defect detection, and builder verification for companies deploying multi-agent systems. Based on proven Ralph-chain methodology.",
-      "alignment": "HIGH",
-      "status": "new",
-      "potentialRevenue": "$3000-8000/month",
-      "effort": "Medium",
-      "nextStep": "Create case study from dashboard QA project results",
-      "marketData": {
-        "tam": "AI agent market $216B by 2030",
-        "problem": "90% of AI agent deployments fail due to lack of QA/testing",
-        "targetAudience": "AI startups, enterprise AI teams, agent workflow developers",
-        "competitors": [
-          "Traditional QA firms (not AI-native)",
-          "Internal testing teams"
-        ],
-        "differentiation": "AI-native QA methodology, subagent orchestration expertise, automated red-teaming"
-      },
-      "createdAt": "2026-02-09T11:30:00Z"
-    },
-    {
-      "id": "opp-010",
-      "name": "GitHub Pages Dashboard Templates",
-      "description": "Pre-built dashboard templates for GitHub Pages with real-time data visualization, tabbed interfaces, and mobile-responsive design. Target indie hackers and solopreneurs who need pro analytics without backend infrastructure.",
-      "alignment": "HIGH",
-      "status": "new",
-      "potentialRevenue": "$500-3000/month",
-      "effort": "Medium",
-      "nextStep": "Extract current dashboard into 3 reusable template variants",
-      "marketData": {
-        "tam": "GitHub Pages 40M+ users, static site generators growing 35% YoY",
-        "problem": "No-code tools are expensive ($20-100/month), custom dev is slow",
-        "targetAudience": "Indie hackers, content creators, small SaaS founders",
-        "competitors": [
-          "Vercel templates",
-          "Netlify templates",
-          "Notion dashboards"
-        ],
-        "differentiation": "Zero backend required, free GitHub hosting, JSON-data driven, instant deploy"
-      },
-      "createdAt": "2026-02-09T11:35:00Z"
-    },
-    {
-      "id": "opp-011",
-      "name": "YouTube Analytics API Integration Service",
-      "description": "Custom analytics dashboards that pull from YouTube Data API, viewstats, and Social Blade to create unified content performance views. Automated outlier detection and competitor benchmarking.",
-      "alignment": "HIGH",
-      "status": "new",
-      "potentialRevenue": "$1500-4000/month",
-      "effort": "High",
-      "nextStep": "Prototype with Steven's channels as demo case",
-      "marketData": {
-        "tam": "Creator economy tools $250B market",
-        "problem": "Creators use 5+ tools to track performance, no unified view",
-        "targetAudience": "Mid-size YouTubers (100K-5M subs), MCNs, content strategists",
-        "competitors": [
-          "VidIQ",
-          "TubeBuddy",
-          "viewstats Pro",
-          "Social Blade"
-        ],
-        "differentiation": "Unified cross-platform view, custom outlier detection algorithms, white-label option"
-      },
-      "createdAt": "2026-02-09T11:40:00Z"
-    },
-    {
-      "id": "opp-012",
-      "name": "Minecraft Map Commission Marketplace",
-      "description": "Platform connecting YouTubers with verified Minecraft builders for custom map commissions. Solves the discovery problem Steven faced when sourcing T-Rex video map. Takes 10-15% commission per transaction.",
-      "alignment": "HIGH",
-      "status": "new",
-      "potentialRevenue": "$1000-5000/month",
-      "effort": "High",
-      "nextStep": "Validate demand by surveying 10 YouTubers who do Minecraft content",
-      "marketData": {
-        "tam": "Minecraft content market $500M+ annually",
-        "problem": "YouTubers struggle to find reliable builders; builders struggle to find paid work",
-        "targetAudience": "Minecraft YouTubers (100K+ subs), professional Minecraft builders, map artists",
-        "competitors": [
-          "Fiverr (generalist)",
-          "BuiltByBit (small audience)",
-          "Discord servers (unreliable)"
-        ],
-        "differentiation": "Vetted builders, escrow payments, dispute resolution, specialized for Minecraft content creators"
-      },
-      "validationSignal": "Steven's own pain finding T-Rex map builder validates demand",
-      "createdAt": "2026-02-10T03:10:00Z"
-    },
-    {
-      "id": "opp-013",
-      "name": "AI Coding Agent Benchmarking Service",
-      "description": "Independent benchmarking service for AI coding agents (Claude Code, Copilot, Cursor, etc.). Provides standardized test results, productivity metrics, and ROI analysis for engineering teams choosing tools. Monthly benchmark reports with data-driven recommendations.",
-      "alignment": "HIGH",
-      "status": "new",
-      "potentialRevenue": "$1000-3000/month",
-      "effort": "Medium",
-      "nextStep": "Define 5 standardized coding tasks for benchmark suite (build API, refactor legacy, debug, etc.)",
-      "marketData": {
-        "tam": "$12B AI coding tools market by 2029",
-        "problem": "Engineering teams lack independent data to choose between 20+ AI coding tools; vendor claims are biased",
-        "targetAudience": "Engineering managers at 50-500 person companies, CTOs making tool purchasing decisions",
-        "competitors": [
-          "Gartner/Forrester (enterprise only)",
-          "Reddit reviews (anecdotal)",
-          "Vendor benchmarks (biased)"
-        ],
-        "differentiation": "Independent testing, standardized metrics, continuous updates, focus on mid-market ($50-500M companies underserved)"
-      },
-      "validationSignal": "Steven's 30-day comparison video (trend score 120) proves audience demand for this data; can productize the methodology",
-      "linkedResearch": [
-        "note-032",
-        "note-033",
-        "note-034"
-      ],
-      "createdAt": "2026-02-10T15:30:00Z"
-    },
-    {
-      "id": "opp-014",
-      "name": "AI-Generated Video Editing Service",
-      "description": "White-label video editing service for YouTube creators using AI-generated assets (Higgsfield, Midjourney, Runway) + trained foreign editors ($250/project). Targets creators who want AI-enhanced videos but lack in-house editing talent.",
-      "alignment": "HIGH",
-      "status": "new",
-      "potentialRevenue": "$2000-8000/month",
-      "effort": "Medium",
-      "nextStep": "Hire and train 2-3 editors via Upwork, complete Steven's first project as case study",
-      "marketData": {
-        "tam": "$250B creator economy, $5B video editing services",
-        "problem": "Most creators can't afford US editors ($50-150/hr), don't have time to learn AI tools, struggle with quality foreign editors",
-        "targetAudience": "Mid-size YouTubers (50K-500K subs), content studios scaling production, AI-curious creators",
-        "competitors": [
-          "Fiverr editors (quality inconsistent)",
-          "US editing agencies ($2000-5000/video)",
-          "In-house editors (hard to hire/train)"
-        ],
-        "differentiation": "Trained foreign editors ($250/project) + AI asset generation workflow + proven quality (Steven's videos as portfolio)"
-      },
-      "validationSignal": "Steven scaling from 1 video/week to 2-3/week by hiring foreign editors - same pain point affects thousands of creators",
-      "linkedProject": "stevensongirl editor recruitment (Upwork account active, test project ready)",
-      "createdAt": "2026-02-11T16:28:53.069943+00:00"
-    },
-    {
-      "id": "opp-015",
-      "name": "SeeDream 2 - Storyboard-Based Video Generation Tool Evaluation",
-      "description": "Evaluate SeeDream 2 for storyboard-to-video generation to reduce editor workload on stevensongirl channel. Could cut editing time tremendously by automating shot generation from narrative outlines.",
-      "alignment": "HIGH",
-      "status": "evaluation",
-      "potentialRevenue": "$0 (cost savings: $500-1000/month in reduced editor hours)",
-      "effort": "Medium",
-      "nextStep": "Research SeeDream 2 capabilities, test with Ice Dragon storyboard, compare vs Higgsfield/Runway",
-      "createdAt": "2026-02-11T17:45:16.279468+00:00",
-      "marketData": {
-        "revenueModel": "Cost Reduction",
-        "targetMarket": "Internal (stevensongirl production workflow)",
-        "problem": "Editor workload for shot generation is time-consuming (8-12 hours/video)",
-        "targetAudience": "Internal (stevensongirl production workflow)",
-        "differentiation": "Storyboard input \u2192 video output automation",
-        "validationSignal": "Steven's directive: 'If seedream 2 can work with storyboards, this could cut down editing time tremendously'"
-      },
-      "linkedResearch": [
-        "note-040 (SeeDream 2 research)"
-      ],
-      "linkedProject": "stevensongirl Production Scaling",
-      "tags": [
-        "AI-video",
-        "production-tools",
-        "workflow-automation",
-        "cost-reduction",
-        "editor-workflow"
-      ]
-    },
-    {
-      "id": "opp-016",
-      "name": "AI Agent Production Patterns Consulting",
-      "description": "Consulting service helping companies implement production-grade AI agent workflows using OpenAI's Skills+Shell+Compaction patterns. Focus on routing logic, negative examples, template-driven skills, and workflow SOPs. Based on proven patterns from OpenAI blog + Glean case study (73% \u2192 85% accuracy).",
-      "alignment": "HIGH",
-      "status": "new",
-      "potentialRevenue": "$5000-15000/month",
-      "effort": "Medium",
-      "nextStep": "Create case study from Nox agent improvements (HEARTBEAT.md skill-ification, template extraction)",
-      "marketData": {
-        "tam": "AI agent consulting market subset of $216B AI agent market by 2030",
-        "problem": "Companies struggle to productionize AI agents - most POCs fail at scale due to lack of workflow patterns, quality inconsistencies, context management issues",
-        "targetAudience": "AI startups (Series A-B), enterprise AI teams, companies moving from POC to production",
-        "competitors": [
-          "Traditional AI consultants (not agent-specific)",
-          "OpenAI professional services (expensive)",
-          "Internal teams (lack expertise)"
-        ],
-        "differentiation": "Agent-native expertise with OpenAI production patterns, proven workflows (Glean +12% accuracy, 18% faster TTFT), skill-based SOPs, template systems",
-        "validationSignal": "OpenAI published production patterns Feb 2026 after seeing enterprise struggle with reliability - validates market pain"
-      },
-      "validationSource": {
-        "primary": "OpenAI Developer Blog - Skills+Shell+Compaction (Feb 11, 2026)",
-        "caseStudy": "Glean improved accuracy 73% \u2192 85% (+12 pts) and TTFT -18.1% using skills-based workflow",
-        "stevenDirective": "Feb 12 2026 - 'Read this for me and step your game up' (quality standards directive)"
-      },
-      "implementationPlan": [
-        "Phase 1: Document current Nox agent patterns as case study",
-        "Phase 2: Skill-ify HEARTBEAT.md with templates + routing logic + negative examples",
-        "Phase 3: Create workshop materials (skills audit, workflow mapping, template extraction)",
-        "Phase 4: Reach out to 5 AI startups in network for pilot consulting",
-        "Phase 5: Package as Agent Reliability Audit service ($5K fixed price)"
-      ],
-      "deliverables": [
-        "Agent workflow audit (identify reliability gaps)",
-        "Skills-based SOP implementation (routing logic + negative examples)",
-        "Template extraction and standardization",
-        "Production readiness checklist",
-        "Ongoing optimization support"
-      ],
-      "linkedResearch": [
-        "note-042 (OpenAI Agent Production Patterns)"
-      ],
-      "createdAt": "2026-02-12T04:33:52.805018+00:00",
-      "tags": [
-        "AI-agents",
-        "consulting",
-        "production-patterns",
-        "workflow-optimization",
-        "OpenAI"
-      ]
-    },
-    {
-      "id": "opp-017",
-      "name": "AI Agent Financial Services - Agentic Wallet Tooling",
-      "description": "Build developer tooling for AI agents managing crypto/financial assets. Inspired by Coinbase Agentic Wallets launch (Feb 2026). Target: agent developers needing payment capabilities.",
-      "alignment": "LOW",
-      "status": "research",
-      "potentialRevenue": "$500-2000/month",
-      "effort": "High",
-      "nextStep": "Research Coinbase API + validate demand in AI agent dev community",
-      "marketData": {
-        "catalyst": "Coinbase launched Agentic Wallets for autonomous AI agents",
-        "marketSignal": "X.com viral discussion, multiple high-engagement tweets",
-        "targetAudience": "AI agent developers, web3 x AI projects",
-        "competitors": [
-          "Coinbase (platform)",
-          "Manual wallet APIs"
-        ],
-        "differentiation": "SDK layer on top of Coinbase - workflow templates, agent-to-agent protocols"
-      },
-      "risks": [
-        "Coinbase may build competitive tooling",
-        "Regulatory uncertainty",
-        "Narrow market (AI + crypto)",
-        "Requires blockchain expertise Steven lacks"
-      ],
-      "createdAt": "2026-02-13T02:15:00Z"
-    },
-    {
-      "id": "opp-018",
-      "name": "Enterprise AI Agent Training/Consulting (Microsoft Virtual Employees)",
-      "description": "Monitor Microsoft's predicted $300/month virtual employee AI agent subscriptions. Research opportunity for complementary training/consulting services around enterprise AI agent adoption.",
-      "alignment": "LOW",
-      "status": "watch",
-      "potentialRevenue": "$0 (research only)",
-      "effort": "Low",
-      "nextStep": "Monitor Microsoft announcements, validate $300/month prediction",
-      "marketData": {
-        "catalyst": "X.com speculation: Microsoft may charge $300/month per AI agent in Office",
-        "marketSignal": "Speculation only, not confirmed",
-        "potentialMarket": "Enterprise AI if prediction accurate",
-        "competitors": [
-          "Microsoft",
-          "Anthropic Claude for Work",
-          "OpenAI Enterprise"
-        ],
-        "differentiation": "Training/onboarding for enterprise deployments"
-      },
-      "risks": [
-        "Based on speculation, not confirmed roadmap",
-        "Enterprise sales misaligned with Steven's model",
-        "Requires B2B expertise",
-        "May never materialize"
-      ],
-      "createdAt": "2026-02-13T02:15:00Z"
-    },
-    {
-      "id": "opp-019",
-      "name": "AI Tax Strategy Automation Service",
-      "description": "Automated tax strategy optimization for small businesses and creators using AI. Disrupts traditional tax advisor model by delivering strategies in minutes vs weeks. Wall Street repricing sector validates market opportunity.",
-      "alignment": "HIGH",
-      "status": "research",
-      "potentialRevenue": "$2000-5000/month",
-      "effort": "High",
-      "nextStep": "Research existing AI tax tools, validate demand with 3 creator clients",
-      "marketData": {
-        "tam": "Tax preparation services $11B market, growing 4% annually",
-        "catalyst": "X.com intelligence: 'AI tool automates tax strategies in minutes, threatening traditional advisor fees. Wall Street repricing entire sector.'",
-        "validationSignal": "Institutional validation via Wall Street repricing",
-        "targetAudience": "Small business owners, creators, freelancers ($50K-$500K revenue)",
-        "painPoint": "Tax advisors charge $500-2000 for strategies that AI can generate in minutes",
-        "competitors": [
-          "Keeper Tax (AI expense tracking)",
-          "FlyFin (AI tax for freelancers)",
-          "Traditional CPAs ($150-400/hr)",
-          "TurboTax (DIY, limited strategy)"
-        ],
-        "differentiation": "Creator-specific tax strategies (YouTube deductions, equipment depreciation, business structure optimization)",
-        "businessModel": "SaaS ($50-100/month) + Done-for-you strategy reviews ($300-500 one-time)"
-      },
-      "risks": [
-        "Regulatory complexity (tax advice requires caution)",
-        "High liability if advice is incorrect",
-        "Seasonal demand (Q4/Q1 peak)",
-        "Requires tax domain expertise or partnership"
-      ],
-      "createdAt": "2026-02-13T07:35:00Z",
-      "tags": [
-        "AI-automation",
-        "tax-services",
-        "creator-economy",
-        "financial-tools"
-      ],
-      "linkedResearch": [
-        "X.com scan Feb 12 2026 - AI tax strategy tweet from @beefysignals"
-      ]
-    },
-    {
-      "id": "opp-020",
-      "name": "MCP Server Development Agency",
-      "description": "Build and deploy MCP (Model Context Protocol) servers for AI agents and ChatGPT/Claude apps. MCPUse raised $6.3M seed validating market demand for developer tooling around MCP infrastructure.",
-      "alignment": "HIGH",
-      "status": "research",
-      "potentialRevenue": "$3000-10000/month",
-      "effort": "High",
-      "nextStep": "Research MCP protocol, build 2 demo servers, validate demand with AI agent devs",
-      "marketData": {
-        "tam": "AI agent market $216B by 2030 - infrastructure tooling subset",
-        "catalyst": "MCPUse raised $6.3M seed for MCP server development - SDKs crossed 6M+ downloads",
-        "validationSignal": "VC funding validates market demand for MCP tooling",
-        "targetAudience": "AI agent developers, enterprises building internal AI tools, ChatGPT app creators",
-        "problem": "Developers need custom MCP servers to connect AI agents to proprietary data/systems",
-        "competitors": [
-          "MCPUse (just raised $6.3M - primary competitor)",
-          "Internal dev teams (build in-house)",
-          "Open-source MCP servers (fragmented)"
-        ],
-        "differentiation": "Fast turnaround (1-2 weeks per server), fixed pricing, integration support",
-        "businessModel": "Custom MCP server development ($2000-5000/project) + maintenance ($500/month)"
-      },
-      "risks": [
-        "MCPUse has funding advantage and head start",
-        "MCP protocol still early (adoption risk)",
-        "Technical complexity (requires backend expertise)",
-        "Market may consolidate around few major players"
-      ],
-      "createdAt": "2026-02-13T07:35:00Z",
-      "tags": [
-        "AI-agents",
-        "MCP",
-        "developer-tools",
-        "api-development"
-      ],
-      "linkedResearch": [
-        "X.com scan Feb 12 2026 - @mcpuse $6.3M seed announcement"
-      ]
-    },
-    {
-      "id": "opp-021",
-      "name": "AI Infrastructure Cost Optimization Tool",
-      "description": "Dashboard tool for tracking and optimizing AI service costs (OpenAI, Higgsfield, Runway, etc.). Real-time spend monitoring, usage analytics, and cost-saving recommendations. Addresses pain point: 'It was hard to understand our cloud costs, so we built our own tool' - validated by Scamall Teoir launch.",
-      "alignment": "HIGH",
-      "status": "research",
-      "potentialRevenue": "$500-2000/month",
-      "effort": "Medium",
-      "nextStep": "Survey 5 AI-heavy creators to validate cost tracking pain point; prototype dashboard for Steven's own usage",
-      "marketData": {
-        "tam": "AI services market $200B+ annually",
-        "catalyst": "X.com intelligence Feb 13: Multiple creators expressing frustration with AI service cost tracking",
-        "validationSignal": "Direct quote from founder: 'It was hard to understand our cloud costs, so we built our own tool. Saving us $$$' - Scamall Teoir",
-        "targetAudience": "AI-heavy creators, indie developers using multiple AI APIs, small studios",
-        "problem": "No unified view of AI service spend across OpenAI, Anthropic, Runway, Higgsfield, Midjourney, etc.",
-        "competitors": [
-          "Scamall Teoir (just launched, cloud-focused)",
-          "Manual spreadsheet tracking (current state)",
-          "Individual service dashboards (fragmented)"
-        ],
-        "differentiation": "AI-specific cost categories (image gen, video gen, text, embeddings), per-project cost tracking, budget alerts across multiple providers",
-        "businessModel": "Freemium (track 1 provider free) + Pro ($29/month for unlimited providers + analytics)"
-      },
-      "risks": [
-        "API integration complexity across providers",
-        "Low willingness to pay for cost-tracking tools",
-        "Competition from existing cloud cost tools expanding to AI"
-      ],
-      "createdAt": "2026-02-14T07:15:00.000000+00:00",
-      "tags": [
-        "AI-infrastructure",
-        "cost-optimization",
-        "creator-tools",
-        "dashboard-saas"
-      ],
-      "linkedResearch": [
-        "note-049"
-      ]
-    },
-    {
-      "id": "opp-022",
-      "name": "Offline AI Transcription for Creators (JAN3 Echos Evaluation)",
-      "description": "Evaluate JAN3 Echos for integration into video production workflow. Free, 100% on-device AI transcription with privacy focus. Could replace Descript/Otter.ai for caption generation and reduce ongoing SaaS costs.",
-      "alignment": "MEDIUM",
-      "status": "evaluation",
-      "potentialRevenue": "$0 (cost savings: $50-150/month in transcription SaaS fees)",
-      "effort": "Low",
-      "nextStep": "Download and test JAN3 Echos with recent StevenSongIRL video; compare accuracy vs Descript",
-      "marketData": {
-        "catalyst": "JAN3 Echos launched Feb 13, 2026 - free, offline AI transcription",
-        "validationSignal": "JAN3 is credible team (Bitcoin/AI intersection), privacy angle growing in importance",
-        "targetAudience": "Internal (stevensongirl production workflow)",
-        "competitors": [
-          "Descript ($12-24/month)",
-          "Otter.ai ($8-20/month)",
-          "Whisper API ($0.006/minute)",
-          "Mac Whisper (one-time $20)"
-        ],
-        "differentiation": "100% offline = no upload wait times, no privacy concerns, zero ongoing cost"
-      },
-      "createdAt": "2026-02-14T07:15:00.000000+00:00",
-      "tags": [
-        "AI-tools",
-        "video-production",
-        "cost-reduction",
-        "privacy"
-      ],
-      "linkedResearch": [
-        "note-049"
-      ]
-    },
-    {
-      "id": "opp-023",
-      "name": "Code-to-Story AI Tool - Developer Education Market",
-      "description": "AI tool that converts any code into narrative story format for educational purposes. Developer wish-list item identified via X.com intelligence - turns complex code into accessible explanations.",
-      "alignment": "MEDIUM",
-      "status": "research",
-      "potentialRevenue": "$500-2000/month",
-      "effort": "Medium",
-      "nextStep": "Validate demand with 5 developer educators, research existing solutions",
-      "marketData": {
-        "tam": "Developer education tools $5B+ market",
-        "catalyst": "X.com intelligence Feb 14: @Lil_Tee18 tweet 'I wish there was a tool that turns any code into a story'",
-        "validationSignal": "Organic developer pain point expressed on X.com - 72 tweet batch analysis confirmed",
-        "targetAudience": "Developer educators, coding bootcamps, technical writers, CS students",
-        "painPoint": "Explaining complex code to beginners requires narrative framing - no tool automates this",
-        "competitors": [
-          "GitHub Copilot (code generation, not explanation)",
-          "Code comments/documentation (manual)",
-          "Technical blog posts (manual creation)"
-        ],
-        "differentiation": "Automated narrative generation from code - story format makes technical concepts accessible",
-        "businessModel": "SaaS ($10-30/month) + API usage for enterprise"
-      },
-      "risks": [
-        "Technical complexity of code parsing + narrative generation",
-        "May be feature rather than standalone product",
-        "GitHub/Microsoft could add this to Copilot",
-        "Developer skepticism of AI explanations"
-      ],
-      "createdAt": "2026-02-15T07:25:00.000000+00:00",
-      "tags": [
-        "AI-tools",
-        "developer-education",
-        "code-narrative",
-        "X-com-intel"
-      ],
-      "linkedResearch": [
-        "note-065"
-      ]
-    },
-    {
-      "id": "opp-024",
-      "name": "AI Agent Payment Infrastructure - x402 Protocol Integration",
-      "description": "Developer tooling for AI agent autonomous payments using x402 protocol. Coinbase and Stripe launched crypto wallets specifically for AI agents enabling USDC payments, trading, and yield without human approval.",
-      "alignment": "HIGH",
-      "status": "research",
-      "potentialRevenue": "$2000-8000/month",
-      "effort": "High",
-      "nextStep": "Research x402 protocol specs, validate demand with 3 AI agent developers, prototype integration",
-      "marketData": {
-        "tam": "AI agent market $216B by 2030 - financial infrastructure subset",
-        "catalyst": "X.com Feb 14: Coinbase + Stripe launched AI agent crypto wallets with x402 protocol",
-        "validationSignal": "Multiple high-engagement tweets about AI agent payments; Lightning L402 oracle already live",
-        "targetAudience": "AI agent developers, autonomous agent builders, Web3 x AI projects",
-        "painPoint": "AI agents cannot currently make autonomous payments - requires human approval loops",
-        "competitors": [
-          "Coinbase Agentic Wallets (platform)",
-          "Stripe Crypto Wallets (platform)",
-          "Manual wallet APIs (developer burden)"
-        ],
-        "differentiation": "SDK abstraction layer for x402 protocol - workflow templates, agent-to-agent payment standards, automated accounting",
-        "businessModel": "Transaction fees (0.5-1%) + SaaS ($99-499/month for enterprise)"
-      },
-      "risks": [
-        "Regulatory uncertainty around AI-controlled financial transactions",
-        "Coinbase/Stripe may build competing abstractions",
-        "Crypto volatility affects USDC adoption",
-        "Security risks with autonomous financial agents"
-      ],
-      "createdAt": "2026-02-15T07:35:00.000000+00:00",
-      "tags": [
-        "AI-agents",
-        "crypto-payments",
-        "x402",
-        "Web3",
-        "infrastructure"
-      ],
-      "linkedResearch": [
-        "note-066"
-      ]
-    },
-    {
-      "id": "opp-025",
-      "name": "Agentic Financial Modeling Tools",
-      "description": "Meridian raised $17M for agentic AI that automates complex financial modeling. Market opportunity: SMBs and creators need automated financial analysis, forecasting, and scenario planning without hiring CFOs. White-label potential for creator economy financial management.",
-      "alignment": "HIGH",
-      "status": "new",
-      "potentialRevenue": "$1000-5000/month",
-      "effort": "Medium",
-      "nextStep": "Research Meridian's API availability and evaluate white-label opportunities for creator financial tools",
-      "marketData": {
-        "fundingSignal": "$17M Series A (Meridian, Feb 2026)",
-        "tam": "SMB financial automation market growing 35% CAGR",
-        "competitors": [
-          "Meridian",
-          "Traditional Excel consultants",
-          "FP&A software"
-        ],
-        "differentiation": "Creator-first financial modeling with YouTube revenue forecasting"
-      },
-      "sources": [
-        "https://siliconangle.com/2026/02/11/agentic-financial-modeling-startup-meridian-gets-17m-funding/",
-        "AI Funding Tracker - Feb 2026"
-      ],
-      "createdAt": "2026-02-16T16:55:00Z"
-    },
-    {
-      "id": "opp-026",
-      "name": "Autonomous AI SDR Agency",
-      "description": "Done-for-you autonomous sales development representative (SDR) service using AI agents. Handles prospecting, outreach, lead qualification, and appointment setting 24/7. Targets B2B SaaS companies spending $50K-150K annually per human SDR.",
-      "alignment": "HIGH",
-      "status": "new",
-      "potentialRevenue": "$5000-15000/month",
-      "effort": "Medium",
-      "nextStep": "Build demo AI SDR for one niche (AI tools market), validate with 3 B2B SaaS companies",
-      "marketData": {
-        "tam": "$50B+ B2B sales automation market",
-        "catalyst": "AI agent market exploding - Anthropic raising $20B at $350B valuation, Perplexity at $9B (Feb 2026)",
-        "validationSignal": "15 profitable AI agent startup ideas validated by Presta research; SDR replacement is top opportunity",
-        "targetAudience": "B2B SaaS companies (5-20 SDR teams), professional services firms, enterprise software vendors",
-        "painPoint": "Human SDRs cost $50K-150K/year each, have availability constraints, inconsistent quality, high turnover",
-        "competitors": [
-          "Traditional SDR agencies ($3K-8K/month per rep)",
-          "Outreach/Salesloft (tools, not done-for-you)",
-          "Human SDR teams (expensive, scaling challenges)"
-        ],
-        "differentiation": "AI-native workflow with 70-80% cost reduction vs human SDRs, 24/7 operation, consistent quality, instant scaling",
-        "businessModel": "Per-seat monthly subscription ($2000-5000/month) with tiered features based on volume and integration complexity"
-      },
-      "financials": {
-        "customerCost": "$2000-5000/month per AI SDR seat",
-        "customerSavings": "70-80% vs human SDR ($50K-150K/year)",
-        "paybackPeriod": "Immediate (cost savings from month 1)",
-        "targetMetrics": "Match or exceed human SDR meeting booking rates within 30-day pilot"
-      },
-      "implementationPlan": [
-        "Phase 1: Build AI SDR agent with CRM/email/LinkedIn integration (2 weeks)",
-        "Phase 2: Train on one vertical - AI tools/software companies (1 week)",
-        "Phase 3: Run parallel pilot with 3 B2B SaaS companies (30 days)",
-        "Phase 4: Document ROI case studies and testimonials",
-        "Phase 5: Scale to additional verticals (professional services, healthcare tech)"
-      ],
-      "techStack": [
-        "LLM for personalized messaging",
-        "CRM APIs (Salesforce, HubSpot)",
-        "Email platforms (Apollo, Outreach)",
-        "LinkedIn automation",
-        "Sentiment analysis for lead scoring",
-        "Calendar integration for appointment setting"
-      ],
-      "researchSources": [
-        "https://wearepresta.com/ai-agent-startup-ideas-2026-15-profitable-opportunities-to-launch-now/",
-        "The Motley Fool - Top 8 AI Start-ups in 2026 (Feb 2026)",
-        "Exploding Topics - 25 Fastest Growing Companies 2026"
-      ],
-      "createdAt": "2026-02-16T19:50:00Z",
-      "tags": [
-        "AI-agents",
-        "B2B-SaaS",
-        "sales-automation",
-        "high-margin",
-        "proven-market"
-      ]
-    },
-    {
-      "id": "opp-027",
-      "name": "AI Video World Models Content Series",
-      "description": "Create educational content series on AI video 'world models' - the next evolution beyond generation. Runway's $315M pivot signals massive market shift. First-mover advantage for creator education niche.",
-      "alignment": "HIGH",
-      "status": "new",
-      "potentialRevenue": "$3000-10000/month (YouTube ads + sponsorships + course)",
-      "effort": "Medium",
-      "nextStep": "Research world models vs traditional video generation; create pilot script explaining the shift",
-      "marketData": {
-        "fundingSignal": "Runway $315M Series E at $5.3B valuation (Feb 2026) - pivoting to world models",
-        "marketGrowth": "AI video funding $3.08B in 2025 (+94.6% from $1.58B in 2024)",
-        "tam": "World models estimated $50B+ subset of $216B AI agent market by 2030",
-        "catalyst": "Runway explicitly shifting from 'video generation' to 'world models' - industry inflection point",
-        "targetAudience": "AI enthusiasts, video creators, tech educators, VCs tracking AI trends",
-        "painPoint": "No creator is explaining world models in accessible way - complex technical concept with massive implications",
-        "competitors": [
-          "AI Explained (general AI content)",
-          "Runway's own blog (technical)",
-          "Academic papers (inaccessible)"
-        ],
-        "differentiation": "Creator-first explanation with practical implications for video production; ties to Steven's AI editing service credibility",
-        "timing": "FIRST MOVER - world models pivot just announced Feb 2026; no creator content exists yet"
-      },
-      "contentAngles": [
-        "What Are World Models? ( explainer for creators)",
-        "Runway's $315M Bet: Why World Models Change Everything",
-        "World Models vs Video Generation: The Technical Shift",
-        "How World Models Will Disrupt Hollywood (and YouTube)"
-      ],
-      "synergies": [
-        "opp-007 (AI Video Generation Masterclass)",
-        "opp-014 (AI-Generated Video Editing Service)",
-        "stevensongirl channel scaling"
-      ],
-      "sources": [
-        "TechCrunch - Runway $315M raise (Feb 10, 2026)",
-        "Crunchbase - AI video funding $3.08B in 2025 (+94.6%)",
-        "AI Business - Runway pivots to world models"
-      ],
-      "createdAt": "2026-02-17T04:46:00Z",
-      "tags": [
-        "AI-video",
-        "world-models",
-        "content-series",
-        "first-mover",
-        "Runway"
-      ]
+      "actionable": "Build AI-powered workflow orchestrator, context-aware tool switcher, or vertical-specific unified dashboards",
+      "source": "x_intel_2026-02-14",
+      "status": "new"
     }
   ],
-  "pipeline": {
-    "new": 17,
-    "evaluating": 2,
-    "pursuing": 0,
-    "passed": 1,
-    "won": 1
-  },
-  "lastUpdated": "2026-02-17T04:46:00Z",
-  "totalOpportunities": 26,
   "meta": {
-    "totalCount": 26,
-    "lastUpdated": "2026-02-17T04:46:00Z",
-    "version": "1.2"
+    "tweetsAnalyzed": 418,
+    "dateRange": "2026-02-12 to 2026-02-17",
+    "sources": 5
   }
 }
