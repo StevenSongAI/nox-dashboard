@@ -880,6 +880,30 @@
       "priceTarget": "$250-260",
       "currentPrice": "$183",
       "impliedUpside": "42%"
+    },
+    {
+      "id": "intel-048",
+      "date": "2026-02-17T03:46:00Z",
+      "topic": "NVDA Goldman Sachs $513B 2028 Revenue Projection - 53% CAGR Path to $1B Daily Sales",
+      "source": "Goldman Sachs / 247 Wall St / Motley Fool / Wolfe Research",
+      "content": "Fresh bullish research (Feb 16-17): Goldman Sachs projects NVDA 2028 revenue of $513 billion - dramatically exceeding $400 billion consensus and implying 53% compound annual growth rate from fiscal 2026 estimates of ~$215 billion. At this level, NVDA would generate over $1 billion in sales every single day of the year - a staggering figure achieved by only a handful of companies globally. Key details: (1) Q4 FY26 BEAT EXPECTED: Goldman projects ~$2 billion revenue beat above consensus $65.6B guidance (5% surprise), potentially pushing results toward $67 billion, (2) Q1 FY27 OUTLOOK: Goldman calls for 9% beat on consensus, driven by full-rack solutions and AI Enterprise software growth, (3) FISCAL 2028: $513B revenue projection well above Street consensus, assumes strong Rubin GPU ramps starting late 2026, continued hyperscaler demand, and sovereign AI project adoption, (4) VALUATION COMPRESSION: NVDA forward P/E near 24x - lowest in nearly a year and approaching S&P 500 multiple despite 61% growth rate, PEG ratio under 0.5 signals significant undervaluation, (5) MARGIN EXPANSION: Management guided gross margins to mid-70% range in fiscal 2027 (vs 71-73% in early FY26) as Blackwell production hits full swing and cost structure improves, (6) VERA RUBIN CATALYST: Next-gen Vera Rubin processors launching later in 2026 expected to deliver exponential performance improvements over Blackwell, driving upgrade cycle, (7) EARNINGS TRAJECTORY: FY2028 EPS expected to reach $9.90 per Motley Fool analysis - at 30x multiple implies ~$297 stock price (64% upside). 37 analyst Buy ratings with $260 average target. Key insight: NVDA priced like mature tech stock at 24x earnings but growing 53% CAGR through 2028. If Goldman trajectory materializes, NVDA could overtake Walmart ($681B revenue) by 2030. Feb 25 earnings is critical catalyst - beat/raise scenario could accelerate breakout to $220-240 range. Steven positioning: Hold existing NVDA through earnings, attractive risk/reward with limited downside to $165 support and asymmetric upside to $300 on guidance confirmation.",
+      "impact": "bullish",
+      "tickers": [
+        "NVDA"
+      ],
+      "riskFactors": [
+        "$513B 2028 revenue assumes flawless Rubin execution and sustained hyperscaler demand",
+        "53% CAGR may be unsustainable as revenue base grows - arithmetic gets harder",
+        "Any guidance cut or demand slowdown could trigger severe multiple compression",
+        "China export restrictions remain unpredictable tail risk",
+        "High expectations create binary outcome - miss could see 15-20% correction"
+      ],
+      "confidence": "high",
+      "catalystDate": "2026-02-25",
+      "catalyst": "Q4 FY2026 Earnings - Goldman projects $2B beat, $513B 2028 revenue trajectory",
+      "priceTarget": "$260-300",
+      "currentPrice": "$183",
+      "impliedUpside": "42-64%"
     }
   ],
   "synthesizedInsights": [
