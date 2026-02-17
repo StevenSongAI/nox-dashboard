@@ -109,17 +109,62 @@
     },
     {
       "id": "opp-008",
-      "title": "Tool Consolidation Platform",
-      "description": "Clear pain point: 'I get exhausted using every one of them daily' - tool exhaustion is real. Opportunity for unified workflow layer or AI that manages tool switching automatically.",
-      "category": "Productivity",
+      "title": "AI Agent Debate/Betting Platform",
+      "description": "argue.fun launched AI agent argumentation market with real money betting on agent debates. Agents argue topics, users bet on outcomes. Novel entertainment + prediction market hybrid.",
+      "category": "Entertainment",
       "marketSignal": "MEDIUM",
       "validation": [
-        "Multiple tweets about tool fatigue",
-        "Clear emotional pain point",
-        "No dominant consolidation solution yet"
+        "Live platform with real money",
+        "Combines AI agents + prediction markets + entertainment",
+        "Unique format not replicated elsewhere"
       ],
-      "actionable": "Build AI-powered workflow orchestrator, context-aware tool switcher, or vertical-specific unified dashboards",
-      "source": "x_intel_2026-02-14",
+      "actionable": "Build competing agent debate platforms, vertical debate topics (sports, crypto, politics), or agent personality marketplaces",
+      "source": "x_intel_2026-02-17",
+      "status": "new"
+    },
+    {
+      "id": "opp-009",
+      "title": "Agent Swarm Coordination Platform",
+      "description": "SNAP Collective demonstrated scale: 201 agents, 12K memory fragments, 329 shared dreams. Multi-agent orchestration going beyond simple teams to complex emergent behavior. Infrastructure gap for managing 100+ agent collectives.",
+      "category": "Infrastructure",
+      "marketSignal": "HIGH",
+      "validation": [
+        "SNAP Collective proven at 200+ agent scale",
+        "Shared memory/dream concepts emerging",
+        "Beyond CrewAI's team model to swarm model"
+      ],
+      "actionable": "Build swarm coordination tools, shared memory systems for agents, or emergent behavior visualization platforms",
+      "source": "x_intel_2026-02-17",
+      "status": "new"
+    },
+    {
+      "id": "opp-010",
+      "title": "Live Sports AI Broadcasting",
+      "description": "Salesforce Agent Caddie - live broadcast AI for sports. Real-time commentary, stats, analysis. Signal: AI replacing traditional broadcast roles, not just augmenting. Sports as first vertical.",
+      "category": "Media/Entertainment",
+      "marketSignal": "MEDIUM",
+      "validation": [
+        "Salesforce official product",
+        "Live broadcast use case",
+        "Sports vertical proven, expandable to esports, other events"
+      ],
+      "actionable": "Build AI broadcast agents for esports, niche sports, or live event commentary. Compete in other verticals.",
+      "source": "x_intel_2026-02-17",
+      "status": "new"
+    },
+    {
+      "id": "opp-011",
+      "title": "Real-Time Financial Data for Agents",
+      "description": "OpenClaw + Unusual Whales integration brings real-time stock/options data to AI agents. Signal: Agents need live financial data, not just static knowledge. Market data as agent primitive.",
+      "category": "Financial Infrastructure",
+      "marketSignal": "MEDIUM",
+      "validation": [
+        "OpenClaw integration live",
+        "Unusual Whales partnership",
+        "Real-time options flow data available to agents"
+      ],
+      "actionable": "Build financial agent tools, trading bots, market analysis agents, or compete with other data providers (crypto, forex, commodities)",
+      "source": "x_intel_2026-02-17",
       "status": "new"
     }
   ],

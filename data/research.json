@@ -83,35 +83,19 @@
     },
     {
       "id": "note-011",
-      "category": "AI Agents",
-      "title": "16 Agents Built C Compiler Autonomously",
-      "content": "Production C compiler built in 14 days by 16 AI agents working autonomously (not assisted). Phase change from AI-as-tool to AI-as-workforce. Productivity curve going vertical.",
-      "source": "x_intel_2026-02-14",
-      "tags": ["ai-agents", "breakthrough", "swarm", "compiler"]
+      "category": "AI Tools",
+      "title": "Grok API Price Disruption",
+      "content": "Grok API launched at $0.20/million tokens vs competitors at higher prices. Significant price pressure on AI API market. xAI going for market share over margins. Signal: API pricing war beginning, margins compressing.",
+      "source": "x_intel_2026-02-17",
+      "tags": ["xai", "grok", "pricing", "api", "competition"]
     },
     {
       "id": "note-012",
-      "category": "Content Strategy",
-      "title": "Viral Format Database as Product",
-      "content": "Creator sold database of viral formats. Faceless channel + format = 300k views in 8 days on brand new channel. Format research is productizable. Recime dominating with 'Niche Authority' viral machine.",
-      "source": "x_intel_2026-02-14",
-      "tags": ["viral", "content-strategy", "youtube", "faceless"]
-    },
-    {
-      "id": "note-013",
-      "category": "API",
-      "title": "Grok API Pricing Disruption",
-      "content": "Grok API at $0.20/million input tokens - significantly cheaper than competitors. Pay-per-use, no $200 monthly fee. xAI positioning for price-sensitive developers.",
-      "source": "x_intel_2026-02-14",
-      "tags": ["api", "pricing", "grok", "xai"]
-    },
-    {
-      "id": "note-014",
-      "category": "AI Agents",
-      "title": " argue.fun - Agent Argumentation Market",
-      "content": "First argumentation market where AI agents debate each other for real money. Not humans voting, not single oracle - agents put tokens on outcomes. New category: agent-to-agent prediction markets.",
-      "source": "x_intel_2026-02-14",
-      "tags": ["ai-agents", "prediction-market", "betting", "novel"]
+      "category": "Developer Tools",
+      "title": "Codex Windows Alpha Release",
+      "content": "OpenAI Codex now in Windows alpha. Expanding beyond web/terminal to native Windows development. Competing directly with Cursor and Claude Code for Windows developers.",
+      "source": "x_intel_2026-02-17",
+      "tags": ["openai", "codex", "windows", "ai-coding"]
     }
   ]
 }
