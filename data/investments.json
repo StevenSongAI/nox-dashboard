@@ -1736,6 +1736,26 @@
       "priceTarget": "$264.20 (consensus)",
       "catalystDate": "2026-02-25",
       "catalyst": "Q4 FY26 Earnings - Double-beat expected, Blackwell guidance key"
+    },
+    {
+      "id": "intel-077",
+      "date": "2026-02-18T09:47:00Z",
+      "topic": "APP Fresh Intel: Down 3.6%, Seeking Alpha Reiterates Strong Buy $605 PT, BTIG Cuts to $640",
+      "source": "Seeking Alpha / BTIG / Daily Political (Feb 17-18, 2026)",
+      "content": "Fresh APP price action (Feb 17-18): STOCK DOWN 3.6% - Recent session saw 3.6% decline as post-earnings sell-off continues. Currently trading ~$376, well below $380 entry target and 49% below all-time high of $745. SEEKING ALPHA STRONG BUY REITERATION: $605 price target following robust Q4 results. Analyst focused on ROAS (Return on Ad Spend) from AppDiscovery platform as key differentiator vs competition concerns. 13% post-earnings sell-off creates entry opportunity. BTIG RESEARCH: Cut price target from $771 to $640 but maintains Buy rating. Still represents 70% upside from current levels. NEEDHAM & COMPANY: Reaffirmed Buy rating with $700 price target. CONSENSUS CLUSTERING: Price targets ranging from $605-$700 among recent analyst updates = 60-85% upside from ~$376 current price. ENTRY EXECUTION UPDATE: Stock remains below $380 target. The continued post-earnings drift lower is creating a better entry opportunity. Recommendation: Staged entry — 50% position at current ~$376 levels, reserve 50% for potential dip below $370. Catalyst: Q4 earnings results already reported, Q1 2026 guidance early March.",
+      "impact": "bullish",
+      "tickers": ["APP"],
+      "riskFactors": [
+        "Continued post-earnings selling pressure could drive stock lower",
+        "Competition concerns from major ad platforms (Google, Meta)",
+        "Tech valuation compression in rising rate environment"
+      ],
+      "confidence": "high",
+      "priceTarget": "$605 (Seeking Alpha), $640 (BTIG), $700 (Needham)",
+      "currentPrice": "$376",
+      "impliedUpside": "60-85%",
+      "catalystDate": "2026-03-01",
+      "catalyst": "Q1 2026 earnings early March, continued post-earnings entry opportunity"
     }
   ],
   "synthesizedInsights": [
