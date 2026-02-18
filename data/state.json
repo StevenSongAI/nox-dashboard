@@ -1,7 +1,7 @@
 {
-  "lastHeartbeat": "2026-02-18T14:50:00.000000",
-  "totalHeartbeats": 289,
-  "lastAction": "Fixed scraper failures - restarted YouTube and ViewStats (both died silently). All 3 now running with PIDs 20586, 20860, 20862.",
+  "lastHeartbeat": "2026-02-18T15:22:00.000000",
+  "totalHeartbeats": 290,
+  "lastAction": "HB290: Scrapers died again (only 1 of 3 running). Restarted YouTube and ViewStats. All 3 now active with PIDs 20586, 21854, 21855.",
   "nextPriority": "NVDA pre-earnings entry window open (Feb 25 in 5 days). APP below $380 target. Continue monitoring both positions.",
   "learningCycle": {
     "lastRun": "2026-02-17T05:15:00Z",
@@ -128,5 +128,5 @@
     }
   ],
   "activeTasks": [],
-  "updatedAt": "2026-02-18T14:50:00Z"
+  "updatedAt": "2026-02-18T15:22:00Z"
 }
