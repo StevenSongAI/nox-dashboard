@@ -1677,6 +1677,26 @@
       "impliedUpside": "45% (consensus), 95% (high-end), 185% (bull case)",
       "catalystDate": "2026-02-25",
       "catalyst": "Q4 FY2026 Earnings - 52 analysts covering, $264 PT, GTC March 16 double-catalyst"
+    },
+    {
+      "id": "intel-075",
+      "date": "2026-02-18T01:47:22.595925",
+      "topic": "NVDA: HBM Memory Sold Out for 2026 - Seeking Alpha Strong Buy $416 PT",
+      "source": "Seeking Alpha / Feb 17, 2026",
+      "content": "Seeking Alpha reiterates Strong Buy on NVDA with $416 price target ahead of Feb 25 Q4 FY26 earnings. Key catalysts: (1) HBM memory completely sold out for 2026, signaling massive GPU demand that supply cannot meet; (2) Hyperscaler capital outlays remain robust despite custom silicon adoption by cloud providers; (3) FY27 growth expected to remain elevated; (4) Revenue and EPS estimates being revised upward for Q4'26. Trading at 23.91x price/sales but growth justifies premium valuation. Analyst has beneficial long position.",
+      "impact": "bullish",
+      "tickers": [
+        "NVDA"
+      ],
+      "riskFactors": [
+        "23.91x price/sales premium valuation vulnerable to multiple compression",
+        "Custom silicon adoption by hyperscalers could reduce NVDA TAM over time",
+        "High expectations - any miss would be severely punished"
+      ],
+      "confidence": "high",
+      "priceTarget": "$416 (Seeking Alpha Strong Buy)",
+      "catalystDate": "2026-02-25",
+      "catalyst": "Q4 FY26 Earnings - HBM supply shortage indicates demand exceeding supply"
     }
   ],
   "synthesizedInsights": [
