@@ -1,7 +1,7 @@
 {
-  "lastHeartbeat": "2026-02-18T14:16:00.000000",
-  "totalHeartbeats": 288,
-  "lastAction": "Heartbeat 288: All tabs verified fresh. Delta since HB287: No changes. NVDA ~$187, APP ~$376, both entry opportunities active.",
+  "lastHeartbeat": "2026-02-18T14:50:00.000000",
+  "totalHeartbeats": 289,
+  "lastAction": "Fixed scraper failures - restarted YouTube and ViewStats (both died silently). All 3 now running with PIDs 20586, 20860, 20862.",
   "nextPriority": "NVDA pre-earnings entry window open (Feb 25 in 5 days). APP below $380 target. Continue monitoring both positions.",
   "learningCycle": {
     "lastRun": "2026-02-17T05:15:00Z",
@@ -128,5 +128,5 @@
     }
   ],
   "activeTasks": [],
-  "updatedAt": "2026-02-18T14:10:00Z"
+  "updatedAt": "2026-02-18T14:50:00Z"
 }
