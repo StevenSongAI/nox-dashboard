@@ -2163,6 +2163,51 @@
       "url": "https://x.com/timdanilovhi/status/...",
       "researchStatus": "action_required",
       "source": "X.com intelligence analysis"
+    },
+    {
+      "id": "yt-viewstats-145",
+      "title": "What if Pokemon had more Evolution Stages? Fuecoco | Crocalor | Skeledirge",
+      "channel": "sinpoke",
+      "views": 184000,
+      "publishedAt": "2025-02-01T00:00:00Z",
+      "addedAt": "2026-02-17T00:17:00Z",
+      "outlierScore": 676,
+      "niche": "\ud83c\udfae Pokemon Evolution",
+      "whyOutlier": "676x viral score - 10K subscriber channel achieving 184K views by extending Pokemon evolution stages. Speculation + visual progression format is pure viral formula.",
+      "contentAngle": "Apply 'extra evolution stages' format to other franchises: Minecraft mobs, dinosaurs, fantasy creatures, real animals",
+      "url": "https://www.youtube.com/watch?v=FO5a0rAkB20",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - Feb 17 heartbeat"
+    },
+    {
+      "id": "yt-viewstats-146",
+      "title": "What If Eeveelutions Evolved AGAIN?",
+      "channel": "truegreen7",
+      "views": 2580000,
+      "publishedAt": "2023-02-01T00:00:00Z",
+      "addedAt": "2026-02-17T00:17:00Z",
+      "outlierScore": 7.9,
+      "niche": "\ud83c\udfae Pokemon Evolution",
+      "whyOutlier": "1M subs channel getting 2.58M views (7.9x) on 'what if evolved again' concept - proves format works at scale",
+      "contentAngle": "Second evolution concept works for any creature system - apply to original creations, dinosaurs, Minecraft mobs",
+      "url": "https://www.youtube.com/watch?v=wbhSBtg-dYg",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - Feb 17 heartbeat"
+    },
+    {
+      "id": "yt-viewstats-147",
+      "title": "Evolution Of Godzilla | Life Cycle",
+      "channel": "worldinnumbers3d",
+      "views": 1060000,
+      "publishedAt": "2023-02-01T00:00:00Z",
+      "addedAt": "2026-02-17T00:17:00Z",
+      "outlierScore": 13.3,
+      "niche": "\ud83e\udd96 Kaiju Evolution",
+      "whyOutlier": "87K subs channel achieving 1.06M views (13.3x) on Godzilla life cycle - creature evolution format translates across genres",
+      "contentAngle": "Life cycle evolution format applies to any creature: dinosaurs, dragons, fantasy beasts, original creations",
+      "url": "https://www.youtube.com/watch?v=6yDY7bOdbRs",
+      "researchStatus": "completed",
+      "source": "viewstats outlier research - Feb 17 heartbeat"
     }
   ],
   "meta": {
@@ -2350,6 +2395,82 @@
           "viralScore": 90,
           "channel": "Poke Realms",
           "whyItWorked": "Pokemon nostalgia + believable AI integration + daily care format"
+        }
+      ]
+    },
+    {
+      "id": "brief-evolution-stages-002",
+      "title": "What If [Creature] Had More Evolution Stages?",
+      "format": "creature_evolution_extension",
+      "hook": "Everyone knows [Creature]'s final form... but what if it kept evolving?",
+      "scriptStructure": {
+        "intro": "Show the well-known evolution line, then pose the question: what comes after?",
+        "stage1": "Design + reveal Stage 4 (logical next step from final form)",
+        "stage2": "Stage 5 - push the design further, add unexpected element",
+        "stage3": "Stage 6 - go wild with legendary/mythic proportions",
+        "stage4": "Stage 7+ - ultimate form that blows everything away",
+        "outro": "Which evolution stage was your favorite? Comment what creature to do next"
+      },
+      "thumbnailIdeas": [
+        "Side-by-side evolution stages with final form being MASSIVE",
+        "Before/after: Known final form \u2192 Your new ultimate form",
+        "'Stage 7' text with mind-blowing creature design",
+        "Progression animation showing all stages in one image"
+      ],
+      "viralMechanics": {
+        "whyItWorks": "676x outlier proves format: speculation + visual progression = viral formula. Familiar IP (Pokemon/Minecraft) draws clicks. Curiosity about 'what if' keeps viewers watching through all stages.",
+        "retentionHook": "Viewers must see all evolution stages - each reveal builds anticipation for the next",
+        "shareTrigger": "Fans debate which designs are 'better' than official versions. Pokemon/Minecraft communities share widely."
+      },
+      "productionAngles": [
+        {
+          "angle": "Ice Dragon Evolution (7 stages from hatchling to world-destroyer)",
+          "estimatedViralScore": 95,
+          "productionCost": "$20-30 (AI generation credits)"
+        },
+        {
+          "angle": "T-Rex Evolution Timeline (6 stages from baby to kaiju)",
+          "estimatedViralScore": 90,
+          "productionCost": "$20-30 (AI generation credits)",
+          "notes": "Connects to your T-Rex video project - natural channel extension"
+        },
+        {
+          "angle": "Minecraft Creeper Evolution (what if it kept evolving?)",
+          "estimatedViralScore": 85,
+          "productionCost": "$15-25 (AI generation credits)"
+        }
+      ],
+      "toolsNeeded": [
+        "Midjourney/Stable Diffusion for evolution stage designs",
+        "CapCut/Premiere for transitions between stages",
+        "Sound effects for each evolution 'level up' moment"
+      ],
+      "estimatedProductionTime": "4-6 hours (design 7 stages + edit progression)",
+      "competitiveAdvantage": "Proven 676x viral format. Lower competition than 'I got a pet' format. Series potential - hundreds of Pokemon/creatures to extend.",
+      "status": "ready_to_produce",
+      "priority": "high",
+      "createdAt": "2026-02-17T00:20:00Z",
+      "sourceOutlierUrls": [
+        "https://www.youtube.com/watch?v=FO5a0rAkB20",
+        "https://www.youtube.com/watch?v=wbhSBtg-dYg",
+        "https://www.youtube.com/watch?v=6yDY7bOdbRs"
+      ],
+      "referenceHighPerformers": [
+        {
+          "title": "What if Pokemon had more Evolution Stages? Fuecoco | Crocalor | Skeledirge",
+          "url": "https://www.youtube.com/watch?v=FO5a0rAkB20",
+          "views": 184000,
+          "outlierScore": 676,
+          "channel": "sinpoke (10K subs)",
+          "whyItWorked": "676x viral score - 10K channel achieving 184K views proves format is pure viral mechanic"
+        },
+        {
+          "title": "What If Eeveelutions Evolved AGAIN?",
+          "url": "https://www.youtube.com/watch?v=wbhSBtg-dYg",
+          "views": 2580000,
+          "outlierScore": 7.9,
+          "channel": "truegreen7 (1M subs)",
+          "whyItWorked": "2.58M views on 'evolve again' concept - works at scale"
         }
       ]
     }

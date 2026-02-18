@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-02-17T23:46:00Z",
+  "lastUpdated": "2026-02-18T00:18:16Z",
   "updatedBy": "heartbeat-agent",
   "version": "2026.02.17.23",
-  "cacheBust": "20260217T2346",
-  "dataVersion": "2026.02.17.33",
-  "youtubeUpdated": "2026-02-17T04:20:00Z",
+  "cacheBust": "20260218T0018",
+  "dataVersion": "2026.02.17.34",
+  "youtubeUpdated": "2026-02-18T00:18:16Z",
   "investmentsUpdated": "2026-02-17T23:46:00Z",
   "researchUpdated": "2026-02-17T20:46:00Z",
   "newBusinessUpdated": "2026-02-17T04:46:00Z",
@@ -21,7 +21,7 @@
     "investments": "2026-02-17 - 66 intelligence items (+ GTC March 16-19 confirmed, Wolfe FY2028 EPS $11.50 beat)",
     "workTracker": "2026-02-15 - pagination + deduplication live",
     "minecraftArtists": "2026-02-15 - 7 artists",
-    "youtube": "2026-02-17 - 144 outliers",
+    "youtube": "2026-02-17 - 147 outliers (+3 ViewStats discoveries)",
     "tools": "2026-02-17 - 20 tools"
   },
   "research": {
