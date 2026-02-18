@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-18T02:17:59.125064",
+  "lastUpdated": "2026-02-18T02:46:52.008424",
   "notes": [
     {
       "id": "note-001",
@@ -303,21 +303,6 @@
         "generative-ai"
       ],
       "addedAt": "2026-02-18T00:47:48.928159"
-    },
-    {
-      "id": "note-022",
-      "category": "AI Video",
-      "title": "Runway Raises $315M at $5.3B Valuation - AI Video Wars Heat Up",
-      "content": "Runway ML closed $315M funding round at $5.3B valuation (Feb 18, 2026). Key details: (1) Total raised now exceeds $500M lifetime; (2) Valuation up from $1.5B (2023) to $5.3B - 3.5x in 2 years; (3) Competes with OpenAI Sora, Google Veo, Pika, Kling; (4) Enterprise focus with Gen-4 model; (5) Timing: 7 days before NVDA earnings shows AI video infrastructure demand. Signal: AI video generation market consolidating around few players with massive capital requirements. Runway's enterprise pivot may differentiate from consumer-focused competitors.",
-      "source": "X.com / Feb 18, 2026",
-      "tags": [
-        "ai-video",
-        "runway",
-        "funding",
-        "venture-capital",
-        "gen-4"
-      ],
-      "addedAt": "2026-02-18T02:17:59.125054"
     }
   ]
 }
