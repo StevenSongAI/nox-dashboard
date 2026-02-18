@@ -181,14 +181,43 @@
   ],
   "intelligence": [
     {
+      "id": "intel-074",
+      "date": "2026-02-18T04:46:00Z",
+      "topic": "NVDA Meta Multiyear Deal: Millions of AI Chips (Rubin GPUs + Rack Systems) - Game Changer for Feb 25 Earnings",
+      "source": "Reuters / Stock Observer / Citi Research (Feb 17, 2026)",
+      "content": "BREAKING NVDA NEWS (Feb 17, 2026): META MULTIYEAR CHIP DEAL: NVIDIA signed a multiyear agreement to supply Meta with millions of current and next-generation AI chips, including standalone CPUs, Rubin GPUs, and rack systems. This is a MASSIVE demand lock-in that provides multi-year revenue visibility. Rubin is NVIDIA's next-gen AI architecture post-Blackwell, and Meta's commitment signals continued hyperscaler investment despite recent AI spending concerns. PRICE ACTION: NVDA traded up 1.2% during mid-day Tuesday (Feb 17), reaching $187.15 intraday before closing at $184.97. Volume was 159.8M shares (6% below average), suggesting institutional holding pattern ahead of earnings. ANALYST SENTIMENT: Citi reiterated 'Buy' rating citing 'attractive valuations' and expects continued strength from Rubin GPU ramps. Multiple firms see February earnings as key catalyst with expectations of another beat and guidance upside. Analyst consensus price target: $264.20 (42%+ upside from $185). POSITIONING IMPLICATIONS FOR STEVEN: The Meta deal fundamentally changes the NVDA thesis ahead of Feb 25 earnings. This is concrete evidence that AI spending concerns are overblown - Meta is committing to MULTI-YEAR purchases at scale. Combined with Citi's Buy support at current levels, this strengthens the case for deploying capital NOW rather than waiting for a dip that may not come. The $264 consensus target represents 42% upside, and with Rubin GPU ramps confirmed via Meta deal, revenue visibility extends well beyond Q4. EXECUTION DECISION: Deploy staged entry NOW. The Meta deal removes key uncertainty about AI demand sustainability. Waiting for a dip risks missing the pre-earnings run-up.",
+      "impact": "bullish",
+      "tickers": [
+        "NVDA",
+        "META"
+      ],
+      "riskFactors": [
+        "Earnings expectations are extremely high - any miss would be punished severely",
+        "Rubin GPU timing may be slower than expected",
+        "Market volatility could drag NVDA lower regardless of fundamentals"
+      ],
+      "confidence": "high",
+      "priceTarget": "$264.20 (consensus)",
+      "currentPrice": "$184.97 (Feb 17 close)",
+      "impliedUpside": "42.8%",
+      "catalystDate": "2026-02-25",
+      "catalyst": "Q4 FY2026 Earnings - Meta multiyear deal provides demand visibility, supports Buy thesis"
+    },
+    {
       "id": "intel-073",
       "date": "2026-02-18T04:16:00Z",
       "topic": "NVDA Feb 17 Premarket: -2.2% Dip on AI Spending Fears, Citi Reiterates Buy on 'Attractive Valuations'",
       "source": "MarketBeat / Citi Research / Bez-Kabli.pl / StockMarketWatch (Feb 17, 2026)",
       "content": "Fresh NVDA price action intelligence (Feb 17, 2026): PREMARKET DECLINE: NVDA slipped 2.2% in premarket trading ahead of the bell on February 17, with U.S. markets closed for Presidents Day. Decline attributed to lingering AI spending doubts ahead of critical Feb 25 earnings. Current analyst consensus price target: $264.20 (MarketBeat data). CITI REITERATES BUY: Citi analyst maintained Buy rating on NVDA, citing 'attractive valuations' ahead of the company's highly anticipated earnings report. This institutional support provides downside cushion. PRICE ACTION CONTEXT: NVDA experienced a 'topsy-turvy' session recently, swinging between being one of the market's heaviest weights and its biggest strengths before stabilizing. Stock has been volatile as investors digest AI demand concerns ahead of earnings. POSITIONING IMPLICATIONS: The 2.2% premarket dip creates potential entry opportunity for Steven ahead of Feb 25 earnings. With Citi backing at current levels and $264 price target (42%+ upside from ~$185), risk-reward remains favorable. AI spending concerns are likely overblown given hyperscaler capex commitments ($650-700B in 2026). Dip buyers may find support at $180 psychological level. CATALYST: Feb 25 Q4 FY2026 earnings after market close.",
       "impact": "neutral-bullish",
-      "tickers": ["NVDA"],
-      "riskFactors": ["Premarket weakness may continue into regular session", "AI spending doubts could pressure multiple until earnings clarity", "High expectations limit margin for error on Feb 25"],
+      "tickers": [
+        "NVDA"
+      ],
+      "riskFactors": [
+        "Premarket weakness may continue into regular session",
+        "AI spending doubts could pressure multiple until earnings clarity",
+        "High expectations limit margin for error on Feb 25"
+      ],
       "confidence": "medium",
       "priceTarget": "$264.20 (consensus)",
       "currentPrice": "$182-185 (estimated premarket)",
