@@ -181,6 +181,22 @@
   ],
   "intelligence": [
     {
+      "id": "intel-073",
+      "date": "2026-02-18T04:16:00Z",
+      "topic": "NVDA Feb 17 Premarket: -2.2% Dip on AI Spending Fears, Citi Reiterates Buy on 'Attractive Valuations'",
+      "source": "MarketBeat / Citi Research / Bez-Kabli.pl / StockMarketWatch (Feb 17, 2026)",
+      "content": "Fresh NVDA price action intelligence (Feb 17, 2026): PREMARKET DECLINE: NVDA slipped 2.2% in premarket trading ahead of the bell on February 17, with U.S. markets closed for Presidents Day. Decline attributed to lingering AI spending doubts ahead of critical Feb 25 earnings. Current analyst consensus price target: $264.20 (MarketBeat data). CITI REITERATES BUY: Citi analyst maintained Buy rating on NVDA, citing 'attractive valuations' ahead of the company's highly anticipated earnings report. This institutional support provides downside cushion. PRICE ACTION CONTEXT: NVDA experienced a 'topsy-turvy' session recently, swinging between being one of the market's heaviest weights and its biggest strengths before stabilizing. Stock has been volatile as investors digest AI demand concerns ahead of earnings. POSITIONING IMPLICATIONS: The 2.2% premarket dip creates potential entry opportunity for Steven ahead of Feb 25 earnings. With Citi backing at current levels and $264 price target (42%+ upside from ~$185), risk-reward remains favorable. AI spending concerns are likely overblown given hyperscaler capex commitments ($650-700B in 2026). Dip buyers may find support at $180 psychological level. CATALYST: Feb 25 Q4 FY2026 earnings after market close.",
+      "impact": "neutral-bullish",
+      "tickers": ["NVDA"],
+      "riskFactors": ["Premarket weakness may continue into regular session", "AI spending doubts could pressure multiple until earnings clarity", "High expectations limit margin for error on Feb 25"],
+      "confidence": "medium",
+      "priceTarget": "$264.20 (consensus)",
+      "currentPrice": "$182-185 (estimated premarket)",
+      "impliedUpside": "42%+",
+      "catalystDate": "2026-02-25",
+      "catalyst": "Q4 FY2026 Earnings - premarket dip creates potential entry, Citi Buy support"
+    },
+    {
       "id": "intel-072",
       "date": "2026-02-18T03:45:00Z",
       "topic": "NVDA Motley Fool Deep Dive: 90.9% Beat Rate Confirmed, Q4 $1.52 EPS Expected, No Correlation Between Beat Size and Stock Reaction",
@@ -1653,10 +1669,10 @@
       "addedAt": "2026-02-09T11:50:00Z"
     }
   ],
-  "lastUpdated": "2026-02-17T21:20:00Z",
+  "lastUpdated": "2026-02-18T04:16:00Z",
   "dataSource": "Market Data",
   "meta": {
-    "lastUpdated": "2026-02-17T21:20:00Z",
+    "lastUpdated": "2026-02-18T04:16:00Z",
     "version": "1.0.0"
   }
 }
