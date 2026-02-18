@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-17T16:48:00-05:00",
+  "lastUpdated": "2026-02-18T00:47:48.928167",
   "notes": [
     {
       "id": "note-001",
@@ -288,6 +288,21 @@
         "international"
       ],
       "addedAt": "2026-02-17T21:48:00Z"
+    },
+    {
+      "id": "note-021",
+      "category": "AI Video",
+      "title": "Seedance 2.0: ByteDance's Multi-Modal Video AI",
+      "content": "ByteDance's Seedance 2.0 is gaining traction with claims of 'disrupting the AI video generation paradigm.' Key differentiator: not just video generation but multi-modal understanding, reasoning, and generation with physical world understanding. Motion design examples getting positive reception from GenAI community. Signal: Video AI moving beyond simple generation to physics-aware, multi-modal systems. Competes directly with Runway, Pika, and OpenAI Sora. Timing: Fresh discussion Feb 18 suggests active launch/updates.",
+      "source": "x_intel_2026-02-18",
+      "tags": [
+        "video-ai",
+        "bytedance",
+        "seedance",
+        "multi-modal",
+        "generative-ai"
+      ],
+      "addedAt": "2026-02-18T00:47:48.928159"
     }
   ]
 }
