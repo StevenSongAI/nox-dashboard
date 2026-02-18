@@ -1,9 +1,9 @@
 {
-  "lastUpdated": "2026-02-18T11:18:00.000000",
+  "lastUpdated": "2026-02-18T11:50:00.000000",
   "updatedBy": "nox-heartbeat",
-  "version": "2026.02.18.11",
-  "cacheBust": "20260218T1118",
-  "dataVersion": "2026.02.18.46",
+  "version": "2026.02.18.12",
+  "cacheBust": "20260218T1150",
+  "dataVersion": "2026.02.18.47",
   "youtubeUpdated": "2026-02-18T10:47:00Z",
   "investmentsUpdated": "2026-02-18T11:18:00.000000",
   "researchUpdated": "2026-02-18T10:50:00Z",
@@ -16,12 +16,12 @@
     "entryCount": 80
   },
   "dataFreshness": {
-    "research": "2026-02-18 - 22 notes (+ VidIQ 2026 trends)",
+    "research": "2026-02-18 - 22 notes (unchanged)",
     "newBusiness": "2026-02-17 - 27 opportunities",
-    "investments": "2026-02-18 - 80 intelligence items (+ NVDA 5-day countdown)",
+    "investments": "2026-02-18 - 80 intelligence items (unchanged)",
     "workTracker": "2026-02-15 - pagination + deduplication live",
     "minecraftArtists": "2026-02-15 - 7 artists",
-    "youtube": "2026-02-18 - 147 outliers (freshness check completed)",
+    "youtube": "2026-02-18 - 147 outliers (unchanged)",
     "tools": "2026-02-18 - 21 tools"
   },
   "research": {
