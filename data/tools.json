@@ -7,7 +7,11 @@
       "description": "Central command center for tracking YouTube strategy, business opportunities, investments, and research notes",
       "status": "active",
       "lastUsed": "2026-02-08T06:00:00Z",
-      "tags": ["dashboard", "analytics", "overview"],
+      "tags": [
+        "dashboard",
+        "analytics",
+        "overview"
+      ],
       "runCommand": "https://stevensongai.github.io/nox-dashboard/",
       "auditGrade": 92
     },
@@ -18,7 +22,11 @@
       "description": "Work tracker for monitoring agent activity, audits, ralph chains, and live work feeds",
       "status": "active",
       "lastUsed": "2026-02-08T06:00:00Z",
-      "tags": ["work-tracker", "activity", "audits"],
+      "tags": [
+        "work-tracker",
+        "activity",
+        "audits"
+      ],
       "runCommand": "https://stevensongai.github.io/nox-work-tracker/",
       "auditGrade": 88
     },
@@ -29,7 +37,11 @@
       "description": "Local automation gateway for executing commands, managing nodes, and orchestrating agent workflows",
       "status": "active",
       "lastUsed": "2026-02-08T05:30:00Z",
-      "tags": ["automation", "gateway", "orchestration"],
+      "tags": [
+        "automation",
+        "gateway",
+        "orchestration"
+      ],
       "runCommand": "https://docs.openclaw.ai",
       "auditGrade": 88
     },
@@ -40,7 +52,11 @@
       "description": "Anthropic's coding assistant for software development, code review, and technical analysis tasks",
       "status": "active",
       "lastUsed": "2026-02-08T04:15:00Z",
-      "tags": ["coding", "ai", "development"],
+      "tags": [
+        "coding",
+        "ai",
+        "development"
+      ],
       "runCommand": "https://claude.ai",
       "auditGrade": 95
     },
@@ -51,7 +67,11 @@
       "description": "AI-powered search engine for deep research, fact-checking, and staying current on tech developments",
       "status": "active",
       "lastUsed": "2026-02-07T22:00:00Z",
-      "tags": ["research", "search", "ai"],
+      "tags": [
+        "research",
+        "search",
+        "ai"
+      ],
       "runCommand": "https://perplexity.ai",
       "auditGrade": 90
     },
@@ -62,7 +82,11 @@
       "description": "AI-first code editor with built-in Claude integration for rapid development and refactoring",
       "status": "active",
       "lastUsed": "2026-02-08T03:45:00Z",
-      "tags": ["editor", "coding", "ai"],
+      "tags": [
+        "editor",
+        "coding",
+        "ai"
+      ],
       "runCommand": "https://cursor.com",
       "auditGrade": 94
     },
@@ -73,7 +97,11 @@
       "description": "Voice synthesis platform for creating AI voiceovers, narration, and audio content",
       "status": "active",
       "lastUsed": "2026-02-06T18:30:00Z",
-      "tags": ["voice", "audio", "tts"],
+      "tags": [
+        "voice",
+        "audio",
+        "tts"
+      ],
       "runCommand": "https://elevenlabs.io",
       "auditGrade": 87
     },
@@ -84,7 +112,11 @@
       "description": "AI-powered presentation and document creation for pitch decks and research summaries",
       "status": "active",
       "lastUsed": "2026-02-05T14:20:00Z",
-      "tags": ["presentations", "documents", "design"],
+      "tags": [
+        "presentations",
+        "documents",
+        "design"
+      ],
       "runCommand": "https://gamma.app",
       "auditGrade": 89
     },
@@ -95,7 +127,11 @@
       "description": "Kanban-style content pipeline for tracking video ideas from concept to upload",
       "status": "active",
       "lastUsed": "2026-02-09T15:30:00Z",
-      "tags": ["pipeline", "workflow", "content"],
+      "tags": [
+        "pipeline",
+        "workflow",
+        "content"
+      ],
       "runCommand": "pipeline",
       "auditGrade": 85
     },
@@ -106,7 +142,11 @@
       "description": "Analyze YouTube video performance with sortable tables and trend charts",
       "status": "active",
       "lastUsed": "2026-02-09T15:30:00Z",
-      "tags": ["analytics", "youtube", "performance"],
+      "tags": [
+        "analytics",
+        "youtube",
+        "performance"
+      ],
       "runCommand": "analyzer",
       "auditGrade": 82
     },
@@ -117,7 +157,11 @@
       "description": "Generate structured content briefs from outlier video analysis",
       "status": "active",
       "lastUsed": "2026-02-09T15:30:00Z",
-      "tags": ["briefs", "content", "generator"],
+      "tags": [
+        "briefs",
+        "content",
+        "generator"
+      ],
       "runCommand": "brief-generator",
       "auditGrade": 80
     },
@@ -128,7 +172,11 @@
       "description": "Search and browse Minecraft maps with bookmark functionality",
       "status": "beta",
       "lastUsed": "2026-02-09T15:30:00Z",
-      "tags": ["minecraft", "maps", "scraper"],
+      "tags": [
+        "minecraft",
+        "maps",
+        "scraper"
+      ],
       "runCommand": "map-scraper",
       "auditGrade": 75
     },
@@ -139,7 +187,12 @@
       "description": "Browser-based storyboard creator with scene breakdowns, timing estimates, and export to JSON/Markdown. Generates visual storyboards for video planning.",
       "status": "active",
       "lastUsed": "2026-02-10T15:30:00Z",
-      "tags": ["storyboard", "video-planning", "content", "browser-tool"],
+      "tags": [
+        "storyboard",
+        "video-planning",
+        "content",
+        "browser-tool"
+      ],
       "runCommand": "tools/storyboard-generator.html",
       "auditGrade": 90,
       "url": "https://stevensongai.github.io/nox-dashboard/tools/storyboard-generator.html"
@@ -151,7 +204,13 @@
       "description": "Browser-based voiceover script generator with timing, delivery notes, and multiple voice style presets. Exports to TXT/JSON for recording sessions.",
       "status": "active",
       "lastUsed": "2026-02-10T15:30:00Z",
-      "tags": ["voiceover", "script", "audio", "content", "browser-tool"],
+      "tags": [
+        "voiceover",
+        "script",
+        "audio",
+        "content",
+        "browser-tool"
+      ],
       "runCommand": "tools/voiceover-generator.html",
       "auditGrade": 90,
       "url": "https://stevensongai.github.io/nox-dashboard/tools/voiceover-generator.html"
@@ -163,7 +222,13 @@
       "description": "ByteDance's AI video generation platform with native audio capabilities. 1080p output, camera motion controls, and Lip Sync feature for talking head videos.",
       "status": "active",
       "lastUsed": "2026-02-16T21:00:00Z",
-      "tags": ["ai-video", "generation", "audio", "bytedance", "lip-sync"],
+      "tags": [
+        "ai-video",
+        "generation",
+        "audio",
+        "bytedance",
+        "lip-sync"
+      ],
       "runCommand": "https://seedance.io",
       "auditGrade": 88
     },
@@ -174,7 +239,12 @@
       "description": "Kuaishou's advanced AI video generator with 1080p resolution, 10-second clips, and character consistency features. Strong motion quality and physics simulation.",
       "status": "active",
       "lastUsed": "2026-02-16T21:00:00Z",
-      "tags": ["ai-video", "generation", "character-consistency", "kuaishou"],
+      "tags": [
+        "ai-video",
+        "generation",
+        "character-consistency",
+        "kuaishou"
+      ],
       "runCommand": "https://klingai.com",
       "auditGrade": 86
     },
@@ -185,7 +255,13 @@
       "description": "MrBeast's YouTube analytics platform for finding outlier videos. Identifies viral content patterns, channel performance metrics, and trending opportunities.",
       "status": "active",
       "lastUsed": "2026-02-16T18:00:00Z",
-      "tags": ["youtube", "analytics", "outliers", "research", "mrbeast"],
+      "tags": [
+        "youtube",
+        "analytics",
+        "outliers",
+        "research",
+        "mrbeast"
+      ],
       "runCommand": "https://viewstats.com",
       "auditGrade": 92
     },
@@ -196,7 +272,13 @@
       "description": "Google's AI video generator with native audio generation. Creates clips with synchronized sound effects and background audio. Strong motion quality and physics simulation.",
       "status": "active",
       "lastUsed": "2026-02-17T09:45:00Z",
-      "tags": ["ai-video", "generation", "audio", "google", "sound-effects"],
+      "tags": [
+        "ai-video",
+        "generation",
+        "audio",
+        "google",
+        "sound-effects"
+      ],
       "runCommand": "https://deepmind.google/technologies/veo/veo-3/",
       "auditGrade": 89
     },
@@ -207,7 +289,13 @@
       "description": "OpenAI's latest video generation model with hyperreal motion and native audio. New dedicated app for video creation with improved physics and cinematic quality.",
       "status": "active",
       "lastUsed": "2026-02-17T09:45:00Z",
-      "tags": ["ai-video", "generation", "audio", "openai", "hyperreal"],
+      "tags": [
+        "ai-video",
+        "generation",
+        "audio",
+        "openai",
+        "hyperreal"
+      ],
       "runCommand": "https://sora.com",
       "auditGrade": 91
     },
@@ -218,9 +306,32 @@
       "description": "Runway's newest video generation model with unprecedented accuracy in motion and scene consistency. Enhanced character consistency and camera controls for professional workflows.",
       "status": "active",
       "lastUsed": "2026-02-17T09:45:00Z",
-      "tags": ["ai-video", "generation", "runway", "motion", "professional"],
+      "tags": [
+        "ai-video",
+        "generation",
+        "runway",
+        "motion",
+        "professional"
+      ],
       "runCommand": "https://runwayml.com",
       "auditGrade": 90
+    },
+    {
+      "id": "tool-021",
+      "name": "Aethir",
+      "category": "Infrastructure",
+      "description": "Decentralized GPU cloud infrastructure for AI video generation and compute. Provides distributed workloads for real-time AI image/video generation with enterprise-grade reliability. Competes with traditional cloud for AI compute.",
+      "status": "active",
+      "lastUsed": "2026-02-18T01:17:02.812181",
+      "tags": [
+        "gpu",
+        "decentralized",
+        "ai-video",
+        "infrastructure",
+        "compute"
+      ],
+      "runCommand": "https://aethir.com",
+      "auditGrade": 85
     }
   ],
   "categories": [
