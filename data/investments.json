@@ -181,6 +181,29 @@
   ],
   "intelligence": [
     {
+      "id": "intel-072",
+      "date": "2026-02-18T03:45:00Z",
+      "topic": "NVDA Motley Fool Deep Dive: 90.9% Beat Rate Confirmed, Q4 $1.52 EPS Expected, No Correlation Between Beat Size and Stock Reaction",
+      "source": "Motley Fool / Yahoo Finance / Market Data (Feb 17, 2026)",
+      "content": "Comprehensive NVDA earnings analysis from Motley Fool (Feb 17): EARNINGS TRACK RECORD CONFIRMED - 20 of 22 quarters beat estimates = 90.9% beat rate. Most recent 4 quarters: 100% beat rate with average 5.2% beat magnitude (3.5% to 8.5% range). Q4 FY2026 EXPECTATIONS (Feb 25 after close): $65.58B revenue consensus (+67% YoY), $1.52 EPS (+71% YoY from $0.89 prior year). Jensen Huang guidance assumed ZERO China data center sales = conservative base case. Q1 FY2027 GUIDANCE EXPECTATIONS: $70.8B revenue (+61% YoY), $1.65 EPS (+104% YoY) - guidance often moves stock more than current quarter. BLACKWELL DEMAND 'INSANE': Huang CES 2026 presentation slides described AI computing demand as 'insane.' November interview called Blackwell platform demand 'off the charts.' Production scaling to meet massive backlog. HYPERSCALER CAPEX SURGE: Microsoft, Amazon, Alphabet, Meta announced further increases to 2026 capital expenditures, majority directed to AI data centers = direct NVDA revenue driver. CRITICAL INSIGHT - NO CORRELATION: Data shows NO correlation between earnings beat magnitude and stock price reaction. NVDA fell 6 of past 11 earnings weeks DESPITE delivering beats. Examples: Q3 FY2026 had 3% beat but stock fell 3.2% next day. Q4 FY2025 had 5% beat but stock plunged 8.5%. Q1 FY2024 had 18% beat and stock soared 24.4%. Pattern is unpredictable. CURRENT PRICE: $184.86. ANALYST CONSENSUS: 37 Buy, 1 Hold, 1 Sell = 97.4% Buy ratio. Average target $260.38 = 42% upside. BULL CASE: $352-520 from optimistic analysts. POSITIONING GUIDANCE FOR STEVEN: Long-term investors should focus on fundamentals, not short-term price action. With 90.9% beat rate, 'insane' Blackwell demand, and hyperscaler capex acceleration to $650-700B in 2026, fundamentals support position. However, short-term traders face 55% historical probability of decline during earnings week despite beat. OPTIONS: (1) 50% position before earnings if high conviction on beat, (2) Wait for post-earnings potential dip (55% historical odds), (3) Full position on sub-$175 pullback. CATALYSTS: Feb 25 earnings, mid-March GTC (Rubin roadmap).",
+      "impact": "bullish",
+      "tickers": [
+        "NVDA"
+      ],
+      "riskFactors": [
+        "No correlation between beat magnitude and stock reaction - unpredictable",
+        "55% historical probability of decline during earnings week despite beat",
+        "Q1 guidance is key variable - miss on forward guidance could trigger selloff",
+        "High expectations with 90.9% beat rate - limited margin for error"
+      ],
+      "confidence": "high",
+      "priceTarget": "$260.38 (consensus), $352-520 (bull case)",
+      "currentPrice": "$184.86",
+      "impliedUpside": "42% (consensus), 90-185% (bull case)",
+      "catalystDate": "2026-02-25",
+      "catalyst": "Q4 FY2026 Earnings - 90.9% beat rate, $1.52 EPS expected, critical Q1 guidance"
+    },
+    {
       "id": "intel-069",
       "date": "2026-02-18T02:30:00Z",
       "topic": "NVDA Entry Timing Strategy: 6 Days to Earnings - Buy Now vs Wait Analysis",
@@ -211,7 +234,9 @@
       "source": "EAnd.co / Nova Capital / Seeking Alpha / Wolfe Research / Bridgewater 13F (Feb 17-18, 2026)",
       "content": "Fresh NVDA pre-earnings intelligence (Feb 17 evening / Feb 18 morning): OVERWHELMING ANALYST CONSENSUS: 37 Buy ratings, 1 Hold, 1 Sell = 97.4% Buy ratio. Average price target $260.38 = 42% upside from current levels. Wall Street 'strong buy consensus' with extreme bullish positioning. NOVA CAPITAL BULL THESIS: Investor expects 65% upside over 12-24 months, calling NVDA's secular bullish story intact. Key driver: sustained AI capex from Microsoft, Amazon, Alphabet, Meta projected at $650 billion in 2026. Q4 Feb 25 earnings anticipated as 'bullish confirmation' catalyst. HYPERSCALER CAPEX SURGE: Major tech firms doubling capex from ~$400B in 2025 to $700B in 2026 = massive NVDA revenue tailwind. Blackwell demand described as 'insane' by Jensen Huang at CES 2026. WOLFE RESEARCH UPGRADE: Analyst Chris Caso raised FY2028 EPS estimate to $11.50 = $1.50 ABOVE consensus. Sees 'clear path' to upside for 2026-2027 estimates. Raised targets citing Blackwell ramp and upcoming Vera Rubin platform as key growth drivers. BRIDGEWATER STAKE BOOST: Ray Dalio's hedge fund increased NVDA position by $253 million in latest 13F filing, signaling major institutional confidence despite recent sideways price action. SEEKING ALPHA 'DOUBLE-BEAT' EXPECTATION: Analyst Daniel Sereda (family office CIO) published 'Nvidia Should Double-Beat Again' preview, expecting beats on both revenue and earnings. Stock consolidating since August 2025 (6 months flat) = coiled spring technical setup. UBS & TIMOTHY ARCURI: Also raising targets and EPS estimates, citing Blackwell ramp and Vera Rubin platform momentum. ENTRY TIMING DECISION (4 days to earnings): With 97.4% Buy ratio, Nova Capital 65% upside target, Dalio $253M boost, and 'double-beat' expectations, conviction is extreme. Historical 55% odds of post-earnings dip despite beats. Options: (1) STAGED ENTRY NOW: 50% position at current $184-185 before earnings, add 50% post-GTC if momentum continues, (2) WAIT FOR DIP: Full position if stock drops below $175 post-earnings (historically 55% probability), (3) FULL POSITION: Bet on consensus being right with 42% near-term upside to $260 target. CATALYSTS: Feb 25 earnings (4 days), March GTC conference (Rubin roadmap).",
       "impact": "bullish",
-      "tickers": ["NVDA"],
+      "tickers": [
+        "NVDA"
+      ],
       "riskFactors": [
         "97.4% Buy ratio = extreme one-sided positioning - any disappointment triggers outsized selloff",
         "Nova Capital 65% target is 12-24 month timeframe - not immediate upside",
@@ -232,7 +257,9 @@
       "source": "TipRanks / MarketBeat / Defense World / Seeking Alpha (Feb 17-18, 2026)",
       "content": "Fresh pre-market NVDA intelligence (Feb 17 evening / Feb 18 morning): EXTREME BULLISH CONSENSUS - TipRanks data shows 379 Buy ratings, 1 Hold, 1 Sell = 99.5% Buy rating ratio, extraordinary conviction. Average price target $260.38 = 40.77% upside potential. '46% Upside Potential' headline from top analyst bullish call. DEFENSE WORLD REPORTING: 'NVIDIA Analysts Say Buy Ahead of Q4 Earnings, With Conviction' - positive sentiment from third-party partners expanding ties with NVIDIA's ecosystem (CoreWeave) signaling stronger end-market adoption of GPUs and services. SEEKING ALPHA HEADLINE: 'Nvidia Should Double-Beat Again (Earnings Preview)' - analyst Daniel Sereda (family office CIO) expecting beats on both revenue and earnings. Stock has been consolidating since August 2025 (6 months flat) = coiled spring setup. MORGAN STANLEY NOTE: Called NVDA Feb 25 earnings 'the most consequential earnings report in the history of the semiconductor industry' - global AI economy referendum. MARKETBEAT TARGET: $264.20 consensus target = 46% upside from current ~$180. Combined with 379-1-1 analyst ratio, this is one of the strongest conviction calls in large-cap tech. ENTRY TIMING IMPLICATIONS: With earnings Feb 25 (4 days) and this level of analyst conviction, risk of major disappointment elevated but so is potential for relief rally if NVDA meets/exceeds. Historical pattern: 55% odds of decline week-of-earnings despite beats. However, 'double-beat' expectation + GTC March catalyst creates two potential upside drivers. Steven decision point: Deploy staged entry now (50% position) or wait for potential post-earnings dip? With 379 Buy ratings and 'conviction' language, analyst herd is positioned for positive outcome. Any disappointment could trigger outsized selloff given one-sided positioning.",
       "impact": "bullish",
-      "tickers": ["NVDA"],
+      "tickers": [
+        "NVDA"
+      ],
       "riskFactors": [
         "379-1-1 Buy ratio = extreme one-sided positioning - any disappointment triggers outsized selloff",
         "'Most consequential earnings report' hype creates dangerous expectations",
