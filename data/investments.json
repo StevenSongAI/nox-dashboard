@@ -205,6 +205,27 @@
       "catalyst": "Q4 Earnings + Entry Timing Decision - 6 days to earnings with staged entry recommendation"
     },
     {
+      "id": "intel-071",
+      "date": "2026-02-18T03:16:00Z",
+      "topic": "NVDA Pre-Earnings: 37 Buy vs 1 Hold 1 Sell, Nova Capital 65% Upside Target, Dalio $253M Stake Boost",
+      "source": "EAnd.co / Nova Capital / Seeking Alpha / Wolfe Research / Bridgewater 13F (Feb 17-18, 2026)",
+      "content": "Fresh NVDA pre-earnings intelligence (Feb 17 evening / Feb 18 morning): OVERWHELMING ANALYST CONSENSUS: 37 Buy ratings, 1 Hold, 1 Sell = 97.4% Buy ratio. Average price target $260.38 = 42% upside from current levels. Wall Street 'strong buy consensus' with extreme bullish positioning. NOVA CAPITAL BULL THESIS: Investor expects 65% upside over 12-24 months, calling NVDA's secular bullish story intact. Key driver: sustained AI capex from Microsoft, Amazon, Alphabet, Meta projected at $650 billion in 2026. Q4 Feb 25 earnings anticipated as 'bullish confirmation' catalyst. HYPERSCALER CAPEX SURGE: Major tech firms doubling capex from ~$400B in 2025 to $700B in 2026 = massive NVDA revenue tailwind. Blackwell demand described as 'insane' by Jensen Huang at CES 2026. WOLFE RESEARCH UPGRADE: Analyst Chris Caso raised FY2028 EPS estimate to $11.50 = $1.50 ABOVE consensus. Sees 'clear path' to upside for 2026-2027 estimates. Raised targets citing Blackwell ramp and upcoming Vera Rubin platform as key growth drivers. BRIDGEWATER STAKE BOOST: Ray Dalio's hedge fund increased NVDA position by $253 million in latest 13F filing, signaling major institutional confidence despite recent sideways price action. SEEKING ALPHA 'DOUBLE-BEAT' EXPECTATION: Analyst Daniel Sereda (family office CIO) published 'Nvidia Should Double-Beat Again' preview, expecting beats on both revenue and earnings. Stock consolidating since August 2025 (6 months flat) = coiled spring technical setup. UBS & TIMOTHY ARCURI: Also raising targets and EPS estimates, citing Blackwell ramp and Vera Rubin platform momentum. ENTRY TIMING DECISION (4 days to earnings): With 97.4% Buy ratio, Nova Capital 65% upside target, Dalio $253M boost, and 'double-beat' expectations, conviction is extreme. Historical 55% odds of post-earnings dip despite beats. Options: (1) STAGED ENTRY NOW: 50% position at current $184-185 before earnings, add 50% post-GTC if momentum continues, (2) WAIT FOR DIP: Full position if stock drops below $175 post-earnings (historically 55% probability), (3) FULL POSITION: Bet on consensus being right with 42% near-term upside to $260 target. CATALYSTS: Feb 25 earnings (4 days), March GTC conference (Rubin roadmap).",
+      "impact": "bullish",
+      "tickers": ["NVDA"],
+      "riskFactors": [
+        "97.4% Buy ratio = extreme one-sided positioning - any disappointment triggers outsized selloff",
+        "Nova Capital 65% target is 12-24 month timeframe - not immediate upside",
+        "55% historical odds of decline week-of-earnings despite beats (sell-the-news pattern)",
+        "Hyperscaler $700B capex projection may already be priced into expectations"
+      ],
+      "confidence": "high",
+      "priceTarget": "$260.38 (consensus), 65% upside (Nova Capital 12-24mo)",
+      "currentPrice": "$184-185",
+      "impliedUpside": "42% (consensus), 65% (Nova Capital)",
+      "catalystDate": "2026-02-25",
+      "catalyst": "Q4 Earnings - 4 days away, 97.4% Buy ratio, Dalio $253M stake boost, Nova Capital 65% upside target"
+    },
+    {
       "id": "intel-070",
       "date": "2026-02-18T02:47:00Z",
       "topic": "NVDA 'Buy With Conviction' Consensus: 379 Buy vs 1 Hold 1 Sell, $264 Target, 'Double-Beat' Expected",
