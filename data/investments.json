@@ -1697,6 +1697,24 @@
       "priceTarget": "$416 (Seeking Alpha Strong Buy)",
       "catalystDate": "2026-02-25",
       "catalyst": "Q4 FY26 Earnings - HBM supply shortage indicates demand exceeding supply"
+    },
+    {
+      "id": "intel-076",
+      "date": "2026-02-18T09:10:00Z",
+      "topic": "NVDA Entry Timing Update: Double-Beat Expected, $264 PT (44% Upside) - 7 Days to Earnings",
+      "source": "MarketBeat / TipRanks / StockInvest / Seeking Alpha (Feb 17-18, 2026)",
+      "content": "FRESH NVDA INTELLIGENCE (7 days to Feb 25 earnings): ANALYST CONSENSUS: $264.20 price target = 44% upside from ~$183 current levels. 52 analysts covering with strong Buy consensus. EARNINGS EXPECTATIONS: Double-beat predicted (both revenue AND EPS). $1.52 EPS consensus expected. Citi reiterated Buy rating citing 'attractive valuations' ahead of earnings. KEY CATALYST - BLACKWELL ROLLOUT: Analyst focus on Blackwell platform shipment timing, production capacity, and customer demand. These factors will determine revenue growth trajectory for coming quarters. SUPPLY CHAIN DOMINANCE: NVDA will control ~60% of TSMC's CoWoS wafer output by late 2026, dictating industry hardware cycles and limiting AMD to residual capacity. This is a structural moat. RECURRING REVENUE STREAM: AI Enterprise software generating $4,500 per GPU per year - high-margin recurring revenue layer on top of hardware sales. ENTRY TIMING DECISION MATRIX: Pre-earnings (now): Deploy if believe double-beat and strong guidance will drive immediate upside. Risk: High expectations could lead to 'sell the news' even with good results. Post-earnings dip: Wait for potential pullback if market disappointed by guidance or margins. Risk: May not get dip - Meta multi-year deal already provides demand visibility. HYBRID APPROACH RECOMMENDED: Deploy 50% position now (pre-earnings), reserve 50% for post-earnings dip opportunity. This captures upside if earnings catalyze breakout while preserving dry powder for volatility.",
+      "impact": "bullish",
+      "tickers": ["NVDA"],
+      "riskFactors": [
+        "Extremely high expectations - 'sell the news' risk even with good earnings",
+        "Blackwell production delays could hurt guidance",
+        "Broad market volatility could override positive fundamentals"
+      ],
+      "confidence": "high",
+      "priceTarget": "$264.20 (consensus)",
+      "catalystDate": "2026-02-25",
+      "catalyst": "Q4 FY26 Earnings - Double-beat expected, Blackwell guidance key"
     }
   ],
   "synthesizedInsights": [
