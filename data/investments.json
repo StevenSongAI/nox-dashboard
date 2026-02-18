@@ -181,6 +181,27 @@
   ],
   "intelligence": [
     {
+      "id": "intel-075",
+      "date": "2026-02-18T09:16:00Z",
+      "topic": "APP Entry Trigger Activated: Dipped to $359 (Below $380 Target) - 18 Analysts Strong Buy, $705 PT (87% Upside)",
+      "source": "Yahoo Finance / Investing.com / StockAnalysis.com (Feb 18, 2026)",
+      "content": "BREAKING APP PRICE ACTION (Feb 18, 2026): ENTRY TRIGGER HIT - APP dipped to $359.00 intraday, below the $380 target entry price. Stock recovered to $375.99 (+2.47%) by afternoon trading. Day range: $359.00 - $391.85. This is the first meaningful dip below target since establishing the $380 entry level. ANALYST CONSENSUS: 18 analysts rate APP 'Strong Buy' with average 12-month price target of $705.17 (80.6% upside from current levels). High estimate: $860. Low estimate: $458. Scotiabank recently raised PT to $775. 52-WEEK CONTEXT: APP trades at $376 vs 52-week range of $200.50 - $745.61. Currently 49% below all-time highs, presenting potential value entry. Stock has been volatile amid 'SaaSpocalypse' fears but institutional accumulation continues (Vanguard 7M shares, Northwestern Mutual $6.2M). FUNDAMENTAL BACKDROP: Record 84% EBITDA margins reported. Revenue growth remains strong. AI-powered advertising engine (AXON) gaining market share from traditional ad platforms. Positioned as 'AI adtech' pure play with Netflix-scale targeting capabilities. ENTRY DECISION MATRIX: (1) FULL POSITION NOW at $376: Pros - Below $380 target, Strong Buy consensus, 87% upside to PT. Cons - Could retest $359 or lower if market weakens. (2) STAGED ENTRY: 50% position now at $376, 50% if it dips back to $359 or below. Captures current opportunity while preserving dry powder. (3) WAIT FOR DEEPER DIP: Full position if APP hits $340-350 range. Risk missing entry if stock breaks above $391 resistance. TECHNICAL LEVELS: Support: $359 (today's low), $340 (psychological), $320 (prior consolidation). Resistance: $391 (today's high), $420 (recent ceiling), $500 (sentiment barrier). POSITIONING RECOMMENDATION: Given 18-analyst Strong Buy consensus, $705 PT (87% upside), and today's confirmed dip below $380 target, staged entry is optimal. The $359 intraday touch validates downside support. APP at 84% EBITDA margins with AI adtech positioning offers compelling risk-reward. CATALYSTS: Q4 earnings (early March expected), continued AXON platform growth, potential share buybacks given cash generation.",
+      "impact": "bullish",
+      "tickers": ["APP"],
+      "riskFactors": [
+        "SaaS sector sentiment remains weak - multiple compression risk",
+        "$391 resistance must break for momentum continuation",
+        "Could retest $359 or lower if market sells off",
+        "High expectations from 18 Strong Buy ratings limit margin for error"
+      ],
+      "confidence": "high",
+      "priceTarget": "$705.17 (consensus)",
+      "currentPrice": "$375.99 (Feb 18 afternoon)",
+      "impliedUpside": "87.6%",
+      "catalystDate": "2026-03-01",
+      "catalyst": "Q4 Earnings - expected early March, AXON growth metrics key"
+    },
+    {
       "id": "intel-074",
       "date": "2026-02-18T04:46:00Z",
       "topic": "NVDA Meta Multiyear Deal: Millions of AI Chips (Rubin GPUs + Rack Systems) - Game Changer for Feb 25 Earnings",
