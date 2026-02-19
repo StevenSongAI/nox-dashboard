@@ -521,18 +521,21 @@ function buildYouTubeModalContent(video) {
 
 function buildOpportunityModalContent(opp) {
   const revenue = opp.potentialRevenue || 'N/A';
+  const alignment = opp.alignment || opp.marketSignal || 'N/A';
+  const nextStep = opp.nextStep || opp.actionable || 'N/A';
+  const category = opp.effort || opp.type || opp.category || 'N/A';
   const fields = [
     { label: 'Name', value: opp.name || opp.title },
     { label: 'Description', value: opp.description },
-    { label: 'Alignment', value: `<span class="alignment-${opp.alignment?.toLowerCase()}">${opp.alignment}</span>`, raw: true },
+    { label: 'Alignment', value: `<span class="alignment-${alignment.toLowerCase()}">${alignment}</span>`, raw: true },
     { label: 'Status', value: `<span class="status-badge status-${opp.status}">${opp.status}</span>`, raw: true },
     { label: 'Potential Revenue', value: revenue },
-    { label: 'Effort', value: opp.effort || opp.type },
-    { label: 'Next Step', value: opp.nextStep },
+    { label: 'Category', value: category },
+    { label: 'Next Step', value: nextStep },
     { label: 'Created', value: formatDate(opp.createdAt || opp.addedAt) },
     { label: 'ID', value: opp.id, code: true }
   ];
-  
+
   return buildModalFields(fields);
 }
 
@@ -1463,7 +1466,7 @@ function saveOpportunities(opportunities) {
 
 // BATCH 4 FIX: Calculate pipeline counts from opportunities
 function calculatePipelineCounts(opportunities) {
-  const counts = { new: 0, evaluating: 0, pursuing: 0, passed: 0, won: 0 };
+  const counts = { new: 0, evaluating: 0, researching: 0, pursuing: 0, passed: 0, won: 0 };
   opportunities.forEach(opp => {
     const status = opp.status?.toLowerCase() || 'new';
     if (counts.hasOwnProperty(status)) {
@@ -1496,6 +1499,7 @@ function renderBusiness() {
   const pipeline = calculatePipelineCounts(allOpportunities);
   document.getElementById('pipe-new').textContent = formatNumber(pipeline.new);
   document.getElementById('pipe-evaluating').textContent = formatNumber(pipeline.evaluating);
+  document.getElementById('pipe-researching').textContent = formatNumber(pipeline.researching);
   document.getElementById('pipe-pursuing').textContent = formatNumber(pipeline.pursuing);
   document.getElementById('pipe-passed').textContent = formatNumber(pipeline.passed);
   document.getElementById('pipe-won').textContent = formatNumber(pipeline.won);
@@ -1513,31 +1517,38 @@ function renderBusiness() {
   if (allOpportunities.length === 0) {
     html += buildEmptyState('💼', 'No Opportunities Yet', 'Click "Add Opportunity" to create your first business opportunity.');
   } else {
-    html += allOpportunities.map(o => `
-      <div class="card card-clickable rounded-lg p-4" data-status="${o.status}" data-opp-id="${o.id}" onclick="showOpportunityModal('${o.id}')">
+    html += allOpportunities.map(o => {
+      const alignment = o.alignment || o.marketSignal || '';
+      const category = o.type || o.effort || o.category || '';
+      const nextStep = o.nextStep || o.actionable || '';
+      const status = o.status || 'new';
+      return `
+      <div class="card card-clickable rounded-lg p-4" data-status="${status}" data-opp-id="${o.id}" onclick="showOpportunityModal('${o.id}')">
         <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2 mb-2">
           <div class="flex items-center gap-2 flex-wrap">
-            <span class="alignment-${o.alignment?.toLowerCase()}">${o.alignment}</span>
-            <span class="px-2 py-0.5 bg-dark-700 text-xs rounded">${o.type || o.effort}</span>
+            <span class="alignment-${alignment.toLowerCase()}">${alignment}</span>
+            <span class="px-2 py-0.5 bg-dark-700 text-xs rounded">${category}</span>
             <span class="text-sm text-gray-400">${o.potentialRevenue || ''}</span>
           </div>
           <span class="text-sm text-gray-400">${formatTimeAgo(o.createdAt || o.addedAt)}</span>
         </div>
         <h3 class="font-semibold mb-1">${o.title || o.name}</h3>
         <p class="text-sm text-gray-300 mb-2">${o.description}</p>
-        <p class="text-sm"><strong>Next step:</strong> ${o.nextStep}</p>
+        ${nextStep ? `<p class="text-sm"><strong>Next step:</strong> ${nextStep}</p>` : ''}
         <div class="mt-2 flex flex-wrap gap-2" onclick="event.stopPropagation()">
           <select onchange="moveStatus('${o.id}', this.value)" class="text-xs px-2 py-1 bg-dark-700 rounded border border-dark-600">
-            <option value="new"${o.status === 'new' ? ' selected' : ''}>New</option>
-            <option value="evaluating"${o.status === 'evaluating' ? ' selected' : ''}>Evaluating</option>
-            <option value="pursuing"${o.status === 'pursuing' ? ' selected' : ''}>Pursuing</option>
-            <option value="passed"${o.status === 'passed' ? ' selected' : ''}>Passed</option>
-            <option value="won"${o.status === 'won' ? ' selected' : ''}>Won</option>
+            <option value="" disabled${!['new','evaluating','researching','pursuing','passed','won'].includes(status) ? ' selected' : ''}>Move to...</option>
+            <option value="new"${status === 'new' ? ' selected' : ''}>New</option>
+            <option value="evaluating"${status === 'evaluating' ? ' selected' : ''}>Evaluating</option>
+            <option value="researching"${status === 'researching' ? ' selected' : ''}>Researching</option>
+            <option value="pursuing"${status === 'pursuing' ? ' selected' : ''}>Pursuing</option>
+            <option value="passed"${status === 'passed' ? ' selected' : ''}>Passed</option>
+            <option value="won"${status === 'won' ? ' selected' : ''}>Won</option>
           </select>
           <button onclick="deleteOpportunity('${o.id}')" class="text-xs px-2 py-1 bg-red-900/50 text-red-400 rounded hover:bg-red-900">Delete</button>
         </div>
-      </div>
-    `).join('');
+      </div>`;
+    }).join('');
   }
   
   container.innerHTML = html;
@@ -3374,8 +3385,8 @@ function moveStatus(oppId, newStatus) {
     console.log('Found opportunity, updating status from', opp.status, 'to', newStatus);
     opp.status = newStatus;
     saveOpportunities(opportunities);
-    renderBusiness();
-    
+    safeRender(() => renderBusiness(), 'renderBusiness');
+
     // Show success feedback
     const statusEl = document.getElementById('pipe-' + newStatus);
     if (statusEl) {
