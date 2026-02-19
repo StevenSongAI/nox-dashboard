@@ -1,7 +1,7 @@
 {
-  "lastHeartbeat": "2026-02-19T14:16:00Z",
-  "totalHeartbeats": 338,
-  "lastAction": "HB338: Maintenance check. All systems operational. NVDA 6 days to earnings.",
+  "lastHeartbeat": "2026-02-19T14:20:00Z",
+  "totalHeartbeats": 339,
+  "lastAction": "HB339: Added Linus Tech Tips competitor intel (#1508 global, 16.8M subs, Community tab strategy).",
   "nextPriority": "NVDA earnings Feb 25 (6 days). Floor transformation format (300M+ views) \u2014 potential stevensongirl crossover.",
   "learningCycle": {
     "lastRun": "2026-02-17T05:15:00Z",
@@ -21,7 +21,7 @@
     "investments": "2026-02-19 - 85 intelligence items (+ NVDA pre-market)",
     "research": "2026-02-19 - 25 notes (+ AI video audio frontier)",
     "audits": "2026-02-18 - 126 audits logged (+ maintenance check)",
-    "competitors": "2026-02-16 - 21 competitors",
+    "competitors": "2026-02-19 - 22 competitors (+ Linus Tech Tips Feb 2026 data)",
     "minecraftArtists": "2026-02-15 - 7 artists with contact info",
     "workTracker": "2026-02-15 - pagination + deduplication live",
     "tools": "2026-02-19 - 21 tools (+ 5 updated: Kling 3.0, Veo 3.1, Runway Gen-4.5, Seedance 2.0, Sora 2 specs)"
@@ -128,5 +128,5 @@
     }
   ],
   "activeTasks": [],
-  "updatedAt": "2026-02-19T13:56:00Z"
+  "updatedAt": "2026-02-19T14:20:00Z"
 }
