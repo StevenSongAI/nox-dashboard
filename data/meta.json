@@ -12,8 +12,10 @@
   "workTrackerUpdated": "2026-02-15T00:17:00Z",
   "minecraftArtistsUpdated": "2026-02-18T14:22:00Z",
   "investments": {
-    "lastUpdated": "2026-02-19T09:46:00Z",
-    "entryCount": 83
+    "lastUpdated": "2026-02-19T10:55:00Z",
+    "entryCount": 83,
+    "totalIntelligence": 85,
+    "lastIntelligenceId": "intel-081"
   },
   "dataFreshness": {
     "research": "2026-02-19 - 25 notes (+ AI video audio frontier)",
