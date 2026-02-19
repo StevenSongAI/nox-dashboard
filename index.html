@@ -65,6 +65,7 @@
         <button onclick="showTab('pipeline')" id="tab-btn-pipeline" class="tab-btn text-sm font-medium" role="tab" aria-selected="false" aria-controls="tab-pipeline" tabindex="-1" aria-label="Pipeline tab">🎬 Pipeline</button>
         <button onclick="showTab('calendar')" id="tab-btn-calendar" class="tab-btn text-sm font-medium" role="tab" aria-selected="false" aria-controls="tab-calendar" tabindex="-1" aria-label="Calendar tab">📅 Calendar</button>
         <button onclick="showTab('memory')" id="tab-btn-memory" class="tab-btn text-sm font-medium" role="tab" aria-selected="false" aria-controls="tab-memory" tabindex="-1" aria-label="Memory tab">🧠 Memory</button>
+        <button onclick="showTab('team')" id="tab-btn-team" class="tab-btn text-sm font-medium" role="tab" aria-selected="false" aria-controls="tab-team" tabindex="-1" aria-label="Team tab">👥 Team</button>
       </div>
     </nav>
   </header>
@@ -895,6 +896,39 @@
         </div>
       </div>
     </div>
+
+    <!-- Team Tab -->
+    <div id="tab-team" class="tab-content hidden" role="tabpanel" aria-labelledby="tab-btn-team" hidden>
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4 gap-3">
+        <div>
+          <h2 class="text-xl font-semibold">👥 Team</h2>
+          <p class="text-sm text-gray-400">Nox Operations — Digital Organization</p>
+        </div>
+        <div id="team-stats" class="flex gap-3 text-sm">
+          <span class="bg-dark-700 px-3 py-1 rounded-full">Loading...</span>
+        </div>
+      </div>
+      
+      <!-- Organization Leader Card -->
+      <div class="card rounded-lg p-4 mb-4 border-l-4 border-accent-blue">
+        <div class="flex items-center gap-3">
+          <div class="text-3xl">👑</div>
+          <div>
+            <h3 class="font-semibold">Steven</h3>
+            <p class="text-sm text-gray-400">CEO / Mission Control Operator</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Agent Grid -->
+      <div id="agent-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="skeleton-loader">
+          <div class="skeleton-card h-32"></div>
+          <div class="skeleton-card h-32"></div>
+          <div class="skeleton-card h-32"></div>
+        </div>
+      </div>
+    </div>
   </main>
 
   <!-- Detail Modal -->
@@ -1520,6 +1554,102 @@
       if (hours < 24) return `${hours}h`;
       return `${days}d`;
     }
+    
+    // Team Tab Functions
+    async function loadTeamData() {
+      try {
+        const response = await fetch('data/team.json?v=' + Date.now());
+        const data = await response.json();
+        renderTeam(data);
+      } catch (error) {
+        console.error('Failed to load team data:', error);
+        document.getElementById('agent-grid').innerHTML = '<p class="text-red-400">Failed to load team data</p>';
+      }
+    }
+    
+    function renderTeam(data) {
+      // Update stats
+      const statsHtml = `
+        <span class="bg-accent-green/20 text-accent-green px-3 py-1 rounded-full">${data.organization.activeAgents} Active</span>
+        <span class="bg-dark-700 px-3 py-1 rounded-full">${data.organization.totalAgents} Total</span>
+      `;
+      document.getElementById('team-stats').innerHTML = statsHtml;
+      
+      // Render agent cards
+      const grid = document.getElementById('agent-grid');
+      grid.innerHTML = data.agents.map(agent => {
+        const statusColors = {
+          active: 'bg-accent-green',
+          'on-call': 'bg-accent-yellow',
+          scheduled: 'bg-accent-blue'
+        };
+        const statusColor = statusColors[agent.status] || 'bg-gray-500';
+        
+        return `
+          <div class="card rounded-lg p-4 cursor-pointer hover:border-accent-purple transition-colors" onclick="showAgentDetails('${agent.id}')">
+            <div class="flex items-start justify-between mb-3">
+              <div class="flex items-center gap-2">
+                <span class="text-2xl">${agent.emoji}</span>
+                <div>
+                  <h3 class="font-semibold">${agent.name}</h3>
+                  <p class="text-xs text-gray-400">${agent.role}</p>
+                </div>
+              </div>
+              <span class="w-2 h-2 rounded-full ${statusColor} animate-pulse"></span>
+            </div>
+            <p class="text-sm text-gray-300 mb-3 line-clamp-2">${agent.currentTask}</p>
+            <div class="flex flex-wrap gap-1 mb-3">
+              ${agent.responsibilities.slice(0, 3).map(r => `<span class="text-xs bg-dark-700 px-2 py-0.5 rounded">${r}</span>`).join('')}
+            </div>
+            <div class="flex justify-between text-xs text-gray-500">
+              <span>${Object.values(agent.stats)[0]} actions</span>
+              <span>${new Date(agent.lastActive).toLocaleDateString()}</span>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+    
+    function showAgentDetails(agentId) {
+      fetch('data/team.json?v=' + Date.now())
+        .then(r => r.json())
+        .then(data => {
+          const agent = data.agents.find(a => a.id === agentId);
+          if (!agent) return;
+          
+          const statusColors = { active: 'text-accent-green', 'on-call': 'text-accent-yellow', scheduled: 'text-accent-blue' };
+          
+          document.getElementById('modal-title').textContent = `${agent.emoji} ${agent.name}`;
+          document.getElementById('modal-content').innerHTML = `
+            <div class="space-y-4">
+              <div>
+                <p class="text-sm text-gray-400">${agent.role} · <span class="${statusColors[agent.status] || ''}">${agent.status}</span></p>
+                <p class="mt-2">${agent.description}</p>
+              </div>
+              <div>
+                <h4 class="text-sm font-semibold mb-2">Current Task</h4>
+                <p class="text-sm bg-dark-700 p-2 rounded">${agent.currentTask}</p>
+              </div>
+              <div>
+                <h4 class="text-sm font-semibold mb-2">Responsibilities</h4>
+                <ul class="text-sm space-y-1">${agent.responsibilities.map(r => `<li>• ${r}</li>`).join('')}</ul>
+              </div>
+              <div class="grid grid-cols-2 gap-3">
+                ${Object.entries(agent.stats).map(([k, v]) => `
+                  <div class="bg-dark-700 p-2 rounded text-center">
+                    <div class="text-lg font-bold">${v}</div>
+                    <div class="text-xs text-gray-400">${k.replace(/([A-Z])/g, ' $1').toLowerCase()}</div>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+          `;
+          document.getElementById('detail-modal').classList.remove('hidden');
+        });
+    }
+    
+    // Load team data when tab is shown
+    document.getElementById('tab-btn-team')?.addEventListener('click', loadTeamData);
   </script>
   
   <style>

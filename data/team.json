@@ -1,0 +1,84 @@
+{
+  "agents": [
+    {
+      "id": "nox",
+      "name": "Nox",
+      "role": "Lead Work Agent",
+      "emoji": "⚡",
+      "status": "active",
+      "description": "Primary work agent. Handles YouTube strategy, dashboard development, business intelligence, research, and X.com monitoring.",
+      "responsibilities": ["YouTube content strategy", "Dashboard development", "Investment intelligence", "Business opportunities", "Research notes", "Scraper management"],
+      "currentTask": "Mission Control dashboard upgrade",
+      "heartbeats": 309,
+      "lastActive": "2026-02-19T04:00:00Z",
+      "stats": {"tasksCompleted": 156, "dataPointsAdded": 820, "auditsRun": 45}
+    },
+    {
+      "id": "value-auditor",
+      "name": "Value Auditor",
+      "role": "Quality Assurance",
+      "emoji": "🔍",
+      "status": "on-call",
+      "description": "Reviews every dashboard update for data quality, schema compliance, and usefulness. Grades work 0-100%.",
+      "responsibilities": ["Audit dashboard updates", "Grade data quality", "Check schema compliance", "Verify usefulness to Steven"],
+      "currentTask": "Awaiting next audit",
+      "lastActive": "2026-02-19T03:45:00Z",
+      "stats": {"auditsCompleted": 45, "avgScore": 82}
+    },
+    {
+      "id": "youtube-scraper",
+      "name": "YouTube Scraper",
+      "role": "Data Collection",
+      "emoji": "🎬",
+      "status": "active",
+      "description": "Automated scraper running every hour. Collects YouTube outlier videos using 5 fixed queries + 3 random discovery methods.",
+      "responsibilities": ["Hourly YouTube scraping", "Random discovery queries", "ViewStats data collection"],
+      "currentTask": "Hourly scrape cycle",
+      "lastActive": "2026-02-19T04:00:00Z",
+      "stats": {"videosScraped": 1920, "queriesPerHour": 8}
+    },
+    {
+      "id": "x-scraper",
+      "name": "X Intelligence",
+      "role": "Data Collection",
+      "emoji": "🐦",
+      "status": "active",
+      "description": "Scrapes X.com for trending AI/tech topics, business opportunities, and content angles.",
+      "responsibilities": ["X.com trend monitoring", "Business opportunity detection", "Content angle discovery"],
+      "currentTask": "Continuous monitoring",
+      "lastActive": "2026-02-19T04:00:00Z",
+      "stats": {"tweetsCollected": 710, "insightsGenerated": 24}
+    },
+    {
+      "id": "overnight-analyst",
+      "name": "Overnight Analyst",
+      "role": "Analysis",
+      "emoji": "🌙",
+      "status": "scheduled",
+      "description": "Runs at 2 AM daily. Processes all scraper data, filters for high-value content, pushes to dashboard.",
+      "responsibilities": ["YouTube outlier filtering", "X.com insight extraction", "Dashboard data push"],
+      "currentTask": "Next run: 2:00 AM",
+      "lastActive": "2026-02-18T07:00:00Z",
+      "stats": {"analysisRuns": 12, "itemsFiltered": 340}
+    },
+    {
+      "id": "coding-agent",
+      "name": "Dev Agent",
+      "role": "Development",
+      "emoji": "💻",
+      "status": "on-call",
+      "description": "Handles coding tasks — dashboard features, scrapers, automation scripts, mod development.",
+      "responsibilities": ["Dashboard feature development", "Scraper maintenance", "Tool building", "Bug fixes"],
+      "currentTask": "Awaiting assignment",
+      "lastActive": "2026-02-19T04:00:00Z",
+      "stats": {"featuresBuilt": 17, "bugsFixed": 8}
+    }
+  ],
+  "organization": {
+    "name": "Nox Operations",
+    "leader": "Steven",
+    "totalAgents": 6,
+    "activeAgents": 4,
+    "lastUpdated": "2026-02-19T04:00:00Z"
+  }
+}
