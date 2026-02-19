@@ -181,6 +181,26 @@
   ],
   "intelligence": [
     {
+      "id": "intel-077",
+      "date": "2026-02-19T09:46:00Z",
+      "topic": "APP Analyst Consensus Update: 20 Analysts Avg $674 PT (79% Upside), Stock Down 41% YTD - Entry Opportunity",
+      "source": "TipRanks / MarketBeat / Public.com / Yahoo Finance (Feb 19, 2026)",
+      "content": "FRESH APP INTELLIGENCE - Feb 19, 2026: ANALYST CONSENSUS UPDATE: 20 Wall Street analysts now cover APP with average 12-month price target of $674.37 (TipRanks data). Range: $775 high (Scotiabank), $500 low. MarketBeat consensus: $651.77. Public.com consensus: $705.17. All sources show 18-20 Strong Buy ratings with zero Sell ratings. YTD PERFORMANCE: APP down 41% in 2026 per Yahoo Finance, creating potential value entry. Stock trading near $376 vs $380 target entry - essentially at buy zone. CURRENT CONTEXT: Despite 41% decline, analyst conviction remains extremely high. No downgrades in recent sessions. 84% EBITDA margins (record) still intact. Vanguard 7M share purchase and Northwestern Mutual $6.2M investment provide institutional validation. UPSIDE SCENARIOS: Base case $674 PT = 79% upside. Bull case $775 = 106% upside. Bear case $500 = 33% upside. Even conservative scenario offers meaningful returns from current levels. RISK/REWARD: Downside limited by record margins and AI adtech positioning. Upside asymmetric given analyst conviction. SaaSpocalypse fears appear overblown - no analyst downgrades despite 41% decline. ENTRY TIMING: At $376 vs $380 target, entry zone active. Staged entry still recommended: 50% position now, 50% on any dip below $370 or to $359 prior low. CATALYSTS: Q4 earnings early March (AXON growth metrics), potential share buybacks given cash generation, continued institutional accumulation.",
+      "impact": "bullish",
+      "tickers": ["APP"],
+      "riskFactors": [
+        "41% YTD decline could continue if SaaS sentiment deteriorates further",
+        "High analyst expectations create limited margin for error on earnings",
+        "Target entry at $380 may be breached to downside in market sell-off"
+      ],
+      "confidence": "high",
+      "priceTarget": "$674.37 (TipRanks avg), $651.77 (MarketBeat), $705.17 (Public.com)",
+      "currentPrice": "$376 (near target entry)",
+      "impliedUpside": "79% (consensus avg)",
+      "catalystDate": "2026-03-01",
+      "catalyst": "Q4 Earnings - early March expected, AXON 2.0 growth metrics key"
+    },
+    {
       "id": "intel-076",
       "date": "2026-02-19T09:16:00Z",
       "topic": "NVDA 3-Day Earnings Countdown: BofA Reiterates Buy $275 PT, Pullback Warning Despite $67B Beat Expected",
