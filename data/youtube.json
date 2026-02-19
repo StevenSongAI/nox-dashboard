@@ -2528,9 +2528,10 @@
     },
     {
       "id": "brief-floor-transform-001",
-      "title": "AI Floor Transformation: 300M+ View Format",
-      "status": "approved",
+      "title": "AI Floor Transformation: 300M+ View Format \u2014 FULL PRODUCTION KIT",
+      "status": "production-ready",
       "createdAt": "2026-02-19T17:51:00Z",
+      "updatedAt": "2026-02-19T23:36:48Z",
       "content": {
         "hook": "Watch this ordinary floor transform into [unexpected scene]",
         "structure": [
@@ -2545,14 +2546,69 @@
           "shareable": "Unexpected transformations get shared"
         }
       },
+      "scriptOutlines": [
+        {
+          "variant": "Gaming PC Build",
+          "script": "SHOT 1 (0-2s): Close-up of plain concrete floor. Text overlay: 'POV: You let AI redesign your floor'. SHOT 2 (2-4s): Camera slowly pulls back as floor tiles START morphing \u2014 RGB lights bleeding through cracks. SHOT 3 (4-8s): Full transformation \u2014 floor becomes a transparent glass panel revealing a glowing gaming PC build underneath, liquid cooling tubes pulsing. SHOT 4 (8-12s): Camera descends THROUGH the floor into the PC interior \u2014 cyberpunk aesthetic. SHOT 5 (12-15s): Text: 'Would you live here?' + subscribe CTA.",
+          "aiPrompts": {
+            "before": "Photorealistic plain concrete floor, overhead camera angle, warm ambient lighting, 4K",
+            "midTransition": "Concrete floor cracking with RGB light bleeding through cracks, cyberpunk aesthetic, overhead shot",
+            "after": "Transparent glass floor panel revealing a custom gaming PC build with liquid cooling, RGB lighting, overhead camera angle, photorealistic 4K"
+          }
+        },
+        {
+          "variant": "Minecraft World",
+          "script": "SHOT 1: Hardwood floor, normal room. SHOT 2: Floor pixelates, blocks start forming. SHOT 3: Full Minecraft biome visible through floor \u2014 diamond cave, lava, ore veins. SHOT 4: Camera falls INTO the Minecraft world. Hook: 'My floor just became a Minecraft seed'",
+          "aiPrompts": {
+            "before": "Clean hardwood floor, living room, natural lighting, overhead angle, photorealistic",
+            "midTransition": "Hardwood floor pixelating into Minecraft-style blocks, hybrid photorealistic-voxel aesthetic",
+            "after": "Minecraft underground cave with diamond ore, lava pools, and torches, seen from above through transparent floor, voxel art meets photorealism"
+          }
+        },
+        {
+          "variant": "Ocean Aquarium",
+          "script": "SHOT 1: White tile bathroom floor. SHOT 2: Tiles dissolve into water ripples. SHOT 3: Floor is now a deep ocean view \u2014 whales, coral reef, bioluminescence. SHOT 4: Manta ray swims directly under camera. Text: 'AI just replaced my floor with the ocean'",
+          "aiPrompts": {
+            "before": "White ceramic tile bathroom floor, overhead angle, soft lighting, photorealistic 4K",
+            "midTransition": "White tiles dissolving into ocean water ripples, transitional effect, overhead view",
+            "after": "Deep ocean scene with coral reef, bioluminescent creatures, and a manta ray, viewed from above through transparent floor, photorealistic underwater photography style"
+          }
+        }
+      ],
+      "seoKeywords": [
+        "ai floor transformation",
+        "ai room transformation",
+        "floor transformation timelapse",
+        "ai renovation",
+        "ai interior design",
+        "kling ai tutorial",
+        "sora ai video",
+        "ai transformation viral",
+        "ai home design",
+        "floor makeover ai"
+      ],
+      "thumbnailConcepts": [
+        "Split screen: boring concrete floor LEFT \u2192 glowing gaming PC floor RIGHT, with shocked face reaction",
+        "Bird's eye floor shot with 'Before' and 'After' arrows, dramatic lighting difference",
+        "Person standing on transparent floor with ocean/space visible below, vertigo effect"
+      ],
+      "batchProductionPlan": {
+        "phase1": "Generate 5 'before' floor images (concrete, hardwood, tile, carpet, linoleum) using ChatGPT/DALL-E",
+        "phase2": "For each before, generate 3 transformation variants using Kling 3.0 (gaming, nature, fantasy)",
+        "phase3": "Stitch each into 15-30s Shorts using CapCut or ffmpeg with trending audio",
+        "phase4": "Post 1 per day for 15 days, A/B test thumbnails, double down on winner",
+        "estimatedOutput": "15 Shorts in one batch session (~2 hours)",
+        "automationNote": "This is exactly like the Higgsfield ice dragon automation \u2014 Steven already has the pipeline skills"
+      },
       "productionNotes": {
         "tools": [
           "Kling 3.0 (4K@60fps)",
-          "Grok for prompts",
-          "Free workflow"
+          "ChatGPT for prompts",
+          "CapCut for editing",
+          "Free workflow possible"
         ],
-        "estimatedTime": "15 min per video",
-        "batchOpportunity": "Create 5-10 variations with different destinations"
+        "estimatedTime": "15 min per video after initial setup",
+        "batchOpportunity": "Create 15 variations in one 2-hour session"
       },
       "outlierRef": [
         "yt-research-floor-transform-001",

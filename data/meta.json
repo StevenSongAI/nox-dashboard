@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-19T22:46:00Z",
+  "lastUpdated": "2026-02-19T23:36:59Z",
   "updatedBy": "nox-heartbeat",
   "version": "2026.02.19.35",
   "cacheBust": "20260219T2246",
@@ -41,8 +41,7 @@
     "totalTools": 21
   },
   "youtube": {
-    "lastUpdated": "2026-02-19T12:16:00Z",
-    "totalOutliers": 150
+    "lastUpdated": "2026-02-19T23:36:59Z"
   },
   "competitorsUpdated": "2026-02-19T14:20:00Z",
   "competitors": {
