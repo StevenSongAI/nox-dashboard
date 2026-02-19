@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-18T02:46:52.008424",
+  "lastUpdated": "2026-02-18T21:11:54.575395",
   "notes": [
     {
       "id": "note-001",
@@ -325,7 +325,7 @@
       "id": "note-023",
       "category": "AI Adoption",
       "title": "AI Coding Tools: 92% of US Developers Use Daily, 41% of Code AI-Generated",
-      "content": "Fresh X.com intelligence (Feb 18, 2026): 92% of US developers now use AI coding tools daily. 41% of all code written globally is AI-generated. Signal: AI coding tools have achieved mainstream developer adoption. Implications: (1) Developer productivity tools market is mature — Cursor, Claude Code, GitHub Copilot now standard workflow. (2) Code quality and security tooling opportunity — more AI-generated code = more need for automated review, vulnerability detection. (3) Junior developer market disruption — if 41% of code is AI-generated, entry-level coding roles may shift toward AI supervision, code review, and architecture. (4) Infrastructure demand — more code written = more compute, more deployment, more monitoring. Investment angles: NVDA (compute infrastructure), PLTR (code security/analysis), AAPL (Xcode AI integration), MSFT (GitHub Copilot monetization).",
+      "content": "Fresh X.com intelligence (Feb 18, 2026): 92% of US developers now use AI coding tools daily. 41% of all code written globally is AI-generated. Signal: AI coding tools have achieved mainstream developer adoption. Implications: (1) Developer productivity tools market is mature \u2014 Cursor, Claude Code, GitHub Copilot now standard workflow. (2) Code quality and security tooling opportunity \u2014 more AI-generated code = more need for automated review, vulnerability detection. (3) Junior developer market disruption \u2014 if 41% of code is AI-generated, entry-level coding roles may shift toward AI supervision, code review, and architecture. (4) Infrastructure demand \u2014 more code written = more compute, more deployment, more monitoring. Investment angles: NVDA (compute infrastructure), PLTR (code security/analysis), AAPL (Xcode AI integration), MSFT (GitHub Copilot monetization).",
       "source": "x_scraper_hourly_2026-02-18",
       "tags": [
         "ai-coding",
@@ -336,6 +336,25 @@
         "adoption-stats"
       ],
       "addedAt": "2026-02-18T12:15:00Z"
+    },
+    {
+      "id": "note-024",
+      "category": "AI Video Infrastructure",
+      "title": "Runway $315M at $5.3B Valuation: AI Video Wars Intensify",
+      "content": "Fresh intelligence (Feb 18, 2026): Runway raised $315M Series C at $5.3B valuation \u2014 one of the largest AI video funding rounds to date. Strategic pivot: Moving beyond video generation into world models (physics-aware environments). Key competitive dynamics: (1) Kling AI pricing pressure: $6.99-$180 tiers driving 65% cost-per-minute drop industrywide since 2024. (2) Google Veo 3.1 and Sora 2 now industry leaders for photorealism \u2014 approaching live-action quality. (3) Runway Gen 4 solving world consistency problem that plagued 2023-2024 generations. (4) Character consistency becoming table stakes \u2014 all major players investing heavily. Market structure: Fragmentation rather than winner-take-all. NVDA hardware moat (60% TSMC CoWoS) constrains all players equally. Pricing commoditization accelerating \u2014 average cost per minute down 65% in 12 months. Implications for content creators: AI video tools becoming affordable commodity. stevensongirl production costs could drop significantly. Opportunity to test higher-volume output at lower cost. Risk: Content flood as barriers fall \u2014 differentiation via creative vision, not tool access. Investment angles: NVDA (sells picks and shovels to all players), APP (AI-powered ad targeting for content monetization), META (LLaMA + video AI integration).",
+      "source": "TechCrunch / invideo.io / pxz.ai / aitoolanalysis.com (Feb 18, 2026)",
+      "tags": [
+        "ai-video",
+        "runway",
+        "sora",
+        "veo",
+        "kling",
+        "funding",
+        "world-models",
+        "stevensongirl",
+        "content-production"
+      ],
+      "addedAt": "2026-02-18T21:11:54.575389"
     }
   ]
 }
