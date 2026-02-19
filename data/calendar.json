@@ -1,0 +1,10 @@
+{
+  "events": [
+    {"id": "cal-001", "title": "Morning Intelligence Brief", "type": "cron", "schedule": "Daily 7:00 AM", "nextRun": "2026-02-19T12:00:00Z", "status": "active", "description": "Daily research + dashboard update"},
+    {"id": "cal-002", "title": "20-Min Check-In", "type": "cron", "schedule": "Every 20 min", "nextRun": "2026-02-19T04:00:00Z", "status": "active", "description": "Heartbeat check-in with dashboard update"},
+    {"id": "cal-003", "title": "Overnight Scraper Analysis", "type": "cron", "schedule": "Daily 2:00 AM", "nextRun": "2026-02-19T07:00:00Z", "status": "active", "description": "Process YouTube/ViewStats/X scraper data"},
+    {"id": "cal-004", "title": "NVDA Earnings Watch", "type": "task", "schedule": "Feb 25, 2026", "nextRun": "2026-02-25T21:00:00Z", "status": "upcoming", "description": "Q4 FY26 earnings after market close"},
+    {"id": "cal-005", "title": "Editor Applications Review", "type": "task", "schedule": "Weekly", "nextRun": "2026-02-20T17:00:00Z", "status": "active", "description": "Check Upwork for new editor applicants"}
+  ],
+  "lastUpdated": "2026-02-19T04:00:00Z"
+}
