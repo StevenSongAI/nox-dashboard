@@ -1412,6 +1412,15 @@ function renderYouTubeTrendChart() {
 let businessOpportunityData = [];
 
 // BATCH 4 FIX: Load opportunities from localStorage
+function loadDeletedIds() {
+  const stored = localStorage.getItem('business-deleted-ids');
+  return stored ? new Set(JSON.parse(stored)) : new Set();
+}
+
+function saveDeletedIds(deletedSet) {
+  localStorage.setItem('business-deleted-ids', JSON.stringify([...deletedSet]));
+}
+
 function loadOpportunities() {
   const stored = localStorage.getItem('business-opportunities');
   if (stored) {
@@ -1465,15 +1474,17 @@ function calculatePipelineCounts(opportunities) {
 }
 
 function renderBusiness() {
-  // BATCH 4 FIX: Load from localStorage first, then fill in with appData
-  const storedOpportunities = loadOpportunities().filter(o => !o._deleted);
+  const deletedIds = loadDeletedIds();
+
+  // Load from localStorage first, then fill in with appData
+  const storedOpportunities = loadOpportunities().filter(o => !o._deleted && !deletedIds.has(o.id));
   const storedIds = new Set(storedOpportunities.map(o => o.id));
-  
-  // Only add JSON opportunities that aren't already in localStorage
+
+  // Only add JSON opportunities that aren't already in localStorage and aren't deleted
   const jsonOpportunities = (appData.newBusiness.opportunities || []).filter(
-    o => !storedIds.has(o.id)
+    o => !storedIds.has(o.id) && !deletedIds.has(o.id)
   );
-  
+
   // Combine: stored first, then new JSON items
   const allOpportunities = [...storedOpportunities, ...jsonOpportunities];
   
@@ -1517,12 +1528,11 @@ function renderBusiness() {
         <p class="text-sm"><strong>Next step:</strong> ${o.nextStep}</p>
         <div class="mt-2 flex flex-wrap gap-2" onclick="event.stopPropagation()">
           <select onchange="moveStatus('${o.id}', this.value)" class="text-xs px-2 py-1 bg-dark-700 rounded border border-dark-600">
-            <option value="" disabled selected>Move to...</option>
-            <option value="new">New</option>
-            <option value="evaluating">Evaluating</option>
-            <option value="pursuing">Pursuing</option>
-            <option value="passed">Passed</option>
-            <option value="won">Won</option>
+            <option value="new"${o.status === 'new' ? ' selected' : ''}>New</option>
+            <option value="evaluating"${o.status === 'evaluating' ? ' selected' : ''}>Evaluating</option>
+            <option value="pursuing"${o.status === 'pursuing' ? ' selected' : ''}>Pursuing</option>
+            <option value="passed"${o.status === 'passed' ? ' selected' : ''}>Passed</option>
+            <option value="won"${o.status === 'won' ? ' selected' : ''}>Won</option>
           </select>
           <button onclick="deleteOpportunity('${o.id}')" class="text-xs px-2 py-1 bg-red-900/50 text-red-400 rounded hover:bg-red-900">Delete</button>
         </div>
@@ -1614,22 +1624,17 @@ function submitAddOpportunity() {
 function deleteOpportunity(oppId) {
   console.log('deleteOpportunity called:', oppId);
   if (!confirm('Delete this opportunity?')) return;
-  
-  // Load current opportunities
+
+  // Add to persistent deleted IDs set (survives re-renders, blocks appData items)
+  const deletedIds = loadDeletedIds();
+  deletedIds.add(oppId);
+  saveDeletedIds(deletedIds);
+
+  // Also remove from localStorage opportunities if present
   let opportunities = loadOpportunities();
-  
-  // Check if opp exists in JSON data but not localStorage
-  const jsonOpp = appData.newBusiness?.opportunities?.find(o => o.id === oppId);
-  if (jsonOpp && !opportunities.find(o => o.id === oppId)) {
-    // Add to localStorage first, then mark as deleted
-    opportunities.push({...jsonOpp, _deleted: true});
-  }
-  
-  // Filter out the deleted opportunity
-  const filtered = opportunities.filter(o => o.id !== oppId || !o._deleted);
-  
-  console.log('Before delete:', opportunities.length, 'After delete:', filtered.length);
+  const filtered = opportunities.filter(o => o.id !== oppId);
   saveOpportunities(filtered);
+
   safeRender(() => renderBusiness(), 'renderBusiness');
 }
 
