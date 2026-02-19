@@ -181,6 +181,27 @@
   ],
   "intelligence": [
     {
+      "id": "intel-076",
+      "date": "2026-02-19T09:16:00Z",
+      "topic": "NVDA 3-Day Earnings Countdown: BofA Reiterates Buy $275 PT, Pullback Warning Despite $67B Beat Expected",
+      "source": "Bank of America / Citi Research / Techi.com / MarketBeat (Feb 18-19, 2026)",
+      "content": "FRESH NVDA INTELLIGENCE - Feb 19, 2026 (3 DAYS TO EARNINGS): BANK OF AMERICA REITERATES BUY: Analyst Vivek Arya maintained Buy rating with $275 price target (5 hours ago) based on 28x P/E ex-cash for CY2027 - within NVDA's historical range. This is above the $264.20 consensus, signaling institutional confidence. CITI $67B BEAT EXPECTED: Citi analysts predict $67B revenue vs $65.6B consensus = $1.4B beat. April quarter guidance expected at $73B vs $71.6B consensus. NVDA has beaten past 4 quarters but stock FELL after 3 of them (sell-the-news pattern). PULLBACK WARNING: Techi.com analysis predicts NVDA stock will DROP after Feb 25 despite projected beat. Reasons: (1) High expectations already priced in at $184.97 close, (2) AI ROI skepticism casting shadows, (3) Arista Networks CEO noted AMD gaining AI deployment share. Any dip would be buying opportunity before H2 2026 Rubin launch. PRICE ACTION: NVDA closed at $184.97 on Feb 18. 52-week range context shows consolidation before earnings. Current price offers 48% upside to BofA $275 target, 43% to consensus $264. MOMENT OF TRUTH: Dr. Doom Nouriel Roubini now sees 4% GDP growth by 2030 - AI skepticism shifting. However, NVDA earnings called 'moment of truth for entire stock market' with AI overspending fears wiping $1.3T from Big Tech in 2026. POSITIONING GUIDANCE: Staged entry remains optimal. Deploy 50% now if conviction is high (BofA/Citi support), 50% after earnings. If pullback materializes as predicted, full position on dip to $175-180. If stock breaks above $192.50 resistance, momentum continuation into earnings likely.",
+      "impact": "neutral-bullish",
+      "tickers": ["NVDA"],
+      "riskFactors": [
+        "Pullback predicted after earnings despite beat - sell-the-news pattern",
+        "AMD gaining share per Arista CEO - competitive pressure emerging",
+        "$192.50 resistance must break for upside momentum",
+        "AI overspending fears could pressure entire sector regardless of NVDA results"
+      ],
+      "confidence": "high",
+      "priceTarget": "$275 (BofA), $264.20 (consensus)",
+      "currentPrice": "$184.97 (Feb 18 close)",
+      "impliedUpside": "48% (BofA), 43% (consensus)",
+      "catalystDate": "2026-02-25",
+      "catalyst": "Q4 FY2026 Earnings - 3 days away, BofA Buy reiteration, pullback warning issued"
+    },
+    {
       "id": "intel-075",
       "date": "2026-02-18T09:16:00Z",
       "topic": "APP Entry Trigger Activated: Dipped to $359 (Below $380 Target) - 18 Analysts Strong Buy, $705 PT (87% Upside)",
