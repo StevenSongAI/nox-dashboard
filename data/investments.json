@@ -181,6 +181,26 @@
   ],
   "intelligence": [
     {
+      "id": "intel-080",
+      "date": "2026-02-19T15:19:00Z",
+      "topic": "NVDA Intraday Update: $187.71 at 10:19 AM EST, Day Range $185.66-$188.29 - Trading Within Support",
+      "source": "CNBC Real-Time Quote (Feb 19, 2026)",
+      "content": "FRESH NVDA INTRADAY - Feb 19, 2026 (10:19 AM EST): CURRENT PRICE $187.71, down -0.27 (-0.14%) from prior close of $187.98. INTRADAY RANGE: Open $187.06, Day High $188.29, Day Low $185.66. Current price near middle of daily range. VOLUME: 24.2M shares traded (vs 10-day average 180M). MARKET CAP: $4.561T. KEY LEVELS: Support at day low $185.66 and psychological $185, Resistance at day high $188.29 and key $190 level. ANALYST CONTEXT: Tight $252-275 PT consensus remains intact (35-48% upside). EARNINGS 6 DAYS: Feb 25 catalyst approaching. TECHNICAL POSITION: Trading within established range, no breakout yet. Price action consolidating ahead of earnings. Staged entry guidance unchanged - current levels offer reasonable entry point with defined risk. ENTRY FRAMEWORK: 50% position at current $187-188 captures earnings week exposure, 50% post-earnings for dip buying or momentum continuation.",
+      "impact": "neutral",
+      "tickers": ["NVDA"],
+      "riskFactors": [
+        "Day low $185.66 could be retested if market weakens",
+        "$190 resistance remains unbroken - limits near-term upside",
+        "Earnings week volatility may cause sharp intraday swings"
+      ],
+      "confidence": "high",
+      "priceTarget": "$252 (Stifel), $264.20 (consensus), $275 (BofA)",
+      "currentPrice": "$187.71 (10:19 AM EST Feb 19)",
+      "impliedUpside": "35% (Stifel) to 48% (BofA)",
+      "catalystDate": "2026-02-25",
+      "catalyst": "Q4 FY2026 Earnings - 6 days, intraday consolidation phase"
+    },
+    {
       "id": "intel-079",
       "date": "2026-02-19T13:16:00Z",
       "topic": "NVDA Pre-Market Update: $187.60 (+1.4%) as of 8:00 AM EST - Earnings Week Momentum",
