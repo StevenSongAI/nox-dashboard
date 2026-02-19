@@ -483,16 +483,22 @@
     },
     {
       "id": "comp-022",
-      "channel": "Linus Tech Tips",
-      "handle": "@linustechtips",
       "subscribers": 16847899,
-      "globalRank": 1508,
-      "category": "Tech/Gaming",
-      "notes": "Feb 2026: #1508 worldwide. Uses Community posts for polls and behind-the-scenes engagement between major uploads. Master of viewer retention via interactive content.",
-      "strategy": "Community tab engagement + poll-driven content decisions",
-      "contentFrequency": "Daily uploads",
+      "notes": "Feb 2026: #1508 worldwide. Feb 2026: #1508 worldwide. Uses Community posts for polls and behind-the-scenes engagement between major uploads. Master of viewer retention via interactive content.",
       "addedAt": "2026-02-19T14:20:00Z",
-      "source": "HypeAuditor Feb 2026"
+      "source": "HypeAuditor Feb 2026",
+      "channelId": "@linustechtips",
+      "name": "Linus Tech Tips",
+      "url": "https://www.youtube.com/@linustechtips",
+      "niche": "Tech/Gaming",
+      "focus": "Community tab engagement + poll-driven content decisions",
+      "autoAdded": false,
+      "stats": {
+        "subscribers": "16.8M",
+        "totalViews": "8.2B",
+        "videoCount": 4200
+      },
+      "latestVideos": []
     }
   ],
   "outlierPatterns": [
