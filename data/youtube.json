@@ -2525,7 +2525,42 @@
           "whyItWorked": "2.58M views on 'evolve again' concept - works at scale"
         }
       ]
+    },
+    {
+      "id": "brief-floor-transform-001",
+      "title": "AI Floor Transformation: 300M+ View Format",
+      "status": "approved",
+      "createdAt": "2026-02-19T17:51:00Z",
+      "content": {
+        "hook": "Watch this ordinary floor transform into [unexpected scene]",
+        "structure": [
+          "0-3s: Clean floor shot with dramatic sound cue",
+          "3-8s: AI transformation sequence (Sora/Kling)",
+          "8-15s: Reveal with viewer reaction moment",
+          "15-30s: Outro with CTA for more transformations"
+        ],
+        "viralMechanics": {
+          "satisfying": "Clean before/after contrast",
+          "curiosityGap": "What will the floor become?",
+          "shareable": "Unexpected transformations get shared"
+        }
+      },
+      "productionNotes": {
+        "tools": [
+          "Kling 3.0 (4K@60fps)",
+          "Grok for prompts",
+          "Free workflow"
+        ],
+        "estimatedTime": "15 min per video",
+        "batchOpportunity": "Create 5-10 variations with different destinations"
+      },
+      "outlierRef": [
+        "yt-research-floor-transform-001",
+        "yt-research-floor-transform-002"
+      ],
+      "category": "ai_transformation",
+      "priority": "high"
     }
   ],
-  "lastUpdated": "2026-02-19T12:15:00Z"
+  "lastUpdated": "2026-02-19T17:51:00Z"
 }
