@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-18T00:47:40.765040",
+  "lastUpdated": "2026-02-19T10:25:00Z",
   "opportunities": [
     {
       "id": "opp-001",
@@ -183,6 +183,26 @@
       "source": "x_intel_2026-02-18",
       "status": "new",
       "addedAt": "2026-02-18T00:47:40.765031"
+    },
+    {
+      "id": "opp-013",
+      "title": "AI Sound Effects for Video (Mirelo Space)",
+      "description": "Mirelo (Berlin) raised $41M seed from Index Ventures + a16z to build AI-generated sound effects and music for video. Their Mirelo SFX v1.5 model interprets video to add synced SFX. Competition intensifying: Sony, Tencent, Kling AI, ElevenLabs all released video-to-SFX models. Market gap: AI video generation is mature but audio/sound remains underdeveloped. $3.08B total AI video funding in 2025 (up 94.6% from 2024).",
+      "category": "AI Media/Audio",
+      "marketSignal": "HIGH",
+      "fundingSignal": "$41M seed (Index + a16z)",
+      "validation": [
+        "Mirelo SFX v1.5 live on Fal.ai and Replicate",
+        "Index Ventures + a16z co-lead (tier-1 VCs)",
+        "Competitors: Sony, Tencent, Kling AI, ElevenLabs releasing similar products",
+        "Team doubling/tripling headcount (currently 10 people)",
+        "$3.08B AI video funding in 2025 (+94.6% YoY)"
+      ],
+      "actionable": "Monitor Mirelo API for integration into video workflows; consider sound effects niche as adjacent opportunity to AI video; evaluate Fal.ai/Replicate platforms for distribution",
+      "source": "TechCrunch Dec 15, 2025",
+      "url": "https://techcrunch.com/2025/12/15/mirelo-raises-41m-from-index-and-a16z-to-solve-ai-videos-silent-problem/",
+      "status": "researching",
+      "addedAt": "2026-02-19T10:25:00Z"
     }
   ],
   "meta": {
