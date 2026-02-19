@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-02-19T10:28:00Z",
+  "lastUpdated": "2026-02-19T10:46:00Z",
   "updatedBy": "nox-heartbeat",
-  "version": "2026.02.19.11",
-  "cacheBust": "20260219T1016",
-  "dataVersion": "2026.02.19.05",
-  "youtubeUpdated": "2026-02-18T10:47:00Z",
+  "version": "2026.02.19.12",
+  "cacheBust": "20260219T1046",
+  "dataVersion": "2026.02.19.06",
+  "youtubeUpdated": "2026-02-19T10:46:00.000000",
   "investmentsUpdated": "2026-02-19T09:46:00.000000",
   "researchUpdated": "2026-02-19T10:28:00Z",
   "newBusinessUpdated": "2026-02-19T10:28:00Z",
@@ -16,12 +16,12 @@
     "entryCount": 83
   },
   "dataFreshness": {
-    "research": "2026-02-18 - 23 notes (+ AI coding adoption stats)",
-    "newBusiness": "2026-02-18 - 27 opportunities",
-    "investments": "2026-02-19 - 83 intelligence items (+ APP analyst consensus update)",
+    "research": "2026-02-19 - 25 notes (+ AI video audio frontier)",
+    "newBusiness": "2026-02-19 - 13 opportunities (+ Mirelo AI sound)",
+    "investments": "2026-02-19 - 83 intelligence items",
     "workTracker": "2026-02-15 - pagination + deduplication live",
-    "minecraftArtists": "2026-02-18 - 16 artists (+ simple HTML view)",
-    "youtube": "2026-02-18 - 147 outliers (freshness check completed)",
+    "minecraftArtists": "2026-02-18 - 16 artists",
+    "youtube": "2026-02-19 - 148 outliers (+ AI evolution niche validation)",
     "tools": "2026-02-18 - 21 tools"
   },
   "research": {
