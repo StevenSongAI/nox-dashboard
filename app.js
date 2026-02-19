@@ -1084,6 +1084,144 @@ function calculateAvgGrade(audits) {
 
 // ==================== YOUTUBE TAB - BATCH 3 FIXES ====================
 
+// ==================== TOP 5 DAILY OUTLIERS ====================
+
+/**
+ * Simple seeded PRNG (mulberry32) for deterministic daily shuffle.
+ * Same date = same seed = same Top 5 all day.
+ */
+function seededRandom(seed) {
+  let t = seed + 0x6D2B79F5;
+  t = Math.imul(t ^ (t >>> 15), t | 1);
+  t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
+  return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+}
+
+/**
+ * Get today's date as an integer seed (YYYYMMDD).
+ * Same value all day, changes at midnight.
+ */
+function getDailySeed() {
+  const now = new Date();
+  return now.getFullYear() * 10000 + (now.getMonth() + 1) * 100 + now.getDate();
+}
+
+/**
+ * Score an outlier video for Top 5 ranking.
+ * Factors: viralScore, views, recency, priority categories, outlierScore.
+ */
+function scoreOutlier(video) {
+  let score = 0;
+
+  // viralScore (0-100 scale, weight heavily)
+  score += (video.viralScore || 0) * 3;
+
+  // views (log-scaled so 1M doesn't dominate everything)
+  const views = video.views || 0;
+  if (views > 0) {
+    score += Math.log10(views) * 10; // e.g. 1M = 60, 100K = 50, 10K = 40
+  }
+
+  // outlierScore (some videos have this instead of viralScore)
+  score += (video.outlierScore || 0) * 2;
+
+  // Recency bonus: videos published in last 14 days get a boost
+  const published = new Date(video.publishedAt);
+  const daysSincePublished = (Date.now() - published.getTime()) / (1000 * 60 * 60 * 24);
+  if (daysSincePublished <= 3) score += 40;
+  else if (daysSincePublished <= 7) score += 25;
+  else if (daysSincePublished <= 14) score += 15;
+  else if (daysSincePublished <= 30) score += 5;
+
+  // Priority category bonus
+  const cat = (video.category || '').toLowerCase();
+  const niche = (video.niche || '').toLowerCase();
+  if (cat === 'creature_simulation' || niche.includes('creature')) score += 30;
+  if (cat === 'ai_video_education' || niche.includes('ai video')) score += 30;
+  if (niche.includes('gaming')) score += 10;
+
+  return score;
+}
+
+/**
+ * Get today's Top 5 outliers.
+ * Scores all videos, then uses daily seed to add small deterministic jitter
+ * so the list has variety day-to-day even if data doesn't change.
+ */
+function getTop5DailyOutliers(videos) {
+  if (!videos || videos.length === 0) return [];
+
+  const seed = getDailySeed();
+
+  // Score and add seeded jitter
+  const scored = videos.map((v, i) => {
+    const base = scoreOutlier(v);
+    const jitter = seededRandom(seed + i) * 30; // 0-30 pts jitter
+    return { video: v, score: base + jitter };
+  });
+
+  // Sort descending by score, take top 5
+  scored.sort((a, b) => b.score - a.score);
+  return scored.slice(0, 5);
+}
+
+/**
+ * Render the Top 5 Daily Outliers featured section.
+ */
+function renderTop5DailyOutliers() {
+  const container = document.getElementById('top5-daily-outliers');
+  if (!container) return;
+
+  const videos = appData.youtube?.outlierVideos || [];
+  const top5 = getTop5DailyOutliers(videos);
+
+  if (top5.length === 0) {
+    container.innerHTML = '';
+    return;
+  }
+
+  const today = new Date().toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
+
+  const cardsHtml = top5.map((entry, i) => {
+    const v = entry.video;
+    const rank = i + 1;
+    const angle = v.contentAngle || v.whyOutlier || v.notes || '';
+    const viralBadge = v.viralScore ? `<span class="px-2 py-0.5 bg-red-500/20 text-red-400 text-xs font-bold rounded">🔥 ${v.viralScore}</span>` : '';
+    const outlierBadge = v.outlierScore ? `<span class="px-2 py-0.5 bg-accent-blue/20 text-accent-blue text-xs rounded">${v.outlierScore.toFixed(1)}x</span>` : '';
+    const categoryBadge = v.category ? `<span class="px-2 py-0.5 bg-accent-purple/20 text-accent-purple text-xs rounded">${v.category.replace(/_/g, ' ')}</span>` : '';
+    const nicheBadge = v.niche ? `<span class="text-sm">${v.niche}</span>` : '';
+
+    return `
+      <div class="relative rounded-lg p-4 border border-yellow-500/30 bg-gradient-to-r from-yellow-500/5 to-orange-500/5 hover:border-yellow-500/60 transition-all cursor-pointer" onclick="showVideoModal('${v.id}')">
+        <div class="absolute -top-2 -left-2 w-7 h-7 rounded-full bg-yellow-500 text-black text-sm font-bold flex items-center justify-center shadow-lg">${rank}</div>
+        <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-2 ml-4">
+          <div class="flex-1 min-w-0">
+            <div class="flex flex-wrap items-center gap-2 mb-1">
+              ${nicheBadge} ${viralBadge} ${outlierBadge} ${categoryBadge}
+            </div>
+            <h4 class="font-semibold text-white mb-1 truncate">${v.title}</h4>
+            <p class="text-sm text-gray-400">${v.channel} · ${formatViews(v.views)} views · ${formatTimeAgo(v.publishedAt)}</p>
+            ${angle ? `<p class="text-sm text-yellow-400/80 mt-1 line-clamp-1">💡 ${angle}</p>` : ''}
+          </div>
+          <a href="${v.url}" target="_blank" class="shrink-0 px-3 py-1 bg-yellow-500/20 border border-yellow-500/40 rounded text-yellow-400 text-sm whitespace-nowrap hover:bg-yellow-500/30 transition-colors" onclick="event.stopPropagation()">Watch →</a>
+        </div>
+      </div>`;
+  }).join('');
+
+  container.innerHTML = `
+    <div class="rounded-xl border border-yellow-500/20 bg-dark-800/50 p-5 mb-2">
+      <div class="flex items-center justify-between mb-4">
+        <div>
+          <h2 class="text-xl font-bold text-yellow-400">⚡ Today's Top 5 Outliers</h2>
+          <p class="text-sm text-gray-400 mt-0.5">${today} · Auto-ranked by viral score, views, recency & niche</p>
+        </div>
+      </div>
+      <div class="space-y-3">
+        ${cardsHtml}
+      </div>
+    </div>`;
+}
+
 // D4 FIX: Store video data for search against all properties
 let youtubeVideoData = [];
 
@@ -1096,7 +1234,10 @@ function renderYouTube() {
   const videos = appData.youtube?.outlierVideos || [];
   const briefs = loadBriefs(); // Load from localStorage
   const meta = appData.meta || {};
-  
+
+  // Render Top 5 Daily Outliers above the full list
+  safeRender(() => renderTop5DailyOutliers(), 'renderTop5DailyOutliers');
+
   // Update Research Status stats
   const lastScan = localStorage.getItem('last-outlier-scan');
   const lastScanEl = document.getElementById('last-outlier-scan');
