@@ -374,7 +374,10 @@
         "market-trend"
       ],
       "confidence": "high",
-      "addedAt": "2026-02-19T10:25:00Z"
+      "addedAt": "2026-02-19T10:25:00Z",
+      "date": "2026-02-19",
+      "status": "active",
+      "priority": "medium"
     }
   ]
 }
