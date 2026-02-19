@@ -181,6 +181,26 @@
   ],
   "intelligence": [
     {
+      "id": "intel-078",
+      "date": "2026-02-19T11:46:00Z",
+      "topic": "NVDA Fresh Analyst Update: Stifel Nicolaus $252 PT (35% Upside), Market Cap $4.49T - Earnings Week",
+      "source": "WallStreetZen / BitcoinEthereumNews / MarketBeat (Feb 19, 2026)",
+      "content": "FRESH NVDA INTELLIGENCE - Feb 19, 2026 (1 HOUR AGO): STIFEL NICOLAUS $252 PT: Analyst Ruben Roy maintains Buy rating with $252 price target (published 1 hour ago) = 35% upside from current levels. This adds to the growing analyst consensus cluster around $252-275 range. MARKET CAP CONTEXT: NVDA market cap at $4.49T as of Feb 19, 2026 (per WallStreetZen). Stock trading at $184.97 (Feb 17 close reference). CONSENSUS CLUSTER: Multiple firms now in $252-275 range - Stifel $252, BofA $275, MarketBeat consensus $264.20. This creates a tight valuation band with 35-48% upside potential. EARNINGS WEEK CONTEXT: Feb 25 earnings (6 days) approaching. Citi predicts $67B revenue vs $65.6B consensus. Historical 90.9% beat rate. KEY DYNAMICS: Tight analyst consensus around $252-275 suggests institutional agreement on fair value. 35% upside to Stifel target represents conservative bull case vs 48% to BofA high. Market cap at $4.49T reflects AI infrastructure leader premium. POSITIONING GUIDANCE: Staged entry remains optimal. With 6 days to earnings and tight analyst consensus, risk-reward is well-defined. 50% position now captures current levels, 50% post-earnings for dip opportunity or momentum confirmation.",
+      "impact": "bullish",
+      "tickers": ["NVDA"],
+      "riskFactors": [
+        "Tight analyst consensus may limit surprise upside - expectations priced in",
+        "$4.49T market cap creates high bar for continued growth",
+        "Earnings week volatility could see sharp moves in either direction"
+      ],
+      "confidence": "high",
+      "priceTarget": "$252 (Stifel), $264.20 (consensus), $275 (BofA)",
+      "currentPrice": "$184.97 (Feb 17 close)",
+      "impliedUpside": "35% (Stifel) to 48% (BofA)",
+      "catalystDate": "2026-02-25",
+      "catalyst": "Q4 FY2026 Earnings - 6 days, tight analyst consensus $252-275 range"
+    },
+    {
       "id": "intel-077",
       "date": "2026-02-19T09:46:00Z",
       "topic": "APP Analyst Consensus Update: 20 Analysts Avg $674 PT (79% Upside), Stock Down 41% YTD - Entry Opportunity",
