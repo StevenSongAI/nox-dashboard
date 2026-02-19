@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-02-19T12:05:00Z",
+  "lastUpdated": "2026-02-19T12:15:00Z",
   "updatedBy": "nox-heartbeat",
   "version": "2026.02.19.14",
   "cacheBust": "20260219T1146",
   "dataVersion": "2026.02.19.08",
-  "youtubeUpdated": "2026-02-19T10:46:00.000000",
+  "youtubeUpdated": "2026-02-19T12:15:00Z",
   "investmentsUpdated": "2026-02-19T11:46:00.000000",
   "researchUpdated": "2026-02-19T10:28:00Z",
   "newBusinessUpdated": "2026-02-19T10:28:00Z",
@@ -42,5 +42,9 @@
   "tools": {
     "lastUpdated": "2026-02-19T12:05:00Z",
     "totalTools": 21
+  },
+  "youtube": {
+    "lastUpdated": "2026-02-19T12:15:00Z",
+    "totalOutliers": 150
   }
 }
