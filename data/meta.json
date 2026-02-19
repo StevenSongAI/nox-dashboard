@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-19T21:16:00Z",
+  "lastUpdated": "2026-02-19T21:39:03Z",
   "updatedBy": "nox-heartbeat",
   "version": "2026.02.19.32",
   "cacheBust": "20260219T2116",
@@ -12,10 +12,7 @@
   "workTrackerUpdated": "2026-02-15T00:17:00Z",
   "minecraftArtistsUpdated": "2026-02-18T14:22:00Z",
   "investments": {
-    "lastUpdated": "2026-02-19T15:19:00Z",
-    "entryCount": 86,
-    "totalIntelligence": 88,
-    "lastIntelligenceId": "intel-080"
+    "lastUpdated": "2026-02-19T21:39:03Z"
   },
   "dataFreshness": {
     "research": "2026-02-19 - 25 notes (+ AI video audio frontier)",

@@ -187,7 +187,9 @@
       "source": "CNBC Real-Time Quote (Feb 19, 2026)",
       "content": "FRESH NVDA INTRADAY - Feb 19, 2026 (10:19 AM EST): CURRENT PRICE $187.71, down -0.27 (-0.14%) from prior close of $187.98. INTRADAY RANGE: Open $187.06, Day High $188.29, Day Low $185.66. Current price near middle of daily range. VOLUME: 24.2M shares traded (vs 10-day average 180M). MARKET CAP: $4.561T. KEY LEVELS: Support at day low $185.66 and psychological $185, Resistance at day high $188.29 and key $190 level. ANALYST CONTEXT: Tight $252-275 PT consensus remains intact (35-48% upside). EARNINGS 6 DAYS: Feb 25 catalyst approaching. TECHNICAL POSITION: Trading within established range, no breakout yet. Price action consolidating ahead of earnings. Staged entry guidance unchanged - current levels offer reasonable entry point with defined risk. ENTRY FRAMEWORK: 50% position at current $187-188 captures earnings week exposure, 50% post-earnings for dip buying or momentum continuation.",
       "impact": "neutral",
-      "tickers": ["NVDA"],
+      "tickers": [
+        "NVDA"
+      ],
       "riskFactors": [
         "Day low $185.66 could be retested if market weakens",
         "$190 resistance remains unbroken - limits near-term upside",
@@ -207,7 +209,9 @@
       "source": "Public.com / Robinhood (Feb 19, 2026)",
       "content": "FRESH NVDA PRICE ACTION - Feb 19, 2026: PRE-MARKET TRADING at $187.60 as of 8:00 AM EST (per Public.com). This represents a +1.4% move from prior levels. Feb 18 trading range: $187.10 low / $190.23 high, closing at $190.07. EARNINGS WEEK CONTEXT: Feb 25 earnings (6 days) approaching. Stock showing pre-market activity ahead of key catalyst. ANALYST CONSENSUS REMINDER: Tight $252-275 range (Stifel $252, BofA $275, consensus $264.20). 35-48% upside potential remains. TECHNICAL LEVELS: Support $187 (recent consolidation), Resistance $190-192 (recent highs). MOMENTUM SIGNAL: Pre-market strength could indicate positioning ahead of earnings. Staged entry guidance unchanged - 50% position now captures current momentum, 50% post-earnings for dip opportunity.",
       "impact": "bullish",
-      "tickers": ["NVDA"],
+      "tickers": [
+        "NVDA"
+      ],
       "riskFactors": [
         "Pre-market gains may fade at market open",
         "$190 resistance remains key technical hurdle",
@@ -227,7 +231,9 @@
       "source": "WallStreetZen / BitcoinEthereumNews / MarketBeat (Feb 19, 2026)",
       "content": "FRESH NVDA INTELLIGENCE - Feb 19, 2026 (1 HOUR AGO): STIFEL NICOLAUS $252 PT: Analyst Ruben Roy maintains Buy rating with $252 price target (published 1 hour ago) = 35% upside from current levels. This adds to the growing analyst consensus cluster around $252-275 range. MARKET CAP CONTEXT: NVDA market cap at $4.49T as of Feb 19, 2026 (per WallStreetZen). Stock trading at $184.97 (Feb 17 close reference). CONSENSUS CLUSTER: Multiple firms now in $252-275 range - Stifel $252, BofA $275, MarketBeat consensus $264.20. This creates a tight valuation band with 35-48% upside potential. EARNINGS WEEK CONTEXT: Feb 25 earnings (6 days) approaching. Citi predicts $67B revenue vs $65.6B consensus. Historical 90.9% beat rate. KEY DYNAMICS: Tight analyst consensus around $252-275 suggests institutional agreement on fair value. 35% upside to Stifel target represents conservative bull case vs 48% to BofA high. Market cap at $4.49T reflects AI infrastructure leader premium. POSITIONING GUIDANCE: Staged entry remains optimal. With 6 days to earnings and tight analyst consensus, risk-reward is well-defined. 50% position now captures current levels, 50% post-earnings for dip opportunity or momentum confirmation.",
       "impact": "bullish",
-      "tickers": ["NVDA"],
+      "tickers": [
+        "NVDA"
+      ],
       "riskFactors": [
         "Tight analyst consensus may limit surprise upside - expectations priced in",
         "$4.49T market cap creates high bar for continued growth",
@@ -247,7 +253,9 @@
       "source": "TipRanks / MarketBeat / Public.com / Yahoo Finance (Feb 19, 2026)",
       "content": "FRESH APP INTELLIGENCE - Feb 19, 2026: ANALYST CONSENSUS UPDATE: 20 Wall Street analysts now cover APP with average 12-month price target of $674.37 (TipRanks data). Range: $775 high (Scotiabank), $500 low. MarketBeat consensus: $651.77. Public.com consensus: $705.17. All sources show 18-20 Strong Buy ratings with zero Sell ratings. YTD PERFORMANCE: APP down 41% in 2026 per Yahoo Finance, creating potential value entry. Stock trading near $376 vs $380 target entry - essentially at buy zone. CURRENT CONTEXT: Despite 41% decline, analyst conviction remains extremely high. No downgrades in recent sessions. 84% EBITDA margins (record) still intact. Vanguard 7M share purchase and Northwestern Mutual $6.2M investment provide institutional validation. UPSIDE SCENARIOS: Base case $674 PT = 79% upside. Bull case $775 = 106% upside. Bear case $500 = 33% upside. Even conservative scenario offers meaningful returns from current levels. RISK/REWARD: Downside limited by record margins and AI adtech positioning. Upside asymmetric given analyst conviction. SaaSpocalypse fears appear overblown - no analyst downgrades despite 41% decline. ENTRY TIMING: At $376 vs $380 target, entry zone active. Staged entry still recommended: 50% position now, 50% on any dip below $370 or to $359 prior low. CATALYSTS: Q4 earnings early March (AXON growth metrics), potential share buybacks given cash generation, continued institutional accumulation.",
       "impact": "bullish",
-      "tickers": ["APP"],
+      "tickers": [
+        "APP"
+      ],
       "riskFactors": [
         "41% YTD decline could continue if SaaS sentiment deteriorates further",
         "High analyst expectations create limited margin for error on earnings",
@@ -1959,6 +1967,17 @@
       "impliedUpside": "42%",
       "catalystDate": "2026-02-25",
       "catalyst": "Q4 FY26 Earnings - 6 days out, Meta partnership de-risks demand, Blackwell guidance key"
+    },
+    {
+      "id": "intel-087",
+      "ticker": "NVDA",
+      "type": "earnings-preview",
+      "date": "2026-02-19",
+      "title": "NVDA T-6 Days: $66B Revenue Target, Contrarian Bear Case Emerges",
+      "content": "BULL: Analyst consensus now $66B quarterly revenue (+67% YoY), up from $65.6B last week. Blackwell sold out through mid-2026. Cloud capex projected $680B in 2026. FY2026 full-year: $213.3B revenue, $4.69 EPS. 75% gross margins at risk during Rubin transition. BEAR (Motley Fool contrarian): Stock fell after 3 of last 4 earnings beats. Whisper numbers above official estimates. Memory shortage could spook guidance. AI ROI skepticism growing (MSFT/GOOGL both dropped post-beat). Pattern: beat estimates but stock sells on \"less than perfect\" guidance. POSITIONING: Expect beat but prepare for sell-the-news. Staged entry protects against post-earnings dip.",
+      "source": "Motley Fool + FinancialContent + TipRanks",
+      "actionable": true,
+      "urgency": "high"
     }
   ],
   "synthesizedInsights": [
