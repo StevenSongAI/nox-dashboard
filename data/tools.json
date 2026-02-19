@@ -230,7 +230,19 @@
         "lip-sync"
       ],
       "runCommand": "https://seedance.io",
-      "auditGrade": 88
+      "auditGrade": 88,
+      "version": "2.0",
+      "launchDate": "2026-02-07",
+      "specs": {
+        "maxResolution": "2K (1080p)",
+        "maxLength": "15s",
+        "nativeAudio": true,
+        "audioLanguages": 8,
+        "startingPrice": "~$10/mo",
+        "bestFor": "Multi-modal control"
+      },
+      "notes": "Launched Feb 7, 2026. Called \"strongest video generation model on Earth\" by Black Myth: Wukong producer Feng Ji. Multi-modal control, 8+ language audio.",
+      "lastUpdated": "2026-02-19T12:05:00Z"
     },
     {
       "id": "tool-016",
@@ -246,7 +258,19 @@
         "kuaishou"
       ],
       "runCommand": "https://klingai.com",
-      "auditGrade": 86
+      "auditGrade": 86,
+      "version": "3.0",
+      "launchDate": "2026-02-04",
+      "specs": {
+        "maxResolution": "4K @ 60fps",
+        "maxLength": "15s (6 shots)",
+        "nativeAudio": true,
+        "audioLanguages": 5,
+        "startingPrice": "Free / $6.99/mo",
+        "bestFor": "Native 4K + storyboarding"
+      },
+      "notes": "Launched Feb 4, 2026. Native 4K @ 60fps. Storyboarding feature built-in. Competitive free tier.",
+      "lastUpdated": "2026-02-19T12:05:00Z"
     },
     {
       "id": "tool-017",
@@ -267,7 +291,7 @@
     },
     {
       "id": "tool-018",
-      "name": "Google Veo 3",
+      "name": "Google Veo 3.1",
       "category": "Content",
       "description": "Google's AI video generator with native audio generation. Creates clips with synchronized sound effects and background audio. Strong motion quality and physics simulation.",
       "status": "active",
@@ -280,7 +304,19 @@
         "sound-effects"
       ],
       "runCommand": "https://deepmind.google/technologies/veo/veo-3/",
-      "auditGrade": 89
+      "auditGrade": 89,
+      "version": "3.1",
+      "launchDate": "2026-02-07",
+      "specs": {
+        "maxResolution": "4K",
+        "maxLength": "60s (chained)",
+        "nativeAudio": true,
+        "audioType": "spatial",
+        "startingPrice": "$19.99/mo",
+        "bestFor": "4K production + spatial audio"
+      },
+      "notes": "4K update pushed early Feb 2026. Beats Sora 2 on access, prompt adherence, and audio. Spatial audio support.",
+      "lastUpdated": "2026-02-19T12:05:00Z"
     },
     {
       "id": "tool-019",
@@ -297,11 +333,23 @@
         "hyperreal"
       ],
       "runCommand": "https://sora.com",
-      "auditGrade": 91
+      "auditGrade": 91,
+      "version": "2.0",
+      "launchDate": "2025-12-31",
+      "specs": {
+        "maxResolution": "1080p",
+        "maxLength": "25s (Pro)",
+        "nativeAudio": true,
+        "audioType": "experimental",
+        "startingPrice": "$20/mo",
+        "bestFor": "Cinematic quality + human emotion"
+      },
+      "notes": "Launched Dec 31, 2025. Best for cinematic quality and human emotion rendering. Limited access vs Veo 3.1. Physics simulation strength.",
+      "lastUpdated": "2026-02-19T12:05:00Z"
     },
     {
       "id": "tool-020",
-      "name": "Runway Gen-4",
+      "name": "Runway Gen-4.5",
       "category": "Content",
       "description": "Runway's newest video generation model with unprecedented accuracy in motion and scene consistency. Enhanced character consistency and camera controls for professional workflows.",
       "status": "active",
@@ -314,7 +362,18 @@
         "professional"
       ],
       "runCommand": "https://runwayml.com",
-      "auditGrade": 90
+      "auditGrade": 90,
+      "version": "Gen-4.5",
+      "specs": {
+        "maxResolution": "4K (upscaled)",
+        "maxLength": "60s (long-form)",
+        "nativeAudio": true,
+        "audioPlan": "Pro+",
+        "startingPrice": "$12/mo",
+        "bestFor": "Creative control + long-form"
+      },
+      "notes": "Continued benchmark dominance in Feb 2026. Best-in-class for creative control. Long-form up to 60s. $315M Series E at $5.3B valuation.",
+      "lastUpdated": "2026-02-19T12:05:00Z"
     },
     {
       "id": "tool-021",
@@ -341,5 +400,5 @@
     "Analysis",
     "Automation"
   ],
-  "lastUpdated": "2026-02-17T09:47:00Z"
+  "lastUpdated": "2026-02-19T12:05:00Z"
 }
