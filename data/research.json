@@ -415,6 +415,72 @@
         "brief-floor-transform-001"
       ],
       "actionable": true
+    },
+    {
+      "id": "research-seedance-cost-disruption",
+      "title": "AI Video Cost Disruption: Seedance 2.0 vs Runway — 99% Price Drop in 12 Months",
+      "date": "2026-02-19",
+      "tags": [
+        "ai-video",
+        "seedance",
+        "runway",
+        "pricing",
+        "market-trend"
+      ],
+      "content": "X.com intel (Feb 19): Creator made full fight scene with Seedance 2.0 in 40 min for under $20. Same production on Runway Gen-3 would cost $100+. Signal: AI video entered 'good enough' era with 99% cost reduction in 12 months. Implications: (1) Barriers to entry collapsing for AI video content creators. (2) Premium tools (Runway) facing pricing pressure from budget alternatives (Seedance). (3) Content flood incoming as costs drop below $1 per minute. Strategy: Test Seedance 2.0 for stevensongirl content to reduce production costs. Monitor quality trade-offs vs Runway Gen-4. If 'good enough' quality at 80% discount, switching justified for high-volume production.",
+      "source": "x_intel_2026-02-19",
+      "addedAt": "2026-02-20T02:35:00Z",
+      "actionable": true,
+      "priority": "high"
+    },
+    {
+      "id": "research-higgsfield-soul2",
+      "title": "Higgsfield SOUL 2: AI Character Engine for Photography/Campaign Prototyping",
+      "date": "2026-02-19",
+      "tags": [
+        "ai-photography",
+        "higgsfield",
+        "content-creation",
+        "campaign-prototyping"
+      ],
+      "content": "X.com intel (Feb 19): Multiple creators demonstrating Higgsfield SOUL 2 as 'character engine' — one identity, unlimited outfits, unlimited shoots from text. Key use cases: (1) Pre-production lighting/posing blocking before booking shoots, (2) Campaign prototyping without booking models/studios, (3) Moodboard generation with culture-native portraits. Signal: AI photography moving from 'novelty' to 'production tool' for professional photographers. Comparison: SOUL 2 vs Nano Banana Pro — both targeting same market. Implications for stevensongirl: Could prototype character designs and thumbnail concepts before video production. Cost-effective pre-visualization for creature content.",
+      "source": "x_intel_2026-02-19",
+      "addedAt": "2026-02-20T02:35:00Z",
+      "actionable": true,
+      "priority": "medium"
+    },
+    {
+      "id": "research-n8n-content-automation",
+      "title": "n8n AI Agent Workflows: Viral Content Cloning + Auto-Posting at Scale",
+      "date": "2026-02-19",
+      "tags": [
+        "automation",
+        "n8n",
+        "content-cloning",
+        "ai-agents",
+        "viral-content"
+      ],
+      "content": "X.com intel (Feb 19): AI agent workflow built in n8n (open-source automation) demonstrated. Capabilities: GPT-4o content rewriting, viral TikTok cloning, avatar video generation, auto-captioning/editing, auto-posting to TikTok/IG/YouTube/X. Signal: End-to-end content automation now accessible via no-code/low-code tools. Not standalone AI — integrated workflow. Implications: (1) Content cloning at scale becoming commoditized. (2) Authenticity/verification becoming critical differentiator. (3) Opportunity in 'anti-clone' transparent content. For Steven: Audit current workflow for n8n integration opportunities. Could automate repetitive posting tasks while keeping creative production human-driven.",
+      "source": "x_intel_2026-02-19",
+      "addedAt": "2026-02-20T02:35:00Z",
+      "actionable": true,
+      "priority": "medium"
+    },
+    {
+      "id": "research-agentic-security",
+      "title": "Agentic Coding Supply Chain Security: Skill Scanning Before Install",
+      "date": "2026-02-19",
+      "tags": [
+        "ai-security",
+        "agentic-coding",
+        "supply-chain",
+        "dev-tools"
+      ],
+      "content": "X.com intel (Feb 19): Agentic coding tools execute third-party skills with user-level permissions — read files, run commands, make network calls. Security vendor shipped 'skill scanning before install' feature. Signal: Supply chain security for AI workflows emerging as critical infrastructure gap. As agents gain permissions, attack surface expands dramatically. Market opportunity: Security tools for AI agent workflows, permission auditing, skill verification. Similar to npm/docker security but for AI agent ecosystems.",
+      "source": "x_intel_2026-02-19",
+      "addedAt": "2026-02-20T02:35:00Z",
+      "actionable": true,
+      "priority": "low"
     }
   ]
 }
