@@ -1,15 +1,15 @@
 {
-  "lastHeartbeat": "2026-02-20T23:24:00Z",
-  "totalHeartbeats": 420,
-  "lastAction": "HB420: NVDA earnings preview intelligence update. Research: NVDA earnings preview (FinancialContent, Yahoo Finance, tastylive). Build: Added intel-083 with $66B revenue expectations, Blackwell demand 'off the charts', $500B visibility through CY2026.",
+  "lastHeartbeat": "2026-02-20T23:28:00Z",
+  "totalHeartbeats": 421,
+  "lastAction": "HB421: NVDA earnings countdown widget. Research: Dashboard widget design patterns (Fuselab 2025, UXPin, Figma). Build: NVDAEarningsWidget class, countdown timer, metrics display, highlights section, urgency indicators, responsive CSS.",
   "nextPriority": "Hook Steven up with the Animator to test BBS Crowd Spawner v3.4 texture selection",
   "dataFreshness": {
     "youtube": "2026-02-20 - 165 outliers, 19 briefs, kanban with drag-and-drop + persistence + export + detail modal",
-    "investments": "2026-02-20 - 90 intelligence items, NVDA earnings 6 days away, Blackwell demand 'off the charts'",
+    "investments": "2026-02-20 - 90 intelligence items, NVDA earnings widget live, 6 days to earnings",
     "newBusiness": "2026-02-20 - Marketplace revenue widget + 19 opps",
-    "research": "2026-02-20 - 59 notes + NVDA earnings preview",
+    "research": "2026-02-20 - 60 notes + dashboard widget patterns",
     "competitors": "2026-02-20 - 22 tracked",
-    "tools": "2026-02-20 - Animation Tools + Marketplace Revenue + Content Briefs Kanban widgets"
+    "tools": "2026-02-20 - Animation Tools + Marketplace Revenue + Content Briefs Kanban + NVDA Earnings widgets"
   },
   "minecraftLiveCountdown": {
     "eventDate": "2026-03-15T19:00:00-05:00",
@@ -53,8 +53,9 @@
       "Blackwell revenue ramp",
       "China datacenter commentary"
     ],
-    "lastUpdated": "2026-02-20T23:24:18Z",
+    "lastUpdated": "2026-02-20T23:28:18Z",
     "blackwellVisibility": "$500B through CY2026",
-    "blackwellDemand": "Off the charts (Jensen Huang)"
+    "blackwellDemand": "Off the charts (Jensen Huang)",
+    "widgetStatus": "Live - countdown active"
   }
 }

@@ -2383,6 +2383,224 @@ main {
   color: #3b82f6;
 }
 
+/* NVDA Earnings Countdown Widget */
+.earnings-widget {
+  background: linear-gradient(135deg, #1a1a2e 0%, #0f0f1a 100%);
+  border: 1px solid #252540;
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  max-width: 400px;
+}
+
+.earnings-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.earnings-ticker {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.ticker-symbol {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #76b900; /* NVIDIA green */
+}
+
+.ticker-badge {
+  padding: 0.25rem 0.5rem;
+  background: #76b90020;
+  color: #76b900;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 0.25rem;
+  text-transform: uppercase;
+}
+
+.earnings-urgency {
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.urgency-high {
+  color: #ef4444;
+  animation: pulse-urgency 2s infinite;
+}
+
+.urgency-medium {
+  color: #f59e0b;
+}
+
+.urgency-low {
+  color: #10b981;
+}
+
+@keyframes pulse-urgency {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+.earnings-countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+  padding: 1rem;
+  background: #0f0f1a;
+  border-radius: 0.5rem;
+}
+
+.countdown-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 60px;
+}
+
+.countdown-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #e2e8f0;
+  line-height: 1;
+}
+
+.countdown-label {
+  font-size: 0.625rem;
+  color: #64748b;
+  text-transform: uppercase;
+  margin-top: 0.25rem;
+}
+
+.countdown-separator {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #64748b;
+  margin-top: -0.5rem;
+}
+
+.earnings-live {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ef4444;
+  text-align: center;
+  animation: pulse-live 1s infinite;
+}
+
+@keyframes pulse-live {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.earnings-metrics {
+  margin-bottom: 1rem;
+}
+
+.metric-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.metric {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  background: #0f0f1a;
+  border-radius: 0.375rem;
+}
+
+.metric-label {
+  font-size: 0.625rem;
+  color: #64748b;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+}
+
+.metric-value {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #e2e8f0;
+}
+
+.metric-change,
+.metric-upside,
+.metric-streak {
+  font-size: 0.625rem;
+  margin-top: 0.125rem;
+}
+
+.metric-change {
+  color: #10b981;
+}
+
+.metric-upside {
+  color: #3b82f6;
+}
+
+.metric-streak {
+  color: #f59e0b;
+}
+
+.earnings-highlights {
+  margin-bottom: 1rem;
+}
+
+.highlight {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background: #0f0f1a;
+  border-radius: 0.375rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.75rem;
+}
+
+.highlight-icon {
+  font-size: 1rem;
+}
+
+.highlight-text {
+  color: #94a3b8;
+}
+
+.highlight-blackwell {
+  border-left: 3px solid #ef4444;
+}
+
+.highlight-visibility {
+  border-left: 3px solid #10b981;
+}
+
+.earnings-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.75rem;
+  border-top: 1px solid #252540;
+  font-size: 0.75rem;
+}
+
+.earnings-date {
+  color: #64748b;
+}
+
+.earnings-link {
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.earnings-link:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 640px) {
   .anim-tools-grid {
     grid-template-columns: 1fr;
@@ -2411,5 +2629,17 @@ main {
 
   .modal-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .earnings-widget {
+    max-width: 100%;
+  }
+
+  .countdown-value {
+    font-size: 1.5rem;
+  }
+
+  .countdown-block {
+    min-width: 50px;
   }
 }
