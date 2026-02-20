@@ -16,6 +16,136 @@ class ContentBriefsKanban {
         this.draggedCard = null;
         this.storageKey = 'nox-kanban-state';
         this.statusOverrides = {};
+        this.modalOpen = false;
+    }
+
+    // Modal - Show full brief details
+    showBriefModal(briefId) {
+        const brief = this.briefs.find(b => b.id === briefId);
+        if (!brief) return;
+
+        // Create modal if it doesn't exist
+        let modal = document.getElementById('brief-detail-modal');
+        if (!modal) {
+            modal = document.createElement('dialog');
+            modal.id = 'brief-detail-modal';
+            modal.className = 'brief-modal';
+            modal.setAttribute('aria-labelledby', 'brief-modal-title');
+            document.body.appendChild(modal);
+        }
+
+        const priorityColor = {
+            'HIGH': '#ef4444',
+            'MEDIUM': '#f59e0b',
+            'LOW': '#64748b'
+        }[brief.priority] || '#64748b';
+
+        const statusLabel = this.columns[brief.status]?.label || '💡 Idea';
+        const statusColor = this.columns[brief.status]?.color || '#64748b';
+
+        modal.innerHTML = `
+            <div class="modal-header">
+                <div class="modal-meta">
+                    <span class="modal-priority" style="background: ${priorityColor}">${brief.priority || 'MEDIUM'}</span>
+                    <span class="modal-status" style="background: ${statusColor}20; color: ${statusColor}; border: 1px solid ${statusColor}">${statusLabel}</span>
+                    <span class="modal-niche">${brief.niche || 'General'}</span>
+                </div>
+                <button class="modal-close" onclick="contentBriefsKanban.closeBriefModal()" aria-label="Close">×</button>
+            </div>
+            <div class="modal-content">
+                <h2 id="brief-modal-title" class="modal-title">${brief.title}</h2>
+                
+                ${brief.hook ? `
+                <div class="modal-section">
+                    <h4>🎣 Hook</h4>
+                    <p class="modal-hook">${brief.hook}</p>
+                </div>
+                ` : ''}
+                
+                ${brief.scriptOutline ? `
+                <div class="modal-section">
+                    <h4>📝 Script Outline</h4>
+                    <div class="modal-script">${brief.scriptOutline.replace(/\n/g, '<br>')}</div>
+                </div>
+                ` : ''}
+                
+                <div class="modal-grid">
+                    ${brief.targetLength ? `
+                    <div class="modal-field">
+                        <span class="field-label">⏱️ Target Length</span>
+                        <span class="field-value">${brief.targetLength}</span>
+                    </div>
+                    ` : ''}
+                    ${brief.estimatedViews ? `
+                    <div class="modal-field">
+                        <span class="field-label">👁️ Est. Views</span>
+                        <span class="field-value">${brief.estimatedViews}</span>
+                    </div>
+                    ` : ''}
+                    ${brief.outlierScore ? `
+                    <div class="modal-field">
+                        <span class="field-label">🔥 Outlier Score</span>
+                        <span class="field-value">${brief.outlierScore}/100</span>
+                    </div>
+                    ` : ''}
+                </div>
+                
+                ${brief.tags?.length ? `
+                <div class="modal-section">
+                    <h4>🏷️ Tags</h4>
+                    <div class="modal-tags">
+                        ${brief.tags.map(tag => `<span class="modal-tag">${tag}</span>`).join('')}
+                    </div>
+                </div>
+                ` : ''}
+                
+                ${brief.referenceUrls?.length ? `
+                <div class="modal-section">
+                    <h4>🔗 References</h4>
+                    <ul class="modal-links">
+                        ${brief.referenceUrls.map(url => `<li><a href="${url}" target="_blank" rel="noopener">${url}</a></li>`).join('')}
+                    </ul>
+                </div>
+                ` : ''}
+                
+                ${brief.notes ? `
+                <div class="modal-section">
+                    <h4>📝 Notes</h4>
+                    <p class="modal-notes">${brief.notes}</p>
+                </div>
+                ` : ''}
+            </div>
+            <div class="modal-footer">
+                <span class="modal-date">Added: ${new Date(brief.dateAdded).toLocaleDateString()}</span>
+                ${brief.outlierId ? `<span class="modal-outlier">Based on: ${brief.outlierId}</span>` : ''}
+            </div>
+        `;
+
+        // Show modal
+        modal.showModal();
+        this.modalOpen = true;
+
+        // Close on backdrop click
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                this.closeBriefModal();
+            }
+        });
+
+        // Close on ESC (native dialog behavior)
+        modal.addEventListener('close', () => {
+            this.modalOpen = false;
+        });
+
+        console.log('[Kanban] Opened modal for brief:', briefId);
+    }
+
+    closeBriefModal() {
+        const modal = document.getElementById('brief-detail-modal');
+        if (modal) {
+            modal.close();
+            this.modalOpen = false;
+        }
     }
 
     // Persistence Layer - localStorage sync
@@ -308,8 +438,8 @@ class ContentBriefsKanban {
     }
 
     showDetail(briefId) {
-        // Emit event for detail view
-        window.dispatchEvent(new CustomEvent('showBriefDetail', { detail: { briefId } }));
+        // Open modal with full brief details
+        this.showBriefModal(briefId);
     }
 }
 

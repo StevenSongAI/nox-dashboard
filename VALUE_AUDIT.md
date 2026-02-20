@@ -1,86 +1,124 @@
-# Value Audit Report
+# VALUE AUDIT REPORT
 
 **Audit Date:** 2026-02-20  
-**Heartbeat:** HB417  
-**Repo:** nox-dashboard  
-**Commit:** `34751ef` - [nox] HB417: Kanban persistence layer with localStorage sync
+**Commit:** 3e90e9f  
+**Commit Message:** [nox] HB418: Kanban export/import buttons with JSON download/upload  
+**Auditor:** Subagent (automated grading)
 
 ---
 
-## Grading Decision Tree
+## VERIFICATION CHECKLIST
 
-### STEP 1: Check BOTH Phases
-
-| Phase | Status | Evidence |
+| Check | Status | Evidence |
 |-------|--------|----------|
-| **Fresh Research** | ✅ PASS | `docs/research/hb417-kanban-persistence.md` exists with web_search results |
-| | | Query: "kanban board JSON persistence localStorage sync patterns vanilla JavaScript 2025" |
-| | | 5 sources documented (Medium June 2025, CSS Script March 2025, GitHub repos) |
-| **Feature Built** | ✅ PASS | `js/content-briefs-kanban.js` modified with persistence layer |
-| | | Methods added: `loadKanbanState()`, `saveKanbanState()`, `applyStatusOverrides()` |
-| | | Auto-save on drag-drop: `updateBriefStatus()` calls `saveKanbanState()` |
-| | | Status override merging with JSON data source |
-| | | ~70 lines of persistence code added (per git diff) |
-
-### STEP 2: Grade Application
-
-**Rule Applied:** BOTH research + build present → **80-100% tier**
+| Fresh web_search done THIS heartbeat | ✅ PASS | `docs/research/hb418-json-export-patterns.md` exists with query: "vanilla JavaScript JSON export download button UI pattern 2025" |
+| UI/feature/tool actually built | ✅ PASS | `js/content-briefs-kanban.js` modified with 3 new methods + header buttons |
+| Research file committed to repo | ✅ PASS | Research file part of commit 3e90e9f, working tree clean |
+| Build-only or Research-only flagged | ✅ PASS | Neither - BOTH phases present |
 
 ---
 
-## Grade: 90%
+## PHASE 1: RESEARCH EVIDENCE
 
-### Rationale
+**File:** `docs/research/hb418-json-export-patterns.md`
 
-| Criteria | Assessment |
-|----------|------------|
-| Research Quality | 5 relevant sources from 2025, clear implementation plan derived |
-| Build Quality | Working persistence layer with localStorage sync, proper error handling |
-| Integration | Seamlessly merges with existing kanban drag-and-drop (HB416) |
-| Code Quality | Clean methods, console logging for debugging, timestamp tracking |
-| Commit Hygiene | Research file committed alongside code changes |
+**Query Executed:** `"vanilla JavaScript JSON export download button UI pattern 2025"`
 
-### What Was Built
+**Sources Documented:**
+1. Stack Overflow - Download JSON object as file (anchor element with data URL pattern)
+2. Stack Overflow - React JSON export (data:text/json;charset=utf-8 pattern)
+3. GeeksforGeeks - Download file with Vanilla JS (Aug 2025)
 
-**Persistence Layer Features:**
-- `loadKanbanState()` - Retrieves saved status overrides from localStorage
-- `saveKanbanState()` - Persists status changes with ISO timestamp
-- `applyStatusOverrides()` - Merges localStorage state with JSON data source
-- `clearKanbanState()` - Reset functionality for overrides
-- **Auto-save trigger** - Every drag-drop operation persists immediately
+**Research Quality:** Good - Multiple authoritative sources, implementation plan documented before build
 
-**Technical Implementation:**
+---
+
+## PHASE 2: BUILD EVIDENCE
+
+**File:** `js/content-briefs-kanban.js`
+
+### New Methods Added:
+
 ```javascript
-// Storage key: 'nox-kanban-state'
-// Data structure: { statusOverrides: { briefId: status }, lastSaved: ISOString }
-// Sync strategy: JSON data = source of truth, localStorage = status overrides only
+// Export state to JSON file download
+exportKanbanState() {
+  const state = { statusOverrides, exportedAt, version };
+  // Creates data URL, triggers download with timestamped filename
+}
+
+// Import state from JSON file
+importKanbanState(file) {
+  // FileReader parses JSON, validates format, applies overrides
+}
+
+// Trigger hidden file input for import
+triggerImport() {
+  // Creates <input type="file">, triggers click
+}
 ```
 
-### Deductions (-10%)
+### UI Elements Added:
 
-- No unit tests for persistence methods (would be ideal for data layer)
-- No conflict resolution if multiple tabs open simultaneously
+**Header Action Buttons (rendered in kanban-header):**
+- 📥 **Export** - Downloads `nox-kanban-backup-YYYY-MM-DD.json`
+- 📤 **Import** - Opens file picker for JSON upload
+- 🗑️ **Clear** - Clears localStorage with confirmation
+
+**File:** `style.css`
+
+### New CSS Classes:
+```css
+.kanban-actions { display: flex; gap: 0.5rem; }
+.kanban-btn { /* base button styles */ }
+.kanban-btn.export-btn:hover { border-color: #10b981; color: #10b981; }
+.kanban-btn.import-btn:hover { border-color: #3b82f6; color: #3b82f6; }
+.kanban-btn.clear-btn:hover { border-color: #ef4444; color: #ef4444; }
+```
 
 ---
 
-## Verification Checklist
+## GRADE DETERMINATION
 
-- [x] Fresh web_search documented in research file
-- [x] Research file committed to repo (`docs/research/hb417-kanban-persistence.md`)
-- [x] UI/feature actually built (persistence layer in kanban JS)
-- [x] Code changes committed (`js/content-briefs-kanban.js` +70 lines)
-- [x] Both phases present in same heartbeat
+### Decision Tree Applied:
+
+```
+STEP 1: Check BOTH phases
+├─ Fresh research done? ✅ YES (hb418-json-export-patterns.md)
+└─ Something built? ✅ YES (export/import buttons + file I/O)
+
+STEP 2: Apply grade
+├─ BOTH yes → 80-100% ← SELECTED
+```
+
+### Grade: **90%**
+
+**Rationale:**
+- ✅ Research conducted before build (proper research → build pipeline)
+- ✅ Research documented with multiple authoritative sources
+- ✅ Full implementation: export + import + clear functionality
+- ✅ Proper file I/O with user-friendly filename (timestamped)
+- ✅ Visual feedback with hover states on buttons
+- ✅ Data validation on import (checks for statusOverrides)
+- ✅ User confirmation on destructive action (Clear)
+
+**Minor deductions:**
+- Could include error boundary/try-catch improvements for edge cases
+- Import could show more detailed feedback (which briefs changed)
 
 ---
 
-## Audit Conclusion
+## AUDITOR NOTES
 
-**PASSED** - Research + Build paired correctly.  
-The kanban persistence layer demonstrates solid engineering: researching patterns first, then implementing a clean localStorage sync that preserves the JSON data as source of truth while allowing status overrides to persist across sessions.
+This is a **proper research-backed implementation**. The developer:
+1. Researched the JSON download pattern before coding
+2. Applied the anchor-element-with-data-URL pattern from research
+3. Extended beyond research to add import functionality
+4. Added UI polish (hover states, confirmation dialogs)
+5. Committed research file alongside implementation
 
-This continues the HB415 → HB416 → HB417 progression:
-- HB415: Kanban UI (research + build)
-- HB416: Drag-and-drop (research + build)
-- HB417: Persistence layer (research + build) ← **this audit**
+**Classification:** 80-100% tier (Research + Build paired)
 
-All three phases followed the required research→build pattern.
+---
+
+*Audit generated: 2026-02-20 23:16 EST*
+*Auditor: VALUE AUDITOR subagent*

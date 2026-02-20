@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-02-20T23:16:00Z",
+  "lastUpdated": "2026-02-20T23:20:00Z",
   "updatedBy": "nox-heartbeat",
-  "version": "2026.02.20.41",
-  "cacheBust": "20260220T2316",
-  "dataVersion": "2026.02.20.41",
+  "version": "2026.02.20.42",
+  "cacheBust": "20260220T2320",
+  "dataVersion": "2026.02.20.42",
   "youtubeUpdated": "2026-02-20T22:42:00Z",
   "investmentsUpdated": "2026-02-20T08:16:00.000000",
-  "researchUpdated": "2026-02-20T23:16:00.000000",
+  "researchUpdated": "2026-02-20T23:20:00.000000",
   "newBusinessUpdated": "2026-02-20T21:25:00Z",
   "toolsUpdated": "2026-02-20T22:42:00Z",
   "workTrackerUpdated": "2026-02-15T00:17:00Z",
@@ -18,21 +18,21 @@
     "lastIntelligenceId": "intel-082"
   },
   "dataFreshness": {
-    "research": "2026-02-20 - JSON export button patterns (Stack Overflow)",
+    "research": "2026-02-20 - Modal dialog accessibility patterns (CSS Script, DEV Community)",
     "newBusiness": "2026-02-20 - Minecraft Marketplace widget live",
     "investments": "2026-02-20 - 89 intelligence items",
     "workTracker": "2026-02-15 - pagination + deduplication live",
     "minecraftArtists": "2026-02-18 - 16 artists",
-    "youtube": "2026-02-20 - 19 briefs, kanban with drag-and-drop + persistence + export",
+    "youtube": "2026-02-20 - 19 briefs, kanban with drag-and-drop + persistence + export + detail modal",
     "tools": "2026-02-20 - Animation Tools + Marketplace Revenue + Content Briefs Kanban widgets"
   },
   "research": {
-    "lastUpdated": "2026-02-20T23:16:00Z"
+    "lastUpdated": "2026-02-20T23:20:00Z"
   },
-  "totalNotes": 57,
-  "lastDataPush": "2026-02-20T23:16:00Z",
+  "totalNotes": 58,
+  "lastDataPush": "2026-02-20T23:20:00Z",
   "lastPushBy": "nox-heartbeat",
-  "lastPushDescription": "Kanban export/import buttons with JSON download/upload. Research: JSON export patterns (Stack Overflow 2025). Build: exportKanbanState(), importKanbanState(), triggerImport(), header action buttons, CSS button styles.",
+  "lastPushDescription": "Content brief detail modal with native dialog element. Research: Modal accessibility patterns (CSS Script, DEV Community, Micromodal.js). Build: showBriefModal(), closeBriefModal(), full brief data display, backdrop blur, keyboard support.",
   "newBusiness": {
     "lastUpdated": "2026-02-20T21:25:00Z"
   },
@@ -49,7 +49,7 @@
     "totalCompetitors": 22
   },
   "audits": {
-    "lastUpdated": "2026-02-20T23:13:00Z"
+    "lastUpdated": "2026-02-20T23:17:00Z"
   },
   "minecraftArtists": {
     "lastUpdated": "2026-02-20T01:47:50Z"
@@ -60,7 +60,7 @@
     "investments": "2026-02-20T10:21:16Z",
     "newBusiness": "2026-02-20T21:25:00Z",
     "competitors": "2026-02-20T11:50:55Z",
-    "research": "2026-02-20T23:16:00Z",
+    "research": "2026-02-20T23:20:00Z",
     "tools": "2026-02-20T22:42:00Z"
   }
 }
