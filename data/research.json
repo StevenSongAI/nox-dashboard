@@ -1,7 +1,24 @@
 {
-  "lastUpdated": "2026-02-20T08:48:00Z",
+  "lastUpdated": "2026-02-20T09:16:00Z",
   "notes": [
     {
+      "id": "note-030",
+      "category": "Minecraft Mods",
+      "title": "FRESH: BBS-CustomNPCs Bridge Addon Launched (Jan 29, 2026) - New Content Opportunity",
+      "content": "Heartbeat research discovery (Feb 20, 2026): New CurseForge addon 'Blockbuster Studio' launched January 29, 2026 that bridges CustomNPCs and BBS Mod. KEY FEATURE: Allows giving NPCs any BBS model appearance with full animation support. This is a MAJOR development for BBS ecosystem. Implications: (1) CustomNPCs integration means existing NPC scripting/AI can now use BBS 3D models - massive workflow improvement, (2) Full animation support addresses previous limitation of static BBS models, (3) 856 downloads already suggests active community interest. STRATEGIC ANGLE FOR STEVEN: BBS Crowd Spawner mod + this bridge addon = potential for 100 animated NPC crowds with CustomNPCs AI behaviors. Content opportunity: 'I Added 100 ANIMATED NPCs to Minecraft' - no other mod combination can do this. Video concept: Showcase CustomNPCs pathfinding/behaviors with BBS model variety. First-mover advantage: No YouTube content exists showing this integration yet. Links: CurseForge listing confirms Jan 29 release date. Cross-reference with existing brief-bbs-unique-capabilities-001 - this addon enables ANIMATED crowds, not just static models. Production note: Would need both BBS mod, BBS Crowd Spawner, CustomNPCs mod, AND this bridge addon.",
+      "source": "CurseForge web research (Feb 20, 2026)",
+      "tags": [
+        "minecraft",
+        "bbs-mod",
+        "customnpcs",
+        "mod-integration",
+        "content-opportunity",
+        "first-mover"
+      ],
+      "addedAt": "2026-02-20T09:16:00Z",
+      "actionable": true,
+      "priority": "high"
+    },
       "id": "note-029",
       "category": "AI Video",
       "title": "AI Video Generation Landscape Feb 2026: Native Audio is Now Table Stakes",

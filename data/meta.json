@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-02-20T08:48:00Z",
+  "lastUpdated": "2026-02-20T09:16:00Z",
   "updatedBy": "nox-heartbeat",
-  "version": "2026.02.20.18",
-  "cacheBust": "20260220T0848",
-  "dataVersion": "2026.02.20.18",
+  "version": "2026.02.20.19",
+  "cacheBust": "20260220T0916",
+  "dataVersion": "2026.02.20.19",
   "youtubeUpdated": "2026-02-20T07:20:00.000000",
   "investmentsUpdated": "2026-02-20T08:16:00.000000",
-  "researchUpdated": "2026-02-20T08:48:00.000000",
+  "researchUpdated": "2026-02-20T09:16:00.000000",
   "newBusinessUpdated": "2026-02-19T10:28:00Z",
   "toolsUpdated": "2026-02-19T12:05:00Z",
   "workTrackerUpdated": "2026-02-15T00:17:00Z",
@@ -18,7 +18,7 @@
     "lastIntelligenceId": "intel-082"
   },
   "dataFreshness": {
-    "research": "2026-02-20 - 29 notes (+ AI video native audio shift)",
+    "research": "2026-02-20 - 30 notes (+ BBS-CustomNPCs bridge addon)",
     "newBusiness": "2026-02-19 - 13 opportunities (+ Mirelo AI sound)",
     "investments": "2026-02-20 - 89 intelligence items (+ APP rally to , missed  entry)",
     "workTracker": "2026-02-15 - pagination + deduplication live",
@@ -27,12 +27,12 @@
     "tools": "2026-02-18 - 21 tools"
   },
   "research": {
-    "lastUpdated": "2026-02-20T02:17:56Z"
+    "lastUpdated": "2026-02-20T09:16:00Z"
   },
-  "totalNotes": 19,
-  "lastDataPush": "2026-02-19T10:25:00Z",
+  "totalNotes": 30,
+  "lastDataPush": "2026-02-20T09:16:00Z",
   "lastPushBy": "nox-heartbeat",
-  "lastPushDescription": "opp-013: Mirelo AI sound effects + note-025: AI video audio market research",
+  "lastPushDescription": "note-030: BBS-CustomNPCs bridge addon discovery + first-mover content opportunity",
   "newBusiness": {
     "lastUpdated": "2026-02-20T02:48:36Z"
   },
