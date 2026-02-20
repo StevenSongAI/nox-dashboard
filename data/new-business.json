@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-19T10:25:00Z",
+  "lastUpdated": "2026-02-20T11:16:00Z",
   "opportunities": [
     {
       "id": "opp-001",
@@ -237,6 +237,19 @@
       "urgency": "MEDIUM",
       "status": "evaluate",
       "addedAt": "2026-02-20T02:48:36Z"
+    },
+    {
+      "id": "opp-minecraft-marketplace-001",
+      "title": "Minecraft Marketplace Creator Economy - $146M Q1 2025 Revenue Peak",
+      "type": "creator_economy",
+      "score": 88,
+      "date": "2026-02-20",
+      "summary": "Minecraft Marketplace hit record $146M revenue in Q1 2025 (highest quarterly ever). Annualized revenue on track for $560M+ (13.4% YoY growth). Creator community has earned $500M+ total since launch. 1.7M+ content pieces downloaded. This signals a mature creator economy where professional builders can make substantial income.",
+      "action": "BBS Crowd Spawner could become Marketplace-compatible. Alternative: Document 'I tried to make $10K on Minecraft Marketplace' series. Educational content on Marketplace economics.",
+      "urgency": "MEDIUM",
+      "status": "researching",
+      "addedAt": "2026-02-20T11:16:00Z",
+      "tags": ["minecraft", "marketplace", "creator-economy", "content-monetization"]
     }
   ],
   "meta": {
