@@ -773,6 +773,22 @@
       "addedAt": "2026-02-20T13:44:30Z",
       "actionable": true,
       "priority": "medium"
+    },
+    {
+      "id": "note-049",
+      "category": "Minecraft Updates",
+      "title": "FRESH: Minecraft Live 2026 Event Coming March \u2014 Real Features, Not Concept Art",
+      "content": "Minecraft Live 2026 event announced for March 2026. Key difference from previous years: this event will focus on features coming \"right now\" rather than concept art for features years away. This is a significant shift in Mojang communication strategy. Content opportunity: pre-event speculation video, live reaction stream, or post-event analysis of what actually shipped vs what was promised.",
+      "source": "Sportskeeda (Feb 20, 2026)",
+      "tags": [
+        "minecraft",
+        "minecraft-live",
+        "march-2026",
+        "content-opportunity"
+      ],
+      "addedAt": "2026-02-20T14:21:16Z",
+      "actionable": true,
+      "priority": "high"
     }
   ]
 }
