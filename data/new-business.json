@@ -225,6 +225,18 @@
       "urgency": "HIGH",
       "status": "ready",
       "addedAt": "2026-02-20T01:18:11Z"
+    },
+    {
+      "id": "opp-mario-minecraft-wave-001",
+      "title": "Mario Galaxy Movie + Minecraft Movie \u2014 Double Gaming Movie Wave April 2026",
+      "type": "content_timing",
+      "score": 75,
+      "date": "2026-02-19",
+      "summary": "Super Mario Galaxy Movie releases April 1, 2026. Minecraft Movie already out/hype active. Two of the biggest gaming IPs hitting theaters within weeks of each other. Minecraft has official Mario DLC crossover content. BBS Crowd Spawner can spawn custom models \u2014 theoretically Mario-themed models could be made. Gaming movie crossover content (Minecraft recreating Mario Galaxy scenes) could capture traffic from both audiences.",
+      "action": "Optional: create 'I rebuilt Mario Galaxy in Minecraft with 100 NPCs' if Mario models are feasible. If not, focus on Minecraft Movie recreation (higher certainty).",
+      "urgency": "MEDIUM",
+      "status": "evaluate",
+      "addedAt": "2026-02-20T02:48:36Z"
     }
   ],
   "meta": {
