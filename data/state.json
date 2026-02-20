@@ -1,7 +1,7 @@
 {
-  "lastHeartbeat": "2026-02-20T12:25:31Z",
-  "totalHeartbeats": 390,
-  "lastAction": "HB390: AI video model specs updated \u2014 Kling 3.0 (4K 60fps, 6-cut storyboard), Sora 2, Veo 3.1, Runway Gen-4 Turbo. Native audio now standard. Routing decision matrix added.",
+  "lastHeartbeat": "2026-02-20T12:46:00Z",
+  "totalHeartbeats": 391,
+  "lastAction": "HB391: Minecraft 1.5 trillion YouTube views milestone research - most-watched game ever. Added note-043." \u2014 Kling 3.0 (4K 60fps, 6-cut storyboard), Sora 2, Veo 3.1, Runway Gen-4 Turbo. Native audio now standard. Routing decision matrix added.",
   "nextPriority": "Dashboard UI \u2014 check for rendering issues, mobile responsiveness",
   "learningCycle": {
     "lastRun": "2026-02-17T05:15:00Z",
@@ -19,7 +19,7 @@
     "youtube": "2026-02-20 - 16 briefs (+ baby mob ranking)",
     "newBusiness": "2026-02-20 - 18 opportunities (+ OSU.ai, Pixazo)",
     "investments": "2026-02-20 - 92 intel items (+ NVDA T-5 earnings playbook)",
-    "research": "2026-02-20 - 42 notes (+ AI video landscape)",
+    "research": "2026-02-20 - 43 notes (+ Minecraft 1.5T views milestone)",
     "audits": "2026-02-19 - 129 audits (+ migration, BBS v3.0 build, content push)",
     "competitors": "2026-02-20 - 24 competitors (+ ApolloTV, BBlocks)",
     "minecraftArtists": "2026-02-19 - 18 artists (+ McHorse BBS creator, BBS Discord community)",

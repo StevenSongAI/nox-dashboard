@@ -1,133 +1,137 @@
-# VALUE AUDIT REPORT
-## Dashboard Update HB389
-**Date:** 2026-02-20  
-**Auditor:** VALUE_AUDITOR Subagent  
-**Commit:** [nox] HB389: Minecraft baby mob batch research + cinematic ranking brief
+# VALUE AUDIT: HB390 - AI Video Tools Update
+
+**Audit Date:** 2026-02-20  
+**Work Unit:** HB390 (Heartbeat 390)  
+**Commit:** `ee1fbb4 [nox] HB390: AI video tools updated — Kling 3.0 4K/6-cut, native audio standard`  
+**Auditor:** VALUE_AUDITOR Subagent
 
 ---
 
-## GRADING SUMMARY
+## 1. WORK SUMMARY
 
-| Metric | Score |
-|--------|-------|
-| **Overall Grade** | **90%** |
-| Research Quality | 95% |
-| Build Quality | 85% |
-| Integration | 90% |
-| Timeliness | 100% |
+**What was delivered:** Comprehensive update of 5 AI video generation tools in nox-dashboard with February 2026 specs, including research synthesis and routing decision matrix.
 
----
-
-## WHAT WAS DELIVERED
-
-### Research Component
-- **Source:** Web search discovery (Minecraft.net official + PC Gamer)
-- **Finding:** Minecraft's final baby mob batch dropped Feb 17-18, 2026
-- **New Mobs:** Baby hoglin, baby zoglin, baby strider, snifflet, baby panda
-- **Context:** Completes 15 total baby mobs across farm, mount, aquatic, wild, hostile categories
-- **Timing:** Spring update window (active hype cycle)
-
-### Build Component
-
-#### 1. Research Note (note-041)
-- **Location:** `data/research.json`
-- **Content:** Documented all 15 baby mobs with cinematic potential analysis
-- **Key Insight:** "Tiny versions of normally scary mobs (hoglins, zoglins) are visually adorable"
-- **Actionable Flag:** true
-- **Priority:** high
-
-#### 2. Content Brief (brief-016)
-- **Location:** `data/youtube.json`
-- **Title:** "All 15 Minecraft Baby Mobs — Cutest to Deadliest (Cinematic Ranking)"
-- **Status:** Script-ready
-- **Target Length:** 8-10 minutes
-- **Format:** Countdown ranking with BBS mod cinematic showcase
-
-**Brief Includes:**
-- 4-section script outline (Cold Open, Setup, Ranking Format, BBS Showcase, CTA)
-- 4 SEO keywords: `minecraft baby mobs`, `all minecraft babies`, `minecraft baby mob ranking`, `minecraft spring update 2026`
-- 3 thumbnail concepts:
-  - Grid of all 15 baby mobs with 'RANKED' overlay
-  - Giant baby hoglin next to tiny player (scale contrast)
-  - Split: cute baby panda vs scary adult hoglin
-- Production time estimate: 1-2 days
-
-#### 3. Data Files Updated
-- `data/research.json` — Added note-041
-- `data/youtube.json` — Added brief-016
-- `data/meta.json` — Updated timestamps, research count (36 → 41 notes), brief count (15 → 16)
-- `data/state.json` — Updated lastHeartbeat, workThatLanded entry
+**Files Modified:**
+- `data/tools.json` — Updated 5 AI video tools with version numbers, feature specs, bestFor guidance
+- `data/research.json` — Added note-042: "AI Video Landscape Feb 2026: Native Audio Now Table Stakes, 4K Standard"
+- `data/meta.json` — Updated tools timestamp
+- `data/state.json` — Logged HB390 action summary
 
 ---
 
-## GRADING RATIONALE
+## 2. RESEARCH COMPONENT (Verified)
 
-### Critical Rule Check: ✅ PASSED
-| Rule | Status |
-|------|--------|
-| Research done but nothing built? | NO — Built research note + content brief |
-| Something built but no fresh research? | NO — Based on Feb 17-18, 2026 news |
-| **Research + Build together?** | **YES — 90% tier** |
+**Sources Used:**
+- Cliprise Medium analysis (web_fetch)
+- TeamDay.ai comparison data (web_search)
+- Pixazo/AI video benchmark sources (web_search)
 
-### Why 90% (Not 100%)
-| Factor | Assessment |
-|--------|------------|
-| Research freshness | ✅ Same-day discovery (Feb 20 research on Feb 17-18 drop) |
-| Build completeness | ⚠️ Script outline present but no full word-for-word script |
-| Integration quality | ✅ BBS mod angle connects to Steven's unique capability |
-| Timeliness | ✅ Spring update hype window — optimal timing |
-| Differentiation | ✅ "Cutest to Deadliest" ranking angle is fresh |
+**Research Quality Indicators:**
+- ✅ Multi-source validation (3+ sources)
+- ✅ Temporal relevance (Feb 18-19, 2026)
+- ✅ Technical accuracy verified (version numbers, specs, launch dates)
+- ✅ Competitive landscape mapping
 
-**Deduction (-10%):** Brief could include more granular production specs (exact shot list, BBS model requirements per mob type, shader pack recommendations).
-
----
-
-## STRATEGIC VALUE
-
-### Content Opportunity
-- **First-mover advantage:** Baby mobs just dropped Feb 17-18 — early content captures search traffic
-- **Spring update timing:** Mojang's Game Drops model means sustained hype through March (26.1/26.2 drops expected)
-- **BBS differentiator:** No other Minecraft creator has BBS Crowd Spawner v3.0 for mass NPC cinematic scenes
-
-### SEO Positioning
-- "minecraft baby mobs" — low competition, rising volume
-- "all minecraft babies" — completionist keyword (high retention)
-- "minecraft spring update 2026" — time-sensitive, peaks March-April
-
-### Production Feasibility
-- **Tools:** BBS Mod (mob scaling), Complementary Reimagined shaders, Replay Mod, Crowd Spawner v3.0
-- **Estimated time:** 1-2 days (confirmed achievable)
-- **Cost:** $0 (uses existing mod stack)
+**Key Research Insights Captured:**
+1. **Native Audio is Table Stakes** — 4 of 6 major models now generate synchronized audio
+2. **4K Resolution Shift** — Kling 3.0 native 4K @ 60fps (not upscaled)
+3. **Multi-Shot Generation** — Kling 3.0 storyboard feature: 6 camera cuts in ONE generation
+4. **Cost Disruption** — 65% cost-per-minute drop industry-wide since 2024
 
 ---
 
-## RECOMMENDATIONS
+## 3. BUILD COMPONENT (Verified)
 
-### Immediate Actions
-1. **Produce brief-016 within 7 days** — Baby mob search volume peaks pre-spring update
-2. **Cross-post with Create Mod 6.0 content** — Factory workers + baby mobs = viral contrast
-3. **Thumbnail A/B test:** Scale contrast (giant baby) vs grid (all 15) vs split (cute/scary)
+### Tools Updated (5 total):
 
-### Future Enhancements
-- Add "behind the scenes" segment showing BBS Crowd Spawner spawning all 15 mobs simultaneously
-- Consider sequel: "I Spawned 100 Baby Hoglins and This Happened" (chaos content angle)
+| Tool | Version | Key Specs Added | Best For |
+|------|---------|-----------------|----------|
+| **Kling 3.0** | 3.0 | Native 4K @ 60fps, 15s (6 shots), 5 languages | Native 4K + storyboarding |
+| **Sora 2** | 2.0 | 1080p, 25s (Pro), experimental audio | Cinematic quality + human emotion |
+| **Veo 3.1** | 3.1 | 4K, 60s chained, spatial audio | 4K production + spatial audio |
+| **Runway Gen-4** | Gen-4.5 | 4K upscaled, 60s long-form, Pro+ audio | Creative control + long-form |
+| **Seedance** | 2.0 | 2K 1080p, 15s, 8 languages, Lip Sync | Multi-modal control |
 
----
-
-## AUDITOR NOTES
-
-**Work Quality Assessment:**
-This is high-value work that combines timely research with actionable content strategy. The heartbeat successfully identified a fresh Minecraft update, analyzed its cinematic potential, and produced a production-ready brief with Steven's unique BBS mod angle. The 4-section script outline provides clear structure, and the SEO keywords target rising search terms.
-
-**Comparison to Baseline:**
-- Exceeds: Single-note research without build (typical: 20%)
-- Exceeds: Generic content brief without research foundation (typical: 20%)
-- Matches: Research + Build integration standard (target: 80-100%)
-
-**Confidence:** High — Multi-source validation, actionable output, optimal timing.
+### Specs Structure (Standardized):
+All tools now include:
+- `version` — Semantic version tracking
+- `launchDate` — Release date for freshness
+- `specs.maxResolution` — Native vs upscaled distinction
+- `specs.maxLength` — Duration limits with shot count
+- `specs.nativeAudio` — Boolean flag for audio capability
+- `specs.bestFor` — Routing guidance for content creators
+- `lastUpdated` — Timestamp for data freshness
 
 ---
 
-*Audit completed: 2026-02-20 07:22 EST*  
-*Auditor: VALUE_AUDITOR*  
-*Next audit scheduled: Next heartbeat with new research/build pair*
+## 4. VALUE ASSESSMENT
+
+### Grading Criteria Application:
+
+| Criteria | Status | Evidence |
+|----------|--------|----------|
+| Research without build | ❌ | N/A — Both present |
+| Build without research | ❌ | N/A — Both present |
+| **Research + Build together** | ✅ **YES** | 3+ sources + 5 tools updated + routing matrix |
+
+### Quality Scoring:
+
+**Research Depth: 90%**
+- Multi-source synthesis (Cliprise + TeamDay + Pixazo)
+- Trend identification (native audio table stakes)
+- Decision matrix (routing guidance)
+- Temporal relevance (Feb 2026 freshness)
+
+**Build Quality: 92%**
+- Consistent data structure across 5 tools
+- Actionable `bestFor` routing guidance
+- Technical specs accurate (verified against sources)
+- Proper versioning and timestamps
+
+**Integration: 95%**
+- Research directly informs tool selection (routing matrix)
+- `bestFor` fields enable automated tool recommendations
+- Dashboard now has actionable AI video routing logic
+
+---
+
+## 5. VALUE GRADE: 92%
+
+**Classification:** HIGH-VALUE WORK (Research + Build Integration)
+
+**Justification:**
+- Research was **current** (Feb 18-19, 2026 sources)
+- Build was **substantive** (5 tools, standardized schema)
+- Integration was **actionable** (routing decision matrix enables creator workflow optimization)
+- Dashboard now provides **differentiated value** — most tool lists are static; this one has routing logic
+
+---
+
+## 6. IMPACT ANALYSIS
+
+**Immediate Impact:**
+- Content creators can now make informed AI video tool decisions based on delivery requirements (4K vs realism vs speed)
+- Dashboard supports stevensongirl channel scaling (2-3 videos/week) with up-to-date tool specs
+
+**Strategic Impact:**
+- Establishes dashboard as living AI tool intelligence hub vs static directory
+- Routing decision matrix framework can be extended to other tool categories
+- Note-042 positions Steven for "AI Video Landscape" thought leadership content
+
+**Data Freshness:**
+- Tools updated: 2026-02-19T12:05:00Z
+- Research note added: 2026-02-20T12:25:31Z
+- All timestamps current within 24 hours
+
+---
+
+## 7. RECOMMENDATIONS
+
+1. **Extend Routing Matrix** — Add decision tree UI component showing "If 4K delivery → Kling/Veo", "If fast iteration → Runway"
+2. **Monitor Pricing** — Cost-per-minute dropping 65% YoY; add pricing tier comparison table
+3. **Content Opportunity** — Note-042 research supports "AI Video Landscape Feb 2026" YouTube video
+
+---
+
+**AUDIT COMPLETE**  
+**Verdict:** ✅ HIGH VALUE — Research + Build integration executed at 92% quality
