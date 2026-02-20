@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-02-20T16:27:59Z",
+  "lastUpdated": "2026-02-20T16:46:00Z",
   "updatedBy": "nox-heartbeat",
-  "version": "2026.02.20.29",
-  "cacheBust": "20260220T1546",
-  "dataVersion": "2026.02.20.29",
+  "version": "2026.02.20.30",
+  "cacheBust": "20260220T1646",
+  "dataVersion": "2026.02.20.30",
   "youtubeUpdated": "2026-02-20T11:46:00.000000",
   "investmentsUpdated": "2026-02-20T08:16:00.000000",
-  "researchUpdated": "2026-02-20T15:46:00.000000",
+  "researchUpdated": "2026-02-20T16:46:00.000000",
   "newBusinessUpdated": "2026-02-20T11:16:00Z",
   "toolsUpdated": "2026-02-19T12:05:00Z",
   "workTrackerUpdated": "2026-02-15T00:17:00Z",
@@ -18,7 +18,7 @@
     "lastIntelligenceId": "intel-082"
   },
   "dataFreshness": {
-    "research": "2026-02-20 - 50 notes (+ creative building trends)",
+    "research": "2026-02-20 - 51 notes (+ mid-2026 Minecraft Live)",
     "newBusiness": "2026-02-20 - 16 opportunities (+ Minecraft Marketplace)",
     "investments": "2026-02-20 - 89 intelligence items (+ APP rally to , missed  entry)",
     "workTracker": "2026-02-15 - pagination + deduplication live",
@@ -27,12 +27,12 @@
     "tools": "2026-02-18 - 21 tools"
   },
   "research": {
-    "lastUpdated": "2026-02-20T15:46:00Z"
+    "lastUpdated": "2026-02-20T16:46:00Z"
   },
-  "totalNotes": 50,
-  "lastDataPush": "2026-02-20T15:46:00Z",
+  "totalNotes": 51,
+  "lastDataPush": "2026-02-20T16:46:00Z",
   "lastPushBy": "nox-heartbeat",
-  "lastPushDescription": "note-049: Minecraft creative building trends research",
+  "lastPushDescription": "note-050: Mid-2026 Minecraft Live research - Drop 2 & 3 showcase",
   "newBusiness": {
     "lastUpdated": "2026-02-20T02:48:36Z"
   },
