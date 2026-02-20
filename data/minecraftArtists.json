@@ -223,6 +223,36 @@
       "notes": "Direct Discord contact for Rollerite team. ATTEMPTED 2025-02-09 - Discord account creation blocked.",
       "priority": "high",
       "addedAt": "2026-02-09T00:00:00Z"
+    },
+    {
+      "id": "mc-artist-017",
+      "name": "McHorse",
+      "platform": "YouTube",
+      "profileUrl": "https://www.youtube.com/c/McHorsesmods",
+      "specialty": "BBS mod creator / Minecraft machinima filmmaker",
+      "priceRange": "N/A \u2014 collab/community",
+      "country": "Unknown",
+      "discord": "BBS mod Discord community",
+      "status": "high-priority-outreach",
+      "notes": "McHorse is the developer of BBS mod \u2014 the core tool Steven's Crowd Spawner mod extends. Steven built crowd-spawner-v3.0 as a community mod FOR McHorse's ecosystem. This is an ideal collab: (1) McHorse could spotlight Steven's mod to his BBS community (2) Steven could get featured on McHorse's YouTube showcasing the crowd spawner (3) Joint content opportunity for Minecraft Movie recreation. Contact via YouTube community or BBS Discord.",
+      "priority": "high",
+      "collabAngle": "Steven built an extension mod for McHorse's tool \u2014 natural reason to reach out. Offer to showcase the mod in a joint video.",
+      "addedAt": "2026-02-20T01:47:42Z"
+    },
+    {
+      "id": "mc-artist-018",
+      "name": "BBS Mod Community",
+      "platform": "Miraheze Wiki / Discord",
+      "profileUrl": "https://bbsmod.miraheze.org/wiki/Main_Page",
+      "specialty": "BBS mod users / machinima filmmakers",
+      "priceRange": "N/A \u2014 community",
+      "country": "Global",
+      "discord": "BBS official Discord",
+      "status": "community-target",
+      "notes": "Active community of Minecraft machinima filmmakers using BBS mod. Steven's Crowd Spawner mod is directly useful to all of them. Share mod in Discord for organic community growth + potential collab creators.",
+      "priority": "medium",
+      "collabAngle": "Post crowd-spawner-v3.0 in the BBS Discord mod-sharing channel. Instant relevant audience.",
+      "addedAt": "2026-02-20T01:47:42Z"
     }
   ],
   "outreachTemplates": {
@@ -255,19 +285,28 @@
     {
       "priority": 1,
       "action": "Create Discord account manually (blocked on hCaptcha)",
-      "artistsToContact": ["ali7913", "vaspei", "Khaghts"],
+      "artistsToContact": [
+        "ali7913",
+        "vaspei",
+        "Khaghts"
+      ],
       "impact": "High - enables contact with 3 verified artists"
     },
     {
       "priority": 2,
       "action": "Login to Fiverr and message budget artists",
-      "artistsToContact": ["Sofia N ($6)", "Paburozan ($11)"],
+      "artistsToContact": [
+        "Sofia N ($6)",
+        "Paburozan ($11)"
+      ],
       "impact": "High - budget-friendly options for testing"
     },
     {
       "priority": 3,
       "action": "Login to BuiltByBit and contact Opaline_Drawer",
-      "artistsToContact": ["Opaline_Drawer ($5/hr)"],
+      "artistsToContact": [
+        "Opaline_Drawer ($5/hr)"
+      ],
       "impact": "High - extremely budget rate"
     }
   ],

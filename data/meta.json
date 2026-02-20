@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-20T01:46:00Z",
+  "lastUpdated": "2026-02-20T01:47:50Z",
   "updatedBy": "nox-heartbeat",
   "version": "2026.02.20.04",
   "cacheBust": "20260220T0146",
@@ -47,5 +47,8 @@
   },
   "audits": {
     "lastUpdated": "2026-02-20T00:51:48Z"
+  },
+  "minecraftArtists": {
+    "lastUpdated": "2026-02-20T01:47:50Z"
   }
 }
