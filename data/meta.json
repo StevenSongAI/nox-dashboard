@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-02-20T06:35:38Z",
+  "lastUpdated": "2026-02-20T06:55:00Z",
   "updatedBy": "nox-heartbeat",
-  "version": "2026.02.20.13",
-  "cacheBust": "20260220T0616",
-  "dataVersion": "2026.02.20.13",
-  "youtubeUpdated": "2026-02-19T12:15:00Z",
+  "version": "2026.02.20.14",
+  "cacheBust": "20260220T0655",
+  "dataVersion": "2026.02.20.14",
+  "youtubeUpdated": "2026-02-20T06:55:00.000000",
   "investmentsUpdated": "2026-02-19T15:19:00.000000",
   "researchUpdated": "2026-02-19T10:28:00Z",
   "newBusinessUpdated": "2026-02-19T10:28:00Z",
@@ -20,7 +20,7 @@
     "investments": "2026-02-19 - 86 intelligence items (+ NVDA intraday .71)",
     "workTracker": "2026-02-15 - pagination + deduplication live",
     "minecraftArtists": "2026-02-18 - 16 artists",
-    "youtube": "2026-02-19 - 148 outliers (+ AI evolution niche validation)",
+    "youtube": "2026-02-20 - 158 outliers (+ 3x 100 Days format research)",
     "tools": "2026-02-18 - 21 tools"
   },
   "research": {
@@ -50,5 +50,6 @@
   },
   "minecraftArtists": {
     "lastUpdated": "2026-02-20T01:47:50Z"
-  }
+  },
+  "totalOutliers": 158
 }

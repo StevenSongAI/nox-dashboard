@@ -1,6 +1,51 @@
 {
   "outlierVideos": [
     {
+      "id": "yt-research-100days-trend-002",
+      "title": "I Survived 100 Days STRANDED on an ISLAND in Minecraft Hardcore",
+      "url": "https://www.youtube.com/watch?v=hqfEgHFznoA",
+      "channel": "A Cookie God",
+      "views": 18500000,
+      "viralScore": 92,
+      "category": "minecraft_100days",
+      "publishedAt": "2024-10-11T00:00:00Z",
+      "addedAt": "2026-02-20T06:55:00Z",
+      "source": "web_research",
+      "notes": "100 Days format: evergreen viral trend. 'Expanding world' variant - world grows every day. 18.5M views. Series format with binge potential.",
+      "contentAngle": "100 Days format works for BBS Crowd Spawner: 100 Days With 1000 Unique NPCs - each day adds new characters",
+      "niche": "🎮 Minecraft 100 Days"
+    },
+    {
+      "id": "yt-research-100days-trend-003",
+      "title": "I Spent 100 Days in a Viral Outbreak/SCP Apocalypse in Hardcore Minecraft",
+      "url": "https://www.youtube.com/watch?v=wtuaIUX86QY",
+      "channel": "Various Creators",
+      "views": 12500000,
+      "viralScore": 88,
+      "category": "minecraft_100days",
+      "publishedAt": "2025-09-09T00:00:00Z",
+      "addedAt": "2026-02-20T06:55:00Z",
+      "source": "web_research",
+      "notes": "100 Days + survival horror/apocalypse theme. 12.5M views. Modpack-driven content (Mustard Virus mod). High engagement due to escalating tension.",
+      "contentAngle": "BBS Crowd Spawner angle: 100 Days of NPC Invasion - survival with increasing crowd chaos",
+      "niche": "🎮 Minecraft 100 Days"
+    },
+    {
+      "id": "yt-research-100days-trend-004",
+      "title": "I Survived Hardcore Minecraft For 100 Days And This Is What Happened",
+      "url": "https://www.youtube.com/watch?v=iYzfeWaenlU",
+      "channel": "Forge Labs",
+      "views": 52000000,
+      "viralScore": 95,
+      "category": "minecraft_100days",
+      "publishedAt": "2019-09-15T00:00:00Z",
+      "addedAt": "2026-02-20T06:55:00Z",
+      "source": "web_research",
+      "notes": "Original 100 Days viral hit. 52M views. Established the '100 Days' format as evergreen. Hardcore survival + progression arc = proven binge formula.",
+      "contentAngle": "Classic format: start weak, end powerful. Perfect for BBS Crowd Spawner progression (1 NPC to 1000 over 100 days)",
+      "niche": "🎮 Minecraft 100 Days"
+    },
+    {
       "id": "yt-research-100M-evolution-001",
       "title": "The 100M View Niche: Create Viral \"AI Animal Evolution\" Videos (Sora & Kling Tutorial)",
       "url": "https://www.youtube.com/watch?v=Bt1gLPX1vFw",
