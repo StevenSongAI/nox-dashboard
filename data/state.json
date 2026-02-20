@@ -1,15 +1,15 @@
 {
-  "lastHeartbeat": "2026-02-20T23:12:00Z",
-  "totalHeartbeats": 417,
-  "lastAction": "HB417: Kanban persistence layer with localStorage sync. Research: Kanban persistence patterns (Medium 2025, CSS Script, GitHub). Build: loadKanbanState(), saveKanbanState(), applyStatusOverrides(), auto-save on drag-drop.",
-  "nextPriority": "Add export/sync button to kanban for manual JSON sync",
+  "lastHeartbeat": "2026-02-20T23:16:00Z",
+  "totalHeartbeats": 418,
+  "lastAction": "HB418: Kanban export/import buttons with JSON download/upload. Research: JSON export patterns (Stack Overflow 2025). Build: exportKanbanState(), importKanbanState(), triggerImport(), header action buttons, CSS button styles.",
+  "nextPriority": "Add content brief detail modal (show full brief data on card click)",
   "dataFreshness": {
-    "youtube": "2026-02-20 - 165 outliers, 19 briefs, kanban with drag-and-drop + persistence",
+    "youtube": "2026-02-20 - 165 outliers, 19 briefs, kanban with drag-and-drop + persistence + export/import",
     "investments": "2026-02-20 - 89 intel items, NVDA earnings countdown",
     "newBusiness": "2026-02-20 - Marketplace revenue widget + 19 opps",
-    "research": "2026-02-20 - 56 notes + kanban persistence patterns",
+    "research": "2026-02-20 - 57 notes + JSON export patterns",
     "competitors": "2026-02-20 - 22 tracked",
-    "tools": "2026-02-20 - Animation Tools + Marketplace Revenue + Kanban widgets"
+    "tools": "2026-02-20 - Animation Tools + Marketplace Revenue + Content Briefs Kanban widgets"
   },
   "minecraftLiveCountdown": {
     "eventDate": "2026-03-15T19:00:00-05:00",

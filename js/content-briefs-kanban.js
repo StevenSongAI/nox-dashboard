@@ -63,6 +63,63 @@ class ContentBriefsKanban {
         this.render('content-briefs-kanban');
     }
 
+    // Export/Import functionality
+    exportKanbanState() {
+        try {
+            const state = {
+                statusOverrides: this.statusOverrides,
+                exportedAt: new Date().toISOString(),
+                version: '1.0'
+            };
+            const dataStr = 'data:text/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(state, null, 2));
+            const downloadAnchor = document.createElement('a');
+            const dateStr = new Date().toISOString().split('T')[0];
+            downloadAnchor.setAttribute('href', dataStr);
+            downloadAnchor.setAttribute('download', `nox-kanban-backup-${dateStr}.json`);
+            document.body.appendChild(downloadAnchor);
+            downloadAnchor.click();
+            downloadAnchor.remove();
+            console.log('[Kanban] State exported');
+        } catch (e) {
+            console.error('[Kanban] Failed to export state:', e);
+            alert('Export failed. See console for details.');
+        }
+    }
+
+    importKanbanState(file) {
+        const reader = new FileReader();
+        reader.onload = (e) => {
+            try {
+                const imported = JSON.parse(e.target.result);
+                if (imported.statusOverrides) {
+                    this.statusOverrides = imported.statusOverrides;
+                    this.saveKanbanState();
+                    console.log('[Kanban] State imported:', Object.keys(this.statusOverrides).length, 'overrides');
+                    this.render('content-briefs-kanban');
+                    alert(`Imported ${Object.keys(this.statusOverrides).length} status overrides.`);
+                } else {
+                    alert('Invalid file format: missing statusOverrides');
+                }
+            } catch (err) {
+                console.error('[Kanban] Failed to import state:', err);
+                alert('Import failed: ' + err.message);
+            }
+        };
+        reader.readAsText(file);
+    }
+
+    triggerImport() {
+        const input = document.createElement('input');
+        input.type = 'file';
+        input.accept = '.json';
+        input.onchange = (e) => {
+            if (e.target.files[0]) {
+                this.importKanbanState(e.target.files[0]);
+            }
+        };
+        input.click();
+    }
+
     async render(containerId) {
         const container = document.getElementById(containerId);
         if (!container) return;
@@ -82,8 +139,21 @@ class ContentBriefsKanban {
         container.innerHTML = `
             <div class="briefs-kanban">
                 <div class="kanban-header">
-                    <h3>🎬 Content Briefs Pipeline</h3>
-                    <span class="kanban-count">${this.briefs.length} briefs</span>
+                    <div class="kanban-header-left">
+                        <h3>🎬 Content Briefs Pipeline</h3>
+                        <span class="kanban-count">${this.briefs.length} briefs</span>
+                    </div>
+                    <div class="kanban-actions">
+                        <button class="kanban-btn export-btn" onclick="contentBriefsKanban.exportKanbanState()" title="Export status overrides to JSON">
+                            📥 Export
+                        </button>
+                        <button class="kanban-btn import-btn" onclick="contentBriefsKanban.triggerImport()" title="Import status overrides from JSON">
+                            📤 Import
+                        </button>
+                        <button class="kanban-btn clear-btn" onclick="if(confirm('Clear all status overrides?')) contentBriefsKanban.clearKanbanState()" title="Clear localStorage state">
+                            🗑️ Clear
+                        </button>
+                    </div>
                 </div>
                 <div class="kanban-board">
                     ${Object.entries(this.columns).map(([status, config]) => `
