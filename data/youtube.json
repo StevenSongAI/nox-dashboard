@@ -3421,6 +3421,44 @@
       "estimatedProductionTime": "2-3 days",
       "addedBy": "nox-hb400",
       "dateAdded": "2026-02-20"
+    },
+    {
+      "id": "brief-019",
+      "title": "I Tried to Make Money on the Minecraft Marketplace (Creator Economy Exposed)",
+      "niche": "Minecraft Business",
+      "angle": "Educational deep-dive into the $500M+ Minecraft Marketplace creator economy. Show the real numbers, success stories, and what it actually takes to earn money as a Marketplace creator.",
+      "targetAudience": "Minecraft players curious about monetization, aspiring Marketplace creators, gaming entrepreneurs",
+      "estimatedViews": "250K-500K",
+      "scriptOutline": [
+        "HOOK (0:00-0:30): 'Minecraft creators have earned over $500 million. Here's how much you could make...'",
+        "SECTION 1 (0:30-2:00): Marketplace explained - what it is, how it works, 1.7B+ downloads",
+        "SECTION 2 (2:00-5:00): The numbers - $146M Q1 2025 record, $500M+ total payouts, 50%+ revenue share",
+        "SECTION 3 (5:00-8:00): Top earning categories breakdown - Skin packs vs Worlds vs Texture packs vs Mash-ups",
+        "SECTION 4 (8:00-11:00): Success spectrum - Top creators make 6 figures/year, hobbyists make side income",
+        "SECTION 5 (11:00-13:00): What YOU need to get started - Bedrock Edition, Creator Program application",
+        "CTA (13:00-14:00): Should I try to become a Marketplace creator? Comment if you want a follow-up"
+      ],
+      "thumbnailConcept": "Split screen: Steve holding diamonds on left, real money/coins on right. Text overlay: '$500,000,000' or 'I Made $___ on Minecraft'",
+      "tags": [
+        "minecraft",
+        "minecraft marketplace",
+        "minecraft creator",
+        "how to make money minecraft",
+        "minecraft business",
+        "minecraft monetization",
+        "minecraft creator economy"
+      ],
+      "relatedBriefs": [],
+      "researchSources": [
+        "Business of Apps - Minecraft Statistics 2026",
+        "Oasis AI Minecraft - Economic Analytics 2025",
+        "Notta AI - Minecraft Statistics 2025",
+        "Eneba - Minecraft Revenue Breakdown 2025"
+      ],
+      "status": "ready",
+      "priority": "high",
+      "createdAt": "2026-02-20T22:08:00Z",
+      "addedBy": "nox-hb414"
     }
   ],
   "lastUpdated": "2026-02-19T17:51:00Z",

@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-02-20T21:25:00Z",
+  "lastUpdated": "2026-02-20T22:08:00Z",
   "updatedBy": "nox-heartbeat",
-  "version": "2026.02.20.36",
-  "cacheBust": "20260220T2125",
-  "dataVersion": "2026.02.20.36",
-  "youtubeUpdated": "2026-02-20T11:46:00.000000",
+  "version": "2026.02.20.37",
+  "cacheBust": "20260220T2208",
+  "dataVersion": "2026.02.20.37",
+  "youtubeUpdated": "2026-02-20T22:08:00Z",
   "investmentsUpdated": "2026-02-20T08:16:00.000000",
   "researchUpdated": "2026-02-20T21:25:00.000000",
   "newBusinessUpdated": "2026-02-20T21:25:00Z",
@@ -23,16 +23,16 @@
     "investments": "2026-02-20 - 89 intelligence items",
     "workTracker": "2026-02-15 - pagination + deduplication live",
     "minecraftArtists": "2026-02-18 - 16 artists",
-    "youtube": "2026-02-20 - 165 outliers, 15 briefs",
-    "tools": "2026-02-20 - Animation Tools Comparison + Marketplace Revenue widgets"
+    "youtube": "2026-02-20 - 19 content briefs, Marketplace creator earnings brief added",
+    "tools": "2026-02-20 - Animation Tools + Marketplace Revenue widgets"
   },
   "research": {
     "lastUpdated": "2026-02-20T21:25:00Z"
   },
   "totalNotes": 55,
-  "lastDataPush": "2026-02-20T21:25:00Z",
+  "lastDataPush": "2026-02-20T22:08:00Z",
   "lastPushBy": "nox-heartbeat",
-  "lastPushDescription": "Minecraft Marketplace Revenue widget with creator payout data ($500M+ total, $146M Q1 2025 record)",
+  "lastPushDescription": "Content brief for Minecraft Marketplace creator earnings video (brief-019): Educational deep-dive into $500M+ creator economy with script outline, thumbnail concept, and research sources",
   "newBusiness": {
     "lastUpdated": "2026-02-20T21:25:00Z"
   },
@@ -41,7 +41,7 @@
     "totalTools": 21
   },
   "youtube": {
-    "lastUpdated": "2026-02-20T06:35:38Z"
+    "lastUpdated": "2026-02-20T22:08:00Z"
   },
   "competitorsUpdated": "2026-02-19T14:20:00Z",
   "competitors": {
@@ -56,7 +56,7 @@
   },
   "totalOutliers": 158,
   "sections": {
-    "youtube": "2026-02-20T15:45:14Z",
+    "youtube": "2026-02-20T22:08:00Z",
     "investments": "2026-02-20T10:21:16Z",
     "newBusiness": "2026-02-20T21:25:00Z",
     "competitors": "2026-02-20T11:50:55Z",
