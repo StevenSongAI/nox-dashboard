@@ -2768,6 +2768,46 @@
       ],
       "category": "gaming_reaction_recreation",
       "priority": "urgent"
+    },
+    {
+      "id": "brief-google-io-2026-001",
+      "title": "Everything Google Announced at I/O 2026 (Gemini, Android, AI Tools)",
+      "status": "scheduled",
+      "scheduledDate": "2026-05-19",
+      "urgency": "PLAN NOW \u2014 publish May 19-20",
+      "createdAt": "2026-02-20T02:17:45Z",
+      "insightSource": "Google confirmed I/O 2026 May 19-20 (The Verge, Feb 19 2026). Major Gemini + Android + Chrome updates expected.",
+      "content": {
+        "hook": "Google just changed everything. Here's everything you missed from I/O 2026 in 8 minutes.",
+        "format": "Speed-recap format \u2014 high-retention, covers all announcements, SEO captures all search terms",
+        "structure": [
+          "0-5s: Hook \u2014 biggest announcement first (whatever lands hardest)",
+          "5-30s: 'Google dropped X announcements today. Here are the ones that actually matter.'",
+          "30s-4min: Top 5 announcements ranked by impact \u2014 Gemini updates, Android features, AI tools",
+          "4-7min: What this means for creators / developers / everyday users",
+          "7-8min: 'The one thing nobody is talking about...' \u2014 contrarian take for shareability",
+          "8min: CTA \u2014 subscribe for Google I/O day 2 coverage"
+        ]
+      },
+      "seoKeywords": [
+        "google io 2026",
+        "google io 2026 announcements",
+        "gemini 2026 update",
+        "google io recap",
+        "google io highlights",
+        "android 2026",
+        "google ai 2026",
+        "google io summary"
+      ],
+      "productionNotes": {
+        "timing": "Record LIVE on May 19 or within 2 hours of keynote ending \u2014 first-mover advantage is critical",
+        "format": "No b-roll needed \u2014 screen recordings of announcements + reaction cam is enough",
+        "estimatedLength": "8-12 min optimal for ad revenue + retention on event coverage",
+        "competitorNote": "Every tech/AI creator will cover this \u2014 differentiate with fastest publish + strongest contrarian take"
+      },
+      "outlierRef": [],
+      "category": "ai_news_recap",
+      "priority": "high"
     }
   ],
   "lastUpdated": "2026-02-19T17:51:00Z"
