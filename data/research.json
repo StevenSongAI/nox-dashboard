@@ -2,6 +2,24 @@
   "lastUpdated": "2026-02-20T09:16:00Z",
   "notes": [
     {
+      "id": "note-035",
+      "category": "AI Video Trends",
+      "title": "AI Video Post-Production Gap Disappearing - Native Audio/Music Integration 2026",
+      "content": "Heartbeat research discovery (Feb 20, 2026): AI video generation is undergoing a major shift - the post-production gap is disappearing. KEY FINDINGS: (1) Leading AI video systems now generate motion, dialogue, ambient sound, AND music in unified processes per LTX Studio (Jan 2026), (2) Audio is no longer added after video - it's created simultaneously with visuals, (3) AI voice consistency improving but still a challenge in 2026 (Jakob Nielsen analysis), (4) Music adaptation AI allowing artists to expand utility - songs can be adapted to be longer, slower, moodier based on creator needs per Rolling Stone Culture Council, (5) Warner Music Group using AI to analyze streaming data and spot emerging artist patterns humans might miss. CONTENT OPPORTUNITY: 'I Made a Music Video Entirely with AI' - use unified AI video+audio generation to create complete music videos from single prompts. Showcase the disappearing post-production workflow. Compare traditional video+audio editing vs unified AI generation. Educational angle: How AI is changing music video production economics.",
+      "source": "LTX Studio + Jakob Nielsen PhD + Rolling Stone + Yapsody (Feb 20, 2026)",
+      "tags": [
+        "ai-video",
+        "ai-music",
+        "native-audio",
+        "music-videos",
+        "content-opportunity",
+        "post-production"
+      ],
+      "addedAt": "2026-02-20T11:46:00Z",
+      "actionable": true,
+      "priority": "high"
+    },
+    {
       "id": "note-034",
       "category": "Minecraft Business",
       "title": "Minecraft Marketplace Creator Earnings Hit Record $146M in Q1 2025",
