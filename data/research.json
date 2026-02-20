@@ -2,6 +2,24 @@
   "lastUpdated": "2026-02-20T09:16:00Z",
   "notes": [
     {
+      "id": "note-031",
+      "category": "Minecraft Mods",
+      "title": "FRESH: Create Mod 6.0.0 Released for Minecraft 1.21.1 (Jan 2026)",
+      "content": "Heartbeat research discovery (Feb 20, 2026): Create Mod 6.0.0 officially released January 2, 2026 for NeoForge on Minecraft 1.21.1. KEY UPDATES: Major version bump from 0.5.1i to 6.0.0 signals significant rewrite. Available for both Forge (1.20.1) and NeoForge (1.21.1). CurseForge confirms 6.0.8 as latest stable. CONTEXT: Create mod is consistently top 5 Minecraft mod with 10M+ monthly search volume per PCGamesN Feb 2026 rankings. The 1.21.1 release is significant because 1.21.1 has become the primary modding version for 1.21 series. STRATEGIC ANGLE FOR STEVEN: Create 6.0 + BBS Crowd Spawner = untapped content combination. Create factories with actual WORKER NPCs using BBS models. Concept: 'I Built a Factory with 100 Workers in Create Mod' - industrial revolution meets NPC crowds. No existing YouTube content shows this crossover. Technical synergy: Create's mechanical contraptions + BBS animated NPCs = cinematic factory scenes impossible in vanilla. Production opportunity: First-mover advantage in Create 6.0 content (new version just dropped).",
+      "source": "CreateMod.com + CurseForge (Feb 20, 2026)",
+      "tags": [
+        "minecraft",
+        "create-mod",
+        "bbs-mod",
+        "mod-integration",
+        "content-opportunity",
+        "first-mover"
+      ],
+      "addedAt": "2026-02-20T09:46:00Z",
+      "actionable": true,
+      "priority": "high"
+    },
+    {
       "id": "note-030",
       "category": "Minecraft Mods",
       "title": "FRESH: BBS-CustomNPCs Bridge Addon Launched (Jan 29, 2026) - New Content Opportunity",

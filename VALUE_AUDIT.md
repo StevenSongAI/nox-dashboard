@@ -1,116 +1,126 @@
 # Value Audit: Dashboard Update Review
 
 **Audit Date:** 2026-02-20  
-**Commit:** 2b9c2a3 `[nox] HB378: BBS-CustomNPCs bridge addon discovery + note-030 added`  
-**Files Modified:** data/research.json, data/state.json, data/meta.json, VALUE_AUDIT.md
+**Commit:** 0db9345 - [nox] HB379: MC Movie 2 Ender Dragon intel + script-ready content brief  
+**Auditor:** Subagent (VALUE AUDITOR)
 
 ---
 
 ## Summary
 
-| Criteria | Status | Score |
-|----------|--------|-------|
-| Fresh Research Done | ✅ CurseForge web research | 20/20 |
-| Research Applied to Build | ✅ note-030 created with strategic insights | 20/20 |
-| Real Data (Not Filler) | ✅ Specific dates, download counts, URLs | 15/15 |
-| JSON Schema Compliance | ✅ All required fields present | 10/10 |
-| User Value / Usefulness | ✅ Directly actionable for Steven's mod work | 15/15 |
-| Dashboard Value Added | ✅ Enables first-mover content opportunity | 15/15 |
-| Meta/State Updates | ✅ Version bump, timestamps, heartbeat 378 | 5/5 |
-
-**TOTAL SCORE: 100% (A+)**
+| Metric | Finding | Grade |
+|--------|---------|-------|
+| Fresh Research | ✅ YES - web_search found MC Movie 2 Ender Dragon villain confirmation, July 2027 release, filming April 2026 | Pass |
+| Research Applied | ✅ YES - Full script-ready content brief with 6-section outline | Pass |
+| Data Quality | ✅ Real researched data, not filler | Pass |
+| Schema Compliance | ✅ Matches youtube.json schema exactly | Pass |
+| Utility to Steven | ✅ HIGHLY relevant - BBS mod + Minecraft cinematic content | Pass |
+| Meta/State Updates | ✅ Both files updated with timestamps | Pass |
 
 ---
 
-## Detailed Assessment
+## Grade: 88% (Research + Build Paired Successfully)
 
-### 1. Fresh Research Done ✅
-- **Source:** CurseForge web research (Feb 20, 2026)
-- **Finding:** "Blockbuster Studio" addon launched Jan 29, 2026
-- **Specifics:** 856 downloads, bridges CustomNPCs + BBS Mod
-- **Method:** Web search / monitoring (implied by source attribution)
+**Verdict:** Dashboard is genuinely more useful. Real data, real insights, research→build paired effectively.
 
-### 2. Research Applied to Build ✅
-- **Output:** note-030 - Complete research note
-- **Strategic Angle:** BBS Crowd Spawner + CustomNPCs bridge = animated NPC crowds
-- **Content Opportunity:** "I Added 100 ANIMATED NPCs to Minecraft" (first-mover)
-- **Production Notes:** Clear requirements list for video concept
+### What Was Delivered
 
-### 3. Real Data Validation ✅
-- Launch date: January 29, 2026 (specific)
-- Download count: 856 (specific metric)
-- Feature details: Full animation support, BBS model compatibility
-- Cross-reference: Links to existing brief-bbs-unique-capabilities-001
-- **Verdict:** Genuine researched data, not filler or mock content
-
-### 4. JSON Schema Compliance ✅
+#### 1. New Outlier Entry (`outlier-162`)
 ```json
 {
-  "id": "note-030",
-  "category": "Minecraft Mods",
-  "title": "FRESH: BBS-CustomNPCs Bridge Addon...",
-  "content": "...",
-  "source": "CurseForge web research (Feb 20, 2026)",
-  "tags": ["minecraft", "bbs-mod", "customnpcs", ...],
-  "addedAt": "2026-02-20T09:16:00Z",
-  "actionable": true,
-  "priority": "high"
+  "id": "outlier-162",
+  "title": "Minecraft Movie 2: Ender Dragon Confirmed — Content Window Opens",
+  "channel": "TREND ALERT",
+  "published": "2026-02-19",
+  "niche": "Minecraft Movie",
+  "whyOutlier": "Another Minecraft Movie confirmed July 2027...",
+  "contentAngle": "Recreate Ender Dragon fight scenes in Minecraft...",
+  "addedBy": "nox-hb379",
+  "dateAdded": "2026-02-20"
 }
 ```
-All required fields present. Matches schema of notes 001-029.
 
-### 5. User Value / Usefulness ✅
-- **Relevance:** Directly impacts Steven's BBS Crowd Spawner mod
-- **Actionability:** HIGH - specific video concept provided
-- **Timing:** First-mover advantage explicitly called out
-- **Integration:** Connects to existing dashboard content (brief-bbs-unique-capabilities-001)
+**Assessment:**
+- ✅ Proper ID format following existing convention
+- ✅ Accurate trend intel (Ender Dragon villain, July 2027 release)
+- ✅ Actionable content angle tied to Steven's BBS Crowd Spawner mod
+- ✅ Timeliness noted (filming April 2026 = content window NOW)
 
-### 6. Dashboard Value Added ✅
-- Enables new content format not previously possible
-- Identifies untapped YouTube niche (no existing content)
-- Combines multiple mods for unique capability
-- Adds to "Minecraft Mods" category in research
+#### 2. Full Content Brief (`brief-010`)
 
-### 7. Meta/State Updates ✅
-- meta.json: Version 2026.02.20.19, timestamps updated
-- state.json: Heartbeat 378, lastAction logged, dataFreshness.research updated
-- Commit message matches push description
+**Components Delivered:**
+
+| Section | Quality | Notes |
+|---------|---------|-------|
+| Hook | ✅ Strong | "The Minecraft Movie sequel just confirmed the Ender Dragon as the villain. So I built the final battle..." |
+| Script Outline | ✅ 6-section | Cold open → Context → Build → Fight → Comparison → CTA |
+| Tools List | ✅ Specific | BBS Mod, Crowd Spawner v3.0, Complementary Reimagined shaders, Replay Mod |
+| SEO Keywords | ✅ Relevant | 5 keywords targeting "minecraft movie 2", "ender dragon" search traffic |
+| Timeliness Analysis | ✅ Strategic | "FIRST MOVER — news broke Feb 19, filming April 2026" |
+| Status Tracking | ✅ Proper | "script-ready" status for production pipeline |
+
+#### 3. File Updates
+
+| File | Update | Verified |
+|------|--------|----------|
+| `data/youtube.json` | Added outlier-162 + brief-010 | ✅ Yes |
+| `data/meta.json` | Updated lastUpdated, dataFreshness, totalOutliers | ✅ Yes |
+| `data/state.json` | Updated lastAction, dataFreshness, workThatLanded | ✅ Yes |
 
 ---
 
-## Key Insights from note-030
+## Strengths
 
-**The Discovery:**
-A new CurseForge addon bridges CustomNPCs (scriptable NPC AI) with BBS Mod (animated 3D models). This enables something previously impossible: NPCs with CustomNPCs AI behaviors that look like any BBS model with full animation.
+1. **Timely Intel:** News broke Feb 19, captured in dashboard Feb 20 (24hr turnaround)
+2. **Strategic Positioning:** Directly connects to Steven's BBS Crowd Spawner mod capabilities
+3. **Production-Ready:** Script outline is detailed enough to start filming immediately
+4. **First-Mover Advantage:** Explicitly notes the content window opens now through July 2027
+5. **SEO-Optimized:** Keywords target high-search terms around the movie announcement
 
-**The Opportunity:**
-- No YouTube content exists showing this integration
-- BBS Crowd Spawner + this bridge = 100+ animated NPC crowds with AI
-- Content hook: "I Added 100 ANIMATED NPCs to Minecraft"
-- First-mover advantage explicitly identified
+---
 
-**Production Requirements:**
-- BBS mod + BBS Crowd Spawner + CustomNPCs + bridge addon
-- Estimated concept-to-publish: Unknown (new format)
-- Cost: $0 (all mods freely available)
+## Minor Deductions (-12%)
+
+| Issue | Impact | Suggestion |
+|-------|--------|------------|
+| No view count on outlier (set to 0) | -5% | Could estimate search volume or leave as trending indicator |
+| Brief lacks estimated production time/cost | -4% | Other briefs include this for planning |
+| No thumbnail concept sketches | -3% | Other recent briefs include 3 thumbnail ideas |
+
+---
+
+## Comparison to Prior Work
+
+| Metric | HB379 (This) | HB378 (Prior) | HB377 |
+|--------|--------------|---------------|-------|
+| Research Source | web_search | web_search | web_search |
+| Build Output | Full script brief | Research note | Research note |
+| Schema Compliance | ✅ Perfect | ✅ Perfect | ✅ Perfect |
+| Actionable for Steven | ✅ HIGH | Medium | Medium |
+| Timeliness | ✅ Fresh (24hr) | Fresh | Fresh |
 
 ---
 
 ## Conclusion
 
-**GRADE: 100% (A+)**
+**This is exactly what a high-value dashboard update should look like:**
 
-This update exemplifies the research→build pairing that maximizes dashboard value:
+1. Fresh web research identifies a trend (Minecraft Movie 2 announcement)
+2. Research is immediately synthesized into actionable content strategy
+3. Script-ready brief enables Steven to start production today
+4. Direct tie-in to his existing tools (BBS Crowd Spawner v3.0)
+5. Clear timeliness guidance (FIRST MOVER advantage)
+6. All files properly updated with timestamps and metadata
 
-1. **Fresh intelligence gathered** from CurseForge (new mod discovery)
-2. **Immediately synthesized** into actionable content strategy
-3. **Specific metrics provided** (856 downloads, Jan 29 launch)
-4. **Strategic insight added** (first-mover advantage, no existing YouTube content)
-5. **All schema requirements met** with proper timestamps and metadata
+The dashboard is **more valuable** after this update. Steven can open the dashboard, see the brief-010 entry, and immediately understand:
+- What opportunity exists (MC Movie 2 Ender Dragon hype)
+- Why it matters (first-mover window NOW through April 2026 filming)
+- How to execute it (6-section script outline)
+- What tools to use (BBS mod + shaders + Replay Mod)
+- How to title it for search (SEO keywords)
 
-The note directly serves Steven's stated goal (stevensongirl channel scaling) by identifying a unique content opportunity enabled by his own mod work. This is precisely the kind of intelligence that makes the dashboard valuable.
+**Grade: 88%** — Dashboard genuinely more useful. Research + build paired successfully.
 
 ---
 
-**Auditor:** Subagent Value Auditor  
-**Completed:** 2026-02-20 04:19 EST
+*Audit completed: 2026-02-20*
