@@ -1297,6 +1297,9 @@ function renderYouTube() {
   
   // Render Marketplace earnings calculator
   safeRender(() => renderMarketplaceCalculator(), 'renderMarketplaceCalculator');
+  
+  // Render NVDA earnings countdown
+  safeRender(() => renderNvdaEarningsCountdown(), 'renderNvdaEarningsCountdown');
 }
 
 // Content Pipeline Kanban Board — NEW FEATURE: Visual production tracker
@@ -1466,6 +1469,68 @@ function renderMarketplaceCalculator() {
       <div class="mt-3 p-2 bg-accent-green/10 rounded">
         <p class="text-sm"><strong>💡 Opportunity:</strong> With BBS mod expertise, you could create marketplace content (skins, worlds) or build a "How Much Minecraft Creators Make" video using this data.</p>
       </div>
+    </div>
+  `;
+  
+  container.innerHTML = html;
+}
+
+// NVDA Earnings Countdown Widget — NEW FEATURE
+function renderNvdaEarningsCountdown() {
+  const container = document.getElementById('nvda-earnings-countdown');
+  if (!container) return;
+  
+  const countdown = appData.state?.nvdaEarningsCountdown;
+  if (!countdown) {
+    container.innerHTML = '<p class="text-gray-500 text-sm">NVDA earnings countdown not configured</p>';
+    return;
+  }
+  
+  const days = countdown.daysUntil || 0;
+  const urgencyColor = days <= 3 ? 'text-accent-red' : days <= 7 ? 'text-accent-yellow' : 'text-accent-green';
+  const urgencyBg = days <= 3 ? 'bg-accent-red/10 border-accent-red/30' : days <= 7 ? 'bg-accent-yellow/10 border-accent-yellow/30' : 'bg-accent-green/10 border-accent-green/30';
+  
+  let html = `
+    <div class="${urgencyBg} border rounded-lg p-4 mb-6">
+      <div class="flex items-center justify-between mb-3">
+        <h3 class="text-lg font-semibold">📈 NVDA Earnings</h3>
+        <span class="text-3xl font-bold ${urgencyColor}">T-${days}</span>
+      </div>
+      <p class="text-sm text-gray-400 mb-3">February 26, 2026 — After market close</p>
+      
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-4">
+        <div class="bg-dark-700 rounded p-3 text-center">
+          <p class="text-lg font-bold text-accent-blue">${countdown.consensusEPS}</p>
+          <p class="text-xs text-gray-400">Consensus EPS</p>
+        </div>
+        <div class="bg-dark-700 rounded p-3 text-center">
+          <p class="text-lg font-bold text-accent-green">${countdown.consensusRevenue}</p>
+          <p class="text-xs text-gray-400">Revenue</p>
+        </div>
+        <div class="bg-dark-700 rounded p-3 text-center">
+          <p class="text-lg font-bold text-accent-purple">${countdown.analystPriceTarget}</p>
+          <p class="text-xs text-gray-400">Price Target</p>
+        </div>
+        <div class="bg-dark-700 rounded p-3 text-center">
+          <p class="text-lg font-bold text-accent-yellow">${countdown.forwardPE}</p>
+          <p class="text-xs text-gray-400">Forward P/E</p>
+        </div>
+      </div>
+      
+      <div class="bg-dark-700 rounded p-3 mb-3">
+        <h4 class="text-sm font-semibold mb-2 text-accent-blue">Key Metrics to Watch</h4>
+        <ul class="text-sm space-y-1">
+          ${countdown.keyMetrics.map(m => `<li class="flex items-start gap-2"><span class="text-accent-green">✓</span> ${m}</li>`).join('')}
+        </ul>
+      </div>
+      
+      <p class="text-sm"><strong>Beat Streak:</strong> <span class="text-accent-green">${countdown.beatStreak}</span></p>
+      
+      ${days <= 3 ? `
+        <div class="mt-3 p-2 bg-dark-800 rounded">
+          <p class="text-sm ${urgencyColor}"><strong>⚠️ URGENT:</strong> Earnings in ${days} days — position before Wednesday!</p>
+        </div>
+      ` : ''}
     </div>
   `;
   

@@ -1,8 +1,8 @@
 {
-  "lastHeartbeat": "2026-02-20T17:16:00Z",
-  "totalHeartbeats": 406,
-  "lastAction": "HB406: Minecraft content creator tips research - simple ideas + strong visuals formula. Added note-051.",
-  "nextPriority": "Build marketplace earnings calculator UI",
+  "lastHeartbeat": "2026-02-20T17:20:18Z",
+  "totalHeartbeats": 407,
+  "lastAction": "HB407: Research\u2192Build paired \u2014 NVDA earnings countdown T-6 days with analyst targets",
+  "nextPriority": "Build NVDA earnings countdown UI widget",
   "dataFreshness": {
     "youtube": "2026-02-20 - kanban UI feature added",
     "investments": "2026-02-20",
@@ -39,5 +39,20 @@
     ],
     "priceRange": "490-1480 Minecoins ($3-10)",
     "lastUpdated": "2026-02-20T17:05:38Z"
+  },
+  "nvdaEarningsCountdown": {
+    "earningsDate": "2026-02-26",
+    "daysUntil": 6,
+    "consensusEPS": "$1.53 (+77% YoY)",
+    "consensusRevenue": "$65.58B (+67% YoY)",
+    "analystPriceTarget": "$257-264",
+    "forwardPE": "40.7",
+    "beatStreak": "20 of 22 quarters",
+    "keyMetrics": [
+      "Q1 FY2027 guidance (most important)",
+      "Blackwell revenue ramp",
+      "China datacenter commentary"
+    ],
+    "lastUpdated": "2026-02-20T17:20:18Z"
   }
 }
