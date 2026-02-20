@@ -213,6 +213,18 @@
       ],
       "confidence": "high",
       "priority": "medium"
+    },
+    {
+      "id": "opp-mc-movie2-content-wave",
+      "title": "Minecraft Movie 2 Content Wave \u2014 April 2026 Filming Announcement",
+      "type": "content_timing",
+      "score": 92,
+      "date": "2026-02-19",
+      "summary": "Minecraft Movie 2 confirmed pre-production, filming late April 2026. This creates TWO content waves: (1) NOW \u2014 movie 1 still trending, hype content gets picked up (2) April \u2014 sequel filming announcement = massive search spike. Steven has BBS Crowd Spawner mod built \u2014 uniquely positioned to create 'I recreated the Minecraft Movie' content. This is a rare case of having the right tool at the right time.",
+      "action": "Publish 'I Recreated A Minecraft Movie' video ASAP to capture current wave + seed April wave",
+      "urgency": "HIGH",
+      "status": "ready",
+      "addedAt": "2026-02-20T01:18:11Z"
     }
   ],
   "meta": {

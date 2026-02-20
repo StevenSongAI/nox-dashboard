@@ -2272,6 +2272,19 @@
       "whyOutlier": "Cinematic Minecraft content getting massive traction \u2014 audience craves high-production MC storytelling",
       "stevenAngle": "Steven has BBS Crowd Spawner mod that can spawn 100 custom NPCs \u2014 perfect for cinematic scenes",
       "addedAt": "2026-02-20T00:18:11Z"
+    },
+    {
+      "id": "yt-mc-movie-hype-001",
+      "title": "A Minecraft Movie \u2014 Audience Reactions & Sequel Confirmed",
+      "channel": "Multiple creators reacting",
+      "url": "https://en.wikipedia.org/wiki/A_Minecraft_Movie",
+      "publishedAt": "2026-02-19",
+      "estimatedViews": "100M+ combined search volume",
+      "niche": "minecraft_movie",
+      "whyOutlier": "Minecraft Movie 2 filming April 2026 \u2014 massive search & content wave incoming. React + recreate videos guaranteed views during hype cycle.",
+      "stevenAngle": "Steven has BBS Crowd Spawner mod \u2014 can recreate cinematic MC scenes. Position: 'I recreated A Minecraft Movie with my AI mod'",
+      "urgency": "HIGH \u2014 6 weeks to sequel filming announcement wave",
+      "addedAt": "2026-02-20T01:18:11Z"
     }
   ],
   "meta": {
@@ -2690,6 +2703,71 @@
       ],
       "category": "gaming_tutorial",
       "priority": "high"
+    },
+    {
+      "id": "brief-mc-movie-recreation-001",
+      "title": "I Recreated A Minecraft Movie Scene with 100 AI NPCs (BBS Mod)",
+      "status": "production-ready",
+      "urgency": "HIGH \u2014 Minecraft Movie 2 filming April 2026, hype window NOW",
+      "createdAt": "2026-02-20T01:18:11Z",
+      "insightSource": "Minecraft Movie 2 confirmed pre-production, filming late April 2026. Wikipedia updated 19hrs ago. Movie 1 still trending. BBS Crowd Spawner v3.0 built today.",
+      "content": {
+        "hook": "A Minecraft Movie cost $150M. I recreated it for free with AI and a mod I built myself.",
+        "format": "Reaction + recreation hybrid \u2014 react to movie trailer, then recreate key scene in Minecraft",
+        "structure": [
+          "0-5s: HOOK \u2014 Show your recreation side-by-side with the official movie trailer",
+          "5-20s: 'This movie cost $150M. Mine cost $0 and I built the tool myself.'",
+          "20-60s: Brief movie trailer reaction (rides search traffic from movie hype)",
+          "60-120s: Show BBS Crowd Spawner spawning crowd scene \u2014 direct parallel to movie",
+          "120-210s: Build out the recreation scene live \u2014 Replay Mod cinematic angles",
+          "210-270s: Side-by-side final comparison + roast/praise",
+          "270-300s: 'Minecraft Movie 2 is filming in April \u2014 I'll do it again, bigger. Subscribe.'"
+        ],
+        "viralMechanics": {
+          "trendJacking": "Minecraft Movie search traffic = instant audience",
+          "creator": "Steven BUILT the tool \u2014 unique authority position",
+          "stakes": "Solo creator vs $150M Hollywood budget",
+          "sequel_hook": "Seeds sequel content before April filming begins"
+        }
+      },
+      "scriptOutline": {
+        "hook": "COLD OPEN: Split screen. Left: official Minecraft Movie trailer crowd scene. Right: your BBS Crowd Spawner recreation. Text: 'Left: $150,000,000. Right: $0 and a mod I built.' Hold 3 seconds. Cut.",
+        "act1": "So A Minecraft Movie came out and the internet had... opinions. [React to 2-3 key scenes briefly \u2014 rides the search traffic]. But here's what nobody did: actually RECREATE it inside Minecraft. So I did.",
+        "act2": "I spent 3 weeks building a mod called BBS Crowd Spawner. One command. 100 custom NPCs. Watch. [Run /crowd spawn 100 10 model_name]. There they are. Now let me set the scene.",
+        "act3": "Replay Mod cinematic fly-through of your recreation. Music. Dramatic editing. Match the movie's pacing as closely as possible.",
+        "cta": "Minecraft Movie 2 starts filming in April. I'll be ready. Subscribe and I'll recreate that one too \u2014 bigger, better, with AI."
+      },
+      "seoKeywords": [
+        "a minecraft movie reaction",
+        "minecraft movie recreation",
+        "minecraft movie ai",
+        "bbs mod minecraft movie",
+        "minecraft movie 2026",
+        "minecraft movie cinematic",
+        "minecraft movie behind the scenes",
+        "minecraft movie sequel"
+      ],
+      "thumbnailConcepts": [
+        "Split: Minecraft Movie poster LEFT vs your in-game crowd scene RIGHT \u2014 '$150M vs $0'",
+        "Your face between the official movie logo and your Minecraft recreation \u2014 shocked expression",
+        "100 custom NPCs in formation with Minecraft Movie title font overlay"
+      ],
+      "productionNotes": {
+        "timing": "Publish BEFORE April 2026 (Minecraft Movie 2 filming announcement = second wave of search traffic)",
+        "crossContent": "This video promotes BBS Crowd Spawner mod AND rides movie hype simultaneously",
+        "requiredMods": [
+          "BBS mod 1.7.7",
+          "BBS Crowd Spawner v3.0",
+          "Replay Mod"
+        ],
+        "estimatedLength": "6-8 min \u2014 long enough for ad revenue, short enough to retain"
+      },
+      "outlierRef": [
+        "yt-mc-movie-hype-001",
+        "yt-mc-cinematic-001"
+      ],
+      "category": "gaming_reaction_recreation",
+      "priority": "urgent"
     }
   ],
   "lastUpdated": "2026-02-19T17:51:00Z"
