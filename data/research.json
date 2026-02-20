@@ -2,6 +2,24 @@
   "lastUpdated": "2026-02-20T09:16:00Z",
   "notes": [
     {
+      "id": "note-032",
+      "category": "Minecraft News",
+      "title": "MAJOR: Minecraft Switches to Year-Based Versioning - 26.0 Released Feb 10, 2026",
+      "content": "Heartbeat research discovery (Feb 20, 2026): Minecraft officially changed their version numbering system in December 2025. MAJOR CHANGES: (1) New 'Game Drops' model replaces annual updates, (2) Versions now numbered by year: 2026 versions start with '26' (26.0, 26.1, 26.2, etc.), (3) First drop 26.0 released February 10, 2026 - JUST 10 DAYS AGO. Old 1.22 content now split into 26.1 and 26.2 drops expected late March 2026. Both Bedrock and Java editions adopt new numbering. WHY THIS MATTERS: Mojang moved from large annual updates (1.20 Trails & Tales, 1.21 Tricky Trials) to smaller, more frequent 'Game Drops'. This means: (1) More frequent content updates for players, (2) Modders must adapt to faster update cycles, (3) Content creators get more frequent 'new version' hype cycles to capitalize on. CONTENT OPPORTUNITY: 'Everything in Minecraft 26.0' - comprehensive showcase video. First-mover window: 26.0 just dropped, 26.1 expected late March. 'Minecraft Changed Forever' angle on version system change. Educational content on what 1.22 content got moved to which drop. Mod compatibility concerns - what works in 26.0?",
+      "source": "Minecraft.net + GameSpot + PCGamesN (Feb 20, 2026)",
+      "tags": [
+        "minecraft",
+        "version-change",
+        "game-drops",
+        "26.0",
+        "content-opportunity",
+        "first-mover"
+      ],
+      "addedAt": "2026-02-20T10:16:00Z",
+      "actionable": true,
+      "priority": "high"
+    },
+    {
       "id": "note-031",
       "category": "Minecraft Mods",
       "title": "FRESH: Create Mod 6.0.0 Released for Minecraft 1.21.1 (Jan 2026)",

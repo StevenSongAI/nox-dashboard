@@ -1,6 +1,20 @@
 {
   "outlierVideos": [
     {
+      "id": "outlier-mc260-001",
+      "title": "Minecraft 26.0 Released - Version System Overhaul",
+      "channel": "TREND ALERT",
+      "views": 0,
+      "viralScore": 95,
+      "category": "minecraft_version_change",
+      "publishedAt": "2026-02-10T00:00:00Z",
+      "addedAt": "2026-02-20T10:16:00Z",
+      "source": "web_research",
+      "notes": "MAJOR VERSION SYSTEM CHANGE: Minecraft officially switched from 1.xx to year-based versioning on Feb 10, 2026. 26.0 is first 'Game Drop' replacing traditional annual updates. Content window: NOW through late March 2026 when 26.1 drops.",
+      "contentAngle": "Educational content explaining version change + showcase of 26.0 features. First-mover opportunity - news is 10 days old, most creators haven't covered it yet.",
+      "niche": "🎮 Minecraft News"
+    },
+    {
       "id": "yt-research-minecraftmovie-viral-001",
       "title": "Minecraft Movie Trailer RECREATED in Animation (Fan Made)",
       "url": "https://www.youtube.com/watch?v=Alumio_recreation",
@@ -3108,6 +3122,45 @@
         "Split: empty factory vs packed factory with workers"
       ],
       "addedBy": "nox-hb380-fix",
+      "dateAdded": "2026-02-20"
+    },
+    {
+      "id": "brief-012",
+      "title": "Minecraft 26.0: Everything Changed (New Version System Explained)",
+      "status": "script-ready",
+      "hook": "Minecraft just killed the 1.xx version system. Here's what 26.0 actually adds.",
+      "angle": "Educational breakdown + showcase of new Game Drops model + first-mover coverage of 26.0 content",
+      "scriptOutline": {
+        "coldOpen": "0:00-0:15: Show Minecraft title screen with '26.0' version number. 'If your Minecraft still says 1.21, you're already behind.'",
+        "explainChange": "0:15-1:30: Explain the version numbering change - why Mojang ditched 1.xx for year-based drops. Visual: side-by-side old vs new numbering.",
+        "show260": "1:30-3:00: Showcase EVERYTHING in 26.0 - new blocks, mobs, mechanics. Real gameplay footage.",
+        "whatsNext": "3:00-4:00: Explain 26.1 (late March) and 26.2 - what content got moved from cancelled 1.22 update.",
+        "modImpact": "4:00-5:00: Critical for modders - what breaks, what works, compatibility issues. Show BBS mod working in 26.0.",
+        "cta": "5:00-5:30: 'Subscribe before 26.1 drops - I'll cover it first.'"
+      },
+      "toolsNeeded": [
+        "Minecraft 26.0 (Bedrock or Java)",
+        "Screen recorder (OBS)",
+        "BBS mod (for mod compatibility segment)",
+        "Create mod (if compatible)"
+      ],
+      "seoKeywords": [
+        "minecraft 26.0",
+        "minecraft version change",
+        "minecraft game drops",
+        "minecraft 26.1 release date",
+        "minecraft new update 2026",
+        "minecraft 1.22 cancelled",
+        "minecraft year based versioning"
+      ],
+      "timeliness": "FIRST MOVER - 26.0 released Feb 10, 2026 (10 days ago). 26.1 expected late March. Window to be first explaining the version change is NOW.",
+      "estimatedProductionTime": "1 day (no world build needed - just showcase existing content)",
+      "thumbnailConcepts": [
+        "Minecraft title screen with giant '26.0' overlay",
+        "Split: '1.21' crossed out vs '26.0' glowing",
+        "Confused Steve with question marks around version numbers"
+      ],
+      "addedBy": "nox-hb381",
       "dateAdded": "2026-02-20"
     }
   ],
