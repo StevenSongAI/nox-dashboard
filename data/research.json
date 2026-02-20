@@ -2,6 +2,24 @@
   "lastUpdated": "2026-02-20T09:16:00Z",
   "notes": [
     {
+      "id": "note-054",
+      "category": "Minecraft Infrastructure",
+      "title": "Minecraft Server Hosting Trends 2026 - VPS Over Traditional Hosts",
+      "content": "Heartbeat research discovery (Feb 20, 2026): Minecraft server hosting landscape shifting in 2026. KEY FINDINGS: (1) For ATM 10 + Cobblemon, experts recommend skipping 'Minecraft-only' hosts and going with VPS per Reddit r/MinecraftServer (Jan 2026), (2) Requirements: high RAM, good single-core CPU performance, full control, (3) Godlike.host ranks #1 for most players and communities per Godlike.host (Feb 2026), (4) MamboServer testing shows performance consistency critical for player retention, (5) Wrong hosting choice = wasted money, lost progress, frustrated players per Co-Optimus. INFRASTRUCTURE IMPLICATIONS: BBS Crowd Spawner mod servers need high RAM for 1000+ NPCs. VPS gives control over JVM arguments for optimization. Content opportunity: 'I Hosted a 1000 NPC Server - Best Hosting for BBS Crowd Spawner'.",
+      "source": "Godlike.host + MamboServer + Reddit r/MinecraftServer + Co-Optimus (Feb 20, 2026)",
+      "tags": [
+        "minecraft",
+        "server-hosting",
+        "vps",
+        "infrastructure",
+        "bbs-mod",
+        "performance"
+      ],
+      "addedAt": "2026-02-20T19:16:00Z",
+      "actionable": true,
+      "priority": "high"
+    },
+    {
       "id": "note-053",
       "category": "Minecraft Visuals",
       "title": "Minecraft Ray Tracing Shaders 2026 - SEUS PTGI, Continuum RT, Path Tracing",
