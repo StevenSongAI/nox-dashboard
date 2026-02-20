@@ -687,6 +687,22 @@
       "addedAt": "2026-02-20T12:25:31Z",
       "actionable": true,
       "priority": "high"
+    },
+    {
+      "id": "note-044",
+      "category": "Minecraft Updates",
+      "title": "FRESH: Minecraft 26.1 Snapshot 9 Released (Feb 18, 2026)",
+      "content": "Minecraft 26.1 Snapshot 9 dropped Feb 18, 2026. Bug fixes: entity crash outside world height limits, noisy kittens in bed, elevated shadows with scoreboard. The 26.1 Game Drop is progressing through snapshots \u2014 this is the first update since the 26.0 version system change. Content opportunity: \"Testing Minecraft 26.1 Snapshots\" series as the update approaches release.",
+      "source": "Minecraft.net official (Feb 18, 2026)",
+      "tags": [
+        "minecraft",
+        "26.1",
+        "snapshot",
+        "game-drop"
+      ],
+      "addedAt": "2026-02-20T12:52:49Z",
+      "actionable": true,
+      "priority": "medium"
     }
   ]
 }

@@ -3370,8 +3370,8 @@
       "id": "trend-002",
       "trend": "Minecraft 26.0 Version System Overhaul",
       "status": "ACTIVE",
-      "window": "Feb 2026 \u2014 March 2026 (26.1/26.2 incoming)",
-      "description": "Mojang switched from 1.x to year-based versioning (26.0 released Feb 10). 'Game Drops' model replaces annual updates \u2014 smaller, faster drops throughout the year. Old 1.22 content split across future drops. Huge confusion in community = educational content opportunity.",
+      "window": "Feb-March 2026 (26.1 Snapshot 9 dropped Feb 18)",
+      "description": "Mojang switched from 1.x to year-based versioning (26.0 released Feb 10). 'Game Drops' model replaces annual updates \u2014 smaller, faster drops throughout the year. Old 1.22 content split across future drops. Huge confusion in community = educational content opportunity. 26.1 Snapshot 9 released Feb 18, 2026 \u2014 bug fixes for entity crashes, noisy kittens, elevated shadows. Game Drop progressing toward release.",
       "opportunity": "Explainer + showcase videos for each Game Drop. First-mover on 26.1 and 26.2 content when they hit late March.",
       "linkedBriefs": [
         "brief-012"

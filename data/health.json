@@ -1,0 +1,58 @@
+{
+  "lastCheck": "2026-02-20T12:52:12Z",
+  "status": "healthy",
+  "filesChecked": [
+    {
+      "file": "data/state.json",
+      "status": "ok",
+      "size": 428,
+      "valid_json": true
+    },
+    {
+      "file": "data/meta.json",
+      "status": "ok",
+      "size": 2203,
+      "valid_json": true
+    },
+    {
+      "file": "data/youtube.json",
+      "status": "ok",
+      "size": 195708,
+      "valid_json": true
+    },
+    {
+      "file": "data/investments.json",
+      "status": "ok",
+      "size": 192828,
+      "valid_json": true
+    },
+    {
+      "file": "data/new-business.json",
+      "status": "ok",
+      "size": 15826,
+      "valid_json": true
+    },
+    {
+      "file": "data/research.json",
+      "status": "ok",
+      "size": 54739,
+      "valid_json": true
+    },
+    {
+      "file": "data/competitors.json",
+      "status": "ok",
+      "size": 18693,
+      "valid_json": true
+    },
+    {
+      "file": "data/tools.json",
+      "status": "ok",
+      "size": 12891,
+      "valid_json": true
+    }
+  ],
+  "issues": [],
+  "recommendations": [
+    "All data files valid"
+  ]
+}
