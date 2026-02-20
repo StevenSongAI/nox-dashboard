@@ -1,8 +1,8 @@
 {
-  "lastHeartbeat": "2026-02-20T15:46:00Z",
-  "totalHeartbeats": 402,
-  "lastAction": "HB402: Minecraft creative building trends research \u2014 visual production tracker with 4-stage workflow (ideas \u2192 script-ready \u2192 in-production \u2192 published)",
-  "nextPriority": "Push to GitHub and spawn auditor",
+  "lastHeartbeat": "2026-02-20T16:27:59Z",
+  "totalHeartbeats": 403,
+  "lastAction": "HB403: Research\u2192Build paired \u2014 MC Live countdown widget data, 23 days until event",
+  "nextPriority": "Build countdown UI component in dashboard",
   "dataFreshness": {
     "youtube": "2026-02-20 - kanban UI feature added",
     "investments": "2026-02-20",
@@ -10,5 +10,21 @@
     "research": "2026-02-20 - 50 notes (+ creative building trends)",
     "competitors": "2026-02-20",
     "tools": "2026-02-20"
+  },
+  "minecraftLiveCountdown": {
+    "eventDate": "2026-03-15T19:00:00-05:00",
+    "daysUntil": 23,
+    "keyFeatures": [
+      "26.1 Game Drop content shipping immediately",
+      "Baby mob variants (hostile + passive)",
+      "New redstone contraption blocks",
+      "Everything shown ships NOW (not concept art)"
+    ],
+    "contentOpportunities": [
+      "Pre-event prediction video",
+      "Live reaction stream",
+      "Post-event analysis: what actually shipped"
+    ],
+    "lastUpdated": "2026-02-20T16:27:59Z"
   }
 }

@@ -1291,6 +1291,9 @@ function renderYouTube() {
   
   // Render content pipeline kanban board
   safeRender(() => renderContentPipelineKanban(), 'renderContentPipelineKanban');
+  
+  // Render Minecraft Live countdown widget
+  safeRender(() => renderMinecraftLiveCountdown(), 'renderMinecraftLiveCountdown');
 }
 
 // Content Pipeline Kanban Board — NEW FEATURE: Visual production tracker
@@ -1357,6 +1360,59 @@ function renderContentPipelineKanban() {
   });
   
   html += '</div>';
+  container.innerHTML = html;
+}
+
+// Minecraft Live 2026 Countdown Widget — NEW FEATURE
+function renderMinecraftLiveCountdown() {
+  const container = document.getElementById('minecraft-live-countdown');
+  if (!container) return;
+  
+  const countdown = appData.state?.minecraftLiveCountdown;
+  if (!countdown) {
+    container.innerHTML = '<p class="text-gray-500 text-sm">Minecraft Live 2026 countdown not configured</p>';
+    return;
+  }
+  
+  const days = countdown.daysUntil || 0;
+  const features = countdown.keyFeatures || [];
+  const opportunities = countdown.contentOpportunities || [];
+  
+  // Calculate urgency color
+  const urgencyColor = days <= 7 ? 'text-accent-red' : days <= 14 ? 'text-accent-yellow' : 'text-accent-green';
+  const urgencyBg = days <= 7 ? 'bg-accent-red/10 border-accent-red/30' : days <= 14 ? 'bg-accent-yellow/10 border-accent-yellow/30' : 'bg-accent-green/10 border-accent-green/30';
+  
+  let html = `
+    <div class="${urgencyBg} border rounded-lg p-4 mb-6">
+      <div class="flex items-center justify-between mb-3">
+        <h3 class="text-lg font-semibold">🎮 Minecraft Live 2026</h3>
+        <span class="text-3xl font-bold ${urgencyColor}">${days} days</span>
+      </div>
+      <p class="text-sm text-gray-400 mb-3">March 15, 2026 — Everything shown ships immediately (no concept art)</p>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+        <div>
+          <h4 class="text-sm font-semibold mb-2 text-accent-blue">Expected Features</h4>
+          <ul class="text-sm space-y-1">
+            ${features.map(f => `<li class="flex items-start gap-2"><span class="text-accent-green">✓</span> ${f}</li>`).join('')}
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-sm font-semibold mb-2 text-accent-purple">Content Opportunities</h4>
+          <ul class="text-sm space-y-1">
+            ${opportunities.map(o => `<li class="flex items-start gap-2"><span class="text-accent-yellow">⚡</span> ${o}</li>`).join('')}
+          </ul>
+        </div>
+      </div>
+      
+      ${days <= 14 ? `
+        <div class="mt-3 p-2 bg-dark-800 rounded">
+          <p class="text-sm ${urgencyColor}"><strong>⚠️ URGENT:</strong> Less than 2 weeks — prioritize pre-event content now!</p>
+        </div>
+      ` : ''}
+    </div>
+  `;
+  
   container.innerHTML = html;
 }
 
