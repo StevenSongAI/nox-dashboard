@@ -3214,6 +3214,47 @@
       ],
       "addedBy": "nox-hb382",
       "dateAdded": "2026-02-20"
+    },
+    {
+      "id": "brief-014",
+      "title": "I Let AI Build My Entire Minecraft World (OSU.ai + BBS Cinematic)",
+      "status": "script-ready",
+      "priority": "HIGH",
+      "niche": "Minecraft / AI Tools",
+      "targetLength": "10-12 min",
+      "hook": "TSM just released an AI that builds anything in Minecraft from a text prompt. So I made it build an entire world... then made it look like a movie.",
+      "scriptOutline": [
+        "COLD OPEN: Split screen \u2014 empty Minecraft world on left, text prompt typing on right. AI builds appear in real-time. Cut to: the same builds but with BBS models, shaders, cinematic camera. Night and day difference.",
+        "INTRO (30s): TSM launched OSU.ai \u2014 type anything, it builds it. But can AI builds actually look GOOD? Let's find out.",
+        "ROUND 1 - BUILDINGS (2-3 min): Prompt increasingly complex structures. Castle, cathedral, skyscraper. Show raw AI output vs after BBS + shader treatment. Rate each 1-10.",
+        "ROUND 2 - LANDSCAPES (2-3 min): Prompt natural environments. Forest village, mountain fortress, underwater temple. Same before/after treatment.",
+        "ROUND 3 - THE FULL WORLD (3 min): Chain multiple prompts together to build an entire world. Add Crowd Spawner NPCs, BBS models, full cinematic treatment. Replay Mod camera flythrough.",
+        "VERDICT (1 min): Is AI building the future of Minecraft content? Or just a starting point? (Answer: incredible time-saver for base structures, but real craft is in the cinematic layer \u2014 which is Steven's edge.)",
+        "CTA: Subscribe for more AI x Minecraft experiments."
+      ],
+      "tools": [
+        "OSU.ai (TSM's AI builder)",
+        "BBS Mod",
+        "Crowd Spawner v3.0",
+        "Complementary Reimagined shaders",
+        "Replay Mod"
+      ],
+      "seoKeywords": [
+        "osu ai minecraft",
+        "ai minecraft builder",
+        "tsm minecraft ai",
+        "ai builds minecraft",
+        "minecraft ai world generator"
+      ],
+      "timeliness": "OSU.ai launched mid-Feb 2026 \u2014 early content will own search for this tool.",
+      "estimatedProductionTime": "1-2 days (AI generation + BBS treatment + filming)",
+      "thumbnailConcepts": [
+        "Split: ugly AI raw build left vs cinematic BBS-treated version right, 'AI vs ME' text",
+        "Massive AI-generated castle with Steven's character standing in front, jaw dropped",
+        "Text prompt bar at top with a stunning Minecraft world below it"
+      ],
+      "addedBy": "nox-hb385",
+      "dateAdded": "2026-02-20"
     }
   ],
   "lastUpdated": "2026-02-19T17:51:00Z",

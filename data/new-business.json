@@ -249,7 +249,38 @@
       "urgency": "MEDIUM",
       "status": "researching",
       "addedAt": "2026-02-20T11:16:00Z",
-      "tags": ["minecraft", "marketplace", "creator-economy", "content-monetization"]
+      "tags": [
+        "minecraft",
+        "marketplace",
+        "creator-economy",
+        "content-monetization"
+      ]
+    },
+    {
+      "id": "opp-017",
+      "title": "OSU.ai \u2014 TSM's AI Minecraft Build Generator (Content Tool + Collab Opportunity)",
+      "category": "AI Tools / Minecraft",
+      "priority": "HIGH",
+      "description": "TSM (major esports org) launched OSU.ai \u2014 an AI tool that generates Minecraft builds from text prompts. Users type a description and watch structures appear in seconds. This is a direct production accelerator for cinematic Minecraft content AND a collab/sponsorship opportunity with TSM.",
+      "opportunity": "1) USE IT: Integrate into video production pipeline \u2014 generate base structures instantly, then customize with BBS models + shaders for cinematic quality. Saves hours of manual building. 2) CONTENT: 'I Let AI Build My Entire Minecraft World' video concept \u2014 huge algorithm potential. 3) COLLAB: TSM is promoting this heavily \u2014 early creator partnerships likely available.",
+      "source": "Outlook Respawn (Feb 15, 2026)",
+      "url": "https://respawn.outlookindia.com/gaming/gaming-news/tsm-osuai-minecraft-ai-app-automatic-builds",
+      "status": "evaluate",
+      "addedBy": "nox-hb385",
+      "dateAdded": "2026-02-20"
+    },
+    {
+      "id": "opp-018",
+      "title": "Pixazo \u2014 AI Minecraft Parkour Video Generator (Competitor Watch)",
+      "category": "AI Tools / Minecraft",
+      "priority": "MEDIUM",
+      "description": "Pixazo launched an AI tool that generates Minecraft parkour videos from text prompts \u2014 no editing needed. This signals the AI-generated Minecraft content wave is accelerating. Competitor threat for low-effort content farms, but opportunity for Steven: his real-gameplay cinematic content is the premium alternative that AI can't replicate.",
+      "opportunity": "1) CONTENT: 'AI vs Real Minecraft \u2014 Can You Tell the Difference?' comparison video. 2) POSITIONING: Double down on what AI can't do \u2014 BBS animated models, hand-crafted cinematics, real mod showcases. This is the moat. 3) MONITOR: Track quality improvement of these tools quarterly.",
+      "source": "Pixazo.ai (Feb 14, 2026)",
+      "url": "https://www.pixazo.ai/minecraft-parkour-video-generator",
+      "status": "monitor",
+      "addedBy": "nox-hb385",
+      "dateAdded": "2026-02-20"
     }
   ],
   "meta": {
