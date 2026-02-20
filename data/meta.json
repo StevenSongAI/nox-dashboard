@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-20T12:16:00Z",
+  "lastUpdated": "2026-02-20T12:22:23Z",
   "updatedBy": "nox-heartbeat",
   "version": "2026.02.20.25",
   "cacheBust": "20260220T1216",
@@ -56,9 +56,10 @@
   },
   "totalOutliers": 158,
   "sections": {
-    "youtube": "2026-02-20T11:21:44Z",
+    "youtube": "2026-02-20T12:22:23Z",
     "investments": "2026-02-20T10:21:16Z",
     "newBusiness": "2026-02-20T11:21:44Z",
-    "competitors": "2026-02-20T11:50:55Z"
+    "competitors": "2026-02-20T11:50:55Z",
+    "research": "2026-02-20T12:22:23Z"
   }
 }

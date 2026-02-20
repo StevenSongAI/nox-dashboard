@@ -12,7 +12,7 @@
       "source": "web_research",
       "notes": "MAJOR AI VIDEO SHIFT: Leading systems now generate motion, dialogue, ambient sound, AND music in unified processes. Post-production gap disappearing. LTX Studio confirms audio created simultaneously with visuals, not added after. First-mover content opportunity for unified AI generation videos.",
       "contentAngle": "Demonstrate unified AI video+audio generation. 'I Made a Music Video with ONE Prompt' format. Educational comparison: traditional production vs AI workflow.",
-      "niche": "🎵 AI Music Video"
+      "niche": "\ud83c\udfb5 AI Music Video"
     },
     {
       "id": "outlier-brainrot-001",
@@ -3310,6 +3310,44 @@
         "Before/After: traditional film crew vs single laptop with AI interface"
       ],
       "addedBy": "nox-hb386",
+      "dateAdded": "2026-02-20"
+    },
+    {
+      "id": "brief-016",
+      "title": "All 15 Minecraft Baby Mobs \u2014 Cutest to Deadliest (Cinematic Ranking)",
+      "status": "script-ready",
+      "priority": "HIGH",
+      "niche": "Minecraft / Cinematic",
+      "targetLength": "8-10 min",
+      "hook": "Minecraft just released the FINAL baby mobs. So I gathered all 15 in one world and ranked them by how dangerous they'd be... if they weren't so tiny.",
+      "scriptOutline": [
+        "COLD OPEN: Quick montage of all 15 baby mobs in cinematic shots \u2014 farm babies (chicken, cow, pig, sheep), mount babies (horse, donkey, mule, camel), aquatic babies (turtle, axolotl, dolphin), wild babies (wolf, fox, cat, ocelot), hostile babies (hoglin, zoglin), and the new batch (strider, snifflet, panda).",
+        "SETUP (30s): Mojang just dropped the last baby mob batch. Spring update is next. There are now 15 total baby mobs in Minecraft.",
+        "RANKING FORMAT (6-7 min): Countdown from #15 (safest) to #1 (most dangerous if adult-sized). Each mob gets: cinematic intro, baby vs adult size comparison, 'deadliness if grown' analysis, cute factor rating.",
+        "BBS MOD SHOWCASE (1 min): Show how BBS mod scales/animates mobs for cinematic shots \u2014 this is the production value differentiator.",
+        "CTA: Which baby mob is your favorite? Comment below. Subscribe for more cinematic Minecraft content."
+      ],
+      "tools": [
+        "BBS Mod (mob scaling/animation)",
+        "Complementary Reimagined shaders",
+        "Replay Mod",
+        "Crowd Spawner v3.0 (for grouping scenes)"
+      ],
+      "seoKeywords": [
+        "minecraft baby mobs",
+        "all minecraft babies",
+        "minecraft baby mob ranking",
+        "minecraft spring update 2026",
+        "cutest minecraft mobs"
+      ],
+      "timeliness": "Baby mobs just dropped Feb 17-18 \u2014 search volume peaking now through spring update release.",
+      "estimatedProductionTime": "1-2 days (gather all mobs, cinematic shots, ranking script)",
+      "thumbnailConcepts": [
+        "Grid of all 15 baby mobs with 'RANKED' text overlay",
+        "Giant baby hoglin next to tiny player character \u2014 scale contrast",
+        "Split: cute baby panda vs scary adult hoglin with arrow pointing between them"
+      ],
+      "addedBy": "nox-hb389",
       "dateAdded": "2026-02-20"
     }
   ],

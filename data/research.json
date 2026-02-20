@@ -126,6 +126,7 @@
       "actionable": true,
       "priority": "high"
     },
+    {
       "id": "note-029",
       "category": "AI Video",
       "title": "AI Video Generation Landscape Feb 2026: Native Audio is Now Table Stakes",
@@ -571,7 +572,7 @@
     },
     {
       "id": "research-seedance-cost-disruption",
-      "title": "AI Video Cost Disruption: Seedance 2.0 vs Runway — 99% Price Drop in 12 Months",
+      "title": "AI Video Cost Disruption: Seedance 2.0 vs Runway \u2014 99% Price Drop in 12 Months",
       "date": "2026-02-19",
       "tags": [
         "ai-video",
@@ -596,7 +597,7 @@
         "content-creation",
         "campaign-prototyping"
       ],
-      "content": "X.com intel (Feb 19): Multiple creators demonstrating Higgsfield SOUL 2 as 'character engine' — one identity, unlimited outfits, unlimited shoots from text. Key use cases: (1) Pre-production lighting/posing blocking before booking shoots, (2) Campaign prototyping without booking models/studios, (3) Moodboard generation with culture-native portraits. Signal: AI photography moving from 'novelty' to 'production tool' for professional photographers. Comparison: SOUL 2 vs Nano Banana Pro — both targeting same market. Implications for stevensongirl: Could prototype character designs and thumbnail concepts before video production. Cost-effective pre-visualization for creature content.",
+      "content": "X.com intel (Feb 19): Multiple creators demonstrating Higgsfield SOUL 2 as 'character engine' \u2014 one identity, unlimited outfits, unlimited shoots from text. Key use cases: (1) Pre-production lighting/posing blocking before booking shoots, (2) Campaign prototyping without booking models/studios, (3) Moodboard generation with culture-native portraits. Signal: AI photography moving from 'novelty' to 'production tool' for professional photographers. Comparison: SOUL 2 vs Nano Banana Pro \u2014 both targeting same market. Implications for stevensongirl: Could prototype character designs and thumbnail concepts before video production. Cost-effective pre-visualization for creature content.",
       "source": "x_intel_2026-02-19",
       "addedAt": "2026-02-20T02:35:00Z",
       "actionable": true,
@@ -613,7 +614,7 @@
         "ai-agents",
         "viral-content"
       ],
-      "content": "X.com intel (Feb 19): AI agent workflow built in n8n (open-source automation) demonstrated. Capabilities: GPT-4o content rewriting, viral TikTok cloning, avatar video generation, auto-captioning/editing, auto-posting to TikTok/IG/YouTube/X. Signal: End-to-end content automation now accessible via no-code/low-code tools. Not standalone AI — integrated workflow. Implications: (1) Content cloning at scale becoming commoditized. (2) Authenticity/verification becoming critical differentiator. (3) Opportunity in 'anti-clone' transparent content. For Steven: Audit current workflow for n8n integration opportunities. Could automate repetitive posting tasks while keeping creative production human-driven.",
+      "content": "X.com intel (Feb 19): AI agent workflow built in n8n (open-source automation) demonstrated. Capabilities: GPT-4o content rewriting, viral TikTok cloning, avatar video generation, auto-captioning/editing, auto-posting to TikTok/IG/YouTube/X. Signal: End-to-end content automation now accessible via no-code/low-code tools. Not standalone AI \u2014 integrated workflow. Implications: (1) Content cloning at scale becoming commoditized. (2) Authenticity/verification becoming critical differentiator. (3) Opportunity in 'anti-clone' transparent content. For Steven: Audit current workflow for n8n integration opportunities. Could automate repetitive posting tasks while keeping creative production human-driven.",
       "source": "x_intel_2026-02-19",
       "addedAt": "2026-02-20T02:35:00Z",
       "actionable": true,
@@ -629,11 +630,28 @@
         "supply-chain",
         "dev-tools"
       ],
-      "content": "X.com intel (Feb 19): Agentic coding tools execute third-party skills with user-level permissions — read files, run commands, make network calls. Security vendor shipped 'skill scanning before install' feature. Signal: Supply chain security for AI workflows emerging as critical infrastructure gap. As agents gain permissions, attack surface expands dramatically. Market opportunity: Security tools for AI agent workflows, permission auditing, skill verification. Similar to npm/docker security but for AI agent ecosystems.",
+      "content": "X.com intel (Feb 19): Agentic coding tools execute third-party skills with user-level permissions \u2014 read files, run commands, make network calls. Security vendor shipped 'skill scanning before install' feature. Signal: Supply chain security for AI workflows emerging as critical infrastructure gap. As agents gain permissions, attack surface expands dramatically. Market opportunity: Security tools for AI agent workflows, permission auditing, skill verification. Similar to npm/docker security but for AI agent ecosystems.",
       "source": "x_intel_2026-02-19",
       "addedAt": "2026-02-20T02:35:00Z",
       "actionable": true,
       "priority": "low"
+    },
+    {
+      "id": "note-041",
+      "category": "Minecraft Updates",
+      "title": "FRESH: Minecraft Final Baby Mob Batch Released \u2014 Spring Update Incoming",
+      "content": "Minecraft dropped final baby mob batch Feb 17-18, 2026: baby hoglin, baby zoglin, baby strider, snifflet, and baby panda now in Java snapshot and Bedrock beta/preview. These complete the baby mob series alongside existing farm, mount, aquatic, wild, and hostile babies. Cinematic potential: tiny versions of normally scary mobs (hoglins, zoglins) are visually adorable. Content opportunity: 'All 15 Minecraft Baby Mobs Ranked Cutest to Deadliest' or cinematic showcase of all babies in one world using BBS mod for scale/animation.",
+      "source": "Minecraft.net official + PC Gamer (Feb 17-18, 2026)",
+      "tags": [
+        "minecraft",
+        "baby-mobs",
+        "spring-update",
+        "cinematic",
+        "bbs-mod"
+      ],
+      "addedAt": "2026-02-20T12:22:23Z",
+      "actionable": true,
+      "priority": "high"
     }
   ]
 }
