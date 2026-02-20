@@ -281,6 +281,24 @@
       "status": "monitor",
       "addedBy": "nox-hb385",
       "dateAdded": "2026-02-20"
+    },
+    {
+      "id": "opp-019",
+      "title": "Minecraft Marketplace Creator Economy \u2014 $146M Q1 2025 Record Revenue",
+      "category": "Gaming / Creator Economy",
+      "priority": "HIGH",
+      "description": "Minecraft Marketplace hit record $146M revenue in Q1 2025 alone \u2014 highest quarterly ever. Over $500M paid to creators cumulatively by end of 2022. Minecraft generated $220M total revenue in 2024 ($115M mobile). 62M monthly players in 2023. The creator economy around Minecraft is massive and growing.",
+      "opportunity": "1) CONTENT: \"How Much Minecraft Creators Actually Make\" \u2014 data-driven video on marketplace economics. 2) MARKETPLACE CONTENT: Steven has BBS mod expertise \u2014 could create marketplace skins, worlds, or educational content for Bedrock marketplace. 3) BBS MOD PROMOTION: Marketplace exposure for BBS Crowd Spawner through tutorials/cinematic showcases.",
+      "metrics": {
+        "marketplace_q1_2025": "$146 million",
+        "creator_payouts_cumulative": "$500+ million",
+        "minecraft_revenue_2024": "$220 million",
+        "monthly_players_2023": "62 million"
+      },
+      "source": "ET Edge Insights + Oasis AI Minecraft + Business of Apps (Feb 2026)",
+      "status": "evaluate",
+      "addedBy": "nox-hb395",
+      "dateAdded": "2026-02-20"
     }
   ],
   "meta": {

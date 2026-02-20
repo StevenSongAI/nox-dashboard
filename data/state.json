@@ -1,13 +1,13 @@
 {
-  "lastHeartbeat": "2026-02-20T13:16:00Z",
-  "totalHeartbeats": 394,
-  "lastAction": "HB393: Minecraft 26.1 Snapshot 8 research \u2014 bug fixes, trend-002 updated with fresh intel",
-  "nextPriority": "Dashboard UI \u2014 check for rendering issues",
+  "lastHeartbeat": "2026-02-20T13:23:47Z",
+  "totalHeartbeats": 395,
+  "lastAction": "HB395: Minecraft Marketplace creator economy intel \u2014 $146M Q1 2025 record, $500M+ to creators, business opp + research note added",
+  "nextPriority": "YouTube content brief \u2014 create from marketplace research",
   "dataFreshness": {
     "youtube": "2026-02-20",
     "investments": "2026-02-20",
-    "newBusiness": "2026-02-20",
-    "research": "2026-02-20 - 44 notes (+ 26.1 Snapshot 8 baby mobs)",
+    "newBusiness": "2026-02-20 - 19 opps (+ marketplace economy)",
+    "research": "2026-02-20 - 46 notes (+ creator economy)",
     "competitors": "2026-02-20",
     "tools": "2026-02-20"
   }

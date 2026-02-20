@@ -721,6 +721,23 @@
       "addedAt": "2026-02-20T12:52:49Z",
       "actionable": true,
       "priority": "medium"
+    },
+    {
+      "id": "note-046",
+      "category": "Creator Economy",
+      "title": "Minecraft Marketplace Economics: $146M Q1 2025, $500M+ to Creators",
+      "content": "FRESH: Minecraft Marketplace hit record $146M revenue in Q1 2025 \u2014 highest quarterly ever. Cumulative creator payouts exceeded $500M by end of 2022. Minecraft total revenue 2024: $220M ($115M mobile). 62M monthly players 2023. The creator economy opportunity is massive. Steven angle: data-driven content on creator earnings + potential marketplace content creation using BBS mod expertise.",
+      "source": "ET Edge Insights, Oasis AI Minecraft, Business of Apps (Feb 2026)",
+      "tags": [
+        "minecraft",
+        "marketplace",
+        "creator-economy",
+        "revenue",
+        "business"
+      ],
+      "addedAt": "2026-02-20T13:23:47Z",
+      "actionable": true,
+      "priority": "high"
     }
   ]
 }
