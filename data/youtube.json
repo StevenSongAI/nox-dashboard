@@ -2298,6 +2298,18 @@
       "stevenAngle": "Minecraft x Mario crossover \u2014 use BBS Crowd Spawner to recreate Mario Galaxy scenes in Minecraft. Two movie waves (Minecraft Movie + Mario Movie) one month apart.",
       "urgency": "MEDIUM \u2014 plan now, publish around April 1",
       "addedAt": "2026-02-20T02:48:36Z"
+    },
+    {
+      "id": "yt-create-mod-crowd-001",
+      "title": "Create Mod \u2014 Trending Feb 2026 (PCGamesN Best Mods Updated)",
+      "channel": "PCGamesN / Minecraft community",
+      "url": "https://www.pcgamesn.com/minecraft/twenty-best-minecraft-mods",
+      "publishedAt": "2026-02-13",
+      "estimatedViews": "10M+ Create mod search volume monthly",
+      "niche": "minecraft_mods",
+      "whyOutlier": "Create mod consistently top 5 Minecraft mods. Cinematic-friendly (gears, trains, factories). PCGamesN 2026 update confirms ongoing dominance.",
+      "stevenAngle": "BBS Crowd Spawner + Create mod = 100 NPC workers in a functional factory. Unique crossover nobody has done.",
+      "addedAt": "2026-02-20T04:19:32Z"
     }
   ],
   "meta": {
@@ -2797,6 +2809,64 @@
           "cta": "[5:30-6:00] 'Minecraft Movie 2 starts filming in April. I will be building something bigger for that one \u2014 more models, better scenes, full cinematic sequence. If you want to see that when it drops, subscribe now. And comment below \u2014 what scene from the movie would you recreate? I'm taking requests for the sequel video.'"
         }
       }
+    },
+    {
+      "id": "brief-create-mod-crowd-001",
+      "title": "I Added 100 NPC Workers to My Create Mod Factory (BBS Crowd Spawner)",
+      "status": "production-ready",
+      "createdAt": "2026-02-20T04:19:32Z",
+      "insightSource": "Create mod top-trending Minecraft mod Feb 2026 (PCGamesN best mods updated this week). 10M+ monthly search volume. BBS Crowd Spawner v3.0 ready \u2014 crossover nobody has done yet.",
+      "content": {
+        "hook": "What if your Create mod factory actually had workers? Watch.",
+        "format": "Showcase hybrid \u2014 demonstrate the crossover, then show how to do it",
+        "structure": [
+          "0-5s: HOOK \u2014 Wide shot of Create mod factory floor packed with 100 NPC workers manning machines. No talking.",
+          "5-20s: 'Create mod lets you build the most insane automated factories in Minecraft. But they're always empty. No workers. Just machines. I fixed that.'",
+          "20-60s: Show BBS Crowd Spawner spawning worker NPCs at each Create machine station",
+          "60-150s: Full factory tour with Replay Mod \u2014 cinematic fly-through of populated factory",
+          "150-240s: 'Here's how to set this up yourself' \u2014 quick tutorial",
+          "240-270s: CTA \u2014 subscribe + 'what should I populate next?'"
+        ]
+      },
+      "fullScript": {
+        "coldOpen": "[0:00-0:08 \u2014 NO TALKING] Wide Replay Mod shot panning slowly across a Create mod factory floor. Every conveyor belt, every mechanical arm, every crafting station \u2014 all manned by a custom NPC worker. 100 of them. Hold 6 seconds. Cut.",
+        "hook": "[0:08-0:22] 'Create mod lets you build the most insane automated factories in Minecraft. Conveyor belts, mechanical arms, deployers, cogwheels \u2014 it's basically an industrial revolution in a game about blocks. But here's the thing. Every Create factory I've ever seen? Empty. Just machines. No workers. It looks like the apocalypse happened and everyone went home. So I fixed that.'",
+        "reveal": "[0:22-0:50] 'I built BBS Crowd Spawner \u2014 a Minecraft mod that lets me spawn any number of custom 3D NPCs anywhere I want with one command. And today I'm staffing an entire Create factory with it. Watch.' [LIVE DEMO: Run /crowd spawn 100 20 worker_model \u2014 show 100 NPCs appearing throughout the factory. Slow zoom out to show the full scale.]",
+        "cinematic": "[0:50-2:30] [NO TALKING \u2014 let the visuals carry it] Replay Mod cinematic tour of the factory. Pan down conveyor lines with NPC workers on either side. Zoom in on a mechanical arm with a worker standing next to it. Bird's eye view showing the full floor packed with NPCs. Trending background music. This is the money shot \u2014 take your time.",
+        "howto": "[2:30-3:30] 'Alright so here's how you do this. You need three things: BBS mod 1.7.7, my Crowd Spawner mod \u2014 link in the description \u2014 and any custom NPC model you want to use as your workers. Import the model through BBS, then it's one command: /crowd spawn [count] [radius] [model]. That's it. I use [your model name] here because the proportions work well with the machines, but any model works.'",
+        "cta": "[3:30-4:00] 'What should I populate next? Drop it in the comments. I'm thinking a Minecraft village where every building actually has people in it \u2014 or maybe the Minecraft Movie crowd scene but with Create mod machinery in the background. Subscribe so you don't miss it.'"
+      },
+      "seoKeywords": [
+        "create mod npc workers",
+        "create mod minecraft 2026",
+        "minecraft create mod showcase",
+        "bbs mod create mod",
+        "minecraft factory workers mod",
+        "minecraft crowd mod tutorial",
+        "create mod best builds 2026",
+        "minecraft npc mod showcase"
+      ],
+      "thumbnailConcepts": [
+        "Wide factory floor shot packed with NPCs at machines \u2014 scale shock",
+        "Side-by-side: empty Create factory LEFT vs fully staffed RIGHT",
+        "Close-up NPC worker next to spinning cogwheel \u2014 surreal contrast"
+      ],
+      "productionNotes": {
+        "crossoverValue": "Captures both BBS mod audience AND Create mod audience (10M+ monthly searches)",
+        "uniqueness": "Nobody has combined BBS Crowd Spawner with Create mod on YouTube yet",
+        "estimatedLength": "4-5 min \u2014 punchy showcase format",
+        "requiredMods": [
+          "BBS mod 1.7.7",
+          "BBS Crowd Spawner v3.0",
+          "Create mod (any version)",
+          "Replay Mod"
+        ]
+      },
+      "outlierRef": [
+        "yt-create-mod-crowd-001"
+      ],
+      "category": "minecraft_mod_showcase",
+      "priority": "high"
     }
   ],
   "lastUpdated": "2026-02-19T17:51:00Z"
