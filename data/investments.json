@@ -187,7 +187,9 @@
       "source": "Public.com / StockAnalysis / TickerNerd / Yahoo Finance (Feb 20, 2026)",
       "content": "FRESH APP INTELLIGENCE - Feb 20, 2026: STOCK RALLY: APP trading at approximately $620, up significantly from $376 entry target (Feb 19). Missed entry zone - stock broke out before position established. ANALYST CONSENSUS UPDATE: 18 analysts covering APP with Strong Buy consensus (Public.com). Average price target $734.39 (StockAnalysis), representing 90.57% upside from current levels. TickerNerd predicts $735 PT (18.6% gain from $620). REVENUE GROWTH: Yahoo Finance reports 66% year-over-year revenue growth. Analysts remain bullish despite volatility. STRATEGIC ASSESSMENT: Entry opportunity at $376 has passed. Current $620 price still offers 18-19% upside to revised $734-735 PTs, but risk-reward less attractive than prior setup. Recommendation: Wait for pullback to $550-580 range or new catalyst before entry. MARCH EARNINGS CATALYST: Q4 earnings early March with AXON growth metrics remains key catalyst.",
       "impact": "neutral",
-      "tickers": ["APP"],
+      "tickers": [
+        "APP"
+      ],
       "riskFactors": [
         "Missed $376 entry - stock rallied 65% before position established",
         "Entry at $620 offers less attractive risk-reward than $376",
@@ -207,7 +209,9 @@
       "source": "Seeking Alpha / Yahoo Finance / MarketBeat / Wall Street Horizon (Feb 20, 2026)",
       "content": "FRESH NVDA EARNINGS INTELLIGENCE - Feb 20, 2026 (5 DAYS TO EARNINGS): Q4 2026 REVENUE BEAT EXPECTED: Seeking Alpha analysis shows Q4 guidance of $65 billion plus 2% implies potential beat near $67.3 billion. Driven by full-rack solutions and AI software growth. NVDA's operating leverage improving due to higher-margin integrated rack sales. $5B INTEL STAKE: Yahoo Finance reports NVDA set to report strong Q4 including strategic $5 billion stake in Intel. Major competitive positioning move. EARNINGS CONFIRMED: Wednesday 02/25/2026 After Market Close (per Wall Street Horizon). ANALYST CONSENSUS: $264.20 price target remains (MarketBeat). 35-48% upside to consensus. POSITIONING: With 5 days to earnings and revenue beat expected, risk-reward favors entry. Staged entry: 50% position now captures pre-earnings momentum, 50% post-earnings for any post-beat dip. CATALYST: Revenue beat + Intel stake news could drive significant price appreciation.",
       "impact": "bullish",
-      "tickers": ["NVDA"],
+      "tickers": [
+        "NVDA"
+      ],
       "riskFactors": [
         "High expectations may lead to 'sell the news' reaction even with beat",
         "$5B Intel stake is major capital allocation decision - execution risk",
@@ -2018,6 +2022,17 @@
       "source": "Motley Fool + FinancialContent + TipRanks",
       "actionable": true,
       "urgency": "high"
+    },
+    {
+      "id": "intel-092",
+      "ticker": "NVDA",
+      "title": "NVDA T-5 Days: $65B Rev Consensus, Blackwell Supercycle Inflection \u2014 Pre-Earnings Playbook",
+      "type": "earnings-preview",
+      "priority": "CRITICAL",
+      "content": "Q4 FY2026 reports Feb 25 after close. Key numbers:\n- Revenue consensus: $65.58B (+67% YoY, +14% QoQ from $57B Q3)\n- EPS consensus: $1.53 (+77% YoY)\n- Gross margin guide: 75% non-GAAP (\u00b10.5%)\n- Full year FY2026: ~$213B revenue, ~$4.68 EPS\n\nQ3 recap: $57.01B rev (beat by $2B+), $1.30 EPS (beat $1.26). Data Center $51.2B (+66% YoY). Networking doubled to $8.2B. China datacenter revenue = ZERO (H20 chip orders didn't materialize, $50M only in Q3).\n\nCurrent setup: Stock $187.98 (Feb 18 close), up <1% YTD. Prediction markets: 70.5% chance above $180 by month-end, only 24% odds of $200. Not euphoric despite META partnership + hyperscaler capex guides all higher.\n\nInventory jumped 32% QoQ to $19.8B \u2014 watch this for Blackwell ramp signal.\n\nBeat streak: 20 of last 22 quarters. 12 consecutive beats. $350B Blackwell+Rubin pipeline through 2026.\n\nPLAYBOOK: If holding, stay through earnings (beat probability very high). If entering, consider 50/50 split \u2014 half now, half post-earnings dip if any. Watch for: (1) Q1 FY2027 guidance (most important number), (2) Blackwell revenue ramp specifics, (3) China commentary.",
+      "source": "247 Wall St, Motley Fool, AInvest (Feb 19-20, 2026)",
+      "dateAdded": "2026-02-20",
+      "addedBy": "nox-hb381"
     }
   ],
   "synthesizedInsights": [
