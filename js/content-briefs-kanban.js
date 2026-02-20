@@ -14,15 +14,68 @@ class ContentBriefsKanban {
         };
         this.briefs = [];
         this.draggedCard = null;
+        this.storageKey = 'nox-kanban-state';
+        this.statusOverrides = {};
+    }
+
+    // Persistence Layer - localStorage sync
+    loadKanbanState() {
+        try {
+            const saved = localStorage.getItem(this.storageKey);
+            if (saved) {
+                const state = JSON.parse(saved);
+                this.statusOverrides = state.statusOverrides || {};
+                console.log('[Kanban] Loaded state from localStorage:', Object.keys(this.statusOverrides).length, 'overrides');
+            }
+        } catch (e) {
+            console.error('[Kanban] Failed to load state:', e);
+            this.statusOverrides = {};
+        }
+    }
+
+    saveKanbanState() {
+        try {
+            const state = {
+                statusOverrides: this.statusOverrides,
+                lastSaved: new Date().toISOString()
+            };
+            localStorage.setItem(this.storageKey, JSON.stringify(state));
+            console.log('[Kanban] Saved state to localStorage');
+        } catch (e) {
+            console.error('[Kanban] Failed to save state:', e);
+        }
+    }
+
+    applyStatusOverrides() {
+        // Merge localStorage overrides with JSON data
+        this.briefs = this.briefs.map(brief => {
+            if (this.statusOverrides[brief.id]) {
+                return { ...brief, status: this.statusOverrides[brief.id] };
+            }
+            return brief;
+        });
+    }
+
+    clearKanbanState() {
+        this.statusOverrides = {};
+        localStorage.removeItem(this.storageKey);
+        console.log('[Kanban] State cleared');
+        this.render('content-briefs-kanban');
     }
 
     async render(containerId) {
         const container = document.getElementById(containerId);
         if (!container) return;
 
+        // Load persisted state first
+        this.loadKanbanState();
+
         // Fetch content briefs from data
         this.briefs = await this.fetchBriefs();
-        
+
+        // Apply localStorage overrides to JSON data
+        this.applyStatusOverrides();
+
         // Group by status
         const grouped = this.groupByStatus(this.briefs);
 
@@ -170,11 +223,16 @@ class ContentBriefsKanban {
         const brief = this.briefs.find(b => b.id === briefId);
         if (brief) {
             brief.status = newStatus;
-            console.log(`Updated brief ${briefId} to status: ${newStatus}`);
-            
-            // Emit event for persistence
-            window.dispatchEvent(new CustomEvent('briefStatusChanged', { 
-                detail: { briefId, newStatus, brief } 
+
+            // Persist to localStorage immediately
+            this.statusOverrides[briefId] = newStatus;
+            this.saveKanbanState();
+
+            console.log(`[Kanban] Updated brief ${briefId} to status: ${newStatus} (saved to localStorage)`);
+
+            // Emit event for external sync
+            window.dispatchEvent(new CustomEvent('briefStatusChanged', {
+                detail: { briefId, newStatus, brief, persisted: true }
             }));
         }
     }

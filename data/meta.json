@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-02-20T22:42:00Z",
+  "lastUpdated": "2026-02-20T23:12:00Z",
   "updatedBy": "nox-heartbeat",
-  "version": "2026.02.20.39",
-  "cacheBust": "20260220T2242",
-  "dataVersion": "2026.02.20.39",
+  "version": "2026.02.20.40",
+  "cacheBust": "20260220T2312",
+  "dataVersion": "2026.02.20.40",
   "youtubeUpdated": "2026-02-20T22:42:00Z",
   "investmentsUpdated": "2026-02-20T08:16:00.000000",
-  "researchUpdated": "2026-02-20T22:12:00.000000",
+  "researchUpdated": "2026-02-20T23:12:00.000000",
   "newBusinessUpdated": "2026-02-20T21:25:00Z",
   "toolsUpdated": "2026-02-20T22:42:00Z",
   "workTrackerUpdated": "2026-02-15T00:17:00Z",
@@ -18,21 +18,21 @@
     "lastIntelligenceId": "intel-082"
   },
   "dataFreshness": {
-    "research": "2026-02-20 - HTML5 Drag and Drop API patterns",
+    "research": "2026-02-20 - Kanban persistence patterns (localStorage sync)",
     "newBusiness": "2026-02-20 - Minecraft Marketplace widget live",
     "investments": "2026-02-20 - 89 intelligence items",
     "workTracker": "2026-02-15 - pagination + deduplication live",
     "minecraftArtists": "2026-02-18 - 16 artists",
-    "youtube": "2026-02-20 - 19 briefs, kanban board with drag-and-drop",
+    "youtube": "2026-02-20 - 19 briefs, kanban board with drag-and-drop + persistence",
     "tools": "2026-02-20 - Animation Tools + Marketplace Revenue + Content Briefs Kanban widgets"
   },
   "research": {
-    "lastUpdated": "2026-02-20T22:12:00Z"
+    "lastUpdated": "2026-02-20T23:12:00Z"
   },
-  "totalNotes": 55,
-  "lastDataPush": "2026-02-20T22:42:00Z",
+  "totalNotes": 56,
+  "lastDataPush": "2026-02-20T23:12:00Z",
   "lastPushBy": "nox-heartbeat",
-  "lastPushDescription": "Content Briefs Kanban drag-and-drop feature. Research: HTML5 Drag and Drop API (MDN, Medium, CSS Script). Build: Full drag-and-drop implementation with visual feedback, column counts update, brief status change events.",
+  "lastPushDescription": "Kanban persistence layer with localStorage sync. Research: Kanban persistence patterns (Medium 2025, CSS Script, GitHub). Build: loadKanbanState(), saveKanbanState(), applyStatusOverrides(), auto-save on drag-drop, status override merging.",
   "newBusiness": {
     "lastUpdated": "2026-02-20T21:25:00Z"
   },
@@ -49,7 +49,7 @@
     "totalCompetitors": 22
   },
   "audits": {
-    "lastUpdated": "2026-02-20T00:51:48Z"
+    "lastUpdated": "2026-02-20T22:46:00Z"
   },
   "minecraftArtists": {
     "lastUpdated": "2026-02-20T01:47:50Z"
@@ -60,7 +60,7 @@
     "investments": "2026-02-20T10:21:16Z",
     "newBusiness": "2026-02-20T21:25:00Z",
     "competitors": "2026-02-20T11:50:55Z",
-    "research": "2026-02-20T22:12:00Z",
+    "research": "2026-02-20T23:12:00Z",
     "tools": "2026-02-20T22:42:00Z"
   }
 }

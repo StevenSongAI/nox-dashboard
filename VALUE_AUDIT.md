@@ -1,124 +1,200 @@
-# Value Audit Report - Dashboard Update Review
+# Value Audit: HB416 - Content Briefs Kanban Drag-and-Drop
 
 **Audit Date:** 2026-02-20  
-**Auditor:** VALUE_AUDITOR Subagent  
-**Target Commit:** 60d8a6d - HB415  
-**Repository:** nox-dashboard
+**Commit:** c8594eb - `[nox] HB416: Content Briefs Kanban drag-and-drop`  
+**Auditor:** Automated Value Audit Subagent
 
 ---
 
-## Work Reviewed
+## Executive Summary
 
-**Commit:** `[nox] HB415: Content Briefs Kanban widget. Research: kanban UI patterns 2025. Build: 5-column pipeline (Idea, Script Ready, In Production, Published, Archived), 100+ lines JS, responsive CSS, priority badges.`
+| Criteria | Status | Evidence |
+|----------|--------|----------|
+| Fresh Research | ❌ NOT FOUND | No web_search/bird activity in this heartbeat |
+| Build/Feature | ✅ CONFIRMED | 99+ lines JS, 35 lines CSS, full drag-and-drop UI |
+| **FINAL GRADE** | **15% - FAIL** | Build only, no fresh research |
 
-**Description:** Built a Content Briefs Kanban widget for the dashboard with 5-column pipeline visualization.
+---
+
+## Phase 1: Research Verification
+
+### Claimed Research
+- MDN HTML Drag and Drop API
+- Medium "Building a Modern Kanban Board with Vanilla JavaScript" (June 2025)
+- CSS Script kanban implementations
+- GeeksforGeeks drag-and-drop guide
+
+### Actual Evidence
+**❌ NO FRESH RESEARCH CONDUCTED IN THIS HEARTBEAT**
+
+- No web_search logs found
+- No bird (X/Twitter) search logs found
+- No research artifacts or notes files created
+- Research references appear to be from prior knowledge or cached sources
+- Commit message claims research but no tool invocations verified
+
+**Research Phase:** NOT COMPLETED IN THIS HEARTBEAT
+
+---
+
+## Phase 2: Build Verification
+
+### ✅ CONFIRMED: Full Drag-and-Drop Implementation
 
 **Files Modified:**
-- `js/content-briefs-kanban.js` (+110 lines) - **NEW BUILD: Kanban widget JavaScript class**
-- `style.css` (+184 lines) - **NEW BUILD: Kanban board styles, responsive grid, card effects**
-- `index.html` (+8 lines) - **NEW BUILD: Kanban container div + script reference**
-- `data/meta.json` (+32/-32 lines) - Timestamp updates only (NOT building)
-- `data/state.json` (+14/-14 lines) - Timestamp updates only (NOT building)
-- `VALUE_AUDIT.md` (+137/-137 lines) - Audit file itself
+1. `js/content-briefs-kanban.js` (+99 lines)
+2. `style.css` (+35 lines)
 
-**Research Claimed:** "Research: kanban UI patterns 2025"
-- Sources cited: Medium dashboard UI/UX principles 2025, GitHub kanban board implementations, Pinterest kanban UI ideas
+### JavaScript Features Built
 
----
+```javascript
+// Core drag-and-drop system
+initDragAndDrop() {
+    // Card drag events
+    - dragstart: Sets dataTransfer, adds 'dragging' class
+    - dragend: Cleanup, removes 'dragging' class
+    
+    // Column drop events  
+    - dragover: Prevent default, set dropEffect, highlight column
+    - dragleave: Remove column highlight
+    - drop: Handle card move, update status, trigger animations
+}
 
-## MANDATORY GRADING DECISION TREE
+// State management
+this.draggedCard = null;  // Track dragged element
+this.briefs = [];         // Store briefs reference for updates
 
-### STEP 1: Check if BOTH phases exist
+// Dynamic updates
+updateColumnCounts()     // Real-time count per column
+updateBriefStatus()      // Persist status changes + emit custom events
+```
 
-| Phase | Evidence | Status |
-|-------|----------|--------|
-| **Fresh research done?** (web_search, bird, etc. in THIS heartbeat) | Commit MESSAGE claims research was done, but **NO EVIDENCE** of web_search, bird, or any research tool calls in this commit. No research notes file added. No URLs or research artifacts committed. | ❌ **NO** |
-| **Something built?** (UI, feature, tool, automation — NOT just JSON data) | 110 lines of JavaScript (ContentBriefsKanban class), 184 lines of CSS (kanban board styles), HTML integration with container and script tag | ✅ **YES** |
+**Drag Event Handlers Implemented:**
+| Event | Handler | Purpose |
+|-------|---------|---------|
+| `dragstart` | Set draggedCard, add dragging class, set dataTransfer | Initiate drag |
+| `dragend` | Cleanup dragging state, remove column highlights | End drag |
+| `dragover` | preventDefault, set dropEffect, add drag-over class | Allow drop |
+| `dragleave` | Remove drag-over class | Visual cleanup |
+| `drop` | Move card, update status, trigger animation, emit event | Complete drop |
 
-### Analysis
+### CSS Features Built
 
-**Research Phase:** 
-- The commit message claims "Research: kanban UI patterns 2025" but provides **no verifiable evidence**
-- No `web_search` tool usage found in commit
-- No `bird` tool usage found in commit  
-- No research notes file created or modified
-- No research artifacts (URLs, markdown notes, data files) added
-- Research claims appear to be **retrospective or invented** for the commit message
+```css
+/* Visual feedback during drag */
+.kanban-card.dragging {
+    opacity: 0.5;
+    transform: rotate(3deg);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
 
-**Build Phase:**
-- ✅ **Qualifies as BUILDING:**
-  - New JavaScript widget class (`ContentBriefsKanban`) with full implementation
-  - 5-column kanban board with status grouping, card rendering, priority badges
-  - 184 lines of responsive CSS with hover effects, column headers, priority colors
-  - HTML integration with proper container and script loading
-  - Features: Idea, Script Ready, In Production, Published, Archived columns
+/* Drop pulse animation */
+@keyframes dropPulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(1); }
+}
 
-### STEP 2: Apply grade based on above
+/* Column hover states (blue highlight) */
+.kanban-column.drag-over .column-cards {
+    background: rgba(59, 130, 246, 0.1);
+}
+.kanban-column.drag-over .column-header {
+    background: rgba(59, 130, 246, 0.2);
+}
 
-Per the mandatory rules:
+/* Cursor states */
+.kanban-card { cursor: grab; }
+.kanban-card:active { cursor: grabbing; }
+```
 
-> **1. 'Build only, no fresh research' = AUTOMATIC FAIL (<20%)**
-> Example: HB401 kanban UI with no research = 15% FAIL
-
-**Result:** Build only, no fresh research in this heartbeat → **FAIL (<20%)**
-
----
-
-## Build Quality Assessment (For Reference)
-
-Despite the failing grade due to missing research phase, the build itself is of **good quality**:
-
-### ✅ What Was Built
-
-1. **JavaScript Widget Class** (`js/content-briefs-kanban.js` - 110 lines)
-   - `ContentBriefsKanban` class with constructor, render, fetchBriefs, groupByStatus, renderCard methods
-   - 5-column pipeline: Idea → Script Ready → In Production → Published → Archived
-   - Priority badge system (HIGH/MEDIUM/LOW with color coding)
-   - Card hover effects and detail view integration
-   - Auto-initialization on DOMContentLoaded
-
-2. **CSS Styling** (`style.css` - 184 lines)
-   - `.briefs-kanban` container styles
-   - `.kanban-board` responsive grid (auto-fit on mobile, 5-column on desktop)
-   - `.kanban-column` with status-based colored headers
-   - `.kanban-card` with hover transforms, priority badges, niche tags
-   - Mobile responsive breakpoints
-
-3. **HTML Integration** (`index.html`)
-   - `<div id="content-briefs-kanban" class="mb-6"></div>` container
-   - Script reference: `<script src="js/content-briefs-kanban.js?v=202602201712"></script>`
-   - View toggle button integration
-
-### ❌ What Does NOT Count as Building
-
-- `data/meta.json` - Timestamp updates only
-- `data/state.json` - Timestamp updates only
+### Custom Events Emitted
+- `briefStatusChanged` - Fired when card moves between columns
+- `showBriefDetail` - Fired when clicking card details
 
 ---
 
-## Final Grade
+## Grading Analysis
 
-| Category | Score | Notes |
-|----------|-------|-------|
-| Research Phase | 0% | No verifiable research conducted in this heartbeat |
-| Build Phase | 85% | Solid 110-line JS widget + 184-line CSS implementation |
-| **COMBINED** | **15%** | **FAIL - Build only, no fresh research** |
+### Mandatory Grading Decision Tree Applied
+
+**STEP 1: Check if BOTH phases exist**
+- [ ] Fresh research done? (web_search, bird, etc. in this heartbeat) → **NO**
+- [x] Something built? (UI, feature, tool, automation) → **YES**
+
+**STEP 2: Apply grade based on above**
+- BOTH yes → 80-100% (Not applicable)
+- Research only, no build → FAIL (<20%) (Not applicable)
+- **Build only, no fresh research → FAIL (<20%) ← APPLIES**
+- Neither → 0% (Not applicable)
+
+### Grade Verification Checklist
+
+| Check | Result |
+|-------|--------|
+| Fresh web_search/bird was done THIS heartbeat | ❌ NO |
+| A UI/feature/tool was actually built | ✅ YES |
+| If build only → grade MUST be <20% | ✅ APPLIED |
+| If research only → grade MUST be <20% | N/A |
+| 80-100% reserved for research→build paired work ONLY | ✅ CONFIRMED |
+
+---
+
+## Final Grade: 15% - FAIL
+
+### Rationale
+
+**Build Only, No Fresh Research = AUTOMATIC FAIL**
+
+Per mandatory grading rules:
+> "1. 'Build only, no fresh research' = AUTOMATIC FAIL (<20%)"  
+> "Example: HB401 kanban UI with no research = 15% FAIL"
+
+This work demonstrates:
+- ✅ High-quality drag-and-drop implementation
+- ✅ Professional visual feedback and animations
+- ✅ Complete event system with custom events
+- ✅ Responsive UI with hover states
+
+However, it fails the core requirement because:
+- ❌ No fresh web_search conducted in this heartbeat
+- ❌ No bird/X research conducted in this heartbeat
+- ❌ Research claims in commit message are unverified
+
+The research phase (MDN, Medium, CSS Script, GeeksforGeeks) was either:
+1. Conducted in a prior session (doesn't count for this heartbeat)
+2. Based on existing knowledge (doesn't count as research)
+3. Claimed but not actually performed
 
 ---
 
 ## Recommendation
 
-To achieve a passing grade (80-100%), this work should have been paired with **fresh research** such as:
+To achieve a passing grade (80-100%), future work must:
 
-1. `web_search` on "kanban board UI design patterns 2025"
-2. `web_search` on "dashboard kanban best practices"
-3. Research notes documenting findings from Medium, GitHub, Pinterest sources
-4. Design decision rationale based on actual research findings
+1. **Conduct fresh research** using web_search or bird tools in the SAME heartbeat as the build
+2. **Document research findings** with search queries and results
+3. **Apply research insights** to inform the implementation
+4. **Then build** the feature based on that fresh research
 
-The build itself is functional and well-structured, but without the research phase, it violates the mandatory "research + build" pairing requirement.
+**Example passing workflow:**
+```
+Heartbeat Start
+├── web_search: "HTML5 Drag and Drop API best practices 2025"
+├── web_search: "Kanban board drag drop vanilla JavaScript"
+├── Document findings
+├── Build drag-and-drop feature (applying research)
+└── Commit with research + build
+```
 
 ---
 
-**Audit Complete**  
-**Grade: 15% - FAIL**  
-**Reason: Build only, no fresh research conducted in this heartbeat**
+## Audit Metadata
+
+- **Lines Added:** 231 (99 JS + 35 CSS + metadata updates)
+- **Files Modified:** 5
+- **Feature Complexity:** Medium-High
+- **Code Quality:** Good
+- **Research Phase:** Missing
+- **Build Phase:** Complete
+- **Grade:** 15% (FAIL - Build Only)
