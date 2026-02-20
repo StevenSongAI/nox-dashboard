@@ -3459,6 +3459,42 @@
       "priority": "high",
       "createdAt": "2026-02-20T22:08:00Z",
       "addedBy": "nox-hb414"
+    },
+    {
+      "id": "brief-020",
+      "title": "Minecraft Live 2026: All Baby Mobs Redesigned - First Look",
+      "niche": "Minecraft News",
+      "angle": "First-look coverage of Game Drop 26.1 baby mob redesigns",
+      "opportunityScore": 94,
+      "targetLength": "8-12 minutes",
+      "hook": "EVERY baby mob in Minecraft just got a complete redesign - and they look incredible",
+      "scriptOutline": "1) Hook: Showcase the visual difference (old vs new baby mobs side-by-side)\n2) Background: Explain Game Drop system replacing annual updates\n3) Hostile Baby Mobs: Hoglins, Zoglins, Striders - show designs and behaviors\n4) Passive Baby Mobs: Axolotl, dolphin, turtle, squid, glow squid, pandas, sniffers\n5) Golden Dandelion: New mechanic preventing baby animals from aging\n6) Name Tags Craftable: Huge QoL change for pet owners\n7) Rabbit Redesigns: Visual upgrades\n8) Outro: What content should I make with these new designs?",
+      "supportingOutliers": [
+        {
+          "title": "Minecraft Wiki - First Drop 2026",
+          "url": "https://minecraft.wiki/w/First_Drop_2026",
+          "notes": "Official feature list"
+        },
+        {
+          "title": "Minecraft.net - Snapshot 5",
+          "url": "https://www.minecraft.net/en-us/article/minecraft-26-1-snapshot-5",
+          "notes": "New baby mob announcements"
+        }
+      ],
+      "keySellingPoints": [
+        "First Drop 26.1 ships immediately after Minecraft Live (March 15)",
+        "All baby mobs have unique designs (not just scaled-down adults)",
+        "Golden dandelion = eternal youth mechanic",
+        "Name tags craftable - huge for pet content",
+        "23 days to event - first-mover window"
+      ],
+      "productionNotes": "Use BBS Crowd Spawner to showcase baby mobs in crowds. Cinematic shots of baby mob variants. Side-by-side comparison graphics.",
+      "status": "script_ready",
+      "priority": "high",
+      "createdAt": "2026-02-20T23:36:00Z",
+      "addedBy": "nox-hb422",
+      "catalystDate": "2026-03-15",
+      "catalyst": "Minecraft Live 2026 / Game Drop 26.1 release"
     }
   ],
   "lastUpdated": "2026-02-19T17:51:00Z",
