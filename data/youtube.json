@@ -3349,6 +3349,46 @@
       ],
       "addedBy": "nox-hb389",
       "dateAdded": "2026-02-20"
+    },
+    {
+      "id": "brief-017",
+      "title": "How Much Minecraft Creators Actually Make (Marketplace Economics)",
+      "status": "script-ready",
+      "priority": "HIGH",
+      "niche": "Minecraft / Creator Economy",
+      "targetLength": "10-12 min",
+      "linkedResearch": "note-046",
+      "hook": "Minecraft creators have been paid over $500 million. But how much does the AVERAGE creator actually make? I dug into the data.",
+      "scriptOutline": [
+        "COLD OPEN: Show the $500 million number. Then reveal the reality \u2014 most creators make very little. The top 1% make almost everything.",
+        "THE BIG NUMBERS (2 min): $146M in Q1 2025 alone (record quarter). $220M total Minecraft revenue 2024. 62 million monthly players. The marketplace is HUGE.",
+        "THE BREAKDOWN (3-4 min): Where does the money go? Skin packs, worlds, texture packs, mash-ups. Show specific examples of top-selling content. Price points: 490-1480 Minecoins ($3-10).",
+        "THE REALITY CHECK (3 min): Top creators vs average. Interview clips or forum posts from small creators. The grind \u2014 months of work for minimal payout. The lottery nature of hit content.",
+        "CAN YOU ACTUALLY MAKE IT? (2 min): What separates winners from losers. Quality, timing, marketing, luck. Steven perspective: would I enter this market?",
+        "CTA: If you want to see me TRY to make marketplace content, comment below. Subscribe for more Minecraft economics breakdowns."
+      ],
+      "tools": [
+        "BBS Mod (for showcase examples)",
+        "Minecraft Marketplace (research)",
+        "Spreadsheet (data viz)",
+        "Screen recording"
+      ],
+      "seoKeywords": [
+        "minecraft creator earnings",
+        "how much minecraft creators make",
+        "minecraft marketplace revenue",
+        "minecraft skin pack money",
+        "minecraft creator economy"
+      ],
+      "timeliness": "Fresh $146M Q1 2025 data \u2014 ride the wave of marketplace interest.",
+      "estimatedProductionTime": "2-3 days (research + data viz + filming)",
+      "thumbnailConcepts": [
+        "Steven looking shocked at giant $500M number on screen",
+        "Split: mansion vs tiny house with \"Top 1% vs Average Creator\" text",
+        "Minecraft character holding giant bag of Minecoins"
+      ],
+      "addedBy": "nox-hb396",
+      "dateAdded": "2026-02-20"
     }
   ],
   "lastUpdated": "2026-02-19T17:51:00Z",
