@@ -738,6 +738,23 @@
       "addedAt": "2026-02-20T13:23:47Z",
       "actionable": true,
       "priority": "high"
+    },
+    {
+      "id": "note-047",
+      "category": "Minecraft Trends",
+      "title": "FRESH: Unstable SMP \u2014 Scripted Minecraft SMP Trending on Shorts (Feb 2026)",
+      "content": "Discovered \"Unstable SMP\" (also called Unstable Universe) \u2014 a scripted Minecraft SMP producing viral Shorts content in February 2026. Multiple videos trending: \"Lettuce is NOT evil\" (2 days ago), \"Wemmbu is obsessed with PlanetLord\" (5 days ago). Format: scripted character drama, meme-heavy, Shorts-optimized. Content opportunity: analyze the format, compare to other scripted SMPs (Dream SMP style), or create commentary on the trend.",
+      "source": "YouTube Shorts discovery (Feb 18-20, 2026)",
+      "tags": [
+        "minecraft",
+        "unstable-smp",
+        "shorts",
+        "trend",
+        "scripted-smp"
+      ],
+      "addedAt": "2026-02-20T13:44:30Z",
+      "actionable": true,
+      "priority": "medium"
     }
   ]
 }
