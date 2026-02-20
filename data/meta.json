@@ -1,23 +1,26 @@
 {
-  "lastUpdated": "2026-02-20T07:20:00Z",
+  "lastUpdated": "2026-02-20T07:48:00Z",
   "updatedBy": "nox-heartbeat",
-  "version": "2026.02.20.15",
-  "cacheBust": "20260220T0720",
-  "dataVersion": "2026.02.20.15",
+  "version": "2026.02.20.16",
+  "cacheBust": "20260220T0748",
+  "dataVersion": "2026.02.20.16",
   "youtubeUpdated": "2026-02-20T07:20:00.000000",
-  "investmentsUpdated": "2026-02-19T15:19:00.000000",
+  "investmentsUpdated": "2026-02-20T07:48:00.000000",
   "researchUpdated": "2026-02-20T07:20:00.000000",
   "newBusinessUpdated": "2026-02-19T10:28:00Z",
   "toolsUpdated": "2026-02-19T12:05:00Z",
   "workTrackerUpdated": "2026-02-15T00:17:00Z",
   "minecraftArtistsUpdated": "2026-02-18T14:22:00Z",
   "investments": {
-    "lastUpdated": "2026-02-19T21:39:03Z"
+    "lastUpdated": "2026-02-20T07:48:00Z",
+    "entryCount": 88,
+    "totalIntelligence": 88,
+    "lastIntelligenceId": "intel-081"
   },
   "dataFreshness": {
     "research": "2026-02-20 - 28 notes (+ Minecraft Movie opportunity)",
     "newBusiness": "2026-02-19 - 13 opportunities (+ Mirelo AI sound)",
-    "investments": "2026-02-19 - 86 intelligence items (+ NVDA intraday .71)",
+    "investments": "2026-02-20 - 88 intelligence items (+ NVDA earnings preview .3B beat + B Intel stake)",
     "workTracker": "2026-02-15 - pagination + deduplication live",
     "minecraftArtists": "2026-02-18 - 16 artists",
     "youtube": "2026-02-20 - 159 outliers (+ Minecraft Movie viral recreation)",

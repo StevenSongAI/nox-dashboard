@@ -181,6 +181,26 @@
   ],
   "intelligence": [
     {
+      "id": "intel-081",
+      "date": "2026-02-20T07:48:00Z",
+      "topic": "NVDA Earnings Preview: Q4 Revenue $67.3B Beat Expected, $5B Intel Stake, Feb 25 After Market",
+      "source": "Seeking Alpha / Yahoo Finance / MarketBeat / Wall Street Horizon (Feb 20, 2026)",
+      "content": "FRESH NVDA EARNINGS INTELLIGENCE - Feb 20, 2026 (5 DAYS TO EARNINGS): Q4 2026 REVENUE BEAT EXPECTED: Seeking Alpha analysis shows Q4 guidance of $65 billion plus 2% implies potential beat near $67.3 billion. Driven by full-rack solutions and AI software growth. NVDA's operating leverage improving due to higher-margin integrated rack sales. $5B INTEL STAKE: Yahoo Finance reports NVDA set to report strong Q4 including strategic $5 billion stake in Intel. Major competitive positioning move. EARNINGS CONFIRMED: Wednesday 02/25/2026 After Market Close (per Wall Street Horizon). ANALYST CONSENSUS: $264.20 price target remains (MarketBeat). 35-48% upside to consensus. POSITIONING: With 5 days to earnings and revenue beat expected, risk-reward favors entry. Staged entry: 50% position now captures pre-earnings momentum, 50% post-earnings for any post-beat dip. CATALYST: Revenue beat + Intel stake news could drive significant price appreciation.",
+      "impact": "bullish",
+      "tickers": ["NVDA"],
+      "riskFactors": [
+        "High expectations may lead to 'sell the news' reaction even with beat",
+        "$5B Intel stake is major capital allocation decision - execution risk",
+        "Any guidance miss would be severely punished given premium valuation"
+      ],
+      "confidence": "high",
+      "priceTarget": "$264.20 (consensus)",
+      "currentPrice": "$187-190 range (Feb 19-20)",
+      "impliedUpside": "40% (to consensus)",
+      "catalystDate": "2026-02-25",
+      "catalyst": "Q4 FY2026 Earnings - 5 days, $67.3B beat expected + $5B Intel stake"
+    },
+    {
       "id": "intel-080",
       "date": "2026-02-19T15:19:00Z",
       "topic": "NVDA Intraday Update: $187.71 at 10:19 AM EST, Day Range $185.66-$188.29 - Trading Within Support",
