@@ -12,6 +12,8 @@ class ContentBriefsKanban {
             'published': { label: '✅ Published', color: '#10b981' },
             'archived': { label: '📁 Archived', color: '#475569' }
         };
+        this.briefs = [];
+        this.draggedCard = null;
     }
 
     async render(containerId) {
@@ -19,25 +21,25 @@ class ContentBriefsKanban {
         if (!container) return;
 
         // Fetch content briefs from data
-        const briefs = await this.fetchBriefs();
+        this.briefs = await this.fetchBriefs();
         
         // Group by status
-        const grouped = this.groupByStatus(briefs);
+        const grouped = this.groupByStatus(this.briefs);
 
         container.innerHTML = `
             <div class="briefs-kanban">
                 <div class="kanban-header">
                     <h3>🎬 Content Briefs Pipeline</h3>
-                    <span class="kanban-count">${briefs.length} briefs</span>
+                    <span class="kanban-count">${this.briefs.length} briefs</span>
                 </div>
                 <div class="kanban-board">
                     ${Object.entries(this.columns).map(([status, config]) => `
                         <div class="kanban-column" data-status="${status}">
                             <div class="column-header" style="border-color: ${config.color}">
                                 <span class="column-title">${config.label}</span>
-                                <span class="column-count">${grouped[status]?.length || 0}</span>
+                                <span class="column-count" data-count="${status}">${grouped[status]?.length || 0}</span>
                             </div>
-                            <div class="column-cards">
+                            <div class="column-cards" data-column="${status}">
                                 ${(grouped[status] || []).map(brief => this.renderCard(brief)).join('')}
                             </div>
                         </div>
@@ -45,6 +47,9 @@ class ContentBriefsKanban {
                 </div>
             </div>
         `;
+
+        // Initialize drag and drop
+        this.initDragAndDrop();
     }
 
     async fetchBriefs() {
@@ -76,7 +81,7 @@ class ContentBriefsKanban {
         }[brief.priority] || '#64748b';
 
         return `
-            <div class="kanban-card" data-id="${brief.id}">
+            <div class="kanban-card" draggable="true" data-id="${brief.id}" data-status="${brief.status || 'idea'}">
                 <div class="card-priority" style="background: ${priorityColor}">${brief.priority || 'MEDIUM'}</div>
                 <div class="card-title">${brief.title}</div>
                 <div class="card-meta">
@@ -90,6 +95,88 @@ class ContentBriefsKanban {
                 </div>
             </div>
         `;
+    }
+
+    initDragAndDrop() {
+        // Card drag events
+        document.querySelectorAll('.kanban-card').forEach(card => {
+            card.addEventListener('dragstart', (e) => {
+                this.draggedCard = card;
+                card.classList.add('dragging');
+                e.dataTransfer.setData('text/plain', card.dataset.id);
+                e.dataTransfer.effectAllowed = 'move';
+            });
+
+            card.addEventListener('dragend', () => {
+                card.classList.remove('dragging');
+                this.draggedCard = null;
+                document.querySelectorAll('.kanban-column').forEach(col => {
+                    col.classList.remove('drag-over');
+                });
+            });
+        });
+
+        // Column drop events
+        document.querySelectorAll('.column-cards').forEach(column => {
+            column.addEventListener('dragover', (e) => {
+                e.preventDefault();
+                e.dataTransfer.dropEffect = 'move';
+                column.closest('.kanban-column').classList.add('drag-over');
+            });
+
+            column.addEventListener('dragleave', () => {
+                column.closest('.kanban-column').classList.remove('drag-over');
+            });
+
+            column.addEventListener('drop', (e) => {
+                e.preventDefault();
+                const columnEl = column.closest('.kanban-column');
+                columnEl.classList.remove('drag-over');
+                
+                const newStatus = column.dataset.column;
+                const briefId = e.dataTransfer.getData('text/plain');
+                
+                if (this.draggedCard && newStatus) {
+                    // Move card to new column
+                    column.appendChild(this.draggedCard);
+                    this.draggedCard.dataset.status = newStatus;
+                    
+                    // Update counts
+                    this.updateColumnCounts();
+                    
+                    // Save the change (in-memory for now, persist to backend later)
+                    this.updateBriefStatus(briefId, newStatus);
+                    
+                    // Visual feedback
+                    this.draggedCard.classList.add('dropped');
+                    setTimeout(() => {
+                        if (this.draggedCard) this.draggedCard.classList.remove('dropped');
+                    }, 300);
+                }
+            });
+        });
+    }
+
+    updateColumnCounts() {
+        document.querySelectorAll('.column-cards').forEach(column => {
+            const status = column.dataset.column;
+            const count = column.querySelectorAll('.kanban-card').length;
+            const countEl = document.querySelector(`.column-count[data-count="${status}"]`);
+            if (countEl) countEl.textContent = count;
+        });
+    }
+
+    updateBriefStatus(briefId, newStatus) {
+        const brief = this.briefs.find(b => b.id === briefId);
+        if (brief) {
+            brief.status = newStatus;
+            console.log(`Updated brief ${briefId} to status: ${newStatus}`);
+            
+            // Emit event for persistence
+            window.dispatchEvent(new CustomEvent('briefStatusChanged', { 
+                detail: { briefId, newStatus, brief } 
+            }));
+        }
     }
 
     showDetail(briefId) {

@@ -1,15 +1,15 @@
 {
-  "lastHeartbeat": "2026-02-20T22:12:00Z",
-  "totalHeartbeats": 415,
-  "lastAction": "HB415: Built Content Briefs Kanban widget. Research: kanban UI design patterns 2025. Deliverable: 5-column pipeline board (Idea, Script Ready, In Production, Published, Archived) with 100+ lines JS, responsive CSS, priority badges, card interactions.",
-  "nextPriority": "Add drag-and-drop functionality to kanban board for status updates",
+  "lastHeartbeat": "2026-02-20T22:42:00Z",
+  "totalHeartbeats": 416,
+  "lastAction": "HB416: Added drag-and-drop to Content Briefs Kanban. Research: HTML5 Drag and Drop API patterns (MDN, Medium 2025, CSS Script). Build: Full drag-and-drop implementation with visual feedback, column hover states, card animations, status change events, dynamic count updates.",
+  "nextPriority": "Add persistence layer for kanban status changes (save to JSON and sync)",
   "dataFreshness": {
-    "youtube": "2026-02-20 - 165 outliers, 19 briefs, kanban board UI",
+    "youtube": "2026-02-20 - 165 outliers, 19 briefs, kanban with drag-and-drop",
     "investments": "2026-02-20 - 89 intel items, NVDA earnings countdown",
     "newBusiness": "2026-02-20 - Marketplace revenue widget + 19 opps",
-    "research": "2026-02-20 - 55 notes + kanban UI patterns",
+    "research": "2026-02-20 - 55 notes + drag-and-drop API patterns",
     "competitors": "2026-02-20 - 22 tracked",
-    "tools": "2026-02-20 - Animation Tools + Marketplace Revenue + Content Briefs Kanban widgets"
+    "tools": "2026-02-20 - Animation Tools + Marketplace Revenue + Kanban widgets"
   },
   "minecraftLiveCountdown": {
     "eventDate": "2026-03-15T19:00:00-05:00",

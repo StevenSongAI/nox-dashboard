@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-02-20T22:12:00Z",
+  "lastUpdated": "2026-02-20T22:42:00Z",
   "updatedBy": "nox-heartbeat",
-  "version": "2026.02.20.38",
-  "cacheBust": "20260220T2212",
-  "dataVersion": "2026.02.20.38",
-  "youtubeUpdated": "2026-02-20T22:12:00Z",
+  "version": "2026.02.20.39",
+  "cacheBust": "20260220T2242",
+  "dataVersion": "2026.02.20.39",
+  "youtubeUpdated": "2026-02-20T22:42:00Z",
   "investmentsUpdated": "2026-02-20T08:16:00.000000",
-  "researchUpdated": "2026-02-20T21:25:00.000000",
+  "researchUpdated": "2026-02-20T22:12:00.000000",
   "newBusinessUpdated": "2026-02-20T21:25:00Z",
-  "toolsUpdated": "2026-02-20T22:12:00Z",
+  "toolsUpdated": "2026-02-20T22:42:00Z",
   "workTrackerUpdated": "2026-02-15T00:17:00Z",
   "minecraftArtistsUpdated": "2026-02-18T14:22:00Z",
   "investments": {
@@ -18,30 +18,30 @@
     "lastIntelligenceId": "intel-082"
   },
   "dataFreshness": {
-    "research": "2026-02-20 - Kanban UI design patterns research",
+    "research": "2026-02-20 - HTML5 Drag and Drop API patterns",
     "newBusiness": "2026-02-20 - Minecraft Marketplace widget live",
     "investments": "2026-02-20 - 89 intelligence items",
     "workTracker": "2026-02-15 - pagination + deduplication live",
     "minecraftArtists": "2026-02-18 - 16 artists",
-    "youtube": "2026-02-20 - 19 briefs, kanban board UI",
+    "youtube": "2026-02-20 - 19 briefs, kanban board with drag-and-drop",
     "tools": "2026-02-20 - Animation Tools + Marketplace Revenue + Content Briefs Kanban widgets"
   },
   "research": {
-    "lastUpdated": "2026-02-20T21:25:00Z"
+    "lastUpdated": "2026-02-20T22:12:00Z"
   },
   "totalNotes": 55,
-  "lastDataPush": "2026-02-20T22:12:00Z",
+  "lastDataPush": "2026-02-20T22:42:00Z",
   "lastPushBy": "nox-heartbeat",
-  "lastPushDescription": "Content Briefs Kanban widget with 5-column pipeline (Idea, Script Ready, In Production, Published, Archived). Features priority badges, status grouping, card hover effects, responsive grid.",
+  "lastPushDescription": "Content Briefs Kanban drag-and-drop feature. Research: HTML5 Drag and Drop API (MDN, Medium, CSS Script). Build: Full drag-and-drop implementation with visual feedback, column counts update, brief status change events.",
   "newBusiness": {
     "lastUpdated": "2026-02-20T21:25:00Z"
   },
   "tools": {
-    "lastUpdated": "2026-02-20T22:12:00Z",
+    "lastUpdated": "2026-02-20T22:42:00Z",
     "totalTools": 22
   },
   "youtube": {
-    "lastUpdated": "2026-02-20T22:12:00Z"
+    "lastUpdated": "2026-02-20T22:42:00Z"
   },
   "competitorsUpdated": "2026-02-19T14:20:00Z",
   "competitors": {
@@ -56,11 +56,11 @@
   },
   "totalOutliers": 158,
   "sections": {
-    "youtube": "2026-02-20T22:12:00Z",
+    "youtube": "2026-02-20T22:42:00Z",
     "investments": "2026-02-20T10:21:16Z",
     "newBusiness": "2026-02-20T21:25:00Z",
     "competitors": "2026-02-20T11:50:55Z",
-    "research": "2026-02-20T21:25:00Z",
-    "tools": "2026-02-20T22:12:00Z"
+    "research": "2026-02-20T22:12:00Z",
+    "tools": "2026-02-20T22:42:00Z"
   }
 }
