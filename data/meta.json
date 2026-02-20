@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-02-20T20:46:00Z",
+  "lastUpdated": "2026-02-20T20:49:00Z",
   "updatedBy": "nox-heartbeat",
-  "version": "2026.02.20.34",
-  "cacheBust": "20260220T2046",
-  "dataVersion": "2026.02.20.34",
+  "version": "2026.02.20.35",
+  "cacheBust": "20260220T2049",
+  "dataVersion": "2026.02.20.35",
   "youtubeUpdated": "2026-02-20T11:46:00.000000",
   "investmentsUpdated": "2026-02-20T08:16:00.000000",
-  "researchUpdated": "2026-02-20T20:46:00.000000",
+  "researchUpdated": "2026-02-20T20:49:00.000000",
   "newBusinessUpdated": "2026-02-20T11:16:00Z",
-  "toolsUpdated": "2026-02-19T12:05:00Z",
+  "toolsUpdated": "2026-02-20T20:49:00Z",
   "workTrackerUpdated": "2026-02-15T00:17:00Z",
   "minecraftArtistsUpdated": "2026-02-18T14:22:00Z",
   "investments": {
@@ -18,26 +18,26 @@
     "lastIntelligenceId": "intel-082"
   },
   "dataFreshness": {
-    "research": "2026-02-20 - 55 notes (+ texture packs trends)",
-    "newBusiness": "2026-02-20 - 16 opportunities (+ Minecraft Marketplace)",
-    "investments": "2026-02-20 - 89 intelligence items (+ APP rally to , missed  entry)",
+    "research": "2026-02-20 - 55 notes",
+    "newBusiness": "2026-02-20 - 16 opportunities",
+    "investments": "2026-02-20 - 89 intelligence items",
     "workTracker": "2026-02-15 - pagination + deduplication live",
     "minecraftArtists": "2026-02-18 - 16 artists",
-    "youtube": "2026-02-20 - 165 outliers, 15 briefs (+ AI music video brief)",
-    "tools": "2026-02-18 - 21 tools"
+    "youtube": "2026-02-20 - 165 outliers, 15 briefs",
+    "tools": "2026-02-20 - Animation Tools Comparison UI added"
   },
   "research": {
-    "lastUpdated": "2026-02-20T20:46:00Z"
+    "lastUpdated": "2026-02-20T20:49:00Z"
   },
   "totalNotes": 55,
-  "lastDataPush": "2026-02-20T20:46:00Z",
+  "lastDataPush": "2026-02-20T20:49:00Z",
   "lastPushBy": "nox-heartbeat",
-  "lastPushDescription": "note-055: Minecraft texture packs trends research - RPG, Realism, Modern styles",
+  "lastPushDescription": "Animation Tools Comparison UI component with BBS, ReplayMod, Minema, Mine-imator, Higgsfield comparison",
   "newBusiness": {
     "lastUpdated": "2026-02-20T02:48:36Z"
   },
   "tools": {
-    "lastUpdated": "2026-02-19T12:05:00Z",
+    "lastUpdated": "2026-02-20T20:49:00Z",
     "totalTools": 21
   },
   "youtube": {
@@ -61,6 +61,6 @@
     "newBusiness": "2026-02-20T11:21:44Z",
     "competitors": "2026-02-20T11:50:55Z",
     "research": "2026-02-20T12:25:31Z",
-    "tools": "2026-02-20T18:18:05Z"
+    "tools": "2026-02-20T20:49:00Z"
   }
 }

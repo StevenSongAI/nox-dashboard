@@ -400,6 +400,7 @@
         <button onclick="showToolsSection('registry')" id="tools-btn-registry" class="px-3 py-1 bg-accent-blue rounded text-sm">📋 Tool Registry</button>
         <button onclick="showToolsSection('storyboard')" id="tools-btn-storyboard" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">🎬 Storyboard Generator</button>
         <button onclick="showToolsSection('voiceover')" id="tools-btn-voiceover" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">🎙️ Voiceover Generator</button>
+        <button onclick="showToolsSection('animation')" id="tools-btn-animation" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">🎭 Animation Tools</button>
       </div>
 
       <!-- Tool Registry Section -->
@@ -587,6 +588,23 @@
               <button onclick="exportVOText()" class="px-3 py-2 bg-dark-700 rounded text-sm hover:bg-dark-600">Export TXT</button>
               <button onclick="exportVOJSON()" class="px-3 py-2 bg-dark-700 rounded text-sm hover:bg-dark-600">Export JSON</button>
               <button onclick="copyVOToClipboard()" class="px-3 py-2 bg-dark-700 rounded text-sm hover:bg-dark-600">Copy</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Animation Tools Comparison Section -->
+      <div id="tools-section-animation" class="tools-section hidden">
+        <div id="animation-tools-container">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4 gap-3">
+            <h2 class="text-xl font-semibold">🎭 Minecraft Animation Tools Comparison</h2>
+            <div class="flex gap-2">
+              <button onclick="loadAnimationTools()" class="px-3 py-1 bg-accent-blue rounded text-sm hover:bg-blue-600">🔄 Refresh</button>
+            </div>
+          </div>
+          <div id="animation-tools-widget" class="animation-tools-widget">
+            <div class="text-center py-8 text-gray-500">
+              <p>Loading animation tools comparison...</p>
             </div>
           </div>
         </div>
@@ -973,7 +991,8 @@
     </div>
   </div>
 
-  <script src="app.js?v=202602160427"></script>
+  <script src="js/animation-tools-comparison.js?v=202602200349"></script>
+  <script src="app.js?v=202602200349"></script>
   
   <!-- Tasks Board & Pipeline Functions -->
   <script>
