@@ -2,6 +2,24 @@
   "lastUpdated": "2026-02-20T09:16:00Z",
   "notes": [
     {
+      "id": "note-036",
+      "category": "Minecraft Mods",
+      "title": "Rise of AI Mods in 2025-2026 - Dynamic NPCs and Adaptive Mobs",
+      "content": "Heartbeat research discovery (Feb 20, 2026): Major trend emerging in Minecraft modding - the rise of AI mods with dynamic NPCs and adaptive behaviors. KEY FINDINGS: (1) Villagers with dynamic dialogue powered by AI per GeekVibesNation April 2025 analysis, (2) Mobs that adapt to player behavior - learning from combat patterns and adjusting tactics, (3) ATM 9 modpack stability updates + ATM 10 released in 2025 driving ~500 mod downloads per player twice, (4) Reddit r/feedthebeast community noting modding 'exploded' in 2025 due to modpack update cycles, (5) Vanilla Minecraft updates since 1.16-1.19 felt less 'major' to players, pushing them toward modded content for substantial new experiences. BBS CROWD SPAWNER SYNERGY: This trend validates the BBS Crowd Spawner approach - AI-driven NPC behaviors are what players want. The BBS-CustomNPCs bridge addon (note-030) positions Steven at the intersection of this trend. Content opportunity: 'AI vs AI' comparison videos - vanilla AI mobs vs BBS CustomNPCs vs new AI mod mobs. Demonstrate superior animation + behavior control with BBS ecosystem.",
+      "source": "GeekVibesNation + Reddit r/feedthebeast + Pinecone Academy (Feb 20, 2026)",
+      "tags": [
+        "minecraft",
+        "ai-mods",
+        "dynamic-npcs",
+        "adaptive-mobs",
+        "bbs-mod",
+        "trend-validation"
+      ],
+      "addedAt": "2026-02-20T12:16:00Z",
+      "actionable": true,
+      "priority": "high"
+    },
+    {
       "id": "note-035",
       "category": "AI Video Trends",
       "title": "AI Video Post-Production Gap Disappearing - Native Audio/Music Integration 2026",
