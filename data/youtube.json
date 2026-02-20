@@ -12,7 +12,7 @@
       "source": "web_research",
       "notes": "Defining trend of 2025-2026: 'Brainrot' meme wave on Roblox. 'Steal a Brainrot' game helped ignite trend. KPop Demon Hunters film drove massive search volume. Short-session format + avatar identity expression = viral formula. Cross-platform opportunity to recreate in Minecraft using BBS Crowd Spawner.",
       "contentAngle": "Cross-platform content: Play viral Roblox Brainrot games + recreate chaotic behaviors in Minecraft with BBS Crowd Spawner. First-mover on platform comparison angle.",
-      "niche": "🎮 Roblox Trends"
+      "niche": "\ud83c\udfae Roblox Trends"
     },
     {
       "id": "outlier-mc260-001",
@@ -26,7 +26,7 @@
       "source": "web_research",
       "notes": "MAJOR VERSION SYSTEM CHANGE: Minecraft officially switched from 1.xx to year-based versioning on Feb 10, 2026. 26.0 is first 'Game Drop' replacing traditional annual updates. Content window: NOW through late March 2026 when 26.1 drops.",
       "contentAngle": "Educational content explaining version change + showcase of 26.0 features. First-mover opportunity - news is 10 days old, most creators haven't covered it yet.",
-      "niche": "🎮 Minecraft News"
+      "niche": "\ud83c\udfae Minecraft News"
     },
     {
       "id": "yt-research-minecraftmovie-viral-001",
@@ -3216,5 +3216,62 @@
       "dateAdded": "2026-02-20"
     }
   ],
-  "lastUpdated": "2026-02-19T17:51:00Z"
+  "lastUpdated": "2026-02-19T17:51:00Z",
+  "trendAnalysis": [
+    {
+      "id": "trend-001",
+      "trend": "Minecraft Movie 2 Hype Cycle",
+      "status": "RISING",
+      "window": "Feb 2026 \u2014 July 2027",
+      "description": "Another Minecraft Movie confirmed July 23, 2027. Ender Dragon villain. Filming April 2026. First movie = 2nd highest-grossing game film ever. Search volume will spike at: filming leaks, trailer drops, cast announcements, release week. Early content creators will own this niche for 18 months.",
+      "opportunity": "Cinematic recreations of movie scenes in Minecraft (BBS + Crowd Spawner). Series format: recreate each scene before the movie drops.",
+      "linkedBriefs": [
+        "brief-010"
+      ],
+      "addedBy": "nox-hb382",
+      "dateAdded": "2026-02-20"
+    },
+    {
+      "id": "trend-002",
+      "trend": "Minecraft 26.0 Version System Overhaul",
+      "status": "ACTIVE",
+      "window": "Feb 2026 \u2014 March 2026 (26.1/26.2 incoming)",
+      "description": "Mojang switched from 1.x to year-based versioning (26.0 released Feb 10). 'Game Drops' model replaces annual updates \u2014 smaller, faster drops throughout the year. Old 1.22 content split across future drops. Huge confusion in community = educational content opportunity.",
+      "opportunity": "Explainer + showcase videos for each Game Drop. First-mover on 26.1 and 26.2 content when they hit late March.",
+      "linkedBriefs": [
+        "brief-012"
+      ],
+      "addedBy": "nox-hb382",
+      "dateAdded": "2026-02-20"
+    },
+    {
+      "id": "trend-003",
+      "trend": "Minecraft Mod Cinematics (BBS + Create + NPC Mods)",
+      "status": "EMERGING",
+      "window": "Ongoing \u2014 low competition, high production value niche",
+      "description": "Intersection of BBS animated models, Create Mod 6.0 machines, and CustomNPCs bridge addon enables Hollywood-quality cinematic content inside Minecraft. Almost nobody is doing this. Crowd Spawner v3.0 adds mass NPC scenes. The 'Minecraft but it looks like a movie' niche is wide open.",
+      "opportunity": "Series: animated NPC crowds + Create factories + cinematic camera work. Steven has the mods, the tools, and the expertise \u2014 nobody else has this stack.",
+      "linkedBriefs": [
+        "brief-011",
+        "brief-010"
+      ],
+      "linkedResearch": [
+        "note-030",
+        "note-031"
+      ],
+      "addedBy": "nox-hb382",
+      "dateAdded": "2026-02-20"
+    },
+    {
+      "id": "trend-004",
+      "trend": "Minecraft Mod Showcases (Monthly Roundups)",
+      "status": "STABLE",
+      "window": "Evergreen \u2014 monthly cycle",
+      "description": "Monthly 'Top Mods' videos consistently perform well on YouTube. Channels like AsianHalfSquat, Boodlyneck get 200K-1M+ views per roundup. Key: curate the best mods, show them in action with cinematic quality, not just talking-head reviews.",
+      "opportunity": "Steven's BBS expertise gives a unique angle \u2014 showcase mods with cinematic quality that other roundup channels can't match.",
+      "linkedBriefs": [],
+      "addedBy": "nox-hb382",
+      "dateAdded": "2026-02-20"
+    }
+  ]
 }
