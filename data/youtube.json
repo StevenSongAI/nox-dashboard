@@ -1,6 +1,20 @@
 {
   "outlierVideos": [
     {
+      "id": "outlier-brainrot-001",
+      "title": "Roblox 'Brainrot' Meme Wave - Viral Gaming Trend 2026",
+      "channel": "TREND ALERT",
+      "views": 0,
+      "viralScore": 93,
+      "category": "roblox_brainrot",
+      "publishedAt": "2026-02-01T00:00:00Z",
+      "addedAt": "2026-02-20T10:46:00Z",
+      "source": "web_research",
+      "notes": "Defining trend of 2025-2026: 'Brainrot' meme wave on Roblox. 'Steal a Brainrot' game helped ignite trend. KPop Demon Hunters film drove massive search volume. Short-session format + avatar identity expression = viral formula. Cross-platform opportunity to recreate in Minecraft using BBS Crowd Spawner.",
+      "contentAngle": "Cross-platform content: Play viral Roblox Brainrot games + recreate chaotic behaviors in Minecraft with BBS Crowd Spawner. First-mover on platform comparison angle.",
+      "niche": "🎮 Roblox Trends"
+    },
+    {
       "id": "outlier-mc260-001",
       "title": "Minecraft 26.0 Released - Version System Overhaul",
       "channel": "TREND ALERT",
@@ -3161,6 +3175,44 @@
         "Confused Steve with question marks around version numbers"
       ],
       "addedBy": "nox-hb381",
+      "dateAdded": "2026-02-20"
+    },
+    {
+      "id": "brief-013",
+      "title": "I Played the MOST VIRAL Roblox Games of 2026 (Brainrot Meme Wave)",
+      "status": "script-ready",
+      "hook": "Roblox's 'Brainrot' meme wave is taking over. Here's what 10 million players are obsessed with.",
+      "angle": "Trend showcase format covering viral Roblox games with Minecraft crossover potential",
+      "scriptOutline": {
+        "coldOpen": "0:00-0:20: Rapid montage of chaotic Roblox gameplay. 'This is Brainrot. And it's everywhere.'",
+        "explainBrainrot": "0:20-1:30: What is the Brainrot meme wave? Origin story, 'Steal a Brainrot' game breakdown, why it's viral.",
+        "gameShowcase": "1:30-4:00: Play through 3-4 viral Roblox games - Brainrot collectors, KPop Demon Hunters inspired games, Squid Game pre-season hype games.",
+        "minecraftAngle": "4:00-5:00: 'What if Minecraft had Brainrot mobs?' - Show BBS Crowd Spawner creating chaotic NPC behaviors. Bridge between platforms.",
+        "cta": "5:00-5:30: 'Comment which Roblox trend I should recreate in Minecraft next.'"
+      },
+      "toolsNeeded": [
+        "Roblox account + screen recorder",
+        "Minecraft with BBS Crowd Spawner v3.0",
+        "OBS for recording both platforms",
+        "Video editor for split-screen comparisons"
+      ],
+      "seoKeywords": [
+        "roblox brainrot",
+        "viral roblox games 2026",
+        "brainrot meme wave",
+        "steal a brainrot",
+        "roblox kpop demon hunters",
+        "minecraft vs roblox",
+        "roblox trends 2026"
+      ],
+      "timeliness": "Brainrot wave ACTIVE now - early 2026 peak. Cross-platform content angle is underserved. First-mover on Minecraft-Roblox comparison videos.",
+      "estimatedProductionTime": "4-6 hours (2-3 hrs Roblox gameplay + 1-2 hrs Minecraft segment + editing)",
+      "thumbnailConcepts": [
+        "Split-screen: Roblox Brainrot character vs Minecraft BBS NPC",
+        "Chaos montage: Multiple Roblox game screenshots with 'BRAINROT' text overlay",
+        "Reaction face: Steven looking confused at chaotic Roblox gameplay"
+      ],
+      "addedBy": "nox-hb382",
       "dateAdded": "2026-02-20"
     }
   ],
