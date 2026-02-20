@@ -1288,6 +1288,85 @@ function renderYouTube() {
   
   // Render trend chart
   safeRender(() => renderYouTubeTrendChart(), 'renderYouTubeTrendChart');
+  
+  // Render content pipeline kanban board
+  safeRender(() => renderContentPipelineKanban(), 'renderContentPipelineKanban');
+}
+
+// Content Pipeline Kanban Board — NEW FEATURE: Visual production tracker
+function renderContentPipelineKanban() {
+  const container = document.getElementById('content-pipeline-kanban');
+  if (!container) return;
+  
+  const briefs = appData.youtube?.contentBriefs || [];
+  
+  // Group briefs by status
+  const columns = {
+    'idea': { title: '💡 Ideas', briefs: [] },
+    'script-ready': { title: '📝 Script Ready', briefs: [] },
+    'in-production': { title: '🎬 In Production', briefs: [] },
+    'published': { title: '✅ Published', briefs: [] }
+  };
+  
+  // Categorize briefs
+  briefs.forEach(brief => {
+    const status = brief.status || 'idea';
+    if (columns[status]) {
+      columns[status].briefs.push(brief);
+    } else {
+      columns['idea'].briefs.push(brief);
+    }
+  });
+  
+  // Build kanban HTML
+  let html = `
+    <div class="mb-4">
+      <h3 class="text-lg font-semibold mb-2">📊 Content Pipeline</h3>
+      <p class="text-sm text-gray-400">${briefs.length} briefs across ${Object.keys(columns).length} stages</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+  `;
+  
+  Object.entries(columns).forEach(([status, col]) => {
+    const count = col.briefs.length;
+    const priorityColors = { 'HIGH': 'bg-accent-red/20 text-accent-red', 'MEDIUM': 'bg-accent-yellow/20 text-accent-yellow', 'LOW': 'bg-gray-500/20 text-gray-400' };
+    
+    html += `
+      <div class="bg-dark-800 rounded-lg p-3 border border-dark-600">
+        <div class="flex items-center justify-between mb-3">
+          <h4 class="font-semibold text-sm">${col.title}</h4>
+          <span class="text-xs px-2 py-0.5 bg-dark-700 rounded-full">${count}</span>
+        </div>
+        <div class="space-y-2 max-h-96 overflow-y-auto">
+          ${col.briefs.length === 0 ? 
+            `<p class="text-xs text-gray-500 text-center py-4">No briefs</p>` :
+            col.briefs.map(b => `
+              <div class="bg-dark-700 rounded p-2 cursor-pointer hover:bg-dark-600 transition-colors" onclick="showBriefModalById('${b.id}')">
+                <div class="flex items-center gap-1 mb-1">
+                  <span class="text-xs px-1.5 py-0.5 rounded ${priorityColors[b.priority] || 'bg-gray-500/20 text-gray-400'}">${b.priority || 'MED'}</span>
+                  ${b.linkedResearch ? '<span class="text-xs">🔗</span>' : ''}
+                </div>
+                <p class="text-xs font-medium line-clamp-2" title="${b.title}">${b.title}</p>
+                <p class="text-xs text-gray-500 mt-1">${b.niche || 'General'}</p>
+              </div>
+            `).join('')
+          }
+        </div>
+      </div>
+    `;
+  });
+  
+  html += '</div>';
+  container.innerHTML = html;
+}
+
+// Helper to show brief modal by ID
+function showBriefModalById(briefId) {
+  const briefs = appData.youtube?.contentBriefs || [];
+  const brief = briefs.find(b => b.id === briefId);
+  if (brief) {
+    openModal(brief.title, buildBriefModalContent(brief));
+  }
 }
 
 function showVideoModal(videoId) {
