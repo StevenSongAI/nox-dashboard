@@ -378,6 +378,43 @@
       "date": "2026-02-19",
       "status": "active",
       "priority": "medium"
+    },
+    {
+      "id": "research-feb19-daily-audit",
+      "title": "Feb 19 Work Log \u2014 BBS Mod v3.0 + Content Pipeline",
+      "date": "2026-02-19",
+      "tags": [
+        "bbs-mod",
+        "youtube",
+        "production",
+        "audit"
+      ],
+      "content": "Major work completed Feb 19: (1) BBS Crowd Spawner v3.0 built and JAR compiled \u2014 fixes pink/blue error texture by adding client-side texture resolution tick handler + /crowd texdebug command + server-client entity ID packet. Root cause: CubicModelLoader scans for model.png but imported models often use different names; config.json overrides path, but async load timing causes error texture before resolution. Fix: client sets form.texture explicitly after ModelInstance loads. (2) Floor Transformation FULL PRODUCTION KIT added to dashboard \u2014 3 script variants (Gaming PC, Minecraft, Ocean), 9 AI prompts, 10 SEO keywords, 3 thumbnail concepts, batch plan for 15 Shorts in 2hrs. (3) BBS Crowd Spawner content brief \u2014 100 NPC showcase video, Steven-as-creator angle. (4) NVDA pre-earnings intel updated \u2014 $66B consensus, contrarian bear case (sold off after 3 of last 4 beats). Dashboard HB354-HB358 all pushed.",
+      "addedAt": "2026-02-20T00:51:10Z",
+      "linkedBriefs": [
+        "brief-floor-transform-001",
+        "brief-bbs-crowd-cinematic-001"
+      ],
+      "linkedIntel": [
+        "intel-087"
+      ]
+    },
+    {
+      "id": "research-kling26-seedance20",
+      "title": "Kling 2.6 + Seedance 2.0 \u2014 Floor Transformation Tool Stack Update",
+      "date": "2026-02-19",
+      "tags": [
+        "ai-tools",
+        "video-generation",
+        "floor-transformation",
+        "youtube-production"
+      ],
+      "content": "TWO TOOLS RELEVANT TO FLOOR TRANSFORMATION BRIEF DROPPED THIS WEEK: (1) Kling 2.6 \u2014 confirmed best for 'consistent storytelling' at low cost per eWeek review. This is the primary tool recommended in brief-floor-transform-001. v2.6 upgrade means better temporal consistency = smoother floor transformation transitions. (2) Seedance 2.0 \u2014 new simplified interface targeting non-technical creators. Specifically built for social media creators who want AI video without technical knowledge. Direct competitor to Kling for floor transformation format. ACTION: The floor transformation brief recommends Kling 3.0 but latest stable is 2.6 \u2014 update brief accordingly. Also test Seedance 2.0 as an alternative since it's free-tier friendly.",
+      "addedAt": "2026-02-20T00:51:10Z",
+      "linkedBriefs": [
+        "brief-floor-transform-001"
+      ],
+      "actionable": true
     }
   ]
 }

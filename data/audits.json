@@ -1257,6 +1257,30 @@
       "description": "Routine heartbeat check-in. All dashboard tabs verified fresh within 24 hours. No critical issues. NVDA earnings countdown continues (7 days). Data integrity maintained.",
       "result": "passed",
       "notes": "YouTube: 147 outliers | Investments: 76 intel items | Research: 21 notes | Tools: 21 tools | All systems nominal"
+    },
+    {
+      "id": "audit-127",
+      "date": "2026-02-19T16:37:00Z",
+      "type": "migration",
+      "description": "Full workspace migration from clawd-agents/nox to openclaw workspace-nox. Restored SOUL.md, USER.md, MEMORY.md, TOOLS.md, HEARTBEAT.md, RED_TEAM_V1_FIXES.md, all daily memory logs. HEARTBEAT.md updated with research\u2192build mandate and kimi-coding/k2p5 as default subagent model.",
+      "result": "passed",
+      "notes": "Old workspace preserved at ~/clawd-agents/nox/"
+    },
+    {
+      "id": "audit-128",
+      "date": "2026-02-19T18:44:00Z",
+      "type": "build",
+      "description": "BBS Crowd Spawner Mod v3.0 built successfully. Fixed pink/blue error texture bug. Root cause: CubicModelLoader constructs texture Link to model.png but imported models use custom filenames; async load timing causes error before config.json override resolves. Fix: client-side tick handler (every 20 ticks) reads ModelInstance.texture after load and sets it explicitly on form. New: /crowd texdebug command, server-client entity ID packet, fallback texture name scanning.",
+      "result": "passed",
+      "notes": "JAR at ~/Desktop/Nox Builds/BBS-Crowd-Spawner-Mod/crowd-spawner-3.0.jar \u2014 26KB, 4 classes"
+    },
+    {
+      "id": "audit-129",
+      "date": "2026-02-19T23:36:00Z",
+      "type": "content",
+      "description": "Dashboard content push: (1) Floor transformation FULL PRODUCTION KIT \u2014 3 scripts, 9 AI prompts, 10 SEO keywords, 3 thumbnail concepts, 15-Shorts batch plan. (2) BBS Crowd Spawner YouTube brief \u2014 100 NPC showcase, Steven-as-creator angle. (3) NVDA T-6 earnings intel \u2014 $66B consensus, contrarian bear case (sell-the-news pattern). (4) Tool update: Kling 2.6 + Seedance 2.0 confirmed relevant to floor transformation brief.",
+      "result": "passed",
+      "notes": "YouTube: 151 outliers, 6 briefs (2 production-ready) | Investments: 87 intel | Research: 27 notes"
     }
   ],
   "auditSummary": {
