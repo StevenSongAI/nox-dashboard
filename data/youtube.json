@@ -3389,6 +3389,38 @@
       ],
       "addedBy": "nox-hb396",
       "dateAdded": "2026-02-20"
+    },
+    {
+      "id": "brief-018",
+      "title": "Minecraft Live 2026: What Mojang Is REALLY Bringing (Pre-Event Prediction)",
+      "status": "script-ready",
+      "priority": "HIGH",
+      "linkedResearch": "note-049",
+      "hook": "Minecraft Live 2026 is in March. And for the first time ever, Mojang is promising to show things shipping RIGHT NOW \u2014 not concept art years away.",
+      "scriptOutline": [
+        "COLD OPEN: Minecraft Live 2026 announced. March date. The twist: everything shown is shipping immediately.",
+        "CONTEXT (60s): Previous years \u2014 concept art for features 2+ years out. Player frustration. Why this year is different.",
+        "WHAT WE KNOW (90s): 26.1 Game Drop in progress. Baby mobs complete. What else could ship?",
+        "PREDICTIONS (3 min): Based on snapshot data, what is likely in the March drop: new biomes, mobs, blocks? What is definitely NOT ready?",
+        "STAKES (60s): If Mojang delivers, trust rebuilds. If they don't, community backlash.",
+        "CTA: Subscribe for live reaction and post-event analysis. What do you think they'll show?"
+      ],
+      "tools": [
+        "Minecraft 26.1 snapshots",
+        "BBS Mod for cinematic recreations",
+        "Replay Mod"
+      ],
+      "seoKeywords": [
+        "minecraft live 2026",
+        "minecraft live predictions",
+        "minecraft march 2026",
+        "minecraft game drop",
+        "minecraft new features 2026"
+      ],
+      "timeliness": "Event in March \u2014 publish within 2 weeks for pre-event SEO window.",
+      "estimatedProductionTime": "2-3 days",
+      "addedBy": "nox-hb400",
+      "dateAdded": "2026-02-20"
     }
   ],
   "lastUpdated": "2026-02-19T17:51:00Z",
