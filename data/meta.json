@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-20T09:16:00Z",
+  "lastUpdated": "2026-02-20T09:19:39Z",
   "updatedBy": "nox-heartbeat",
   "version": "2026.02.20.19",
   "cacheBust": "20260220T0916",
@@ -54,5 +54,8 @@
   "minecraftArtists": {
     "lastUpdated": "2026-02-20T01:47:50Z"
   },
-  "totalOutliers": 158
+  "totalOutliers": 158,
+  "sections": {
+    "youtube": "2026-02-20T09:19:39Z"
+  }
 }

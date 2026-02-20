@@ -13,7 +13,7 @@
       "source": "web_research",
       "notes": "VIRAL FAN RECREATION: 1.6M views in less than 24 hours, 70K likes. BBC called Minecraft Movie '2025's most important film'. Fan animated recreation of controversial live-action trailer. Fans said 'This is way better' and 'THIS IS HOW IT SHOULD HAVE LOOKED'. Hollywood vs fan animation contrast drove shares.",
       "contentAngle": "BBS Crowd Spawner angle: Recreate Minecraft Movie scenes with 1000+ unique NPCs - prove fan-made can beat Hollywood",
-      "niche": "🎬 Minecraft Movie Recreation"
+      "niche": "\ud83c\udfac Minecraft Movie Recreation"
     },
     {
       "id": "yt-viewstats-20260220-001",
@@ -23,7 +23,7 @@
       "publishedAt": "2026-02-19T22:04:01Z",
       "addedAt": "2026-02-20T07:00:00Z",
       "outlierScore": 128.0,
-      "niche": "🎮 Gaming/Simulation",
+      "niche": "\ud83c\udfae Gaming/Simulation",
       "whyOutlier": "128x outlier multiplier. Deepwoken (Roblox soulslike) guide content with high utility. Gaming tutorials on emerging games show strong viral potential.",
       "contentAngle": "BBS Crowd Spawner: Create 'NPCs play Deepwoken' - AI-controlled characters attempting complex game challenges",
       "viralMechanics": "Tutorial + game mastery combo. 'EASY' promise in difficult game attracts frustrated players. Risk/reward gameplay creates natural tension.",
@@ -39,7 +39,7 @@
       "publishedAt": "2026-02-19T22:04:23Z",
       "addedAt": "2026-02-20T07:00:00Z",
       "outlierScore": 151.0,
-      "niche": "🦭 Creature/Animal",
+      "niche": "\ud83e\uddad Creature/Animal",
       "whyOutlier": "151x outlier multiplier. Viral seal content from Tasmania. Animal + unexpected location (road) + human interaction = viral formula.",
       "contentAngle": "AI Creature evolution series: 'Animals that shouldn't exist' - AI generates hybrid creatures in real-world scenarios",
       "viralMechanics": "Real animal + absurd scenario. Personification of animals drives shares. Local news hook (Tasmania) adds specificity.",
@@ -60,7 +60,7 @@
       "source": "web_research",
       "notes": "100 Days format: evergreen viral trend. 'Expanding world' variant - world grows every day. 18.5M views. Series format with binge potential.",
       "contentAngle": "100 Days format works for BBS Crowd Spawner: 100 Days With 1000 Unique NPCs - each day adds new characters",
-      "niche": "🎮 Minecraft 100 Days"
+      "niche": "\ud83c\udfae Minecraft 100 Days"
     },
     {
       "id": "yt-research-100days-trend-003",
@@ -75,7 +75,7 @@
       "source": "web_research",
       "notes": "100 Days + survival horror/apocalypse theme. 12.5M views. Modpack-driven content (Mustard Virus mod). High engagement due to escalating tension.",
       "contentAngle": "BBS Crowd Spawner angle: 100 Days of NPC Invasion - survival with increasing crowd chaos",
-      "niche": "🎮 Minecraft 100 Days"
+      "niche": "\ud83c\udfae Minecraft 100 Days"
     },
     {
       "id": "yt-research-100days-trend-004",
@@ -90,7 +90,7 @@
       "source": "web_research",
       "notes": "Original 100 Days viral hit. 52M views. Established the '100 Days' format as evergreen. Hardcore survival + progression arc = proven binge formula.",
       "contentAngle": "Classic format: start weak, end powerful. Perfect for BBS Crowd Spawner progression (1 NPC to 1000 over 100 days)",
-      "niche": "🎮 Minecraft 100 Days"
+      "niche": "\ud83c\udfae Minecraft 100 Days"
     },
     {
       "id": "yt-research-100M-evolution-001",
@@ -2414,6 +2414,18 @@
       "whyOutlier": "100+ custom NPCs with individual textures, animations, AI pathfinding \u2014 NO other Minecraft mod does this at this scale",
       "stevenAngle": "BBS Crowd Spawner v3.0 allows 100 unique NPCs each with different models, textures, behaviors. Showcase this unique capability.",
       "addedAt": "2026-02-20T06:35:38Z"
+    },
+    {
+      "id": "outlier-162",
+      "title": "Minecraft Movie 2: Ender Dragon Confirmed \u2014 Content Window Opens",
+      "channel": "TREND ALERT",
+      "views": 0,
+      "published": "2026-02-19",
+      "niche": "Minecraft Movie",
+      "whyOutlier": "Another Minecraft Movie confirmed July 2027, filming April 2026, Ender Dragon as villain. First movie was 2nd highest-grossing game film ever. Massive search volume wave incoming \u2014 early Minecraft Movie 2 content will dominate.",
+      "contentAngle": "Recreate Ender Dragon fight scenes in Minecraft using BBS mod + cinematic camera. Position as THE Minecraft Movie 2 hype channel.",
+      "addedBy": "nox-hb379",
+      "dateAdded": "2026-02-20"
     }
   ],
   "meta": {
@@ -3024,6 +3036,39 @@
       ],
       "category": "minecraft_mod_showcase",
       "priority": "high"
+    },
+    {
+      "id": "brief-010",
+      "title": "Minecraft Movie 2: Building the Ender Dragon Fight in Minecraft",
+      "status": "script-ready",
+      "priority": "HIGH",
+      "niche": "Minecraft Cinematic",
+      "targetLength": "8-12 min",
+      "hook": "The Minecraft Movie sequel just confirmed the Ender Dragon as the villain. So I built the final battle... in actual Minecraft.",
+      "scriptOutline": [
+        "COLD OPEN: Epic cinematic shot of Ender Dragon flying over End island (BBS mod + shader pack)",
+        "CONTEXT (30s): Minecraft Movie 2 confirmed \u2014 July 2027, Ender Dragon villain, filming starts April. Quick recap of first movie success (M+ box office).",
+        "BUILD SEQUENCE (3-4 min): Time-lapse building the End arena \u2014 obsidian towers, end crystals, portal frame. Show BBS model setup for custom Ender Dragon animations.",
+        "THE FIGHT (3-4 min): Full cinematic recreation of what the movie fight could look like. Multiple camera angles, slow-mo wing sweeps, crystal explosions. Use Crowd Spawner for NPC army.",
+        "COMPARISON (1 min): Side-by-side first movie scenes vs your recreation. Show how close Minecraft can get to Hollywood.",
+        "CTA: \"Subscribe to see every Minecraft Movie 2 scene recreated before the movie drops.\""
+      ],
+      "tools": [
+        "BBS Mod (custom Ender Dragon model)",
+        "Crowd Spawner v3.0",
+        "Complementary Reimagined shaders",
+        "Replay Mod for camera paths"
+      ],
+      "seoKeywords": [
+        "minecraft movie 2",
+        "ender dragon minecraft movie",
+        "another minecraft movie",
+        "minecraft movie sequel",
+        "minecraft cinematic"
+      ],
+      "timeliness": "FIRST MOVER \u2014 news broke Feb 19, filming April 2026. Content window is NOW through July 2027.",
+      "addedBy": "nox-hb379",
+      "dateAdded": "2026-02-20"
     }
   ],
   "lastUpdated": "2026-02-19T17:51:00Z"
