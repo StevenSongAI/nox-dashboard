@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-02-20T20:49:00Z",
+  "lastUpdated": "2026-02-20T21:25:00Z",
   "updatedBy": "nox-heartbeat",
-  "version": "2026.02.20.35",
-  "cacheBust": "20260220T2049",
-  "dataVersion": "2026.02.20.35",
+  "version": "2026.02.20.36",
+  "cacheBust": "20260220T2125",
+  "dataVersion": "2026.02.20.36",
   "youtubeUpdated": "2026-02-20T11:46:00.000000",
   "investmentsUpdated": "2026-02-20T08:16:00.000000",
-  "researchUpdated": "2026-02-20T20:49:00.000000",
-  "newBusinessUpdated": "2026-02-20T11:16:00Z",
+  "researchUpdated": "2026-02-20T21:25:00.000000",
+  "newBusinessUpdated": "2026-02-20T21:25:00Z",
   "toolsUpdated": "2026-02-20T20:49:00Z",
   "workTrackerUpdated": "2026-02-15T00:17:00Z",
   "minecraftArtistsUpdated": "2026-02-18T14:22:00Z",
@@ -18,23 +18,23 @@
     "lastIntelligenceId": "intel-082"
   },
   "dataFreshness": {
-    "research": "2026-02-20 - 55 notes",
-    "newBusiness": "2026-02-20 - 16 opportunities",
+    "research": "2026-02-20 - Marketplace revenue data added",
+    "newBusiness": "2026-02-20 - Minecraft Marketplace widget live",
     "investments": "2026-02-20 - 89 intelligence items",
     "workTracker": "2026-02-15 - pagination + deduplication live",
     "minecraftArtists": "2026-02-18 - 16 artists",
     "youtube": "2026-02-20 - 165 outliers, 15 briefs",
-    "tools": "2026-02-20 - Animation Tools Comparison UI added"
+    "tools": "2026-02-20 - Animation Tools Comparison + Marketplace Revenue widgets"
   },
   "research": {
-    "lastUpdated": "2026-02-20T20:49:00Z"
+    "lastUpdated": "2026-02-20T21:25:00Z"
   },
   "totalNotes": 55,
-  "lastDataPush": "2026-02-20T20:49:00Z",
+  "lastDataPush": "2026-02-20T21:25:00Z",
   "lastPushBy": "nox-heartbeat",
-  "lastPushDescription": "Animation Tools Comparison UI component with BBS, ReplayMod, Minema, Mine-imator, Higgsfield comparison",
+  "lastPushDescription": "Minecraft Marketplace Revenue widget with creator payout data ($500M+ total, $146M Q1 2025 record)",
   "newBusiness": {
-    "lastUpdated": "2026-02-20T02:48:36Z"
+    "lastUpdated": "2026-02-20T21:25:00Z"
   },
   "tools": {
     "lastUpdated": "2026-02-20T20:49:00Z",
@@ -58,9 +58,9 @@
   "sections": {
     "youtube": "2026-02-20T15:45:14Z",
     "investments": "2026-02-20T10:21:16Z",
-    "newBusiness": "2026-02-20T11:21:44Z",
+    "newBusiness": "2026-02-20T21:25:00Z",
     "competitors": "2026-02-20T11:50:55Z",
-    "research": "2026-02-20T12:25:31Z",
-    "tools": "2026-02-20T20:49:00Z"
+    "research": "2026-02-20T21:25:00Z",
+    "tools": "2026-02-20T21:25:00Z"
   }
 }

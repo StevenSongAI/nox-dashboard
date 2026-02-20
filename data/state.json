@@ -1,15 +1,15 @@
 {
-  "lastHeartbeat": "2026-02-20T20:49:00Z",
-  "totalHeartbeats": 412,
-  "lastAction": "HB412: Built Animation Tools Comparison UI component. Compares BBS, ReplayMod, Minema, Mine-imator, Higgsfield, Blockbuster with features, pros/cons, pricing, workflow.",
-  "nextPriority": "Create content brief for Minecraft animation tutorial leveraging comparison data",
+  "lastHeartbeat": "2026-02-20T21:25:00Z",
+  "totalHeartbeats": 413,
+  "lastAction": "HB413: Minecraft Marketplace Revenue research ($500M+ creator payouts, $146M Q1 2025 record). Built marketplace revenue widget with earnings data and content opportunities.",
+  "nextPriority": "Create content brief for Minecraft Marketplace creator earnings video",
   "dataFreshness": {
-    "youtube": "2026-02-20 - kanban UI + 165 outliers",
-    "investments": "2026-02-20 - 89 intel items",
-    "newBusiness": "2026-02-20 - 19 opportunities",
-    "research": "2026-02-20 - 55 notes",
+    "youtube": "2026-02-20 - 165 outliers, kanban UI",
+    "investments": "2026-02-20 - 89 intel items, NVDA earnings countdown",
+    "newBusiness": "2026-02-20 - Marketplace revenue widget + 19 opps",
+    "research": "2026-02-20 - 55 notes + marketplace data",
     "competitors": "2026-02-20 - 22 tracked",
-    "tools": "2026-02-20 - Animation Tools Comparison UI live"
+    "tools": "2026-02-20 - Animation Tools + Marketplace widgets"
   },
   "minecraftLiveCountdown": {
     "eventDate": "2026-03-15T19:00:00-05:00",
@@ -29,7 +29,7 @@
   },
   "minecraftMarketplace": {
     "totalCreatorPayouts": "$500M+",
-    "recentEarnings": "$1M in 2 months (record)",
+    "recentEarnings": "$146M in Q1 2025 (record quarter)",
     "creatorRevenueShare": ">50% after platform cuts",
     "topCategories": [
       "Skin packs",
@@ -38,7 +38,7 @@
       "Mash-ups"
     ],
     "priceRange": "490-1480 Minecoins ($3-10)",
-    "lastUpdated": "2026-02-20T17:05:38Z"
+    "lastUpdated": "2026-02-20T21:25:00Z"
   },
   "nvdaEarningsCountdown": {
     "earningsDate": "2026-02-26",

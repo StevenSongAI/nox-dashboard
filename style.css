@@ -1769,6 +1769,141 @@ main {
   margin-right: 0.5rem;
 }
 
+/* Marketplace Revenue Widget Styles */
+.marketplace-widget {
+  background: #1a1a2e;
+  border: 1px solid #252540;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+}
+
+.mp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #252540;
+}
+
+.mp-header h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #e2e8f0;
+}
+
+.mp-updated {
+  font-size: 0.75rem;
+  color: #64748b;
+}
+
+.mp-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .mp-stats-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.mp-stat-card {
+  background: #0f0f1a;
+  border-radius: 0.375rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.mp-stat-card.highlight {
+  border: 1px solid #10b981;
+  background: linear-gradient(135deg, #0f0f1a 0%, #064e3b 100%);
+}
+
+.mp-stat-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #10b981;
+}
+
+.mp-stat-card.highlight .mp-stat-value {
+  font-size: 1.75rem;
+  color: #34d399;
+}
+
+.mp-stat-label {
+  font-size: 0.75rem;
+  color: #94a3b8;
+  margin-top: 0.25rem;
+}
+
+.mp-categories {
+  margin-bottom: 1.5rem;
+}
+
+.mp-categories h4 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #94a3b8;
+  margin-bottom: 0.5rem;
+}
+
+.mp-category-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.mp-category-tag {
+  background: #252540;
+  color: #e2e8f0;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem;
+}
+
+.mp-insights {
+  background: #0f0f1a;
+  border-radius: 0.375rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.mp-insights h4 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #3b82f6;
+  margin-bottom: 0.5rem;
+}
+
+.mp-insights ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mp-insights li {
+  font-size: 0.875rem;
+  color: #94a3b8;
+  padding: 0.375rem 0;
+  border-bottom: 1px solid #252540;
+}
+
+.mp-insights li:last-child {
+  border-bottom: none;
+}
+
+.mp-insights strong {
+  color: #e2e8f0;
+}
+
+.mp-sources {
+  text-align: center;
+  color: #64748b;
+}
+
 @media (max-width: 640px) {
   .anim-tools-grid {
     grid-template-columns: 1fr;
