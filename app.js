@@ -1294,6 +1294,9 @@ function renderYouTube() {
   
   // Render Minecraft Live countdown widget
   safeRender(() => renderMinecraftLiveCountdown(), 'renderMinecraftLiveCountdown');
+  
+  // Render Marketplace earnings calculator
+  safeRender(() => renderMarketplaceCalculator(), 'renderMarketplaceCalculator');
 }
 
 // Content Pipeline Kanban Board — NEW FEATURE: Visual production tracker
@@ -1410,6 +1413,59 @@ function renderMinecraftLiveCountdown() {
           <p class="text-sm ${urgencyColor}"><strong>⚠️ URGENT:</strong> Less than 2 weeks — prioritize pre-event content now!</p>
         </div>
       ` : ''}
+    </div>
+  `;
+  
+  container.innerHTML = html;
+}
+
+// Marketplace Earnings Calculator — NEW FEATURE
+function renderMarketplaceCalculator() {
+  const container = document.getElementById('marketplace-calculator');
+  if (!container) return;
+  
+  const marketplace = appData.state?.minecraftMarketplace;
+  if (!marketplace) {
+    container.innerHTML = '<p class="text-gray-500 text-sm">Marketplace data not available</p>';
+    return;
+  }
+  
+  let html = `
+    <div class="bg-dark-800 border border-dark-600 rounded-lg p-4 mb-6">
+      <div class="flex items-center justify-between mb-3">
+        <h3 class="text-lg font-semibold">💰 Marketplace Earnings Calculator</h3>
+        <span class="text-xs px-2 py-1 bg-accent-green/20 text-accent-green rounded">Live Data</span>
+      </div>
+      
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-4">
+        <div class="bg-dark-700 rounded p-3 text-center">
+          <p class="text-2xl font-bold text-accent-green">${marketplace.totalCreatorPayouts}</p>
+          <p class="text-xs text-gray-400">Total Creator Payouts</p>
+        </div>
+        <div class="bg-dark-700 rounded p-3 text-center">
+          <p class="text-2xl font-bold text-accent-blue">${marketplace.recentEarnings}</p>
+          <p class="text-xs text-gray-400">Recent Record</p>
+        </div>
+        <div class="bg-dark-700 rounded p-3 text-center">
+          <p class="text-2xl font-bold text-accent-yellow">${marketplace.creatorRevenueShare}</p>
+          <p class="text-xs text-gray-400">Creator Share</p>
+        </div>
+        <div class="bg-dark-700 rounded p-3 text-center">
+          <p class="text-2xl font-bold text-accent-purple">${marketplace.priceRange}</p>
+          <p class="text-xs text-gray-400">Price Range</p>
+        </div>
+      </div>
+      
+      <div class="bg-dark-700 rounded p-3">
+        <h4 class="text-sm font-semibold mb-2">Top Categories</h4>
+        <div class="flex flex-wrap gap-2">
+          ${marketplace.topCategories.map(cat => `<span class="text-xs px-2 py-1 bg-dark-600 rounded">${cat}</span>`).join('')}
+        </div>
+      </div>
+      
+      <div class="mt-3 p-2 bg-accent-green/10 rounded">
+        <p class="text-sm"><strong>💡 Opportunity:</strong> With BBS mod expertise, you could create marketplace content (skins, worlds) or build a "How Much Minecraft Creators Make" video using this data.</p>
+      </div>
     </div>
   `;
   
