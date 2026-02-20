@@ -1298,6 +1298,9 @@ function renderYouTube() {
   // Render Marketplace earnings calculator
   safeRender(() => renderMarketplaceCalculator(), 'renderMarketplaceCalculator');
   
+  // Render animation tools comparison
+  safeRender(() => renderAnimationToolsComparison(), 'renderAnimationToolsComparison');
+
   // Render NVDA earnings countdown
   safeRender(() => renderNvdaEarningsCountdown(), 'renderNvdaEarningsCountdown');
 }
@@ -1531,6 +1534,60 @@ function renderNvdaEarningsCountdown() {
           <p class="text-sm ${urgencyColor}"><strong>⚠️ URGENT:</strong> Earnings in ${days} days — position before Wednesday!</p>
         </div>
       ` : ''}
+    </div>
+  `;
+  
+  container.innerHTML = html;
+}
+
+// Animation Tools Comparison Widget — NEW FEATURE
+function renderAnimationToolsComparison() {
+  const container = document.getElementById('animation-tools-comparison');
+  if (!container) return;
+  
+  const tools = appData.tools?.tools || [];
+  const animationTools = tools.filter(t => t.category === 'Minecraft Animation');
+  
+  if (animationTools.length === 0) {
+    container.innerHTML = '<p class="text-gray-500 text-sm">Animation tools data not available</p>';
+    return;
+  }
+  
+  let html = `
+    <div class="bg-dark-800 border border-dark-600 rounded-lg p-4 mb-6">
+      <div class="flex items-center justify-between mb-3">
+        <h3 class="text-lg font-semibold">🎬 Minecraft Animation Tools</h3>
+        <span class="text-xs px-2 py-1 bg-accent-purple/20 text-accent-purple rounded">${animationTools.length} tools</span>
+      </div>
+      
+      <div class="space-y-3">
+  `;
+  
+  animationTools.forEach(tool => {
+    const features = tool.features || [];
+    html += `
+      <div class="bg-dark-700 rounded p-3">
+        <div class="flex items-start justify-between mb-2">
+          <div>
+            <h4 class="font-semibold text-sm">${tool.name}</h4>
+            <p class="text-xs text-gray-400">${tool.price || tool.downloads || 'Free'}</p>
+          </div>
+          <a href="${tool.url}" target="_blank" class="text-xs px-2 py-1 bg-accent-blue rounded hover:bg-blue-600">View →</a>
+        </div>
+        <p class="text-xs text-gray-300 mb-2">${tool.description.substring(0, 120)}...</p>
+        <div class="flex flex-wrap gap-1">
+          ${features.slice(0, 3).map(f => `<span class="text-xs px-1.5 py-0.5 bg-dark-600 rounded">${f}</span>`).join('')}
+        </div>
+      </div>
+    `;
+  });
+  
+  html += `
+      </div>
+      
+      <div class="mt-3 p-2 bg-accent-purple/10 rounded">
+        <p class="text-sm"><strong>💡 For Steven:</strong> BBS is best for in-game cinematics. Mine-imator for quick shorts. Blender for highest production value.</p>
+      </div>
     </div>
   `;
   

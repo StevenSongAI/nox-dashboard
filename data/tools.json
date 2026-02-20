@@ -391,6 +391,51 @@
       ],
       "runCommand": "https://aethir.com",
       "auditGrade": 85
+    },
+    {
+      "id": "tool-bbs",
+      "name": "Blockbuster Studio (BBS)",
+      "category": "Minecraft Animation",
+      "description": "Animation studio and content creation tool for Minecraft machinima. In-mod camera paths, keyframe animation, custom models.",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/bbs-mod",
+      "downloads": "120K+",
+      "features": [
+        "In-game camera",
+        "Keyframe animation",
+        "Custom models",
+        "Scene blocking"
+      ],
+      "addedAt": "2026-02-20T18:18:05Z"
+    },
+    {
+      "id": "tool-mineimator",
+      "name": "Mine-imator",
+      "category": "Minecraft Animation",
+      "description": "Standalone Minecraft animation software. Free, beginner-friendly, widely used for Minecraft shorts.",
+      "url": "https://www.mineimator.com/",
+      "price": "Free",
+      "features": [
+        "Standalone app",
+        "Easy learning curve",
+        "Built-in characters",
+        "Quick rendering"
+      ],
+      "addedAt": "2026-02-20T18:18:05Z"
+    },
+    {
+      "id": "tool-blender-mc",
+      "name": "Blender + MC Model Rigs",
+      "category": "Minecraft Animation",
+      "description": "Professional 3D software with Minecraft rigs. Highest quality, steepest learning curve.",
+      "url": "https://www.blender.org/",
+      "price": "Free (open source)",
+      "features": [
+        "Professional quality",
+        "Advanced lighting",
+        "Physics simulation",
+        "Compositing"
+      ],
+      "addedAt": "2026-02-20T18:18:05Z"
     }
   ],
   "categories": [
