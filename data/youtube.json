@@ -2260,6 +2260,18 @@
       "date": "2026-01-02",
       "status": "verified",
       "priority": "high"
+    },
+    {
+      "id": "yt-mc-cinematic-001",
+      "title": "I Built a Minecraft Cinematic Universe",
+      "channel": "Unknown (Apollo Cinematic Universe series)",
+      "url": "https://www.youtube.com/watch?v=I-iqOKKIrik",
+      "publishedAt": "2026-02-05",
+      "estimatedViews": "500K+",
+      "niche": "minecraft_cinematic",
+      "whyOutlier": "Cinematic Minecraft content getting massive traction \u2014 audience craves high-production MC storytelling",
+      "stevenAngle": "Steven has BBS Crowd Spawner mod that can spawn 100 custom NPCs \u2014 perfect for cinematic scenes",
+      "addedAt": "2026-02-20T00:18:11Z"
     }
   ],
   "meta": {
@@ -2615,6 +2627,68 @@
         "yt-research-floor-transform-002"
       ],
       "category": "ai_transformation",
+      "priority": "high"
+    },
+    {
+      "id": "brief-bbs-crowd-cinematic-001",
+      "title": "I Added 100 Custom NPCs to Minecraft (BBS Mod Showcase)",
+      "status": "production-ready",
+      "createdAt": "2026-02-20T00:18:11Z",
+      "insightSource": "Steven built BBS Crowd Spawner v3.0 today (Feb 19). Minecraft cinematic content trending. Direct overlap.",
+      "content": {
+        "hook": "What if Minecraft had actual crowds? Watch me spawn 100 custom 3D models in seconds.",
+        "format": "Tutorial + showcase hybrid (best of both worlds for retention)",
+        "structure": [
+          "0-5s: HOOK \u2014 Show final result first: massive crowd of custom NPCs in epic MC scene",
+          "5-30s: Problem setup \u2014 Minecraft vanilla has no crowds, looks empty, no cinematic potential",
+          "30-90s: Introduce BBS mod \u2014 what it is, what it can do",
+          "90-180s: LIVE DEMO \u2014 run /crowd spawn 100 10 <model> and show it work",
+          "180-240s: Texture reveal \u2014 show custom models with actual skins applied",
+          "240-300s: Cinematic shot showcase \u2014 record a crowd scene with Replay Mod or similar",
+          "300-360s: How to get it / CTA"
+        ],
+        "viralMechanics": {
+          "curiosityGap": "100 custom NPCs \u2014 nobody does this in Minecraft",
+          "satisfying": "The spawn command running and filling a scene",
+          "shareable": "Gamers share 'wait you can DO this in Minecraft?!' moments"
+        }
+      },
+      "scriptOutline": {
+        "hook": "COLD OPEN: Show 100 custom gaming PC models spawned in a circle. No music. Just the ambient MC sounds. Text: 'I made Minecraft look like a game studio showroom.' Cut to: /crowd spawn 100 10 gaming_pc running in chat. All 100 appear at once. Crowd goes wild.",
+        "act1": "Minecraft's dirty secret: it's basically empty. No crowds. No life. You build a city and it's a ghost town. Every Minecraft movie/series has the same problem \u2014 it looks like a demo reel with no population. I spent 3 weeks building a mod to fix that.",
+        "act2": "Show the BBS mod. Show /crowd spawn working. Show the debug flow \u2014 texture issues we ran into (honesty = engagement), then the v3.0 fix. This is real development content, not just a showcase.",
+        "act3": "Cinematic demo: Use Replay Mod to shoot a real scene with the crowd. Pan across 50 custom NPCs standing in a town square. This is the payoff moment.",
+        "cta": "Drop the mod link + 'comment what scene you'd spawn a crowd in'"
+      },
+      "seoKeywords": [
+        "minecraft custom npcs mod",
+        "bbs mod minecraft",
+        "minecraft crowd mod",
+        "minecraft cinematic mod",
+        "minecraft filmmaking",
+        "spawn 100 npcs minecraft",
+        "minecraft custom models tutorial",
+        "minecraft machinima mod 2026"
+      ],
+      "thumbnailConcepts": [
+        "Aerial shot of 100 identical custom NPCs in a grid \u2014 massive scale shock",
+        "Split: empty Minecraft village LEFT vs same village packed with NPCs RIGHT",
+        "First-person view looking at a crowd of custom 3D models, jaw-drop emoji overlay"
+      ],
+      "productionNotes": {
+        "requiredMods": [
+          "BBS mod 1.7.7",
+          "BBS Crowd Spawner v3.0 (Steven's own mod)",
+          "Replay Mod (for cinematic shots)"
+        ],
+        "estimatedLength": "5-7 min (optimal for YouTube algo + tutorial depth)",
+        "uniqueAngle": "Steven BUILT this mod \u2014 he's not reviewing someone else's tool, he's the creator. That's a huge authenticity advantage.",
+        "crossover": "This video promotes the mod AND demonstrates Minecraft filmmaking \u2014 two audiences at once"
+      },
+      "outlierRef": [
+        "yt-mc-cinematic-001"
+      ],
+      "category": "gaming_tutorial",
       "priority": "high"
     }
   ],
