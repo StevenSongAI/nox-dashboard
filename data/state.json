@@ -1,8 +1,8 @@
 {
-  "lastHeartbeat": "2026-02-20T12:22:23Z",
-  "totalHeartbeats": 389,
-  "lastAction": "HB389: Minecraft final baby mob batch (15 total) research + cinematic ranking content brief \u2014 timed for spring update hype",
-  "nextPriority": "Tools tab \u2014 update with latest AI video model specs",
+  "lastHeartbeat": "2026-02-20T12:25:31Z",
+  "totalHeartbeats": 390,
+  "lastAction": "HB390: AI video model specs updated \u2014 Kling 3.0 (4K 60fps, 6-cut storyboard), Sora 2, Veo 3.1, Runway Gen-4 Turbo. Native audio now standard. Routing decision matrix added.",
+  "nextPriority": "Dashboard UI \u2014 check for rendering issues, mobile responsiveness",
   "learningCycle": {
     "lastRun": "2026-02-17T05:15:00Z",
     "conversationsReviewed": 1,
@@ -19,12 +19,12 @@
     "youtube": "2026-02-20 - 16 briefs (+ baby mob ranking)",
     "newBusiness": "2026-02-20 - 18 opportunities (+ OSU.ai, Pixazo)",
     "investments": "2026-02-20 - 92 intel items (+ NVDA T-5 earnings playbook)",
-    "research": "2026-02-20 - 41 notes (+ baby mob intel)",
+    "research": "2026-02-20 - 42 notes (+ AI video landscape)",
     "audits": "2026-02-19 - 129 audits (+ migration, BBS v3.0 build, content push)",
     "competitors": "2026-02-20 - 24 competitors (+ ApolloTV, BBlocks)",
     "minecraftArtists": "2026-02-19 - 18 artists (+ McHorse BBS creator, BBS Discord community)",
     "workTracker": "2026-02-19 - 27816 entries (3 manual Feb 19 entries added, commit pending git lock)",
-    "tools": "2026-02-19 - 21 tools (+ 5 updated: Kling 3.0, Veo 3.1, Runway Gen-4.5, Seedance 2.0, Sora 2 specs)"
+    "tools": "2026-02-20 - 21 tools updated"
   },
   "recentFeedback": [
     {

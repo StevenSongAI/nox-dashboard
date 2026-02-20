@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-20T12:22:23Z",
+  "lastUpdated": "2026-02-20T12:25:31Z",
   "updatedBy": "nox-heartbeat",
   "version": "2026.02.20.25",
   "cacheBust": "20260220T1216",
@@ -60,6 +60,7 @@
     "investments": "2026-02-20T10:21:16Z",
     "newBusiness": "2026-02-20T11:21:44Z",
     "competitors": "2026-02-20T11:50:55Z",
-    "research": "2026-02-20T12:22:23Z"
+    "research": "2026-02-20T12:25:31Z",
+    "tools": "2026-02-20T12:25:31Z"
   }
 }

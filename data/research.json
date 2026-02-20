@@ -652,6 +652,24 @@
       "addedAt": "2026-02-20T12:22:23Z",
       "actionable": true,
       "priority": "high"
+    },
+    {
+      "id": "note-042",
+      "category": "AI Video",
+      "title": "AI Video Landscape Feb 2026: Native Audio Now Table Stakes, 4K Standard",
+      "content": "FRESH: Feb 2026 AI video shift \u2014 first 6 weeks saw more change than all Q3+Q4 2025. KEY: Native audio is now table stakes (4 of 6 major models). Resolution ceiling lifted: Kling 3.0 = native 4K 60fps (not upscaled). Multi-shot generation arrived: Kling 3.0 storyboard does 6 camera cuts in ONE generation with visual consistency. Routing decision matrix: 4K delivery = Kling 3.0 or Veo 3.1 | Max realism = Sora 2 | Fast iteration = Runway Gen-4 | Audio-sync = Kling/Seedance/Veo | Multi-shot edited sequence = Kling 3.0. Question is no longer 'which model is best' \u2014 it's 'which model for this specific shot'.",
+      "source": "Cliprise Medium analysis + TeamDay.ai (Feb 18-19, 2026)",
+      "tags": [
+        "ai-video",
+        "kling-3",
+        "sora-2",
+        "veo-3",
+        "runway-gen4",
+        "production"
+      ],
+      "addedAt": "2026-02-20T12:25:31Z",
+      "actionable": true,
+      "priority": "high"
     }
   ]
 }
