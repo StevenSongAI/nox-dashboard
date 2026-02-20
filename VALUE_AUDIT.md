@@ -1,126 +1,149 @@
-# Value Audit: Dashboard Update Review
+# VALUE AUDIT REPORT
 
-**Audit Date:** 2026-02-20  
-**Commit:** 0db9345 - [nox] HB379: MC Movie 2 Ender Dragon intel + script-ready content brief  
-**Auditor:** Subagent (VALUE AUDITOR)
-
----
-
-## Summary
-
-| Metric | Finding | Grade |
-|--------|---------|-------|
-| Fresh Research | ✅ YES - web_search found MC Movie 2 Ender Dragon villain confirmation, July 2027 release, filming April 2026 | Pass |
-| Research Applied | ✅ YES - Full script-ready content brief with 6-section outline | Pass |
-| Data Quality | ✅ Real researched data, not filler | Pass |
-| Schema Compliance | ✅ Matches youtube.json schema exactly | Pass |
-| Utility to Steven | ✅ HIGHLY relevant - BBS mod + Minecraft cinematic content | Pass |
-| Meta/State Updates | ✅ Both files updated with timestamps | Pass |
+## Audit Date: 2026-02-20
+## Commit: 66cde19
+## Commit Message: "[nox] HB380: Create Mod 6.0.0 research - note-031 added"
 
 ---
 
-## Grade: 88% (Research + Build Paired Successfully)
+## EXECUTIVE SUMMARY
 
-**Verdict:** Dashboard is genuinely more useful. Real data, real insights, research→build paired effectively.
+**GRADE: 20%**
 
-### What Was Delivered
-
-#### 1. New Outlier Entry (`outlier-162`)
-```json
-{
-  "id": "outlier-162",
-  "title": "Minecraft Movie 2: Ender Dragon Confirmed — Content Window Opens",
-  "channel": "TREND ALERT",
-  "published": "2026-02-19",
-  "niche": "Minecraft Movie",
-  "whyOutlier": "Another Minecraft Movie confirmed July 2027...",
-  "contentAngle": "Recreate Ender Dragon fight scenes in Minecraft...",
-  "addedBy": "nox-hb379",
-  "dateAdded": "2026-02-20"
-}
-```
-
-**Assessment:**
-- ✅ Proper ID format following existing convention
-- ✅ Accurate trend intel (Ender Dragon villain, July 2027 release)
-- ✅ Actionable content angle tied to Steven's BBS Crowd Spawner mod
-- ✅ Timeliness noted (filming April 2026 = content window NOW)
-
-#### 2. Full Content Brief (`brief-010`)
-
-**Components Delivered:**
-
-| Section | Quality | Notes |
-|---------|---------|-------|
-| Hook | ✅ Strong | "The Minecraft Movie sequel just confirmed the Ender Dragon as the villain. So I built the final battle..." |
-| Script Outline | ✅ 6-section | Cold open → Context → Build → Fight → Comparison → CTA |
-| Tools List | ✅ Specific | BBS Mod, Crowd Spawner v3.0, Complementary Reimagined shaders, Replay Mod |
-| SEO Keywords | ✅ Relevant | 5 keywords targeting "minecraft movie 2", "ender dragon" search traffic |
-| Timeliness Analysis | ✅ Strategic | "FIRST MOVER — news broke Feb 19, filming April 2026" |
-| Status Tracking | ✅ Proper | "script-ready" status for production pipeline |
-
-#### 3. File Updates
-
-| File | Update | Verified |
-|------|--------|----------|
-| `data/youtube.json` | Added outlier-162 + brief-010 | ✅ Yes |
-| `data/meta.json` | Updated lastUpdated, dataFreshness, totalOutliers | ✅ Yes |
-| `data/state.json` | Updated lastAction, dataFreshness, workThatLanded | ✅ Yes |
+Research was conducted and properly documented, but **nothing was built from it**.
 
 ---
 
-## Strengths
+## DETAILED ASSESSMENT
 
-1. **Timely Intel:** News broke Feb 19, captured in dashboard Feb 20 (24hr turnaround)
-2. **Strategic Positioning:** Directly connects to Steven's BBS Crowd Spawner mod capabilities
-3. **Production-Ready:** Script outline is detailed enough to start filming immediately
-4. **First-Mover Advantage:** Explicitly notes the content window opens now through July 2027
-5. **SEO-Optimized:** Keywords target high-search terms around the movie announcement
+### 1. Fresh Research Done? ✅ YES
+
+**Research Quality: GOOD**
+
+The research on Create Mod 6.0.0 appears genuine and well-sourced:
+- Specific release date: January 2, 2026
+- Version numbers: 0.5.1i → 6.0.0 (major version bump)
+- Platform specifics: NeoForge on Minecraft 1.21.1
+- Download stats: CurseForge confirms 6.0.8 as latest stable
+- Market context: 10M+ monthly search volume per PCGamesN rankings
+
+**Source cited:** CreateMod.com + CurseForge (Feb 20, 2026)
+
+**Strategic angle identified:** Create 6.0 + BBS Crowd Spawner crossover for factory worker NPC videos. This is relevant to Steven's interests (Minecraft content, BBS mod ecosystem).
+
+### 2. Research Applied to Build Something Useful? ❌ NO
+
+**Critical Gap:** The research ended at the note level. No content brief, no actionable task, no production artifact was created.
+
+**What was added:**
+- `note-031` in `data/research.json` (18 lines)
+
+**What was NOT added:**
+- No content brief for "Create 6.0 Factory Worker NPC" video
+- No linked brief in `data/briefs/`
+- No actionable task in `data/state.json` "activeTasks"
+- No outlier analysis for Create Mod content
+
+Compare to HB379 (previous commit): "MC Movie 2 Ender Dragon intel + **script-ready content brief**" — that commit had research + build.
+
+### 3. Real Data vs Filler? ✅ REAL
+
+The data appears legitimate:
+- Specific dates, version numbers, and technical details
+- Market data from PCGamesN (cited)
+- Logical strategic angle (Create + BBS crossover)
+- No generic/AI-generated filler language
+
+### 4. Schema Compliance? ✅ COMPLIANT
+
+`note-031` follows the research.json schema:
+- ✅ id: "note-031"
+- ✅ category: "Minecraft Mods"
+- ✅ title: Present and descriptive
+- ✅ content: Detailed with context
+- ✅ source: Cited
+- ✅ tags: Array of relevant tags
+- ✅ addedAt: ISO timestamp
+- ✅ actionable: true
+- ✅ priority: "high"
+
+### 5. Dashboard Value? ⚠️ MARGINAL
+
+**Positive:**
+- Adds useful intelligence to research database
+- 31 total notes now in research.json
+- Strategic angle is actionable (just not actioned)
+
+**Negative:**
+- No immediate utility for Steven opening the dashboard
+- Research without build = potential energy, not kinetic
+- Steven must manually read and act on the insight
+
+### 6. Meta/State Updates? ✅ UPDATED CORRECTLY
+
+**data/meta.json:**
+- version: "2026.02.20.20" ✅
+- lastUpdated: "2026-02-20T09:46:00Z" ✅
+- cacheBust: "20260220T0946" ✅
+- researchUpdated: "2026-02-20T09:46:00.000000" ✅
+- totalNotes: 31 ✅
+- lastPushDescription: Accurate ✅
+
+**data/state.json:**
+- lastHeartbeat: Updated ✅
+- totalHeartbeats: 380 ✅
+- lastAction: Updated ✅
+- dataFreshness.research: Updated ✅
 
 ---
 
-## Minor Deductions (-12%)
+## GRADING JUSTIFICATION
 
-| Issue | Impact | Suggestion |
-|-------|--------|------------|
-| No view count on outlier (set to 0) | -5% | Could estimate search volume or leave as trending indicator |
-| Brief lacks estimated production time/cost | -4% | Other briefs include this for planning |
-| No thumbnail concept sketches | -3% | Other recent briefs include 3 thumbnail ideas |
+Per the **CRITICAL GRADING RULE**:
 
----
+> If research was done but nothing was built from it: **20%**
+> If something was built but no fresh research informed it: **20%**
+> Research + build together: **80-100%**
 
-## Comparison to Prior Work
+This commit falls squarely in the first category:
+- ✅ Fresh research conducted
+- ❌ Nothing built from that research
+- ❌ No content brief, no actionable artifact, no production output
 
-| Metric | HB379 (This) | HB378 (Prior) | HB377 |
-|--------|--------------|---------------|-------|
-| Research Source | web_search | web_search | web_search |
-| Build Output | Full script brief | Research note | Research note |
-| Schema Compliance | ✅ Perfect | ✅ Perfect | ✅ Perfect |
-| Actionable for Steven | ✅ HIGH | Medium | Medium |
-| Timeliness | ✅ Fresh (24hr) | Fresh | Fresh |
+The research note itself has value, but according to the strict grading criteria, **research without application scores 20%**.
 
 ---
 
-## Conclusion
+## RECOMMENDATIONS
 
-**This is exactly what a high-value dashboard update should look like:**
+**Immediate:**
+Convert `note-031` into a proper content brief:
+- Title: "Create Mod 6.0.0 Factory Worker NPC Video"
+- Script outline with Create + BBS Crowd Spawner integration
+- Thumbnail concepts
+- Estimated production time/cost
+- Link brief ID to note-031
 
-1. Fresh web research identifies a trend (Minecraft Movie 2 announcement)
-2. Research is immediately synthesized into actionable content strategy
-3. Script-ready brief enables Steven to start production today
-4. Direct tie-in to his existing tools (BBS Crowd Spawner v3.0)
-5. Clear timeliness guidance (FIRST MOVER advantage)
-6. All files properly updated with timestamps and metadata
-
-The dashboard is **more valuable** after this update. Steven can open the dashboard, see the brief-010 entry, and immediately understand:
-- What opportunity exists (MC Movie 2 Ender Dragon hype)
-- Why it matters (first-mover window NOW through April 2026 filming)
-- How to execute it (6-section script outline)
-- What tools to use (BBS mod + shaders + Replay Mod)
-- How to title it for search (SEO keywords)
-
-**Grade: 88%** — Dashboard genuinely more useful. Research + build paired successfully.
+**Process:**
+- Future research notes should include a "linkedBriefs" field (see note-025 for example)
+- If research is actionable=true and priority=high, a brief should be auto-generated
 
 ---
 
-*Audit completed: 2026-02-20*
+## AUDIT METADATA
+
+| Field | Value |
+|-------|-------|
+| Commit | 66cde19 |
+| Files Changed | 4 (VALUE_AUDIT.md, meta.json, research.json, state.json) |
+| Lines Added | 120 |
+| Lines Removed | 92 |
+| Research Notes Added | 1 (note-031) |
+| Content Briefs Added | 0 |
+| Final Grade | **20%** |
+| Grade Category | Research without application |
+
+---
+
+*Audit completed by VALUE_AUDITOR subagent*
+*2026-02-20*

@@ -3069,6 +3069,46 @@
       "timeliness": "FIRST MOVER \u2014 news broke Feb 19, filming April 2026. Content window is NOW through July 2027.",
       "addedBy": "nox-hb379",
       "dateAdded": "2026-02-20"
+    },
+    {
+      "id": "brief-011",
+      "title": "Create Mod 6.0 Factory \u2014 100 Animated Workers",
+      "status": "script-ready",
+      "priority": "HIGH",
+      "niche": "Minecraft Cinematic / Mods",
+      "targetLength": "8-10 min",
+      "linkedResearch": "note-031",
+      "hook": "Create Mod just dropped version 6.0 \u2014 the biggest update ever. So I staffed my factory with 100 animated workers using BBS Crowd Spawner.",
+      "scriptOutline": [
+        "COLD OPEN: Cinematic wide shot \u2014 massive Create factory running at full capacity, NPC workers at every machine. Zero dialogue, just machinery sounds + music.",
+        "CONTEXT (45s): Create Mod 6.0.0 dropped Jan 2 \u2014 NeoForge, MC 1.21.1. What changed: new blocks, better contraption logic, 10M+ monthly players. Why this matters now.",
+        "BUILD MONTAGE (3-4 min): Time-lapse constructing the factory floor \u2014 conveyor belts, mechanical arms, crushing wheels. Then: adding BBS Crowd Spawner NPC workers at each station. Each worker assigned a role (smelter, packager, driver).",
+        "FACTORY TOUR (2-3 min): First-person walkthrough with workers in motion. Show each Create machine doing its job with an NPC operating it. Slow-mo shots of gears turning, items moving.",
+        "STRESS TEST (1-2 min): Crank production to max. Do the NPCs keep up? Show chaos + recovery.",
+        "CTA: \"Subscribe \u2014 next video is the FULL automated megafactory with 500 workers.\""
+      ],
+      "tools": [
+        "Create Mod 6.0.0 (NeoForge, MC 1.21.1)",
+        "BBS Crowd Spawner v3.0",
+        "Complementary Reimagined shaders",
+        "Replay Mod for cinematic camera paths"
+      ],
+      "seoKeywords": [
+        "create mod 6.0",
+        "create mod factory",
+        "minecraft factory npc",
+        "create mod cinematic",
+        "minecraft automated factory"
+      ],
+      "timeliness": "Create 6.0 released Jan 2 2026 \u2014 search volume peak window is NOW. Early cinematic content will index well.",
+      "estimatedProductionTime": "2-3 days (world build + NPC placement + filming)",
+      "thumbnailConcepts": [
+        "Factory floor from above \u2014 hundreds of NPCs at machines, all in motion",
+        "Close-up NPC face through steam/smoke \u2014 \"HIRED\" text overlay",
+        "Split: empty factory vs packed factory with workers"
+      ],
+      "addedBy": "nox-hb380-fix",
+      "dateAdded": "2026-02-20"
     }
   ],
   "lastUpdated": "2026-02-19T17:51:00Z"
