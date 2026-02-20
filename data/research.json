@@ -2,6 +2,41 @@
   "lastUpdated": "2026-02-20T09:16:00Z",
   "notes": [
     {
+      "id": "note-053",
+      "category": "Minecraft Visuals",
+      "title": "Minecraft Ray Tracing Shaders 2026 - SEUS PTGI, Continuum RT, Path Tracing",
+      "content": "Heartbeat research discovery (Feb 20, 2026): Minecraft ray tracing shader landscape evolving. KEY FINDINGS: (1) Continuum RT sets new standard using Ray and Path Tracing (Aug 2025), delivering quality unimaginable a few years ago, (2) SEUS PTGI (Sonic Ether's Unbelievable Shaders) remains popular for OptiFine/GLSL, (3) Ray-Traced Reflections enhance realism on water, glass, reflective surfaces per ShadersMods.com, (4) Community favorites include ContinuumRT (Forge only) and SEUS PTGI, (5) Ray tracing available for DirectX capable devices: GeForce RTX and select AMD GPUs per Minecraft.net. CONTENT OPPORTUNITY FOR STEVEN: 'I Tested Every Ray Tracing Shader in Minecraft' comparison video. Show BBS Crowd Spawner NPCs with different shaders side-by-side. 'Ray Tracing vs BBS Cinematic' - which looks better?",
+      "source": "Continuum Graphics + Sonic Ether + ShadersMods.com + Minecraft.net (Feb 20, 2026)",
+      "tags": [
+        "minecraft",
+        "ray-tracing",
+        "shaders",
+        "seus-ptgi",
+        "continuum-rt",
+        "content-opportunity"
+      ],
+      "addedAt": "2026-02-20T18:46:00Z",
+      "actionable": true,
+      "priority": "high"
+    },
+    {
+      "id": "note-052",
+      "category": "Minecraft Content Trends",
+      "title": "Minecraft Mod Showcase Video Formats 2026 - Series & Lists Trending",
+      "content": "Heartbeat research discovery (Feb 20, 2026): Minecraft mod showcase content trends evolving. KEY FINDINGS: (1) Series outperform one-offs - 'Hardcore Day 1 → Day 100' and 'Mods That Break Minecraft: Part 1 → Part 5' formats winning per Packapop (Feb 2026), (2) Monetization opportunities: affiliate mods, shaders, server hosting, editing services, (3) Mod review format shifting from standalone single-mod reviews to curated lists per Reddit r/feedthebeast (Oct 2024), (4) Calm, in-depth 'Surviving with...' playthroughs preferred over high-energy content, (5) Short-form mod reviews gaining traction on platforms like Snapchat. CONTENT OPPORTUNITY FOR STEVEN: Launch '100 Mods with BBS Crowd Spawner' series - test each mod with 100 NPCs. 'Mods That Break Minecraft' episodic format using BBS to create chaos.",
+      "source": "Packapop + Reddit r/feedthebeast + Snapchat (Feb 20, 2026)",
+      "tags": [
+        "minecraft",
+        "mod-showcase",
+        "series-format",
+        "content-trends",
+        "bbs-mod"
+      ],
+      "addedAt": "2026-02-20T18:16:00Z",
+      "actionable": true,
+      "priority": "high"
+    },
+    {
       "id": "note-051",
       "category": "Minecraft Creator Tips",
       "title": "Minecraft Content Creator Success Tips 2026 - Simple Ideas + Strong Visuals",
