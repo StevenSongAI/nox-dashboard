@@ -2,6 +2,24 @@
   "lastUpdated": "2026-02-20T09:16:00Z",
   "notes": [
     {
+      "id": "note-048",
+      "category": "Minecraft Content Trends",
+      "title": "Redstone Sustainability + Identity Representation Trends Feb 2026",
+      "content": "Heartbeat research discovery (Feb 20, 2026): Two major Minecraft content trends emerging. TREND 1 - Redstone Evolution: YouTube strategists report redstone content is shifting toward sustainability, modular design, and cutting-edge automation (Subscribr.ai Feb 2026). Players designing closed-loop operations with resource sustainability in mind per Minecraft Guides Wiki. TREND 2 - Identity Representation: YouTube Culture & Trends reports 'growing number of Minecraft YouTube creators are celebrating their own real-world identities within the game' - diversity and representation becoming content differentiators. CONTENT OPPORTUNITY: 'I Built a Self-Sustaining Redstone City with 1000 NPCs' - combines sustainability trend with BBS Crowd Spawner. Identity angle: Create diverse NPC populations representing different cultures/identities using BBS model variety.",
+      "source": "YouTube Trends + Subscribr.ai + Minecraft Guides Wiki (Feb 20, 2026)",
+      "tags": [
+        "minecraft",
+        "redstone",
+        "sustainability",
+        "identity-representation",
+        "content-trends",
+        "bbs-mod"
+      ],
+      "addedAt": "2026-02-20T14:16:00Z",
+      "actionable": true,
+      "priority": "high"
+    },
+    {
       "id": "note-044",
       "category": "Minecraft News",
       "title": "Minecraft 26.1 Snapshot 8 Released - New Baby Mob Textures and Models",
