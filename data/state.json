@@ -1,8 +1,8 @@
 {
-  "lastHeartbeat": "2026-02-20T11:46:00Z",
-  "totalHeartbeats": 386,
-  "lastAction": "HB386: AI video native audio trend research + Pixazo competitor watch \u2014 2 business opps + 1 script-ready content brief for AI vs cinematic video",
-  "nextPriority": "Competitors tab \u2014 check for new Minecraft cinematic creators entering the space",
+  "lastHeartbeat": "2026-02-20T11:50:55Z",
+  "totalHeartbeats": 387,
+  "lastAction": "HB387: 2 new competitors \u2014 ApolloTV (Minecraft Cinematic Universe, HIGH threat, has own wiki) + BBlocks (3.2M subs, structure builds, MEDIUM threat). Competitive positioning analysis included.",
+  "nextPriority": "Research tab \u2014 check for stale notes, add fresh gaming/mod intel",
   "learningCycle": {
     "lastRun": "2026-02-17T05:15:00Z",
     "conversationsReviewed": 1,
@@ -21,7 +21,7 @@
     "investments": "2026-02-20 - 92 intel items (+ NVDA T-5 earnings playbook)",
     "research": "2026-02-20 - 35 notes (+ AI video native audio trend)",
     "audits": "2026-02-19 - 129 audits (+ migration, BBS v3.0 build, content push)",
-    "competitors": "2026-02-19 - 22 competitors (+ Linus Tech Tips Feb 2026 data)",
+    "competitors": "2026-02-20 - 24 competitors (+ ApolloTV, BBlocks)",
     "minecraftArtists": "2026-02-19 - 18 artists (+ McHorse BBS creator, BBS Discord community)",
     "workTracker": "2026-02-19 - 27816 entries (3 manual Feb 19 entries added, commit pending git lock)",
     "tools": "2026-02-19 - 21 tools (+ 5 updated: Kling 3.0, Veo 3.1, Runway Gen-4.5, Seedance 2.0, Sora 2 specs)"

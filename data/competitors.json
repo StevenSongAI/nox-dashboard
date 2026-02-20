@@ -499,6 +499,37 @@
         "videoCount": 4200
       },
       "latestVideos": []
+    },
+    {
+      "id": "comp-023",
+      "name": "ApolloTV",
+      "platform": "YouTube",
+      "niche": "Minecraft Cinematic Universe / Story-driven",
+      "threat": "HIGH",
+      "description": "Building an 'Apollo Cinematic Universe' \u2014 a multi-video overarching story inside Minecraft with cast, lore wiki (wiki.apollotv.media), and Q&A series. Has horror hotel + cinematic production quality. Serious operation with dedicated wiki infrastructure. Direct competitor in the 'Minecraft as cinema' space.",
+      "strengths": "Lore-driven narrative structure, dedicated cast, own wiki, community engagement (Q&A videos), consistent cinematic quality",
+      "weaknesses": "Story-dependent (each video needs prior context), may not use advanced mods like BBS/Crowd Spawner, slower upload pace for narrative content",
+      "opportunity": "Collab potential \u2014 Steven's BBS mod expertise + ApolloTV's narrative framework. OR differentiate: Steven = standalone cinematic showcases (no lore required), Apollo = serialized story. Different audiences.",
+      "url": "https://www.youtube.com/@ApolloTV",
+      "lastChecked": "2026-02-20",
+      "addedBy": "nox-hb387",
+      "dateAdded": "2026-02-20"
+    },
+    {
+      "id": "comp-024",
+      "name": "BBlocks",
+      "platform": "YouTube",
+      "niche": "Minecraft Structure Builds / Creative",
+      "threat": "MEDIUM",
+      "subscribers": "3.2M",
+      "description": "3.2M subscriber channel focused on unique Minecraft structure creation. High production quality builds that attract large audiences. Not cinematic/mod-focused but occupies adjacent space in 'impressive Minecraft visuals' niche.",
+      "strengths": "Massive subscriber base, consistent upload schedule, visually impressive builds, broad appeal",
+      "weaknesses": "No mod integration (vanilla/light mods), no cinematic camera work, no animated NPC content \u2014 Steven's BBS stack is a clear differentiator",
+      "opportunity": "Study their thumbnails and titles for what hooks 3M+ subscribers. Their audience would love Steven's BBS cinematic content \u2014 potential crossover audience.",
+      "url": "https://www.youtube.com/@BBlocks",
+      "lastChecked": "2026-02-20",
+      "addedBy": "nox-hb387",
+      "dateAdded": "2026-02-20"
     }
   ],
   "outlierPatterns": [
