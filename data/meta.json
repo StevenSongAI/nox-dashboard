@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-02-20T08:25:35Z",
+  "lastUpdated": "2026-02-20T08:48:00Z",
   "updatedBy": "nox-heartbeat",
-  "version": "2026.02.20.17",
-  "cacheBust": "20260220T0816",
-  "dataVersion": "2026.02.20.17",
+  "version": "2026.02.20.18",
+  "cacheBust": "20260220T0848",
+  "dataVersion": "2026.02.20.18",
   "youtubeUpdated": "2026-02-20T07:20:00.000000",
   "investmentsUpdated": "2026-02-20T08:16:00.000000",
-  "researchUpdated": "2026-02-20T07:20:00.000000",
+  "researchUpdated": "2026-02-20T08:48:00.000000",
   "newBusinessUpdated": "2026-02-19T10:28:00Z",
   "toolsUpdated": "2026-02-19T12:05:00Z",
   "workTrackerUpdated": "2026-02-15T00:17:00Z",
@@ -18,7 +18,7 @@
     "lastIntelligenceId": "intel-082"
   },
   "dataFreshness": {
-    "research": "2026-02-20 - 28 notes (+ Minecraft Movie opportunity)",
+    "research": "2026-02-20 - 29 notes (+ AI video native audio shift)",
     "newBusiness": "2026-02-19 - 13 opportunities (+ Mirelo AI sound)",
     "investments": "2026-02-20 - 89 intelligence items (+ APP rally to , missed  entry)",
     "workTracker": "2026-02-15 - pagination + deduplication live",

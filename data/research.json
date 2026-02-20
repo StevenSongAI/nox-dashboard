@@ -1,6 +1,21 @@
 {
-  "lastUpdated": "2026-02-20T07:20:00Z",
+  "lastUpdated": "2026-02-20T08:48:00Z",
   "notes": [
+    {
+      "id": "note-029",
+      "category": "AI Video",
+      "title": "AI Video Generation Landscape Feb 2026: Native Audio is Now Table Stakes",
+      "content": "FRESH RESEARCH - Feb 20, 2026: AI video landscape shifted more in first 6 weeks of 2026 than all Q3+Q4 2025 combined. Three major model launches: Kling 3.0, Sora 2 Pro, Seedance 1.5 Pro arrived within weeks. Veo 3.1 and Runway Gen-4 Turbo matured through iterative updates. KEY SHIFT: Native audio became table stakes. Six months ago most AI video models generated silent output. February 2026: Four of six major models (Kling 3.0, Sora 2, Veo 3.1, Seedance 1.5 Pro) generate synchronized audio natively. Dialogue, ambient sound, sound effects now part of generation process, not post-production. STEVENSONGIRL ANGLE: This eliminates need for separate audio generation workflow. Single prompt can produce complete video with sound. Content brief opportunity: 'AI Generated Music Videos' - generate song visuals + audio in one shot. TOOL COMPARISON: Maximum Realism = Sora 2 (physics engine unmatched), 4K Production = Veo 3.1 (only true 4K native), Professional Workflows = Runway Gen-4 (ecosystem + API maturity), Motion-Heavy Content = Kling 3.0 (movement quality leads).",
+      "source": "Cliprise Medium analysis + TeamDay.ai comparison (Feb 20, 2026)",
+      "tags": [
+        "ai-video",
+        "kling-3",
+        "sora-2",
+        "veo-3",
+        "native-audio",
+        "content-strategy"
+      ]
+    },
     {
       "id": "note-028",
       "category": "YouTube Strategy",
