@@ -181,6 +181,26 @@
   ],
   "intelligence": [
     {
+      "id": "intel-083",
+      "date": "2026-02-20T23:20:00Z",
+      "topic": "NVDA Earnings Preview (Feb 26): $66B Revenue Expected, Blackwell Demand 'Off the Charts', $500B Visibility",
+      "source": "FinancialContent / Yahoo Finance / tastylive / Motley Fool (Feb 20, 2026)",
+      "content": "FRESH NVDA EARNINGS INTELLIGENCE - Feb 20, 2026 (6 DAYS TO EARNINGS): REVENUE PROJECTIONS: Analysts expect $65-66 billion for Q4 FY2026 (67% YoY growth). FinancialContent reports consensus near $66B. EPS estimate $1.51 (70%+ YoY growth). BLACKWELL DEMAND 'OFF THE CHARTS': Jensen Huang described Blackwell platform demand as 'off the charts' - primary pivot point for investors. $500 BILLION VISIBILITY: Yahoo Finance transcript shows $500B in Blackwell and Rubin revenue visibility from start of 2026 through end of CY2026. HYPERSCALER CAPEX SURGE: Microsoft, Amazon, Alphabet, Meta increasing 2026 capital expenditures, majority directed to AI data centers = direct NVDA revenue driver. Q1 FY2027 GUIDANCE CRITICAL: Consensus $70.8B revenue (+61% YoY), $1.65 EPS (+104% YoY). Guidance will be key catalyst. EARNINGS TRACK RECORD: 90.9% beat rate (20 of 22 quarters). However, stock fell 6 of past 11 earnings weeks despite beats (sell-the-news pattern). POSITIONING: Steven has no NVDA position. With 6 days to earnings, Blackwell demand 'insane', and $500B visibility, entry timing favorable. Options: (1) 50% position before earnings if conviction on beat, (2) Wait for post-earnings dip (historically 55% odds), (3) Full position on sub-$175 pullback.",
+      "impact": "bullish",
+      "tickers": ["NVDA"],
+      "riskFactors": [
+        "High expectations limit margin for error",
+        "Sell-the-news pattern despite beats (6 of 11 past earnings weeks fell)",
+        "Q1 guidance miss would trigger significant selloff"
+      ],
+      "confidence": "high",
+      "priceTarget": "$264.20 (consensus)",
+      "currentPrice": "$182-187 range",
+      "impliedUpside": "42-46%",
+      "catalystDate": "2026-02-26",
+      "catalyst": "Q4 FY2026 Earnings - 6 days, $66B revenue expected, Blackwell demand 'off the charts'"
+    },
+    {
       "id": "intel-082",
       "date": "2026-02-20T08:16:00Z",
       "topic": "APP Price Action Update: Stock Rallies to $620 (from $376), 18 Analysts Strong Buy Consensus, $734 PT",

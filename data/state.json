@@ -1,13 +1,13 @@
 {
-  "lastHeartbeat": "2026-02-20T23:20:00Z",
-  "totalHeartbeats": 419,
-  "lastAction": "HB419: Content brief detail modal with native dialog element. Research: Modal accessibility patterns (CSS Script, DEV Community, Micromodal.js). Build: showBriefModal(), closeBriefModal(), full brief data display, backdrop blur, keyboard support.",
+  "lastHeartbeat": "2026-02-20T23:24:00Z",
+  "totalHeartbeats": 420,
+  "lastAction": "HB420: NVDA earnings preview intelligence update. Research: NVDA earnings preview (FinancialContent, Yahoo Finance, tastylive). Build: Added intel-083 with $66B revenue expectations, Blackwell demand 'off the charts', $500B visibility through CY2026.",
   "nextPriority": "Hook Steven up with the Animator to test BBS Crowd Spawner v3.4 texture selection",
   "dataFreshness": {
     "youtube": "2026-02-20 - 165 outliers, 19 briefs, kanban with drag-and-drop + persistence + export + detail modal",
-    "investments": "2026-02-20 - 89 intel items, NVDA earnings countdown",
+    "investments": "2026-02-20 - 90 intelligence items, NVDA earnings 6 days away, Blackwell demand 'off the charts'",
     "newBusiness": "2026-02-20 - Marketplace revenue widget + 19 opps",
-    "research": "2026-02-20 - 58 notes + modal dialog patterns",
+    "research": "2026-02-20 - 59 notes + NVDA earnings preview",
     "competitors": "2026-02-20 - 22 tracked",
     "tools": "2026-02-20 - Animation Tools + Marketplace Revenue + Content Briefs Kanban widgets"
   },
@@ -43,7 +43,7 @@
   "nvdaEarningsCountdown": {
     "earningsDate": "2026-02-26",
     "daysUntil": 6,
-    "consensusEPS": "$1.53 (+77% YoY)",
+    "consensusEPS": "$1.51 (+77% YoY)",
     "consensusRevenue": "$65.58B (+67% YoY)",
     "analystPriceTarget": "$257-264",
     "forwardPE": "40.7",
@@ -53,6 +53,8 @@
       "Blackwell revenue ramp",
       "China datacenter commentary"
     ],
-    "lastUpdated": "2026-02-20T17:20:18Z"
+    "lastUpdated": "2026-02-20T23:24:18Z",
+    "blackwellVisibility": "$500B through CY2026",
+    "blackwellDemand": "Off the charts (Jensen Huang)"
   }
 }
