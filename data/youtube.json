@@ -1,6 +1,38 @@
 {
   "outlierVideos": [
     {
+      "id": "yt-viewstats-20260220-001",
+      "title": "Deepwoken | How to escape layer 2 EASILY with little risk",
+      "channel": "irobo_games7375",
+      "views": 85000,
+      "publishedAt": "2026-02-19T22:04:01Z",
+      "addedAt": "2026-02-20T07:00:00Z",
+      "outlierScore": 128.0,
+      "niche": "🎮 Gaming/Simulation",
+      "whyOutlier": "128x outlier multiplier. Deepwoken (Roblox soulslike) guide content with high utility. Gaming tutorials on emerging games show strong viral potential.",
+      "contentAngle": "BBS Crowd Spawner: Create 'NPCs play Deepwoken' - AI-controlled characters attempting complex game challenges",
+      "viralMechanics": "Tutorial + game mastery combo. 'EASY' promise in difficult game attracts frustrated players. Risk/reward gameplay creates natural tension.",
+      "url": "https://www.youtube.com/results?search_query=Deepwoken+How+to+escape+layer+2+EASILY",
+      "researchStatus": "pending",
+      "source": "viewstats_cron"
+    },
+    {
+      "id": "yt-viewstats-20260220-002",
+      "title": "Neil the Seal Gets Chased Off the Road || ViralHog",
+      "channel": "viralhog",
+      "views": 1190000,
+      "publishedAt": "2026-02-19T22:04:23Z",
+      "addedAt": "2026-02-20T07:00:00Z",
+      "outlierScore": 151.0,
+      "niche": "🦭 Creature/Animal",
+      "whyOutlier": "151x outlier multiplier. Viral seal content from Tasmania. Animal + unexpected location (road) + human interaction = viral formula.",
+      "contentAngle": "AI Creature evolution series: 'Animals that shouldn't exist' - AI generates hybrid creatures in real-world scenarios",
+      "viralMechanics": "Real animal + absurd scenario. Personification of animals drives shares. Local news hook (Tasmania) adds specificity.",
+      "url": "https://www.youtube.com/results?search_query=Neil+the+Seal+Gets+Chased+Off+the+Road+ViralHog",
+      "researchStatus": "pending",
+      "source": "viewstats_cron"
+    },
+    {
       "id": "yt-research-100days-trend-002",
       "title": "I Survived 100 Days STRANDED on an ISLAND in Minecraft Hardcore",
       "url": "https://www.youtube.com/watch?v=hqfEgHFznoA",
