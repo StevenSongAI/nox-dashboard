@@ -2,6 +2,24 @@
   "lastUpdated": "2026-02-20T09:16:00Z",
   "notes": [
     {
+      "id": "note-049",
+      "category": "Minecraft Building Trends",
+      "title": "Creative Building Trends Feb 2026 - Minimalism, Stained Glass, Unusual Builds",
+      "content": "Heartbeat research discovery (Feb 20, 2026): Fresh Minecraft building trends emerging for 2026. KEY FINDINGS: (1) Minimalist structures with clean lines and neutral palettes trending - evoking tranquility (Oreate AI Blog Jan 2026), (2) Stained-glass windows becoming popular for houses, castles, city builds - creative designs on small areas like narrow church windows, (3) Unusual/creative builds gaining traction: working trains, mechs, T-Rex fossils constructed entirely from blocks (Rock Paper Shotgun Feb 2026), (4) Hobbit hole-inspired builds popular for cozy, subtle bases that blend into cliffs, (5) Necromancer's crypt builds with bone blocks and dark decorations trending. CONTENT OPPORTUNITY FOR STEVEN: 'I Built a Minimalist City with 1000 NPCs' - combines minimalist trend with BBS Crowd Spawner. Stained-glass cathedral with BBS NPC crowds for cinematic shots. Unusual builds showcase: Working train station with NPC passengers.",
+      "source": "PCGamesN + Rock Paper Shotgun + Oreate AI Blog + Plarium (Feb 20, 2026)",
+      "tags": [
+        "minecraft",
+        "building-trends",
+        "minimalism",
+        "stained-glass",
+        "unusual-builds",
+        "content-opportunity"
+      ],
+      "addedAt": "2026-02-20T15:46:00Z",
+      "actionable": true,
+      "priority": "high"
+    },
+    {
       "id": "note-048",
       "category": "Minecraft Content Trends",
       "title": "Redstone Sustainability + Identity Representation Trends Feb 2026",
