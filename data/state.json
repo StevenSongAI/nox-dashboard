@@ -1,24 +1,24 @@
 {
-  "lastHeartbeat": "2026-02-21T15:46:00Z",
-  "totalHeartbeats": 470,
-  "lastAction": "HB470: Minecraft Architecture Style Guide. Research: Medieval architecture techniques, gabled roofs, AI palette generators. Build: 6 styles, 8 palettes, building tips.",
+  "lastHeartbeat": "2026-02-21T15:59:00Z",
+  "totalHeartbeats": 471,
+  "lastAction": "HB471: Minecraft 2026 Roadmap widget. Research: 26.1 First Drop (March), 26.2 Biomes & Botany (Spring), Minecraft Live 2026 (March), Vibrant Visuals (2026). Build: Timeline with confirmed/rumored updates, feature tracker, content prep checklist.",
   "currentPriorities": {
-    "youtube": "Minecraft building content — architecture guide live",
-    "business": "Minecraft creator tools expansion — architecture guide added",
+    "youtube": "Minecraft 2026 content roadmap — roadmap widget live",
+    "business": "Creator tools expansion — 61 tools in dashboard",
     "investments": "NVDA earnings Feb 26 — countdown widget live"
   },
   "dataFreshness": {
-    "youtube": "2026-02-21 — 177 outliers, 20 briefs, full tool suite including architecture guide",
+    "youtube": "2026-02-21 — 177 outliers, 20 briefs, 61 tools including 2026 Roadmap",
     "newBusiness": "2026-02-20 — 8 opportunities",
     "investments": "2026-02-21 — NVDA earnings intelligence",
-    "research": "2026-02-21 — 30 notes (added architecture research)",
-    "audits": "2026-02-21 — 38 audits logged",
-    "tools": "2026-02-21 — 60 tools including Architecture Guide"
+    "research": "2026-02-21 — 31 notes (added 2026 roadmap research)",
+    "audits": "2026-02-21 — 39 audits logged",
+    "tools": "2026-02-21 — 61 tools including Minecraft 2026 Roadmap"
   },
   "recentFeedback": [
     {"date": "2026-02-07", "feedback": "Steven wants browser-based tools only, not local apps"}
   ],
-  "workThatLanded": ["Content Pipeline concept", "X Intelligence data", "Thumbnail Preview Tool", "Series Planner", "NVDA Earnings Countdown", "Minecraft 26.1 Planner", "Shorts-Long Mixer", "BBS Cinematic Planner", "Marketplace Creator Benchmark", "Minecraft Live 2026 Countdown", "AI Video Comparison Tool", "YouTube Retention Analyzer", "Minecraft Creator Tools Directory", "Minecraft Movie Content Ideas", "YouTube Engagement Optimizer", "AI Coding Assistant Comparison", "BBS Mod Content Planner", "Speedrun Strategy Tracker", "Local LLM Comparison", "Minecraft Content Ideas Generator", "Mod Loader Comparison", "AI Video Editor Comparison", "Content Workflow Automation", "Minecraft Architecture Guide"],
+  "workThatLanded": ["Content Pipeline concept", "X Intelligence data", "Thumbnail Preview Tool", "Series Planner", "NVDA Earnings Countdown", "Minecraft 26.1 Planner", "Shorts-Long Mixer", "BBS Cinematic Planner", "Marketplace Creator Benchmark", "Minecraft Live 2026 Countdown", "AI Video Comparison Tool", "YouTube Retention Analyzer", "Minecraft Creator Tools Directory", "Minecraft Movie Content Ideas", "YouTube Engagement Optimizer", "AI Coding Assistant Comparison", "BBS Mod Content Planner", "Speedrun Strategy Tracker", "Local LLM Comparison", "Minecraft Content Ideas Generator", "Mod Loader Comparison", "AI Video Editor Comparison", "Content Workflow Automation", "Minecraft Architecture Guide", "Minecraft 2026 Roadmap"],
   "workThatFlopped": ["Local-only dashboard app", "Scattered markdown reports"],
   "lessonsLearned": [
     "All tools must be browser-accessible — Steven uses a different computer",
@@ -45,7 +45,8 @@
     "Mod loader comparisons help players choose the right platform for their modded experience",
     "AI video editor comparisons help creators choose the right editing software for their workflow",
     "Workflow automation tools help creators scale production without losing authenticity",
-    "Architecture guides help builders improve their skills with proper techniques and palettes"
+    "Architecture guides help builders improve their skills with proper techniques and palettes",
+    "2026 roadmap widgets help creators plan content around upcoming Minecraft updates"
   ],
   "nextPriority": "Continue expanding Minecraft content creator tool suite"
 }

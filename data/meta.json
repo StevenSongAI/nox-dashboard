@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-02-21T15:50:00Z",
+  "lastUpdated": "2026-02-21T15:59:00Z",
   "updatedBy": "nox-heartbeat",
-  "version": "2026.02.21.76",
-  "cacheBust": "202602211550",
-  "dataVersion": "2026.02.21.76",
+  "version": "2026.02.21.77",
+  "cacheBust": "202602211559",
+  "dataVersion": "2026.02.21.77",
   "youtubeUpdated": "2026-02-21T14:16:00Z",
   "investmentsUpdated": "2026-02-21T09:26:00.000000",
-  "researchUpdated": "2026-02-21T15:50:00.000000",
+  "researchUpdated": "2026-02-21T15:59:00.000000",
   "newBusinessUpdated": "2026-02-20T21:25:00Z",
-  "toolsUpdated": "2026-02-21T15:50:00Z",
+  "toolsUpdated": "2026-02-21T15:59:00Z",
   "workTrackerUpdated": "2026-02-15T00:17:00Z",
   "minecraftArtistsUpdated": "2026-02-18T14:22:00Z",
   "investments": {
@@ -18,25 +18,25 @@
     "lastIntelligenceId": "nvda-earnings-hb452"
   },
   "dataFreshness": {
-    "research": "2026-02-21 - Minecraft architecture building styles and techniques",
+    "research": "2026-02-21 - Minecraft 2026 roadmap (26.1, 26.2 Biomes & Botany, Live 2026)",
     "newBusiness": "2026-02-20 - Marketplace revenue widget live",
     "investments": "2026-02-21 - NVDA earnings countdown widget live (Feb 26)",
     "workTracker": "2026-02-15 - pagination + deduplication live",
     "minecraftArtists": "2026-02-18 - 16 artists",
-    "youtube": "2026-02-21 - 177 outliers, 20 briefs, 58 tools full suite",
-    "tools": "2026-02-21 - 58 tools including Minecraft Architecture Guide"
+    "youtube": "2026-02-21 - 177 outliers, 20 briefs, 61 tools full suite",
+    "tools": "2026-02-21 - 61 tools including Minecraft 2026 Roadmap"
   },
-  "research": { "lastUpdated": "2026-02-21T15:50:00Z" },
-  "totalNotes": 87,
-  "lastDataPush": "2026-02-21T15:50:00Z",
+  "research": { "lastUpdated": "2026-02-21T15:59:00Z" },
+  "totalNotes": 88,
+  "lastDataPush": "2026-02-21T15:59:00Z",
   "lastPushBy": "nox-heartbeat",
-  "lastPushDescription": "Minecraft Architecture Guide widget. Research: Building styles and techniques. Build: Architecture guide with block palettes and inspiration.",
+  "lastPushDescription": "Minecraft 2026 Roadmap widget. Research: 26.1 First Drop, 26.2 Biomes & Botany, Minecraft Live 2026, Vibrant Visuals. Build: Timeline, feature tracker, content prep checklist.",
   "newBusiness": { "lastUpdated": "2026-02-20T21:25:00Z" },
-  "tools": { "lastUpdated": "2026-02-21T15:50:00Z", "totalTools": 58 },
+  "tools": { "lastUpdated": "2026-02-21T15:59:00Z", "totalTools": 61 },
   "youtube": { "lastUpdated": "2026-02-21T14:16:00Z" },
   "competitorsUpdated": "2026-02-20T11:50:55Z",
   "competitors": { "lastUpdated": "2026-02-20T11:50:55Z", "totalCompetitors": 22 },
-  "audits": { "lastUpdated": "2026-02-21T15:50:00Z" },
+  "audits": { "lastUpdated": "2026-02-21T15:59:00Z" },
   "minecraftArtists": { "lastUpdated": "2026-02-20T01:47:50Z" },
   "totalOutliers": 177,
   "sections": {
@@ -44,7 +44,7 @@
     "investments": "2026-02-21T09:26:00Z",
     "newBusiness": "2026-02-20T21:25:00Z",
     "competitors": "2026-02-20T11:50:55Z",
-    "research": "2026-02-21T15:50:00Z",
-    "tools": "2026-02-21T15:50:00Z"
+    "research": "2026-02-21T15:59:00Z",
+    "tools": "2026-02-21T15:59:00Z"
   }
 }

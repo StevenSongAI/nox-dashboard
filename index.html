@@ -558,6 +558,7 @@
         <button onclick="showToolsSection('content-workflow')" id="tools-btn-content-workflow" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">🔄 Content Workflow</button>
         <button onclick="showToolsSection('redstone-planner')" id="tools-btn-redstone-planner" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">⚡ Redstone</button>
         <button onclick="showToolsSection('architecture-guide')" id="tools-btn-architecture-guide" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">🏛️ Architecture</button>
+        <button onclick="showToolsSection('mc-2026-roadmap')" id="tools-btn-mc-2026-roadmap" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">🗺️ MC 2026 Roadmap</button>
       </div>
 
       <!-- Tool Registry Section -->
@@ -1022,6 +1023,21 @@
         <div id="architecture-guide-container">
           <div class="text-center py-8 text-gray-500">
             <p>Loading architecture guide...</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Minecraft 2026 Roadmap Section -->
+      <div id="tools-section-mc-2026-roadmap" class="tools-section hidden">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4 gap-3">
+          <h2 class="text-xl font-semibold">🗺️ Minecraft 2026 Roadmap</h2>
+          <div class="flex gap-2">
+            <button onclick="loadMC2026Roadmap()" class="px-3 py-1 bg-accent-blue rounded text-sm hover:bg-blue-600">🔄 Refresh</button>
+          </div>
+        </div>
+        <div id="mc-2026-roadmap-container">
+          <div class="text-center py-8 text-gray-500">
+            <p>Loading 2026 roadmap...</p>
           </div>
         </div>
       </div>
@@ -1509,6 +1525,7 @@
   <script src="widgets/ai-video-editor-comparison.js?v=202602211011"></script>
   <script src="widgets/redstone-project-planner.js?v=202602211046"></script>
   <script src="widgets/minecraft-architecture-guide.js?v=202602211046"></script>
+  <script src="widgets/minecraft-2026-roadmap.js?v=202602211059"></script>
   <script src="app.js?v=202602201712"></script>
 
   <!-- Shorts Calculator Loader -->
@@ -1686,6 +1703,15 @@
       if (container && window.MinecraftArchitectureGuide) {
         window.archGuide = new MinecraftArchitectureGuide();
         window.archGuide.render('architecture-guide-container');
+      }
+    }
+
+    // Minecraft 2026 Roadmap loader
+    function loadMC2026Roadmap() {
+      const container = document.getElementById('mc-2026-roadmap-container');
+      if (container && window.Minecraft2026Roadmap) {
+        window.mc2026Roadmap = new Minecraft2026Roadmap();
+        window.mc2026Roadmap.render('mc-2026-roadmap-container');
       }
     }
 
