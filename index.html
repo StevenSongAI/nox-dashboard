@@ -32,7 +32,7 @@
 <body class="min-h-screen">
   <!-- Skip link for accessibility -->
   <a href="#main-content" class="skip-link">Skip to main content</a>
-  
+
   <!-- Header -->
   <header class="sticky top-0 z-40 bg-dark-900 border-b border-dark-700" role="banner">
     <div class="max-w-7xl mx-auto px-4 py-3">
@@ -41,7 +41,7 @@
         <div class="flex items-center gap-3">
           <!-- D5 FIX: Global Search Input -->
           <div class="relative hidden md:block">
-            <input type="text" id="global-search" placeholder="🔍 Search everything..." 
+            <input type="text" id="global-search" placeholder="🔍 Search everything..."
                    class="px-3 py-1.5 bg-dark-700 rounded-lg border border-dark-600 text-sm w-48 lg:w-64 focus:border-accent-blue focus:outline-none focus:ring-2 focus:ring-accent-blue/50 transition-all"
                    aria-label="Search all dashboard content"
                    role="searchbox"
@@ -76,13 +76,13 @@
     <div id="tab-dashboard" class="tab-content" role="tabpanel" aria-labelledby="tab-btn-dashboard">
       <!-- D5 FIX: Mobile Global Search -->
       <div class="md:hidden mb-4">
-        <input type="text" id="global-search-mobile" placeholder="🔍 Search everything..." 
+        <input type="text" id="global-search-mobile" placeholder="🔍 Search everything..."
                class="w-full px-3 py-2 bg-dark-700 rounded-lg border border-dark-600 text-sm focus:border-accent-blue focus:outline-none focus:ring-2 focus:ring-accent-blue/50"
                aria-label="Search all dashboard content"
                role="searchbox"
                autocomplete="off">
       </div>
-      
+
       <!-- Global Search Results Container -->
       <div id="global-search-results" class="hidden mb-6">
         <div class="flex items-center justify-between mb-3">
@@ -154,7 +154,7 @@
           </div>
         </div>
       </div>
-      
+
       <!-- Morning Brief -->
       <div class="card rounded-lg p-4 mb-4">
         <div class="flex justify-between items-center mb-3">
@@ -206,7 +206,7 @@
             <button onclick="runOutlierScan()" id="scan-viewstats-btn" class="px-3 py-1 bg-accent-blue rounded text-sm hover:bg-blue-600" title="Manual research guide for viewstats.com" aria-label="Open Viewstats guide">📖 Viewstats Guide</button>
           </div>
         </div>
-        
+
         <!-- Niche Filter Buttons -->
         <div class="flex flex-wrap gap-2 mb-4">
           <button onclick="filterByNiche('all')" id="niche-btn-all" class="niche-filter-btn px-3 py-1 bg-accent-blue rounded text-sm" aria-label="Show all niches">All Niches</button>
@@ -215,7 +215,7 @@
           <button onclick="filterByNiche('⚡ Productivity')" id="niche-btn-productivity" class="niche-filter-btn px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm" aria-label="Filter by Productivity niche">⚡ Productivity</button>
           <button onclick="filterByNiche('🎬 Production')" id="niche-btn-production" class="niche-filter-btn px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm" aria-label="Filter by Production niche">🎬 Production</button>
         </div>
-        
+
         <!-- Today's Top 5 Daily Outliers -->
         <div id="top5-daily-outliers" class="mb-6"></div>
 
@@ -228,7 +228,7 @@
             <div><span class="text-gray-400">Auto-Scan:</span> <span id="next-scan" class="text-gray-500">Not configured</span></div>
           </div>
         </div>
-        
+
         <!-- Animation Tools Comparison -->
         <div id="animation-tools-comparison" class="mb-6">
           <!-- Animation tools rendered by app.js -->
@@ -253,17 +253,22 @@
         <div id="content-pipeline-kanban" class="mb-6">
           <!-- Kanban board rendered by app.js -->
         </div>
-        
+
         <!-- Performance Optimizer Widget -->
         <div id="performance-optimizer" class="mb-6">
           <!-- Performance optimizer rendered by app.js -->
         </div>
-        
+
         <!-- Modpack Comparator Widget -->
         <div id="modpack-comparator" class="mb-6">
           <!-- Modpack comparator rendered by app.js -->
         </div>
-        
+
+        <!-- Speedrun Category Explorer Widget -->
+        <div id="speedrun-explorer" class="mb-6">
+          <!-- Speedrun explorer rendered by app.js -->
+        </div>
+
         <div id="youtube-outliers" class="space-y-3">
           <div class="skeleton-loader">
             <div class="skeleton-card"></div>
@@ -279,7 +284,7 @@
           <h2 class="text-xl font-semibold">👁️ Competitor Tracker</h2>
           <button onclick="showAddCompetitorModal()" class="px-3 py-1 bg-accent-blue rounded text-sm hover:bg-blue-600">+ Add Channel</button>
         </div>
-        
+
         <div class="card rounded-lg p-4 mb-4">
           <h3 class="font-semibold mb-3">📺 Tracked Channels</h3>
           <div id="competitor-list" class="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -287,7 +292,7 @@
             <p class="text-gray-500 text-sm">No competitors tracked yet. Click "+ Add Channel" to start tracking.</p>
           </div>
         </div>
-        
+
         <div class="card rounded-lg p-4">
           <h3 class="font-semibold mb-3">🔥 Latest Uploads</h3>
           <div id="competitor-uploads" class="space-y-2">
@@ -358,10 +363,10 @@
         <div class="card rounded-lg p-3 text-center"><div class="text-2xl font-bold" id="pipe-passed">-</div><div class="text-xs text-gray-400">Passed</div></div>
         <div class="card rounded-lg p-3 text-center"><div class="text-2xl font-bold" id="pipe-won">-</div><div class="text-xs text-gray-400">Won</div></div>
       </div>
-      
+
       <!-- Minecraft Marketplace Revenue Widget -->
       <div id="marketplace-revenue-widget" class="mb-6"></div>
-      
+
       <div id="business-opportunities" class="space-y-3">
         <div class="skeleton-loader">
           <div class="skeleton-card"></div>
@@ -410,7 +415,7 @@
           </div>
         </div>
       </div>
-      
+
       <!-- Portfolio Allocation Chart -->
       <div class="card rounded-lg p-4 mb-4">
         <div class="flex justify-between items-center mb-3">
@@ -464,17 +469,17 @@
             <button onclick="loadStoryboardPreset('tutorial')" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">📚 Tutorial</button>
           </div>
         </div>
-        
+
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
           <!-- Configuration Panel -->
           <div class="card rounded-lg p-4">
             <h3 class="text-lg font-semibold mb-4 text-accent-blue">⚙️ Configuration</h3>
-            
+
             <div class="form-group mb-4">
               <label class="block text-sm text-gray-400 mb-1">Video Title</label>
               <input type="text" id="sb-title" class="w-full px-3 py-2 bg-dark-700 rounded border border-dark-600 text-sm" placeholder="e.g., I Got a Pet T-Rex">
             </div>
-            
+
             <div class="form-group mb-4">
               <label class="block text-sm text-gray-400 mb-1">Video Type</label>
               <select id="sb-type" class="w-full px-3 py-2 bg-dark-700 rounded border border-dark-600 text-sm">
@@ -485,7 +490,7 @@
                 <option value="tutorial">Tutorial/How-to</option>
               </select>
             </div>
-            
+
             <div class="form-group mb-4">
               <label class="block text-sm text-gray-400 mb-1">Target Duration</label>
               <select id="sb-duration" class="w-full px-3 py-2 bg-dark-700 rounded border border-dark-600 text-sm">
@@ -494,25 +499,25 @@
                 <option value="long">Long (15-20 min)</option>
               </select>
             </div>
-            
+
             <div class="form-group mb-4">
               <label class="block text-sm text-gray-400 mb-1">Key Concept</label>
               <textarea id="sb-concept" class="w-full px-3 py-2 bg-dark-700 rounded border border-dark-600 text-sm" rows="3" placeholder="Describe the main idea..."></textarea>
             </div>
-            
+
             <div class="form-group mb-4">
               <label class="block text-sm text-gray-400 mb-1">Hook/Opening</label>
               <input type="text" id="sb-hook" class="w-full px-3 py-2 bg-dark-700 rounded border border-dark-600 text-sm" placeholder="First 5 seconds hook...">
             </div>
-            
+
             <button onclick="generateStoryboard()" class="w-full px-4 py-2 bg-accent-blue rounded font-medium hover:bg-blue-600 transition-colors">Generate Storyboard</button>
-            
+
             <div class="mt-4 pt-4 border-t border-dark-600">
               <button onclick="exportStoryboardJSON()" class="w-full px-4 py-2 bg-dark-700 rounded text-sm hover:bg-dark-600 transition-colors mb-2">Export JSON</button>
               <button onclick="exportStoryboardMD()" class="w-full px-4 py-2 bg-dark-700 rounded text-sm hover:bg-dark-600 transition-colors">Export Markdown</button>
             </div>
           </div>
-          
+
           <!-- Storyboard Preview -->
           <div class="lg:col-span-2">
             <div id="sb-preview" class="space-y-3">
@@ -539,17 +544,17 @@
             <button onclick="setVoiceStyle('educational')" class="voice-preset-btn px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm" data-voice="educational">📚 Educational</button>
           </div>
         </div>
-        
+
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
           <!-- Input Panel -->
           <div class="card rounded-lg p-4">
             <h3 class="text-lg font-semibold mb-4 text-accent-blue">📝 Script Input</h3>
-            
+
             <div class="form-group mb-4">
               <label class="block text-sm text-gray-400 mb-1">Video Title</label>
               <input type="text" id="vo-title" class="w-full px-3 py-2 bg-dark-700 rounded border border-dark-600 text-sm" placeholder="Enter video title...">
             </div>
-            
+
             <div class="form-group mb-4">
               <label class="block text-sm text-gray-400 mb-1">Target Duration</label>
               <select id="vo-duration" class="w-full px-3 py-2 bg-dark-700 rounded border border-dark-600 text-sm">
@@ -559,21 +564,21 @@
                 <option value="1200">Extended (20 minutes)</option>
               </select>
             </div>
-            
+
             <div class="form-group mb-4">
               <label class="block text-sm text-gray-400 mb-1">Content / Bullet Points</label>
               <textarea id="vo-content" class="w-full px-3 py-2 bg-dark-700 rounded border border-dark-600 text-sm" rows="10" placeholder="Paste your bullet points, ideas, or rough script here..."></textarea>
             </div>
-            
+
             <div class="grid grid-cols-2 gap-2 mb-4">
               <button onclick="loadVOTemplate('intro')" class="px-3 py-2 bg-dark-700 rounded text-sm hover:bg-dark-600">🎯 Hook Intro</button>
               <button onclick="loadVOTemplate('story')" class="px-3 py-2 bg-dark-700 rounded text-sm hover:bg-dark-600">📖 Story Arc</button>
               <button onclick="loadVOTemplate('list')" class="px-3 py-2 bg-dark-700 rounded text-sm hover:bg-dark-600">📋 List Format</button>
               <button onclick="loadVOTemplate('review')" class="px-3 py-2 bg-dark-700 rounded text-sm hover:bg-dark-600">⭐ Review</button>
             </div>
-            
+
             <button onclick="generateVoiceoverScript()" class="w-full px-4 py-2 bg-accent-blue rounded font-medium hover:bg-blue-600 transition-colors">Generate Script</button>
-            
+
             <div id="vo-stats" class="hidden mt-4 grid grid-cols-3 gap-2 p-3 bg-dark-700 rounded">
               <div class="text-center">
                 <div id="vo-stat-words" class="text-xl font-bold text-accent-blue">0</div>
@@ -589,11 +594,11 @@
               </div>
             </div>
           </div>
-          
+
           <!-- Preview Panel -->
           <div class="card rounded-lg p-4">
             <h3 class="text-lg font-semibold mb-4 text-accent-blue">🎬 Script Preview</h3>
-            
+
             <div id="vo-preview" class="space-y-3 max-h-[500px] overflow-y-auto">
               <div class="text-center text-gray-500 py-8">
                 <svg class="w-16 h-16 mx-auto mb-4 opacity-30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -604,7 +609,7 @@
                 <p>Enter your content and click Generate to create a structured voiceover script</p>
               </div>
             </div>
-            
+
             <div id="vo-tips" class="mt-4 p-3 bg-dark-700/50 rounded border border-green-800/50">
               <h4 class="text-sm font-semibold text-green-400 mb-2">🎤 Delivery Tips</h4>
               <ul class="text-xs text-gray-400 space-y-1" id="vo-tips-list">
@@ -614,7 +619,7 @@
                 <li>• Record in a quiet space with good acoustics</li>
               </ul>
             </div>
-            
+
             <div class="mt-4 grid grid-cols-3 gap-2">
               <button onclick="exportVOText()" class="px-3 py-2 bg-dark-700 rounded text-sm hover:bg-dark-600">Export TXT</button>
               <button onclick="exportVOJSON()" class="px-3 py-2 bg-dark-700 rounded text-sm hover:bg-dark-600">Export JSON</button>
@@ -681,7 +686,7 @@
           <div class="skeleton-card"></div>
         </div>
       </div>
-      
+
       <!-- Grade History Chart -->
       <div class="card rounded-lg p-4 mb-4">
         <h3 class="text-sm font-semibold text-gray-400 mb-2">📈 Grade History by Agent</h3>
@@ -689,7 +694,7 @@
           <canvas id="grade-chart"></canvas>
         </div>
       </div>
-      
+
       <!-- Agent Performance Comparison -->
       <div class="card rounded-lg p-4 mb-4">
         <h3 class="text-sm font-semibold text-gray-400 mb-2">📊 Agent Performance Comparison</h3>
@@ -697,7 +702,7 @@
           <canvas id="agent-performance-chart"></canvas>
         </div>
       </div>
-      
+
       <div id="audit-list" class="space-y-3">
         <div class="skeleton-loader">
           <div class="skeleton-card"></div>
@@ -716,7 +721,7 @@
           <button onclick="filterTasks('nox')" id="task-filter-nox" class="task-filter-btn px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">🤖 Nox</button>
         </div>
       </div>
-      
+
       <!-- Tasks Kanban Board -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         <!-- Pending Column -->
@@ -734,7 +739,7 @@
             </div>
           </div>
         </div>
-        
+
         <!-- In Progress Column -->
         <div class="flex flex-col">
           <div class="flex items-center justify-between mb-3">
@@ -750,7 +755,7 @@
             </div>
           </div>
         </div>
-        
+
         <!-- Approved Column -->
         <div class="flex flex-col">
           <div class="flex items-center justify-between mb-3">
@@ -766,7 +771,7 @@
             </div>
           </div>
         </div>
-        
+
         <!-- Completed Column -->
         <div class="flex flex-col">
           <div class="flex items-center justify-between mb-3">
@@ -793,7 +798,7 @@
           <span id="pipeline-total-count">0</span> ideas • Avg Viral Score: <span id="pipeline-avg-score" class="font-semibold">-</span>
         </div>
       </div>
-      
+
       <!-- Pipeline Progress Indicator -->
       <div class="card rounded-lg p-4 mb-6">
         <div class="flex items-center justify-between mb-2">
@@ -813,7 +818,7 @@
           </div>
         </div>
       </div>
-      
+
       <!-- Pipeline Kanban Board -->
       <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 gap-3 overflow-x-auto">
         <!-- Idea Captured Column -->
@@ -826,7 +831,7 @@
           </div>
           <div id="pipeline-idea_captured" class="space-y-2 min-h-[150px]"></div>
         </div>
-        
+
         <!-- Validated Column -->
         <div class="flex flex-col min-w-[200px]">
           <div class="flex items-center justify-between mb-2">
@@ -837,7 +842,7 @@
           </div>
           <div id="pipeline-validated" class="space-y-2 min-h-[150px]"></div>
         </div>
-        
+
         <!-- Brief Created Column -->
         <div class="flex flex-col min-w-[200px]">
           <div class="flex items-center justify-between mb-2">
@@ -848,7 +853,7 @@
           </div>
           <div id="pipeline-brief_created" class="space-y-2 min-h-[150px]"></div>
         </div>
-        
+
         <!-- Editor Assigned Column -->
         <div class="flex flex-col min-w-[200px]">
           <div class="flex items-center justify-between mb-2">
@@ -859,7 +864,7 @@
           </div>
           <div id="pipeline-editor_assigned" class="space-y-2 min-h-[150px]"></div>
         </div>
-        
+
         <!-- In Production Column -->
         <div class="flex flex-col min-w-[200px]">
           <div class="flex items-center justify-between mb-2">
@@ -870,7 +875,7 @@
           </div>
           <div id="pipeline-in_production" class="space-y-2 min-h-[150px]"></div>
         </div>
-        
+
         <!-- Published Column -->
         <div class="flex flex-col min-w-[200px]">
           <div class="flex items-center justify-between mb-2">
@@ -881,7 +886,7 @@
           </div>
           <div id="pipeline-published" class="space-y-2 min-h-[150px]"></div>
         </div>
-        
+
         <!-- Performance Review Column -->
         <div class="flex flex-col min-w-[200px]">
           <div class="flex items-center justify-between mb-2">
@@ -904,7 +909,7 @@
           <button onclick="setCalendarView('list')" id="cal-view-list" class="cal-view-btn px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">📋 List</button>
         </div>
       </div>
-      
+
       <!-- Calendar Grid View -->
       <div id="calendar-grid-view" class="card rounded-lg p-4 mb-6">
         <div class="flex items-center justify-between mb-4">
@@ -919,14 +924,14 @@
           <!-- Days populated by JS -->
         </div>
       </div>
-      
+
       <!-- Events List View (hidden by default) -->
       <div id="calendar-list-view" class="hidden space-y-3">
         <div id="calendar-events-list">
           <!-- Events populated by JS -->
         </div>
       </div>
-      
+
       <!-- Legend -->
       <div class="flex flex-wrap gap-4 text-sm mb-4">
         <div class="flex items-center gap-2"><span class="w-3 h-3 rounded-full bg-purple-500"></span><span>Cron Job</span></div>
@@ -940,12 +945,12 @@
       <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4 gap-3">
         <h2 class="text-xl font-semibold">🧠 Memory</h2>
         <div class="relative">
-          <input type="text" id="memory-search" placeholder="🔍 Search memories..." 
+          <input type="text" id="memory-search" placeholder="🔍 Search memories..."
                  class="px-3 py-1.5 bg-dark-700 rounded-lg border border-dark-600 text-sm w-48 lg:w-64 focus:border-accent-blue focus:outline-none focus:ring-2 focus:ring-accent-blue/50"
                  onkeyup="filterMemories()">
         </div>
       </div>
-      
+
       <!-- Memory Stats -->
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
         <div class="card rounded-lg p-3 text-center">
@@ -965,7 +970,7 @@
           <div class="text-xs text-gray-400">Last Updated</div>
         </div>
       </div>
-      
+
       <!-- Long-Term Memory Section -->
       <div class="mb-6">
         <h3 class="text-lg font-semibold mb-3 flex items-center gap-2">
@@ -976,7 +981,7 @@
           <div class="skeleton-loader"><div class="skeleton-card"></div></div>
         </div>
       </div>
-      
+
       <!-- Daily Logs Section -->
       <div>
         <h3 class="text-lg font-semibold mb-3 flex items-center gap-2">
@@ -994,13 +999,13 @@
       <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4 gap-3">
         <div>
           <h2 class="text-xl font-semibold">👥 Team</h2>
-          <p class="text-sm text-gray-400">Nox Operations — Digital Organization</p>
+          <p class="text-sm text-gray-400">Nox Operations - Digital Organization</p>
         </div>
         <div id="team-stats" class="flex gap-3 text-sm">
           <span class="bg-dark-700 px-3 py-1 rounded-full">Loading...</span>
         </div>
       </div>
-      
+
       <!-- Organization Leader Card -->
       <div class="card rounded-lg p-4 mb-4 border-l-4 border-accent-blue">
         <div class="flex items-center gap-3">
@@ -1011,7 +1016,7 @@
           </div>
         </div>
       </div>
-      
+
       <!-- Agent Grid -->
       <div id="agent-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         <div class="skeleton-loader">
@@ -1042,7 +1047,7 @@
   <script src="js/shorts-calculator.js?v=202602210316"></script>
   <script src="js/quick-stats-widget.js?v=202602210402"></script>
   <script src="app.js?v=202602201712"></script>
-  
+
   <!-- Shorts Calculator Loader -->
   <script>
     function loadShortsCalculator() {
@@ -1052,7 +1057,7 @@
         calc.render('shorts-calculator-container');
       }
     }
-    
+
     // Auto-load when shorts-calc section is shown
     document.addEventListener('DOMContentLoaded', () => {
       const observer = new MutationObserver((mutations) => {
@@ -1063,19 +1068,19 @@
           }
         });
       });
-      
+
       const toolsTab = document.getElementById('tab-tools');
       if (toolsTab) {
         observer.observe(toolsTab, { attributes: true, childList: true, subtree: true });
       }
     });
   </script>
-  
+
   <!-- Tasks Board & Pipeline Functions -->
   <script>
     // Global state for filters
     let currentTaskFilter = 'all';
-    
+
     // Load Tasks Data
     async function loadTasks() {
       try {
@@ -1088,7 +1093,7 @@
         document.getElementById('tasks-pending').innerHTML = '<p class="text-gray-500 text-sm text-center py-4">Failed to load tasks</p>';
       }
     }
-    
+
     // Render Tasks into Kanban columns
     function renderTasks(tasks) {
       const columns = {
@@ -1097,15 +1102,15 @@
         approved: document.getElementById('tasks-approved'),
         completed: document.getElementById('tasks-completed')
       };
-      
+
       // Clear columns
       Object.values(columns).forEach(col => col.innerHTML = '');
-      
+
       // Filter tasks
-      const filteredTasks = currentTaskFilter === 'all' 
-        ? tasks 
+      const filteredTasks = currentTaskFilter === 'all'
+        ? tasks
         : tasks.filter(t => t.assignee === currentTaskFilter);
-      
+
       // Group by status
       const grouped = {
         pending: filteredTasks.filter(t => t.status === 'pending'),
@@ -1113,7 +1118,7 @@
         approved: filteredTasks.filter(t => t.status === 'approved'),
         completed: filteredTasks.filter(t => t.status === 'completed' || t.status === 'done')
       };
-      
+
       // Render each column
       Object.entries(grouped).forEach(([status, tasks]) => {
         const col = columns[status];
@@ -1124,7 +1129,7 @@
         }
       });
     }
-    
+
     // Render individual Task Card
     function renderTaskCard(task) {
       const assigneeColor = task.assignee === 'steven' ? 'bg-accent-blue' : 'bg-accent-purple';
@@ -1133,10 +1138,10 @@
         medium: 'bg-yellow-500',
         low: 'bg-green-500'
       }[task.priority] || 'bg-gray-500';
-      
+
       const priorityLabel = task.priority.charAt(0).toUpperCase() + task.priority.slice(1);
       const assigneeLabel = task.assignee.charAt(0).toUpperCase() + task.assignee.slice(1);
-      
+
       return `
         <div class="card rounded-lg p-3 cursor-pointer hover:border-accent-blue transition-colors" onclick="showTaskDetail('${task.id}')">
           <div class="flex items-start justify-between mb-2">
@@ -1152,11 +1157,11 @@
         </div>
       `;
     }
-    
+
     // Filter tasks
     function filterTasks(assignee) {
       currentTaskFilter = assignee;
-      
+
       // Update button styles
       document.querySelectorAll('.task-filter-btn').forEach(btn => {
         btn.classList.remove('bg-accent-blue');
@@ -1164,11 +1169,11 @@
       });
       document.getElementById(`task-filter-${assignee}`).classList.remove('bg-dark-700');
       document.getElementById(`task-filter-${assignee}`).classList.add('bg-accent-blue');
-      
+
       // Reload tasks
       loadTasks();
     }
-    
+
     // Update task column counts
     function updateTaskCounts(counts) {
       document.getElementById('task-count-pending').textContent = counts.pending || 0;
@@ -1176,23 +1181,23 @@
       document.getElementById('task-count-approved').textContent = counts.approved || 0;
       document.getElementById('task-count-completed').textContent = counts.completed || counts.done || 0;
     }
-    
+
     // Show task detail modal
     async function showTaskDetail(taskId) {
       try {
         const response = await fetch('data/tasks.json?v=' + Date.now());
         const data = await response.json();
         const task = data.tasks.find(t => t.id === taskId);
-        
+
         if (!task) return;
-        
+
         const assigneeColor = task.assignee === 'steven' ? 'bg-accent-blue' : 'bg-accent-purple';
         const priorityColor = {
           high: 'text-red-400',
           medium: 'text-yellow-400',
           low: 'text-green-400'
         }[task.priority] || 'text-gray-400';
-        
+
         document.getElementById('modal-title').textContent = '📝 Task Details';
         document.getElementById('modal-content').innerHTML = `
           <div class="space-y-4">
@@ -1223,13 +1228,13 @@
             ` : ''}
           </div>
         `;
-        
+
         document.getElementById('detail-modal').classList.remove('hidden');
       } catch (error) {
         console.error('Failed to load task detail:', error);
       }
     }
-    
+
     // Load Pipeline Data
     async function loadPipeline() {
       try {
@@ -1242,7 +1247,7 @@
         document.getElementById('pipeline-idea_captured').innerHTML = '<p class="text-gray-500 text-sm text-center py-4">Failed to load pipeline</p>';
       }
     }
-    
+
     // Render Pipeline into Kanban columns
     function renderPipeline(ideas, stages) {
       // Clear all columns
@@ -1250,35 +1255,35 @@
         const col = document.getElementById(`pipeline-${stage}`);
         if (col) col.innerHTML = '';
       });
-      
+
       // Group ideas by stage
       const grouped = {};
       stages.forEach(stage => {
         grouped[stage] = ideas.filter(idea => idea.stage === stage);
       });
-      
+
       // Render each column
       Object.entries(grouped).forEach(([stage, ideas]) => {
         const col = document.getElementById(`pipeline-${stage}`);
         if (!col) return;
-        
+
         if (ideas.length === 0) {
           col.innerHTML = '<p class="text-gray-600 text-xs text-center py-4 italic">No ideas</p>';
         } else {
           col.innerHTML = ideas.map(idea => renderPipelineCard(idea)).join('');
         }
-        
+
         // Update count
         const countEl = document.getElementById(`pipeline-count-${stage}`);
         if (countEl) countEl.textContent = ideas.length;
       });
     }
-    
+
     // Render individual Pipeline Card
     function renderPipelineCard(idea) {
-      const viralScoreColor = idea.viralScore >= 90 ? 'text-green-400' : 
+      const viralScoreColor = idea.viralScore >= 90 ? 'text-green-400' :
                              idea.viralScore >= 75 ? 'text-yellow-400' : 'text-gray-400';
-      
+
       return `
         <div class="card rounded-lg p-3 cursor-pointer hover:border-accent-blue transition-colors" onclick="showPipelineDetail('${idea.id}')">
           <div class="flex items-start justify-between mb-2">
@@ -1295,30 +1300,30 @@
         </div>
       `;
     }
-    
+
     // Update pipeline stats
     function updatePipelineStats(stats) {
       document.getElementById('pipeline-total-count').textContent = stats.totalIdeas || 0;
       document.getElementById('pipeline-avg-score').textContent = stats.avgViralScore || '-';
-      
+
       // Count active (not published or performance_review)
-      const activeCount = (stats.byStage?.published || 0) + 
+      const activeCount = (stats.byStage?.published || 0) +
                          (stats.byStage?.performance_review || 0);
       document.getElementById('pipeline-active-count').textContent = `${stats.totalIdeas - activeCount || 0} active`;
     }
-    
+
     // Show pipeline detail modal
     async function showPipelineDetail(ideaId) {
       try {
         const response = await fetch('data/pipeline.json?v=' + Date.now());
         const data = await response.json();
         const idea = data.ideas.find(i => i.id === ideaId);
-        
+
         if (!idea) return;
-        
-        const viralScoreColor = idea.viralScore >= 90 ? 'text-green-400' : 
+
+        const viralScoreColor = idea.viralScore >= 90 ? 'text-green-400' :
                                idea.viralScore >= 75 ? 'text-yellow-400' : 'text-gray-400';
-        
+
         document.getElementById('modal-title').textContent = '🎬 Content Idea';
         document.getElementById('modal-content').innerHTML = `
           <div class="space-y-4">
@@ -1363,13 +1368,13 @@
             ` : ''}
           </div>
         `;
-        
+
         document.getElementById('detail-modal').classList.remove('hidden');
       } catch (error) {
         console.error('Failed to load pipeline detail:', error);
       }
     }
-    
+
     // Utility: Escape HTML
     function escapeHtml(text) {
       if (!text) return '';
@@ -1377,18 +1382,18 @@
       div.textContent = text;
       return div.innerHTML;
     }
-    
+
     // Utility: Format Date
     function formatDate(dateStr) {
       const date = new Date(dateStr);
       return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
     }
-    
+
     // Load data when tabs are shown
     const originalShowTab = window.showTab;
     window.showTab = function(tabName) {
       if (originalShowTab) originalShowTab(tabName);
-      
+
       if (tabName === 'tasks') {
         loadTasks();
       } else if (tabName === 'pipeline') {
@@ -1399,20 +1404,20 @@
         loadMemories();
       }
     };
-    
+
     // Also close modal helper if not defined
     if (!window.closeModal) {
       window.closeModal = function() {
         document.getElementById('detail-modal').classList.add('hidden');
       };
     }
-    
+
     // ==================== CALENDAR FUNCTIONS ====================
     let calendarData = [];
     let currentCalendarView = 'calendar';
     let currentMonth = new Date().getMonth();
     let currentYear = new Date().getFullYear();
-    
+
     async function loadCalendar() {
       try {
         const response = await fetch('data/calendar.json?v=' + Date.now());
@@ -1425,38 +1430,38 @@
         document.getElementById('calendar-days').innerHTML = '<p class="text-gray-500 text-sm text-center py-4">Failed to load calendar</p>';
       }
     }
-    
+
     function renderCalendar() {
       const daysContainer = document.getElementById('calendar-days');
       const monthYear = document.getElementById('calendar-month-year');
-      
+
       const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
       monthYear.textContent = `${monthNames[currentMonth]} ${currentYear}`;
-      
+
       const firstDay = new Date(currentYear, currentMonth, 1).getDay();
       const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
-      
+
       let html = '';
-      
+
       // Empty cells for days before the first day
       for (let i = 0; i < firstDay; i++) {
         html += '<div class="h-24 bg-dark-800/50 rounded"></div>';
       }
-      
+
       // Days
       for (let day = 1; day <= daysInMonth; day++) {
         const dateStr = `${currentYear}-${String(currentMonth + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
         const dayEvents = calendarData.filter(e => e.nextRun && e.nextRun.startsWith(dateStr));
-        
+
         let dotsHtml = '';
         dayEvents.forEach(event => {
           const color = event.type === 'cron' ? 'bg-purple-500' : event.status === 'upcoming' ? 'bg-yellow-500' : 'bg-blue-500';
           dotsHtml += `<span class="w-2 h-2 rounded-full ${color} inline-block mr-1" title="${escapeHtml(event.title)}"></span>`;
         });
-        
+
         const isToday = new Date().toDateString() === new Date(currentYear, currentMonth, day).toDateString();
         const todayClass = isToday ? 'border-accent-blue border-2' : '';
-        
+
         html += `
           <div class="h-24 bg-dark-800 rounded p-1 ${todayClass} relative group cursor-pointer hover:bg-dark-700" onclick="showDayEvents('${dateStr}')">
             <div class="text-sm font-medium ${isToday ? 'text-accent-blue' : 'text-gray-400'}">${day}</div>
@@ -1465,25 +1470,25 @@
           </div>
         `;
       }
-      
+
       daysContainer.innerHTML = html;
     }
-    
+
     function renderEventsList() {
       const container = document.getElementById('calendar-events-list');
       const sortedEvents = [...calendarData].sort((a, b) => new Date(a.nextRun) - new Date(b.nextRun));
-      
+
       if (sortedEvents.length === 0) {
         container.innerHTML = '<p class="text-gray-500 text-sm text-center py-4">No events scheduled</p>';
         return;
       }
-      
+
       container.innerHTML = sortedEvents.map(event => {
         const colorClass = event.type === 'cron' ? 'border-l-purple-500' : event.status === 'upcoming' ? 'border-l-yellow-500' : 'border-l-blue-500';
         const badgeClass = event.type === 'cron' ? 'bg-purple-500/20 text-purple-400' : event.status === 'upcoming' ? 'bg-yellow-500/20 text-yellow-400' : 'bg-blue-500/20 text-blue-400';
         const badgeText = event.type === 'cron' ? 'Cron' : event.status === 'upcoming' ? 'Upcoming' : 'Task';
         const relativeTime = getRelativeTime(new Date(event.nextRun));
-        
+
         return `
           <div class="card rounded-lg p-4 border-l-4 ${colorClass} cursor-pointer hover:border-accent-blue" onclick="showEventDetail('${event.id}')">
             <div class="flex items-start justify-between">
@@ -1501,12 +1506,12 @@
         `;
       }).join('');
     }
-    
+
     function setCalendarView(view) {
       currentCalendarView = view;
       document.getElementById('calendar-grid-view').classList.toggle('hidden', view !== 'calendar');
       document.getElementById('calendar-list-view').classList.toggle('hidden', view !== 'list');
-      
+
       document.querySelectorAll('.cal-view-btn').forEach(btn => {
         btn.classList.remove('bg-accent-blue');
         btn.classList.add('bg-dark-700');
@@ -1514,7 +1519,7 @@
       document.getElementById(`cal-view-${view}`).classList.remove('bg-dark-700');
       document.getElementById(`cal-view-${view}`).classList.add('bg-accent-blue');
     }
-    
+
     function changeMonth(delta) {
       currentMonth += delta;
       if (currentMonth > 11) {
@@ -1526,14 +1531,14 @@
       }
       renderCalendar();
     }
-    
+
     function showDayEvents(dateStr) {
       const dayEvents = calendarData.filter(e => e.nextRun && e.nextRun.startsWith(dateStr));
       if (dayEvents.length === 0) return;
-      
+
       const date = new Date(dateStr);
       const dateDisplay = date.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' });
-      
+
       document.getElementById('modal-title').textContent = `📅 ${dateDisplay}`;
       document.getElementById('modal-content').innerHTML = dayEvents.map(event => `
         <div class="mb-4 pb-4 border-b border-dark-700 last:border-0">
@@ -1547,11 +1552,11 @@
       `).join('');
       document.getElementById('detail-modal').classList.remove('hidden');
     }
-    
+
     function showEventDetail(eventId) {
       const event = calendarData.find(e => e.id === eventId);
       if (!event) return;
-      
+
       document.getElementById('modal-title').textContent = '📅 Event Details';
       document.getElementById('modal-content').innerHTML = `
         <div class="space-y-4">
@@ -1571,22 +1576,22 @@
       `;
       document.getElementById('detail-modal').classList.remove('hidden');
     }
-    
+
     // ==================== MEMORY FUNCTIONS ====================
     let memoriesData = [];
-    
+
     async function loadMemories() {
       try {
         const response = await fetch('data/memory-index.json?v=' + Date.now());
         const data = await response.json();
         memoriesData = data.memories || [];
-        
+
         // Update stats
         document.getElementById('memory-total-count').textContent = memoriesData.length;
         document.getElementById('memory-longterm-count').textContent = memoriesData.filter(m => m.type === 'long-term').length;
         document.getElementById('memory-daily-count').textContent = memoriesData.filter(m => m.type === 'daily').length;
         document.getElementById('memory-last-updated').textContent = data.lastUpdated ? new Date(data.lastUpdated).toLocaleDateString('en-US', { month: 'short', day: 'numeric' }) : '-';
-        
+
         renderMemories();
       } catch (error) {
         console.error('Failed to load memories:', error);
@@ -1594,31 +1599,31 @@
         document.getElementById('memory-daily-list').innerHTML = '';
       }
     }
-    
+
     function renderMemories(filterText = '') {
       const longTermContainer = document.getElementById('memory-longterm-list');
       const dailyContainer = document.getElementById('memory-daily-list');
-      
-      const filtered = filterText 
+
+      const filtered = filterText
         ? memoriesData.filter(m => m.content.toLowerCase().includes(filterText.toLowerCase()) || m.section.toLowerCase().includes(filterText.toLowerCase()))
         : memoriesData;
-      
+
       const longTerm = filtered.filter(m => m.type === 'long-term');
       const daily = filtered.filter(m => m.type === 'daily');
-      
-      longTermContainer.innerHTML = longTerm.length === 0 
+
+      longTermContainer.innerHTML = longTerm.length === 0
         ? '<p class="text-gray-600 text-xs text-center py-4 italic">No long-term memories</p>'
         : longTerm.map(m => renderMemoryCard(m)).join('');
-      
+
       dailyContainer.innerHTML = daily.length === 0
         ? '<p class="text-gray-600 text-xs text-center py-4 italic">No daily logs</p>'
         : daily.map(m => renderMemoryCard(m)).join('');
     }
-    
+
     function renderMemoryCard(memory) {
       const preview = memory.content.length > 150 ? memory.content.substring(0, 150) + '...' : memory.content;
       const typeColor = memory.type === 'long-term' ? 'border-l-purple-500' : 'border-l-green-500';
-      
+
       return `
         <div class="card rounded-lg p-4 border-l-4 ${typeColor} cursor-pointer hover:border-accent-blue transition-colors" onclick="showMemoryDetail('${memory.id}')">
           <div class="flex items-start justify-between mb-2">
@@ -1630,24 +1635,24 @@
         </div>
       `;
     }
-    
+
     function filterMemories() {
       const searchText = document.getElementById('memory-search').value;
       renderMemories(searchText);
     }
-    
+
     function showMemoryDetail(memoryId) {
       const memory = memoriesData.find(m => m.id === memoryId);
       if (!memory) return;
-      
+
       const typeLabel = memory.type === 'long-term' ? 'Long-Term Memory' : 'Daily Log';
       const typeColor = memory.type === 'long-term' ? 'text-purple-400' : 'text-green-400';
-      
+
       // Convert markdown-style content to HTML (basic)
       const contentHtml = escapeHtml(memory.content)
         .replace(/\n\n/g, '</p><p>')
         .replace(/\n/g, '<br>');
-      
+
       document.getElementById('modal-title').textContent = '🧠 Memory Detail';
       document.getElementById('modal-content').innerHTML = `
         <div class="space-y-4">
@@ -1666,20 +1671,20 @@
       `;
       document.getElementById('detail-modal').classList.remove('hidden');
     }
-    
+
     function getRelativeTime(date) {
       const now = new Date();
       const diff = date - now;
       const minutes = Math.floor(diff / 60000);
       const hours = Math.floor(diff / 3600000);
       const days = Math.floor(diff / 86400000);
-      
+
       if (diff < 0) return 'Overdue';
       if (minutes < 60) return `${minutes}m`;
       if (hours < 24) return `${hours}h`;
       return `${days}d`;
     }
-    
+
     // Team Tab Functions
     async function loadTeamData() {
       try {
@@ -1691,7 +1696,7 @@
         document.getElementById('agent-grid').innerHTML = '<p class="text-red-400">Failed to load team data</p>';
       }
     }
-    
+
     function renderTeam(data) {
       // Update stats
       const statsHtml = `
@@ -1699,7 +1704,7 @@
         <span class="bg-dark-700 px-3 py-1 rounded-full">${data.organization.totalAgents} Total</span>
       `;
       document.getElementById('team-stats').innerHTML = statsHtml;
-      
+
       // Render agent cards
       const grid = document.getElementById('agent-grid');
       grid.innerHTML = data.agents.map(agent => {
@@ -1709,7 +1714,7 @@
           scheduled: 'bg-accent-blue'
         };
         const statusColor = statusColors[agent.status] || 'bg-gray-500';
-        
+
         return `
           <div class="card rounded-lg p-4 cursor-pointer hover:border-accent-purple transition-colors" onclick="showAgentDetails('${agent.id}')">
             <div class="flex items-start justify-between mb-3">
@@ -1734,16 +1739,16 @@
         `;
       }).join('');
     }
-    
+
     function showAgentDetails(agentId) {
       fetch('data/team.json?v=' + Date.now())
         .then(r => r.json())
         .then(data => {
           const agent = data.agents.find(a => a.id === agentId);
           if (!agent) return;
-          
+
           const statusColors = { active: 'text-accent-green', 'on-call': 'text-accent-yellow', scheduled: 'text-accent-blue' };
-          
+
           document.getElementById('modal-title').textContent = `${agent.emoji} ${agent.name}`;
           document.getElementById('modal-content').innerHTML = `
             <div class="space-y-4">
@@ -1772,11 +1777,11 @@
           document.getElementById('detail-modal').classList.remove('hidden');
         });
     }
-    
+
     // Load team data when tab is shown
     document.getElementById('tab-btn-team')?.addEventListener('click', loadTeamData);
   </script>
-  
+
   <style>
     /* Pipeline Stage Dots */
     .pipeline-stage-dot {
@@ -1795,7 +1800,7 @@
       background: #3B82F6;
       border-color: #3B82F6;
     }
-    
+
     /* Line clamp utility */
     .line-clamp-2 {
       display: -webkit-box;
@@ -1803,21 +1808,21 @@
       -webkit-box-orient: vertical;
       overflow: hidden;
     }
-    
+
     .line-clamp-3 {
       display: -webkit-box;
       -webkit-line-clamp: 3;
       -webkit-box-orient: vertical;
       overflow: hidden;
     }
-    
+
     /* Calendar Day Cells */
     #calendar-days > div {
       min-height: 80px;
       transition: background-color 0.2s;
     }
   </style>
-  
+
   <!-- Footer with version timestamp for cache busting -->
   <footer class="max-w-7xl mx-auto px-4 py-4 mt-8 border-t border-dark-700 text-center" role="contentinfo">
     <div class="text-xs text-gray-500 font-mono flex flex-wrap justify-center items-center gap-2 mb-3">

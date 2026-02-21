@@ -1309,6 +1309,9 @@ function renderYouTube() {
   
   // Render Modpack Comparator widget
   safeRender(() => renderModpackComparator(), 'renderModpackComparator');
+
+  // Render Speedrun Category Explorer widget
+  safeRender(() => renderSpeedrunExplorer(), 'renderSpeedrunExplorer');
 }
 
 // Content Pipeline Kanban Board — NEW FEATURE: Visual production tracker
@@ -5499,6 +5502,196 @@ window.showToolDetail = showToolDetail;
 window.showCategoryTools = showCategoryTools;
 window.generateBrief = generateBrief;
 window.forceCDNRefresh = forceCDNRefresh;
+
+// ==================== SPEEDRUN CATEGORY EXPLORER WIDGET ====================
+// Interactive tool for exploring Minecraft speedrunning categories
+// Research: Speedrun.com, RSG vs SSG, version splits (Feb 2026)
+
+function renderSpeedrunExplorer() {
+  const container = document.getElementById('speedrun-explorer');
+  if (!container) return;
+
+  const categories = {
+    rsg: {
+      name: 'RSG (Random Seed)',
+      icon: '🎲',
+      description: 'New world every run - pure skill + luck',
+      popularity: 'Most Popular',
+      subcategories: ['Any% Glitchless', 'Any%', 'No Major Glitches'],
+      worldRecord: '~9 minutes (1.16+)',
+      difficulty: 'High variance'
+    },
+    ssg: {
+      name: 'SSG (Set Seed)',
+      icon: '🎯',
+      description: 'Same seed optimized to perfection',
+      popularity: 'Niche',
+      subcategories: ['Any% Glitchless', 'Any%', 'SSG-specific strats'],
+      worldRecord: '~2 minutes (optimized seeds)',
+      difficulty: 'Extremely optimized'
+    }
+  };
+
+  const versions = [
+    { name: '1.16+', description: 'Nether update - bastion strats, piglin trading', active: true },
+    { name: 'Pre-1.8', description: 'Classic era - different structure generation', active: true },
+    { name: '1.9-1.15', description: 'Combat update era - shield mechanics', active: false }
+  ];
+
+  let html = `
+    <div class="bg-dark-800/50 border border-dark-600 rounded-lg p-4">
+      <div class="flex items-center gap-2 mb-4">
+        <span class="text-xl">⏱️</span>
+        <h3 class="text-lg font-bold text-white">Speedrun Category Explorer</h3>
+        <span class="text-xs bg-accent-green/20 text-accent-green px-2 py-0.5 rounded ml-auto">2026 Resurgence</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-4">
+        ${Object.entries(categories).map(([key, cat]) => `
+          <button onclick="showSpeedrunCategory('${key}')"
+                  class="bg-dark-700/50 hover:bg-accent-primary/20 border border-dark-600 hover:border-accent-primary/50 rounded-lg p-3 text-left transition-all">
+            <div class="flex items-center gap-2 mb-2">
+              <span class="text-2xl">${cat.icon}</span>
+              <span class="font-semibold text-white text-sm">${cat.name}</span>
+              ${cat.popularity === 'Most Popular' ? '<span class="text-[10px] bg-accent-yellow/20 text-accent-yellow px-1.5 py-0.5 rounded">Popular</span>' : ''}
+            </div>
+            <div class="text-xs text-gray-400">${cat.description}</div>
+            <div class="text-xs text-accent-blue mt-1">WR: ${cat.worldRecord}</div>
+          </button>
+        `).join('')}
+      </div>
+
+      <div class="bg-dark-700/30 rounded-lg p-3 mb-4">
+        <div class="text-sm font-semibold text-white mb-2">Version Categories</div>
+        <div class="flex flex-wrap gap-2">
+          ${versions.map(v => `
+            <button onclick="selectSpeedrunVersion('${v.name}')"
+                    class="px-3 py-1.5 rounded text-xs border ${v.active ? 'bg-accent-primary/20 border-accent-primary/50 text-white' : 'bg-dark-600 border-dark-500 text-gray-400'} hover:bg-accent-primary/30 transition-all">
+              ${v.name}
+            </button>
+          `).join('')}
+        </div>
+        <div id="version-description" class="text-xs text-gray-400 mt-2">Select a version to see strategies</div>
+      </div>
+
+      <div id="speedrun-details" class="bg-dark-700/30 rounded-lg p-3 min-h-[100px] mb-3">
+        <p class="text-gray-400 text-sm text-center">Click a category above to explore speedrunning</p>
+      </div>
+
+      <div class="flex gap-2">
+        <button onclick="generateSpeedrunIdea()" class="btn-primary flex-1">
+          <span>💡</span> Generate Content Idea
+        </button>
+        <a href="https://speedrun.com/mc" target="_blank" class="btn-secondary flex-1 text-center">
+          <span>🏆</span> View Leaderboards
+        </a>
+      </div>
+
+      <div id="speedrun-idea-result" class="mt-3"></div>
+    </div>
+  `;
+
+  container.innerHTML = html;
+}
+
+function showSpeedrunCategory(categoryKey) {
+  const detailsEl = document.getElementById('speedrun-details');
+  if (!detailsEl) return;
+
+  const categories = {
+    rsg: {
+      name: 'Random Seed Glitchless (RSG)',
+      icon: '🎲',
+      description: 'The most popular speedrunning category. Each run generates a completely new world.',
+      skills: ['Bastion routing', 'Piglin trading RNG', 'End portal luck', 'Dragon fight consistency'],
+      tips: ['Learn bastion types', 'Practice eye throws', 'Master 1-cycle dragon'],
+      bbsAngle: 'Show 1000 speedrun attempts in timelapse with BBS NPC crowd reactions'
+    },
+    ssg: {
+      name: 'Set Seed Glitchless (SSG)',
+      icon: '🎯',
+      description: 'Run the exact same seed thousands of times to optimize every movement.',
+      skills: ['Frame-perfect movement', 'Micro-optimization', 'Route memorization'],
+      tips: ['Practice specific seed until muscle memory', 'Study top runs frame by frame'],
+      bbsAngle: 'Recreate SSG world with NPC audience watching the perfect run'
+    }
+  };
+
+  const cat = categories[categoryKey];
+  if (!cat) return;
+
+  detailsEl.innerHTML = `
+    <div class="flex items-center gap-2 mb-3">
+      <span class="text-2xl">${cat.icon}</span>
+      <span class="font-semibold text-white">${cat.name}</span>
+    </div>
+    <p class="text-sm text-gray-300 mb-3">${cat.description}</p>
+    <div class="mb-3">
+      <div class="text-xs text-accent-yellow mb-1">Key Skills:</div>
+      <div class="flex flex-wrap gap-1">
+        ${cat.skills.map(s => `<span class="text-xs bg-dark-600 px-2 py-0.5 rounded text-gray-300">${s}</span>`).join('')}
+      </div>
+    </div>
+    <div class="mb-3">
+      <div class="text-xs text-accent-green mb-1">Pro Tips:</div>
+      <ul class="text-xs text-gray-400 space-y-0.5">
+        ${cat.tips.map(t => `<li>• ${t}</li>`).join('')}
+      </ul>
+    </div>
+    <div class="bg-accent-primary/10 border border-accent-primary/30 rounded p-2">
+      <div class="text-xs text-accent-primary">💡 BBS Content Idea:</div>
+      <div class="text-xs text-gray-300 mt-0.5">${cat.bbsAngle}</div>
+    </div>
+  `;
+}
+
+function selectSpeedrunVersion(version) {
+  const descEl = document.getElementById('version-description');
+  if (!descEl) return;
+
+  const descriptions = {
+    '1.16+': 'Nether Update era: Bastion strats, piglin trading, ruined portals. Current meta.',
+    'Pre-1.8': 'Classic era: Different structure gen, no sprinting, old combat.',
+    '1.9-1.15': 'Combat Update: Shield mechanics, slower combat, different strategies.'
+  };
+
+  descEl.textContent = descriptions[version] || 'Select a version';
+}
+
+function generateSpeedrunIdea() {
+  const resultEl = document.getElementById('speedrun-idea-result');
+  if (!resultEl) return;
+
+  const ideas = [
+    { title: 'I Trained 1000 NPCs to Speedrun Minecraft', concept: 'BBS Crowd Spawner NPCs attempting speedrun strategies simultaneously' },
+    { title: 'Speedrun vs 1000 Villagers', concept: 'Can you beat the Ender Dragon before 1000 BBS NPCs build a civilization?' },
+    { title: 'Every Speedrun Death with Crowd Reaction', concept: 'Timelapse of deaths with NPC crowd gasping/cheering' },
+    { title: 'RSG Luck Visualized: 1000 Portal Attempts', concept: 'Visual representation of speedrun RNG using BBS NPCs' }
+  ];
+
+  const idea = ideas[Math.floor(Math.random() * ideas.length)];
+
+  resultEl.innerHTML = `
+    <div class="bg-accent-primary/10 border border-accent-primary/30 rounded-lg p-3 animate-pulse">
+      <div class="text-sm font-semibold text-white">${idea.title}</div>
+      <div class="text-xs text-gray-300 mt-1">${idea.concept}</div>
+      <button onclick="copySpeedrunIdea('${idea.title}')" class="text-xs text-accent-primary mt-2 hover:underline">Copy to clipboard</button>
+    </div>
+  `;
+}
+
+function copySpeedrunIdea(title) {
+  navigator.clipboard.writeText(title).then(() => {
+    alert('Idea copied: ' + title);
+  });
+}
+
+// Global exports
+window.renderSpeedrunExplorer = renderSpeedrunExplorer;
+window.showSpeedrunCategory = showSpeedrunCategory;
+window.selectSpeedrunVersion = selectSpeedrunVersion;
+window.generateSpeedrunIdea = generateSpeedrunIdea;
+window.copySpeedrunIdea = copySpeedrunIdea;
 
 console.log('Nox Dashboard: Functions exported to window object');
 // Cache bust: Mon  9 Feb 2026 14:46:41 EST
