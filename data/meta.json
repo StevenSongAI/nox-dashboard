@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-02-21T09:57:00Z",
+  "lastUpdated": "2026-02-21T05:16:00Z",
   "updatedBy": "nox-heartbeat",
   "version": "2026.02.21.70",
-  "cacheBust": "20260221T0957",
+  "cacheBust": "20260221T0516",
   "dataVersion": "2026.02.21.70",
-  "youtubeUpdated": "2026-02-21T09:57:00Z",
+  "youtubeUpdated": "2026-02-21T09:48:00Z",
   "investmentsUpdated": "2026-02-21T09:26:00.000000",
-  "researchUpdated": "2026-02-21T09:57:00.000000",
+  "researchUpdated": "2026-02-21T09:48:00.000000",
   "newBusinessUpdated": "2026-02-20T21:25:00Z",
-  "toolsUpdated": "2026-02-21T09:57:00Z",
+  "toolsUpdated": "2026-02-21T05:16:00Z",
   "workTrackerUpdated": "2026-02-15T00:17:00Z",
   "minecraftArtistsUpdated": "2026-02-18T14:22:00Z",
   "investments": {
@@ -18,33 +18,33 @@
     "lastIntelligenceId": "nvda-earnings-hb452"
   },
   "dataFreshness": {
-    "research": "2026-02-21 - Minecraft Live 2026 expected March (Vibrant Visuals showcase)",
+    "research": "2026-02-21 - AI video generation trends (Sora, Runway, Pika)",
     "newBusiness": "2026-02-20 - Marketplace revenue widget live",
     "investments": "2026-02-21 - NVDA earnings countdown widget live (Feb 26)",
     "workTracker": "2026-02-15 - pagination + deduplication live",
     "minecraftArtists": "2026-02-18 - 16 artists",
     "youtube": "2026-02-21 - 177 outliers, 20 briefs, 26.1 planner, Shorts mixer, BBS planner, Marketplace benchmark, Minecraft Live countdown",
-    "tools": "2026-02-21 - 43 tools including Minecraft Live 2026 Countdown"
+    "tools": "2026-02-21 - AI Video Comparison Tool + 43 other widgets"
   },
-  "research": { "lastUpdated": "2026-02-21T09:57:00Z" },
-  "totalNotes": 82,
-  "lastDataPush": "2026-02-21T09:57:00Z",
+  "research": { "lastUpdated": "2026-02-21T09:48:00Z" },
+  "totalNotes": 81,
+  "lastDataPush": "2026-02-21T05:16:00Z",
   "lastPushBy": "nox-heartbeat",
-  "lastPushDescription": "Minecraft Live 2026 Countdown widget. Research: Expected March 2026, Vibrant Visuals update showcase. Build: Live countdown, 4 key stats, expected announcements, content prep ideas, copy functionality.",
+  "lastPushDescription": "AI Video Generator Comparison Tool. Research: Sora vs Runway Gen-4 vs Pika Labs 2.5 comparison — Runway = best control, Pika = best value + fastest (30-90s), Sora = best fidelity. Build: 5 tool profiles (Sora, Runway, Pika, HeyGen, Kling), single view with radar charts, side-by-side compare mode, use case filtering, 2026 trends section.",
   "newBusiness": { "lastUpdated": "2026-02-20T21:25:00Z" },
-  "tools": { "lastUpdated": "2026-02-21T09:57:00Z", "totalTools": 43 },
-  "youtube": { "lastUpdated": "2026-02-21T09:57:00Z" },
+  "tools": { "lastUpdated": "2026-02-21T05:16:00Z", "totalTools": 44 },
+  "youtube": { "lastUpdated": "2026-02-21T09:48:00Z" },
   "competitorsUpdated": "2026-02-20T11:50:55Z",
   "competitors": { "lastUpdated": "2026-02-20T11:50:55Z", "totalCompetitors": 22 },
-  "audits": { "lastUpdated": "2026-02-21T09:57:00Z" },
+  "audits": { "lastUpdated": "2026-02-21T09:48:00Z" },
   "minecraftArtists": { "lastUpdated": "2026-02-20T01:47:50Z" },
   "totalOutliers": 177,
   "sections": {
-    "youtube": "2026-02-21T09:57:00Z",
+    "youtube": "2026-02-21T09:48:00Z",
     "investments": "2026-02-21T09:26:00Z",
     "newBusiness": "2026-02-20T21:25:00Z",
     "competitors": "2026-02-20T11:50:55Z",
-    "research": "2026-02-21T09:57:00Z",
-    "tools": "2026-02-21T09:57:00Z"
+    "research": "2026-02-21T09:48:00Z",
+    "tools": "2026-02-21T05:16:00Z"
   }
 }
