@@ -4355,3 +4355,296 @@ main {
 .wiki-link:hover {
   text-decoration: underline;
 }
+
+/* Snapshot Comparator */
+.snapshot-comparator {
+  background: linear-gradient(135deg, #1a1a2e 0%, #0f0f1a 100%);
+  border: 1px solid #252540;
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+}
+
+.comparator-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.comparator-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.comparator-icon {
+  font-size: 1.5rem;
+}
+
+.comparator-title h3 {
+  margin: 0;
+  font-size: 1.125rem;
+  color: #e2e8f0;
+}
+
+.comparator-badge {
+  padding: 0.25rem 0.5rem;
+  background: #3b82f620;
+  color: #3b82f6;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 0.25rem;
+}
+
+.comparator-instructions {
+  font-size: 0.75rem;
+  color: #64748b;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.snapshot-selector {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.snapshot-card {
+  padding: 0.875rem;
+  background: #0f0f1a;
+  border: 1px solid #252540;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.snapshot-card:hover {
+  border-color: #3b82f6;
+}
+
+.snapshot-card.selected {
+  border-color: #3b82f6;
+  background: #3b82f610;
+  box-shadow: 0 0 0 2px #3b82f6;
+}
+
+.snapshot-card.major {
+  border-left: 3px solid #f59e0b;
+}
+
+.snapshot-card.minor {
+  border-left: 3px solid #64748b;
+}
+
+.snapshot-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.25rem;
+}
+
+.snapshot-name {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #e2e8f0;
+}
+
+.snapshot-type-badge {
+  padding: 0.125rem 0.375rem;
+  border-radius: 0.25rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.snapshot-type-badge.major {
+  background: #f59e0b20;
+  color: #f59e0b;
+}
+
+.snapshot-type-badge.minor {
+  background: #64748b20;
+  color: #64748b;
+}
+
+.snapshot-date {
+  font-size: 0.625rem;
+  color: #64748b;
+  margin-bottom: 0.5rem;
+}
+
+.snapshot-features {
+  margin-bottom: 0.5rem;
+}
+
+.feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+.feature-tag {
+  padding: 0.125rem 0.375rem;
+  border-radius: 0.25rem;
+  font-size: 0.625rem;
+}
+
+.feature-tag.major {
+  background: #f59e0b20;
+  color: #f59e0b;
+}
+
+.snapshot-select-hint {
+  font-size: 0.625rem;
+  color: #3b82f6;
+  text-align: center;
+}
+
+.comparison-view {
+  animation: fadeIn 0.3s ease;
+}
+
+.comparison-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.clear-btn {
+  padding: 0.25rem 0.75rem;
+  background: transparent;
+  border: 1px solid #252540;
+  border-radius: 0.375rem;
+  color: #94a3b8;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.comparison-header h4 {
+  margin: 0;
+  font-size: 1rem;
+  color: #e2e8f0;
+}
+
+.comparison-grid {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.comparison-col {
+  padding: 1rem;
+  background: #0f0f1a;
+  border-radius: 0.5rem;
+}
+
+.col-header {
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #252540;
+}
+
+.col-name {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #e2e8f0;
+}
+
+.col-date {
+  font-size: 0.625rem;
+  color: #64748b;
+}
+
+.col-features h5 {
+  font-size: 0.75rem;
+  color: #94a3b8;
+  margin-bottom: 0.25rem;
+}
+
+.col-features ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.75rem 0;
+}
+
+.col-features li {
+  font-size: 0.75rem;
+  color: #e2e8f0;
+  padding: 0.25rem 0;
+  border-bottom: 1px solid #252540;
+}
+
+.comparison-vs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #3b82f6;
+}
+
+.comparison-insight {
+  padding: 0.875rem;
+  background: #0f0f1a;
+  border-left: 3px solid #f59e0b;
+  border-radius: 0.5rem;
+}
+
+.comparison-insight h5 {
+  font-size: 0.75rem;
+  color: #f59e0b;
+  margin-bottom: 0.25rem;
+}
+
+.comparison-insight p {
+  font-size: 0.75rem;
+  color: #e2e8f0;
+  margin: 0;
+}
+
+.comparator-footer {
+  padding-top: 1rem;
+  border-top: 1px solid #252540;
+}
+
+.snapshot-timeline {
+  position: relative;
+  padding: 1rem 0;
+}
+
+.timeline-bar {
+  position: relative;
+  height: 4px;
+  background: #252540;
+  border-radius: 2px;
+}
+
+.timeline-point {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #64748b;
+}
+
+.timeline-point.major {
+  background: #f59e0b;
+  width: 16px;
+  height: 16px;
+}
+
+.point-label {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.625rem;
+  color: #64748b;
+  white-space: nowrap;
+}

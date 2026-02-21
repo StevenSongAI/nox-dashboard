@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-02-21T06:46:00Z",
+  "lastUpdated": "2026-02-21T06:55:00Z",
   "updatedBy": "nox-heartbeat",
-  "version": "2026.02.21.51",
-  "cacheBust": "20260221T0646",
-  "dataVersion": "2026.02.21.51",
+  "version": "2026.02.21.52",
+  "cacheBust": "20260221T0655",
+  "dataVersion": "2026.02.21.52",
   "youtubeUpdated": "2026-02-20T23:36:00Z",
   "investmentsUpdated": "2026-02-20T23:28:00.000000",
-  "researchUpdated": "2026-02-21T06:46:00.000000",
+  "researchUpdated": "2026-02-21T06:55:00.000000",
   "newBusinessUpdated": "2026-02-20T21:25:00Z",
-  "toolsUpdated": "2026-02-21T06:46:00Z",
+  "toolsUpdated": "2026-02-21T06:55:00Z",
   "workTrackerUpdated": "2026-02-15T00:17:00Z",
   "minecraftArtistsUpdated": "2026-02-18T14:22:00Z",
   "investments": {
@@ -18,25 +18,25 @@
     "lastIntelligenceId": "intel-083"
   },
   "dataFreshness": {
-    "research": "2026-02-21 - Minecraft 26.1 Snapshot 8 baby mobs",
+    "research": "2026-02-21 - Minecraft 26w07a snapshot",
     "newBusiness": "2026-02-20 - Minecraft Marketplace widget live",
     "investments": "2026-02-20 - 90 intelligence items, NVDA earnings widget live",
     "workTracker": "2026-02-15 - pagination + deduplication live",
     "minecraftArtists": "2026-02-18 - 16 artists",
     "youtube": "2026-02-20 - 165 outliers, 20 briefs, kanban + Shorts calculator",
-    "tools": "2026-02-21 - Baby Mob Showcase + Audio Explorer + Create Mod widgets"
+    "tools": "2026-02-21 - Snapshot Comparator + Baby Mob Showcase + Audio Explorer widgets"
   },
-  "research": { "lastUpdated": "2026-02-21T06:46:00Z" },
-  "totalNotes": 66,
-  "lastDataPush": "2026-02-21T06:46:00Z",
+  "research": { "lastUpdated": "2026-02-21T06:55:00Z" },
+  "totalNotes": 67,
+  "lastDataPush": "2026-02-21T06:55:00Z",
   "lastPushBy": "nox-heartbeat",
-  "lastPushDescription": "Baby Mob Showcase widget. Research: Minecraft 26.1 Snapshot 8 baby mobs (hoglin, panda, sniffer, strider, zoglin). Build: Interactive gallery with 5 mob cards, detail views, content angles, hostile/passive indicators.",
+  "lastPushDescription": "Snapshot Comparator widget. Research: Minecraft 26w07a (adult sound variants, baby texture updates). Build: Interactive comparator with 4 snapshots, select-to-compare, side-by-side feature view, timeline visualization.",
   "newBusiness": { "lastUpdated": "2026-02-20T21:25:00Z" },
-  "tools": { "lastUpdated": "2026-02-21T06:46:00Z", "totalTools": 27 },
+  "tools": { "lastUpdated": "2026-02-21T06:55:00Z", "totalTools": 28 },
   "youtube": { "lastUpdated": "2026-02-20T23:36:00Z" },
   "competitorsUpdated": "2026-02-20T11:50:55Z",
   "competitors": { "lastUpdated": "2026-02-20T11:50:55Z", "totalCompetitors": 22 },
-  "audits": { "lastUpdated": "2026-02-21T06:27:00Z" },
+  "audits": { "lastUpdated": "2026-02-21T06:46:00Z" },
   "minecraftArtists": { "lastUpdated": "2026-02-20T01:47:50Z" },
   "totalOutliers": 165,
   "sections": {
@@ -44,7 +44,7 @@
     "investments": "2026-02-20T23:28:00Z",
     "newBusiness": "2026-02-20T21:25:00Z",
     "competitors": "2026-02-20T11:50:55Z",
-    "research": "2026-02-21T06:46:00Z",
-    "tools": "2026-02-21T06:46:00Z"
+    "research": "2026-02-21T06:55:00Z",
+    "tools": "2026-02-21T06:55:00Z"
   }
 }
