@@ -1,24 +1,24 @@
 {
-  "lastHeartbeat": "2026-02-21T15:11:00Z",
-  "totalHeartbeats": 468,
-  "lastAction": "HB468: AI Video Editor Comparison widget. Research: 2026 AI video editing trends — DaVinci Resolve (color grading), Descript (text-based), CapCut (social), Premiere Pro (pro), Filmora (beginners). Build: 5 editor profiles with ratings, side-by-side comparison, use case recommendations.",
+  "lastHeartbeat": "2026-02-21T15:29:00Z",
+  "totalHeartbeats": 469,
+  "lastAction": "HB469: Content Workflow Automation widget. Research: 2026 content automation trends — Activepieces, Zapier, Planable, Later for creator workflows. Build: 4 pre-built workflows (Video Production, Minecraft Content, Multi-Platform, Series Planning), automation tools directory, implementation tips.",
   "currentPriorities": {
-    "youtube": "AI video editing tools — editor comparison live",
-    "business": "Creator tools expansion — video editing guide added",
+    "youtube": "Workflow automation — content pipeline optimization",
+    "business": "Creator productivity tools — workflow automation",
     "investments": "NVDA earnings Feb 26 — countdown widget live"
   },
   "dataFreshness": {
-    "youtube": "2026-02-21 — 177 outliers, 20 briefs, 56 tools including AI Video Editor Comparison",
+    "youtube": "2026-02-21 — 177 outliers, 20 briefs, 57 tools including Workflow Automation",
     "newBusiness": "2026-02-20 — 8 opportunities",
     "investments": "2026-02-21 — NVDA earnings intelligence",
-    "research": "2026-02-21 — 28 notes (added AI video editor research)",
-    "audits": "2026-02-21 — 36 audits logged",
-    "tools": "2026-02-21 — 56 tools including AI Video Editor Comparison"
+    "research": "2026-02-21 — 29 notes (added workflow automation research)",
+    "audits": "2026-02-21 — 37 audits logged",
+    "tools": "2026-02-21 — 57 tools including Content Workflow Automation"
   },
   "recentFeedback": [
     {"date": "2026-02-07", "feedback": "Steven wants browser-based tools only, not local apps"}
   ],
-  "workThatLanded": ["Content Pipeline concept", "X Intelligence data", "Thumbnail Preview Tool", "Series Planner", "NVDA Earnings Countdown", "Minecraft 26.1 Planner", "Shorts-Long Mixer", "BBS Cinematic Planner", "Marketplace Creator Benchmark", "Minecraft Live 2026 Countdown", "AI Video Comparison Tool", "YouTube Retention Analyzer", "Minecraft Creator Tools Directory", "Minecraft Movie Content Ideas", "YouTube Engagement Optimizer", "AI Coding Assistant Comparison", "BBS Mod Content Planner", "Speedrun Strategy Tracker", "Local LLM Comparison", "Minecraft Content Ideas Generator", "Mod Loader Comparison", "AI Video Editor Comparison"],
+  "workThatLanded": ["Content Pipeline concept", "X Intelligence data", "Thumbnail Preview Tool", "Series Planner", "NVDA Earnings Countdown", "Minecraft 26.1 Planner", "Shorts-Long Mixer", "BBS Cinematic Planner", "Marketplace Creator Benchmark", "Minecraft Live 2026 Countdown", "AI Video Comparison Tool", "YouTube Retention Analyzer", "Minecraft Creator Tools Directory", "Minecraft Movie Content Ideas", "YouTube Engagement Optimizer", "AI Coding Assistant Comparison", "BBS Mod Content Planner", "Speedrun Strategy Tracker", "Local LLM Comparison", "Minecraft Content Ideas Generator", "Mod Loader Comparison", "AI Video Editor Comparison", "Content Workflow Automation"],
   "workThatFlopped": ["Local-only dashboard app", "Scattered markdown reports"],
   "lessonsLearned": [
     "All tools must be browser-accessible — Steven uses a different computer",
@@ -43,7 +43,8 @@
     "Local LLM comparison helps users choose the right on-device AI solution",
     "Content ideas generators help creators overcome creative block with data-driven suggestions",
     "Mod loader comparisons help players choose the right platform for their modded experience",
-    "AI video editor comparisons help creators choose the right editing software for their workflow"
+    "AI video editor comparisons help creators choose the right editing software for their workflow",
+    "Workflow automation tools help creators scale production without losing authenticity"
   ],
-  "nextPriority": "Continue expanding creator tool suite — video production workflow"
+  "nextPriority": "Continue expanding creator productivity tool suite"
 }

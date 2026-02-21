@@ -555,6 +555,7 @@
         <button onclick="showToolsSection('content-ideas')" id="tools-btn-content-ideas" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">💡 Content Ideas</button>
         <button onclick="showToolsSection('mod-loader')" id="tools-btn-mod-loader" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">🔧 Mod Loaders</button>
         <button onclick="showToolsSection('ai-video-editor')" id="tools-btn-ai-video-editor" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">✂️ AI Video Editors</button>
+        <button onclick="showToolsSection('content-workflow')" id="tools-btn-content-workflow" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">🔄 Content Workflow</button>
         <button onclick="showToolsSection('redstone-planner')" id="tools-btn-redstone-planner" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">⚡ Redstone</button>
       </div>
 
@@ -975,6 +976,21 @@
               <path d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" stroke-width="1.5"/>
             </svg>
             <p>AI Video Editor comparison tool loading...</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Content Workflow Automation Section -->
+      <div id="tools-section-content-workflow" class="tools-section hidden">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4 gap-3">
+          <h2 class="text-xl font-semibold">🔄 Content Workflow Automation</h2>
+          <div class="flex gap-2">
+            <button onclick="loadContentWorkflow()" class="px-3 py-1 bg-accent-blue rounded text-sm hover:bg-blue-600">🔄 Refresh</button>
+          </div>
+        </div>
+        <div id="content-workflow-container">
+          <div class="text-center py-8 text-gray-500">
+            <p>Loading content workflow automation tool...</p>
           </div>
         </div>
       </div>
@@ -1473,6 +1489,7 @@
   <script src="widgets/local-llm-comparison.js?v=202602210846"></script>
   <script src="widgets/mc-content-ideas-generator.js?v=202602210916"></script>
   <script src="widgets/mod-loader-comparison.js?v=202602210946"></script>
+  <script src="widgets/content-workflow-automation.js?v=202602211029"></script>
   <script src="widgets/ai-video-editor-comparison.js?v=202602211011"></script>
   <script src="widgets/redstone-project-planner.js?v=202602210946"></script>
   <script src="app.js?v=202602201712"></script>
@@ -1625,6 +1642,15 @@
       if (container && window.AIVideoEditorComparison) {
         window.aiVideoEditorComparison = new AIVideoEditorComparison();
         window.aiVideoEditorComparison.render('ai-video-editor-comparison-container');
+      }
+    }
+
+    // Content Workflow Automation loader
+    function loadContentWorkflow() {
+      const container = document.getElementById('content-workflow-container');
+      if (container && window.ContentWorkflowAutomation) {
+        window.contentWorkflow = new ContentWorkflowAutomation();
+        window.contentWorkflow.render('content-workflow-container');
       }
     }
 

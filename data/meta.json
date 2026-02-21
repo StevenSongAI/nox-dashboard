@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-02-21T15:11:00Z",
+  "lastUpdated": "2026-02-21T15:29:00Z",
   "updatedBy": "nox-heartbeat",
-  "version": "2026.02.21.74",
-  "cacheBust": "202602211511",
-  "dataVersion": "2026.02.21.74",
+  "version": "2026.02.21.75",
+  "cacheBust": "202602211529",
+  "dataVersion": "2026.02.21.75",
   "youtubeUpdated": "2026-02-21T14:16:00Z",
   "investmentsUpdated": "2026-02-21T09:26:00.000000",
-  "researchUpdated": "2026-02-21T15:11:00.000000",
+  "researchUpdated": "2026-02-21T15:29:00.000000",
   "newBusinessUpdated": "2026-02-20T21:25:00Z",
-  "toolsUpdated": "2026-02-21T15:11:00Z",
+  "toolsUpdated": "2026-02-21T15:29:00Z",
   "workTrackerUpdated": "2026-02-15T00:17:00Z",
   "minecraftArtistsUpdated": "2026-02-18T14:22:00Z",
   "investments": {
@@ -18,25 +18,25 @@
     "lastIntelligenceId": "nvda-earnings-hb452"
   },
   "dataFreshness": {
-    "research": "2026-02-21 - AI video editing tools 2026 (DaVinci, Descript, CapCut, Premiere, Filmora)",
+    "research": "2026-02-21 - Content workflow automation tools 2026 (Activepieces, Zapier, Planable)",
     "newBusiness": "2026-02-20 - Marketplace revenue widget live",
     "investments": "2026-02-21 - NVDA earnings countdown widget live (Feb 26)",
     "workTracker": "2026-02-15 - pagination + deduplication live",
     "minecraftArtists": "2026-02-18 - 16 artists",
-    "youtube": "2026-02-21 - 177 outliers, 20 briefs, 56 tools full suite",
-    "tools": "2026-02-21 - 56 tools including AI Video Editor Comparison"
+    "youtube": "2026-02-21 - 177 outliers, 20 briefs, 57 tools full suite",
+    "tools": "2026-02-21 - 57 tools including Content Workflow Automation"
   },
-  "research": { "lastUpdated": "2026-02-21T15:11:00Z" },
-  "totalNotes": 85,
-  "lastDataPush": "2026-02-21T15:11:00Z",
+  "research": { "lastUpdated": "2026-02-21T15:29:00Z" },
+  "totalNotes": 86,
+  "lastDataPush": "2026-02-21T15:29:00Z",
   "lastPushBy": "nox-heartbeat",
-  "lastPushDescription": "AI Video Editor Comparison widget. Research: 2026 AI video editing trends — DaVinci Resolve, Descript, CapCut, Premiere Pro, Filmora. Build: 5 editor profiles, side-by-side comparison, use case recommendations.",
+  "lastPushDescription": "Content Workflow Automation widget. Research: 2026 content automation trends. Build: 4 pre-built workflows, automation tools directory, implementation tips.",
   "newBusiness": { "lastUpdated": "2026-02-20T21:25:00Z" },
-  "tools": { "lastUpdated": "2026-02-21T15:11:00Z", "totalTools": 56 },
+  "tools": { "lastUpdated": "2026-02-21T15:29:00Z", "totalTools": 57 },
   "youtube": { "lastUpdated": "2026-02-21T14:16:00Z" },
   "competitorsUpdated": "2026-02-20T11:50:55Z",
   "competitors": { "lastUpdated": "2026-02-20T11:50:55Z", "totalCompetitors": 22 },
-  "audits": { "lastUpdated": "2026-02-21T15:11:00Z" },
+  "audits": { "lastUpdated": "2026-02-21T15:29:00Z" },
   "minecraftArtists": { "lastUpdated": "2026-02-20T01:47:50Z" },
   "totalOutliers": 177,
   "sections": {
@@ -44,7 +44,7 @@
     "investments": "2026-02-21T09:26:00Z",
     "newBusiness": "2026-02-20T21:25:00Z",
     "competitors": "2026-02-20T11:50:55Z",
-    "research": "2026-02-21T15:11:00Z",
-    "tools": "2026-02-21T15:11:00Z"
+    "research": "2026-02-21T15:29:00Z",
+    "tools": "2026-02-21T15:29:00Z"
   }
 }
