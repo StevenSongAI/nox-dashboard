@@ -3492,3 +3492,261 @@ main {
   color: #e2e8f0;
   margin: 0;
 }
+
+/* Minecraft Movie Box Office Tracker */
+.movie-tracker {
+  background: linear-gradient(135deg, #1a1a2e 0%, #0f0f1a 100%);
+  border: 1px solid #252540;
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+}
+
+.movie-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.movie-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.movie-icon {
+  font-size: 1.5rem;
+}
+
+.movie-title h3 {
+  margin: 0;
+  font-size: 1.125rem;
+  color: #e2e8f0;
+}
+
+.movie-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.movie-badge.rank-2 {
+  background: #f59e0b20;
+  color: #f59e0b;
+}
+
+.movie-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.movie-stat-box {
+  padding: 1rem;
+  background: #0f0f1a;
+  border-radius: 0.5rem;
+  text-align: center;
+  border: 1px solid #252540;
+}
+
+.movie-stat-box.highlight {
+  border-color: #10b981;
+  background: #10b98110;
+}
+
+.movie-stat-box .stat-value {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #e2e8f0;
+}
+
+.movie-stat-box.highlight .stat-value {
+  color: #10b981;
+}
+
+.movie-stat-box .stat-label {
+  font-size: 0.625rem;
+  color: #64748b;
+  text-transform: uppercase;
+}
+
+.vs-sonic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  background: #0f0f1a;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.vs-icon {
+  font-size: 1.25rem;
+}
+
+.vs-text {
+  font-size: 0.875rem;
+  color: #f59e0b;
+  font-weight: 600;
+}
+
+.rankings-list {
+  margin-bottom: 1rem;
+}
+
+.rankings-list h4 {
+  font-size: 0.75rem;
+  color: #94a3b8;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.ranking-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+  margin-bottom: 0.5rem;
+}
+
+.ranking-row.highlight {
+  background: #f59e0b10;
+  border: 1px solid #f59e0b30;
+}
+
+.rank-num {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #252540;
+  border-radius: 50%;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #e2e8f0;
+}
+
+.ranking-row.highlight .rank-num {
+  background: #f59e0b;
+  color: #000;
+}
+
+.rank-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.rank-title {
+  font-size: 0.75rem;
+  color: #e2e8f0;
+  margin-bottom: 0.25rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.rank-bar-container {
+  height: 6px;
+  background: #252540;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.rank-bar {
+  height: 100%;
+  background: linear-gradient(to right, #f59e0b, #fbbf24);
+  border-radius: 3px;
+  transition: width 0.5s ease;
+}
+
+.rank-gross {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #e2e8f0;
+  white-space: nowrap;
+}
+
+.milestone-note {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  background: #0f0f1a;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  color: #64748b;
+}
+
+.note-icon {
+  font-size: 1rem;
+}
+
+.content-angles {
+  padding: 1rem;
+  background: #0f0f1a;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  border-left: 3px solid #3b82f6;
+}
+
+.content-angles h4 {
+  font-size: 0.75rem;
+  color: #3b82f6;
+  margin-bottom: 0.5rem;
+}
+
+.content-angles ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.content-angles li {
+  padding: 0.375rem 0;
+  font-size: 0.875rem;
+  color: #e2e8f0;
+  border-bottom: 1px solid #252540;
+}
+
+.content-angles li:last-child {
+  border-bottom: none;
+}
+
+.tracker-actions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.tracker-actions .action-btn {
+  flex: 1;
+  padding: 0.75rem;
+  background: #0f0f1a;
+  border: 1px solid #252540;
+  border-radius: 0.375rem;
+  color: #94a3b8;
+  font-size: 0.875rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+.tracker-actions .action-btn:hover {
+  background: #252540;
+  color: #e2e8f0;
+}
+
+.tracker-actions .action-btn.primary {
+  background: #f59e0b;
+  border-color: #f59e0b;
+  color: #000;
+}
+
+.tracker-actions .action-btn.primary:hover {
+  background: #fbbf24;
+}
