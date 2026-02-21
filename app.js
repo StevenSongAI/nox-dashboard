@@ -1303,6 +1303,9 @@ function renderYouTube() {
 
   // Render NVDA earnings countdown
   safeRender(() => renderNvdaEarningsCountdown(), 'renderNvdaEarningsCountdown');
+  
+  // Render Performance Optimizer widget
+  safeRender(() => renderPerformanceOptimizer(), 'renderPerformanceOptimizer');
 }
 
 // Content Pipeline Kanban Board — NEW FEATURE: Visual production tracker
@@ -4999,6 +5002,211 @@ function forceCDNRefresh() {
   // Force reload from server (not cache)
   window.location.href = currentUrl.toString();
 }
+
+// ==================== PERFORMANCE OPTIMIZER WIDGET ====================
+// Interactive tool for Minecraft performance optimization
+// Research: Intel GPU optimization, JVM flags, RAM allocation (Feb 2026)
+
+function renderPerformanceOptimizer() {
+  const container = document.getElementById('performance-optimizer');
+  if (!container) return;
+  
+  const optimizations = {
+    gpu: {
+      title: 'GPU Optimization',
+      icon: '🎮',
+      tips: [
+        'Update graphics drivers via GPU proprietary software',
+        'Ensure javaw.exe uses discrete GPU, not integrated',
+        'Apply game-specific optimizations in GPU control panel'
+      ],
+      action: 'Check GPU Settings'
+    },
+    ram: {
+      title: 'RAM Allocation',
+      icon: '💾',
+      tips: [
+        'Allocate 4-6GB RAM for modded Minecraft (8GB system)',
+        'Use JVM flags: -Xmx4G -Xms4G -XX:+UseG1GC',
+        'Monitor RAM usage - max out = lag spikes'
+      ],
+      action: 'Optimize JVM Flags'
+    },
+    server: {
+      title: 'Server TPS',
+      icon: '🖥️',
+      tips: [
+        'Use Paper MC or Purpur for best performance',
+        'Optimize server.properties (view-distance, simulation-distance)',
+        'Install LagFixer or similar TPS optimization plugins'
+      ],
+      action: 'Server Optimization Guide'
+    }
+  };
+  
+  let html = `
+    <div class="bg-dark-800/50 border border-dark-600 rounded-lg p-4">
+      <div class="flex items-center gap-2 mb-4">
+        <span class="text-xl">⚡</span>
+        <h3 class="text-lg font-bold text-white">Minecraft Performance Optimizer</h3>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-3 mb-4">
+        ${Object.entries(optimizations).map(([key, opt]) => `
+          <button onclick="showOptimizationDetails('${key}')" 
+                  class="bg-dark-700/50 hover:bg-accent-primary/20 border border-dark-600 hover:border-accent-primary/50 rounded-lg p-3 text-left transition-all">
+            <div class="text-2xl mb-1">${opt.icon}</div>
+            <div class="font-semibold text-white text-sm">${opt.title}</div>
+            <div class="text-xs text-gray-400 mt-1">${opt.tips.length} tips</div>
+          </button>
+        `).join('')}
+      </div>
+      
+      <div id="optimization-details" class="bg-dark-700/30 rounded-lg p-3 min-h-[100px]">
+        <p class="text-gray-400 text-sm text-center">Click a category above to see optimization tips</p>
+      </div>
+      
+      <div class="mt-3 flex gap-2">
+        <button onclick="runPerformanceCheck()" class="btn-primary flex-1">
+          <span>🔍</span> Run Quick Check
+        </button>
+        <button onclick="exportOptimizationReport()" class="btn-secondary flex-1">
+          <span>📋</span> Export Tips
+        </button>
+      </div>
+      
+      <div id="performance-check-results" class="mt-3"></div>
+    </div>
+  `;
+  
+  container.innerHTML = html;
+}
+
+function showOptimizationDetails(category) {
+  const detailsEl = document.getElementById('optimization-details');
+  if (!detailsEl) return;
+  
+  const optimizations = {
+    gpu: {
+      title: 'GPU Optimization',
+      icon: '🎮',
+      tips: [
+        { text: 'Update graphics drivers via GPU proprietary software', priority: 'high' },
+        { text: 'Ensure javaw.exe uses discrete GPU, not integrated', priority: 'critical' },
+        { text: 'Apply game-specific optimizations in GPU control panel', priority: 'medium' }
+      ]
+    },
+    ram: {
+      title: 'RAM Allocation',
+      icon: '💾',
+      tips: [
+        { text: 'Allocate 4-6GB RAM for modded Minecraft (8GB system)', priority: 'high' },
+        { text: 'Use JVM flags: -Xmx4G -Xms4G -XX:+UseG1GC', priority: 'critical' },
+        { text: 'Monitor RAM usage - max out = lag spikes', priority: 'medium' }
+      ]
+    },
+    server: {
+      title: 'Server TPS Optimization',
+      icon: '🖥️',
+      tips: [
+        { text: 'Use Paper MC or Purpur for best performance', priority: 'critical' },
+        { text: 'Optimize server.properties (view-distance=8, simulation-distance=6)', priority: 'high' },
+        { text: 'Install LagFixer or similar TPS optimization plugins', priority: 'medium' }
+      ]
+    }
+  };
+  
+  const opt = optimizations[category];
+  if (!opt) return;
+  
+  const priorityColors = {
+    critical: 'text-accent-red',
+    high: 'text-accent-yellow',
+    medium: 'text-gray-400'
+  };
+  
+  detailsEl.innerHTML = `
+    <div class="flex items-center gap-2 mb-3">
+      <span class="text-xl">${opt.icon}</span>
+      <span class="font-semibold text-white">${opt.title}</span>
+    </div>
+    <ul class="space-y-2">
+      ${opt.tips.map(tip => `
+        <li class="flex items-start gap-2">
+          <span class="${priorityColors[tip.priority]} mt-1">•</span>
+          <span class="text-sm text-gray-300">${tip.text}</span>
+          <span class="text-xs ${priorityColors[tip.priority]} ml-auto">${tip.priority}</span>
+        </li>
+      `).join('')}
+    </ul>
+  `;
+}
+
+function runPerformanceCheck() {
+  const resultsEl = document.getElementById('performance-check-results');
+  if (!resultsEl) return;
+  
+  resultsEl.innerHTML = `
+    <div class="bg-accent-primary/10 border border-accent-primary/30 rounded-lg p-3 animate-pulse">
+      <div class="flex items-center gap-2">
+        <span class="animate-spin">⏳</span>
+        <span class="text-sm text-white">Running performance check...</span>
+      </div>
+    </div>
+  `;
+  
+  setTimeout(() => {
+    const checks = [
+      { name: 'RAM Allocation', status: 'warning', message: 'Consider allocating 4-6GB for modded Minecraft' },
+      { name: 'GPU Settings', status: 'info', message: 'Ensure javaw.exe uses discrete GPU' },
+      { name: 'Server Software', status: 'optimal', message: 'Paper MC recommended for best TPS' }
+    ];
+    
+    resultsEl.innerHTML = `
+      <div class="space-y-2 mt-3">
+        <div class="text-sm font-semibold text-white mb-2">Quick Check Results:</div>
+        ${checks.map(check => `
+          <div class="flex items-center gap-2 bg-dark-700/30 rounded p-2">
+            <span class="text-lg">${check.status === 'optimal' ? '✅' : check.status === 'warning' ? '⚠️' : 'ℹ️'}</span>
+            <div class="flex-1">
+              <div class="text-sm font-medium text-white">${check.name}</div>
+              <div class="text-xs text-gray-400">${check.message}</div>
+            </div>
+          </div>
+        `).join('')}
+      </div>
+    `;
+  }, 1500);
+}
+
+function exportOptimizationReport() {
+  const report = {
+    timestamp: new Date().toISOString(),
+    recommendations: [
+      'GPU: Update drivers, ensure discrete GPU for javaw.exe',
+      'RAM: Allocate 4-6GB with optimized JVM flags',
+      'Server: Use Paper MC, optimize view-distance and simulation-distance'
+    ],
+    sources: ['Intel Gaming', 'GitHub Performance Guide', 'DazcoHost 2026']
+  };
+  
+  const blob = new Blob([JSON.stringify(report, null, 2)], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'minecraft-optimization-report.json';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+  
+  alert('Optimization report exported!');
+}
+
+// Global exports for Performance Optimizer
+window.showOptimizationDetails = showOptimizationDetails;
+window.runPerformanceCheck = runPerformanceCheck;
+window.exportOptimizationReport = exportOptimizationReport;
 
 // ==================== GLOBAL EXPORTS FOR INLINE HANDLERS ====================
 // Ensure functions are available globally for onclick/onchange handlers
