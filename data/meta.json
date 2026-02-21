@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-02-21T11:58:00Z",
+  "lastUpdated": "2026-02-21T07:16:00Z",
   "updatedBy": "nox-heartbeat",
-  "version": "2026.02.21.72",
-  "cacheBust": "20260221T1158",
-  "dataVersion": "2026.02.21.72",
-  "youtubeUpdated": "2026-02-21T11:58:00Z",
+  "version": "2026.02.21.78",
+  "cacheBust": "20260221T0716",
+  "dataVersion": "2026.02.21.78",
+  "youtubeUpdated": "2026-02-21T09:48:00Z",
   "investmentsUpdated": "2026-02-21T09:26:00.000000",
-  "researchUpdated": "2026-02-21T11:58:00.000000",
+  "researchUpdated": "2026-02-21T09:48:00.000000",
   "newBusinessUpdated": "2026-02-20T21:25:00Z",
-  "toolsUpdated": "2026-02-21T11:58:00Z",
+  "toolsUpdated": "2026-02-21T07:16:00Z",
   "workTrackerUpdated": "2026-02-15T00:17:00Z",
   "minecraftArtistsUpdated": "2026-02-18T14:22:00Z",
   "investments": {
@@ -18,33 +18,33 @@
     "lastIntelligenceId": "nvda-earnings-hb452"
   },
   "dataFreshness": {
-    "research": "2026-02-21 - YouTube 2026 algorithm engagement signals",
+    "research": "2026-02-21 - BBS (Blockbuster Studio) mod for Minecraft cinematic content",
     "newBusiness": "2026-02-20 - Marketplace revenue widget live",
     "investments": "2026-02-21 - NVDA earnings countdown widget live (Feb 26)",
     "workTracker": "2026-02-15 - pagination + deduplication live",
     "minecraftArtists": "2026-02-18 - 16 artists",
-    "youtube": "2026-02-21 - 177 outliers, 20 briefs, 48 tools, full suite",
-    "tools": "2026-02-21 - 48 tools including Engagement Optimizer"
+    "youtube": "2026-02-21 - 177 outliers, 20 briefs, full tool suite",
+    "tools": "2026-02-21 - BBS Mod Content Planner + 48 other widgets"
   },
-  "research": { "lastUpdated": "2026-02-21T11:58:00Z" },
-  "totalNotes": 84,
-  "lastDataPush": "2026-02-21T11:58:00Z",
+  "research": { "lastUpdated": "2026-02-21T09:48:00Z" },
+  "totalNotes": 85,
+  "lastDataPush": "2026-02-21T07:16:00Z",
   "lastPushBy": "nox-heartbeat",
-  "lastPushDescription": "YouTube Engagement Optimizer widget. Research: 2026 algorithm prioritizes community engagement. Build: 5 signal weights, metric inputs, presets, score calculator, copy functionality.",
+  "lastPushDescription": "BBS Mod Content Planner. Research: BBS (Blockbuster Studio) mod by McHorse for Minecraft animations/machinimas — Blockbench model support, keyframe replay editor, clip-based camera, BBS Reforge for 1.21.1. Build: Scene-based planner with shot sequences, 8 shot types + 6 camera movements, interactive shot builder with duration/camera/notes, stats dashboard (scenes/duration/shots/est time), export to clipboard, BBS resources and best practices.",
   "newBusiness": { "lastUpdated": "2026-02-20T21:25:00Z" },
-  "tools": { "lastUpdated": "2026-02-21T11:58:00Z", "totalTools": 48 },
-  "youtube": { "lastUpdated": "2026-02-21T11:58:00Z" },
+  "tools": { "lastUpdated": "2026-02-21T07:16:00Z", "totalTools": 49 },
+  "youtube": { "lastUpdated": "2026-02-21T09:48:00Z" },
   "competitorsUpdated": "2026-02-20T11:50:55Z",
   "competitors": { "lastUpdated": "2026-02-20T11:50:55Z", "totalCompetitors": 22 },
-  "audits": { "lastUpdated": "2026-02-21T11:58:00Z" },
+  "audits": { "lastUpdated": "2026-02-21T09:48:00Z" },
   "minecraftArtists": { "lastUpdated": "2026-02-20T01:47:50Z" },
   "totalOutliers": 177,
   "sections": {
-    "youtube": "2026-02-21T11:58:00Z",
+    "youtube": "2026-02-21T09:48:00Z",
     "investments": "2026-02-21T09:26:00Z",
     "newBusiness": "2026-02-20T21:25:00Z",
     "competitors": "2026-02-20T11:50:55Z",
-    "research": "2026-02-21T11:58:00Z",
-    "tools": "2026-02-21T11:58:00Z"
+    "research": "2026-02-21T09:48:00Z",
+    "tools": "2026-02-21T07:16:00Z"
   }
 }

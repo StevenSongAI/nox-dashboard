@@ -549,6 +549,7 @@
         <button onclick="showToolsSection('retention-analyzer')" id="tools-btn-retention-analyzer" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">📊 Retention Analyzer</button>
         <button onclick="showToolsSection('mc-tools-directory')" id="tools-btn-mc-tools-directory" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">🛠️ MC Tools</button>
         <button onclick="showToolsSection('ai-coding')" id="tools-btn-ai-coding" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">💻 AI Coding</button>
+        <button onclick="showToolsSection('bbs-planner')" id="tools-btn-bbs-planner" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">🎬 BBS Planner</button>
       </div>
 
       <!-- Tool Registry Section -->
@@ -875,6 +876,21 @@
         <div id="ai-coding-comparison-container">
           <div class="text-center py-8 text-gray-500">
             <p>Loading AI coding comparison...</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- BBS Content Planner Section -->
+      <div id="tools-section-bbs-planner" class="tools-section hidden">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4 gap-3">
+          <h2 class="text-xl font-semibold">🎬 BBS Mod Content Planner</h2>
+          <div class="flex gap-2">
+            <button onclick="loadBBSPlanner()" class="px-3 py-1 bg-accent-blue rounded text-sm hover:bg-blue-600">🔄 Refresh</button>
+          </div>
+        </div>
+        <div id="bbs-planner-container">
+          <div class="text-center py-8 text-gray-500">
+            <p>Loading BBS planner...</p>
           </div>
         </div>
       </div>
@@ -1352,7 +1368,8 @@
   <script src="widgets/ai-video-comparison-tool.js?v=202602210546"></script>
   <script src="widgets/youtube-retention-analyzer.js?v=202602210616"></script>
   <script src="widgets/mc-tools-directory.js?v=202602210646"></script>
-  <script src="widgets/ai-coding-comparison.js?v=202602210646"></script>
+  <script src="widgets/ai-coding-comparison.js?v=202602210716"></script>
+  <script src="widgets/bbs-content-planner.js?v=202602210716"></script>
   <script src="app.js?v=202602201712"></script>
 
   <!-- Shorts Calculator Loader -->
@@ -1449,6 +1466,15 @@
       if (container && window.AICodingAssistantComparison) {
         window.aiCodingComparison = new AICodingAssistantComparison();
         window.aiCodingComparison.render('ai-coding-comparison-container');
+      }
+    }
+
+    // BBS Content Planner loader
+    function loadBBSPlanner() {
+      const container = document.getElementById('bbs-planner-container');
+      if (container && window.BBSContentPlanner) {
+        window.bbsPlanner = new BBSContentPlanner();
+        window.bbsPlanner.render('bbs-planner-container');
       }
     }
 
