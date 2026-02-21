@@ -405,7 +405,9 @@
         "Custom models",
         "Scene blocking"
       ],
-      "addedAt": "2026-02-20T18:18:05Z"
+      "ecosystemNotes": "BBS Reforge brings BBS to modern versions with dynamic lighting. Blockbuster mod bridges CustomNPCs with BBS models. Flashback captures live moments, BBS creates scripted scenes — different use cases.",
+      "addedAt": "2026-02-20T18:18:05Z",
+      "updatedAt": "2026-02-20T23:10:00Z"
     },
     {
       "id": "tool-mineimator",

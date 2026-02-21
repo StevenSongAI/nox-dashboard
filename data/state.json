@@ -1,15 +1,15 @@
 {
-  "lastHeartbeat": "2026-02-20T23:36:00Z",
-  "totalHeartbeats": 422,
-  "lastAction": "HB422: Minecraft Live 2026 content brief. Research: Game Drop 26.1 baby mob redesigns (Minecraft Wiki, Minecraft.net). Build: Content brief-020 for 'All Baby Mobs Redesigned - First Look' video.",
+  "lastHeartbeat": "2026-02-20T23:10:00Z",
+  "totalHeartbeats": 423,
+  "lastAction": "HB423: BBS ecosystem research update. Research: BBS Reforge, Blockbuster mod, Flashback comparison (CurseForge, Reddit). Build: Added ecosystemNotes to tool-bbs in tools.json.",
   "nextPriority": "Hook Steven up with the Animator to test BBS Crowd Spawner v3.4 texture selection",
   "dataFreshness": {
-    "youtube": "2026-02-20 - 165 outliers, 20 briefs (+Minecraft Live 2026), kanban with full features",
+    "youtube": "2026-02-20 - 165 outliers, 20 briefs, kanban with full features",
     "investments": "2026-02-20 - 90 intelligence items, NVDA earnings widget live, 6 days to earnings",
     "newBusiness": "2026-02-20 - Marketplace revenue widget + 19 opps",
-    "research": "2026-02-20 - 61 notes + Minecraft Live 2026 features",
+    "research": "2026-02-20 - 62 notes + BBS ecosystem intel",
     "competitors": "2026-02-20 - 22 tracked",
-    "tools": "2026-02-20 - Animation Tools + Marketplace Revenue + Content Briefs Kanban + NVDA Earnings widgets"
+    "tools": "2026-02-20 - Animation Tools updated with BBS ecosystem notes"
   },
   "minecraftLiveCountdown": {
     "eventDate": "2026-03-15T19:00:00-05:00",

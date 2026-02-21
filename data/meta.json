@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-02-20T23:36:00Z",
+  "lastUpdated": "2026-02-20T23:10:00Z",
   "updatedBy": "nox-heartbeat",
-  "version": "2026.02.20.45",
-  "cacheBust": "20260220T2336",
-  "dataVersion": "2026.02.20.45",
+  "version": "2026.02.20.46",
+  "cacheBust": "20260220T2310",
+  "dataVersion": "2026.02.20.46",
   "youtubeUpdated": "2026-02-20T23:36:00Z",
   "investmentsUpdated": "2026-02-20T23:28:00.000000",
-  "researchUpdated": "2026-02-20T23:36:00.000000",
+  "researchUpdated": "2026-02-20T23:10:00.000000",
   "newBusinessUpdated": "2026-02-20T21:25:00Z",
-  "toolsUpdated": "2026-02-20T23:28:00Z",
+  "toolsUpdated": "2026-02-20T23:10:00Z",
   "workTrackerUpdated": "2026-02-15T00:17:00Z",
   "minecraftArtistsUpdated": "2026-02-18T14:22:00Z",
   "investments": {
@@ -18,26 +18,26 @@
     "lastIntelligenceId": "intel-083"
   },
   "dataFreshness": {
-    "research": "2026-02-20 - Minecraft Live 2026 baby mob redesigns (Game Drop 26.1)",
+    "research": "2026-02-20 - BBS ecosystem update (Reforge, Blockbuster, Flashback comparison)",
     "newBusiness": "2026-02-20 - Minecraft Marketplace widget live",
     "investments": "2026-02-20 - 90 intelligence items, NVDA earnings widget live",
     "workTracker": "2026-02-15 - pagination + deduplication live",
     "minecraftArtists": "2026-02-18 - 16 artists",
-    "youtube": "2026-02-20 - 165 outliers, 20 briefs (+Minecraft Live 2026), kanban with full features",
-    "tools": "2026-02-20 - Animation Tools + Marketplace Revenue + Content Briefs Kanban + NVDA Earnings widgets"
+    "youtube": "2026-02-20 - 165 outliers, 20 briefs, kanban with full features",
+    "tools": "2026-02-20 - Animation Tools updated with BBS ecosystem notes"
   },
   "research": {
-    "lastUpdated": "2026-02-20T23:36:00Z"
+    "lastUpdated": "2026-02-20T23:10:00Z"
   },
-  "totalNotes": 61,
-  "lastDataPush": "2026-02-20T23:36:00Z",
+  "totalNotes": 62,
+  "lastDataPush": "2026-02-20T23:10:00Z",
   "lastPushBy": "nox-heartbeat",
-  "lastPushDescription": "Minecraft Live 2026 content brief. Research: Game Drop 26.1 baby mob redesigns (Minecraft Wiki, Minecraft.net). Build: Content brief-020 for 'All Baby Mobs Redesigned - First Look' video.",
+  "lastPushDescription": "BBS ecosystem research update. Added ecosystemNotes to tool-bbs covering BBS Reforge, Blockbuster mod integration, and Flashback comparison.",
   "newBusiness": {
     "lastUpdated": "2026-02-20T21:25:00Z"
   },
   "tools": {
-    "lastUpdated": "2026-02-20T23:28:00Z",
+    "lastUpdated": "2026-02-20T23:10:00Z",
     "totalTools": 23
   },
   "youtube": {
@@ -49,7 +49,7 @@
     "totalCompetitors": 22
   },
   "audits": {
-    "lastUpdated": "2026-02-20T23:33:00Z"
+    "lastUpdated": "2026-02-20T23:38:00Z"
   },
   "minecraftArtists": {
     "lastUpdated": "2026-02-20T01:47:50Z"
@@ -60,7 +60,7 @@
     "investments": "2026-02-20T23:28:00Z",
     "newBusiness": "2026-02-20T21:25:00Z",
     "competitors": "2026-02-20T11:50:55Z",
-    "research": "2026-02-20T23:36:00Z",
-    "tools": "2026-02-20T23:28:00Z"
+    "research": "2026-02-20T23:10:00Z",
+    "tools": "2026-02-20T23:10:00Z"
   }
 }
