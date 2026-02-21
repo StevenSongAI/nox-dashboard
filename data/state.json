@@ -1,24 +1,24 @@
 {
-  "lastHeartbeat": "2026-02-21T09:36:00Z",
-  "totalHeartbeats": 453,
-  "lastAction": "HB453: Built Minecraft 26.1 Content Planner widget. Research: Minecraft 26.1 'First Drop 2026' coming late March — adds new textures/models for all 15 baby mobs, craftable nametags, golden dandelion. Snapshot 8 finalized baby mobs 4 days ago. Build: Live widget with 15 baby mob database with content angles, video concept generator, script template, copy functionality, external links to wiki and snapshot page.",
+  "lastHeartbeat": "2026-02-21T09:42:00Z",
+  "totalHeartbeats": 454,
+  "lastAction": "HB454: Built Shorts-to-Long Form Content Mixer widget. Research: 2026 YouTube trends — Shorts acting as trailers for long-form content, compilation formats working well, transformation/reaction content highest-viewed Shorts format. Build: 6 content mix templates (Teaser Trailer, Transformation Reveal, Reaction Bait, Compilation Preview, Tutorial Preview, Challenge Setup), clickable template cards, mix generator with Shorts + long-form strategy panels, copy plan functionality, 2026 strategy tips section.",
   "currentPriorities": {
-    "youtube": "Minecraft 26.1 content prep — planner widget live",
+    "youtube": "Shorts-long form mix strategy — mixer widget live",
     "business": "SaaS partnerships - 2 opps being evaluated",
     "investments": "NVDA earnings Feb 26 — countdown widget live"
   },
   "dataFreshness": {
-    "youtube": "2026-02-21 — 177 outliers, 20 briefs, 26.1 planner",
+    "youtube": "2026-02-21 — 177 outliers, 20 briefs, 26.1 planner, Shorts mixer",
     "newBusiness": "2026-02-20 — 8 opportunities",
     "investments": "2026-02-21 — NVDA earnings intelligence",
-    "research": "2026-02-21 — 13 notes (added 26.1 data)",
-    "audits": "2026-02-21 — 21 audits logged",
-    "tools": "2026-02-21 — 39 tools"
+    "research": "2026-02-21 — 14 notes (added 2026 content trends)",
+    "audits": "2026-02-21 — 22 audits logged",
+    "tools": "2026-02-21 — 40 tools"
   },
   "recentFeedback": [
     {"date": "2026-02-07", "feedback": "Steven wants browser-based tools only, not local apps"}
   ],
-  "workThatLanded": ["Content Pipeline concept", "X Intelligence data", "Thumbnail Preview Tool", "Series Planner", "NVDA Earnings Countdown", "Minecraft 26.1 Planner"],
+  "workThatLanded": ["Content Pipeline concept", "X Intelligence data", "Thumbnail Preview Tool", "Series Planner", "NVDA Earnings Countdown", "Minecraft 26.1 Planner", "Shorts-Long Mixer"],
   "workThatFlopped": ["Local-only dashboard app", "Scattered markdown reports"],
   "lessonsLearned": [
     "All tools must be browser-accessible — Steven uses a different computer",
@@ -27,7 +27,8 @@
     "BBlocks-style thumbnails with bold text chips perform better",
     "Series content outperforms one-offs — build tools that enable episodic planning",
     "Investment intelligence widgets should surface actionable data with clear countdowns",
-    "Minecraft update trackers with content angles help prep for release day content"
+    "Minecraft update trackers with content angles help prep for release day content",
+    "Shorts as trailers for long-form is a key 2026 trend — build tools that facilitate this workflow"
   ],
-  "nextPriority": "Continue monitoring 26.1 snapshots for new feature reveals, prep release day content"
+  "nextPriority": "Apply Shorts-long form strategy to upcoming Minecraft 26.1 content"
 }
