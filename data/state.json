@@ -1,24 +1,24 @@
 {
-  "lastHeartbeat": "2026-02-21T16:24:00Z",
-  "totalHeartbeats": 473,
-  "lastAction": "HB473: Create Mod Build Ideas Generator widget. Research: Create Mod contraptions, rotational power, aesthetic automation by simibubi. Build: 4-tab generator (~17KB) with 6 build categories, random idea generator, RPM calculator with gear ratio math, component reference, saved ideas with localStorage persistence.",
+  "lastHeartbeat": "2026-02-21T16:35:00Z",
+  "totalHeartbeats": 474,
+  "lastAction": "HB474: Minecraft 26.1 First Drop 2026 Tracker widget. Research: First Drop 2026 features - craftable name tags, bundles in villages, baby mob models, golden dandelion, lodestone recipe. Build: 4-tab tracker (~13KB) with feature overview, new recipes with visual crafting grid, baby mob showcase, content prep checklist.",
   "currentPriorities": {
-    "youtube": "Minecraft mod content — Create Mod generator live",
-    "business": "Creator tools expansion — 63 tools in dashboard",
+    "youtube": "Minecraft 26.1 content — First Drop tracker live",
+    "business": "Creator tools expansion — 64 tools in dashboard",
     "investments": "NVDA earnings Feb 26 — countdown widget live"
   },
   "dataFreshness": {
-    "youtube": "2026-02-21 — 177 outliers, 20 briefs, 63 tools",
+    "youtube": "2026-02-21 — 177 outliers, 20 briefs, 64 tools",
     "newBusiness": "2026-02-20 — 8 opportunities",
     "investments": "2026-02-21 — NVDA earnings intelligence",
-    "research": "2026-02-21 — 33 notes (added Create Mod research)",
-    "audits": "2026-02-21 — 40 audits logged",
-    "tools": "2026-02-21 — 63 tools including Create Mod Generator"
+    "research": "2026-02-21 — 34 notes (added MC 26.1 First Drop research)",
+    "audits": "2026-02-21 — 41 audits logged",
+    "tools": "2026-02-21 — 64 tools including MC 26.1 Tracker"
   },
   "recentFeedback": [
     {"date": "2026-02-07", "feedback": "Steven wants browser-based tools only, not local apps"}
   ],
-  "workThatLanded": ["Content Pipeline concept", "X Intelligence data", "Thumbnail Preview Tool", "Series Planner", "NVDA Earnings Countdown", "Minecraft 26.1 Planner", "Shorts-Long Mixer", "BBS Cinematic Planner", "Marketplace Creator Benchmark", "Minecraft Live 2026 Countdown", "AI Video Comparison Tool", "YouTube Retention Analyzer", "Minecraft Creator Tools Directory", "Minecraft Movie Content Ideas", "YouTube Engagement Optimizer", "AI Coding Assistant Comparison", "BBS Mod Content Planner", "Speedrun Strategy Tracker", "Local LLM Comparison", "Minecraft Content Ideas Generator", "Mod Loader Comparison", "AI Video Editor Comparison", "Content Workflow Automation", "Minecraft Architecture Guide", "Minecraft 2026 Roadmap", "BBS Cinematic Toolkit", "Create Mod Build Ideas Generator"],
+  "workThatLanded": ["Content Pipeline concept", "X Intelligence data", "Thumbnail Preview Tool", "Series Planner", "NVDA Earnings Countdown", "Minecraft 26.1 Planner", "Shorts-Long Mixer", "BBS Cinematic Planner", "Marketplace Creator Benchmark", "Minecraft Live 2026 Countdown", "AI Video Comparison Tool", "YouTube Retention Analyzer", "Minecraft Creator Tools Directory", "Minecraft Movie Content Ideas", "YouTube Engagement Optimizer", "AI Coding Assistant Comparison", "BBS Mod Content Planner", "Speedrun Strategy Tracker", "Local LLM Comparison", "Minecraft Content Ideas Generator", "Mod Loader Comparison", "AI Video Editor Comparison", "Content Workflow Automation", "Minecraft Architecture Guide", "Minecraft 2026 Roadmap", "BBS Cinematic Toolkit", "Create Mod Build Ideas Generator", "Minecraft 26.1 First Drop Tracker"],
   "workThatFlopped": ["Local-only dashboard app", "Scattered markdown reports"],
   "lessonsLearned": [
     "All tools must be browser-accessible — Steven uses a different computer",
@@ -48,7 +48,8 @@
     "Architecture guides help builders improve their skills with proper techniques and palettes",
     "2026 roadmap widgets help creators plan content around upcoming Minecraft updates",
     "BBS Cinematic Toolkit bridges Blockbench workflow with in-game filming",
-    "Create Mod build generators help players discover contraption ideas with proper difficulty ratings"
+    "Create Mod build generators help players discover contraption ideas with proper difficulty ratings",
+    "Minecraft update trackers with recipe visualizations help players prepare for changes"
   ],
   "nextPriority": "Continue expanding Minecraft content creator tool suite"
 }
