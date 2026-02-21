@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-02-21T15:29:00Z",
+  "lastUpdated": "2026-02-21T10:46:00Z",
   "updatedBy": "nox-heartbeat",
-  "version": "2026.02.21.75",
-  "cacheBust": "202602211529",
-  "dataVersion": "2026.02.21.75",
-  "youtubeUpdated": "2026-02-21T14:16:00Z",
+  "version": "2026.02.21.90",
+  "cacheBust": "20260221T1046",
+  "dataVersion": "2026.02.21.90",
+  "youtubeUpdated": "2026-02-21T09:48:00Z",
   "investmentsUpdated": "2026-02-21T09:26:00.000000",
-  "researchUpdated": "2026-02-21T15:29:00.000000",
+  "researchUpdated": "2026-02-21T09:48:00.000000",
   "newBusinessUpdated": "2026-02-20T21:25:00Z",
-  "toolsUpdated": "2026-02-21T15:29:00Z",
+  "toolsUpdated": "2026-02-21T10:46:00Z",
   "workTrackerUpdated": "2026-02-15T00:17:00Z",
   "minecraftArtistsUpdated": "2026-02-18T14:22:00Z",
   "investments": {
@@ -18,33 +18,33 @@
     "lastIntelligenceId": "nvda-earnings-hb452"
   },
   "dataFreshness": {
-    "research": "2026-02-21 - Content workflow automation tools 2026 (Activepieces, Zapier, Planable)",
+    "research": "2026-02-21 - Minecraft architecture (medieval, modern, gabled roofs)",
     "newBusiness": "2026-02-20 - Marketplace revenue widget live",
     "investments": "2026-02-21 - NVDA earnings countdown widget live (Feb 26)",
     "workTracker": "2026-02-15 - pagination + deduplication live",
     "minecraftArtists": "2026-02-18 - 16 artists",
-    "youtube": "2026-02-21 - 177 outliers, 20 briefs, 57 tools full suite",
-    "tools": "2026-02-21 - 57 tools including Content Workflow Automation"
+    "youtube": "2026-02-21 - 177 outliers, 20 briefs, full tool suite",
+    "tools": "2026-02-21 - Minecraft Architecture Guide + 59 other widgets"
   },
-  "research": { "lastUpdated": "2026-02-21T15:29:00Z" },
-  "totalNotes": 86,
-  "lastDataPush": "2026-02-21T15:29:00Z",
+  "research": { "lastUpdated": "2026-02-21T09:48:00Z" },
+  "totalNotes": 91,
+  "lastDataPush": "2026-02-21T10:46:00Z",
   "lastPushBy": "nox-heartbeat",
-  "lastPushDescription": "Content Workflow Automation widget. Research: 2026 content automation trends. Build: 4 pre-built workflows, automation tools directory, implementation tips.",
+  "lastPushDescription": "Minecraft Architecture Style Guide. Research: Medieval architecture (depth, asymmetry, material combinations), gabled roofs, AI palette generators trending 2026. Build: 6 architecture styles (Medieval, Modern, Rustic, Japanese, Fantasy, Steampunk), 8 pre-made block palettes, style-specific tips, common mistakes and pro tips sections, 2026 building trends.",
   "newBusiness": { "lastUpdated": "2026-02-20T21:25:00Z" },
-  "tools": { "lastUpdated": "2026-02-21T15:29:00Z", "totalTools": 57 },
-  "youtube": { "lastUpdated": "2026-02-21T14:16:00Z" },
+  "tools": { "lastUpdated": "2026-02-21T10:46:00Z", "totalTools": 60 },
+  "youtube": { "lastUpdated": "2026-02-21T09:48:00Z" },
   "competitorsUpdated": "2026-02-20T11:50:55Z",
   "competitors": { "lastUpdated": "2026-02-20T11:50:55Z", "totalCompetitors": 22 },
-  "audits": { "lastUpdated": "2026-02-21T15:29:00Z" },
+  "audits": { "lastUpdated": "2026-02-21T09:48:00Z" },
   "minecraftArtists": { "lastUpdated": "2026-02-20T01:47:50Z" },
   "totalOutliers": 177,
   "sections": {
-    "youtube": "2026-02-21T14:16:00Z",
+    "youtube": "2026-02-21T09:48:00Z",
     "investments": "2026-02-21T09:26:00Z",
     "newBusiness": "2026-02-20T21:25:00Z",
     "competitors": "2026-02-20T11:50:55Z",
-    "research": "2026-02-21T15:29:00Z",
-    "tools": "2026-02-21T15:29:00Z"
+    "research": "2026-02-21T09:48:00Z",
+    "tools": "2026-02-21T10:46:00Z"
   }
 }
