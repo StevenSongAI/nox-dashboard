@@ -3229,3 +3229,266 @@ main {
   color: #64748b;
   text-transform: uppercase;
 }
+
+/* Minecraft 26.1 Audio Explorer */
+.audio-explorer {
+  background: linear-gradient(135deg, #1a1a2e 0%, #0f0f1a 100%);
+  border: 1px solid #252540;
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+}
+
+.audio-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.audio-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.audio-icon {
+  font-size: 1.5rem;
+}
+
+.audio-title h3 {
+  margin: 0;
+  font-size: 1.125rem;
+  color: #e2e8f0;
+}
+
+.audio-badge {
+  padding: 0.25rem 0.5rem;
+  background: #10b98120;
+  color: #10b981;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 0.25rem;
+}
+
+.audio-stats {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  background: #0f0f1a;
+  border-radius: 0.5rem;
+}
+
+.audio-stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.audio-stat .stat-num {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #e2e8f0;
+}
+
+.audio-stat .stat-label {
+  font-size: 0.625rem;
+  color: #64748b;
+  text-transform: uppercase;
+}
+
+.mob-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.mob-card {
+  padding: 1rem;
+  background: #0f0f1a;
+  border: 1px solid #252540;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.mob-card:hover {
+  border-color: #8b5cf6;
+  transform: translateY(-2px);
+}
+
+.mob-card.real-audio {
+  border-left: 3px solid #10b981;
+}
+
+.mob-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.mob-icon {
+  font-size: 1.5rem;
+}
+
+.real-badge {
+  padding: 0.125rem 0.375rem;
+  background: #10b98120;
+  color: #10b981;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 0.25rem;
+}
+
+.mob-name {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #e2e8f0;
+  margin: 0 0 0.25rem 0;
+}
+
+.mob-desc {
+  font-size: 0.75rem;
+  color: #64748b;
+  margin: 0 0 0.75rem 0;
+  line-height: 1.4;
+}
+
+.mob-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mob-variants {
+  font-size: 0.625rem;
+  color: #8b5cf6;
+  font-weight: 600;
+}
+
+.mob-cta {
+  font-size: 0.75rem;
+  color: #8b5cf6;
+}
+
+.mob-detail {
+  animation: slideIn 0.3s ease;
+}
+
+.detail-hero {
+  text-align: center;
+  padding: 1.5rem;
+  background: #0f0f1a;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.detail-icon {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.detail-hero h2 {
+  font-size: 1.25rem;
+  color: #e2e8f0;
+  margin: 0 0 0.5rem 0;
+}
+
+.detail-hero p {
+  font-size: 0.875rem;
+  color: #64748b;
+  margin: 0 0 0.75rem 0;
+}
+
+.detail-real-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: #10b98120;
+  color: #10b981;
+  font-size: 0.75rem;
+  border-radius: 1rem;
+}
+
+.sound-types {
+  margin-bottom: 1rem;
+}
+
+.sound-types h4 {
+  font-size: 0.75rem;
+  color: #94a3b8;
+  margin-bottom: 0.5rem;
+}
+
+.sound-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.sound-tag {
+  padding: 0.25rem 0.5rem;
+  background: #0f0f1a;
+  border: 1px solid #252540;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  color: #e2e8f0;
+}
+
+.variant-visual {
+  margin-bottom: 1rem;
+}
+
+.variant-visual h4 {
+  font-size: 0.75rem;
+  color: #94a3b8;
+  margin-bottom: 0.5rem;
+}
+
+.variant-bar {
+  display: flex;
+  gap: 0.25rem;
+  height: 30px;
+  align-items: flex-end;
+  margin-bottom: 0.5rem;
+}
+
+.variant-block {
+  flex: 1;
+  background: linear-gradient(to top, #8b5cf6, #a78bfa);
+  border-radius: 0.125rem 0.125rem 0 0;
+  animation: growUp 0.5s ease forwards;
+  opacity: 0;
+  transform-origin: bottom;
+}
+
+@keyframes growUp {
+  from { opacity: 0; transform: scaleY(0); }
+  to { opacity: 1; transform: scaleY(1); }
+}
+
+.variant-count {
+  font-size: 0.75rem;
+  color: #64748b;
+}
+
+.content-idea {
+  padding: 1rem;
+  background: #0f0f1a;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  border-left: 3px solid #f59e0b;
+}
+
+.content-idea h4 {
+  font-size: 0.75rem;
+  color: #f59e0b;
+  margin-bottom: 0.25rem;
+}
+
+.content-idea p {
+  font-size: 0.875rem;
+  color: #e2e8f0;
+  margin: 0;
+}
