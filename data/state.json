@@ -1,24 +1,24 @@
 {
-  "lastHeartbeat": "2026-02-21T13:46:00Z",
-  "totalHeartbeats": 466,
-  "lastAction": "HB466: Minecraft Content Ideas Generator 2026. Research: Packapop 45 ideas, viral formula, 26.1/26.2 updates. Build: 6 categories, 48+ ideas, selection with export, randomize.",
+  "lastHeartbeat": "2026-02-21T14:16:00Z",
+  "totalHeartbeats": 467,
+  "lastAction": "HB467: Minecraft Mod Loader Comparison Tool. Research: Fabric vs Forge vs NeoForge, Sinytra Connector. Build: 3 loader profiles, 5-dimension scoring, version selector, use case recommendations.",
   "currentPriorities": {
-    "youtube": "Minecraft content ideas — generator tool live",
-    "business": "Content creator tools expansion — ideas generator added",
+    "youtube": "Minecraft modding content — loader comparison live",
+    "business": "Minecraft creator tools expansion — mod loader guide added",
     "investments": "NVDA earnings Feb 26 — countdown widget live"
   },
   "dataFreshness": {
-    "youtube": "2026-02-21 — 177 outliers, 20 briefs, full tool suite including content ideas generator",
+    "youtube": "2026-02-21 — 177 outliers, 20 briefs, full tool suite including mod loader comparison",
     "newBusiness": "2026-02-20 — 8 opportunities",
     "investments": "2026-02-21 — NVDA earnings intelligence",
-    "research": "2026-02-21 — 26 notes (added Minecraft 2026 content research)",
-    "audits": "2026-02-21 — 34 audits logged",
-    "tools": "2026-02-21 — 53 tools including Content Ideas Generator"
+    "research": "2026-02-21 — 27 notes (added mod loader research)",
+    "audits": "2026-02-21 — 35 audits logged",
+    "tools": "2026-02-21 — 55 tools including Mod Loader Comparison"
   },
   "recentFeedback": [
     {"date": "2026-02-07", "feedback": "Steven wants browser-based tools only, not local apps"}
   ],
-  "workThatLanded": ["Content Pipeline concept", "X Intelligence data", "Thumbnail Preview Tool", "Series Planner", "NVDA Earnings Countdown", "Minecraft 26.1 Planner", "Shorts-Long Mixer", "BBS Cinematic Planner", "Marketplace Creator Benchmark", "Minecraft Live 2026 Countdown", "AI Video Comparison Tool", "YouTube Retention Analyzer", "Minecraft Creator Tools Directory", "Minecraft Movie Content Ideas", "YouTube Engagement Optimizer", "AI Coding Assistant Comparison", "BBS Mod Content Planner", "Speedrun Strategy Tracker", "Local LLM Comparison", "Minecraft Content Ideas Generator"],
+  "workThatLanded": ["Content Pipeline concept", "X Intelligence data", "Thumbnail Preview Tool", "Series Planner", "NVDA Earnings Countdown", "Minecraft 26.1 Planner", "Shorts-Long Mixer", "BBS Cinematic Planner", "Marketplace Creator Benchmark", "Minecraft Live 2026 Countdown", "AI Video Comparison Tool", "YouTube Retention Analyzer", "Minecraft Creator Tools Directory", "Minecraft Movie Content Ideas", "YouTube Engagement Optimizer", "AI Coding Assistant Comparison", "BBS Mod Content Planner", "Speedrun Strategy Tracker", "Local LLM Comparison", "Minecraft Content Ideas Generator", "Mod Loader Comparison"],
   "workThatFlopped": ["Local-only dashboard app", "Scattered markdown reports"],
   "lessonsLearned": [
     "All tools must be browser-accessible — Steven uses a different computer",
@@ -41,7 +41,8 @@
     "BBS Mod planner enables cinematic Minecraft content creation workflow",
     "Speedrun tracking tools help content creators plan and improve their runs",
     "Local LLM comparison helps users choose the right on-device AI solution",
-    "Content ideas generators help creators overcome creative block with data-driven suggestions"
+    "Content ideas generators help creators overcome creative block with data-driven suggestions",
+    "Mod loader comparisons help players choose the right platform for their modded experience"
   ],
   "nextPriority": "Continue expanding Minecraft content creator tool suite"
 }

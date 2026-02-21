@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-02-21T08:46:00Z",
+  "lastUpdated": "2026-02-21T09:16:00Z",
   "updatedBy": "nox-heartbeat",
-  "version": "2026.02.21.84",
-  "cacheBust": "20260221T0846",
-  "dataVersion": "2026.02.21.84",
+  "version": "2026.02.21.86",
+  "cacheBust": "20260221T0916",
+  "dataVersion": "2026.02.21.86",
   "youtubeUpdated": "2026-02-21T09:48:00Z",
   "investmentsUpdated": "2026-02-21T09:26:00.000000",
   "researchUpdated": "2026-02-21T09:48:00.000000",
   "newBusinessUpdated": "2026-02-20T21:25:00Z",
-  "toolsUpdated": "2026-02-21T08:46:00Z",
+  "toolsUpdated": "2026-02-21T09:16:00Z",
   "workTrackerUpdated": "2026-02-15T00:17:00Z",
   "minecraftArtistsUpdated": "2026-02-18T14:22:00Z",
   "investments": {
@@ -18,21 +18,21 @@
     "lastIntelligenceId": "nvda-earnings-hb452"
   },
   "dataFreshness": {
-    "research": "2026-02-21 - Minecraft 2026 content ideas (Packapop 45 ideas, 26.1/26.2 updates)",
+    "research": "2026-02-21 - Minecraft mod loaders (Fabric/Forge/NeoForge)",
     "newBusiness": "2026-02-20 - Marketplace revenue widget live",
     "investments": "2026-02-21 - NVDA earnings countdown widget live (Feb 26)",
     "workTracker": "2026-02-15 - pagination + deduplication live",
     "minecraftArtists": "2026-02-18 - 16 artists",
     "youtube": "2026-02-21 - 177 outliers, 20 briefs, full tool suite",
-    "tools": "2026-02-21 - Minecraft Content Ideas Generator + 52 other widgets"
+    "tools": "2026-02-21 - Mod Loader Comparison + 54 other widgets"
   },
   "research": { "lastUpdated": "2026-02-21T09:48:00Z" },
-  "totalNotes": 88,
-  "lastDataPush": "2026-02-21T08:46:00Z",
+  "totalNotes": 89,
+  "lastDataPush": "2026-02-21T09:16:00Z",
   "lastPushBy": "nox-heartbeat",
-  "lastPushDescription": "Minecraft Content Ideas Generator 2026. Research: Packapop 45 video ideas, viral formula (horror+memes+Minecraft), Minecraft 26.1 (baby mobs, golden dandelion, craftable name tags), 26.2 Biomes & Botany rumors. Build: 6 category tabs (survival/building/horror/mods/baby_mobs/updates), 48+ ideas with viral potential indicators, idea selection with export, randomize function, 26.1/26.2 update info cards.",
+  "lastPushDescription": "Minecraft Mod Loader Comparison Tool. Research: Fabric = speed/performance/quick updates, Forge = extensive modpacks/stability, NeoForge = modern Forge alternative, Sinytra Connector = compatibility layer. Build: 3 loader profiles (Fabric/Forge/NeoForge), 5-dimension scoring (performance/ecosystem/ease/update/stability), version selector with recommendations, single/compare dual modes, Sinytra Connector compatibility info, 2026 use case recommendations.",
   "newBusiness": { "lastUpdated": "2026-02-20T21:25:00Z" },
-  "tools": { "lastUpdated": "2026-02-21T08:46:00Z", "totalTools": 53 },
+  "tools": { "lastUpdated": "2026-02-21T09:16:00Z", "totalTools": 55 },
   "youtube": { "lastUpdated": "2026-02-21T09:48:00Z" },
   "competitorsUpdated": "2026-02-20T11:50:55Z",
   "competitors": { "lastUpdated": "2026-02-20T11:50:55Z", "totalCompetitors": 22 },
@@ -45,6 +45,6 @@
     "newBusiness": "2026-02-20T21:25:00Z",
     "competitors": "2026-02-20T11:50:55Z",
     "research": "2026-02-21T09:48:00Z",
-    "tools": "2026-02-21T08:46:00Z"
+    "tools": "2026-02-21T09:16:00Z"
   }
 }

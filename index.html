@@ -553,6 +553,7 @@
         <button onclick="showToolsSection('speedrun-tracker')" id="tools-btn-speedrun-tracker" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">⏱️ Speedrun</button>
         <button onclick="showToolsSection('local-llm')" id="tools-btn-local-llm" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">🖥️ Local LLM</button>
         <button onclick="showToolsSection('content-ideas')" id="tools-btn-content-ideas" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">💡 Content Ideas</button>
+        <button onclick="showToolsSection('mod-loader')" id="tools-btn-mod-loader" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">🔧 Mod Loaders</button>
       </div>
 
       <!-- Tool Registry Section -->
@@ -939,6 +940,21 @@
         <div id="mc-content-generator-container">
           <div class="text-center py-8 text-gray-500">
             <p>Loading content ideas generator...</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mod Loader Comparison Section -->
+      <div id="tools-section-mod-loader" class="tools-section hidden">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4 gap-3">
+          <h2 class="text-xl font-semibold">🔧 Minecraft Mod Loader Comparison</h2>
+          <div class="flex gap-2">
+            <button onclick="loadModLoaderComparison()" class="px-3 py-1 bg-accent-blue rounded text-sm hover:bg-blue-600">🔄 Refresh</button>
+          </div>
+        </div>
+        <div id="mod-loader-comparison-container">
+          <div class="text-center py-8 text-gray-500">
+            <p>Loading mod loader comparison...</p>
           </div>
         </div>
       </div>
@@ -1420,7 +1436,8 @@
   <script src="widgets/bbs-content-planner.js?v=202602210746"></script>
   <script src="widgets/speedrun-strategy-tracker.js?v=202602210816"></script>
   <script src="widgets/local-llm-comparison.js?v=202602210846"></script>
-  <script src="widgets/mc-content-ideas-generator.js?v=202602210846"></script>
+  <script src="widgets/mc-content-ideas-generator.js?v=202602210916"></script>
+  <script src="widgets/mod-loader-comparison.js?v=202602210916"></script>
   <script src="app.js?v=202602201712"></script>
 
   <!-- Shorts Calculator Loader -->
@@ -1553,6 +1570,15 @@
       if (container && window.MinecraftContentIdeasGenerator) {
         window.mcGenerator = new MinecraftContentIdeasGenerator();
         window.mcGenerator.render('mc-content-generator-container');
+      }
+    }
+
+    // Mod Loader Comparison loader
+    function loadModLoaderComparison() {
+      const container = document.getElementById('mod-loader-comparison-container');
+      if (container && window.ModLoaderComparison) {
+        window.modLoaderComparison = new ModLoaderComparison();
+        window.modLoaderComparison.render('mod-loader-comparison-container');
       }
     }
 
