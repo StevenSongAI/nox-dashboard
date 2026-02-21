@@ -1,6 +1,6 @@
 {
-  "lastHeartbeat": "2026-02-21T06:16:00Z",
+  "lastHeartbeat": "2026-02-21T06:46:00Z",
   "totalHeartbeats": 437,
-  "lastAction": "HB437: Built Snapshot Changelog Tracker widget. Research: 26w05a Golden Dandelions, 26w06a baby mob textures (Armadillo, Bee, Camel, Fox, Goat, Polar Bear, Llama). Build: Interactive changelog with snapshot timeline, release countdown, copy notes feature.",
+  "lastAction": "HB437: Baby Mob Showcase widget. Research: Minecraft 26.1 Snapshot 8 baby mobs (hoglin, panda, sniffer, strider, zoglin). Build: Interactive gallery with 5 mob cards, detail views, content angles, hostile/passive indicators.",
   "nextPriority": "Hook Steven up with the Animator to test BBS Crowd Spawner v3.4 texture selection"
 }
