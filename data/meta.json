@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-02-20T23:10:00Z",
+  "lastUpdated": "2026-02-21T00:16:00Z",
   "updatedBy": "nox-heartbeat",
-  "version": "2026.02.20.46",
-  "cacheBust": "20260220T2310",
-  "dataVersion": "2026.02.20.46",
+  "version": "2026.02.21.00",
+  "cacheBust": "20260221T0016",
+  "dataVersion": "2026.02.21.00",
   "youtubeUpdated": "2026-02-20T23:36:00Z",
   "investmentsUpdated": "2026-02-20T23:28:00.000000",
-  "researchUpdated": "2026-02-20T23:10:00.000000",
+  "researchUpdated": "2026-02-21T00:16:00.000000",
   "newBusinessUpdated": "2026-02-20T21:25:00Z",
   "toolsUpdated": "2026-02-20T23:10:00Z",
   "workTrackerUpdated": "2026-02-15T00:17:00Z",
@@ -18,7 +18,7 @@
     "lastIntelligenceId": "intel-083"
   },
   "dataFreshness": {
-    "research": "2026-02-20 - BBS ecosystem update (Reforge, Blockbuster, Flashback comparison)",
+    "research": "2026-02-21 - 63 notes + 26.1 snapshot intel",
     "newBusiness": "2026-02-20 - Minecraft Marketplace widget live",
     "investments": "2026-02-20 - 90 intelligence items, NVDA earnings widget live",
     "workTracker": "2026-02-15 - pagination + deduplication live",
@@ -27,12 +27,12 @@
     "tools": "2026-02-20 - Animation Tools updated with BBS ecosystem notes"
   },
   "research": {
-    "lastUpdated": "2026-02-20T23:10:00Z"
+    "lastUpdated": "2026-02-21T00:16:00Z"
   },
-  "totalNotes": 62,
-  "lastDataPush": "2026-02-20T23:10:00Z",
+  "totalNotes": 63,
+  "lastDataPush": "2026-02-21T00:16:00Z",
   "lastPushBy": "nox-heartbeat",
-  "lastPushDescription": "BBS ecosystem research update. Added ecosystemNotes to tool-bbs covering BBS Reforge, Blockbuster mod integration, and Flashback comparison.",
+  "lastPushDescription": "Minecraft 26.1 snapshot progress research - baby mob redesigns complete in Snapshot 8. Added note-056.",
   "newBusiness": {
     "lastUpdated": "2026-02-20T21:25:00Z"
   },

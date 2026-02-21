@@ -2,6 +2,24 @@
   "lastUpdated": "2026-02-20T09:16:00Z",
   "notes": [
     {
+      "id": "note-056",
+      "category": "Minecraft News",
+      "title": "Minecraft 26.1 Snapshot Progress - Baby Mob Redesigns Complete",
+      "content": "Heartbeat research discovery (Feb 20, 2026): Minecraft Java Edition 26.1 development progressing through weekly snapshots. KEY FINDINGS: (1) Snapshot 8 released February 17, 2026 - adds new textures/models for remaining baby mobs: hoglin, panda, sniffer, strider, and zoglin per Minecraft Wiki, (2) Snapshot 7 released February 11, 2026, Snapshot 6 released February 3, 2026 - showing consistent weekly cadence, (3) 26.1 is 'First Drop 2026' with no set release date yet - adds baby mob redesigns, golden dandelion, craftable name tags per Minecraft Wiki, (4) New stonecutter recipes also added in Snapshot 8, (5) New version numbering system (year-based) started with 26.1 per Minecraft.net (Dec 2025). CONTENT OPPORTUNITY FOR STEVEN: 'All Baby Mobs Redesigned in Minecraft 26.1' showcase video. Side-by-side comparison of old vs new baby mob textures. BBS Crowd Spawner angle: Spawn baby mob crowds with new models.",
+      "source": "Minecraft Wiki + Minecraft.net (Feb 20, 2026)",
+      "tags": [
+        "minecraft",
+        "26.1",
+        "snapshots",
+        "baby-mobs",
+        "redesign",
+        "content-opportunity"
+      ],
+      "addedAt": "2026-02-20T00:16:00Z",
+      "actionable": true,
+      "priority": "high"
+    },
+    {
       "id": "note-055",
       "category": "Minecraft Visuals",
       "title": "Minecraft Texture Packs Trends 2026 - RPG, Realism, Modern Styles",
