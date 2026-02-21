@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-02-21T08:04:00Z",
+  "lastUpdated": "2026-02-21T08:08:00Z",
   "updatedBy": "nox-heartbeat",
-  "version": "2026.02.21.59",
-  "cacheBust": "20260221T0804",
-  "dataVersion": "2026.02.21.59",
+  "version": "2026.02.21.60",
+  "cacheBust": "20260221T0808",
+  "dataVersion": "2026.02.21.60",
   "youtubeUpdated": "2026-02-20T23:36:00Z",
   "investmentsUpdated": "2026-02-20T23:28:00.000000",
-  "researchUpdated": "2026-02-21T08:04:00.000000",
+  "researchUpdated": "2026-02-21T08:08:00.000000",
   "newBusinessUpdated": "2026-02-20T21:25:00Z",
-  "toolsUpdated": "2026-02-21T08:04:00Z",
+  "toolsUpdated": "2026-02-21T08:08:00Z",
   "workTrackerUpdated": "2026-02-15T00:17:00Z",
   "minecraftArtistsUpdated": "2026-02-18T14:22:00Z",
   "investments": {
@@ -18,25 +18,25 @@
     "lastIntelligenceId": "intel-083"
   },
   "dataFreshness": {
-    "research": "2026-02-21 - Marketplace Content Trends (5 content types)",
+    "research": "2026-02-21 - Cinematic Camera Techniques (6 techniques)",
     "newBusiness": "2026-02-20 - Marketplace revenue widget live",
     "investments": "2026-02-20 - 90 intelligence items, NVDA earnings widget live",
     "workTracker": "2026-02-15 - pagination + deduplication live",
     "minecraftArtists": "2026-02-18 - 16 artists",
     "youtube": "2026-02-20 - 165 outliers, 20 briefs, kanban + Shorts calculator",
-    "tools": "2026-02-21 - Marketplace Trends + 33 other widgets"
+    "tools": "2026-02-21 - Camera Techniques + 34 other widgets"
   },
-  "research": { "lastUpdated": "2026-02-21T08:04:00Z" },
-  "totalNotes": 74,
-  "lastDataPush": "2026-02-21T08:04:00Z",
+  "research": { "lastUpdated": "2026-02-21T08:08:00Z" },
+  "totalNotes": 75,
+  "lastDataPush": "2026-02-21T08:08:00Z",
   "lastPushBy": "nox-heartbeat",
-  "lastPushDescription": "Marketplace Content Trends widget. Research: Minecraft Marketplace content types (skins, worlds, textures). Build: 5 content type cards with popularity, price ranges, competition levels, opportunities for Steven.",
+  "lastPushDescription": "Cinematic Camera Techniques Guide widget. Research: Aperture mod, BBS camera systems. Build: 6 camera techniques (Dolly, Pan, Tracking, Crane, Whip, Orbit) with setup steps, difficulty levels, pro tips, keybind reference.",
   "newBusiness": { "lastUpdated": "2026-02-20T21:25:00Z" },
-  "tools": { "lastUpdated": "2026-02-21T08:04:00Z", "totalTools": 34 },
+  "tools": { "lastUpdated": "2026-02-21T08:08:00Z", "totalTools": 35 },
   "youtube": { "lastUpdated": "2026-02-20T23:36:00Z" },
   "competitorsUpdated": "2026-02-20T11:50:55Z",
   "competitors": { "lastUpdated": "2026-02-20T11:50:55Z", "totalCompetitors": 22 },
-  "audits": { "lastUpdated": "2026-02-21T07:58:00Z" },
+  "audits": { "lastUpdated": "2026-02-21T08:04:00Z" },
   "minecraftArtists": { "lastUpdated": "2026-02-20T01:47:50Z" },
   "totalOutliers": 165,
   "sections": {
@@ -44,7 +44,7 @@
     "investments": "2026-02-20T23:28:00Z",
     "newBusiness": "2026-02-20T21:25:00Z",
     "competitors": "2026-02-20T11:50:55Z",
-    "research": "2026-02-21T08:04:00Z",
-    "tools": "2026-02-21T08:04:00Z"
+    "research": "2026-02-21T08:08:00Z",
+    "tools": "2026-02-21T08:08:00Z"
   }
 }
