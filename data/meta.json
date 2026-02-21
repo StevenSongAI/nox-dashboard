@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-02-21T06:46:00Z",
+  "lastUpdated": "2026-02-21T11:51:00Z",
   "updatedBy": "nox-heartbeat",
-  "version": "2026.02.21.76",
-  "cacheBust": "20260221T0646",
-  "dataVersion": "2026.02.21.76",
-  "youtubeUpdated": "2026-02-21T09:48:00Z",
+  "version": "2026.02.21.71",
+  "cacheBust": "20260221T1151",
+  "dataVersion": "2026.02.21.71",
+  "youtubeUpdated": "2026-02-21T11:51:00Z",
   "investmentsUpdated": "2026-02-21T09:26:00.000000",
-  "researchUpdated": "2026-02-21T09:48:00.000000",
+  "researchUpdated": "2026-02-21T11:51:00.000000",
   "newBusinessUpdated": "2026-02-20T21:25:00Z",
-  "toolsUpdated": "2026-02-21T06:46:00Z",
+  "toolsUpdated": "2026-02-21T11:51:00Z",
   "workTrackerUpdated": "2026-02-15T00:17:00Z",
   "minecraftArtistsUpdated": "2026-02-18T14:22:00Z",
   "investments": {
@@ -18,33 +18,33 @@
     "lastIntelligenceId": "nvda-earnings-hb452"
   },
   "dataFreshness": {
-    "research": "2026-02-21 - AI coding assistants comparison (Cursor, Copilot, Claude, Windsurf)",
+    "research": "2026-02-21 - Minecraft Movie $816M+ box office, cultural phenomenon",
     "newBusiness": "2026-02-20 - Marketplace revenue widget live",
     "investments": "2026-02-21 - NVDA earnings countdown widget live (Feb 26)",
     "workTracker": "2026-02-15 - pagination + deduplication live",
     "minecraftArtists": "2026-02-18 - 16 artists",
-    "youtube": "2026-02-21 - 177 outliers, 20 briefs, 26.1 planner, Shorts mixer, BBS planner, Marketplace benchmark, Minecraft Live countdown",
-    "tools": "2026-02-21 - AI Coding Assistant Comparison + 46 other widgets"
+    "youtube": "2026-02-21 - 177 outliers, 20 briefs, MC Movie ideas, full tool suite",
+    "tools": "2026-02-21 - 47 tools including MC Movie Content Ideas"
   },
-  "research": { "lastUpdated": "2026-02-21T09:48:00Z" },
-  "totalNotes": 84,
-  "lastDataPush": "2026-02-21T06:46:00Z",
+  "research": { "lastUpdated": "2026-02-21T11:51:00Z" },
+  "totalNotes": 83,
+  "lastDataPush": "2026-02-21T11:51:00Z",
   "lastPushBy": "nox-heartbeat",
-  "lastPushDescription": "AI Coding Assistant Comparison Tool. Research: Cursor = speed/simplicity, GitHub Copilot = mature/reliable for pros, Claude Code = deep reasoning for complex tasks, Windsurf = free alternative. Build: 4 tool profiles with 5-dimension radar charts (speed/reliability/reasoning/ecosystem/value), single/compare dual modes, quick recommendations section, 2026 trends.",
+  "lastPushDescription": "Minecraft Movie Content Ideas widget. Research: $816M+ global box office, $423.9M domestic, trending #1 PVOD. Build: 4 stats cards, 8 content ideas with hooks/formats, generate/copy functionality.",
   "newBusiness": { "lastUpdated": "2026-02-20T21:25:00Z" },
-  "tools": { "lastUpdated": "2026-02-21T06:46:00Z", "totalTools": 47 },
-  "youtube": { "lastUpdated": "2026-02-21T09:48:00Z" },
+  "tools": { "lastUpdated": "2026-02-21T11:51:00Z", "totalTools": 47 },
+  "youtube": { "lastUpdated": "2026-02-21T11:51:00Z" },
   "competitorsUpdated": "2026-02-20T11:50:55Z",
   "competitors": { "lastUpdated": "2026-02-20T11:50:55Z", "totalCompetitors": 22 },
-  "audits": { "lastUpdated": "2026-02-21T09:48:00Z" },
+  "audits": { "lastUpdated": "2026-02-21T11:51:00Z" },
   "minecraftArtists": { "lastUpdated": "2026-02-20T01:47:50Z" },
   "totalOutliers": 177,
   "sections": {
-    "youtube": "2026-02-21T09:48:00Z",
+    "youtube": "2026-02-21T11:51:00Z",
     "investments": "2026-02-21T09:26:00Z",
     "newBusiness": "2026-02-20T21:25:00Z",
     "competitors": "2026-02-20T11:50:55Z",
-    "research": "2026-02-21T09:48:00Z",
-    "tools": "2026-02-21T06:46:00Z"
+    "research": "2026-02-21T11:51:00Z",
+    "tools": "2026-02-21T11:51:00Z"
   }
 }
