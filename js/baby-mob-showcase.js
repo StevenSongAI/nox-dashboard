@@ -1,62 +1,68 @@
 /**
- * Baby Mob Collection Showcase
- * Complete visual guide to all redesigned baby mobs in Minecraft 26.1
+ * Minecraft 26.1 Baby Mob Showcase
+ * Interactive gallery of all baby mob redesigns in Snapshot 8
  */
 
 class BabyMobShowcase {
     constructor() {
-        this.categories = [
+        this.babyMobs = [
             {
-                id: 'farm',
-                name: 'Farm Animals',
-                icon: '🌾',
-                mobs: ['Chicken', 'Cow', 'Pig', 'Sheep', 'Goat'],
-                color: '#f59e0b',
-                description: 'Classic farmyard babies with unique designs'
+                id: 'hoglin',
+                name: 'Baby Hoglin',
+                icon: '🐗',
+                type: 'Hostile',
+                snapshot: '26.1-snapshot-8',
+                releaseDate: 'Feb 17, 2026',
+                description: 'Tiny tusks, fuzzy mane, aggressive but adorable',
+                behavior: 'Attacks on sight despite size',
+                contentAngle: 'Baby Hoglin vs Adult: Behavior comparison'
             },
             {
-                id: 'mount',
-                name: 'Mounts',
-                icon: '🏇',
-                mobs: ['Horse', 'Donkey', 'Mule', 'Llama', 'Camel'],
-                color: '#d97706',
-                description: 'Rideable companions from tiny foals to camel calves'
+                id: 'panda',
+                name: 'Baby Panda',
+                icon: '🐼',
+                type: 'Passive',
+                snapshot: '26.1-snapshot-8',
+                releaseDate: 'Feb 17, 2026',
+                description: 'Round belly, playful animation, sneezing included',
+                behavior: 'Playful, rolls around, sneezes',
+                contentAngle: 'Baby Panda personality traits showcase'
             },
             {
-                id: 'aquatic',
-                name: 'Aquatic',
-                icon: '🌊',
-                mobs: ['Axolotl', 'Dolphin', 'Turtle', 'Squid', 'Glow Squid'],
-                color: '#3b82f6',
-                description: 'Ocean and river dwellers with aquatic adaptations'
+                id: 'sniffer',
+                name: 'Baby Sniffer',
+                icon: '🦕',
+                type: 'Passive',
+                snapshot: '26.1-snapshot-8',
+                releaseDate: 'Feb 17, 2026',
+                description: 'Tiny torchflower sniffer, oversized nose, waddles',
+                behavior: 'Sniffs for seeds, very slow',
+                contentAngle: 'First look: Baby Sniffer torchflower hunting'
             },
             {
-                id: 'wild',
-                name: 'Wild Animals',
-                icon: '🌲',
-                mobs: ['Wolf', 'Cat', 'Ocelot', 'Rabbit', 'Fox', 'Bee'],
-                color: '#10b981',
-                description: 'Forest and plains creatures including 9 wolf variants'
+                id: 'strider',
+                name: 'Baby Strider',
+                icon: '🦀',
+                type: 'Passive',
+                snapshot: '26.1-snapshot-8',
+                releaseDate: 'Feb 17, 2026',
+                description: 'Shaky legs, shivers without lava, tiny body',
+                behavior: 'Shivers constantly, vulnerable',
+                contentAngle: 'Baby Strider lava survival challenge'
             },
             {
-                id: 'hostile',
-                name: 'Hostile Mobs',
-                icon: '⚔️',
-                mobs: ['Zombie', 'Husk', 'Drowned', 'Piglin', 'Zombified Piglin'],
-                color: '#ef4444',
-                description: 'Baby monsters that are deceptively cute but dangerous'
-            },
-            {
-                id: 'nether',
-                name: 'Nether Creatures',
-                icon: '🔥',
-                mobs: ['Hoglin', 'Zoglin', 'Strider', 'Sniffer'],
-                color: '#dc2626',
-                description: 'The final batch — hellish babies with unique traits'
+                id: 'zoglin',
+                name: 'Baby Zoglin',
+                icon: '🧟',
+                type: 'Hostile',
+                snapshot: '26.1-snapshot-8',
+                releaseDate: 'Feb 17, 2026',
+                description: 'Undead baby hoglin, decayed texture, hostile',
+                behavior: 'Attacks everything, no fear',
+                contentAngle: 'Zoglin vs Hoglin baby comparison'
             }
         ];
-        this.totalMobs = this.categories.reduce((sum, cat) => sum + cat.mobs.length, 0);
-        this.selectedCategory = null;
+        this.selectedMob = null;
     }
 
     render(containerId) {
@@ -67,104 +73,122 @@ class BabyMobShowcase {
             <div class="baby-mob-showcase">
                 <div class="showcase-header">
                     <div class="showcase-title">
-                        <span class="showcase-icon">🍼</span>
-                        <h3>Baby Mob Collection</h3>
+                        <span class="showcase-icon">👶</span>
+                        <h3>Baby Mob Showcase</h3>
                     </div>
-                    <div class="showcase-stats">
-                        <span class="stat-badge">${this.totalMobs} mobs</span>
-                        <span class="days-badge">22 days to Live</span>
+                    <span class="showcase-badge">26.1-snapshot-8</span>
+                </div>
+
+                <div class="showcase-stats">
+                    <div class="stat-item">
+                        <span class="stat-num">${this.babyMobs.length}</span>
+                        <span class="stat-label">New Baby Mobs</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num">${this.babyMobs.filter(m => m.type === 'Hostile').length}</span>
+                        <span class="stat-label">Hostile</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num">${this.babyMobs.filter(m => m.type === 'Passive').length}</span>
+                        <span class="stat-label">Passive</span>
                     </div>
                 </div>
 
-                <div class="category-grid" id="category-grid">
-                    ${this.categories.map(c => this.renderCategoryCard(c)).join('')}
+                <div class="mob-gallery" id="mob-gallery">
+                    ${this.babyMobs.map(m => this.renderMobCard(m)).join('')}
                 </div>
 
-                <div class="category-detail hidden" id="category-detail">
+                <div class="mob-detail-view hidden" id="mob-detail-view">
                     <div class="detail-header">
-                        <button onclick="babyMobShowcase.closeDetail()" class="detail-back">← Back</button>
+                        <button onclick="babyMobShowcase.closeDetail()" class="detail-back-btn">← Back to Gallery</button>
                     </div>
-                    <div id="category-detail-content"></div>
+                    <div id="mob-detail-content"></div>
                 </div>
 
                 <div class="showcase-footer">
-                    <div class="feature-highlight">
-                        <span class="highlight-icon">🌼</span>
-                        <span class="highlight-text">Golden Dandelion: Prevents babies from aging</span>
+                    <div class="content-tip">
+                        <span class="tip-icon">💡</span>
+                        <span class="tip-text">Content idea: "All 5 New Baby Mobs in Minecraft 26.1" comparison video</span>
+                    </div>
+                    <div class="snapshot-info">
+                        Released: February 17, 2026 | 
+                        <a href="https://minecraft.wiki/w/Java_Edition_26.1_Snapshot_8" target="_blank" class="wiki-link">View Wiki →</a>
                     </div>
                 </div>
             </div>
         `;
 
         // Add click handlers
-        this.categories.forEach(c => {
-            const card = document.getElementById(`category-${c.id}`);
+        this.babyMobs.forEach(m => {
+            const card = document.getElementById(`baby-mob-${m.id}`);
             if (card) {
-                card.onclick = () => this.showDetail(c);
+                card.onclick = () => this.showDetail(m);
             }
         });
     }
 
-    renderCategoryCard(category) {
+    renderMobCard(mob) {
         return `
-            <div class="category-card" id="category-${category.id}" style="--category-color: ${category.color}">
-                <div class="category-header" style="background: ${category.color}20; border-color: ${category.color}">
-                    <span class="category-icon">${category.icon}</span>
-                    <span class="category-count">${category.mobs.length}</span>
+            <div class="baby-mob-card ${mob.type.toLowerCase()}" id="baby-mob-${mob.id}">
+                <div class="mob-card-header">
+                    <span class="mob-emoji">${mob.icon}</span>
+                    <span class="mob-type-badge ${mob.type.toLowerCase()}">${mob.type}</span>
                 </div>
-                <h4 class="category-name" style="color: ${category.color}">${category.name}</h4>
-                <p class="category-desc">${category.description}</p>
+                <h4 class="mob-card-name">${mob.name}</h4>
+                <p class="mob-card-desc">${mob.description}</p>
                 
-                <div class="category-preview">
-                    ${category.mobs.slice(0, 3).map(m => `<span class="mob-preview">${m}</span>`).join('')}
-                    ${category.mobs.length > 3 ? `<span class="mob-more">+${category.mobs.length - 3} more</span>` : ''}
+                <div class="mob-card-footer">
+                    <span class="mob-snapshot">${mob.snapshot}</span>
+                    <span class="mob-view">View →</span>
                 </div>
             </div>
         `;
     }
 
-    showDetail(category) {
-        this.selectedCategory = category;
-        const grid = document.getElementById('category-grid');
-        const detail = document.getElementById('category-detail');
-        const content = document.getElementById('category-detail-content');
+    showDetail(mob) {
+        this.selectedMob = mob;
+        const gallery = document.getElementById('mob-gallery');
+        const detail = document.getElementById('mob-detail-view');
+        const content = document.getElementById('mob-detail-content');
 
-        if (grid) grid.classList.add('hidden');
+        if (gallery) gallery.classList.add('hidden');
         if (detail) detail.classList.remove('hidden');
 
         if (content) {
             content.innerHTML = `
-                <div class="detail-hero" style="background: ${category.color}10; border-color: ${category.color}">
-                    <span class="detail-icon" style="color: ${category.color}">${category.icon}</span>
-                    <h2 style="color: ${category.color}">${category.name}</h2>
-                    <p>${category.description}</p>
+                <div class="detail-hero-section">
+                    <span class="detail-mob-emoji">${mob.icon}</span>
+                    <h2>${mob.name}</h2>
+                    <span class="detail-type-badge ${mob.type.toLowerCase()}">${mob.type}</span>
+                    <p class="detail-description">${mob.description}</p>
                 </div>
 
-                <div class="mob-list">
-                    <h4>🐾 Complete Mob List</h4>
-                    <div class="mob-tiles">
-                        ${category.mobs.map(m => `
-                            <div class="mob-tile" style="border-color: ${category.color}40">
-                                <span class="mob-tile-name">${m}</span>
-                                <span class="mob-tile-status">Redesigned</span>
-                            </div>
-                        `).join('')}
+                <div class="detail-info-grid">
+                    <div class="info-item">
+                        <span class="info-label">Snapshot</span>
+                        <span class="info-value">${mob.snapshot}</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Release Date</span>
+                        <span class="info-value">${mob.releaseDate}</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Behavior</span>
+                        <span class="info-value">${mob.behavior}</span>
                     </div>
                 </div>
 
-                <div class="content-angles">
-                    <h4>🎬 Content Ideas</h4>
-                    <ul>
-                        <li>Showcase all ${category.mobs.length} ${category.name.toLowerCase()} variants side-by-side</li>
-                        <li>Before/after: Old vs new baby ${category.name.toLowerCase()} designs</li>
-                        <li>Breeding tutorial: How to get every baby ${category.name.toLowerCase()} variant</li>
-                        ${category.id === 'nether' ? '<li>🔥 FIRST LOOK: The final Nether baby mobs (hoglin, zoglin, strider, sniffer)</li>' : ''}
-                    </ul>
+                <div class="content-angle-box">
+                    <h4>🎬 Content Angle</h4>
+                    <p>${mob.contentAngle}</p>
                 </div>
 
-                <div class="detail-actions">
-                    <button class="action-btn primary" onclick="window.open('https://www.minecraft.net/en-us/article/final-baby-mobs', '_blank')">
-                        Official Announcement →
+                <div class="detail-actions-row">
+                    <button class="action-btn-primary" onclick="window.open('https://minecraft.wiki/w/Java_Edition_26.1_Snapshot_8', '_blank')">
+                        Open Wiki →
+                    </button>
+                    <button class="action-btn" onclick="window.open('https://www.minecraft.net/en-us/article/minecraft-26-1-snapshot-8', '_blank')">
+                        Official Post →
                     </button>
                 </div>
             `;
@@ -172,16 +196,16 @@ class BabyMobShowcase {
     }
 
     closeDetail() {
-        const grid = document.getElementById('category-grid');
-        const detail = document.getElementById('category-detail');
+        const gallery = document.getElementById('mob-gallery');
+        const detail = document.getElementById('mob-detail-view');
 
-        if (grid) grid.classList.remove('hidden');
+        if (gallery) gallery.classList.remove('hidden');
         if (detail) detail.classList.add('hidden');
-        this.selectedCategory = null;
+        this.selectedMob = null;
     }
 
     destroy() {
-        this.selectedCategory = null;
+        this.selectedMob = null;
     }
 }
 

@@ -1318,6 +1318,9 @@ function renderYouTube() {
 
   // Render PvP Server Browser widget
   safeRender(() => renderPvPServerBrowser(), 'renderPvPServerBrowser');
+
+  // Render Snapshot Changelog Tracker widget
+  safeRender(() => renderSnapshotChangelogTracker(), 'renderSnapshotChangelogTracker');
 }
 
 // Content Pipeline Kanban Board — NEW FEATURE: Visual production tracker
@@ -5713,6 +5716,114 @@ function copyServerIP(ip) {
 // Global exports
 window.renderPvPServerBrowser = renderPvPServerBrowser;
 window.copyServerIP = copyServerIP;
+
+// ==================== SNAPSHOT CHANGELOG TRACKER WIDGET ====================
+// Interactive tracker for Minecraft 26.1 snapshot progression
+// Research: 26w05a Golden Dandelions, 26w06a baby mob textures (Feb 2026)
+
+function renderSnapshotChangelogTracker() {
+  const container = document.getElementById('snapshot-changelog-tracker');
+  if (!container) return;
+
+  const snapshots = [
+    {
+      version: '26.1 Snapshot 6',
+      date: 'Feb 3, 2026',
+      changes: ['Initial 26.1 features', 'Baby mob redesigns started'],
+      type: 'major'
+    },
+    {
+      version: '26.1 Snapshot 7',
+      date: 'Feb 11, 2026',
+      changes: ['Continued baby mob textures', 'Bug fixes'],
+      type: 'minor'
+    },
+    {
+      version: '26w05a',
+      date: 'Feb 2026',
+      changes: ['🌼 Golden Dandelions added', '🐟 Baby aquatic mob textures changed', 'Gamerule search improvements'],
+      type: 'major'
+    },
+    {
+      version: '26w06a',
+      date: 'Feb 2026',
+      changes: ['🦔 Armadillo baby textures', '🐝 Bee baby textures', '🐪 Camel baby textures', '🦊 Fox baby textures', '🐐 Goat baby textures', '🐻‍❄️ Polar Bear baby textures', '🦙 Llama baby textures', '⚠️ World data format revamp'],
+      type: 'major'
+    }
+  ];
+
+  let html = `
+    <div class="bg-dark-800/50 border border-dark-600 rounded-lg p-4">
+      <div class="flex items-center gap-2 mb-4">
+        <span class="text-xl">📋</span>
+        <h3 class="text-lg font-bold text-white">26.1 Snapshot Changelog Tracker</h3>
+        <span class="text-xs bg-accent-yellow/20 text-accent-yellow px-2 py-0.5 rounded ml-auto">Live Updates</span>
+      </div>
+
+      <div class="space-y-3 mb-4">
+        ${snapshots.map((snapshot, index) => `
+          <div class="bg-dark-700/30 rounded-lg p-3 border-l-4 ${snapshot.type === 'major' ? 'border-accent-yellow' : 'border-gray-500'}">
+            <div class="flex items-center justify-between mb-2">
+              <div class="flex items-center gap-2">
+                <span class="font-semibold text-white">${snapshot.version}</span>
+                ${snapshot.type === 'major' ? '<span class="text-xs bg-accent-yellow/20 text-accent-yellow px-1.5 py-0.5 rounded">Major</span>' : '<span class="text-xs bg-gray-600 px-1.5 py-0.5 rounded text-gray-300">Minor</span>'}
+              </div>
+              <span class="text-xs text-gray-400">${snapshot.date}</span>
+            </div>
+            <ul class="text-xs text-gray-300 space-y-1">
+              ${snapshot.changes.map(change => `<li>• ${change}</li>`).join('')}
+            </ul>
+          </div>
+        `).join('')}
+      </div>
+
+      <div class="bg-dark-700/50 rounded-lg p-3 mb-3">
+        <div class="text-sm font-semibold text-white mb-2">🎯 26.1 Release Countdown</div>
+        <div class="flex items-center gap-2">
+          <div class="flex-1 bg-dark-600 rounded-full h-2">
+            <div class="bg-accent-green h-2 rounded-full" style="width: 85%"></div>
+          </div>
+          <span class="text-xs text-accent-green">~22 days</span>
+        </div>
+        <div class="text-xs text-gray-400 mt-1">Expected: March 15, 2026</div>
+      </div>
+
+      <div class="flex gap-2">
+        <button onclick="copySnapshotNotes()" class="btn-primary flex-1">
+          <span>📋</span> Copy Notes
+        </button>
+        <a href="https://minecraft.wiki/w/Java_Edition_26.1" target="_blank" class="btn-secondary flex-1 text-center">
+          <span>📖</span> Full Wiki
+        </a>
+      </div>
+    </div>
+  `;
+
+  container.innerHTML = html;
+}
+
+function copySnapshotNotes() {
+  const notes = `Minecraft 26.1 Snapshot Progress (Feb 2026):
+
+26w05a:
+- Golden Dandelions added
+- Baby aquatic mob textures changed
+- Gamerule search improvements
+
+26w06a:
+- 7 more baby mob textures (Armadillo, Bee, Camel, Fox, Goat, Polar Bear, Llama)
+- World data format revamp (backup before upgrading!)
+
+Release: ~22 days (March 15, 2026)`;
+
+  navigator.clipboard.writeText(notes).then(() => {
+    alert('Snapshot notes copied!');
+  });
+}
+
+// Global exports
+window.renderSnapshotChangelogTracker = renderSnapshotChangelogTracker;
+window.copySnapshotNotes = copySnapshotNotes;
 
 // ==================== GLOBAL EXPORTS FOR INLINE HANDLERS ====================
 // Ensure functions are available globally for onclick/onchange handlers
