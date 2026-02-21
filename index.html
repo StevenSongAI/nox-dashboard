@@ -552,6 +552,7 @@
         <button onclick="showToolsSection('bbs-planner')" id="tools-btn-bbs-planner" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">🎬 BBS Planner</button>
         <button onclick="showToolsSection('speedrun-tracker')" id="tools-btn-speedrun-tracker" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">⏱️ Speedrun</button>
         <button onclick="showToolsSection('local-llm')" id="tools-btn-local-llm" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">🖥️ Local LLM</button>
+        <button onclick="showToolsSection('content-ideas')" id="tools-btn-content-ideas" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">💡 Content Ideas</button>
       </div>
 
       <!-- Tool Registry Section -->
@@ -923,6 +924,21 @@
         <div id="local-llm-comparison-container">
           <div class="text-center py-8 text-gray-500">
             <p>Loading local LLM comparison...</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Minecraft Content Ideas Generator Section -->
+      <div id="tools-section-content-ideas" class="tools-section hidden">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4 gap-3">
+          <h2 class="text-xl font-semibold">💡 Minecraft Content Ideas Generator 2026</h2>
+          <div class="flex gap-2">
+            <button onclick="loadContentIdeasGenerator()" class="px-3 py-1 bg-accent-blue rounded text-sm hover:bg-blue-600">🔄 Refresh</button>
+          </div>
+        </div>
+        <div id="mc-content-generator-container">
+          <div class="text-center py-8 text-gray-500">
+            <p>Loading content ideas generator...</p>
           </div>
         </div>
       </div>
@@ -1403,7 +1419,8 @@
   <script src="widgets/ai-coding-comparison.js?v=202602210716"></script>
   <script src="widgets/bbs-content-planner.js?v=202602210746"></script>
   <script src="widgets/speedrun-strategy-tracker.js?v=202602210816"></script>
-  <script src="widgets/local-llm-comparison.js?v=202602210816"></script>
+  <script src="widgets/local-llm-comparison.js?v=202602210846"></script>
+  <script src="widgets/mc-content-ideas-generator.js?v=202602210846"></script>
   <script src="app.js?v=202602201712"></script>
 
   <!-- Shorts Calculator Loader -->
@@ -1527,6 +1544,15 @@
       if (container && window.LocalLLMComparison) {
         window.localLLMComparison = new LocalLLMComparison();
         window.localLLMComparison.render('local-llm-comparison-container');
+      }
+    }
+
+    // Minecraft Content Ideas Generator loader
+    function loadContentIdeasGenerator() {
+      const container = document.getElementById('mc-content-generator-container');
+      if (container && window.MinecraftContentIdeasGenerator) {
+        window.mcGenerator = new MinecraftContentIdeasGenerator();
+        window.mcGenerator.render('mc-content-generator-container');
       }
     }
 
