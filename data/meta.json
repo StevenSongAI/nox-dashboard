@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-02-21T07:46:00Z",
+  "lastUpdated": "2026-02-21T08:16:00Z",
   "updatedBy": "nox-heartbeat",
-  "version": "2026.02.21.80",
-  "cacheBust": "20260221T0746",
-  "dataVersion": "2026.02.21.80",
+  "version": "2026.02.21.82",
+  "cacheBust": "20260221T0816",
+  "dataVersion": "2026.02.21.82",
   "youtubeUpdated": "2026-02-21T09:48:00Z",
   "investmentsUpdated": "2026-02-21T09:26:00.000000",
   "researchUpdated": "2026-02-21T09:48:00.000000",
   "newBusinessUpdated": "2026-02-20T21:25:00Z",
-  "toolsUpdated": "2026-02-21T07:46:00Z",
+  "toolsUpdated": "2026-02-21T08:16:00Z",
   "workTrackerUpdated": "2026-02-15T00:17:00Z",
   "minecraftArtistsUpdated": "2026-02-18T14:22:00Z",
   "investments": {
@@ -18,21 +18,21 @@
     "lastIntelligenceId": "nvda-earnings-hb452"
   },
   "dataFreshness": {
-    "research": "2026-02-21 - Minecraft speedrunning strategies (Random Seed Glitchless, one-cycling)",
+    "research": "2026-02-21 - Local LLMs 2026 (Ollama 0.6, DeepSeek-R1, LM Studio)",
     "newBusiness": "2026-02-20 - Marketplace revenue widget live",
     "investments": "2026-02-21 - NVDA earnings countdown widget live (Feb 26)",
     "workTracker": "2026-02-15 - pagination + deduplication live",
     "minecraftArtists": "2026-02-18 - 16 artists",
     "youtube": "2026-02-21 - 177 outliers, 20 briefs, full tool suite",
-    "tools": "2026-02-21 - Speedrun Strategy Tracker + 49 other widgets"
+    "tools": "2026-02-21 - Local LLM Comparison + 50 other widgets"
   },
   "research": { "lastUpdated": "2026-02-21T09:48:00Z" },
-  "totalNotes": 86,
-  "lastDataPush": "2026-02-21T07:46:00Z",
+  "totalNotes": 87,
+  "lastDataPush": "2026-02-21T08:16:00Z",
   "lastPushBy": "nox-heartbeat",
-  "lastPushDescription": "Minecraft Speedrun Strategy Tracker. Research: Random Seed Glitchless category world record 6:50 by lowk3y_, one-cycling dragon technique, villager trading strats for 1.16+, Japanese players pioneered most strategies. Build: PB/target time tracker with gap analysis, 5-phase strategy breakdown (Early Game/Village/Nether/Stronghold/Dragon), split timing inputs, advanced techniques section (one-cycling, trading optimization, fortress patterns, pearl throws), category comparison table.",
+  "lastPushDescription": "Local LLM Comparison Tool. Research: Ollama 0.6 (multimodal vision, 128K context), DeepSeek-R1 671B (open weights, reasoning), LM Studio (GUI, model management), llama.cpp (performance, Vulkan), GPT4All (easy setup). Build: 5 tool profiles with features/licensing/performance metrics, single/compare dual modes, VRAM calculator, 2026 trends section (on-device AI, context window expansion).",
   "newBusiness": { "lastUpdated": "2026-02-20T21:25:00Z" },
-  "tools": { "lastUpdated": "2026-02-21T07:46:00Z", "totalTools": 50 },
+  "tools": { "lastUpdated": "2026-02-21T08:16:00Z", "totalTools": 51 },
   "youtube": { "lastUpdated": "2026-02-21T09:48:00Z" },
   "competitorsUpdated": "2026-02-20T11:50:55Z",
   "competitors": { "lastUpdated": "2026-02-20T11:50:55Z", "totalCompetitors": 22 },
@@ -45,6 +45,6 @@
     "newBusiness": "2026-02-20T21:25:00Z",
     "competitors": "2026-02-20T11:50:55Z",
     "research": "2026-02-21T09:48:00Z",
-    "tools": "2026-02-21T07:46:00Z"
+    "tools": "2026-02-21T08:16:00Z"
   }
 }

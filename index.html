@@ -551,6 +551,7 @@
         <button onclick="showToolsSection('ai-coding')" id="tools-btn-ai-coding" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">💻 AI Coding</button>
         <button onclick="showToolsSection('bbs-planner')" id="tools-btn-bbs-planner" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">🎬 BBS Planner</button>
         <button onclick="showToolsSection('speedrun-tracker')" id="tools-btn-speedrun-tracker" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">⏱️ Speedrun</button>
+        <button onclick="showToolsSection('local-llm')" id="tools-btn-local-llm" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">🖥️ Local LLM</button>
       </div>
 
       <!-- Tool Registry Section -->
@@ -907,6 +908,21 @@
         <div id="speedrun-tracker-container">
           <div class="text-center py-8 text-gray-500">
             <p>Loading speedrun tracker...</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Local LLM Comparison Section -->
+      <div id="tools-section-local-llm" class="tools-section hidden">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4 gap-3">
+          <h2 class="text-xl font-semibold">🖥️ Local LLM Comparison</h2>
+          <div class="flex gap-2">
+            <button onclick="loadLocalLLMComparison()" class="px-3 py-1 bg-accent-blue rounded text-sm hover:bg-blue-600">🔄 Refresh</button>
+          </div>
+        </div>
+        <div id="local-llm-comparison-container">
+          <div class="text-center py-8 text-gray-500">
+            <p>Loading local LLM comparison...</p>
           </div>
         </div>
       </div>
@@ -1386,7 +1402,8 @@
   <script src="widgets/mc-tools-directory.js?v=202602210646"></script>
   <script src="widgets/ai-coding-comparison.js?v=202602210716"></script>
   <script src="widgets/bbs-content-planner.js?v=202602210746"></script>
-  <script src="widgets/speedrun-strategy-tracker.js?v=202602210746"></script>
+  <script src="widgets/speedrun-strategy-tracker.js?v=202602210816"></script>
+  <script src="widgets/local-llm-comparison.js?v=202602210816"></script>
   <script src="app.js?v=202602201712"></script>
 
   <!-- Shorts Calculator Loader -->
@@ -1501,6 +1518,15 @@
       if (container && window.SpeedrunStrategyTracker) {
         window.speedrunTracker = new SpeedrunStrategyTracker();
         window.speedrunTracker.render('speedrun-tracker-container');
+      }
+    }
+
+    // Local LLM Comparison loader
+    function loadLocalLLMComparison() {
+      const container = document.getElementById('local-llm-comparison-container');
+      if (container && window.LocalLLMComparison) {
+        window.localLLMComparison = new LocalLLMComparison();
+        window.localLLMComparison.render('local-llm-comparison-container');
       }
     }
 
