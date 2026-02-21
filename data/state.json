@@ -1,24 +1,24 @@
 {
-  "lastHeartbeat": "2026-02-21T15:59:00Z",
-  "totalHeartbeats": 471,
-  "lastAction": "HB471: Minecraft 2026 Roadmap widget. Research: 26.1 First Drop (March), 26.2 Biomes & Botany (Spring), Minecraft Live 2026 (March), Vibrant Visuals (2026). Build: Timeline with confirmed/rumored updates, feature tracker, content prep checklist.",
+  "lastHeartbeat": "2026-02-21T16:09:00Z",
+  "totalHeartbeats": 472,
+  "lastAction": "HB472: BBS Cinematic Toolkit widget. Research: BBS Reforge dynamic lighting, Blockbench model import workflow, shot types. Build: 6-tab toolkit (~22KB) with shot selector, camera speed calculator, lighting setups, Blockbench workflow guide, scene planner with localStorage, recording checklist.",
   "currentPriorities": {
-    "youtube": "Minecraft 2026 content roadmap — roadmap widget live",
-    "business": "Creator tools expansion — 61 tools in dashboard",
+    "youtube": "Minecraft cinematic content — BBS toolkit live",
+    "business": "Creator tools expansion — 62 tools in dashboard",
     "investments": "NVDA earnings Feb 26 — countdown widget live"
   },
   "dataFreshness": {
-    "youtube": "2026-02-21 — 177 outliers, 20 briefs, 61 tools including 2026 Roadmap",
+    "youtube": "2026-02-21 — 177 outliers, 20 briefs, 62 tools",
     "newBusiness": "2026-02-20 — 8 opportunities",
     "investments": "2026-02-21 — NVDA earnings intelligence",
-    "research": "2026-02-21 — 31 notes (added 2026 roadmap research)",
-    "audits": "2026-02-21 — 39 audits logged",
-    "tools": "2026-02-21 — 61 tools including Minecraft 2026 Roadmap"
+    "research": "2026-02-21 — 32 notes (added BBS cinematic research)",
+    "audits": "2026-02-21 — 40 audits logged",
+    "tools": "2026-02-21 — 62 tools including BBS Cinematic Toolkit"
   },
   "recentFeedback": [
     {"date": "2026-02-07", "feedback": "Steven wants browser-based tools only, not local apps"}
   ],
-  "workThatLanded": ["Content Pipeline concept", "X Intelligence data", "Thumbnail Preview Tool", "Series Planner", "NVDA Earnings Countdown", "Minecraft 26.1 Planner", "Shorts-Long Mixer", "BBS Cinematic Planner", "Marketplace Creator Benchmark", "Minecraft Live 2026 Countdown", "AI Video Comparison Tool", "YouTube Retention Analyzer", "Minecraft Creator Tools Directory", "Minecraft Movie Content Ideas", "YouTube Engagement Optimizer", "AI Coding Assistant Comparison", "BBS Mod Content Planner", "Speedrun Strategy Tracker", "Local LLM Comparison", "Minecraft Content Ideas Generator", "Mod Loader Comparison", "AI Video Editor Comparison", "Content Workflow Automation", "Minecraft Architecture Guide", "Minecraft 2026 Roadmap"],
+  "workThatLanded": ["Content Pipeline concept", "X Intelligence data", "Thumbnail Preview Tool", "Series Planner", "NVDA Earnings Countdown", "Minecraft 26.1 Planner", "Shorts-Long Mixer", "BBS Cinematic Planner", "Marketplace Creator Benchmark", "Minecraft Live 2026 Countdown", "AI Video Comparison Tool", "YouTube Retention Analyzer", "Minecraft Creator Tools Directory", "Minecraft Movie Content Ideas", "YouTube Engagement Optimizer", "AI Coding Assistant Comparison", "BBS Mod Content Planner", "Speedrun Strategy Tracker", "Local LLM Comparison", "Minecraft Content Ideas Generator", "Mod Loader Comparison", "AI Video Editor Comparison", "Content Workflow Automation", "Minecraft Architecture Guide", "Minecraft 2026 Roadmap", "BBS Cinematic Toolkit"],
   "workThatFlopped": ["Local-only dashboard app", "Scattered markdown reports"],
   "lessonsLearned": [
     "All tools must be browser-accessible — Steven uses a different computer",
@@ -46,7 +46,8 @@
     "AI video editor comparisons help creators choose the right editing software for their workflow",
     "Workflow automation tools help creators scale production without losing authenticity",
     "Architecture guides help builders improve their skills with proper techniques and palettes",
-    "2026 roadmap widgets help creators plan content around upcoming Minecraft updates"
+    "2026 roadmap widgets help creators plan content around upcoming Minecraft updates",
+    "BBS Cinematic Toolkit bridges Blockbench workflow with in-game filming"
   ],
   "nextPriority": "Continue expanding Minecraft content creator tool suite"
 }

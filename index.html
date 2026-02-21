@@ -559,6 +559,7 @@
         <button onclick="showToolsSection('redstone-planner')" id="tools-btn-redstone-planner" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">⚡ Redstone</button>
         <button onclick="showToolsSection('architecture-guide')" id="tools-btn-architecture-guide" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">🏛️ Architecture</button>
         <button onclick="showToolsSection('mc-2026-roadmap')" id="tools-btn-mc-2026-roadmap" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">🗺️ MC 2026 Roadmap</button>
+        <button onclick="showToolsSection('bbs-cinematic')" id="tools-btn-bbs-cinematic" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">🎥 BBS Cinematic</button>
       </div>
 
       <!-- Tool Registry Section -->
@@ -1038,6 +1039,20 @@
         <div id="mc-2026-roadmap-container">
           <div class="text-center py-8 text-gray-500">
             <p>Loading 2026 roadmap...</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="tools-section-bbs-cinematic" class="tools-section hidden">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4 gap-3">
+          <h2 class="text-xl font-semibold">🎥 BBS Cinematic Toolkit</h2>
+          <div class="flex gap-2">
+            <button onclick="loadBBSCinematicToolkit()" class="px-3 py-1 bg-accent-blue rounded text-sm hover:bg-blue-600">🔄 Refresh</button>
+          </div>
+        </div>
+        <div id="bbs-cinematic-container">
+          <div class="text-center py-8 text-gray-500">
+            <p>Loading BBS Cinematic Toolkit...</p>
           </div>
         </div>
       </div>
@@ -1526,6 +1541,7 @@
   <script src="widgets/redstone-project-planner.js?v=202602211046"></script>
   <script src="widgets/minecraft-architecture-guide.js?v=202602211046"></script>
   <script src="widgets/minecraft-2026-roadmap.js?v=202602211059"></script>
+  <script src="widgets/bbs-cinematic-toolkit.js?v=202602211109"></script>
   <script src="app.js?v=202602201712"></script>
 
   <!-- Shorts Calculator Loader -->
@@ -1712,6 +1728,21 @@
       if (container && window.Minecraft2026Roadmap) {
         window.mc2026Roadmap = new Minecraft2026Roadmap();
         window.mc2026Roadmap.render('mc-2026-roadmap-container');
+      }
+    }
+
+    function loadBBSCinematicToolkit() {
+      const container = document.getElementById('bbs-cinematic-container');
+      if (container) {
+        // Load the BBS Cinematic Toolkit widget
+        fetch('widgets/bbs-cinematic-toolkit.js?v=202602211109')
+          .then(r => r.text())
+          .then(js => {
+            const fn = new Function('return ' + js)();
+            const widget = fn();
+            container.innerHTML = '';
+            container.appendChild(widget);
+          });
       }
     }
 
