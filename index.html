@@ -537,6 +537,7 @@
         <button onclick="showToolsSection('marketplace-calc')" id="tools-btn-marketplace-calc" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">💰 Marketplace Calc</button>
         <button onclick="showToolsSection('ai-video-compare')" id="tools-btn-ai-video-compare" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">🎥 AI Video Compare</button>
         <button onclick="showToolsSection('retention-analyzer')" id="tools-btn-retention-analyzer" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">📊 Retention Analyzer</button>
+        <button onclick="showToolsSection('mc-tools-directory')" id="tools-btn-mc-tools-directory" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">🛠️ MC Tools</button>
       </div>
 
       <!-- Tool Registry Section -->
@@ -833,6 +834,21 @@
         <div id="retention-analyzer-container">
           <div class="text-center py-8 text-gray-500">
             <p>Loading retention analyzer...</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Minecraft Creator Tools Directory Section -->
+      <div id="tools-section-mc-tools-directory" class="tools-section hidden">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4 gap-3">
+          <h2 class="text-xl font-semibold">🛠️ Minecraft Creator Tools Directory</h2>
+          <div class="flex gap-2">
+            <button onclick="loadMCToolsDirectory()" class="px-3 py-1 bg-accent-blue rounded text-sm hover:bg-blue-600">🔄 Refresh</button>
+          </div>
+        </div>
+        <div id="mc-tools-directory-container">
+          <div class="text-center py-8 text-gray-500">
+            <p>Loading tools directory...</p>
           </div>
         </div>
       </div>
@@ -1308,7 +1324,8 @@
   <script src="widgets/thumbnail-preview-tool.js?v=202602210446"></script>
   <script src="widgets/marketplace-revenue-calculator.js?v=202602210516"></script>
   <script src="widgets/ai-video-comparison-tool.js?v=202602210546"></script>
-  <script src="widgets/youtube-retention-analyzer.js?v=202602210546"></script>
+  <script src="widgets/youtube-retention-analyzer.js?v=202602210616"></script>
+  <script src="widgets/mc-tools-directory.js?v=202602210616"></script>
   <script src="app.js?v=202602201712"></script>
 
   <!-- Shorts Calculator Loader -->
@@ -1387,6 +1404,15 @@
       if (container && window.YouTubeRetentionAnalyzer) {
         window.retentionAnalyzer = new YouTubeRetentionAnalyzer();
         window.retentionAnalyzer.render('retention-analyzer-container');
+      }
+    }
+
+    // Minecraft Creator Tools Directory loader
+    function loadMCToolsDirectory() {
+      const container = document.getElementById('mc-tools-directory-container');
+      if (container && window.MinecraftCreatorToolsDirectory) {
+        window.mcToolsDirectory = new MinecraftCreatorToolsDirectory();
+        window.mcToolsDirectory.render('mc-tools-directory-container');
       }
     }
 
