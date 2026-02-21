@@ -1312,6 +1312,9 @@ function renderYouTube() {
 
   // Render Speedrun Category Explorer widget
   safeRender(() => renderSpeedrunExplorer(), 'renderSpeedrunExplorer');
+
+  // Render Version Timeline Explorer widget
+  safeRender(() => renderVersionTimelineExplorer(), 'renderVersionTimelineExplorer');
 }
 
 // Content Pipeline Kanban Board — NEW FEATURE: Visual production tracker
@@ -5475,6 +5478,125 @@ function exportModpackComparison() {
 window.showModpackDetails = showModpackDetails;
 window.runModpackAnalysis = runModpackAnalysis;
 window.exportModpackComparison = exportModpackComparison;
+
+// ==================== VERSION TIMELINE EXPLORER WIDGET ====================
+// Interactive timeline for Minecraft's new year-based versioning system
+// Research: Minecraft.net version numbering change, Game Drops 2026
+
+function renderVersionTimelineExplorer() {
+  const container = document.getElementById('version-timeline-explorer');
+  if (!container) return;
+
+  const timeline = [
+    { version: '1.21.5', name: 'Spring to Life', date: 'March 25, 2025', status: 'Released', features: ['New variants', ' ambience improvements'], color: 'gray' },
+    { version: '26.1', name: 'First Drop 2026', date: 'March 15, 2026', status: 'Upcoming', features: ['Baby mob redesigns', 'Golden dandelion', 'Craftable name tags'], color: 'blue' },
+    { version: '26.2', name: 'Second Drop 2026', date: 'Summer 2026', status: 'Planned', features: ['TBD at mid-2026 Live'], color: 'purple' },
+    { version: '26.3', name: 'Third Drop 2026', date: 'Late 2026', status: 'Planned', features: ['TBD at mid-2026 Live'], color: 'purple' }
+  ];
+
+  let html = `
+    <div class="bg-dark-800/50 border border-dark-600 rounded-lg p-4">
+      <div class="flex items-center gap-2 mb-4">
+        <span class="text-xl">📅</span>
+        <h3 class="text-lg font-bold text-white">Minecraft Version Timeline</h3>
+        <span class="text-xs bg-accent-blue/20 text-accent-blue px-2 py-0.5 rounded ml-auto">New System</span>
+      </div>
+
+      <div class="mb-3 bg-dark-700/30 rounded-lg p-3">
+        <div class="text-xs text-gray-400 mb-1">Version Numbering Change:</div>
+        <div class="flex items-center gap-2">
+          <span class="text-sm text-gray-500 line-through">1.21 → 1.22</span>
+          <span class="text-sm">→</span>
+          <span class="text-sm text-accent-green font-semibold">26.1 → 26.2</span>
+        </div>
+        <div class="text-xs text-gray-400 mt-1">Year-based: "26" = 2026, ".1" = first drop</div>
+      </div>
+
+      <div class="space-y-3">
+        ${timeline.map((item, index) => `
+          <div class="relative pl-6 pb-3 ${index !== timeline.length - 1 ? 'border-l-2 border-dark-600' : ''}">
+            <div class="absolute left-0 top-0 w-4 h-4 rounded-full ${item.color === 'gray' ? 'bg-gray-500' : item.color === 'blue' ? 'bg-accent-blue' : 'bg-accent-purple'} -translate-x-[9px]"></div>
+            <div class="flex items-start justify-between">
+              <div>
+                <div class="flex items-center gap-2">
+                  <span class="font-semibold text-white">${item.version}</span>
+                  <span class="text-xs ${item.status === 'Released' ? 'bg-gray-600' : item.status === 'Upcoming' ? 'bg-accent-blue' : 'bg-accent-purple'} px-2 py-0.5 rounded text-white">${item.status}</span>
+                </div>
+                <div class="text-sm text-accent-primary">${item.name}</div>
+                <div class="text-xs text-gray-400">${item.date}</div>
+              </div>
+            </div>
+            <div class="mt-2">
+              ${item.features.map(f => `<span class="text-xs bg-dark-600 px-2 py-0.5 rounded text-gray-300 mr-1">${f}</span>`).join('')}
+            </div>
+            ${item.status === 'Upcoming' ? `
+              <div class="mt-2 text-xs text-accent-yellow">
+                ⏰ ${Math.ceil((new Date('2026-03-15') - new Date()) / (1000 * 60 * 60 * 24))} days until 26.1
+              </div>
+            ` : ''}
+          </div>
+        `).join('')}
+      </div>
+
+      <div class="mt-4 flex gap-2">
+        <button onclick="showVersionSystemDetails()" class="btn-primary flex-1">
+          <span>ℹ️</span> How It Works
+        </button>
+        <button onclick="exportVersionTimeline()" class="btn-secondary flex-1">
+          <span>📊</span> Export Timeline
+        </button>
+      </div>
+
+      <div id="version-system-details" class="mt-3 hidden">
+        <div class="bg-dark-700/30 rounded-lg p-3 text-sm text-gray-300">
+          <p class="mb-2"><strong>Old System:</strong> 1.21, 1.22, 1.23 (confusing - patches vs majors)</p>
+          <p class="mb-2"><strong>New System:</strong> 26.1, 26.2, 26.3 (year + drop number)</p>
+          <p>More frequent "Game Drops" instead of big annual updates. Each drop is smaller but ships faster.</p>
+        </div>
+      </div>
+    </div>
+  `;
+
+  container.innerHTML = html;
+}
+
+function showVersionSystemDetails() {
+  const detailsEl = document.getElementById('version-system-details');
+  if (detailsEl) {
+    detailsEl.classList.toggle('hidden');
+  }
+}
+
+function exportVersionTimeline() {
+  const timeline = {
+    timestamp: new Date().toISOString(),
+    system: 'Year-based versioning (2026+)',
+    current: 'Transitioning from 1.21.x to 26.x',
+    upcoming: [
+      { version: '26.1', date: '2026-03-15', name: 'First Drop 2026' },
+      { version: '26.2', date: '2026-Summer', name: 'Second Drop 2026' },
+      { version: '26.3', date: '2026-Late', name: 'Third Drop 2026' }
+    ],
+    source: 'Minecraft.net, SurvivalBlocks, GameSpot'
+  };
+
+  const blob = new Blob([JSON.stringify(timeline, null, 2)], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'minecraft-version-timeline-2026.json';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+
+  alert('Timeline exported!');
+}
+
+// Global exports for Version Timeline Explorer
+window.renderVersionTimelineExplorer = renderVersionTimelineExplorer;
+window.showVersionSystemDetails = showVersionSystemDetails;
+window.exportVersionTimeline = exportVersionTimeline;
 
 // ==================== GLOBAL EXPORTS FOR INLINE HANDLERS ====================
 // Ensure functions are available globally for onclick/onchange handlers
