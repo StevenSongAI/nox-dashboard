@@ -310,6 +310,11 @@
           <!-- Minecraft Live countdown rendered by app.js -->
         </div>
 
+        <!-- Minecraft Movie Content Ideas Widget -->
+        <div id="mc-movie-content-ideas" class="mb-6">
+          <!-- Minecraft Movie content ideas rendered by app.js -->
+        </div>
+
         <div id="youtube-outliers" class="space-y-3">
           <div class="skeleton-loader">
             <div class="skeleton-card"></div>
@@ -538,6 +543,7 @@
         <button onclick="showToolsSection('ai-video-compare')" id="tools-btn-ai-video-compare" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">🎥 AI Video Compare</button>
         <button onclick="showToolsSection('retention-analyzer')" id="tools-btn-retention-analyzer" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">📊 Retention Analyzer</button>
         <button onclick="showToolsSection('mc-tools-directory')" id="tools-btn-mc-tools-directory" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">🛠️ MC Tools</button>
+        <button onclick="showToolsSection('ai-coding')" id="tools-btn-ai-coding" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">💻 AI Coding</button>
       </div>
 
       <!-- Tool Registry Section -->
@@ -849,6 +855,21 @@
         <div id="mc-tools-directory-container">
           <div class="text-center py-8 text-gray-500">
             <p>Loading tools directory...</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- AI Coding Assistant Comparison Section -->
+      <div id="tools-section-ai-coding" class="tools-section hidden">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4 gap-3">
+          <h2 class="text-xl font-semibold">💻 AI Coding Assistant Comparison</h2>
+          <div class="flex gap-2">
+            <button onclick="loadAICodingComparison()" class="px-3 py-1 bg-accent-blue rounded text-sm hover:bg-blue-600">🔄 Refresh</button>
+          </div>
+        </div>
+        <div id="ai-coding-comparison-container">
+          <div class="text-center py-8 text-gray-500">
+            <p>Loading AI coding comparison...</p>
           </div>
         </div>
       </div>
@@ -1325,7 +1346,8 @@
   <script src="widgets/marketplace-revenue-calculator.js?v=202602210516"></script>
   <script src="widgets/ai-video-comparison-tool.js?v=202602210546"></script>
   <script src="widgets/youtube-retention-analyzer.js?v=202602210616"></script>
-  <script src="widgets/mc-tools-directory.js?v=202602210616"></script>
+  <script src="widgets/mc-tools-directory.js?v=202602210646"></script>
+  <script src="widgets/ai-coding-comparison.js?v=202602210646"></script>
   <script src="app.js?v=202602201712"></script>
 
   <!-- Shorts Calculator Loader -->
@@ -1413,6 +1435,15 @@
       if (container && window.MinecraftCreatorToolsDirectory) {
         window.mcToolsDirectory = new MinecraftCreatorToolsDirectory();
         window.mcToolsDirectory.render('mc-tools-directory-container');
+      }
+    }
+
+    // AI Coding Assistant Comparison loader
+    function loadAICodingComparison() {
+      const container = document.getElementById('ai-coding-comparison-container');
+      if (container && window.AICodingAssistantComparison) {
+        window.aiCodingComparison = new AICodingAssistantComparison();
+        window.aiCodingComparison.render('ai-coding-comparison-container');
       }
     }
 

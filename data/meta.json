@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-02-21T06:16:00Z",
+  "lastUpdated": "2026-02-21T06:46:00Z",
   "updatedBy": "nox-heartbeat",
-  "version": "2026.02.21.74",
-  "cacheBust": "20260221T0616",
-  "dataVersion": "2026.02.21.74",
+  "version": "2026.02.21.76",
+  "cacheBust": "20260221T0646",
+  "dataVersion": "2026.02.21.76",
   "youtubeUpdated": "2026-02-21T09:48:00Z",
   "investmentsUpdated": "2026-02-21T09:26:00.000000",
   "researchUpdated": "2026-02-21T09:48:00.000000",
   "newBusinessUpdated": "2026-02-20T21:25:00Z",
-  "toolsUpdated": "2026-02-21T06:16:00Z",
+  "toolsUpdated": "2026-02-21T06:46:00Z",
   "workTrackerUpdated": "2026-02-15T00:17:00Z",
   "minecraftArtistsUpdated": "2026-02-18T14:22:00Z",
   "investments": {
@@ -18,21 +18,21 @@
     "lastIntelligenceId": "nvda-earnings-hb452"
   },
   "dataFreshness": {
-    "research": "2026-02-21 - Minecraft creator tools directory (Chunker, Mojang tools, OLC, magus)",
+    "research": "2026-02-21 - AI coding assistants comparison (Cursor, Copilot, Claude, Windsurf)",
     "newBusiness": "2026-02-20 - Marketplace revenue widget live",
     "investments": "2026-02-21 - NVDA earnings countdown widget live (Feb 26)",
     "workTracker": "2026-02-15 - pagination + deduplication live",
     "minecraftArtists": "2026-02-18 - 16 artists",
     "youtube": "2026-02-21 - 177 outliers, 20 briefs, 26.1 planner, Shorts mixer, BBS planner, Marketplace benchmark, Minecraft Live countdown",
-    "tools": "2026-02-21 - Minecraft Creator Tools Directory + 45 other widgets"
+    "tools": "2026-02-21 - AI Coding Assistant Comparison + 46 other widgets"
   },
   "research": { "lastUpdated": "2026-02-21T09:48:00Z" },
-  "totalNotes": 83,
-  "lastDataPush": "2026-02-21T06:16:00Z",
+  "totalNotes": 84,
+  "lastDataPush": "2026-02-21T06:46:00Z",
   "lastPushBy": "nox-heartbeat",
-  "lastPushDescription": "Minecraft Creator Tools Directory. Research: Chunker (free open-source world converter), Mojang Creator Tools (official Bedrock add-ons), OLC Bedrock Dev Helper (scripting), magus.gg (automation), Media AI Generator (content). Build: 8 tool profiles with features/pricing/tags, category filtering (world/official/scripting/automation/modeling/content), search functionality, stats dashboard, 2026 highlights section.",
+  "lastPushDescription": "AI Coding Assistant Comparison Tool. Research: Cursor = speed/simplicity, GitHub Copilot = mature/reliable for pros, Claude Code = deep reasoning for complex tasks, Windsurf = free alternative. Build: 4 tool profiles with 5-dimension radar charts (speed/reliability/reasoning/ecosystem/value), single/compare dual modes, quick recommendations section, 2026 trends.",
   "newBusiness": { "lastUpdated": "2026-02-20T21:25:00Z" },
-  "tools": { "lastUpdated": "2026-02-21T06:16:00Z", "totalTools": 46 },
+  "tools": { "lastUpdated": "2026-02-21T06:46:00Z", "totalTools": 47 },
   "youtube": { "lastUpdated": "2026-02-21T09:48:00Z" },
   "competitorsUpdated": "2026-02-20T11:50:55Z",
   "competitors": { "lastUpdated": "2026-02-20T11:50:55Z", "totalCompetitors": 22 },
@@ -45,6 +45,6 @@
     "newBusiness": "2026-02-20T21:25:00Z",
     "competitors": "2026-02-20T11:50:55Z",
     "research": "2026-02-21T09:48:00Z",
-    "tools": "2026-02-21T06:16:00Z"
+    "tools": "2026-02-21T06:46:00Z"
   }
 }
