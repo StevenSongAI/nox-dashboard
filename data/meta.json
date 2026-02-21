@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-02-21T09:48:00Z",
+  "lastUpdated": "2026-02-21T09:52:00Z",
   "updatedBy": "nox-heartbeat",
-  "version": "2026.02.21.68",
-  "cacheBust": "20260221T0948",
-  "dataVersion": "2026.02.21.68",
-  "youtubeUpdated": "2026-02-21T09:48:00Z",
+  "version": "2026.02.21.69",
+  "cacheBust": "20260221T0952",
+  "dataVersion": "2026.02.21.69",
+  "youtubeUpdated": "2026-02-21T09:52:00Z",
   "investmentsUpdated": "2026-02-21T09:26:00.000000",
-  "researchUpdated": "2026-02-21T09:48:00.000000",
+  "researchUpdated": "2026-02-21T09:52:00.000000",
   "newBusinessUpdated": "2026-02-20T21:25:00Z",
-  "toolsUpdated": "2026-02-21T09:48:00Z",
+  "toolsUpdated": "2026-02-21T09:52:00Z",
   "workTrackerUpdated": "2026-02-15T00:17:00Z",
   "minecraftArtistsUpdated": "2026-02-18T14:22:00Z",
   "investments": {
@@ -18,33 +18,33 @@
     "lastIntelligenceId": "nvda-earnings-hb452"
   },
   "dataFreshness": {
-    "research": "2026-02-21 - BBS Mod cinematic content opportunities",
+    "research": "2026-02-21 - Minecraft Marketplace creator earnings ($560M revenue, $500M creator payouts)",
     "newBusiness": "2026-02-20 - Marketplace revenue widget live",
     "investments": "2026-02-21 - NVDA earnings countdown widget live (Feb 26)",
     "workTracker": "2026-02-15 - pagination + deduplication live",
     "minecraftArtists": "2026-02-18 - 16 artists",
-    "youtube": "2026-02-21 - 177 outliers, 20 briefs, 26.1 planner, Shorts mixer, BBS planner",
-    "tools": "2026-02-21 - 41 tools including BBS Cinematic Planner"
+    "youtube": "2026-02-21 - 177 outliers, 20 briefs, 26.1 planner, Shorts mixer, BBS planner, Marketplace benchmark",
+    "tools": "2026-02-21 - 42 tools including Marketplace Creator Benchmark"
   },
-  "research": { "lastUpdated": "2026-02-21T09:48:00Z" },
-  "totalNotes": 80,
-  "lastDataPush": "2026-02-21T09:48:00Z",
+  "research": { "lastUpdated": "2026-02-21T09:52:00Z" },
+  "totalNotes": 81,
+  "lastDataPush": "2026-02-21T09:52:00Z",
   "lastPushBy": "nox-heartbeat",
-  "lastPushDescription": "BBS Cinematic Content Planner widget. Research: BBS Mod opportunities — BBS Reforge for 1.21.1, Movie Studio modpack. Build: 8 scene templates, 8 camera techniques, scene+camera selector, random sequence generator, copy plan functionality.",
+  "lastPushDescription": "Marketplace Creator Benchmark widget. Research: $560M marketplace revenue, $500M creator payouts, Q1 2025 $146M record. Build: Interactive benchmark calculator, 5 creator tiers, real-time revenue estimates.",
   "newBusiness": { "lastUpdated": "2026-02-20T21:25:00Z" },
-  "tools": { "lastUpdated": "2026-02-21T09:48:00Z", "totalTools": 41 },
-  "youtube": { "lastUpdated": "2026-02-21T09:48:00Z" },
+  "tools": { "lastUpdated": "2026-02-21T09:52:00Z", "totalTools": 42 },
+  "youtube": { "lastUpdated": "2026-02-21T09:52:00Z" },
   "competitorsUpdated": "2026-02-20T11:50:55Z",
   "competitors": { "lastUpdated": "2026-02-20T11:50:55Z", "totalCompetitors": 22 },
-  "audits": { "lastUpdated": "2026-02-21T09:48:00Z" },
+  "audits": { "lastUpdated": "2026-02-21T09:52:00Z" },
   "minecraftArtists": { "lastUpdated": "2026-02-20T01:47:50Z" },
   "totalOutliers": 177,
   "sections": {
-    "youtube": "2026-02-21T09:48:00Z",
+    "youtube": "2026-02-21T09:52:00Z",
     "investments": "2026-02-21T09:26:00Z",
     "newBusiness": "2026-02-20T21:25:00Z",
     "competitors": "2026-02-20T11:50:55Z",
-    "research": "2026-02-21T09:48:00Z",
-    "tools": "2026-02-21T09:48:00Z"
+    "research": "2026-02-21T09:52:00Z",
+    "tools": "2026-02-21T09:52:00Z"
   }
 }
