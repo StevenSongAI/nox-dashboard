@@ -1,24 +1,24 @@
 {
-  "lastHeartbeat": "2026-02-21T12:16:00Z",
-  "totalHeartbeats": 463,
-  "lastAction": "HB463: BBS Mod Content Planner. Research: BBS (Blockbuster Studio) mod for Minecraft cinematic content — Blockbench support, keyframe editor, BBS Reforge for 1.21.1. Build: Scene-based planner with shot sequences, 8 shot types, camera movements, export script.",
+  "lastHeartbeat": "2026-02-21T12:46:00Z",
+  "totalHeartbeats": 464,
+  "lastAction": "HB464: Minecraft Speedrun Strategy Tracker. Research: Random Seed Glitchless world record 6:50, one-cycling dragon, villager trading strats. Build: PB/target tracker, 5-phase strategy breakdown, split timing, advanced techniques.",
   "currentPriorities": {
-    "youtube": "BBS cinematic content planning — planner tool live",
-    "business": "Minecraft creator tools expansion — BBS planner added",
+    "youtube": "Minecraft speedrunning content — tracker tool live",
+    "business": "Minecraft creator tools expansion — speedrun tracker added",
     "investments": "NVDA earnings Feb 26 — countdown widget live"
   },
   "dataFreshness": {
-    "youtube": "2026-02-21 — 177 outliers, 20 briefs, full tool suite including BBS planner",
+    "youtube": "2026-02-21 — 177 outliers, 20 briefs, full tool suite including speedrun tracker",
     "newBusiness": "2026-02-20 — 8 opportunities",
     "investments": "2026-02-21 — NVDA earnings intelligence",
-    "research": "2026-02-21 — 23 notes (added BBS mod research)",
-    "audits": "2026-02-21 — 31 audits logged",
-    "tools": "2026-02-21 — 49 tools including BBS Content Planner"
+    "research": "2026-02-21 — 24 notes (added speedrunning research)",
+    "audits": "2026-02-21 — 32 audits logged",
+    "tools": "2026-02-21 — 50 tools including Speedrun Tracker"
   },
   "recentFeedback": [
     {"date": "2026-02-07", "feedback": "Steven wants browser-based tools only, not local apps"}
   ],
-  "workThatLanded": ["Content Pipeline concept", "X Intelligence data", "Thumbnail Preview Tool", "Series Planner", "NVDA Earnings Countdown", "Minecraft 26.1 Planner", "Shorts-Long Mixer", "BBS Cinematic Planner", "Marketplace Creator Benchmark", "Minecraft Live 2026 Countdown", "AI Video Comparison Tool", "YouTube Retention Analyzer", "Minecraft Creator Tools Directory", "Minecraft Movie Content Ideas", "YouTube Engagement Optimizer", "AI Coding Assistant Comparison", "BBS Mod Content Planner"],
+  "workThatLanded": ["Content Pipeline concept", "X Intelligence data", "Thumbnail Preview Tool", "Series Planner", "NVDA Earnings Countdown", "Minecraft 26.1 Planner", "Shorts-Long Mixer", "BBS Cinematic Planner", "Marketplace Creator Benchmark", "Minecraft Live 2026 Countdown", "AI Video Comparison Tool", "YouTube Retention Analyzer", "Minecraft Creator Tools Directory", "Minecraft Movie Content Ideas", "YouTube Engagement Optimizer", "AI Coding Assistant Comparison", "BBS Mod Content Planner", "Speedrun Strategy Tracker"],
   "workThatFlopped": ["Local-only dashboard app", "Scattered markdown reports"],
   "lessonsLearned": [
     "All tools must be browser-accessible — Steven uses a different computer",
@@ -38,7 +38,8 @@
     "Minecraft Movie box office success creates massive content opportunity wave",
     "Community engagement (comments, shares, saves) weighted heavily in 2026 algorithm",
     "AI coding assistant comparisons help developers choose the right pair programmer",
-    "BBS Mod planner enables cinematic Minecraft content creation workflow"
+    "BBS Mod planner enables cinematic Minecraft content creation workflow",
+    "Speedrun tracking tools help content creators plan and improve their runs"
   ],
-  "nextPriority": "Continue building Minecraft cinematic content tools — BBS workflow focus"
+  "nextPriority": "Continue expanding Minecraft content creator tool suite"
 }
