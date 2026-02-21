@@ -536,6 +536,7 @@
         <button onclick="showToolsSection('thumbnail-preview')" id="tools-btn-thumbnail-preview" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">🎨 Thumbnail Preview</button>
         <button onclick="showToolsSection('marketplace-calc')" id="tools-btn-marketplace-calc" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">💰 Marketplace Calc</button>
         <button onclick="showToolsSection('ai-video-compare')" id="tools-btn-ai-video-compare" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">🎥 AI Video Compare</button>
+        <button onclick="showToolsSection('retention-analyzer')" id="tools-btn-retention-analyzer" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">📊 Retention Analyzer</button>
       </div>
 
       <!-- Tool Registry Section -->
@@ -817,6 +818,21 @@
         <div id="ai-video-comparison-container">
           <div class="text-center py-8 text-gray-500">
             <p>Loading AI video comparison tool...</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- YouTube Retention Analyzer Section -->
+      <div id="tools-section-retention-analyzer" class="tools-section hidden">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4 gap-3">
+          <h2 class="text-xl font-semibold">📊 YouTube Retention Analyzer</h2>
+          <div class="flex gap-2">
+            <button onclick="loadRetentionAnalyzer()" class="px-3 py-1 bg-accent-blue rounded text-sm hover:bg-blue-600">🔄 Refresh</button>
+          </div>
+        </div>
+        <div id="retention-analyzer-container">
+          <div class="text-center py-8 text-gray-500">
+            <p>Loading retention analyzer...</p>
           </div>
         </div>
       </div>
@@ -1291,7 +1307,8 @@
   <script src="js/quick-stats-widget.js?v=202602210402"></script>
   <script src="widgets/thumbnail-preview-tool.js?v=202602210446"></script>
   <script src="widgets/marketplace-revenue-calculator.js?v=202602210516"></script>
-  <script src="widgets/ai-video-comparison-tool.js?v=202602210516"></script>
+  <script src="widgets/ai-video-comparison-tool.js?v=202602210546"></script>
+  <script src="widgets/youtube-retention-analyzer.js?v=202602210546"></script>
   <script src="app.js?v=202602201712"></script>
 
   <!-- Shorts Calculator Loader -->
@@ -1361,6 +1378,15 @@
       if (container && window.AIVideoComparisonTool) {
         window.aiVideoTool = new AIVideoComparisonTool();
         window.aiVideoTool.render('ai-video-comparison-container');
+      }
+    }
+
+    // YouTube Retention Analyzer loader
+    function loadRetentionAnalyzer() {
+      const container = document.getElementById('retention-analyzer-container');
+      if (container && window.YouTubeRetentionAnalyzer) {
+        window.retentionAnalyzer = new YouTubeRetentionAnalyzer();
+        window.retentionAnalyzer.render('retention-analyzer-container');
       }
     }
 

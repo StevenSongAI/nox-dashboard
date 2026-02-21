@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-02-21T05:16:00Z",
+  "lastUpdated": "2026-02-21T05:46:00Z",
   "updatedBy": "nox-heartbeat",
-  "version": "2026.02.21.70",
-  "cacheBust": "20260221T0516",
-  "dataVersion": "2026.02.21.70",
+  "version": "2026.02.21.72",
+  "cacheBust": "20260221T0546",
+  "dataVersion": "2026.02.21.72",
   "youtubeUpdated": "2026-02-21T09:48:00Z",
   "investmentsUpdated": "2026-02-21T09:26:00.000000",
   "researchUpdated": "2026-02-21T09:48:00.000000",
   "newBusinessUpdated": "2026-02-20T21:25:00Z",
-  "toolsUpdated": "2026-02-21T05:16:00Z",
+  "toolsUpdated": "2026-02-21T05:46:00Z",
   "workTrackerUpdated": "2026-02-15T00:17:00Z",
   "minecraftArtistsUpdated": "2026-02-18T14:22:00Z",
   "investments": {
@@ -18,21 +18,21 @@
     "lastIntelligenceId": "nvda-earnings-hb452"
   },
   "dataFreshness": {
-    "research": "2026-02-21 - AI video generation trends (Sora, Runway, Pika)",
+    "research": "2026-02-21 - YouTube algorithm 2026 changes (satisfaction > watch time)",
     "newBusiness": "2026-02-20 - Marketplace revenue widget live",
     "investments": "2026-02-21 - NVDA earnings countdown widget live (Feb 26)",
     "workTracker": "2026-02-15 - pagination + deduplication live",
     "minecraftArtists": "2026-02-18 - 16 artists",
     "youtube": "2026-02-21 - 177 outliers, 20 briefs, 26.1 planner, Shorts mixer, BBS planner, Marketplace benchmark, Minecraft Live countdown",
-    "tools": "2026-02-21 - AI Video Comparison Tool + 43 other widgets"
+    "tools": "2026-02-21 - YouTube Retention Analyzer + 44 other widgets"
   },
   "research": { "lastUpdated": "2026-02-21T09:48:00Z" },
-  "totalNotes": 81,
-  "lastDataPush": "2026-02-21T05:16:00Z",
+  "totalNotes": 82,
+  "lastDataPush": "2026-02-21T05:46:00Z",
   "lastPushBy": "nox-heartbeat",
-  "lastPushDescription": "AI Video Generator Comparison Tool. Research: Sora vs Runway Gen-4 vs Pika Labs 2.5 comparison — Runway = best control, Pika = best value + fastest (30-90s), Sora = best fidelity. Build: 5 tool profiles (Sora, Runway, Pika, HeyGen, Kling), single view with radar charts, side-by-side compare mode, use case filtering, 2026 trends section.",
+  "lastPushDescription": "YouTube Retention Analyzer Tool. Research: 2026 algorithm shifts from watch time to viewer satisfaction, Shorts as testing ground for long-form, 30+ min content gets 35-45% boost. Build: Interactive retention curve editor, AVD calculator, algorithm score with 2026 factors, viral/average/poor presets, satisfaction estimate meter, 2026 Do's and Don'ts tips.",
   "newBusiness": { "lastUpdated": "2026-02-20T21:25:00Z" },
-  "tools": { "lastUpdated": "2026-02-21T05:16:00Z", "totalTools": 44 },
+  "tools": { "lastUpdated": "2026-02-21T05:46:00Z", "totalTools": 45 },
   "youtube": { "lastUpdated": "2026-02-21T09:48:00Z" },
   "competitorsUpdated": "2026-02-20T11:50:55Z",
   "competitors": { "lastUpdated": "2026-02-20T11:50:55Z", "totalCompetitors": 22 },
@@ -45,6 +45,6 @@
     "newBusiness": "2026-02-20T21:25:00Z",
     "competitors": "2026-02-20T11:50:55Z",
     "research": "2026-02-21T09:48:00Z",
-    "tools": "2026-02-21T05:16:00Z"
+    "tools": "2026-02-21T05:46:00Z"
   }
 }
