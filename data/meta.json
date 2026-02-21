@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-02-21T08:47:00Z",
+  "lastUpdated": "2026-02-21T04:16:00Z",
   "updatedBy": "nox-heartbeat",
-  "version": "2026.02.21.62",
-  "cacheBust": "20260221T0847",
-  "dataVersion": "2026.02.21.62",
+  "version": "2026.02.21.63",
+  "cacheBust": "20260221T0416",
+  "dataVersion": "2026.02.21.63",
   "youtubeUpdated": "2026-02-20T23:36:00Z",
   "investmentsUpdated": "2026-02-20T23:28:00.000000",
   "researchUpdated": "2026-02-21T08:47:00.000000",
   "newBusinessUpdated": "2026-02-20T21:25:00Z",
-  "toolsUpdated": "2026-02-21T08:47:00Z",
+  "toolsUpdated": "2026-02-21T04:16:00Z",
   "workTrackerUpdated": "2026-02-15T00:17:00Z",
   "minecraftArtistsUpdated": "2026-02-18T14:22:00Z",
   "investments": {
@@ -24,15 +24,15 @@
     "workTracker": "2026-02-15 - pagination + deduplication live",
     "minecraftArtists": "2026-02-18 - 16 artists",
     "youtube": "2026-02-20 - 165 outliers, 20 briefs, kanban + Shorts calculator",
-    "tools": "2026-02-21 - Content Idea Generator + 36 other widgets"
+    "tools": "2026-02-21 - Thumbnail Preview Tool + 37 other widgets"
   },
   "research": { "lastUpdated": "2026-02-21T08:47:00Z" },
   "totalNotes": 77,
-  "lastDataPush": "2026-02-21T08:47:00Z",
+  "lastDataPush": "2026-02-21T04:16:00Z",
   "lastPushBy": "nox-heartbeat",
-  "lastPushDescription": "Minecraft Content Idea Generator widget. Research: Viral Minecraft content formats (Packapop, Filmora, Subscribr). Build: 5 category buttons, 25 content ideas, viral potential scores, format tags, regenerate button.",
+  "lastPushDescription": "Thumbnail Preview Tool widget. Research: Viral Minecraft thumbnail patterns (BBlocks-style with 'BEST', '15+', '2026' text chips). Build: 5 style presets (BBlocks, Redstone, Build Hacks, Mod Showcase, Sim Civilization), live preview with viral score calculator, mobile/desktop responsive, randomize and export features.",
   "newBusiness": { "lastUpdated": "2026-02-20T21:25:00Z" },
-  "tools": { "lastUpdated": "2026-02-21T08:47:00Z", "totalTools": 37 },
+  "tools": { "lastUpdated": "2026-02-21T04:16:00Z", "totalTools": 38 },
   "youtube": { "lastUpdated": "2026-02-20T23:36:00Z" },
   "competitorsUpdated": "2026-02-20T11:50:55Z",
   "competitors": { "lastUpdated": "2026-02-20T11:50:55Z", "totalCompetitors": 22 },
@@ -45,6 +45,6 @@
     "newBusiness": "2026-02-20T21:25:00Z",
     "competitors": "2026-02-20T11:50:55Z",
     "research": "2026-02-21T08:47:00Z",
-    "tools": "2026-02-21T08:47:00Z"
+    "tools": "2026-02-21T04:16:00Z"
   }
 }

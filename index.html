@@ -66,6 +66,7 @@
         <button onclick="showTab('calendar')" id="tab-btn-calendar" class="tab-btn text-sm font-medium" role="tab" aria-selected="false" aria-controls="tab-calendar" tabindex="-1" aria-label="Calendar tab">📅 Calendar</button>
         <button onclick="showTab('memory')" id="tab-btn-memory" class="tab-btn text-sm font-medium" role="tab" aria-selected="false" aria-controls="tab-memory" tabindex="-1" aria-label="Memory tab">🧠 Memory</button>
         <button onclick="showTab('team')" id="tab-btn-team" class="tab-btn text-sm font-medium" role="tab" aria-selected="false" aria-controls="tab-team" tabindex="-1" aria-label="Team tab">👥 Team</button>
+        <button onclick="showTab('series-planner')" id="tab-btn-series-planner" class="tab-btn text-sm font-medium" role="tab" aria-selected="false" aria-controls="tab-series-planner" tabindex="-1" aria-label="Series Planner tab">🎬 Series Planner</button>
       </div>
     </nav>
   </header>
@@ -453,6 +454,7 @@
         <button onclick="showToolsSection('animation')" id="tools-btn-animation" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">🎭 Animation Tools</button>
         <button onclick="showToolsSection('shorts-calc')" id="tools-btn-shorts-calc" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">📊 Shorts Calculator</button>
         <button onclick="showToolsSection('builder-explorer')" id="tools-btn-builder-explorer" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">🏗️ Builder Explorer</button>
+        <button onclick="showToolsSection('thumbnail-preview')" id="tools-btn-thumbnail-preview" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">🎨 Thumbnail Preview</button>
       </div>
 
       <!-- Tool Registry Section -->
@@ -688,6 +690,22 @@
         <div id="minecraft-builder-explorer">
           <div class="text-center py-8 text-gray-500">
             <p>Loading builder explorer...</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Thumbnail Preview Tool Section -->
+      <div id="tools-section-thumbnail-preview" class="tools-section hidden">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4 gap-3">
+          <h2 class="text-xl font-semibold">🎨 Thumbnail Preview Tool</h2>
+          <div class="flex gap-2">
+            <button onclick="loadThumbnailPreview()" class="px-3 py-1 bg-accent-blue rounded text-sm hover:bg-blue-600">🔄 Refresh</button>
+            <button onclick="thumbnailTool.randomize()" class="px-3 py-1 bg-accent-purple rounded text-sm hover:bg-purple-600">🎲 Randomize</button>
+          </div>
+        </div>
+        <div id="thumbnail-preview-container">
+          <div class="text-center py-8 text-gray-500">
+            <p>Loading thumbnail preview tool...</p>
           </div>
         </div>
       </div>
@@ -1079,6 +1097,7 @@
   <script src="js/shorts-calculator.js?v=202602210316"></script>
   <script src="widgets/minecraft-builder-explorer.js?v=202602210245"></script>
   <script src="js/quick-stats-widget.js?v=202602210402"></script>
+  <script src="widgets/thumbnail-preview-tool.js?v=202602210416"></script>
   <script src="app.js?v=202602201712"></script>
 
   <!-- Shorts Calculator Loader -->
@@ -1124,6 +1143,15 @@
       }
     }
 
+    // Thumbnail Preview Tool loader
+    function loadThumbnailPreview() {
+      const container = document.getElementById('thumbnail-preview-container');
+      if (container && window.ThumbnailPreviewTool) {
+        window.thumbnailTool = new ThumbnailPreviewTool();
+        window.thumbnailTool.render('thumbnail-preview-container');
+      }
+    }
+
     // Auto-load when shorts-calc section is shown
     document.addEventListener('DOMContentLoaded', () => {
       const observer = new MutationObserver((mutations) => {
@@ -1135,6 +1163,10 @@
           const builderSection = document.getElementById('tools-section-builder-explorer');
           if (builderSection && !builderSection.classList.contains('hidden')) {
             loadBuilderExplorer();
+          }
+          const thumbSection = document.getElementById('tools-section-thumbnail-preview');
+          if (thumbSection && !thumbSection.classList.contains('hidden') && window.thumbnailTool) {
+            window.thumbnailTool.refreshUI();
           }
         });
       });
