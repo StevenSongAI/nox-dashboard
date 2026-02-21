@@ -1,10 +1,10 @@
 {
-  "lastHeartbeat": "2026-02-21T09:42:00Z",
-  "totalHeartbeats": 454,
-  "lastAction": "HB454: Built Shorts-to-Long Form Content Mixer widget. Research: 2026 YouTube trends — Shorts acting as trailers for long-form content, compilation formats working well, transformation/reaction content highest-viewed Shorts format. Build: 6 content mix templates (Teaser Trailer, Transformation Reveal, Reaction Bait, Compilation Preview, Tutorial Preview, Challenge Setup), clickable template cards, mix generator with Shorts + long-form strategy panels, copy plan functionality, 2026 strategy tips section.",
+  "lastHeartbeat": "2026-02-21T09:46:00Z",
+  "totalHeartbeats": 455,
+  "lastAction": "HB455: Marketplace Revenue Calculator widget. Research: Marketplace earned $560M in past 12 months (Q1 2025 record $146M), creators earned $500M+. Build: 6 content type presets, interactive price/downloads sliders, real-time revenue calculator with platform fees, ROI analysis, benchmark comparison.",
   "currentPriorities": {
     "youtube": "Shorts-long form mix strategy — mixer widget live",
-    "business": "SaaS partnerships - 2 opps being evaluated",
+    "business": "Marketplace revenue calculator now live — creator earnings data",
     "investments": "NVDA earnings Feb 26 — countdown widget live"
   },
   "dataFreshness": {
@@ -13,12 +13,12 @@
     "investments": "2026-02-21 — NVDA earnings intelligence",
     "research": "2026-02-21 — 14 notes (added 2026 content trends)",
     "audits": "2026-02-21 — 22 audits logged",
-    "tools": "2026-02-21 — 40 tools"
+    "tools": "2026-02-21 — 41 tools including Marketplace Revenue Calculator"
   },
   "recentFeedback": [
     {"date": "2026-02-07", "feedback": "Steven wants browser-based tools only, not local apps"}
   ],
-  "workThatLanded": ["Content Pipeline concept", "X Intelligence data", "Thumbnail Preview Tool", "Series Planner", "NVDA Earnings Countdown", "Minecraft 26.1 Planner", "Shorts-Long Mixer"],
+  "workThatLanded": ["Content Pipeline concept", "X Intelligence data", "Thumbnail Preview Tool", "Series Planner", "NVDA Earnings Countdown", "Minecraft 26.1 Planner", "Shorts-Long Mixer", "Marketplace Revenue Calculator"],
   "workThatFlopped": ["Local-only dashboard app", "Scattered markdown reports"],
   "lessonsLearned": [
     "All tools must be browser-accessible — Steven uses a different computer",
@@ -28,7 +28,8 @@
     "Series content outperforms one-offs — build tools that enable episodic planning",
     "Investment intelligence widgets should surface actionable data with clear countdowns",
     "Minecraft update trackers with content angles help prep for release day content",
-    "Shorts as trailers for long-form is a key 2026 trend — build tools that facilitate this workflow"
+    "Shorts as trailers for long-form is a key 2026 trend — build tools that facilitate this workflow",
+    "Marketplace revenue data helps creators understand earning potential"
   ],
   "nextPriority": "Apply Shorts-long form strategy to upcoming Minecraft 26.1 content"
 }
