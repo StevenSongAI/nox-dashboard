@@ -1,6 +1,6 @@
 {
-  "lastHeartbeat": "2026-02-21T07:46:00Z",
-  "totalHeartbeats": 443,
-  "lastAction": "HB443: BBS Cinematic Workflow Guide widget. Research: Blockbuster/BBS mod ecosystem (CurseForge, Reddit, Wiki). Build: 5 workflow cards (Setup, Scene Planning, Actor Recording, Camera Work, Export), step-by-step guides, Crowd Spawner integration tip.",
+  "lastHeartbeat": "2026-02-21T07:52:00Z",
+  "totalHeartbeats": 444,
+  "lastAction": "HB444: BBS Feature Explorer widget. Research: BBS mod ecosystem (Reddit, CurseForge, Modrinth). Build: 6 feature cards with category filters (Core, Production, Effects, Assets), capabilities lists, use cases, Sinytra Connector compatibility note.",
   "nextPriority": "Hook Steven up with the Animator to test BBS Crowd Spawner v3.4 texture selection"
 }
