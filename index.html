@@ -1029,6 +1029,34 @@
   <script src="js/shorts-calculator.js?v=202602210316"></script>
   <script src="app.js?v=202602201712"></script>
   
+  <!-- Shorts Calculator Loader -->
+  <script>
+    function loadShortsCalculator() {
+      const container = document.getElementById('shorts-calculator-container');
+      if (container && window.ShortsCalculator) {
+        const calc = new ShortsCalculator();
+        calc.render('shorts-calculator-container');
+      }
+    }
+    
+    // Auto-load when shorts-calc section is shown
+    document.addEventListener('DOMContentLoaded', () => {
+      const observer = new MutationObserver((mutations) => {
+        mutations.forEach((mutation) => {
+          const shortsSection = document.getElementById('tools-section-shorts-calc');
+          if (shortsSection && !shortsSection.classList.contains('hidden')) {
+            loadShortsCalculator();
+          }
+        });
+      });
+      
+      const toolsTab = document.getElementById('tab-tools');
+      if (toolsTab) {
+        observer.observe(toolsTab, { attributes: true, childList: true, subtree: true });
+      }
+    });
+  </script>
+  
   <!-- Tasks Board & Pipeline Functions -->
   <script>
     // Global state for filters
