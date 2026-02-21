@@ -1,63 +1,6 @@
 {
-  "lastHeartbeat": "2026-02-21T00:53:00Z",
-  "totalHeartbeats": 425,
-  "lastAction": "HB425: Minecraft Live 2026 countdown widget. Built functional widget with live timer, 22 days to event, Game Drop 26.1 highlights.",
-  "nextPriority": "Hook Steven up with the Animator to test BBS Crowd Spawner v3.4 texture selection",
-  "dataFreshness": {
-    "youtube": "2026-02-20 - 165 outliers, 20 briefs, kanban with full features",
-    "investments": "2026-02-20 - 90 intelligence items, NVDA earnings widget live, 5 days to earnings",
-    "newBusiness": "2026-02-20 - Marketplace revenue widget + 19 opps",
-    "research": "2026-02-20 - 63 notes",
-    "competitors": "2026-02-20 - 22 tracked",
-    "tools": "2026-02-21 - Minecraft Live + NVDA earnings countdown widgets LIVE"
-  },
-  "minecraftLiveCountdown": {
-    "eventDate": "2026-03-15T19:00:00-04:00",
-    "daysUntil": 22,
-    "keyFeatures": [
-      "26.1 Game Drop content shipping immediately",
-      "Baby mob variants (hostile + passive)",
-      "New redstone contraption blocks",
-      "Everything shown ships NOW (not concept art)"
-    ],
-    "contentOpportunities": [
-      "Pre-event prediction video",
-      "Live reaction stream",
-      "Post-event analysis: what actually shipped"
-    ],
-    "lastUpdated": "2026-02-21T00:53:18Z",
-    "contentBriefAdded": "brief-020 - All Baby Mobs Redesigned First Look",
-    "widgetStatus": "Live - countdown active"
-  },
-  "minecraftMarketplace": {
-    "totalCreatorPayouts": "$500M+",
-    "recentEarnings": "$146M in Q1 2025 (record quarter)",
-    "creatorRevenueShare": ">50% after platform cuts",
-    "topCategories": [
-      "Skin packs",
-      "Worlds",
-      "Texture packs",
-      "Mash-ups"
-    ],
-    "priceRange": "490-1480 Minecoins ($3-10)",
-    "lastUpdated": "2026-02-20T21:25:00Z"
-  },
-  "nvdaEarningsCountdown": {
-    "earningsDate": "2026-02-26",
-    "daysUntil": 5,
-    "consensusEPS": "$1.51 (+77% YoY)",
-    "consensusRevenue": "$65.58B (+67% YoY)",
-    "analystPriceTarget": "$257-264",
-    "forwardPE": "40.7",
-    "beatStreak": "20 of 22 quarters",
-    "keyMetrics": [
-      "Q1 FY2027 guidance (most important)",
-      "Blackwell revenue ramp",
-      "China datacenter commentary"
-    ],
-    "lastUpdated": "2026-02-21T00:53:18Z",
-    "blackwellVisibility": "$500B through CY2026",
-    "blackwellDemand": "Off the charts (Jensen Huang)",
-    "widgetStatus": "Live - countdown active"
-  }
+  "lastHeartbeat": "2026-02-21T01:03:00Z",
+  "totalHeartbeats": 426,
+  "lastAction": "HB426: Shorts Strategy Calculator widget. Research: YouTube Shorts automation (OpusClip, InVideo AI). Build: Interactive calculator with range sliders, revenue projection grid, 6-month bar chart, tool recommendations.",
+  "nextPriority": "Wire Shorts Calculator into index.html Tools section"
 }

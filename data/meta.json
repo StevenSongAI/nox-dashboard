@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-02-21T00:53:00Z",
+  "lastUpdated": "2026-02-21T01:03:00Z",
   "updatedBy": "nox-heartbeat",
-  "version": "2026.02.21.02",
-  "cacheBust": "20260221T0053",
-  "dataVersion": "2026.02.21.02",
+  "version": "2026.02.21.47",
+  "cacheBust": "20260221T0103",
+  "dataVersion": "2026.02.21.47",
   "youtubeUpdated": "2026-02-20T23:36:00Z",
   "investmentsUpdated": "2026-02-20T23:28:00.000000",
-  "researchUpdated": "2026-02-20T23:10:00.000000",
+  "researchUpdated": "2026-02-21T01:03:00.000000",
   "newBusinessUpdated": "2026-02-20T21:25:00Z",
-  "toolsUpdated": "2026-02-21T00:53:00Z",
+  "toolsUpdated": "2026-02-21T01:03:00Z",
   "workTrackerUpdated": "2026-02-15T00:17:00Z",
   "minecraftArtistsUpdated": "2026-02-18T14:22:00Z",
   "investments": {
@@ -18,49 +18,33 @@
     "lastIntelligenceId": "intel-083"
   },
   "dataFreshness": {
-    "research": "2026-02-20 - Countdown widget design patterns",
+    "research": "2026-02-21 - YouTube Shorts automation tools (OpusClip, InVideo AI)",
     "newBusiness": "2026-02-20 - Minecraft Marketplace widget live",
     "investments": "2026-02-20 - 90 intelligence items, NVDA earnings widget live",
     "workTracker": "2026-02-15 - pagination + deduplication live",
     "minecraftArtists": "2026-02-18 - 16 artists",
-    "youtube": "2026-02-20 - 165 outliers, 20 briefs, kanban with full features",
-    "tools": "2026-02-21 - Minecraft Live countdown widget LIVE"
+    "youtube": "2026-02-20 - 165 outliers, 20 briefs, kanban + Shorts calculator",
+    "tools": "2026-02-21 - Shorts Strategy Calculator + Minecraft Live + NVDA widgets"
   },
-  "research": {
-    "lastUpdated": "2026-02-20T23:10:00Z"
-  },
-  "totalNotes": 63,
-  "lastDataPush": "2026-02-21T00:53:00Z",
+  "research": { "lastUpdated": "2026-02-21T01:03:00Z" },
+  "totalNotes": 64,
+  "lastDataPush": "2026-02-21T01:03:00Z",
   "lastPushBy": "nox-heartbeat",
-  "lastPushDescription": "Minecraft Live 2026 countdown widget. Functional widget with live timer, 22 days to event, Game Drop 26.1 highlights.",
-  "newBusiness": {
-    "lastUpdated": "2026-02-20T21:25:00Z"
-  },
-  "tools": {
-    "lastUpdated": "2026-02-21T00:53:00Z",
-    "totalTools": 24
-  },
-  "youtube": {
-    "lastUpdated": "2026-02-20T23:36:00Z"
-  },
+  "lastPushDescription": "Shorts Strategy Calculator widget. Research: YouTube Shorts automation (OpusClip, InVideo AI, AI highlight detection). Build: Interactive calculator with sliders, revenue projection, 6-month growth chart.",
+  "newBusiness": { "lastUpdated": "2026-02-20T21:25:00Z" },
+  "tools": { "lastUpdated": "2026-02-21T01:03:00Z", "totalTools": 24 },
+  "youtube": { "lastUpdated": "2026-02-20T23:36:00Z" },
   "competitorsUpdated": "2026-02-20T11:50:55Z",
-  "competitors": {
-    "lastUpdated": "2026-02-20T11:50:55Z",
-    "totalCompetitors": 22
-  },
-  "audits": {
-    "lastUpdated": "2026-02-20T23:38:00Z"
-  },
-  "minecraftArtists": {
-    "lastUpdated": "2026-02-20T01:47:50Z"
-  },
+  "competitors": { "lastUpdated": "2026-02-20T11:50:55Z", "totalCompetitors": 22 },
+  "audits": { "lastUpdated": "2026-02-21T00:55:00Z" },
+  "minecraftArtists": { "lastUpdated": "2026-02-20T01:47:50Z" },
   "totalOutliers": 165,
   "sections": {
     "youtube": "2026-02-20T23:36:00Z",
     "investments": "2026-02-20T23:28:00Z",
     "newBusiness": "2026-02-20T21:25:00Z",
     "competitors": "2026-02-20T11:50:55Z",
-    "research": "2026-02-20T23:10:00Z",
-    "tools": "2026-02-21T00:53:00Z"
+    "research": "2026-02-21T01:03:00Z",
+    "tools": "2026-02-21T01:03:00Z"
   }
 }
