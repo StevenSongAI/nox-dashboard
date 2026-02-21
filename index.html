@@ -554,6 +554,8 @@
         <button onclick="showToolsSection('local-llm')" id="tools-btn-local-llm" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">🖥️ Local LLM</button>
         <button onclick="showToolsSection('content-ideas')" id="tools-btn-content-ideas" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">💡 Content Ideas</button>
         <button onclick="showToolsSection('mod-loader')" id="tools-btn-mod-loader" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">🔧 Mod Loaders</button>
+        <button onclick="showToolsSection('ai-video-editor')" id="tools-btn-ai-video-editor" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">✂️ AI Video Editors</button>
+        <button onclick="showToolsSection('redstone-planner')" id="tools-btn-redstone-planner" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">⚡ Redstone</button>
       </div>
 
       <!-- Tool Registry Section -->
@@ -955,6 +957,39 @@
         <div id="mod-loader-comparison-container">
           <div class="text-center py-8 text-gray-500">
             <p>Loading mod loader comparison...</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- AI Video Editor Comparison Section -->
+      <div id="tools-section-ai-video-editor" class="tools-section hidden">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4 gap-3">
+          <h2 class="text-xl font-semibold">✂️ AI Video Editor Comparison</h2>
+          <div class="flex gap-2">
+            <button onclick="loadAIVideoEditorComparison()" class="px-3 py-1 bg-accent-blue rounded text-sm hover:bg-blue-600">🔄 Refresh</button>
+          </div>
+        </div>
+        <div id="ai-video-editor-comparison-container">
+          <div class="card rounded-lg p-8 text-center text-gray-500">
+            <svg class="w-16 h-16 mx-auto mb-4 opacity-30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" stroke-width="1.5"/>
+            </svg>
+            <p>AI Video Editor comparison tool loading...</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Redstone Project Planner Section -->
+      <div id="tools-section-redstone-planner" class="tools-section hidden">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4 gap-3">
+          <h2 class="text-xl font-semibold">⚡ Redstone Project Planner</h2>
+          <div class="flex gap-2">
+            <button onclick="loadRedstonePlanner()" class="px-3 py-1 bg-accent-blue rounded text-sm hover:bg-blue-600">🔄 Refresh</button>
+          </div>
+        </div>
+        <div id="redstone-planner-container">
+          <div class="text-center py-8 text-gray-500">
+            <p>Loading redstone planner...</p>
           </div>
         </div>
       </div>
@@ -1437,7 +1472,9 @@
   <script src="widgets/speedrun-strategy-tracker.js?v=202602210816"></script>
   <script src="widgets/local-llm-comparison.js?v=202602210846"></script>
   <script src="widgets/mc-content-ideas-generator.js?v=202602210916"></script>
-  <script src="widgets/mod-loader-comparison.js?v=202602210916"></script>
+  <script src="widgets/mod-loader-comparison.js?v=202602210946"></script>
+  <script src="widgets/ai-video-editor-comparison.js?v=202602211011"></script>
+  <script src="widgets/redstone-project-planner.js?v=202602210946"></script>
   <script src="app.js?v=202602201712"></script>
 
   <!-- Shorts Calculator Loader -->
@@ -1579,6 +1616,24 @@
       if (container && window.ModLoaderComparison) {
         window.modLoaderComparison = new ModLoaderComparison();
         window.modLoaderComparison.render('mod-loader-comparison-container');
+      }
+    }
+
+    // AI Video Editor Comparison loader
+    function loadAIVideoEditorComparison() {
+      const container = document.getElementById('ai-video-editor-comparison-container');
+      if (container && window.AIVideoEditorComparison) {
+        window.aiVideoEditorComparison = new AIVideoEditorComparison();
+        window.aiVideoEditorComparison.render('ai-video-editor-comparison-container');
+      }
+    }
+
+    // Redstone Project Planner loader
+    function loadRedstonePlanner() {
+      const container = document.getElementById('redstone-planner-container');
+      if (container && window.RedstoneProjectPlanner) {
+        window.redstonePlanner = new RedstoneProjectPlanner();
+        window.redstonePlanner.render('redstone-planner-container');
       }
     }
 
