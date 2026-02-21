@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-02-21T16:09:00Z",
+  "lastUpdated": "2026-02-21T16:24:00Z",
   "updatedBy": "nox-heartbeat",
-  "version": "2026.02.21.78",
-  "cacheBust": "202602211609",
-  "dataVersion": "2026.02.21.78",
+  "version": "2026.02.21.79",
+  "cacheBust": "202602211624",
+  "dataVersion": "2026.02.21.79",
   "youtubeUpdated": "2026-02-21T14:16:00Z",
   "investmentsUpdated": "2026-02-21T09:26:00.000000",
-  "researchUpdated": "2026-02-21T16:09:00.000000",
+  "researchUpdated": "2026-02-21T16:24:00.000000",
   "newBusinessUpdated": "2026-02-20T21:25:00Z",
-  "toolsUpdated": "2026-02-21T16:09:00Z",
+  "toolsUpdated": "2026-02-21T16:24:00Z",
   "workTrackerUpdated": "2026-02-15T00:17:00Z",
   "minecraftArtistsUpdated": "2026-02-18T14:22:00Z",
   "investments": {
@@ -18,21 +18,21 @@
     "lastIntelligenceId": "nvda-earnings-hb452"
   },
   "dataFreshness": {
-    "research": "2026-02-21 - BBS Cinematic Toolkit research (BBS Reforge dynamic lighting, Blockbench workflow)",
+    "research": "2026-02-21 - Create Mod research (contraptions, rotational power, mechanical builds)",
     "newBusiness": "2026-02-20 - Marketplace revenue widget live",
     "investments": "2026-02-21 - NVDA earnings countdown widget live (Feb 26)",
     "workTracker": "2026-02-15 - pagination + deduplication live",
     "minecraftArtists": "2026-02-18 - 16 artists",
-    "youtube": "2026-02-21 - 177 outliers, 20 briefs, 62 tools full suite",
-    "tools": "2026-02-21 - 62 tools including BBS Cinematic Toolkit"
+    "youtube": "2026-02-21 - 177 outliers, 20 briefs, 63 tools full suite",
+    "tools": "2026-02-21 - 63 tools including Create Mod Generator"
   },
-  "research": { "lastUpdated": "2026-02-21T16:09:00Z" },
-  "totalNotes": 89,
-  "lastDataPush": "2026-02-21T16:09:00Z",
+  "research": { "lastUpdated": "2026-02-21T16:24:00Z" },
+  "totalNotes": 90,
+  "lastDataPush": "2026-02-21T16:24:00Z",
   "lastPushBy": "nox-heartbeat",
-  "lastPushDescription": "BBS Cinematic Toolkit widget. Research: BBS Reforge dynamic lighting, Blockbench import workflow, shot types. Build: 6-tab toolkit with shot selector, camera speed calc, lighting guide, workflow steps, scene planner, recording checklist.",
+  "lastPushDescription": "Create Mod Build Ideas Generator widget. Research: Create Mod contraptions, rotational power systems, aesthetic automation. Build: 4-tab generator with build ideas by category, RPM calculator with gear ratios, component reference, saved ideas with localStorage.",
   "newBusiness": { "lastUpdated": "2026-02-20T21:25:00Z" },
-  "tools": { "lastUpdated": "2026-02-21T16:09:00Z", "totalTools": 62 },
+  "tools": { "lastUpdated": "2026-02-21T16:24:00Z", "totalTools": 63 },
   "youtube": { "lastUpdated": "2026-02-21T14:16:00Z" },
   "competitorsUpdated": "2026-02-20T11:50:55Z",
   "competitors": { "lastUpdated": "2026-02-20T11:50:55Z", "totalCompetitors": 22 },
@@ -44,7 +44,7 @@
     "investments": "2026-02-21T09:26:00Z",
     "newBusiness": "2026-02-20T21:25:00Z",
     "competitors": "2026-02-20T11:50:55Z",
-    "research": "2026-02-21T16:09:00Z",
-    "tools": "2026-02-21T16:09:00Z"
+    "research": "2026-02-21T16:24:00Z",
+    "tools": "2026-02-21T16:24:00Z"
   }
 }
