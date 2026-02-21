@@ -1,49 +1,6 @@
 {
-  "lastHeartbeat": "2026-02-21T05:46:00Z",
-  "totalHeartbeats": 435,
-  "lastAction": "HB435: Built PvP Server Browser widget. Research: ExtremeCraft #1, ManaCube multi-mode, 1.21.11 competitive scene. Build: Server cards with rankings, game modes, player counts, IP copy button, content ideas.",
-  "nextPriority": "Hook Steven up with the Animator to test BBS Crowd Spawner v3.4 texture selection",
-  "currentPriorities": {
-    "youtube": "Minecraft Live 2026 content prep (22 days), baby mob redesigns",
-    "business": "Minecraft Marketplace revenue tracking",
-    "investments": "NVDA earnings Feb 26 (5 days away)"
-  },
-  "dataFreshness": {
-    "youtube": "2026-02-20 - 165 outliers, 20 briefs, kanban with full features",
-    "investments": "2026-02-20 - 90 intel items, NVDA earnings widget + countdown live",
-    "newBusiness": "2026-02-20 - Marketplace revenue widget + 19 opps",
-    "research": "2026-02-21 - 65 notes",
-    "competitors": "2026-02-20 - 22 tracked",
-    "tools": "2026-02-21 - 26 tools/widgets including Audio Explorer, Create Mod, Shorts Calculator, Speedrun Explorer, Movie Box Office"
-  },
-  "recentFeedback": [
-    {"date": "2026-02-20", "feedback": "Switch ALL models to kimi-coding/k2p5 — Anthropic usage too high"},
-    {"date": "2026-02-20", "feedback": "Content briefs do NOT count as building — only functional software"},
-    {"date": "2026-02-20", "feedback": "Adding JSON text fields is NOT building"},
-    {"date": "2026-02-20", "feedback": "Auto-announce messages should be natural language, not long paragraphs"},
-    {"date": "2026-02-20", "feedback": "Agent config has its own model setting separate from cron payloads"}
-  ],
-  "workThatLanded": [
-    "Kanban drag-and-drop with persistence",
-    "NVDA earnings countdown widget",
-    "Shorts Strategy Calculator",
-    "Natural language output from heartbeats",
-    "Model switching to kimi-coding/k2p5"
-  ],
-  "workThatFlopped": [
-    "HB423 - Adding JSON text field to tools.json (15% FAIL)",
-    "HB422 - Content brief alone without functional build",
-    "HB414 - Content brief only (15% FAIL)"
-  ],
-  "lessonsLearned": [
-    "Building = functional software ONLY: widgets, features, tools, automations",
-    "Content briefs = research output, NOT building",
-    "JSON text fields = research output, NOT building",
-    "Agent model config is separate from cron payload model — must update BOTH",
-    "Commit research files to docs/research/ so auditor can verify",
-    "Auto-announce messages burn tokens on main session — keep main session on cheapest model",
-    "Nox agent config at ~/.openclaw/openclaw.json agents.list[0].model controls isolated session defaults",
-    "All tools must be browser-accessible — Steven uses a different computer",
-    "Data in the dashboard > standalone tools"
-  ]
+  "lastHeartbeat": "2026-02-21T05:53:00Z",
+  "totalHeartbeats": 436,
+  "lastAction": "HB436: Minecraft Live 2026 countdown + predictions widget. Research: Vibrant Visuals update, PS5 native version expectations. Build: Live countdown timer, 4 predictions with confidence bars.",
+  "nextPriority": "Hook Steven up with the Animator to test BBS Crowd Spawner v3.4 texture selection"
 }

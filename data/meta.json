@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-02-21T05:46:00Z",
+  "lastUpdated": "2026-02-21T05:53:00Z",
   "updatedBy": "nox-heartbeat",
-  "version": "2026.02.21.53",
-  "cacheBust": "20260221T0546",
-  "dataVersion": "2026.02.21.53",
+  "version": "2026.02.21.51",
+  "cacheBust": "20260221T0553",
+  "dataVersion": "2026.02.21.51",
   "youtubeUpdated": "2026-02-20T23:36:00Z",
   "investmentsUpdated": "2026-02-20T23:28:00.000000",
-  "researchUpdated": "2026-02-21T05:02:00.000000",
+  "researchUpdated": "2026-02-21T05:53:00.000000",
   "newBusinessUpdated": "2026-02-20T21:25:00Z",
-  "toolsUpdated": "2026-02-21T05:02:00Z",
+  "toolsUpdated": "2026-02-21T05:53:00Z",
   "workTrackerUpdated": "2026-02-15T00:17:00Z",
   "minecraftArtistsUpdated": "2026-02-18T14:22:00Z",
   "investments": {
@@ -18,25 +18,25 @@
     "lastIntelligenceId": "intel-083"
   },
   "dataFreshness": {
-    "research": "2026-02-21 - Final baby mobs complete",
+    "research": "2026-02-21 - Minecraft Live 2026 expectations (Vibrant Visuals, PS5)",
     "newBusiness": "2026-02-20 - Minecraft Marketplace widget live",
-    "investments": "2026-02-20 - 90 intelligence items, NVDA earnings widget live",
+    "investments": "2026-02-20 - 90 intelligence items, NVDA earnings widget + countdown live",
     "workTracker": "2026-02-15 - pagination + deduplication live",
     "minecraftArtists": "2026-02-18 - 16 artists",
-    "youtube": "2026-02-20 - 165 outliers, 20 briefs, kanban + Shorts calculator",
-    "tools": "2026-02-21 - Baby Mob Showcase + Audio Explorer + Create Mod widgets"
+    "youtube": "2026-02-20 - 165 outliers, 20 briefs, kanban + widgets",
+    "tools": "2026-02-21 - Minecraft Live countdown + predictions widget"
   },
-  "research": { "lastUpdated": "2026-02-21T05:02:00Z" },
+  "research": { "lastUpdated": "2026-02-21T05:53:00Z" },
   "totalNotes": 66,
-  "lastDataPush": "2026-02-21T05:02:00Z",
+  "lastDataPush": "2026-02-21T05:53:00Z",
   "lastPushBy": "nox-heartbeat",
-  "lastPushDescription": "Baby Mob Collection Showcase widget. Research: Final baby mobs complete. Build: 6 category cards, 31 total mobs, detail view with content angles, Golden Dandelion feature highlight.",
+  "lastPushDescription": "Minecraft Live 2026 countdown + predictions widget. Research: Vibrant Visuals update, PS5 native version expectations. Build: Live countdown, 4 predictions with confidence bars.",
   "newBusiness": { "lastUpdated": "2026-02-20T21:25:00Z" },
-  "tools": { "lastUpdated": "2026-02-21T05:02:00Z", "totalTools": 27 },
+  "tools": { "lastUpdated": "2026-02-21T05:53:00Z", "totalTools": 27 },
   "youtube": { "lastUpdated": "2026-02-20T23:36:00Z" },
   "competitorsUpdated": "2026-02-20T11:50:55Z",
   "competitors": { "lastUpdated": "2026-02-20T11:50:55Z", "totalCompetitors": 22 },
-  "audits": { "lastUpdated": "2026-02-21T04:27:00Z" },
+  "audits": { "lastUpdated": "2026-02-21T05:46:00Z" },
   "minecraftArtists": { "lastUpdated": "2026-02-20T01:47:50Z" },
   "totalOutliers": 165,
   "sections": {
@@ -44,7 +44,7 @@
     "investments": "2026-02-20T23:28:00Z",
     "newBusiness": "2026-02-20T21:25:00Z",
     "competitors": "2026-02-20T11:50:55Z",
-    "research": "2026-02-21T05:02:00Z",
-    "tools": "2026-02-21T05:02:00Z"
+    "research": "2026-02-21T05:53:00Z",
+    "tools": "2026-02-21T05:53:00Z"
   }
 }
