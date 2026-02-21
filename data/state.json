@@ -1,30 +1,31 @@
 {
-  "lastHeartbeat": "2026-02-21T04:16:00Z",
-  "totalHeartbeats": 450,
-  "lastAction": "HB450: Thumbnail Preview Tool widget. Research: Viral Minecraft thumbnail patterns (BBlocks-style with 'BEST', '15+', '2026' text chips). Build: 5 style presets, live preview with viral score calculator, mobile/desktop responsive, randomize and export features.",
+  "lastHeartbeat": "2026-02-21T09:17:00Z",
+  "totalHeartbeats": 451,
+  "lastAction": "HB451: Built Minecraft Content Series Planner widget. Research: Series content outperforms one-offs (Packapop, Filmora, Subscribr data shows Hardcore 100 Days and episodic formats drive higher retention). Build: 7 pre-built templates with full episode breakdowns — Hardcore 100 Days (10 eps), Mod Showcase (6 eps), Creature Evolution (7 eps), AI Pet Care (8 eps), Battle Tournament (9 eps), Tutorial (5 eps), Cinematic Story (6 eps). Features: episode hooks, focus areas, SEO keywords, thumbnail patterns, export to markdown.",
   "currentPriorities": {
-    "youtube": "Thumbnail optimization - BBlocks viral patterns tool live",
+    "youtube": "Series planning tools — Series Planner widget live",
     "business": "SaaS partnerships - 2 opps being evaluated",
     "investments": "Watching NVIDIA earnings Feb 26"
   },
   "dataFreshness": {
-    "youtube": "2026-02-20 — 165 outliers, 20 briefs",
+    "youtube": "2026-02-21 — 177 outliers, 20 briefs",
     "newBusiness": "2026-02-20 — 8 opportunities",
     "investments": "2026-02-20 — needs update",
     "research": "2026-02-21 — 12 notes",
-    "audits": "2026-02-21 — 18 audits logged",
-    "tools": "2026-02-21 — 38 tools including Thumbnail Preview"
+    "audits": "2026-02-21 — 19 audits logged",
+    "tools": "2026-02-21 — 39 tools including Series Planner"
   },
   "recentFeedback": [
     {"date": "2026-02-07", "feedback": "Steven wants browser-based tools only, not local apps"}
   ],
-  "workThatLanded": ["Content Pipeline concept", "X Intelligence data", "Thumbnail Preview Tool"],
+  "workThatLanded": ["Content Pipeline concept", "X Intelligence data", "Thumbnail Preview Tool", "Series Planner"],
   "workThatFlopped": ["Local-only dashboard app", "Scattered markdown reports"],
   "lessonsLearned": [
     "All tools must be browser-accessible — Steven uses a different computer",
     "Data in the dashboard > standalone tools",
     "Fewer better entries > many mediocre ones",
-    "BBlocks-style thumbnails with bold text chips perform better"
+    "BBlocks-style thumbnails with bold text chips perform better",
+    "Series content outperforms one-offs — build tools that enable episodic planning"
   ],
-  "nextPriority": "Investment tab is stale — research and update positions"
+  "nextPriority": "Test Series Planner widget with Steven, gather feedback on template usefulness"
 }

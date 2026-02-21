@@ -6035,8 +6035,322 @@ function copySpeedrunIdea(title) {
   });
 }
 
+// ==================== SERIES PLANNER ====================
+
+const seriesTemplates = {
+  hardcore100: {
+    name: 'Hardcore 100 Days',
+    episodes: 10,
+    estViews: '5-50M',
+    viralScore: '95/100',
+    description: 'Survival series with escalating stakes — each episode covers 10 days',
+    structure: [
+      { ep: 1, title: 'The Beginning', hook: 'Day 1-10: Starting from nothing in a dangerous world', focus: 'Establish stakes, basic survival, first night tension' },
+      { ep: 2, title: 'First Shelter', hook: 'Day 11-20: Building a base before disaster strikes', focus: 'Base building, resource gathering, early game goals' },
+      { ep: 3, title: 'First Death Close Call', hook: 'Day 21-30: Near-death experience raises stakes', focus: 'Close call with death, tension building, viewer investment' },
+      { ep: 4, title: 'Mid-Game Milestone', hook: 'Day 31-40: Major achievement unlocks new possibilities', focus: 'Nether access, diamond gear, key progression moment' },
+      { ep: 5, title: 'The Calm Before', hook: 'Day 41-50: Halfway point — stronger but not safe', focus: 'Reflection, showing progress, setting up late-game' },
+      { ep: 6, title: 'Threat Escalation', hook: 'Day 51-60: New dangers emerge, harder mobs spawn', focus: 'Introducing harder challenges, modified difficulty' },
+      { ep: 7, title: 'Preparation Phase', hook: 'Day 61-70: Grinding for the endgame', focus: 'Enchantment setup, potion brewing, final preparations' },
+      { ep: 8, title: 'The Nether Push', hook: 'Day 71-80: High-risk dimension exploration', focus: 'Bastion looting, fortress finding, blaze rod farming' },
+      { ep: 9, title: 'End Game Prep', hook: 'Day 81-90: Last minute preparations before dragon', focus: 'Eyes of Ender, gear checks, final base improvements' },
+      { ep: 10, title: 'The Final Battle', hook: 'Day 91-100: Ender Dragon fight — everything on the line', focus: 'Epic finale, dragon fight, celebration or tragedy' }
+    ],
+    seoKeywords: ['minecraft hardcore', '100 days hardcore', 'hardcore survival', 'minecraft series'],
+    thumbnailPattern: 'Day counter + danger element + shocked face'
+  },
+  modshowcase: {
+    name: 'Mod Showcase Series',
+    episodes: 6,
+    estViews: '100K-2M',
+    viralScore: '82/100',
+    description: 'Deep-dive mod showcases with cinematic presentation',
+    structure: [
+      { ep: 1, title: 'Introduction + Installation', hook: 'What this mod does and why you need it', focus: 'Overview, installation guide, first impressions' },
+      { ep: 2, title: 'Core Mechanics', hook: 'The main features that make this mod special', focus: 'Deep dive into primary mechanics, demonstrations' },
+      { ep: 3, title: 'Advanced Features', hook: 'Hidden features most players miss', focus: 'Advanced configurations, secret features, power user tips' },
+      { ep: 4, title: 'Creative Builds', hook: 'What builders are creating with this mod', focus: 'Showcase community builds, inspire creativity' },
+      { ep: 5, title: 'Compatibility + Modpacks', hook: 'Best mods to pair with this one', focus: 'Mod compatibility, synergies, modpack recommendations' },
+      { ep: 6, title: 'Final Verdict', hook: 'Is this mod worth your time? Final rating', focus: 'Summary, pros/cons, final recommendation, alternatives' }
+    ],
+    seoKeywords: ['minecraft mod showcase', 'best minecraft mods', 'mod review', 'minecraft mod tutorial'],
+    thumbnailPattern: 'Mod logo + dramatic in-game shot + rating score'
+  },
+  evolution: {
+    name: 'Creature Evolution Series',
+    episodes: 7,
+    estViews: '1-10M',
+    viralScore: '92/100',
+    description: 'Show AI creature evolution over time — 676x outlier format',
+    structure: [
+      { ep: 1, title: 'The Starting Form', hook: 'Meet the creature in its weakest state', focus: 'Introduction, baseline creature, setup the journey' },
+      { ep: 2, title: 'First Evolution', hook: 'First transformation — small but noticeable changes', focus: 'Stage 2 reveal, what changed, new abilities' },
+      { ep: 3, title: 'Adolescent Stage', hook: 'The awkward teenage phase of evolution', focus: 'Stage 3, gangly proportions, developing features' },
+      { ep: 4, title: 'The Turning Point', hook: 'Evolution accelerates — major changes visible', focus: 'Stage 4, dramatic transformation, new powers' },
+      { ep: 5, title: 'Near-Complete Form', hook: 'Almost at final form — powerful but not ultimate', focus: 'Stage 5, imposing presence, near-final abilities' },
+      { ep: 6, title: 'Final Evolution', hook: 'The ultimate form revealed in all its glory', focus: 'Stage 6, ultimate form, full power showcase' },
+      { ep: 7, title: 'Bonus: Beyond Final', hook: 'What if it evolved even further? Secret stage!', focus: 'Hypothetical Stage 7, fan suggestions, speculation' }
+    ],
+    seoKeywords: ['ai creature evolution', 'creature life cycle', 'ai evolution', 'creature transformation'],
+    thumbnailPattern: 'Evolution stages lined up + dramatic final form'
+  },
+  petcare: {
+    name: 'AI Pet Care Series',
+    episodes: 8,
+    estViews: '500K-5M',
+    viralScore: '88/100',
+    description: 'Daily life with an AI-generated pet — wish fulfillment content',
+    structure: [
+      { ep: 1, title: 'I Got a Pet [Creature]', hook: 'The discovery/adoption of the AI pet', focus: 'Finding the creature, first meeting, taking it home' },
+      { ep: 2, title: 'First Day Together', hook: 'Learning to care for this impossible pet', focus: 'Feeding routine, sleeping arrangements, early bonding' },
+      { ep: 3, title: 'Training Begins', hook: 'Teaching commands — some work, some don\'t', focus: 'Training montage, funny failures, small victories' },
+      { ep: 4, title: 'Public Outing', hook: 'Taking the creature outside — will people notice?', focus: 'Park visit, reactions, photos with strangers' },
+      { ep: 5, title: 'Health Scare', hook: 'The creature gets sick — emotional stakes', focus: 'Worry, vet visit equivalent, recovery, bonding moment' },
+      { ep: 6, title: 'Growth Spurt', hook: 'It\'s getting bigger — and more challenging', focus: 'Size change, new challenges, adapting care routine' },
+      { ep: 7, title: 'Special Talent', hook: 'Discovering a unique ability', focus: 'Special power reveal, testing limits, amazement' },
+      { ep: 8, title: 'Family Acceptance', hook: 'The whole family meets the creature', focus: 'Family reactions, full acceptance, heartwarming finale' }
+    ],
+    seoKeywords: ['ai pet', 'virtual pet', 'creature care', 'ai animal'],
+    thumbnailPattern: 'Creature in real-world setting + cozy/domestic vibe'
+  },
+  battle: {
+    name: 'Creature Battle Tournament',
+    episodes: 9,
+    estViews: '2-20M',
+    viralScore: '90/100',
+    description: 'Bracket-style AI creature battles — 83.9x outlier format',
+    structure: [
+      { ep: 1, title: 'The Tournament Begins', hook: '16 creatures enter — only 1 will win', focus: 'Bracket reveal, creature introductions, rules' },
+      { ep: 2, title: 'Round 1 Part 1', hook: 'First 4 battles — shocking upsets already', focus: 'Battles 1-4, eliminations, surprises' },
+      { ep: 3, title: 'Round 1 Part 2', hook: 'The remaining Round 1 matchups', focus: 'Battles 5-8, completing Round 1, remaining 8 creatures' },
+      { ep: 4, title: 'Quarterfinals Part 1', hook: 'Elite 8 face off — stakes get higher', focus: 'QF Battles 1-2, advancing to semis' },
+      { ep: 5, title: 'Quarterfinals Part 2', hook: 'Last quarterfinals — who makes Final 4?', focus: 'QF Battles 3-4, Final 4 locked in' },
+      { ep: 6, title: 'Semifinals', hook: 'Final 4 — only 2 can reach the championship', focus: 'Both semifinals, championship matchup set' },
+      { ep: 7, title: 'Consolation Battle', hook: '3rd place matchup — losers get redemption', focus: 'Bronze medal battle, 3rd place crowned' },
+      { ep: 8, title: 'The Championship', hook: 'Final battle — who is the ultimate creature?', focus: 'Grand finale, champion crowned, celebration' },
+      { ep: 9, title: 'Season 2 Preview', hook: 'What creatures should enter next tournament?', focus: 'Recap, stats, fan suggestions for next season' }
+    ],
+    seoKeywords: ['creature battle', 'ai creature fight', 'monster tournament', 'battle royale'],
+    thumbnailPattern: 'Two creatures facing off + VS graphic + bracket overlay'
+  },
+  tutorial: {
+    name: 'Tutorial Series',
+    episodes: 5,
+    estViews: '200K-2M',
+    viralScore: '78/100',
+    description: 'Educational series — 22.9x outlier for tutorials',
+    structure: [
+      { ep: 1, title: 'Getting Started', hook: 'Everything you need to know to begin', focus: 'Basics, setup, first steps, avoiding common mistakes' },
+      { ep: 2, title: 'Core Techniques', hook: 'The fundamental skills that matter most', focus: 'Essential techniques, practice drills, skill building' },
+      { ep: 3, title: 'Intermediate Methods', hook: 'Leveling up from beginner to competent', focus: 'More advanced approaches, combining techniques' },
+      { ep: 4, title: 'Advanced Strategies', hook: 'Pro-level techniques for serious results', focus: 'Optimization, efficiency, expert shortcuts' },
+      { ep: 5, title: 'Common Mistakes + Fixes', hook: 'What goes wrong and how to solve it', focus: 'Troubleshooting, debugging, final tips, resources' }
+    ],
+    seoKeywords: ['how to', 'tutorial', 'minecraft guide', 'beginner tutorial'],
+    thumbnailPattern: 'Before/After + clear result + question text'
+  },
+  cinematic: {
+    name: 'Cinematic Story Series',
+    episodes: 6,
+    estViews: '500K-5M',
+    viralScore: '85/100',
+    description: 'Narrative-driven cinematic content with BBS Crowd Spawner',
+    structure: [
+      { ep: 1, title: 'The World Before', hook: 'Peaceful introduction — but something is coming', focus: 'World building, character intro, foreshadowing' },
+      { ep: 2, title: 'The Incident', hook: 'Everything changes — the inciting incident', focus: 'Event that starts the story, disruption, reaction' },
+      { ep: 3, title: 'Gathering Allies', hook: 'Building a team to face the threat', focus: 'Recruitment, team dynamics, preparation' },
+      { ep: 4, title: 'The Journey', hook: 'Traveling to face the enemy — obstacles arise', focus: 'Travel montage, challenges, character moments' },
+      { ep: 5, title: 'The Battle Begins', hook: 'First major confrontation — partial victory', focus: 'Epic battle, casualties, turning point' },
+      { ep: 6, title: 'Final Stand', hook: 'Ultimate sacrifice for victory — the conclusion', focus: 'Final battle, resolution, aftermath, legacy' }
+    ],
+    seoKeywords: ['minecraft cinematic', 'minecraft movie', 'minecraft story', 'cinematic series'],
+    thumbnailPattern: 'Dramatic scene + movie poster style + title overlay'
+  }
+};
+
+let currentSeriesTemplate = null;
+
+function loadSeriesTemplate() {
+  const select = document.getElementById('series-template-select');
+  const templateKey = select.value;
+  
+  if (!templateKey) {
+    document.getElementById('series-overview').classList.add('hidden');
+    document.getElementById('episode-planner').classList.add('hidden');
+    document.getElementById('series-empty-state').classList.remove('hidden');
+    return;
+  }
+  
+  currentSeriesTemplate = seriesTemplates[templateKey];
+  if (!currentSeriesTemplate) return;
+  
+  // Show panels
+  document.getElementById('series-overview').classList.remove('hidden');
+  document.getElementById('episode-planner').classList.remove('hidden');
+  document.getElementById('series-empty-state').classList.add('hidden');
+  
+  // Fill overview stats
+  document.getElementById('series-format-name').textContent = currentSeriesTemplate.name;
+  document.getElementById('series-episode-count').textContent = currentSeriesTemplate.episodes + ' episodes';
+  document.getElementById('series-est-views').textContent = currentSeriesTemplate.estViews;
+  document.getElementById('series-viral-score').textContent = currentSeriesTemplate.viralScore;
+  
+  // Set default title and hook
+  document.getElementById('series-title-input').value = currentSeriesTemplate.name;
+  document.getElementById('series-hook-input').value = currentSeriesTemplate.description;
+  
+  // Generate episode cards
+  renderEpisodes();
+}
+
+function renderEpisodes() {
+  const container = document.getElementById('episodes-container');
+  if (!container || !currentSeriesTemplate) return;
+  
+  container.innerHTML = currentSeriesTemplate.structure.map((ep, idx) => `
+    <div class="card rounded-lg p-4 border-l-4 ${idx === 0 ? 'border-accent-blue' : idx === currentSeriesTemplate.structure.length - 1 ? 'border-accent-red' : 'border-accent-green'}"
+         style="animation: fadeIn 0.3s ease ${idx * 0.05}s both;">
+      <div class="flex items-start justify-between mb-2">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-dark-800 flex items-center justify-center font-bold text-accent-blue">
+            ${ep.ep}
+          </div>
+          <div>
+            <input type="text" value="${ep.title}" 
+                   class="bg-transparent border-b border-transparent hover:border-dark-600 focus:border-accent-blue focus:outline-none font-semibold w-64"
+                   onchange="updateEpisodeTitle(${idx}, this.value)">
+            <div class="text-xs text-gray-500 mt-1">${ep.focus}</div>
+          </div>
+        </div>
+        <div class="text-right">
+          <div class="text-xs text-gray-400">Thumbnail:</div>
+          <div class="text-xs text-accent-yellow">${currentSeriesTemplate.thumbnailPattern.split(' + ')[0]}</div>
+        </div>
+      </div>
+      
+      <div class="mt-3 bg-dark-800 rounded-lg p-3">
+        <div class="text-xs text-gray-400 mb-1">🎣 Hook:</div>
+        <input type="text" value="${ep.hook}" 
+               class="w-full bg-transparent text-sm border-b border-transparent hover:border-dark-600 focus:border-accent-blue focus:outline-none"
+               onchange="updateEpisodeHook(${idx}, this.value)">
+      </div>
+      
+      <div class="mt-2 flex gap-2">
+        <button onclick="copyEpisodeScript(${idx})" class="text-xs px-2 py-1 bg-dark-700 hover:bg-dark-600 rounded transition-colors">📋 Copy Script</button>
+        <button onclick="regenerateHook(${idx})" class="text-xs px-2 py-1 bg-dark-700 hover:bg-dark-600 rounded transition-colors">🔄 New Hook</button>
+      </div>
+    </div>
+  `).join('');
+}
+
+function updateEpisodeTitle(idx, value) {
+  if (currentSeriesTemplate) {
+    currentSeriesTemplate.structure[idx].title = value;
+  }
+}
+
+function updateEpisodeHook(idx, value) {
+  if (currentSeriesTemplate) {
+    currentSeriesTemplate.structure[idx].hook = value;
+  }
+}
+
+function regenerateHook(idx) {
+  if (!currentSeriesTemplate) return;
+  
+  const hooks = [
+    'You won\'t believe what happens in this episode...',
+    'This changes everything...',
+    'The moment we\'ve all been waiting for...',
+    'I can\'t believe this actually worked...',
+    'Things just got serious...',
+    'This was NOT part of the plan...',
+    'The best/worst moment yet...'
+  ];
+  
+  const newHook = hooks[Math.floor(Math.random() * hooks.length)];
+  currentSeriesTemplate.structure[idx].hook = newHook;
+  renderEpisodes();
+}
+
+function copyEpisodeScript(idx) {
+  if (!currentSeriesTemplate) return;
+  const ep = currentSeriesTemplate.structure[idx];
+  const script = `EPISODE ${ep.ep}: ${ep.title}
+
+HOOK: ${ep.hook}
+
+FOCUS: ${ep.focus}
+
+SEO KEYWORDS: ${currentSeriesTemplate.seoKeywords.join(', ')}
+
+THUMBNAIL: ${currentSeriesTemplate.thumbnailPattern}
+`;
+  
+  navigator.clipboard.writeText(script).then(() => {
+    alert(`Episode ${ep.ep} script copied to clipboard!`);
+  });
+}
+
+function exportSeriesPlan() {
+  if (!currentSeriesTemplate) {
+    alert('Please select a template first!');
+    return;
+  }
+  
+  const title = document.getElementById('series-title-input').value || currentSeriesTemplate.name;
+  const hook = document.getElementById('series-hook-input').value || currentSeriesTemplate.description;
+  
+  let exportText = `# ${title}
+
+## Overview
+- **Format**: ${currentSeriesTemplate.name}
+- **Episodes**: ${currentSeriesTemplate.episodes}
+- **Est. Views**: ${currentSeriesTemplate.estViews}
+- **Viral Score**: ${currentSeriesTemplate.viralScore}
+- **Core Hook**: ${hook}
+
+## SEO Keywords
+${currentSeriesTemplate.seoKeywords.join(', ')}
+
+## Episode Breakdown
+
+`;
+  
+  currentSeriesTemplate.structure.forEach(ep => {
+    exportText += `### Episode ${ep.ep}: ${ep.title}
+- **Hook**: ${ep.hook}
+- **Focus**: ${ep.focus}
+- **Thumbnail**: ${currentSeriesTemplate.thumbnailPattern}
+
+`;
+  });
+  
+  exportText += `---
+Generated by Nox Dashboard Series Planner
+Date: ${new Date().toLocaleDateString()}
+`;
+  
+  // Create and download file
+  const blob = new Blob([exportText], { type: 'text/markdown' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `${title.replace(/\s+/g, '_').toLowerCase()}_series_plan.md`;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}
+
 // Global exports
 window.renderSpeedrunExplorer = renderSpeedrunExplorer;
+window.loadSeriesTemplate = loadSeriesTemplate;
+window.updateEpisodeTitle = updateEpisodeTitle;
+window.updateEpisodeHook = updateEpisodeHook;
+window.regenerateHook = regenerateHook;
+window.copyEpisodeScript = copyEpisodeScript;
+window.exportSeriesPlan = exportSeriesPlan;
 window.showSpeedrunCategory = showSpeedrunCategory;
 window.selectSpeedrunVersion = selectSpeedrunVersion;
 window.generateSpeedrunIdea = generateSpeedrunIdea;
