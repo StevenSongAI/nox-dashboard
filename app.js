@@ -7146,6 +7146,140 @@ function updateBenchmark() {
   if (revenueEl) revenueEl.textContent = '$' + Math.round(netRevenue).toLocaleString();
 }
 
+// ==================== MINECRAFT LIVE 2026 COUNTDOWN ====================
+
+function initMinecraftLiveCountdown() {
+  const container = document.getElementById('minecraft-live-countdown');
+  if (!container) return;
+  
+  // Estimated date: March 15, 2026 (based on historical patterns)
+  const liveDate = new Date('2026-03-15T19:00:00-04:00');
+  
+  container.innerHTML = `
+    <div class="card rounded-lg p-4 border-l-4 border-accent-purple">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+        <div class="flex items-center gap-3">
+          <div class="text-3xl">🎮</div>
+          <div>
+            <h3 class="font-semibold text-lg">Minecraft Live 2026</h3>
+            <p class="text-sm text-gray-400">Expected March 2026 — Vibrant Visuals Update</p>
+          </div>
+        </div>
+        <div id="mc-live-countdown" class="text-2xl font-bold text-accent-purple mt-2 md:mt-0">--</div>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-4">
+        <div class="bg-dark-800 rounded-lg p-3 text-center">
+          <div class="text-2xl font-bold text-accent-blue">26.1</div>
+          <div class="text-xs text-gray-400">First Drop</div>
+        </div>
+        <div class="bg-dark-800 rounded-lg p-3 text-center">
+          <div class="text-2xl font-bold text-accent-green">🎨</div>
+          <div class="text-xs text-gray-400">Vibrant Visuals</div>
+        </div>
+        <div class="bg-dark-800 rounded-lg p-3 text-center">
+          <div class="text-2xl font-bold text-accent-yellow">🗳️</div>
+          <div class="text-xs text-gray-400">Mob Vote</div>
+        </div>
+        <div class="bg-dark-800 rounded-lg p-3 text-center">
+          <div class="text-2xl font-bold text-accent-purple">📅</div>
+          <div class="text-xs text-gray-400">March 2026</div>
+        </div>
+      </div>
+
+      <div class="bg-dark-800 rounded-lg p-3 mb-4">
+        <div class="text-sm font-semibold mb-2">📋 Expected Announcements</div>
+        <ul class="text-xs text-gray-300 space-y-1">
+          <li>• Vibrant Visuals update showcase (lighting improvements)</li>
+          <li>• 26.1 First Drop release date confirmation</li>
+          <li>• New mob vote options reveal</li>
+          <li>• 2026 roadmap beyond First Drop</li>
+        </ul>
+      </div>
+
+      <div class="bg-dark-800 rounded-lg p-3 mb-4">
+        <div class="text-sm font-semibold mb-2">🎬 Content Prep Ideas</div>
+        <ul class="text-xs text-gray-300 space-y-1">
+          <li>• "Everything Announced at Minecraft Live 2026" — Recap video</li>
+          <li>• "Vibrant Visuals Before/After Comparison" — Showcase</li>
+          <li>• "I Voted For [Mob] — Here's Why" — Opinion piece</li>
+          <li>• "Minecraft 2026 Roadmap Breakdown" — Analysis</li>
+        </ul>
+      </div>
+
+      <div class="flex gap-2">
+        <a href="https://www.minecraft.net/en-us/about-live" target="_blank" rel="noopener" class="px-3 py-2 bg-accent-purple hover:bg-purple-600 rounded text-sm transition-colors">📅 Official Page</a>
+        <button onclick="copyLivePrep()" class="px-3 py-2 bg-dark-700 hover:bg-dark-600 rounded text-sm transition-colors">📋 Copy Prep List</button>
+      </div>
+    </div>
+  `;
+  
+  updateMinecraftLiveCountdown(liveDate);
+  setInterval(() => updateMinecraftLiveCountdown(liveDate), 60000);
+}
+
+function updateMinecraftLiveCountdown(liveDate) {
+  const countdownEl = document.getElementById('mc-live-countdown');
+  if (!countdownEl) return;
+  
+  const now = new Date();
+  const diff = liveDate - now;
+  
+  if (diff <= 0) {
+    countdownEl.textContent = '🎉 LIVE NOW';
+    countdownEl.classList.add('animate-pulse');
+    return;
+  }
+  
+  const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+  
+  if (days > 0) {
+    countdownEl.textContent = `${days}d ${hours}h ${minutes}m`;
+  } else if (hours > 0) {
+    countdownEl.textContent = `${hours}h ${minutes}m`;
+  } else {
+    countdownEl.textContent = `${minutes}m`;
+  }
+}
+
+function copyLivePrep() {
+  const prep = `MINECRAFT LIVE 2026 — CONTENT PREP
+
+Expected: March 2026
+Key Focus: Vibrant Visuals Update
+
+CONTENT IDEAS:
+□ "Everything Announced at Minecraft Live 2026" — Full recap
+□ "Vibrant Visuals Before/After" — Comparison showcase
+□ "New Mob Vote Analysis" — Breakdown of options
+□ "2026 Roadmap Explained" — Future updates
+□ "I Was Right/Wrong About Predictions" — Reaction
+
+PREP CHECKLIST:
+□ Watch live event
+□ Screenshot key moments
+□ Record initial reactions
+□ Research announced features
+□ Plan follow-up content schedule
+
+Resources:
+• Official: https://www.minecraft.net/en-us/about-live
+
+Generated by Nox Dashboard — ${new Date().toLocaleDateString()}
+`;
+  
+  navigator.clipboard.writeText(prep).then(() => {
+    alert('Minecraft Live prep list copied!');
+  });
+}
+
+// Auto-init when YouTube tab is clicked
+document.getElementById('tab-btn-youtube')?.addEventListener('click', () => {
+  setTimeout(initMinecraftLiveCountdown, 600);
+});
+
 // Global exports
 window.renderSpeedrunExplorer = renderSpeedrunExplorer;
 window.loadSeriesTemplate = loadSeriesTemplate;
@@ -7174,6 +7308,8 @@ window.generateSceneSequence = generateSceneSequence;
 window.copyCinematicPlan = copyCinematicPlan;
 window.initMarketplaceBenchmark = initMarketplaceBenchmark;
 window.updateBenchmark = updateBenchmark;
+window.initMinecraftLiveCountdown = initMinecraftLiveCountdown;
+window.copyLivePrep = copyLivePrep;
 
 console.log('Nox Dashboard: Functions exported to window object');
 // Cache bust: Mon  9 Feb 2026 14:46:41 EST
