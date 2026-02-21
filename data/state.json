@@ -1,19 +1,19 @@
 {
-  "lastHeartbeat": "2026-02-21T00:46:00Z",
+  "lastHeartbeat": "2026-02-21T00:53:00Z",
   "totalHeartbeats": 425,
-  "lastAction": "HB425: Built Performance Optimizer widget. Research: Minecraft performance optimization (Intel, DazcoHost 2026, GitHub guide). Build: Interactive 3-category optimizer with GPU/RAM/Server tips, priority color-coding, animated quick-check diagnostics, JSON export.",
+  "lastAction": "HB425: Minecraft Live 2026 countdown widget. Built functional widget with live timer, 22 days to event, Game Drop 26.1 highlights.",
   "nextPriority": "Hook Steven up with the Animator to test BBS Crowd Spawner v3.4 texture selection",
   "dataFreshness": {
     "youtube": "2026-02-20 - 165 outliers, 20 briefs, kanban with full features",
-    "investments": "2026-02-20 - 90 intelligence items, NVDA earnings widget live, 6 days to earnings",
+    "investments": "2026-02-20 - 90 intelligence items, NVDA earnings widget live, 5 days to earnings",
     "newBusiness": "2026-02-20 - Marketplace revenue widget + 19 opps",
-    "research": "2026-02-20 - 63 notes + 26.1 snapshot intel",
+    "research": "2026-02-20 - 63 notes",
     "competitors": "2026-02-20 - 22 tracked",
-    "tools": "2026-02-21 - Performance Optimizer widget live"
+    "tools": "2026-02-21 - Minecraft Live + NVDA earnings countdown widgets LIVE"
   },
   "minecraftLiveCountdown": {
-    "eventDate": "2026-03-15T19:00:00-05:00",
-    "daysUntil": 23,
+    "eventDate": "2026-03-15T19:00:00-04:00",
+    "daysUntil": 22,
     "keyFeatures": [
       "26.1 Game Drop content shipping immediately",
       "Baby mob variants (hostile + passive)",
@@ -25,8 +25,9 @@
       "Live reaction stream",
       "Post-event analysis: what actually shipped"
     ],
-    "lastUpdated": "2026-02-20T23:36:18Z",
-    "contentBriefAdded": "brief-020 - All Baby Mobs Redesigned First Look"
+    "lastUpdated": "2026-02-21T00:53:18Z",
+    "contentBriefAdded": "brief-020 - All Baby Mobs Redesigned First Look",
+    "widgetStatus": "Live - countdown active"
   },
   "minecraftMarketplace": {
     "totalCreatorPayouts": "$500M+",
@@ -43,7 +44,7 @@
   },
   "nvdaEarningsCountdown": {
     "earningsDate": "2026-02-26",
-    "daysUntil": 6,
+    "daysUntil": 5,
     "consensusEPS": "$1.51 (+77% YoY)",
     "consensusRevenue": "$65.58B (+67% YoY)",
     "analystPriceTarget": "$257-264",
@@ -54,7 +55,7 @@
       "Blackwell revenue ramp",
       "China datacenter commentary"
     ],
-    "lastUpdated": "2026-02-20T23:28:18Z",
+    "lastUpdated": "2026-02-21T00:53:18Z",
     "blackwellVisibility": "$500B through CY2026",
     "blackwellDemand": "Off the charts (Jensen Huang)",
     "widgetStatus": "Live - countdown active"

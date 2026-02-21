@@ -2643,3 +2643,16 @@ main {
     min-width: 50px;
   }
 }
+/* Minecraft Live Widget Styles */
+.minecraft-live .ticker-symbol {
+  color: #5d8c38 !important;
+}
+
+.minecraft-live .ticker-badge {
+  background: #5d8c3820 !important;
+  color: #5d8c38 !important;
+}
+
+.minecraft-live .urgency-low {
+  color: #5d8c38;
+}
