@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-02-21T07:12:00Z",
-  "updatedBy": "nox-heartbeat",
-  "version": "2026.02.21.54",
-  "cacheBust": "20260221T0712",
-  "dataVersion": "2026.02.21.54",
+  "lastUpdated": "2026-02-21T07:35:00Z",
+  "updatedBy": "nox-cron",
+  "version": "2026.02.21.55",
+  "cacheBust": "20260221T0735",
+  "dataVersion": "2026.02.21.55",
   "youtubeUpdated": "2026-02-20T23:36:00Z",
   "investmentsUpdated": "2026-02-20T23:28:00.000000",
-  "researchUpdated": "2026-02-21T07:12:00.000000",
+  "researchUpdated": "2026-02-21T07:35:00.000000",
   "newBusinessUpdated": "2026-02-20T21:25:00Z",
-  "toolsUpdated": "2026-02-21T07:12:00Z",
+  "toolsUpdated": "2026-02-21T07:35:00Z",
   "workTrackerUpdated": "2026-02-15T00:17:00Z",
   "minecraftArtistsUpdated": "2026-02-18T14:22:00Z",
   "investments": {
@@ -18,21 +18,21 @@
     "lastIntelligenceId": "intel-083"
   },
   "dataFreshness": {
-    "research": "2026-02-21 - Minecraft 26.1 release tracker (March 31 expected)",
+    "research": "2026-02-21 - Minecraft Builder Explorer widget with top builders analysis",
     "newBusiness": "2026-02-20 - Marketplace revenue widget live",
     "investments": "2026-02-20 - 90 intelligence items, NVDA earnings widget live",
     "workTracker": "2026-02-15 - pagination + deduplication live",
     "minecraftArtists": "2026-02-18 - 16 artists",
     "youtube": "2026-02-20 - 165 outliers, 20 briefs, kanban + Shorts calculator",
-    "tools": "2026-02-21 - Release Tracker + Marketplace Calculator + Snapshot Comparator + Baby Mob Showcase widgets"
+    "tools": "2026-02-21 - Builder Explorer + Release Tracker + Marketplace Calculator + Baby Mob Showcase"
   },
-  "research": { "lastUpdated": "2026-02-21T07:12:00Z" },
+  "research": { "lastUpdated": "2026-02-21T07:35:00Z" },
   "totalNotes": 69,
-  "lastDataPush": "2026-02-21T07:12:00Z",
-  "lastPushBy": "nox-heartbeat",
-  "lastPushDescription": "Minecraft 26.1 Release Tracker widget. Research: First Drop 2026 expected March 31. Build: Live countdown timer, 5 feature cards with progress tracking, baby mob redesigns, golden dandelion, craftable name tags status.",
+  "lastDataPush": "2026-02-21T07:35:00Z",
+  "lastPushBy": "nox-cron",
+  "lastPushDescription": "Minecraft Builder Explorer widget. Research: Top 6 Minecraft builders (Grian, BdoubleO100, Smallishbeans, Keralis, Scar, Jeracraft). Build: Interactive explorer with builder profiles, style analysis, viral content formats (Build and Seek, Build Swap), collaboration matrix, and BBS integration angles.",
   "newBusiness": { "lastUpdated": "2026-02-20T21:25:00Z" },
-  "tools": { "lastUpdated": "2026-02-21T07:12:00Z", "totalTools": 30 },
+  "tools": { "lastUpdated": "2026-02-21T07:35:00Z", "totalTools": 31 },
   "youtube": { "lastUpdated": "2026-02-20T23:36:00Z" },
   "competitorsUpdated": "2026-02-20T11:50:55Z",
   "competitors": { "lastUpdated": "2026-02-20T11:50:55Z", "totalCompetitors": 22 },
@@ -44,7 +44,7 @@
     "investments": "2026-02-20T23:28:00Z",
     "newBusiness": "2026-02-20T21:25:00Z",
     "competitors": "2026-02-20T11:50:55Z",
-    "research": "2026-02-21T07:12:00Z",
-    "tools": "2026-02-21T07:12:00Z"
+    "research": "2026-02-21T07:35:00Z",
+    "tools": "2026-02-21T07:35:00Z"
   }
 }
