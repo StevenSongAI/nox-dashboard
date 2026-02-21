@@ -557,6 +557,7 @@
         <button onclick="showToolsSection('ai-video-editor')" id="tools-btn-ai-video-editor" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">✂️ AI Video Editors</button>
         <button onclick="showToolsSection('content-workflow')" id="tools-btn-content-workflow" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">🔄 Content Workflow</button>
         <button onclick="showToolsSection('redstone-planner')" id="tools-btn-redstone-planner" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">⚡ Redstone</button>
+        <button onclick="showToolsSection('architecture-guide')" id="tools-btn-architecture-guide" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">🏛️ Architecture</button>
       </div>
 
       <!-- Tool Registry Section -->
@@ -1006,6 +1007,21 @@
         <div id="redstone-planner-container">
           <div class="text-center py-8 text-gray-500">
             <p>Loading redstone planner...</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Minecraft Architecture Guide Section -->
+      <div id="tools-section-architecture-guide" class="tools-section hidden">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4 gap-3">
+          <h2 class="text-xl font-semibold">🏛️ Minecraft Architecture Guide</h2>
+          <div class="flex gap-2">
+            <button onclick="loadArchitectureGuide()" class="px-3 py-1 bg-accent-blue rounded text-sm hover:bg-blue-600">🔄 Refresh</button>
+          </div>
+        </div>
+        <div id="architecture-guide-container">
+          <div class="text-center py-8 text-gray-500">
+            <p>Loading architecture guide...</p>
           </div>
         </div>
       </div>
@@ -1491,7 +1507,8 @@
   <script src="widgets/mod-loader-comparison.js?v=202602210946"></script>
   <script src="widgets/content-workflow-automation.js?v=202602211029"></script>
   <script src="widgets/ai-video-editor-comparison.js?v=202602211011"></script>
-  <script src="widgets/redstone-project-planner.js?v=202602210946"></script>
+  <script src="widgets/redstone-project-planner.js?v=202602211046"></script>
+  <script src="widgets/minecraft-architecture-guide.js?v=202602211046"></script>
   <script src="app.js?v=202602201712"></script>
 
   <!-- Shorts Calculator Loader -->
@@ -1660,6 +1677,15 @@
       if (container && window.RedstoneProjectPlanner) {
         window.redstonePlanner = new RedstoneProjectPlanner();
         window.redstonePlanner.render('redstone-planner-container');
+      }
+    }
+
+    // Minecraft Architecture Guide loader
+    function loadArchitectureGuide() {
+      const container = document.getElementById('architecture-guide-container');
+      if (container && window.MinecraftArchitectureGuide) {
+        window.archGuide = new MinecraftArchitectureGuide();
+        window.archGuide.render('architecture-guide-container');
       }
     }
 
