@@ -1315,6 +1315,9 @@ function renderYouTube() {
 
   // Render Version Timeline Explorer widget
   safeRender(() => renderVersionTimelineExplorer(), 'renderVersionTimelineExplorer');
+
+  // Render PvP Server Browser widget
+  safeRender(() => renderPvPServerBrowser(), 'renderPvPServerBrowser');
 }
 
 // Content Pipeline Kanban Board — NEW FEATURE: Visual production tracker
@@ -5597,6 +5600,119 @@ function exportVersionTimeline() {
 window.renderVersionTimelineExplorer = renderVersionTimelineExplorer;
 window.showVersionSystemDetails = showVersionSystemDetails;
 window.exportVersionTimeline = exportVersionTimeline;
+
+// ==================== PVP SERVER BROWSER WIDGET ====================
+// Interactive browser for top Minecraft PvP servers
+// Research: ExtremeCraft #1, ManaCube multi-mode, 1.21.11 competitive scene (Feb 2026)
+
+function renderPvPServerBrowser() {
+  const container = document.getElementById('pvp-server-browser');
+  if (!container) return;
+
+  const servers = [
+    {
+      rank: 1,
+      name: 'ExtremeCraft',
+      ip: 'sl.extremecraft.net',
+      status: 'online',
+      modes: ['PvP', 'Factions', 'SkyBlock', 'Survival'],
+      features: ['Anti-cheat', 'Ranked matches', 'Tournaments'],
+      players: '5,000+',
+      version: '1.21.11',
+      color: 'accent-yellow'
+    },
+    {
+      rank: 2,
+      name: 'ManaCube',
+      ip: 'play.manacube.net',
+      status: 'online',
+      modes: ['PvP', 'SkyBlock', 'Parkour', 'Prison'],
+      features: ['2500+ parkour maps', 'Custom mobs', 'Anti-cheat'],
+      players: '3,000+',
+      version: '1.21.11',
+      color: 'accent-blue'
+    },
+    {
+      rank: 3,
+      name: 'Twenture',
+      ip: 'twenture.net',
+      status: 'online',
+      modes: ['Survival', 'SkyBlock', 'PvP', 'Towny'],
+      features: ['Economy system', 'Land claims', 'PvP arenas'],
+      players: '2,000+',
+      version: '1.21.11',
+      color: 'accent-purple'
+    }
+  ];
+
+  let html = `
+    <div class="bg-dark-800/50 border border-dark-600 rounded-lg p-4">
+      <div class="flex items-center gap-2 mb-4">
+        <span class="text-xl">⚔️</span>
+        <h3 class="text-lg font-bold text-white">PvP Server Browser 2026</h3>
+        <span class="text-xs bg-accent-red/20 text-accent-red px-2 py-0.5 rounded ml-auto">Top Ranked</span>
+      </div>
+
+      <div class="space-y-3">
+        ${servers.map(server => `
+          <div class="bg-dark-700/50 rounded-lg p-3 border border-dark-600 hover:border-${server.color}/50 transition-all">
+            <div class="flex items-start justify-between mb-2">
+              <div class="flex items-center gap-2">
+                <span class="text-lg font-bold text-${server.color}">#${server.rank}</span>
+                <div>
+                  <div class="font-semibold text-white">${server.name}</div>
+                  <div class="text-xs text-gray-400">${server.ip}</div>
+                </div>
+              </div>
+              <span class="text-xs bg-accent-green/20 text-accent-green px-2 py-0.5 rounded">${server.status}</span>
+            </div>
+
+            <div class="flex flex-wrap gap-1 mb-2">
+              ${server.modes.map(mode => `<span class="text-xs bg-dark-600 px-2 py-0.5 rounded text-gray-300">${mode}</span>`).join('')}
+            </div>
+
+            <div class="text-xs text-gray-400 mb-2">${server.features.join(' • ')}</div>
+
+            <div class="flex items-center justify-between text-xs">
+              <span class="text-gray-400">${server.players} online</span>
+              <span class="text-accent-primary">${server.version}</span>
+            </div>
+          </div>
+        `).join('')}
+      </div>
+
+      <div class="mt-4 bg-dark-700/30 rounded-lg p-3">
+        <div class="text-sm font-semibold text-white mb-2">BBS Content Ideas:</div>
+        <ul class="text-xs text-gray-400 space-y-1">
+          <li>• "I Spawned 1000 NPCs in ExtremeCraft PvP Arena"</li>
+          <li>• "NPC Army vs Top PvP Players"</li>
+          <li>• "Building a PvP Army with BBS Crowd Spawner"</li>
+        </ul>
+      </div>
+
+      <div class="mt-3 flex gap-2">
+        <button onclick="copyServerIP('sl.extremecraft.net')" class="btn-primary flex-1">
+          <span>📋</span> Copy #1 IP
+        </button>
+        <a href="https://minecraft-serverlist.com/minecraft-pvp-servers" target="_blank" class="btn-secondary flex-1 text-center">
+          <span>🏆</span> More Servers
+        </a>
+      </div>
+    </div>
+  `;
+
+  container.innerHTML = html;
+}
+
+function copyServerIP(ip) {
+  navigator.clipboard.writeText(ip).then(() => {
+    alert('Server IP copied: ' + ip);
+  });
+}
+
+// Global exports
+window.renderPvPServerBrowser = renderPvPServerBrowser;
+window.copyServerIP = copyServerIP;
 
 // ==================== GLOBAL EXPORTS FOR INLINE HANDLERS ====================
 // Ensure functions are available globally for onclick/onchange handlers
