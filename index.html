@@ -452,6 +452,7 @@
         <button onclick="showToolsSection('voiceover')" id="tools-btn-voiceover" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">🎙️ Voiceover Generator</button>
         <button onclick="showToolsSection('animation')" id="tools-btn-animation" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">🎭 Animation Tools</button>
         <button onclick="showToolsSection('shorts-calc')" id="tools-btn-shorts-calc" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">📊 Shorts Calculator</button>
+        <button onclick="showToolsSection('builder-explorer')" id="tools-btn-builder-explorer" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">🏗️ Builder Explorer</button>
       </div>
 
       <!-- Tool Registry Section -->
@@ -671,6 +672,22 @@
         <div id="shorts-calculator-container">
           <div class="text-center py-8 text-gray-500">
             <p>Loading calculator...</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Minecraft Builder Explorer Section -->
+      <div id="tools-section-builder-explorer" class="tools-section hidden">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4 gap-3">
+          <h2 class="text-xl font-semibold">🏗️ Minecraft Builder Explorer</h2>
+          <div class="flex gap-2">
+            <button onclick="loadBuilderExplorer()" class="px-3 py-1 bg-accent-blue rounded text-sm hover:bg-blue-600">🔄 Refresh</button>
+            <button onclick="exportBuilderData()" class="px-3 py-1 bg-dark-700 rounded hover:bg-dark-600 text-sm">📥 Export</button>
+          </div>
+        </div>
+        <div id="minecraft-builder-explorer">
+          <div class="text-center py-8 text-gray-500">
+            <p>Loading builder explorer...</p>
           </div>
         </div>
       </div>
@@ -1060,6 +1077,7 @@
   <script src="js/marketplace-revenue.js?v=202602200425"></script>
   <script src="js/content-briefs-kanban.js?v=202602201712"></script>
   <script src="js/shorts-calculator.js?v=202602210316"></script>
+  <script src="widgets/minecraft-builder-explorer.js?v=202602210245"></script>
   <script src="js/quick-stats-widget.js?v=202602210402"></script>
   <script src="app.js?v=202602201712"></script>
 
@@ -1073,6 +1091,39 @@
       }
     }
 
+    // Minecraft Builder Explorer loader
+    function loadBuilderExplorer() {
+      const container = document.getElementById('minecraft-builder-explorer');
+      if (container && typeof MinecraftBuilderExplorer !== 'undefined') {
+        // Insert styles
+        if (!document.getElementById('builder-explorer-styles')) {
+          const styleEl = document.createElement('div');
+          styleEl.id = 'builder-explorer-styles';
+          styleEl.innerHTML = builderExplorerStyles;
+          document.head.appendChild(styleEl.firstElementChild);
+        }
+        MinecraftBuilderExplorer.init();
+      }
+    }
+
+    // Export builder data function
+    function exportBuilderData() {
+      if (typeof MinecraftBuilderExplorer !== 'undefined') {
+        const data = {
+          builders: MinecraftBuilderExplorer.builders,
+          opportunities: MinecraftBuilderExplorer.contentOpportunities,
+          exportedAt: new Date().toISOString()
+        };
+        const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `minecraft-builders-${new Date().toISOString().split('T')[0]}.json`;
+        a.click();
+        URL.revokeObjectURL(url);
+      }
+    }
+
     // Auto-load when shorts-calc section is shown
     document.addEventListener('DOMContentLoaded', () => {
       const observer = new MutationObserver((mutations) => {
@@ -1080,6 +1131,10 @@
           const shortsSection = document.getElementById('tools-section-shorts-calc');
           if (shortsSection && !shortsSection.classList.contains('hidden')) {
             loadShortsCalculator();
+          }
+          const builderSection = document.getElementById('tools-section-builder-explorer');
+          if (builderSection && !builderSection.classList.contains('hidden')) {
+            loadBuilderExplorer();
           }
         });
       });
