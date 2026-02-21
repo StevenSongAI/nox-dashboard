@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-02-21T07:35:00Z",
-  "updatedBy": "nox-cron",
+  "lastUpdated": "2026-02-21T07:40:00Z",
+  "updatedBy": "nox-heartbeat",
   "version": "2026.02.21.55",
-  "cacheBust": "20260221T0735",
+  "cacheBust": "20260221T0740",
   "dataVersion": "2026.02.21.55",
   "youtubeUpdated": "2026-02-20T23:36:00Z",
   "investmentsUpdated": "2026-02-20T23:28:00.000000",
-  "researchUpdated": "2026-02-21T07:35:00.000000",
+  "researchUpdated": "2026-02-21T07:40:00.000000",
   "newBusinessUpdated": "2026-02-20T21:25:00Z",
-  "toolsUpdated": "2026-02-21T07:35:00Z",
+  "toolsUpdated": "2026-02-21T07:40:00Z",
   "workTrackerUpdated": "2026-02-15T00:17:00Z",
   "minecraftArtistsUpdated": "2026-02-18T14:22:00Z",
   "investments": {
@@ -18,25 +18,25 @@
     "lastIntelligenceId": "intel-083"
   },
   "dataFreshness": {
-    "research": "2026-02-21 - Minecraft Builder Explorer widget with top builders analysis",
+    "research": "2026-02-21 - YouTube Shorts Algorithm 2026 (3-minute format, explore/exploit system)",
     "newBusiness": "2026-02-20 - Marketplace revenue widget live",
     "investments": "2026-02-20 - 90 intelligence items, NVDA earnings widget live",
     "workTracker": "2026-02-15 - pagination + deduplication live",
     "minecraftArtists": "2026-02-18 - 16 artists",
     "youtube": "2026-02-20 - 165 outliers, 20 briefs, kanban + Shorts calculator",
-    "tools": "2026-02-21 - Builder Explorer + Release Tracker + Marketplace Calculator + Baby Mob Showcase"
+    "tools": "2026-02-21 - Shorts Optimizer + Release Tracker + Marketplace Calculator + 27 other widgets"
   },
-  "research": { "lastUpdated": "2026-02-21T07:35:00Z" },
-  "totalNotes": 69,
-  "lastDataPush": "2026-02-21T07:35:00Z",
-  "lastPushBy": "nox-cron",
-  "lastPushDescription": "Minecraft Builder Explorer widget. Research: Top 6 Minecraft builders (Grian, BdoubleO100, Smallishbeans, Keralis, Scar, Jeracraft). Build: Interactive explorer with builder profiles, style analysis, viral content formats (Build and Seek, Build Swap), collaboration matrix, and BBS integration angles.",
+  "research": { "lastUpdated": "2026-02-21T07:40:00Z" },
+  "totalNotes": 70,
+  "lastDataPush": "2026-02-21T07:40:00Z",
+  "lastPushBy": "nox-heartbeat",
+  "lastPushDescription": "YouTube Shorts Strategy Optimizer widget. Research: 2026 algorithm changes (3-minute Shorts, explore/exploit system, retention focus). Build: 5 strategy cards with tactics, priority levels, impact ratings, Steven-specific quick wins.",
   "newBusiness": { "lastUpdated": "2026-02-20T21:25:00Z" },
-  "tools": { "lastUpdated": "2026-02-21T07:35:00Z", "totalTools": 31 },
+  "tools": { "lastUpdated": "2026-02-21T07:40:00Z", "totalTools": 31 },
   "youtube": { "lastUpdated": "2026-02-20T23:36:00Z" },
   "competitorsUpdated": "2026-02-20T11:50:55Z",
   "competitors": { "lastUpdated": "2026-02-20T11:50:55Z", "totalCompetitors": 22 },
-  "audits": { "lastUpdated": "2026-02-21T07:04:00Z" },
+  "audits": { "lastUpdated": "2026-02-21T07:35:00Z" },
   "minecraftArtists": { "lastUpdated": "2026-02-20T01:47:50Z" },
   "totalOutliers": 165,
   "sections": {
@@ -44,7 +44,7 @@
     "investments": "2026-02-20T23:28:00Z",
     "newBusiness": "2026-02-20T21:25:00Z",
     "competitors": "2026-02-20T11:50:55Z",
-    "research": "2026-02-21T07:35:00Z",
-    "tools": "2026-02-21T07:35:00Z"
+    "research": "2026-02-21T07:40:00Z",
+    "tools": "2026-02-21T07:40:00Z"
   }
 }
