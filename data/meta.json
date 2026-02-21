@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-02-21T06:55:00Z",
+  "lastUpdated": "2026-02-21T07:04:00Z",
   "updatedBy": "nox-heartbeat",
-  "version": "2026.02.21.52",
-  "cacheBust": "20260221T0655",
-  "dataVersion": "2026.02.21.52",
+  "version": "2026.02.21.53",
+  "cacheBust": "20260221T0704",
+  "dataVersion": "2026.02.21.53",
   "youtubeUpdated": "2026-02-20T23:36:00Z",
   "investmentsUpdated": "2026-02-20T23:28:00.000000",
-  "researchUpdated": "2026-02-21T06:55:00.000000",
+  "researchUpdated": "2026-02-21T07:04:00.000000",
   "newBusinessUpdated": "2026-02-20T21:25:00Z",
-  "toolsUpdated": "2026-02-21T06:55:00Z",
+  "toolsUpdated": "2026-02-21T07:04:00Z",
   "workTrackerUpdated": "2026-02-15T00:17:00Z",
   "minecraftArtistsUpdated": "2026-02-18T14:22:00Z",
   "investments": {
@@ -18,25 +18,25 @@
     "lastIntelligenceId": "intel-083"
   },
   "dataFreshness": {
-    "research": "2026-02-21 - Minecraft 26w07a snapshot",
-    "newBusiness": "2026-02-20 - Minecraft Marketplace widget live",
+    "research": "2026-02-21 - Minecraft Marketplace creator earnings ($146M Q1 2025)",
+    "newBusiness": "2026-02-20 - Marketplace revenue widget live",
     "investments": "2026-02-20 - 90 intelligence items, NVDA earnings widget live",
     "workTracker": "2026-02-15 - pagination + deduplication live",
     "minecraftArtists": "2026-02-18 - 16 artists",
     "youtube": "2026-02-20 - 165 outliers, 20 briefs, kanban + Shorts calculator",
-    "tools": "2026-02-21 - Snapshot Comparator + Baby Mob Showcase + Audio Explorer widgets"
+    "tools": "2026-02-21 - Marketplace Earnings Calculator + Snapshot Comparator + Baby Mob Showcase widgets"
   },
-  "research": { "lastUpdated": "2026-02-21T06:55:00Z" },
-  "totalNotes": 67,
-  "lastDataPush": "2026-02-21T06:55:00Z",
+  "research": { "lastUpdated": "2026-02-21T07:04:00Z" },
+  "totalNotes": 68,
+  "lastDataPush": "2026-02-21T07:04:00Z",
   "lastPushBy": "nox-heartbeat",
-  "lastPushDescription": "Snapshot Comparator widget. Research: Minecraft 26w07a (adult sound variants, baby texture updates). Build: Interactive comparator with 4 snapshots, select-to-compare, side-by-side feature view, timeline visualization.",
+  "lastPushDescription": "Minecraft Marketplace Earnings Calculator widget. Research: $146M Q1 2025 revenue, $500M+ creator payouts. Build: Interactive calculator with content type selector, monthly sales slider, price range, earnings projections, creator tier classification.",
   "newBusiness": { "lastUpdated": "2026-02-20T21:25:00Z" },
-  "tools": { "lastUpdated": "2026-02-21T06:55:00Z", "totalTools": 28 },
+  "tools": { "lastUpdated": "2026-02-21T07:04:00Z", "totalTools": 29 },
   "youtube": { "lastUpdated": "2026-02-20T23:36:00Z" },
   "competitorsUpdated": "2026-02-20T11:50:55Z",
   "competitors": { "lastUpdated": "2026-02-20T11:50:55Z", "totalCompetitors": 22 },
-  "audits": { "lastUpdated": "2026-02-21T06:46:00Z" },
+  "audits": { "lastUpdated": "2026-02-21T06:55:00Z" },
   "minecraftArtists": { "lastUpdated": "2026-02-20T01:47:50Z" },
   "totalOutliers": 165,
   "sections": {
@@ -44,7 +44,7 @@
     "investments": "2026-02-20T23:28:00Z",
     "newBusiness": "2026-02-20T21:25:00Z",
     "competitors": "2026-02-20T11:50:55Z",
-    "research": "2026-02-21T06:55:00Z",
-    "tools": "2026-02-21T06:55:00Z"
+    "research": "2026-02-21T07:04:00Z",
+    "tools": "2026-02-21T07:04:00Z"
   }
 }

@@ -4648,3 +4648,224 @@ main {
   color: #64748b;
   white-space: nowrap;
 }
+
+/* Marketplace Earnings Calculator */
+.marketplace-calc {
+  background: linear-gradient(135deg, #1a1a2e 0%, #0f0f1a 100%);
+  border: 1px solid #252540;
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+}
+
+.calc-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.calc-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.calc-icon {
+  font-size: 1.5rem;
+}
+
+.calc-title h3 {
+  margin: 0;
+  font-size: 1.125rem;
+  color: #e2e8f0;
+}
+
+.calc-badge {
+  padding: 0.25rem 0.5rem;
+  background: #10b98120;
+  color: #10b981;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 0.25rem;
+}
+
+.calc-inputs {
+  margin-bottom: 1rem;
+}
+
+.input-row {
+  display: grid;
+  grid-template-columns: 1fr 150px 60px;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.input-row label {
+  font-size: 0.75rem;
+  color: #94a3b8;
+}
+
+.input-row select {
+  padding: 0.375rem 0.5rem;
+  background: #0f0f1a;
+  border: 1px solid #252540;
+  border-radius: 0.375rem;
+  color: #e2e8f0;
+  font-size: 0.75rem;
+}
+
+.input-row input[type="range"] {
+  -webkit-appearance: none;
+  height: 4px;
+  background: #252540;
+  border-radius: 2px;
+  outline: none;
+}
+
+.input-row input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  background: #10b981;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.input-value {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #e2e8f0;
+  text-align: right;
+}
+
+.calc-results {
+  margin-bottom: 1rem;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+}
+
+.result-card {
+  display: flex;
+  flex-direction: column;
+  padding: 0.875rem;
+  background: #0f0f1a;
+  border-radius: 0.5rem;
+  border: 1px solid #252540;
+}
+
+.result-card.primary {
+  border-color: #10b98140;
+  background: #10b98110;
+}
+
+.result-label {
+  font-size: 0.625rem;
+  color: #64748b;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+}
+
+.result-value {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #e2e8f0;
+}
+
+.result-card.primary .result-value {
+  color: #10b981;
+}
+
+.result-value.tier-topcreator {
+  color: #f59e0b;
+}
+
+.result-value.tier-professional {
+  color: #3b82f6;
+}
+
+.result-value.tier-parttime {
+  color: #8b5cf6;
+}
+
+.result-value.tier-hobbyist {
+  color: #64748b;
+}
+
+.result-detail {
+  font-size: 0.625rem;
+  color: #475569;
+  margin-top: 0.25rem;
+}
+
+.marketplace-stats {
+  margin-bottom: 1rem;
+}
+
+.marketplace-stats h4 {
+  font-size: 0.75rem;
+  color: #94a3b8;
+  margin-bottom: 0.5rem;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+
+.stat-box {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  background: #0f0f1a;
+  border-radius: 0.375rem;
+  text-align: center;
+}
+
+.stat-box .stat-num {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #10b981;
+}
+
+.stat-box .stat-label {
+  font-size: 0.5rem;
+  color: #64748b;
+  text-transform: uppercase;
+}
+
+.earnings-breakdown {
+  padding: 0.875rem;
+  background: #0f0f1a;
+  border-radius: 0.5rem;
+}
+
+.earnings-breakdown h4 {
+  font-size: 0.75rem;
+  color: #f59e0b;
+  margin-bottom: 0.25rem;
+}
+
+.earnings-breakdown p {
+  font-size: 0.75rem;
+  color: #94a3b8;
+  margin: 0 0 0.75rem 0;
+  line-height: 1.5;
+}
+
+.comparison-insight {
+  padding: 0.5rem;
+  background: #252540;
+  border-radius: 0.375rem;
+  font-size: 0.75rem;
+  color: #e2e8f0;
+}
+
+.comparison-insight strong {
+  color: #f59e0b;
+}
