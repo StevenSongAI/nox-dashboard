@@ -1,0 +1,27 @@
+{
+  "ideas": [
+    {
+      "id": "how-x-should-have-ended",
+      "title": "How X Should Have Ended",
+      "description": "Recreating this popular channel format but using AI to create ultra realistic parodies at low cost and quickly.",
+      "category": "Content Format",
+      "tags": ["AI Video", "Parody", "Low Cost", "Quick Turnaround"],
+      "status": "idea",
+      "priority": "medium",
+      "dateAdded": "2026-02-24",
+      "notes": "Popular channel format - opportunity for AI-powered recreation with realistic visuals"
+    },
+    {
+      "id": "my-musical-story-animated",
+      "title": "My Musical Story Animated",
+      "description": "Instead of 'my story animated' - leverage AI to generate cheap animations, stories AND turn them into copyright-free original musicals.",
+      "category": "Content Format",
+      "tags": ["AI Animation", "AI Music", "Storytelling", "Copyright Free", "Original Music"],
+      "status": "idea",
+      "priority": "high",
+      "dateAdded": "2026-02-24",
+      "notes": "Combines AI animation + AI music generation. Differentiator: original musical numbers instead of narration. Lower copyright risk."
+    }
+  ],
+  "lastUpdated": "2026-02-24"
+}

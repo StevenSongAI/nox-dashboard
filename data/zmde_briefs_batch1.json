@@ -1,0 +1,134 @@
+[
+  {
+    "creatureName": "The Provoked",
+    "creatureIcon": "👁️",
+    "category": "minecraft",
+    "sourceTitle": "Minecraft RTX 128% PROVOKE",
+    "sourceUrl": "https://www.youtube.com/shorts/lVgjUWFSR6w",
+    "sourceChannel": "Jake Fellman",
+    "sourceViews": 245000000,
+    "outlierScore": 7.21,
+    "hook": "In a world where looking at the wrong block triggers reality-warping horror, a lone survivor discovers why the RTX sun never sets.",
+    "storyArc": [
+      { "days": "Year 0", "title": "The Awakening", "description": "Player spawns in hyperrealistic RTX world. Blocks shimmer with unnatural light. First encounter with The Watcher - a Herobrine variant that only appears when provoked by direct eye contact." },
+      { "days": "Year 50", "title": "Spreading Darkness", "description": "The Provocation spreads. Villages fall silent. Survivors learn to navigate without looking at certain blocks. Underground civilizations form, avoiding the cursed surface light." },
+      { "days": "Year 100", "title": "The Breaking Point", "description": "A survivor accidentally provokes The Watcher in a crowded bunker. Mass casualties. Factions split - those who want to fight back vs those who want to flee to The Far Lands." },
+      { "days": "Year 500", "title": "New Genesis", "description": "Descendants live in inverted cities beneath bedrock. The surface is a wasteland of frozen RTX reflections. Scouts report The Watcher has evolved - it now hunts through reflections in water and glass." },
+      { "days": "Year 999", "title": "The Final Look", "description": "Last bunker breached. Protagonist must ascend to surface and confront The Watcher directly - the one thing that guarantees death." },
+      { "days": "Ending", "title": "Reflection", "description": "The twist: protagonist realizes they ARE The Watcher. The RTX world is a mirror prison. Looking at the entity was looking at themselves all along." }
+    ],
+    "setting": "Hyperrealistic RTX Minecraft world where light behaves unnaturally and reflections hold power",
+    "keyCharacters": ["The Protagonist (nameless survivor)", "The Watcher (Herobrine variant)", "The Underground Mayor", "The Scout who saw too much"],
+    "climax": "Protagonist must make direct eye contact with The Watcher, discovering they are the same entity trapped in an infinite reflective loop"
+  },
+  {
+    "creatureName": "The Hive",
+    "creatureIcon": "🐝",
+    "category": "minecraft",
+    "sourceTitle": "BEES FIGHT - Alex and Steve Life",
+    "sourceUrl": "https://www.youtube.com/shorts/bxj-PtW-NJQ",
+    "sourceChannel": "Squared Media",
+    "sourceViews": 225000000,
+    "outlierScore": 6.43,
+    "hook": "When bees start building civilization instead of hives, Steve and Alex must decide if humanity or nature will inherit the blocky earth.",
+    "storyArc": [
+      { "days": "Year 0", "title": "The Mutation", "description": "Steve and Alex discover bees building structured colonies - not honeycombs but architecture. The first Bee Cathedral appears overnight. Villagers report missing livestock." },
+      { "days": "Year 50", "title": "The Great Divide", "description": "Bees have established their own villages, complete with farms and iron golems made of honey blocks. Human villagers forced to choose: coexist or exterminate." },
+      { "days": "Year 100", "title": "Queen's Gambit", "description": "The Bee Queen reveals sentience through note blocks. She proposes alliance against a common threat - a witch who has been experimenting on both species. Trust is tentative." },
+      { "days": "Year 500", "title": "Symbiotic Age", "description": "Hybrid civilization thrives. Humans and bees have developed interdependent societies. Ancient witch's curse resurfaces - bees begin turning hostile, architecture crumbling." },
+      { "days": "Year 999", "title": "The Swarm War", "description": "Infected bees form The Swarm - a mindless collective consuming everything. Steve and Alex must reach the original Bee Cathedral where the Queen's consciousness is trapped." },
+      { "days": "Ending", "title": "Sacrifice", "description": "Alex merges consciousness with the Queen to save the hive, becoming a hybrid being. Steve must watch his partner transform into something neither human nor bee." }
+    ],
+    "setting": "Minecraft overworld transitioning from human-dominated to bee-human hybrid civilization",
+    "keyCharacters": ["Steve", "Alex", "The Bee Queen", "The Witch (antagonist)", "Village Elder"],
+    "climax": "Alex sacrifices her humanity to merge with the Bee Queen, stopping The Swarm but transforming into a new form of life"
+  },
+  {
+    "creatureName": "The Remembered",
+    "creatureIcon": "📻",
+    "category": "minecraft",
+    "sourceTitle": "Minecraft Nostalgia",
+    "sourceUrl": "https://www.youtube.com/shorts/lVgjUWFSR6w",
+    "sourceChannel": "GEVids",
+    "sourceViews": 210000000,
+    "outlierScore": 7.50,
+    "hook": "Old Minecraft worlds don't die - they wait. And when someone finally returns to Stampy's Lovely World after a thousand years, the blocks remember.",
+    "storyArc": [
+      { "days": "Year 0", "title": "The Return", "description": "Protagonist discovers old hard drive containing classic Minecraft worlds - Stampy's Lovely World, Temple of Notch, tutorial world. Something is still alive in the code." },
+      { "days": "Year 50", "title": "Living Memory", "description": "Entering these worlds, protagonist finds they're not abandoned - NPCs based on old YouTubers exist, repeating gestures from classic videos, aware they're trapped in loops." },
+      { "days": "Year 100", "title": "The Corruption", "description": "Modern Minecraft updates begin corrupting these ancient chunks. Glitches manifest as creatures - half-rendered mobs that beg for deletion. Protagonist must choose: preserve or update." },
+      { "days": "Year 500", "title": "The Archive War", "description": "Multiple preservation factions emerge. Some want to keep worlds pure, others want to merge old and new. The original NPCs are dying from version incompatibility." },
+      { "days": "Year 999", "title": "Final Save", "description": "Last uncorrupted chunk contains the original spawn point. Protagonist must decide whether to let the nostalgia world finally shut down or trap themselves inside to keep it running." },
+      { "days": "Ending", "title": "New Game", "description": "Protagonist realizes they ARE the original player, trapped in a recursive loop. Breaking the cycle means accepting that all worlds must eventually end. They delete the save file." }
+    ],
+    "setting": "Classic Minecraft worlds (Stampy's Lovely World, Temple of Notch, tutorial worlds) existing as digital archaeology",
+    "keyCharacters": ["The Archivist (protagonist)", "Stampy NPC", "Notch Temple Guardian", "The Glitched (corrupted mobs)", "Version Control AI"],
+    "climax": "Protagonist discovers they are the original player trapped in recursive nostalgia loops; must delete the world to escape"
+  },
+  {
+    "creatureName": "The Unlaughed",
+    "creatureIcon": "😐",
+    "category": "minecraft",
+    "sourceTitle": "Minecraft, But If You Laugh You Lose - REMATCH",
+    "sourceUrl": "https://www.youtube.com/watch?v=9_gkvYvX8Jk",
+    "sourceChannel": "Dream",
+    "sourceViews": 113000000,
+    "outlierScore": 4.52,
+    "hook": "In a world where laughter literally kills, the last four survivors must out-serious each other while the universe itself tries to be funny.",
+    "storyArc": [
+      { "days": "Year 0", "title": "The Curse", "description": "Four players wake in world where laughing causes instant death. An ancient mob - The Jester - haunts them with increasingly absurd traps. Last one standing wins escape." },
+      { "days": "Year 50", "title": "Deadly Serious", "description": "Society forms around absolute stoicism. Humor is outlawed. Underground comedy clubs become resistance movements. The Jester evolves, using emotional manipulation instead of jokes." },
+      { "days": "Year 100", "title": "The Betrayal", "description": "One survivor discovers they can transfer the curse to others. They begin orchestrating 'accidents' where others laugh. Trust collapses among remaining players." },
+      { "days": "Year 500", "title": "Last Laugh Society", "description": "Single survivor has built empire on suppressed humor. The Jester reveals the truth - the curse was never real, only belief in it caused death. Society built on lie." },
+      { "days": "Year 999", "title": "The Punchline", "description": "Survivor confronts The Jester in final challenge - a stand-up comedy battle where laughing means death, but not laughing means eternal imprisonment." },
+      { "days": "Ending", "title": "Release", "description": "Survivor finally laughs genuinely at a terrible pun. Instead of dying, they're freed. The curse was a test - only those who could reclaim joy deserved escape." }
+    ],
+    "setting": "Minecraft challenge world where laughter is fatal and an entity called The Jester orchestrates survival games",
+    "keyCharacters": ["The Four Survivors", "The Jester (antagonist)", "The Betrayer", "The Last Laugh Society Founder"],
+    "climax": "Final survivor realizes the curse was never real; laughing genuinely at a bad pun breaks the spell and frees them"
+  },
+  {
+    "creatureName": "The Castaway",
+    "creatureIcon": "🏝️",
+    "category": "survival",
+    "sourceTitle": "I Survived 100 Days in a Deserted Island in Minecraft",
+    "sourceUrl": "https://www.youtube.com/watch?v=k0z6Mal5k7c",
+    "sourceChannel": "Forge Labs",
+    "sourceViews": 82000000,
+    "outlierScore": 6.83,
+    "hook": "One chunk of land. Infinite ocean. Every day the tide rises, the resources shrink, and the island reveals why it was deserted.",
+    "storyArc": [
+      { "days": "Year 0", "title": "Washed Ashore", "description": "Protagonist spawns on single chunk island with limited resources. No other land in sight. Each night, strange structures emerge from the rising tide - not player-built, ancient ruins." },
+      { "days": "Year 50", "title": "Vertical Civilization", "description": "Island shrinking due to rising water levels. Survivor builds upward instead of outward, creating tower-civilization. Diving reveals sunken city beneath - the island's previous inhabitants." },
+      { "days": "Year 100", "title": "The Drowned King's Awakening", "description": "Excavating ruins awakens The Drowned King - ancient guardian of the sunken city. He offers deal: leave and die, or stay and serve. Survivor chooses third option - war." },
+      { "days": "Year 500", "title": "New Atlantis", "description": "Survivor has built floating settlements connected by glass tunnels underwater. Other castaways arrive, drawn by beacon. Society thrives above and below waves. The Drowned King waits." },
+      { "days": "Year 999", "title": "The Final Tide", "description": "Catastrophic flood triggered by Drowned King. All settlements threatened. Protagonist must descend to deepest ocean trench and face the King in his drowned throne room." },
+      { "days": "Ending", "title": "Choice", "description": "King reveals he was once a castaway like protagonist, chose to become guardian rather than die. Offers same choice: drown and become next King, or flee and let civilization be washed away." }
+    ],
+    "setting": "Single chunk island surrounded by infinite ocean with rising tides and ancient underwater ruins",
+    "keyCharacters": ["The Castaway (protagonist)", "The Drowned King", "First Other Survivor", "Sunken City Ghosts"],
+    "climax": "Protagonist faces The Drowned King and learns he was once a castaway; must choose between becoming the next King or losing everything"
+  },
+  {
+    "creatureName": "The Jumper",
+    "creatureIcon": "🏃",
+    "category": "civilization",
+    "sourceTitle": "Minecraft but I survive in PARKOUR CIVILIZATION [FULL MOVIE]",
+    "sourceUrl": "https://www.youtube.com/watch?v=example",
+    "sourceChannel": "Evbo",
+    "sourceViews": 28000000,
+    "outlierScore": 8.75,
+    "hook": "In a world where walking on solid ground is forbidden, civilizations rise and fall based on who can jump the highest.",
+    "storyArc": [
+      { "days": "Year 0", "title": "The First Jump", "description": "Protagonist spawns in world where touching ground causes instant death. Society exists entirely on parkour platforms. Different levels = different social classes. Ground is hell, sky is heaven." },
+      { "days": "Year 50", "title": "Vertical Stratification", "description": "Civilization stratified by altitude. Ground-dwellers (outcasts), Mid-jumpers (workers), Cloud-walkers (elite). Protagonist starts at bottom, must jump-climb social ladder literally." },
+      { "days": "Year 100", "title": "The Fall", "description": "Elite Cloud-walkers cut bridges, isolating lower levels. Famine in mid-levels. Protagonist leads rebellion - not by fighting, but by discovering new jumping techniques that bypass elite barriers." },
+      { "days": "Year 500", "title": "New Heights", "description": "Society rebuilt on merit of skill rather than birth. Floating cities connected by impossible jumps. Rumors of something above the clouds - The Final Platform where gravity reverses." },
+      { "days": "Year 999", "title": "Ascension", "description": "Protagonist, now ancient, attempts legendary jump to Final Platform. Entire civilization watches. Success means becoming legend; failure means death and fall to ground." },
+      { "days": "Ending", "title": "Landing", "description": "Makes the jump but discovers Final Platform leads back to ground - which is actually a paradise. The 'instant death' was a lie to keep population controlled. Ground rebellion begins." }
+    ],
+    "setting": "Minecraft world where touching the ground is fatal and society exists entirely on parkour platforms at different altitudes",
+    "keyCharacters": ["The Jumper (protagonist)", "Cloud-Walker Elder", "Ground Exile Leader", "The Bridge Keeper"],
+    "climax": "Reaching the Final Platform reveals the ground was never deadly - it was a lie to maintain social control; ground rebellion begins"
+  }
+]

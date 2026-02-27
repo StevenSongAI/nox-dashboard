@@ -1,0 +1,322 @@
+{
+  "artists": [
+    {
+      "id": "mc-artist-001",
+      "name": "Benad E",
+      "platform": "Fiverr",
+      "profileUrl": "https://www.fiverr.com/benad_enoch",
+      "specialty": "Map builds + cinematics",
+      "priceRange": "~$53 USD",
+      "country": "Canada",
+      "discord": null,
+      "status": "blocked-auth",
+      "notes": "Fiverr requires LOGIN to contact sellers. Profile verified - does cinematics + building.",
+      "priority": "medium",
+      "addedAt": "2026-02-09T00:00:00Z"
+    },
+    {
+      "id": "mc-artist-002",
+      "name": "Paburozan",
+      "platform": "Fiverr",
+      "profileUrl": "https://www.fiverr.com/paburozan",
+      "specialty": "Miniature/diorama builds",
+      "priceRange": "~$11 USD",
+      "country": "Unknown",
+      "discord": null,
+      "status": "blocked-auth",
+      "notes": "Fiverr requires LOGIN to contact sellers. Budget-friendly option.",
+      "priority": "high",
+      "addedAt": "2026-02-09T00:00:00Z"
+    },
+    {
+      "id": "mc-artist-003",
+      "name": "Ashraful",
+      "platform": "Fiverr",
+      "profileUrl": "https://www.fiverr.com/ashraful_onckon",
+      "specialty": "Build tutorials",
+      "priceRange": "~$32 USD",
+      "country": "Likely South Asia",
+      "discord": null,
+      "status": "blocked-auth",
+      "notes": "Fiverr requires LOGIN to contact sellers. Build tutorials specialty.",
+      "priority": "medium",
+      "addedAt": "2026-02-09T00:00:00Z"
+    },
+    {
+      "id": "mc-artist-004",
+      "name": "Sofia N",
+      "platform": "Fiverr",
+      "profileUrl": "Fiverr Search",
+      "specialty": "Builder",
+      "priceRange": "~$6 USD",
+      "country": "Italy",
+      "discord": null,
+      "status": "profile-found",
+      "notes": "NEW - $6 starting price. European option. CANNOT MESSAGE - Requires Fiverr login.",
+      "priority": "high",
+      "addedAt": "2026-02-09T00:00:00Z"
+    },
+    {
+      "id": "mc-artist-005",
+      "name": "Sebilicul",
+      "platform": "Fiverr",
+      "profileUrl": "Fiverr Search",
+      "specialty": "Builder",
+      "priceRange": "~$42 USD",
+      "country": "Unknown",
+      "discord": null,
+      "status": "profile-found",
+      "notes": "195 reviews, 4.8 rating. Established seller. CANNOT MESSAGE - Requires Fiverr login.",
+      "priority": "medium",
+      "addedAt": "2026-02-09T00:00:00Z"
+    },
+    {
+      "id": "mc-artist-006",
+      "name": "Opaline_Drawer",
+      "platform": "BuiltByBit",
+      "profileUrl": null,
+      "specialty": "Manual Terraforming",
+      "priceRange": "$5/hr",
+      "country": "Unknown",
+      "discord": "Contact via BBB",
+      "status": "lead-found",
+      "notes": "$5/hr = extremely budget. CANNOT MESSAGE - Requires BBB login.",
+      "priority": "high",
+      "addedAt": "2026-02-09T00:00:00Z"
+    },
+    {
+      "id": "mc-artist-007",
+      "name": "1RqMi",
+      "platform": "BuiltByBit",
+      "profileUrl": null,
+      "specialty": "Pirate Themed Maps",
+      "priceRange": "$80 premade",
+      "country": "Unknown",
+      "discord": "Contact via BBB",
+      "status": "lead-found",
+      "notes": "$80 premade suggests foreign pricing. CANNOT MESSAGE - Requires BBB login.",
+      "priority": "medium",
+      "addedAt": "2026-02-09T00:00:00Z"
+    },
+    {
+      "id": "mc-artist-008",
+      "name": "Patarvivi",
+      "platform": "Reddit",
+      "profileUrl": "https://www.reddit.com/user/Patarvivi/",
+      "specialty": "Indonesian Architecture",
+      "priceRange": "Not specified",
+      "country": "Indonesia",
+      "discord": "Not shared",
+      "status": "blocked-auth",
+      "notes": "Reddit requires LOGIN to send DMs. Has YouTube channel (Minecraft Timelapse).",
+      "priority": "medium",
+      "addedAt": "2026-02-09T00:00:00Z"
+    },
+    {
+      "id": "mc-artist-009",
+      "name": "Throw-away-9876543",
+      "platform": "Reddit",
+      "profileUrl": "https://www.reddit.com/user/Throw-away-9876543/",
+      "specialty": "Budget Builds",
+      "priceRange": "$5+ USD",
+      "country": "Unknown",
+      "discord": "Not shared",
+      "status": "blocked-auth",
+      "notes": "Reddit requires LOGIN to send DMs. Budget-friendly.",
+      "priority": "high",
+      "addedAt": "2026-02-09T00:00:00Z"
+    },
+    {
+      "id": "mc-artist-010",
+      "name": "Edwinox",
+      "platform": "Planet Minecraft",
+      "profileUrl": "https://www.planetminecraft.com/member/edwinox/",
+      "specialty": "Adventure Maps",
+      "priceRange": "Not specified",
+      "country": "Unknown",
+      "discord": "Contact via PMC PM",
+      "status": "lead-found",
+      "notes": "Story-driven maps. CANNOT MESSAGE - Requires PMC login.",
+      "priority": "medium",
+      "addedAt": "2026-02-09T00:00:00Z"
+    },
+    {
+      "id": "mc-artist-011",
+      "name": "GuardianYT",
+      "platform": "BuiltByBit",
+      "profileUrl": null,
+      "specialty": "Dinosaur/Mob Statues",
+      "priceRange": "Unknown",
+      "country": "Brazil",
+      "discord": "Contact via BBB",
+      "status": "lead-found",
+      "notes": "25 premium builds. Account suspended. CANNOT MESSAGE.",
+      "priority": "low",
+      "addedAt": "2026-02-09T00:00:00Z"
+    },
+    {
+      "id": "mc-artist-012",
+      "name": "Rollerite",
+      "platform": "BuiltByBit",
+      "profileUrl": null,
+      "specialty": "Building & Terraforming",
+      "priceRange": "Premium",
+      "country": "Unknown",
+      "discord": "vaspei",
+      "status": "lead-found",
+      "notes": "#1 Service Team on BuiltByBit. Discord contact available.",
+      "priority": "high",
+      "addedAt": "2026-02-09T00:00:00Z"
+    },
+    {
+      "id": "mc-artist-013",
+      "name": "Arcane Studios",
+      "platform": "BuiltByBit",
+      "profileUrl": null,
+      "specialty": "Affordable Builds",
+      "priceRange": "Affordable",
+      "country": "Unknown",
+      "discord": "ali7913",
+      "status": "lead-found",
+      "notes": "Discord contact available: ali7913",
+      "priority": "high",
+      "addedAt": "2026-02-09T00:00:00Z"
+    },
+    {
+      "id": "mc-artist-014",
+      "name": "ali7913",
+      "platform": "Discord",
+      "profileUrl": null,
+      "specialty": "Arcane Studios - Affordable Builds",
+      "priceRange": "Affordable",
+      "country": "Unknown",
+      "discord": "ali7913",
+      "status": "contact-available",
+      "notes": "Direct Discord contact. ATTEMPTED 2025-02-09 - Discord account creation blocked.",
+      "priority": "high",
+      "addedAt": "2026-02-09T00:00:00Z"
+    },
+    {
+      "id": "mc-artist-015",
+      "name": "JacobPlug",
+      "platform": "BuiltByBit",
+      "profileUrl": null,
+      "specialty": "Builder",
+      "priceRange": "Unknown",
+      "country": "Unknown",
+      "discord": "Khaghts",
+      "status": "contact-available",
+      "notes": "Discord contact available: Khaghts. ATTEMPTED 2025-02-09 - Discord account creation blocked.",
+      "priority": "medium",
+      "addedAt": "2026-02-09T00:00:00Z"
+    },
+    {
+      "id": "mc-artist-016",
+      "name": "vaspei",
+      "platform": "Discord",
+      "profileUrl": null,
+      "specialty": "Rollerite - #1 Service Team",
+      "priceRange": "Unknown",
+      "country": "Unknown",
+      "discord": "vaspei",
+      "status": "contact-available",
+      "notes": "Direct Discord contact for Rollerite team. ATTEMPTED 2025-02-09 - Discord account creation blocked.",
+      "priority": "high",
+      "addedAt": "2026-02-09T00:00:00Z"
+    },
+    {
+      "id": "mc-artist-017",
+      "name": "McHorse",
+      "platform": "YouTube",
+      "profileUrl": "https://www.youtube.com/c/McHorsesmods",
+      "specialty": "BBS mod creator / Minecraft machinima filmmaker",
+      "priceRange": "N/A \u2014 collab/community",
+      "country": "Unknown",
+      "discord": "BBS mod Discord community",
+      "status": "high-priority-outreach",
+      "notes": "McHorse is the developer of BBS mod \u2014 the core tool Steven's Crowd Spawner mod extends. Steven built crowd-spawner-v3.0 as a community mod FOR McHorse's ecosystem. This is an ideal collab: (1) McHorse could spotlight Steven's mod to his BBS community (2) Steven could get featured on McHorse's YouTube showcasing the crowd spawner (3) Joint content opportunity for Minecraft Movie recreation. Contact via YouTube community or BBS Discord.",
+      "priority": "high",
+      "collabAngle": "Steven built an extension mod for McHorse's tool \u2014 natural reason to reach out. Offer to showcase the mod in a joint video.",
+      "addedAt": "2026-02-20T01:47:42Z"
+    },
+    {
+      "id": "mc-artist-018",
+      "name": "BBS Mod Community",
+      "platform": "Miraheze Wiki / Discord",
+      "profileUrl": "https://bbsmod.miraheze.org/wiki/Main_Page",
+      "specialty": "BBS mod users / machinima filmmakers",
+      "priceRange": "N/A \u2014 community",
+      "country": "Global",
+      "discord": "BBS official Discord",
+      "status": "community-target",
+      "notes": "Active community of Minecraft machinima filmmakers using BBS mod. Steven's Crowd Spawner mod is directly useful to all of them. Share mod in Discord for organic community growth + potential collab creators.",
+      "priority": "medium",
+      "collabAngle": "Post crowd-spawner-v3.0 in the BBS Discord mod-sharing channel. Instant relevant audience.",
+      "addedAt": "2026-02-20T01:47:42Z"
+    }
+  ],
+  "outreachTemplates": {
+    "initialContact": "Hi [Name], I'm looking for a Minecraft builder for a YouTube video project. I need a custom map featuring [brief description]. Budget is around $[amount]. Timeline is [timeframe]. Are you available?",
+    "iceDragonSpecific": "Hi [Name], I'm producing a YouTube video about an Ice Dragon in Minecraft and need a custom snowy/ice biome map with a dragon lair. The map should support cinematic shots. Budget is $100-200 depending on complexity. Timeline is 1 week. Interested?"
+  },
+  "blockers": [
+    {
+      "platform": "Fiverr",
+      "issue": "Requires LOGIN to contact sellers - human verification wall",
+      "workaround": "Manual login required"
+    },
+    {
+      "platform": "BuiltByBit",
+      "issue": "Requires BBB login to send messages",
+      "workaround": "Create account or use Discord contacts where available"
+    },
+    {
+      "platform": "Discord",
+      "issue": "Account creation blocked by hCaptcha image challenge",
+      "workaround": "Steven to create Discord account manually"
+    },
+    {
+      "platform": "Reddit",
+      "issue": "Requires LOGIN to send DMs",
+      "workaround": "Manual login required"
+    }
+  ],
+  "recommendedActions": [
+    {
+      "priority": 1,
+      "action": "Create Discord account manually (blocked on hCaptcha)",
+      "artistsToContact": [
+        "ali7913",
+        "vaspei",
+        "Khaghts"
+      ],
+      "impact": "High - enables contact with 3 verified artists"
+    },
+    {
+      "priority": 2,
+      "action": "Login to Fiverr and message budget artists",
+      "artistsToContact": [
+        "Sofia N ($6)",
+        "Paburozan ($11)"
+      ],
+      "impact": "High - budget-friendly options for testing"
+    },
+    {
+      "priority": 3,
+      "action": "Login to BuiltByBit and contact Opaline_Drawer",
+      "artistsToContact": [
+        "Opaline_Drawer ($5/hr)"
+      ],
+      "impact": "High - extremely budget rate"
+    }
+  ],
+  "stats": {
+    "totalArtists": 16,
+    "withDiscordContact": 3,
+    "blockedOnAuth": 7,
+    "budgetUnder10": 5,
+    "budget10to50": 5,
+    "premium": 2,
+    "lastUpdated": "2026-02-15T09:15:00Z"
+  }
+}

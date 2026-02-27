@@ -1,0 +1,1028 @@
+{
+  "tools": [
+    {
+      "id": "widget-minecraft-live-2026",
+      "name": "Minecraft Live 2026 Tracker",
+      "category": "Minecraft",
+      "description": "Interactive countdown tracker for March 2026 event. 5 expected announcements (First Live 2026, Second Game Drop, Baby Mobs release, Vibrant Visuals, Spin-off reveal), content prep ideas, creator checklist. Research: Sportskeeda.",
+      "status": "active",
+      "lastUsed": "2026-02-23T16:04:00Z",
+      "tags": ["minecraft", "live", "2026", "event", "tracker", "countdown"],
+      "runCommand": "renderMinecraftLiveTracker",
+      "auditGrade": null
+    },
+    {
+      "id": "widget-mc-content-idea-generator",
+      "name": "Minecraft Content Idea Generator",
+      "category": "Minecraft",
+      "description": "Interactive generator with 36 build ideas across 6 categories (Aesthetic, Fantasy, Functional, Landmark, Roleplay, Epic) + 100 Days challenge formats. Research-based from PCGamesN + trending YouTube content.",
+      "status": "active",
+      "lastUsed": "2026-02-23T12:06:00Z",
+      "tags": ["minecraft", "content", "ideas", "generator", "builds", "100-days", "2026"],
+      "runCommand": "renderContentIdeaGenerator",
+      "auditGrade": null
+    },
+    {
+      "id": "widget-mc-survival-tips-2026",
+      "name": "Minecraft Survival Tips 2026",
+      "category": "Minecraft",
+      "description": "10 essential survival tips - spawn camping, first 10 minutes, water buckets, torch strategy, shields, villages",
+      "status": "active",
+      "lastUsed": "2026-02-23T08:16:00Z",
+      "tags": ["minecraft", "survival", "tips", "2026", "beginners"],
+      "runCommand": "mcSurvivalTips2026",
+      "auditGrade": 91
+    },
+    {
+      "id": "widget-mc-2026-roadmap",
+      "name": "Minecraft 2026 Roadmap",
+      "category": "Minecraft",
+      "description": "Full 2026 roadmap - 26.1 First Drop, 26.2 Biomes & Botany, Vibrant Visuals, Project Spicewood, new versioning system",
+      "status": "active",
+      "lastUsed": "2026-02-23T08:10:00Z",
+      "tags": ["minecraft", "2026", "roadmap", "updates", "drops"],
+      "runCommand": "mc2026Roadmap",
+      "auditGrade": 92
+    },
+    {
+      "id": "widget-mc-building-styles",
+      "name": "Minecraft Building Styles Guide",
+      "category": "Minecraft",
+      "description": "6 architectural styles - Medieval, Modern, Asian, Middle Eastern, Viking, Frozen with block suggestions and tips",
+      "status": "active",
+      "lastUsed": "2026-02-23T04:21:00Z",
+      "tags": ["minecraft", "building", "architecture", "styles", "design"],
+      "runCommand": "mcBuildingStyles",
+      "auditGrade": 91
+    },
+    {
+      "id": "widget-mc-firstdrop-features",
+      "name": "Minecraft 26.1 First Drop Features",
+      "category": "Minecraft",
+      "description": "Spring 2026 "Cuteness" Update - Baby mob redesigns, craftable name tags, golden dandelion, new sounds",
+      "status": "active",
+      "lastUsed": "2026-02-23T04:11:00Z",
+      "tags": ["minecraft", "26.1", "first-drop", "2026", "baby-mobs"],
+      "runCommand": "mcFirstDropFeatures",
+      "auditGrade": 92
+    },
+    {
+      "id": "widget-mc-datapacks-2026",
+      "name": "Minecraft Datapacks Guide 2026",
+      "category": "Minecraft",
+      "description": "Vanilla-friendly datapacks - Timber, Graves, Multiplayer Sleep, Track Statistics, Coordinates HUD with installation guide",
+      "status": "active",
+      "lastUsed": "2026-02-23T02:21:00Z",
+      "tags": ["minecraft", "datapacks", "vanilla", "2026", "customization"],
+      "runCommand": "mcDatapacks2026",
+      "auditGrade": 90
+    },
+    {
+      "id": "widget-mc-automatic-farms",
+      "name": "Minecraft Automatic Farms Guide",
+      "category": "Minecraft",
+      "description": "Essential AFK farms for survival - Fish, Bamboo, Villager crops, Mob spawner XP, Cow farm, Honey with redstone basics",
+      "status": "active",
+      "lastUsed": "2026-02-23T00:20:00Z",
+      "tags": ["minecraft", "farms", "automatic", "afk", "redstone", "survival"],
+      "runCommand": "mcAutomaticFarms",
+      "auditGrade": 90
+    },
+    {
+      "id": "widget-mc-server-hosting-2026",
+      "name": "Minecraft Server Hosting 2026",
+      "category": "Minecraft",
+      "description": "Top 12 server hosting providers ranked - Godlike, Bisect, Apex, Akliz compared with 2026 trends and methodology",
+      "status": "active",
+      "lastUsed": "2026-02-23T00:16:00Z",
+      "tags": ["minecraft", "server-hosting", "2026", "comparison", "providers"],
+      "runCommand": "mcServerHosting2026",
+      "auditGrade": 91
+    },
+    {
+      "id": "widget-mc-hardcore-guide",
+      "name": "Minecraft Hardcore Survival Guide",
+      "category": "Minecraft",
+      "description": "Complete guide to Hardcore mode - permadeath rules, survival priorities, mid-game safety, common death causes",
+      "status": "active",
+      "lastUsed": "2026-02-23T00:12:00Z",
+      "tags": ["minecraft", "hardcore", "survival", "guide", "permadeath"],
+      "runCommand": "mcHardcoreGuide",
+      "auditGrade": 90
+    },
+    {
+      "id": "widget-mc-video-ideas-2026",
+      "name": "Minecraft Video Ideas 2026",
+      "category": "Minecraft",
+      "description": "45 viral-ready Minecraft video concepts - 100 Days, Challenge runs, Transformation builds, Chaos mods with thumbnail tips",
+      "status": "active",
+      "lastUsed": "2026-02-22T21:43:00Z",
+      "tags": ["minecraft", "video-ideas", "2026", "viral", "content"],
+      "runCommand": "mcVideoIdeas2026",
+      "auditGrade": 92
+    },
+    {
+      "id": "widget-yt-viral-trends-2026",
+      "name": "YouTube Viral Trends 2026",
+      "category": "YouTube",
+      "description": "Trending content formats for 2026 - Live gaming clips, VR explosion, Short→Long bridge strategy, Italian brainrot",
+      "status": "active",
+      "lastUsed": "2026-02-22T20:15:00Z",
+      "tags": ["youtube", "trends", "2026", "viral", "shorts", "vr"],
+      "runCommand": "ytViralTrends2026",
+      "auditGrade": 91
+    },
+    {
+      "id": "widget-mc-firstdrop-2026",
+      "name": "Minecraft First Drop 2026 Tracker",
+      "category": "Minecraft",
+      "description": "Countdown and feature guide for Minecraft 26.1 First Drop - baby mob redesigns, golden dandelion, craftable name tags",
+      "status": "active",
+      "lastUsed": "2026-02-22T20:09:00Z",
+      "tags": ["minecraft", "26.1", "first-drop", "countdown", "baby-mobs"],
+      "runCommand": "mcFirstDrop2026",
+      "auditGrade": 93
+    },
+    {
+      "id": "widget-mc-mods-explorer",
+      "name": "Minecraft Mods 2026 Explorer",
+      "category": "Minecraft",
+      "description": "Interactive guide to 52 trending Minecraft mods for 2026 - Performance, Adventure, Automation, and Biome mods",
+      "status": "active",
+      "lastUsed": "2026-02-22T18:23:00Z",
+      "tags": ["minecraft", "mods", "2026", "trending", "performance", "adventure"],
+      "runCommand": "mcModsExplorer",
+      "auditGrade": 92
+    },
+    {
+      "id": "widget-mc-biomes",
+      "name": "Minecraft Biomes Guide",
+      "category": "Minecraft",
+      "description": "Interactive guide to all 60+ Minecraft biomes with rarity ratings, loot tables, and exploration tips",
+      "status": "active",
+      "lastUsed": "2026-02-22T15:14:00Z",
+      "tags": [
+        "minecraft",
+        "biomes",
+        "guide",
+        "reference"
+      ],
+      "runCommand": "mcBiomesGuide",
+      "auditGrade": 95
+    },
+    {
+      "id": "tool-001",
+      "name": "Nox Dashboard",
+      "category": "Dashboard",
+      "description": "Central command center for tracking YouTube strategy, business opportunities, investments, and research notes",
+      "status": "active",
+      "lastUsed": "2026-02-08T06:00:00Z",
+      "tags": [
+        "dashboard",
+        "analytics",
+        "overview"
+      ],
+      "runCommand": "https://stevensongai.github.io/nox-dashboard/",
+      "auditGrade": 92
+    },
+    {
+      "id": "tool-002",
+      "name": "Mission Control",
+      "category": "Dashboard",
+      "description": "Work tracker for monitoring agent activity, audits, ralph chains, and live work feeds",
+      "status": "active",
+      "lastUsed": "2026-02-08T06:00:00Z",
+      "tags": [
+        "work-tracker",
+        "activity",
+        "audits"
+      ],
+      "runCommand": "https://stevensongai.github.io/nox-work-tracker/",
+      "auditGrade": 88
+    },
+    {
+      "id": "tool-003",
+      "name": "OpenClaw Gateway",
+      "category": "Automation",
+      "description": "Local automation gateway for executing commands, managing nodes, and orchestrating agent workflows",
+      "status": "active",
+      "lastUsed": "2026-02-08T05:30:00Z",
+      "tags": [
+        "automation",
+        "gateway",
+        "orchestration"
+      ],
+      "runCommand": "https://docs.openclaw.ai",
+      "auditGrade": 88
+    },
+    {
+      "id": "tool-004",
+      "name": "Claude Code",
+      "category": "Analysis",
+      "description": "Anthropic's coding assistant for software development, code review, and technical analysis tasks",
+      "status": "active",
+      "lastUsed": "2026-02-08T04:15:00Z",
+      "tags": [
+        "coding",
+        "ai",
+        "development"
+      ],
+      "runCommand": "https://claude.ai",
+      "auditGrade": 95
+    },
+    {
+      "id": "tool-005",
+      "name": "Perplexity Pro",
+      "category": "Research",
+      "description": "AI-powered search engine for deep research, fact-checking, and staying current on tech developments",
+      "status": "active",
+      "lastUsed": "2026-02-07T22:00:00Z",
+      "tags": [
+        "research",
+        "search",
+        "ai"
+      ],
+      "runCommand": "https://perplexity.ai",
+      "auditGrade": 90
+    },
+    {
+      "id": "tool-006",
+      "name": "Cursor IDE",
+      "category": "Content",
+      "description": "AI-first code editor with built-in Claude integration for rapid development and refactoring",
+      "status": "active",
+      "lastUsed": "2026-02-08T03:45:00Z",
+      "tags": [
+        "editor",
+        "coding",
+        "ai"
+      ],
+      "runCommand": "https://cursor.com",
+      "auditGrade": 94
+    },
+    {
+      "id": "tool-007",
+      "name": "ElevenLabs",
+      "category": "Content",
+      "description": "Voice synthesis platform for creating AI voiceovers, narration, and audio content",
+      "status": "active",
+      "lastUsed": "2026-02-06T18:30:00Z",
+      "tags": [
+        "voice",
+        "audio",
+        "tts"
+      ],
+      "runCommand": "https://elevenlabs.io",
+      "auditGrade": 87
+    },
+    {
+      "id": "tool-008",
+      "name": "Gamma.app",
+      "category": "Content",
+      "description": "AI-powered presentation and document creation for pitch decks and research summaries",
+      "status": "active",
+      "lastUsed": "2026-02-05T14:20:00Z",
+      "tags": [
+        "presentations",
+        "documents",
+        "design"
+      ],
+      "runCommand": "https://gamma.app",
+      "auditGrade": 89
+    },
+    {
+      "id": "tool-009",
+      "name": "Content Pipeline",
+      "category": "Content",
+      "description": "Kanban-style content pipeline for tracking video ideas from concept to upload",
+      "status": "active",
+      "lastUsed": "2026-02-09T15:30:00Z",
+      "tags": [
+        "pipeline",
+        "workflow",
+        "content"
+      ],
+      "runCommand": "pipeline",
+      "auditGrade": 85
+    },
+    {
+      "id": "tool-010",
+      "name": "Performance Analyzer",
+      "category": "Analysis",
+      "description": "Analyze YouTube video performance with sortable tables and trend charts",
+      "status": "active",
+      "lastUsed": "2026-02-09T15:30:00Z",
+      "tags": [
+        "analytics",
+        "youtube",
+        "performance"
+      ],
+      "runCommand": "analyzer",
+      "auditGrade": 82
+    },
+    {
+      "id": "tool-011",
+      "name": "Content Brief Generator",
+      "category": "Content",
+      "description": "Generate structured content briefs from outlier video analysis",
+      "status": "active",
+      "lastUsed": "2026-02-09T15:30:00Z",
+      "tags": [
+        "briefs",
+        "content",
+        "generator"
+      ],
+      "runCommand": "brief-generator",
+      "auditGrade": 80
+    },
+    {
+      "id": "tool-012",
+      "name": "Minecraft Map Scraper",
+      "category": "Research",
+      "description": "Search and browse Minecraft maps with bookmark functionality",
+      "status": "beta",
+      "lastUsed": "2026-02-09T15:30:00Z",
+      "tags": [
+        "minecraft",
+        "maps",
+        "scraper"
+      ],
+      "runCommand": "map-scraper",
+      "auditGrade": 75
+    },
+    {
+      "id": "tool-013",
+      "name": "Storyboard Generator",
+      "category": "Content",
+      "description": "Browser-based storyboard creator with scene breakdowns, timing estimates, and export to JSON/Markdown. Generates visual storyboards for video planning.",
+      "status": "active",
+      "lastUsed": "2026-02-10T15:30:00Z",
+      "tags": [
+        "storyboard",
+        "video-planning",
+        "content",
+        "browser-tool"
+      ],
+      "runCommand": "tools/storyboard-generator.html",
+      "auditGrade": 90,
+      "url": "https://stevensongai.github.io/nox-dashboard/tools/storyboard-generator.html"
+    },
+    {
+      "id": "tool-014",
+      "name": "Voiceover Generator",
+      "category": "Content",
+      "description": "Browser-based voiceover script generator with timing, delivery notes, and multiple voice style presets. Exports to TXT/JSON for recording sessions.",
+      "status": "active",
+      "lastUsed": "2026-02-10T15:30:00Z",
+      "tags": [
+        "voiceover",
+        "script",
+        "audio",
+        "content",
+        "browser-tool"
+      ],
+      "runCommand": "tools/voiceover-generator.html",
+      "auditGrade": 90,
+      "url": "https://stevensongai.github.io/nox-dashboard/tools/voiceover-generator.html"
+    },
+    {
+      "id": "tool-015",
+      "name": "Seedance 2.0",
+      "category": "Content",
+      "description": "ByteDance's AI video generation platform with native audio capabilities. 1080p output, camera motion controls, and Lip Sync feature for talking head videos.",
+      "status": "active",
+      "lastUsed": "2026-02-16T21:00:00Z",
+      "tags": [
+        "ai-video",
+        "generation",
+        "audio",
+        "bytedance",
+        "lip-sync"
+      ],
+      "runCommand": "https://seedance.io",
+      "auditGrade": 88,
+      "version": "2.0",
+      "launchDate": "2026-02-07",
+      "specs": {
+        "maxResolution": "2K (1080p)",
+        "maxLength": "15s",
+        "nativeAudio": true,
+        "audioLanguages": 8,
+        "startingPrice": "~$10/mo",
+        "bestFor": "Multi-modal control"
+      },
+      "notes": "Launched Feb 7, 2026. Called \"strongest video generation model on Earth\" by Black Myth: Wukong producer Feng Ji. Multi-modal control, 8+ language audio.",
+      "lastUpdated": "2026-02-19T12:05:00Z"
+    },
+    {
+      "id": "tool-016",
+      "name": "Kling 3.0",
+      "category": "Content",
+      "description": "Kuaishou's advanced AI video generator with 1080p resolution, 10-second clips, and character consistency features. Strong motion quality and physics simulation.",
+      "status": "active",
+      "lastUsed": "2026-02-16T21:00:00Z",
+      "tags": [
+        "ai-video",
+        "generation",
+        "character-consistency",
+        "kuaishou"
+      ],
+      "runCommand": "https://klingai.com",
+      "auditGrade": 86,
+      "version": "3.0",
+      "launchDate": "2026-02-04",
+      "specs": {
+        "maxResolution": "4K @ 60fps",
+        "maxLength": "15s (6 shots)",
+        "nativeAudio": true,
+        "audioLanguages": 5,
+        "startingPrice": "Free / $6.99/mo",
+        "bestFor": "Native 4K + storyboarding"
+      },
+      "notes": "Launched Feb 4, 2026. Native 4K @ 60fps. Storyboarding feature built-in. Competitive free tier.",
+      "lastUpdated": "2026-02-19T12:05:00Z"
+    },
+    {
+      "id": "tool-017",
+      "name": "ViewStats Pro",
+      "category": "Research",
+      "description": "MrBeast's YouTube analytics platform for finding outlier videos. Identifies viral content patterns, channel performance metrics, and trending opportunities.",
+      "status": "active",
+      "lastUsed": "2026-02-16T18:00:00Z",
+      "tags": [
+        "youtube",
+        "analytics",
+        "outliers",
+        "research",
+        "mrbeast"
+      ],
+      "runCommand": "https://viewstats.com",
+      "auditGrade": 92
+    },
+    {
+      "id": "tool-018",
+      "name": "Google Veo 3.1",
+      "category": "Content",
+      "description": "Google's AI video generator with native audio generation. Creates clips with synchronized sound effects and background audio. Strong motion quality and physics simulation.",
+      "status": "active",
+      "lastUsed": "2026-02-17T09:45:00Z",
+      "tags": [
+        "ai-video",
+        "generation",
+        "audio",
+        "google",
+        "sound-effects"
+      ],
+      "runCommand": "https://deepmind.google/technologies/veo/veo-3/",
+      "auditGrade": 89,
+      "version": "3.1",
+      "launchDate": "2026-02-07",
+      "specs": {
+        "maxResolution": "4K",
+        "maxLength": "60s (chained)",
+        "nativeAudio": true,
+        "audioType": "spatial",
+        "startingPrice": "$19.99/mo",
+        "bestFor": "4K production + spatial audio"
+      },
+      "notes": "4K update pushed early Feb 2026. Beats Sora 2 on access, prompt adherence, and audio. Spatial audio support.",
+      "lastUpdated": "2026-02-19T12:05:00Z"
+    },
+    {
+      "id": "tool-019",
+      "name": "OpenAI Sora 2",
+      "category": "Content",
+      "description": "OpenAI's latest video generation model with hyperreal motion and native audio. New dedicated app for video creation with improved physics and cinematic quality.",
+      "status": "active",
+      "lastUsed": "2026-02-17T09:45:00Z",
+      "tags": [
+        "ai-video",
+        "generation",
+        "audio",
+        "openai",
+        "hyperreal"
+      ],
+      "runCommand": "https://sora.com",
+      "auditGrade": 91,
+      "version": "2.0",
+      "launchDate": "2025-12-31",
+      "specs": {
+        "maxResolution": "1080p",
+        "maxLength": "25s (Pro)",
+        "nativeAudio": true,
+        "audioType": "experimental",
+        "startingPrice": "$20/mo",
+        "bestFor": "Cinematic quality + human emotion"
+      },
+      "notes": "Launched Dec 31, 2025. Best for cinematic quality and human emotion rendering. Limited access vs Veo 3.1. Physics simulation strength.",
+      "lastUpdated": "2026-02-19T12:05:00Z"
+    },
+    {
+      "id": "tool-020",
+      "name": "Runway Gen-4.5",
+      "category": "Content",
+      "description": "Runway's newest video generation model with unprecedented accuracy in motion and scene consistency. Enhanced character consistency and camera controls for professional workflows.",
+      "status": "active",
+      "lastUsed": "2026-02-17T09:45:00Z",
+      "tags": [
+        "ai-video",
+        "generation",
+        "runway",
+        "motion",
+        "professional"
+      ],
+      "runCommand": "https://runwayml.com",
+      "auditGrade": 90,
+      "version": "Gen-4.5",
+      "specs": {
+        "maxResolution": "4K (upscaled)",
+        "maxLength": "60s (long-form)",
+        "nativeAudio": true,
+        "audioPlan": "Pro+",
+        "startingPrice": "$12/mo",
+        "bestFor": "Creative control + long-form"
+      },
+      "notes": "Continued benchmark dominance in Feb 2026. Best-in-class for creative control. Long-form up to 60s. $315M Series E at $5.3B valuation.",
+      "lastUpdated": "2026-02-19T12:05:00Z"
+    },
+    {
+      "id": "tool-021",
+      "name": "Aethir",
+      "category": "Infrastructure",
+      "description": "Decentralized GPU cloud infrastructure for AI video generation and compute. Provides distributed workloads for real-time AI image/video generation with enterprise-grade reliability. Competes with traditional cloud for AI compute.",
+      "status": "active",
+      "lastUsed": "2026-02-18T01:17:02.812181",
+      "tags": [
+        "gpu",
+        "decentralized",
+        "ai-video",
+        "infrastructure",
+        "compute"
+      ],
+      "runCommand": "https://aethir.com",
+      "auditGrade": 85
+    },
+    {
+      "id": "tool-bbs",
+      "name": "Blockbuster Studio (BBS)",
+      "category": "Minecraft Animation",
+      "description": "Animation studio and content creation tool for Minecraft machinima. In-mod camera paths, keyframe animation, custom models.",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/bbs-mod",
+      "downloads": "120K+",
+      "features": [
+        "In-game camera",
+        "Keyframe animation",
+        "Custom models",
+        "Scene blocking"
+      ],
+      "ecosystemNotes": "BBS Reforge brings BBS to modern versions with dynamic lighting. Blockbuster mod bridges CustomNPCs with BBS models. Flashback captures live moments, BBS creates scripted scenes — different use cases.",
+      "addedAt": "2026-02-20T18:18:05Z",
+      "updatedAt": "2026-02-20T23:10:00Z"
+    },
+    {
+      "id": "tool-mineimator",
+      "name": "Mine-imator",
+      "category": "Minecraft Animation",
+      "description": "Standalone Minecraft animation software. Free, beginner-friendly, widely used for Minecraft shorts.",
+      "url": "https://www.mineimator.com/",
+      "price": "Free",
+      "features": [
+        "Standalone app",
+        "Easy learning curve",
+        "Built-in characters",
+        "Quick rendering"
+      ],
+      "addedAt": "2026-02-20T18:18:05Z"
+    },
+    {
+      "id": "tool-blender-mc",
+      "name": "Blender + MC Model Rigs",
+      "category": "Minecraft Animation",
+      "description": "Professional 3D software with Minecraft rigs. Highest quality, steepest learning curve.",
+      "url": "https://www.blender.org/",
+      "price": "Free (open source)",
+      "features": [
+        "Professional quality",
+        "Advanced lighting",
+        "Physics simulation",
+        "Compositing"
+      ],
+      "addedAt": "2026-02-20T18:18:05Z"
+    },
+    {
+      "id": "tool-viewstats-analyzer",
+      "name": "ViewStats Channel Analyzer",
+      "category": "Analysis",
+      "description": "MrBeast-style YouTube analytics tool with channel projections, outlier detection, and performance insights",
+      "icon": "📈",
+      "status": "active",
+      "lastUsed": "2026-02-22T02:00:00Z",
+      "tags": [
+        "youtube",
+        "analytics",
+        "mrbeast",
+        "viewstats",
+        "projections"
+      ],
+      "runCommand": "viewstats-analyzer",
+      "auditGrade": 91,
+      "addedAt": "2026-02-22T02:00:00Z"
+    },
+    {
+      "id": "widget-aicodingcomparison",
+      "name": "AI Coding Comparison",
+      "category": "AI Tools",
+      "description": "Interactive widget: AI Coding Comparison",
+      "status": "active",
+      "lastUsed": "2026-02-22T17:37:21.461Z",
+      "tags": [
+        "ai tools",
+        "widget",
+        "interactive"
+      ],
+      "runCommand": "aiCodingComparison",
+      "auditGrade": 90
+    },
+    {
+      "id": "widget-aivideocomparisontool",
+      "name": "AI Video Comparison Tool",
+      "category": "AI Tools",
+      "description": "Interactive widget: AI Video Comparison Tool",
+      "status": "active",
+      "lastUsed": "2026-02-22T17:37:21.462Z",
+      "tags": [
+        "ai tools",
+        "widget",
+        "interactive"
+      ],
+      "runCommand": "aiVideoComparisonTool",
+      "auditGrade": 90
+    },
+    {
+      "id": "widget-aivideoeditorcomparison",
+      "name": "AI Video Editor Comparison",
+      "category": "AI Tools",
+      "description": "Interactive widget: AI Video Editor Comparison",
+      "status": "active",
+      "lastUsed": "2026-02-22T17:37:21.462Z",
+      "tags": [
+        "ai tools",
+        "widget",
+        "interactive"
+      ],
+      "runCommand": "aiVideoEditorComparison",
+      "auditGrade": 90
+    },
+    {
+      "id": "widget-aivideotools2026",
+      "name": "AI Video Tools2026",
+      "category": "AI Tools",
+      "description": "Interactive widget: AI Video Tools2026",
+      "status": "active",
+      "lastUsed": "2026-02-22T17:37:21.462Z",
+      "tags": [
+        "ai tools",
+        "widget",
+        "interactive"
+      ],
+      "runCommand": "aiVideoTools2026",
+      "auditGrade": 90
+    },
+    {
+      "id": "widget-bbscinematictoolkit",
+      "name": "BBS Cinematic Toolkit",
+      "category": "BBS Mod",
+      "description": "Interactive widget: BBS Cinematic Toolkit",
+      "status": "active",
+      "lastUsed": "2026-02-22T17:37:21.462Z",
+      "tags": [
+        "bbs mod",
+        "widget",
+        "interactive"
+      ],
+      "runCommand": "bbsCinematicToolkit",
+      "auditGrade": 90
+    },
+    {
+      "id": "widget-bbscontentplanner",
+      "name": "BBS Content Planner",
+      "category": "BBS Mod",
+      "description": "Interactive widget: BBS Content Planner",
+      "status": "active",
+      "lastUsed": "2026-02-22T17:37:21.462Z",
+      "tags": [
+        "bbs mod",
+        "widget",
+        "interactive"
+      ],
+      "runCommand": "bbsContentPlanner",
+      "auditGrade": 90
+    },
+    {
+      "id": "widget-bbsmodtoolkit",
+      "name": "BBS Mod Toolkit",
+      "category": "BBS Mod",
+      "description": "Interactive widget: BBS Mod Toolkit",
+      "status": "active",
+      "lastUsed": "2026-02-22T17:37:21.462Z",
+      "tags": [
+        "bbs mod",
+        "widget",
+        "interactive"
+      ],
+      "runCommand": "bbsModToolkit",
+      "auditGrade": 90
+    },
+    {
+      "id": "widget-contentcalendarplanner",
+      "name": "Content Calendar Planner",
+      "category": "Content",
+      "description": "Interactive widget: Content Calendar Planner",
+      "status": "active",
+      "lastUsed": "2026-02-22T17:37:21.462Z",
+      "tags": [
+        "content",
+        "widget",
+        "interactive"
+      ],
+      "runCommand": "contentCalendarPlanner",
+      "auditGrade": 90
+    },
+    {
+      "id": "widget-contentworkflowautomation",
+      "name": "Content Workflow Automation",
+      "category": "Content",
+      "description": "Interactive widget: Content Workflow Automation",
+      "status": "active",
+      "lastUsed": "2026-02-22T17:37:21.462Z",
+      "tags": [
+        "content",
+        "widget",
+        "interactive"
+      ],
+      "runCommand": "contentWorkflowAutomation",
+      "auditGrade": 90
+    },
+    {
+      "id": "widget-createmodgenerator",
+      "name": "Create Mod Generator",
+      "category": "Tools",
+      "description": "Interactive widget: Create Mod Generator",
+      "status": "active",
+      "lastUsed": "2026-02-22T17:37:21.462Z",
+      "tags": [
+        "tools",
+        "widget",
+        "interactive"
+      ],
+      "runCommand": "createModGenerator",
+      "auditGrade": 90
+    },
+    {
+      "id": "widget-rendersingleview",
+      "name": "Render Single View",
+      "category": "Tools",
+      "description": "Interactive widget: Render Single View",
+      "status": "active",
+      "lastUsed": "2026-02-22T17:37:21.462Z",
+      "tags": [
+        "tools",
+        "widget",
+        "interactive"
+      ],
+      "runCommand": "renderSingleView",
+      "auditGrade": 90
+    },
+    {
+      "id": "widget-rendercompareview",
+      "name": "Render Compare View",
+      "category": "Tools",
+      "description": "Interactive widget: Render Compare View",
+      "status": "active",
+      "lastUsed": "2026-02-22T17:37:21.462Z",
+      "tags": [
+        "tools",
+        "widget",
+        "interactive"
+      ],
+      "runCommand": "renderCompareView",
+      "auditGrade": 90
+    },
+    {
+      "id": "widget-getversionrecommendation",
+      "name": "Get Version Recommendation",
+      "category": "Tools",
+      "description": "Interactive widget: Get Version Recommendation",
+      "status": "active",
+      "lastUsed": "2026-02-22T17:37:21.462Z",
+      "tags": [
+        "tools",
+        "widget",
+        "interactive"
+      ],
+      "runCommand": "getVersionRecommendation",
+      "auditGrade": 90
+    },
+    {
+      "id": "widget-togglemode",
+      "name": "Toggle Mode",
+      "category": "Tools",
+      "description": "Interactive widget: Toggle Mode",
+      "status": "active",
+      "lastUsed": "2026-02-22T17:37:21.462Z",
+      "tags": [
+        "tools",
+        "widget",
+        "interactive"
+      ],
+      "runCommand": "toggleMode",
+      "auditGrade": 90
+    },
+    {
+      "id": "widget-refreshui",
+      "name": "Refresh U I",
+      "category": "Tools",
+      "description": "Interactive widget: Refresh U I",
+      "status": "active",
+      "lastUsed": "2026-02-22T17:37:21.462Z",
+      "tags": [
+        "tools",
+        "widget",
+        "interactive"
+      ],
+      "runCommand": "refreshUI",
+      "auditGrade": 90
+    },
+    {
+      "id": "widget-updatecountdown",
+      "name": "Update Countdown",
+      "category": "Tools",
+      "description": "Interactive widget: Update Countdown",
+      "status": "active",
+      "lastUsed": "2026-02-22T17:37:21.462Z",
+      "tags": [
+        "tools",
+        "widget",
+        "interactive"
+      ],
+      "runCommand": "updateCountdown",
+      "auditGrade": 90
+    },
+    {
+      "id": "widget-initsplits",
+      "name": "Init Splits",
+      "category": "Tools",
+      "description": "Interactive widget: Init Splits",
+      "status": "active",
+      "lastUsed": "2026-02-22T17:37:21.462Z",
+      "tags": [
+        "tools",
+        "widget",
+        "interactive"
+      ],
+      "runCommand": "initSplits",
+      "auditGrade": 90
+    },
+    {
+      "id": "widget-refreshstats",
+      "name": "Refresh Stats",
+      "category": "Tools",
+      "description": "Interactive widget: Refresh Stats",
+      "status": "active",
+      "lastUsed": "2026-02-22T17:37:21.462Z",
+      "tags": [
+        "tools",
+        "widget",
+        "interactive"
+      ],
+      "runCommand": "refreshStats",
+      "auditGrade": 90
+    },
+    {
+      "id": "widget-exportsplits",
+      "name": "Export Splits",
+      "category": "Tools",
+      "description": "Interactive widget: Export Splits",
+      "status": "active",
+      "lastUsed": "2026-02-22T17:37:21.462Z",
+      "tags": [
+        "tools",
+        "widget",
+        "interactive"
+      ],
+      "runCommand": "exportSplits",
+      "auditGrade": 90
+    },
+    {
+      "id": "widget-resetsplits",
+      "name": "Reset Splits",
+      "category": "Tools",
+      "description": "Interactive widget: Reset Splits",
+      "status": "active",
+      "lastUsed": "2026-02-22T17:37:21.462Z",
+      "tags": [
+        "tools",
+        "widget",
+        "interactive"
+      ],
+      "runCommand": "resetSplits",
+      "auditGrade": 90
+    },
+    {
+      "id": "widget-mc-26-first-drop-enhanced",
+      "name": "Minecraft 26.1 First Drop Enhanced",
+      "category": "Minecraft",
+      "description": "HB537 Research Build: Live countdown + 15 baby mob redesigns + craftable nametags + content ideas for 'Cuteness' update",
+      "status": "active",
+      "lastUsed": "2026-02-23T10:16:00Z",
+      "tags": ["minecraft", "26.1", "first-drop", "countdown", "baby-mobs", "hb537"],
+      "runCommand": "mc26FirstDropEnhanced",
+      "auditGrade": 93
+    },
+    {
+      "id": "widget-nvda-earnings-enhanced",
+      "name": "NVDA Earnings Enhanced",
+      "category": "Investments",
+      "description": "HB538 Research Build: NVDA Q4 FY2026 countdown (Feb 26) with analyst forecasts ($4.44 EPS), scenario analysis, and historical moves",
+      "status": "active",
+      "lastUsed": "2026-02-23T10:22:00Z",
+      "tags": ["nvda", "earnings", "investments", "countdown", "analysis", "hb538"],
+      "runCommand": "nvdaEarningsEnhanced",
+      "auditGrade": 92
+    },
+    {
+      "id": "widget-minecraft-series-planner",
+      "name": "Minecraft Series Planner",
+      "category": "Content",
+      "description": "HB539 Research Build: Plan viral episodic content — 6 series templates (Hardcore 100 Days, Modded Adventure, Build Challenges) with episode structure and viral tips",
+      "status": "active",
+      "lastUsed": "2026-02-23T10:28:00Z",
+      "tags": ["minecraft", "content", "series", "planning", "viral", "hb539"],
+      "runCommand": "minecraftSeriesPlanner",
+      "auditGrade": 91
+    },
+    {
+      "id": "widget-pet-content-generator",
+      "name": "Pet Content Generator",
+      "category": "Content",
+      "description": "HB540 Research Build: Pet content ideas for @StevenSongIRL — 5 categories (Funny Compilations, Rescue Stories, ASMR, Educational, AI Creatures) with viral hooks and posting schedule",
+      "status": "active",
+      "lastUsed": "2026-02-23T10:36:00Z",
+      "tags": ["pet", "content", "stevensongirl", "viral", "generator", "hb540"],
+      "runCommand": "petContentGenerator",
+      "auditGrade": 90
+    },
+    {
+      "id": "widget-youtube-trends-2026",
+      "name": "YouTube Trends 2026",
+      "category": "Research",
+      "description": "HB541 Research Build: Latest YouTube trends — Real-life interactions, Italian brainrot, Short-to-Long bridge, episodic documentary, nostalgia content, multi-format strategies",
+      "status": "active",
+      "lastUsed": "2026-02-23T11:02:00Z",
+      "tags": ["youtube", "trends", "2026", "viral", "research", "hb541"],
+      "runCommand": "youtubeTrends2026",
+      "auditGrade": 90
+    },
+    {
+      "id": "widget-minecraft-monetization",
+      "name": "Minecraft Monetization Guide",
+      "category": "Business",
+      "description": "HB542 Research Build: Minecraft passive income guide — 5 income streams (Marketplace, Server, Content, Commissions, Affiliate), $500M+ creator earnings data, getting started roadmap",
+      "status": "active",
+      "lastUsed": "2026-02-23T11:09:00Z",
+      "tags": ["minecraft", "monetization", "business", "passive-income", "hb542"],
+      "runCommand": "minecraftMonetizationGuide",
+      "auditGrade": 91
+    },
+    {
+      "id": "widget-youtube-content-strategy",
+      "name": "YouTube Content Strategy 2026",
+      "category": "Research",
+      "description": "HB544 Research Build: Latest YouTube trends — 90B Shorts views/day, Short-to-Long bridge strategy, real-life interactions, Italian brainrot, episodic documentary, viral hooks",
+      "status": "active",
+      "lastUsed": "2026-02-23T14:13:00Z",
+      "tags": ["youtube", "strategy", "2026", "trends", "viral", "hb544"],
+      "runCommand": "youtubeContentStrategy2026",
+      "auditGrade": 90
+    },
+    {
+      "id": "widget-mc-content-gen-hb546",
+      "name": "Minecraft Content Idea Generator 2026",
+      "category": "Content",
+      "description": "HB546 Research+Build: 45 viral Minecraft video ideas across 5 categories (Hardcore, Challenges, Builds, Mods, Viral). Each includes monetization tips, thumbnail cues, difficulty ratings, series potential. Source: Packapop 2026 Gaming Research.",
+      "status": "active",
+      "lastUsed": "2026-02-23T17:00:00Z",
+      "tags": ["minecraft", "content", "ideas", "viral", "2026", "monetization", "thumbnails", "hb546"],
+      "runCommand": "minecraftContentGenerator",
+      "auditGrade": null
+    }
+  ],
+  "categories": [
+    "Dashboard",
+    "Research",
+    "Content",
+    "Analysis",
+    "Automation"
+  ],
+  "lastUpdated": "2026-02-23T17:00:00Z"
+}

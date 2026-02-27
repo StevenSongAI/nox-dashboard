@@ -1,0 +1,3193 @@
+{
+  "competitors": [
+    {
+      "id": "comp-001",
+      "channelId": "@RogersPets-w5s",
+      "name": "Rogers Pets",
+      "url": "https://www.youtube.com/@RogersPets-w5s",
+      "niche": "Pet Simulation",
+      "focus": "AI-generated fictional pets",
+      "addedAt": "2026-02-08T12:00:00Z",
+      "autoAdded": false,
+      "stats": {
+        "subscribers": "1.2M",
+        "totalViews": "450M",
+        "videoCount": 156
+      },
+      "latestVideos": []
+    },
+    {
+      "id": "comp-002",
+      "channelId": "@petsimulatedworld",
+      "name": "Pet Simulated World",
+      "url": "https://www.youtube.com/@petsimulatedworld",
+      "niche": "Pet Simulation",
+      "focus": "Virtual pet experiences",
+      "addedAt": "2026-02-08T12:00:00Z",
+      "autoAdded": false,
+      "stats": {
+        "subscribers": "890K",
+        "totalViews": "280M",
+        "videoCount": 203
+      },
+      "latestVideos": []
+    },
+    {
+      "id": "comp-003",
+      "channelId": "@sacredstuff",
+      "name": "Sacred Stuff",
+      "url": "https://www.youtube.com/@sacredstuff",
+      "niche": "Mystery/Unboxing",
+      "focus": "Curated mystery content",
+      "addedAt": "2026-02-08T12:00:00Z",
+      "autoAdded": false,
+      "stats": {
+        "subscribers": "2.1M",
+        "totalViews": "780M",
+        "videoCount": 89
+      },
+      "latestVideos": []
+    },
+    {
+      "id": "comp-004",
+      "channelId": "@NightToons-j8i",
+      "name": "Night Toons",
+      "url": "https://www.youtube.com/@NightToons-j8i",
+      "niche": "Animation/Gaming",
+      "focus": "Animated storytelling",
+      "addedAt": "2026-02-08T12:00:00Z",
+      "autoAdded": false,
+      "stats": {
+        "subscribers": "3.4M",
+        "totalViews": "1.2B",
+        "videoCount": 312
+      },
+      "latestVideos": []
+    },
+    {
+      "id": "comp-005",
+      "channelId": "@CreatureLab_real",
+      "name": "Creature Lab",
+      "url": "https://www.youtube.com/@CreatureLab_real",
+      "niche": "Creature Design",
+      "focus": "AI creature generation",
+      "addedAt": "2026-02-08T12:00:00Z",
+      "autoAdded": false,
+      "stats": {
+        "subscribers": "1.8M",
+        "totalViews": "520M",
+        "videoCount": 134
+      },
+      "latestVideos": []
+    },
+    {
+      "id": "comp-006",
+      "channelId": "@WildPokédex-uwu",
+      "name": "Wild Pokédex",
+      "url": "https://www.youtube.com/@WildPokédex-uwu",
+      "niche": "Gaming/Pokémon",
+      "focus": "Pokémon content with AI twist",
+      "addedAt": "2026-02-08T12:00:00Z",
+      "autoAdded": false,
+      "stats": {
+        "subscribers": "2.7M",
+        "totalViews": "950M",
+        "videoCount": 267
+      },
+      "latestVideos": []
+    },
+    {
+      "id": "comp-007",
+      "channelId": "@cozmouz",
+      "name": "cozmouz",
+      "url": "https://www.youtube.com/@cozmouz",
+      "niche": "AI Simulation",
+      "focus": "AI creature simulation and evolution content",
+      "addedAt": "2026-02-09T18:00:00Z",
+      "autoAdded": true,
+      "source": "youtube outlier analysis",
+      "stats": {
+        "subscribers": "93.2K",
+        "totalViews": "12M",
+        "videoCount": 17
+      },
+      "latestVideos": [
+        {
+          "title": "I Trapped this AI Worm in a Simulation for 1000 Years",
+          "views": "2.4M",
+          "outlierScore": 26.3
+        },
+        {
+          "title": "I Trapped this AI Centipede in a Simulation for 1000 Years",
+          "views": "2.2M",
+          "outlierScore": 24.4
+        }
+      ]
+    },
+    {
+      "id": "comp-008",
+      "channelId": "@LittleLizardGaming",
+      "name": "Little Lizard Adventures",
+      "url": "https://www.youtube.com/@LittleLizardGaming",
+      "niche": "Minecraft/Dragon Content",
+      "focus": "Minecraft dragon family and pet content",
+      "addedAt": "2026-02-09T18:00:00Z",
+      "autoAdded": true,
+      "source": "youtube outlier analysis",
+      "stats": {
+        "subscribers": "3.99M",
+        "totalViews": "2.1B",
+        "videoCount": 3100
+      },
+      "latestVideos": [
+        {
+          "title": "The New Dragon Family! - Minecraft Dragons",
+          "views": "5.26M",
+          "outlierScore": 16.1
+        },
+        {
+          "title": "A Baby NightFury is Born - Minecraft Dragons -Ep 1",
+          "views": "1.73M",
+          "outlierScore": 108
+        }
+      ]
+    },
+    {
+      "id": "comp-009",
+      "channelId": "@I_Got_a_Pet",
+      "name": "I Got a Pet",
+      "url": "https://www.youtube.com/@I_Got_a_Pet",
+      "niche": "Pet Simulation",
+      "focus": "T-Rex dinosaur pet simulation - cinematic creature series",
+      "addedAt": "2026-02-09T18:00:00Z",
+      "autoAdded": true,
+      "source": "manual research - T-Rex channel",
+      "stats": {
+        "subscribers": "4.56K",
+        "totalViews": "431K",
+        "videoCount": 1
+      },
+      "latestVideos": [
+        {
+          "title": "I Got a Pet T Rex",
+          "views": "431K",
+          "outlierScore": 94.5
+        }
+      ]
+    },
+    {
+      "id": "comp-010",
+      "channelId": "@Ponchokings",
+      "name": "Ponchokings",
+      "url": "https://www.youtube.com/@Ponchokings",
+      "niche": "Pet Simulation/Roblox",
+      "focus": "Roblox Pet Story developer and content creator",
+      "addedAt": "2026-02-09T18:00:00Z",
+      "autoAdded": true,
+      "source": "youtube outlier analysis",
+      "stats": {
+        "subscribers": "71.9K",
+        "totalViews": "8.5M",
+        "videoCount": 97
+      },
+      "latestVideos": [
+        {
+          "title": "Pet Story - Roblox",
+          "views": "1.66M",
+          "outlierScore": 64.2
+        },
+        {
+          "title": "Pet Story Roblox Trailer",
+          "views": "1.15M",
+          "outlierScore": 45.3
+        }
+      ]
+    },
+    {
+      "id": "comp-011",
+      "channelId": "@WorldInNumbers3D",
+      "name": "World In Numbers 3D",
+      "url": "https://www.youtube.com/@WorldInNumbers3D",
+      "niche": "Kaiju/Creature Evolution",
+      "focus": "3D creature evolution and size comparison videos",
+      "addedAt": "2026-02-09T18:00:00Z",
+      "autoAdded": true,
+      "source": "youtube outlier analysis",
+      "stats": {
+        "subscribers": "87.3K",
+        "totalViews": "25M",
+        "videoCount": 340
+      },
+      "latestVideos": [
+        {
+          "title": "Evolution Of Godzilla | Life Cycle",
+          "views": "1.06M",
+          "outlierScore": 13.3
+        },
+        {
+          "title": "Evolution Of Titanus Shimo | Life Cycle",
+          "views": "919K",
+          "outlierScore": 37.9
+        }
+      ]
+    },
+    {
+      "id": "comp-012",
+      "channelId": "@KupChannel",
+      "name": "Kup",
+      "url": "https://www.youtube.com/@KupChannel",
+      "niche": "Creature Battle Simulation",
+      "focus": "Animal Revolt Battle Simulator tournament content",
+      "addedAt": "2026-02-09T18:00:00Z",
+      "autoAdded": true,
+      "source": "youtube outlier analysis",
+      "stats": {
+        "subscribers": "670K",
+        "totalViews": "180M",
+        "videoCount": 825
+      },
+      "latestVideos": [
+        {
+          "title": "1 vs 1 All Units Tournament - Animal Revolt Battle Simulator",
+          "views": "2.69M",
+          "outlierScore": 83.9
+        },
+        {
+          "title": "Ice Scourge vs All Units - Animal Revolt Battle Simulator",
+          "views": "872K",
+          "outlierScore": 32
+        }
+      ]
+    },
+    {
+      "id": "comp-013",
+      "channelId": "@ZedWinYT",
+      "name": "ZedWin",
+      "url": "https://www.youtube.com/@ZedWinYT",
+      "niche": "Pet Simulation/Roblox",
+      "focus": "Pet Simulator 99 tutorials and guides",
+      "addedAt": "2026-02-09T18:00:00Z",
+      "autoAdded": true,
+      "source": "youtube outlier analysis",
+      "stats": {
+        "subscribers": "89K",
+        "totalViews": "12M",
+        "videoCount": 79
+      },
+      "latestVideos": [
+        {
+          "title": "How To Get EVERY HUGE PET In Pet Simulator 99!",
+          "views": "1.43M",
+          "outlierScore": 66.7
+        },
+        {
+          "title": "All HIDDEN SECRETS In Pet Simulator 99!",
+          "views": "1.02M",
+          "outlierScore": 9.7
+        }
+      ]
+    },
+    {
+      "id": "comp-014",
+      "channelId": "@drawsessions",
+      "name": "drawsessions",
+      "url": "https://www.youtube.com/@drawsessions",
+      "niche": "Art Tutorial",
+      "focus": "Creature design and drawing tutorials",
+      "addedAt": "2026-02-09T18:00:00Z",
+      "autoAdded": true,
+      "source": "youtube outlier analysis",
+      "stats": {
+        "subscribers": "450K",
+        "totalViews": "45M",
+        "videoCount": 120
+      },
+      "latestVideos": [
+        {
+          "title": "Drawing Creatures Gets EASY When You Learn This",
+          "views": "368K",
+          "outlierScore": 20.3
+        },
+        {
+          "title": "Shading Basics to Pro Results — Using Only One Pencil",
+          "views": "631K",
+          "outlierScore": 44.7
+        }
+      ]
+    },
+    {
+      "id": "comp-015",
+      "channelId": "@foxboyhorror",
+      "name": "foxboyhorror",
+      "url": "https://www.youtube.com/@foxboyhorror",
+      "niche": "Horror/Creature Lore",
+      "focus": "Trevor Henderson creatures and horror content",
+      "addedAt": "2026-02-09T18:00:00Z",
+      "autoAdded": true,
+      "source": "youtube outlier analysis",
+      "stats": {
+        "subscribers": "336K",
+        "totalViews": "85M",
+        "videoCount": 156
+      },
+      "latestVideos": [
+        {
+          "title": "Old Vs New Trevor Henderson Monsters - All Trevor Henderson Creatures",
+          "views": "2.64M",
+          "outlierScore": 188
+        }
+      ]
+    },
+    {
+      "id": "comp-016",
+      "channelId": "@maxxivejumpo",
+      "name": "Maxxive Jumpo",
+      "url": "https://www.youtube.com/@maxxivejumpo",
+      "niche": "Alien/Creature Evolution",
+      "focus": "Creature evolution compilations and kaiju content",
+      "addedAt": "2026-02-09T18:00:00Z",
+      "autoAdded": true,
+      "source": "youtube outlier analysis",
+      "stats": {
+        "subscribers": "56K",
+        "totalViews": "8M",
+        "videoCount": 89
+      },
+      "latestVideos": [
+        {
+          "title": "All Alien Creatures & Evolution Compilation | Maxxive Jumpo",
+          "views": "316K",
+          "outlierScore": 28
+        },
+        {
+          "title": "All Pacific Rim Kaiju Monsters Evolution",
+          "views": "89K",
+          "outlierScore": 10.5
+        }
+      ]
+    },
+    {
+      "id": "comp-017",
+      "channelId": "@ambientdreamescapes",
+      "name": "Ambient Dream Escapes",
+      "url": "https://www.youtube.com/@ambientdreamescapes",
+      "niche": "Dragon/Pet Simulation",
+      "focus": "Baby dragon and speculative creature content",
+      "addedAt": "2026-02-09T18:00:00Z",
+      "autoAdded": true,
+      "source": "youtube outlier analysis",
+      "stats": {
+        "subscribers": "565K",
+        "totalViews": "120M",
+        "videoCount": 234
+      },
+      "latestVideos": [
+        {
+          "title": "What if baby dragons existed?",
+          "views": "3.57M",
+          "outlierScore": 41.9
+        }
+      ]
+    },
+    {
+      "id": "comp-018",
+      "channelId": "@steve_big_guns",
+      "name": "steve_big_guns",
+      "url": "https://www.youtube.com/@steve_big_guns",
+      "niche": "Gaming/Physics Simulation",
+      "focus": "2D physics baby kaiju creature tests",
+      "addedAt": "2026-02-09T18:00:00Z",
+      "autoAdded": true,
+      "source": "youtube outlier analysis",
+      "stats": {
+        "subscribers": "2.1K",
+        "totalViews": "350K",
+        "videoCount": 12
+      },
+      "latestVideos": [
+        {
+          "title": "2d physics baby kaiju sea creature test",
+          "views": "226K",
+          "outlierScore": 390
+        }
+      ]
+    },
+    {
+      "id": "comp-019",
+      "channelId": "@eystreem",
+      "name": "EYstreem",
+      "url": "https://www.youtube.com/@eystreem",
+      "niche": "Gaming/Minecraft",
+      "focus": "Minecraft myths, challenges, and creature content",
+      "addedAt": "2026-02-09T19:55:00Z",
+      "autoAdded": true,
+      "source": "csv traffic analysis",
+      "stats": {
+        "subscribers": "13.3M",
+        "totalViews": "4.2B",
+        "videoCount": 2500
+      },
+      "latestVideos": [
+        {
+          "title": "Can I Hatch a Demogorgon's Egg?",
+          "views": "786K",
+          "videoId": "4K--_3txFHI"
+        }
+      ]
+    },
+    {
+      "id": "comp-020",
+      "channelId": "@ToonyLoonyTV",
+      "name": "ToonyLoonyTV",
+      "url": "https://www.youtube.com/@ToonyLoonyTV",
+      "niche": "AI Pet Simulation",
+      "focus": "AI-generated Pokémon pet simulation content",
+      "addedAt": "2026-02-09T19:55:00Z",
+      "autoAdded": true,
+      "source": "csv traffic analysis",
+      "stats": {
+        "subscribers": "901",
+        "totalViews": "135K",
+        "videoCount": 5
+      },
+      "latestVideos": [
+        {
+          "title": "I Simulated ICE Pokémon In Real Life",
+          "views": "135K",
+          "videoId": "hCxcNMHENnQ"
+        }
+      ]
+    },
+    {
+      "id": "comp-021",
+      "channelId": "@Bembunny",
+      "name": "Bembunny",
+      "url": "https://www.youtube.com/@Bembunny",
+      "niche": "AI Pet Simulation",
+      "focus": "AI-generated Pokémon pet simulation - Meowth/Persian",
+      "addedAt": "2026-02-09T19:55:00Z",
+      "autoAdded": true,
+      "source": "csv traffic analysis",
+      "stats": {
+        "subscribers": "231",
+        "totalViews": "31K",
+        "videoCount": 3
+      },
+      "latestVideos": [
+        {
+          "title": "I Got a Pet Meowth",
+          "views": "31K",
+          "videoId": "NcFZwor4dMk"
+        }
+      ]
+    },
+    {
+      "id": "comp-022",
+      "subscribers": 16847899,
+      "notes": "Feb 2026: #1508 worldwide. Feb 2026: #1508 worldwide. Uses Community posts for polls and behind-the-scenes engagement between major uploads. Master of viewer retention via interactive content.",
+      "addedAt": "2026-02-19T14:20:00Z",
+      "source": "HypeAuditor Feb 2026",
+      "channelId": "@linustechtips",
+      "name": "Linus Tech Tips",
+      "url": "https://www.youtube.com/@linustechtips",
+      "niche": "Tech/Gaming",
+      "focus": "Community tab engagement + poll-driven content decisions",
+      "autoAdded": false,
+      "stats": {
+        "subscribers": "16.8M",
+        "totalViews": "8.2B",
+        "videoCount": 4200
+      },
+      "latestVideos": []
+    },
+    {
+      "id": "comp-023",
+      "name": "Finill from Italia",
+      "platform": "YouTube",
+      "niche": "Minecraft/Gaming",
+      "threat": "UNKNOWN",
+      "subscribers": "Unknown",
+      "description": "New competitor discovered Feb 22, 2026 via manual user report. Channel at https://youtube.com/@finillitalia",
+      "strengths": "Unknown - requires further analysis",
+      "weaknesses": "Unknown - requires further analysis",
+      "opportunity": "Monitor for content patterns and audience overlap",
+      "url": "https://www.youtube.com/@finillitalia",
+      "channelId": "@finillitalia",
+      "lastChecked": "2026-02-22",
+      "addedBy": "user-report",
+      "dateAdded": "2026-02-22",
+      "notes": "Scraper missed this channel - YouTube pages require JS rendering. Need to improve detection methodology."
+    },
+    {
+      "id": "comp-024",
+      "channelId": "@ApolloTVs",
+      "name": "ApolloTV ApolloTV",
+      "url": "https://www.youtube.com/@ApolloTVs",
+      "niche": "Minecraft",
+      "focus": "Discovered via \"minecraft cinematic\" search",
+      "addedAt": "2026-02-22T01:46:14.448Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-cinematic",
+      "stats": {
+        "subscribers": "218K subscribers",
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "MEDIUM",
+      "notes": "Auto-discovered via Puppeteer scraper"
+    },
+    {
+      "id": "comp-025",
+      "channelId": "@cinematicplayer",
+      "name": "Cinematic Player Cinematic Player",
+      "url": "https://www.youtube.com/@cinematicplayer",
+      "niche": "Minecraft",
+      "focus": "Discovered via \"minecraft cinematic\" search",
+      "addedAt": "2026-02-22T01:46:14.448Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-cinematic",
+      "stats": {
+        "subscribers": "12.4K subscribers",
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "MEDIUM",
+      "notes": "Auto-discovered via Puppeteer scraper"
+    },
+    {
+      "id": "comp-026",
+      "channelId": "@SquaredMediaYT",
+      "name": "Squared Media Squared Media",
+      "url": "https://www.youtube.com/@SquaredMediaYT",
+      "niche": "Minecraft",
+      "focus": "Discovered via \"minecraft cinematic\" search",
+      "addedAt": "2026-02-22T01:46:14.448Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-cinematic",
+      "stats": {
+        "subscribers": "11.6M subscribers",
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "MEDIUM",
+      "notes": "Auto-discovered via Puppeteer scraper"
+    },
+    {
+      "id": "comp-027",
+      "channelId": "@MinecraftMovieMagicClass",
+      "name": "MinecraftMovieMagic MinecraftMovieMagic",
+      "url": "https://www.youtube.com/@MinecraftMovieMagicClass",
+      "niche": "Minecraft",
+      "focus": "Discovered via \"minecraft cinematic\" search",
+      "addedAt": "2026-02-22T01:46:14.448Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-cinematic",
+      "stats": {
+        "subscribers": "169 subscribers",
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "MEDIUM",
+      "notes": "Auto-discovered via Puppeteer scraper"
+    },
+    {
+      "id": "comp-028",
+      "channelId": "@JollMC",
+      "name": "Joll and Conk Joll and Conk",
+      "url": "https://www.youtube.com/@JollMC",
+      "niche": "Minecraft",
+      "focus": "Discovered via \"minecraft cinematic\" search",
+      "addedAt": "2026-02-22T01:46:14.448Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-cinematic",
+      "stats": {
+        "subscribers": "1.06M subscribers",
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "MEDIUM",
+      "notes": "Auto-discovered via Puppeteer scraper"
+    },
+    {
+      "id": "comp-029",
+      "channelId": "@Shekel-Minecraft",
+      "name": "Shekel - Minecraft Shekel - Minecraft",
+      "url": "https://www.youtube.com/@Shekel-Minecraft",
+      "niche": "Minecraft",
+      "focus": "Discovered via \"minecraft machinima\" search",
+      "addedAt": "2026-02-22T01:46:24.418Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-machinima",
+      "stats": {
+        "subscribers": "328K subscribers",
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "MEDIUM",
+      "notes": "Auto-discovered via Puppeteer scraper"
+    },
+    {
+      "id": "comp-030",
+      "channelId": "@MinecraftMachinima",
+      "name": "Minecraft Machinima Minecraft Machinima",
+      "url": "https://www.youtube.com/@MinecraftMachinima",
+      "niche": "Minecraft",
+      "focus": "Discovered via \"minecraft machinima\" search",
+      "addedAt": "2026-02-22T01:46:24.418Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-machinima",
+      "stats": {
+        "subscribers": "10.8K subscribers",
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "MEDIUM",
+      "notes": "Auto-discovered via Puppeteer scraper"
+    },
+    {
+      "id": "comp-031",
+      "channelId": "@TheGoldenArmorVideos",
+      "name": "GoldenArmor GoldenArmor",
+      "url": "https://www.youtube.com/@TheGoldenArmorVideos",
+      "niche": "Minecraft",
+      "focus": "Discovered via \"minecraft machinima\" search",
+      "addedAt": "2026-02-22T01:46:24.418Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-machinima",
+      "stats": {
+        "subscribers": "2.35M subscribers",
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "MEDIUM",
+      "notes": "Auto-discovered via Puppeteer scraper"
+    },
+    {
+      "id": "comp-032",
+      "channelId": "@machinima_hub",
+      "name": "MachinimaHub MachinimaHub",
+      "url": "https://www.youtube.com/@machinima_hub",
+      "niche": "Minecraft",
+      "focus": "Discovered via \"minecraft machinima\" search",
+      "addedAt": "2026-02-22T01:46:24.418Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-machinima",
+      "stats": {
+        "subscribers": "1.48K subscribers",
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "MEDIUM",
+      "notes": "Auto-discovered via Puppeteer scraper"
+    },
+    {
+      "id": "comp-033",
+      "channelId": "@RusTNT",
+      "name": "RusTNT RusTNT",
+      "url": "https://www.youtube.com/@RusTNT",
+      "niche": "Minecraft",
+      "focus": "Discovered via \"minecraft machinima\" search",
+      "addedAt": "2026-02-22T01:46:24.419Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-machinima",
+      "stats": {
+        "subscribers": "580K subscribers",
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "MEDIUM",
+      "notes": "Auto-discovered via Puppeteer scraper"
+    },
+    {
+      "id": "comp-034",
+      "channelId": "@LookOut3D",
+      "name": "LookOut3D LookOut3D",
+      "url": "https://www.youtube.com/@LookOut3D",
+      "niche": "Minecraft",
+      "focus": "Discovered via \"minecraft movie recreation\" search",
+      "addedAt": "2026-02-22T01:46:34.062Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-movie-recreation",
+      "stats": {
+        "subscribers": "2.23M subscribers",
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "MEDIUM",
+      "notes": "Auto-discovered via Puppeteer scraper"
+    },
+    {
+      "id": "comp-035",
+      "channelId": "@MinecraftStoryModeNetflix",
+      "name": "Minecraft: Story Mode | The Netflix Archive Minecraft: Story Mode | The Netflix Archive",
+      "url": "https://www.youtube.com/@MinecraftStoryModeNetflix",
+      "niche": "Minecraft",
+      "focus": "Discovered via \"minecraft movie recreation\" search",
+      "addedAt": "2026-02-22T01:46:34.062Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-movie-recreation",
+      "stats": {
+        "subscribers": "31.2K subscribers",
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "MEDIUM",
+      "notes": "Auto-discovered via Puppeteer scraper"
+    },
+    {
+      "id": "comp-036",
+      "channelId": "@Haraldr_Halfdan",
+      "name": "Haraldr_Halfdan Haraldr_Halfdan",
+      "url": "https://www.youtube.com/@Haraldr_Halfdan",
+      "niche": "Minecraft",
+      "focus": "Discovered via \"minecraft movie recreation\" search",
+      "addedAt": "2026-02-22T01:46:34.062Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-movie-recreation",
+      "stats": {
+        "subscribers": "5.09K subscribers",
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "MEDIUM",
+      "notes": "Auto-discovered via Puppeteer scraper"
+    },
+    {
+      "id": "comp-037",
+      "channelId": "@MSGOCreationENG",
+      "name": "MSGO Creation ENG MSGO Creation ENG",
+      "url": "https://www.youtube.com/@MSGOCreationENG",
+      "niche": "Minecraft",
+      "focus": "Discovered via \"minecraft movie recreation\" search",
+      "addedAt": "2026-02-22T01:46:34.062Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-movie-recreation",
+      "stats": {
+        "subscribers": "5.21K subscribers",
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "MEDIUM",
+      "notes": "Auto-discovered via Puppeteer scraper"
+    },
+    {
+      "id": "comp-038",
+      "channelId": "@forsomeoneyt",
+      "name": "ForSomeone ForSomeone",
+      "url": "https://www.youtube.com/@forsomeoneyt",
+      "niche": "Minecraft",
+      "focus": "Discovered via \"minecraft movie recreation\" search",
+      "addedAt": "2026-02-22T01:46:34.062Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-movie-recreation",
+      "stats": {
+        "subscribers": "6.32K subscribers",
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "MEDIUM",
+      "notes": "Auto-discovered via Puppeteer scraper"
+    },
+    {
+      "id": "comp-039",
+      "channelId": "@McHorsesCreations",
+      "name": "McHorse's Creations McHorse's Creations",
+      "url": "https://www.youtube.com/@McHorsesCreations",
+      "niche": "Minecraft",
+      "focus": "Discovered via \"minecraft bbs mod\" search",
+      "addedAt": "2026-02-22T01:46:43.993Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-bbs-mod",
+      "stats": {
+        "subscribers": "26.9K subscribers",
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "MEDIUM",
+      "notes": "Auto-discovered via Puppeteer scraper"
+    },
+    {
+      "id": "comp-040",
+      "channelId": "@ZUHAIBAG",
+      "name": "ZUHAIB AG ZUHAIB AG",
+      "url": "https://www.youtube.com/@ZUHAIBAG",
+      "niche": "Minecraft",
+      "focus": "Discovered via \"minecraft bbs mod\" search",
+      "addedAt": "2026-02-22T01:46:43.994Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-bbs-mod",
+      "stats": {
+        "subscribers": "14.8K subscribers",
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "MEDIUM",
+      "notes": "Auto-discovered via Puppeteer scraper"
+    },
+    {
+      "id": "comp-041",
+      "channelId": "@BeastBoyShub",
+      "name": "BeastBoyShub BeastBoyShub",
+      "url": "https://www.youtube.com/@BeastBoyShub",
+      "niche": "Minecraft",
+      "focus": "Discovered via \"minecraft bbs mod\" search",
+      "addedAt": "2026-02-22T01:46:43.994Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-bbs-mod",
+      "stats": {
+        "subscribers": "7.09M subscribers",
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "MEDIUM",
+      "notes": "Auto-discovered via Puppeteer scraper"
+    },
+    {
+      "id": "comp-042",
+      "channelId": "@SrKiroMC",
+      "name": "SrkiroMC SrkiroMC",
+      "url": "https://www.youtube.com/@SrKiroMC",
+      "niche": "Minecraft",
+      "focus": "Discovered via \"minecraft bbs mod\" search",
+      "addedAt": "2026-02-22T01:46:43.994Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-bbs-mod",
+      "stats": {
+        "subscribers": "4.01K subscribers",
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "MEDIUM",
+      "notes": "Auto-discovered via Puppeteer scraper"
+    },
+    {
+      "id": "comp-043",
+      "channelId": "@Mc_BBS",
+      "name": "Mc BBS Mc BBS",
+      "url": "https://www.youtube.com/@Mc_BBS",
+      "niche": "Minecraft",
+      "focus": "Discovered via \"minecraft bbs mod\" search",
+      "addedAt": "2026-02-22T01:46:43.994Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-bbs-mod",
+      "stats": {
+        "subscribers": "10 subscribers",
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "MEDIUM",
+      "notes": "Auto-discovered via Puppeteer scraper"
+    },
+    {
+      "id": "comp-044",
+      "channelId": "@ryguyrocky",
+      "name": "Ryguyrocky Ryguyrocky",
+      "url": "https://www.youtube.com/@ryguyrocky",
+      "niche": "Minecraft",
+      "focus": "Discovered via \"minecraft 100 days\" search",
+      "addedAt": "2026-02-22T01:46:53.979Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-100-days",
+      "stats": {
+        "subscribers": "3.79M subscribers",
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "MEDIUM",
+      "notes": "Auto-discovered via Puppeteer scraper"
+    },
+    {
+      "id": "comp-045",
+      "channelId": "@ForgeLabs",
+      "name": "Forge Labs Forge Labs",
+      "url": "https://www.youtube.com/@ForgeLabs",
+      "niche": "Minecraft",
+      "focus": "Discovered via \"minecraft 100 days\" search",
+      "addedAt": "2026-02-22T01:46:53.979Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-100-days",
+      "stats": {
+        "subscribers": "6.11M subscribers",
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "MEDIUM",
+      "notes": "Auto-discovered via Puppeteer scraper"
+    },
+    {
+      "id": "comp-046",
+      "channelId": "@Forrestbono",
+      "name": "Forrestbono Forrestbono",
+      "url": "https://www.youtube.com/@Forrestbono",
+      "niche": "Minecraft",
+      "focus": "Discovered via \"minecraft 100 days\" search",
+      "addedAt": "2026-02-22T01:46:53.979Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-100-days",
+      "stats": {
+        "subscribers": "2.54M subscribers",
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "MEDIUM",
+      "notes": "Auto-discovered via Puppeteer scraper"
+    },
+    {
+      "id": "comp-047",
+      "channelId": "@Corinthius",
+      "name": "Corinthius Corinthius",
+      "url": "https://www.youtube.com/@Corinthius",
+      "niche": "Minecraft",
+      "focus": "Discovered via \"minecraft 100 days\" search",
+      "addedAt": "2026-02-22T01:46:53.979Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-100-days",
+      "stats": {
+        "subscribers": "1.04M subscribers",
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "MEDIUM",
+      "notes": "Auto-discovered via Puppeteer scraper"
+    },
+    {
+      "id": "comp-048",
+      "channelId": "@SmittieKingMC",
+      "name": "SmittieKing SmittieKing",
+      "url": "https://www.youtube.com/@SmittieKingMC",
+      "niche": "Minecraft",
+      "focus": "Discovered via \"minecraft 100 days\" search",
+      "addedAt": "2026-02-22T01:46:53.979Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-100-days",
+      "stats": {
+        "subscribers": "168K subscribers",
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "MEDIUM",
+      "notes": "Auto-discovered via Puppeteer scraper"
+    },
+    {
+      "id": "comp-049",
+      "channelId": "@sandiction",
+      "name": "sandiction sandiction",
+      "url": "https://www.youtube.com/@sandiction",
+      "niche": "Minecraft",
+      "focus": "Discovered via \"minecraft hardcore series\" search",
+      "addedAt": "2026-02-22T01:47:03.473Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-hardcore-series",
+      "stats": {
+        "subscribers": "2.83M subscribers",
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "MEDIUM",
+      "notes": "Auto-discovered via Puppeteer scraper"
+    },
+    {
+      "id": "comp-050",
+      "channelId": "@Minecrafthardcoreseries-l6i",
+      "name": "Minecraft hardcore series Minecraft hardcore series",
+      "url": "https://www.youtube.com/@Minecrafthardcoreseries-l6i",
+      "niche": "Minecraft",
+      "focus": "Discovered via \"minecraft hardcore series\" search",
+      "addedAt": "2026-02-22T01:47:03.473Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-hardcore-series",
+      "stats": {
+        "subscribers": "5 subscribers",
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "MEDIUM",
+      "notes": "Auto-discovered via Puppeteer scraper"
+    },
+    {
+      "id": "comp-051",
+      "channelId": "@FarzyMC",
+      "name": "Farzy Farzy",
+      "url": "https://www.youtube.com/@FarzyMC",
+      "niche": "Minecraft",
+      "focus": "Discovered via \"minecraft hardcore series\" search",
+      "addedAt": "2026-02-22T01:47:03.474Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-hardcore-series",
+      "stats": {
+        "subscribers": "2.56M subscribers",
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "MEDIUM",
+      "notes": "Auto-discovered via Puppeteer scraper"
+    },
+    {
+      "id": "comp-052",
+      "channelId": "@fWhip",
+      "name": "fWhip fWhip",
+      "url": "https://www.youtube.com/@fWhip",
+      "niche": "Minecraft",
+      "focus": "Discovered via \"minecraft hardcore series\" search",
+      "addedAt": "2026-02-22T01:47:03.474Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-hardcore-series",
+      "stats": {
+        "subscribers": "1.76M subscribers",
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "MEDIUM",
+      "notes": "Auto-discovered via Puppeteer scraper"
+    },
+    {
+      "id": "comp-053",
+      "channelId": "@SB737",
+      "name": "SB737 SB737",
+      "url": "https://www.youtube.com/@SB737",
+      "niche": "Minecraft",
+      "focus": "Discovered via \"minecraft hardcore series\" search",
+      "addedAt": "2026-02-22T01:47:03.474Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-hardcore-series",
+      "stats": {
+        "subscribers": "4.78M subscribers",
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "MEDIUM",
+      "notes": "Auto-discovered via Puppeteer scraper"
+    },
+    {
+      "id": "comp-054",
+      "channelId": "@AiPetWorld-1018",
+      "name": "Ai Pet World Ai Pet World",
+      "url": "https://www.youtube.com/@AiPetWorld-1018",
+      "niche": "Pet Simulation",
+      "focus": "Discovered via \"ai pet simulation\" search",
+      "addedAt": "2026-02-22T01:47:12.173Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-ai-pet-simulation",
+      "stats": {
+        "subscribers": "1 subscriber",
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "MEDIUM",
+      "notes": "Auto-discovered via Puppeteer scraper"
+    },
+    {
+      "id": "comp-055",
+      "channelId": "@soraaipetvideos",
+      "name": "ai pet videos ai pet videos",
+      "url": "https://www.youtube.com/@soraaipetvideos",
+      "niche": "Pet Simulation",
+      "focus": "Discovered via \"ai pet simulation\" search",
+      "addedAt": "2026-02-22T01:47:12.173Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-ai-pet-simulation",
+      "stats": {
+        "subscribers": "3 subscribers",
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "MEDIUM",
+      "notes": "Auto-discovered via Puppeteer scraper"
+    },
+    {
+      "id": "comp-056",
+      "channelId": "@AIPETPLANET-j2z",
+      "name": "AI PET PLANET AI PET PLANET",
+      "url": "https://www.youtube.com/@AIPETPLANET-j2z",
+      "niche": "Pet Simulation",
+      "focus": "Discovered via \"ai pet simulation\" search",
+      "addedAt": "2026-02-22T01:47:12.173Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-ai-pet-simulation",
+      "stats": {
+        "subscribers": "Unknown",
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "MEDIUM",
+      "notes": "Auto-discovered via Puppeteer scraper"
+    },
+    {
+      "id": "comp-057",
+      "channelId": "@AIPets.olympic",
+      "name": "Ai Pet's Ai Pet's",
+      "url": "https://www.youtube.com/@AIPets.olympic",
+      "niche": "Pet Simulation",
+      "focus": "Discovered via \"ai pet simulation\" search",
+      "addedAt": "2026-02-22T01:47:12.173Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-ai-pet-simulation",
+      "stats": {
+        "subscribers": "2 subscribers",
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "MEDIUM",
+      "notes": "Auto-discovered via Puppeteer scraper"
+    },
+    {
+      "id": "comp-058",
+      "channelId": "@LetsWatch-GO",
+      "name": "MEOWZY MEOWZY",
+      "url": "https://www.youtube.com/@LetsWatch-GO",
+      "niche": "Pet Simulation",
+      "focus": "Discovered via \"ai pet simulation\" search",
+      "addedAt": "2026-02-22T01:47:12.173Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-ai-pet-simulation",
+      "stats": {
+        "subscribers": "Unknown",
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "MEDIUM",
+      "notes": "Auto-discovered via Puppeteer scraper"
+    },
+    {
+      "id": "comp-059",
+      "channelId": "@CreatureFilm360",
+      "name": "Creature Film 360 Creature Film 360",
+      "url": "https://www.youtube.com/@CreatureFilm360",
+      "niche": "Creature Design",
+      "focus": "Discovered via \"virtual creature\" search",
+      "addedAt": "2026-02-22T01:47:21.564Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-virtual-creature",
+      "stats": {
+        "subscribers": "872K subscribers",
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "MEDIUM",
+      "notes": "Auto-discovered via Puppeteer scraper"
+    },
+    {
+      "id": "comp-060",
+      "channelId": "@LawrenceSipho-r4r",
+      "name": "Virtual Creature Tales Virtual Creature Tales",
+      "url": "https://www.youtube.com/@LawrenceSipho-r4r",
+      "niche": "Creature Design",
+      "focus": "Discovered via \"virtual creature\" search",
+      "addedAt": "2026-02-22T01:47:21.565Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-virtual-creature",
+      "stats": {
+        "subscribers": "103 subscribers",
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "MEDIUM",
+      "notes": "Auto-discovered via Puppeteer scraper"
+    },
+    {
+      "id": "comp-061",
+      "channelId": "@chrisbainbridge7723",
+      "name": "Chris Bainbridge Chris Bainbridge",
+      "url": "https://www.youtube.com/@chrisbainbridge7723",
+      "niche": "Creature Design",
+      "focus": "Discovered via \"virtual creature\" search",
+      "addedAt": "2026-02-22T01:47:21.565Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-virtual-creature",
+      "stats": {
+        "subscribers": "1 subscriber",
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "MEDIUM",
+      "notes": "Auto-discovered via Puppeteer scraper"
+    },
+    {
+      "id": "comp-062",
+      "channelId": "@GRINCHAI-l9b",
+      "name": "GRINCH AI GRINCH AI",
+      "url": "https://www.youtube.com/@GRINCHAI-l9b",
+      "niche": "Creature Design",
+      "focus": "Discovered via \"virtual creature\" search",
+      "addedAt": "2026-02-22T01:47:21.565Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-virtual-creature",
+      "stats": {
+        "subscribers": "Unknown",
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "MEDIUM",
+      "notes": "Auto-discovered via Puppeteer scraper"
+    },
+    {
+      "id": "comp-063",
+      "channelId": "@CodedCreatures",
+      "name": "Coded Creatures Coded Creatures",
+      "url": "https://www.youtube.com/@CodedCreatures",
+      "niche": "Creature Design",
+      "focus": "Discovered via \"virtual creature\" search",
+      "addedAt": "2026-02-22T01:47:21.565Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-virtual-creature",
+      "stats": {
+        "subscribers": "Unknown",
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "MEDIUM",
+      "notes": "Auto-discovered via Puppeteer scraper"
+    },
+    {
+      "id": "comp-064",
+      "channelId": "@Farmeranddragonaivideos",
+      "name": "Famer with Dragon Ai generated Famer with Dragon Ai generated",
+      "url": "https://www.youtube.com/@Farmeranddragonaivideos",
+      "niche": "AI Creature",
+      "focus": "Discovered via \"ai generated dragon\" search",
+      "addedAt": "2026-02-22T01:47:31.693Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-ai-generated-dragon",
+      "stats": {
+        "subscribers": "31 subscribers",
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "MEDIUM",
+      "notes": "Auto-discovered via Puppeteer scraper"
+    },
+    {
+      "id": "comp-065",
+      "channelId": "@The_AI_Dragon",
+      "name": "AI Dragon AI Dragon",
+      "url": "https://www.youtube.com/@The_AI_Dragon",
+      "niche": "AI Creature",
+      "focus": "Discovered via \"ai generated dragon\" search",
+      "addedAt": "2026-02-22T01:47:31.693Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-ai-generated-dragon",
+      "stats": {
+        "subscribers": "862 subscribers",
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "MEDIUM",
+      "notes": "Auto-discovered via Puppeteer scraper"
+    },
+    {
+      "id": "comp-066",
+      "channelId": "@DragonAi47",
+      "name": "Dragon Ai Dragon Ai",
+      "url": "https://www.youtube.com/@DragonAi47",
+      "niche": "AI Creature",
+      "focus": "Discovered via \"ai generated dragon\" search",
+      "addedAt": "2026-02-22T01:47:31.693Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-ai-generated-dragon",
+      "stats": {
+        "subscribers": "113 subscribers",
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "MEDIUM",
+      "notes": "Auto-discovered via Puppeteer scraper"
+    },
+    {
+      "id": "comp-067",
+      "channelId": "@AI_WILD_Wonders",
+      "name": "AI WILD & Wonders AI WILD & Wonders",
+      "url": "https://www.youtube.com/@AI_WILD_Wonders",
+      "niche": "AI Creature",
+      "focus": "Discovered via \"ai generated dragon\" search",
+      "addedAt": "2026-02-22T01:47:31.693Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-ai-generated-dragon",
+      "stats": {
+        "subscribers": "1.48K subscribers",
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "MEDIUM",
+      "notes": "Auto-discovered via Puppeteer scraper"
+    },
+    {
+      "id": "comp-068",
+      "channelId": "@DragonsandAi",
+      "name": "Dragons and Ai. Dragons and Ai.",
+      "url": "https://www.youtube.com/@DragonsandAi",
+      "niche": "AI Creature",
+      "focus": "Discovered via \"ai generated dragon\" search",
+      "addedAt": "2026-02-22T01:47:31.693Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-ai-generated-dragon",
+      "stats": {
+        "subscribers": "1 subscriber",
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "MEDIUM",
+      "notes": "Auto-discovered via Puppeteer scraper"
+    },
+    {
+      "id": "comp-069",
+      "channelId": "@Fictional-Animal-Stories",
+      "name": "Fictional Animal Stories Fictional Animal Stories",
+      "url": "https://www.youtube.com/@Fictional-Animal-Stories",
+      "niche": "Pet Simulation",
+      "focus": "Discovered via \"fictional pet\" search",
+      "addedAt": "2026-02-22T01:47:40.280Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-fictional-pet",
+      "stats": {
+        "subscribers": "32 subscribers",
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "MEDIUM",
+      "notes": "Auto-discovered via Puppeteer scraper"
+    },
+    {
+      "id": "comp-070",
+      "channelId": "@I_Gota_pet",
+      "name": "I Got a Pet",
+      "url": "https://www.youtube.com/@I_Gota_pet",
+      "niche": "Pet Simulation",
+      "focus": "Discovered via \"fictional pet\" search",
+      "addedAt": "2026-02-22T01:47:40.280Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-fictional-pet",
+      "stats": {
+        "subscribers": "Unknown",
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "MEDIUM",
+      "notes": "Auto-discovered via Puppeteer scraper"
+    },
+    {
+      "id": "comp-071",
+      "channelId": "@PetShorties",
+      "name": "PetShorties PetShorties",
+      "url": "https://www.youtube.com/@PetShorties",
+      "niche": "Pet Simulation",
+      "focus": "Discovered via \"fictional pet\" search",
+      "addedAt": "2026-02-22T01:47:40.280Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-fictional-pet",
+      "stats": {
+        "subscribers": "94 subscribers",
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "MEDIUM",
+      "notes": "Auto-discovered via Puppeteer scraper"
+    },
+    {
+      "id": "comp-072",
+      "channelId": "@HeartsofDiamond169",
+      "name": "Hearts of Diamond Hearts of Diamond",
+      "url": "https://www.youtube.com/@HeartsofDiamond169",
+      "niche": "Pet Simulation",
+      "focus": "Discovered via \"fictional pet\" search",
+      "addedAt": "2026-02-22T01:47:40.280Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-fictional-pet",
+      "stats": {
+        "subscribers": "653 subscribers",
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "MEDIUM",
+      "notes": "Auto-discovered via Puppeteer scraper"
+    },
+    {
+      "id": "comp-073",
+      "channelId": "@TAILSHEART-h7g",
+      "name": "𝐓𝐀𝐈𝐋𝐒 & 𝐇𝐄𝐀𝐑𝐓 𝐓𝐀𝐈𝐋𝐒 & 𝐇𝐄𝐀𝐑𝐓",
+      "url": "https://www.youtube.com/@TAILSHEART-h7g",
+      "niche": "Pet Simulation",
+      "focus": "Discovered via \"fictional pet\" search",
+      "addedAt": "2026-02-22T01:47:40.280Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-fictional-pet",
+      "stats": {
+        "subscribers": "Unknown",
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "MEDIUM",
+      "notes": "Auto-discovered via Puppeteer scraper"
+    },
+    {
+      "id": "comp-074",
+      "channelId": "@channel/UCqM2Xo4zWJ6lJaOLud2--ZA",
+      "name": "Creature Lab - Topic Creature Lab - Topic",
+      "url": "https://www.youtube.com/channel/UCqM2Xo4zWJ6lJaOLud2--ZA",
+      "niche": "Creature Design",
+      "focus": "Discovered via \"creature lab\" search",
+      "addedAt": "2026-02-22T01:47:49.775Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-creature-lab",
+      "stats": {
+        "subscribers": "Unknown",
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "MEDIUM",
+      "notes": "Auto-discovered via Puppeteer scraper"
+    },
+    {
+      "id": "comp-075",
+      "channelId": "@CreatureLab884",
+      "name": "Creature Lab Creature Lab",
+      "url": "https://www.youtube.com/@CreatureLab884",
+      "niche": "Creature Design",
+      "focus": "Discovered via \"creature lab\" search",
+      "addedAt": "2026-02-22T01:47:49.775Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-creature-lab",
+      "stats": {
+        "subscribers": "6 subscribers",
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "MEDIUM",
+      "notes": "Auto-discovered via Puppeteer scraper"
+    },
+    {
+      "id": "comp-076",
+      "channelId": "@DigitalCreatureLab",
+      "name": "Digital Creature Lab Digital Creature Lab",
+      "url": "https://www.youtube.com/@DigitalCreatureLab",
+      "niche": "Creature Design",
+      "focus": "Discovered via \"creature lab\" search",
+      "addedAt": "2026-02-22T01:47:49.775Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-creature-lab",
+      "stats": {
+        "subscribers": "28 subscribers",
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "MEDIUM",
+      "notes": "Auto-discovered via Puppeteer scraper"
+    },
+    {
+      "id": "comp-077",
+      "channelId": "@AICreatureLab-r1f5m",
+      "name": "AI Creature Lab AI Creature Lab",
+      "url": "https://www.youtube.com/@AICreatureLab-r1f5m",
+      "niche": "Creature Design",
+      "focus": "Discovered via \"creature lab\" search",
+      "addedAt": "2026-02-22T01:47:49.776Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-creature-lab",
+      "stats": {
+        "subscribers": "6 subscribers",
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "MEDIUM",
+      "notes": "Auto-discovered via Puppeteer scraper"
+    },
+    {
+      "id": "comp-078",
+      "channelId": "@Creaturelab-24",
+      "name": "Creature lab Creature lab",
+      "url": "https://www.youtube.com/@Creaturelab-24",
+      "niche": "Creature Design",
+      "focus": "Discovered via \"creature lab\" search",
+      "addedAt": "2026-02-22T01:47:49.776Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-creature-lab",
+      "stats": {
+        "subscribers": "90 subscribers",
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "MEDIUM",
+      "notes": "Auto-discovered via Puppeteer scraper"
+    },
+    {
+      "id": "comp-079",
+      "channelId": "@TerraGreen1",
+      "name": "TerraGreen TerraGreen",
+      "url": "https://www.youtube.com/@TerraGreen1",
+      "niche": "Pet Simulation",
+      "focus": "Discovered via \"i got a pet\" search",
+      "addedAt": "2026-02-22T01:47:59.254Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-i-got-a-pet",
+      "stats": {
+        "subscribers": "3.58M subscribers",
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "MEDIUM",
+      "notes": "Auto-discovered via Puppeteer scraper"
+    },
+    {
+      "id": "comp-080",
+      "channelId": "@IGotaPet",
+      "name": "I Got a Pet",
+      "url": "https://www.youtube.com/@IGotaPet",
+      "niche": "Pet Simulation",
+      "focus": "Discovered via \"i got a pet\" search",
+      "addedAt": "2026-02-22T01:47:59.254Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-i-got-a-pet",
+      "stats": {
+        "subscribers": "22 subscribers",
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "MEDIUM",
+      "notes": "Auto-discovered via Puppeteer scraper"
+    },
+    {
+      "id": "comp-081",
+      "channelId": "@Troys-I-GOT-A-PET",
+      "name": "Troys-I-GOT-A-PET Troys-I-GOT-A-PET",
+      "url": "https://www.youtube.com/@Troys-I-GOT-A-PET",
+      "niche": "Pet Simulation",
+      "focus": "Discovered via \"i got a pet\" search",
+      "addedAt": "2026-02-22T01:47:59.254Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-i-got-a-pet",
+      "stats": {
+        "subscribers": "649 subscribers",
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "MEDIUM",
+      "notes": "Auto-discovered via Puppeteer scraper"
+    },
+    {
+      "id": "comp-082",
+      "channelId": "@TeamLunarworks",
+      "name": "Lunarworks Machinimas Lunarworks Machinimas",
+      "url": "https://www.youtube.com/@TeamLunarworks",
+      "niche": "Minecraft BBS",
+      "focus": "Discovered via \"\"BBS mod\" minecraft cinematic\" search",
+      "addedAt": "2026-02-22T11:00:40.211Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-BBS-mod-minecraft-cinematic",
+      "stats": {
+        "subscribers": "78 subscribers",
+        "subscriberCount": 78,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "LOW",
+      "notes": "Auto-discovered. Est. subs: 78"
+    },
+    {
+      "id": "comp-083",
+      "channelId": "@McHorse",
+      "name": "McHorse McHorse",
+      "url": "https://www.youtube.com/@McHorse",
+      "niche": "Minecraft BBS",
+      "focus": "Discovered via \"\"BBS mod\" minecraft cinematic\" search",
+      "addedAt": "2026-02-22T11:00:40.216Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-BBS-mod-minecraft-cinematic",
+      "stats": {
+        "subscribers": "114K subscribers",
+        "subscriberCount": 114000,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "HIGH",
+      "notes": "Auto-discovered. Est. subs: 114,000"
+    },
+    {
+      "id": "comp-084",
+      "channelId": "@Mandeepmg",
+      "name": "MANDEEP MG MANDEEP MG",
+      "url": "https://www.youtube.com/@Mandeepmg",
+      "niche": "Minecraft BBS",
+      "focus": "Discovered via \"\"BBS mod\" minecraft cinematic\" search",
+      "addedAt": "2026-02-22T11:00:40.216Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-BBS-mod-minecraft-cinematic",
+      "stats": {
+        "subscribers": "2.96K subscribers",
+        "subscriberCount": 2960,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "LOW",
+      "notes": "Auto-discovered. Est. subs: 2,960"
+    },
+    {
+      "id": "comp-085",
+      "channelId": "@vit.gaming-213",
+      "name": "VIT. GAMING VIT. GAMING",
+      "url": "https://www.youtube.com/@vit.gaming-213",
+      "niche": "Minecraft BBS",
+      "focus": "Discovered via \"\"BBS mod\" minecraft cinematic\" search",
+      "addedAt": "2026-02-22T11:00:40.216Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-BBS-mod-minecraft-cinematic",
+      "stats": {
+        "subscribers": "2.26K subscribers",
+        "subscriberCount": 2260,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "LOW",
+      "notes": "Auto-discovered. Est. subs: 2,260"
+    },
+    {
+      "id": "comp-086",
+      "channelId": "@BlockbusterCraftStudio",
+      "name": "Blockbuster Craft Studio Blockbuster Craft Studio",
+      "url": "https://www.youtube.com/@BlockbusterCraftStudio",
+      "niche": "Minecraft BBS",
+      "focus": "Discovered via \"Blockbuster Studio minecraft\" search",
+      "addedAt": "2026-02-22T11:00:49.283Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-Blockbuster-Studio-minecraft",
+      "stats": {
+        "subscribers": "58 subscribers",
+        "subscriberCount": 58,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "LOW",
+      "notes": "Auto-discovered. Est. subs: 58"
+    },
+    {
+      "id": "comp-087",
+      "channelId": "@bloxbusterstudio7868",
+      "name": "Bloxbuster Studio Bloxbuster Studio",
+      "url": "https://www.youtube.com/@bloxbusterstudio7868",
+      "niche": "Minecraft BBS",
+      "focus": "Discovered via \"Blockbuster Studio minecraft\" search",
+      "addedAt": "2026-02-22T11:00:49.283Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-Blockbuster-Studio-minecraft",
+      "stats": {
+        "subscribers": "6 subscribers",
+        "subscriberCount": 6,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "LOW",
+      "notes": "Auto-discovered. Est. subs: 6"
+    },
+    {
+      "id": "comp-088",
+      "channelId": "@BlockbusterAnimationStudio",
+      "name": "Digital Realm Digital Realm",
+      "url": "https://www.youtube.com/@BlockbusterAnimationStudio",
+      "niche": "Minecraft BBS",
+      "focus": "Discovered via \"Blockbuster Studio minecraft\" search",
+      "addedAt": "2026-02-22T11:00:49.284Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-Blockbuster-Studio-minecraft",
+      "stats": {
+        "subscribers": "24 subscribers",
+        "subscriberCount": 24,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "LOW",
+      "notes": "Auto-discovered. Est. subs: 24"
+    },
+    {
+      "id": "comp-089",
+      "channelId": "@minecraftmachinima1722",
+      "name": "Minecraft Machinima Minecraft Machinima",
+      "url": "https://www.youtube.com/@minecraftmachinima1722",
+      "niche": "Minecraft Cinematic",
+      "focus": "Discovered via \"minecraft machinima high quality\" search",
+      "addedAt": "2026-02-22T11:00:57.650Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-machinima-high-quality",
+      "stats": {
+        "subscribers": "7 subscribers",
+        "subscriberCount": 7,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "LOW",
+      "notes": "Auto-discovered. Est. subs: 7"
+    },
+    {
+      "id": "comp-090",
+      "channelId": "@MCRemade",
+      "name": "MC Remade MC Remade",
+      "url": "https://www.youtube.com/@MCRemade",
+      "niche": "Minecraft Cinematic",
+      "focus": "Discovered via \"minecraft movie scene recreation\" search",
+      "addedAt": "2026-02-22T11:01:06.670Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-movie-scene-recreation",
+      "stats": {
+        "subscribers": "81 subscribers",
+        "subscriberCount": 81,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "LOW",
+      "notes": "Auto-discovered. Est. subs: 81"
+    },
+    {
+      "id": "comp-091",
+      "channelId": "@rekrap2",
+      "name": "rekrap2 rekrap2",
+      "url": "https://www.youtube.com/@rekrap2",
+      "niche": "Minecraft Cinematic",
+      "focus": "Discovered via \"minecraft movie scene recreation\" search",
+      "addedAt": "2026-02-22T11:01:06.670Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-movie-scene-recreation",
+      "stats": {
+        "subscribers": "2.45M subscribers",
+        "subscriberCount": 2450000,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "HIGH",
+      "notes": "Auto-discovered. Est. subs: 2,450,000"
+    },
+    {
+      "id": "comp-092",
+      "channelId": "@nfminecraftmovie9832",
+      "name": "NF MINECRAFT MOVIE NF MINECRAFT MOVIE",
+      "url": "https://www.youtube.com/@nfminecraftmovie9832",
+      "niche": "Minecraft Cinematic",
+      "focus": "Discovered via \"minecraft movie scene recreation\" search",
+      "addedAt": "2026-02-22T11:01:06.671Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-movie-scene-recreation",
+      "stats": {
+        "subscribers": "382 subscribers",
+        "subscriberCount": 382,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "LOW",
+      "notes": "Auto-discovered. Est. subs: 382"
+    },
+    {
+      "id": "comp-093",
+      "channelId": "@crazymineplayer7649",
+      "name": "CRAZYMINEPLAYER CRAZYMINEPLAYER",
+      "url": "https://www.youtube.com/@crazymineplayer7649",
+      "niche": "Minecraft Cinematic",
+      "focus": "Discovered via \"minecraft movie scene recreation\" search",
+      "addedAt": "2026-02-22T11:01:06.671Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-movie-scene-recreation",
+      "stats": {
+        "subscribers": "13 subscribers",
+        "subscriberCount": 13,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "LOW",
+      "notes": "Auto-discovered. Est. subs: 13"
+    },
+    {
+      "id": "comp-094",
+      "channelId": "@minecraftbuilds-cinematics697",
+      "name": "Minecraft Builds - Cinematics and timelapses Minecraft Builds - Cinematics and timelapses",
+      "url": "https://www.youtube.com/@minecraftbuilds-cinematics697",
+      "niche": "Minecraft Cinematic",
+      "focus": "Discovered via \"minecraft timelapse cinematic\" search",
+      "addedAt": "2026-02-22T11:01:15.735Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-timelapse-cinematic",
+      "stats": {
+        "subscribers": "4 subscribers",
+        "subscriberCount": 4,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "LOW",
+      "notes": "Auto-discovered. Est. subs: 4"
+    },
+    {
+      "id": "comp-095",
+      "channelId": "@minecrafttimelapse9178",
+      "name": "MineCraft Timelapse MineCraft Timelapse",
+      "url": "https://www.youtube.com/@minecrafttimelapse9178",
+      "niche": "Minecraft Cinematic",
+      "focus": "Discovered via \"minecraft timelapse cinematic\" search",
+      "addedAt": "2026-02-22T11:01:15.735Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-timelapse-cinematic",
+      "stats": {
+        "subscribers": "53 subscribers",
+        "subscriberCount": 53,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "LOW",
+      "notes": "Auto-discovered. Est. subs: 53"
+    },
+    {
+      "id": "comp-096",
+      "channelId": "@ElysiumFire",
+      "name": "Elysium Fire Elysium Fire",
+      "url": "https://www.youtube.com/@ElysiumFire",
+      "niche": "Minecraft Cinematic",
+      "focus": "Discovered via \"minecraft timelapse cinematic\" search",
+      "addedAt": "2026-02-22T11:01:15.735Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-timelapse-cinematic",
+      "stats": {
+        "subscribers": "163K subscribers",
+        "subscriberCount": 163000,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "HIGH",
+      "notes": "Auto-discovered. Est. subs: 163,000"
+    },
+    {
+      "id": "comp-097",
+      "channelId": "@despicon-minecrafttimelaps4363",
+      "name": "Despicon - Minecraft Timelapse's & Showcases Despicon - Minecraft Timelapse's & Showcases",
+      "url": "https://www.youtube.com/@despicon-minecrafttimelaps4363",
+      "niche": "Minecraft Cinematic",
+      "focus": "Discovered via \"minecraft timelapse cinematic\" search",
+      "addedAt": "2026-02-22T11:01:15.735Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-timelapse-cinematic",
+      "stats": {
+        "subscribers": "13 subscribers",
+        "subscriberCount": 13,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "LOW",
+      "notes": "Auto-discovered. Est. subs: 13"
+    },
+    {
+      "id": "comp-098",
+      "channelId": "@Minelapse1",
+      "name": "Minelapse Minelapse",
+      "url": "https://www.youtube.com/@Minelapse1",
+      "niche": "Minecraft Cinematic",
+      "focus": "Discovered via \"minecraft timelapse cinematic\" search",
+      "addedAt": "2026-02-22T11:01:15.735Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-timelapse-cinematic",
+      "stats": {
+        "subscribers": "1 subscriber",
+        "subscriberCount": 1,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "LOW",
+      "notes": "Auto-discovered. Est. subs: 1"
+    },
+    {
+      "id": "comp-099",
+      "channelId": "@Sword4000",
+      "name": "Sword4000 Sword4000",
+      "url": "https://www.youtube.com/@Sword4000",
+      "niche": "Minecraft Simulation",
+      "focus": "Discovered via \"minecraft simulate\" search",
+      "addedAt": "2026-02-22T11:01:24.903Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-simulate",
+      "stats": {
+        "subscribers": "1.9M subscribers",
+        "subscriberCount": 1900000,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "HIGH",
+      "notes": "Auto-discovered. Est. subs: 1,900,000"
+    },
+    {
+      "id": "comp-100",
+      "channelId": "@ish",
+      "name": "ish ish",
+      "url": "https://www.youtube.com/@ish",
+      "niche": "Minecraft Simulation",
+      "focus": "Discovered via \"minecraft simulate\" search",
+      "addedAt": "2026-02-22T11:01:24.903Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-simulate",
+      "stats": {
+        "subscribers": "2.11M subscribers",
+        "subscriberCount": 2110000,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "HIGH",
+      "notes": "Auto-discovered. Est. subs: 2,110,000"
+    },
+    {
+      "id": "comp-101",
+      "channelId": "@jjkay03",
+      "name": "jjkay03 jjkay03",
+      "url": "https://www.youtube.com/@jjkay03",
+      "niche": "Minecraft Simulation",
+      "focus": "Discovered via \"minecraft simulate\" search",
+      "addedAt": "2026-02-22T11:01:24.904Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-simulate",
+      "stats": {
+        "subscribers": "230K subscribers",
+        "subscriberCount": 230000,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "HIGH",
+      "notes": "Auto-discovered. Est. subs: 230,000"
+    },
+    {
+      "id": "comp-102",
+      "channelId": "@MindOfNeo",
+      "name": "MindOfNeo MindOfNeo",
+      "url": "https://www.youtube.com/@MindOfNeo",
+      "niche": "Minecraft Simulation",
+      "focus": "Discovered via \"minecraft simulate\" search",
+      "addedAt": "2026-02-22T11:01:24.904Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-simulate",
+      "stats": {
+        "subscribers": "547K subscribers",
+        "subscriberCount": 547000,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "HIGH",
+      "notes": "Auto-discovered. Est. subs: 547,000"
+    },
+    {
+      "id": "comp-103",
+      "channelId": "@RyanNotBrian",
+      "name": "RyanNotBrian RyanNotBrian",
+      "url": "https://www.youtube.com/@RyanNotBrian",
+      "niche": "Minecraft Simulation",
+      "focus": "Discovered via \"minecraft simulate\" search",
+      "addedAt": "2026-02-22T11:01:24.904Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-simulate",
+      "stats": {
+        "subscribers": "2.35M subscribers",
+        "subscriberCount": 2350000,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "HIGH",
+      "notes": "Auto-discovered. Est. subs: 2,350,000"
+    },
+    {
+      "id": "comp-104",
+      "channelId": "@GroxMC",
+      "name": "Grox Grox",
+      "url": "https://www.youtube.com/@GroxMC",
+      "niche": "Minecraft Villager Content",
+      "focus": "Discovered via \"minecraft villagers\" search",
+      "addedAt": "2026-02-22T11:01:33.443Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-villagers",
+      "stats": {
+        "subscribers": "6.48M subscribers",
+        "subscriberCount": 6480000,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "HIGH",
+      "notes": "Auto-discovered. Est. subs: 6,480,000"
+    },
+    {
+      "id": "comp-105",
+      "channelId": "@Spiral_MCT",
+      "name": "Spiral Spiral",
+      "url": "https://www.youtube.com/@Spiral_MCT",
+      "niche": "Minecraft Villager Content",
+      "focus": "Discovered via \"minecraft villagers\" search",
+      "addedAt": "2026-02-22T11:01:33.444Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-villagers",
+      "stats": {
+        "subscribers": "349K subscribers",
+        "subscriberCount": 349000,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "HIGH",
+      "notes": "Auto-discovered. Est. subs: 349,000"
+    },
+    {
+      "id": "comp-106",
+      "channelId": "@ZMDE",
+      "name": "ZMDE ZMDE",
+      "url": "https://www.youtube.com/@ZMDE",
+      "niche": "Minecraft Villager Content",
+      "focus": "Discovered via \"minecraft villagers\" search",
+      "addedAt": "2026-02-22T11:01:33.444Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-villagers",
+      "stats": {
+        "subscribers": "2.87M subscribers",
+        "subscriberCount": 2870000,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "HIGH",
+      "notes": "Auto-discovered. Est. subs: 2,870,000"
+    },
+    {
+      "id": "comp-107",
+      "channelId": "@clubkvn_",
+      "name": "ClubKVN ClubKVN",
+      "url": "https://www.youtube.com/@clubkvn_",
+      "niche": "Minecraft Villager Content",
+      "focus": "Discovered via \"minecraft villagers\" search",
+      "addedAt": "2026-02-22T11:01:33.444Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-villagers",
+      "stats": {
+        "subscribers": "290K subscribers",
+        "subscriberCount": 290000,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "HIGH",
+      "notes": "Auto-discovered. Est. subs: 290,000"
+    },
+    {
+      "id": "comp-108",
+      "channelId": "@ReffMC",
+      "name": "Reff Reff",
+      "url": "https://www.youtube.com/@ReffMC",
+      "niche": "Minecraft Villager Content",
+      "focus": "Discovered via \"minecraft villagers\" search",
+      "addedAt": "2026-02-22T11:01:33.444Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-villagers",
+      "stats": {
+        "subscribers": "657K subscribers",
+        "subscriberCount": 657000,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "HIGH",
+      "notes": "Auto-discovered. Est. subs: 657,000"
+    },
+    {
+      "id": "comp-109",
+      "channelId": "@Crimsonthefiredragon-f3r",
+      "name": "Crimson the fire dragon Crimson the fire dragon",
+      "url": "https://www.youtube.com/@Crimsonthefiredragon-f3r",
+      "niche": "AI Creature",
+      "focus": "Discovered via \"\"I got a pet\" dragon\" search",
+      "addedAt": "2026-02-22T11:01:41.925Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-I-got-a-pet-dragon",
+      "stats": {
+        "subscribers": "1 subscriber",
+        "subscriberCount": 1,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "LOW",
+      "notes": "Auto-discovered. Est. subs: 1"
+    },
+    {
+      "id": "comp-110",
+      "channelId": "@IGotaPetToday",
+      "name": "I Got a Pet Today I Got a Pet Today",
+      "url": "https://www.youtube.com/@IGotaPetToday",
+      "niche": "AI Creature",
+      "focus": "Discovered via \"\"I got a pet\" dragon\" search",
+      "addedAt": "2026-02-22T11:01:41.925Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-I-got-a-pet-dragon",
+      "stats": {
+        "subscribers": "1 subscriber",
+        "subscriberCount": 1,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "LOW",
+      "notes": "Auto-discovered. Est. subs: 1"
+    },
+    {
+      "id": "comp-111",
+      "channelId": "@GotaPet",
+      "name": "Got a Pet? Got a Pet?",
+      "url": "https://www.youtube.com/@GotaPet",
+      "niche": "AI Creature",
+      "focus": "Discovered via \"\"I got a pet\" dragon\" search",
+      "addedAt": "2026-02-22T11:01:41.925Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-I-got-a-pet-dragon",
+      "stats": {
+        "subscribers": "1 subscriber",
+        "subscriberCount": 1,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "LOW",
+      "notes": "Auto-discovered. Est. subs: 1"
+    },
+    {
+      "id": "comp-112",
+      "channelId": "@MyPett-2026",
+      "name": "My Pett My Pett",
+      "url": "https://www.youtube.com/@MyPett-2026",
+      "niche": "AI Creature",
+      "focus": "Discovered via \"\"I got a pet\" dinosaur\" search",
+      "addedAt": "2026-02-22T11:01:50.209Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-I-got-a-pet-dinosaur",
+      "stats": {
+        "subscribers": "Unknown",
+        "subscriberCount": 0,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "LOW",
+      "notes": "Auto-discovered. Est. subs: 0"
+    },
+    {
+      "id": "comp-113",
+      "channelId": "@MrHillbilly",
+      "name": "MR HILLBILLY MR HILLBILLY",
+      "url": "https://www.youtube.com/@MrHillbilly",
+      "niche": "AI Creature",
+      "focus": "Discovered via \"\"I got a pet\" dinosaur\" search",
+      "addedAt": "2026-02-22T11:01:50.209Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-I-got-a-pet-dinosaur",
+      "stats": {
+        "subscribers": "219K subscribers",
+        "subscriberCount": 219000,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "HIGH",
+      "notes": "Auto-discovered. Est. subs: 219,000"
+    },
+    {
+      "id": "comp-114",
+      "channelId": "@NOTMaria13",
+      "name": "NOT Maria NOT Maria",
+      "url": "https://www.youtube.com/@NOTMaria13",
+      "niche": "AI Creature",
+      "focus": "Discovered via \"\"I got a pet\" dinosaur\" search",
+      "addedAt": "2026-02-22T11:01:50.209Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-I-got-a-pet-dinosaur",
+      "stats": {
+        "subscribers": "154K subscribers",
+        "subscriberCount": 154000,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "HIGH",
+      "notes": "Auto-discovered. Est. subs: 154,000"
+    },
+    {
+      "id": "comp-115",
+      "channelId": "@ScienceDecodedLab",
+      "name": "Science Decoded Science Decoded",
+      "url": "https://www.youtube.com/@ScienceDecodedLab",
+      "niche": "AI Creature",
+      "focus": "Discovered via \"\"I got a pet\" dinosaur\" search",
+      "addedAt": "2026-02-22T11:01:50.209Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-I-got-a-pet-dinosaur",
+      "stats": {
+        "subscribers": "29 subscribers",
+        "subscriberCount": 29,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "LOW",
+      "notes": "Auto-discovered. Est. subs: 29"
+    },
+    {
+      "id": "comp-116",
+      "channelId": "@AiPetLegends",
+      "name": "AI Pet Legends AI Pet Legends",
+      "url": "https://www.youtube.com/@AiPetLegends",
+      "niche": "AI Pet",
+      "focus": "Discovered via \"AI generated pet real life\" search",
+      "addedAt": "2026-02-22T11:01:59.449Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-AI-generated-pet-real-life",
+      "stats": {
+        "subscribers": "108K subscribers",
+        "subscriberCount": 108000,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "HIGH",
+      "notes": "Auto-discovered. Est. subs: 108,000"
+    },
+    {
+      "id": "comp-117",
+      "channelId": "@AIAnimalHybridsWorld",
+      "name": "AI Animal Hybrids World AI Animal Hybrids World",
+      "url": "https://www.youtube.com/@AIAnimalHybridsWorld",
+      "niche": "AI Pet",
+      "focus": "Discovered via \"AI generated pet real life\" search",
+      "addedAt": "2026-02-22T11:01:59.449Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-AI-generated-pet-real-life",
+      "stats": {
+        "subscribers": "570 subscribers",
+        "subscriberCount": 570,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "LOW",
+      "notes": "Auto-discovered. Est. subs: 570"
+    },
+    {
+      "id": "comp-118",
+      "channelId": "@Petopia_life",
+      "name": "Petop(AI) life Petop(AI) life",
+      "url": "https://www.youtube.com/@Petopia_life",
+      "niche": "AI Pet",
+      "focus": "Discovered via \"AI generated pet real life\" search",
+      "addedAt": "2026-02-22T11:01:59.450Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-AI-generated-pet-real-life",
+      "stats": {
+        "subscribers": "738 subscribers",
+        "subscriberCount": 738,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "LOW",
+      "notes": "Auto-discovered. Est. subs: 738"
+    },
+    {
+      "id": "comp-119",
+      "channelId": "@new.ai.pet2025",
+      "name": "Ai Pet Ai Pet",
+      "url": "https://www.youtube.com/@new.ai.pet2025",
+      "niche": "AI Pet",
+      "focus": "Discovered via \"AI generated pet real life\" search",
+      "addedAt": "2026-02-22T11:01:59.450Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-AI-generated-pet-real-life",
+      "stats": {
+        "subscribers": "122 subscribers",
+        "subscriberCount": 122,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "LOW",
+      "notes": "Auto-discovered. Est. subs: 122"
+    },
+    {
+      "id": "comp-120",
+      "channelId": "@hybridanimalai",
+      "name": "Hybrid Animal Ai Hybrid Animal Ai",
+      "url": "https://www.youtube.com/@hybridanimalai",
+      "niche": "AI Pet",
+      "focus": "Discovered via \"AI generated pet real life\" search",
+      "addedAt": "2026-02-22T11:01:59.450Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-AI-generated-pet-real-life",
+      "stats": {
+        "subscribers": "21.2K subscribers",
+        "subscriberCount": 21200,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "MEDIUM",
+      "notes": "Auto-discovered. Est. subs: 21,200"
+    },
+    {
+      "id": "comp-121",
+      "channelId": "@fuelforest",
+      "name": "Fuel Forest Fuel Forest",
+      "url": "https://www.youtube.com/@fuelforest",
+      "niche": "Creature Sim",
+      "focus": "Discovered via \"virtual creature simulation\" search",
+      "addedAt": "2026-02-22T11:02:08.892Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-virtual-creature-simulation",
+      "stats": {
+        "subscribers": "1.54K subscribers",
+        "subscriberCount": 1540,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "LOW",
+      "notes": "Auto-discovered. Est. subs: 1,540"
+    },
+    {
+      "id": "comp-122",
+      "channelId": "@virtualanimalworld_1984",
+      "name": "virtual animal world virtual animal world",
+      "url": "https://www.youtube.com/@virtualanimalworld_1984",
+      "niche": "Creature Sim",
+      "focus": "Discovered via \"virtual creature simulation\" search",
+      "addedAt": "2026-02-22T11:02:08.892Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-virtual-creature-simulation",
+      "stats": {
+        "subscribers": "436 subscribers",
+        "subscriberCount": 436,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "LOW",
+      "notes": "Auto-discovered. Est. subs: 436"
+    },
+    {
+      "id": "comp-123",
+      "channelId": "@jmwFILMS",
+      "name": "jmwFILMS jmwFILMS",
+      "url": "https://www.youtube.com/@jmwFILMS",
+      "niche": "Creature Sim",
+      "focus": "Discovered via \"virtual creature simulation\" search",
+      "addedAt": "2026-02-22T11:02:08.892Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-virtual-creature-simulation",
+      "stats": {
+        "subscribers": "1.52M subscribers",
+        "subscriberCount": 1520000,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "HIGH",
+      "notes": "Auto-discovered. Est. subs: 1,520,000"
+    },
+    {
+      "id": "comp-124",
+      "channelId": "@CreatureXAI",
+      "name": "CreatureX AI CreatureX AI",
+      "url": "https://www.youtube.com/@CreatureXAI",
+      "niche": "Creature Sim",
+      "focus": "Discovered via \"virtual creature simulation\" search",
+      "addedAt": "2026-02-22T11:02:08.892Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-virtual-creature-simulation",
+      "stats": {
+        "subscribers": "3 subscribers",
+        "subscriberCount": 3,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "LOW",
+      "notes": "Auto-discovered. Est. subs: 3"
+    },
+    {
+      "id": "comp-125",
+      "channelId": "@cireneikual",
+      "name": "cireneikual cireneikual",
+      "url": "https://www.youtube.com/@cireneikual",
+      "niche": "Creature Sim",
+      "focus": "Discovered via \"virtual creature simulation\" search",
+      "addedAt": "2026-02-22T11:02:08.893Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-virtual-creature-simulation",
+      "stats": {
+        "subscribers": "254 subscribers",
+        "subscriberCount": 254,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "LOW",
+      "notes": "Auto-discovered. Est. subs: 254"
+    },
+    {
+      "id": "comp-126",
+      "channelId": "@AIPalette-CuteCreatures",
+      "name": "AI Palette-Cute Creatures AI Palette-Cute Creatures",
+      "url": "https://www.youtube.com/@AIPalette-CuteCreatures",
+      "niche": "AI Creature",
+      "focus": "Discovered via \"fictional creature ai\" search",
+      "addedAt": "2026-02-22T11:02:18.870Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-fictional-creature-ai",
+      "stats": {
+        "subscribers": "138K subscribers",
+        "subscriberCount": 138000,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "HIGH",
+      "notes": "Auto-discovered. Est. subs: 138,000"
+    },
+    {
+      "id": "comp-127",
+      "channelId": "@mythicalcreature-q4p",
+      "name": "Mythical Creature AI Mythical Creature AI",
+      "url": "https://www.youtube.com/@mythicalcreature-q4p",
+      "niche": "AI Creature",
+      "focus": "Discovered via \"fictional creature ai\" search",
+      "addedAt": "2026-02-22T11:02:18.870Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-fictional-creature-ai",
+      "stats": {
+        "subscribers": "Unknown",
+        "subscriberCount": 0,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "LOW",
+      "notes": "Auto-discovered. Est. subs: 0"
+    },
+    {
+      "id": "comp-128",
+      "channelId": "@lawajha",
+      "name": "lawajha lawajha",
+      "url": "https://www.youtube.com/@lawajha",
+      "niche": "AI Creature",
+      "focus": "Discovered via \"fictional creature ai\" search",
+      "addedAt": "2026-02-22T11:02:18.870Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-fictional-creature-ai",
+      "stats": {
+        "subscribers": "27 subscribers",
+        "subscriberCount": 27,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "LOW",
+      "notes": "Auto-discovered. Est. subs: 27"
+    },
+    {
+      "id": "comp-129",
+      "channelId": "@LostMythCreaturesAI",
+      "name": "Lost Myth Creatures AI Lost Myth Creatures AI",
+      "url": "https://www.youtube.com/@LostMythCreaturesAI",
+      "niche": "AI Creature",
+      "focus": "Discovered via \"fictional creature ai\" search",
+      "addedAt": "2026-02-22T11:02:18.870Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-fictional-creature-ai",
+      "stats": {
+        "subscribers": "22 subscribers",
+        "subscriberCount": 22,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "LOW",
+      "notes": "Auto-discovered. Est. subs: 22"
+    },
+    {
+      "id": "comp-130",
+      "channelId": "@MythologicalCreaturesAI-fb1vo",
+      "name": "Mythological Creatures AI Mythological Creatures AI",
+      "url": "https://www.youtube.com/@MythologicalCreaturesAI-fb1vo",
+      "niche": "AI Creature",
+      "focus": "Discovered via \"fictional creature ai\" search",
+      "addedAt": "2026-02-22T11:02:18.870Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-fictional-creature-ai",
+      "stats": {
+        "subscribers": "16.4K subscribers",
+        "subscriberCount": 16400,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "MEDIUM",
+      "notes": "Auto-discovered. Est. subs: 16,400"
+    },
+    {
+      "id": "comp-131",
+      "channelId": "@aCookieGod",
+      "name": "aCookieGod aCookieGod",
+      "url": "https://www.youtube.com/@aCookieGod",
+      "niche": "Minecraft Series",
+      "focus": "Discovered via \"minecraft cinematic series\" search",
+      "addedAt": "2026-02-22T11:02:28.144Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-cinematic-series",
+      "stats": {
+        "subscribers": "7.61M subscribers",
+        "subscriberCount": 7610000,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "HIGH",
+      "notes": "Auto-discovered. Est. subs: 7,610,000"
+    },
+    {
+      "id": "comp-132",
+      "channelId": "@CrafteeMovies",
+      "name": "Craftee Minecraft Movies Craftee Minecraft Movies",
+      "url": "https://www.youtube.com/@CrafteeMovies",
+      "niche": "Minecraft Series",
+      "focus": "Discovered via \"minecraft cinematic series\" search",
+      "addedAt": "2026-02-22T11:02:28.144Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-cinematic-series",
+      "stats": {
+        "subscribers": "261K subscribers",
+        "subscriberCount": 261000,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "HIGH",
+      "notes": "Auto-discovered. Est. subs: 261,000"
+    },
+    {
+      "id": "comp-133",
+      "channelId": "@naexi7168",
+      "name": "Naexi Naexi",
+      "url": "https://www.youtube.com/@naexi7168",
+      "niche": "Minecraft RP",
+      "focus": "Discovered via \"minecraft roleplay cinematic\" search",
+      "addedAt": "2026-02-22T11:02:37.099Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-roleplay-cinematic",
+      "stats": {
+        "subscribers": "16.8K subscribers",
+        "subscriberCount": 16800,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "MEDIUM",
+      "notes": "Auto-discovered. Est. subs: 16,800"
+    },
+    {
+      "id": "comp-134",
+      "channelId": "@rexiipher",
+      "name": "Rexiipher Rexiipher",
+      "url": "https://www.youtube.com/@rexiipher",
+      "niche": "Minecraft RP",
+      "focus": "Discovered via \"minecraft roleplay cinematic\" search",
+      "addedAt": "2026-02-22T11:02:37.099Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-roleplay-cinematic",
+      "stats": {
+        "subscribers": "127K subscribers",
+        "subscriberCount": 127000,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "HIGH",
+      "notes": "Auto-discovered. Est. subs: 127,000"
+    },
+    {
+      "id": "comp-135",
+      "channelId": "@VengefulPariah",
+      "name": "VengefulPariah VengefulPariah",
+      "url": "https://www.youtube.com/@VengefulPariah",
+      "niche": "Minecraft RP",
+      "focus": "Discovered via \"minecraft roleplay cinematic\" search",
+      "addedAt": "2026-02-22T11:02:37.100Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-roleplay-cinematic",
+      "stats": {
+        "subscribers": "23.3K subscribers",
+        "subscriberCount": 23300,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "MEDIUM",
+      "notes": "Auto-discovered. Est. subs: 23,300"
+    },
+    {
+      "channel": "ToonyLoonyTV",
+      "channelUrl": "https://www.youtube.com/@ToonyLoonyTV",
+      "niche": "Pets/Animals/AI Creatures",
+      "category": "stevensongirl",
+      "addedDate": "2026-02-23",
+      "source": "manual",
+      "sampleVideo": {
+        "title": "I Got Six Pokémon In Real Life",
+        "url": "https://www.youtube.com/watch?v=fgtTTpaCsd8",
+        "published": "2026-02-20"
+      },
+      "notes": "Uses AI to simulate Pokémon in real life. Similar format to StevenSongIRL AI creature content."
+    },
+    {
+      "id": "comp-136",
+      "channelId": "@Johnbuildin",
+      "name": "Johnbuildin Johnbuildin",
+      "url": "https://www.youtube.com/@Johnbuildin",
+      "niche": "Minecraft BBS",
+      "focus": "Discovered via \"\"BBS mod\" minecraft cinematic\" search",
+      "addedAt": "2026-02-25T11:00:13.814Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-BBS-mod-minecraft-cinematic",
+      "stats": {
+        "subscribers": "18 subscribers",
+        "subscriberCount": 18,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "LOW",
+      "notes": "Auto-discovered. Est. subs: 18"
+    },
+    {
+      "id": "comp-137",
+      "channelId": "@NotDYPN",
+      "name": "Not DYPN Not DYPN",
+      "url": "https://www.youtube.com/@NotDYPN",
+      "niche": "Minecraft BBS",
+      "focus": "Discovered via \"Blockbuster Studio minecraft\" search",
+      "addedAt": "2026-02-25T11:00:23.078Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-Blockbuster-Studio-minecraft",
+      "stats": {
+        "subscribers": "3.57K subscribers",
+        "subscriberCount": 3570,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "LOW",
+      "notes": "Auto-discovered. Est. subs: 3,570"
+    },
+    {
+      "id": "comp-138",
+      "channelId": "@TwoWorldsTWA",
+      "name": "Two Worlds - Minecraft Machinimas Two Worlds - Minecraft Machinimas",
+      "url": "https://www.youtube.com/@TwoWorldsTWA",
+      "niche": "Minecraft Cinematic",
+      "focus": "Discovered via \"minecraft machinima high quality\" search",
+      "addedAt": "2026-02-25T11:00:32.346Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-machinima-high-quality",
+      "stats": {
+        "subscribers": "384 subscribers",
+        "subscriberCount": 384,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "LOW",
+      "notes": "Auto-discovered. Est. subs: 384"
+    },
+    {
+      "id": "comp-139",
+      "channelId": "@TooniverseCreations10",
+      "name": "Tooniverse Creations Tooniverse Creations",
+      "url": "https://www.youtube.com/@TooniverseCreations10",
+      "niche": "Minecraft Cinematic",
+      "focus": "Discovered via \"minecraft movie scene recreation\" search",
+      "addedAt": "2026-02-25T11:00:41.556Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-movie-scene-recreation",
+      "stats": {
+        "subscribers": "542K subscribers",
+        "subscriberCount": 542000,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "HIGH",
+      "notes": "Auto-discovered. Est. subs: 542,000"
+    },
+    {
+      "id": "comp-140",
+      "channelId": "@xkarutaclanx",
+      "name": "xKarutaClanx xKarutaClanx",
+      "url": "https://www.youtube.com/@xkarutaclanx",
+      "niche": "Minecraft Cinematic",
+      "focus": "Discovered via \"minecraft movie scene recreation\" search",
+      "addedAt": "2026-02-25T11:00:41.557Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-movie-scene-recreation",
+      "stats": {
+        "subscribers": "886K subscribers",
+        "subscriberCount": 886000,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "HIGH",
+      "notes": "Auto-discovered. Est. subs: 886,000"
+    },
+    {
+      "id": "comp-141",
+      "channelId": "@LazarBeam",
+      "name": "LazarBeam LazarBeam",
+      "url": "https://www.youtube.com/@LazarBeam",
+      "niche": "Minecraft Cinematic",
+      "focus": "Discovered via \"minecraft movie scene recreation\" search",
+      "addedAt": "2026-02-25T11:00:41.557Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-movie-scene-recreation",
+      "stats": {
+        "subscribers": "23.3M subscribers",
+        "subscriberCount": 23300000,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "HIGH",
+      "notes": "Auto-discovered. Est. subs: 23,300,000"
+    },
+    {
+      "id": "comp-142",
+      "channelId": "@AriaCreationsBT",
+      "name": "AriaCreations AriaCreations",
+      "url": "https://www.youtube.com/@AriaCreationsBT",
+      "niche": "Minecraft Cinematic",
+      "focus": "Discovered via \"minecraft timelapse cinematic\" search",
+      "addedAt": "2026-02-25T11:00:51.078Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-timelapse-cinematic",
+      "stats": {
+        "subscribers": "36.6K subscribers",
+        "subscriberCount": 36600,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "MEDIUM",
+      "notes": "Auto-discovered. Est. subs: 36,600"
+    },
+    {
+      "id": "comp-143",
+      "channelId": "@FroggyDudeMC",
+      "name": "FroggyDude FroggyDude",
+      "url": "https://www.youtube.com/@FroggyDudeMC",
+      "niche": "Minecraft Villager Content",
+      "focus": "Discovered via \"minecraft villagers\" search",
+      "addedAt": "2026-02-25T11:01:09.372Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-villagers",
+      "stats": {
+        "subscribers": "882K subscribers",
+        "subscriberCount": 882000,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "HIGH",
+      "notes": "Auto-discovered. Est. subs: 882,000"
+    },
+    {
+      "id": "comp-144",
+      "channelId": "@Zhdwys",
+      "name": "Zsdwys Zsdwys",
+      "url": "https://www.youtube.com/@Zhdwys",
+      "niche": "AI Creature",
+      "focus": "Discovered via \"\"I got a pet\" dinosaur\" search",
+      "addedAt": "2026-02-25T11:01:26.813Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-I-got-a-pet-dinosaur",
+      "stats": {
+        "subscribers": "21 subscribers",
+        "subscriberCount": 21,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "LOW",
+      "notes": "Auto-discovered. Est. subs: 21"
+    },
+    {
+      "id": "comp-145",
+      "channelId": "@sspetsai-be5qh",
+      "name": "ss pets ai ss pets ai",
+      "url": "https://www.youtube.com/@sspetsai-be5qh",
+      "niche": "AI Pet",
+      "focus": "Discovered via \"AI generated pet real life\" search",
+      "addedAt": "2026-02-25T11:01:36.391Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-AI-generated-pet-real-life",
+      "stats": {
+        "subscribers": "7.64K subscribers",
+        "subscriberCount": 7640,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "LOW",
+      "notes": "Auto-discovered. Est. subs: 7,640"
+    },
+    {
+      "id": "comp-146",
+      "channelId": "@alien-project",
+      "name": "alien-project alien-project",
+      "url": "https://www.youtube.com/@alien-project",
+      "niche": "Creature Sim",
+      "focus": "Discovered via \"virtual creature simulation\" search",
+      "addedAt": "2026-02-25T11:01:46.857Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-virtual-creature-simulation",
+      "stats": {
+        "subscribers": "2.5K subscribers",
+        "subscriberCount": 2500,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "LOW",
+      "notes": "Auto-discovered. Est. subs: 2,500"
+    },
+    {
+      "id": "comp-147",
+      "channelId": "@mythcreatureAi95",
+      "name": "myth creature Ai 95 myth creature Ai 95",
+      "url": "https://www.youtube.com/@mythcreatureAi95",
+      "niche": "AI Creature",
+      "focus": "Discovered via \"fictional creature ai\" search",
+      "addedAt": "2026-02-25T11:01:56.775Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-fictional-creature-ai",
+      "stats": {
+        "subscribers": "1 video",
+        "subscriberCount": 1,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "LOW",
+      "notes": "Auto-discovered. Est. subs: 1"
+    },
+    {
+      "id": "comp-148",
+      "channelId": "@GorfMinecraft",
+      "name": "Gorf Gorf",
+      "url": "https://www.youtube.com/@GorfMinecraft",
+      "niche": "Minecraft Series",
+      "focus": "Discovered via \"minecraft cinematic series\" search",
+      "addedAt": "2026-02-25T11:02:05.906Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-cinematic-series",
+      "stats": {
+        "subscribers": "226K subscribers",
+        "subscriberCount": 226000,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "HIGH",
+      "notes": "Auto-discovered. Est. subs: 226,000"
+    },
+    {
+      "id": "comp-149",
+      "channelId": "@WorstNightmareFilm",
+      "name": "Worst Nightmare Minecraft Film Worst Nightmare Minecraft Film",
+      "url": "https://www.youtube.com/@WorstNightmareFilm",
+      "niche": "Minecraft Series",
+      "focus": "Discovered via \"minecraft cinematic series\" search",
+      "addedAt": "2026-02-25T11:02:05.906Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-cinematic-series",
+      "stats": {
+        "subscribers": "147 subscribers",
+        "subscriberCount": 147,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "LOW",
+      "notes": "Auto-discovered. Est. subs: 147"
+    },
+    {
+      "id": "comp-150",
+      "channelId": "@Rainimator",
+      "name": "Rainimator Rainimator",
+      "url": "https://www.youtube.com/@Rainimator",
+      "niche": "Minecraft Series",
+      "focus": "Discovered via \"minecraft cinematic series\" search",
+      "addedAt": "2026-02-25T11:02:05.906Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-cinematic-series",
+      "stats": {
+        "subscribers": "2.4M subscribers",
+        "subscriberCount": 2400000,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "HIGH",
+      "notes": "Auto-discovered. Est. subs: 2,400,000"
+    },
+    {
+      "id": "comp-152",
+      "channelId": "@sonix.1007",
+      "name": "Sonix Sonix",
+      "url": "https://www.youtube.com/@sonix.1007",
+      "niche": "Minecraft Cinematic",
+      "focus": "Discovered via \"minecraft timelapse cinematic\" search",
+      "addedAt": "2026-02-27T11:00:49.098Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-timelapse-cinematic",
+      "stats": {
+        "subscribers": "158 subscribers",
+        "subscriberCount": 158,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "LOW",
+      "notes": "Auto-discovered. Est. subs: 158"
+    },
+    {
+      "id": "comp-153",
+      "channelId": "@Pett-2026",
+      "name": "Pett Pett",
+      "url": "https://www.youtube.com/@Pett-2026",
+      "niche": "AI Creature",
+      "focus": "Discovered via \"\"I got a pet\" dinosaur\" search",
+      "addedAt": "2026-02-27T11:01:24.717Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-I-got-a-pet-dinosaur",
+      "stats": {
+        "subscribers": "22 subscribers",
+        "subscriberCount": 22,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "LOW",
+      "notes": "Auto-discovered. Est. subs: 22"
+    },
+    {
+      "id": "comp-154",
+      "channelId": "@BigBo-g2q",
+      "name": "Big Bo Big Bo",
+      "url": "https://www.youtube.com/@BigBo-g2q",
+      "niche": "AI Creature",
+      "focus": "Discovered via \"\"I got a pet\" dinosaur\" search",
+      "addedAt": "2026-02-27T11:01:24.717Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-I-got-a-pet-dinosaur",
+      "stats": {
+        "subscribers": "1 subscriber",
+        "subscriberCount": 1,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "LOW",
+      "notes": "Auto-discovered. Est. subs: 1"
+    },
+    {
+      "id": "comp-155",
+      "channelId": "@AIZooWorld-f9z",
+      "name": "AI Zoo World AI Zoo World",
+      "url": "https://www.youtube.com/@AIZooWorld-f9z",
+      "niche": "AI Pet",
+      "focus": "Discovered via \"AI generated pet real life\" search",
+      "addedAt": "2026-02-27T11:01:33.834Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-AI-generated-pet-real-life",
+      "stats": {
+        "subscribers": "27 subscribers",
+        "subscriberCount": 27,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "LOW",
+      "notes": "Auto-discovered. Est. subs: 27"
+    },
+    {
+      "id": "comp-156",
+      "channelId": "@modttsimulator",
+      "name": "ModTT Simulator ModTT Simulator",
+      "url": "https://www.youtube.com/@modttsimulator",
+      "niche": "Creature Sim",
+      "focus": "Discovered via \"virtual creature simulation\" search",
+      "addedAt": "2026-02-27T11:01:43.118Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-virtual-creature-simulation",
+      "stats": {
+        "subscribers": "152K subscribers",
+        "subscriberCount": 152000,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "HIGH",
+      "notes": "Auto-discovered. Est. subs: 152,000"
+    },
+    {
+      "id": "comp-157",
+      "channelId": "@Kolanii",
+      "name": "Kolanii Kolanii",
+      "url": "https://www.youtube.com/@Kolanii",
+      "niche": "Minecraft Series",
+      "focus": "Discovered via \"minecraft cinematic series\" search",
+      "addedAt": "2026-02-27T11:02:01.148Z",
+      "autoAdded": true,
+      "source": "competitor-scraper-minecraft-cinematic-series",
+      "stats": {
+        "subscribers": "2.94M subscribers",
+        "subscriberCount": 2940000,
+        "videoCount": "Unknown",
+        "totalViews": "Unknown"
+      },
+      "latestVideos": [],
+      "priority": "HIGH",
+      "notes": "Auto-discovered. Est. subs: 2,940,000"
+    }
+  ],
+  "outlierPatterns": [
+    {
+      "pattern": "I got a fictional pet simulation",
+      "category": "AI Pet Content",
+      "relevanceScore": 95,
+      "recommendedAction": "Create similar content with unique twist"
+    },
+    {
+      "pattern": "AI generated creatures",
+      "category": "AI Creature Design",
+      "relevanceScore": 90,
+      "recommendedAction": "Document AI creature creation process"
+    },
+    {
+      "pattern": "1000 Years time compression",
+      "category": "AI Simulation",
+      "relevanceScore": 88,
+      "recommendedAction": "Apply time compression to AI creature evolution"
+    },
+    {
+      "pattern": "Baby creature physics simulation",
+      "category": "Physics Simulation",
+      "relevanceScore": 92,
+      "recommendedAction": "Create baby AI creature physics content"
+    },
+    {
+      "pattern": "Dragon family narrative",
+      "category": "Minecraft/Dragon",
+      "relevanceScore": 85,
+      "recommendedAction": "Create AI dragon family story arcs"
+    },
+    {
+      "pattern": "Pet Simulator tutorials",
+      "category": "Gaming/Tutorial",
+      "relevanceScore": 80,
+      "recommendedAction": "Create how-to guides for AI pet mechanics"
+    }
+  ],
+  "lastUpdated": "2026-02-27T11:02:13.283Z",
+  "lastReviewed": "2026-02-27T11:02:13.283Z",
+  "reviewNotes": "Competitor scraper found 6 new channels",
+  "meta": {
+    "totalCount": 157,
+    "lastUpdated": "2026-02-27T11:02:13.283Z",
+    "version": "1.1",
+    "note": "Refreshed with latest intelligence"
+  },
+  "intelligence": {
+    "lastScan": "2026-02-16T16:55:00Z",
+    "keyFindings": [
+      "RogersPets continues 2-3x weekly upload cadence",
+      "Creature Lab testing longer-form (8+ min) content",
+      "Night Toons maintaining 3M+ subscriber base with animation shorts"
+    ]
+  }
+}

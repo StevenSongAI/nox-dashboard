@@ -1,0 +1,107 @@
+{
+  "generated_at": "2026-02-27T07:00:00-05:00",
+  "analysis_window": "48 hours",
+  "total_scraped": 24,
+  "channels_analyzed": ["@ZMDE", "@StevenSongIRL"],
+  
+  "zmde_gaming_outliers": [
+    {
+      "title": "Terraria Wings Tier List! #terraria #shorts",
+      "channel": "arnie",
+      "views": 4200000,
+      "videoId": "sVBTYfuWmpA",
+      "format": "Short",
+      "hook": "Tier list format performing exceptionally well in gaming niche",
+      "relevance": "Gaming tier lists - format transferable to Minecraft/BBS content"
+    },
+    {
+      "title": "MAMMOTT TIER LIST! #mysingingmonsters",
+      "channel": "Ghazt",
+      "views": 889000,
+      "videoId": "Qfg0Pennqh8",
+      "format": "Short",
+      "hook": "Character tier lists in family-friendly games",
+      "relevance": "Tier list format for Minecraft mobs/Create Mod components"
+    },
+    {
+      "title": "this clan forgot to upkeep their open-core...",
+      "channel": "Ultra",
+      "views": 12000,
+      "videoId": "7BeSIXp24Q0",
+      "format": "Long-form",
+      "hook": "Clan/guild drama with mystery element",
+      "relevance": "Narrative storytelling format for BBS server stories"
+    }
+  ],
+  
+  "stevensongirl_animals_outliers": [
+    {
+      "title": "prehistoric planet simosuchus vs Majungasaurus",
+      "channel": "T64",
+      "views": 1000000,
+      "videoId": "k59OJyx_6qM",
+      "format": "Long-form",
+      "hook": "Prehistoric animal battles from popular documentary series",
+      "relevance": "Animal confrontation content with documentary backing"
+    },
+    {
+      "title": "A Majungasaurus Hunts a Group of Simosuchus | Prehistoric Planet 2 Clip",
+      "channel": "ShadowPhantom",
+      "views": 196000,
+      "videoId": "BrYndo0Lih4",
+      "format": "Short",
+      "hook": "Predator-prey chase sequences",
+      "relevance": "Animal hunting behavior clips perform well"
+    },
+    {
+      "title": "No Shoes, No Food.. Just Tears Until Kindness Changed Everything #shark #whale",
+      "channel": "Dena Channel",
+      "views": 61000,
+      "videoId": "pOIge1yjSoI",
+      "format": "Short",
+      "hook": "Emotional animal rescue narrative",
+      "relevance": "Rescue/transformation stories in ocean wildlife niche"
+    },
+    {
+      "title": "Simosuchus: The Prehistoric, Pug Nosed Crocodile of Madagascar (Remake)",
+      "channel": "CHimerasuchus",
+      "views": 29000,
+      "videoId": "2E28V_DG6RA",
+      "format": "Long-form",
+      "hook": "Obscure prehistoric creatures with unique features",
+      "relevance": "Deep dives on lesser-known animals"
+    }
+  ],
+  
+  "key_insights": {
+    "zmde": [
+      "Tier list shorts dominating gaming (Terraria: 4.2M, My Singing Monsters: 889K)",
+      "Narrative clan drama content showing traction even at smaller view counts",
+      "Consider: Minecraft mob tier lists, Create Mod component rankings, BBS cinematic tier lists"
+    ],
+    "stevensongirl": [
+      "Prehistoric Planet 2 clips driving 1M+ views on dinosaur confrontation content",
+      "Animal rescue/emotional narratives performing in Shorts format",
+      "Obscure prehistoric creatures (Simosuchus) generating educational interest",
+      "Consider: Prehistoric animal battles, emotional pet/wildlife transformations, lesser-known species deep dives"
+    ]
+  },
+  
+  "trending_formats": [
+    {
+      "format": "Tier list Shorts",
+      "performance": "4.2M peak views",
+      "applicable_to": ["zmde"]
+    },
+    {
+      "format": "Prehistoric animal battles",
+      "performance": "1M+ views",
+      "applicable_to": ["stevensongirl"]
+    },
+    {
+      "format": "Emotional animal rescue narratives",
+      "performance": "60K+ views",
+      "applicable_to": ["stevensongirl"]
+    }
+  ]
+}

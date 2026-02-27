@@ -1,0 +1,202 @@
+{
+  "timestamp": "2026-02-08T05:06:52.564Z",
+  "categories": {
+    "ai": [
+      {
+        "topic": "Claude 4 Release",
+        "sentiment": "positive",
+        "momentum": "high",
+        "source": "anthropic",
+        "trendScore": 90,
+        "id": "ai-Q2xhdWRl"
+      },
+      {
+        "topic": "OpenAI GPT-5 Rumors",
+        "sentiment": "neutral",
+        "momentum": "medium",
+        "source": "x",
+        "trendScore": 50,
+        "id": "ai-T3BlbkFJ"
+      },
+      {
+        "topic": "Local LLM Progress",
+        "sentiment": "positive",
+        "momentum": "high",
+        "source": "github",
+        "trendScore": 90,
+        "id": "ai-TG9jYWwg"
+      },
+      {
+        "topic": "AI Coding Agents",
+        "sentiment": "positive",
+        "momentum": "very-high",
+        "source": "producthunt",
+        "trendScore": 120,
+        "id": "ai-QUkgQ29k"
+      },
+      {
+        "topic": "Multimodal AI Tools",
+        "sentiment": "positive",
+        "momentum": "high",
+        "source": "techcrunch",
+        "trendScore": 90,
+        "id": "ai-TXVsdGlt"
+      }
+    ],
+    "tech": [
+      {
+        "topic": "Apple M4 Ultra Leaks",
+        "sentiment": "positive",
+        "momentum": "medium",
+        "source": "macrumors",
+        "trendScore": 60,
+        "id": "tech-QXBwbGUg"
+      },
+      {
+        "topic": "Cloud Cost Optimization",
+        "sentiment": "neutral",
+        "momentum": "high",
+        "source": "hackernews",
+        "trendScore": 75,
+        "id": "tech-Q2xvdWQg"
+      },
+      {
+        "topic": "Rust Adoption Enterprise",
+        "sentiment": "positive",
+        "momentum": "medium",
+        "source": "github",
+        "trendScore": 60,
+        "id": "tech-UnVzdCBB"
+      },
+      {
+        "topic": "Edge Computing Growth",
+        "sentiment": "positive",
+        "momentum": "medium",
+        "source": "x",
+        "trendScore": 60,
+        "id": "tech-RWRnZSBD"
+      }
+    ],
+    "gaming": [
+      {
+        "topic": "Indie Game Revenue Models",
+        "sentiment": "positive",
+        "momentum": "high",
+        "source": "gamedev",
+        "trendScore": 90,
+        "id": "gaming-SW5kaWUg"
+      },
+      {
+        "topic": "YouTube Gaming Algorithm",
+        "sentiment": "neutral",
+        "momentum": "high",
+        "source": "x",
+        "trendScore": 75,
+        "id": "gaming-WW91VHVi"
+      },
+      {
+        "topic": "Minecraft Content Trends",
+        "sentiment": "positive",
+        "momentum": "medium",
+        "source": "youtube",
+        "trendScore": 60,
+        "id": "gaming-TWluZWNy"
+      },
+      {
+        "topic": "AI Game Development Tools",
+        "sentiment": "positive",
+        "momentum": "very-high",
+        "source": "producthunt",
+        "trendScore": 120,
+        "id": "gaming-QUkgR2Ft"
+      }
+    ],
+    "business": [
+      {
+        "topic": "Creator Economy 2026",
+        "sentiment": "positive",
+        "momentum": "high",
+        "source": "bloomberg",
+        "trendScore": 90,
+        "id": "business-Q3JlYXRv"
+      },
+      {
+        "topic": "SaaS Micro-tools Trend",
+        "sentiment": "positive",
+        "momentum": "very-high",
+        "source": "indiehackers",
+        "trendScore": 120,
+        "id": "business-U2FhUyBN"
+      },
+      {
+        "topic": "Solo Founder Success",
+        "sentiment": "positive",
+        "momentum": "medium",
+        "source": "x",
+        "trendScore": 60,
+        "id": "business-U29sbyBG"
+      }
+    ]
+  },
+  "topTrending": [
+    {
+      "topic": "AI Coding Agents",
+      "category": "ai",
+      "score": 120,
+      "momentum": "very-high"
+    },
+    {
+      "topic": "AI Game Development Tools",
+      "category": "gaming",
+      "score": 120,
+      "momentum": "very-high"
+    },
+    {
+      "topic": "SaaS Micro-tools Trend",
+      "category": "business",
+      "score": 120,
+      "momentum": "very-high"
+    },
+    {
+      "topic": "Claude 4 Release",
+      "category": "ai",
+      "score": 90,
+      "momentum": "high"
+    },
+    {
+      "topic": "Local LLM Progress",
+      "category": "ai",
+      "score": 90,
+      "momentum": "high"
+    }
+  ],
+  "summary": {
+    "totalTopics": 16,
+    "highMomentumCount": 10,
+    "positiveSentimentCount": 13,
+    "categoriesCovered": 4,
+    "lastUpdated": "2026-02-08T05:06:52.564Z"
+  },
+  "history": [
+    {
+      "timestamp": "2026-02-08T04:26:57.622Z",
+      "summary": {
+        "totalTopics": 16,
+        "highMomentumCount": 10,
+        "positiveSentimentCount": 13,
+        "categoriesCovered": 4,
+        "lastUpdated": "2026-02-08T04:26:57.622Z"
+      }
+    },
+    {
+      "timestamp": "2026-02-08T05:06:52.564Z",
+      "summary": {
+        "totalTopics": 16,
+        "highMomentumCount": 10,
+        "positiveSentimentCount": 13,
+        "categoriesCovered": 4,
+        "lastUpdated": "2026-02-08T05:06:52.564Z"
+      }
+    }
+  ]
+}

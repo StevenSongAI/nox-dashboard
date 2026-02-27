@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <title>100 Days Creature Briefs | Nox Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css?v=3">
+  <style>
+    .brief-card { transition: all 0.2s; }
+    .brief-card:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(0,0,0,0.3); }
+    .creature-img { aspect-ratio: 16/9; object-fit: cover; }
+    .day-badge { background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%); }
+  </style>
+</head>
+<body class="bg-[#0f0f1a] text-gray-200 min-h-screen">
+  <header class="border-b border-[#252540] bg-[#1a1a2e]/80 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <a href="index.html?v=4" class="text-purple-400 hover:text-purple-300">← Back</a>
+          <span class="text-2xl">🐉</span>
+          <h1 class="text-xl font-bold text-white">100 Days Creature Content Briefs</h1>
+          <span id="brief-count" class="text-xs bg-[#252540] text-gray-400 px-2 py-1 rounded">Loading...</span>
+        </div>
+        <div class="flex items-center gap-3 text-sm">
+          <select id="creature-filter" class="bg-[#1a1a2e] border border-[#252540] text-gray-300 text-sm rounded px-3 py-2">
+            <option value="all">All Creatures</option>
+            <option value="dragon">Dragons</option>
+            <option value="dinosaur">Dinosaurs</option>
+            <option value="mythical">Mythical</option>
+            <option value="sea">Sea Creatures</option>
+            <option value="insect">Insects</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+    <div class="mb-6 p-4 bg-[#1a1a2e] border border-[#252540] rounded-lg">
+      <p class="text-sm text-gray-400">
+        Content briefs adapted from top Minecraft "100 Days" outlier videos. Each brief follows the 
+        <strong class="text-white">"Raising a Pet X for 100 Days"</strong> format: birth → growth → habitat evolution → challenges → climactic ending.
+        All stories feature Steven as protagonist with completely unique narrative arcs.
+      </p>
+    </div>
+
+    <div id="briefs-list" class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+      <div class="col-span-full p-8 text-center text-gray-500">
+        <div class="animate-pulse">Loading creature briefs...</div>
+      </div>
+    </div>
+  </main>
+
+  <div id="brief-modal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-[#1a1a2e] border border-[#252540] rounded-lg w-full max-w-4xl max-h-[90vh] flex flex-col">
+      <div class="flex items-center justify-between p-4 border-b border-[#252540]">
+        <div class="flex items-center gap-3">
+          <span id="modal-creature-icon" class="text-2xl">🐉</span>
+          <div>
+            <h3 id="modal-title" class="text-lg font-semibold text-white">Creature Brief</h3>
+            <a id="modal-source-link" href="#" target="_blank" class="text-xs text-purple-400 hover:text-purple-300">View Source Video →</a>
+          </div>
+        </div>
+        <button id="close-brief-modal" class="text-gray-400 hover:text-white transition-colors" onclick="App.closeModal()">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <div id="modal-content" class="p-4 overflow-y-auto flex-1"></div>
+    </div>
+  </div>
+
+  <script src="briefs-app.js"></script>
+</body>
+</html>

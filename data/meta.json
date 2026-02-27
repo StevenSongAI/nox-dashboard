@@ -1,0 +1,21 @@
+{
+  "version": "3.0",
+  "lastUpdated": "2026-02-23T18:00:00Z",
+  "updatedBy": "dashboard-rebuild",
+  "dashboard": {
+    "panels": 3,
+    "description": "Simplified 3-panel command center: Bottlenecks, YouTube Intel, Projects"
+  },
+  "dataFreshness": {
+    "youtube": "2026-02-22 — Outliers + Competitors",
+    "bottlenecks": "2026-02-23 — Active blockers",
+    "projects": "2026-02-23 — BBS Crowd Spawner, Scraper Pipeline, Dashboard"
+  },
+  "sections": {
+    "youtube": "2026-02-22T12:10:00Z",
+    "competitors": "2026-02-22T03:16:00Z",
+    "bottlenecks": "2026-02-23T17:00:00Z",
+    "projects": "2026-02-23T18:00:00Z"
+  },
+  "note": "v3.0: Stripped 127 widgets, 13 tabs → 3 focused panels"
+}

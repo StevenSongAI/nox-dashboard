@@ -1,0 +1,154 @@
+{
+  "meta": {
+    "lastUpdated": "2026-02-15T19:16:00Z",
+    "totalArtists": 7,
+    "sources": ["Fiverr", "Planet Minecraft"],
+    "status": "ready_for_outreach",
+    "priorityContact": "Regnozes (Discord available)"
+  },
+  "artists": [
+    {
+      "id": "mca-001",
+      "name": "whaloebuilds",
+      "portfolioUrl": "https://www.fiverr.com/whaloebuilds/create-you-realistic-world-painter-map-for-minecraft",
+      "source": "Fiverr",
+      "location": "Fiverr",
+      "discord": null,
+      "pricing": "$40 custom WorldPainter map",
+      "specialty": "Realistic WorldPainter maps",
+      "experience": null,
+      "status": "pending_contact",
+      "priority": 3,
+      "notes": "7-day delivery mentioned in research"
+    },
+    {
+      "id": "mca-002",
+      "name": "admyn77",
+      "portfolioUrl": "https://www.fiverr.com/admyn77/make-you-a-custom-minecraft-map-in-world-painter",
+      "source": "Fiverr",
+      "location": "Fiverr",
+      "discord": null,
+      "pricing": "$10-50 (1000x1000 to 10000x10000 blocks)",
+      "specialty": "Custom Minecraft maps (variable sizes)",
+      "experience": null,
+      "status": "pending_contact",
+      "priority": 2,
+      "notes": "Scalable pricing based on map size - good for Ice Dragon scale (3000x3000)"
+    },
+    {
+      "id": "mca-003",
+      "name": "evershadowvii",
+      "portfolioUrl": "https://www.fiverr.com/evershadowvii/create-a-minecraft-terrain-map-using-world-painter",
+      "source": "Fiverr",
+      "location": "Fiverr",
+      "discord": null,
+      "pricing": "$5 starting terrain maps",
+      "specialty": "Terrain maps (budget option)",
+      "experience": null,
+      "status": "pending_contact",
+      "priority": 5,
+      "notes": "Lowest price point - good for testing concepts"
+    },
+    {
+      "id": "mca-004",
+      "name": "chi_bot",
+      "portfolioUrl": "https://www.fiverr.com/chi_bot/create-a-world-painter-map-for-you",
+      "source": "Fiverr",
+      "location": "Fiverr",
+      "discord": null,
+      "pricing": "$30 (10+ years experience)",
+      "specialty": "WorldPainter maps",
+      "experience": "10+ years",
+      "status": "pending_contact",
+      "priority": 4,
+      "notes": "Most experienced - 10+ years"
+    },
+    {
+      "id": "mca-005",
+      "name": "Regnozes",
+      "portfolioUrl": "https://www.planetminecraft.com/forums/minecraft/servers/world-painter-artist-for-hire-526366/",
+      "source": "Planet Minecraft",
+      "location": "Planet Minecraft Forums",
+      "discord": "Regnozes#4631",
+      "pricing": "Contact for pricing",
+      "specialty": "WorldPainter artist",
+      "experience": null,
+      "status": "pending_contact",
+      "priority": 1,
+      "notes": "PRIORITY CONTACT - Has Discord (Regnozes#4631). Direct message possible. Active in WorldPainter community."
+    },
+    {
+      "id": "mca-006",
+      "name": "ninjakiw1",
+      "portfolioUrl": "https://www.fiverr.com/ninjakiw1/make-a-custom-minecraft-terrain-with-worldpainter",
+      "source": "Fiverr",
+      "location": "Fiverr",
+      "discord": null,
+      "pricing": "$5 custom terrain with WorldPainter",
+      "specialty": "Custom Minecraft terrain with 3D modeling",
+      "experience": null,
+      "status": "pending_contact",
+      "priority": 6,
+      "notes": "4-day delivery. Includes 3D modeling. Budget-friendly option."
+    },
+    {
+      "id": "mca-007",
+      "name": "olliegn",
+      "portfolioUrl": "https://www.fiverr.com/olliegn/build-you-custom-minecraft-terrain-in-worldpainter",
+      "source": "Fiverr",
+      "location": "Fiverr",
+      "discord": null,
+      "pricing": "$5 custom terrain in WorldPainter",
+      "specialty": "Industrial & Product Design terrain",
+      "experience": null,
+      "status": "pending_contact",
+      "priority": 7,
+      "notes": "4-day delivery. Includes 3D renders. Good for polished presentation."
+    }
+  ],
+  "outreachTemplates": {
+    "fiverr": "Hi [name], I'm working on a YouTube video project that needs a custom Minecraft map. I found your WorldPainter work and it looks great. I need a [map type] approximately [size] blocks. Timeline is flexible. Can you tell me about your availability and pricing for something like this?",
+    "planetMinecraft": "Hi [name], I came across your post on Planet Minecraft forums. I'm working on a YouTube video project and need a custom WorldPainter map. Would you be interested in discussing this? I'm looking for [map type] around [size] blocks.",
+    "iceDragonSpecific": {
+      "discord": "Hi Regnozes, I saw your WorldPainter work on Planet Minecraft forums. I'm working on a YouTube video about an Ice Dragon evolution series and need a custom arctic/fantasy terrain (approximately 3000x3000 blocks) that would work well for dragon-scale content. Do you have availability for a project like this? Would love to discuss pricing and timeline.",
+      "fiverrIceDragon": "Hi [name], I'm working on a YouTube video about Ice Dragon evolution stages and need a custom Minecraft map. I'm looking for an arctic/fantasy terrain with mountains, ice caves, and open areas for dragon-scale builds (approximately 3000x3000 blocks). The map will be featured in a video with 100K+ expected views. Can you tell me about your availability and pricing for something like this?"
+    }
+  },
+  "iceDragonProject": {
+    "description": "Ice Dragon evolution stages video - needs custom arctic terrain with mountains, ice caves, and open areas",
+    "mapSize": "3000x3000 blocks (medium map)",
+    "budget": "$75-150",
+    "timeline": "Flexible - video production in progress",
+    "requiredFeatures": [
+      "Mountain ranges for dragon perches",
+      "Ice caves for nesting areas",
+      "Open tundra for flight sequences",
+      "Frozen lakes/rivers for visual interest",
+      "Varied elevation for cinematic shots"
+    ],
+    "priorityContact": "Regnozes (Discord: Regnozes#4631) - Direct contact available, no Fiverr fees"
+  },
+  "budgetRecommendation": {
+    "smallMap": "$20-40 (1000x1000 blocks)",
+    "mediumMap": "$75-150 (3000x3000 blocks - Ice Dragon scale)",
+    "largeMap": "$150-300 (5000x5000+ blocks)"
+  },
+  "nextActions": [
+    {
+      "priority": 1,
+      "action": "Contact Regnozes via Discord (Regnozes#4631)",
+      "reason": "Direct contact available - no platform fees, faster communication",
+      "message": "Use iceDragonSpecific.discord template"
+    },
+    {
+      "priority": 2,
+      "action": "Send Fiverr messages to admyn77 and whaloebuilds",
+      "reason": "admyn77 has scalable pricing for 3000x3000; whaloebuilds has realistic style that fits ice theme"
+    },
+    {
+      "priority": 3,
+      "action": "Get quotes from 2-3 artists before deciding",
+      "reason": "Price comparison and availability check"
+    }
+  ]
+}

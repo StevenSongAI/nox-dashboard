@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monthly Expenses | Nox Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css?v=3">
+  <style>
+    body { background: #0f0f1a; color: #e5e7eb; font-family: system-ui, sans-serif; }
+    .card { background: #1a1a2e; border: 1px solid #252540; border-radius: 0.5rem; padding: 1rem; }
+    .expense-row:hover { background: #1a1a2e; }
+  </style>
+</head>
+<body class="min-h-screen p-6">
+  <div class="max-w-5xl mx-auto">
+    <div class="flex items-center justify-between mb-6">
+      <div>
+        <a href="index.html" class="text-purple-400 hover:text-purple-300 text-sm">← Back to Dashboard</a>
+        <h1 class="text-2xl font-bold text-white mt-2">💰 Monthly Expenses</h1>
+        <p class="text-sm text-gray-400">February 2026</p>
+      </div>
+      <a href="data/expenses.csv" download class="px-4 py-2 bg-purple-500/20 text-purple-400 rounded hover:bg-purple-500/30 text-sm">Download CSV</a>
+    </div>
+
+    <div id="summary" class="grid gap-4 md:grid-cols-3 mb-6">
+      <div class="card text-center">
+        <p class="text-sm text-gray-400">Total CAD</p>
+        <p class="text-3xl font-bold text-white">$240.00</p>
+      </div>
+      <div class="card text-center">
+        <p class="text-sm text-gray-400">Total USD</p>
+        <p class="text-3xl font-bold text-white">$775.00</p>
+      </div>
+      <div class="card text-center">
+        <p class="text-sm text-gray-400">Entries</p>
+        <p class="text-3xl font-bold text-white">5</p>
+      </div>
+    </div>
+
+    <div class="card overflow-x-auto">
+      <table class="w-full text-sm">
+        <thead>
+          <tr class="border-b border-[#252540] text-gray-400">
+            <th class="text-left py-3 px-4">Date</th>
+            <th class="text-left py-3 px-4">Description</th>
+            <th class="text-right py-3 px-4">CAD</th>
+            <th class="text-right py-3 px-4">USD</th>
+            <th class="text-left py-3 px-4">Category</th>
+          </tr>
+        </thead>
+        <tbody id="expense-rows">
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script>
+    const expenses = [
+      { date: '2026-02-15', desc: 'Minecraft Maps', cad: 240, usd: 0, cat: 'Minecraft' },
+      { date: '2026-02-15', desc: 'Minecraft Maps', cad: 0, usd: 25, cat: 'Minecraft' },
+      { date: '2026-02-15', desc: 'Minecraft Assets/Art', cad: 0, usd: 150, cat: 'Minecraft' },
+      { date: '2026-02-21', desc: 'Minecraft Recording', cad: 0, usd: 300, cat: 'Minecraft' },
+      { date: '2026-02-27', desc: 'Recordings - Villagers Simulate Civilization Part 2', cad: 0, usd: 300, cat: 'Minecraft' }
+    ];
+
+    document.getElementById('expense-rows').innerHTML = expenses.map(e => 
+      `<tr class="expense-row border-b border-[#252540]">
+        <td class="py-3 px-4 text-gray-300">${e.date}</td>
+        <td class="py-3 px-4 text-gray-300">${e.desc}</td>
+        <td class="py-3 px-4 text-right text-gray-300">${e.cad > 0 ? '$'+e.cad.toFixed(2) : '-'}</td>
+        <td class="py-3 px-4 text-right text-gray-300">${e.usd > 0 ? '$'+e.usd.toFixed(2) : '-'}</td>
+        <td class="py-3 px-4"><span class="px-2 py-1 bg-purple-500/20 text-purple-400 rounded text-xs">${e.cat}</span></td>
+      </tr>`
+    ).join('');
+  </script>
+</body>
+</html>

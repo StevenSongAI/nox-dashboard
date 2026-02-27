@@ -1,0 +1,77 @@
+{
+  "timestamp": "2026-02-27T07:31:00-05:00",
+  "analysis_type": "x_intelligence_overnight",
+  "data_source": "nox-scrapers/x_hourly_output.json",
+  "findings": {
+    "minecraft_map_artists": {
+      "status": "no_direct_hits",
+      "insight": "Current scraper queries (AI tools, video generation, content strategy) do not surface Minecraft creators. Recommend adding search terms: 'Minecraft map', 'blockbench', 'world painter', 'Minecraft build', 'Minecraft cinematic'"
+    },
+    "ai_native_video_editors": {
+      "high_activity": [
+        {
+          "tool": "Higgsfield AI",
+          "trend": "Heavy usage for cinematic trailers, action scenes. SOUL 2.0 launched with free generations. Users pairing with Grok for script-to-video workflows."
+        },
+        {
+          "tool": "Runway Gen-3/Gen-4",
+          "trend": "Professional tier focus. 'Camera choreography' features praised. Gen-4.5 mentioned."
+        },
+        {
+          "tool": "Seedance 2.0 (ByteDance)",
+          "trend": "Recently dropped. Positioned as free alternative with 'impressive quality'."
+        },
+        {
+          "tool": "Kling AI",
+          "trend": "Motion capture upgrades noted. Frequently used alongside Higgsfield."
+        },
+        {
+          "tool": "Pika Labs",
+          "trend": "New release mentioned Feb 23."
+        }
+      ],
+      "secondary_mentions": ["Veo/Veo3 (Google)", "Sora (OpenAI)", "Lumiere"]
+    },
+    "emerging_creator_tools": {
+      "rising": [
+        {
+          "tool": "Lovart AI",
+          "note": "Nano Banana 2 integration. Fast, cheap, editable workflows. 'Everything stays in one place'",
+          "category": "image_generation"
+        },
+        {
+          "tool": "AirMore.ai",
+          "note": "Free alternative to HeyGen for video. Watermark removal capability.",
+          "category": "video_generation"
+        },
+        {
+          "tool": "Deepseek",
+          "note": "Growing as free ChatGPT alternative for research",
+          "category": "research_llm"
+        },
+        {
+          "tool": "NotebookLM",
+          "note": "'Only AI intern you need' - traction in content workflows",
+          "category": "productivity"
+        },
+        {
+          "tool": "Nano Banana 2",
+          "note": "Inside Lovart. 'Fast, cheap, quality holds up'",
+          "category": "image_generation"
+        }
+      ],
+      "established_stack_mentions": ["Notion", "ClickUp", "Zapier", "Tome", "Fireflies.ai", "Otter.ai", "Beautiful.ai"]
+    }
+  },
+  "meta_themes": [
+    "AI video shifting from 'feature race' to 'marketing/stack decision'",
+    "Emerging workflow: Grok/ChatGPT (scripts) → Higgsfield/Runway/Kling (video) → Lovart/Nano Banana (images)",
+    "Higgsfield SOUL 2.0 free tier driving adoption surge"
+  ],
+  "recommendations": [
+    "Add Minecraft-specific search terms to scraper for map artist discovery",
+    "Monitor Higgsfield contest activity - high engagement from creators",
+    "Track Lovart/Nano Banana 2 growth - potential disruptor in image gen",
+    "Watch ByteDance Seedance 2.0 - aggressive free tier strategy"
+  ]
+}

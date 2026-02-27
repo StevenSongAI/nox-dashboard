@@ -1,0 +1,19 @@
+{
+  "version": "3.0",
+  "lastUpdated": "2026-02-23T18:00:00Z",
+  "dashboard": {
+    "panels": ["bottlenecks", "youtube-intel", "projects"],
+    "description": "Simplified 3-panel command center"
+  },
+  "dataFreshness": {
+    "youtube": "2026-02-22 — Outliers + Competitors",
+    "bottlenecks": "2026-02-23 — Active blockers",
+    "projects": "2026-02-23 — Active builds"
+  },
+  "currentFocus": [
+    "Find Minecraft artists for BBS cinematic content",
+    "Find AI-native video editor for pet content",
+    "Maintain scraper pipeline for data feeds"
+  ],
+  "note": "v3.0 rebuild: Removed widget system, tool registry, and heartbeat build cycle. Focused on 3 core data panels."
+}

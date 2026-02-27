@@ -1,0 +1,31 @@
+{
+  "bottlenecks": [
+    {
+      "id": "minecraft-artists",
+      "title": "Find Minecraft Map Artists",
+      "description": "Need Blockbench modelers and BBS animators for cinematic content on @ZMDE",
+      "status": "researching",
+      "priority": "high",
+      "research": [
+        {
+          "date": "2026-02-24",
+          "source": "Fiverr scraper",
+          "finding": "12 artists found \u2014 click title to view panel"
+        }
+      ],
+      "createdAt": "2026-02-23",
+      "action": "openArtistsModal",
+      "clickable": true
+    },
+    {
+      "id": "ai-editor",
+      "title": "Find AI-Native Video Editor for @StevenSongIRL",
+      "description": "Need editor who uses AI tools (Descript, Runway, CapCut) for pet/wildlife content",
+      "status": "researching",
+      "priority": "high",
+      "research": [],
+      "createdAt": "2026-02-23"
+    }
+  ],
+  "lastUpdated": "2026-02-23T17:00:00Z"
+}
