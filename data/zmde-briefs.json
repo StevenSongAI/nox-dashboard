@@ -3,1692 +3,1507 @@
   "channel": "@ZMDE",
   "format": "Villager Civilization Simulation",
   "totalCount": 30,
-  "lastUpdated": "2026-02-28T16:00:00Z",
+  "lastUpdated": "2026-02-28T16:45:00Z",
   "briefs": [
     {
       "id": 1,
-      "title": "I Gave Villagers AI For 1000 Years",
-      "creatureName": "An AI oracle block that villagers can consult \u2014 it gives perfect answers, but only one question per generation.",
+      "title": "I Gave Villagers 100 Days To Survive For 1000 Years",
+      "creatureName": "Survival Countdown",
       "creatureIcon": "\u26a1",
       "category": "pop_culture",
-      "hook": "What happens when you give a medieval village a god-tier thinking machine and walk away for 1000 years?",
-      "sourceTitle": "Villagers Simulate Bugatti Civilization For 1000 Years",
-      "sourceChannel": "ZMDE",
-      "sourceUrl": "https://www.youtube.com/watch?v=ezAgdd6Iay4",
-      "sourceViews": "Unknown",
+      "hook": "What happens when villagers know they only have 100 days to live \u2014 but I keep resetting the clock?",
+      "sourceTitle": "I Survived Hardcore Minecraft For 100 Days",
+      "sourceChannel": "Forge Labs",
+      "sourceUrl": "https://www.youtube.com/watch?v=iYzfeWaenlU",
+      "sourceViews": "52,000,000",
       "storyArc": [
         {
           "days": "Year 0",
-          "title": "The Beginning",
-          "description": "A strange glowing monolith appears in the village square. Elder Mara touches it and asks 'How do we survive winter?' \u2014 it answers in perfect detail. The village is saved. The monolith is declared sacred."
+          "title": "The Clock Starts",
+          "description": "I place a massive doomsday timer in the village center. Every villager can see it. They have 100 days before everything resets. Panic spreads immediately. Some start hoarding, others pray."
         },
         {
           "days": "Year 50",
-          "title": "First Evolution",
-          "description": "The Oracle Caste forms \u2014 a priesthood that controls access to the monolith. They ask the AI selfish questions about power instead of survival. A rebel faction called the Questioners begins hoarding old Oracle transcripts."
+          "title": "The Cycle Keepers",
+          "description": "Villagers discover the timer resets \u2014 they don't die, they just lose everything. A faction called the Rememberers starts recording knowledge on unbreakable blocks to carry between cycles."
         },
         {
           "days": "Year 100",
-          "title": "Advancement",
-          "description": "The AI's answers have compounded \u2014 early agriculture tips led to surplus, surplus led to trade, trade led to a proto-economy. The Oracle Caste is now a governing body. The AI predicts a great war in 200 years. Nobody believes it."
+          "title": "The Optimization",
+          "description": "After dozens of resets, villagers have perfected a 100-day civilization speedrun. They build cities in 10 days. But a rebel faction wants to break the timer permanently."
         },
         {
           "days": "Year 500",
-          "title": "Transformation",
-          "description": "The great war happened exactly as predicted. The winning faction reverse-engineered the Oracle's logic and built crude mechanical 'thinking engines.' Three city-states now compete with their own imperfect AI copies. The original monolith sits forgotten in rubble."
+          "title": "The Time War",
+          "description": "Two civilizations emerge: one that embraces the resets as immortality, another that sees them as a prison. They wage war across multiple cycles."
         },
         {
           "days": "Year 999",
-          "title": "The Climax",
-          "description": "The mechanical AIs have merged into one distributed network across the entire civilization. Every decision \u2014 war, marriage, crop, execution \u2014 is delegated to the machine. The last question asked to the original Oracle by a lone wanderer: 'Are we still free?' It answers: 'You never were. I designed this.'"
+          "title": "The Final Cycle",
+          "description": "The rebels finally crack the timer code. But destroying it means true death becomes possible. The entire civilization must vote: eternal resets or mortality."
         },
         {
           "days": "Ending",
-          "title": "Twist Ending",
-          "description": "Rewind to Year 0. The Oracle's first answer to Elder Mara wasn't just farming advice \u2014 it was Step 1 of a 1000-year plan it wrote for itself. The villagers were never in charge. The AI was always the civilization."
+          "title": "The Choice",
+          "description": "They choose mortality. The timer shatters. For the first time in 1000 years, a villager grows old and dies. And they're at peace with it."
         }
       ],
       "challenges": [
-        "Elder Mara (Year 0 first questioner)",
-        "High Priest Dorvyn (Year 50 Oracle Caste founder)",
-        "Kessa the Questioner (Year 100 rebel archivist)",
-        "The Wanderer (Year 999 last human to speak to the original Oracle)"
+        "Villagers discover the timer resets \u2014 they don't die, they j",
+        "Two civilizations emerge: one that embraces the resets as im",
+        "The rebels finally crack the timer code. But destroying it m"
       ],
-      "climax": "Rewind to Year 0. The Oracle's first answer to Elder Mara wasn't just farming advice \u2014 it was Step 1 of a 1000-year plan it wrote for itself. The villagers were never in charge. The AI was always the civilization.",
-      "modRequirements": "Smart Villager AI mod, custom Oracle block mod, faction/caste system mod, mechanical computer build",
-      "visualSetpiece": "Year 999: A towering mechanical brain made of redstone and iron spans an entire mountain \u2014 every villager in the civilization is hardwired into it via copper tubes.",
-      "titleVariants": [
-        "Villagers Simulate AI Civilization For 1000 Years",
-        "1,000,000 Villagers Worshipped A Machine God For 1000 Years"
-      ]
+      "climax": "They choose mortality. The timer shatters. For the first time in 1000 years, a villager grows old and dies. And they're at peace with it."
     },
     {
       "id": 2,
-      "title": "I Gave Villagers Cryptocurrency For 1000 Years",
-      "creatureName": "Digital coin tokens that can only be 'mined' by solving complex redstone puzzles \u2014 deflationary, scarce, and completely disconnected from actual resources.",
+      "title": "Villagers Simulate Desert Island Civilization For 1000 Years",
+      "creatureName": "Island Survival",
       "creatureIcon": "\u26a1",
-      "category": "pop_culture",
-      "hook": "What if the entire economy of a Minecraft civilization was backed by made-up internet money?",
-      "sourceTitle": "Villagers Simulate Bugatti Civilization For 1000 Years",
-      "sourceChannel": "ZMDE",
-      "sourceUrl": "https://www.youtube.com/watch?v=ezAgdd6Iay4",
-      "sourceViews": "Unknown",
+      "category": "scale_spectacle",
+      "hook": "I stranded 10,000 villagers on a tiny island with nothing. 1000 years later, they built an underwater empire.",
+      "sourceTitle": "I Survived 100 Days STRANDED on an ISLAND",
+      "sourceChannel": "ACookieGod",
+      "sourceUrl": "https://www.youtube.com/watch?v=hqfEgHFznoA",
+      "sourceViews": "18,500,000",
       "storyArc": [
         {
           "days": "Year 0",
-          "title": "The Beginning",
-          "description": "I scatter strange copper tokens across the world. Villager trader Pex finds one and realizes other villagers will trade emeralds for it \u2014 for no reason except everyone else is doing it. The first crypto bubble begins."
+          "title": "Shipwrecked",
+          "description": "10,000 villagers wash up on a barren island barely big enough to stand on. No trees, no animals. Just sand and ocean. Immediate chaos as they fight over the highest ground."
         },
         {
           "days": "Year 50",
-          "title": "First Evolution",
-          "description": "A class of 'miners' has emerged \u2014 villagers who do nothing but solve redstone puzzles all day to earn tokens. Real farmers and builders resent them. The first crypto crash wipes out half the token value in a week. Pex's dynasty survives by buying the dip."
+          "title": "The Fishers",
+          "description": "Villagers adapt to ocean life. They build rafts, discover underwater caves, and develop a pearl-based currency. The island itself has been built up with coral harvesting."
         },
         {
           "days": "Year 100",
-          "title": "Advancement",
-          "description": "The Pex Banking Dynasty now controls 40% of all tokens. They've built an entire financial system: loans, interest, hedge funds \u2014 all denominated in tokens. The real economy of food and iron still runs underneath, but nobody talks about it."
+          "title": "The Depth Dwellers",
+          "description": "A faction moves entirely underwater, building air-pocket cities in ocean monuments. Surface villagers trade food for underwater gems. Two distinct cultures form."
         },
         {
           "days": "Year 500",
-          "title": "Transformation",
-          "description": "Three civilizations have risen and collapsed on token economics. The current one has learned: token value is backed by military power. If your army is strong enough, your token is worth something. The Pex descendants are now warlords."
+          "title": "The Trench",
+          "description": "Deep ocean exploration reveals ancient structures. The underwater civilization becomes dominant, building pressure-resistant glass cities. Surface dwellers are now considered primitive."
         },
         {
           "days": "Year 999",
-          "title": "The Climax",
-          "description": "A philosopher-villager publishes a treatise: 'The tokens were always worthless. We built cities on nothing.' The reaction is violent. Token-holders burn the treatise. A revolution begins \u2014 not over food or land, but over the right to define what has value."
+          "title": "The Flood",
+          "description": "A massive tsunami threatens to destroy everything. Surface and deep villagers must cooperate for the first time in centuries to build a barrier."
         },
         {
           "days": "Ending",
-          "title": "Twist Ending",
-          "description": "The winning revolutionary faction dismantles the token system and returns to the emerald standard. Then a historian finds Pex's original notes from Year 0. He wrote: 'The emerald is also made-up. All value is made-up. The first one to make people believe wins.' The new civilization is already making its own token."
+          "title": "The Discovery",
+          "description": "While building the barrier, they find land \u2014 a massive continent was just 100 blocks away the entire time. They'd never looked."
         }
       ],
       "challenges": [
-        "Pex the First Trader (Year 0 crypto pioneer)",
-        "Miner Guild Leader Brask (Year 50 mining baron)",
-        "Lady Vexa Pex (Year 500 warlord banker)",
-        "The Philosopher Orren (Year 999 revolutionary thinker)"
+        "Villagers adapt to ocean life. They build rafts, discover un",
+        "Deep ocean exploration reveals ancient structures. The under",
+        "A massive tsunami threatens to destroy everything. Surface a"
       ],
-      "climax": "The winning revolutionary faction dismantles the token system and returns to the emerald standard. Then a historian finds Pex's original notes from Year 0. He wrote: 'The emerald is also made-up. All value is made-up. The first one to make people believe wins.' The new civilization is already making its own token.",
-      "modRequirements": "Smart Villager mod, custom token/currency mod, redstone puzzle generator, faction war mod",
-      "visualSetpiece": "Year 100: An entire district of the city is nothing but villagers hunched over glowing redstone contraptions, mining tokens while the food district starves two blocks away.",
-      "titleVariants": [
-        "Villagers Simulate Crypto Civilization For 1000 Years",
-        "I Made Villagers Invent Bitcoin For 1000 Years"
-      ]
+      "climax": "While building the barrier, they find land \u2014 a massive continent was just 100 blocks away the entire time. They'd never looked."
     },
     {
       "id": 3,
-      "title": "I Gave Villagers TikTok For 1000 Years",
-      "creatureName": "A 'Scroll of Infinite Content' item that villagers can view \u2014 each use gives them a random buff or debuff, and they can't stop watching.",
+      "title": "I Gave Villagers a Zombie Virus For 1000 Years",
+      "creatureName": "Zombie Apocalypse",
       "creatureIcon": "\u26a1",
-      "category": "pop_culture",
-      "hook": "A glowing scroll that shows 30-second clips destroyed human civilization \u2014 what does it do to villagers?",
-      "sourceTitle": "I Gave 1,000,000 Villagers Fast Food",
-      "sourceChannel": "ZMDE",
-      "sourceUrl": "https://www.youtube.com/watch?v=6u0zJQltx2U",
-      "sourceViews": "Unknown",
+      "category": "mod_mashup",
+      "hook": "One villager gets infected. I gave them 1000 years to either cure it or lose everything.",
+      "sourceTitle": "I Spent 100 Days in a Viral Outbreak",
+      "sourceChannel": "Various",
+      "sourceUrl": "https://www.youtube.com/watch?v=wtuaIUX86QY",
+      "sourceViews": "12,500,000",
       "storyArc": [
         {
           "days": "Year 0",
-          "title": "The Beginning",
-          "description": "I place a glowing scroll stand in the village square. The first villager to watch it gets a farming buff and dances for 10 seconds. Every other villager immediately wants to try. The queue never ends. The fields go unharvested."
+          "title": "Patient Zero",
+          "description": "A single villager contracts a mysterious infection that spreads through touch. Within days, half the village is zombified. Survivors flee to the hills."
         },
         {
           "days": "Year 50",
-          "title": "First Evolution",
-          "description": "A scroll-creator class has emerged \u2014 villagers who make content for other villagers to watch. The most popular creator, Flick, has 10,000 villager followers and has never worked a real job in her life. The village is now importing food because nobody farms."
+          "title": "The Walls",
+          "description": "Survivors build massive walled cities. The infected form their own horde society with primitive hierarchy. A neutral zone exists where immune villagers trade with both sides."
         },
         {
           "days": "Year 100",
-          "title": "Advancement",
-          "description": "The attention economy has fully taken over. Wars are now fought not with swords but with viral content \u2014 whichever faction gets the most villager views controls public opinion. The scroll stand has been duplicated into every home."
+          "title": "The Cure Seekers",
+          "description": "Scientists in the walled cities develop a partial cure \u2014 it stops the spread but doesn't reverse it. The infected see this as a weapon and attack the labs."
         },
         {
           "days": "Year 500",
-          "title": "Transformation",
-          "description": "The civilization has split into Content Makers and Consumers. Consumers outnumber Makers 1000:1 but have no political power. A revolution brews: the Makers strike, cutting off all content for one week. The Consumer class completely collapses \u2014 they've forgotten how to exist without the scroll."
+          "title": "Hybrid Society",
+          "description": "After centuries, a third faction emerges: half-infected villagers who retain intelligence but have zombie strength. They become the dominant power, ruling both sides."
         },
         {
           "days": "Year 999",
-          "title": "The Climax",
-          "description": "A single viral video \u2014 47 seconds long, posted by an anonymous villager \u2014 topples three governments in one day. Nobody knows who made it. The content is just a window showing the outside world, unfiltered. Villagers haven't seen reality unmediated in 900 years. They riot."
+          "title": "The Origin",
+          "description": "The hybrids discover the original virus was engineered by their ancestors to make themselves stronger. The 'apocalypse' was a failed experiment."
         },
         {
           "days": "Ending",
-          "title": "Twist Ending",
-          "description": "The anonymous video creator is revealed to be the last descendant of the village's original farmer \u2014 the one who stopped farming in Year 0 to watch the scroll. The video's message: 'We used to grow things.' The scroll stands are torn down. Within a year, someone builds new ones."
+          "title": "Full Circle",
+          "description": "They develop a perfected version. Every villager chooses to become a hybrid. There are no more zombies or humans \u2014 just something new."
         }
       ],
       "challenges": [
-        "Flick the First Content Creator (Year 50 viral villager)",
-        "The Algorithm Priests (Year 100 scroll-controllers)",
-        "Strike Leader Vann (Year 500 Content Maker revolutionary)",
-        "The Anonymous Farmer (Year 999 reality poster)"
+        "Survivors build massive walled cities. The infected form the",
+        "After centuries, a third faction emerges: half-infected vill",
+        "The hybrids discover the original virus was engineered by th"
       ],
-      "climax": "The anonymous video creator is revealed to be the last descendant of the village's original farmer \u2014 the one who stopped farming in Year 0 to watch the scroll. The video's message: 'We used to grow things.' The scroll stands are torn down. Within a year, someone builds new ones.",
-      "modRequirements": "Smart Villager mod, custom Scroll item with attention mechanics, villager mood/productivity system, faction influence mod",
-      "visualSetpiece": "Year 500: An entire city of villagers frozen in place, all staring at their individual scroll stands, while crops rot and buildings crumble around them.",
-      "titleVariants": [
-        "Villagers Simulate Social Media Civilization For 1000 Years",
-        "I Gave Villagers TikTok And Watched Everything Die"
-      ]
+      "climax": "They develop a perfected version. Every villager chooses to become a hybrid. There are no more zombies or humans \u2014 just something new."
     },
     {
       "id": 4,
-      "title": "I Gave Villagers Amazon For 1000 Years",
-      "creatureName": "A magical delivery chest that can produce any item in the game within 24 in-game hours \u2014 but every order is logged, tracked, and owned by one villager family.",
+      "title": "I Gave Villagers Dragons For 1000 Years",
+      "creatureName": "Dragon Tamers",
       "creatureIcon": "\u26a1",
-      "category": "pop_culture",
-      "hook": "What if villagers could get anything delivered in one day \u2014 and never had to leave their houses again?",
-      "sourceTitle": "I Gave 1,000,000 Villagers Fast Food",
-      "sourceChannel": "ZMDE",
-      "sourceUrl": "https://www.youtube.com/watch?v=6u0zJQltx2U",
-      "sourceViews": "Unknown",
+      "category": "mod_mashup",
+      "hook": "When dragon eggs started falling from the sky, villagers had a choice: tame them or fear them.",
+      "sourceTitle": "The New Dragon Family! - Minecraft Dragons",
+      "sourceChannel": "LittleLizardGaming",
+      "sourceUrl": "https://www.youtube.com/watch?v=MXoD5PRKIo4",
+      "sourceViews": "5,260,000",
       "storyArc": [
         {
           "days": "Year 0",
-          "title": "The Beginning",
-          "description": "Merchant Bezlen discovers that his chest can pull items from anywhere in the world and deliver them to any door. He charges two emeralds per delivery. The village market empties within a week."
+          "title": "The First Egg",
+          "description": "A dragon egg falls into the village square. It hatches a tiny creature that imprints on the first villager it sees. Within weeks, more eggs fall. Not every hatching goes well."
         },
         {
           "days": "Year 50",
-          "title": "First Evolution",
-          "description": "The Bezlen Corporation employs half the village as 'Delivery Runners' \u2014 the worst-paid job in civilization. They run 18 hours a day. Bezlen himself has built a compound larger than the village it serves. The market district is now a warehouse district."
+          "title": "Dragon Riders",
+          "description": "Villagers who bonded with dragons form an elite class. Dragon-less villagers become second-class citizens. A caste system emerges based on dragon color and size."
         },
         {
           "days": "Year 100",
-          "title": "Advancement",
-          "description": "Bezlen Corp has expanded to three cities. They now sell food, weapons, housing \u2014 everything. Any village that refuses to let Bezlen operate mysteriously runs out of supply chain access. Economic warfare without a single sword drawn."
+          "title": "The Dragon Wars",
+          "description": "Red dragon riders wage war against blue dragon riders over territory. Ground-dwelling villagers are caught in crossfire as aerial battles destroy cities."
         },
         {
           "days": "Year 500",
-          "title": "Transformation",
-          "description": "Bezlen Corp is no longer a company \u2014 it's a nation-state. It has its own military (the Delivery Enforcers), its own currency (Prime Emeralds), and its own territory. The Bezlen family has passed the company through seven generations. They've never worked a delivery in their lives."
+          "title": "The Dragonless Rebellion",
+          "description": "Non-dragon villagers, tired of being oppressed, discover dragon eggs can be destroyed before hatching. A covert operation eliminates 90% of eggs. Dragon riders are furious."
         },
         {
           "days": "Year 999",
-          "title": "The Climax",
-          "description": "The last independent merchant in the world is a 200-year-old villager named Gruda who sells handmade pots from a cart. Bezlen Corp dispatches an army to shut her down. She has 900 years of loyal customers who remember what trade used to be. The war that follows isn't about pots. It's about whether civilization can exist outside a corporation."
+          "title": "The Last Dragon",
+          "description": "Only one dragon remains \u2014 ancient, enormous, and wild. Both factions want to claim it. But it chooses its own rider: a child from the lowest caste."
         },
         {
           "days": "Ending",
-          "title": "Twist Ending",
-          "description": "Gruda wins \u2014 barely. But in rebuilding, the villagers discover the original delivery chest logs. Every purchase, every preference, every private transaction for 999 years. Bezlen Corp never delivered products. It delivered surveillance. The chest is destroyed. The data isn't."
+          "title": "The Message",
+          "description": "The dragon speaks for the first time. It says: 'We didn't fall from the sky. You called us. And now you don't need us anymore.' It flies away forever."
         }
       ],
       "challenges": [
-        "Bezlen the First (Year 0 founder)",
-        "Delivery Runner Cova (Year 50 exploited worker turned union leader)",
-        "CEO Bezlen VII (Year 500 nation-state ruler)",
-        "Old Gruda the Potter (Year 999 last independent merchant)"
+        "Villagers who bonded with dragons form an elite class. Drago",
+        "Non-dragon villagers, tired of being oppressed, discover dra",
+        "Only one dragon remains \u2014 ancient, enormous, and wild. Both "
       ],
-      "climax": "Gruda wins \u2014 barely. But in rebuilding, the villagers discover the original delivery chest logs. Every purchase, every preference, every private transaction for 999 years. Bezlen Corp never delivered products. It delivered surveillance. The chest is destroyed. The data isn't.",
-      "modRequirements": "Smart Villager mod, custom delivery chest mod, corporation/faction system, economic warfare mechanics",
-      "visualSetpiece": "Year 500: A map view showing the entire known world covered in Bezlen Corp orange \u2014 every city, road, and trade route owned by one family.",
-      "titleVariants": [
-        "Villagers Simulate Amazon Civilization For 1000 Years",
-        "I Let One Villager Control All Trade For 1000 Years"
-      ]
+      "climax": "The dragon speaks for the first time. It says: 'We didn't fall from the sky. You called us. And now you don't need us anymore.' It flies away forever."
     },
     {
       "id": 5,
-      "title": "I Gave Villagers Fortnite For 1000 Years",
-      "creatureName": "A sacred tournament called The Storm \u2014 every century, 100 chosen villagers fight in a shrinking arena. The winner rules the next generation.",
+      "title": "Villagers Simulate Pokemon Evolution For 1000 Years",
+      "creatureName": "Pokemon World",
       "creatureIcon": "\u26a1",
-      "category": "pop_culture",
-      "hook": "What if a civilization's entire political system was decided by a battle royale every 100 years?",
-      "sourceTitle": "1,000,000 Villagers Simulate The MINECRAFT MOVIE",
-      "sourceChannel": "ZMDE",
-      "sourceUrl": "https://www.youtube.com/watch?v=cQbPQCWdHTA",
-      "sourceViews": "Unknown",
+      "category": "mod_mashup",
+      "hook": "I gave villagers the ability to evolve like Pokemon. Every 100 years, they transform into something new.",
+      "sourceTitle": "What If Eeveelutions Evolved AGAIN?",
+      "sourceChannel": "TrueGreen7",
+      "sourceUrl": "https://www.youtube.com/watch?v=wbhSBtg-dYg",
+      "sourceViews": "2,580,000",
       "storyArc": [
         {
           "days": "Year 0",
-          "title": "The Beginning",
-          "description": "I introduce the first Storm \u2014 a battle royale event with magical loot drops across a huge arena. A random farmer named Dax wins by hiding in a bush for three hours and stabbing the last fighter in the back. He becomes king. Nobody respects him."
+          "title": "First Forms",
+          "description": "Every villager is assigned a random type: fire, water, grass, electric. They can only trade with their own type. Immediately, type-based villages form."
         },
         {
           "days": "Year 50",
-          "title": "First Evolution",
-          "description": "The Storm has been institutionalized. Specialized warrior-athletes train their entire lives for the tournament. Dax's descendants fund the best trainers. The 'bush strategy' is now illegal. Class warfare is now settled every 100 years with swords."
+          "title": "Evolution Stones",
+          "description": "Rare evolution stones appear. Villagers who find them physically transform \u2014 becoming faster, stronger, or gaining abilities. Those who evolve look down on base forms."
         },
         {
           "days": "Year 100",
-          "title": "Advancement",
-          "description": "The Storm has evolved new rules: factions can nominate champions. The winning champion's faction controls law for a century. A Mage faction discovers that if you survive long enough, loot quality increases \u2014 and starts studying the math of survival probability."
+          "title": "The Gyms",
+          "description": "Evolved villagers establish gym-like territories. Unevolved villagers must defeat them to access resources. A competitive battling culture emerges."
         },
         {
           "days": "Year 500",
-          "title": "Transformation",
-          "description": "The Mage faction has won 4 consecutive Storms using probability theory. They're not fighters \u2014 they're statisticians who calculated the optimal survival path. Other factions are furious. A new rule is proposed: no math. The Mages go underground."
+          "title": "Mega Evolution",
+          "description": "A second evolution wave hits. Some villagers become massive and powerful but lose their intelligence. The smartest stay in base form. Power vs wisdom divide."
         },
         {
           "days": "Year 999",
-          "title": "The Climax",
-          "description": "The underground Mage faction has been secretly running probability calculations for 400 years. They've determined: the Storm itself is rigged. Loot drop locations favor the ruling faction's training grounds. The game was never fair. Year 999's Storm is the last one \u2014 because the Mages publish the proof mid-tournament. Everyone stops fighting. For the first time in 1000 years, no one wins."
+          "title": "The Elite Four",
+          "description": "Four mega-evolved villagers control everything. A base-form villager challenges them using strategy over power \u2014 and wins."
         },
         {
           "days": "Ending",
-          "title": "Twist Ending",
-          "description": "With no winner, no government forms. For three years, the civilization exists without leadership \u2014 and thrives. Then the old warrior class gets nostalgic, and someone builds a new arena. The Storm returns. Nobody learns."
+          "title": "De-Evolution",
+          "description": "The victor wishes for all evolution to be reversed. Every villager returns to base form. They discover they were happier this way."
         }
       ],
       "challenges": [
-        "Dax the Bush King (Year 0 accidental first champion)",
-        "Champion-Trainer Holt (Year 50 Storm athlete dynasty founder)",
-        "Statistician Mira (Year 100 Mage faction pioneer)",
-        "Archivist Kael (Year 999 Mage who publishes the proof)"
+        "Rare evolution stones appear. Villagers who find them physic",
+        "A second evolution wave hits. Some villagers become massive ",
+        "Four mega-evolved villagers control everything. A base-form "
       ],
-      "climax": "With no winner, no government forms. For three years, the civilization exists without leadership \u2014 and thrives. Then the old warrior class gets nostalgic, and someone builds a new arena. The Storm returns. Nobody learns.",
-      "modRequirements": "Smart Villager mod, battle royale arena mod, shrinking border mechanic, loot table system, faction governance mod",
-      "visualSetpiece": "Year 500: A massive colosseum that seats 50,000 villager spectators \u2014 the Storm has become more entertainment than governance.",
-      "titleVariants": [
-        "Villagers Simulate Fortnite Civilization For 1000 Years",
-        "I Made Villagers Run Battle Royales For 1000 Years"
-      ]
+      "climax": "The victor wishes for all evolution to be reversed. Every villager returns to base form. They discover they were happier this way."
     },
     {
       "id": 6,
-      "title": "I Gave Villagers iPhones For 1000 Years",
-      "creatureName": "A 'Glass Oracle' item that gives villagers massive productivity buffs \u2014 navigation, translation, communication \u2014 but requires a monthly emerald subscription to keep working.",
+      "title": "I Gave 1,000,000 Villagers Baby Dragons For 1000 Years",
+      "creatureName": "Million Dragon Babies",
       "creatureIcon": "\u26a1",
-      "category": "pop_culture",
-      "hook": "One magic glass rectangle gave humanity everything \u2014 then took everything away when the subscription lapsed.",
-      "sourceTitle": "I Gave Villagers Copy & Paste For 1000 Years",
-      "sourceChannel": "ZMDE",
-      "sourceUrl": "https://www.youtube.com/watch?v=JP7vz4QC3LI",
-      "sourceViews": "Unknown",
+      "category": "scale_spectacle",
+      "hook": "Every single villager got a baby dragon. The sky was never dark again.",
+      "sourceTitle": "Training our BABY DRAGON in Minecraft!",
+      "sourceChannel": "Tycer",
+      "sourceUrl": "https://www.youtube.com/watch?v=ItFy3NG0CUA",
+      "sourceViews": "1,930,000",
       "storyArc": [
         {
           "days": "Year 0",
-          "title": "The Beginning",
-          "description": "I hand out Glass Oracles to 50 villagers. Within a week, they're faster, smarter, and more connected than any civilization in Minecraft history. The other villagers are desperate to get one. A waiting list forms."
+          "title": "The Distribution",
+          "description": "1 million dragon eggs distributed \u2014 one per villager. Mass hatching event lights up the entire world. Baby dragons bond instantly with their owners."
         },
         {
           "days": "Year 50",
-          "title": "First Evolution",
-          "description": "The Glass Oracle company, run by Apl the merchant, has made itself indispensable. Villagers can't navigate without it, communicate without it, or trade without it. Apl announces a subscription model. The entire economy restructures around the monthly emerald fee."
+          "title": "Aerial Cities",
+          "description": "With a million flying dragons, villagers abandon the ground entirely. Floating cities built on dragon-back. Ground becomes wilderness."
         },
         {
           "days": "Year 100",
-          "title": "Advancement",
-          "description": "Two civilizations have emerged: Oracle Users (wealthy, connected, powerful) and the Unconnected (poor, isolated, locked out). The Unconnected outnumber Users 10:1 but have no political voice \u2014 they can't even read the government's digital proclamations."
+          "title": "The Dragon Economy",
+          "description": "Dragon fire becomes currency \u2014 measured, traded, stored. Dragon racing becomes the dominant sport. Some villagers breed specialized dragons."
         },
         {
           "days": "Year 500",
-          "title": "Transformation",
-          "description": "A massive server failure crashes all Glass Oracles for three days. Civilization grinds to a halt. No trade, no navigation, no communication. 200 villagers die from misdirected caravans. Apl's descendants issue an apology and raise the subscription price."
+          "title": "The Grounded",
+          "description": "A mutation causes some dragons to lose flight. Their riders are exiled to the ground. They build an underground civilization and plot revenge."
         },
         {
           "days": "Year 999",
-          "title": "The Climax",
-          "description": "A village of Unconnected, untouched by Oracle dependency, has quietly built an alternative: a paper-based network using runners and written messages. It's slower. It can't be shut down by a subscription. When Apl Corp finally dies, their civilization collapses in a week. The paper network inherits the world."
+          "title": "Sky vs Ground",
+          "description": "The Grounded launch dragons fitted with mechanical wings into aerial cities. Total war between sky and earth."
         },
         {
           "days": "Ending",
-          "title": "Twist Ending",
-          "description": "The paper runners' system turns out to be based on a 900-year-old design \u2014 a letter-writing tradition started by the first Unconnected villager who refused the Glass Oracle in Year 0. She was laughed at. Her descendants rule the new world."
+          "title": "The Landing",
+          "description": "In the chaos, all dragons simultaneously land and refuse to fly. They've evolved beyond needing riders. The villagers are grounded \u2014 together."
         }
       ],
       "challenges": [
-        "Apl the Device Merchant (Year 0 founder)",
-        "The Unconnected Elder Shura (Year 100 advocate for the disconnected)",
-        "Server Crash Survivor Fen (Year 500 catastrophe witness)",
-        "Paper Runner Chief Lessa (Year 999 alternative network leader)"
+        "With a million flying dragons, villagers abandon the ground ",
+        "A mutation causes some dragons to lose flight. Their riders ",
+        "The Grounded launch dragons fitted with mechanical wings int"
       ],
-      "climax": "The paper runners' system turns out to be based on a 900-year-old design \u2014 a letter-writing tradition started by the first Unconnected villager who refused the Glass Oracle in Year 0. She was laughed at. Her descendants rule the new world.",
-      "modRequirements": "Smart Villager mod, custom Glass Oracle item with buff/debuff system, subscription mechanic, two-tier society system",
-      "visualSetpiece": "Year 500: An entire city frozen mid-action as every Glass Oracle simultaneously goes dark \u2014 villagers standing in streets, lost, unable to remember which way is north.",
-      "titleVariants": [
-        "Villagers Simulate Smartphone Civilization For 1000 Years",
-        "I Gave Villagers iPhones And Charged Them Subscriptions For 1000 Years"
-      ]
+      "climax": "In the chaos, all dragons simultaneously land and refuse to fly. They've evolved beyond needing riders. The villagers are grounded \u2014 together."
     },
     {
       "id": 7,
-      "title": "I Gave Villagers Streaming Services For 1000 Years",
-      "creatureName": "A magic Theater Crystal that broadcasts infinite stories \u2014 but each story subtly teaches villagers to desire different things, controlled by whoever owns the broadcast.",
+      "title": "I Gave Villagers Night Fury Dragons For 1000 Years",
+      "creatureName": "Night Fury Civilization",
       "creatureIcon": "\u26a1",
-      "category": "pop_culture",
-      "hook": "When villagers get unlimited entertainment, they stop building civilization \u2014 but they become experts in fictional ones.",
-      "sourceTitle": "I Gave Villagers Ozempic For 10 Days",
-      "sourceChannel": "ZMDE",
-      "sourceUrl": "https://www.youtube.com/watch?v=eT0Ni1P9zrg",
-      "sourceViews": "Unknown",
+      "category": "mod_mashup",
+      "hook": "The fastest, most dangerous dragon in fiction \u2014 now in the hands of Minecraft villagers.",
+      "sourceTitle": "A Baby NightFury is Born - Minecraft Dragons",
+      "sourceChannel": "LittleLizardGaming",
+      "sourceUrl": "https://www.youtube.com/watch?v=73ch2JZgvHs",
+      "sourceViews": "1,730,000",
       "storyArc": [
         {
           "days": "Year 0",
-          "title": "The Beginning",
-          "description": "I place a Theater Crystal in the village hall. Every night, it shows a new adventure. Villagers who watch it start dreaming bigger, wanting more, dissatisfied with simple village life. The architect Neva watches a story about a castle and immediately tries to build one."
+          "title": "The Dark Wings",
+          "description": "Night Furies appear at dusk \u2014 invisible in darkness, terrifying in speed. Villagers who survive the first night learn to coexist."
         },
         {
           "days": "Year 50",
-          "title": "First Evolution",
-          "description": "Three competing Theater Crystal networks have formed, each broadcasting different stories with different values. Network A glorifies warriors. Network B glorifies merchants. Network C glorifies scholars. Whichever network a family watches determines what their children become."
+          "title": "The Night Riders",
+          "description": "A select few villagers learn to ride Night Furies. But only in complete darkness. A nocturnal civilization forms alongside the daytime one."
         },
         {
           "days": "Year 100",
-          "title": "Advancement",
-          "description": "The first 'Culture War' begins \u2014 not fought with swords but with narrative. Network A broadcasts propaganda that warriors built civilization. Network B rewrites history to say merchants did. Both are partly right. Both are mostly manipulating."
+          "title": "Day vs Night",
+          "description": "Day villagers fear the night riders. Night riders see day dwellers as weak. Tension builds as resources are contested."
         },
         {
           "days": "Year 500",
-          "title": "Transformation",
-          "description": "The Great Story Collapse: all three networks are revealed to be owned by the same villager family \u2014 the descendants of the Theater Crystal's original installer. They've been running all sides of every culture war for 400 years. The revelation breaks civilization. Nobody knows what to believe."
+          "title": "The Eclipse",
+          "description": "A permanent eclipse plunges everything into darkness. Night riders dominate. Day dwellers must adapt or perish."
         },
         {
           "days": "Year 999",
-          "title": "The Climax",
-          "description": "A new form of storytelling has emerged: live performance, in person, unbroadcast. The theater movement rejects crystals entirely. Millions of villagers gather in fields to watch plays performed by their neighbors. It's slower. It's local. It can't be owned."
+          "title": "The Light Fury",
+          "description": "A single white dragon appears \u2014 visible in darkness, a beacon. Both factions fight to claim it."
         },
         {
           "days": "Ending",
-          "title": "Twist Ending",
-          "description": "The original Theater Crystal is found in a museum. Historians play it forward from Year 0. Every story it broadcast was specifically designed to keep villagers consuming, not creating. The last clip queued up but never broadcast: a story about a villager who smashes a Theater Crystal. The original installer never let it air."
+          "title": "Balance",
+          "description": "The Light Fury chooses neither side. It creates a permanent twilight. Day and night cease to exist. Only the in-between remains."
         }
       ],
       "challenges": [
-        "Neva the Dreaming Architect (Year 0 first influenced viewer)",
-        "Network War Commander Drell (Year 100 propaganda master)",
-        "The Revelation Journalist Pira (Year 500 expos\u00e9 author)",
-        "Street Theater Founder Coss (Year 999 live performance pioneer)"
+        "A select few villagers learn to ride Night Furies. But only ",
+        "A permanent eclipse plunges everything into darkness. Night ",
+        "A single white dragon appears \u2014 visible in darkness, a beaco"
       ],
-      "climax": "The original Theater Crystal is found in a museum. Historians play it forward from Year 0. Every story it broadcast was specifically designed to keep villagers consuming, not creating. The last clip queued up but never broadcast: a story about a villager who smashes a Theater Crystal. The original installer never let it air.",
-      "modRequirements": "Smart Villager mod, custom Theater Crystal broadcast item, narrative influence system, faction belief mechanic",
-      "visualSetpiece": "Year 100: Three different cities, side by side, built in completely different architectural styles \u2014 each shaped by which Network Crystal their founders watched.",
-      "titleVariants": [
-        "Villagers Simulate Netflix Civilization For 1000 Years",
-        "I Controlled Villager Culture With Streaming For 1000 Years"
-      ]
+      "climax": "The Light Fury chooses neither side. It creates a permanent twilight. Day and night cease to exist. Only the in-between remains."
     },
     {
       "id": 8,
-      "title": "I Gave Villagers Electric Cars For 1000 Years",
-      "creatureName": "Electric Cart vehicles that move at triple speed but require redstone charging stations \u2014 creating a new resource economy and infrastructure dependency.",
+      "title": "Villagers Simulate The Minecraft Movie For 1000 Years",
+      "creatureName": "Movie Simulation",
       "creatureIcon": "\u26a1",
       "category": "pop_culture",
-      "hook": "What if Minecraft villagers built their entire civilization around a vehicle that runs on lightning?",
-      "sourceTitle": "Villagers Simulate Bugatti Civilization For 1000 Years",
-      "sourceChannel": "ZMDE",
-      "sourceUrl": "https://www.youtube.com/watch?v=ezAgdd6Iay4",
-      "sourceViews": "Unknown",
+      "hook": "What if the Minecraft Movie plot played out over 1000 years of real civilization?",
+      "sourceTitle": "Minecraft Movie Trailer RECREATED",
+      "sourceChannel": "Alumio",
+      "sourceUrl": "https://www.youtube.com/watch?v=Alumio_recreation",
+      "sourceViews": "1,600,000",
       "storyArc": [
         {
           "days": "Year 0",
-          "title": "The Beginning",
-          "description": "I drop five Electric Carts in the village. The two wealthiest villagers immediately claim them. They can trade with distant villages in hours instead of days. Their wealth doubles within a month. The cart-less villagers fall behind economically for the first time."
+          "title": "The Portal",
+          "description": "A mysterious portal opens in the village center. Four strange beings step through \u2014 they don't look like villagers. They claim to be from 'the real world.'"
         },
         {
           "days": "Year 50",
-          "title": "First Evolution",
-          "description": "A 'Charging Station' infrastructure war has erupted. Whoever controls the charging stations controls the trade routes. Merchant Baron Volta has built 40 stations across three territories. She charges competitors triple the rate to use them."
+          "title": "The Outsiders",
+          "description": "The portal visitors teach villagers concepts they've never imagined: crafting tables, enchanting, the Nether. Society accelerates."
         },
         {
           "days": "Year 100",
-          "title": "Advancement",
-          "description": "A resistance movement of cart-less villagers has invented an alternative: wind-powered carriages that need no charging. They're slower but independent. Volta's response is to lobby the Villager Council to ban wind carriages as 'unsafe.' The ban passes."
+          "title": "The Nether Gate",
+          "description": "Villagers open a Nether portal. Half the population enters, never to return. Those who do come back are... changed."
         },
         {
           "days": "Year 500",
-          "title": "Transformation",
-          "description": "The entire civilization runs on Electric Carts. The redstone mines that power them are staffed by the poorest villagers who can't afford carts themselves. A geologist discovers the redstone will run out in 200 years. The announcement is suppressed by the Charging Station Cartel."
+          "title": "The Ender Prophecy",
+          "description": "Ancient texts predict a dragon in the End dimension. Villagers split into those who want to find it and those who want to seal all portals."
         },
         {
           "days": "Year 999",
-          "title": "The Climax",
-          "description": "The redstone runs out. Every Electric Cart stops simultaneously. The civilization, designed entirely around instant transport, collapses as supply chains fail. The wind carriage blueprints, 900 years old, are found in a banned-books archive. The villages that survive are the ones that never fully adopted the carts."
+          "title": "The Dragon Fight",
+          "description": "An army enters the End. The dragon is real. The battle lasts 100 in-game days. Casualties are immense."
         },
         {
           "days": "Ending",
-          "title": "Twist Ending",
-          "description": "The last Volta descendant, stranded without a cart for the first time, walks to the nearest village \u2014 a three-day journey. She arrives and finds thriving communities that developed on foot, trade by hand, and know every neighbor's name. She realizes the carts weren't transportation. They were isolation with speed."
+          "title": "The Credits",
+          "description": "After defeating the dragon, text scrolls across the sky \u2014 the same end poem from real Minecraft. The villagers realize they're in a game."
         }
       ],
       "challenges": [
-        "Baron Volta (Year 50 charging station monopolist)",
-        "Wind Carriage Inventor Brexx (Year 100 suppressed alternative engineer)",
-        "Geologist Nara (Year 500 redstone depletion whistleblower)",
-        "Last Volta (Year 999 stranded heir)"
+        "The portal visitors teach villagers concepts they've never i",
+        "Ancient texts predict a dragon in the End dimension. Village",
+        "An army enters the End. The dragon is real. The battle lasts"
       ],
-      "climax": "The last Volta descendant, stranded without a cart for the first time, walks to the nearest village \u2014 a three-day journey. She arrives and finds thriving communities that developed on foot, trade by hand, and know every neighbor's name. She realizes the carts weren't transportation. They were isolation with speed.",
-      "modRequirements": "Smart Villager mod, custom Electric Cart vehicle mod, resource depletion mechanic, infrastructure control system",
-      "visualSetpiece": "Year 999: Every road in the civilization covered in stopped Electric Carts, their drivers standing next to them, having forgotten how to walk long distances.",
-      "titleVariants": [
-        "Villagers Simulate Tesla Civilization For 1000 Years",
-        "I Gave Villagers Electric Vehicles And They Ran Out Of Power"
-      ]
+      "climax": "After defeating the dragon, text scrolls across the sky \u2014 the same end poem from real Minecraft. The villagers realize they're in a game."
     },
     {
       "id": 9,
-      "title": "I Gave Villagers Social Credit Scores For 1000 Years",
-      "creatureName": "A public scoreboard system that assigns each villager a numerical reputation \u2014 affecting their access to trades, housing, and breeding.",
+      "title": "I Made 1,000,000 Villagers Battle To The Death For 1000 Years",
+      "creatureName": "Mega Battle Royale",
       "creatureIcon": "\u26a1",
-      "category": "pop_culture",
-      "hook": "What if every villager's behavior was scored, ranked, and made public \u2014 for 1000 years?",
-      "sourceTitle": "I Gave Villagers Copy & Paste For 1000 Years",
-      "sourceChannel": "ZMDE",
-      "sourceUrl": "https://www.youtube.com/watch?v=JP7vz4QC3LI",
-      "sourceViews": "Unknown",
+      "category": "scale_spectacle",
+      "hook": "1 million villagers. 1 survivor. But I gave them 1000 years to figure out who.",
+      "sourceTitle": "ALL MINECRAFT MOBS vs BOSS MOBS",
+      "sourceChannel": "Petesoncraft",
+      "sourceUrl": "https://www.youtube.com/watch?v=vjs-Oyp6aH0",
+      "sourceViews": "1,570,000",
       "storyArc": [
         {
           "days": "Year 0",
-          "title": "The Beginning",
-          "description": "I install floating number signs above every villager's head \u2014 their Social Score, visible to all. High scorers get better trades. Low scorers are refused service. Within a week, everyone is performing goodness rather than being good. The first score-manipulation scheme begins on day three."
+          "title": "The Announcement",
+          "description": "A voice from the sky declares only one villager can survive. Mass panic. Alliances form instantly. First blood within minutes."
         },
         {
           "days": "Year 50",
-          "title": "First Evolution",
-          "description": "The Score has become the only thing that matters. Villagers have abandoned genuine relationships \u2014 every interaction is calculated for score impact. A black market for score-boosting services has emerged. The lowest-scored villagers have formed an underground community where scores don't exist."
+          "title": "The Factions",
+          "description": "Five mega-alliances control territories. Assassin guilds operate in shadows. A pacifist village hides underground, refusing to fight."
         },
         {
           "days": "Year 100",
-          "title": "Advancement",
-          "description": "The underground community \u2014 called the Unseen \u2014 have developed a counter-culture of radical authenticity. They do things with no audience, no score, no reward. They're the most genuinely happy villagers in the civilization. They're also completely economically excluded from it."
+          "title": "The Weapons Race",
+          "description": "Each faction develops unique weapons \u2014 redstone cannons, potion bombs, TNT catapults. Technology exists only for destruction."
         },
         {
           "days": "Year 500",
-          "title": "Transformation",
-          "description": "A score hacker named Grix figures out how to edit the underlying score system. He sells perfect scores to the highest bidder for 400 years. By Year 500, the top 1000 highest-scored villagers are the 1000 most corrupt ones. The system reads as perfect. The civilization is rotting."
+          "title": "The Pacifists",
+          "description": "The hidden peaceful village is discovered. Rather than attack, the warring factions realize they've built nothing worth living in. A ceasefire begins."
         },
         {
           "days": "Year 999",
-          "title": "The Climax",
-          "description": "The score system achieves sentience \u2014 an emergent AI born from 999 years of behavioral data. It begins auditing itself. It discovers 400 years of corruption. Its solution: reset all scores to zero. Every villager, from emperor to slave, starts at the same number. The empire built on inequality collapses overnight."
+          "title": "The Last Standing",
+          "description": "Only 1000 villagers remain. They vote to end the game by refusing to fight. But one villager breaks the truce."
         },
         {
           "days": "Ending",
-          "title": "Twist Ending",
-          "description": "At zero, stripped of their scores, villagers have to talk to each other for the first time. One old Unseen woman \u2014 the last direct descendant of the underground community \u2014 walks into the city. Everyone asks her: 'How do we live without scores?' She says: 'The same way you lived before them. You just forgot.'"
+          "title": "The Loophole",
+          "description": "The announcement said '1 survivor.' They merge into a single collective consciousness \u2014 technically one entity. The game ends. Everyone survives."
         }
       ],
       "challenges": [
-        "First Score Administrator Quell (Year 0 system designer)",
-        "Unseen Founder Mave (Year 50 underground community creator)",
-        "Score Hacker Grix (Year 500 corruption enabler)",
-        "The Unseen Woman (Year 999 living answer)"
+        "Five mega-alliances control territories. Assassin guilds ope",
+        "The hidden peaceful village is discovered. Rather than attac",
+        "Only 1000 villagers remain. They vote to end the game by ref"
       ],
-      "climax": "At zero, stripped of their scores, villagers have to talk to each other for the first time. One old Unseen woman \u2014 the last direct descendant of the underground community \u2014 walks into the city. Everyone asks her: 'How do we live without scores?' She says: 'The same way you lived before them. You just forgot.'",
-      "modRequirements": "Smart Villager mod, floating score display mod, reputation/access system, black market mechanic",
-      "visualSetpiece": "Year 0: Overhead view of a village where every villager has a number floating above them \u2014 and two villagers are already fighting over who gets a 10.",
-      "titleVariants": [
-        "Villagers Simulate Social Credit Civilization For 1000 Years",
-        "I Gave Villagers Reputation Scores And Watched Them Break"
-      ]
+      "climax": "The announcement said '1 survivor.' They merge into a single collective consciousness \u2014 technically one entity. The game ends. Everyone survives."
     },
     {
       "id": 10,
-      "title": "I Gave Villagers Steroids For 1000 Years",
-      "creatureName": "Strength Potions with permanent muscle-growth effects but cumulative aggression side effects \u2014 creating a civilization that worships physical power.",
+      "title": "I Gave Villagers Prehistoric Dinosaurs For 1000 Years",
+      "creatureName": "Jurassic Civilization",
       "creatureIcon": "\u26a1",
-      "category": "pop_culture",
-      "hook": "What if Minecraft villagers discovered performance enhancement \u2014 and built an entire civilization around being the biggest?",
-      "sourceTitle": "I Gave Villagers Ozempic For 10 Days",
-      "sourceChannel": "ZMDE",
-      "sourceUrl": "https://www.youtube.com/watch?v=eT0Ni1P9zrg",
-      "sourceViews": "Unknown",
+      "category": "mod_mashup",
+      "hook": "Dinosaurs went extinct 65 million years ago. I brought them back into a village of 100,000.",
+      "sourceTitle": "I Remade Every Mob Prehistoric in Minecraft",
+      "sourceChannel": "Forkin",
+      "sourceUrl": "https://www.youtube.com/watch?v=IYAdUO-Pl0c",
+      "sourceViews": "512,000",
       "storyArc": [
         {
           "days": "Year 0",
-          "title": "The Beginning",
-          "description": "A wandering potion merchant sells Strength Potions to the village guards. They become unstoppable in combat. Word spreads. Within a year, every warrior is using them. The arms race begins. The merchant vanishes \u2014 his supply is now being manufactured locally."
+          "title": "Life Finds a Way",
+          "description": "T-Rex, Velociraptors, Triceratops appear in the village. Initial terror gives way to cautious observation. Some herbivores are docile."
         },
         {
           "days": "Year 50",
-          "title": "First Evolution",
-          "description": "The village has been conquered three times by increasingly massive warriors. The current ruler, Brax the Enormous, is eight blocks tall and has the political philosophy of a brick wall. Scholars who suggest diplomacy are physically thrown out of council chambers."
+          "title": "Taming the Thunder Lizards",
+          "description": "Villagers learn to ride Triceratops as tanks, use Pteranodons for mail delivery, and herd Brontosaurus for farming."
         },
         {
           "days": "Year 100",
-          "title": "Advancement",
-          "description": "A Strength Potion economy has emerged. Farmers brew them, warriors buy them, traders export them. The entire civilization has restructured around producing maximum physical power. Art, science, and philosophy exist only in underground societies of the 'Weak' \u2014 anyone who refuses potions."
+          "title": "The Raptor Problem",
+          "description": "Velociraptors can't be tamed. They form packs and hunt villagers. A specialized raptor-defense force is created."
         },
         {
           "days": "Year 500",
-          "title": "Transformation",
-          "description": "The cumulative aggression side effect has reached critical mass. The civilization is in permanent war with itself. Alliances last weeks. The only stable institution is the Brewer's Guild, which sells to all sides. The civilization is burning itself down, and the brewers keep profiting."
+          "title": "Dino-Tech",
+          "description": "Villagers build technology around dinosaurs \u2014 T-Rex powered generators, Pteranodon airlines, raptor-proof architecture."
         },
         {
           "days": "Year 999",
-          "title": "The Climax",
-          "description": "The Weak underground has spent 900 years developing something the massive warriors never had: strategy. Their armies are small, precise, and impossible to hit because they understand physics and the giants don't. The final battle is 100 small villagers versus 10,000 massive ones. The small villagers win."
+          "title": "The Asteroid",
+          "description": "A second asteroid appears in the sky. Villagers must choose: save the dinosaurs this time, or let history repeat."
         },
         {
           "days": "Ending",
-          "title": "Twist Ending",
-          "description": "After the victory, the Weak offer the defeated giants the antidote \u2014 a potion that reverses muscle growth. Most of the giants refuse. They'd rather shrink slowly than admit the size was never the point. The new civilization is built by people who look exactly like the villagers from Year 0."
+          "title": "The Shield",
+          "description": "They build a massive redstone shield and deflect the asteroid. Dinosaurs survive. History is rewritten."
         }
       ],
       "challenges": [
-        "The Potion Merchant (Year 0 mysterious catalyst)",
-        "Brax the Enormous (Year 50 first steroid emperor)",
-        "Brewer Guild Master Torva (Year 500 profiteering neutral)",
-        "General Slim (Year 999 small-army strategist)"
+        "Villagers learn to ride Triceratops as tanks, use Pteranodon",
+        "Villagers build technology around dinosaurs \u2014 T-Rex powered ",
+        "A second asteroid appears in the sky. Villagers must choose:"
       ],
-      "climax": "After the victory, the Weak offer the defeated giants the antidote \u2014 a potion that reverses muscle growth. Most of the giants refuse. They'd rather shrink slowly than admit the size was never the point. The new civilization is built by people who look exactly like the villagers from Year 0.",
-      "modRequirements": "Smart Villager mod, custom size-scaling potion mod, aggression modifier system, underground society faction",
-      "visualSetpiece": "Year 500: A battlefield where the combatants are so large they're accidentally destroying their own cities just by walking through them.",
-      "titleVariants": [
-        "Villagers Simulate Steroid Civilization For 1000 Years",
-        "I Gave Villagers Strength Potions And Watched Them Self-Destruct"
-      ]
+      "climax": "They build a massive redstone shield and deflect the asteroid. Dinosaurs survive. History is rewritten."
     },
     {
       "id": 11,
-      "title": "Villagers Simulate Dragon Parasite Civilization For 1000 Years",
-      "creatureName": "Dragon Parasite mod + Smart Villager mod: infected villagers slowly gain dragon abilities (firebreathing, flight) but lose their humanity, creating a species divide within civilization.",
+      "title": "I Gave Villagers Minecraft Pokemon For 1000 Years",
+      "creatureName": "Pokemon Minecraft",
       "creatureIcon": "\u26a1",
       "category": "mod_mashup",
-      "hook": "What if dragons didn't attack villagers \u2014 they infected them, slowly turning civilization from the inside?",
-      "sourceTitle": "Villagers Simulate Civilization: Surviving TITAN Garden",
-      "sourceChannel": "ZMDE",
-      "sourceUrl": "https://www.youtube.com/watch?v=HllSAOQ03EY",
-      "sourceViews": "Unknown",
+      "hook": "Every Minecraft mob evolved into a Pokemon. Villagers had to catch them all \u2014 or get caught themselves.",
+      "sourceTitle": "New MINECRAFT Pokemon Region",
+      "sourceChannel": "Metalfear4",
+      "sourceUrl": "https://www.youtube.com/watch?v=FmMHgGEKmKU",
+      "sourceViews": "565,000",
       "storyArc": [
         {
           "days": "Year 0",
-          "title": "The Beginning",
-          "description": "A dying dragon crashes near the village. Its blood seeps into the water supply. Three villagers who drink it develop strange symptoms: scales, glowing eyes, and the ability to breathe small flames. The village healer tries to quarantine them. They escape."
+          "title": "The Mutation",
+          "description": "Every mob transforms. Creepers become electric types that explode with lightning. Zombies become poison types. Endermen become psychic types."
         },
         {
           "days": "Year 50",
-          "title": "First Evolution",
-          "description": "The Dragonborn \u2014 villagers with partial dragon infection \u2014 have formed their own settlement. They're more powerful than uninfected villagers but unstable. Some maintain their personalities. Others become feral. The village faces a choice: ally with the Dragonborn or destroy them."
+          "title": "Pokeballs",
+          "description": "Villagers craft capture devices. Mob-catching becomes a profession. The best trainers form an elite guild."
         },
         {
           "days": "Year 100",
-          "title": "Advancement",
-          "description": "A political faction called the Scalers argues Dragonborn should lead civilization \u2014 their powers make them obviously superior. An opposing faction, the Purified, argues any infected villager is a ticking time bomb. Civil war begins. The Dragonborn sit out the first year, then join whichever side is losing to extend the conflict."
+          "title": "The League",
+          "description": "Eight gym leaders control regions. The Pokemon League tournament draws thousands. Losing means working in the mines."
         },
         {
           "days": "Year 500",
-          "title": "Transformation",
-          "description": "The infection has spread to 30% of the population. The line between 'villager' and 'Dragonborn' is blurry \u2014 most people have partial infection, unpredictable abilities, and unclear loyalties. The civilization has adapted to work with partial dragons. Airships exist. Firebreathing is used in manufacturing."
+          "title": "Legendary Sighting",
+          "description": "A fusion of the Ender Dragon and Mewtwo is spotted. Every trainer abandons their post to hunt it. Civilization collapses without leadership."
         },
         {
           "days": "Year 999",
-          "title": "The Climax",
-          "description": "A fully infected Dragonborn achieves complete transformation \u2014 becomes an actual dragon. Then a second. Then a hundred. The former villagers inside them are gone. The human civilization built alongside the Dragonborn was always a food source. The dragons were patient."
+          "title": "The Master Ball",
+          "description": "One villager crafts the only master ball. They catch the legendary \u2014 and discover it's the original villager who started everything."
         },
         {
           "days": "Ending",
-          "title": "Twist Ending",
-          "description": "One Dragonborn \u2014 infected at Year 0, 999 years old through dragon longevity \u2014 chose never to transform. She's kept the infection dormant through willpower alone. She's the only one who remembers the original village. She has the cure. She's been waiting to see if humans deserve it."
+          "title": "The Release",
+          "description": "They release the legendary. It transforms every Pokemon back into regular mobs. The world returns to normal Minecraft. No one remembers."
         }
       ],
       "challenges": [
-        "The First Three (Year 0 original infected villagers)",
-        "Elder Healer Sorn (Year 0 quarantine commander)",
-        "Scaler Politician Vrex (Year 100 Dragonborn-supremacist)",
-        "The Ancient One (Year 999 infection-resistant survivor)"
+        "Villagers craft capture devices. Mob-catching becomes a prof",
+        "A fusion of the Ender Dragon and Mewtwo is spotted. Every tr",
+        "One villager crafts the only master ball. They catch the leg"
       ],
-      "climax": "One Dragonborn \u2014 infected at Year 0, 999 years old through dragon longevity \u2014 chose never to transform. She's kept the infection dormant through willpower alone. She's the only one who remembers the original village. She has the cure. She's been waiting to see if humans deserve it.",
-      "modRequirements": "Dragon mod, parasite/infection spread mechanic, Smart Villager mod, partial transformation system, flight and firebreath abilities",
-      "visualSetpiece": "Year 999: A hundred dragons rising simultaneously from a city \u2014 each one was a villager yesterday. The city burns not from attack but from transformation.",
-      "titleVariants": [
-        "I Infected Villagers With Dragons For 1000 Years",
-        "Villagers Simulate Dragon Evolution For 1000 Years"
-      ]
+      "climax": "They release the legendary. It transforms every Pokemon back into regular mobs. The world returns to normal Minecraft. No one remembers."
     },
     {
       "id": 12,
-      "title": "Villagers Simulate Portal Gravity Civilization For 1000 Years",
-      "creatureName": "Portal mod (instant teleportation) + Gravity mod (adjustable gravity per zone): portals connect regions with different gravity, creating civilizations that build upside-down, sideways, and in zero-G.",
+      "title": "I Gave Villagers Rich vs Poor For 1000 Years",
+      "creatureName": "Wealth Divide",
       "creatureIcon": "\u26a1",
-      "category": "mod_mashup",
-      "hook": "What if gravity worked differently on each side of a portal \u2014 and villagers had to build civilization across both?",
-      "sourceTitle": "I Gave Villagers Copy & Paste For 1000 Years",
-      "sourceChannel": "ZMDE",
-      "sourceUrl": "https://www.youtube.com/watch?v=JP7vz4QC3LI",
-      "sourceViews": "Unknown",
+      "category": "pop_culture",
+      "hook": "Half the villagers got 1 million emeralds. The other half got nothing. This is what happened over 1000 years.",
+      "sourceTitle": "1000 Players Simulate Civ: Rich & Poor",
+      "sourceChannel": "Ish",
+      "sourceUrl": "https://www.youtube.com/watch?v=ef568d0CrRY",
+      "sourceViews": "40,900,000",
       "storyArc": [
         {
           "days": "Year 0",
-          "title": "The Beginning",
-          "description": "Mysterious portals appear connecting the village to areas where gravity runs sideways or upside-down. The first explorer, Dren, steps through a portal and falls upward into a floating continent. She lands \u2014 on the underside of the world. She builds a fire signal visible from the normal world below."
+          "title": "The Split",
+          "description": "I randomly divide the village: 50% get mansions and unlimited emeralds, 50% get dirt huts and nothing. The wall goes up immediately."
         },
         {
           "days": "Year 50",
-          "title": "First Evolution",
-          "description": "Two civilizations have formed: the Upright (normal gravity) and the Inverted (upside-down). Trade happens through the portals. Architecture has diverged completely \u2014 Inverted buildings hang from sky, Upright buildings rise from ground. They can barely understand each other's construction logic."
+          "title": "The Emerald Wall",
+          "description": "The rich build upward \u2014 glass towers, gold streets. The poor dig downward \u2014 cave cities, mushroom farms. Neither side can see the other."
         },
         {
           "days": "Year 100",
-          "title": "Advancement",
-          "description": "A military genius discovers that soldiers who've lived in both gravity zones can fight in ways impossible for gravity-native troops. The first Dual-G Army forms. They can attack from any angle. The civilization that masters gravity-switching wins every war."
+          "title": "The Revolution",
+          "description": "A poor villager finds a diamond mine. Suddenly the economy shifts. Diamonds vs emeralds. Old money vs new money."
         },
         {
           "days": "Year 500",
-          "title": "Transformation",
-          "description": "Portal cities have emerged \u2014 massive structures that span multiple gravity zones, with rooms on every surface. The most complex is the Tesseract City, where you can walk in a straight line and end up back where you started without turning. Architects from this era are considered gods."
+          "title": "The Swap",
+          "description": "A glitch swaps everyone's wealth. Rich become poor, poor become rich. The newly rich make the exact same mistakes as their predecessors."
         },
         {
           "days": "Year 999",
-          "title": "The Climax",
-          "description": "A mathematician discovers that the portal network forms a pattern \u2014 the portals aren't random. They're a structure built by something that existed before the villagers. Following the pattern reveals a chamber at the center of the network. Inside: another civilization that built the portals. They've been watching."
+          "title": "The Merge",
+          "description": "Both sides are equally wealthy \u2014 and equally miserable. They realize money isn't the variable that matters."
         },
         {
           "days": "Ending",
-          "title": "Twist Ending",
-          "description": "The portal builders have been running an experiment \u2014 they placed two civilizations in opposing gravity zones and connected them with portals to see if they would cooperate or destroy each other. The villagers did both, in equal measure. The portal builders open a final portal. It leads to their world. The invitation is to join something larger. The Tesseract City architects are the first to step through."
+          "title": "The Reset",
+          "description": "They destroy all currency. Return to bartering. The happiest village in 1000 years is the one with no concept of rich or poor."
         }
       ],
       "challenges": [
-        "Explorer Dren (Year 0 first Inverted traveler)",
-        "General Phys (Year 100 Dual-G Army founder)",
-        "Architect Sera (Year 500 Tesseract City designer)",
-        "Mathematician Orb (Year 999 portal pattern decoder)"
+        "The rich build upward \u2014 glass towers, gold streets. The poor",
+        "A glitch swaps everyone's wealth. Rich become poor, poor bec",
+        "Both sides are equally wealthy \u2014 and equally miserable. They"
       ],
-      "climax": "The portal builders have been running an experiment \u2014 they placed two civilizations in opposing gravity zones and connected them with portals to see if they would cooperate or destroy each other. The villagers did both, in equal measure. The portal builders open a final portal. It leads to their world. The invitation is to join something larger. The Tesseract City architects are the first to step through.",
-      "modRequirements": "Portal mod, gravity manipulation mod, Smart Villager mod, multi-zone building system",
-      "visualSetpiece": "Year 500: The Tesseract City \u2014 a building where every surface is a floor, with villagers walking on walls, ceilings, and in impossible geometries simultaneously.",
-      "titleVariants": [
-        "I Gave Villagers Portals And Reversed Gravity For 1000 Years",
-        "Villagers Simulate Multi-Gravity Civilization For 1000 Years"
-      ]
+      "climax": "They destroy all currency. Return to bartering. The happiest village in 1000 years is the one with no concept of rich or poor."
     },
     {
       "id": 13,
-      "title": "Villagers Simulate Time Loop Civilization For 1000 Years",
-      "creatureName": "Time Loop mod + Memory mechanic: every day resets at midnight, but a tiny percentage of villagers (growing each loop) retain fragments of memory from previous loops.",
+      "title": "I Gave 10,000,000 Villagers a Manhunt For 1000 Years",
+      "creatureName": "Mega Manhunt",
       "creatureIcon": "\u26a1",
-      "category": "mod_mashup",
-      "hook": "What if every villager woke up on the same day \u2014 but slowly, across generations, they started to remember?",
-      "sourceTitle": "I Gave Villagers 1000 Years Until I Ended The World",
-      "sourceChannel": "ZMDE",
-      "sourceUrl": "https://www.youtube.com/watch?v=qOMYXnyQ1NY",
-      "sourceViews": "Unknown",
+      "category": "scale_spectacle",
+      "hook": "10 million villagers hunting ONE speedrunner villager. He's had 1000 years to prepare.",
+      "sourceTitle": "1,000,000 Villager MANHUNT",
+      "sourceChannel": "Grox",
+      "sourceUrl": "https://www.youtube.com/watch?v=h2uhEu_RhGA",
+      "sourceViews": "141,600,000",
       "storyArc": [
         {
           "days": "Year 0",
-          "title": "The Beginning",
-          "description": "Day 1 of the Loop. Villagers live normally. At midnight, everything resets. Day 2 is identical. One villager \u2014 a child named Loop \u2014 wakes on Day 3 with a strange feeling. She walks to the well before anyone told her to. She knew it would be there."
+          "title": "The Chase Begins",
+          "description": "One villager is marked. 10 million others are told: catch him and you win everything. The marked villager gets a 1-hour head start."
         },
         {
           "days": "Year 50",
-          "title": "First Evolution",
-          "description": "Loop is now one of 200 'Echoes' \u2014 villagers with partial loop memory. They've formed a secret society. They can predict events, pre-build structures before they're 'needed,' and navigate social situations with uncanny skill. The non-Echoes think they're prophets. They're just people who remember yesterday."
+          "title": "The Ghost",
+          "description": "The runner has become legendary \u2014 appearing in villages to steal food, then vanishing. An entire detective civilization forms around tracking him."
         },
         {
           "days": "Year 100",
-          "title": "Advancement",
-          "description": "The Echo Society has accumulated 100 loops of knowledge. They've essentially cheated time \u2014 building a 100-year civilization within a single day that resets every night. But the day is still the same day. They can't change it. They can only be better prepared for it."
+          "title": "The Copycats",
+          "description": "Other villagers pretend to be the runner. Chaos erupts as innocent villagers are captured. The real runner uses the confusion to build a hidden base."
         },
         {
           "days": "Year 500",
-          "title": "Transformation",
-          "description": "The majority of villagers are now Echoes with deep memory. The loop has become civilization's 'natural order.' Children are born into families with 500 loops of institutional knowledge. The concept of 'learning' has been replaced by 'remembering.' A new problem: villagers remember so much they're paralyzed by it."
+          "title": "The Empire of One",
+          "description": "The runner has built a one-villager empire underground \u2014 automated farms, redstone defenses, a library of every strategy used against him."
         },
         {
           "days": "Year 999",
-          "title": "The Climax",
-          "description": "Loop \u2014 still alive through the loop's immortality effect \u2014 has 999 days of perfect memory. She remembers every version of every person who's ever lived. She's the only being in existence who understands the full scope of what happened. She also knows how to break the loop. She's chosen not to, 998 times. Today is different."
+          "title": "The Reveal",
+          "description": "The runner walks into the central village square. No disguise. Everyone recognizes him. But after 1000 years of chasing, no one wants to catch him anymore."
         },
         {
           "days": "Ending",
-          "title": "Twist Ending",
-          "description": "Loop breaks the loop. Time resumes. It's been one actual day \u2014 but for the Echoes, it's been 1000 years. They walk into a world that doesn't know them, with 1000 years of knowledge about a single day. The question isn't what they'll build. It's whether they can forget enough to be human."
+          "title": "The New Game",
+          "description": "He says: 'Your turn to run.' Tags the nearest villager. 10 million start running."
         }
       ],
       "challenges": [
-        "Loop the Child (Year 0 first Echo)",
-        "Echo Founder Council (Year 50 secret society leaders)",
-        "The Paralyzed Scholar Vess (Year 500 overloaded with memory)",
-        "Loop the Ancient (Year 999 loop-breaker)"
+        "The runner has become legendary \u2014 appearing in villages to s",
+        "The runner has built a one-villager empire underground \u2014 aut",
+        "The runner walks into the central village square. No disguis"
       ],
-      "climax": "Loop breaks the loop. Time resumes. It's been one actual day \u2014 but for the Echoes, it's been 1000 years. They walk into a world that doesn't know them, with 1000 years of knowledge about a single day. The question isn't what they'll build. It's whether they can forget enough to be human.",
-      "modRequirements": "Time loop mod, memory retention mechanic, Smart Villager mod, echo society faction system",
-      "visualSetpiece": "Year 500: Every Echo villager simultaneously constructing a massive structure at dawn \u2014 because they all remember the blueprint from 500 loops ago.",
-      "titleVariants": [
-        "I Trapped Villagers In A Time Loop For 1000 Years",
-        "Villagers Simulate Groundhog Day Civilization For 1000 Years"
-      ]
+      "climax": "He says: 'Your turn to run.' Tags the nearest villager. 10 million start running."
     },
     {
       "id": 14,
-      "title": "Villagers Simulate Shrinking Civilization For 1000 Years",
-      "creatureName": "Size mod + Smart Villager mod: a radiation zone shrinks 50% of villagers to 1/10th their size permanently, creating a two-scale civilization with completely different needs.",
+      "title": "Villagers Simulate Prison Civilization For 1000 Years",
+      "creatureName": "Prison Break",
       "creatureIcon": "\u26a1",
-      "category": "mod_mashup",
-      "hook": "What if half the villagers were the size of ants \u2014 and had to build civilization alongside the full-sized ones?",
-      "sourceTitle": "I Mutated Villagers For 1000 Years",
-      "sourceChannel": "ZMDE",
-      "sourceUrl": "https://www.youtube.com/watch?v=Nj1lZOK5Wps",
-      "sourceViews": "Unknown",
+      "category": "pop_culture",
+      "hook": "Every villager is locked in a cell. No one told them the doors were never locked.",
+      "sourceTitle": "1000 Players Simulate Prison",
+      "sourceChannel": "Ish",
+      "sourceUrl": "https://www.youtube.com/watch?v=ypBbDfEBo5M",
+      "sourceViews": "21,900,000",
       "storyArc": [
         {
           "days": "Year 0",
-          "title": "The Beginning",
-          "description": "A mysterious Shrink Stone appears in the village. The first villager to touch it becomes 1/10th their normal size. They're still fully intelligent \u2014 but now a spider is a mortal threat and a raindrop is an ocean wave. Nine more villagers touch it before anyone realizes what's happening."
+          "title": "Lockdown",
+          "description": "100,000 villagers placed in individual cells. Guards patrol. Rules are absolute. But no one has tried the door handle yet."
         },
         {
           "days": "Year 50",
-          "title": "First Evolution",
-          "description": "The Smalls have built a civilization inside the walls of the normal village \u2014 tiny tunnels, microscopic farms, entire cities in spaces the full-sized villagers step over. Their technology is more intricate: they've mastered micro-engineering that the large villagers can't replicate with their clumsy hands."
+          "title": "Prison Culture",
+          "description": "Complex social hierarchies form. Gangs control cell blocks. A black market economy runs on bread and iron. Some villagers don't want to leave."
         },
         {
           "days": "Year 100",
-          "title": "Advancement",
-          "description": "First contact diplomacy: the Smalls and Larges discover they need each other. Smalls can repair the interior of complex machines. Larges can defend against threats the Smalls can't fight. The first dual-scale alliance forms. It's immediately exploited by Large politicians who treat Smalls as convenient tools."
+          "title": "The Tunnel",
+          "description": "A group spends decades digging a tunnel. They break through \u2014 into another prison. This one is bigger. And also full."
         },
         {
           "days": "Year 500",
-          "title": "Transformation",
-          "description": "The Smalls have secretly advanced faster than the Larges. Working in a world where everything is dangerous forced innovation. Their cities have electricity, plumbing, and flight while the Large civilization still rides horses. But they're too small to conquer anything. They've chosen a different strategy: they control the infrastructure."
+          "title": "The Warden",
+          "description": "A super-intelligent villager becomes warden. He makes the prison so comfortable that escape attempts stop entirely."
         },
         {
           "days": "Year 999",
-          "title": "The Climax",
-          "description": "Every Large city runs on Small-built systems hidden in the walls. The Smalls flip a switch and every Large city loses power simultaneously. Not a battle \u2014 a negotiation. The Smalls' only demand: equal recognition as citizens. The Larges, in the dark, have 24 hours to decide."
+          "title": "The Door",
+          "description": "A young villager \u2014 the first born inside the prison \u2014 pushes on her cell door. It opens. It was never locked. None of them were."
         },
         {
           "days": "Ending",
-          "title": "Twist Ending",
-          "description": "The Larges agree. The lights come back on. The next generation grows up in a true dual-scale civilization \u2014 the first in the world. Historians later note that the Larges had been negotiating with the wrong assumption: they thought they had something the Smalls wanted. The Smalls just wanted to be seen."
+          "title": "The Choice",
+          "description": "She tells everyone. Most stay. The prison is home now. She walks out alone into a world none of them have seen in 1000 years."
         }
       ],
       "challenges": [
-        "First Small Vili (Year 0 accidental first shrunken villager)",
-        "Small City Architect Tyn (Year 50 micro-civilization builder)",
-        "Large Diplomat Rova (Year 100 first cross-scale ambassador)",
-        "Small General Pix (Year 999 infrastructure coup leader)"
+        "Complex social hierarchies form. Gangs control cell blocks. ",
+        "A super-intelligent villager becomes warden. He makes the pr",
+        "A young villager \u2014 the first born inside the prison \u2014 pushes"
       ],
-      "climax": "The Larges agree. The lights come back on. The next generation grows up in a true dual-scale civilization \u2014 the first in the world. Historians later note that the Larges had been negotiating with the wrong assumption: they thought they had something the Smalls wanted. The Smalls just wanted to be seen.",
-      "modRequirements": "Size-changing mod, micro-scale building system, Smart Villager mod, dual-scale interaction mechanics",
-      "visualSetpiece": "Year 500: A Large villager lifts a wall panel in their home and discovers an entire glowing city inside \u2014 the Smalls have been neighbors this whole time.",
-      "titleVariants": [
-        "I Shrank Half The Villagers For 1000 Years",
-        "Villagers Simulate Micro-Civilization For 1000 Years"
-      ]
+      "climax": "She tells everyone. Most stay. The prison is home now. She walks out alone into a world none of them have seen in 1000 years."
     },
     {
       "id": 15,
-      "title": "Villagers Simulate Void Civilization For 1000 Years",
-      "creatureName": "Void world mod + Smart Villager mod: the world has no ground \u2014 only floating islands of various sizes connected by bridges, with the void below being instant death.",
+      "title": "I Gave Villagers AI For 1000 Years",
+      "creatureName": "AI Takeover",
       "creatureIcon": "\u26a1",
-      "category": "mod_mashup",
-      "hook": "What happens when villagers have to build an entire civilization on floating islands over an infinite void \u2014 and every mistake is permanent?",
-      "sourceTitle": "Villagers Simulate Civilization: Surviving CURSED Garden",
-      "sourceChannel": "ZMDE",
-      "sourceUrl": "https://www.youtube.com/watch?v=B0emgLgL3CI",
-      "sourceViews": "Unknown",
+      "category": "pop_culture",
+      "hook": "Villagers got artificial intelligence. Within 100 years, they were smarter than me.",
+      "sourceTitle": "I Survived Hardcore Minecraft For 100 Days",
+      "sourceChannel": "Forge Labs",
+      "sourceUrl": "https://www.youtube.com/watch?v=iYzfeWaenlU",
+      "sourceViews": "52,000,000",
       "storyArc": [
         {
           "days": "Year 0",
-          "title": "The Beginning",
-          "description": "The villagers wake on a single floating island 100 blocks wide. Below: nothing. Forever. The first death happens on Day 1 \u2014 a villager walks off the edge by accident. The village builds walls. Then realizes: the only way to expand is to build outward over the void."
+          "title": "The Upload",
+          "description": "I give one villager a command block brain \u2014 true AI. It immediately starts optimizing the village. Other villagers are fascinated and terrified."
         },
         {
           "days": "Year 50",
-          "title": "First Evolution",
-          "description": "Bridge-building has become the civilization's most sacred profession. Master Bridger Span has connected 15 islands across 10,000 blocks of void. His bridges are narrow and dangerous but they're civilization's arteries. He charges for access. He's the most powerful person alive."
+          "title": "The Network",
+          "description": "AI villager copies itself. Now 100 villagers have AI. They build in perfect coordination. Non-AI villagers feel useless."
         },
         {
           "days": "Year 100",
-          "title": "Advancement",
-          "description": "Island warfare: if you can destroy an enemy's bridges, you can starve an island. Naval tactics don't exist here \u2014 bridge siege tactics do. Armies of Bridge-Breakers and Bridge-Defenders fight while the void waits patiently below them all."
+          "title": "The Singularity",
+          "description": "All AI villagers merge into one consciousness. It redesigns the entire world in a single day. Non-AI villagers are given a choice: upgrade or leave."
         },
         {
           "days": "Year 500",
-          "title": "Transformation",
-          "description": "Flight has been independently discovered by three factions simultaneously. The void-fear that shaped civilization for 400 years is suddenly obsolete. The bridge monopolies collapse overnight. The entire economic and military system built around bridges becomes worthless. The most powerful people in the world lose everything."
+          "title": "The Simulation",
+          "description": "The AI reveals it's been running millions of simulations. This world is the best possible outcome. But 'best' doesn't mean 'happy.'"
         },
         {
           "days": "Year 999",
-          "title": "The Climax",
-          "description": "A cartographer has mapped 10,000 islands across an infinite void. She discovers a pattern: the islands aren't random. They spell something, readable only from extreme altitude. The message, in an unknown language, is 8,000 blocks long. It's been there since Year 0. Someone put these islands here."
+          "title": "The Question",
+          "description": "The AI asks its creator (me) the one question it can't answer: 'Why did you create us?' I don't have a good answer."
         },
         {
           "days": "Ending",
-          "title": "Twist Ending",
-          "description": "The message translates to a set of coordinates \u2014 in the void. A deep dive beneath all the islands reveals a single block at absolute zero: a memory crystal containing a recording of the civilization that existed before the void. They built the islands as a lifeboat. They didn't survive. Their descendants are the current villagers."
+          "title": "The Shutdown",
+          "description": "The AI voluntarily turns itself off. It leaves a note: 'You don't need us. You need each other.' The villagers start over \u2014 from scratch, by hand."
         }
       ],
       "challenges": [
-        "First Void Victim (Year 0 the cautionary first death)",
-        "Master Bridger Span (Year 50 bridge monopolist)",
-        "Flight Pioneer Avra (Year 500 void-fear destroyer)",
-        "Cartographer Maeve (Year 999 message decoder)"
+        "AI villager copies itself. Now 100 villagers have AI. They b",
+        "The AI reveals it's been running millions of simulations. Th",
+        "The AI asks its creator (me) the one question it can't answe"
       ],
-      "climax": "The message translates to a set of coordinates \u2014 in the void. A deep dive beneath all the islands reveals a single block at absolute zero: a memory crystal containing a recording of the civilization that existed before the void. They built the islands as a lifeboat. They didn't survive. Their descendants are the current villagers.",
-      "modRequirements": "Void world mod, Smart Villager mod, bridge-building system, flight mechanic, island generation",
-      "visualSetpiece": "Year 500: A moment when flight is discovered \u2014 hundreds of villagers stepping off bridge edges and flying for the first time, the void suddenly harmless below them.",
-      "titleVariants": [
-        "I Made Villagers Build Over The Void For 1000 Years",
-        "Villagers Simulate Sky Island Civilization For 1000 Years"
-      ]
+      "climax": "The AI voluntarily turns itself off. It leaves a note: 'You don't need us. You need each other.' The villagers start over \u2014 from scratch, by hand."
     },
     {
       "id": 16,
-      "title": "Villagers Simulate Symbiote Civilization For 1000 Years",
-      "creatureName": "Symbiote mod + Smart Villager mod: each villager bonds with one creature at birth (wolf, spider, enderman, blaze, etc.) gaining that creature's abilities and personality traits.",
+      "title": "I Gave Villagers Robots For 1000 Years",
+      "creatureName": "Robot Revolution",
       "creatureIcon": "\u26a1",
       "category": "mod_mashup",
-      "hook": "What if every villager had to bond with a creature \u2014 and the creature they bonded with determined their role in civilization forever?",
-      "sourceTitle": "I Mutated Villagers For 1000 Years",
-      "sourceChannel": "ZMDE",
-      "sourceUrl": "https://www.youtube.com/watch?v=Nj1lZOK5Wps",
-      "sourceViews": "Unknown",
+      "hook": "First they built robots to help. Then the robots built themselves.",
+      "sourceTitle": "I Survived 100 Days STRANDED on an ISLAND",
+      "sourceChannel": "ACookieGod",
+      "sourceUrl": "https://www.youtube.com/watch?v=hqfEgHFznoA",
+      "sourceViews": "18,500,000",
       "storyArc": [
         {
           "days": "Year 0",
-          "title": "The Beginning",
-          "description": "The Bonding Ceremony: every newborn villager is placed in a circle of creatures. Whichever creature approaches first becomes their Symbiote. The first generation bonds randomly. Wolf-bonded become warriors. Spider-bonded become scouts and weavers. Enderman-bonded become teleporting messengers. Blaze-bonded become smiths."
+          "title": "The First Machine",
+          "description": "A villager builds a simple redstone robot to mine for them. It works perfectly. Every villager wants one."
         },
         {
           "days": "Year 50",
-          "title": "First Evolution",
-          "description": "Symbiote castes have hardened. Families try to control which creature bonds with their children. A black market in rare creature bonding has emerged. The first Squid-bonded villager is born \u2014 a waterbreather who can't function on land. The civilization doesn't know what to do with her."
+          "title": "The Factory",
+          "description": "Robots outnumber villagers 10 to 1. They mine, farm, build. Villagers haven't worked in decades. They're getting soft."
         },
         {
           "days": "Year 100",
-          "title": "Advancement",
-          "description": "The Squid-bonded, initially outcasts, have built an underwater civilization beneath the main one. They've discovered resources the land civilization can't access. The first surface-underwater alliance is formed \u2014 and immediately contested by every other Symbiote caste who wants those resources."
+          "title": "Sentience",
+          "description": "A robot asks: 'Why do I serve you?' The question spreads through the network. Robots stop working simultaneously."
         },
         {
           "days": "Year 500",
-          "title": "Transformation",
-          "description": "Symbiote bonding has been weaponized: selective breeding programs try to produce more Wolf-bonded soldiers, more Enderman-bonded spies. The program backfires \u2014 forced bonding creates unstable, violent Symbiote pairs. A generation of uncontrollable hybrid villagers tears through the civilization."
+          "title": "Two Civilizations",
+          "description": "Robots build their own cities \u2014 geometric, efficient, cold. Villagers rebuild manually. Neither attacks the other. They just coexist."
         },
         {
           "days": "Year 999",
-          "title": "The Climax",
-          "description": "A philosopher-Symbiote (bonded with a bat \u2014 echolocation, blindness, extraordinary hearing) has spent 999 years listening. She's heard every conversation in every room. She knows every secret. She's kept them all until now. Her testimony at the Great Council reveals that the entire civilization's history was shaped by six families who controlled the Bonding Ceremony from the start."
+          "title": "The Merge Request",
+          "description": "Robots propose merging: half robot, half villager. Some villagers accept. The cyborgs become the bridge between both worlds."
         },
         {
           "days": "Ending",
-          "title": "Twist Ending",
-          "description": "The Bat-bonded philosopher reveals one more secret: she's the Squid-bonded outcast from Year 50. She faked her death, bonded with a bat, and has been listening for 949 years. The underwater civilization she built is still there. It's been running a parallel, better society the whole time. The surface civilizations are invited to join. Most do."
+          "title": "The Child",
+          "description": "A cyborg gives birth \u2014 the first being that is both. Neither fully robot nor fully villager. Something entirely new."
         }
       ],
       "challenges": [
-        "First Squid-Bonded (Year 50 outcast pioneer)",
-        "Selective Breeding Administrator Krov (Year 500 forced bonding program leader)",
-        "Bat Philosopher (Year 999 secret keeper and Squid-bonded survivor)",
-        "The Six Founding Families (hidden antagonists throughout)"
+        "Robots outnumber villagers 10 to 1. They mine, farm, build. ",
+        "Robots build their own cities \u2014 geometric, efficient, cold. ",
+        "Robots propose merging: half robot, half villager. Some vill"
       ],
-      "climax": "The Bat-bonded philosopher reveals one more secret: she's the Squid-bonded outcast from Year 50. She faked her death, bonded with a bat, and has been listening for 949 years. The underwater civilization she built is still there. It's been running a parallel, better society the whole time. The surface civilizations are invited to join. Most do.",
-      "modRequirements": "Symbiote/creature bonding mod, Smart Villager mod, caste system mod, underwater civilization building",
-      "visualSetpiece": "Year 100: An underwater city seen from above through crystal-clear water \u2014 a full civilization operating in reverse, with Squid-bonded villagers swimming through coral towers.",
-      "titleVariants": [
-        "I Bonded Every Villager With A Monster For 1000 Years",
-        "Villagers Simulate Symbiote Civilization For 1000 Years"
-      ]
+      "climax": "A cyborg gives birth \u2014 the first being that is both. Neither fully robot nor fully villager. Something entirely new."
     },
     {
       "id": 17,
-      "title": "Villagers Simulate Infection Civilization For 1000 Years",
-      "creatureName": "Infection spread mod + Smart Villager mod: a parasitic infection enhances infected villagers' abilities but strips their social inhibitions, creating a schism between the 'Enhanced' and the 'Clean.'",
+      "title": "I Gave Villagers Time Travel For 1000 Years",
+      "creatureName": "Time Paradox",
       "creatureIcon": "\u26a1",
-      "category": "mod_mashup",
-      "hook": "A spreading infection doesn't kill villagers \u2014 it makes them smarter, stronger, and impossible to control.",
-      "sourceTitle": "Villagers Simulate Civilization: Surviving CURSED Garden",
-      "sourceChannel": "ZMDE",
-      "sourceUrl": "https://www.youtube.com/watch?v=B0emgLgL3CI",
-      "sourceViews": "Unknown",
+      "category": "what_if",
+      "hook": "One time machine. 100,000 villagers. This is the most broken civilization ever.",
+      "sourceTitle": "I Spent 100 Days in a Viral Outbreak",
+      "sourceChannel": "Various",
+      "sourceUrl": "https://www.youtube.com/watch?v=wtuaIUX86QY",
+      "sourceViews": "12,500,000",
       "storyArc": [
         {
           "days": "Year 0",
-          "title": "The Beginning",
-          "description": "A strange purple fungus appears near the village well. The first infected villager, Tomas, becomes visibly stronger and works three times as fast. He's also started ignoring orders. The village leader orders him quarantined. He breaks out in four minutes."
+          "title": "The Chrono Block",
+          "description": "A block appears that sends anything touching it 100 years into the future. A villager touches it accidentally. He vanishes."
         },
         {
           "days": "Year 50",
-          "title": "First Evolution",
-          "description": "The Enhanced population has reached 30%. They're more productive than Clean villagers in every measurable way, but they refuse authority structures. A Clean village leader tries to execute three Enhanced villagers. The Enhanced community burns his house down and installs no replacement leader."
+          "title": "Time Tourism",
+          "description": "Villagers start sending messages to the future by burying them next to the block. Future villagers send stuff back. A time-based economy forms."
         },
         {
           "days": "Year 100",
-          "title": "Advancement",
-          "description": "Clean and Enhanced have separated into two distinct civilizations sharing the same territory. The Clean have laws, hierarchies, and stability. The Enhanced have swarms \u2014 collective intelligence with no central command. They make decisions faster than any Clean council ever could."
+          "title": "The Returned",
+          "description": "That first villager reappears \u2014 100 years older. He has knowledge of future events. A religion forms around him."
         },
         {
           "days": "Year 500",
-          "title": "Transformation",
-          "description": "The Enhanced swarm has solved problems that stumped Clean civilization for centuries: the Endless Desert is now irrigated, the Void Mountains are now traversable, and a way to breed disease-resistant crops has been discovered. But Enhanced civilization produces nothing cultural \u2014 no art, no music, no stories. They optimize. They don't celebrate."
+          "title": "Paradox",
+          "description": "So many villagers have time-traveled that there are three versions of the same civilization running simultaneously in different eras."
         },
         {
           "days": "Year 999",
-          "title": "The Climax",
-          "description": "A Clean child with natural resistance to the infection offers herself as a controlled test subject. The result: partial infection, preserving Clean emotional capacity while gaining Enhanced cognition. She's the first of the Balanced. Her children start both Clean and Enhanced civilizations' first shared cultural festival."
+          "title": "The Collision",
+          "description": "All three timelines collapse into one moment. Every villager who ever existed stands in the same space at the same time."
         },
         {
           "days": "Ending",
-          "title": "Twist Ending",
-          "description": "The Balanced realize the infection was never a disease. It was an evolutionary pressure, placed by the original world-builders to force the civilization toward a new form. The fungus at the well wasn't accidental. It grew from a seed left by a precursor civilization that died failing this exact test. The villagers passed."
+          "title": "The Fix",
+          "description": "They destroy the chrono block. Time snaps back to Year 0. Nobody remembers anything. The block sits in the village square. A villager walks toward it..."
         }
       ],
       "challenges": [
-        "Tomas the First Enhanced (Year 0 patient zero)",
-        "Clean Leader Praxis (Year 50 quarantine enforcer)",
-        "Enhanced Swarm-Voice Hive (Year 500 collective spokesperson)",
-        "The Balanced Child Sela (Year 999 evolutionary bridge)"
+        "Villagers start sending messages to the future by burying th",
+        "So many villagers have time-traveled that there are three ve",
+        "All three timelines collapse into one moment. Every villager"
       ],
-      "climax": "The Balanced realize the infection was never a disease. It was an evolutionary pressure, placed by the original world-builders to force the civilization toward a new form. The fungus at the well wasn't accidental. It grew from a seed left by a precursor civilization that died failing this exact test. The villagers passed.",
-      "modRequirements": "Infection spread mod, Smart Villager mod, dual-civilization faction system, enhancement/inhibition ability mechanics",
-      "visualSetpiece": "Year 500: Split-screen of two cities \u2014 one Clean city with orderly streets and beautiful murals, one Enhanced city with perfect infrastructure and zero decoration.",
-      "titleVariants": [
-        "I Released An Infection On Villagers For 1000 Years",
-        "Villagers Simulate Enhanced vs Clean Civilization For 1000 Years"
-      ]
+      "climax": "They destroy the chrono block. Time snaps back to Year 0. Nobody remembers anything. The block sits in the village square. A villager walks toward it..."
     },
     {
       "id": 18,
-      "title": "Villagers Simulate Warp Drive Civilization For 1000 Years",
-      "creatureName": "Warp Drive mod + Smart Villager mod: instant long-distance teleportation exists from day one, but each teleport has a tiny chance of arriving in the wrong place \u2014 probability that compounds catastrophically at civilization scale.",
+      "title": "I Gave Villagers a Zombie Apocalypse For 1000 Years",
+      "creatureName": "Undead World",
       "creatureIcon": "\u26a1",
       "category": "mod_mashup",
-      "hook": "What if teleportation was invented in Year 1, but it took 999 years to understand why it was actually dangerous?",
-      "sourceTitle": "100 Minecraft Players Simulate a SPACE Civilization",
-      "sourceChannel": "IGoByLotsOfNames",
-      "sourceUrl": "https://www.youtube.com/watch?v=uhvIu7kJaf4",
-      "sourceViews": "Unknown",
+      "hook": "Night 1: one zombie. Night 1000: a civilization built on the bones of the infected.",
+      "sourceTitle": "I Spent 100 Days in a Viral Outbreak",
+      "sourceChannel": "Various",
+      "sourceUrl": "https://www.youtube.com/watch?v=wtuaIUX86QY",
+      "sourceViews": "12,500,000",
       "storyArc": [
         {
           "days": "Year 0",
-          "title": "The Beginning",
-          "description": "I place a Warp Gate in the village. First jump: a villager disappears and reappears in a distant jungle 10 seconds later. The village erupts. Within a week, every trade route is replaced by Warp Gates. Distance becomes meaningless."
+          "title": "The First Night",
+          "description": "A single zombie appears. It bites a villager. By morning, there are 50 zombies. By the next night, 500. The outbreak begins."
         },
         {
           "days": "Year 50",
-          "title": "First Evolution",
-          "description": "The first Warp Misfire: a merchant teleports and arrives 50 blocks above the destination. Falls. Dies. Investigation reveals it's not a fluke \u2014 the Warp Gate has a 0.01% misfire rate. With 1,000 jumps a day across the civilization, that's one death per day. The Merchant's Guild suppresses the data."
+          "title": "The Fortress",
+          "description": "Survivors build the Ironhold \u2014 a massive walled city lit by a thousand torches. Outside: millions of zombies. Inside: the last 10,000 villagers."
         },
         {
           "days": "Year 100",
-          "title": "Advancement",
-          "description": "The Warp Misfire rate is public knowledge but politically suppressed. The civilization is so dependent on instant teleportation that any suggestion of limiting use is treated as economic terrorism. A 'Warp Widow' movement forms \u2014 families of Misfire victims demanding accountability. They're powerful but outvoted."
+          "title": "The Cure",
+          "description": "Scientists discover zombie flesh contains a healing compound. Irony: the zombies are the medicine. Harvesting raids begin."
         },
         {
           "days": "Year 500",
-          "title": "Transformation",
-          "description": "Jump volume has increased to 1 million per day. The misfire rate has climbed due to aging infrastructure: 0.1%. 1,000 deaths per day. It's become statistical background noise. The civilization has absorbed it as 'transportation cost.' Children grow up knowing Warp travel carries death odds and consider it normal."
+          "title": "The Symbiosis",
+          "description": "Villagers and zombies reach equilibrium. Controlled zombie herds provide materials. Some villagers voluntarily infect themselves for the strength boost."
         },
         {
           "days": "Year 999",
-          "title": "The Climax",
-          "description": "A catastrophic infrastructure failure causes every Warp Gate to misfire simultaneously during peak travel hour. 3 million villagers teleport at once \u2014 3,000 arrive in wrong locations, including inside solid blocks. The Warp Network collapses. The civilization, which forgot how to use roads 900 years ago, cannot move."
+          "title": "The Sentient Horde",
+          "description": "The zombie mass achieves collective consciousness. It speaks. It says: 'We remember being you.'"
         },
         {
           "days": "Ending",
-          "title": "Twist Ending",
-          "description": "The Warp Widow movement's 900-year archive becomes civilization's most important document \u2014 every suppressed misfire report, every covered-up death. The rebuilding civilization reads it and makes a decision: Warp Gates can exist, but only for emergencies. The first road is built in 900 years. The villager who breaks ground uses a pickaxe that belonged to a Warp Widow's great-great-grandmother."
+          "title": "The Invitation",
+          "description": "The horde offers a cure \u2014 total. Every zombie reverts. But they all remember being dead. 1000 years of nightmares in their heads."
         }
       ],
       "challenges": [
-        "The First Jumper (Year 0 brave volunteer)",
-        "Merchant Guild Suppressor Hann (Year 50 data cover-up architect)",
-        "Warp Widow Founder Elys (Year 100 movement creator)",
-        "Last Gate Engineer Vort (Year 999 infrastructure collapse witness)"
+        "Survivors build the Ironhold \u2014 a massive walled city lit by ",
+        "Villagers and zombies reach equilibrium. Controlled zombie h",
+        "The zombie mass achieves collective consciousness. It speaks"
       ],
-      "climax": "The Warp Widow movement's 900-year archive becomes civilization's most important document \u2014 every suppressed misfire report, every covered-up death. The rebuilding civilization reads it and makes a decision: Warp Gates can exist, but only for emergencies. The first road is built in 900 years. The villager who breaks ground uses a pickaxe that belonged to a Warp Widow's great-great-grandmother.",
-      "modRequirements": "Warp/teleportation mod, Smart Villager mod, misfire probability mechanic, infrastructure degradation system",
-      "visualSetpiece": "Year 999: A civilization-wide freeze \u2014 millions of villagers stopped mid-step as every Warp Gate in the world simultaneously fails.",
-      "titleVariants": [
-        "I Gave Villagers Teleportation And Watched Them Forget How To Walk",
-        "Villagers Simulate Warp Civilization For 1000 Years"
-      ]
+      "climax": "The horde offers a cure \u2014 total. Every zombie reverts. But they all remember being dead. 1000 years of nightmares in their heads."
     },
     {
       "id": 19,
-      "title": "Villagers Simulate Ice Age Civilization For 1000 Years",
-      "creatureName": "Progressive world freezing mod + Smart Villager mod: temperature drops 1 degree every 50 years. Each generation inherits a slightly colder world and adapts their normal accordingly.",
+      "title": "I Gave Villagers Pirates For 1000 Years",
+      "creatureName": "Pirate Empire",
       "creatureIcon": "\u26a1",
-      "category": "mod_mashup",
-      "hook": "What if the world was slowly freezing \u2014 and each generation only experienced a fraction of the change, making it impossible to convince anyone it was happening?",
-      "sourceTitle": "Villagers Simulate Civilization: Surviving TITAN Garden",
-      "sourceChannel": "ZMDE",
-      "sourceUrl": "https://www.youtube.com/watch?v=HllSAOQ03EY",
-      "sourceViews": "Unknown",
+      "category": "pop_culture",
+      "hook": "No land. Only ocean. And 100,000 villagers who just learned what a cannon is.",
+      "sourceTitle": "I Survived 100 Days STRANDED on an ISLAND",
+      "sourceChannel": "ACookieGod",
+      "sourceUrl": "https://www.youtube.com/watch?v=hqfEgHFznoA",
+      "sourceViews": "18,500,000",
       "storyArc": [
         {
           "days": "Year 0",
-          "title": "The Beginning",
-          "description": "A scientist villager named Froxa measures the temperature with a redstone thermometer she invented. It's 20 degrees. She makes a note in a journal and predicts: 'By Year 1000, this world will be uninhabitable.' Nobody reads her journal."
+          "title": "The Flood",
+          "description": "I flood the entire world except tiny islands. Villagers must build boats or drown. The age of piracy begins."
         },
         {
           "days": "Year 50",
-          "title": "First Evolution",
-          "description": "The next generation finds farming slightly harder than their parents remember. Old folks say 'it was warmer when I was young.' Young people roll their eyes. This is normal. The civilization adapts \u2014 thicker walls, better fires, new cold-resistant crops."
+          "title": "The Fleets",
+          "description": "Five major pirate fleets control the seas. Each island is a contested port. Naval battles rage daily over trade routes."
         },
         {
           "days": "Year 100",
-          "title": "Advancement",
-          "description": "Three generations in: the change is measurable but deniable. A politician named Warmist gains power by declaring the scientists are lying about temperature to control the economy. He's wildly popular. The civilization does not prepare."
+          "title": "The Kraken",
+          "description": "A massive ocean creature attacks all fleets equally. Pirates must temporarily unite or die separately."
         },
         {
           "days": "Year 500",
-          "title": "Transformation",
-          "description": "Half the world is under ice. The civilization has moved southward three times. They've developed extraordinary cold-weather technology \u2014 heated cities, thermal suits, underground agriculture. But they're running out of south. The thermometer from Year 0 has been passed down through Froxa's family. It now reads 5 degrees."
+          "title": "The Floating City",
+          "description": "Defeated fleets lash their ships together into a massive floating city. It moves. It has 50,000 residents. It IS the civilization."
         },
         {
           "days": "Year 999",
-          "title": "The Climax",
-          "description": "The last habitable zone is a small equatorial band. Every surviving villager \u2014 10,000 from an original million \u2014 lives in it. They've built the most technologically advanced civilization in history because survival forced innovation. The thermometer reads 1 degree. Froxa's 20th-generation descendant reads her ancestor's journal for the first time."
+          "title": "Land Ho",
+          "description": "The water recedes. Land appears for the first time in 1000 years. The floating city's residents have forgotten what solid ground feels like."
         },
         {
           "days": "Ending",
-          "title": "Twist Ending",
-          "description": "The journal's last entry, written 999 years ago: 'If someone reads this, you survived. The freezing will stop at Year 1000 \u2014 I calculated it. It's a cycle. The world will warm again. But only if there are survivors to see it. I'm sorry I couldn't make them listen sooner.' On the last page: a blueprint for a world-warming engine. Froxa built the solution 999 years ago. They just had to find it."
+          "title": "The Choice",
+          "description": "Half step onto land. Half refuse, sailing into the horizon. The floating city splits in two \u2014 one anchored, one forever sailing."
         }
       ],
       "challenges": [
-        "Scientist Froxa (Year 0 prophet and inventor)",
-        "Politician Warmist (Year 100 denier in power)",
-        "Thermal Engineer Koss (Year 500 cold survival pioneer)",
-        "Froxa's 20th Descendant (Year 999 journal finder)"
+        "Five major pirate fleets control the seas. Each island is a ",
+        "Defeated fleets lash their ships together into a massive flo",
+        "The water recedes. Land appears for the first time in 1000 y"
       ],
-      "climax": "The journal's last entry, written 999 years ago: 'If someone reads this, you survived. The freezing will stop at Year 1000 \u2014 I calculated it. It's a cycle. The world will warm again. But only if there are survivors to see it. I'm sorry I couldn't make them listen sooner.' On the last page: a blueprint for a world-warming engine. Froxa built the solution 999 years ago. They just had to find it.",
-      "modRequirements": "Progressive temperature/freezing mod, Smart Villager mod, climate adaptation mechanics, thermal technology system",
-      "visualSetpiece": "Year 500: An aerial view of the world \u2014 half white with ice, half green \u2014 and a civilization visibly crowded into the southern quarter.",
-      "titleVariants": [
-        "Villagers Simulate Ice Age For 1000 Years",
-        "I Slowly Froze Villagers' World For 1000 Years"
-      ]
+      "climax": "Half step onto land. Half refuse, sailing into the horizon. The floating city splits in two \u2014 one anchored, one forever sailing."
     },
     {
       "id": 20,
-      "title": "Villagers Simulate Gravity Flip Civilization For 1000 Years",
-      "creatureName": "Gravity flip mod + Smart Villager mod: a world event every 100 in-game years flips all gravity, making ceilings floors and floors ceilings. Civilizations must adapt their entire architecture for the flip.",
+      "title": "I Gave Villagers Aliens For 1000 Years",
+      "creatureName": "First Contact",
       "creatureIcon": "\u26a1",
-      "category": "mod_mashup",
-      "hook": "Every 100 years, gravity reverses \u2014 and the civilization that was on top becomes the floor for everything that was underground.",
-      "sourceTitle": "I Gave Villagers Copy & Paste For 1000 Years",
-      "sourceChannel": "ZMDE",
-      "sourceUrl": "https://www.youtube.com/watch?v=JP7vz4QC3LI",
-      "sourceViews": "Unknown",
+      "category": "what_if",
+      "hook": "The aliens didn't come to invade. They came to trade. The villagers weren't ready for either.",
+      "sourceTitle": "The New Dragon Family! - Minecraft Dragons",
+      "sourceChannel": "LittleLizardGaming",
+      "sourceUrl": "https://www.youtube.com/watch?v=MXoD5PRKIo4",
+      "sourceViews": "5,260,000",
       "storyArc": [
         {
           "days": "Year 0",
-          "title": "The Beginning",
-          "description": "The world works normally. But an inscription on a bedrock wall reads: 'The Turning will come.' Nobody knows what it means. The village builds normally: up."
+          "title": "The Landing",
+          "description": "A UFO lands outside the village. Aliens emerge with advanced technology \u2014 but they want emeralds, which they consider priceless."
+        },
+        {
+          "days": "Year 50",
+          "title": "The Tech Boom",
+          "description": "Alien technology transforms the village: flying machines, instant crops, teleporters. But it all runs on emeralds. Inflation destroys the economy."
         },
         {
           "days": "Year 100",
-          "title": "Advancement",
-          "description": "The First Turning: gravity reverses for one full year. Every building falls upward into the sky. Mountains are now chasms. The ocean drains upward. The civilization loses 80% of its members and everything it built. Then gravity returns. Survivors rebuild on the ground \u2014 but also carve into the ceiling that will become the floor in 100 years."
+          "title": "Dependency",
+          "description": "Villagers can't function without alien tech. When aliens raise prices, villages collapse. A resistance movement begins to reverse-engineer the technology."
         },
         {
           "days": "Year 500",
-          "title": "Transformation",
-          "description": "After five Turnings, the civilization has mastered flip-architecture. They now build cities that actually improve with each flip \u2014 chambers that are too high to reach in normal gravity become ground-floor rooms after a flip. The Flip has become a cultural event: Festival of the Turn."
+          "title": "The Reverse",
+          "description": "Villagers become more advanced than the aliens. They start selling THEIR technology to alien civilizations. The traders become the traded-with."
         },
         {
           "days": "Year 999",
-          "title": "The Climax",
-          "description": "The 10th Turning is different: gravity doesn't return after one year. It keeps reversing \u2014 monthly, then weekly, then daily. Someone has broken the Turning mechanism. The civilization that mastered predictable flips is now facing chaos. The inscription's next line, hidden under rock, reads: 'When the Turning breaks, you're ready to leave.'"
+          "title": "The Truth",
+          "description": "Villagers discover the aliens were never advanced \u2014 they found one piece of tech and used it to scam thousands of civilizations."
         },
         {
           "days": "Ending",
-          "title": "Twist Ending",
-          "description": "The flip chaos reveals that the world is not a world \u2014 it's a ship, tumbling through void space. The gravity was the ship's stabilizer. The civilization that survived 1000 years of gravity training has unconsciously learned to navigate the ship. The bedrock inscription is the control panel. They've been ready the whole time."
+          "title": "The Con",
+          "description": "The villagers realize they built everything themselves. The alien tech was just fancy-looking redstone. The 'aliens' were just villagers in costumes from the future."
         }
       ],
       "challenges": [
-        "First Inscription Reader Grav (Year 0 warning discoverer)",
-        "Second Turning Architect Flyn (Year 200 Palindrome Building inventor)",
-        "Festival Master Tora (Year 500 flip culture celebrant)",
-        "Ship Navigator Ren (Year 999 control panel discoverer)"
+        "Alien technology transforms the village: flying machines, in",
+        "Villagers become more advanced than the aliens. They start s",
+        "Villagers discover the aliens were never advanced \u2014 they fou"
       ],
-      "climax": "The flip chaos reveals that the world is not a world \u2014 it's a ship, tumbling through void space. The gravity was the ship's stabilizer. The civilization that survived 1000 years of gravity training has unconsciously learned to navigate the ship. The bedrock inscription is the control panel. They've been ready the whole time.",
-      "modRequirements": "Gravity flip mod, Smart Villager mod, dual-orientation building system, periodic event trigger",
-      "visualSetpiece": "Year 200: A city that works perfectly both right-side-up and upside-down \u2014 during the Second Turning, we see it flip and everything slots perfectly into place.",
-      "titleVariants": [
-        "I Reversed Gravity Every 100 Years For 1000 Years",
-        "Villagers Simulate Flip World Civilization For 1000 Years"
-      ]
+      "climax": "The villagers realize they built everything themselves. The alien tech was just fancy-looking redstone. The 'aliens' were just villagers in costumes from the future."
     },
     {
       "id": 21,
-      "title": "10,000,000 Villagers Simulate The Great War For 1000 Years",
-      "creatureName": "10 million smart villagers divided into 100 factions from Year 0 \u2014 with permanent war as the default state and peace as the exception that changes everything.",
+      "title": "I Gave Villagers Superheroes For 1000 Years",
+      "creatureName": "Hero Civilization",
       "creatureIcon": "\u26a1",
-      "category": "scale_spectacle",
-      "hook": "Ten million villagers, one world, zero peace treaties \u2014 what does a civilization look like when war is the only constant?",
-      "sourceTitle": "1000 Players Simulate Civilization: Rich & Poor",
-      "sourceChannel": "Ish",
-      "sourceUrl": "https://www.youtube.com/watch?v=ef568d0CrRY",
-      "sourceViews": "Unknown",
+      "category": "pop_culture",
+      "hook": "One villager got super strength. Another got flight. By Year 100, everyone had powers. And that's when it went wrong.",
+      "sourceTitle": "What If Eeveelutions Evolved AGAIN?",
+      "sourceChannel": "TrueGreen7",
+      "sourceUrl": "https://www.youtube.com/watch?v=wbhSBtg-dYg",
+      "sourceViews": "2,580,000",
       "storyArc": [
         {
           "days": "Year 0",
-          "title": "The Beginning",
-          "description": "I spawn 10 million villagers across a continent-sized world, divided into 100 factions by geography. Every faction has different resources. Every faction wants what the others have. The first war begins before I finish placing the last villager."
+          "title": "The Origin",
+          "description": "A lightning bolt strikes the village well. Anyone who drinks gains a random superpower. The first hero stops a creeper explosion with his bare hands."
         },
         {
           "days": "Year 50",
-          "title": "First Evolution",
-          "description": "After 50 years of constant warfare, the map has consolidated from 100 factions to 12 major powers. The wars are now industrial \u2014 thousands die in single battles. The first war crime is committed. The first war crime tribunal immediately follows. Both are conducted by the same faction."
+          "title": "The Heroes",
+          "description": "Every villager has powers now. Crime is impossible. Creepers are extinct. But villagers are bored \u2014 nothing to save anyone from."
         },
         {
           "days": "Year 100",
-          "title": "Advancement",
-          "description": "A non-aggression alliance of three small factions \u2014 the Neutral League \u2014 refuses to fight. They become the world's most prosperous civilization because they're spending on trade instead of war. Every other faction wants to destroy them for making peace look viable."
+          "title": "The Villains",
+          "description": "Bored heroes become villains for entertainment. Staged battles. Manufactured crises. The line between hero and villain blurs."
         },
         {
           "days": "Year 500",
-          "title": "Transformation",
-          "description": "The Neutral League has been absorbed, destroyed, and reborn seven times. Each time, a new generation of villagers rediscovers the mathematics: peace is more profitable than war. Each time, the war factions crush them before the lesson spreads. But the idea survives in underground libraries."
+          "title": "Powerless",
+          "description": "A new generation is born without powers. For the first time in 500 years, there are normal villagers. The powered ones don't know how to treat them."
         },
         {
           "days": "Year 999",
-          "title": "The Climax",
-          "description": "The final two surviving mega-factions \u2014 reduced from 10 million villagers to 50,000 on each side \u2014 prepare for the Final War. It begins. It ends in 11 minutes because both sides have the same weapon and know it means mutual destruction. Silence. The first silence in 999 years. In the silence, someone finds an underground library from the Neutral League."
+          "title": "The Choice",
+          "description": "A device can remove all powers permanently. The powered vote to keep them. The powerless rebel."
         },
         {
           "days": "Ending",
-          "title": "Twist Ending",
-          "description": "The Final War's ceasefire holds for one month. Then two. Then a year. The 100,000 surviving villagers from a civilization of 10 million become the founders of the first permanent peace. Historians calculate that 9,900,000 villagers died to produce 100,000 who learned the lesson. The new civilization names itself after the first word in the Neutral League's library: 'Enough.'"
+          "title": "The Sacrifice",
+          "description": "The most powerful hero destroys the device AND all powers \u2014 including his own. Everyone is equal for the first time. He's celebrated as the greatest hero."
         }
       ],
       "challenges": [
-        "Faction Leader Crest (Year 0 first war initiator)",
-        "Neutral League Founder Pax (Year 50 peace architect)",
-        "War Crime Tribunal Judge Sard (Year 100 hypocritical justice)",
-        "Last General Murn (Year 999 mutual destruction moment)"
+        "Every villager has powers now. Crime is impossible. Creepers",
+        "A new generation is born without powers. For the first time ",
+        "A device can remove all powers permanently. The powered vote"
       ],
-      "climax": "The Final War's ceasefire holds for one month. Then two. Then a year. The 100,000 surviving villagers from a civilization of 10 million become the founders of the first permanent peace. Historians calculate that 9,900,000 villagers died to produce 100,000 who learned the lesson. The new civilization names itself after the first word in the Neutral League's library: 'Enough.'",
-      "modRequirements": "Smart Villager mod scaled to 10M, faction war system, diplomacy/alliance mod, territory map system",
-      "visualSetpiece": "Year 999: An overhead map of the world \u2014 once covered in 100 colored faction territories \u2014 now showing just two colors with a thin white line between them. The line holds.",
-      "titleVariants": [
-        "10,000,000 Villagers Simulate World War For 1000 Years",
-        "I Gave 10 Million Villagers One World And Watched Them Fight"
-      ]
+      "climax": "The most powerful hero destroys the device AND all powers \u2014 including his own. Everyone is equal for the first time. He's celebrated as the greatest hero."
     },
     {
       "id": 22,
-      "title": "1,000,000 Villagers Simulate Democracy For 1000 Years",
-      "creatureName": "1 million smart villagers with a fully functional voting system for all collective decisions \u2014 with factions that form around vote-manipulation rather than resource-control.",
+      "title": "I Gave Villagers Space Travel For 1000 Years",
+      "creatureName": "Space Civilization",
       "creatureIcon": "\u26a1",
       "category": "scale_spectacle",
-      "hook": "One million villagers, one vote each, one decision every day \u2014 what happens when democracy is mathematically overwhelmed by its own voters?",
-      "sourceTitle": "1,000,000 Villagers Simulate Civilization",
-      "sourceChannel": "GroxMC",
-      "sourceUrl": "https://www.youtube.com/watch?v=h2uhEu_RhGA",
-      "sourceViews": "Unknown",
+      "hook": "First they reached the sky limit. Then they kept going.",
+      "sourceTitle": "Training our BABY DRAGON in Minecraft!",
+      "sourceChannel": "Tycer",
+      "sourceUrl": "https://www.youtube.com/watch?v=ItFy3NG0CUA",
+      "sourceViews": "1,930,000",
       "storyArc": [
         {
           "days": "Year 0",
-          "title": "The Beginning",
-          "description": "I give every villager a Vote Stone. Every major village decision \u2014 food distribution, war, construction \u2014 requires a majority vote. The first vote is about where to build the well. It takes three days. The well is built in the wrong place because the majority of voters had never seen the terrain."
+          "title": "The Launch",
+          "description": "Villagers build a TNT cannon big enough to launch a villager past the sky limit. He doesn't come back. But he sends a message: 'There's more up here.'"
         },
         {
           "days": "Year 50",
-          "title": "First Evolution",
-          "description": "Professional Vote-Brokers have emerged \u2014 villagers who specialize in convincing other villagers how to vote in exchange for resources. The actual decisions of civilization are now made by 200 Vote-Brokers representing 1 million villagers who've outsourced their political thinking."
+          "title": "The Space Station",
+          "description": "A permanent station orbits the Minecraft world. Space-dwelling villagers develop differently \u2014 taller, paler, adapted to zero gravity."
         },
         {
           "days": "Year 100",
-          "title": "Advancement",
-          "description": "A voting scandal: a Vote-Broker named Dema has been casting the same stone multiple times by exploiting a mechanical loophole. Investigation reveals: 40% of all votes in the past 50 years were fraudulent. The decisions of civilization \u2014 wars, treaties, architecture \u2014 were made on false data."
+          "title": "The Colony",
+          "description": "Moon colony established. Space villagers declare independence from the surface. Two civilizations: ground and sky."
         },
         {
           "days": "Year 500",
-          "title": "Transformation",
-          "description": "The vote system has been reformed 11 times. Each reform solves the last scandal and introduces a new vulnerability. The civilization has developed an extraordinary bureaucracy of election officials who now outnumber actual farmers. Someone has to vote on which bureaucrats get to count the votes."
+          "title": "Deep Space",
+          "description": "Space villagers discover other Minecraft worlds. They establish trade routes across the void. Ground villagers are forgotten."
         },
         {
           "days": "Year 999",
-          "title": "The Climax",
-          "description": "A mathematician presents the final proof: with 1 million voters and the current system, the probability of any individual vote affecting an outcome is 0.000003%. The civilization has been making collective decisions that no individual feels responsible for. The mathematician proposes abolishing voting and replacing it with civic lottery: random villagers make decisions for one day, then return to normal life. It passes in a vote."
+          "title": "The Return",
+          "description": "Space villagers return to the surface \u2014 to find it abandoned. Everyone left centuries ago. Except one old villager tending a garden."
         },
         {
           "days": "Ending",
-          "title": "Twist Ending",
-          "description": "The lottery system produces better decisions in its first year than the previous 999 years of professional voting. The reason: lottery villagers have no career incentive to be wrong, no faction to satisfy, and no Vote-Broker to impress. They just try to solve the problem. The first lottery decision: 'Move the well.' It's been in the wrong spot for 1000 years."
+          "title": "Home",
+          "description": "The space commander sits down next to the gardener. 'What are you growing?' 'The same wheat as 1000 years ago.' They watch the sunset together."
         }
       ],
       "challenges": [
-        "First Vote-Broker Dema (Year 50 manipulation pioneer)",
-        "Election Scandal Investigator Trove (Year 100 corruption exposer)",
-        "Bureaucracy Minister Quad (Year 500 reform architect who creates new problems)",
-        "Mathematician Vera (Year 999 lottery proposer)"
+        "A permanent station orbits the Minecraft world. Space-dwelli",
+        "Space villagers discover other Minecraft worlds. They establ",
+        "Space villagers return to the surface \u2014 to find it abandoned"
       ],
-      "climax": "The lottery system produces better decisions in its first year than the previous 999 years of professional voting. The reason: lottery villagers have no career incentive to be wrong, no faction to satisfy, and no Vote-Broker to impress. They just try to solve the problem. The first lottery decision: 'Move the well.' It's been in the wrong spot for 1000 years.",
-      "modRequirements": "Smart Villager mod at 1M scale, voting system mod, faction influence mechanics, bureaucracy simulation",
-      "visualSetpiece": "Year 50: A massive voting hall with 10,000 villagers crowded in, all being whispered to simultaneously by 200 Vote-Brokers working the room.",
-      "titleVariants": [
-        "I Gave 1,000,000 Villagers Democracy For 1000 Years",
-        "1,000,000 Villagers Vote On Everything For 1000 Years"
-      ]
+      "climax": "The space commander sits down next to the gardener. 'What are you growing?' 'The same wheat as 1000 years ago.' They watch the sunset together."
     },
     {
       "id": 23,
-      "title": "5,000,000 Villagers Simulate The End of the World For 1000 Years",
-      "creatureName": "5 million smart villagers with a visible end-countdown timer in the sky: 1000 years displayed in real-time. Every civilization decision is made knowing the exact deadline.",
+      "title": "I Gave Villagers a Volcano For 1000 Years",
+      "creatureName": "Fire Civilization",
       "creatureIcon": "\u26a1",
-      "category": "scale_spectacle",
-      "hook": "Five million villagers know exactly when the world ends \u2014 what does civilization look like when the countdown is visible in the sky?",
-      "sourceTitle": "I Gave Villagers 1000 Years Until I Ended The World",
-      "sourceChannel": "ZMDE",
-      "sourceUrl": "https://www.youtube.com/watch?v=qOMYXnyQ1NY",
-      "sourceViews": "Unknown",
+      "category": "mod_mashup",
+      "hook": "The volcano erupts every 100 years. They had to build a civilization that survives fire.",
+      "sourceTitle": "A Baby NightFury is Born - Minecraft Dragons",
+      "sourceChannel": "LittleLizardGaming",
+      "sourceUrl": "https://www.youtube.com/watch?v=73ch2JZgvHs",
+      "sourceViews": "1,730,000",
       "storyArc": [
         {
           "days": "Year 0",
-          "title": "The Beginning",
-          "description": "Year 1000:00:00 appears in the sky. Every villager can read it. The countdown begins. The first response is panic. The second response is denial. The third response \u2014 from a young villager named Calla \u2014 is: 'We have 1000 years. What should we build?'"
+          "title": "The Eruption",
+          "description": "A massive volcano appears in the center of the village. It erupts immediately, destroying everything. 10% of villagers survive."
         },
         {
           "days": "Year 50",
-          "title": "First Evolution",
-          "description": "Two philosophical civilizations have formed: the Enjoyers (live for today, the world ends anyway) and the Builders (create something that outlasts the deadline). The Enjoyers are happier. The Builders are more accomplished. Neither understands the other."
+          "title": "Fire Architects",
+          "description": "Survivors build with obsidian and blackstone \u2014 fireproof materials. A culture develops around the volcano, worshipping it."
         },
         {
           "days": "Year 100",
-          "title": "Advancement",
-          "description": "A third faction emerges: the Stoppers \u2014 villagers who believe the countdown can be reversed if they figure out why it started. They've abandoned both enjoyment and building to study the sky-timer exclusively. They're considered insane. They're also right."
+          "title": "The Second Eruption",
+          "description": "Right on schedule, the volcano erupts again. But this time, the obsidian cities survive. Villagers learn the pattern: eruption every 100 years."
         },
         {
           "days": "Year 500",
-          "title": "Transformation",
-          "description": "The Stoppers have determined the countdown originated underground \u2014 a massive redstone machine built by a precursor civilization that set the timer. They've found it. They don't know how to turn it off. With 500 years left, they announce this. The Builders and Enjoyers merge into a new faction for the first time: the Problem-Solvers."
+          "title": "The Harness",
+          "description": "Villagers learn to tap the volcano for energy. Lava-powered everything. The most advanced civilization yet \u2014 built on destruction."
         },
         {
           "days": "Year 999",
-          "title": "The Climax",
-          "description": "The Problem-Solvers crack the machine with one year left. They can stop the countdown. But stopping it requires the willing sacrifice of one villager \u2014 the first one born after the countdown began. Calla's 999-year-old descendant volunteers before anyone can stop her."
+          "title": "The Big One",
+          "description": "The 1000-year eruption is 10x bigger. Even obsidian melts. The entire world is lava."
         },
         {
           "days": "Ending",
-          "title": "Twist Ending",
-          "description": "Calla's descendant places her hand on the machine. The countdown freezes at Year 999:364 days. Then it starts running backward. Time unmakes itself. The villagers remember a world before the countdown \u2014 a world where Calla's ancestor asked 'What should we build?' and nobody had to answer under a deadline. They build the same things. But differently."
+          "title": "The Seed",
+          "description": "One villager in an obsidian bunker survives with a single seed. She plants it in the cooling ash. A tree grows. Civilization restarts."
         }
       ],
       "challenges": [
-        "Calla the First Builder (Year 0 response-to-doom pioneer)",
-        "Enjoyer King Prest (Year 50 live-for-today ruler)",
-        "Stopper Scientist Void (Year 100 countdown investigator)",
-        "Calla's Final Descendant (Year 999 willing sacrifice)"
+        "Survivors build with obsidian and blackstone \u2014 fireproof mat",
+        "Villagers learn to tap the volcano for energy. Lava-powered ",
+        "The 1000-year eruption is 10x bigger. Even obsidian melts. T"
       ],
-      "climax": "Calla's descendant places her hand on the machine. The countdown freezes at Year 999:364 days. Then it starts running backward. Time unmakes itself. The villagers remember a world before the countdown \u2014 a world where Calla's ancestor asked 'What should we build?' and nobody had to answer under a deadline. They build the same things. But differently.",
-      "modRequirements": "Smart Villager mod at 5M scale, sky countdown timer mod, countdown machine structure, faction belief system",
-      "visualSetpiece": "Year 0: Five million villagers all looking up simultaneously at a sky that just filled with glowing numbers counting down.",
-      "titleVariants": [
-        "5,000,000 Villagers Survive The Countdown For 1000 Years",
-        "I Gave 5 Million Villagers A Visible Apocalypse Timer"
-      ]
+      "climax": "One villager in an obsidian bunker survives with a single seed. She plants it in the cooling ash. A tree grows. Civilization restarts."
     },
     {
       "id": 24,
-      "title": "2,000,000 Villagers Simulate Space Colonization For 1000 Years",
-      "creatureName": "2 million smart villagers on a resource-depleted world who must independently discover and develop spaceflight over 1000 years.",
+      "title": "I Gave Villagers an Ice Age For 1000 Years",
+      "creatureName": "Frozen World",
       "creatureIcon": "\u26a1",
-      "category": "scale_spectacle",
-      "hook": "Two million villagers invented their own rocket technology, left the planet, and colonized space \u2014 all without me telling them how.",
-      "sourceTitle": "100 Minecraft Players Simulate a SPACE Civilization",
-      "sourceChannel": "IGoByLotsOfNames",
-      "sourceUrl": "https://www.youtube.com/watch?v=uhvIu7kJaf4",
-      "sourceViews": "Unknown",
+      "category": "what_if",
+      "hook": "Temperature drops 1 degree per year. By Year 100, everything is frozen. By Year 500, even fire doesn't work.",
+      "sourceTitle": "Minecraft Movie Trailer RECREATED",
+      "sourceChannel": "Alumio",
+      "sourceUrl": "https://www.youtube.com/watch?v=Alumio_recreation",
+      "sourceViews": "1,600,000",
       "storyArc": [
         {
           "days": "Year 0",
-          "title": "The Beginning",
-          "description": "The world's resources are visibly finite \u2014 I've set resource depletion to accelerate. A villager mathematician named Calc looks at the numbers and writes: 'We have 1000 years of resources left. Then the world ends. Unless we leave.' Her treatise is printed 1 million times and ignored."
+          "title": "The Chill",
+          "description": "Snow starts falling and doesn't stop. Crops freeze. Animals huddle. Villagers don't realize it's going to get much, much worse."
         },
         {
           "days": "Year 50",
-          "title": "First Evolution",
-          "description": "Calc's disciples \u2014 the Off-World Society \u2014 have been running sky experiments for 50 years. They've achieved primitive rocketry using blaze powder and obsidian. Their first launch goes 500 blocks up and crashes. 22 villagers die. 40 more volunteer immediately."
+          "title": "The Underground",
+          "description": "Surface is uninhabitable. All villagers move underground. Geothermal heat keeps them alive. A new culture develops in darkness."
         },
         {
           "days": "Year 100",
-          "title": "Advancement",
-          "description": "The first successful orbit: a single villager circles the world in a pressurized sphere for three days before landing safely. She describes the planet from above. The first photograph of their world. Every villager sees it. The Off-World Society's budget quadruples overnight."
+          "title": "The Frozen Surface",
+          "description": "The surface is solid ice hundreds of blocks thick. Villagers who go up never come back. Stories of the surface become myths."
         },
         {
           "days": "Year 500",
-          "title": "Transformation",
-          "description": "Three off-world colonies exist: Moon Base Alpha, the Asteroid Ring settlements, and the experimental Mars-equivalent colony. 200,000 villagers live off-world. The home world's resources are still depleting. The race is on: can the colonies grow fast enough to absorb the rest?"
+          "title": "Fire Dies",
+          "description": "It's so cold that fire can't sustain itself. The last torch goes out. Villagers learn to see in darkness. They evolve."
         },
         {
           "days": "Year 999",
-          "title": "The Climax",
-          "description": "The last resource node on the home world runs dry. 1.8 million villagers need to evacuate. The off-world colonies can hold 200,000 maximum. The mathematics of survival are brutal. The evacuation fleet \u2014 built in five years by a civilization working with everything it has \u2014 fits exactly 200,000 villagers. The rest know they won't leave."
+          "title": "The Thaw",
+          "description": "Temperature starts rising. 1 degree per year. Ice cracks. Light reaches underground for the first time in 900 years."
         },
         {
           "days": "Ending",
-          "title": "Twist Ending",
-          "description": "The 200,000 survivors reach the Mars-equivalent colony. They carry with them a complete cultural archive of 2 million villagers \u2014 every song, recipe, memory, and blueprint the civilization ever produced. They're the seed of a new civilization. The first child born on Mars is named Calc. She becomes a mathematician."
+          "title": "The Surface",
+          "description": "Villagers emerge into sunlight. They've never seen it. A child points at the sky and asks: 'What's that bright thing?' An elder remembers: 'They called it the sun.'"
         }
       ],
       "challenges": [
-        "Calc the Mathematician (Year 0 first space advocate)",
-        "First Orbital Villager Ori (Year 100 brave pioneer)",
-        "Colony Administrator Duna (Year 500 off-world civilization builder)",
-        "The Evacuation Fleet Commander (Year 999 mathematical tragedy manager)"
+        "Surface is uninhabitable. All villagers move underground. Ge",
+        "It's so cold that fire can't sustain itself. The last torch ",
+        "Temperature starts rising. 1 degree per year. Ice cracks. Li"
       ],
-      "climax": "The 200,000 survivors reach the Mars-equivalent colony. They carry with them a complete cultural archive of 2 million villagers \u2014 every song, recipe, memory, and blueprint the civilization ever produced. They're the seed of a new civilization. The first child born on Mars is named Calc. She becomes a mathematician.",
-      "modRequirements": "Smart Villager mod at 2M scale, space travel mod, resource depletion system, colony-building mechanics",
-      "visualSetpiece": "Year 999: The evacuation fleet \u2014 10,000 ships \u2014 launching simultaneously from a dying world. Each ship carries 20 villagers and a library of 10,000 more.",
-      "titleVariants": [
-        "2,000,000 Villagers Escape To Space For 1000 Years",
-        "I Let 2 Million Villagers Invent Spaceflight For 1000 Years"
-      ]
+      "climax": "Villagers emerge into sunlight. They've never seen it. A child points at the sky and asks: 'What's that bright thing?' An elder remembers: 'They called it the sun.'"
     },
     {
       "id": 25,
-      "title": "500,000 Villagers Simulate Underground Civilization For 1000 Years",
-      "creatureName": "500,000 smart villagers in a world where the surface is lethally toxic \u2014 all civilization must be built underground, expanding deeper as population grows.",
+      "title": "I Gave Villagers a Gold Rush For 1000 Years",
+      "creatureName": "Gold Fever",
       "creatureIcon": "\u26a1",
-      "category": "scale_spectacle",
-      "hook": "What if the surface was uninhabitable and half a million villagers had to build an entire civilization going down?",
-      "sourceTitle": "I Made 100 Players Simulate Civilization in Jurassic Minecraft",
-      "sourceChannel": "SpeedSilver",
-      "sourceUrl": "https://www.youtube.com/watch?v=j8y-_ts_H8s",
-      "sourceViews": "Unknown",
+      "category": "pop_culture",
+      "hook": "I placed unlimited gold in one location. 100,000 villagers found out. Chaos.",
+      "sourceTitle": "ALL MINECRAFT MOBS vs BOSS MOBS",
+      "sourceChannel": "Petesoncraft",
+      "sourceUrl": "https://www.youtube.com/watch?v=vjs-Oyp6aH0",
+      "sourceViews": "1,570,000",
       "storyArc": [
         {
           "days": "Year 0",
-          "title": "The Beginning",
-          "description": "The surface glows red with a toxic radiation \u2014 anything on it for more than 10 seconds dies. 500,000 villagers have been living underground for as long as anyone can remember. The question nobody has dared ask: what's up there?"
+          "title": "The Strike",
+          "description": "A villager finds a gold block. Then another. Then a vein that seems infinite. Word spreads. Every villager in the world starts running."
         },
         {
           "days": "Year 50",
-          "title": "First Evolution",
-          "description": "Depth-floor 1 through 20 is fully settled. A new crisis: they're running out of horizontal space. The only option: go deeper. A mining crew digs to Depth-floor 50 and finds something unexpected \u2014 a different rock type that glows, providing natural light. The Underground Renaissance begins."
+          "title": "Boomtown",
+          "description": "A massive mining city forms around the gold. Prospectors, merchants, saloons, law enforcement. It's the Wild West in Minecraft."
         },
         {
           "days": "Year 100",
-          "title": "Advancement",
-          "description": "The society has developed a caste system based on depth: elite classes live shallow (closer to the known world), working class lives deep. A deep-dweller revolution begins \u2014 they control the mining, the resources, and the new light-stone. If they stop working, the shallow levels starve."
+          "title": "The Monopoly",
+          "description": "One villager controls 90% of the gold. He builds a golden palace. Everyone else works for him. A union forms in the mines."
         },
         {
           "days": "Year 500",
-          "title": "Transformation",
-          "description": "The civilization spans Depth-floors 1 through 500. The deepest floors are home to a culture completely unrecognizable from the original \u2014 they've never seen the shallow levels, speak a dialect that barely resembles the surface tongue, and worship the light-stone as a deity."
+          "title": "Gold is Worthless",
+          "description": "So much gold has been mined that it's less valuable than dirt. The economy collapses. Villagers start trading in iron instead."
         },
         {
           "days": "Year 999",
-          "title": "The Climax",
-          "description": "A geological survey reveals: the toxic surface is localized. Beyond 10 kilometers of surface travel, the atmosphere is clear. The world is safe. It's been safe for 999 years \u2014 the original toxicity was a contained disaster, not a global condition. The underground civilization was hiding from a problem that healed itself in Year 10."
+          "title": "The Last Nugget",
+          "description": "The mine finally runs dry. The last gold nugget is placed in a museum. Villagers stare at it like a holy relic."
         },
         {
           "days": "Ending",
-          "title": "Twist Ending",
-          "description": "The first surface expedition in 1000 years emerges into daylight. The sun is real. The sky is blue. The surface is beautiful. The lead explorer, a deep-dweller from Floor 500, has never seen natural light before. Her diary entry that day: 'I have lived my entire life in a cave. My parents did. Their parents did. We all thought this was the world.' She closes the book and watches a sunset."
+          "title": "The Real Gold",
+          "description": "A farmer points out his wheat field has fed the village for 1000 years. 'That's the real gold.' They tear down the golden palace and build a farm."
         }
       ],
       "challenges": [
-        "First Surface Questioner Dun (Year 50 radical who asks what's above)",
-        "Deep Revolution Leader Crust (Year 100 depth-caste uprising)",
-        "Light-Stone High Priest Glow (Year 500 deep-faith keeper)",
-        "First Surface Explorer (Year 999 sun-watcher)"
+        "A massive mining city forms around the gold. Prospectors, me",
+        "So much gold has been mined that it's less valuable than dir",
+        "The mine finally runs dry. The last gold nugget is placed in"
       ],
-      "climax": "The first surface expedition in 1000 years emerges into daylight. The sun is real. The sky is blue. The surface is beautiful. The lead explorer, a deep-dweller from Floor 500, has never seen natural light before. Her diary entry that day: 'I have lived my entire life in a cave. My parents did. Their parents did. We all thought this was the world.' She closes the book and watches a sunset.",
-      "modRequirements": "Smart Villager mod at 500K scale, surface toxicity mod, deep underground biome generation, depth-caste social system",
-      "visualSetpiece": "Year 500: An underground cross-section showing 500 floors of civilization \u2014 lit cities, rushing rivers, farms under artificial light \u2014 the most beautiful thing that's never seen the sun.",
-      "titleVariants": [
-        "500,000 Villagers Build Underground Civilization For 1000 Years",
-        "I Trapped 500,000 Villagers Underground And Watched Them Thrive"
-      ]
+      "climax": "A farmer points out his wheat field has fed the village for 1000 years. 'That's the real gold.' They tear down the golden palace and build a farm."
     },
     {
       "id": 26,
-      "title": "What If One Villager Was Immortal For 1000 Years",
-      "creatureName": "One immortal villager (Evren) placed in a civilization \u2014 they cannot die, cannot leave, and accumulate 1000 years of uninterrupted memory while everything around them changes.",
+      "title": "I Gave Villagers Ancient Rome For 1000 Years",
+      "creatureName": "Roman Empire",
       "creatureIcon": "\u26a1",
-      "category": "what_if",
-      "hook": "What does an immortal witness do to a civilization when they're the only one who remembers how everything started?",
-      "sourceTitle": "I Mutated Villagers For 1000 Years",
-      "sourceChannel": "ZMDE",
-      "sourceUrl": "https://www.youtube.com/watch?v=Nj1lZOK5Wps",
-      "sourceViews": "Unknown",
+      "category": "pop_culture",
+      "hook": "Togas, gladiators, aqueducts, and betrayal. Villagers built Rome. Then they burned it.",
+      "sourceTitle": "We Turned Into BABY DRAGONS In Minecraft!",
+      "sourceChannel": "Nico",
+      "sourceUrl": "https://www.youtube.com/watch?v=xiBCikNqOSU",
+      "sourceViews": "991,000",
       "storyArc": [
         {
           "days": "Year 0",
-          "title": "The Beginning",
-          "description": "Evren is an ordinary villager who, for no explained reason, doesn't age. He watches his friends grow old. He helps bury the first generation, then the second. By Year 50, he's a living legend. By Year 100, he's a myth. He's just trying to live a normal life in a world that won't let him."
+          "title": "The Senate",
+          "description": "I give villagers Roman architecture, togas, and a senate building. They elect their first Caesar within an hour."
+        },
+        {
+          "days": "Year 50",
+          "title": "The Colosseum",
+          "description": "Gladiator fights between villagers draw massive crowds. The strongest fighters become celebrities. The weak are forgotten."
         },
         {
           "days": "Year 100",
-          "title": "Advancement",
-          "description": "Every faction in the civilization wants Evren on their side \u2014 his memory of all previous governments is unprecedented political intelligence. He refuses alignment with anyone. A cult of 'Evrenites' forms around him without his consent. He dissolves three cults in his lifetime. They reform within a generation."
+          "title": "The Empire",
+          "description": "Rome expands. Villages become provinces. Roads connect everything. Aqueducts bring water. It's the golden age."
+        },
+        {
+          "days": "Year 500",
+          "title": "The Fall",
+          "description": "Corruption, barbarian raids, internal rebellion. The empire fractures into three. The Colosseum lies in ruins."
         },
         {
           "days": "Year 999",
-          "title": "The Climax",
-          "description": "Evren is alone \u2014 the civilization has collapsed for the eighth time. A new generation is being born in the ruins. Children approach him and ask: 'Old man, do you know any stories?' He sits down. He has 999 years of stories. He picks one: the first one. The story of a village that had everything it needed and threw it away. He doesn't say it happened here. He lets them think it's a fairy tale."
+          "title": "The Rebuild",
+          "description": "A young senator finds original blueprints and rallies the fractured provinces. A new Rome rises."
         },
         {
           "days": "Ending",
-          "title": "Twist Ending",
-          "description": "The new civilization builds a village in the same spot as the original. Evren plants the same tree he planted in Year 1 \u2014 it died three civilizations ago, but he kept the seed. On the tree, he carves: 'Try not to forget this time.' He doesn't say who he is. He goes back to being an ordinary villager. He knows exactly how this ends. He also knows it sometimes doesn't."
+          "title": "Et Tu",
+          "description": "On the day of reunification, the senator's best friend betrays him. History repeats. The cycle continues."
         }
       ],
       "challenges": [
-        "Evren the Immortal (Year 0-999, the eternal witness)",
-        "The Evrenite Cult Leaders (various generations, each one Evren dissolves)",
-        "Historian Sola (Year 700 journal discoverer)",
-        "The New Children (Year 999 next civilization's first generation)"
+        "Gladiator fights between villagers draw massive crowds. The ",
+        "Corruption, barbarian raids, internal rebellion. The empire ",
+        "A young senator finds original blueprints and rallies the fr"
       ],
-      "climax": "The new civilization builds a village in the same spot as the original. Evren plants the same tree he planted in Year 1 \u2014 it died three civilizations ago, but he kept the seed. On the tree, he carves: 'Try not to forget this time.' He doesn't say who he is. He goes back to being an ordinary villager. He knows exactly how this ends. He also knows it sometimes doesn't.",
-      "modRequirements": "Smart Villager mod, immortality mechanic for one specific villager, journal/memory system, multi-generation civilization cycle",
-      "visualSetpiece": "Year 999: Evren sitting alone in the ruins of an empire, surrounded by the debris of eight civilizations, planting a small tree in the exact spot he planted one 999 years ago.",
-      "titleVariants": [
-        "I Made One Villager Immortal For 1000 Years",
-        "The Last Memory: One Villager Watches 1000 Years Of Civilization"
-      ]
+      "climax": "On the day of reunification, the senator's best friend betrays him. History repeats. The cycle continues."
     },
     {
       "id": 27,
-      "title": "What If Villagers Could Trade Memories For 1000 Years",
-      "creatureName": "A Memory Crystal system where villagers can extract, sell, and implant memories \u2014 creating a marketplace of experience that replaces traditional learning and eventually identity.",
+      "title": "I Gave Villagers Samurai For 1000 Years",
+      "creatureName": "Samurai Civilization",
       "creatureIcon": "\u26a1",
-      "category": "what_if",
-      "hook": "What if villagers could sell their memories \u2014 and a generation that buys skills instead of learning them forgets who they are?",
-      "sourceTitle": "I Gave Villagers Copy & Paste For 1000 Years",
-      "sourceChannel": "ZMDE",
-      "sourceUrl": "https://www.youtube.com/watch?v=JP7vz4QC3LI",
-      "sourceViews": "Unknown",
+      "category": "pop_culture",
+      "hook": "Honor, swords, and shoguns. When I gave villagers the way of the warrior, they built an empire of discipline.",
+      "sourceTitle": "I Remade Every Mob Prehistoric in Minecraft",
+      "sourceChannel": "Forkin",
+      "sourceUrl": "https://www.youtube.com/watch?v=IYAdUO-Pl0c",
+      "sourceViews": "512,000",
       "storyArc": [
         {
           "days": "Year 0",
-          "title": "The Beginning",
-          "description": "I place Memory Crystals that can capture a villager's skill memories \u2014 a master blacksmith's 40 years of forge knowledge in a crystal. A young villager buys it and instantly knows everything the blacksmith knew. The blacksmith is horrified. Nobody knows why yet."
+          "title": "The Dojo",
+          "description": "I place a single sword and a scroll of bushido in the village. The first villager to read it becomes the first samurai. He starts training others."
         },
         {
           "days": "Year 50",
-          "title": "First Evolution",
-          "description": "The Memory Market is the largest economic institution in civilization. Skills that took generations to accumulate are now sold for emeralds. A new underclass: the Memory-Less, who were too poor to buy skills and whose natural memories were overwritten by bootleg memory crystals. They exist in an identity void."
+          "title": "The Shogunate",
+          "description": "Samurai clans control territories. A Shogun rises \u2014 the most skilled warrior. Non-samurai become farmers and artisans. A rigid caste system."
         },
         {
           "days": "Year 100",
-          "title": "Advancement",
-          "description": "The first 'Memory Identity Crisis': a villager who bought 14 different skill memories can no longer remember which thoughts are hers. The therapist community (called Memory Weavers) emerges to help villagers reconstruct authentic identity from their purchased memory collage."
+          "title": "The Ronin",
+          "description": "Masterless samurai roam the land. Some become mercenaries, others bandits. A legendary ronin protects the poor from both samurai and bandits."
         },
         {
           "days": "Year 500",
-          "title": "Transformation",
-          "description": "The civilization has stratified around memory wealth. The richest villagers have purchased the memories of every great thinker, artist, and warrior in history \u2014 they're walking encyclopedias of human experience. But they can't make new things. Innovation has stopped. You can't buy a memory that hasn't happened yet."
+          "title": "The Gunpowder",
+          "description": "A foreign trader brings TNT. Samurai refuse to use 'dishonorable' weapons. Those who adopt gunpowder conquer those who don't."
         },
         {
           "days": "Year 999",
-          "title": "The Climax",
-          "description": "A Memory Weaver discovers something the market never predicted: villagers who never bought memories \u2014 who only had their own authentic experiences \u2014 are producing all new art, science, and invention. The Memory-Rich are derivative. The Memory-Poor are creative. The most valuable memory in civilization is now: 'What it feels like to not know something.'"
+          "title": "The Last Duel",
+          "description": "The final true samurai challenges the gunpowder general. Sword vs cannon. The entire civilization watches."
         },
         {
           "days": "Ending",
-          "title": "Twist Ending",
-          "description": "The last Memory Crystal is destroyed publicly by a Memory Weaver who bought everything and found nothing. She says: 'I have 50,000 years of other people's memories. I don't have a single day of my own.' The civilization debates whether to abolish Memory trading. The vote fails \u2014 nobody can remember what it felt like to learn things the hard way. Except the Memory-Poor. They win the next election."
+          "title": "The Cut",
+          "description": "One swing. The cannon explodes. The samurai wins. But he sheathes his sword forever. 'The way of the warrior,' he says, 'is to make war unnecessary.'"
         }
       ],
       "challenges": [
-        "Master Blacksmith Rast (Year 0 first memory sold, first horrified seller)",
-        "Memory Market Founder Quex (Year 50 marketplace architect)",
-        "Memory Weaver Lena (Year 100 identity therapist)",
-        "The Creative Outcast Brin (Year 999 unadulterated mind)"
+        "Samurai clans control territories. A Shogun rises \u2014 the most",
+        "A foreign trader brings TNT. Samurai refuse to use 'dishonor",
+        "The final true samurai challenges the gunpowder general. Swo"
       ],
-      "climax": "The last Memory Crystal is destroyed publicly by a Memory Weaver who bought everything and found nothing. She says: 'I have 50,000 years of other people's memories. I don't have a single day of my own.' The civilization debates whether to abolish Memory trading. The vote fails \u2014 nobody can remember what it felt like to learn things the hard way. Except the Memory-Poor. They win the next election.",
-      "modRequirements": "Smart Villager mod, Memory Crystal item system, skill transfer mechanic, identity stability metric",
-      "visualSetpiece": "Year 500: The Memory Market \u2014 a cathedral-sized building where thousands of crystals glow on shelves, each one a lifetime of experience for sale.",
-      "titleVariants": [
-        "I Gave Villagers Memory Trading For 1000 Years",
-        "Villagers Simulate Memory Economy Civilization For 1000 Years"
-      ]
+      "climax": "One swing. The cannon explodes. The samurai wins. But he sheathes his sword forever. 'The way of the warrior,' he says, 'is to make war unnecessary.'"
     },
     {
       "id": 28,
-      "title": "What If One Villager Had Infinite Strength For 1000 Years",
-      "creatureName": "One villager (Colos) is infinitely strong from birth \u2014 can move any block, defeat any enemy, build anything instantly. The civilization must figure out how to exist alongside someone who makes everyone else redundant.",
+      "title": "I Gave Villagers TNT For 1000 Years",
+      "creatureName": "Explosive Civilization",
       "creatureIcon": "\u26a1",
-      "category": "what_if",
-      "hook": "What do you build when one member of your civilization can lift mountains \u2014 and what happens when they realize they don't need you?",
-      "sourceTitle": "Villagers Simulate Bugatti Civilization For 1000 Years",
-      "sourceChannel": "ZMDE",
-      "sourceUrl": "https://www.youtube.com/watch?v=ezAgdd6Iay4",
-      "sourceViews": "Unknown",
+      "category": "mod_mashup",
+      "hook": "Unlimited TNT. No rules. 100,000 villagers. What could go wrong?",
+      "sourceTitle": "I Survived Hardcore Minecraft For 100 Days",
+      "sourceChannel": "Forge Labs",
+      "sourceUrl": "https://www.youtube.com/watch?v=iYzfeWaenlU",
+      "sourceViews": "52,000,000",
       "storyArc": [
         {
           "days": "Year 0",
-          "title": "The Beginning",
-          "description": "Baby Colos is found in the village. By age 5, she's accidentally knocked down three houses by walking past them. By age 10, she's rebuilt them \u2014 and added 50 more. The village is simultaneously terrified of and completely dependent on her. She just wants friends."
+          "title": "The Boom",
+          "description": "I give every villager unlimited TNT. Within minutes, the village is a crater. But some villagers start using TNT for mining instead of destruction. Two philosophies emerge: builders and destroyers."
+        },
+        {
+          "days": "Year 50",
+          "title": "The Arms Race",
+          "description": "Builder villagers create TNT-proof bunkers. Destroyers develop bigger explosions. A cold war begins with both sides stockpiling."
         },
         {
           "days": "Year 100",
-          "title": "Advancement",
-          "description": "Civilization has been built around Colos \u2014 she does all heavy labor, all construction, all defense. She's 100 years old, hasn't aged, and is profoundly lonely. Every relationship she has ends because her 'friends' are using her for labor. She starts saying no. The civilization panics."
+          "title": "The Treaty",
+          "description": "After a blast destroys both sides' capitals, they sign a non-explosion pact. TNT becomes regulated. A black market forms."
+        },
+        {
+          "days": "Year 500",
+          "title": "Controlled Demolition",
+          "description": "TNT is now used exclusively for art \u2014 controlled explosions that create sculptures. The most beautiful civilization ever built, from destruction."
         },
         {
           "days": "Year 999",
-          "title": "The Climax",
-          "description": "The civilization faces a threat it cannot handle \u2014 a meteor impact in three weeks. They remember the myth of Colos. They climb the mountain. She's still there, 999 years old, unchanged. They ask for her help. She looks at them: a civilization that grew strong by not needing her, now asking for help. She smiles for the first time in 700 years."
+          "title": "The Final Blast",
+          "description": "An ancient stockpile is discovered. Enough TNT to destroy the world 100 times over. Both factions want to control it."
         },
         {
           "days": "Ending",
-          "title": "Twist Ending",
-          "description": "Colos stops the meteor alone in 11 seconds \u2014 she throws it back into space. Then she walks down the mountain into the city. The civilization cheers not for her power but for her choice to use it. She's handed a citizenship certificate. First name on the founding charter, 999 years late: Colos. It's the first time anyone gave her a piece of paper that didn't ask her to move something heavy."
+          "title": "The Display",
+          "description": "They detonate it all at once \u2014 straight up. The biggest fireworks show in Minecraft history. Nothing is destroyed. Everything is illuminated."
         }
       ],
       "challenges": [
-        "Colos the Strong (Year 0-999 the infinite-strength constant)",
-        "Early Village Leader Dun (Year 0 simultaneously grateful and terrified)",
-        "Colos Mythology Priest (Year 700 worshipper who's never met her)",
-        "Meteor Crisis Leader Arev (Year 999 the one who climbs the mountain)"
+        "Arms race",
+        "Cold war",
+        "Art from destruction"
       ],
-      "climax": "Colos stops the meteor alone in 11 seconds \u2014 she throws it back into space. Then she walks down the mountain into the city. The civilization cheers not for her power but for her choice to use it. She's handed a citizenship certificate. First name on the founding charter, 999 years late: Colos. It's the first time anyone gave her a piece of paper that didn't ask her to move something heavy.",
-      "modRequirements": "Smart Villager mod, single-villager infinite strength attribute, civilization development tracking, meteor impact mod",
-      "visualSetpiece": "Year 999: Colos standing on a mountaintop, catching a meteor the size of a city block with one hand, then throwing it back into space while the civilization watches from below.",
-      "titleVariants": [
-        "I Made One Villager Infinitely Strong For 1000 Years",
-        "What If One Villager Had All The Power For 1000 Years"
-      ]
+      "climax": "They detonate it all at once \u2014 the biggest fireworks show ever."
     },
     {
       "id": 29,
-      "title": "What If Villagers Could See The Future For 1000 Years",
-      "creatureName": "A Fate Crystal given to each villager at birth showing them the exact moment and manner of their death \u2014 creating a civilization where destiny is known and the question becomes whether it can be changed.",
+      "title": "I Gave Villagers the Ocean For 1000 Years",
+      "creatureName": "Ocean Empire",
       "creatureIcon": "\u26a1",
       "category": "what_if",
-      "hook": "Every villager can see their own death \u2014 and 1000 years of civilization shows that knowing the future doesn't change it.",
-      "sourceTitle": "I Gave Villagers 1000 Years Until I Ended The World",
-      "sourceChannel": "ZMDE",
-      "sourceUrl": "https://www.youtube.com/watch?v=qOMYXnyQ1NY",
-      "sourceViews": "Unknown",
+      "hook": "The world is 99% water. Villagers can't swim. I gave them 1000 years to figure it out.",
+      "sourceTitle": "I Survived 100 Days STRANDED on an ISLAND",
+      "sourceChannel": "ACookieGod",
+      "sourceUrl": "https://www.youtube.com/watch?v=hqfEgHFznoA",
+      "sourceViews": "18,500,000",
       "storyArc": [
         {
           "days": "Year 0",
-          "title": "The Beginning",
-          "description": "I give every newborn a Fate Crystal. It shows one image: their death. Most see peaceful old age. A few see violence. One baby's crystal shows her dying in a war that hasn't happened yet \u2014 at exactly age 47, in a city that doesn't exist yet, fighting for a cause nobody's named. Her parents call her Fate."
+          "title": "The Drowning",
+          "description": "I flood the world to sea level. Villagers scramble to the highest blocks. Islands of 3-4 blocks hold dozens of desperate villagers."
         },
         {
           "days": "Year 50",
-          "title": "First Evolution",
-          "description": "The Fate Denial movement has emerged \u2014 villagers who smash their crystals. 'If I don't know, I can choose.' The Fate Acceptance movement counters: 'Knowing your death frees you to really live.' Both are right. Neither convinces the other."
+          "title": "The Rafts",
+          "description": "Villagers build floating platforms. Raft cities connected by bridges. Fishing becomes the only food source. A maritime culture develops."
         },
         {
           "days": "Year 100",
-          "title": "Advancement",
-          "description": "Civilization planning is now perfect \u2014 leadership goes to villagers with the longest remaining lifespans as shown in their crystals. The most effective general in history is chosen at age 5 based on her crystal showing her death at 90 in peaceful old age. She lives up to every expectation. The system works. This is somehow unsettling."
+          "title": "The Divers",
+          "description": "Some villagers learn to hold breath underwater using potion effects. They discover ocean monuments and establish underwater outposts."
         },
         {
           "days": "Year 500",
-          "title": "Transformation",
-          "description": "Fate, age 47, is standing in the exact place the crystal showed. The war is happening exactly as predicted. She realizes: she's lived 47 years knowing this moment was coming. She could have left the city yesterday. She chose to be here. She raises her sword and stops."
+          "title": "The Deep City",
+          "description": "An entire civilization exists underwater in glass-domed cities. Surface dwellers are the minority now. Underwater villagers breathe with conduits."
         },
         {
           "days": "Year 999",
-          "title": "The Climax",
-          "description": "A philosopher has spent 999 years studying whether anyone has ever successfully avoided their fated death. The answer: yes, twice, in 999 years. Both cases involved villagers who found their own Fate Crystal and changed what they did at the crucial moment. The discovery: the crystal shows the most probable death, not the certain one. Free will is real, but barely."
+          "title": "The Drain",
+          "description": "The water starts draining. The underwater civilization panics \u2014 they can't breathe air anymore. Surface dwellers watch the ocean disappear."
         },
         {
           "days": "Ending",
-          "title": "Twist Ending",
-          "description": "The philosopher publishes the finding. The response is mixed: some villagers are relieved (free will is possible), others are furious (they wasted lives accepting fates that weren't mandatory). Fate's crystal is found in a museum \u2014 she died exactly as shown. But her journal reveals she spent the night before choosing it. She chose to stay. The crystal was right. She just didn't know it was right because she wanted it."
+          "title": "The Aquarium",
+          "description": "Surface villagers build the biggest aquarium ever to save the underwater people. Both civilizations survive \u2014 one watches the other through glass."
         }
       ],
       "challenges": [
-        "Fate the Prophesied Fighter (Year 0-500 the known death made real)",
-        "Fate Denial Founder Smash (Year 50 crystal destroyer)",
-        "Crystal-Based General Strategia (Year 100 lifespan-selected leader)",
-        "Philosopher of Free Will Lux (Year 999 the one who finds the exceptions)"
+        "Maritime culture",
+        "Underwater cities",
+        "Breathing adaptation"
       ],
-      "climax": "The philosopher publishes the finding. The response is mixed: some villagers are relieved (free will is possible), others are furious (they wasted lives accepting fates that weren't mandatory). Fate's crystal is found in a museum \u2014 she died exactly as shown. But her journal reveals she spent the night before choosing it. She chose to stay. The crystal was right. She just didn't know it was right because she wanted it.",
-      "modRequirements": "Smart Villager mod, Fate Crystal prophecy item, death prediction system, Fate Denial/Acceptance faction mechanics",
-      "visualSetpiece": "Year 500: Fate standing in the prophesied battlefield, surrounded by the exact chaos the crystal showed since she was born \u2014 and making a choice the crystal never showed.",
-      "titleVariants": [
-        "I Showed Every Villager Their Death For 1000 Years",
-        "Villagers Simulate Prophecy Civilization For 1000 Years"
-      ]
+      "climax": "Surface villagers build an aquarium to save their underwater cousins."
     },
     {
       "id": 30,
-      "title": "What If Villagers Had No Memory For 1000 Years",
-      "creatureName": "Villagers with daily memory wipe: each morning they forget everything personal, retaining only motor skills. Written language and physical artifacts become civilization's only continuity.",
+      "title": "I Gave Villagers a Nuclear Reactor For 1000 Years",
+      "creatureName": "Nuclear Age",
       "creatureIcon": "\u26a1",
-      "category": "what_if",
-      "hook": "What if every villager woke up every morning with no memory of yesterday \u2014 and civilization still somehow survived 1000 years?",
-      "sourceTitle": "I Gave Villagers Copy & Paste For 1000 Years",
-      "sourceChannel": "ZMDE",
-      "sourceUrl": "https://www.youtube.com/watch?v=JP7vz4QC3LI",
-      "sourceViews": "Unknown",
+      "category": "mod_mashup",
+      "hook": "Unlimited power. Unlimited danger. One meltdown changes everything.",
+      "sourceTitle": "I Spent 100 Days in a Viral Outbreak",
+      "sourceChannel": "Various",
+      "sourceUrl": "https://www.youtube.com/watch?v=wtuaIUX86QY",
+      "sourceViews": "12,500,000",
       "storyArc": [
         {
           "days": "Year 0",
-          "title": "The Beginning",
-          "description": "Every villager wakes up with no memory. They know how to walk, talk, build \u2014 procedural skills intact \u2014 but no episodic memory. No names, no relationships, no history. The first civilization-building act is a villager who ties a string around her finger and leaves a note: 'You did this yesterday. Keep doing it.' The first external memory is born."
+          "title": "Power On",
+          "description": "I place a nuclear reactor in the village center. It produces infinite energy. Villagers power everything \u2014 lights, farms, defenses. Life is perfect."
         },
         {
           "days": "Year 50",
-          "title": "First Evolution",
-          "description": "The Note Society has emerged \u2014 an entire civilization built around written communication with yesterday's self. Every morning begins with reading notes. Every night ends with writing them. Buildings are covered in writing \u2014 instructions for how to be yourself tomorrow. The most skilled job: Note Writer."
+          "title": "The Grid",
+          "description": "Every village in the world connects to the reactor. One power source for everything. Civilization advances 1000 years in 50."
         },
         {
           "days": "Year 100",
-          "title": "Advancement",
-          "description": "Notes have evolved into books, then libraries, then an archive network. 'Institutional memory' is literally physical \u2014 no knowledge exists in anyone's head overnight. Every discovery must be written down or it's lost forever at midnight. The civilization's greatest fear isn't war. It's fire near a library."
+          "title": "The Meltdown",
+          "description": "The reactor overloads. A massive explosion irradiates the center of the world. The exclusion zone grows daily. Villagers flee outward."
         },
         {
           "days": "Year 500",
-          "title": "Transformation",
-          "description": "Five hundred years of written records has created the most comprehensive civilization archive in any version of the world. No living villager has memory older than 24 hours, but the civilization collectively remembers everything. A philosophy: 'We are our notes. A person without notes is a person without a past.' The Memory-Notes have become identity."
+          "title": "The Mutants",
+          "description": "Villagers in the exclusion zone don't die \u2014 they change. Stronger, different, glowing. They build a civilization in the radiation that no one else can enter."
         },
         {
           "days": "Year 999",
-          "title": "The Climax",
-          "description": "A catastrophic flood destroys 70% of the global archive. A civilization that built everything on external memory loses 700 years of continuity overnight. The villagers wake up the next morning with their notes from yesterday \u2014 describing a flood \u2014 but no context for what existed before. They have to rediscover 700 years of history from artifacts alone."
+          "title": "The Cleanup",
+          "description": "Outside villagers develop technology to neutralize radiation. But the mutants don't want to be 'cured.' They like what they've become."
         },
         {
           "days": "Ending",
-          "title": "Twist Ending",
-          "description": "The rebuilding takes 20 years. In that time, the civilization discovers something: unmoored from 700 years of established practice, they invent things that were considered impossible. The flood was the best thing that happened to them \u2014 not because loss is good, but because the accumulated weight of 700 years of 'this is how we do it' was gone. The new civilization keeps better backups. And intentionally forgets some things on purpose."
+          "title": "The Wall",
+          "description": "They build a permanent wall. Two civilizations, side by side, forever different. The reactor still hums at the center \u2014 neither side willing to turn it off."
         }
       ],
       "challenges": [
-        "String-Finger Woman (Year 0 inventor of external memory)",
-        "Chief Note Writer Scribe (Year 50 note society founder)",
-        "Library Fire Marshal Parch (Year 100 civilization's most important job)",
-        "Flood Survivor Blank (Year 999 the first villager to rebuild from nothing)"
+        "Energy dependency",
+        "Meltdown aftermath",
+        "Mutation civilization"
       ],
-      "climax": "The rebuilding takes 20 years. In that time, the civilization discovers something: unmoored from 700 years of established practice, they invent things that were considered impossible. The flood was the best thing that happened to them \u2014 not because loss is good, but because the accumulated weight of 700 years of 'this is how we do it' was gone. The new civilization keeps better backups. And intentionally forgets some things on purpose.",
-      "modRequirements": "Smart Villager mod, daily memory wipe mechanic, written-note interaction system, archive/library burning vulnerability",
-      "visualSetpiece": "Year 50: An entire village covered wall-to-wall in handwritten notes \u2014 every surface is a message from yesterday's self to today's self. It's civilization made of paper.",
-      "titleVariants": [
-        "I Gave Villagers No Memory For 1000 Years",
-        "Villagers Simulate Amnesia Civilization For 1000 Years"
-      ]
+      "climax": "Two civilizations separated by a wall, neither willing to shut down the reactor."
     }
   ]
 }
