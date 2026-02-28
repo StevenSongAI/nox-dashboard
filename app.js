@@ -303,8 +303,7 @@ App.loadExpenses = async function() {
     const res = await fetch("data/expenses.csv?v=1");
     if (!res.ok) throw new Error("HTTP " + res.status);
     const text = await res.text();
-    const lines = text.trim().split("
-");
+    const lines = text.trim().split("\n");
     const expenses = [];
     for (let i = 1; i < lines.length; i++) {
       const cols = lines[i].split(",");
