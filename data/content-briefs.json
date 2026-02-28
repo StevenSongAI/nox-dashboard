@@ -8,7 +8,7 @@
     {
       "id": 1,
       "title": "I Raised a Pet Hydra for 100 Days",
-      "creatureName": "Hera",
+      "creatureName": "Hydra",
       "creatureIcon": "\ud83d\udc09",
       "category": "mythical",
       "hook": "What happens when a lizard egg you found at the beach hatches into something with three heads \u2014 and keeps growing?",
@@ -63,7 +63,7 @@
     {
       "id": 2,
       "title": "I Raised a Pet Night Fury for 100 Days",
-      "creatureName": "Shade",
+      "creatureName": "Night Fury",
       "creatureIcon": "\ud83d\udc09",
       "category": "mythical",
       "hook": "A jet-black creature with retractable teeth and glowing green eyes crash-landed in my backyard \u2014 and I had 100 days to figure out what it was.",
@@ -118,7 +118,7 @@
     {
       "id": 3,
       "title": "I Raised a Pet Sculk Dragon for 100 Days",
-      "creatureName": "Vex",
+      "creatureName": "Sculk Dragon",
       "creatureIcon": "\ud83d\udc09",
       "category": "mythical",
       "hook": "The egg I found in an old cave system was completely black and vibrated when I touched it \u2014 nothing could have prepared me for what hatched.",
@@ -173,7 +173,7 @@
     {
       "id": 4,
       "title": "I Raised a Pet Phoenix for 100 Days",
-      "creatureName": "Ember",
+      "creatureName": "Phoenix",
       "creatureIcon": "\ud83d\udc09",
       "category": "mythical",
       "hook": "I found a bird on fire in my backyard and instead of calling 911, I grabbed a towel \u2014 and that decision changed everything.",
@@ -228,7 +228,7 @@
     {
       "id": 5,
       "title": "I Raised a Pet Giant Snake for 100 Days",
-      "creatureName": "Naga",
+      "creatureName": "Giant Snake",
       "creatureIcon": "\ud83d\udc09",
       "category": "mythical",
       "hook": "The 'baby python' I rescued from a roadside collector kept growing \u2014 and growing \u2014 until it was longer than my entire house.",
@@ -283,7 +283,7 @@
     {
       "id": 6,
       "title": "I Raised a Pet Ice Dragon for 100 Days",
-      "creatureName": "Frost",
+      "creatureName": "Ice Dragon",
       "creatureIcon": "\ud83d\udc09",
       "category": "mythical",
       "hook": "A block of glacial ice I ordered for a science project arrived with something alive frozen inside it.",
@@ -338,7 +338,7 @@
     {
       "id": 7,
       "title": "I Raised a Pet Dragon for 100 Days",
-      "creatureName": "Blaze",
+      "creatureName": "Dragon",
       "creatureIcon": "\ud83d\udc09",
       "category": "mythical",
       "hook": "I thought the hot spring on my property was just geothermal activity \u2014 until an egg the size of a basketball floated to the surface.",
@@ -393,7 +393,7 @@
     {
       "id": 8,
       "title": "I Raised a Pet Cloud for 100 Days",
-      "creatureName": "Nimbus",
+      "creatureName": "Cloud",
       "creatureIcon": "\ud83d\udc09",
       "category": "mythical",
       "hook": "A cloud the size of a throw pillow landed on my porch railing during a storm and refused to leave.",
@@ -448,7 +448,7 @@
     {
       "id": 9,
       "title": "I Raised a Pet Stitch for 100 Days",
-      "creatureName": "Six-Two-Six",
+      "creatureName": "Stitch",
       "creatureIcon": "\ud83d\udc09",
       "category": "mythical",
       "hook": "I adopted what the shelter called an 'unusual breed' \u2014 four arms, retractable ears, and a laugh that could shatter glass.",
@@ -503,7 +503,7 @@
     {
       "id": 10,
       "title": "I Raised a Pet Snake God for 100 Days",
-      "creatureName": "Ophion",
+      "creatureName": "Snake God",
       "creatureIcon": "\ud83d\udc09",
       "category": "mythical",
       "hook": "The ancient temple dig site should have been empty \u2014 but the egg my team unearthed was warm, and whatever was inside was waiting.",
@@ -558,7 +558,7 @@
     {
       "id": 11,
       "title": "I Raised a Pet Leviathan for 100 Days",
-      "creatureName": "Abyss",
+      "creatureName": "Leviathan",
       "creatureIcon": "\ud83d\udc09",
       "category": "mythical",
       "hook": "Marine biologists said the creature I found washed up on the beach was impossible \u2014 every scan showed anatomy that shouldn't exist.",
@@ -613,7 +613,7 @@
     {
       "id": 12,
       "title": "I Raised a Pet Diamond Worm for 100 Days",
-      "creatureName": "Karat",
+      "creatureName": "Diamond Worm",
       "creatureIcon": "\ud83d\udc09",
       "category": "mythical",
       "hook": "My gemstone mine caved in and when I dug my way out, something impossibly beautiful was digging alongside me.",
@@ -668,7 +668,7 @@
     {
       "id": 13,
       "title": "I Raised a Pet Warden Tiger for 100 Days",
-      "creatureName": "Warden",
+      "creatureName": "Warden Tiger",
       "creatureIcon": "\ud83d\udc09",
       "category": "mythical",
       "hook": "The cub I found was the size of a tiger but covered in dark bony armor \u2014 and it vibrated the ground when it breathed.",
@@ -723,7 +723,7 @@
     {
       "id": 14,
       "title": "I Raised a Pet Elemental Phoenix for 100 Days",
-      "creatureName": "Nova",
+      "creatureName": "Elemental Phoenix",
       "creatureIcon": "\ud83d\udc09",
       "category": "mythical",
       "hook": "It hatched from a storm cloud, hit my roof like lightning, and looked up at me from the rubble with four elemental wings.",
@@ -778,7 +778,7 @@
     {
       "id": 15,
       "title": "I Raised a Pet Sky Eel for 100 Days",
-      "creatureName": "Zephyr",
+      "creatureName": "Sky Eel",
       "creatureIcon": "\ud83d\udc09",
       "category": "mythical",
       "hook": "The long silver creature I found tangled in my wind turbine was still alive \u2014 and it was flying.",
@@ -833,7 +833,7 @@
     {
       "id": 16,
       "title": "I Raised a Pet Mutant Dinosaur for 100 Days",
-      "creatureName": "Rex",
+      "creatureName": "Mutant Dinosaur",
       "creatureIcon": "\ud83d\udc09",
       "category": "mythical",
       "hook": "The paleontology lab said the egg in the permafrost sample was 65 million years old \u2014 and then it started cracking.",
@@ -888,7 +888,7 @@
     {
       "id": 17,
       "title": "I Raised a Pet Demon Worm for 100 Days",
-      "creatureName": "Void",
+      "creatureName": "Demon Worm",
       "creatureIcon": "\ud83d\udc09",
       "category": "mythical",
       "hook": "After the volcanic eruption, I found something alive in the cooled lava flow \u2014 something that ate the rock.",
@@ -943,7 +943,7 @@
     {
       "id": 18,
       "title": "I Raised a Pet Sky Eel for 100 Days",
-      "creatureName": "Zara",
+      "creatureName": "Sky Eel",
       "creatureIcon": "\ud83d\udc09",
       "category": "mythical",
       "hook": "Nobody believed me when I said the creature living in my attic could make itself invisible \u2014 until I got it on camera.",
@@ -998,7 +998,7 @@
     {
       "id": 19,
       "title": "I Raised a Pet Kraken for 100 Days",
-      "creatureName": "Titan",
+      "creatureName": "Kraken",
       "creatureIcon": "\ud83d\udc09",
       "category": "mythical",
       "hook": "The strange octopus I rescued from a fishing net had ten arms, bioluminescent spots, and was the size of a watermelon \u2014 by Day 50, it couldn't fit in the ocean.",
@@ -1053,7 +1053,7 @@
     {
       "id": 20,
       "title": "I Raised a Pet Griffin for 100 Days",
-      "creatureName": "Aurelius",
+      "creatureName": "Griffin",
       "creatureIcon": "\ud83d\udc09",
       "category": "mythical",
       "hook": "The egg I won at an exotic animal auction was listed as 'unknown raptor species' \u2014 what hatched was half lion, half eagle, and entirely impossible.",
@@ -1108,7 +1108,7 @@
     {
       "id": 21,
       "title": "I Raised a Pet Cerberus for 100 Days",
-      "creatureName": "Tri",
+      "creatureName": "Cerberus",
       "creatureIcon": "\ud83d\udc09",
       "category": "mythical",
       "hook": "I adopted what I thought was a three-headed puppy \u2014 by Day 50, it was the size of a bus and guarding my house like the gates of the underworld.",
@@ -1163,7 +1163,7 @@
     {
       "id": 22,
       "title": "I Raised a Pet Wyvern for 100 Days",
-      "creatureName": "Storm",
+      "creatureName": "Wyvern",
       "creatureIcon": "\ud83d\udc09",
       "category": "mythical",
       "hook": "The creature that fell from the thundercloud onto my Texas ranch had only two legs and a venomous tail \u2014 and it was still a baby.",
@@ -1218,7 +1218,7 @@
     {
       "id": 23,
       "title": "I Raised a Pet Basilisk for 100 Days",
-      "creatureName": "Medusa",
+      "creatureName": "Basilisk",
       "creatureIcon": "\ud83d\udc09",
       "category": "mythical",
       "hook": "I had to wear mirrored sunglasses every day for 100 days because my pet could turn things to stone \u2014 accidentally.",
@@ -1273,7 +1273,7 @@
     {
       "id": 24,
       "title": "I Raised a Pet Thunderbird for 100 Days",
-      "creatureName": "Thunder",
+      "creatureName": "Thunderbird",
       "creatureIcon": "\ud83d\udc09",
       "category": "mythical",
       "hook": "Every time it flapped its wings, lightning struck somewhere nearby \u2014 and by Day 30, my county had the cleanest air in the nation from all the rain.",
@@ -1328,7 +1328,7 @@
     {
       "id": 25,
       "title": "I Raised a Pet Kitsune for 100 Days",
-      "creatureName": "Kira",
+      "creatureName": "Kitsune",
       "creatureIcon": "\ud83d\udc09",
       "category": "mythical",
       "hook": "The fox kit I found had nine tails and could make herself look exactly like anyone she'd seen \u2014 including me.",
@@ -1383,7 +1383,7 @@
     {
       "id": 26,
       "title": "I Raised a Pet Chimera for 100 Days",
-      "creatureName": "Patch",
+      "creatureName": "Chimera",
       "creatureIcon": "\ud83d\udc09",
       "category": "mythical",
       "hook": "Three animals combined into one body sounds like a nightmare \u2014 but Patch was the most confused, lovable creature I'd ever met.",
@@ -1438,7 +1438,7 @@
     {
       "id": 27,
       "title": "I Raised a Pet Pegasus for 100 Days",
-      "creatureName": "Cloud",
+      "creatureName": "Pegasus",
       "creatureIcon": "\ud83d\udc09",
       "category": "mythical",
       "hook": "I thought the white foal in my pasture had a deformity \u2014 until it unfolded its wings on Day 3 and cleared a fence from a standing start.",
@@ -1493,7 +1493,7 @@
     {
       "id": 28,
       "title": "I Raised a Pet Baby Titan for 100 Days",
-      "creatureName": "Atlas",
+      "creatureName": "Baby Titan",
       "creatureIcon": "\ud83d\udc09",
       "category": "mythical",
       "hook": "The infant I found in an Icelandic fjord was shaped like a human toddler but 8 feet tall \u2014 and weighed as much as a truck.",
@@ -1548,7 +1548,7 @@
     {
       "id": 29,
       "title": "I Raised a Pet Shadow Wolf for 100 Days",
-      "creatureName": "Umbra",
+      "creatureName": "Shadow Wolf",
       "creatureIcon": "\ud83d\udc09",
       "category": "mythical",
       "hook": "The wolf pup that followed me home from a night hike had no shadow \u2014 instead, it cast darkness even in direct sunlight.",
@@ -1603,7 +1603,7 @@
     {
       "id": 30,
       "title": "I Raised a Pet Crystal Golem for 100 Days",
-      "creatureName": "Jasper",
+      "creatureName": "Crystal Golem",
       "creatureIcon": "\ud83d\udc09",
       "category": "mythical",
       "hook": "The rock formation I bought at a geological auction moved on Day 3 \u2014 and by Day 7 it had rearranged all my furniture.",
