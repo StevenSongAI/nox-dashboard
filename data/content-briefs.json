@@ -2,7 +2,7 @@
   "projectName": "100 Days Creature",
   "channel": "@StevenSongIRL",
   "format": "Raising a Pet X for 100 Days",
-  "totalCount": 30,
+  "totalCount": 28,
   "lastUpdated": "2026-02-28T16:00:00Z",
   "briefs": [
     {
@@ -282,116 +282,6 @@
     },
     {
       "id": 6,
-      "title": "I Raised a Pet Ice Dragon for 100 Days",
-      "creatureName": "Ice Dragon",
-      "creatureIcon": "\ud83d\udc09",
-      "category": "mythical",
-      "hook": "A block of glacial ice I ordered for a science project arrived with something alive frozen inside it.",
-      "sourceTitle": "I Survived 100 Days as an ICE DRAGON",
-      "sourceChannel": "RyGuyRocky",
-      "sourceUrl": "https://www.youtube.com/watch?v=PvXlbaSC-O4",
-      "sourceViews": "4,393,279",
-      "storyArc": [
-        {
-          "days": "Days 1-20",
-          "title": "The Baby Phase",
-          "description": "On Day 1, a 500-pound block of ancient glacial ice arrived at my doorstep in Montana \u2014 a purchase for a school science exhibit. Inside was a creature: small, crystalline, and very much alive. When I carefully thawed the outer layer, out crawled a dragon no bigger than a house cat, with scales like packed snow and breath that frosted everything within three feet. I named him Frost. He ate raw ice fish and frozen berries, and his presence kept my entire basement at 20\u00b0F."
-        },
-        {
-          "days": "Days 21-50",
-          "title": "Growth Spurt",
-          "description": "By Day 28, Frost had grown to the size of a German Shepherd and was flash-freezing my pipes every night. I converted the garage into a refrigerated habitat with commercial freezer units. His wings had developed ice crystal lattices that refracted sunlight into rainbow patterns across the yard \u2014 neighbors kept stopping to take photos. By Day 50, he was the size of a draft horse and his breath could freeze a car solid in four seconds."
-        },
-        {
-          "days": "Days 51-70",
-          "title": "Making Friends",
-          "description": "On Day 55, a Canadian lynx I'd been licensed to rehab, named Luna, wandered into the garage. Instead of the disaster I expected, Frost pressed his cold snout gently against Luna's face \u2014 and they became inseparable. Luna loved sleeping curled against Frost's side, using his cold scales to regulate her body temperature in the summer heat."
-        },
-        {
-          "days": "Days 71-85",
-          "title": "The Conflict",
-          "description": "On Day 76, a climatology research firm approached me \u2014 they believed Frost's ice breath contained ancient atmospheric compounds trapped from 100,000 years ago. They wanted to harvest his breath for climate research. When I refused commercial exploitation, they went to the university system and got a government research order issued."
-        },
-        {
-          "days": "Days 86-95",
-          "title": "The Separation",
-          "description": "On Day 89, researchers arrived with a cryogenic transport unit. Frost panicked when he saw the containment equipment \u2014 too similar to the glacier he'd been trapped in for millennia. He froze the research team's vehicles solid before they sedated him with specialized cold-resistant tranquilizers. Luna sat at the garage door howling for two days. I drove to the facility every day but wasn't allowed inside."
-        },
-        {
-          "days": "Days 96-100",
-          "title": "The Resolution",
-          "description": "On Day 96, Frost escaped the facility by freezing the lock mechanism \u2014 a bolt of irony that made the news. He flew home in a blizzard of his own making. We negotiated a non-invasive research partnership: they could observe and take ambient samples, but Frost stays with me. On Day 100, Frost and Luna were asleep in the frozen garage, and outside, it was snowing in July."
-        }
-      ],
-      "challenges": [
-        "Breath can freeze objects solid in seconds",
-        "Ice crystal wing lattices create rainbow refractions",
-        "Ancient atmospheric compounds in breath \u2014 scientifically valuable"
-      ],
-      "climax": "On Day 96, Frost escaped the facility by freezing the lock mechanism \u2014 a bolt of irony that made the news. He flew home in a blizzard of his own making. We negotiated a non-invasive research partnership: they could observe and take ambient samples, but Frost stays with me. On Day 100, Frost and Luna were asleep in the frozen garage, and outside, it was snowing in July.",
-      "petName": "Frost",
-      "animalFriend": "Luna \u2014 a rehabilitated Canadian lynx who thermoregulates using Frost's cold scales",
-      "antagonist": "CryoClimate Research Partners \u2014 a firm seeking to harvest Frost's breath for commercial climate science",
-      "habitat": "Converted refrigerated garage in rural Montana",
-      "visualHook": "Cat-sized crystalline creature thawed from a glacier \u2192 horse-sized ice dragon causing July snowstorms"
-    },
-    {
-      "id": 7,
-      "title": "I Raised a Pet Dragon for 100 Days",
-      "creatureName": "Dragon",
-      "creatureIcon": "\ud83d\udc09",
-      "category": "mythical",
-      "hook": "I thought the hot spring on my property was just geothermal activity \u2014 until an egg the size of a basketball floated to the surface.",
-      "sourceTitle": "I Survived 100 Days as a DRAGON",
-      "sourceChannel": "RyGuyRocky",
-      "sourceUrl": "https://www.youtube.com/watch?v=RYKdQY9gHaA",
-      "sourceViews": "3,567,972",
-      "storyArc": [
-        {
-          "days": "Days 1-20",
-          "title": "The Baby Phase",
-          "description": "On Day 1, a heavy, dark-red egg the size of a basketball bobbed up from the hot spring on my rural Colorado property. It cracked open in my hands and out came a dragon \u2014 traditional in shape, copper-scaled, with amber eyes and a tail that glowed orange at the tip. I named him Blaze. He ate raw beef and charcoal briquettes, and sneezed small fireballs when he was excited. By Day 20, he was the size of a Saint Bernard and had singed every piece of furniture I owned."
-        },
-        {
-          "days": "Days 21-50",
-          "title": "Growth Spurt",
-          "description": "By Day 30, Blaze's copper scales had deepened to burnished gold and he'd developed full fire breath \u2014 controlled streams about six feet long. I fenced off two acres of my property as his territory. He loved flying at night and could be seen from miles away, a glowing streak across the Colorado sky. By Day 50, he was the size of a small helicopter and the FAA had already called twice."
-        },
-        {
-          "days": "Days 51-70",
-          "title": "Making Friends",
-          "description": "On Day 60, a golden eagle named Rex began following Blaze on his nightly flights. At first aggressive, Rex eventually began drafting in Blaze's thermal wake \u2014 the two developed a companionship based on aerial acrobatics. Rex would perch between Blaze's wings during rest, and Blaze tolerated it with the patience of a golden retriever."
-        },
-        {
-          "days": "Days 71-85",
-          "title": "The Conflict",
-          "description": "On Day 73, a reality TV producer arrived wanting to film Blaze for a survival show, offering millions. When I refused, they hired a private wildlife consultant to petition the state wildlife board to have Blaze seized as 'unmanaged dangerous wildlife.' The media campaign painted me as irresponsible; the state started proceedings."
-        },
-        {
-          "days": "Days 86-95",
-          "title": "The Separation",
-          "description": "On Day 88, state wildlife officers with military-style containment arrived. Blaze fought back with fire but I calmed him down \u2014 I didn't want him hurt. He went into the transport quiet and confused, looking back at me. Rex circled the transport truck for miles before turning back. I watched the truck disappear on the highway and sat by the hot spring alone."
-        },
-        {
-          "days": "Days 96-100",
-          "title": "The Resolution",
-          "description": "On Day 96, a coalition of wildlife attorneys won an emergency injunction \u2014 no classification law in Colorado covered Blaze's species, making the seizure illegal. The state returned him within 48 hours. I drove to the facility, opened the transport door, and Blaze immediately pushed his massive head into my chest. Rex was waiting on my roof when we got home. On Day 100, all three of us watched the sunrise from the ridge."
-        }
-      ],
-      "challenges": [
-        "Copper-to-gold scales that deepen with maturity",
-        "Controlled fire breath (not random)",
-        "Tail tip glows orange as emotional indicator"
-      ],
-      "climax": "On Day 96, a coalition of wildlife attorneys won an emergency injunction \u2014 no classification law in Colorado covered Blaze's species, making the seizure illegal. The state returned him within 48 hours. I drove to the facility, opened the transport door, and Blaze immediately pushed his massive head into my chest. Rex was waiting on my roof when we got home. On Day 100, all three of us watched the sunrise from the ridge.",
-      "petName": "Blaze",
-      "animalFriend": "Rex \u2014 a golden eagle who drafts in Blaze's thermal wake and becomes his aerial companion",
-      "antagonist": "Reality TV producer who weaponizes state wildlife law after a business rejection",
-      "habitat": "Two-acre fenced property around a geothermal hot spring in rural Colorado",
-      "visualHook": "Basketball-sized egg from a hot spring \u2192 gold-scaled dragon visible from miles away at night"
-    },
-    {
-      "id": 8,
       "title": "I Raised a Pet Cloud for 100 Days",
       "creatureName": "Cloud",
       "creatureIcon": "\ud83d\udc09",
@@ -446,7 +336,7 @@
       "visualHook": "Pillow-sized storm cloud on a porch \u2192 house-sized cloud creating its own daily rainstorm"
     },
     {
-      "id": 9,
+      "id": 7,
       "title": "I Raised a Pet Stitch for 100 Days",
       "creatureName": "Stitch",
       "creatureIcon": "\ud83d\udc09",
@@ -501,7 +391,7 @@
       "visualHook": "Small blue shelter dog with weird ears \u2192 four-armed super-creature that dismantles government containment facilities"
     },
     {
-      "id": 10,
+      "id": 8,
       "title": "I Raised a Pet Snake God for 100 Days",
       "creatureName": "Snake God",
       "creatureIcon": "\ud83d\udc09",
@@ -556,7 +446,7 @@
       "visualHook": "Ancient sealed egg in an archaeological chamber \u2192 120-foot golden serpent that dissolves into light"
     },
     {
-      "id": 11,
+      "id": 9,
       "title": "I Raised a Pet Leviathan for 100 Days",
       "creatureName": "Leviathan",
       "creatureIcon": "\ud83d\udc09",
@@ -611,7 +501,7 @@
       "visualHook": "Tennis-ball-eyed juvenile sea creature in a ghost net \u2192 200-foot bioluminescent leviathan changing tidal patterns"
     },
     {
-      "id": 12,
+      "id": 10,
       "title": "I Raised a Pet Diamond Worm for 100 Days",
       "creatureName": "Diamond Worm",
       "creatureIcon": "\ud83d\udc09",
@@ -666,7 +556,7 @@
       "visualHook": "Bread-loaf-sized crystal worm \u2192 80-foot diamond-armored burrower collapsing a corporate drill operation"
     },
     {
-      "id": 13,
+      "id": 11,
       "title": "I Raised a Pet Warden Tiger for 100 Days",
       "creatureName": "Warden Tiger",
       "creatureIcon": "\ud83d\udc09",
@@ -721,7 +611,7 @@
       "visualHook": "Armored cub the size of a tiger cub \u2192 draft-horse-sized bioluminescent armor creature cracking walls with its growl"
     },
     {
-      "id": 14,
+      "id": 12,
       "title": "I Raised a Pet Elemental Phoenix for 100 Days",
       "creatureName": "Elemental Phoenix",
       "creatureIcon": "\ud83d\udc09",
@@ -776,7 +666,7 @@
       "visualHook": "Raven-sized elemental bird from a lightning crater \u2192 plane-sized being cycling through all four elements at once"
     },
     {
-      "id": 15,
+      "id": 13,
       "title": "I Raised a Pet Sky Eel for 100 Days",
       "creatureName": "Sky Eel",
       "creatureIcon": "\ud83d\udc09",
@@ -831,7 +721,7 @@
       "visualHook": "20-foot silver air-eel tangled in a turbine \u2192 150-foot living aurora disrupting FAA airspace"
     },
     {
-      "id": 16,
+      "id": 14,
       "title": "I Raised a Pet Mutant Dinosaur for 100 Days",
       "creatureName": "Mutant Dinosaur",
       "creatureIcon": "\ud83d\udc09",
@@ -886,7 +776,7 @@
       "visualHook": "Dog-sized glowing baby theropod from a permafrost egg \u2192 elephant-sized bioluminescent dinosaur with stripes that go dark under stress"
     },
     {
-      "id": 17,
+      "id": 15,
       "title": "I Raised a Pet Demon Worm for 100 Days",
       "creatureName": "Demon Worm",
       "creatureIcon": "\ud83d\udc09",
@@ -941,7 +831,7 @@
       "visualHook": "Forearm-length obsidian creature from a lava flow \u2192 120-foot volcanic worm creating new geothermal vents"
     },
     {
-      "id": 18,
+      "id": 16,
       "title": "I Raised a Pet Sky Eel for 100 Days",
       "creatureName": "Sky Eel",
       "creatureIcon": "\ud83d\udc09",
@@ -996,7 +886,7 @@
       "visualHook": "Ferret-sized invisible creature rearranging an attic \u2192 Labrador-sized stealth creature that can hold camouflage for 6 hours under thermal surveillance"
     },
     {
-      "id": 19,
+      "id": 17,
       "title": "I Raised a Pet Kraken for 100 Days",
       "creatureName": "Kraken",
       "creatureIcon": "\ud83d\udc09",
@@ -1051,7 +941,7 @@
       "visualHook": "Watermelon-sized glowing cephalopod in a fishing net \u2192 40-arm-span Kraken lighting up an entire cove"
     },
     {
-      "id": 20,
+      "id": 18,
       "title": "I Raised a Pet Griffin for 100 Days",
       "creatureName": "Griffin",
       "creatureIcon": "\ud83d\udc09",
@@ -1106,7 +996,7 @@
       "visualHook": "Golden retriever-sized griffin cub \u2192 horse-sized aerial predator with 40-foot wingspan chasing off bears"
     },
     {
-      "id": 21,
+      "id": 19,
       "title": "I Raised a Pet Cerberus for 100 Days",
       "creatureName": "Cerberus",
       "creatureIcon": "\ud83d\udc09",
@@ -1161,7 +1051,7 @@
       "visualHook": "Three-headed puppy the size of a Great Dane (per head) \u2192 three-headed megadog the size of a small car with a window-rattling three-part bark"
     },
     {
-      "id": 22,
+      "id": 20,
       "title": "I Raised a Pet Wyvern for 100 Days",
       "creatureName": "Wyvern",
       "creatureIcon": "\ud83d\udc09",
@@ -1216,7 +1106,7 @@
       "visualHook": "Turkey-sized venomous wyvern dropped from a thundercloud \u2192 two-story-footprint aerial guardian herding cattle across Texas"
     },
     {
-      "id": 23,
+      "id": 21,
       "title": "I Raised a Pet Basilisk for 100 Days",
       "creatureName": "Basilisk",
       "creatureIcon": "\ud83d\udc09",
@@ -1271,7 +1161,7 @@
       "visualHook": "King-cobra-sized jade reptile with accidentally petrified garden furniture \u2192 50-foot emerald basilisk with a crown crest and voluntary stone-gaze protecting a blind chicken"
     },
     {
-      "id": 24,
+      "id": 22,
       "title": "I Raised a Pet Thunderbird for 100 Days",
       "creatureName": "Thunderbird",
       "creatureIcon": "\ud83d\udc09",
@@ -1326,7 +1216,7 @@
       "visualHook": "Condor-sized static-sparking fledgling \u2192 60-foot wingspan storm-summoning thunderbird appearing on NOAA radar"
     },
     {
-      "id": 25,
+      "id": 23,
       "title": "I Raised a Pet Kitsune for 100 Days",
       "creatureName": "Kitsune",
       "creatureIcon": "\ud83d\udc09",
@@ -1381,7 +1271,7 @@
       "visualHook": "Nine-tailed fox kit copying faces \u2192 full environmental illusion-caster whose escape from captivity is technically undetectable"
     },
     {
-      "id": 26,
+      "id": 24,
       "title": "I Raised a Pet Chimera for 100 Days",
       "creatureName": "Chimera",
       "creatureIcon": "\ud83d\udc09",
@@ -1436,7 +1326,7 @@
       "visualHook": "Confused large-dog-sized chimera with coordination issues \u2192 draft-horse-sized fire-breathing, venomous-tailed predator with an internal democratic system"
     },
     {
-      "id": 27,
+      "id": 25,
       "title": "I Raised a Pet Pegasus for 100 Days",
       "creatureName": "Pegasus",
       "creatureIcon": "\ud83d\udc09",
@@ -1491,7 +1381,7 @@
       "visualHook": "Winged white foal clearing a fence at Day 3 \u2192 full-grown Pegasus sculpting clouds at 5,000 feet"
     },
     {
-      "id": 28,
+      "id": 26,
       "title": "I Raised a Pet Baby Titan for 100 Days",
       "creatureName": "Baby Titan",
       "creatureIcon": "\ud83d\udc09",
@@ -1546,7 +1436,7 @@
       "visualHook": "8-foot stone-grey infant in an Icelandic fjord \u2192 35-foot titan reshaping island coastlines and growing rock gardens alone"
     },
     {
-      "id": 29,
+      "id": 27,
       "title": "I Raised a Pet Shadow Wolf for 100 Days",
       "creatureName": "Shadow Wolf",
       "creatureIcon": "\ud83d\udc09",
@@ -1601,7 +1491,7 @@
       "visualHook": "Darkness-casting wolf pup that casts no shadow \u2192 horse-sized shadow wolf who can erase light from a 100-foot radius"
     },
     {
-      "id": 30,
+      "id": 28,
       "title": "I Raised a Pet Crystal Golem for 100 Days",
       "creatureName": "Crystal Golem",
       "creatureIcon": "\ud83d\udc09",
