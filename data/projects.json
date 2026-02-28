@@ -51,7 +51,7 @@
         {
           "version": "3.0",
           "date": "2026-02-23",
-          "changes": "Complete rebuild — stripped 127 widgets, 13 tabs → 3 focused panels"
+          "changes": "Complete rebuild \u2014 stripped 127 widgets, 13 tabs \u2192 3 focused panels"
         },
         {
           "version": "2.0",
@@ -82,7 +82,7 @@
       "name": "ZMDE Content Briefs",
       "status": "active",
       "currentVersion": "1.0",
-      "description": "30 content briefs adapting top Minecraft outliers (5-10x) into ZMDE time-jump civilization format. Year 0 → 50 → 100 → 500 → 999 story structure.",
+      "description": "30 content briefs adapting top Minecraft outliers (5-10x) into ZMDE time-jump civilization format. Year 0 \u2192 50 \u2192 100 \u2192 500 \u2192 999 story structure.",
       "versions": [
         {
           "version": "1.0",
@@ -92,6 +92,20 @@
       ],
       "briefsPath": "./zmde-briefs.html",
       "dataPath": "./data/zmde-briefs.json"
+    },
+    {
+      "id": "dev-projects",
+      "name": "Projects in Development",
+      "status": "active",
+      "description": "Scripts, outlines, and concepts being developed \u2014 AI Takeover (ZMDE), Mutant Dinosaur (StevenSongIRL)",
+      "currentVersion": "1.0",
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-02-28",
+          "changes": "Initial: AI Takeover outline + Mutant Dinosaur script v2"
+        }
+      ]
     }
   ],
   "lastUpdated": "2026-02-23T18:00:00Z"

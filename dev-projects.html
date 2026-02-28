@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects in Development — Nox Dashboard</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  body { font-family: 'Inter', sans-serif; background: #0a0a1a; color: #e2e8f0; }
+  .card { background: #12122a; border: 1px solid #1e1e3a; border-radius: 12px; padding: 20px; transition: all 0.2s; }
+  .card:hover { border-color: #7c3aed; }
+  .tag { background: #1e1e3a; color: #a78bfa; padding: 2px 8px; border-radius: 6px; font-size: 11px; }
+  .stage-badge { padding: 3px 10px; border-radius: 6px; font-size: 11px; font-weight: 600; }
+  .script-content { background: #0d0d20; border: 1px solid #1e1e3a; border-radius: 8px; padding: 24px; font-size: 14px; line-height: 1.8; white-space: pre-wrap; max-height: 80vh; overflow-y: auto; }
+  .script-content h1, .script-content h2, .script-content h3 { color: #a78bfa; margin-top: 1.5em; margin-bottom: 0.5em; }
+  .script-content strong { color: #f0abfc; }
+  .nav-btn { background: #1e1e3a; border: 1px solid #2e2e4a; color: #a78bfa; padding: 8px 16px; border-radius: 8px; cursor: pointer; transition: all 0.2s; }
+  .nav-btn:hover { background: #2e2e4a; border-color: #7c3aed; }
+  .nav-btn.active { background: #7c3aed; color: white; border-color: #7c3aed; }
+  .back-link { color: #a78bfa; text-decoration: none; }
+  .back-link:hover { color: #c4b5fd; }
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: #0a0a1a; }
+  ::-webkit-scrollbar-thumb { background: #2e2e4a; border-radius: 3px; }
+</style>
+</head>
+<body>
+<div class="max-w-6xl mx-auto px-4 py-8">
+  <div class="flex items-center justify-between mb-8">
+    <div>
+      <a href="index.html" class="back-link text-sm">← Back to Dashboard</a>
+      <h1 class="text-2xl font-bold mt-2">🚧 Projects in Development</h1>
+      <p class="text-gray-500 text-sm mt-1">Scripts, outlines, and concepts in progress</p>
+    </div>
+  </div>
+
+  <!-- Project Cards -->
+  <div id="project-cards" class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8"></div>
+
+  <!-- Script Viewer -->
+  <div id="script-viewer" class="hidden">
+    <div class="flex items-center justify-between mb-4">
+      <h2 id="viewer-title" class="text-xl font-bold"></h2>
+      <button onclick="closeViewer()" class="nav-btn text-sm">✕ Close</button>
+    </div>
+    <div class="flex items-center gap-3 mb-4">
+      <span id="viewer-stage" class="stage-badge"></span>
+      <span id="viewer-channel" class="text-sm text-gray-400"></span>
+      <span id="viewer-words" class="text-sm text-gray-500"></span>
+    </div>
+    <div id="viewer-content" class="script-content"></div>
+  </div>
+</div>
+
+<script>
+let projectsData = null;
+
+async function init() {
+  try {
+    const resp = await fetch('data/dev-projects.json?v=1');
+    projectsData = await resp.json();
+    renderCards();
+  } catch(e) {
+    document.getElementById('project-cards').innerHTML = '<div class="card col-span-2 text-center text-gray-500">Failed to load projects</div>';
+  }
+}
+
+function renderCards() {
+  const container = document.getElementById('project-cards');
+  container.innerHTML = projectsData.projects.map((p, i) => `
+    <div class="card cursor-pointer" onclick="openProject(${i})">
+      <div class="flex items-start justify-between mb-3">
+        <h3 class="font-semibold text-white text-lg">${esc(p.title)}</h3>
+        <span class="stage-badge" style="background:${p.stageColor}20; color:${p.stageColor}">${esc(p.stage)}</span>
+      </div>
+      <p class="text-sm text-gray-400 mb-3">${esc(p.description)}</p>
+      <div class="flex items-center gap-3 mb-3">
+        <span class="text-xs text-purple-400">${esc(p.channel)}</span>
+        <span class="text-xs text-gray-500">${p.wordCount.toLocaleString()} words</span>
+        <span class="text-xs text-gray-600">Updated ${p.lastModified}</span>
+      </div>
+      <div class="flex flex-wrap gap-1">
+        ${p.tags.map(t => `<span class="tag">${esc(t)}</span>`).join('')}
+      </div>
+    </div>
+  `).join('');
+}
+
+function openProject(idx) {
+  const p = projectsData.projects[idx];
+  document.getElementById('project-cards').classList.add('hidden');
+  document.getElementById('script-viewer').classList.remove('hidden');
+  document.getElementById('viewer-title').textContent = p.title;
+  document.getElementById('viewer-stage').textContent = p.stage;
+  document.getElementById('viewer-stage').style.background = p.stageColor + '20';
+  document.getElementById('viewer-stage').style.color = p.stageColor;
+  document.getElementById('viewer-channel').textContent = p.channel;
+  document.getElementById('viewer-words').textContent = p.wordCount.toLocaleString() + ' words';
+  
+  // Render markdown-lite
+  let html = esc(p.content)
+    .replace(/^### (.+)$/gm, '<h3>$1</h3>')
+    .replace(/^## (.+)$/gm, '<h2>$1</h2>')
+    .replace(/^# (.+)$/gm, '<h1>$1</h1>')
+    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+    .replace(/\*(.+?)\*/g, '<em>$1</em>')
+    .replace(/^---$/gm, '<hr style="border-color:#1e1e3a;margin:1.5em 0">')
+    .replace(/^- (.+)$/gm, '• $1');
+  
+  document.getElementById('viewer-content').innerHTML = html;
+  document.getElementById('viewer-content').scrollTop = 0;
+}
+
+function closeViewer() {
+  document.getElementById('script-viewer').classList.add('hidden');
+  document.getElementById('project-cards').classList.remove('hidden');
+}
+
+function esc(s) {
+  const d = document.createElement('div');
+  d.textContent = s;
+  return d.innerHTML;
+}
+
+init();
+</script>
+</body>
+</html>
