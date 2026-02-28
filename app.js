@@ -188,6 +188,8 @@ const App = {
       let cardClick = '';
       if (p.id === '100-days-creatures') {
         cardClick = 'onclick="window.open(\'content-briefs.html\', \'_blank\')" style="cursor:pointer" title="Click to view content briefs"';
+      } else if (p.id === 'zmde-briefs') {
+        cardClick = 'onclick="window.open(\'zmde-briefs.html\', \'_blank\')" style="cursor:pointer" title="Click to view ZMDE briefs"';
       }
       
       return '<div class="card" ' + cardClick + '><div class="flex items-start justify-between mb-2"><h3 class="font-medium text-white">' + this.escapeHtml(p.name) + '</h3>' + this.renderBadge(p.status, 'project') + '</div><p class="text-xs text-purple-400 mb-2">v' + p.currentVersion + '</p><p class="text-sm text-gray-400 mb-3">' + this.escapeHtml(p.description) + '</p>' + versionsHtml + '</div>';
