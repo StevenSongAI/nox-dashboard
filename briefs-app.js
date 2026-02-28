@@ -1,7 +1,7 @@
 const App = {
   briefs: [],
   filter: 'all',
-  dataFile: window.location.pathname.includes('zmde') ? 'data/zmde-briefs.json?v=8' : 'data/content-briefs.json?v=8',
+  dataFile: window.location.pathname.includes('zmde') ? 'data/zmde-briefs.json?v=9' : 'data/content-briefs.json?v=9',
   isZMDE: window.location.pathname.includes('zmde'),
   
   init() {
