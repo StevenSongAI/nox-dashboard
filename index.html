@@ -22,7 +22,7 @@
         </div>
         <div class="flex items-center gap-3 text-sm">
           <span id="status-indicator" class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
-          <span class="text-gray-400">Last update: <a href="expenses.html" class="text-purple-400 hover:text-purple-300 ml-2">💰 Expenses</a></span>
+          <span class="text-gray-400">Last update:</span>
           <span id="last-update" class="text-gray-300">Loading...</span>
         </div>
       </div>
@@ -44,6 +44,12 @@
         </button>
         <button id="tab-ideas" class="tab-btn px-4 py-3 text-sm font-medium border-b-2 border-transparent hover:text-white transition-colors" data-tab="ideas">
           🧠 Second Brain
+        </button>
+        <button id="tab-expenses" class="tab-btn px-4 py-3 text-sm font-medium border-b-2 border-transparent hover:text-white transition-colors" data-tab="expenses">
+          💰 Expenses
+        </button>
+        <button id="tab-devprojects" class="tab-btn px-4 py-3 text-sm font-medium border-b-2 border-transparent hover:text-white transition-colors" data-tab="devprojects">
+          🎬 Dev Projects
         </button>
       </div>
     </div>
@@ -141,6 +147,56 @@
         <div class="loading">Loading ideas...</div>
       </div>
     </div>
+
+    <!-- Expenses Panel -->
+    <div id="panel-expenses" class="tab-panel hidden">
+      <div class="mb-4">
+        <h2 class="text-lg font-semibold text-white">Expense Tracker</h2>
+        <p class="text-sm text-gray-400">Monthly expenses and profit breakdown</p>
+      </div>
+      <!-- Month selector pills -->
+      <div id="expenses-months" class="flex flex-wrap gap-2 mb-6"></div>
+      <!-- Summary cards -->
+      <div id="expenses-summary" class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6"></div>
+      <!-- Category bar chart -->
+      <div id="expenses-chart" class="card mb-6"></div>
+      <!-- Line items table -->
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm">
+          <thead>
+            <tr class="border-b border-[#252540] text-gray-400">
+              <th class="text-left py-3 px-2">Date</th>
+              <th class="text-left py-3 px-2">Description</th>
+              <th class="text-left py-3 px-2">Category</th>
+              <th class="text-right py-3 px-2">USD</th>
+              <th class="text-right py-3 px-2">CAD</th>
+              <th class="text-right py-3 px-2">CAD Equiv</th>
+            </tr>
+          </thead>
+          <tbody id="expenses-table" class="divide-y divide-[#252540]"></tbody>
+        </table>
+      </div>
+      <p class="text-xs text-gray-500 mt-4">1 USD = 1.44 CAD</p>
+    </div>
+
+    <!-- Dev Projects Panel -->
+    <div id="panel-devprojects" class="tab-panel hidden">
+      <div class="mb-4">
+        <h2 class="text-lg font-semibold text-white">Projects in Development</h2>
+        <p class="text-sm text-gray-400">Video scripts, builds, and production pipeline</p>
+      </div>
+      <!-- Filter pills -->
+      <div id="devprojects-filters" class="flex flex-wrap gap-2 mb-6">
+        <button class="devproject-filter px-3 py-1.5 text-sm rounded-full bg-purple-500/20 text-purple-400 border border-purple-500/30 transition-colors" data-filter="all">All</button>
+        <button class="devproject-filter px-3 py-1.5 text-sm rounded-full bg-[#252540] text-gray-400 border border-transparent hover:border-[#353560] transition-colors" data-filter="scripted">Scripted</button>
+        <button class="devproject-filter px-3 py-1.5 text-sm rounded-full bg-[#252540] text-gray-400 border border-transparent hover:border-[#353560] transition-colors" data-filter="in_production">In Production</button>
+        <button class="devproject-filter px-3 py-1.5 text-sm rounded-full bg-[#252540] text-gray-400 border border-transparent hover:border-[#353560] transition-colors" data-filter="complete">Complete</button>
+      </div>
+      <!-- Project cards grid -->
+      <div id="devprojects-list" class="grid gap-4 md:grid-cols-2">
+        <div class="loading">Loading dev projects...</div>
+      </div>
+    </div>
   </main>
 
   <!-- Map Artists Modal -->
@@ -158,7 +214,7 @@
     </div>
   </div>
 
-  <script src="app.js?v=7"></script>
+  <script src="app.js?v=8"></script>
 </body>
 </html>
 <!-- rebuild 1772312352 -->

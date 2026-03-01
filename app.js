@@ -66,6 +66,9 @@ const App = {
     this.modalInitialized = true;
   },
 
+  expensesMonth: null,
+  devprojectsFilter: 'all',
+
   async loadAllData() {
     await Promise.all([
       this.fetchData('bottlenecks'),
@@ -73,14 +76,17 @@ const App = {
       this.fetchData('competitors'),
       this.fetchData('projects'),
       this.fetchData('ideas'),
-      this.fetchData('meta')
+      this.fetchData('meta'),
+      this.fetchData('expenses', 'data/expenses.json'),
+      this.fetchData('devprojects', 'data/dev-projects.json')
     ]);
     this.renderAll();
   },
 
-  async fetchData(type) {
+  async fetchData(type, path) {
     try {
-      const res = await fetch('data/' + type + '.json?v=4');
+      const url = (path || 'data/' + type + '.json') + '?v=4';
+      const res = await fetch(url);
       if (!res.ok) throw new Error('HTTP ' + res.status);
       this.data[type] = await res.json();
     } catch (err) {
@@ -96,6 +102,9 @@ const App = {
     this.renderCompetitors();
     this.renderProjects();
     this.renderIdeas();
+    this.renderExpensesTab();
+    this.renderDevProjects();
+    this.setupDevProjectFilters();
   },
 
   renderLastUpdate() {
@@ -301,39 +310,160 @@ const App = {
 
 document.addEventListener('DOMContentLoaded', () => App.init());
 
-// Expenses functionality
-App.loadExpenses = async function() {
-  try {
-    const res = await fetch("data/expenses.csv?v=1");
-    if (!res.ok) throw new Error("HTTP " + res.status);
-    const text = await res.text();
-    const lines = text.trim().split("\n");
-    const expenses = [];
-    for (let i = 1; i < lines.length; i++) {
-      const cols = lines[i].split(",");
-      if (cols.length >= 5) {
-        expenses.push({
-          date: cols[0],
-          description: cols[1],
-          cad: parseFloat(cols[2]) || 0,
-          usd: parseFloat(cols[3]) || 0,
-          category: cols[4],
-          notes: cols[5] || ""
-        });
-      }
-    }
-    this.renderExpenses(expenses);
-  } catch (err) {
-    console.error("Failed to load expenses:", err);
+// === Expenses Tab ===
+App.renderExpensesTab = function() {
+  var data = this.data.expenses;
+  if (!data || !data.months) return;
+
+  var months = Object.keys(data.months).sort();
+  if (!this.expensesMonth) this.expensesMonth = months[0];
+  var rate = data.exchangeRate || 1.44;
+  var self = this;
+
+  // Month selector pills
+  var monthsEl = document.getElementById('expenses-months');
+  if (monthsEl) {
+    monthsEl.innerHTML = months.map(function(m) {
+      var d = new Date(m + '-01');
+      var label = d.toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
+      var active = m === self.expensesMonth;
+      return '<button class="expense-month-btn px-3 py-1.5 text-sm rounded-full transition-colors ' +
+        (active ? 'bg-purple-500/20 text-purple-400 border border-purple-500/30' : 'bg-[#252540] text-gray-400 border border-transparent hover:border-[#353560]') +
+        '" data-month="' + m + '">' + label + '</button>';
+    }).join('');
+    monthsEl.querySelectorAll('.expense-month-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        self.expensesMonth = btn.dataset.month;
+        self.renderExpensesTab();
+      });
+    });
+  }
+
+  var month = data.months[this.expensesMonth];
+  if (!month) return;
+
+  var entries = month.entries || [];
+  var revenueCAD = month.revenueCAD;
+
+  // Calculate totals
+  var totalExpenseCAD = 0;
+  var categoryTotals = {};
+  entries.forEach(function(e) {
+    var cadEquiv = e.usd > 0 ? e.usd * rate : e.cad;
+    totalExpenseCAD += cadEquiv;
+    if (!categoryTotals[e.category]) categoryTotals[e.category] = 0;
+    categoryTotals[e.category] += cadEquiv;
+  });
+
+  var netProfit = revenueCAD != null ? revenueCAD - totalExpenseCAD : null;
+
+  // Summary cards
+  var summaryEl = document.getElementById('expenses-summary');
+  if (summaryEl) {
+    summaryEl.innerHTML =
+      '<div class="card"><p class="text-sm text-gray-400">Revenue</p><p class="text-2xl font-bold text-green-400">' +
+        (revenueCAD != null ? '$' + revenueCAD.toLocaleString('en-CA', { minimumFractionDigits: 2 }) + ' CAD' : '<span class="text-gray-500">\u2014</span>') +
+      '</p></div>' +
+      '<div class="card"><p class="text-sm text-gray-400">Total Expenses</p><p class="text-2xl font-bold text-red-400">$' +
+        totalExpenseCAD.toLocaleString('en-CA', { minimumFractionDigits: 2 }) + ' CAD</p></div>' +
+      '<div class="card"><p class="text-sm text-gray-400">Net Profit</p><p class="text-2xl font-bold ' +
+        (netProfit != null ? (netProfit >= 0 ? 'text-purple-400' : 'text-red-400') : 'text-gray-500') + '">' +
+        (netProfit != null ? '$' + netProfit.toLocaleString('en-CA', { minimumFractionDigits: 2 }) + ' CAD' : '\u2014') +
+      '</p></div>';
+  }
+
+  // Category bar chart
+  var chartEl = document.getElementById('expenses-chart');
+  if (chartEl) {
+    var catColors = { 'Production': '#3b82f6', 'Marketing': '#f97316', 'Operations': '#a855f7', 'Revenue Share': '#ec4899' };
+    var maxCat = Math.max.apply(null, Object.values(categoryTotals).concat([1]));
+    chartEl.innerHTML = '<h3 class="text-sm font-medium text-gray-400 mb-3">Expenses by Category</h3>' +
+      Object.keys(categoryTotals).map(function(cat) {
+        var val = categoryTotals[cat];
+        var pct = (val / maxCat) * 100;
+        var color = catColors[cat] || '#6b7280';
+        return '<div class="mb-3"><div class="flex items-center justify-between text-sm mb-1"><span class="text-gray-300">' +
+          self.escapeHtml(cat) + '</span><span class="text-gray-400">$' + val.toFixed(2) + '</span></div>' +
+          '<div class="w-full bg-[#252540] rounded-full h-3"><div class="h-3 rounded-full transition-all" style="width:' +
+          pct + '%;background:' + color + '"></div></div></div>';
+      }).join('');
+  }
+
+  // Line items table
+  var tableEl = document.getElementById('expenses-table');
+  if (tableEl) {
+    var rows = entries.map(function(e) {
+      var cadEquiv = e.usd > 0 ? e.usd * rate : e.cad;
+      return '<tr class="hover:bg-[#1a1a2e] transition-colors">' +
+        '<td class="py-3 px-2 text-gray-300">' + e.date + '</td>' +
+        '<td class="py-3 px-2 text-gray-300">' + self.escapeHtml(e.description) + '</td>' +
+        '<td class="py-3 px-2"><span class="badge bg-purple-500/20 text-purple-400">' + self.escapeHtml(e.category) + '</span></td>' +
+        '<td class="py-3 px-2 text-right text-gray-300">' + (e.usd > 0 ? '$' + e.usd.toFixed(2) : '\u2014') + '</td>' +
+        '<td class="py-3 px-2 text-right text-gray-300">' + (e.cad > 0 ? '$' + e.cad.toFixed(2) : '\u2014') + '</td>' +
+        '<td class="py-3 px-2 text-right text-white font-medium">$' + cadEquiv.toFixed(2) + '</td></tr>';
+    }).join('');
+
+    rows += '<tr class="border-t-2 border-[#353560]">' +
+      '<td class="py-3 px-2 font-bold text-white" colspan="3">Total</td>' +
+      '<td class="py-3 px-2"></td><td class="py-3 px-2"></td>' +
+      '<td class="py-3 px-2 text-right font-bold text-white">$' + totalExpenseCAD.toFixed(2) + '</td></tr>';
+
+    tableEl.innerHTML = rows;
   }
 };
 
-App.renderExpenses = function(expenses) {
-  let totalCAD = 0, totalUSD = 0;
-  expenses.forEach(function(e) {
-    totalCAD += e.cad;
-    totalUSD += e.usd;
+// === Dev Projects Tab ===
+App.renderDevProjects = function() {
+  var data = this.data.devprojects;
+  var container = document.getElementById('devprojects-list');
+  if (!container || !data || !data.projects) {
+    if (container) container.innerHTML = this.renderError('No dev projects found');
+    return;
+  }
+
+  var filter = this.devprojectsFilter || 'all';
+  var projects = data.projects.filter(function(p) {
+    return filter === 'all' || p.status === filter;
   });
-  document.getElementById("expenses-summary").innerHTML = "<div class='card'><p class='text-sm text-gray-400'>Total CAD</p><p class='text-2xl font-bold text-white'>$" + totalCAD.toFixed(2) + "</p></div><div class='card'><p class='text-sm text-gray-400'>Total USD</p><p class='text-2xl font-bold text-white'>$" + totalUSD.toFixed(2) + "</p></div><div class='card'><p class='text-sm text-gray-400'>Entries</p><p class='text-2xl font-bold text-white'>" + expenses.length + "</p></div>";
-  document.getElementById("expenses-table").innerHTML = expenses.map(function(e) { return "<tr class='hover:bg-[#1a1a2e]'><td class='py-3 px-2 text-gray-300'>" + e.date + "</td><td class='py-3 px-2 text-gray-300'>" + e.description + "</td><td class='py-3 px-2 text-right text-gray-300'>" + (e.cad > 0 ? "$" + e.cad.toFixed(2) : "-") + "</td><td class='py-3 px-2 text-right text-gray-300'>" + (e.usd > 0 ? "$" + e.usd.toFixed(2) : "-") + "</td><td class='py-3 px-2'><span class='badge bg-purple-500/20 text-purple-400'>" + e.category + "</span></td></tr>"; }).join("");
+  var self = this;
+
+  var statusColors = { 'scripted': 'bg-purple-500/20 text-purple-400', 'in_production': 'bg-orange-500/20 text-orange-400', 'complete': 'bg-green-500/20 text-green-400' };
+  var statusLabels = { 'scripted': 'scripted', 'in_production': 'in production', 'complete': 'complete' };
+  var channelColors = { 'ZMDE': 'bg-green-500/20 text-green-400', 'StevenSongIRL': 'bg-blue-500/20 text-blue-400' };
+
+  if (!projects.length) {
+    container.innerHTML = '<div class="col-span-full p-8 text-center text-gray-500">No projects match this filter.</div>';
+    return;
+  }
+
+  container.innerHTML = projects.map(function(p) {
+    var barColor = p.status === 'complete' ? 'bg-green-500' : (p.status === 'in_production' ? 'bg-orange-500' : 'bg-purple-500');
+    return '<div class="card">' +
+      '<h3 class="font-bold text-white mb-2">' + self.escapeHtml(p.title) + '</h3>' +
+      '<div class="flex flex-wrap gap-2 mb-3">' +
+        '<span class="badge ' + (channelColors[p.channel] || 'bg-gray-500/20 text-gray-400') + '">' + self.escapeHtml(p.channel) + '</span>' +
+        '<span class="badge ' + (statusColors[p.status] || 'bg-gray-500/20 text-gray-400') + '">' + (statusLabels[p.status] || p.status) + '</span>' +
+      '</div>' +
+      '<p class="text-sm text-gray-400 line-clamp-2 mb-3">' + self.escapeHtml(p.description) + '</p>' +
+      '<div class="mb-3"><div class="flex items-center justify-between text-xs mb-1"><span class="text-gray-500">Progress</span><span class="text-gray-400">' + p.progress + '%</span></div>' +
+        '<div class="w-full bg-[#252540] rounded-full h-2"><div class="h-2 rounded-full ' + barColor + ' transition-all" style="width:' + p.progress + '%"></div></div></div>' +
+      '<p class="text-sm text-teal-400">\u2192 ' + self.escapeHtml(p.nextAction) + '</p>' +
+    '</div>';
+  }).join('');
+};
+
+App.setupDevProjectFilters = function() {
+  var self = this;
+  document.querySelectorAll('.devproject-filter').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      self.devprojectsFilter = btn.dataset.filter;
+      // Update pill styles
+      document.querySelectorAll('.devproject-filter').forEach(function(b) {
+        var active = b.dataset.filter === self.devprojectsFilter;
+        b.className = 'devproject-filter px-3 py-1.5 text-sm rounded-full transition-colors ' +
+          (active ? 'bg-purple-500/20 text-purple-400 border border-purple-500/30' : 'bg-[#252540] text-gray-400 border border-transparent hover:border-[#353560]');
+      });
+      self.renderDevProjects();
+    });
+  });
 };
