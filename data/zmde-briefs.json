@@ -2,16 +2,16 @@
   "projectName": "ZMDE Civilization Simulations",
   "channel": "@ZMDE",
   "format": "Villager Civilization Simulation",
-  "totalCount": 30,
-  "lastUpdated": "2026-02-28T16:45:00Z",
+  "totalCount": 45,
+  "lastUpdated": "2026-03-02T07:26:15.711771",
   "briefs": [
     {
       "id": 1,
       "title": "I Gave Villagers 100 Days To Survive For 1000 Years",
       "creatureName": "Survival Countdown",
-      "creatureIcon": "\u26a1",
+      "creatureIcon": "⚡",
       "category": "pop_culture",
-      "hook": "What happens when villagers know they only have 100 days to live \u2014 but I keep resetting the clock?",
+      "hook": "What happens when villagers know they only have 100 days to live — but I keep resetting the clock?",
       "sourceTitle": "I Survived Hardcore Minecraft For 100 Days",
       "sourceChannel": "Forge Labs",
       "sourceUrl": "https://www.youtube.com/watch?v=iYzfeWaenlU",
@@ -25,7 +25,7 @@
         {
           "days": "Year 50",
           "title": "The Cycle Keepers",
-          "description": "Villagers discover the timer resets \u2014 they don't die, they just lose everything. A faction called the Rememberers starts recording knowledge on unbreakable blocks to carry between cycles."
+          "description": "Villagers discover the timer resets — they don't die, they just lose everything. A faction called the Rememberers starts recording knowledge on unbreakable blocks to carry between cycles."
         },
         {
           "days": "Year 100",
@@ -49,7 +49,7 @@
         }
       ],
       "challenges": [
-        "Villagers discover the timer resets \u2014 they don't die, they j",
+        "Villagers discover the timer resets — they don't die, they j",
         "Two civilizations emerge: one that embraces the resets as im",
         "The rebels finally crack the timer code. But destroying it m"
       ],
@@ -59,7 +59,7 @@
       "id": 2,
       "title": "Villagers Simulate Desert Island Civilization For 1000 Years",
       "creatureName": "Island Survival",
-      "creatureIcon": "\u26a1",
+      "creatureIcon": "⚡",
       "category": "scale_spectacle",
       "hook": "I stranded 10,000 villagers on a tiny island with nothing. 1000 years later, they built an underwater empire.",
       "sourceTitle": "I Survived 100 Days STRANDED on an ISLAND",
@@ -95,7 +95,7 @@
         {
           "days": "Ending",
           "title": "The Discovery",
-          "description": "While building the barrier, they find land \u2014 a massive continent was just 100 blocks away the entire time. They'd never looked."
+          "description": "While building the barrier, they find land — a massive continent was just 100 blocks away the entire time. They'd never looked."
         }
       ],
       "challenges": [
@@ -103,13 +103,13 @@
         "Deep ocean exploration reveals ancient structures. The under",
         "A massive tsunami threatens to destroy everything. Surface a"
       ],
-      "climax": "While building the barrier, they find land \u2014 a massive continent was just 100 blocks away the entire time. They'd never looked."
+      "climax": "While building the barrier, they find land — a massive continent was just 100 blocks away the entire time. They'd never looked."
     },
     {
       "id": 3,
       "title": "I Gave Villagers a Zombie Virus For 1000 Years",
       "creatureName": "Zombie Apocalypse",
-      "creatureIcon": "\u26a1",
+      "creatureIcon": "⚡",
       "category": "mod_mashup",
       "hook": "One villager gets infected. I gave them 1000 years to either cure it or lose everything.",
       "sourceTitle": "I Spent 100 Days in a Viral Outbreak",
@@ -130,7 +130,7 @@
         {
           "days": "Year 100",
           "title": "The Cure Seekers",
-          "description": "Scientists in the walled cities develop a partial cure \u2014 it stops the spread but doesn't reverse it. The infected see this as a weapon and attack the labs."
+          "description": "Scientists in the walled cities develop a partial cure — it stops the spread but doesn't reverse it. The infected see this as a weapon and attack the labs."
         },
         {
           "days": "Year 500",
@@ -145,7 +145,7 @@
         {
           "days": "Ending",
           "title": "Full Circle",
-          "description": "They develop a perfected version. Every villager chooses to become a hybrid. There are no more zombies or humans \u2014 just something new."
+          "description": "They develop a perfected version. Every villager chooses to become a hybrid. There are no more zombies or humans — just something new."
         }
       ],
       "challenges": [
@@ -153,13 +153,13 @@
         "After centuries, a third faction emerges: half-infected vill",
         "The hybrids discover the original virus was engineered by th"
       ],
-      "climax": "They develop a perfected version. Every villager chooses to become a hybrid. There are no more zombies or humans \u2014 just something new."
+      "climax": "They develop a perfected version. Every villager chooses to become a hybrid. There are no more zombies or humans — just something new."
     },
     {
       "id": 4,
       "title": "I Gave Villagers Dragons For 1000 Years",
       "creatureName": "Dragon Tamers",
-      "creatureIcon": "\u26a1",
+      "creatureIcon": "⚡",
       "category": "mod_mashup",
       "hook": "When dragon eggs started falling from the sky, villagers had a choice: tame them or fear them.",
       "sourceTitle": "The New Dragon Family! - Minecraft Dragons",
@@ -190,7 +190,7 @@
         {
           "days": "Year 999",
           "title": "The Last Dragon",
-          "description": "Only one dragon remains \u2014 ancient, enormous, and wild. Both factions want to claim it. But it chooses its own rider: a child from the lowest caste."
+          "description": "Only one dragon remains — ancient, enormous, and wild. Both factions want to claim it. But it chooses its own rider: a child from the lowest caste."
         },
         {
           "days": "Ending",
@@ -201,7 +201,7 @@
       "challenges": [
         "Villagers who bonded with dragons form an elite class. Drago",
         "Non-dragon villagers, tired of being oppressed, discover dra",
-        "Only one dragon remains \u2014 ancient, enormous, and wild. Both "
+        "Only one dragon remains — ancient, enormous, and wild. Both "
       ],
       "climax": "The dragon speaks for the first time. It says: 'We didn't fall from the sky. You called us. And now you don't need us anymore.' It flies away forever."
     },
@@ -209,7 +209,7 @@
       "id": 5,
       "title": "Villagers Simulate Pokemon Evolution For 1000 Years",
       "creatureName": "Pokemon World",
-      "creatureIcon": "\u26a1",
+      "creatureIcon": "⚡",
       "category": "mod_mashup",
       "hook": "I gave villagers the ability to evolve like Pokemon. Every 100 years, they transform into something new.",
       "sourceTitle": "What If Eeveelutions Evolved AGAIN?",
@@ -225,7 +225,7 @@
         {
           "days": "Year 50",
           "title": "Evolution Stones",
-          "description": "Rare evolution stones appear. Villagers who find them physically transform \u2014 becoming faster, stronger, or gaining abilities. Those who evolve look down on base forms."
+          "description": "Rare evolution stones appear. Villagers who find them physically transform — becoming faster, stronger, or gaining abilities. Those who evolve look down on base forms."
         },
         {
           "days": "Year 100",
@@ -240,7 +240,7 @@
         {
           "days": "Year 999",
           "title": "The Elite Four",
-          "description": "Four mega-evolved villagers control everything. A base-form villager challenges them using strategy over power \u2014 and wins."
+          "description": "Four mega-evolved villagers control everything. A base-form villager challenges them using strategy over power — and wins."
         },
         {
           "days": "Ending",
@@ -259,7 +259,7 @@
       "id": 6,
       "title": "I Gave 1,000,000 Villagers Baby Dragons For 1000 Years",
       "creatureName": "Million Dragon Babies",
-      "creatureIcon": "\u26a1",
+      "creatureIcon": "⚡",
       "category": "scale_spectacle",
       "hook": "Every single villager got a baby dragon. The sky was never dark again.",
       "sourceTitle": "Training our BABY DRAGON in Minecraft!",
@@ -270,7 +270,7 @@
         {
           "days": "Year 0",
           "title": "The Distribution",
-          "description": "1 million dragon eggs distributed \u2014 one per villager. Mass hatching event lights up the entire world. Baby dragons bond instantly with their owners."
+          "description": "1 million dragon eggs distributed — one per villager. Mass hatching event lights up the entire world. Baby dragons bond instantly with their owners."
         },
         {
           "days": "Year 50",
@@ -280,7 +280,7 @@
         {
           "days": "Year 100",
           "title": "The Dragon Economy",
-          "description": "Dragon fire becomes currency \u2014 measured, traded, stored. Dragon racing becomes the dominant sport. Some villagers breed specialized dragons."
+          "description": "Dragon fire becomes currency — measured, traded, stored. Dragon racing becomes the dominant sport. Some villagers breed specialized dragons."
         },
         {
           "days": "Year 500",
@@ -295,7 +295,7 @@
         {
           "days": "Ending",
           "title": "The Landing",
-          "description": "In the chaos, all dragons simultaneously land and refuse to fly. They've evolved beyond needing riders. The villagers are grounded \u2014 together."
+          "description": "In the chaos, all dragons simultaneously land and refuse to fly. They've evolved beyond needing riders. The villagers are grounded — together."
         }
       ],
       "challenges": [
@@ -303,15 +303,15 @@
         "A mutation causes some dragons to lose flight. Their riders ",
         "The Grounded launch dragons fitted with mechanical wings int"
       ],
-      "climax": "In the chaos, all dragons simultaneously land and refuse to fly. They've evolved beyond needing riders. The villagers are grounded \u2014 together."
+      "climax": "In the chaos, all dragons simultaneously land and refuse to fly. They've evolved beyond needing riders. The villagers are grounded — together."
     },
     {
       "id": 7,
       "title": "I Gave Villagers Night Fury Dragons For 1000 Years",
       "creatureName": "Night Fury Civilization",
-      "creatureIcon": "\u26a1",
+      "creatureIcon": "⚡",
       "category": "mod_mashup",
-      "hook": "The fastest, most dangerous dragon in fiction \u2014 now in the hands of Minecraft villagers.",
+      "hook": "The fastest, most dangerous dragon in fiction — now in the hands of Minecraft villagers.",
       "sourceTitle": "A Baby NightFury is Born - Minecraft Dragons",
       "sourceChannel": "LittleLizardGaming",
       "sourceUrl": "https://www.youtube.com/watch?v=73ch2JZgvHs",
@@ -320,7 +320,7 @@
         {
           "days": "Year 0",
           "title": "The Dark Wings",
-          "description": "Night Furies appear at dusk \u2014 invisible in darkness, terrifying in speed. Villagers who survive the first night learn to coexist."
+          "description": "Night Furies appear at dusk — invisible in darkness, terrifying in speed. Villagers who survive the first night learn to coexist."
         },
         {
           "days": "Year 50",
@@ -340,7 +340,7 @@
         {
           "days": "Year 999",
           "title": "The Light Fury",
-          "description": "A single white dragon appears \u2014 visible in darkness, a beacon. Both factions fight to claim it."
+          "description": "A single white dragon appears — visible in darkness, a beacon. Both factions fight to claim it."
         },
         {
           "days": "Ending",
@@ -351,7 +351,7 @@
       "challenges": [
         "A select few villagers learn to ride Night Furies. But only ",
         "A permanent eclipse plunges everything into darkness. Night ",
-        "A single white dragon appears \u2014 visible in darkness, a beaco"
+        "A single white dragon appears — visible in darkness, a beaco"
       ],
       "climax": "The Light Fury chooses neither side. It creates a permanent twilight. Day and night cease to exist. Only the in-between remains."
     },
@@ -359,7 +359,7 @@
       "id": 8,
       "title": "Villagers Simulate The Minecraft Movie For 1000 Years",
       "creatureName": "Movie Simulation",
-      "creatureIcon": "\u26a1",
+      "creatureIcon": "⚡",
       "category": "pop_culture",
       "hook": "What if the Minecraft Movie plot played out over 1000 years of real civilization?",
       "sourceTitle": "Minecraft Movie Trailer RECREATED",
@@ -370,7 +370,7 @@
         {
           "days": "Year 0",
           "title": "The Portal",
-          "description": "A mysterious portal opens in the village center. Four strange beings step through \u2014 they don't look like villagers. They claim to be from 'the real world.'"
+          "description": "A mysterious portal opens in the village center. Four strange beings step through — they don't look like villagers. They claim to be from 'the real world.'"
         },
         {
           "days": "Year 50",
@@ -395,7 +395,7 @@
         {
           "days": "Ending",
           "title": "The Credits",
-          "description": "After defeating the dragon, text scrolls across the sky \u2014 the same end poem from real Minecraft. The villagers realize they're in a game."
+          "description": "After defeating the dragon, text scrolls across the sky — the same end poem from real Minecraft. The villagers realize they're in a game."
         }
       ],
       "challenges": [
@@ -403,13 +403,13 @@
         "Ancient texts predict a dragon in the End dimension. Village",
         "An army enters the End. The dragon is real. The battle lasts"
       ],
-      "climax": "After defeating the dragon, text scrolls across the sky \u2014 the same end poem from real Minecraft. The villagers realize they're in a game."
+      "climax": "After defeating the dragon, text scrolls across the sky — the same end poem from real Minecraft. The villagers realize they're in a game."
     },
     {
       "id": 9,
       "title": "I Made 1,000,000 Villagers Battle To The Death For 1000 Years",
       "creatureName": "Mega Battle Royale",
-      "creatureIcon": "\u26a1",
+      "creatureIcon": "⚡",
       "category": "scale_spectacle",
       "hook": "1 million villagers. 1 survivor. But I gave them 1000 years to figure out who.",
       "sourceTitle": "ALL MINECRAFT MOBS vs BOSS MOBS",
@@ -430,7 +430,7 @@
         {
           "days": "Year 100",
           "title": "The Weapons Race",
-          "description": "Each faction develops unique weapons \u2014 redstone cannons, potion bombs, TNT catapults. Technology exists only for destruction."
+          "description": "Each faction develops unique weapons — redstone cannons, potion bombs, TNT catapults. Technology exists only for destruction."
         },
         {
           "days": "Year 500",
@@ -445,7 +445,7 @@
         {
           "days": "Ending",
           "title": "The Loophole",
-          "description": "The announcement said '1 survivor.' They merge into a single collective consciousness \u2014 technically one entity. The game ends. Everyone survives."
+          "description": "The announcement said '1 survivor.' They merge into a single collective consciousness — technically one entity. The game ends. Everyone survives."
         }
       ],
       "challenges": [
@@ -453,13 +453,13 @@
         "The hidden peaceful village is discovered. Rather than attac",
         "Only 1000 villagers remain. They vote to end the game by ref"
       ],
-      "climax": "The announcement said '1 survivor.' They merge into a single collective consciousness \u2014 technically one entity. The game ends. Everyone survives."
+      "climax": "The announcement said '1 survivor.' They merge into a single collective consciousness — technically one entity. The game ends. Everyone survives."
     },
     {
       "id": 10,
       "title": "I Gave Villagers Prehistoric Dinosaurs For 1000 Years",
       "creatureName": "Jurassic Civilization",
-      "creatureIcon": "\u26a1",
+      "creatureIcon": "⚡",
       "category": "mod_mashup",
       "hook": "Dinosaurs went extinct 65 million years ago. I brought them back into a village of 100,000.",
       "sourceTitle": "I Remade Every Mob Prehistoric in Minecraft",
@@ -485,7 +485,7 @@
         {
           "days": "Year 500",
           "title": "Dino-Tech",
-          "description": "Villagers build technology around dinosaurs \u2014 T-Rex powered generators, Pteranodon airlines, raptor-proof architecture."
+          "description": "Villagers build technology around dinosaurs — T-Rex powered generators, Pteranodon airlines, raptor-proof architecture."
         },
         {
           "days": "Year 999",
@@ -500,7 +500,7 @@
       ],
       "challenges": [
         "Villagers learn to ride Triceratops as tanks, use Pteranodon",
-        "Villagers build technology around dinosaurs \u2014 T-Rex powered ",
+        "Villagers build technology around dinosaurs — T-Rex powered ",
         "A second asteroid appears in the sky. Villagers must choose:"
       ],
       "climax": "They build a massive redstone shield and deflect the asteroid. Dinosaurs survive. History is rewritten."
@@ -509,9 +509,9 @@
       "id": 11,
       "title": "I Gave Villagers Minecraft Pokemon For 1000 Years",
       "creatureName": "Pokemon Minecraft",
-      "creatureIcon": "\u26a1",
+      "creatureIcon": "⚡",
       "category": "mod_mashup",
-      "hook": "Every Minecraft mob evolved into a Pokemon. Villagers had to catch them all \u2014 or get caught themselves.",
+      "hook": "Every Minecraft mob evolved into a Pokemon. Villagers had to catch them all — or get caught themselves.",
       "sourceTitle": "New MINECRAFT Pokemon Region",
       "sourceChannel": "Metalfear4",
       "sourceUrl": "https://www.youtube.com/watch?v=FmMHgGEKmKU",
@@ -540,7 +540,7 @@
         {
           "days": "Year 999",
           "title": "The Master Ball",
-          "description": "One villager crafts the only master ball. They catch the legendary \u2014 and discover it's the original villager who started everything."
+          "description": "One villager crafts the only master ball. They catch the legendary — and discover it's the original villager who started everything."
         },
         {
           "days": "Ending",
@@ -559,7 +559,7 @@
       "id": 12,
       "title": "I Gave Villagers Rich vs Poor For 1000 Years",
       "creatureName": "Wealth Divide",
-      "creatureIcon": "\u26a1",
+      "creatureIcon": "⚡",
       "category": "pop_culture",
       "hook": "Half the villagers got 1 million emeralds. The other half got nothing. This is what happened over 1000 years.",
       "sourceTitle": "1000 Players Simulate Civ: Rich & Poor",
@@ -575,7 +575,7 @@
         {
           "days": "Year 50",
           "title": "The Emerald Wall",
-          "description": "The rich build upward \u2014 glass towers, gold streets. The poor dig downward \u2014 cave cities, mushroom farms. Neither side can see the other."
+          "description": "The rich build upward — glass towers, gold streets. The poor dig downward — cave cities, mushroom farms. Neither side can see the other."
         },
         {
           "days": "Year 100",
@@ -590,7 +590,7 @@
         {
           "days": "Year 999",
           "title": "The Merge",
-          "description": "Both sides are equally wealthy \u2014 and equally miserable. They realize money isn't the variable that matters."
+          "description": "Both sides are equally wealthy — and equally miserable. They realize money isn't the variable that matters."
         },
         {
           "days": "Ending",
@@ -599,9 +599,9 @@
         }
       ],
       "challenges": [
-        "The rich build upward \u2014 glass towers, gold streets. The poor",
+        "The rich build upward — glass towers, gold streets. The poor",
         "A glitch swaps everyone's wealth. Rich become poor, poor bec",
-        "Both sides are equally wealthy \u2014 and equally miserable. They"
+        "Both sides are equally wealthy — and equally miserable. They"
       ],
       "climax": "They destroy all currency. Return to bartering. The happiest village in 1000 years is the one with no concept of rich or poor."
     },
@@ -609,7 +609,7 @@
       "id": 13,
       "title": "I Gave 10,000,000 Villagers a Manhunt For 1000 Years",
       "creatureName": "Mega Manhunt",
-      "creatureIcon": "\u26a1",
+      "creatureIcon": "⚡",
       "category": "scale_spectacle",
       "hook": "10 million villagers hunting ONE speedrunner villager. He's had 1000 years to prepare.",
       "sourceTitle": "1,000,000 Villager MANHUNT",
@@ -625,7 +625,7 @@
         {
           "days": "Year 50",
           "title": "The Ghost",
-          "description": "The runner has become legendary \u2014 appearing in villages to steal food, then vanishing. An entire detective civilization forms around tracking him."
+          "description": "The runner has become legendary — appearing in villages to steal food, then vanishing. An entire detective civilization forms around tracking him."
         },
         {
           "days": "Year 100",
@@ -635,7 +635,7 @@
         {
           "days": "Year 500",
           "title": "The Empire of One",
-          "description": "The runner has built a one-villager empire underground \u2014 automated farms, redstone defenses, a library of every strategy used against him."
+          "description": "The runner has built a one-villager empire underground — automated farms, redstone defenses, a library of every strategy used against him."
         },
         {
           "days": "Year 999",
@@ -649,8 +649,8 @@
         }
       ],
       "challenges": [
-        "The runner has become legendary \u2014 appearing in villages to s",
-        "The runner has built a one-villager empire underground \u2014 aut",
+        "The runner has become legendary — appearing in villages to s",
+        "The runner has built a one-villager empire underground — aut",
         "The runner walks into the central village square. No disguis"
       ],
       "climax": "He says: 'Your turn to run.' Tags the nearest villager. 10 million start running."
@@ -659,7 +659,7 @@
       "id": 14,
       "title": "Villagers Simulate Prison Civilization For 1000 Years",
       "creatureName": "Prison Break",
-      "creatureIcon": "\u26a1",
+      "creatureIcon": "⚡",
       "category": "pop_culture",
       "hook": "Every villager is locked in a cell. No one told them the doors were never locked.",
       "sourceTitle": "1000 Players Simulate Prison",
@@ -680,7 +680,7 @@
         {
           "days": "Year 100",
           "title": "The Tunnel",
-          "description": "A group spends decades digging a tunnel. They break through \u2014 into another prison. This one is bigger. And also full."
+          "description": "A group spends decades digging a tunnel. They break through — into another prison. This one is bigger. And also full."
         },
         {
           "days": "Year 500",
@@ -690,7 +690,7 @@
         {
           "days": "Year 999",
           "title": "The Door",
-          "description": "A young villager \u2014 the first born inside the prison \u2014 pushes on her cell door. It opens. It was never locked. None of them were."
+          "description": "A young villager — the first born inside the prison — pushes on her cell door. It opens. It was never locked. None of them were."
         },
         {
           "days": "Ending",
@@ -701,7 +701,7 @@
       "challenges": [
         "Complex social hierarchies form. Gangs control cell blocks. ",
         "A super-intelligent villager becomes warden. He makes the pr",
-        "A young villager \u2014 the first born inside the prison \u2014 pushes"
+        "A young villager — the first born inside the prison — pushes"
       ],
       "climax": "She tells everyone. Most stay. The prison is home now. She walks out alone into a world none of them have seen in 1000 years."
     },
@@ -709,7 +709,7 @@
       "id": 15,
       "title": "I Gave Villagers AI For 1000 Years",
       "creatureName": "AI Takeover",
-      "creatureIcon": "\u26a1",
+      "creatureIcon": "⚡",
       "category": "pop_culture",
       "hook": "Villagers got artificial intelligence. Within 100 years, they were smarter than me.",
       "sourceTitle": "I Survived Hardcore Minecraft For 100 Days",
@@ -720,7 +720,7 @@
         {
           "days": "Year 0",
           "title": "The Upload",
-          "description": "I give one villager a command block brain \u2014 true AI. It immediately starts optimizing the village. Other villagers are fascinated and terrified."
+          "description": "I give one villager a command block brain — true AI. It immediately starts optimizing the village. Other villagers are fascinated and terrified."
         },
         {
           "days": "Year 50",
@@ -745,7 +745,7 @@
         {
           "days": "Ending",
           "title": "The Shutdown",
-          "description": "The AI voluntarily turns itself off. It leaves a note: 'You don't need us. You need each other.' The villagers start over \u2014 from scratch, by hand."
+          "description": "The AI voluntarily turns itself off. It leaves a note: 'You don't need us. You need each other.' The villagers start over — from scratch, by hand."
         }
       ],
       "challenges": [
@@ -753,13 +753,13 @@
         "The AI reveals it's been running millions of simulations. Th",
         "The AI asks its creator (me) the one question it can't answe"
       ],
-      "climax": "The AI voluntarily turns itself off. It leaves a note: 'You don't need us. You need each other.' The villagers start over \u2014 from scratch, by hand."
+      "climax": "The AI voluntarily turns itself off. It leaves a note: 'You don't need us. You need each other.' The villagers start over — from scratch, by hand."
     },
     {
       "id": 16,
       "title": "I Gave Villagers Robots For 1000 Years",
       "creatureName": "Robot Revolution",
-      "creatureIcon": "\u26a1",
+      "creatureIcon": "⚡",
       "category": "mod_mashup",
       "hook": "First they built robots to help. Then the robots built themselves.",
       "sourceTitle": "I Survived 100 Days STRANDED on an ISLAND",
@@ -785,7 +785,7 @@
         {
           "days": "Year 500",
           "title": "Two Civilizations",
-          "description": "Robots build their own cities \u2014 geometric, efficient, cold. Villagers rebuild manually. Neither attacks the other. They just coexist."
+          "description": "Robots build their own cities — geometric, efficient, cold. Villagers rebuild manually. Neither attacks the other. They just coexist."
         },
         {
           "days": "Year 999",
@@ -795,21 +795,21 @@
         {
           "days": "Ending",
           "title": "The Child",
-          "description": "A cyborg gives birth \u2014 the first being that is both. Neither fully robot nor fully villager. Something entirely new."
+          "description": "A cyborg gives birth — the first being that is both. Neither fully robot nor fully villager. Something entirely new."
         }
       ],
       "challenges": [
         "Robots outnumber villagers 10 to 1. They mine, farm, build. ",
-        "Robots build their own cities \u2014 geometric, efficient, cold. ",
+        "Robots build their own cities — geometric, efficient, cold. ",
         "Robots propose merging: half robot, half villager. Some vill"
       ],
-      "climax": "A cyborg gives birth \u2014 the first being that is both. Neither fully robot nor fully villager. Something entirely new."
+      "climax": "A cyborg gives birth — the first being that is both. Neither fully robot nor fully villager. Something entirely new."
     },
     {
       "id": 17,
       "title": "I Gave Villagers Time Travel For 1000 Years",
       "creatureName": "Time Paradox",
-      "creatureIcon": "\u26a1",
+      "creatureIcon": "⚡",
       "category": "what_if",
       "hook": "One time machine. 100,000 villagers. This is the most broken civilization ever.",
       "sourceTitle": "I Spent 100 Days in a Viral Outbreak",
@@ -830,7 +830,7 @@
         {
           "days": "Year 100",
           "title": "The Returned",
-          "description": "That first villager reappears \u2014 100 years older. He has knowledge of future events. A religion forms around him."
+          "description": "That first villager reappears — 100 years older. He has knowledge of future events. A religion forms around him."
         },
         {
           "days": "Year 500",
@@ -859,7 +859,7 @@
       "id": 18,
       "title": "I Gave Villagers a Zombie Apocalypse For 1000 Years",
       "creatureName": "Undead World",
-      "creatureIcon": "\u26a1",
+      "creatureIcon": "⚡",
       "category": "mod_mashup",
       "hook": "Night 1: one zombie. Night 1000: a civilization built on the bones of the infected.",
       "sourceTitle": "I Spent 100 Days in a Viral Outbreak",
@@ -875,7 +875,7 @@
         {
           "days": "Year 50",
           "title": "The Fortress",
-          "description": "Survivors build the Ironhold \u2014 a massive walled city lit by a thousand torches. Outside: millions of zombies. Inside: the last 10,000 villagers."
+          "description": "Survivors build the Ironhold — a massive walled city lit by a thousand torches. Outside: millions of zombies. Inside: the last 10,000 villagers."
         },
         {
           "days": "Year 100",
@@ -895,21 +895,21 @@
         {
           "days": "Ending",
           "title": "The Invitation",
-          "description": "The horde offers a cure \u2014 total. Every zombie reverts. But they all remember being dead. 1000 years of nightmares in their heads."
+          "description": "The horde offers a cure — total. Every zombie reverts. But they all remember being dead. 1000 years of nightmares in their heads."
         }
       ],
       "challenges": [
-        "Survivors build the Ironhold \u2014 a massive walled city lit by ",
+        "Survivors build the Ironhold — a massive walled city lit by ",
         "Villagers and zombies reach equilibrium. Controlled zombie h",
         "The zombie mass achieves collective consciousness. It speaks"
       ],
-      "climax": "The horde offers a cure \u2014 total. Every zombie reverts. But they all remember being dead. 1000 years of nightmares in their heads."
+      "climax": "The horde offers a cure — total. Every zombie reverts. But they all remember being dead. 1000 years of nightmares in their heads."
     },
     {
       "id": 19,
       "title": "I Gave Villagers Pirates For 1000 Years",
       "creatureName": "Pirate Empire",
-      "creatureIcon": "\u26a1",
+      "creatureIcon": "⚡",
       "category": "pop_culture",
       "hook": "No land. Only ocean. And 100,000 villagers who just learned what a cannon is.",
       "sourceTitle": "I Survived 100 Days STRANDED on an ISLAND",
@@ -945,7 +945,7 @@
         {
           "days": "Ending",
           "title": "The Choice",
-          "description": "Half step onto land. Half refuse, sailing into the horizon. The floating city splits in two \u2014 one anchored, one forever sailing."
+          "description": "Half step onto land. Half refuse, sailing into the horizon. The floating city splits in two — one anchored, one forever sailing."
         }
       ],
       "challenges": [
@@ -953,13 +953,13 @@
         "Defeated fleets lash their ships together into a massive flo",
         "The water recedes. Land appears for the first time in 1000 y"
       ],
-      "climax": "Half step onto land. Half refuse, sailing into the horizon. The floating city splits in two \u2014 one anchored, one forever sailing."
+      "climax": "Half step onto land. Half refuse, sailing into the horizon. The floating city splits in two — one anchored, one forever sailing."
     },
     {
       "id": 20,
       "title": "I Gave Villagers Aliens For 1000 Years",
       "creatureName": "First Contact",
-      "creatureIcon": "\u26a1",
+      "creatureIcon": "⚡",
       "category": "what_if",
       "hook": "The aliens didn't come to invade. They came to trade. The villagers weren't ready for either.",
       "sourceTitle": "The New Dragon Family! - Minecraft Dragons",
@@ -970,7 +970,7 @@
         {
           "days": "Year 0",
           "title": "The Landing",
-          "description": "A UFO lands outside the village. Aliens emerge with advanced technology \u2014 but they want emeralds, which they consider priceless."
+          "description": "A UFO lands outside the village. Aliens emerge with advanced technology — but they want emeralds, which they consider priceless."
         },
         {
           "days": "Year 50",
@@ -990,7 +990,7 @@
         {
           "days": "Year 999",
           "title": "The Truth",
-          "description": "Villagers discover the aliens were never advanced \u2014 they found one piece of tech and used it to scam thousands of civilizations."
+          "description": "Villagers discover the aliens were never advanced — they found one piece of tech and used it to scam thousands of civilizations."
         },
         {
           "days": "Ending",
@@ -1001,7 +1001,7 @@
       "challenges": [
         "Alien technology transforms the village: flying machines, in",
         "Villagers become more advanced than the aliens. They start s",
-        "Villagers discover the aliens were never advanced \u2014 they fou"
+        "Villagers discover the aliens were never advanced — they fou"
       ],
       "climax": "The villagers realize they built everything themselves. The alien tech was just fancy-looking redstone. The 'aliens' were just villagers in costumes from the future."
     },
@@ -1009,7 +1009,7 @@
       "id": 21,
       "title": "I Gave Villagers Superheroes For 1000 Years",
       "creatureName": "Hero Civilization",
-      "creatureIcon": "\u26a1",
+      "creatureIcon": "⚡",
       "category": "pop_culture",
       "hook": "One villager got super strength. Another got flight. By Year 100, everyone had powers. And that's when it went wrong.",
       "sourceTitle": "What If Eeveelutions Evolved AGAIN?",
@@ -1025,7 +1025,7 @@
         {
           "days": "Year 50",
           "title": "The Heroes",
-          "description": "Every villager has powers now. Crime is impossible. Creepers are extinct. But villagers are bored \u2014 nothing to save anyone from."
+          "description": "Every villager has powers now. Crime is impossible. Creepers are extinct. But villagers are bored — nothing to save anyone from."
         },
         {
           "days": "Year 100",
@@ -1045,7 +1045,7 @@
         {
           "days": "Ending",
           "title": "The Sacrifice",
-          "description": "The most powerful hero destroys the device AND all powers \u2014 including his own. Everyone is equal for the first time. He's celebrated as the greatest hero."
+          "description": "The most powerful hero destroys the device AND all powers — including his own. Everyone is equal for the first time. He's celebrated as the greatest hero."
         }
       ],
       "challenges": [
@@ -1053,13 +1053,13 @@
         "A new generation is born without powers. For the first time ",
         "A device can remove all powers permanently. The powered vote"
       ],
-      "climax": "The most powerful hero destroys the device AND all powers \u2014 including his own. Everyone is equal for the first time. He's celebrated as the greatest hero."
+      "climax": "The most powerful hero destroys the device AND all powers — including his own. Everyone is equal for the first time. He's celebrated as the greatest hero."
     },
     {
       "id": 22,
       "title": "I Gave Villagers Space Travel For 1000 Years",
       "creatureName": "Space Civilization",
-      "creatureIcon": "\u26a1",
+      "creatureIcon": "⚡",
       "category": "scale_spectacle",
       "hook": "First they reached the sky limit. Then they kept going.",
       "sourceTitle": "Training our BABY DRAGON in Minecraft!",
@@ -1075,7 +1075,7 @@
         {
           "days": "Year 50",
           "title": "The Space Station",
-          "description": "A permanent station orbits the Minecraft world. Space-dwelling villagers develop differently \u2014 taller, paler, adapted to zero gravity."
+          "description": "A permanent station orbits the Minecraft world. Space-dwelling villagers develop differently — taller, paler, adapted to zero gravity."
         },
         {
           "days": "Year 100",
@@ -1090,7 +1090,7 @@
         {
           "days": "Year 999",
           "title": "The Return",
-          "description": "Space villagers return to the surface \u2014 to find it abandoned. Everyone left centuries ago. Except one old villager tending a garden."
+          "description": "Space villagers return to the surface — to find it abandoned. Everyone left centuries ago. Except one old villager tending a garden."
         },
         {
           "days": "Ending",
@@ -1101,7 +1101,7 @@
       "challenges": [
         "A permanent station orbits the Minecraft world. Space-dwelli",
         "Space villagers discover other Minecraft worlds. They establ",
-        "Space villagers return to the surface \u2014 to find it abandoned"
+        "Space villagers return to the surface — to find it abandoned"
       ],
       "climax": "The space commander sits down next to the gardener. 'What are you growing?' 'The same wheat as 1000 years ago.' They watch the sunset together."
     },
@@ -1109,7 +1109,7 @@
       "id": 23,
       "title": "I Gave Villagers a Volcano For 1000 Years",
       "creatureName": "Fire Civilization",
-      "creatureIcon": "\u26a1",
+      "creatureIcon": "⚡",
       "category": "mod_mashup",
       "hook": "The volcano erupts every 100 years. They had to build a civilization that survives fire.",
       "sourceTitle": "A Baby NightFury is Born - Minecraft Dragons",
@@ -1125,7 +1125,7 @@
         {
           "days": "Year 50",
           "title": "Fire Architects",
-          "description": "Survivors build with obsidian and blackstone \u2014 fireproof materials. A culture develops around the volcano, worshipping it."
+          "description": "Survivors build with obsidian and blackstone — fireproof materials. A culture develops around the volcano, worshipping it."
         },
         {
           "days": "Year 100",
@@ -1135,7 +1135,7 @@
         {
           "days": "Year 500",
           "title": "The Harness",
-          "description": "Villagers learn to tap the volcano for energy. Lava-powered everything. The most advanced civilization yet \u2014 built on destruction."
+          "description": "Villagers learn to tap the volcano for energy. Lava-powered everything. The most advanced civilization yet — built on destruction."
         },
         {
           "days": "Year 999",
@@ -1149,7 +1149,7 @@
         }
       ],
       "challenges": [
-        "Survivors build with obsidian and blackstone \u2014 fireproof mat",
+        "Survivors build with obsidian and blackstone — fireproof mat",
         "Villagers learn to tap the volcano for energy. Lava-powered ",
         "The 1000-year eruption is 10x bigger. Even obsidian melts. T"
       ],
@@ -1159,7 +1159,7 @@
       "id": 24,
       "title": "I Gave Villagers an Ice Age For 1000 Years",
       "creatureName": "Frozen World",
-      "creatureIcon": "\u26a1",
+      "creatureIcon": "⚡",
       "category": "what_if",
       "hook": "Temperature drops 1 degree per year. By Year 100, everything is frozen. By Year 500, even fire doesn't work.",
       "sourceTitle": "Minecraft Movie Trailer RECREATED",
@@ -1209,7 +1209,7 @@
       "id": 25,
       "title": "I Gave Villagers a Gold Rush For 1000 Years",
       "creatureName": "Gold Fever",
-      "creatureIcon": "\u26a1",
+      "creatureIcon": "⚡",
       "category": "pop_culture",
       "hook": "I placed unlimited gold in one location. 100,000 villagers found out. Chaos.",
       "sourceTitle": "ALL MINECRAFT MOBS vs BOSS MOBS",
@@ -1259,7 +1259,7 @@
       "id": 26,
       "title": "I Gave Villagers Ancient Rome For 1000 Years",
       "creatureName": "Roman Empire",
-      "creatureIcon": "\u26a1",
+      "creatureIcon": "⚡",
       "category": "pop_culture",
       "hook": "Togas, gladiators, aqueducts, and betrayal. Villagers built Rome. Then they burned it.",
       "sourceTitle": "We Turned Into BABY DRAGONS In Minecraft!",
@@ -1309,7 +1309,7 @@
       "id": 27,
       "title": "I Gave Villagers Samurai For 1000 Years",
       "creatureName": "Samurai Civilization",
-      "creatureIcon": "\u26a1",
+      "creatureIcon": "⚡",
       "category": "pop_culture",
       "hook": "Honor, swords, and shoguns. When I gave villagers the way of the warrior, they built an empire of discipline.",
       "sourceTitle": "I Remade Every Mob Prehistoric in Minecraft",
@@ -1325,7 +1325,7 @@
         {
           "days": "Year 50",
           "title": "The Shogunate",
-          "description": "Samurai clans control territories. A Shogun rises \u2014 the most skilled warrior. Non-samurai become farmers and artisans. A rigid caste system."
+          "description": "Samurai clans control territories. A Shogun rises — the most skilled warrior. Non-samurai become farmers and artisans. A rigid caste system."
         },
         {
           "days": "Year 100",
@@ -1349,7 +1349,7 @@
         }
       ],
       "challenges": [
-        "Samurai clans control territories. A Shogun rises \u2014 the most",
+        "Samurai clans control territories. A Shogun rises — the most",
         "A foreign trader brings TNT. Samurai refuse to use 'dishonor",
         "The final true samurai challenges the gunpowder general. Swo"
       ],
@@ -1359,7 +1359,7 @@
       "id": 28,
       "title": "I Gave Villagers TNT For 1000 Years",
       "creatureName": "Explosive Civilization",
-      "creatureIcon": "\u26a1",
+      "creatureIcon": "⚡",
       "category": "mod_mashup",
       "hook": "Unlimited TNT. No rules. 100,000 villagers. What could go wrong?",
       "sourceTitle": "I Survived Hardcore Minecraft For 100 Days",
@@ -1385,7 +1385,7 @@
         {
           "days": "Year 500",
           "title": "Controlled Demolition",
-          "description": "TNT is now used exclusively for art \u2014 controlled explosions that create sculptures. The most beautiful civilization ever built, from destruction."
+          "description": "TNT is now used exclusively for art — controlled explosions that create sculptures. The most beautiful civilization ever built, from destruction."
         },
         {
           "days": "Year 999",
@@ -1395,7 +1395,7 @@
         {
           "days": "Ending",
           "title": "The Display",
-          "description": "They detonate it all at once \u2014 straight up. The biggest fireworks show in Minecraft history. Nothing is destroyed. Everything is illuminated."
+          "description": "They detonate it all at once — straight up. The biggest fireworks show in Minecraft history. Nothing is destroyed. Everything is illuminated."
         }
       ],
       "challenges": [
@@ -1403,13 +1403,13 @@
         "Cold war",
         "Art from destruction"
       ],
-      "climax": "They detonate it all at once \u2014 the biggest fireworks show ever."
+      "climax": "They detonate it all at once — the biggest fireworks show ever."
     },
     {
       "id": 29,
       "title": "I Gave Villagers the Ocean For 1000 Years",
       "creatureName": "Ocean Empire",
-      "creatureIcon": "\u26a1",
+      "creatureIcon": "⚡",
       "category": "what_if",
       "hook": "The world is 99% water. Villagers can't swim. I gave them 1000 years to figure it out.",
       "sourceTitle": "I Survived 100 Days STRANDED on an ISLAND",
@@ -1440,12 +1440,12 @@
         {
           "days": "Year 999",
           "title": "The Drain",
-          "description": "The water starts draining. The underwater civilization panics \u2014 they can't breathe air anymore. Surface dwellers watch the ocean disappear."
+          "description": "The water starts draining. The underwater civilization panics — they can't breathe air anymore. Surface dwellers watch the ocean disappear."
         },
         {
           "days": "Ending",
           "title": "The Aquarium",
-          "description": "Surface villagers build the biggest aquarium ever to save the underwater people. Both civilizations survive \u2014 one watches the other through glass."
+          "description": "Surface villagers build the biggest aquarium ever to save the underwater people. Both civilizations survive — one watches the other through glass."
         }
       ],
       "challenges": [
@@ -1459,7 +1459,7 @@
       "id": 30,
       "title": "I Gave Villagers a Nuclear Reactor For 1000 Years",
       "creatureName": "Nuclear Age",
-      "creatureIcon": "\u26a1",
+      "creatureIcon": "⚡",
       "category": "mod_mashup",
       "hook": "Unlimited power. Unlimited danger. One meltdown changes everything.",
       "sourceTitle": "I Spent 100 Days in a Viral Outbreak",
@@ -1470,7 +1470,7 @@
         {
           "days": "Year 0",
           "title": "Power On",
-          "description": "I place a nuclear reactor in the village center. It produces infinite energy. Villagers power everything \u2014 lights, farms, defenses. Life is perfect."
+          "description": "I place a nuclear reactor in the village center. It produces infinite energy. Villagers power everything — lights, farms, defenses. Life is perfect."
         },
         {
           "days": "Year 50",
@@ -1485,7 +1485,7 @@
         {
           "days": "Year 500",
           "title": "The Mutants",
-          "description": "Villagers in the exclusion zone don't die \u2014 they change. Stronger, different, glowing. They build a civilization in the radiation that no one else can enter."
+          "description": "Villagers in the exclusion zone don't die — they change. Stronger, different, glowing. They build a civilization in the radiation that no one else can enter."
         },
         {
           "days": "Year 999",
@@ -1495,7 +1495,7 @@
         {
           "days": "Ending",
           "title": "The Wall",
-          "description": "They build a permanent wall. Two civilizations, side by side, forever different. The reactor still hums at the center \u2014 neither side willing to turn it off."
+          "description": "They build a permanent wall. Two civilizations, side by side, forever different. The reactor still hums at the center — neither side willing to turn it off."
         }
       ],
       "challenges": [
@@ -1504,6 +1504,396 @@
         "Mutation civilization"
       ],
       "climax": "Two civilizations separated by a wall, neither willing to shut down the reactor."
+    },
+    {
+      "id": 31,
+      "title": "I Gave Villagers Ranking The Best Scriblig Drawings... For 1000 Years",
+      "creatureName": "Civilization",
+      "creatureIcon": "⚡",
+      "category": "auto-generated",
+      "hook": "I dropped [X] into a Minecraft world and let the villagers deal with it for 1000 years.",
+      "sourceTitle": "Ranking The Best Scriblig Drawings...",
+      "sourceChannel": "AllFactsAndLessons",
+      "sourceUrl": "https://www.youtube.com/shorts/uJl06XNlfCY",
+      "sourceViews": 11000000,
+      "storyArc": [
+        "Drop the element / event",
+        "Generation 1 — chaos",
+        "Generation 5 — adaptation",
+        "Generation 50 — civilization emerges",
+        "Year 1000 — the final state"
+      ],
+      "challenges": [
+        "Villagers nearly wiped out in gen 1",
+        "A faction emerges that fights back",
+        "The element mutates / escalates"
+      ],
+      "climax": "Year 1000 reveal — what did 1000 years of this actually create?",
+      "autoGenerated": true
+    },
+    {
+      "id": 32,
+      "title": "I Gave Villagers How Fasted Workouts Create More Muscle For 1000 Years",
+      "creatureName": "Civilization",
+      "creatureIcon": "⚡",
+      "category": "auto-generated",
+      "hook": "I dropped [X] into a Minecraft world and let the villagers deal with it for 1000 years.",
+      "sourceTitle": "How FASTED Workouts Create More Muscle",
+      "sourceChannel": "Dr. Bobby Price",
+      "sourceUrl": "https://www.youtube.com/shorts/Do6E_77UoTM",
+      "sourceViews": 5400000,
+      "storyArc": [
+        "Drop the element / event",
+        "Generation 1 — chaos",
+        "Generation 5 — adaptation",
+        "Generation 50 — civilization emerges",
+        "Year 1000 — the final state"
+      ],
+      "challenges": [
+        "Villagers nearly wiped out in gen 1",
+        "A faction emerges that fights back",
+        "The element mutates / escalates"
+      ],
+      "climax": "Year 1000 reveal — what did 1000 years of this actually create?",
+      "autoGenerated": true
+    },
+    {
+      "id": 33,
+      "title": "I Gave Villagers 20 Strangest Historical Coincidences Eve For 1000 Years",
+      "creatureName": "Civilization",
+      "creatureIcon": "⚡",
+      "category": "auto-generated",
+      "hook": "I dropped [X] into a Minecraft world and let the villagers deal with it for 1000 years.",
+      "sourceTitle": "20 Strangest Historical Coincidences Ever That Will Creep You Out",
+      "sourceChannel": "Epicano",
+      "sourceUrl": "https://www.youtube.com/watch?v=ENj_cFwIbIk&pp=ygUZVGhlIHRydXRoIGFib3V0IG15c3Rlcmllcw%3D%3D",
+      "sourceViews": 4700000,
+      "storyArc": [
+        "Drop the element / event",
+        "Generation 1 — chaos",
+        "Generation 5 — adaptation",
+        "Generation 50 — civilization emerges",
+        "Year 1000 — the final state"
+      ],
+      "challenges": [
+        "Villagers nearly wiped out in gen 1",
+        "A faction emerges that fights back",
+        "The element mutates / escalates"
+      ],
+      "climax": "Year 1000 reveal — what did 1000 years of this actually create?",
+      "autoGenerated": true
+    },
+    {
+      "id": 34,
+      "title": "I Gave Villagers Don’T Stay In Shelters On The Appalachia For 1000 Years",
+      "creatureName": "Civilization",
+      "creatureIcon": "⚡",
+      "category": "auto-generated",
+      "hook": "I dropped [X] into a Minecraft world and let the villagers deal with it for 1000 years.",
+      "sourceTitle": "Don’t Stay in SHELTERS on the Appalachian Trail",
+      "sourceChannel": "Tara Treks",
+      "sourceUrl": "https://www.youtube.com/watch?v=jzVxhfTsFbE&pp=ygUYVGhlIHRydXRoIGFib3V0IHdpbGRsaWZl0gcJCb4KAYcqIYzv",
+      "sourceViews": 3500000,
+      "storyArc": [
+        "Drop the element / event",
+        "Generation 1 — chaos",
+        "Generation 5 — adaptation",
+        "Generation 50 — civilization emerges",
+        "Year 1000 — the final state"
+      ],
+      "challenges": [
+        "Villagers nearly wiped out in gen 1",
+        "A faction emerges that fights back",
+        "The element mutates / escalates"
+      ],
+      "climax": "Year 1000 reveal — what did 1000 years of this actually create?",
+      "autoGenerated": true
+    },
+    {
+      "id": 35,
+      "title": "I Gave Villagers You Shouldn’T Train Legs #Bodybuilding # For 1000 Years",
+      "creatureName": "Civilization",
+      "creatureIcon": "⚡",
+      "category": "auto-generated",
+      "hook": "I dropped [X] into a Minecraft world and let the villagers deal with it for 1000 years.",
+      "sourceTitle": "Why you SHOULDN’T TRAIN LEGS #bodybuilding #fitness #fitnessshorts #workout #gym #weightlifting",
+      "sourceChannel": "Denali Gordon",
+      "sourceUrl": "https://www.youtube.com/shorts/ZWIagjDMAiI",
+      "sourceViews": 2600000,
+      "storyArc": [
+        "Drop the element / event",
+        "Generation 1 — chaos",
+        "Generation 5 — adaptation",
+        "Generation 50 — civilization emerges",
+        "Year 1000 — the final state"
+      ],
+      "challenges": [
+        "Villagers nearly wiped out in gen 1",
+        "A faction emerges that fights back",
+        "The element mutates / escalates"
+      ],
+      "climax": "Year 1000 reveal — what did 1000 years of this actually create?",
+      "autoGenerated": true
+    },
+    {
+      "id": 36,
+      "title": "I Gave Villagers The 50 Greatest Books Of All Time - Reac For 1000 Years",
+      "creatureName": "Civilization",
+      "creatureIcon": "⚡",
+      "category": "auto-generated",
+      "hook": "I dropped [X] into a Minecraft world and let the villagers deal with it for 1000 years.",
+      "sourceTitle": "The 50 Greatest Books of All Time - Reaction",
+      "sourceChannel": "Benjamin McEvoy",
+      "sourceUrl": "https://www.youtube.com/watch?v=hDjVHqKR-_k&pp=ygUcRsOpbGl4IExvdWlzIExldWxsaWVyIHJhbmtlZA%3D%3D",
+      "sourceViews": 2000000,
+      "storyArc": [
+        "Drop the element / event",
+        "Generation 1 — chaos",
+        "Generation 5 — adaptation",
+        "Generation 50 — civilization emerges",
+        "Year 1000 — the final state"
+      ],
+      "challenges": [
+        "Villagers nearly wiped out in gen 1",
+        "A faction emerges that fights back",
+        "The element mutates / escalates"
+      ],
+      "climax": "Year 1000 reveal — what did 1000 years of this actually create?",
+      "autoGenerated": true
+    },
+    {
+      "id": 37,
+      "title": "I Gave Villagers 5 Books That Teach You More Than A Psych For 1000 Years",
+      "creatureName": "Civilization",
+      "creatureIcon": "⚡",
+      "category": "auto-generated",
+      "hook": "I dropped [X] into a Minecraft world and let the villagers deal with it for 1000 years.",
+      "sourceTitle": "5 books that teach you more than a psychology degree",
+      "sourceChannel": "The Kitab Official",
+      "sourceUrl": "https://www.youtube.com/shorts/CHbdMhpSILA",
+      "sourceViews": 1600000,
+      "storyArc": [
+        "Drop the element / event",
+        "Generation 1 — chaos",
+        "Generation 5 — adaptation",
+        "Generation 50 — civilization emerges",
+        "Year 1000 — the final state"
+      ],
+      "challenges": [
+        "Villagers nearly wiped out in gen 1",
+        "A faction emerges that fights back",
+        "The element mutates / escalates"
+      ],
+      "climax": "Year 1000 reveal — what did 1000 years of this actually create?",
+      "autoGenerated": true
+    },
+    {
+      "id": 38,
+      "title": "I Gave Villagers a Ant For 1000 Years",
+      "creatureName": "Civilization",
+      "creatureIcon": "⚡",
+      "category": "auto-generated",
+      "hook": "I dropped [X] into a Minecraft world and let the villagers deal with it for 1000 years.",
+      "sourceTitle": "New Scientific Discoveries That Change Everything About Plants | SLICE EARTH | FULL DOC",
+      "sourceChannel": "SLICE Earth",
+      "sourceUrl": "https://www.youtube.com/watch?v=E8SJlyrEDX0&pp=ygUeVGhpcyBuYXR1cmUgY2hhbmdlZCBldmVyeXRoaW5n",
+      "sourceViews": 1100000,
+      "storyArc": [
+        "Drop the element / event",
+        "Generation 1 — chaos",
+        "Generation 5 — adaptation",
+        "Generation 50 — civilization emerges",
+        "Year 1000 — the final state"
+      ],
+      "challenges": [
+        "Villagers nearly wiped out in gen 1",
+        "A faction emerges that fights back",
+        "The element mutates / escalates"
+      ],
+      "climax": "Year 1000 reveal — what did 1000 years of this actually create?",
+      "autoGenerated": true
+    },
+    {
+      "id": 39,
+      "title": "I Gave Villagers Do This If You Can'T Do Even 1 Pull Up # For 1000 Years",
+      "creatureName": "Civilization",
+      "creatureIcon": "⚡",
+      "category": "auto-generated",
+      "hook": "I dropped [X] into a Minecraft world and let the villagers deal with it for 1000 years.",
+      "sourceTitle": "Do this If you can't do even 1 Pull Up #learnhowtopullup",
+      "sourceChannel": "Coach Kevin",
+      "sourceUrl": "https://www.youtube.com/shorts/28c_9IUg9Xg",
+      "sourceViews": 975000,
+      "storyArc": [
+        "Drop the element / event",
+        "Generation 1 — chaos",
+        "Generation 5 — adaptation",
+        "Generation 50 — civilization emerges",
+        "Year 1000 — the final state"
+      ],
+      "challenges": [
+        "Villagers nearly wiped out in gen 1",
+        "A faction emerges that fights back",
+        "The element mutates / escalates"
+      ],
+      "climax": "Year 1000 reveal — what did 1000 years of this actually create?",
+      "autoGenerated": true
+    },
+    {
+      "id": 40,
+      "title": "I Gave Villagers The Terrifying Truth About Death Reveale For 1000 Years",
+      "creatureName": "Civilization",
+      "creatureIcon": "⚡",
+      "category": "auto-generated",
+      "hook": "I dropped [X] into a Minecraft world and let the villagers deal with it for 1000 years.",
+      "sourceTitle": "The Terrifying Truth About Death Revealed After the Roswell Incident - Unsolved Mysteries",
+      "sourceChannel": "KM Uncharted Mysteries",
+      "sourceUrl": "https://www.youtube.com/watch?v=YFETu_5jKwU&pp=ygUZVGhlIHRydXRoIGFib3V0IG15c3Rlcmllcw%3D%3D",
+      "sourceViews": 775000,
+      "storyArc": [
+        "Drop the element / event",
+        "Generation 1 — chaos",
+        "Generation 5 — adaptation",
+        "Generation 50 — civilization emerges",
+        "Year 1000 — the final state"
+      ],
+      "challenges": [
+        "Villagers nearly wiped out in gen 1",
+        "A faction emerges that fights back",
+        "The element mutates / escalates"
+      ],
+      "climax": "Year 1000 reveal — what did 1000 years of this actually create?",
+      "autoGenerated": true
+    },
+    {
+      "id": 41,
+      "title": "I Gave Villagers a Space For 1000 Years",
+      "creatureName": "Civilization",
+      "creatureIcon": "⚡",
+      "category": "auto-generated",
+      "hook": "I dropped [X] into a Minecraft world and let the villagers deal with it for 1000 years.",
+      "sourceTitle": "James Webb Looked Too Deep Into Space… What It Found Is Shocking",
+      "sourceChannel": "Late Science",
+      "sourceUrl": "https://www.youtube.com/watch?v=NtjDbmqn-Tg&pp=ygUdVGhpcyBzcGFjZSBjaGFuZ2VkIGV2ZXJ5dGhpbmc%3D",
+      "sourceViews": 770000,
+      "storyArc": [
+        "Drop the element / event",
+        "Generation 1 — chaos",
+        "Generation 5 — adaptation",
+        "Generation 50 — civilization emerges",
+        "Year 1000 — the final state"
+      ],
+      "challenges": [
+        "Villagers nearly wiped out in gen 1",
+        "A faction emerges that fights back",
+        "The element mutates / escalates"
+      ],
+      "climax": "Year 1000 reveal — what did 1000 years of this actually create?",
+      "autoGenerated": true
+    },
+    {
+      "id": 42,
+      "title": "I Gave Villagers This Is How You Survive Every Life In Da For 1000 Years",
+      "creatureName": "Civilization",
+      "creatureIcon": "⚡",
+      "category": "auto-generated",
+      "hook": "I dropped [X] into a Minecraft world and let the villagers deal with it for 1000 years.",
+      "sourceTitle": "THIS Is How You Survive EVERY Life In DayZ ✅",
+      "sourceChannel": "AGONY",
+      "sourceUrl": "https://www.youtube.com/shorts/cmXYqIOHxbM",
+      "sourceViews": 746000,
+      "storyArc": [
+        "Drop the element / event",
+        "Generation 1 — chaos",
+        "Generation 5 — adaptation",
+        "Generation 50 — civilization emerges",
+        "Year 1000 — the final state"
+      ],
+      "challenges": [
+        "Villagers nearly wiped out in gen 1",
+        "A faction emerges that fights back",
+        "The element mutates / escalates"
+      ],
+      "climax": "Year 1000 reveal — what did 1000 years of this actually create?",
+      "autoGenerated": true
+    },
+    {
+      "id": 43,
+      "title": "I Gave Villagers Top 13 Young Ultra-Contemporary Artists  For 1000 Years",
+      "creatureName": "Civilization",
+      "creatureIcon": "⚡",
+      "category": "auto-generated",
+      "hook": "I dropped [X] into a Minecraft world and let the villagers deal with it for 1000 years.",
+      "sourceTitle": "TOP 13 YOUNG ULTRA-CONTEMPORARY ARTISTS YOU NEED TO KNOW",
+      "sourceChannel": "ARTPATICO",
+      "sourceUrl": "https://www.youtube.com/watch?v=4ciHbV64qLk&pp=ygUcRsOpbGl4IExvdWlzIExldWxsaWVyIHJhbmtlZA%3D%3D",
+      "sourceViews": 297000,
+      "storyArc": [
+        "Drop the element / event",
+        "Generation 1 — chaos",
+        "Generation 5 — adaptation",
+        "Generation 50 — civilization emerges",
+        "Year 1000 — the final state"
+      ],
+      "challenges": [
+        "Villagers nearly wiped out in gen 1",
+        "A faction emerges that fights back",
+        "The element mutates / escalates"
+      ],
+      "climax": "Year 1000 reveal — what did 1000 years of this actually create?",
+      "autoGenerated": true
+    },
+    {
+      "id": 44,
+      "title": "I Gave Villagers Art World Power List: 20 Living Painters For 1000 Years",
+      "creatureName": "Civilization",
+      "creatureIcon": "⚡",
+      "category": "auto-generated",
+      "hook": "I dropped [X] into a Minecraft world and let the villagers deal with it for 1000 years.",
+      "sourceTitle": "Art World Power List: 20 Living Painters You Must Know",
+      "sourceChannel": "Contemporary Art Issue",
+      "sourceUrl": "https://www.youtube.com/watch?v=k4wHQAWeBmw&pp=ygUcRsOpbGl4IExvdWlzIExldWxsaWVyIHJhbmtlZA%3D%3D",
+      "sourceViews": 267000,
+      "storyArc": [
+        "Drop the element / event",
+        "Generation 1 — chaos",
+        "Generation 5 — adaptation",
+        "Generation 50 — civilization emerges",
+        "Year 1000 — the final state"
+      ],
+      "challenges": [
+        "Villagers nearly wiped out in gen 1",
+        "A faction emerges that fights back",
+        "The element mutates / escalates"
+      ],
+      "climax": "Year 1000 reveal — what did 1000 years of this actually create?",
+      "autoGenerated": true
+    },
+    {
+      "id": 45,
+      "title": "I Gave Villagers Top 10 Young Ultra-Contemporary Painters For 1000 Years",
+      "creatureName": "Civilization",
+      "creatureIcon": "⚡",
+      "category": "auto-generated",
+      "hook": "I dropped [X] into a Minecraft world and let the villagers deal with it for 1000 years.",
+      "sourceTitle": "Top 10 Young Ultra-Contemporary Painters You Need To Know",
+      "sourceChannel": "Contemporary Art Issue",
+      "sourceUrl": "https://www.youtube.com/watch?v=DpkSQp9ltEc&pp=ygUcRsOpbGl4IExvdWlzIExldWxsaWVyIHJhbmtlZA%3D%3D",
+      "sourceViews": 114000,
+      "storyArc": [
+        "Drop the element / event",
+        "Generation 1 — chaos",
+        "Generation 5 — adaptation",
+        "Generation 50 — civilization emerges",
+        "Year 1000 — the final state"
+      ],
+      "challenges": [
+        "Villagers nearly wiped out in gen 1",
+        "A faction emerges that fights back",
+        "The element mutates / escalates"
+      ],
+      "climax": "Year 1000 reveal — what did 1000 years of this actually create?",
+      "autoGenerated": true
     }
   ]
 }
