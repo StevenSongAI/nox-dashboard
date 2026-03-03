@@ -166,7 +166,6 @@
           <input type="checkbox" id="hire-me-filter" class="w-4 h-4">
           <label for="hire-me-filter" class="text-sm">Hire Me Only</label>
         </div>
-        <button onclick="applyFilters()">Apply Filters</button>
         <button onclick="resetFilters()" style="background: var(--border);">Reset</button>
       </div>
     </div>
@@ -389,6 +388,12 @@
       renderTalents();
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
+
+    // Live filter listeners — auto-apply on any change
+    document.getElementById('search-input').addEventListener('input', applyFilters);
+    document.getElementById('category-filter').addEventListener('change', applyFilters);
+    document.getElementById('badge-filter').addEventListener('change', applyFilters);
+    document.getElementById('hire-me-filter').addEventListener('change', applyFilters);
 
     // Init
     loadData();
