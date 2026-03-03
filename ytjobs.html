@@ -3,244 +3,248 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>YTJobs Talent Database</title>
+  <title>YTJobs Talent DB - Nox Dashboard</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { background: #0f0f1a; }
+    .card { background: #1a1a2e; border: 1px solid #252540; }
+    .pill { font-size: 0.7rem; padding: 2px 8px; border-radius: 9999px; }
+    .badge-red { background: #ef4444; color: #fff; }
+    .badge-blue { background: #3b82f6; color: #fff; }
+    .badge-gold { background: #f59e0b; color: #fff; }
+    .badge-gray { background: #6b7280; color: #fff; }
+    .cat-video-editor { background: #7c3aed22; color: #a78bfa; border: 1px solid #7c3aed44; }
+    .cat-thumbnail-designer { background: #ec489922; color: #f472b6; border: 1px solid #ec489944; }
+    .cat-creative-director { background: #6366f122; color: #818cf8; border: 1px solid #6366f144; }
+    .cat-channel-manager { background: #10b98122; color: #34d399; border: 1px solid #10b98144; }
+    .cat-scriptwriter { background: #eab30822; color: #fbbf24; border: 1px solid #eab30844; }
+    .cat-youtube-producer { background: #f9731622; color: #fb923c; border: 1px solid #f9731644; }
+    .cat-youtube-strategist { background: #14b8a622; color: #2dd4bf; border: 1px solid #14b8a644; }
+    .cat-voice-over { background: #06b6d422; color: #22d3ee; border: 1px solid #06b6d444; }
+    .cat-other { background: #6b728022; color: #9ca3af; border: 1px solid #6b728044; }
+    .avatar-fallback {
+      display: flex; align-items: center; justify-content: center;
+      width: 48px; height: 48px; border-radius: 50%;
+      background: #7c3aed33; color: #a78bfa; font-weight: 700; font-size: 1.1rem;
+    }
+  </style>
 </head>
-<body class="bg-[#0f0f1a] text-gray-200 min-h-screen">
-
+<body class="text-gray-200 min-h-screen">
   <!-- Header -->
   <header class="border-b border-[#252540] bg-[#1a1a2e]/80 backdrop-blur sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
       <div class="flex items-center justify-between flex-wrap gap-3">
-        <div>
-          <h1 class="text-xl font-bold text-white">YTJobs Talent Database</h1>
-          <p class="text-sm text-gray-400" id="header-stats">Loading...</p>
+        <div class="flex items-center gap-3">
+          <a href="index.html" class="text-gray-400 hover:text-white text-sm">&larr; Dashboard</a>
+          <span class="text-2xl">👥</span>
+          <h1 class="text-xl font-bold text-white">YTJobs Talent DB</h1>
         </div>
-        <div class="w-64">
-          <div class="flex items-center justify-between text-xs text-gray-400 mb-1">
-            <span id="progress-label">0 of 115K scraped</span>
-            <span id="progress-pct">0%</span>
-          </div>
-          <div class="w-full bg-[#252540] rounded-full h-2">
-            <div id="progress-bar" class="bg-purple-500 h-2 rounded-full transition-all" style="width:0%"></div>
-          </div>
+        <div class="flex items-center gap-4 text-sm">
+          <span id="total-count" class="text-gray-400"></span>
+          <span id="last-updated" class="text-gray-400"></span>
+        </div>
+      </div>
+      <!-- Progress bar -->
+      <div class="mt-3">
+        <div class="flex items-center justify-between text-xs text-gray-400 mb-1">
+          <span id="progress-label">Scraping progress</span>
+          <span id="progress-pct"></span>
+        </div>
+        <div class="w-full bg-[#252540] rounded-full h-2">
+          <div id="progress-bar" class="bg-[#7c3aed] h-2 rounded-full transition-all" style="width:0%"></div>
         </div>
       </div>
     </div>
   </header>
 
-  <!-- Filter Bar -->
-  <div class="border-b border-[#252540] bg-[#0f0f1a] sticky top-[73px] z-40">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
-      <div class="flex flex-wrap items-center gap-3">
-        <!-- Role filter -->
-        <select id="filter-role" class="bg-[#1a1a2e] border border-[#252540] text-gray-300 text-sm rounded px-3 py-2 focus:outline-none focus:border-purple-500">
-          <option value="all">All Roles</option>
-          <option value="Video Editor">Video Editor</option>
-          <option value="Creative Director">Creative Director</option>
-          <option value="Thumbnail Designer">Thumbnail Designer</option>
-          <option value="Channel Manager">Channel Manager</option>
-          <option value="YouTube Strategist">YouTube Strategist</option>
-          <option value="Scriptwriter">Scriptwriter</option>
-          <option value="YouTube Producer">YouTube Producer</option>
-          <option value="Voice Over">Voice Over</option>
-        </select>
-        <!-- Badge filter -->
-        <select id="filter-badge" class="bg-[#1a1a2e] border border-[#252540] text-gray-300 text-sm rounded px-3 py-2 focus:outline-none focus:border-purple-500">
-          <option value="all">All Badges</option>
-        </select>
-        <!-- Checkboxes -->
-        <label class="flex items-center gap-1.5 text-sm text-gray-300 cursor-pointer">
-          <input type="checkbox" id="filter-verified" class="accent-purple-500"> Verified
-        </label>
-        <label class="flex items-center gap-1.5 text-sm text-gray-300 cursor-pointer">
-          <input type="checkbox" id="filter-hireme" class="accent-purple-500"> Hire Me
-        </label>
-        <label class="flex items-center gap-1.5 text-sm text-gray-300 cursor-pointer">
-          <input type="checkbox" id="filter-video" class="accent-purple-500"> Has Video
-        </label>
-        <!-- Search -->
-        <input type="text" id="filter-search" placeholder="Search by name..." class="bg-[#1a1a2e] border border-[#252540] text-gray-300 text-sm rounded px-3 py-2 focus:outline-none focus:border-purple-500 w-48">
-        <!-- Result count -->
-        <span id="result-count" class="text-sm text-gray-500 ml-auto">0 results</span>
-      </div>
-      <p class="text-xs text-gray-600 mt-1">Country filter unavailable — not returned by API</p>
-    </div>
-  </div>
-
-  <!-- Card Grid -->
   <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-    <div id="card-grid" class="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
-      <div class="text-gray-500 col-span-full text-center py-12">Loading talent data...</div>
+    <!-- Category stats -->
+    <div id="cat-stats" class="flex flex-wrap gap-2 mb-6"></div>
+
+    <!-- Filter bar -->
+    <div class="card rounded-lg p-4 mb-6 flex flex-wrap items-center gap-3">
+      <select id="filter-category" class="bg-[#0f0f1a] border border-[#252540] text-gray-300 text-sm rounded px-3 py-2 focus:outline-none focus:border-[#7c3aed]">
+        <option value="all">All Categories</option>
+      </select>
+      <select id="filter-badge" class="bg-[#0f0f1a] border border-[#252540] text-gray-300 text-sm rounded px-3 py-2 focus:outline-none focus:border-[#7c3aed]">
+        <option value="all">All Badges</option>
+        <option value="redDiamond">Red Diamond</option>
+        <option value="blueDiamond">Blue Diamond</option>
+        <option value="goldDiamond">Gold Diamond</option>
+      </select>
+      <label class="flex items-center gap-2 text-sm text-gray-300 cursor-pointer">
+        <input type="checkbox" id="filter-hire" class="accent-[#7c3aed]">
+        Hire Me Only
+      </label>
+      <input type="text" id="filter-search" placeholder="Search name..." class="bg-[#0f0f1a] border border-[#252540] text-gray-300 text-sm rounded px-3 py-2 focus:outline-none focus:border-[#7c3aed] flex-1 min-w-[180px]">
+      <span id="filtered-count" class="text-xs text-gray-500 ml-auto"></span>
     </div>
+
+    <!-- Grid -->
+    <div id="talent-grid" class="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"></div>
 
     <!-- Pagination -->
-    <div id="pagination" class="flex items-center justify-center gap-4 mt-8 hidden">
-      <button id="btn-prev" class="px-4 py-2 bg-[#252540] hover:bg-[#353560] text-gray-300 rounded text-sm transition-colors disabled:opacity-40 disabled:cursor-not-allowed">Prev</button>
-      <span id="page-info" class="text-sm text-gray-400">Page 1</span>
-      <button id="btn-next" class="px-4 py-2 bg-[#252540] hover:bg-[#353560] text-gray-300 rounded text-sm transition-colors disabled:opacity-40 disabled:cursor-not-allowed">Next</button>
+    <div class="flex items-center justify-center gap-4 mt-8">
+      <button id="prev-page" class="px-4 py-2 bg-[#252540] hover:bg-[#353560] text-gray-300 rounded text-sm transition-colors disabled:opacity-40 disabled:cursor-not-allowed">Prev</button>
+      <span id="page-info" class="text-sm text-gray-400"></span>
+      <button id="next-page" class="px-4 py-2 bg-[#252540] hover:bg-[#353560] text-gray-300 rounded text-sm transition-colors disabled:opacity-40 disabled:cursor-not-allowed">Next</button>
     </div>
   </main>
 
-<script>
-const PER_PAGE = 50;
-let allTalents = [];
-let filtered = [];
-let currentPage = 1;
+  <script>
+  (function() {
+    const PER_PAGE = 50;
+    let allTalents = [];
+    let filtered = [];
+    let currentPage = 1;
 
-const ROLE_COLORS = {
-  'Video Editor': 'bg-blue-500/20 text-blue-400',
-  'Creative Director': 'bg-purple-500/20 text-purple-400',
-  'Thumbnail Designer': 'bg-pink-500/20 text-pink-400',
-  'Channel Manager': 'bg-green-500/20 text-green-400',
-  'YouTube Strategist': 'bg-yellow-500/20 text-yellow-400',
-  'Scriptwriter': 'bg-orange-500/20 text-orange-400',
-  'YouTube Producer': 'bg-red-500/20 text-red-400',
-  'Voice Over': 'bg-teal-500/20 text-teal-400',
-};
+    const BADGE_EMOJI = {
+      redDiamond: '\u{1F534}',
+      blueDiamond: '\u{1F535}',
+      goldDiamond: '\u{1F7E1}',
+    };
 
-const BADGE_COLORS = {
-  'redDiamond': 'bg-red-600/30 text-red-400 border-red-500/40',
-  'blueDiamond': 'bg-blue-600/30 text-blue-400 border-blue-500/40',
-  'gold': 'bg-yellow-600/30 text-yellow-400 border-yellow-500/40',
-  'silver': 'bg-gray-400/30 text-gray-300 border-gray-400/40',
-};
+    const CAT_CLASS = {
+      'Video Editor': 'cat-video-editor',
+      'Thumbnail Designer': 'cat-thumbnail-designer',
+      'Creative Director': 'cat-creative-director',
+      'Channel Manager': 'cat-channel-manager',
+      'Scriptwriter': 'cat-scriptwriter',
+      'YouTube Producer': 'cat-youtube-producer',
+      'YouTube Strategist': 'cat-youtube-strategist',
+      'Voice Over': 'cat-voice-over',
+    };
 
-const BADGE_LABELS = {
-  'redDiamond': 'Red Diamond',
-  'blueDiamond': 'Blue Diamond',
-  'gold': 'Gold',
-  'silver': 'Silver',
-};
+    function catClass(cat) { return CAT_CLASS[cat] || 'cat-other'; }
 
-function getInitials(name) {
-  return name.split(' ').map(w => w[0]).join('').toUpperCase().slice(0, 2);
-}
+    function badgeClass(b) {
+      if (b === 'redDiamond') return 'badge-red';
+      if (b === 'blueDiamond') return 'badge-blue';
+      if (b === 'goldDiamond') return 'badge-gold';
+      return 'badge-gray';
+    }
 
-function renderCard(t) {
-  const roleClass = ROLE_COLORS[t.category] || 'bg-gray-500/20 text-gray-400';
-  const badgeClass = BADGE_COLORS[t.badge] || '';
-  const badgeLabel = BADGE_LABELS[t.badge] || t.badge;
+    function initials(name) {
+      return name.split(' ').map(w => w[0]).join('').slice(0,2).toUpperCase();
+    }
 
-  let avatarHtml;
-  if (t.avatar) {
-    avatarHtml = `<img src="${t.avatar}" alt="" class="w-12 h-12 rounded-full object-cover" onerror="this.outerHTML='<div class=\\'w-12 h-12 rounded-full bg-purple-500/30 flex items-center justify-center text-purple-300 font-bold text-sm\\'>${getInitials(t.name)}</div>'">`;
-  } else {
-    avatarHtml = `<div class="w-12 h-12 rounded-full bg-purple-500/30 flex items-center justify-center text-purple-300 font-bold text-sm">${getInitials(t.name)}</div>`;
-  }
+    function renderCard(t) {
+      const avatarHtml = t.avatar
+        ? `<img src="${t.avatar}" alt="" class="w-12 h-12 rounded-full object-cover" onerror="this.outerHTML='<div class=\\'avatar-fallback\\'>${initials(t.name)}</div>'">`
+        : `<div class="avatar-fallback">${initials(t.name)}</div>`;
 
-  let badges = '';
-  if (t.badge && badgeClass) {
-    badges += `<span class="text-xs px-1.5 py-0.5 rounded border ${badgeClass}">${badgeLabel}</span>`;
-  }
-  if (t.isVerified) {
-    badges += `<span class="text-xs text-green-400" title="Verified">✓</span>`;
-  }
-  if (t.hireMe) {
-    badges += `<span class="text-xs px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-400">Hire Me</span>`;
-  }
+      const verifiedHtml = t.isVerified ? '<span title="Verified">&#x2705;</span>' : '';
+      const badgeHtml = t.bestBadge ? `<span class="pill ${badgeClass(t.bestBadge)}" title="${t.bestBadge}">${BADGE_EMOJI[t.bestBadge] || '\u{25C6}'} ${t.bestBadge}</span>` : '';
+      const catHtml = `<span class="pill ${catClass(t.category)}">${t.category}</span>`;
 
-  return `
-    <div class="bg-[#1a1a2e] border border-[#252540] rounded-lg p-4 hover:border-purple-500/40 transition-colors">
-      <div class="flex items-start gap-3 mb-3">
-        ${avatarHtml}
-        <div class="min-w-0 flex-1">
-          <a href="${t.url}" target="_blank" class="text-white font-medium text-sm hover:text-purple-400 transition-colors block truncate">${t.name}</a>
-          <span class="text-xs px-2 py-0.5 rounded-full ${roleClass} inline-block mt-1">${t.category}</span>
+      return `<div class="card rounded-lg p-4 flex flex-col gap-3 hover:border-[#7c3aed55] transition-colors">
+        <div class="flex items-center gap-3">
+          ${avatarHtml}
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-1.5">
+              <span class="font-semibold text-white truncate">${t.name}</span>
+              ${verifiedHtml}
+            </div>
+            <div class="flex flex-wrap gap-1.5 mt-1">${catHtml}${badgeHtml}</div>
+          </div>
         </div>
-      </div>
-      <div class="flex flex-wrap gap-1.5 items-center">${badges}</div>
-    </div>`;
-}
+        <div class="flex items-center justify-between mt-auto">
+          ${t.hasEnabledHireMe ? '<span class="text-xs text-green-400">Open to hire</span>' : '<span class="text-xs text-gray-600">-</span>'}
+          <a href="${t.url}" target="_blank" rel="noopener" class="text-xs text-[#7c3aed] hover:text-[#a78bfa] transition-colors">View Profile &rarr;</a>
+        </div>
+      </div>`;
+    }
 
-function render() {
-  const grid = document.getElementById('card-grid');
-  const start = (currentPage - 1) * PER_PAGE;
-  const page = filtered.slice(start, start + PER_PAGE);
+    function applyFilters() {
+      const cat = document.getElementById('filter-category').value;
+      const badge = document.getElementById('filter-badge').value;
+      const hire = document.getElementById('filter-hire').checked;
+      const search = document.getElementById('filter-search').value.toLowerCase().trim();
 
-  if (page.length === 0) {
-    grid.innerHTML = '<div class="text-gray-500 col-span-full text-center py-12">No talents match your filters.</div>';
-  } else {
-    grid.innerHTML = page.map(renderCard).join('');
-  }
+      filtered = allTalents.filter(t => {
+        if (cat !== 'all' && t.category !== cat) return false;
+        if (badge !== 'all' && t.bestBadge !== badge) return false;
+        if (hire && !t.hasEnabledHireMe) return false;
+        if (search && !t.name.toLowerCase().includes(search)) return false;
+        return true;
+      });
 
-  // Pagination
-  const totalPages = Math.ceil(filtered.length / PER_PAGE);
-  const pag = document.getElementById('pagination');
-  pag.classList.toggle('hidden', totalPages <= 1);
-  document.getElementById('page-info').textContent = `Page ${currentPage} of ${totalPages}`;
-  document.getElementById('btn-prev').disabled = currentPage <= 1;
-  document.getElementById('btn-next').disabled = currentPage >= totalPages;
+      currentPage = 1;
+      render();
+    }
 
-  // Count
-  document.getElementById('result-count').textContent = `${filtered.length.toLocaleString()} results`;
-}
+    function render() {
+      const totalPages = Math.max(1, Math.ceil(filtered.length / PER_PAGE));
+      if (currentPage > totalPages) currentPage = totalPages;
+      const start = (currentPage - 1) * PER_PAGE;
+      const page = filtered.slice(start, start + PER_PAGE);
 
-function applyFilters() {
-  const role = document.getElementById('filter-role').value;
-  const badge = document.getElementById('filter-badge').value;
-  const verified = document.getElementById('filter-verified').checked;
-  const hireMe = document.getElementById('filter-hireme').checked;
-  const hasVideo = document.getElementById('filter-video').checked;
-  const search = document.getElementById('filter-search').value.toLowerCase().trim();
+      document.getElementById('talent-grid').innerHTML = page.length
+        ? page.map(renderCard).join('')
+        : '<div class="col-span-full text-center text-gray-500 py-12">No talents match your filters</div>';
 
-  filtered = allTalents.filter(t => {
-    if (role !== 'all' && t.category !== role) return false;
-    if (badge !== 'all' && t.badge !== badge) return false;
-    if (verified && !t.isVerified) return false;
-    if (hireMe && !t.hireMe) return false;
-    if (hasVideo && !t.hasVideo) return false;
-    if (search && !t.name.toLowerCase().includes(search)) return false;
-    return true;
-  });
+      document.getElementById('page-info').textContent = `Page ${currentPage} of ${totalPages}`;
+      document.getElementById('prev-page').disabled = currentPage <= 1;
+      document.getElementById('next-page').disabled = currentPage >= totalPages;
+      document.getElementById('filtered-count').textContent = `${filtered.length} results`;
+    }
 
-  currentPage = 1;
-  render();
-}
+    function renderCatStats(talents) {
+      const counts = {};
+      talents.forEach(t => { counts[t.category] = (counts[t.category] || 0) + 1; });
+      const sorted = Object.entries(counts).sort((a, b) => b[1] - a[1]);
+      document.getElementById('cat-stats').innerHTML = sorted.map(([cat, n]) =>
+        `<span class="pill ${catClass(cat)}">${cat}: ${n.toLocaleString()}</span>`
+      ).join('');
+    }
 
-async function init() {
-  try {
-    const resp = await fetch('data/ytjobs.json');
-    const data = await resp.json();
+    function populateCategoryDropdown(talents) {
+      const cats = [...new Set(talents.map(t => t.category))].sort();
+      const sel = document.getElementById('filter-category');
+      cats.forEach(c => {
+        const opt = document.createElement('option');
+        opt.value = c; opt.textContent = c;
+        sel.appendChild(opt);
+      });
+    }
 
-    allTalents = data.talents || [];
-    filtered = [...allTalents];
+    async function init() {
+      try {
+        const resp = await fetch('data/ytjobs.json');
+        if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+        const data = await resp.json();
 
-    // Header stats
-    const m = data.meta || {};
-    document.getElementById('header-stats').textContent = `${m.totalTalents?.toLocaleString() || 0} profiles · Updated ${m.updatedAt ? new Date(m.updatedAt).toLocaleDateString() : 'N/A'}`;
-    document.getElementById('progress-label').textContent = `${m.totalTalents?.toLocaleString() || 0} of 115K scraped`;
-    document.getElementById('progress-pct').textContent = `${m.percentDone || 0}%`;
-    document.getElementById('progress-bar').style.width = `${m.percentDone || 0}%`;
+        const meta = data.meta || {};
+        allTalents = data.talents || [];
 
-    // Populate badge filter from data
-    const badgeSet = new Set();
-    allTalents.forEach(t => { if (t.badge) badgeSet.add(t.badge); });
-    const badgeSelect = document.getElementById('filter-badge');
-    [...badgeSet].sort().forEach(b => {
-      const opt = document.createElement('option');
-      opt.value = b;
-      opt.textContent = BADGE_LABELS[b] || b;
-      badgeSelect.appendChild(opt);
-    });
+        // Header info
+        document.getElementById('total-count').textContent = `${meta.totalTalents?.toLocaleString() || allTalents.length} talents`;
+        document.getElementById('last-updated').textContent = meta.updatedAt ? `Updated: ${new Date(meta.updatedAt).toLocaleString()}` : '';
+        document.getElementById('progress-label').textContent = `${meta.pagesScraped || 0} / ${meta.totalPages || 7668} pages scraped`;
+        const pct = meta.percentDone || 0;
+        document.getElementById('progress-pct').textContent = `${pct}%`;
+        document.getElementById('progress-bar').style.width = `${pct}%`;
 
-    render();
-  } catch (e) {
-    document.getElementById('card-grid').innerHTML = `<div class="text-red-400 col-span-full text-center py-12">Failed to load data: ${e.message}</div>`;
-  }
-}
+        renderCatStats(allTalents);
+        populateCategoryDropdown(allTalents);
 
-// Event listeners
-document.getElementById('filter-role').addEventListener('change', applyFilters);
-document.getElementById('filter-badge').addEventListener('change', applyFilters);
-document.getElementById('filter-verified').addEventListener('change', applyFilters);
-document.getElementById('filter-hireme').addEventListener('change', applyFilters);
-document.getElementById('filter-video').addEventListener('change', applyFilters);
-document.getElementById('filter-search').addEventListener('input', applyFilters);
-document.getElementById('btn-prev').addEventListener('click', () => { currentPage--; render(); window.scrollTo(0, 0); });
-document.getElementById('btn-next').addEventListener('click', () => { currentPage++; render(); window.scrollTo(0, 0); });
+        filtered = [...allTalents];
+        render();
+      } catch (e) {
+        document.getElementById('talent-grid').innerHTML = `<div class="col-span-full text-center text-red-400 py-12">Failed to load data: ${e.message}</div>`;
+      }
+    }
 
-init();
-</script>
+    // Event listeners
+    document.getElementById('filter-category').addEventListener('change', applyFilters);
+    document.getElementById('filter-badge').addEventListener('change', applyFilters);
+    document.getElementById('filter-hire').addEventListener('change', applyFilters);
+    document.getElementById('filter-search').addEventListener('input', applyFilters);
+    document.getElementById('prev-page').addEventListener('click', () => { currentPage--; render(); window.scrollTo(0,0); });
+    document.getElementById('next-page').addEventListener('click', () => { currentPage++; render(); window.scrollTo(0,0); });
+
+    init();
+  })();
+  </script>
 </body>
 </html>
