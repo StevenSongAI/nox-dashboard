@@ -1,5 +1,5 @@
 // Nox Dashboard v3 - Main App
-const BACKEND_URL = 'https://nox-api-production-7e32.up.railway.app';
+const BACKEND_URL = 'https://nox-dashboard-api-production.up.railway.app';
 const API_KEY = 'nox-dashboard-key-0fcbff59f4af064c0e7dee53f91a953c';
 
 const App = {
