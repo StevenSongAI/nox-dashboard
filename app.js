@@ -1,4 +1,7 @@
 // Nox Dashboard v3 - Main App
+const BACKEND_URL = 'https://nox-api-production-7e32.up.railway.app';
+const API_KEY = 'nox-dashboard-key-0fcbff59f4af064c0e7dee53f91a953c';
+
 const App = {
   currentTab: 'bottlenecks',
   data: {},
@@ -71,19 +74,70 @@ const App = {
 
   async loadAllData() {
     await Promise.all([
-      this.fetchData('bottlenecks'),
-      this.fetchData('youtube'),
-      this.fetchData('competitors'),
-      this.fetchData('projects'),
-      this.fetchData('ideas'),
-      this.fetchData('meta'),
-      this.fetchData('expenses', 'data/expenses.json'),
-      this.fetchData('devprojects', 'data/dev-projects.json')
+      this.fetchAPI('bottlenecks', 'bottleneck'),
+      this.fetchAPI('projects', 'project'),
+      this.fetchAPI('ideas', 'idea'),
+      this.fetchAPI('devprojects', 'dev_project'),
+      this.fetchJSON('youtube'),
+      this.fetchJSON('competitors'),
+      this.fetchJSON('meta'),
+      this.fetchJSON('expenses', 'data/expenses.json'),
     ]);
     this.renderAll();
   },
 
-  async fetchData(type, path) {
+  async fetchAPI(dataKey, category) {
+    try {
+      const res = await fetch(BACKEND_URL + '/api/entries?category=' + category + '&limit=200', {
+        headers: { 'Authorization': 'Bearer ' + API_KEY }
+      });
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      const json = await res.json();
+      this.data[dataKey] = this.transformAPIData(dataKey, json.entries);
+    } catch (err) {
+      console.error('API fetch failed for ' + dataKey + ', falling back to JSON:', err);
+      await this.fetchJSON(dataKey, dataKey === 'devprojects' ? 'data/dev-projects.json' : undefined);
+    }
+  },
+
+  transformAPIData(dataKey, entries) {
+    if (dataKey === 'bottlenecks') {
+      return { bottlenecks: entries.map(e => ({
+        id: e.source_id?.replace('bottleneck-', '') || e.id,
+        title: e.title, description: e.description, status: e.status,
+        priority: e.data?.priority, research: e.data?.research || [],
+        createdAt: e.data?.createdAt, action: e.data?.action, clickable: e.data?.clickable
+      })) };
+    }
+    if (dataKey === 'projects') {
+      return { projects: entries.map(e => ({
+        id: e.source_id?.replace('project-', '') || e.id,
+        name: e.title, description: e.description, status: e.status,
+        currentVersion: e.data?.currentVersion, versions: e.data?.versions || [],
+        repo: e.data?.repo, jarPath: e.data?.jarPath,
+        briefsPath: e.data?.briefsPath, dataPath: e.data?.dataPath
+      })) };
+    }
+    if (dataKey === 'ideas') {
+      return { ideas: entries.map(e => ({
+        id: e.source_id?.replace('idea-', '') || e.id,
+        title: e.title, description: e.description, status: e.status,
+        category: e.data?.ideaCategory || e.type, tags: e.data?.tags || [],
+        priority: e.data?.priority, dateAdded: e.data?.dateAdded, notes: e.data?.notes
+      })) };
+    }
+    if (dataKey === 'devprojects') {
+      return { projects: entries.map(e => ({
+        id: e.source_id?.replace('devproj-', '') || e.id,
+        title: e.title, description: e.description, status: e.status,
+        channel: e.channel, progress: e.progress,
+        nextAction: e.data?.nextAction || ''
+      })) };
+    }
+    return entries;
+  },
+
+  async fetchJSON(type, path) {
     try {
       const url = (path || 'data/' + type + '.json') + '?v=4';
       const res = await fetch(url);
