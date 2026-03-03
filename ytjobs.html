@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YTJobs Talent Database</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#0f0f1a] text-gray-200 min-h-screen">
+
+  <!-- Header -->
+  <header class="border-b border-[#252540] bg-[#1a1a2e]/80 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+      <div class="flex items-center justify-between flex-wrap gap-3">
+        <div>
+          <h1 class="text-xl font-bold text-white">YTJobs Talent Database</h1>
+          <p class="text-sm text-gray-400" id="header-stats">Loading...</p>
+        </div>
+        <div class="w-64">
+          <div class="flex items-center justify-between text-xs text-gray-400 mb-1">
+            <span id="progress-label">0 of 115K scraped</span>
+            <span id="progress-pct">0%</span>
+          </div>
+          <div class="w-full bg-[#252540] rounded-full h-2">
+            <div id="progress-bar" class="bg-purple-500 h-2 rounded-full transition-all" style="width:0%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Filter Bar -->
+  <div class="border-b border-[#252540] bg-[#0f0f1a] sticky top-[73px] z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+      <div class="flex flex-wrap items-center gap-3">
+        <!-- Role filter -->
+        <select id="filter-role" class="bg-[#1a1a2e] border border-[#252540] text-gray-300 text-sm rounded px-3 py-2 focus:outline-none focus:border-purple-500">
+          <option value="all">All Roles</option>
+          <option value="Video Editor">Video Editor</option>
+          <option value="Creative Director">Creative Director</option>
+          <option value="Thumbnail Designer">Thumbnail Designer</option>
+          <option value="Channel Manager">Channel Manager</option>
+          <option value="YouTube Strategist">YouTube Strategist</option>
+          <option value="Scriptwriter">Scriptwriter</option>
+          <option value="YouTube Producer">YouTube Producer</option>
+          <option value="Voice Over">Voice Over</option>
+        </select>
+        <!-- Badge filter -->
+        <select id="filter-badge" class="bg-[#1a1a2e] border border-[#252540] text-gray-300 text-sm rounded px-3 py-2 focus:outline-none focus:border-purple-500">
+          <option value="all">All Badges</option>
+        </select>
+        <!-- Checkboxes -->
+        <label class="flex items-center gap-1.5 text-sm text-gray-300 cursor-pointer">
+          <input type="checkbox" id="filter-verified" class="accent-purple-500"> Verified
+        </label>
+        <label class="flex items-center gap-1.5 text-sm text-gray-300 cursor-pointer">
+          <input type="checkbox" id="filter-hireme" class="accent-purple-500"> Hire Me
+        </label>
+        <label class="flex items-center gap-1.5 text-sm text-gray-300 cursor-pointer">
+          <input type="checkbox" id="filter-video" class="accent-purple-500"> Has Video
+        </label>
+        <!-- Search -->
+        <input type="text" id="filter-search" placeholder="Search by name..." class="bg-[#1a1a2e] border border-[#252540] text-gray-300 text-sm rounded px-3 py-2 focus:outline-none focus:border-purple-500 w-48">
+        <!-- Result count -->
+        <span id="result-count" class="text-sm text-gray-500 ml-auto">0 results</span>
+      </div>
+      <p class="text-xs text-gray-600 mt-1">Country filter unavailable — not returned by API</p>
+    </div>
+  </div>
+
+  <!-- Card Grid -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+    <div id="card-grid" class="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+      <div class="text-gray-500 col-span-full text-center py-12">Loading talent data...</div>
+    </div>
+
+    <!-- Pagination -->
+    <div id="pagination" class="flex items-center justify-center gap-4 mt-8 hidden">
+      <button id="btn-prev" class="px-4 py-2 bg-[#252540] hover:bg-[#353560] text-gray-300 rounded text-sm transition-colors disabled:opacity-40 disabled:cursor-not-allowed">Prev</button>
+      <span id="page-info" class="text-sm text-gray-400">Page 1</span>
+      <button id="btn-next" class="px-4 py-2 bg-[#252540] hover:bg-[#353560] text-gray-300 rounded text-sm transition-colors disabled:opacity-40 disabled:cursor-not-allowed">Next</button>
+    </div>
+  </main>
+
+<script>
+const PER_PAGE = 50;
+let allTalents = [];
+let filtered = [];
+let currentPage = 1;
+
+const ROLE_COLORS = {
+  'Video Editor': 'bg-blue-500/20 text-blue-400',
+  'Creative Director': 'bg-purple-500/20 text-purple-400',
+  'Thumbnail Designer': 'bg-pink-500/20 text-pink-400',
+  'Channel Manager': 'bg-green-500/20 text-green-400',
+  'YouTube Strategist': 'bg-yellow-500/20 text-yellow-400',
+  'Scriptwriter': 'bg-orange-500/20 text-orange-400',
+  'YouTube Producer': 'bg-red-500/20 text-red-400',
+  'Voice Over': 'bg-teal-500/20 text-teal-400',
+};
+
+const BADGE_COLORS = {
+  'redDiamond': 'bg-red-600/30 text-red-400 border-red-500/40',
+  'blueDiamond': 'bg-blue-600/30 text-blue-400 border-blue-500/40',
+  'gold': 'bg-yellow-600/30 text-yellow-400 border-yellow-500/40',
+  'silver': 'bg-gray-400/30 text-gray-300 border-gray-400/40',
+};
+
+const BADGE_LABELS = {
+  'redDiamond': 'Red Diamond',
+  'blueDiamond': 'Blue Diamond',
+  'gold': 'Gold',
+  'silver': 'Silver',
+};
+
+function getInitials(name) {
+  return name.split(' ').map(w => w[0]).join('').toUpperCase().slice(0, 2);
+}
+
+function renderCard(t) {
+  const roleClass = ROLE_COLORS[t.category] || 'bg-gray-500/20 text-gray-400';
+  const badgeClass = BADGE_COLORS[t.badge] || '';
+  const badgeLabel = BADGE_LABELS[t.badge] || t.badge;
+
+  let avatarHtml;
+  if (t.avatar) {
+    avatarHtml = `<img src="${t.avatar}" alt="" class="w-12 h-12 rounded-full object-cover" onerror="this.outerHTML='<div class=\\'w-12 h-12 rounded-full bg-purple-500/30 flex items-center justify-center text-purple-300 font-bold text-sm\\'>${getInitials(t.name)}</div>'">`;
+  } else {
+    avatarHtml = `<div class="w-12 h-12 rounded-full bg-purple-500/30 flex items-center justify-center text-purple-300 font-bold text-sm">${getInitials(t.name)}</div>`;
+  }
+
+  let badges = '';
+  if (t.badge && badgeClass) {
+    badges += `<span class="text-xs px-1.5 py-0.5 rounded border ${badgeClass}">${badgeLabel}</span>`;
+  }
+  if (t.isVerified) {
+    badges += `<span class="text-xs text-green-400" title="Verified">✓</span>`;
+  }
+  if (t.hireMe) {
+    badges += `<span class="text-xs px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-400">Hire Me</span>`;
+  }
+
+  return `
+    <div class="bg-[#1a1a2e] border border-[#252540] rounded-lg p-4 hover:border-purple-500/40 transition-colors">
+      <div class="flex items-start gap-3 mb-3">
+        ${avatarHtml}
+        <div class="min-w-0 flex-1">
+          <a href="${t.url}" target="_blank" class="text-white font-medium text-sm hover:text-purple-400 transition-colors block truncate">${t.name}</a>
+          <span class="text-xs px-2 py-0.5 rounded-full ${roleClass} inline-block mt-1">${t.category}</span>
+        </div>
+      </div>
+      <div class="flex flex-wrap gap-1.5 items-center">${badges}</div>
+    </div>`;
+}
+
+function render() {
+  const grid = document.getElementById('card-grid');
+  const start = (currentPage - 1) * PER_PAGE;
+  const page = filtered.slice(start, start + PER_PAGE);
+
+  if (page.length === 0) {
+    grid.innerHTML = '<div class="text-gray-500 col-span-full text-center py-12">No talents match your filters.</div>';
+  } else {
+    grid.innerHTML = page.map(renderCard).join('');
+  }
+
+  // Pagination
+  const totalPages = Math.ceil(filtered.length / PER_PAGE);
+  const pag = document.getElementById('pagination');
+  pag.classList.toggle('hidden', totalPages <= 1);
+  document.getElementById('page-info').textContent = `Page ${currentPage} of ${totalPages}`;
+  document.getElementById('btn-prev').disabled = currentPage <= 1;
+  document.getElementById('btn-next').disabled = currentPage >= totalPages;
+
+  // Count
+  document.getElementById('result-count').textContent = `${filtered.length.toLocaleString()} results`;
+}
+
+function applyFilters() {
+  const role = document.getElementById('filter-role').value;
+  const badge = document.getElementById('filter-badge').value;
+  const verified = document.getElementById('filter-verified').checked;
+  const hireMe = document.getElementById('filter-hireme').checked;
+  const hasVideo = document.getElementById('filter-video').checked;
+  const search = document.getElementById('filter-search').value.toLowerCase().trim();
+
+  filtered = allTalents.filter(t => {
+    if (role !== 'all' && t.category !== role) return false;
+    if (badge !== 'all' && t.badge !== badge) return false;
+    if (verified && !t.isVerified) return false;
+    if (hireMe && !t.hireMe) return false;
+    if (hasVideo && !t.hasVideo) return false;
+    if (search && !t.name.toLowerCase().includes(search)) return false;
+    return true;
+  });
+
+  currentPage = 1;
+  render();
+}
+
+async function init() {
+  try {
+    const resp = await fetch('data/ytjobs.json');
+    const data = await resp.json();
+
+    allTalents = data.talents || [];
+    filtered = [...allTalents];
+
+    // Header stats
+    const m = data.meta || {};
+    document.getElementById('header-stats').textContent = `${m.totalTalents?.toLocaleString() || 0} profiles · Updated ${m.updatedAt ? new Date(m.updatedAt).toLocaleDateString() : 'N/A'}`;
+    document.getElementById('progress-label').textContent = `${m.totalTalents?.toLocaleString() || 0} of 115K scraped`;
+    document.getElementById('progress-pct').textContent = `${m.percentDone || 0}%`;
+    document.getElementById('progress-bar').style.width = `${m.percentDone || 0}%`;
+
+    // Populate badge filter from data
+    const badgeSet = new Set();
+    allTalents.forEach(t => { if (t.badge) badgeSet.add(t.badge); });
+    const badgeSelect = document.getElementById('filter-badge');
+    [...badgeSet].sort().forEach(b => {
+      const opt = document.createElement('option');
+      opt.value = b;
+      opt.textContent = BADGE_LABELS[b] || b;
+      badgeSelect.appendChild(opt);
+    });
+
+    render();
+  } catch (e) {
+    document.getElementById('card-grid').innerHTML = `<div class="text-red-400 col-span-full text-center py-12">Failed to load data: ${e.message}</div>`;
+  }
+}
+
+// Event listeners
+document.getElementById('filter-role').addEventListener('change', applyFilters);
+document.getElementById('filter-badge').addEventListener('change', applyFilters);
+document.getElementById('filter-verified').addEventListener('change', applyFilters);
+document.getElementById('filter-hireme').addEventListener('change', applyFilters);
+document.getElementById('filter-video').addEventListener('change', applyFilters);
+document.getElementById('filter-search').addEventListener('input', applyFilters);
+document.getElementById('btn-prev').addEventListener('click', () => { currentPage--; render(); window.scrollTo(0, 0); });
+document.getElementById('btn-next').addEventListener('click', () => { currentPage++; render(); window.scrollTo(0, 0); });
+
+init();
+</script>
+</body>
+</html>
