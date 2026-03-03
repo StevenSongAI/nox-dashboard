@@ -6,245 +6,392 @@
   <title>YTJobs Talent DB - Nox Dashboard</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    body { background: #0f0f1a; }
-    .card { background: #1a1a2e; border: 1px solid #252540; }
-    .pill { font-size: 0.7rem; padding: 2px 8px; border-radius: 9999px; }
-    .badge-red { background: #ef4444; color: #fff; }
-    .badge-blue { background: #3b82f6; color: #fff; }
-    .badge-gold { background: #f59e0b; color: #fff; }
-    .badge-gray { background: #6b7280; color: #fff; }
-    .cat-video-editor { background: #7c3aed22; color: #a78bfa; border: 1px solid #7c3aed44; }
-    .cat-thumbnail-designer { background: #ec489922; color: #f472b6; border: 1px solid #ec489944; }
-    .cat-creative-director { background: #6366f122; color: #818cf8; border: 1px solid #6366f144; }
-    .cat-channel-manager { background: #10b98122; color: #34d399; border: 1px solid #10b98144; }
-    .cat-scriptwriter { background: #eab30822; color: #fbbf24; border: 1px solid #eab30844; }
-    .cat-youtube-producer { background: #f9731622; color: #fb923c; border: 1px solid #f9731644; }
-    .cat-youtube-strategist { background: #14b8a622; color: #2dd4bf; border: 1px solid #14b8a644; }
-    .cat-voice-over { background: #06b6d422; color: #22d3ee; border: 1px solid #06b6d444; }
-    .cat-other { background: #6b728022; color: #9ca3af; border: 1px solid #6b728044; }
-    .avatar-fallback {
-      display: flex; align-items: center; justify-content: center;
-      width: 48px; height: 48px; border-radius: 50%;
-      background: #7c3aed33; color: #a78bfa; font-weight: 700; font-size: 1.1rem;
+    :root {
+      --bg-primary: #0f0f1a;
+      --bg-card: #1a1a2e;
+      --border: #252540;
+      --accent: #7c3aed;
+      --accent-light: #8b5cf6;
     }
+    body {
+      background: var(--bg-primary);
+      color: #e2e8f0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+    }
+    .badge {
+      font-size: 11px;
+      padding: 2px 8px;
+      border-radius: 999px;
+      font-weight: 500;
+    }
+    .badge-red { background: rgba(239, 68, 68, 0.2); color: #ef4444; }
+    .badge-blue { background: rgba(59, 130, 246, 0.2); color: #3b82f6; }
+    .badge-gold { background: rgba(245, 158, 11, 0.2); color: #f59e0b; }
+    .badge-gray { background: rgba(107, 114, 128, 0.2); color: #9ca3af; }
+    .category-video { background: rgba(124, 58, 237, 0.2); color: #a78bfa; }
+    .category-thumb { background: rgba(236, 72, 153, 0.2); color: #f472b6; }
+    .category-creative { background: rgba(99, 102, 241, 0.2); color: #818cf8; }
+    .category-channel { background: rgba(34, 197, 94, 0.2); color: #4ade80; }
+    .category-script { background: rgba(234, 179, 8, 0.2); color: #facc15; }
+    .category-producer { background: rgba(249, 115, 22, 0.2); color: #fb923c; }
+    .category-strategist { background: rgba(20, 184, 166, 0.2); color: #2dd4bf; }
+    .category-voice { background: rgba(6, 182, 212, 0.2); color: #67e8f9; }
+    .category-other { background: rgba(107, 114, 128, 0.2); color: #9ca3af; }
+    .progress-bar {
+      height: 8px;
+      background: var(--border);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--accent), var(--accent-light));
+      transition: width 0.3s;
+    }
+    .talent-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+      transition: all 0.2s;
+    }
+    .avatar-placeholder {
+      background: linear-gradient(135deg, var(--accent), var(--accent-light));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      color: white;
+    }
+    input, select {
+      background: var(--bg-primary);
+      border: 1px solid var(--border);
+      color: #e2e8f0;
+      padding: 8px 12px;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+    input:focus, select:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
+    button {
+      background: var(--accent);
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 500;
+    }
+    button:hover {
+      background: var(--accent-light);
+    }
+    button:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+    .verified-icon { color: #3b82f6; }
+    .hire-me-badge { background: rgba(34, 197, 94, 0.2); color: #4ade80; font-size: 10px; padding: 2px 6px; border-radius: 4px; }
   </style>
 </head>
-<body class="text-gray-200 min-h-screen">
-  <!-- Header -->
-  <header class="border-b border-[#252540] bg-[#1a1a2e]/80 backdrop-blur sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-      <div class="flex items-center justify-between flex-wrap gap-3">
-        <div class="flex items-center gap-3">
-          <a href="index.html" class="text-gray-400 hover:text-white text-sm">&larr; Dashboard</a>
-          <span class="text-2xl">👥</span>
-          <h1 class="text-xl font-bold text-white">YTJobs Talent DB</h1>
-        </div>
-        <div class="flex items-center gap-4 text-sm">
-          <span id="total-count" class="text-gray-400"></span>
-          <span id="last-updated" class="text-gray-400"></span>
-        </div>
+<body class="min-h-screen">
+  <header class="border-b p-4" style="border-color: var(--border); background: var(--bg-card);">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <span class="text-2xl">⚡</span>
+        <h1 class="text-xl font-bold">Nox Dashboard</h1>
+        <span class="text-sm opacity-60">YTJobs Talent DB</span>
       </div>
-      <!-- Progress bar -->
-      <div class="mt-3">
-        <div class="flex items-center justify-between text-xs text-gray-400 mb-1">
-          <span id="progress-label">Scraping progress</span>
-          <span id="progress-pct"></span>
-        </div>
-        <div class="w-full bg-[#252540] rounded-full h-2">
-          <div id="progress-bar" class="bg-[#7c3aed] h-2 rounded-full transition-all" style="width:0%"></div>
-        </div>
-      </div>
+      <a href="index.html" class="text-sm opacity-60 hover:opacity-100">← Back to Dashboard</a>
     </div>
   </header>
 
-  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-    <!-- Category stats -->
-    <div id="cat-stats" class="flex flex-wrap gap-2 mb-6"></div>
+  <main class="max-w-7xl mx-auto p-4">
+    <!-- Stats Header -->
+    <div class="card p-6 mb-6">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+        <div>
+          <h2 class="text-2xl font-bold mb-2">YouTube Talent Database</h2>
+          <p class="text-sm opacity-60" id="last-updated">Loading...</p>
+        </div>
+        <div class="text-right">
+          <div class="text-3xl font-bold" id="total-count">0</div>
+          <div class="text-sm opacity-60">talents discovered</div>
+        </div>
+      </div>
+      
+      <div class="mt-4">
+        <div class="flex justify-between text-sm mb-2">
+          <span>Scraping Progress</span>
+          <span id="progress-text">0 / 7668 pages</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" id="progress-bar" style="width: 0%"></div>
+        </div>
+      </div>
 
-    <!-- Filter bar -->
-    <div class="card rounded-lg p-4 mb-6 flex flex-wrap items-center gap-3">
-      <select id="filter-category" class="bg-[#0f0f1a] border border-[#252540] text-gray-300 text-sm rounded px-3 py-2 focus:outline-none focus:border-[#7c3aed]">
-        <option value="all">All Categories</option>
-      </select>
-      <select id="filter-badge" class="bg-[#0f0f1a] border border-[#252540] text-gray-300 text-sm rounded px-3 py-2 focus:outline-none focus:border-[#7c3aed]">
-        <option value="all">All Badges</option>
-        <option value="redDiamond">Red Diamond</option>
-        <option value="blueDiamond">Blue Diamond</option>
-        <option value="goldDiamond">Gold Diamond</option>
-      </select>
-      <label class="flex items-center gap-2 text-sm text-gray-300 cursor-pointer">
-        <input type="checkbox" id="filter-hire" class="accent-[#7c3aed]">
-        Hire Me Only
-      </label>
-      <input type="text" id="filter-search" placeholder="Search name..." class="bg-[#0f0f1a] border border-[#252540] text-gray-300 text-sm rounded px-3 py-2 focus:outline-none focus:border-[#7c3aed] flex-1 min-w-[180px]">
-      <span id="filtered-count" class="text-xs text-gray-500 ml-auto"></span>
+      <div class="flex flex-wrap gap-2 mt-4" id="category-stats">
+        <!-- Category pills injected here -->
+      </div>
     </div>
 
-    <!-- Grid -->
-    <div id="talent-grid" class="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"></div>
+    <!-- Filters -->
+    <div class="card p-4 mb-6">
+      <div class="flex flex-wrap gap-4 items-end">
+        <div class="flex-1 min-w-[200px]">
+          <label class="text-xs opacity-60 block mb-1">Search Name</label>
+          <input type="text" id="search-input" placeholder="Search talents..." class="w-full">
+        </div>
+        <div>
+          <label class="text-xs opacity-60 block mb-1">Category</label>
+          <select id="category-filter">
+            <option value="">All Categories</option>
+          </select>
+        </div>
+        <div>
+          <label class="text-xs opacity-60 block mb-1">Badge</label>
+          <select id="badge-filter">
+            <option value="">All Badges</option>
+            <option value="redDiamond">Red Diamond</option>
+            <option value="blueDiamond">Blue Diamond</option>
+            <option value="goldDiamond">Gold Diamond</option>
+            <option value="verified">Verified</option>
+          </select>
+        </div>
+        <div class="flex items-center gap-2 pb-2">
+          <input type="checkbox" id="hire-me-filter" class="w-4 h-4">
+          <label for="hire-me-filter" class="text-sm">Hire Me Only</label>
+        </div>
+        <button onclick="applyFilters()">Apply Filters</button>
+        <button onclick="resetFilters()" style="background: var(--border);">Reset</button>
+      </div>
+    </div>
+
+    <!-- Results Count -->
+    <div class="flex justify-between items-center mb-4">
+      <span class="text-sm opacity-60" id="results-count">Showing 0 talents</span>
+    </div>
+
+    <!-- Talent Grid -->
+    <div id="talent-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+      <!-- Talent cards injected here -->
+    </div>
 
     <!-- Pagination -->
-    <div class="flex items-center justify-center gap-4 mt-8">
-      <button id="prev-page" class="px-4 py-2 bg-[#252540] hover:bg-[#353560] text-gray-300 rounded text-sm transition-colors disabled:opacity-40 disabled:cursor-not-allowed">Prev</button>
-      <span id="page-info" class="text-sm text-gray-400"></span>
-      <button id="next-page" class="px-4 py-2 bg-[#252540] hover:bg-[#353560] text-gray-300 rounded text-sm transition-colors disabled:opacity-40 disabled:cursor-not-allowed">Next</button>
+    <div class="flex justify-center gap-2 mt-8 mb-8" id="pagination">
+      <!-- Page buttons injected here -->
     </div>
   </main>
 
   <script>
-  (function() {
-    const PER_PAGE = 50;
     let allTalents = [];
-    let filtered = [];
+    let filteredTalents = [];
     let currentPage = 1;
+    const perPage = 50;
+    let meta = {};
 
-    const BADGE_EMOJI = {
-      redDiamond: '\u{1F534}',
-      blueDiamond: '\u{1F535}',
-      goldDiamond: '\u{1F7E1}',
+    const categoryColors = {
+      'Video Editor': 'category-video',
+      'Thumbnail Designer': 'category-thumb',
+      'Creative Director': 'category-creative',
+      'Channel Manager': 'category-channel',
+      'Scriptwriter': 'category-script',
+      'YouTube Producer': 'category-producer',
+      'YouTube Strategist': 'category-strategist',
+      'Voice Over': 'category-voice'
     };
 
-    const CAT_CLASS = {
-      'Video Editor': 'cat-video-editor',
-      'Thumbnail Designer': 'cat-thumbnail-designer',
-      'Creative Director': 'cat-creative-director',
-      'Channel Manager': 'cat-channel-manager',
-      'Scriptwriter': 'cat-scriptwriter',
-      'YouTube Producer': 'cat-youtube-producer',
-      'YouTube Strategist': 'cat-youtube-strategist',
-      'Voice Over': 'cat-voice-over',
+    const badgeIcons = {
+      'redDiamond': '💎',
+      'blueDiamond': '💎',
+      'goldDiamond': '💎',
+      'verified': '✓'
     };
 
-    function catClass(cat) { return CAT_CLASS[cat] || 'cat-other'; }
+    const badgeClasses = {
+      'redDiamond': 'badge-red',
+      'blueDiamond': 'badge-blue',
+      'goldDiamond': 'badge-gold'
+    };
 
-    function badgeClass(b) {
-      if (b === 'redDiamond') return 'badge-red';
-      if (b === 'blueDiamond') return 'badge-blue';
-      if (b === 'goldDiamond') return 'badge-gold';
-      return 'badge-gray';
+    async function loadData() {
+      try {
+        const res = await fetch('data/ytjobs.json?t=' + Date.now());
+        const data = await res.json();
+        allTalents = data.talents || [];
+        meta = data.meta || {};
+        filteredTalents = [...allTalents];
+        
+        document.getElementById('total-count').textContent = allTalents.length.toLocaleString();
+        document.getElementById('last-updated').textContent = 'Last updated: ' + new Date(meta.updatedAt).toLocaleString();
+        document.getElementById('progress-text').textContent = `${meta.pagesScraped} / ${meta.totalPages} pages (${meta.percentDone}%)`;
+        document.getElementById('progress-bar').style.width = meta.percentDone + '%';
+        
+        populateCategoryFilter();
+        renderCategoryStats();
+        renderTalents();
+      } catch (e) {
+        console.error('Failed to load data:', e);
+        document.getElementById('talent-grid').innerHTML = '<p class="text-center opacity-60 py-12">Failed to load talent data</p>';
+      }
     }
 
-    function initials(name) {
-      return name.split(' ').map(w => w[0]).join('').slice(0,2).toUpperCase();
+    function populateCategoryFilter() {
+      const categories = [...new Set(allTalents.map(t => t.category).filter(Boolean))].sort();
+      const select = document.getElementById('category-filter');
+      categories.forEach(cat => {
+        const opt = document.createElement('option');
+        opt.value = cat;
+        opt.textContent = cat;
+        select.appendChild(opt);
+      });
     }
 
-    function renderCard(t) {
-      const avatarHtml = t.avatar
-        ? `<img src="${t.avatar}" alt="" class="w-12 h-12 rounded-full object-cover" onerror="this.outerHTML='<div class=\\'avatar-fallback\\'>${initials(t.name)}</div>'">`
-        : `<div class="avatar-fallback">${initials(t.name)}</div>`;
-
-      const verifiedHtml = t.isVerified ? '<span title="Verified">&#x2705;</span>' : '';
-      const badgeHtml = t.bestBadge ? `<span class="pill ${badgeClass(t.bestBadge)}" title="${t.bestBadge}">${BADGE_EMOJI[t.bestBadge] || '\u{25C6}'} ${t.bestBadge}</span>` : '';
-      const catHtml = `<span class="pill ${catClass(t.category)}">${t.category}</span>`;
-
-      return `<div class="card rounded-lg p-4 flex flex-col gap-3 hover:border-[#7c3aed55] transition-colors">
-        <div class="flex items-center gap-3">
-          ${avatarHtml}
-          <div class="flex-1 min-w-0">
-            <div class="flex items-center gap-1.5">
-              <span class="font-semibold text-white truncate">${t.name}</span>
-              ${verifiedHtml}
-            </div>
-            <div class="flex flex-wrap gap-1.5 mt-1">${catHtml}${badgeHtml}</div>
-          </div>
-        </div>
-        <div class="flex items-center justify-between mt-auto">
-          ${t.hasEnabledHireMe ? '<span class="text-xs text-green-400">Open to hire</span>' : '<span class="text-xs text-gray-600">-</span>'}
-          <a href="${t.url}" target="_blank" rel="noopener" class="text-xs text-[#7c3aed] hover:text-[#a78bfa] transition-colors">View Profile &rarr;</a>
-        </div>
-      </div>`;
+    function renderCategoryStats() {
+      const counts = {};
+      allTalents.forEach(t => {
+        counts[t.category] = (counts[t.category] || 0) + 1;
+      });
+      
+      const container = document.getElementById('category-stats');
+      container.innerHTML = Object.entries(counts)
+        .sort((a, b) => b[1] - a[1])
+        .map(([cat, count]) => {
+          const colorClass = categoryColors[cat] || 'category-other';
+          return `<span class="badge ${colorClass}">${cat}: ${count}</span>`;
+        }).join('');
     }
 
     function applyFilters() {
-      const cat = document.getElementById('filter-category').value;
-      const badge = document.getElementById('filter-badge').value;
-      const hire = document.getElementById('filter-hire').checked;
-      const search = document.getElementById('filter-search').value.toLowerCase().trim();
+      const search = document.getElementById('search-input').value.toLowerCase();
+      const category = document.getElementById('category-filter').value;
+      const badge = document.getElementById('badge-filter').value;
+      const hireMeOnly = document.getElementById('hire-me-filter').checked;
 
-      filtered = allTalents.filter(t => {
-        if (cat !== 'all' && t.category !== cat) return false;
-        if (badge !== 'all' && t.bestBadge !== badge) return false;
-        if (hire && !t.hasEnabledHireMe) return false;
+      filteredTalents = allTalents.filter(t => {
         if (search && !t.name.toLowerCase().includes(search)) return false;
+        if (category && t.category !== category) return false;
+        if (badge === 'verified' && !t.isVerified) return false;
+        if (badge && badge !== 'verified' && t.bestBadge !== badge) return false;
+        if (hireMeOnly && !t.hasEnabledHireMe) return false;
         return true;
       });
 
       currentPage = 1;
-      render();
+      renderTalents();
     }
 
-    function render() {
-      const totalPages = Math.max(1, Math.ceil(filtered.length / PER_PAGE));
-      if (currentPage > totalPages) currentPage = totalPages;
-      const start = (currentPage - 1) * PER_PAGE;
-      const page = filtered.slice(start, start + PER_PAGE);
-
-      document.getElementById('talent-grid').innerHTML = page.length
-        ? page.map(renderCard).join('')
-        : '<div class="col-span-full text-center text-gray-500 py-12">No talents match your filters</div>';
-
-      document.getElementById('page-info').textContent = `Page ${currentPage} of ${totalPages}`;
-      document.getElementById('prev-page').disabled = currentPage <= 1;
-      document.getElementById('next-page').disabled = currentPage >= totalPages;
-      document.getElementById('filtered-count').textContent = `${filtered.length} results`;
+    function resetFilters() {
+      document.getElementById('search-input').value = '';
+      document.getElementById('category-filter').value = '';
+      document.getElementById('badge-filter').value = '';
+      document.getElementById('hire-me-filter').checked = false;
+      filteredTalents = [...allTalents];
+      currentPage = 1;
+      renderTalents();
     }
 
-    function renderCatStats(talents) {
-      const counts = {};
-      talents.forEach(t => { counts[t.category] = (counts[t.category] || 0) + 1; });
-      const sorted = Object.entries(counts).sort((a, b) => b[1] - a[1]);
-      document.getElementById('cat-stats').innerHTML = sorted.map(([cat, n]) =>
-        `<span class="pill ${catClass(cat)}">${cat}: ${n.toLocaleString()}</span>`
-      ).join('');
+    function getInitials(name) {
+      return name.split(' ').map(n => n[0]).join('').toUpperCase().slice(0, 2);
     }
 
-    function populateCategoryDropdown(talents) {
-      const cats = [...new Set(talents.map(t => t.category))].sort();
-      const sel = document.getElementById('filter-category');
-      cats.forEach(c => {
-        const opt = document.createElement('option');
-        opt.value = c; opt.textContent = c;
-        sel.appendChild(opt);
-      });
-    }
+    function renderTalents() {
+      const start = (currentPage - 1) * perPage;
+      const pageTalents = filteredTalents.slice(start, start + perPage);
+      
+      document.getElementById('results-count').textContent = `Showing ${start + 1}-${Math.min(start + perPage, filteredTalents.length)} of ${filteredTalents.length.toLocaleString()} talents`;
 
-    async function init() {
-      try {
-        const resp = await fetch('data/ytjobs.json');
-        if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
-        const data = await resp.json();
-
-        const meta = data.meta || {};
-        allTalents = data.talents || [];
-
-        // Header info
-        document.getElementById('total-count').textContent = `${meta.totalTalents?.toLocaleString() || allTalents.length} talents`;
-        document.getElementById('last-updated').textContent = meta.updatedAt ? `Updated: ${new Date(meta.updatedAt).toLocaleString()}` : '';
-        document.getElementById('progress-label').textContent = `${meta.pagesScraped || 0} / ${meta.totalPages || 7668} pages scraped`;
-        const pct = meta.percentDone || 0;
-        document.getElementById('progress-pct').textContent = `${pct}%`;
-        document.getElementById('progress-bar').style.width = `${pct}%`;
-
-        renderCatStats(allTalents);
-        populateCategoryDropdown(allTalents);
-
-        filtered = [...allTalents];
-        render();
-      } catch (e) {
-        document.getElementById('talent-grid').innerHTML = `<div class="col-span-full text-center text-red-400 py-12">Failed to load data: ${e.message}</div>`;
+      const grid = document.getElementById('talent-grid');
+      if (pageTalents.length === 0) {
+        grid.innerHTML = '<p class="text-center opacity-60 py-12 col-span-full">No talents match your filters</p>';
+        renderPagination();
+        return;
       }
+
+      grid.innerHTML = pageTalents.map(t => {
+        const catClass = categoryColors[t.category] || 'category-other';
+        const badgeClass = badgeClasses[t.bestBadge] || '';
+        const badgeIcon = badgeIcons[t.bestBadge] || '';
+        const verified = t.isVerified ? '<span class="verified-icon" title="Verified">✓</span>' : '';
+        const hireMe = t.hasEnabledHireMe ? '<span class="hire-me-badge">HIRE ME</span>' : '';
+        
+        return `
+          <div class="card talent-card p-4 flex flex-col">
+            <div class="flex items-start gap-3 mb-3">
+              ${t.avatar ? 
+                `<img src="${t.avatar}" class="w-12 h-12 rounded-full object-cover" alt="">` :
+                `<div class="avatar-placeholder w-12 h-12 rounded-full text-lg">${getInitials(t.name)}</div>`
+              }
+              <div class="flex-1 min-w-0">
+                <div class="flex items-center gap-1">
+                  <h3 class="font-semibold truncate">${t.name}</h3>
+                  ${verified}
+                </div>
+                <span class="badge ${catClass}">${t.category || 'Other'}</span>
+              </div>
+            </div>
+            <div class="flex items-center gap-2 mb-3">
+              ${t.bestBadge ? `<span class="badge ${badgeClass}">${badgeIcon} ${t.bestBadge.replace('Diamond', '')}</span>` : ''}
+              ${hireMe}
+              ${t.hasVerifiedVideo ? '<span class="text-xs opacity-60">🎥 Video</span>' : ''}
+            </div>
+            <a href="${t.url}" target="_blank" class="mt-auto text-center py-2 rounded text-sm font-medium" style="background: var(--border); color: var(--accent-light);">
+              View Profile →
+            </a>
+          </div>
+        `;
+      }).join('');
+
+      renderPagination();
     }
 
-    // Event listeners
-    document.getElementById('filter-category').addEventListener('change', applyFilters);
-    document.getElementById('filter-badge').addEventListener('change', applyFilters);
-    document.getElementById('filter-hire').addEventListener('change', applyFilters);
-    document.getElementById('filter-search').addEventListener('input', applyFilters);
-    document.getElementById('prev-page').addEventListener('click', () => { currentPage--; render(); window.scrollTo(0,0); });
-    document.getElementById('next-page').addEventListener('click', () => { currentPage++; render(); window.scrollTo(0,0); });
+    function renderPagination() {
+      const totalPages = Math.ceil(filteredTalents.length / perPage);
+      const container = document.getElementById('pagination');
+      
+      if (totalPages <= 1) {
+        container.innerHTML = '';
+        return;
+      }
 
-    init();
-  })();
+      let html = '';
+      
+      // Prev
+      html += `<button onclick="goToPage(${currentPage - 1})" ${currentPage === 1 ? 'disabled' : ''}>← Prev</button>`;
+      
+      // Page numbers
+      const startPage = Math.max(1, currentPage - 2);
+      const endPage = Math.min(totalPages, currentPage + 2);
+      
+      if (startPage > 1) html += `<button disabled style="background: transparent;">...</button>`;
+      
+      for (let i = startPage; i <= endPage; i++) {
+        const active = i === currentPage ? `style="background: var(--accent-light);"` : '';
+        html += `<button onclick="goToPage(${i})" ${active}>${i}</button>`;
+      }
+      
+      if (endPage < totalPages) html += `<button disabled style="background: transparent;">...</button>`;
+      
+      // Next
+      html += `<button onclick="goToPage(${currentPage + 1})" ${currentPage === totalPages ? 'disabled' : ''}>Next →</button>`;
+      
+      container.innerHTML = html;
+    }
+
+    function goToPage(page) {
+      const totalPages = Math.ceil(filteredTalents.length / perPage);
+      if (page < 1 || page > totalPages) return;
+      currentPage = page;
+      renderTalents();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Init
+    loadData();
   </script>
 </body>
 </html>
