@@ -139,6 +139,23 @@
       </div>
     </div>
 
+    <!-- Minecraft Talent Card -->
+    <div class="card p-6 mb-6" id="minecraft-card">
+      <div class="flex items-center justify-between mb-4">
+        <div class="flex items-center gap-2">
+          <span class="text-xl">🎮</span>
+          <h3 class="text-lg font-bold" style="color: #4ade80;">Minecraft Talent</h3>
+          <span class="badge" id="mc-count-badge" style="background: rgba(34,197,94,0.2); color: #4ade80;">0</span>
+        </div>
+      </div>
+      <div class="mb-3">
+        <input type="text" id="mc-search" placeholder="Filter minecraft talent..." class="w-full" style="font-size: 13px; padding: 6px 10px;">
+      </div>
+      <div id="mc-list" style="max-height: 400px; overflow-y: auto; display: flex; flex-direction: column; gap: 4px;">
+        <p class="text-sm opacity-40 py-4 text-center">Loading...</p>
+      </div>
+    </div>
+
     <!-- Filters -->
     <div class="card p-4 mb-6">
       <div class="flex flex-wrap gap-4 items-end">
@@ -394,6 +411,39 @@
     document.getElementById('category-filter').addEventListener('change', applyFilters);
     document.getElementById('badge-filter').addEventListener('change', applyFilters);
     document.getElementById('hire-me-filter').addEventListener('change', applyFilters);
+
+    // Minecraft talent card
+    async function loadMinecraft() {
+      try {
+        const res = await fetch('data/ytjobs-minecraft.json?t=' + Date.now());
+        const data = await res.json();
+        const profiles = data.profiles || [];
+        document.getElementById('mc-count-badge').textContent = profiles.length;
+
+        function renderMcList(filter) {
+          const q = (filter || '').toLowerCase();
+          const filtered = q ? profiles.filter(p => p.name.toLowerCase().includes(q)) : profiles;
+          const list = document.getElementById('mc-list');
+          if (filtered.length === 0) {
+            list.innerHTML = '<p class="text-sm opacity-40 py-4 text-center">No matches</p>';
+            return;
+          }
+          list.innerHTML = filtered.map(p => {
+            const catClass = categoryColors[p.category] || 'category-other';
+            return `<a href="${p.url}" target="_blank" class="flex items-center justify-between px-3 py-2 rounded-lg" style="background: var(--bg-primary); text-decoration: none; color: inherit;" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='transparent'" >
+              <span class="font-medium text-sm truncate">${p.name}</span>
+              <span class="badge ${catClass} ml-2 shrink-0">${p.category || 'Other'}</span>
+            </a>`;
+          }).join('');
+        }
+
+        renderMcList('');
+        document.getElementById('mc-search').addEventListener('input', e => renderMcList(e.target.value));
+      } catch (e) {
+        document.getElementById('mc-list').innerHTML = '<p class="text-sm opacity-40 py-4 text-center">Failed to load minecraft data</p>';
+      }
+    }
+    loadMinecraft();
 
     // Init
     loadData();
