@@ -46,15 +46,40 @@ const STATUS_LABELS = {
   active: 'Active'
 };
 
+const BACKEND_URL = 'https://nox-dashboard-api-production.up.railway.app';
+const API_KEY = 'nox-dashboard-key-0fcbff59f4af064c0e7dee53f91a953c';
+
 async function init() {
   try {
-    const resp = await fetch('data/dev-projects.json?v=' + Date.now());
-    if (!resp.ok) throw new Error('HTTP ' + resp.status);
-    const data = await resp.json();
-    render(data.projects || []);
-  } catch (e) {
-    document.getElementById('project-grid').innerHTML =
-      '<div class="card col-span-2 text-center text-red-400 py-8">Failed to load projects: ' + e.message + '</div>';
+    // Try backend API first
+    const resp = await fetch(BACKEND_URL + '/api/entries?category=dev_project&limit=200', {
+      headers: { 'Authorization': 'Bearer ' + API_KEY }
+    });
+    if (!resp.ok) throw new Error('API HTTP ' + resp.status);
+    const json = await resp.json();
+    const projects = (json.entries || []).map(e => ({
+      id: e.source_id || e.id,
+      title: e.title,
+      description: e.description,
+      status: e.status,
+      channel: e.channel,
+      progress: e.progress || 0,
+      nextAction: e.data?.nextAction || '',
+      versions: e.data?.versions || [],
+      tags: e.data?.tags || []
+    }));
+    render(projects);
+  } catch (apiErr) {
+    console.warn('API failed, falling back to static JSON:', apiErr);
+    try {
+      const resp = await fetch('data/dev-projects.json?v=' + Date.now());
+      if (!resp.ok) throw new Error('HTTP ' + resp.status);
+      const data = await resp.json();
+      render(data.projects || []);
+    } catch (e) {
+      document.getElementById('project-grid').innerHTML =
+        '<div class="card col-span-2 text-center text-red-400 py-8">Failed to load projects: ' + e.message + '</div>';
+    }
   }
 }
 
