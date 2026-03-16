@@ -358,7 +358,63 @@ const App = {
       container.innerHTML = '<div class="col-span-full p-4 text-gray-500">No ideas yet.</div>';
       return;
     }
-    container.innerHTML = this.data.ideas.ideas.map(idea => '<div class="card"><div class="flex items-start justify-between mb-2"><h3 class="font-medium text-white">' + this.escapeHtml(idea.title) + '</h3><div class="flex gap-2">' + this.renderBadge(idea.priority, 'priority') + '<span class="badge bg-purple-500/20 text-purple-400">' + this.escapeHtml(idea.category) + '</span></div></div><p class="text-sm text-gray-400 mb-3">' + this.escapeHtml(idea.description) + '</p>' + (idea.tags?.length ? '<div class="flex flex-wrap gap-2 mb-3">' + idea.tags.map(tag => '<span class="text-xs bg-[#252540] text-gray-500 px-2 py-1 rounded">' + this.escapeHtml(tag) + '</span>').join('') + '</div>' : '') + '<div class="flex items-center justify-between text-xs text-gray-500"><span>Added: ' + this.formatDate(idea.dateAdded) + '</span><span class="capitalize">' + idea.status + '</span></div>' + (idea.notes ? '<p class="text-xs text-gray-500 mt-2 italic">' + this.escapeHtml(idea.notes) + '</p>' : '') + '</div>').join('');
+    container.innerHTML = this.data.ideas.ideas.map((idea, idx) => {
+      const desc = this.escapeHtml(idea.description || '');
+      const isLong = desc.length > 200;
+      const descId = 'idea-desc-' + idx;
+      const toggleId = 'idea-toggle-' + idx;
+      const dataJson = idea.data ? this.escapeHtml(JSON.stringify(idea.data, null, 2)) : '';
+      const dataId = 'idea-data-' + idx;
+      
+      let dataSection = '';
+      if (idea.data && typeof idea.data === 'object' && Object.keys(idea.data).length > 0) {
+        // Render data fields as readable key-value pairs
+        const dataEntries = Object.entries(idea.data)
+          .filter(([k]) => k !== 'source')
+          .map(([k, v]) => {
+            const label = k.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+            let val = '';
+            if (Array.isArray(v)) val = v.map(item => typeof item === 'string' ? this.escapeHtml(item) : JSON.stringify(item)).join(', ');
+            else if (typeof v === 'object') val = Object.entries(v).map(([sk, sv]) => '<strong>' + this.escapeHtml(sk) + ':</strong> ' + this.escapeHtml(String(sv))).join('<br>');
+            else val = this.escapeHtml(String(v));
+            return '<div class="mb-2"><span class="text-xs font-medium text-purple-400">' + label + ':</span><div class="text-xs text-gray-300 ml-2">' + val + '</div></div>';
+          }).join('');
+        
+        const source = idea.data.source ? '<div class="text-xs text-gray-600 mt-2">Source: ' + this.escapeHtml(idea.data.source) + '</div>' : '';
+        
+        dataSection = '<div id="' + dataId + '" class="hidden mt-3 pt-3 border-t border-[#252540]">' + dataEntries + source + '</div>';
+      }
+      
+      return '<div class="card cursor-pointer hover:border-purple-500/50 transition-colors" onclick="App.toggleIdeaCard(' + idx + ')">' +
+        '<div class="flex items-start justify-between mb-2">' +
+          '<h3 class="font-medium text-white">' + this.escapeHtml(idea.title) + '</h3>' +
+          '<div class="flex gap-2">' +
+            (idea.priority ? this.renderBadge(idea.priority, 'priority') : '') +
+            '<span class="badge bg-purple-500/20 text-purple-400">' + this.escapeHtml(idea.category || 'idea') + '</span>' +
+          '</div>' +
+        '</div>' +
+        '<p id="' + descId + '" class="text-sm text-gray-400 mb-3">' + desc + '</p>' +
+        (idea.tags?.length ? '<div class="flex flex-wrap gap-2 mb-3">' + idea.tags.map(tag => '<span class="text-xs bg-[#252540] text-gray-500 px-2 py-1 rounded">' + this.escapeHtml(tag) + '</span>').join('') + '</div>' : '') +
+        '<div class="flex items-center justify-between text-xs text-gray-500">' +
+          '<span>Added: ' + this.formatDate(idea.dateAdded) + '</span>' +
+          '<span class="capitalize">' + (idea.status || '') + '</span>' +
+        '</div>' +
+        (idea.notes ? '<p class="text-xs text-gray-500 mt-2 italic">' + this.escapeHtml(idea.notes) + '</p>' : '') +
+        dataSection +
+        (dataSection ? '<div class="mt-2 text-xs text-purple-500" id="' + toggleId + '">▼ Click to expand details</div>' : '') +
+      '</div>';
+    }).join('');
+  },
+
+  toggleIdeaCard(idx) {
+    const dataEl = document.getElementById('idea-data-' + idx);
+    const toggleEl = document.getElementById('idea-toggle-' + idx);
+    if (!dataEl) return;
+    const isHidden = dataEl.classList.contains('hidden');
+    dataEl.classList.toggle('hidden');
+    if (toggleEl) {
+      toggleEl.textContent = isHidden ? '▲ Click to collapse' : '▼ Click to expand details';
+    }
   }
 };
 
