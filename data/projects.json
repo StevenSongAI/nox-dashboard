@@ -1,112 +1,112 @@
 {
-  "projects": [
-    {
-      "id": "bbs-crowd-spawner",
-      "name": "BBS Crowd Spawner Mod",
-      "status": "active",
-      "currentVersion": "4.0",
-      "description": "Crowd NPC spawner for BBS (Minecraft cinematic mod). Group labels, presets, behavior system.",
-      "versions": [
+    "projects": [
         {
-          "version": "4.0",
-          "date": "2026-02-23",
-          "changes": "Group labels, save/load presets, radius fix, rotation fix"
+            "id": "world-serpent",
+            "name": "World Serpent Video",
+            "status": "in_production",
+            "currentVersion": "R5",
+            "description": "100 Days Pet World Serpent — R5 generation running (155 shots × 2 = 310 images). Environment + character refs linked per shot.",
+            "versions": [
+                {"version": "R5", "date": "2026-03-16", "changes": "New CSV with proper environment refs, character refs, snake stage mapping. 155 unique shots."},
+                {"version": "R4", "date": "2026-03-15", "changes": "398 shots × 2 repeats. Most unusable due to inconsistent environments/characters."},
+                {"version": "R3", "date": "2026-03-12", "changes": "Initial generation round."}
+            ],
+            "channel": "StevenSongIRL"
         },
         {
-          "version": "3.8",
-          "date": "2026-02-21",
-          "changes": "Behavior UI, always-wander, look-at"
+            "id": "mutant-dinosaur",
+            "name": "Mutant Dinosaur Video",
+            "status": "complete",
+            "currentVersion": "Final",
+            "description": "100 Days Pet Mutant Dinosaur — All generation complete. ~707 final images. VO V1 written. Ready for editing.",
+            "versions": [
+                {"version": "Final", "date": "2026-03-14", "changes": "Generation complete. VO V1 written. Backed up to SSD."},
+                {"version": "R2", "date": "2026-03-06", "changes": "Full re-generation with Steven.png character refs."},
+                {"version": "R1", "date": "2026-03-01", "changes": "Initial 198 shots — no character refs, all unusable."}
+            ],
+            "channel": "StevenSongIRL"
         },
         {
-          "version": "3.4",
-          "date": "2026-02-20",
-          "changes": "Texture selection via quoted args"
-        }
-      ],
-      "jarPath": "~/Desktop/Nox Builds/BBS-Crowd-Spawner-Mod/v4.0-release/crowd-spawner-4.0.jar",
-      "repo": "local"
-    },
-    {
-      "id": "scraper-pipeline",
-      "name": "Scraper Pipeline",
-      "status": "active",
-      "currentVersion": "1.0",
-      "description": "YouTube outlier scraper, X.com intel scraper, competitor discovery. Feeds dashboard data.",
-      "versions": [
-        {
-          "version": "1.0",
-          "date": "2026-02-23",
-          "changes": "Fixed X scraper restart, updated cron payloads, added bestEffort delivery"
-        }
-      ],
-      "repo": "~/Desktop/Nox Builds/nox-scrapers/"
-    },
-    {
-      "id": "nox-dashboard",
-      "name": "Nox Dashboard",
-      "status": "active",
-      "currentVersion": "3.0",
-      "description": "Simplified 3-panel command center. Bottlenecks, YouTube Intel, Project Log.",
-      "versions": [
-        {
-          "version": "3.0",
-          "date": "2026-02-23",
-          "changes": "Complete rebuild \u2014 stripped 127 widgets, 13 tabs \u2192 3 focused panels"
+            "id": "2headed-dragon",
+            "name": "Two-Headed Dragon Video",
+            "status": "complete",
+            "currentVersion": "Final",
+            "description": "100 Days Pet Two-Headed Dragon — Image generation complete. Video editing phase.",
+            "versions": [
+                {"version": "Final", "date": "2026-03-01", "changes": "All generation complete."}
+            ],
+            "channel": "StevenSongIRL"
         },
         {
-          "version": "2.0",
-          "date": "2026-02-20",
-          "changes": "Original bloated version with 127 tools"
-        }
-      ],
-      "repo": "https://github.com/stevensongai/nox-dashboard"
-    },
-    {
-      "id": "100-days-creatures",
-      "name": "100 Days Creature Content Briefs",
-      "status": "active",
-      "currentVersion": "1.0",
-      "description": "30 content briefs adapting top Minecraft 100 Days outliers into Raising a Pet X format for @StevenSongIRL. Each brief includes source video, creature generation, and unique story arc.",
-      "versions": [
+            "id": "minecraft-civ-vo",
+            "name": "Minecraft Civilization VO",
+            "status": "complete",
+            "currentVersion": "v4",
+            "description": "Villagers Simulate Civilization — v4 expanded script (6,420 words). Full ElevenLabs VO generated.",
+            "versions": [
+                {"version": "v4", "date": "2026-03-15", "changes": "Expanded script, full ElevenLabs VO (38MB). 4 new skills created."},
+                {"version": "v1", "date": "2026-03-10", "changes": "Initial VO draft."}
+            ],
+            "channel": "ZMDE"
+        },
         {
-          "version": "1.0",
-          "date": "2026-02-27",
-          "changes": "Project initialized - research phase underway"
-        }
-      ],
-      "briefsPath": "./content-briefs.html",
-      "dataPath": "./data/content-briefs.json"
-    },
-    {
-      "id": "zmde-briefs",
-      "name": "ZMDE Content Briefs",
-      "status": "active",
-      "currentVersion": "1.0",
-      "description": "30 content briefs adapting top Minecraft outliers (5-10x) into ZMDE time-jump civilization format. Year 0 \u2192 50 \u2192 100 \u2192 500 \u2192 999 story structure.",
-      "versions": [
+            "id": "bbs-crowd-spawner",
+            "name": "BBS Crowd Spawner Mod",
+            "status": "paused",
+            "currentVersion": "4.11",
+            "description": "Crowd NPC spawner for BBS (Minecraft cinematic mod). Shelved pending ZMDE video production.",
+            "versions": [
+                {"version": "4.11", "date": "2026-03-14", "changes": "Current stable. v4.14 in progress."},
+                {"version": "4.0", "date": "2026-02-23", "changes": "Group labels, save/load presets, radius fix, rotation fix."}
+            ],
+            "channel": "ZMDE"
+        },
         {
-          "version": "1.0",
-          "date": "2026-02-27",
-          "changes": "Initial 30 briefs from high-outlier Minecraft videos"
-        }
-      ],
-      "briefsPath": "./zmde-briefs.html",
-      "dataPath": "./data/zmde-briefs.json"
-    },
-    {
-      "id": "dev-projects",
-      "name": "Projects in Development",
-      "status": "active",
-      "description": "Scripts, outlines, and concepts being developed \u2014 AI Takeover (ZMDE), Mutant Dinosaur (StevenSongIRL)",
-      "currentVersion": "1.0",
-      "versions": [
+            "id": "scraper-pipeline",
+            "name": "Scraper Pipeline",
+            "status": "active",
+            "currentVersion": "2.0",
+            "description": "YouTube + X + ViewStats scrapers. Simulation scrapers for ZMDE. Heartbeat-monitored.",
+            "versions": [
+                {"version": "2.0", "date": "2026-03-01", "changes": "Heartbeat monitoring only. Crons disabled Feb 28."},
+                {"version": "1.0", "date": "2026-02-23", "changes": "Initial scraper pipeline."}
+            ]
+        },
         {
-          "version": "1.0",
-          "date": "2026-02-28",
-          "changes": "Initial: AI Takeover outline + Mutant Dinosaur script v2"
+            "id": "nox-dashboard",
+            "name": "Nox Dashboard",
+            "status": "active",
+            "currentVersion": "3.1",
+            "description": "GitHub Pages dashboard with Railway PostgreSQL backend. YTJobs (52K+ profiles), Second Brain, YouTube Intel, Projects.",
+            "versions": [
+                {"version": "3.1", "date": "2026-03-16", "changes": "Projects tab updated. All video projects tracked."},
+                {"version": "3.0", "date": "2026-02-23", "changes": "Complete rebuild — 3 focused panels."}
+            ],
+            "repo": "https://github.com/stevensongai/nox-dashboard"
+        },
+        {
+            "id": "zmde-briefs",
+            "name": "ZMDE Content Briefs",
+            "status": "complete",
+            "currentVersion": "1.0",
+            "description": "30 content briefs adapting top Minecraft outliers into ZMDE civilization format.",
+            "versions": [
+                {"version": "1.0", "date": "2026-02-27", "changes": "Initial 30 briefs generated from outlier research."}
+            ],
+            "channel": "ZMDE",
+            "dataPath": "./data/zmde-briefs.json"
+        },
+        {
+            "id": "100-days-creatures",
+            "name": "100 Days Creature Content Briefs",
+            "status": "active",
+            "currentVersion": "1.0",
+            "description": "Content brief library for StevenSongIRL 100 Days creature videos.",
+            "versions": [
+                {"version": "1.0", "date": "2026-02-27", "changes": "Initial creature concepts and outlines."}
+            ],
+            "channel": "StevenSongIRL"
         }
-      ]
-    }
-  ],
-  "lastUpdated": "2026-02-23T18:00:00Z"
+    ],
+    "lastUpdated": "2026-03-16T20:30:00Z"
 }
