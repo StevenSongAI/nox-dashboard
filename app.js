@@ -103,7 +103,7 @@ const App = {
   transformAPIData(dataKey, entries) {
     if (dataKey === 'bottlenecks') {
       return { bottlenecks: entries.map(e => ({
-        id: e.source_id?.replace('bottleneck-', '') || e.id,
+        id: e.source_id?.replace(/^bottleneck[:\-]/, '') || e.id,
         title: e.title, description: e.description, status: e.status,
         priority: e.data?.priority, research: e.data?.research || [],
         createdAt: e.data?.createdAt, action: e.data?.action, clickable: e.data?.clickable
@@ -111,7 +111,7 @@ const App = {
     }
     if (dataKey === 'projects') {
       return { projects: entries.map(e => ({
-        id: e.source_id?.replace('project-', '') || e.id,
+        id: e.source_id?.replace(/^project[:\-]/, '') || e.id,
         name: e.title, description: e.description, status: e.status,
         currentVersion: e.data?.currentVersion, versions: e.data?.versions || [],
         repo: e.data?.repo, jarPath: e.data?.jarPath,
@@ -124,7 +124,7 @@ const App = {
         const extraData = {};
         if (e.data) Object.keys(e.data).forEach(k => { if (!extracted[k]) extraData[k] = e.data[k]; });
         return {
-          id: e.source_id?.replace('idea-', '') || e.id,
+          id: e.source_id?.replace(/^idea[:\-]/, '') || e.id,
           title: e.title, description: e.description, status: e.status,
           category: e.data?.ideaCategory || e.type, tags: e.data?.tags || [],
           priority: e.data?.priority, dateAdded: e.data?.dateAdded, notes: e.data?.notes,
@@ -134,7 +134,7 @@ const App = {
     }
     if (dataKey === 'devprojects') {
       return { projects: entries.map(e => ({
-        id: e.source_id?.replace('devproj-', '') || e.id,
+        id: e.source_id?.replace(/^devproj[:\-]/, '') || e.id,
         title: e.title, description: e.description, status: e.status,
         channel: e.channel, progress: e.progress,
         nextAction: e.data?.nextAction || ''
