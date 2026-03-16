@@ -119,12 +119,18 @@ const App = {
       })) };
     }
     if (dataKey === 'ideas') {
-      return { ideas: entries.map(e => ({
-        id: e.source_id?.replace('idea-', '') || e.id,
-        title: e.title, description: e.description, status: e.status,
-        category: e.data?.ideaCategory || e.type, tags: e.data?.tags || [],
-        priority: e.data?.priority, dateAdded: e.data?.dateAdded, notes: e.data?.notes
-      })) };
+      return { ideas: entries.map(e => {
+        const extracted = { ideaCategory: 1, tags: 1, priority: 1, dateAdded: 1, notes: 1 };
+        const extraData = {};
+        if (e.data) Object.keys(e.data).forEach(k => { if (!extracted[k]) extraData[k] = e.data[k]; });
+        return {
+          id: e.source_id?.replace('idea-', '') || e.id,
+          title: e.title, description: e.description, status: e.status,
+          category: e.data?.ideaCategory || e.type, tags: e.data?.tags || [],
+          priority: e.data?.priority, dateAdded: e.data?.dateAdded, notes: e.data?.notes,
+          data: Object.keys(extraData).length > 0 ? extraData : null
+        };
+      }) };
     }
     if (dataKey === 'devprojects') {
       return { projects: entries.map(e => ({
