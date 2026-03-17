@@ -4,22 +4,107 @@
     "2026-02": {
       "revenueCAD": 7962.47,
       "entries": [
-        {"date":"2026-02-01","description":"Minecraft Maps commission","usd":25.00,"cad":0,"category":"Production","notes":""},
-        {"date":"2026-02-01","description":"Minecraft Assets/Art","usd":150.00,"cad":0,"category":"Production","notes":""},
-        {"date":"2026-02-21","description":"Recording session","usd":300.00,"cad":0,"category":"Production","notes":""},
-        {"date":"2026-02-27","description":"Recording session","usd":300.00,"cad":0,"category":"Production","notes":""},
-        {"date":"2026-02-28","description":"Fiverr build + bonus + PayPal fee","usd":180.24,"cad":0,"category":"Production","notes":"Commission + $25 bonus + 3.49% fee"},
-        {"date":"2026-02-28","description":"Advertising","usd":0,"cad":1000.00,"category":"Marketing","notes":""},
-        {"date":"2026-02-28","description":"Team management flat fee","usd":100.00,"cad":0,"category":"Operations","notes":"Monthly partner fee"},
-        {"date":"2026-02-28","description":"Partner 1% profit bonus","usd":54.43,"cad":0,"category":"Operations","notes":"1% of Feb net profit"}
+        {
+          "date": "2026-02-01",
+          "description": "Minecraft Maps commission",
+          "usd": 25.0,
+          "cad": 0,
+          "category": "Production",
+          "notes": ""
+        },
+        {
+          "date": "2026-02-01",
+          "description": "Minecraft Assets/Art",
+          "usd": 150.0,
+          "cad": 0,
+          "category": "Production",
+          "notes": ""
+        },
+        {
+          "date": "2026-02-21",
+          "description": "Recording session",
+          "usd": 300.0,
+          "cad": 0,
+          "category": "Production",
+          "notes": ""
+        },
+        {
+          "date": "2026-02-27",
+          "description": "Recording session",
+          "usd": 300.0,
+          "cad": 0,
+          "category": "Production",
+          "notes": ""
+        },
+        {
+          "date": "2026-02-28",
+          "description": "Fiverr build + bonus + PayPal fee",
+          "usd": 180.24,
+          "cad": 0,
+          "category": "Production",
+          "notes": "Commission + $25 bonus + 3.49% fee"
+        },
+        {
+          "date": "2026-02-28",
+          "description": "Advertising",
+          "usd": 0,
+          "cad": 1000.0,
+          "category": "Marketing",
+          "notes": ""
+        },
+        {
+          "date": "2026-02-28",
+          "description": "Team management flat fee",
+          "usd": 100.0,
+          "cad": 0,
+          "category": "Operations",
+          "notes": "Monthly partner fee"
+        },
+        {
+          "date": "2026-02-28",
+          "description": "Partner 1% profit bonus",
+          "usd": 54.43,
+          "cad": 0,
+          "category": "Operations",
+          "notes": "1% of Feb net profit"
+        }
       ]
     },
     "2026-03": {
       "revenueCAD": null,
       "entries": [
-        {"date":"2026-03-01","description":"Revenue split - Debario (30.8%)","usd":46.20,"cad":0,"category":"Revenue Share","notes":"30.8% of $150 USD"},
-        {"date":"2026-03-01","description":"Revenue split - Breaker (2.5%)","usd":3.75,"cad":0,"category":"Revenue Share","notes":"2.5% of $150 USD"},
-        {"date":"2026-03-01","description":"Revenue split - Fibonacci (4%)","usd":6.00,"cad":0,"category":"Revenue Share","notes":"4% of $150 USD"}
+        {
+          "date": "2026-03-01",
+          "description": "Revenue split - Debario (30.8%)",
+          "usd": 46.2,
+          "cad": 0,
+          "category": "Revenue Share",
+          "notes": "30.8% of $150 USD"
+        },
+        {
+          "date": "2026-03-01",
+          "description": "Revenue split - Breaker (2.5%)",
+          "usd": 3.75,
+          "cad": 0,
+          "category": "Revenue Share",
+          "notes": "2.5% of $150 USD"
+        },
+        {
+          "date": "2026-03-01",
+          "description": "Revenue split - Fibonacci (4%)",
+          "usd": 6.0,
+          "cad": 0,
+          "category": "Revenue Share",
+          "notes": "4% of $150 USD"
+        },
+        {
+          "date": "2026-03-17",
+          "description": "Flexir's Com. \u2014 Minecraft animator build fee",
+          "usd": 180.24,
+          "cad": 0,
+          "category": "Production",
+          "notes": "Invoice #0005: $150 build + $25 bonus + $5.24 PayPal fee (3.49%). Project: Villagers Simulate Civilizations \u2014 STRONG & SMART"
+        }
       ]
     }
   }
