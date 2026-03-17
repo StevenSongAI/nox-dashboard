@@ -3,38 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Monthly Expenses | Nox Dashboard</title>
+  <title>Monthly Expenses — Nox Dashboard</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="style.css?v=3">
   <style>
-    body { background: #0f0f1a; color: #e5e7eb; font-family: system-ui, sans-serif; }
-    .card { background: #1a1a2e; border: 1px solid #252540; border-radius: 0.5rem; padding: 1rem; }
-    .expense-row:hover { background: #1a1a2e; }
+    body { background: #0a0a1a; color: white; font-family: 'Inter', sans-serif; }
+    .card { background: #12122a; border: 1px solid #252540; border-radius: 12px; padding: 1.5rem; }
+    .expense-row:hover { background: #1a1a35; }
   </style>
 </head>
 <body class="min-h-screen p-6">
   <div class="max-w-5xl mx-auto">
-    <div class="flex items-center justify-between mb-6">
-      <div>
-        <a href="index.html" class="text-purple-400 hover:text-purple-300 text-sm">← Back to Dashboard</a>
-        <h1 class="text-2xl font-bold text-white mt-2">💰 Monthly Expenses</h1>
-        <p class="text-sm text-gray-400">February 2026</p>
-      </div>
-      <a href="data/expenses.csv" download class="px-4 py-2 bg-purple-500/20 text-purple-400 rounded hover:bg-purple-500/30 text-sm">Download CSV</a>
+    <div class="mb-6">
+      <a href="index.html" class="text-purple-400 text-sm hover:underline">← Back to Dashboard</a>
     </div>
 
-    <div id="summary" class="grid gap-4 md:grid-cols-3 mb-6">
+    <div class="flex items-center justify-between mb-6">
+      <div>
+        <h1 class="text-3xl font-bold">💰 Monthly Expenses</h1>
+        <p id="month-label" class="text-gray-400 mt-1"></p>
+      </div>
+      <div class="flex items-center gap-3">
+        <select id="month-select" class="bg-[#12122a] border border-[#252540] text-white rounded-lg px-3 py-2 text-sm"></select>
+        <button onclick="downloadCSV()" class="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg text-sm font-medium">Download CSV</button>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-3 gap-4 mb-6">
       <div class="card text-center">
         <p class="text-sm text-gray-400">Total CAD</p>
-        <p class="text-3xl font-bold text-white">$240.00</p>
+        <p id="total-cad" class="text-3xl font-bold text-white">—</p>
       </div>
       <div class="card text-center">
         <p class="text-sm text-gray-400">Total USD</p>
-        <p class="text-3xl font-bold text-white">$775.00</p>
+        <p id="total-usd" class="text-3xl font-bold text-white">—</p>
       </div>
       <div class="card text-center">
         <p class="text-sm text-gray-400">Entries</p>
-        <p class="text-3xl font-bold text-white">5</p>
+        <p id="total-entries" class="text-3xl font-bold text-white">—</p>
       </div>
     </div>
 
@@ -50,29 +55,100 @@
           </tr>
         </thead>
         <tbody id="expense-rows">
+          <tr><td colspan="5" class="py-8 text-center text-gray-500">Loading...</td></tr>
         </tbody>
       </table>
     </div>
   </div>
 
   <script>
-    const expenses = [
-      { date: '2026-02-15', desc: 'Minecraft Maps', cad: 240, usd: 0, cat: 'Minecraft' },
-      { date: '2026-02-15', desc: 'Minecraft Maps', cad: 0, usd: 25, cat: 'Minecraft' },
-      { date: '2026-02-15', desc: 'Minecraft Assets/Art', cad: 0, usd: 150, cat: 'Minecraft' },
-      { date: '2026-02-21', desc: 'Minecraft Recording', cad: 0, usd: 300, cat: 'Minecraft' },
-      { date: '2026-02-27', desc: 'Recordings - Villagers Simulate Civilization Part 2', cad: 0, usd: 300, cat: 'Minecraft' }
-    ];
+    const API = 'https://nox-dashboard-api-production.up.railway.app';
+    const KEY = '8863da180beec2f364bea071833afd8f';
+    let allEntries = [];
+    let currentMonth = '';
 
-    document.getElementById('expense-rows').innerHTML = expenses.map(e => 
-      `<tr class="expense-row border-b border-[#252540]">
-        <td class="py-3 px-4 text-gray-300">${e.date}</td>
-        <td class="py-3 px-4 text-gray-300">${e.desc}</td>
-        <td class="py-3 px-4 text-right text-gray-300">${e.cad > 0 ? '$'+e.cad.toFixed(2) : '-'}</td>
-        <td class="py-3 px-4 text-right text-gray-300">${e.usd > 0 ? '$'+e.usd.toFixed(2) : '-'}</td>
-        <td class="py-3 px-4"><span class="px-2 py-1 bg-purple-500/20 text-purple-400 rounded text-xs">${e.cat}</span></td>
-      </tr>`
-    ).join('');
+    const catColors = {
+      'Production':    'bg-purple-500/20 text-purple-400',
+      'Marketing':     'bg-blue-500/20 text-blue-400',
+      'Operations':    'bg-green-500/20 text-green-400',
+      'Revenue Share': 'bg-yellow-500/20 text-yellow-400',
+      'Minecraft':     'bg-purple-500/20 text-purple-400',
+    };
+
+    function fmt(m) {
+      const [y, mo] = m.split('-');
+      const names = ['','January','February','March','April','May','June','July','August','September','October','November','December'];
+      return `${names[parseInt(mo)]} ${y}`;
+    }
+
+    async function init() {
+      const res = await fetch(`${API}/api/entries?category=expense&limit=500`, {
+        headers: { Authorization: `Bearer ${KEY}` }
+      });
+      const json = await res.json();
+      allEntries = json.entries || [];
+
+      const months = [...new Set(allEntries.map(e => e.data?.month).filter(Boolean))].sort().reverse();
+
+      const select = document.getElementById('month-select');
+      months.forEach(m => {
+        const opt = document.createElement('option');
+        opt.value = m;
+        opt.textContent = fmt(m);
+        select.appendChild(opt);
+      });
+
+      currentMonth = months[0] || '';
+      select.value = currentMonth;
+      select.addEventListener('change', e => { currentMonth = e.target.value; render(); });
+      render();
+    }
+
+    function render() {
+      const entries = allEntries
+        .filter(e => e.data?.month === currentMonth)
+        .sort((a, b) => (a.data?.date || '').localeCompare(b.data?.date || ''));
+
+      document.getElementById('month-label').textContent = fmt(currentMonth);
+
+      const totalCAD = entries.reduce((s, e) => s + (e.data?.amount_cad || 0), 0);
+      const totalUSD = entries.reduce((s, e) => s + (e.data?.amount_usd || 0), 0);
+
+      document.getElementById('total-cad').textContent = '$' + totalCAD.toFixed(2);
+      document.getElementById('total-usd').textContent = '$' + totalUSD.toFixed(2);
+      document.getElementById('total-entries').textContent = entries.length;
+
+      document.getElementById('expense-rows').innerHTML = entries.length
+        ? entries.map(e => {
+            const d = e.data || {};
+            const colorClass = catColors[d.category] || 'bg-gray-500/20 text-gray-400';
+            return `<tr class="expense-row border-b border-[#252540]">
+              <td class="py-3 px-4 text-gray-300">${d.date || ''}</td>
+              <td class="py-3 px-4 text-gray-300">${e.title}${d.notes ? '<br><span class="text-xs text-gray-500">' + d.notes + '</span>' : ''}</td>
+              <td class="py-3 px-4 text-right text-gray-300">${(d.amount_cad||0) > 0 ? '$'+(d.amount_cad).toFixed(2) : '—'}</td>
+              <td class="py-3 px-4 text-right text-gray-300">${(d.amount_usd||0) > 0 ? '$'+(d.amount_usd).toFixed(2) : '—'}</td>
+              <td class="py-3 px-4"><span class="px-2 py-1 ${colorClass} rounded text-xs">${d.category || '—'}</span></td>
+            </tr>`;
+          }).join('')
+        : '<tr><td colspan="5" class="py-8 text-center text-gray-500">No entries for this month.</td></tr>';
+    }
+
+    function downloadCSV() {
+      const entries = allEntries.filter(e => e.data?.month === currentMonth)
+        .sort((a,b) => (a.data?.date||'').localeCompare(b.data?.date||''));
+      const rows = [['Date','Description','CAD','USD','Category','Notes']];
+      entries.forEach(e => {
+        const d = e.data || {};
+        rows.push([d.date||'', e.title, d.amount_cad||0, d.amount_usd||0, d.category||'', d.notes||'']);
+      });
+      const csv = rows.map(r => r.map(v => `"${v}"`).join(',')).join('\n');
+      const a = document.createElement('a');
+      a.href = 'data:text/csv;charset=utf-8,' + encodeURIComponent(csv);
+      a.download = `expenses-${currentMonth}.csv`;
+      a.click();
+    }
+
+    init();
   </script>
 </body>
 </html>
