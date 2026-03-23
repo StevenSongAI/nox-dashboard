@@ -1,200 +1,192 @@
 {
   "date": "2026-03-23",
   "total_sent": 10,
-  "total_pool": 13215,
+  "total_pool": 13283,
   "candidates": [
     {
-      "id": "21101",
-      "name": "EvraFamous",
-      "country": "morocco",
-      "flag": "\ud83c\uddf2\ud83c\udde6",
-      "score": 9.5,
+      "id": "698",
+      "name": "TKG",
+      "country": "vietnam",
+      "flag": "\ud83c\uddfb\ud83c\uddf3",
+      "score": 17.0,
       "contacts": {
-        "email": "evrabusiness69@gmail.com",
-        "discord": "evrafamous"
+        "discord": "tkgpsd",
+        "website": "tkg.yt"
       },
-      "badge": "simpleVerified",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "EvraFamousPlays",
-        "subscribers": 545,
-        "abvSubs": "545"
-      },
-      "ytjobsUrl": "https://app.ytjobs.co/talent/21101"
-    },
-    {
-      "id": "813",
-      "name": "Rishikesh Jain",
-      "country": "india",
-      "flag": "\ud83c\uddee\ud83c\uddf3",
-      "score": 9.5,
-      "contacts": {
-        "website": "rshkshjain.com"
-      },
-      "badge": "gold",
+      "badge": "blueDiamond",
       "verified": true,
       "hireMe": true,
       "ytChannel": null,
-      "ytjobsUrl": "https://app.ytjobs.co/talent/813"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/698"
     },
     {
-      "id": "1050",
-      "name": "Ignacio",
-      "country": "argentina",
-      "flag": "\ud83c\udde6\ud83c\uddf7",
-      "score": 9.0,
+      "id": "176956",
+      "name": "Max Behrens",
+      "country": "vietnam",
+      "flag": "\ud83c\uddfb\ud83c\uddf3",
+      "score": 13.5,
       "contacts": {
-        "email": "info.vvsnet@gmail.com",
-        "website": "vvsnet.us"
+        "email": "contact@neoxvisions.com",
+        "website": "neoxvisions.com"
       },
       "badge": "blueDiamond",
       "verified": false,
       "hireMe": true,
       "ytChannel": {
-        "name": "VVS Videos",
-        "subscribers": 41,
-        "abvSubs": "41"
+        "name": "Neox",
+        "subscribers": 17100,
+        "abvSubs": "17.1K"
       },
-      "ytjobsUrl": "https://app.ytjobs.co/talent/1050"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/176956"
     },
     {
-      "id": "32746",
-      "name": "Ivan",
-      "country": "philippines",
-      "flag": "\ud83c\uddf5\ud83c\udded",
-      "score": 9.0,
+      "id": "46470",
+      "name": "Dimcha",
+      "country": "vietnam",
+      "flag": "\ud83c\uddfb\ud83c\uddf3",
+      "score": 13.0,
       "contacts": {
-        "email": "ivanmijares228@gmail.com",
-        "discord": "Ivanista#2632"
-      },
-      "badge": "gold",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "Ivan Mijares",
-        "subscribers": 6,
-        "abvSubs": "6"
-      },
-      "ytjobsUrl": "https://app.ytjobs.co/talent/32746"
-    },
-    {
-      "id": "347762",
-      "name": "Camila Basso",
-      "country": "argentina",
-      "flag": "\ud83c\udde6\ud83c\uddf7",
-      "score": 9.0,
-      "contacts": {
-        "email": "camu128@gmail.com",
-        "discord": "cami_91654",
-        "website": "linkedin.com/in/camilaabrilbasso"
-      },
-      "badge": "silver",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "Cami Escribe",
-        "subscribers": 343,
-        "abvSubs": "343"
-      },
-      "ytjobsUrl": "https://app.ytjobs.co/talent/347762"
-    },
-    {
-      "id": "122867",
-      "name": " Weslley Matos (Himaru)",
-      "country": "brazil",
-      "flag": "\ud83c\udde7\ud83c\uddf7",
-      "score": 8.0,
-      "contacts": {
-        "email": "canalhimarublack@gmail.com",
-        "twitter": "HimaruBlack"
+        "email": "contact@dimcha.com",
+        "website": "dimcha.com"
       },
       "badge": "blueDiamond",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "Himaru",
-        "subscribers": 1070000,
-        "abvSubs": "1.07M"
-      },
-      "ytjobsUrl": "https://app.ytjobs.co/talent/122867"
-    },
-    {
-      "id": "300666",
-      "name": "Vi",
-      "country": "brazil",
-      "flag": "\ud83c\udde7\ud83c\uddf7",
-      "score": 8.0,
-      "contacts": {
-        "discord": "studiosbyvi",
-        "twitter": "studiosbyvi"
-      },
-      "badge": "blueDiamond",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "Vitoria Regina",
-        "subscribers": 0,
-        "abvSubs": "0"
-      },
-      "ytjobsUrl": "https://app.ytjobs.co/talent/300666"
-    },
-    {
-      "id": "140518",
-      "name": "Kaenz",
-      "country": "brazil",
-      "flag": "\ud83c\udde7\ud83c\uddf7",
-      "score": 8.0,
-      "contacts": {
-        "discord": "kaenzfx",
-        "twitter": "kaenzfx"
-      },
-      "badge": "blueDiamond",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "kaenz",
-        "subscribers": 0,
-        "abvSubs": "0"
-      },
-      "ytjobsUrl": "https://app.ytjobs.co/talent/140518"
-    },
-    {
-      "id": "127542",
-      "name": "rahalarts",
-      "country": "morocco",
-      "flag": "\ud83c\uddf2\ud83c\udde6",
-      "score": 8.0,
-      "contacts": {
-        "email": "rahalarts@gmail.com",
-        "website": "instagram.com/rahalarts"
-      },
-      "badge": "gold",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "rahal arts",
-        "subscribers": 0,
-        "abvSubs": "0"
-      },
-      "ytjobsUrl": "https://app.ytjobs.co/talent/127542"
-    },
-    {
-      "id": "32753",
-      "name": "Greenguy Studio",
-      "country": "philippines",
-      "flag": "\ud83c\uddf5\ud83c\udded",
-      "score": 7.5,
-      "contacts": {
-        "discord": "greenguystudio_official",
-        "twitter": "GreenguyStudio"
-      },
-      "badge": "gold",
       "verified": false,
       "hireMe": true,
       "ytChannel": null,
-      "ytjobsUrl": "https://app.ytjobs.co/talent/32753"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/46470"
+    },
+    {
+      "id": "469",
+      "name": "Vuk Sretenovic",
+      "country": "vietnam",
+      "flag": "\ud83c\uddfb\ud83c\uddf3",
+      "score": 12.0,
+      "contacts": {
+        "website": "maximized-media.net"
+      },
+      "badge": "blueDiamond",
+      "verified": true,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "Vuk Sretenovic",
+        "subscribers": 10400,
+        "abvSubs": "10.4K"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/469"
+    },
+    {
+      "id": "138",
+      "name": "Joseph Blaze",
+      "country": "india",
+      "flag": "\ud83c\uddee\ud83c\uddf3",
+      "score": 12.0,
+      "contacts": {
+        "website": "youtube.com/@josephblaze"
+      },
+      "badge": "blueDiamond",
+      "verified": true,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "Joseph Blaze",
+        "subscribers": 13500,
+        "abvSubs": "13.5K"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/138"
+    },
+    {
+      "id": "675",
+      "name": "Quentin Xavier",
+      "country": "vietnam",
+      "flag": "\ud83c\uddfb\ud83c\uddf3",
+      "score": 11.0,
+      "contacts": {
+        "website": "linktr.ee/blockerlocker"
+      },
+      "badge": "blueDiamond",
+      "verified": true,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "BlockerLocker",
+        "subscribers": 30700,
+        "abvSubs": "30.7K"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/675"
+    },
+    {
+      "id": "1289",
+      "name": "Ammon Runger",
+      "country": "india",
+      "flag": "\ud83c\uddee\ud83c\uddf3",
+      "score": 10.5,
+      "contacts": {
+        "website": "youtube.com/itsammon"
+      },
+      "badge": "blueDiamond",
+      "verified": true,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "nugget",
+        "subscribers": 220000,
+        "abvSubs": "220K"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/1289"
+    },
+    {
+      "id": "187204",
+      "name": "Dod Seitz",
+      "country": "vietnam",
+      "flag": "\ud83c\uddfb\ud83c\uddf3",
+      "score": 10.0,
+      "contacts": {
+        "email": "Dodsonseitz@gmail.com",
+        "website": "linktr.ee/thedod"
+      },
+      "badge": "blueDiamond",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "Blue haired guy",
+        "subscribers": 0,
+        "abvSubs": "0"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/187204"
+    },
+    {
+      "id": "140",
+      "name": "Joao Bernardo",
+      "country": "vietnam",
+      "flag": "\ud83c\uddfb\ud83c\uddf3",
+      "score": 10.0,
+      "contacts": {
+        "website": "frameforge.co"
+      },
+      "badge": "blueDiamond",
+      "verified": true,
+      "hireMe": true,
+      "ytChannel": null,
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/140"
+    },
+    {
+      "id": "256044",
+      "name": "Amar",
+      "country": "india",
+      "flag": "\ud83c\uddee\ud83c\uddf3",
+      "score": 10.0,
+      "contacts": {
+        "email": "amarrnasri@gmail.com",
+        "discord": "liltouti",
+        "website": "youtube.com/playlist?list=PLVUNrMtpZ3PXqp7yVTyeQKRDsdWpUrGVm&si=luleWmZvJ38A7tk-"
+      },
+      "badge": "gold",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "Amar nasri",
+        "subscribers": 0,
+        "abvSubs": "0"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/256044"
     }
   ],
-  "generated_at": "2026-03-23T13:27:01.719578Z"
+  "generated_at": "2026-03-23T13:34:13.427525Z"
 }
