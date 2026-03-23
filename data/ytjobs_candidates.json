@@ -1,0 +1,200 @@
+{
+  "date": "2026-03-23",
+  "total_sent": 10,
+  "total_pool": 13215,
+  "candidates": [
+    {
+      "id": "21101",
+      "name": "EvraFamous",
+      "country": "morocco",
+      "flag": "\ud83c\uddf2\ud83c\udde6",
+      "score": 9.5,
+      "contacts": {
+        "email": "evrabusiness69@gmail.com",
+        "discord": "evrafamous"
+      },
+      "badge": "simpleVerified",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "EvraFamousPlays",
+        "subscribers": 545,
+        "abvSubs": "545"
+      },
+      "ytjobsUrl": "https://app.ytjobs.co/talent/21101"
+    },
+    {
+      "id": "813",
+      "name": "Rishikesh Jain",
+      "country": "india",
+      "flag": "\ud83c\uddee\ud83c\uddf3",
+      "score": 9.5,
+      "contacts": {
+        "website": "rshkshjain.com"
+      },
+      "badge": "gold",
+      "verified": true,
+      "hireMe": true,
+      "ytChannel": null,
+      "ytjobsUrl": "https://app.ytjobs.co/talent/813"
+    },
+    {
+      "id": "1050",
+      "name": "Ignacio",
+      "country": "argentina",
+      "flag": "\ud83c\udde6\ud83c\uddf7",
+      "score": 9.0,
+      "contacts": {
+        "email": "info.vvsnet@gmail.com",
+        "website": "vvsnet.us"
+      },
+      "badge": "blueDiamond",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "VVS Videos",
+        "subscribers": 41,
+        "abvSubs": "41"
+      },
+      "ytjobsUrl": "https://app.ytjobs.co/talent/1050"
+    },
+    {
+      "id": "32746",
+      "name": "Ivan",
+      "country": "philippines",
+      "flag": "\ud83c\uddf5\ud83c\udded",
+      "score": 9.0,
+      "contacts": {
+        "email": "ivanmijares228@gmail.com",
+        "discord": "Ivanista#2632"
+      },
+      "badge": "gold",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "Ivan Mijares",
+        "subscribers": 6,
+        "abvSubs": "6"
+      },
+      "ytjobsUrl": "https://app.ytjobs.co/talent/32746"
+    },
+    {
+      "id": "347762",
+      "name": "Camila Basso",
+      "country": "argentina",
+      "flag": "\ud83c\udde6\ud83c\uddf7",
+      "score": 9.0,
+      "contacts": {
+        "email": "camu128@gmail.com",
+        "discord": "cami_91654",
+        "website": "linkedin.com/in/camilaabrilbasso"
+      },
+      "badge": "silver",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "Cami Escribe",
+        "subscribers": 343,
+        "abvSubs": "343"
+      },
+      "ytjobsUrl": "https://app.ytjobs.co/talent/347762"
+    },
+    {
+      "id": "122867",
+      "name": " Weslley Matos (Himaru)",
+      "country": "brazil",
+      "flag": "\ud83c\udde7\ud83c\uddf7",
+      "score": 8.0,
+      "contacts": {
+        "email": "canalhimarublack@gmail.com",
+        "twitter": "HimaruBlack"
+      },
+      "badge": "blueDiamond",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "Himaru",
+        "subscribers": 1070000,
+        "abvSubs": "1.07M"
+      },
+      "ytjobsUrl": "https://app.ytjobs.co/talent/122867"
+    },
+    {
+      "id": "300666",
+      "name": "Vi",
+      "country": "brazil",
+      "flag": "\ud83c\udde7\ud83c\uddf7",
+      "score": 8.0,
+      "contacts": {
+        "discord": "studiosbyvi",
+        "twitter": "studiosbyvi"
+      },
+      "badge": "blueDiamond",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "Vitoria Regina",
+        "subscribers": 0,
+        "abvSubs": "0"
+      },
+      "ytjobsUrl": "https://app.ytjobs.co/talent/300666"
+    },
+    {
+      "id": "140518",
+      "name": "Kaenz",
+      "country": "brazil",
+      "flag": "\ud83c\udde7\ud83c\uddf7",
+      "score": 8.0,
+      "contacts": {
+        "discord": "kaenzfx",
+        "twitter": "kaenzfx"
+      },
+      "badge": "blueDiamond",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "kaenz",
+        "subscribers": 0,
+        "abvSubs": "0"
+      },
+      "ytjobsUrl": "https://app.ytjobs.co/talent/140518"
+    },
+    {
+      "id": "127542",
+      "name": "rahalarts",
+      "country": "morocco",
+      "flag": "\ud83c\uddf2\ud83c\udde6",
+      "score": 8.0,
+      "contacts": {
+        "email": "rahalarts@gmail.com",
+        "website": "instagram.com/rahalarts"
+      },
+      "badge": "gold",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "rahal arts",
+        "subscribers": 0,
+        "abvSubs": "0"
+      },
+      "ytjobsUrl": "https://app.ytjobs.co/talent/127542"
+    },
+    {
+      "id": "32753",
+      "name": "Greenguy Studio",
+      "country": "philippines",
+      "flag": "\ud83c\uddf5\ud83c\udded",
+      "score": 7.5,
+      "contacts": {
+        "discord": "greenguystudio_official",
+        "twitter": "GreenguyStudio"
+      },
+      "badge": "gold",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": null,
+      "ytjobsUrl": "https://app.ytjobs.co/talent/32753"
+    }
+  ],
+  "generated_at": "2026-03-23T13:27:01.719578Z"
+}
