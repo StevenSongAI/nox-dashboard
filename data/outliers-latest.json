@@ -1,107 +1,161 @@
 {
-  "generated_at": "2026-02-27T07:00:00-05:00",
-  "analysis_window": "48 hours",
-  "total_scraped": 24,
-  "channels_analyzed": ["@ZMDE", "@StevenSongIRL"],
-  
-  "zmde_gaming_outliers": [
-    {
-      "title": "Terraria Wings Tier List! #terraria #shorts",
-      "channel": "arnie",
-      "views": 4200000,
-      "videoId": "sVBTYfuWmpA",
-      "format": "Short",
-      "hook": "Tier list format performing exceptionally well in gaming niche",
-      "relevance": "Gaming tier lists - format transferable to Minecraft/BBS content"
-    },
-    {
-      "title": "MAMMOTT TIER LIST! #mysingingmonsters",
-      "channel": "Ghazt",
-      "views": 889000,
-      "videoId": "Qfg0Pennqh8",
-      "format": "Short",
-      "hook": "Character tier lists in family-friendly games",
-      "relevance": "Tier list format for Minecraft mobs/Create Mod components"
-    },
-    {
-      "title": "this clan forgot to upkeep their open-core...",
-      "channel": "Ultra",
-      "views": 12000,
-      "videoId": "7BeSIXp24Q0",
-      "format": "Long-form",
-      "hook": "Clan/guild drama with mystery element",
-      "relevance": "Narrative storytelling format for BBS server stories"
-    }
-  ],
-  
-  "stevensongirl_animals_outliers": [
-    {
-      "title": "prehistoric planet simosuchus vs Majungasaurus",
-      "channel": "T64",
-      "views": 1000000,
-      "videoId": "k59OJyx_6qM",
-      "format": "Long-form",
-      "hook": "Prehistoric animal battles from popular documentary series",
-      "relevance": "Animal confrontation content with documentary backing"
-    },
-    {
-      "title": "A Majungasaurus Hunts a Group of Simosuchus | Prehistoric Planet 2 Clip",
-      "channel": "ShadowPhantom",
-      "views": 196000,
-      "videoId": "BrYndo0Lih4",
-      "format": "Short",
-      "hook": "Predator-prey chase sequences",
-      "relevance": "Animal hunting behavior clips perform well"
-    },
-    {
-      "title": "No Shoes, No Food.. Just Tears Until Kindness Changed Everything #shark #whale",
-      "channel": "Dena Channel",
-      "views": 61000,
-      "videoId": "pOIge1yjSoI",
-      "format": "Short",
-      "hook": "Emotional animal rescue narrative",
-      "relevance": "Rescue/transformation stories in ocean wildlife niche"
-    },
-    {
-      "title": "Simosuchus: The Prehistoric, Pug Nosed Crocodile of Madagascar (Remake)",
-      "channel": "CHimerasuchus",
-      "views": 29000,
-      "videoId": "2E28V_DG6RA",
-      "format": "Long-form",
-      "hook": "Obscure prehistoric creatures with unique features",
-      "relevance": "Deep dives on lesser-known animals"
-    }
-  ],
-  
-  "key_insights": {
-    "zmde": [
-      "Tier list shorts dominating gaming (Terraria: 4.2M, My Singing Monsters: 889K)",
-      "Narrative clan drama content showing traction even at smaller view counts",
-      "Consider: Minecraft mob tier lists, Create Mod component rankings, BBS cinematic tier lists"
+  "generated_at": "2026-03-28T15:13:26.160937",
+  "analysis_window": "Last 24h \u2014 2026-03-28",
+  "total_videos_analyzed": 126,
+  "zmde": {
+    "channel": "ZMDE",
+    "top_outliers": [
+      {
+        "title": "First look at zombies and skeletons in A Minecraft Movie \ud83d\ude33 #minecraft #jackblack #gaming #movie",
+        "channel": "The Respawn",
+        "views": 6600000,
+        "url": "https://www.youtube.com/shorts/lwRxXazftPI",
+        "outlier_score": 99,
+        "query": "minecraft cinematic",
+        "remix": "I Gave Villagers First Look At Zombies And Skeletons In A For 1000 Years"
+      },
+      {
+        "title": "Can I turn MrBeast into a Chocolate Master?",
+        "channel": "Amaury Guichon",
+        "views": 4600000,
+        "url": "https://www.youtube.com/watch?v=yXoeGRPkbmU&pp=ugUHEgVlbi1VUw%3D%3D",
+        "outlier_score": 99,
+        "query": "homepage",
+        "remix": "I Gave Villagers Can I Turn Mrbeast Into A Chocolate Mast For 1000 Years"
+      },
+      {
+        "title": "\u00bfQu\u00e9 pas\u00f3? \u00bfCHASE y SKYE est\u00e1n en la c\u00e1rcel? \u00a1Marshall, por favor, ay\u00fadame! | PAw PatRol en Espa\u00f1ol",
+        "channel": "Imene's world \u0639\u0627\u0644\u0645 \u0625\u064a\u0645\u0627\u0646",
+        "views": 2100000,
+        "url": "https://www.youtube.com/watch?v=je2h3bv_Uk0&pp=0gcJCdkKAYcqIYzv",
+        "outlier_score": 91.29,
+        "query": "homepage",
+        "remix": "I Gave Villagers \u00bfQu\u00e9 Pas\u00f3? \u00bfChase Y Skye Est\u00e1n En La C\u00e1r For 1000 Years"
+      },
+      {
+        "title": "Hermitcraft 11: Episode 8 - PRANKS AND BUILDS!",
+        "channel": "Grian",
+        "views": 1700000,
+        "url": "https://www.youtube.com/watch?v=MQpVmLQlDiA",
+        "outlier_score": 88.72,
+        "query": "homepage",
+        "remix": "I Gave Villagers Hermitcraft 11: Episode 8 - Pranks And B For 1000 Years"
+      },
+      {
+        "title": "Drift Quad Testing!",
+        "channel": "CboysTV",
+        "views": 1600000,
+        "url": "https://www.youtube.com/watch?v=5CBE9DIgiCA&pp=ugUEEgJlbg%3D%3D",
+        "outlier_score": 87.98,
+        "query": "homepage",
+        "remix": "I Gave Villagers Drift Quad Testing! For 1000 Years"
+      },
+      {
+        "title": "Hermitcraft 11: Episode 13 - FIRE!",
+        "channel": "Grian",
+        "views": 1300000,
+        "url": "https://www.youtube.com/watch?v=C0WM1HmJrWQ",
+        "outlier_score": 85.49,
+        "query": "homepage",
+        "remix": "I Gave Villagers Hermitcraft 11: Episode 13 - Fire! For 1000 Years"
+      },
+      {
+        "title": "Qualifying Highlights | 2026 Japanese Grand Prix",
+        "channel": "FORMULA 1",
+        "views": 1000000,
+        "url": "https://www.youtube.com/watch?v=oZH_7pYJPTE",
+        "outlier_score": 82.39,
+        "query": "homepage",
+        "remix": "I Gave Villagers Qualifying Highlights | 2026 Japanese Gr For 1000 Years"
+      },
+      {
+        "title": "100% Completing Poppy Playtime 1, 2, 3, 4 and 5",
+        "channel": "Caylus",
+        "views": 811000,
+        "url": "https://www.youtube.com/watch?v=IMNJuPgQJHg",
+        "outlier_score": 79.95,
+        "query": "homepage",
+        "remix": "I Gave Villagers 100% Completing Poppy Playtime 1, 2, 3,  For 1000 Years"
+      },
+      {
+        "title": "Vin Diesel In THE HITMAN COP - Hollywood Free English Movie | Blockbuster Full Action English Movie",
+        "channel": "Hollywood Action",
+        "views": 803000,
+        "url": "https://www.youtube.com/watch?v=SoH8zfd2lxE",
+        "outlier_score": 79.84,
+        "query": "homepage",
+        "remix": "I Gave Villagers Vin Diesel In The Hitman Cop - Hollywood For 1000 Years"
+      },
+      {
+        "title": "Try Not To Laugh: Mark Adams NEWEST FUNNY SHORTS 2026 pt.1",
+        "channel": "LAUGH OUT LOUD",
+        "views": 653000,
+        "url": "https://www.youtube.com/watch?v=DT4I31lHnjI",
+        "outlier_score": 77.48,
+        "query": "homepage",
+        "remix": "I Gave Villagers Try Not To Laugh: Mark Adams Newest Funn For 1000 Years"
+      }
     ],
-    "stevensongirl": [
-      "Prehistoric Planet 2 clips driving 1M+ views on dinosaur confrontation content",
-      "Animal rescue/emotional narratives performing in Shorts format",
-      "Obscure prehistoric creatures (Simosuchus) generating educational interest",
-      "Consider: Prehistoric animal battles, emotional pet/wildlife transformations, lesser-known species deep dives"
-    ]
+    "count": 10
   },
-  
-  "trending_formats": [
-    {
-      "format": "Tier list Shorts",
-      "performance": "4.2M peak views",
-      "applicable_to": ["zmde"]
-    },
-    {
-      "format": "Prehistoric animal battles",
-      "performance": "1M+ views",
-      "applicable_to": ["stevensongirl"]
-    },
-    {
-      "format": "Emotional animal rescue narratives",
-      "performance": "60K+ views",
-      "applicable_to": ["stevensongirl"]
-    }
-  ]
+  "ssirl": {
+    "channel": "StevenSongIRL",
+    "top_outliers": [
+      {
+        "title": "Hatching the RAREST Pet! (Kitsune Zen Event in Grow a Garden) #growagarden #aivideo #kitsune",
+        "channel": "AI Dreamscape Hub",
+        "views": 5300000,
+        "url": "https://www.youtube.com/shorts/0QncW80UibY",
+        "outlier_score": 99,
+        "query": "pet grows up",
+        "remix": "Raising a Rare Pet | 100 Days"
+      },
+      {
+        "title": "crocodile adopted #wildliferescue #wildlife #cute#rescue #animalfriendshipgoals#crocodile",
+        "channel": "Paws & Hearts",
+        "views": 117000000,
+        "url": "https://www.youtube.com/shorts/CfN_K228MaU",
+        "outlier_score": 99,
+        "query": "rescued baby animal",
+        "remix": "Raising a Rare Pet | 100 Days"
+      },
+      {
+        "title": "SAVING BABY TURTLES FOUND TRAPPED!",
+        "channel": "Hannah Feder",
+        "views": 1500000,
+        "url": "https://www.youtube.com/watch?v=esPloDV1_eA&pp=ygUTcmVzY3VlZCBiYWJ5IGFuaW1hbNIHCQnZCgGHKiGM7w%3D%3D",
+        "outlier_score": 87.21,
+        "query": "rescued baby animal",
+        "remix": "Raising a Rare Pet | 100 Days"
+      },
+      {
+        "title": "Jandel Added Most OP Pet in Grow a Garden",
+        "channel": "BerzX",
+        "views": 1300000,
+        "url": "https://www.youtube.com/shorts/DPegzIDHYcg",
+        "outlier_score": 85.49,
+        "query": "pet grows up",
+        "remix": "Raising a Rare Pet | 100 Days"
+      },
+      {
+        "title": "I Survived 100 Days as a FIRE GOD in Minecraft!",
+        "channel": "Ryguy v2",
+        "views": 1100000,
+        "url": "https://www.youtube.com/watch?v=HKwmZn1FTPs&pp=ygUdSSBzcGVudCAxMDAgZGF5cyBpbiBtaW5lY3JhZnQ%3D",
+        "outlier_score": 83.51,
+        "query": "I spent 100 days in minecraft",
+        "remix": "Raising a Rare Pet | 100 Days"
+      },
+      {
+        "title": "They Put PROTOTYPE In Feed And Grow Fish... (It's so OVERPOWERED)",
+        "channel": "Kindly Keyin",
+        "views": 619000,
+        "url": "https://www.youtube.com/watch?v=v_Mduml99HY",
+        "outlier_score": 76.88,
+        "query": "homepage",
+        "remix": "Raising a Rare Pet | 100 Days"
+      }
+    ],
+    "count": 6
+  }
 }
