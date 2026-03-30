@@ -1,187 +1,208 @@
 {
-  "date": "2026-03-29",
-  "total_sent": 60,
-  "total_pool": 46826,
+  "date": "2026-03-30",
+  "total_sent": 70,
+  "total_pool": 49873,
   "candidates": [
     {
-      "id": "1249",
-      "name": "Luhan Bones",
-      "country": "brazil",
-      "flag": "\ud83c\udde7\ud83c\uddf7",
-      "score": 7.0,
-      "contacts": {},
-      "badge": "gold",
-      "verified": true,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "BONES STUDIOS",
-        "subscribers": 0,
-        "abvSubs": "0"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/1249"
-    },
-    {
-      "id": "151745",
-      "name": "Andr\u00e9 Camargo",
+      "id": "319304",
+      "name": "Kau\u00ea Dias",
       "country": "brazil",
       "flag": "\ud83c\udde7\ud83c\uddf7",
       "score": 7.0,
       "contacts": {
-        "website": "behance.net/notdeh"
+        "email": "gorniley@gmail.com",
+        "website": "kdedicoes.com.br"
       },
-      "badge": "blueDiamond",
+      "badge": "silver",
       "verified": false,
       "hireMe": true,
       "ytChannel": {
-        "name": "Deh",
-        "subscribers": 166,
-        "abvSubs": "166"
+        "name": "SETUP L\u00daCIDO",
+        "subscribers": 36800,
+        "abvSubs": "36.8K"
       },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/151745"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/319304"
     },
     {
-      "id": "342986",
-      "name": " Abrar Z.",
+      "id": "1831",
+      "name": "Protean Dream",
       "country": "india",
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "score": 7.0,
       "contacts": {
-        "website": "youtube.com/playlist?list=PL-_s17mhL5soM_0hlJMXH-6CCr6I2mt7g&si=miA1-0uxZ2ZiDAUK"
+        "discord": "ProteanDream#8234",
+        "website": "youtube.com/playlist?list=PLmOpZ11PLMmR9ze0z7stZcPqne14fAKKb"
       },
-      "badge": "gold",
+      "badge": "simpleVerified",
       "verified": false,
       "hireMe": true,
       "ytChannel": {
-        "name": "GMER",
-        "subscribers": 5310,
-        "abvSubs": "5.31K"
+        "name": "Protean Dream",
+        "subscribers": 8,
+        "abvSubs": "8"
       },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/342986"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/1831"
     },
     {
-      "id": "46341",
-      "name": "Raghav Anand",
+      "id": "334427",
+      "name": " Harrison, Aka \"Hstar\"",
       "country": "india",
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "score": 7.0,
       "contacts": {
-        "website": "app.milanote.com/1QcPH91wGNoPdk?p=OsehXqi0Jf2"
+        "email": "HarrisonStarBusiness@Gmail.com",
+        "website": "youtube.com/@HstarYouTube"
       },
-      "badge": "blueDiamond",
+      "badge": "simpleVerified",
       "verified": false,
       "hireMe": true,
       "ytChannel": {
-        "name": "Raghav Anand",
-        "subscribers": 114000,
-        "abvSubs": "114K"
+        "name": "Hstar",
+        "subscribers": 5840,
+        "abvSubs": "5.84K"
       },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/46341"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/334427"
     },
     {
-      "id": "1674",
-      "name": "Andy Nguyen",
+      "id": "421164",
+      "name": "pombu",
       "country": "vietnam",
       "flag": "\ud83c\uddfb\ud83c\uddf3",
       "score": 7.0,
       "contacts": {
-        "website": "linktr.ee/a_ndytv"
+        "discord": "pombu",
+        "website": "t.co/WFrkzTlbgK"
       },
-      "badge": "blueDiamond",
+      "badge": "silver",
       "verified": false,
       "hireMe": true,
-      "ytChannel": null,
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/1674"
+      "ytChannel": {
+        "name": "pombu",
+        "subscribers": 222,
+        "abvSubs": "222"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/421164"
     },
     {
-      "id": "183179",
-      "name": "4Shan Digital",
+      "id": "313664",
+      "name": "NGCHR9",
       "country": "india",
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "score": 7.0,
       "contacts": {
-        "website": "4shan.in"
+        "email": "christopherng2023@gmail.com",
+        "website": "youtube.com/@NGCHR9"
       },
-      "badge": "gold",
+      "badge": "simpleVerified",
       "verified": false,
       "hireMe": true,
       "ytChannel": {
-        "name": "4Shan Official",
-        "subscribers": 5,
-        "abvSubs": "5"
+        "name": "NGCHR9",
+        "subscribers": 406,
+        "abvSubs": "406"
       },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/183179"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/313664"
     },
     {
-      "id": "2201",
-      "name": "Annie Androva",
-      "country": "bulgaria",
-      "flag": "\ud83c\udde7\ud83c\uddec",
+      "id": "146718",
+      "name": "Julz",
+      "country": "philippines",
+      "flag": "\ud83c\uddf5\ud83c\udded",
       "score": 7.0,
-      "contacts": {},
-      "badge": "gold",
-      "verified": true,
-      "hireMe": false,
-      "ytChannel": null,
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/2201"
+      "contacts": {
+        "discord": "or",
+        "website": "daprjaprvfx2.carrd.co"
+      },
+      "badge": "silver",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "DaprJapr",
+        "subscribers": 2,
+        "abvSubs": "2"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/146718"
     },
     {
-      "id": "1867",
-      "name": "avi",
+      "id": "300934",
+      "name": "Palko Razvan",
       "country": "india",
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "score": 7.0,
       "contacts": {
-        "email": "avaksingh7878@gmail.com",
-        "website": "youtu.be/lEvblSN10B8"
+        "email": "razvanpalko2004@gmail.com",
+        "website": "youtube.com/@palkorazvan"
       },
-      "badge": "gold",
+      "badge": "simpleVerified",
       "verified": false,
       "hireMe": true,
       "ytChannel": {
-        "name": "Avi",
-        "subscribers": 1040,
-        "abvSubs": "1.04K"
+        "name": "RAZVI",
+        "subscribers": 2940,
+        "abvSubs": "2.94K"
       },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/1867"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/300934"
     },
     {
-      "id": "426183",
-      "name": "Andrej Ilic",
-      "country": "serbia",
-      "flag": "\ud83c\uddf7\ud83c\uddf8",
+      "id": "66418",
+      "name": "Rhys Johnson",
+      "country": "vietnam",
+      "flag": "\ud83c\uddfb\ud83c\uddf3",
       "score": 7.0,
       "contacts": {
-        "email": "ilicandrejedit@gmail.com"
+        "email": "rhysjjj@yahoo.co",
+        "website": "linktr.ee/rhysjohnson"
       },
-      "badge": "gold",
+      "badge": "silver",
       "verified": false,
       "hireMe": true,
       "ytChannel": {
-        "name": "Andrej Ilic",
-        "subscribers": 0,
-        "abvSubs": "0"
+        "name": "FM Wonderkids",
+        "subscribers": 8620,
+        "abvSubs": "8.62K"
       },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/426183"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/66418"
     },
     {
-      "id": "272053",
-      "name": "Lana",
-      "country": "turkey",
-      "flag": "\ud83c\uddf9\ud83c\uddf7",
+      "id": "461575",
+      "name": "RightBox Media",
+      "country": "india",
+      "flag": "\ud83c\uddee\ud83c\uddf3",
       "score": 7.0,
       "contacts": {
-        "email": "sp2535447@gmail.com"
+        "email": "info@rightboxmedia.com",
+        "website": "rightboxmedia.com"
       },
-      "badge": "gold",
+      "badge": "silver",
       "verified": false,
       "hireMe": true,
       "ytChannel": {
-        "name": "Safe Space",
-        "subscribers": 1,
-        "abvSubs": "1"
+        "name": "RightBox Media",
+        "subscribers": 2,
+        "abvSubs": "2"
       },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/272053"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/461575"
+    },
+    {
+      "id": "140874",
+      "name": "Abdur Ansari",
+      "country": "pakistan",
+      "flag": "\ud83c\uddf5\ud83c\uddf0",
+      "score": 7.0,
+      "contacts": {
+        "email": "abdur.ansari@outlook.com",
+        "website": "abdur-ansari.mydurable.com"
+      },
+      "badge": "simpleVerified",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "Abdur Ansari",
+        "subscribers": 72,
+        "abvSubs": "72"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/140874"
     }
   ],
-  "generated_at": "2026-03-29T13:01:29.768464Z"
+  "generated_at": "2026-03-30T13:01:25.581113Z"
 }
