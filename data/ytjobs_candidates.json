@@ -1,208 +1,202 @@
 {
-  "date": "2026-03-30",
-  "total_sent": 70,
-  "total_pool": 49873,
+  "date": "2026-03-31",
+  "total_sent": 80,
+  "total_pool": 52392,
   "candidates": [
     {
-      "id": "319304",
-      "name": "Kau\u00ea Dias",
-      "country": "brazil",
-      "flag": "\ud83c\udde7\ud83c\uddf7",
-      "score": 7.0,
-      "contacts": {
-        "email": "gorniley@gmail.com",
-        "website": "kdedicoes.com.br"
-      },
-      "badge": "silver",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "SETUP L\u00daCIDO",
-        "subscribers": 36800,
-        "abvSubs": "36.8K"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/319304"
-    },
-    {
-      "id": "1831",
-      "name": "Protean Dream",
+      "id": "379398",
+      "name": "gz",
       "country": "india",
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "score": 7.0,
       "contacts": {
-        "discord": "ProteanDream#8234",
-        "website": "youtube.com/playlist?list=PLmOpZ11PLMmR9ze0z7stZcPqne14fAKKb"
+        "discord": "gz.6000",
+        "website": "youtube.com/@gz.6000"
       },
       "badge": "simpleVerified",
       "verified": false,
       "hireMe": true,
       "ytChannel": {
-        "name": "Protean Dream",
-        "subscribers": 8,
-        "abvSubs": "8"
+        "name": "gz",
+        "subscribers": 308,
+        "abvSubs": "308"
       },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/1831"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/379398"
     },
     {
-      "id": "334427",
-      "name": " Harrison, Aka \"Hstar\"",
-      "country": "india",
-      "flag": "\ud83c\uddee\ud83c\uddf3",
-      "score": 7.0,
-      "contacts": {
-        "email": "HarrisonStarBusiness@Gmail.com",
-        "website": "youtube.com/@HstarYouTube"
-      },
-      "badge": "simpleVerified",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "Hstar",
-        "subscribers": 5840,
-        "abvSubs": "5.84K"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/334427"
-    },
-    {
-      "id": "421164",
-      "name": "pombu",
+      "id": "384986",
+      "name": "THE MARSTER the editor",
       "country": "vietnam",
       "flag": "\ud83c\uddfb\ud83c\uddf3",
       "score": 7.0,
       "contacts": {
-        "discord": "pombu",
-        "website": "t.co/WFrkzTlbgK"
-      },
-      "badge": "silver",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "pombu",
-        "subscribers": 222,
-        "abvSubs": "222"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/421164"
-    },
-    {
-      "id": "313664",
-      "name": "NGCHR9",
-      "country": "india",
-      "flag": "\ud83c\uddee\ud83c\uddf3",
-      "score": 7.0,
-      "contacts": {
-        "email": "christopherng2023@gmail.com",
-        "website": "youtube.com/@NGCHR9"
+        "email": "shemarcox15@gmail.com",
+        "website": "linktr.ee/the_marster1"
       },
       "badge": "simpleVerified",
       "verified": false,
       "hireMe": true,
       "ytChannel": {
-        "name": "NGCHR9",
-        "subscribers": 406,
-        "abvSubs": "406"
+        "name": "The Marster",
+        "subscribers": 241,
+        "abvSubs": "241"
       },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/313664"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/384986"
     },
     {
-      "id": "146718",
-      "name": "Julz",
-      "country": "philippines",
-      "flag": "\ud83c\uddf5\ud83c\udded",
-      "score": 7.0,
-      "contacts": {
-        "discord": "or",
-        "website": "daprjaprvfx2.carrd.co"
-      },
-      "badge": "silver",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "DaprJapr",
-        "subscribers": 2,
-        "abvSubs": "2"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/146718"
-    },
-    {
-      "id": "300934",
-      "name": "Palko Razvan",
+      "id": "472618",
+      "name": "Moses Inalegwu",
       "country": "india",
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "score": 7.0,
       "contacts": {
-        "email": "razvanpalko2004@gmail.com",
-        "website": "youtube.com/@palkorazvan"
+        "email": "thesohstudios@gmail.com",
+        "website": "youtube.com/@sohenterprise"
+      },
+      "badge": "simpleVerified",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": null,
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/472618"
+    },
+    {
+      "id": "256632",
+      "name": "Lonewolfy 63",
+      "country": "india",
+      "flag": "\ud83c\uddee\ud83c\uddf3",
+      "score": 7.0,
+      "contacts": {
+        "discord": "at",
+        "website": "youtube.com/@lonewolfy63/videos"
       },
       "badge": "simpleVerified",
       "verified": false,
       "hireMe": true,
       "ytChannel": {
-        "name": "RAZVI",
-        "subscribers": 2940,
-        "abvSubs": "2.94K"
+        "name": "Lonewolfy",
+        "subscribers": 169,
+        "abvSubs": "169"
       },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/300934"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/256632"
     },
     {
-      "id": "66418",
-      "name": "Rhys Johnson",
+      "id": "429008",
+      "name": "DenisY",
+      "country": "georgia",
+      "flag": "\ud83c\uddec\ud83c\uddea",
+      "score": 7.0,
+      "contacts": {
+        "email": "denislavyanakiev07@gmail.com",
+        "discord": "ruthless_denis",
+        "twitter": "RuthlessDenis",
+        "website": "sturdy-potassium-705.notion.site/DenisY-Portfolio-25ddc0a1c756803fb9c5d83fe7083fbb"
+      },
+      "badge": "silver",
+      "verified": false,
+      "hireMe": false,
+      "ytChannel": {
+        "name": "Denis Yanakiev",
+        "subscribers": 2080,
+        "abvSubs": "2.08K"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/429008"
+    },
+    {
+      "id": "505035",
+      "name": "Smorki",
       "country": "vietnam",
       "flag": "\ud83c\uddfb\ud83c\uddf3",
       "score": 7.0,
       "contacts": {
-        "email": "rhysjjj@yahoo.co",
-        "website": "linktr.ee/rhysjohnson"
+        "email": "contact.smorki@gmail.com",
+        "website": "linktr.ee/smorki.edits"
       },
-      "badge": "silver",
+      "badge": "simpleVerified",
       "verified": false,
       "hireMe": true,
       "ytChannel": {
-        "name": "FM Wonderkids",
-        "subscribers": 8620,
-        "abvSubs": "8.62K"
+        "name": "Smorki",
+        "subscribers": 54,
+        "abvSubs": "54"
       },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/66418"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/505035"
     },
     {
-      "id": "461575",
-      "name": "RightBox Media",
-      "country": "india",
-      "flag": "\ud83c\uddee\ud83c\uddf3",
-      "score": 7.0,
-      "contacts": {
-        "email": "info@rightboxmedia.com",
-        "website": "rightboxmedia.com"
-      },
-      "badge": "silver",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "RightBox Media",
-        "subscribers": 2,
-        "abvSubs": "2"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/461575"
-    },
-    {
-      "id": "140874",
-      "name": "Abdur Ansari",
+      "id": "393316",
+      "name": "Saad Ahmad",
       "country": "pakistan",
       "flag": "\ud83c\uddf5\ud83c\uddf0",
       "score": 7.0,
       "contacts": {
-        "email": "abdur.ansari@outlook.com",
-        "website": "abdur-ansari.mydurable.com"
+        "email": "unityfilmsnet@gmail.com",
+        "website": "unitydiv.com"
+      },
+      "badge": "simpleVerified",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": null,
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/393316"
+    },
+    {
+      "id": "286405",
+      "name": "\u300eKANSEN\u300f",
+      "country": "vietnam",
+      "flag": "\ud83c\uddfb\ud83c\uddf3",
+      "score": 7.0,
+      "contacts": {
+        "email": "nsalminen04@gmail.com",
+        "website": "linktr.ee/kansenfx"
       },
       "badge": "simpleVerified",
       "verified": false,
       "hireMe": true,
       "ytChannel": {
-        "name": "Abdur Ansari",
-        "subscribers": 72,
-        "abvSubs": "72"
+        "name": "KANSEN",
+        "subscribers": 4480,
+        "abvSubs": "4.48K"
       },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/140874"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/286405"
+    },
+    {
+      "id": "496947",
+      "name": "Bryan",
+      "country": "india",
+      "flag": "\ud83c\uddee\ud83c\uddf3",
+      "score": 7.0,
+      "contacts": {
+        "discord": "heelzy",
+        "website": "youtube.com/@Heelzy/featured"
+      },
+      "badge": "simpleVerified",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "HeelzyYaps",
+        "subscribers": 559,
+        "abvSubs": "559"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/496947"
+    },
+    {
+      "id": "31107",
+      "name": "Nithin Reddy",
+      "country": "india",
+      "flag": "\ud83c\uddee\ud83c\uddf3",
+      "score": 7.0,
+      "contacts": {
+        "discord": "with",
+        "website": "notion.so/Video-Editing-Portfolio-3291a920f4f246a6b89c72c9e8b6b9fa?pvs=4"
+      },
+      "badge": "simpleVerified",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "Comrades by Dileep Reddy",
+        "subscribers": 56600,
+        "abvSubs": "56.6K"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/31107"
     }
   ],
-  "generated_at": "2026-03-30T13:01:25.581113Z"
+  "generated_at": "2026-03-31T13:03:13.163259Z"
 }
