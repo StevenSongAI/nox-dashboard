@@ -1,198 +1,192 @@
 {
-  "date": "2026-04-01",
-  "total_sent": 90,
-  "total_pool": 57382,
+  "date": "2026-04-04",
+  "total_sent": 100,
+  "total_pool": 59346,
   "candidates": [
     {
-      "id": "271674",
-      "name": "Dana Roa",
-      "country": "mexico",
-      "flag": "\ud83c\uddf2\ud83c\uddfd",
-      "score": 7.0,
+      "id": "66159",
+      "name": "Toxin",
+      "country": "india",
+      "flag": "\ud83c\uddee\ud83c\uddf3",
+      "score": 6.5,
       "contacts": {
-        "email": "danaroa.fotografia@gmail.com",
-        "website": "danaroa99.wixsite.com/my-site"
+        "website": "youtube.com/playlist?list=PLURgjb61WJlBvNcrwmzjO8wJuDm3zFW4A"
       },
-      "badge": "simpleVerified",
+      "badge": "silver",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "Toxin",
+        "subscribers": 4170,
+        "abvSubs": "4.17K"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/66159"
+    },
+    {
+      "id": "82007",
+      "name": "Tizin",
+      "country": "india",
+      "flag": "\ud83c\uddee\ud83c\uddf3",
+      "score": 6.0,
+      "contacts": {
+        "website": "youtube.com/@TizinMania"
+      },
+      "badge": "gold",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "Tizin Mania",
+        "subscribers": 1290000,
+        "abvSubs": "1.29M"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/82007"
+    },
+    {
+      "id": "23478",
+      "name": "Stone Congo",
+      "country": "vietnam",
+      "flag": "\ud83c\uddfb\ud83c\uddf3",
+      "score": 6.0,
+      "contacts": {
+        "website": "stonec.co"
+      },
+      "badge": "gold",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "Revive Music",
+        "subscribers": 1210000,
+        "abvSubs": "1.21M"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/23478"
+    },
+    {
+      "id": "36850",
+      "name": "Joaquin Dircksen",
+      "country": "vietnam",
+      "flag": "\ud83c\uddfb\ud83c\uddf3",
+      "score": 6.0,
+      "contacts": {
+        "website": "linktr.ee/joaquindircksen"
+      },
+      "badge": "gold",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "Deon Goldsmith",
+        "subscribers": 40,
+        "abvSubs": "40"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/36850"
+    },
+    {
+      "id": "177794",
+      "name": "Jordan SK Torres",
+      "country": "brazil",
+      "flag": "\ud83c\udde7\ud83c\uddf7",
+      "score": 6.0,
+      "contacts": {
+        "website": "jordanktorres.wixstudio.io/resume"
+      },
+      "badge": "gold",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "Jordan SK Torres",
+        "subscribers": 11800,
+        "abvSubs": "11.8K"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/177794"
+    },
+    {
+      "id": "189599",
+      "name": "Chintuzz",
+      "country": "india",
+      "flag": "\ud83c\uddee\ud83c\uddf3",
+      "score": 6.0,
+      "contacts": {
+        "website": "instagram.com/chintuzz24"
+      },
+      "badge": "gold",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "Chintuzz",
+        "subscribers": 10500,
+        "abvSubs": "10.5K"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/189599"
+    },
+    {
+      "id": "59022",
+      "name": "Sammuel Guimaraes",
+      "country": "india",
+      "flag": "\ud83c\uddee\ud83c\uddf3",
+      "score": 6.0,
+      "contacts": {
+        "website": "youtube.com/@DAMIANTHEFATASS/featured"
+      },
+      "badge": "gold",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "Sammuel Guimaraes",
+        "subscribers": 0,
+        "abvSubs": "0"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/59022"
+    },
+    {
+      "id": "39322",
+      "name": "Adam Cluppert",
+      "country": "india",
+      "flag": "\ud83c\uddee\ud83c\uddf3",
+      "score": 6.0,
+      "contacts": {
+        "website": "youtube.com/playlist?list=PL0-l4yV6fQBQPi7eNaTOUH5XNUypYVk8T"
+      },
+      "badge": "gold",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "Adam",
+        "subscribers": 41,
+        "abvSubs": "41"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/39322"
+    },
+    {
+      "id": "380394",
+      "name": "Virgula",
+      "country": "brazil",
+      "flag": "\ud83c\udde7\ud83c\uddf7",
+      "score": 6.0,
+      "contacts": {},
+      "badge": "blueDiamond",
       "verified": false,
       "hireMe": true,
       "ytChannel": null,
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/271674"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/380394"
     },
     {
-      "id": "315544",
-      "name": "N U L",
-      "country": "morocco",
-      "flag": "\ud83c\uddf2\ud83c\udde6",
-      "score": 7.0,
-      "contacts": {
-        "email": "mrgorning@gmail.com",
-        "discord": "mr.nul_"
-      },
-      "badge": "simpleVerified",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "N U L",
-        "subscribers": 26,
-        "abvSubs": "26"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/315544"
-    },
-    {
-      "id": "182804",
-      "name": "Koppex",
-      "country": "romania",
-      "flag": "\ud83c\uddf7\ud83c\uddf4",
-      "score": 7.0,
-      "contacts": {
-        "email": "Koppex456@gmail.com",
-        "discord": "Koppex1",
-        "website": "koppex.carrd.co"
-      },
-      "badge": null,
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "Koppex Clips",
-        "subscribers": 1,
-        "abvSubs": "1"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/182804"
-    },
-    {
-      "id": "108386",
-      "name": "Aljen Joseph Javier",
-      "country": "philippines",
-      "flag": "\ud83c\uddf5\ud83c\udded",
-      "score": 6.5,
-      "contacts": {
-        "website": "javieraljen.wixsite.com/ajvisualcuts"
-      },
-      "badge": "gold",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "Ramblers Life",
-        "subscribers": 143,
-        "abvSubs": "143"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/108386"
-    },
-    {
-      "id": "31581",
-      "name": " Torren Moreno (Jab50Yen)",
+      "id": "2438",
+      "name": "Lance",
       "country": "india",
       "flag": "\ud83c\uddee\ud83c\uddf3",
-      "score": 6.5,
+      "score": 6.0,
       "contacts": {
-        "website": "youtube.com/playlist?list=PLzO9E-ZZl-yGg76jmwnElap96ddgCYxaC"
+        "website": "youtube.com/playlist?list=PLvJ7f4v5WV2QSW-ElRQeFg_D1vThKwfb-"
       },
-      "badge": "gold",
+      "badge": "blueDiamond",
       "verified": false,
       "hireMe": true,
       "ytChannel": {
-        "name": "Jab50Yen Returns",
-        "subscribers": 1150,
-        "abvSubs": "1.15K"
+        "name": "Stonix",
+        "subscribers": 27000,
+        "abvSubs": "27K"
       },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/31581"
-    },
-    {
-      "id": "423050",
-      "name": "Amiel John Sario",
-      "country": "philippines",
-      "flag": "\ud83c\uddf5\ud83c\udded",
-      "score": 6.5,
-      "contacts": {
-        "website": "ajsario.my.canva.site/#services"
-      },
-      "badge": "gold",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "Akio & Agatha TV",
-        "subscribers": 4,
-        "abvSubs": "4"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/423050"
-    },
-    {
-      "id": "39017",
-      "name": "gus",
-      "country": "brazil",
-      "flag": "\ud83c\udde7\ud83c\uddf7",
-      "score": 6.5,
-      "contacts": {
-        "website": "linkedin.com/in/nehemiasgustavo"
-      },
-      "badge": "gold",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "nbtgus",
-        "subscribers": 1540,
-        "abvSubs": "1.54K"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/39017"
-    },
-    {
-      "id": "330107",
-      "name": "Gil Brian Perez",
-      "country": "philippines",
-      "flag": "\ud83c\uddf5\ud83c\udded",
-      "score": 6.5,
-      "contacts": {
-        "website": "gbperezva.carrd.co"
-      },
-      "badge": "gold",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "Gil Brian Perez",
-        "subscribers": 1750,
-        "abvSubs": "1.75K"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/330107"
-    },
-    {
-      "id": "110662",
-      "name": "Short Edit Guy",
-      "country": "india",
-      "flag": "\ud83c\uddee\ud83c\uddf3",
-      "score": 6.5,
-      "contacts": {
-        "website": "youtube.com/channel/UCJTWCJxo99YULHhQzRR-sgg"
-      },
-      "badge": "gold",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "Short Edit Guy",
-        "subscribers": 4,
-        "abvSubs": "4"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/110662"
-    },
-    {
-      "id": "5504",
-      "name": "FilMonger",
-      "country": "india",
-      "flag": "\ud83c\uddee\ud83c\uddf3",
-      "score": 6.5,
-      "contacts": {
-        "website": "youtube.com/c/TheCelebrityExpertFilMonger"
-      },
-      "badge": "gold",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "FilMonger Entertainment",
-        "subscribers": 437000,
-        "abvSubs": "437K"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/5504"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/2438"
     }
   ],
-  "generated_at": "2026-04-01T13:01:13.585474Z"
+  "generated_at": "2026-04-04T13:47:34.355261Z"
 }
