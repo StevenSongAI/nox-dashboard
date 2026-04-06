@@ -1,192 +1,195 @@
 {
-  "date": "2026-04-04",
-  "total_sent": 100,
-  "total_pool": 59346,
+  "date": "2026-04-06",
+  "total_sent": 132,
+  "total_pool": 70164,
   "candidates": [
     {
-      "id": "66159",
-      "name": "Toxin",
-      "country": "india",
-      "flag": "\ud83c\uddee\ud83c\uddf3",
-      "score": 6.5,
-      "contacts": {
-        "website": "youtube.com/playlist?list=PLURgjb61WJlBvNcrwmzjO8wJuDm3zFW4A"
-      },
-      "badge": "silver",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "Toxin",
-        "subscribers": 4170,
-        "abvSubs": "4.17K"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/66159"
-    },
-    {
-      "id": "82007",
-      "name": "Tizin",
-      "country": "india",
-      "flag": "\ud83c\uddee\ud83c\uddf3",
+      "id": "238579",
+      "name": "Deniuw",
+      "country": "romania",
+      "flag": "\ud83c\uddf7\ud83c\uddf4",
       "score": 6.0,
       "contacts": {
-        "website": "youtube.com/@TizinMania"
+        "website": "gondola.cc/deniiiuw"
       },
       "badge": "gold",
       "verified": false,
       "hireMe": true,
       "ytChannel": {
-        "name": "Tizin Mania",
-        "subscribers": 1290000,
-        "abvSubs": "1.29M"
+        "name": "danibh",
+        "subscribers": 58400,
+        "abvSubs": "58.4K"
       },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/82007"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/238579"
     },
     {
-      "id": "23478",
-      "name": "Stone Congo",
-      "country": "vietnam",
-      "flag": "\ud83c\uddfb\ud83c\uddf3",
+      "id": "418063",
+      "name": "Taylor Moyle",
+      "country": "georgia",
+      "flag": "\ud83c\uddec\ud83c\uddea",
       "score": 6.0,
       "contacts": {
-        "website": "stonec.co"
+        "website": "inquisitive-teal-4b1.notion.site/Taylor-Moyle-Creative-Director-1fa69bddb3da80c09317c6649d4ade61"
       },
       "badge": "gold",
       "verified": false,
       "hireMe": true,
       "ytChannel": {
-        "name": "Revive Music",
-        "subscribers": 1210000,
-        "abvSubs": "1.21M"
+        "name": "Taylor Moyle",
+        "subscribers": 13500,
+        "abvSubs": "13.5K"
       },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/23478"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/418063"
     },
     {
-      "id": "36850",
-      "name": "Joaquin Dircksen",
-      "country": "vietnam",
-      "flag": "\ud83c\uddfb\ud83c\uddf3",
-      "score": 6.0,
-      "contacts": {
-        "website": "linktr.ee/joaquindircksen"
-      },
-      "badge": "gold",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "Deon Goldsmith",
-        "subscribers": 40,
-        "abvSubs": "40"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/36850"
-    },
-    {
-      "id": "177794",
-      "name": "Jordan SK Torres",
-      "country": "brazil",
-      "flag": "\ud83c\udde7\ud83c\uddf7",
-      "score": 6.0,
-      "contacts": {
-        "website": "jordanktorres.wixstudio.io/resume"
-      },
-      "badge": "gold",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "Jordan SK Torres",
-        "subscribers": 11800,
-        "abvSubs": "11.8K"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/177794"
-    },
-    {
-      "id": "189599",
-      "name": "Chintuzz",
+      "id": "177310",
+      "name": "Fahni Az Zikri",
       "country": "india",
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "score": 6.0,
       "contacts": {
-        "website": "instagram.com/chintuzz24"
+        "website": "youtube.com/channel/UCfcycwxa72-gEo59dmHwlCQ"
       },
       "badge": "gold",
       "verified": false,
       "hireMe": true,
       "ytChannel": {
-        "name": "Chintuzz",
-        "subscribers": 10500,
-        "abvSubs": "10.5K"
+        "name": "iFanz",
+        "subscribers": 2840000,
+        "abvSubs": "2.84M"
       },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/189599"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/177310"
     },
     {
-      "id": "59022",
-      "name": "Sammuel Guimaraes",
+      "id": "29305",
+      "name": "John Culp",
       "country": "india",
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "score": 6.0,
       "contacts": {
-        "website": "youtube.com/@DAMIANTHEFATASS/featured"
+        "website": "youtu.be/1fm80loav8I"
       },
-      "badge": "gold",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "Sammuel Guimaraes",
-        "subscribers": 0,
-        "abvSubs": "0"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/59022"
-    },
-    {
-      "id": "39322",
-      "name": "Adam Cluppert",
-      "country": "india",
-      "flag": "\ud83c\uddee\ud83c\uddf3",
-      "score": 6.0,
-      "contacts": {
-        "website": "youtube.com/playlist?list=PL0-l4yV6fQBQPi7eNaTOUH5XNUypYVk8T"
-      },
-      "badge": "gold",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "Adam",
-        "subscribers": 41,
-        "abvSubs": "41"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/39322"
-    },
-    {
-      "id": "380394",
-      "name": "Virgula",
-      "country": "brazil",
-      "flag": "\ud83c\udde7\ud83c\uddf7",
-      "score": 6.0,
-      "contacts": {},
       "badge": "blueDiamond",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "John Culp",
+        "subscribers": 4,
+        "abvSubs": "4"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/29305"
+    },
+    {
+      "id": "286772",
+      "name": "Adi & Dev",
+      "country": "indonesia",
+      "flag": "\ud83c\uddee\ud83c\udde9",
+      "score": 6.0,
+      "contacts": {
+        "twitter": "AdityaEditzzz",
+        "website": "adityavideoeditor.carrd.co"
+      },
+      "badge": "gold",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "Aditya ",
+        "subscribers": 9,
+        "abvSubs": "9"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/286772"
+    },
+    {
+      "id": "33713",
+      "name": "Evan Redcliff",
+      "country": "vietnam",
+      "flag": "\ud83c\uddfb\ud83c\uddf3",
+      "score": 6.0,
+      "contacts": {
+        "website": "linktr.ee/squadtrek"
+      },
+      "badge": "gold",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "SQUADTREK",
+        "subscribers": 1730,
+        "abvSubs": "1.73K"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/33713"
+    },
+    {
+      "id": "132236",
+      "name": "oni.fx",
+      "country": "indonesia",
+      "flag": "\ud83c\uddee\ud83c\udde9",
+      "score": 6.0,
+      "contacts": {
+        "website": "imnotoni.carrd.co"
+      },
+      "badge": "gold",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "imnot oni",
+        "subscribers": 1030,
+        "abvSubs": "1.03K"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/132236"
+    },
+    {
+      "id": "292550",
+      "name": "Bethel Eva",
+      "country": "vietnam",
+      "flag": "\ud83c\uddfb\ud83c\uddf3",
+      "score": 6.0,
+      "contacts": {
+        "website": "linktr.ee/betheleva"
+      },
+      "badge": "gold",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "FreshBeeth",
+        "subscribers": 4930,
+        "abvSubs": "4.93K"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/292550"
+    },
+    {
+      "id": "37919",
+      "name": "Brayden Tetzlaff",
+      "country": "vietnam",
+      "flag": "\ud83c\uddfb\ud83c\uddf3",
+      "score": 6.0,
+      "contacts": {
+        "website": "linktr.ee/braydentetzlaff"
+      },
+      "badge": "gold",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "Brayden Tetzlaff",
+        "subscribers": 31,
+        "abvSubs": "31"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/37919"
+    },
+    {
+      "id": "647",
+      "name": "Nassim | Zengane",
+      "country": "vietnam",
+      "flag": "\ud83c\uddfb\ud83c\uddf3",
+      "score": 6.0,
+      "contacts": {
+        "website": "t.co/y9vgIhPM81"
+      },
+      "badge": "gold",
       "verified": false,
       "hireMe": true,
       "ytChannel": null,
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/380394"
-    },
-    {
-      "id": "2438",
-      "name": "Lance",
-      "country": "india",
-      "flag": "\ud83c\uddee\ud83c\uddf3",
-      "score": 6.0,
-      "contacts": {
-        "website": "youtube.com/playlist?list=PLvJ7f4v5WV2QSW-ElRQeFg_D1vThKwfb-"
-      },
-      "badge": "blueDiamond",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "Stonix",
-        "subscribers": 27000,
-        "abvSubs": "27K"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/2438"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/647"
     }
   ],
-  "generated_at": "2026-04-04T13:47:34.355261Z"
+  "generated_at": "2026-04-06T14:39:56.907468Z"
 }
