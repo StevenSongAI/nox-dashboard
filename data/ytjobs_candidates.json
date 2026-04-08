@@ -1,194 +1,199 @@
 {
-  "date": "2026-04-07",
-  "total_sent": 152,
-  "total_pool": 70988,
+  "date": "2026-04-08",
+  "total_sent": 162,
+  "total_pool": 71046,
   "candidates": [
     {
-      "id": "184852",
-      "name": "Federica La Marca / Faith",
-      "country": "georgia",
-      "flag": "\ud83c\uddec\ud83c\uddea",
-      "score": 6.0,
+      "id": "153593",
+      "name": "BOUHALI Mohamed Aymen",
+      "country": "algeria",
+      "flag": "\ud83c\udde9\ud83c\uddff",
+      "score": 8.0,
       "contacts": {
-        "website": "readymag.website/u4146278660/portfolio"
+        "email": "aymenbouhali25@gmail.com",
+        "website": "instagram.com/diablo_xyt?igsh=cjJod3B5ZTZtank%3D&utm_source=qr"
       },
       "badge": "gold",
       "verified": false,
       "hireMe": true,
       "ytChannel": {
-        "name": "faith edits",
-        "subscribers": 795,
-        "abvSubs": "795"
+        "name": "DIABLO PUBG-M",
+        "subscribers": 33100,
+        "abvSubs": "33.1K"
       },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/184852"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/153593"
     },
     {
-      "id": "172055",
-      "name": "Comfy Catboy",
-      "country": "india",
-      "flag": "\ud83c\uddee\ud83c\uddf3",
-      "score": 6.0,
+      "id": "289871",
+      "name": "Demetria Sixx",
+      "country": "brazil",
+      "flag": "\ud83c\udde7\ud83c\uddf7",
+      "score": 7.0,
       "contacts": {
-        "website": "youtube.com/@comfyvideoedits"
+        "discord": "demetria"
       },
       "badge": "gold",
       "verified": false,
       "hireMe": true,
       "ytChannel": {
-        "name": "Comfy Catboy",
-        "subscribers": 2900,
-        "abvSubs": "2.9K"
+        "name": "Demetria Sixx",
+        "subscribers": 593,
+        "abvSubs": "593"
       },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/172055"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/289871"
     },
     {
-      "id": "411361",
-      "name": "Marcos Henrique",
+      "id": "99651",
+      "name": "VANSH",
       "country": "vietnam",
       "flag": "\ud83c\uddfb\ud83c\uddf3",
       "score": 6.0,
       "contacts": {
-        "website": "linktr.ee/m4rc0seditor"
+        "website": "vanshahuja.framer.website"
       },
       "badge": "gold",
       "verified": false,
       "hireMe": true,
       "ytChannel": {
-        "name": "M4RCOS - Editor de V\u00eddeo ",
-        "subscribers": 9,
-        "abvSubs": "9"
+        "name": "The Hashtag Lab",
+        "subscribers": 23,
+        "abvSubs": "23"
       },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/411361"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/99651"
     },
     {
-      "id": "409368",
-      "name": " Liam \"Crumpet\"",
-      "country": "vietnam",
-      "flag": "\ud83c\uddfb\ud83c\uddf3",
-      "score": 6.0,
-      "contacts": {
-        "website": "liams.media"
-      },
-      "badge": "gold",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "LiamEditsMedia",
-        "subscribers": 18,
-        "abvSubs": "18"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/409368"
-    },
-    {
-      "id": "505415",
-      "name": "PHAROXDSGNS",
-      "country": "vietnam",
-      "flag": "\ud83c\uddfb\ud83c\uddf3",
-      "score": 6.0,
-      "contacts": {
-        "website": "pharoxdsgns.framer.website"
-      },
-      "badge": "gold",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "PHAROX TALES",
-        "subscribers": 1,
-        "abvSubs": "1"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/505415"
-    },
-    {
-      "id": "29464",
-      "name": "Yakotrick",
+      "id": "378356",
+      "name": "MTee",
       "country": "india",
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "score": 6.0,
       "contacts": {
-        "website": "youtu.be/2p4qWvbIHBs"
+        "website": "youtube.com/playlist?list=PLfd-3XPuH7mZi4VjC4WGAgiGGX2e9WgMd"
       },
       "badge": "gold",
       "verified": false,
       "hireMe": true,
       "ytChannel": {
-        "name": "Yakotrick",
-        "subscribers": 849,
-        "abvSubs": "849"
+        "name": "MTee",
+        "subscribers": 8570,
+        "abvSubs": "8.57K"
       },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/29464"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/378356"
     },
     {
-      "id": "42266",
-      "name": "Dushyant S",
-      "country": "indonesia",
-      "flag": "\ud83c\uddee\ud83c\udde9",
-      "score": 6.0,
-      "contacts": {
-        "website": "createwithdushyant.carrd.co"
-      },
-      "badge": "gold",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": null,
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/42266"
-    },
-    {
-      "id": "54095",
-      "name": "MaxedOut",
-      "country": "india",
-      "flag": "\ud83c\uddee\ud83c\uddf3",
-      "score": 6.0,
-      "contacts": {
-        "website": "youtube.com/c/MaxedOutEdits"
-      },
-      "badge": "gold",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "MaxedOut",
-        "subscribers": 443,
-        "abvSubs": "443"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/54095"
-    },
-    {
-      "id": "386919",
-      "name": "Neme",
-      "country": "indonesia",
-      "flag": "\ud83c\uddee\ud83c\udde9",
-      "score": 6.0,
-      "contacts": {
-        "website": "nemesportfolio.carrd.co"
-      },
-      "badge": "gold",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "Nottus",
-        "subscribers": 3530,
-        "abvSubs": "3.53K"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/386919"
-    },
-    {
-      "id": "374845",
-      "name": "F3LIX",
+      "id": "246939",
+      "name": "Pedro H. Grandizoli",
       "country": "brazil",
       "flag": "\ud83c\udde7\ud83c\uddf7",
       "score": 6.0,
       "contacts": {
-        "website": "f3lixnekomata.carrd.co"
+        "website": "pedrograndizoli.netlify.app"
       },
       "badge": "gold",
       "verified": false,
       "hireMe": true,
       "ytChannel": {
-        "name": "F3LIX",
-        "subscribers": 8680,
-        "abvSubs": "8.68K"
+        "name": "Editor Pedro",
+        "subscribers": 28,
+        "abvSubs": "28"
       },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/374845"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/246939"
+    },
+    {
+      "id": "52252",
+      "name": "Hogea Robert",
+      "country": "india",
+      "flag": "\ud83c\uddee\ud83c\uddf3",
+      "score": 6.0,
+      "contacts": {
+        "website": "youtube.com/playlist?list=PLpa8er2VgzizxJroIrx4sUc59auEeWUOE"
+      },
+      "badge": "gold",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "Hogea Aurel-Robert",
+        "subscribers": 9,
+        "abvSubs": "9"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/52252"
+    },
+    {
+      "id": "229007",
+      "name": "Damian Moyano",
+      "country": "argentina",
+      "flag": "\ud83c\udde6\ud83c\uddf7",
+      "score": 6.0,
+      "contacts": {
+        "website": "youtu.be/T24FgBAxFpE"
+      },
+      "badge": "gold",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "Dami",
+        "subscribers": 172,
+        "abvSubs": "172"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/229007"
+    },
+    {
+      "id": "7823",
+      "name": "LJIMUN",
+      "country": "india",
+      "flag": "\ud83c\uddee\ud83c\uddf3",
+      "score": 6.0,
+      "contacts": {
+        "website": "youtube.com/playlist?list=PL5gxciwO3myDFe_ntIFPecdP9mePQJZp5"
+      },
+      "badge": "gold",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "LJIMUN",
+        "subscribers": 156,
+        "abvSubs": "156"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/7823"
+    },
+    {
+      "id": "179671",
+      "name": "MD. Ariful Islam Emon",
+      "country": "india",
+      "flag": "\ud83c\uddee\ud83c\uddf3",
+      "score": 6.0,
+      "contacts": {
+        "website": "youtu.be/KKkxylaFCv0?si=AwRdaqR3MGDoKF8k"
+      },
+      "badge": "gold",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "ATC Android ToTo Company",
+        "subscribers": 2240000,
+        "abvSubs": "2.24M"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/179671"
+    },
+    {
+      "id": "394275",
+      "name": "Hira Graphics",
+      "country": "vietnam",
+      "flag": "\ud83c\uddfb\ud83c\uddf3",
+      "score": 6.0,
+      "contacts": {
+        "website": "hiradesigns.com"
+      },
+      "badge": "gold",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "Hira Graphics",
+        "subscribers": 0,
+        "abvSubs": "0"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/394275"
     }
   ],
-  "generated_at": "2026-04-07T13:02:05.459394Z"
+  "generated_at": "2026-04-08T13:01:57.327157Z"
 }
