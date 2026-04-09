@@ -1,199 +1,182 @@
 {
-  "date": "2026-04-08",
-  "total_sent": 162,
-  "total_pool": 71046,
+  "date": "2026-04-09",
+  "total_sent": 172,
+  "total_pool": 71124,
   "candidates": [
     {
-      "id": "153593",
-      "name": "BOUHALI Mohamed Aymen",
-      "country": "algeria",
-      "flag": "\ud83c\udde9\ud83c\uddff",
-      "score": 8.0,
+      "id": "282009",
+      "name": "Amdad",
+      "country": "bangladesh",
+      "flag": "\ud83c\udde7\ud83c\udde9",
+      "score": 6.0,
       "contacts": {
-        "email": "aymenbouhali25@gmail.com",
-        "website": "instagram.com/diablo_xyt?igsh=cjJod3B5ZTZtank%3D&utm_source=qr"
+        "website": "endlesseditor.com"
       },
       "badge": "gold",
       "verified": false,
       "hireMe": true,
       "ytChannel": {
-        "name": "DIABLO PUBG-M",
-        "subscribers": 33100,
-        "abvSubs": "33.1K"
+        "name": "Amdad",
+        "subscribers": 8250,
+        "abvSubs": "8.25K"
       },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/153593"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/282009"
     },
     {
-      "id": "289871",
-      "name": "Demetria Sixx",
-      "country": "brazil",
-      "flag": "\ud83c\udde7\ud83c\uddf7",
-      "score": 7.0,
+      "id": "39603",
+      "name": "Riwaj Singh",
+      "country": "india",
+      "flag": "\ud83c\uddee\ud83c\uddf3",
+      "score": 6.0,
       "contacts": {
-        "discord": "demetria"
+        "website": "youtube.com/@Riwajbrief"
       },
       "badge": "gold",
       "verified": false,
       "hireMe": true,
       "ytChannel": {
-        "name": "Demetria Sixx",
-        "subscribers": 593,
-        "abvSubs": "593"
+        "name": "RSTbrief",
+        "subscribers": 47100,
+        "abvSubs": "47.1K"
       },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/289871"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/39603"
     },
     {
-      "id": "99651",
-      "name": "VANSH",
+      "id": "372872",
+      "name": " URBAN \u00ae",
       "country": "vietnam",
       "flag": "\ud83c\uddfb\ud83c\uddf3",
       "score": 6.0,
       "contacts": {
-        "website": "vanshahuja.framer.website"
+        "website": "linktr.ee/urbaandzn?utm_source=linktree_profile_share&ltsid=442e3909-6662-4cc5-85b8-7ced4b934e7b"
       },
       "badge": "gold",
       "verified": false,
       "hireMe": true,
-      "ytChannel": {
-        "name": "The Hashtag Lab",
-        "subscribers": 23,
-        "abvSubs": "23"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/99651"
+      "ytChannel": null,
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/372872"
     },
     {
-      "id": "378356",
-      "name": "MTee",
+      "id": "51555",
+      "name": "Abdelrahman shahin",
       "country": "india",
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "score": 6.0,
       "contacts": {
-        "website": "youtube.com/playlist?list=PLfd-3XPuH7mZi4VjC4WGAgiGGX2e9WgMd"
+        "website": "youtube.com/playlist?list=PL0uVulSyRCkVfm6ITeetHbj5ySo2pTum8"
       },
       "badge": "gold",
       "verified": false,
       "hireMe": true,
-      "ytChannel": {
-        "name": "MTee",
-        "subscribers": 8570,
-        "abvSubs": "8.57K"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/378356"
+      "ytChannel": null,
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/51555"
     },
     {
-      "id": "246939",
-      "name": "Pedro H. Grandizoli",
-      "country": "brazil",
-      "flag": "\ud83c\udde7\ud83c\uddf7",
-      "score": 6.0,
-      "contacts": {
-        "website": "pedrograndizoli.netlify.app"
-      },
-      "badge": "gold",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "Editor Pedro",
-        "subscribers": 28,
-        "abvSubs": "28"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/246939"
-    },
-    {
-      "id": "52252",
-      "name": "Hogea Robert",
+      "id": "156596",
+      "name": " ViskJ (Vincent Shi)",
       "country": "india",
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "score": 6.0,
       "contacts": {
-        "website": "youtube.com/playlist?list=PLpa8er2VgzizxJroIrx4sUc59auEeWUOE"
+        "website": "youtube.com/@viskj"
       },
       "badge": "gold",
       "verified": false,
       "hireMe": true,
       "ytChannel": {
-        "name": "Hogea Aurel-Robert",
-        "subscribers": 9,
-        "abvSubs": "9"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/52252"
-    },
-    {
-      "id": "229007",
-      "name": "Damian Moyano",
-      "country": "argentina",
-      "flag": "\ud83c\udde6\ud83c\uddf7",
-      "score": 6.0,
-      "contacts": {
-        "website": "youtu.be/T24FgBAxFpE"
-      },
-      "badge": "gold",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "Dami",
+        "name": "ViskJ\u5065",
         "subscribers": 172,
         "abvSubs": "172"
       },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/229007"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/156596"
     },
     {
-      "id": "7823",
-      "name": "LJIMUN",
+      "id": "320368",
+      "name": "Samyak Goswami",
       "country": "india",
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "score": 6.0,
       "contacts": {
-        "website": "youtube.com/playlist?list=PL5gxciwO3myDFe_ntIFPecdP9mePQJZp5"
+        "website": "instagram.com/sgeditsaredumb"
       },
       "badge": "gold",
       "verified": false,
       "hireMe": true,
-      "ytChannel": {
-        "name": "LJIMUN",
-        "subscribers": 156,
-        "abvSubs": "156"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/7823"
+      "ytChannel": null,
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/320368"
     },
     {
-      "id": "179671",
-      "name": "MD. Ariful Islam Emon",
+      "id": "25538",
+      "name": "George Morris",
+      "country": "algeria",
+      "flag": "\ud83c\udde9\ud83c\uddff",
+      "score": 6.0,
+      "contacts": {
+        "website": "georgemorriseditor.co.uk"
+      },
+      "badge": "gold",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": null,
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/25538"
+    },
+    {
+      "id": "102215",
+      "name": "Prajwal D Joshi",
       "country": "india",
       "flag": "\ud83c\uddee\ud83c\uddf3",
       "score": 6.0,
       "contacts": {
-        "website": "youtu.be/KKkxylaFCv0?si=AwRdaqR3MGDoKF8k"
+        "website": "drive.google.com/drive/folders/1qE0zrnFMpCxBneCEMgtox2x4NGmwsBNi"
       },
       "badge": "gold",
       "verified": false,
       "hireMe": true,
       "ytChannel": {
-        "name": "ATC Android ToTo Company",
-        "subscribers": 2240000,
-        "abvSubs": "2.24M"
+        "name": "Prajwal D Joshi",
+        "subscribers": 35,
+        "abvSubs": "35"
       },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/179671"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/102215"
     },
     {
-      "id": "394275",
-      "name": "Hira Graphics",
-      "country": "vietnam",
-      "flag": "\ud83c\uddfb\ud83c\uddf3",
+      "id": "514349",
+      "name": "Daniel Roof",
+      "country": "peru",
+      "flag": "\ud83c\uddf5\ud83c\uddea",
       "score": 6.0,
       "contacts": {
-        "website": "hiradesigns.com"
+        "website": "redmooncreativegroup.com"
       },
       "badge": "gold",
       "verified": false,
       "hireMe": true,
       "ytChannel": {
-        "name": "Hira Graphics",
-        "subscribers": 0,
-        "abvSubs": "0"
+        "name": "Daniel Roof",
+        "subscribers": 3,
+        "abvSubs": "3"
       },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/394275"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/514349"
+    },
+    {
+      "id": "144426",
+      "name": "Hani Visuals",
+      "country": "pakistan",
+      "flag": "\ud83c\uddf5\ud83c\uddf0",
+      "score": 6.0,
+      "contacts": {
+        "website": "hanivisuals.crd.co"
+      },
+      "badge": "gold",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "Hani Visuals",
+        "subscribers": 656,
+        "abvSubs": "656"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/144426"
     }
   ],
-  "generated_at": "2026-04-08T13:01:57.327157Z"
+  "generated_at": "2026-04-09T13:02:10.660032Z"
 }
