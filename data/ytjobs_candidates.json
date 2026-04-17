@@ -1,151 +1,28 @@
 {
-  "date": "2026-04-12",
-  "total_sent": 190,
-  "total_pool": 71284,
+  "date": "2026-04-17",
+  "total_sent": 191,
+  "total_pool": 71655,
   "candidates": [
     {
-      "id": "474665",
-      "name": "Booney",
-      "country": "indonesia",
-      "flag": "\ud83c\uddee\ud83c\udde9",
-      "score": 5.0,
-      "contacts": {
-        "discord": "booney.edit",
-        "website": "booney.work"
-      },
-      "badge": "silver",
-      "verified": false,
-      "hireMe": false,
-      "ytChannel": {
-        "name": "BooneyProductions",
-        "subscribers": 663,
-        "abvSubs": "663"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/474665"
-    },
-    {
-      "id": "24112",
-      "name": "Lucky Singh Dhiman",
-      "country": "india",
-      "flag": "\ud83c\uddee\ud83c\uddf3",
-      "score": 5.0,
-      "contacts": {
-        "email": "singhluckyd@gmail.com",
-        "discord": "luckydhiman23",
-        "website": "instagram.com/luckyd.colorist"
-      },
-      "badge": null,
-      "verified": false,
-      "hireMe": false,
-      "ytChannel": null,
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/24112"
-    },
-    {
-      "id": "6527",
-      "name": "F\u00eanizx",
+      "id": "527039",
+      "name": "Ralfh Steeven",
       "country": "brazil",
       "flag": "\ud83c\udde7\ud83c\uddf7",
-      "score": 5.0,
+      "score": 7.0,
       "contacts": {
-        "discord": "_fenizx",
-        "website": "fenizx.carrd.co"
-      },
-      "badge": null,
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": null,
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/6527"
-    },
-    {
-      "id": "503077",
-      "name": "Abdullah",
-      "country": "pakistan",
-      "flag": "\ud83c\uddf5\ud83c\uddf0",
-      "score": 4.5,
-      "contacts": {
-        "discord": "abdullah_goat10"
-      },
-      "badge": null,
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "Abdullah",
-        "subscribers": 1,
-        "abvSubs": "1"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/503077"
-    },
-    {
-      "id": "1173",
-      "name": "Halutus",
-      "country": "india",
-      "flag": "\ud83c\uddee\ud83c\uddf3",
-      "score": 4.0,
-      "contacts": {
-        "discord": "halutus#3257",
-        "website": "youtube.com/playlist?list=PLGqybygCK-C8cboDfFS4zg0XvrDiykTBw"
-      },
-      "badge": "silver",
-      "verified": false,
-      "hireMe": false,
-      "ytChannel": null,
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/1173"
-    },
-    {
-      "id": "317032",
-      "name": "Corin McMeeken",
-      "country": "india",
-      "flag": "\ud83c\uddee\ud83c\uddf3",
-      "score": 4.0,
-      "contacts": {
-        "discord": "classity",
-        "website": "youtube.com/@classyuk"
+        "discord": "Ralfh_zRose",
+        "website": "tiktok.com/@ralfh_zrose"
       },
       "badge": "simpleVerified",
       "verified": false,
-      "hireMe": false,
-      "ytChannel": {
-        "name": "Its_Classy",
-        "subscribers": 264,
-        "abvSubs": "264"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/317032"
-    },
-    {
-      "id": "513632",
-      "name": "Ahmed Visuals",
-      "country": "pakistan",
-      "flag": "\ud83c\uddf5\ud83c\uddf0",
-      "score": 4.0,
-      "contacts": {
-        "discord": "Logos"
-      },
-      "badge": null,
-      "verified": false,
       "hireMe": true,
       "ytChannel": {
-        "name": "Baka Editz",
-        "subscribers": 140,
-        "abvSubs": "140"
+        "name": "zRose",
+        "subscribers": 16,
+        "abvSubs": "16"
       },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/513632"
-    },
-    {
-      "id": "321448",
-      "name": "Hedsiz Contacto",
-      "country": "mexico",
-      "flag": "\ud83c\uddf2\ud83c\uddfd",
-      "score": 3.0,
-      "contacts": {
-        "discord": "hedsiz",
-        "website": "hedsiz.carrd.co/?fbclid=PAZXh0bgNhZW0CMTEAAaZ8b97KL_fkjUcMWY8GCuVHuiP6uwt8eGrBRP1Z12OKtl0OK7tcq61ZlYE_aem_tKrsYakWEwVkF8N3mdTHgg"
-      },
-      "badge": null,
-      "verified": false,
-      "hireMe": false,
-      "ytChannel": null,
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/321448"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/527039"
     }
   ],
-  "generated_at": "2026-04-12T13:01:29.698732Z"
+  "generated_at": "2026-04-17T13:01:49.411124Z"
 }
