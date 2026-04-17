@@ -1,28 +1,199 @@
 {
   "date": "2026-04-17",
-  "total_sent": 191,
+  "total_sent": 201,
   "total_pool": 71655,
   "candidates": [
     {
-      "id": "527039",
-      "name": "Ralfh Steeven",
-      "country": "brazil",
-      "flag": "\ud83c\udde7\ud83c\uddf7",
-      "score": 7.0,
+      "id": "698",
+      "name": "TKG",
+      "country": "vietnam",
+      "flag": "\ud83c\uddfb\ud83c\uddf3",
+      "score": 17.0,
       "contacts": {
-        "discord": "Ralfh_zRose",
-        "website": "tiktok.com/@ralfh_zrose"
+        "discord": "tkgpsd",
+        "website": "tkg.yt"
       },
-      "badge": "simpleVerified",
+      "badge": "blueDiamond",
+      "verified": true,
+      "hireMe": true,
+      "ytChannel": null,
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/698"
+    },
+    {
+      "id": "1071",
+      "name": "zedi",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
+      "score": 14.0,
+      "contacts": {
+        "email": "AlexCross77@outlook.com",
+        "discord": "notzedi"
+      },
+      "badge": "blueDiamond",
+      "verified": true,
+      "hireMe": true,
+      "ytChannel": null,
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/1071"
+    },
+    {
+      "id": "4343",
+      "name": "Omeed Saye",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
+      "score": 14.0,
+      "contacts": {
+        "email": "OmeedSaye@gmail.com",
+        "discord": "Omeedreza"
+      },
+      "badge": "gold",
       "verified": false,
       "hireMe": true,
       "ytChannel": {
-        "name": "zRose",
-        "subscribers": 16,
-        "abvSubs": "16"
+        "name": "Saye",
+        "subscribers": 388,
+        "abvSubs": "388"
       },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/527039"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/4343"
+    },
+    {
+      "id": "1046",
+      "name": "Robin",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
+      "score": 13.0,
+      "contacts": {
+        "email": "hello@robinediting.com",
+        "discord": "robintv"
+      },
+      "badge": "blueDiamond",
+      "verified": true,
+      "hireMe": true,
+      "ytChannel": null,
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/1046"
+    },
+    {
+      "id": "250975",
+      "name": "Craftify Productions",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
+      "score": 12.5,
+      "contacts": {
+        "email": "contact@craftifyproductions.com",
+        "discord": "thunderzlucky",
+        "website": "craftifyproductions.com"
+      },
+      "badge": "blueDiamond",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "Craftify Productions",
+        "subscribers": 0,
+        "abvSubs": "0"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/250975"
+    },
+    {
+      "id": "936",
+      "name": "ggoats",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
+      "score": 12.5,
+      "contacts": {
+        "email": "ggoats.vfx@outlook.com",
+        "discord": "ggoats",
+        "website": "ggoatsvfx.carrd.co"
+      },
+      "badge": "blueDiamond",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "ggoats",
+        "subscribers": 357,
+        "abvSubs": "357"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/936"
+    },
+    {
+      "id": "714",
+      "name": "ZelticForge",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
+      "score": 12.0,
+      "contacts": {
+        "email": "mohamedsalah2782@yahoo.com",
+        "discord": "ZelticForge"
+      },
+      "badge": "blueDiamond",
+      "verified": true,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "netnobody",
+        "subscribers": 261,
+        "abvSubs": "261"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/714"
+    },
+    {
+      "id": "225852",
+      "name": "Thomas Folland",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
+      "score": 12.0,
+      "contacts": {
+        "email": "follandediting@gmail.com",
+        "discord": "tomic1815",
+        "website": "thomasfolland.myportfolio.com"
+      },
+      "badge": "gold",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "Tomic",
+        "subscribers": 12000,
+        "abvSubs": "12K"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/225852"
+    },
+    {
+      "id": "1020",
+      "name": "Dylan Halder",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
+      "score": 12.0,
+      "contacts": {
+        "discord": "dylanman",
+        "website": "horizio.com"
+      },
+      "badge": "gold",
+      "verified": true,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "Cobble",
+        "subscribers": 2530,
+        "abvSubs": "2.53K"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/1020"
+    },
+    {
+      "id": "199428",
+      "name": "Aiden Heine",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
+      "score": 11.5,
+      "contacts": {
+        "email": "aidenheine.contact@gmail.com",
+        "discord": "stylessarc"
+      },
+      "badge": "blueDiamond",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "Pixel Pals",
+        "subscribers": 5840,
+        "abvSubs": "5.84K"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/199428"
     }
   ],
-  "generated_at": "2026-04-17T13:01:49.411124Z"
+  "generated_at": "2026-04-17T15:40:15.175341Z"
 }
