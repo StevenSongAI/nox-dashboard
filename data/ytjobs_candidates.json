@@ -1,194 +1,203 @@
 {
   "date": "2026-04-19",
-  "total_sent": 221,
+  "total_sent": 231,
   "total_pool": 71737,
   "candidates": [
     {
-      "id": "379219",
-      "name": "Nordzoff",
+      "id": "31353",
+      "name": "Theo",
       "country": "Unknown",
       "flag": "\ud83c\udf0d",
       "score": 10.0,
       "contacts": {
-        "email": "nordzoof@gmail.com",
-        "discord": "nordzoff"
-      },
-      "badge": "blueDiamond",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "Nordzoff Design",
-        "subscribers": 9,
-        "abvSubs": "9"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/379219"
-    },
-    {
-      "id": "21384",
-      "name": "AnamarijaN",
-      "country": "Unknown",
-      "flag": "\ud83c\udf0d",
-      "score": 10.0,
-      "contacts": {
-        "email": "anamarijaofficial@hotmail.com",
-        "discord": "Anaaaaa#1443",
-        "website": "upwork.com/freelancers/~0105147e8b7bd8bfb4"
-      },
-      "badge": "gold",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": null,
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/21384"
-    },
-    {
-      "id": "405689",
-      "name": "4rizon",
-      "country": "Unknown",
-      "flag": "\ud83c\udf0d",
-      "score": 10.0,
-      "contacts": {
-        "email": "4rizonxd2007@gmail.com",
-        "discord": "4rizon"
-      },
-      "badge": "blueDiamond",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": null,
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/405689"
-    },
-    {
-      "id": "239658",
-      "name": "Dem",
-      "country": "Unknown",
-      "flag": "\ud83c\udf0d",
-      "score": 10.0,
-      "contacts": {
-        "email": "hello@demproductions.co",
-        "discord": "_dem_s8",
-        "website": "dems8.com"
-      },
-      "badge": "gold",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": null,
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/239658"
-    },
-    {
-      "id": "372543",
-      "name": "Maria Karina",
-      "country": "Unknown",
-      "flag": "\ud83c\udf0d",
-      "score": 10.0,
-      "contacts": {
-        "email": "mkrocosmo@gmail.com",
-        "discord": "mkrocosmo"
-      },
-      "badge": "blueDiamond",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": null,
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/372543"
-    },
-    {
-      "id": "783",
-      "name": "SALOOT",
-      "country": "Unknown",
-      "flag": "\ud83c\udf0d",
-      "score": 10.0,
-      "contacts": {
-        "email": "silversaloot@gmail.com",
-        "discord": "SALOOT#3810"
+        "email": "theo@comfycozytheo.com",
+        "discord": "comfycozytheo",
+        "website": "thelonelycatt.com"
       },
       "badge": "gold",
       "verified": false,
       "hireMe": true,
       "ytChannel": {
-        "name": "golsa channel",
+        "name": "ComfyCozyTheo",
+        "subscribers": 59,
+        "abvSubs": "59"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/31353"
+    },
+    {
+      "id": "426502",
+      "name": "Leandro Almeida",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
+      "score": 10.0,
+      "contacts": {
+        "email": "leandro@windprodutora.com",
+        "discord": "LAHD",
+        "website": "windprodutora.com/us"
+      },
+      "badge": "gold",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "Leandroalf",
+        "subscribers": 8,
+        "abvSubs": "8"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/426502"
+    },
+    {
+      "id": "46008",
+      "name": "Gui",
+      "country": "india",
+      "flag": "\ud83c\uddee\ud83c\uddf3",
+      "score": 9.5,
+      "contacts": {
+        "discord": "imreturn",
+        "website": "wa.me/+5564992566009?text=Hey%2C%20i%20would%20like%20to%20work%20with%20you!"
+      },
+      "badge": "blueDiamond",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "Guilherme Liniker",
+        "subscribers": 578,
+        "abvSubs": "578"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/46008"
+    },
+    {
+      "id": "3737",
+      "name": "Aditya",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
+      "score": 9.5,
+      "contacts": {
+        "discord": "aditya1703",
+        "website": "drive.google.com/drive/folders/1VfFJgl6AQDNcrgGOVveAFsIrSs-XqnzL"
+      },
+      "badge": "blueDiamond",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "Aditya",
         "subscribers": 0,
         "abvSubs": "0"
       },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/783"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/3737"
     },
     {
-      "id": "188842",
-      "name": "Karn",
+      "id": "63672",
+      "name": "Mitchell Chester",
       "country": "Unknown",
       "flag": "\ud83c\udf0d",
-      "score": 10.0,
+      "score": 9.5,
       "contacts": {
-        "email": "pixel4046@gmail.com",
-        "discord": "bethebest_07",
-        "website": "karndesigns.com"
+        "email": "mitchellches@gmail.com",
+        "discord": "Mitch0007"
       },
       "badge": "gold",
       "verified": false,
       "hireMe": true,
       "ytChannel": {
-        "name": "brousbro",
-        "subscribers": 0,
-        "abvSubs": "0"
+        "name": "Sven",
+        "subscribers": 20200,
+        "abvSubs": "20.2K"
       },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/188842"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/63672"
     },
     {
-      "id": "30200",
-      "name": "Kalash Singh",
+      "id": "29345",
+      "name": "Titan",
       "country": "Unknown",
       "flag": "\ud83c\udf0d",
-      "score": 10.0,
+      "score": 9.5,
       "contacts": {
-        "email": "cinaticofficial@gmail.com",
-        "discord": "cinatic_",
-        "website": "fiverr.com/s/7drkeW"
-      },
-      "badge": "gold",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "Cinatic",
-        "subscribers": 92,
-        "abvSubs": "92"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/30200"
-    },
-    {
-      "id": "17515",
-      "name": "Neema Fahimy",
-      "country": "Unknown",
-      "flag": "\ud83c\udf0d",
-      "score": 10.0,
-      "contacts": {
-        "email": "neemafahimy@ymail.com",
-        "discord": "neemafahimy",
-        "twitter": "neemafahimy"
+        "discord": "jeetitan",
+        "website": "titanedits.github.io"
       },
       "badge": "blueDiamond",
       "verified": false,
       "hireMe": true,
-      "ytChannel": null,
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/17515"
+      "ytChannel": {
+        "name": "Titan",
+        "subscribers": 73,
+        "abvSubs": "73"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/29345"
     },
     {
-      "id": "24312",
-      "name": "Ted Southworth",
+      "id": "332237",
+      "name": "Dipanoo",
       "country": "Unknown",
       "flag": "\ud83c\udf0d",
-      "score": 10.0,
+      "score": 9.5,
       "contacts": {
-        "email": "tedsouthworth@icloud.com",
-        "discord": "tedsouthworth",
-        "website": "tediting.crd.co"
+        "email": "businessdipanoo@gmail.com",
+        "discord": "Dipanoo"
       },
       "badge": "gold",
       "verified": false,
       "hireMe": true,
       "ytChannel": {
-        "name": "Radial Flipz",
-        "subscribers": 1950000,
-        "abvSubs": "1.95M"
+        "name": "Dipanoo",
+        "subscribers": 753,
+        "abvSubs": "753"
       },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/24312"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/332237"
+    },
+    {
+      "id": "312447",
+      "name": "Muhammad Abubakar Ahmad",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
+      "score": 9.5,
+      "contacts": {
+        "email": "muhammadabubakarahmad2486@gmail.com",
+        "discord": "mrj24863#2757"
+      },
+      "badge": "gold",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": null,
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/312447"
+    },
+    {
+      "id": "3528",
+      "name": "Reyn.editz",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
+      "score": 9.5,
+      "contacts": {
+        "email": "reyn.editz@gmail.com",
+        "discord": "aryangh"
+      },
+      "badge": "silver",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": null,
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/3528"
+    },
+    {
+      "id": "376731",
+      "name": "Awful Petter",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
+      "score": 9.5,
+      "contacts": {
+        "email": "editspetter@gmail.com",
+        "discord": "https",
+        "website": "awfulpetter.carrd.co"
+      },
+      "badge": "simpleVerified",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "Awful Petter",
+        "subscribers": 47,
+        "abvSubs": "47"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/376731"
     }
   ],
-  "generated_at": "2026-04-19T13:01:23.301756Z"
+  "generated_at": "2026-04-19T13:20:22.832442Z"
 }
