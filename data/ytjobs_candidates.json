@@ -1,208 +1,207 @@
 {
-  "date": "2026-04-23",
-  "total_sent": 270,
+  "date": "2026-04-24",
+  "total_sent": 280,
   "total_pool": 71904,
   "candidates": [
     {
-      "id": "347985",
-      "name": "Radd_Richard",
+      "id": "472006",
+      "name": "Mighty Billy",
       "country": "Unknown",
       "flag": "\ud83c\udf0d",
       "score": 9.0,
       "contacts": {
-        "email": "richardsharpfaz@gmail.com",
-        "discord": "r0527s"
+        "email": "MightyBillyVideo@gmail.com",
+        "discord": "MightyBillyVideo",
+        "website": "tiktok.com/@almightybilly"
+      },
+      "badge": "simpleVerified",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "Billy",
+        "subscribers": 199,
+        "abvSubs": "199"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/472006"
+    },
+    {
+      "id": "242006",
+      "name": "THUNDEREDITORZ",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
+      "score": 9.0,
+      "contacts": {
+        "email": "thundereditorz@gmail.com",
+        "discord": "thunderstorm4614",
+        "website": "razorxd.my.canva.site/thundereditorz"
+      },
+      "badge": "simpleVerified",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "ThunderEditorZ",
+        "subscribers": 7,
+        "abvSubs": "7"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/242006"
+    },
+    {
+      "id": "251880",
+      "name": "Brea_King.ae",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
+      "score": 9.0,
+      "contacts": {
+        "email": "canditbuffalo7@gmail.com",
+        "discord": "tyga2136",
+        "website": "payhip.com/BREAKINGSPAYHIP"
+      },
+      "badge": "simpleVerified",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "Brea-King",
+        "subscribers": 1440,
+        "abvSubs": "1.44K"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/251880"
+    },
+    {
+      "id": "434451",
+      "name": " Enzo (Akino)",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
+      "score": 9.0,
+      "contacts": {
+        "email": "enzogpezuto@gmail.com",
+        "discord": "oakinoo",
+        "website": "portfoliogameplay.carrd.co"
+      },
+      "badge": "simpleVerified",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "Akino",
+        "subscribers": 23300,
+        "abvSubs": "23.3K"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/434451"
+    },
+    {
+      "id": "505078",
+      "name": "Torvi Editor",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
+      "score": 9.0,
+      "contacts": {
+        "email": "vitorsousatorvi@gmail.com",
+        "discord": "G5vitor",
+        "website": "portifoliovitor.lovable.app"
+      },
+      "badge": "simpleVerified",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "Torvi",
+        "subscribers": 4,
+        "abvSubs": "4"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/505078"
+    },
+    {
+      "id": "968",
+      "name": " Gaurav (Kai)",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
+      "score": 8.5,
+      "contacts": {
+        "discord": "ka1oken",
+        "twitter": "ka1oken12"
+      },
+      "badge": "blueDiamond",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "Kaioken",
+        "subscribers": 43,
+        "abvSubs": "43"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/968"
+    },
+    {
+      "id": "176696",
+      "name": "Noah",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
+      "score": 8.5,
+      "contacts": {
+        "discord": "swag_meal"
       },
       "badge": "gold",
       "verified": false,
       "hireMe": true,
       "ytChannel": {
-        "name": "MeAndSomeDudes",
-        "subscribers": 1610,
-        "abvSubs": "1.61K"
+        "name": "Swag Meal",
+        "subscribers": 1450,
+        "abvSubs": "1.45K"
       },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/347985"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/176696"
     },
     {
-      "id": "32115",
-      "name": "vidMok",
+      "id": "144615",
+      "name": "Denislav Yanakiev",
       "country": "Unknown",
       "flag": "\ud83c\udf0d",
-      "score": 9.0,
+      "score": 8.5,
       "contacts": {
-        "email": "hi@vidmok.cc",
-        "discord": "vidmok",
-        "website": "vidmok.cc"
+        "discord": "vondrel"
       },
-      "badge": "silver",
+      "badge": "blueDiamond",
       "verified": false,
       "hireMe": true,
       "ytChannel": {
-        "name": "vidMok",
-        "subscribers": 6,
-        "abvSubs": "6"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/32115"
-    },
-    {
-      "id": "19112",
-      "name": "zenzy",
-      "country": "Unknown",
-      "flag": "\ud83c\udf0d",
-      "score": 9.0,
-      "contacts": {
-        "email": "contact@zenzy.me",
-        "discord": "zenzy_01"
-      },
-      "badge": "silver",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "zenzy",
-        "subscribers": 10,
-        "abvSubs": "10"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/19112"
-    },
-    {
-      "id": "469316",
-      "name": "Snubzi Edits",
-      "country": "Unknown",
-      "flag": "\ud83c\udf0d",
-      "score": 9.0,
-      "contacts": {
-        "email": "snubziedits@gmail.com",
-        "discord": "snubziedits_86892",
-        "website": "snubzi.github.io/Editing-Portfolio"
-      },
-      "badge": "simpleVerified",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "SirBlastOff",
-        "subscribers": 5410,
-        "abvSubs": "5.41K"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/469316"
-    },
-    {
-      "id": "196434",
-      "name": "Sacha",
-      "country": "Unknown",
-      "flag": "\ud83c\udf0d",
-      "score": 9.0,
-      "contacts": {
-        "email": "sachathumbnails@gmail.com",
-        "discord": "sachathumbnails",
-        "website": "Discord: sachathumbnails"
-      },
-      "badge": "simpleVerified",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": null,
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/196434"
-    },
-    {
-      "id": "3497",
-      "name": "Christine Esquivel",
-      "country": "Unknown",
-      "flag": "\ud83c\udf0d",
-      "score": 9.0,
-      "contacts": {
-        "email": "ej.christineee@gmail.com",
-        "discord": "e.j.christine",
-        "website": "ejchristine.carrd.co"
-      },
-      "badge": "simpleVerified",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": null,
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/3497"
-    },
-    {
-      "id": "384316",
-      "name": "Orphic.PSD",
-      "country": "Unknown",
-      "flag": "\ud83c\udf0d",
-      "score": 9.0,
-      "contacts": {
-        "email": "gregoriuslesmana8@gmail.com",
-        "discord": "orphicfx2",
-        "website": "behance.net/orphic_gfx"
-      },
-      "badge": "simpleVerified",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "OrphicPSD",
+        "name": "Capncrunch31",
         "subscribers": 0,
         "abvSubs": "0"
       },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/384316"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/144615"
     },
     {
-      "id": "245889",
-      "name": "Zeinah ElHefny",
+      "id": "422040",
+      "name": "Hart",
       "country": "Unknown",
       "flag": "\ud83c\udf0d",
-      "score": 9.0,
+      "score": 8.5,
       "contacts": {
-        "email": "zeinahhamed20@gmail.com",
-        "discord": "cheng.xiaoshi",
-        "website": "vimeo.com/user193097622"
+        "email": "hart.fxcontato@gmail.com",
+        "discord": "hartvfx"
       },
       "badge": "simpleVerified",
       "verified": false,
       "hireMe": true,
       "ytChannel": {
-        "name": "Ecto",
-        "subscribers": 10600,
-        "abvSubs": "10.6K"
+        "name": "Hart",
+        "subscribers": 916,
+        "abvSubs": "916"
       },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/245889"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/422040"
     },
     {
-      "id": "191126",
-      "name": "Sylas Broke",
+      "id": "69863",
+      "name": "yokey",
       "country": "Unknown",
       "flag": "\ud83c\udf0d",
-      "score": 9.0,
+      "score": 8.5,
       "contacts": {
-        "email": "silas.broge@gmail.com",
-        "discord": "sylasbroke",
-        "website": "docs.google.com/document/d/1p1O9rg5TEA5vtRMdpR0vg81aV62brpTVyU4rlTfkb-g/edit?usp=sharing"
+        "email": "yokey.business@gmail.com",
+        "discord": "yokeys"
       },
-      "badge": "simpleVerified",
+      "badge": "silver",
       "verified": false,
       "hireMe": true,
-      "ytChannel": {
-        "name": "Sylas Broke",
-        "subscribers": 2330,
-        "abvSubs": "2.33K"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/191126"
-    },
-    {
-      "id": "249772",
-      "name": "William Wells",
-      "country": "Unknown",
-      "flag": "\ud83c\udf0d",
-      "score": 9.0,
-      "contacts": {
-        "email": "wellsc.will@gmail.com",
-        "discord": "wbwillie#9859",
-        "website": "tiktok.com/@films.rfe"
-      },
-      "badge": "simpleVerified",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "wbwillie",
-        "subscribers": 78,
-        "abvSubs": "78"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/249772"
+      "ytChannel": null,
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/69863"
     }
   ],
-  "generated_at": "2026-04-23T13:02:42.267602Z"
+  "generated_at": "2026-04-24T13:00:59.110898Z"
 }
