@@ -1,198 +1,211 @@
 {
-  "date": "2026-04-28",
-  "total_sent": 300,
-  "total_pool": 71978,
+  "date": "2026-04-29",
+  "total_sent": 310,
+  "total_pool": 72168,
   "candidates": [
     {
-      "id": "536833",
-      "name": "KingBearVR",
+      "id": "81055",
+      "name": "Shresth",
       "country": "Unknown",
       "flag": "\ud83c\udf0d",
       "score": 9.0,
       "contacts": {
-        "email": "king.bear.100.vr@gmail.com",
-        "discord": "kingbearvr",
-        "website": "tiktok.com/@kingbearvr?_r=1&_t=ZP-95gIpEiGTpG"
+        "email": "shresthpriyadarshi0@gmail.com",
+        "discord": "senpaix_",
+        "website": "youtube.com/channel/UCkLjFEr-YD059Y8t9AGZwCg"
       },
       "badge": "simpleVerified",
       "verified": false,
       "hireMe": true,
       "ytChannel": {
-        "name": "KingBearVR",
-        "subscribers": 5610,
-        "abvSubs": "5.61K"
+        "name": "WAYD",
+        "subscribers": 824,
+        "abvSubs": "824"
       },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/536833"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/81055"
     },
     {
-      "id": "188021",
-      "name": "Karsh",
+      "id": "134915",
+      "name": "ABDOURAHMAN EDDAHBI",
       "country": "Unknown",
       "flag": "\ud83c\udf0d",
       "score": 8.0,
       "contacts": {
-        "discord": "karshuuu",
-        "website": "bento.me/karsh"
+        "discord": "kaygix",
+        "website": "payhip.com/kaygiix"
       },
       "badge": "gold",
       "verified": false,
       "hireMe": true,
       "ytChannel": {
-        "name": "Mr League",
-        "subscribers": 2050,
-        "abvSubs": "2.05K"
+        "name": "Kaygix",
+        "subscribers": 9400,
+        "abvSubs": "9.4K"
       },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/188021"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/134915"
     },
     {
-      "id": "14922",
-      "name": "David May",
+      "id": "481073",
+      "name": "Danilo Raele",
       "country": "Unknown",
       "flag": "\ud83c\udf0d",
       "score": 8.0,
       "contacts": {
-        "discord": "david.may101",
-        "website": "davidm@mayhemmediamanagement.com"
+        "discord": "raele.videomaker",
+        "website": "instagram.com/raele.videomaker"
       },
       "badge": "gold",
       "verified": false,
       "hireMe": true,
-      "ytChannel": null,
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/14922"
-    },
-    {
-      "id": "300666",
-      "name": "Vi",
-      "country": "brazil",
-      "flag": "\ud83c\udde7\ud83c\uddf7",
-      "score": 8.0,
-      "contacts": {
-        "discord": "studiosbyvi",
-        "twitter": "studiosbyvi"
-      },
-      "badge": "blueDiamond",
-      "verified": false,
-      "hireMe": true,
       "ytChannel": {
-        "name": "Vitoria Regina",
+        "name": "Raele | Videomaker",
         "subscribers": 0,
         "abvSubs": "0"
       },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/300666"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/481073"
     },
     {
-      "id": "9722",
-      "name": " yungramen (lewis)",
-      "country": "Unknown",
-      "flag": "\ud83c\udf0d",
+      "id": "13662",
+      "name": "Arturo Gomez",
+      "country": "india",
+      "flag": "\ud83c\uddee\ud83c\uddf3",
       "score": 8.0,
       "contacts": {
-        "discord": "yungramen",
-        "website": "lewismann.squarespace.com"
-      },
-      "badge": "blueDiamond",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": null,
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/9722"
-    },
-    {
-      "id": "213830",
-      "name": "Mr Hanji",
-      "country": "Unknown",
-      "flag": "\ud83c\udf0d",
-      "score": 8.0,
-      "contacts": {
-        "email": "rao791522@gmail.com",
-        "discord": "User"
-      },
-      "badge": "gold",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "Mr Sunil",
-        "subscribers": 676,
-        "abvSubs": "676"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/213830"
-    },
-    {
-      "id": "415855",
-      "name": "Alex T",
-      "country": "Unknown",
-      "flag": "\ud83c\udf0d",
-      "score": 8.0,
-      "contacts": {
-        "email": "tvorogoffa@gmail.com",
-        "discord": "hotntasty",
-        "website": "tvorogoffa.wixsite.com/tvorogoff"
+        "email": "Arturogomez486@gmail.com",
+        "discord": "rtorow",
+        "website": "youtube.com/channel/UCM62BTWC3pg2_TmgZd2QTvg"
       },
       "badge": "gold",
       "verified": false,
       "hireMe": false,
-      "ytChannel": null,
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/415855"
-    },
-    {
-      "id": "240100",
-      "name": " Leo B\u00f6deker",
-      "country": "Unknown",
-      "flag": "\ud83c\udf0d",
-      "score": 8.0,
-      "contacts": {
-        "discord": "leo.bdkr",
-        "website": "leoboedeker.de"
-      },
-      "badge": "blueDiamond",
-      "verified": false,
-      "hireMe": true,
       "ytChannel": {
-        "name": "leo",
-        "subscribers": 41,
-        "abvSubs": "41"
+        "name": "R2row The Editor",
+        "subscribers": 345,
+        "abvSubs": "345"
       },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/240100"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/13662"
     },
     {
-      "id": "359021",
-      "name": "Sitbackstudio",
+      "id": "399355",
+      "name": "Stepped",
       "country": "Unknown",
       "flag": "\ud83c\udf0d",
       "score": 8.0,
       "contacts": {
-        "discord": "sitbackstudio",
-        "website": "sitbackstudio.com"
+        "discord": "stepped",
+        "website": "soloist.ai/stepped"
       },
       "badge": "gold",
       "verified": false,
       "hireMe": true,
       "ytChannel": {
-        "name": "Sitback studio ",
-        "subscribers": 3,
-        "abvSubs": "3"
+        "name": "hysteria",
+        "subscribers": 642,
+        "abvSubs": "642"
       },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/359021"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/399355"
     },
     {
-      "id": "42031",
-      "name": "Rozrange",
-      "country": "philippines",
-      "flag": "\ud83c\uddf5\ud83c\udded",
+      "id": "385846",
+      "name": "Sultan Uz Zaman",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
       "score": 8.0,
       "contacts": {
-        "discord": "rozrange",
-        "website": "rozrange.carrd.co"
+        "discord": "Sultwuzhere",
+        "website": "thegamer.com/author/sultan-uz-zaman-makhdoom"
       },
       "badge": "gold",
       "verified": false,
       "hireMe": true,
       "ytChannel": {
-        "name": "RPFARCHIVES",
-        "subscribers": 157,
-        "abvSubs": "157"
+        "name": "Sultan",
+        "subscribers": 5,
+        "abvSubs": "5"
       },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/42031"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/385846"
+    },
+    {
+      "id": "374649",
+      "name": "quiver",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
+      "score": 8.0,
+      "contacts": {
+        "email": "quiver.editor.communications@gmail.com",
+        "discord": "quivver",
+        "website": "tiktok.com/@quiverxiii"
+      },
+      "badge": "silver",
+      "verified": false,
+      "hireMe": false,
+      "ytChannel": {
+        "name": "quiver",
+        "subscribers": 11400,
+        "abvSubs": "11.4K"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/374649"
+    },
+    {
+      "id": "360811",
+      "name": "Lucca",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
+      "score": 8.0,
+      "contacts": {
+        "discord": "luccaways",
+        "website": "luccaways.carrd.co"
+      },
+      "badge": "gold",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "Lucca Ways",
+        "subscribers": 0,
+        "abvSubs": "0"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/360811"
+    },
+    {
+      "id": "22147",
+      "name": "Fanku",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
+      "score": 8.0,
+      "contacts": {
+        "email": "fankudotedit@gmail.com",
+        "discord": "fanku#3522"
+      },
+      "badge": "silver",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "Fanku",
+        "subscribers": 560,
+        "abvSubs": "560"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/22147"
+    },
+    {
+      "id": "31088",
+      "name": "Harshith Bujurkar",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
+      "score": 8.0,
+      "contacts": {
+        "email": "harshithbujurkar@gmail.com",
+        "discord": "stormtrooper5356"
+      },
+      "badge": "gold",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "Harshith Bujurkar",
+        "subscribers": 1,
+        "abvSubs": "1"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/31088"
     }
   ],
-  "generated_at": "2026-04-28T13:00:58.408186Z"
+  "generated_at": "2026-04-29T13:01:10.492861Z"
 }
