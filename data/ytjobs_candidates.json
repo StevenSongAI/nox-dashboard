@@ -1,201 +1,189 @@
 {
-  "date": "2026-05-01",
-  "total_sent": 330,
+  "date": "2026-05-02",
+  "total_sent": 340,
   "total_pool": 72245,
   "candidates": [
     {
-      "id": "221775",
-      "name": "BadFrxn",
+      "id": "296283",
+      "name": "Miytko",
       "country": "Unknown",
       "flag": "\ud83c\udf0d",
       "score": 8.0,
       "contacts": {
-        "email": "contactfrxn@gmail.com",
-        "discord": "badfrxn"
-      },
-      "badge": "silver",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "BadFrxn",
-        "subscribers": 0,
-        "abvSubs": "0"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/221775"
-    },
-    {
-      "id": "414126",
-      "name": "mark",
-      "country": "Unknown",
-      "flag": "\ud83c\udf0d",
-      "score": 8.0,
-      "contacts": {
-        "email": "marcuspaixao2007@gmail.com",
-        "discord": "juaumrg"
-      },
-      "badge": "simpleVerified",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "mark",
-        "subscribers": 51,
-        "abvSubs": "51"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/414126"
-    },
-    {
-      "id": "46917",
-      "name": "Shinchu",
-      "country": "Unknown",
-      "flag": "\ud83c\udf0d",
-      "score": 8.0,
-      "contacts": {
-        "email": "ShinchuSabita@Outlook.com",
-        "discord": "ShinchuSabita"
-      },
-      "badge": "silver",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": null,
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/46917"
-    },
-    {
-      "id": "473048",
-      "name": " A Production of Wasted Time (S. Edward Gilbert)",
-      "country": "Unknown",
-      "flag": "\ud83c\udf0d",
-      "score": 8.0,
-      "contacts": {
-        "email": "siji.gilled@gmail.com",
-        "discord": "hero_of_wasted_time"
-      },
-      "badge": "simpleVerified",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "A Product of Wasted Time",
-        "subscribers": 17,
-        "abvSubs": "17"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/473048"
-    },
-    {
-      "id": "347004",
-      "name": "Gabriel Frassetto",
-      "country": "Unknown",
-      "flag": "\ud83c\udf0d",
-      "score": 8.0,
-      "contacts": {
-        "email": "gabrielfrassettocontato@gmail.com",
-        "discord": "garbielo"
-      },
-      "badge": "simpleVerified",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "GabFrassetto",
-        "subscribers": 8320,
-        "abvSubs": "8.32K"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/347004"
-    },
-    {
-      "id": "143829",
-      "name": "Ryan Iug",
-      "country": "Unknown",
-      "flag": "\ud83c\udf0d",
-      "score": 8.0,
-      "contacts": {
-        "email": "ryaniugeditor@gmail.com",
-        "discord": "iug#6154"
-      },
-      "badge": "silver",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "Ryan Iug",
-        "subscribers": 0,
-        "abvSubs": "0"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/143829"
-    },
-    {
-      "id": "382853",
-      "name": "Rocco Soucie",
-      "country": "Unknown",
-      "flag": "\ud83c\udf0d",
-      "score": 8.0,
-      "contacts": {
-        "email": "roccosoucie@gmail.com",
-        "discord": "rockmyzombie",
-        "website": "roccosoucie.wixsite.com/rocco-soucie-video-e"
-      },
-      "badge": "simpleVerified",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "RockMyZombie",
-        "subscribers": 3670,
-        "abvSubs": "3.67K"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/382853"
-    },
-    {
-      "id": "248697",
-      "name": "Wika Channel",
-      "country": "Unknown",
-      "flag": "\ud83c\udf0d",
-      "score": 8.0,
-      "contacts": {
-        "email": "wikachannel777@gmail.com",
-        "discord": "wikach714"
-      },
-      "badge": "simpleVerified",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "Wika Ch.",
-        "subscribers": 4260,
-        "abvSubs": "4.26K"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/248697"
-    },
-    {
-      "id": "476475",
-      "name": "Noxiak!",
-      "country": "Unknown",
-      "flag": "\ud83c\udf0d",
-      "score": 8.0,
-      "contacts": {
-        "email": "noxiakbiznes@gmail.com",
-        "discord": "noxiak"
-      },
-      "badge": "simpleVerified",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "Noxiak",
-        "subscribers": 761,
-        "abvSubs": "761"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/476475"
-    },
-    {
-      "id": "87862",
-      "name": "Abdlwahb Shalapy",
-      "country": "Unknown",
-      "flag": "\ud83c\udf0d",
-      "score": 8.0,
-      "contacts": {
-        "email": "abdlwahbshalapy1@gmail.com",
-        "discord": "abdlwahb#8608"
+        "email": "miytkoxd@gmail.com",
+        "discord": "miytko"
       },
       "badge": "simpleVerified",
       "verified": false,
       "hireMe": true,
       "ytChannel": null,
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/87862"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/296283"
+    },
+    {
+      "id": "287332",
+      "name": "Kia",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
+      "score": 8.0,
+      "contacts": {
+        "email": "kia751here@gmail.com",
+        "discord": "kia751"
+      },
+      "badge": "simpleVerified",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": null,
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/287332"
+    },
+    {
+      "id": "494340",
+      "name": "Gimbleson",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
+      "score": 8.0,
+      "contacts": {
+        "email": "amarmujkic06@yahoo.com",
+        "discord": "Gimbleson"
+      },
+      "badge": "simpleVerified",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "Gimbleson",
+        "subscribers": 15300,
+        "abvSubs": "15.3K"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/494340"
+    },
+    {
+      "id": "473340",
+      "name": "Paul Kondu",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
+      "score": 8.0,
+      "contacts": {
+        "email": "kondupaul2900@gmail.com",
+        "discord": "paulkondu"
+      },
+      "badge": "simpleVerified",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "Paul Kondu",
+        "subscribers": 4,
+        "abvSubs": "4"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/473340"
+    },
+    {
+      "id": "342635",
+      "name": "Wealth Way",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
+      "score": 8.0,
+      "contacts": {
+        "email": "wealthway83@gmail.com",
+        "discord": "dinerodan17"
+      },
+      "badge": "simpleVerified",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "Wealth Way ",
+        "subscribers": 6,
+        "abvSubs": "6"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/342635"
+    },
+    {
+      "id": "432052",
+      "name": "THE DVii",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
+      "score": 8.0,
+      "contacts": {
+        "email": "imluciven@gmail.com",
+        "discord": "singk0eng"
+      },
+      "badge": "simpleVerified",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": null,
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/432052"
+    },
+    {
+      "id": "404764",
+      "name": "Lucas Ouro",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
+      "score": 8.0,
+      "contacts": {
+        "email": "contact.lookc@gmail.com",
+        "discord": "lookc",
+        "website": "lookc.carrd.co"
+      },
+      "badge": "simpleVerified",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "Maru Lookc",
+        "subscribers": 303,
+        "abvSubs": "303"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/404764"
+    },
+    {
+      "id": "319761",
+      "name": "Nick Jay",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
+      "score": 8.0,
+      "contacts": {
+        "email": "jayforyou@proton.me",
+        "discord": "n1ckjay"
+      },
+      "badge": "simpleVerified",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": null,
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/319761"
+    },
+    {
+      "id": "276698",
+      "name": "Jeff Fx",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
+      "score": 8.0,
+      "contacts": {
+        "email": "jefffxedits@gmail.com",
+        "discord": "jefffxedits"
+      },
+      "badge": "simpleVerified",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": null,
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/276698"
+    },
+    {
+      "id": "46003",
+      "name": " Vito \u0160imurina",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
+      "score": 8.0,
+      "contacts": {
+        "email": "vitosimurina@gmail.com",
+        "discord": "Motika"
+      },
+      "badge": "simpleVerified",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "Motika",
+        "subscribers": 144,
+        "abvSubs": "144"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/46003"
     }
   ],
-  "generated_at": "2026-05-01T13:02:59.367942Z"
+  "generated_at": "2026-05-02T13:01:37.007355Z"
 }
