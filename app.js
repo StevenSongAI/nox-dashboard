@@ -78,6 +78,7 @@ const App = {
       this.fetchAPI('projects', 'project'),
       this.fetchAPI('ideas', 'idea'),
       this.fetchAPI('devprojects', 'dev_project'),
+      this.fetchAPI('steventalks', 'steven_talks'),
       this.fetchJSON('youtube'),
       this.fetchJSON('competitors'),
       this.fetchJSON('meta'),
@@ -140,6 +141,19 @@ const App = {
         nextAction: e.data?.nextAction || ''
       })) };
     }
+    if (dataKey === 'steventalks') {
+      return { hits: entries.map(e => ({
+        id: e.source_id?.replace(/^st[:\-]/, '') || e.id,
+        title: e.title, description: e.description, status: e.status,
+        url: e.data?.url, views: e.data?.views,
+        outlier_score: e.data?.outlier_score,
+        channel_handle: e.data?.channel_handle,
+        topic: e.data?.topic,
+        hook: e.data?.hook,
+        scrape_date: e.data?.scrape_date,
+        created_at: e.created_at
+      })) };
+    }
     return entries;
   },
 
@@ -165,6 +179,7 @@ const App = {
     this.renderExpensesTab();
     this.renderDevProjects();
     this.setupDevProjectFilters();
+    this.renderStevenTalks();
   },
 
   renderLastUpdate() {
@@ -582,4 +597,74 @@ App.setupDevProjectFilters = function() {
       self.renderDevProjects();
     });
   });
+};
+
+App.renderStevenTalks = function() {
+  const tbody = document.getElementById('steventalks-table');
+  if (!tbody) return;
+  const hits = this.data.steventalks?.hits || [];
+  const countEl = document.getElementById('steventalks-count');
+  if (countEl) countEl.textContent = hits.length + ' hits tracked';
+  if (!hits.length) {
+    const placeholder = document.createElement('tr');
+    const td = document.createElement('td');
+    td.colSpan = 6;
+    td.className = 'py-8 text-center text-gray-500';
+    td.textContent = 'No hits yet — scraper runs nightly at 2 AM';
+    placeholder.appendChild(td);
+    tbody.replaceChildren(placeholder);
+    return;
+  }
+  const sorted = [...hits].sort((a, b) => new Date(b.created_at || 0) - new Date(a.created_at || 0));
+  const rows = sorted.map(h => {
+    const scoreColor = h.outlier_score >= 10 ? 'text-red-400' : h.outlier_score >= 5 ? 'text-orange-400' : 'text-yellow-400';
+    const safeUrl = h.url && h.url.startsWith('https://www.youtube.com/') ? h.url : null;
+    const tr = document.createElement('tr');
+    tr.className = 'hover:bg-[#1a1a2e] transition-colors';
+
+    const tdTitle = document.createElement('td');
+    tdTitle.className = 'py-3 px-2';
+    if (safeUrl) {
+      const a = document.createElement('a');
+      a.href = safeUrl;
+      a.target = '_blank';
+      a.rel = 'noopener';
+      a.className = 'text-purple-400 hover:text-purple-300 text-xs';
+      a.textContent = h.title || '';
+      tdTitle.appendChild(a);
+    } else {
+      tdTitle.textContent = h.title || '';
+      tdTitle.className += ' text-gray-300 text-xs';
+    }
+    if (h.status === 'new') {
+      const badge = document.createElement('span');
+      badge.className = 'ml-1 text-xs bg-green-500/20 text-green-400 px-2 py-0.5 rounded border border-green-500/30';
+      badge.textContent = 'NEW';
+      tdTitle.appendChild(badge);
+    }
+
+    const tdChannel = document.createElement('td');
+    tdChannel.className = 'py-3 px-2 text-gray-400 text-xs';
+    tdChannel.textContent = h.channel_handle || '';
+
+    const tdViews = document.createElement('td');
+    tdViews.className = 'py-3 px-2 text-right text-gray-300 text-xs';
+    tdViews.textContent = this.formatViews(h.views);
+
+    const tdScore = document.createElement('td');
+    tdScore.className = 'py-3 px-2 text-right text-xs font-mono ' + scoreColor;
+    tdScore.textContent = h.outlier_score ? h.outlier_score.toFixed(1) + 'x' : '—';
+
+    const tdTopic = document.createElement('td');
+    tdTopic.className = 'py-3 px-2 text-gray-400 text-xs max-w-xs truncate';
+    tdTopic.textContent = h.topic || h.description || '—';
+
+    const tdDate = document.createElement('td');
+    tdDate.className = 'py-3 px-2 text-gray-500 text-xs';
+    tdDate.textContent = this.formatDate(h.scrape_date || h.created_at);
+
+    tr.append(tdTitle, tdChannel, tdViews, tdScore, tdTopic, tdDate);
+    return tr;
+  });
+  tbody.replaceChildren(...rows);
 };

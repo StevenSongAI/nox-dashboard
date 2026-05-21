@@ -45,6 +45,9 @@
         <button id="tab-ideas" class="tab-btn px-4 py-3 text-sm font-medium border-b-2 border-transparent hover:text-white transition-colors" data-tab="ideas">
           🧠 Second Brain
         </button>
+        <button id="tab-steventalks" class="tab-btn px-4 py-3 text-sm font-medium border-b-2 border-transparent hover:text-white transition-colors" data-tab="steventalks">
+          🎙 Steven Talks
+        </button>
         <button id="tab-ytjobs" class="tab-btn px-4 py-3 text-sm font-medium border-b-2 border-transparent hover:text-white transition-colors" data-tab="ytjobs" onclick="window.location='ytjobs.html'">👥 YTJobs</button>
         <button id="tab-devprojects" class="tab-btn px-4 py-3 text-sm font-medium border-b-2 border-transparent hover:text-white transition-colors" onclick="window.location='dev-projects.html'">🚧 Dev Projects</button>
       </div>
@@ -130,6 +133,34 @@
       </div>
       <div id="projects-list" class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         <div class="loading">Loading projects...</div>
+      </div>
+    </div>
+
+    <!-- Steven Talks Intel Panel -->
+    <div id="panel-steventalks" class="tab-panel hidden">
+      <div class="mb-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+        <div>
+          <h2 class="text-lg font-semibold text-white">Steven Talks — Channel Intel</h2>
+          <p class="text-sm text-gray-400">Outlier hits from 28 faceless finance/tech channels. Steal fast, produce in 1 day.</p>
+        </div>
+        <span id="steventalks-count" class="text-xs text-gray-500"></span>
+      </div>
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm">
+          <thead>
+            <tr class="border-b border-[#252540] text-gray-400">
+              <th class="text-left py-3 px-2">Title</th>
+              <th class="text-left py-3 px-2">Channel</th>
+              <th class="text-right py-3 px-2">Views</th>
+              <th class="text-right py-3 px-2">Outlier</th>
+              <th class="text-left py-3 px-2">Topic</th>
+              <th class="text-left py-3 px-2">Found</th>
+            </tr>
+          </thead>
+          <tbody id="steventalks-table" class="divide-y divide-[#252540]">
+            <tr><td colspan="6" class="py-4 text-gray-500">Loading Steven Talks intel...</td></tr>
+          </tbody>
+        </table>
       </div>
     </div>
 
