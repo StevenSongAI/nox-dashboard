@@ -1,190 +1,190 @@
 {
-  "date": "2026-05-22",
-  "total_sent": 470,
+  "date": "2026-05-24",
+  "total_sent": 480,
   "total_pool": 72576,
   "candidates": [
     {
-      "id": "537249",
-      "name": "Eduard",
+      "id": "386515",
+      "name": "Asri3L",
       "country": "Unknown",
       "flag": "\ud83c\udf0d",
-      "score": 7.0,
+      "score": 6.0,
       "contacts": {
-        "discord": "eduardharon",
-        "website": "eduardharon.carrd.co"
+        "discord": "landofpeeps"
       },
       "badge": "simpleVerified",
       "verified": false,
       "hireMe": true,
       "ytChannel": {
-        "name": "Eduard Haron",
-        "subscribers": 0,
-        "abvSubs": "0"
+        "name": "Asri3L",
+        "subscribers": 798,
+        "abvSubs": "798"
       },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/537249"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/386515"
     },
     {
-      "id": "192621",
-      "name": "Mohi",
+      "id": "1216",
+      "name": " Albin Almstr\u00f6m",
       "country": "Unknown",
       "flag": "\ud83c\udf0d",
-      "score": 6.5,
+      "score": 6.0,
       "contacts": {
-        "discord": "MohsenHmmm"
+        "discord": "rpoy"
+      },
+      "badge": "gold",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "AticEdits",
+        "subscribers": 344,
+        "abvSubs": "344"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/1216"
+    },
+    {
+      "id": "406175",
+      "name": "Giorgio Saroli",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
+      "score": 6.0,
+      "contacts": {
+        "discord": "giobois"
+      },
+      "badge": "gold",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "Snakebaby",
+        "subscribers": 2570,
+        "abvSubs": "2.57K"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/406175"
+    },
+    {
+      "id": "461107",
+      "name": "Defaulted",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
+      "score": 6.0,
+      "contacts": {
+        "discord": "defaulted1"
+      },
+      "badge": "gold",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "Kau\u00e3 Defaulted",
+        "subscribers": 374,
+        "abvSubs": "374"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/461107"
+    },
+    {
+      "id": "242849",
+      "name": "Joe Clark",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
+      "score": 6.0,
+      "contacts": {
+        "discord": "crimsont7phoon"
       },
       "badge": "silver",
       "verified": false,
       "hireMe": true,
       "ytChannel": {
-        "name": "Mohi",
-        "subscribers": 19,
-        "abvSubs": "19"
+        "name": "Crimson",
+        "subscribers": 64,
+        "abvSubs": "64"
       },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/192621"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/242849"
     },
     {
-      "id": "1186",
-      "name": "Jollyz",
+      "id": "23168",
+      "name": "Jay Bradley",
       "country": "Unknown",
       "flag": "\ud83c\udf0d",
-      "score": 6.5,
+      "score": 6.0,
       "contacts": {
-        "discord": "Jollyz"
+        "discord": "jaythunderstorm"
+      },
+      "badge": "silver",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "Jay Thunderstorm",
+        "subscribers": 23300,
+        "abvSubs": "23.3K"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/23168"
+    },
+    {
+      "id": "29624",
+      "name": "Layla",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
+      "score": 6.0,
+      "contacts": {
+        "discord": "fadamalucatv"
       },
       "badge": "silver",
       "verified": false,
       "hireMe": true,
       "ytChannel": null,
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/1186"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/29624"
     },
     {
-      "id": "41263",
-      "name": "Mathew Tanguay",
+      "id": "368907",
+      "name": "Lazar Bakmaz",
       "country": "Unknown",
       "flag": "\ud83c\udf0d",
-      "score": 6.5,
+      "score": 6.0,
       "contacts": {
-        "discord": "hamcore",
-        "website": "mathewtanguay.com"
-      },
-      "badge": "gold",
-      "verified": false,
-      "hireMe": false,
-      "ytChannel": {
-        "name": "HAMCORE",
-        "subscribers": 47,
-        "abvSubs": "47"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/41263"
-    },
-    {
-      "id": "31103",
-      "name": " FrankyB (Ghost Pixel)",
-      "country": "Unknown",
-      "flag": "\ud83c\udf0d",
-      "score": 6.5,
-      "contacts": {
-        "discord": "FrankyB#8076"
+        "discord": "bakaa1_"
       },
       "badge": "silver",
       "verified": false,
       "hireMe": true,
-      "ytChannel": {
-        "name": "FrankyB",
-        "subscribers": 8960,
-        "abvSubs": "8.96K"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/31103"
+      "ytChannel": null,
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/368907"
     },
     {
-      "id": "430761",
-      "name": " Liam (fordtoxic)",
+      "id": "506793",
+      "name": "Lajoka",
       "country": "Unknown",
       "flag": "\ud83c\udf0d",
-      "score": 6.5,
+      "score": 6.0,
       "contacts": {
-        "discord": "fordtoxic"
+        "discord": "lajoka"
       },
       "badge": "simpleVerified",
       "verified": false,
       "hireMe": true,
       "ytChannel": {
-        "name": "fordtoxic",
-        "subscribers": 2170,
-        "abvSubs": "2.17K"
+        "name": "Lajoka",
+        "subscribers": 3220,
+        "abvSubs": "3.22K"
       },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/430761"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/506793"
     },
     {
-      "id": "338170",
-      "name": "Japieeh",
+      "id": "236147",
+      "name": "Khaled Mohamed",
       "country": "Unknown",
       "flag": "\ud83c\udf0d",
       "score": 6.0,
       "contacts": {
-        "discord": "japieeh",
-        "twitter": "ignJapieh"
+        "discord": "lord_5aled"
       },
       "badge": "silver",
       "verified": false,
       "hireMe": true,
       "ytChannel": {
-        "name": "Japieeh",
-        "subscribers": 633,
-        "abvSubs": "633"
+        "name": "Khaled Verse",
+        "subscribers": 6350,
+        "abvSubs": "6.35K"
       },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/338170"
-    },
-    {
-      "id": "86121",
-      "name": "Sword Studios",
-      "country": "Unknown",
-      "flag": "\ud83c\udf0d",
-      "score": 6.0,
-      "contacts": {
-        "discord": "sword_studios"
-      },
-      "badge": "blueDiamond",
-      "verified": false,
-      "hireMe": false,
-      "ytChannel": {
-        "name": "Sword Studios",
-        "subscribers": 17800,
-        "abvSubs": "17.8K"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/86121"
-    },
-    {
-      "id": "284563",
-      "name": "lepdteraa",
-      "country": "Unknown",
-      "flag": "\ud83c\udf0d",
-      "score": 6.0,
-      "contacts": {
-        "email": "netrageole@gmail.com",
-        "discord": "lepdteraa"
-      },
-      "badge": "gold",
-      "verified": false,
-      "hireMe": false,
-      "ytChannel": null,
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/284563"
-    },
-    {
-      "id": "23886",
-      "name": "mortin",
-      "country": "Unknown",
-      "flag": "\ud83c\udf0d",
-      "score": 6.0,
-      "contacts": {
-        "discord": "_Mortin"
-      },
-      "badge": "gold",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": null,
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/23886"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/236147"
     }
   ],
-  "generated_at": "2026-05-22T13:00:54.492746Z"
+  "generated_at": "2026-05-24T13:00:56.837109Z"
 }
