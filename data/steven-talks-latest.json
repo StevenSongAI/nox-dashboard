@@ -1,5 +1,214 @@
 {
-  "generated_at": "2026-05-23T06:55:58.540210+00:00",
-  "channels_scanned": 53,
-  "outliers": []
+  "generated_at": "2026-05-25T06:51:14.618762+00:00",
+  "channels_scanned": 452,
+  "outliers": [
+    {
+      "channel": "@OfficialW5",
+      "title": "W5 investigation exposes how drugs are smuggled through some of Canada's biggest airports",
+      "views": 116996,
+      "ratio": 55.11,
+      "transcript_analysis": {
+        "hook": "",
+        "topic": "",
+        "key_points": [],
+        "script_angle": "",
+        "transcript_path": "/Users/stevenai/Desktop/Nox Builds/Tools/steven-talks-scraper/transcripts/20260525_OfficialW5_B1mMUIEF-vs.json"
+      }
+    },
+    {
+      "channel": "@OfficialW5",
+      "title": "Investigation exposes troubling gaps in airport security",
+      "views": 10342,
+      "ratio": 4.87,
+      "transcript_analysis": {
+        "hook": "",
+        "topic": "",
+        "key_points": [],
+        "script_angle": "",
+        "transcript_path": "/Users/stevenai/Desktop/Nox Builds/Tools/steven-talks-scraper/transcripts/20260525_OfficialW5_i46TZDPi0QA.json"
+      }
+    },
+    {
+      "channel": "@OfficialW5",
+      "title": "Bag tag switching schemes cause innocent Canadians to be accused of drug smuggling",
+      "views": 9773,
+      "ratio": 4.6,
+      "transcript_analysis": {
+        "hook": "",
+        "topic": "",
+        "key_points": [],
+        "script_angle": "",
+        "transcript_path": "/Users/stevenai/Desktop/Nox Builds/Tools/steven-talks-scraper/transcripts/20260525_OfficialW5_PeTbVv0KJHI.json"
+      }
+    },
+    {
+      "channel": "@CasuallyFinance",
+      "title": "The SpaceX IPO... It's Worse Than You Think",
+      "views": 1106697,
+      "ratio": 4.0,
+      "transcript_analysis": {
+        "hook": "",
+        "topic": "",
+        "key_points": [],
+        "script_angle": "",
+        "transcript_path": "/Users/stevenai/Desktop/Nox Builds/Tools/steven-talks-scraper/transcripts/20260525_CasualFinance_-X6YzlY_8tM.json"
+      }
+    },
+    {
+      "channel": "@musicmoneymakeover",
+      "title": "Sampling 2.0: The AI Music Monetization Goldrush Nobody's Talking About",
+      "views": 11008,
+      "ratio": 4.94,
+      "transcript_analysis": {
+        "hook": "",
+        "topic": "",
+        "key_points": [],
+        "script_angle": "",
+        "transcript_path": "/Users/stevenai/Desktop/Nox Builds/Tools/steven-talks-scraper/transcripts/20260525_MusicMoneyMakeoverShow_8CekU6u8wnY.json"
+      }
+    },
+    {
+      "channel": "@asktorsten",
+      "title": "Uber has been taking direct and indirect shots at its partner WAYMO",
+      "views": 1378,
+      "ratio": 5.79,
+      "transcript_analysis": {
+        "hook": "",
+        "topic": "",
+        "key_points": [],
+        "script_angle": "",
+        "transcript_path": "/Users/stevenai/Desktop/Nox Builds/Tools/steven-talks-scraper/transcripts/20260525_RideshareProfessor_UYwrWDNICcw.json"
+      }
+    },
+    {
+      "channel": "@teslainsidernews",
+      "title": "Elon Musk’s $249/Month Tesla House Could END $6,000 Nursing Home Bills!",
+      "views": 18778,
+      "ratio": 13.48,
+      "transcript_analysis": {
+        "hook": "",
+        "topic": "",
+        "key_points": [],
+        "script_angle": "",
+        "transcript_path": "/Users/stevenai/Desktop/Nox Builds/Tools/steven-talks-scraper/transcripts/20260525_TeslaInsiderNews_sGweH8pc048.json"
+      }
+    },
+    {
+      "channel": "@teslainsidernews",
+      "title": "Finally! A $139 Tesla Tablet Built For Older Americans (No More Tech Frustration)",
+      "views": 4228,
+      "ratio": 3.04,
+      "transcript_analysis": {
+        "hook": "",
+        "topic": "",
+        "key_points": [],
+        "script_angle": "",
+        "transcript_path": "/Users/stevenai/Desktop/Nox Builds/Tools/steven-talks-scraper/transcripts/20260525_TeslaInsiderNews__RVutJpSAAI.json"
+      }
+    },
+    {
+      "channel": "@CbcDocs",
+      "title": "B.C.’s lone fire watcher",
+      "views": 15636,
+      "ratio": 4.16,
+      "transcript_analysis": {
+        "hook": "",
+        "topic": "",
+        "key_points": [],
+        "script_angle": "",
+        "transcript_path": "/Users/stevenai/Desktop/Nox Builds/Tools/steven-talks-scraper/transcripts/20260525_CBCDocs_HpqGeBgDgGY.json"
+      }
+    },
+    {
+      "channel": "@NationalPost",
+      "title": "Trump's trade war on Canada will outlast him",
+      "views": 15915,
+      "ratio": 6.7,
+      "transcript_analysis": {
+        "hook": "",
+        "topic": "",
+        "key_points": [],
+        "script_angle": "",
+        "transcript_path": "/Users/stevenai/Desktop/Nox Builds/Tools/steven-talks-scraper/transcripts/20260525_NationalPost_Nu0NUK6hTNw.json"
+      }
+    },
+    {
+      "channel": "@NationalPost",
+      "title": "Elderly woman dies after fight at Tim Hortons over drive thru order",
+      "views": 12158,
+      "ratio": 5.12,
+      "transcript_analysis": {
+        "hook": "",
+        "topic": "",
+        "key_points": [],
+        "script_angle": "",
+        "transcript_path": "/Users/stevenai/Desktop/Nox Builds/Tools/steven-talks-scraper/transcripts/20260525_NationalPost_3tu1ONq2hVQ.json"
+      }
+    },
+    {
+      "channel": "@Euractiv",
+      "title": "Euractiv's 2026 Health Policy Conference",
+      "views": 8312,
+      "ratio": 9.8,
+      "transcript_analysis": {
+        "hook": "",
+        "topic": "",
+        "key_points": [],
+        "script_angle": "",
+        "transcript_path": "/Users/stevenai/Desktop/Nox Builds/Tools/steven-talks-scraper/transcripts/20260525_Euractiv_shcZakgM9Tc.json"
+      }
+    },
+    {
+      "channel": "@NigeriaInfoFM",
+      "title": "“A Power Show!” — Jimi Disu Reacts to Elliot/Barakat Faceoff in APC Primaries",
+      "views": 4329,
+      "ratio": 3.39,
+      "transcript_analysis": {
+        "hook": "",
+        "topic": "",
+        "key_points": [],
+        "script_angle": "",
+        "transcript_path": "/Users/stevenai/Desktop/Nox Builds/Tools/steven-talks-scraper/transcripts/20260525_NigeriaInfoFM_OwXcFFUaJo4.json"
+      }
+    },
+    {
+      "channel": "@FutureOfLifeInstitute",
+      "title": "Why the job market is collapsing",
+      "views": 75136,
+      "ratio": 26.91,
+      "transcript_analysis": {
+        "hook": "",
+        "topic": "",
+        "key_points": [],
+        "script_angle": "",
+        "transcript_path": "/Users/stevenai/Desktop/Nox Builds/Tools/steven-talks-scraper/transcripts/20260525_FutureofLifeInstitute_vBWXUYsWUsQ.json"
+      }
+    },
+    {
+      "channel": "@MedpageToday",
+      "title": "Ebola Outbreak: Former CDC Chief Tom Frieden Responds",
+      "views": 3221,
+      "ratio": 32.7,
+      "transcript_analysis": {
+        "hook": "",
+        "topic": "",
+        "key_points": [],
+        "script_angle": "",
+        "transcript_path": "/Users/stevenai/Desktop/Nox Builds/Tools/steven-talks-scraper/transcripts/20260525_MedPageToday_E_bUHawY7tQ.json"
+      }
+    },
+    {
+      "channel": "@PremiumTimesNg",
+      "title": "Oyo School Attack: Yawota residents flee homes over fear of fresh attacks",
+      "views": 8867,
+      "ratio": 3.36,
+      "transcript_analysis": {
+        "hook": "",
+        "topic": "",
+        "key_points": [],
+        "script_angle": "",
+        "transcript_path": "/Users/stevenai/Desktop/Nox Builds/Tools/steven-talks-scraper/transcripts/20260525_PremiumTimes_U_GaOmaaDtw.json"
+      }
+    }
+  ]
 }
