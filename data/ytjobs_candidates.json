@@ -1,190 +1,179 @@
 {
-  "date": "2026-05-24",
-  "total_sent": 480,
+  "date": "2026-05-25",
+  "total_sent": 490,
   "total_pool": 72576,
   "candidates": [
     {
-      "id": "386515",
-      "name": "Asri3L",
+      "id": "462877",
+      "name": "Boris Design",
       "country": "Unknown",
       "flag": "\ud83c\udf0d",
       "score": 6.0,
       "contacts": {
-        "discord": "landofpeeps"
-      },
-      "badge": "simpleVerified",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "Asri3L",
-        "subscribers": 798,
-        "abvSubs": "798"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/386515"
-    },
-    {
-      "id": "1216",
-      "name": " Albin Almstr\u00f6m",
-      "country": "Unknown",
-      "flag": "\ud83c\udf0d",
-      "score": 6.0,
-      "contacts": {
-        "discord": "rpoy"
-      },
-      "badge": "gold",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "AticEdits",
-        "subscribers": 344,
-        "abvSubs": "344"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/1216"
-    },
-    {
-      "id": "406175",
-      "name": "Giorgio Saroli",
-      "country": "Unknown",
-      "flag": "\ud83c\udf0d",
-      "score": 6.0,
-      "contacts": {
-        "discord": "giobois"
-      },
-      "badge": "gold",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "Snakebaby",
-        "subscribers": 2570,
-        "abvSubs": "2.57K"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/406175"
-    },
-    {
-      "id": "461107",
-      "name": "Defaulted",
-      "country": "Unknown",
-      "flag": "\ud83c\udf0d",
-      "score": 6.0,
-      "contacts": {
-        "discord": "defaulted1"
-      },
-      "badge": "gold",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "Kau\u00e3 Defaulted",
-        "subscribers": 374,
-        "abvSubs": "374"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/461107"
-    },
-    {
-      "id": "242849",
-      "name": "Joe Clark",
-      "country": "Unknown",
-      "flag": "\ud83c\udf0d",
-      "score": 6.0,
-      "contacts": {
-        "discord": "crimsont7phoon"
-      },
-      "badge": "silver",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "Crimson",
-        "subscribers": 64,
-        "abvSubs": "64"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/242849"
-    },
-    {
-      "id": "23168",
-      "name": "Jay Bradley",
-      "country": "Unknown",
-      "flag": "\ud83c\udf0d",
-      "score": 6.0,
-      "contacts": {
-        "discord": "jaythunderstorm"
-      },
-      "badge": "silver",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "Jay Thunderstorm",
-        "subscribers": 23300,
-        "abvSubs": "23.3K"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/23168"
-    },
-    {
-      "id": "29624",
-      "name": "Layla",
-      "country": "Unknown",
-      "flag": "\ud83c\udf0d",
-      "score": 6.0,
-      "contacts": {
-        "discord": "fadamalucatv"
+        "discord": "borisdzn"
       },
       "badge": "silver",
       "verified": false,
       "hireMe": true,
       "ytChannel": null,
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/29624"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/462877"
     },
     {
-      "id": "368907",
-      "name": "Lazar Bakmaz",
+      "id": "283585",
+      "name": "omegaelaichi",
       "country": "Unknown",
       "flag": "\ud83c\udf0d",
       "score": 6.0,
       "contacts": {
-        "discord": "bakaa1_"
+        "discord": "omegaelaichi"
       },
       "badge": "silver",
       "verified": false,
       "hireMe": true,
       "ytChannel": null,
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/368907"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/283585"
     },
     {
-      "id": "506793",
-      "name": "Lajoka",
+      "id": "208236",
+      "name": "zuki",
       "country": "Unknown",
       "flag": "\ud83c\udf0d",
       "score": 6.0,
       "contacts": {
-        "discord": "lajoka"
-      },
-      "badge": "simpleVerified",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "Lajoka",
-        "subscribers": 3220,
-        "abvSubs": "3.22K"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/506793"
-    },
-    {
-      "id": "236147",
-      "name": "Khaled Mohamed",
-      "country": "Unknown",
-      "flag": "\ud83c\udf0d",
-      "score": 6.0,
-      "contacts": {
-        "discord": "lord_5aled"
+        "discord": "heizuki"
       },
       "badge": "silver",
       "verified": false,
       "hireMe": true,
       "ytChannel": {
-        "name": "Khaled Verse",
-        "subscribers": 6350,
-        "abvSubs": "6.35K"
+        "name": "heizuk1",
+        "subscribers": 1,
+        "abvSubs": "1"
       },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/236147"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/208236"
+    },
+    {
+      "id": "396913",
+      "name": "Magma",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
+      "score": 6.0,
+      "contacts": {
+        "discord": "magmatm"
+      },
+      "badge": "silver",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "MagmaTM",
+        "subscribers": 448,
+        "abvSubs": "448"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/396913"
+    },
+    {
+      "id": "424789",
+      "name": "opsiialpha",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
+      "score": 6.0,
+      "contacts": {
+        "discord": "opsiialpha"
+      },
+      "badge": "simpleVerified",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "opsiialpha",
+        "subscribers": 183,
+        "abvSubs": "183"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/424789"
+    },
+    {
+      "id": "19592",
+      "name": "Archit",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
+      "score": 6.0,
+      "contacts": {
+        "discord": "archit2314"
+      },
+      "badge": "silver",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": null,
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/19592"
+    },
+    {
+      "id": "433770",
+      "name": "Gabriel Gaibazzi",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
+      "score": 6.0,
+      "contacts": {
+        "discord": "clownka"
+      },
+      "badge": "silver",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "clownkayt",
+        "subscribers": 4,
+        "abvSubs": "4"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/433770"
+    },
+    {
+      "id": "278202",
+      "name": "Jose Gonzalez",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
+      "score": 6.0,
+      "contacts": {
+        "email": "Fakomi@hotmail.com",
+        "discord": "Fakomi"
+      },
+      "badge": null,
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "Komi",
+        "subscribers": 0,
+        "abvSubs": "0"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/278202"
+    },
+    {
+      "id": "159292",
+      "name": "Sandro",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
+      "score": 6.0,
+      "contacts": {
+        "discord": "sandro_creates"
+      },
+      "badge": "simpleVerified",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": null,
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/159292"
+    },
+    {
+      "id": "33404",
+      "name": "Chris",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
+      "score": 6.0,
+      "contacts": {
+        "discord": "chris_sisk"
+      },
+      "badge": "silver",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": null,
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/33404"
     }
   ],
-  "generated_at": "2026-05-24T13:00:56.837109Z"
+  "generated_at": "2026-05-25T13:01:07.022672Z"
 }
