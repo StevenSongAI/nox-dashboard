@@ -1,179 +1,198 @@
 {
-  "date": "2026-05-25",
-  "total_sent": 490,
+  "date": "2026-05-26",
+  "total_sent": 497,
   "total_pool": 72576,
   "candidates": [
     {
-      "id": "462877",
-      "name": "Boris Design",
+      "id": "128900",
+      "name": "Amol Roy",
       "country": "Unknown",
       "flag": "\ud83c\udf0d",
       "score": 6.0,
       "contacts": {
-        "discord": "borisdzn"
-      },
-      "badge": "silver",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": null,
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/462877"
-    },
-    {
-      "id": "283585",
-      "name": "omegaelaichi",
-      "country": "Unknown",
-      "flag": "\ud83c\udf0d",
-      "score": 6.0,
-      "contacts": {
-        "discord": "omegaelaichi"
-      },
-      "badge": "silver",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": null,
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/283585"
-    },
-    {
-      "id": "208236",
-      "name": "zuki",
-      "country": "Unknown",
-      "flag": "\ud83c\udf0d",
-      "score": 6.0,
-      "contacts": {
-        "discord": "heizuki"
+        "discord": "amolroy23"
       },
       "badge": "silver",
       "verified": false,
       "hireMe": true,
       "ytChannel": {
-        "name": "heizuk1",
-        "subscribers": 1,
-        "abvSubs": "1"
+        "name": "Shutter & Voyages",
+        "subscribers": 646000,
+        "abvSubs": "646K"
       },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/208236"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/128900"
     },
     {
-      "id": "396913",
-      "name": "Magma",
+      "id": "407233",
+      "name": "Cazper Lindholm",
       "country": "Unknown",
       "flag": "\ud83c\udf0d",
       "score": 6.0,
       "contacts": {
-        "discord": "magmatm"
-      },
-      "badge": "silver",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "MagmaTM",
-        "subscribers": 448,
-        "abvSubs": "448"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/396913"
-    },
-    {
-      "id": "424789",
-      "name": "opsiialpha",
-      "country": "Unknown",
-      "flag": "\ud83c\udf0d",
-      "score": 6.0,
-      "contacts": {
-        "discord": "opsiialpha"
+        "discord": "cazisaboi"
       },
       "badge": "simpleVerified",
       "verified": false,
       "hireMe": true,
       "ytChannel": {
-        "name": "opsiialpha",
-        "subscribers": 183,
-        "abvSubs": "183"
+        "name": "Caz",
+        "subscribers": 464,
+        "abvSubs": "464"
       },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/424789"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/407233"
     },
     {
-      "id": "19592",
-      "name": "Archit",
+      "id": "175705",
+      "name": "Navid",
       "country": "Unknown",
       "flag": "\ud83c\udf0d",
       "score": 6.0,
       "contacts": {
-        "discord": "archit2314"
-      },
-      "badge": "silver",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": null,
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/19592"
-    },
-    {
-      "id": "433770",
-      "name": "Gabriel Gaibazzi",
-      "country": "Unknown",
-      "flag": "\ud83c\udf0d",
-      "score": 6.0,
-      "contacts": {
-        "discord": "clownka"
+        "discord": "n6v1d"
       },
       "badge": "silver",
       "verified": false,
       "hireMe": true,
       "ytChannel": {
-        "name": "clownkayt",
-        "subscribers": 4,
-        "abvSubs": "4"
+        "name": "Navid Goebel",
+        "subscribers": 296,
+        "abvSubs": "296"
       },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/433770"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/175705"
     },
     {
-      "id": "278202",
-      "name": "Jose Gonzalez",
+      "id": "170824",
+      "name": "ItsIchika",
       "country": "Unknown",
       "flag": "\ud83c\udf0d",
       "score": 6.0,
       "contacts": {
-        "email": "Fakomi@hotmail.com",
-        "discord": "Fakomi"
+        "discord": "ItsIchika"
       },
-      "badge": null,
+      "badge": "silver",
       "verified": false,
       "hireMe": true,
       "ytChannel": {
-        "name": "Komi",
+        "name": "ItsIchika",
+        "subscribers": 8,
+        "abvSubs": "8"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/170824"
+    },
+    {
+      "id": "42212",
+      "name": "Antradox",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
+      "score": 6.0,
+      "contacts": {
+        "discord": "antradoxyt"
+      },
+      "badge": "silver",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "Antradox",
+        "subscribers": 1530,
+        "abvSubs": "1.53K"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/42212"
+    },
+    {
+      "id": "3564",
+      "name": "Nohan",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
+      "score": 6.0,
+      "contacts": {
+        "discord": "n0han"
+      },
+      "badge": "silver",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "Nohan",
+        "subscribers": 364,
+        "abvSubs": "364"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/3564"
+    },
+    {
+      "id": "475701",
+      "name": "Gustavo M",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
+      "score": 6.0,
+      "contacts": {
+        "discord": "gustavo_mmenezes"
+      },
+      "badge": "silver",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "TrimLab",
         "subscribers": 0,
         "abvSubs": "0"
       },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/278202"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/475701"
     },
     {
-      "id": "159292",
-      "name": "Sandro",
+      "id": "3564",
+      "name": "Nohan",
       "country": "Unknown",
       "flag": "\ud83c\udf0d",
       "score": 6.0,
       "contacts": {
-        "discord": "sandro_creates"
-      },
-      "badge": "simpleVerified",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": null,
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/159292"
-    },
-    {
-      "id": "33404",
-      "name": "Chris",
-      "country": "Unknown",
-      "flag": "\ud83c\udf0d",
-      "score": 6.0,
-      "contacts": {
-        "discord": "chris_sisk"
+        "discord": "n0han"
       },
       "badge": "silver",
       "verified": false,
       "hireMe": true,
-      "ytChannel": null,
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/33404"
+      "ytChannel": {
+        "name": "Nohan",
+        "subscribers": 364,
+        "abvSubs": "364"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/3564"
+    },
+    {
+      "id": "475701",
+      "name": "Gustavo M",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
+      "score": 6.0,
+      "contacts": {
+        "discord": "gustavo_mmenezes"
+      },
+      "badge": "silver",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "TrimLab",
+        "subscribers": 0,
+        "abvSubs": "0"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/475701"
+    },
+    {
+      "id": "3564",
+      "name": "Nohan",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
+      "score": 6.0,
+      "contacts": {
+        "discord": "n0han"
+      },
+      "badge": "silver",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "Nohan",
+        "subscribers": 364,
+        "abvSubs": "364"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/3564"
     }
   ],
-  "generated_at": "2026-05-25T13:01:07.022672Z"
+  "generated_at": "2026-05-26T13:01:00.606611Z"
 }
