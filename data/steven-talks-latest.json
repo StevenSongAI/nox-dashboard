@@ -1,60 +1,34 @@
 {
-  "generated_at": "2026-05-26T06:45:40.495338+00:00",
+  "generated_at": "2026-05-27T06:35:03.873294+00:00",
   "channels_scanned": 447,
   "outliers": [
     {
-      "channel": "@TorontoStar",
-      "title": "Peel police bust violent extortion network in Brampton, Mississauga",
-      "views": 5900,
-      "ratio": 10.61,
+      "channel": "@ValorEconomico",
+      "title": "O que est\u00e1 por tr\u00e1s dos protestos na Bol\u00edvia?",
+      "views": 4125,
+      "ratio": 30.0,
       "transcript_analysis": {
+        "status": "unavailable: transcript retrieval failed and Claude credentials not available",
         "hook": "",
         "topic": "",
         "key_points": [],
         "script_angle": "",
-        "transcript_path": "/Users/stevenai/Desktop/Nox Builds/Tools/steven-talks-scraper/transcripts/20260526_TorontoStar_zXXquxvDd3M.json",
-        "transcript_chars": 3419
+        "transcript_path": "/Users/stevenai/Desktop/Nox Builds/Tools/steven-talks-scraper/transcripts/20260527_ValorEconomico_RXgfzk4Hlbg.json",
+        "transcript_chars": 0
       }
     },
     {
-      "channel": "@TheProgressReport",
-      "title": "Gucci Mane Brings Out Keyshia Ka’oir, OJ Da Juiceman & Zaytoven at Hot 1.07.9 Atlanta Birthday Bash",
-      "views": 1300,
-      "ratio": 10.53,
+      "channel": "@njspotlightnews",
+      "title": "ICE escalating tensions at Newark detention center, Rep. Rob Menendez says",
+      "views": 2699,
+      "ratio": 4.2,
       "transcript_analysis": {
+        "status": "unavailable: transcript retrieval failed and Claude credentials not available",
         "hook": "",
         "topic": "",
         "key_points": [],
         "script_angle": "",
-        "transcript_path": "/Users/stevenai/Desktop/Nox Builds/Tools/steven-talks-scraper/transcripts/20260526_TheProgressReportMediaGroup__0bkAXwspjM.json",
-        "transcript_chars": 4091
-      }
-    },
-    {
-      "channel": "@TheProgressReport",
-      "title": "D4L REUNITES at Hot 107.9 Birthday Bash! Fabo, Mook B & Stuntman Hit the Stage",
-      "views": 1744,
-      "ratio": 14.12,
-      "transcript_analysis": {
-        "hook": "",
-        "topic": "",
-        "key_points": [],
-        "script_angle": "",
-        "transcript_path": "/Users/stevenai/Desktop/Nox Builds/Tools/steven-talks-scraper/transcripts/20260526_TheProgressReportMediaGroup_-r7D-QKZPzU.json",
-        "transcript_chars": 2422
-      }
-    },
-    {
-      "channel": "@LaStampa",
-      "title": "TORO-JUVE: la ricostruzione video della GUERRIGLIA e del ferimento dell'ULTRAS bianconero",
-      "views": 6927,
-      "ratio": 9.14,
-      "transcript_analysis": {
-        "hook": "",
-        "topic": "",
-        "key_points": [],
-        "script_angle": "",
-        "transcript_path": "/Users/stevenai/Desktop/Nox Builds/Tools/steven-talks-scraper/transcripts/20260526_LaStampa_vSbnkNDaxGY.json",
+        "transcript_path": "/Users/stevenai/Desktop/Nox Builds/Tools/steven-talks-scraper/transcripts/20260527_njspotlightnews_msgrepb-c8c.json",
         "transcript_chars": 0
       }
     }
