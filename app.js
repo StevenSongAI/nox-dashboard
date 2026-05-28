@@ -79,12 +79,27 @@ const App = {
       this.fetchAPI('ideas', 'idea'),
       this.fetchAPI('devprojects', 'dev_project'),
       this.fetchAPI('steventalks', 'steven_talks'),
+      this.fetchAPIChannel('ssirl', 'outlier', 'StevenSongIRL'),
       this.fetchJSON('youtube'),
       this.fetchJSON('competitors'),
       this.fetchJSON('meta'),
       this.fetchJSON('expenses', 'data/expenses.json'),
     ]);
     this.renderAll();
+  },
+
+  async fetchAPIChannel(dataKey, category, channel) {
+    try {
+      const res = await fetch(BACKEND_URL + '/api/entries?category=' + category + '&channel=' + encodeURIComponent(channel) + '&limit=500', {
+        headers: { 'Authorization': 'Bearer ' + API_KEY }
+      });
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      const json = await res.json();
+      this.data[dataKey] = this.transformAPIData(dataKey, json.entries);
+    } catch (err) {
+      console.error('API fetch failed for ' + dataKey + ':', err);
+      this.data[dataKey] = { hits: [] };
+    }
   },
 
   async fetchAPI(dataKey, category) {
@@ -154,6 +169,20 @@ const App = {
         created_at: e.created_at
       })) };
     }
+    if (dataKey === 'ssirl') {
+      return { hits: entries.map(e => ({
+        id: e.source_id || e.id,
+        title: e.title,
+        channel_name: e.data?.channel_name,
+        views: e.data?.views,
+        outlier_score: e.data?.outlier_score,
+        remix_concept: e.data?.remix_concept,
+        url: e.data?.url,
+        query: e.data?.query,
+        scrape_date: e.data?.scrape_date,
+        created_at: e.created_at
+      })) };
+    }
     return entries;
   },
 
@@ -180,6 +209,7 @@ const App = {
     this.renderDevProjects();
     this.setupDevProjectFilters();
     this.renderStevenTalks();
+    this.renderSsirl();
   },
 
   renderLastUpdate() {
@@ -664,6 +694,71 @@ App.renderStevenTalks = function() {
     tdDate.textContent = this.formatDate(h.scrape_date || h.created_at);
 
     tr.append(tdTitle, tdChannel, tdViews, tdScore, tdTopic, tdDate);
+    return tr;
+  });
+  tbody.replaceChildren(...rows);
+};
+
+App.renderSsirl = function() {
+  const tbody = document.getElementById('ssirl-table');
+  if (!tbody) return;
+  const hits = this.data.ssirl?.hits || [];
+  const countEl = document.getElementById('ssirl-count');
+  if (countEl) countEl.textContent = hits.length + ' videos tracked';
+  if (!hits.length) {
+    const placeholder = document.createElement('tr');
+    const td = document.createElement('td');
+    td.colSpan = 6;
+    td.className = 'py-8 text-center text-gray-500';
+    td.textContent = 'No outlier data yet';
+    placeholder.appendChild(td);
+    tbody.replaceChildren(placeholder);
+    return;
+  }
+  const sorted = [...hits].sort((a, b) => (b.outlier_score || 0) - (a.outlier_score || 0));
+  const rows = sorted.map(h => {
+    const score = h.outlier_score || 0;
+    const scoreColor = score >= 50 ? 'text-red-400' : score >= 20 ? 'text-orange-400' : 'text-yellow-400';
+    const safeUrl = h.url && h.url.startsWith('https://www.youtube.com/') ? h.url : null;
+    const tr = document.createElement('tr');
+    tr.className = 'hover:bg-[#1a1a2e] transition-colors';
+
+    const tdTitle = document.createElement('td');
+    tdTitle.className = 'py-3 px-2';
+    if (safeUrl) {
+      const a = document.createElement('a');
+      a.href = safeUrl;
+      a.target = '_blank';
+      a.rel = 'noopener';
+      a.className = 'text-purple-400 hover:text-purple-300 text-xs';
+      a.textContent = h.title || '';
+      tdTitle.appendChild(a);
+    } else {
+      tdTitle.textContent = h.title || '';
+      tdTitle.className += ' text-gray-300 text-xs';
+    }
+
+    const tdChannel = document.createElement('td');
+    tdChannel.className = 'py-3 px-2 text-gray-400 text-xs';
+    tdChannel.textContent = h.channel_name || '';
+
+    const tdViews = document.createElement('td');
+    tdViews.className = 'py-3 px-2 text-right text-gray-300 text-xs';
+    tdViews.textContent = this.formatViews(h.views);
+
+    const tdScore = document.createElement('td');
+    tdScore.className = 'py-3 px-2 text-right text-xs font-mono ' + scoreColor;
+    tdScore.textContent = score ? score.toFixed(1) + 'x' : '—';
+
+    const tdRemix = document.createElement('td');
+    tdRemix.className = 'py-3 px-2 text-gray-400 text-xs max-w-xs truncate';
+    tdRemix.textContent = h.remix_concept || h.query || '—';
+
+    const tdDate = document.createElement('td');
+    tdDate.className = 'py-3 px-2 text-gray-500 text-xs';
+    tdDate.textContent = this.formatDate(h.scrape_date || h.created_at);
+
+    tr.append(tdTitle, tdChannel, tdViews, tdScore, tdRemix, tdDate);
     return tr;
   });
   tbody.replaceChildren(...rows);
