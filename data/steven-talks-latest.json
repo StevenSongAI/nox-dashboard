@@ -1,35 +1,45 @@
 {
-  "generated_at": "2026-05-27T06:35:03.873294+00:00",
-  "channels_scanned": 447,
+  "generated_at": "2026-05-31T06:35:26.088668+00:00",
+  "channels_scanned": 2177,
+  "recent_videos_evaluated": 163,
+  "outliers_found": 1,
   "outliers": [
     {
-      "channel": "@ValorEconomico",
-      "title": "O que est\u00e1 por tr\u00e1s dos protestos na Bol\u00edvia?",
-      "views": 4125,
-      "ratio": 30.0,
+      "channel": "@msnow",
+      "channel_name": "MS NOW",
+      "title": "Ali Velshi escorted away by police as he reports on protest outside NJ ICE facility",
+      "url": "https://www.youtube.com/watch?v=w21m2lZO4Kw",
+      "views": 392717,
+      "ratio": 3.0,
+      "outlier_score": 3.0,
+      "outlier_reason": "Heuristic: >200K views in 48h (small channel)",
+      "baseline_views": 0,
+      "upload_date": "20260531",
+      "niche": "luxury lifestyle simulation",
       "transcript_analysis": {
-        "status": "unavailable: transcript retrieval failed and Claude credentials not available",
+        "transcript_chars": 0,
+        "transcript_path": "/Users/stevenai/Desktop/Nox Builds/Tools/steven-talks-scraper/transcripts/20260531_msnow_w21m2lZO4Kw.json",
+        "hook": "",
+        "topic": "",
+        "script_angle": "",
+        "key_points": [],
+        "model": "claude-haiku-4-5-20251001",
+        "analyzed_at": "2026-05-31T06:35:50.561113+00:00"
+      },
+      "analysis": {
+        "video_id": "w21m2lZO4Kw",
+        "url": "https://www.youtube.com/watch?v=w21m2lZO4Kw",
+        "title": "Ali Velshi escorted away by police as he reports on protest outside NJ ICE facility",
+        "channel": "@msnow",
+        "transcript_chars": 0,
+        "transcript_preview": "",
+        "analyzed_at": "2026-05-31T06:35:50.561113+00:00",
+        "model": "claude-haiku-4-5-20251001",
         "hook": "",
         "topic": "",
         "key_points": [],
         "script_angle": "",
-        "transcript_path": "/Users/stevenai/Desktop/Nox Builds/Tools/steven-talks-scraper/transcripts/20260527_ValorEconomico_RXgfzk4Hlbg.json",
-        "transcript_chars": 0
-      }
-    },
-    {
-      "channel": "@njspotlightnews",
-      "title": "ICE escalating tensions at Newark detention center, Rep. Rob Menendez says",
-      "views": 2699,
-      "ratio": 4.2,
-      "transcript_analysis": {
-        "status": "unavailable: transcript retrieval failed and Claude credentials not available",
-        "hook": "",
-        "topic": "",
-        "key_points": [],
-        "script_angle": "",
-        "transcript_path": "/Users/stevenai/Desktop/Nox Builds/Tools/steven-talks-scraper/transcripts/20260527_njspotlightnews_msgrepb-c8c.json",
-        "transcript_chars": 0
+        "transcript_path": "/Users/stevenai/Desktop/Nox Builds/Tools/steven-talks-scraper/transcripts/20260531_msnow_w21m2lZO4Kw.json"
       }
     }
   ]
