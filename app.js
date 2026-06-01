@@ -84,6 +84,7 @@ const App = {
       this.fetchJSON('competitors'),
       this.fetchJSON('meta'),
       this.fetchJSON('expenses', 'data/expenses.json'),
+      this.fetchJSON('backlog', 'data/ytjobs_backlog.json'),
     ]);
     this.renderAll();
   },
@@ -210,6 +211,7 @@ const App = {
     this.setupDevProjectFilters();
     this.renderStevenTalks();
     this.renderSsirl();
+    this.renderBacklog();
   },
 
   renderLastUpdate() {

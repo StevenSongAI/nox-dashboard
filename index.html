@@ -52,6 +52,9 @@
           🐾 IRL Outliers
         </button>
         <button id="tab-ytjobs" class="tab-btn px-4 py-3 text-sm font-medium border-b-2 border-transparent hover:text-white transition-colors" data-tab="ytjobs" onclick="window.location='ytjobs.html'">👥 YTJobs</button>
+        <button id="tab-backlog" class="tab-btn px-4 py-3 text-sm font-medium border-b-2 border-transparent hover:text-white transition-colors" data-tab="backlog">
+          📥 Discord Backlog
+        </button>
         <button id="tab-devprojects" class="tab-btn px-4 py-3 text-sm font-medium border-b-2 border-transparent hover:text-white transition-colors" onclick="window.location='dev-projects.html'">🚧 Dev Projects</button>
         <button id="tab-inspoboard" class="tab-btn px-4 py-3 text-sm font-medium border-b-2 border-transparent hover:text-white transition-colors" onclick="window.location='inspiration-board.html'">🎨 Inspo Board</button>
       </div>
@@ -196,6 +199,41 @@
       </div>
     </div>
 
+    <!-- Discord Backlog Panel -->
+    <div id="panel-backlog" class="tab-panel hidden">
+      <div class="mb-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+        <div>
+          <h2 class="text-lg font-semibold text-white">Discord Backlog</h2>
+          <p class="text-sm text-gray-400">YTJobs candidates from the last 10 days — contact via Discord to hire</p>
+        </div>
+        <span id="backlog-count" class="text-xs text-gray-500"></span>
+      </div>
+      <div class="mb-3 flex gap-2">
+        <input id="backlog-search" type="text" placeholder="Search by name, country, role..."
+          class="bg-[#1a1a2e] border border-[#252540] text-gray-300 text-sm rounded px-3 py-2 focus:outline-none focus:border-purple-500 w-64">
+        <select id="backlog-filter-country" class="bg-[#1a1a2e] border border-[#252540] text-gray-300 text-sm rounded px-3 py-2 focus:outline-none focus:border-purple-500">
+          <option value="">All Countries</option>
+        </select>
+      </div>
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm">
+          <thead>
+            <tr class="border-b border-[#252540] text-gray-400">
+              <th class="text-left py-3 px-2">Name</th>
+              <th class="text-left py-3 px-2">Role</th>
+              <th class="text-left py-3 px-2">Country</th>
+              <th class="text-left py-3 px-2">Discord</th>
+              <th class="text-right py-3 px-2">Score</th>
+              <th class="text-left py-3 px-2">Profile</th>
+            </tr>
+          </thead>
+          <tbody id="backlog-table" class="divide-y divide-[#252540]">
+            <tr><td colspan="6" class="py-4 text-gray-500">Loading backlog...</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
     <!-- Second Brain / Ideas Panel -->
     <div id="panel-ideas" class="tab-panel hidden">
       <div class="mb-4">
@@ -224,5 +262,6 @@
   </div>
 
   <script src="app.js?v=7"></script>
+  <script src="backlog.js?v=1"></script>
 </body>
 </html>
