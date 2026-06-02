@@ -1,197 +1,190 @@
 {
-  "date": "2026-06-01",
-  "total_sent": 517,
+  "date": "2026-06-02",
+  "total_sent": 527,
   "total_pool": 72576,
   "candidates": [
     {
-      "id": "343601",
-      "name": "ilousi",
+      "id": "459461",
+      "name": "winterbulker",
       "country": "Unknown",
       "flag": "\ud83c\udf0d",
       "score": 6.0,
       "contacts": {
-        "discord": "ilousi"
+        "discord": "winterbulkerisback"
       },
       "badge": "simpleVerified",
       "verified": false,
       "hireMe": true,
       "ytChannel": {
-        "name": "ilousi",
-        "subscribers": 428,
-        "abvSubs": "428"
+        "name": "Resol",
+        "subscribers": 296,
+        "abvSubs": "296"
       },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/343601"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/459461"
     },
     {
-      "id": "174570",
-      "name": "WhoseAsh",
+      "id": "277296",
+      "name": "mohamed reda",
       "country": "Unknown",
       "flag": "\ud83c\udf0d",
       "score": 6.0,
       "contacts": {
-        "discord": "WhoseAsh"
-      },
-      "badge": "simpleVerified",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "WhoseAsh",
-        "subscribers": 6,
-        "abvSubs": "6"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/174570"
-    },
-    {
-      "id": "494211",
-      "name": "Raul",
-      "country": "Unknown",
-      "flag": "\ud83c\udf0d",
-      "score": 6.0,
-      "contacts": {
-        "discord": "luareditor",
-        "twitter": "luareditor"
-      },
-      "badge": "simpleVerified",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "Luar Editor",
-        "subscribers": 0,
-        "abvSubs": "0"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/494211"
-    },
-    {
-      "id": "461358",
-      "name": "Artur",
-      "country": "Unknown",
-      "flag": "\ud83c\udf0d",
-      "score": 6.0,
-      "contacts": {
-        "discord": "fl0kkkkj",
-        "website": "arturport.carrd.co/#home"
+        "discord": "mahmd_reda",
+        "website": "instagram.com/muhmdreda_?igsh=aWEwdXl5aDZqcjg3"
       },
       "badge": "simpleVerified",
       "verified": false,
       "hireMe": true,
       "ytChannel": null,
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/461358"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/277296"
     },
     {
-      "id": "399065",
-      "name": "alexbubu7",
+      "id": "434068",
+      "name": "Vxron.",
       "country": "Unknown",
       "flag": "\ud83c\udf0d",
       "score": 6.0,
       "contacts": {
-        "discord": "alexbubu7"
+        "discord": "Or"
       },
       "badge": "simpleVerified",
       "verified": false,
       "hireMe": true,
       "ytChannel": {
-        "name": "alexbubu7",
-        "subscribers": 107,
-        "abvSubs": "107"
+        "name": "Vxron.",
+        "subscribers": 20,
+        "abvSubs": "20"
       },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/399065"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/434068"
     },
     {
-      "id": "388680",
-      "name": "Sho_vfx",
+      "id": "22455",
+      "name": " Peter \u2018Nitros\u2019",
       "country": "Unknown",
       "flag": "\ud83c\udf0d",
       "score": 6.0,
       "contacts": {
-        "discord": "shovfx"
+        "discord": "nltros",
+        "website": "YouTube.com/nitros"
       },
       "badge": "simpleVerified",
       "verified": false,
       "hireMe": true,
       "ytChannel": {
-        "name": "ShoVFX",
-        "subscribers": 1,
-        "abvSubs": "1"
+        "name": "Nitro Circus",
+        "subscribers": 3100000,
+        "abvSubs": "3.1M"
       },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/388680"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/22455"
     },
     {
-      "id": "391513",
-      "name": "TalentedMuch",
+      "id": "290643",
+      "name": "Daniel Rankin",
       "country": "Unknown",
       "flag": "\ud83c\udf0d",
       "score": 6.0,
       "contacts": {
-        "discord": "talentedmuch"
+        "discord": "ftg_daniel"
       },
       "badge": "simpleVerified",
       "verified": false,
       "hireMe": true,
       "ytChannel": {
-        "name": "talentedmuch",
-        "subscribers": 9980,
-        "abvSubs": "9.98K"
+        "name": "FTG",
+        "subscribers": 24,
+        "abvSubs": "24"
       },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/391513"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/290643"
     },
     {
-      "id": "467168",
-      "name": "Enck",
+      "id": "28719",
+      "name": "Clumzy",
       "country": "Unknown",
       "flag": "\ud83c\udf0d",
       "score": 6.0,
       "contacts": {
-        "discord": "enck"
+        "discord": "Clumzzy#6327",
+        "website": "youtube.com/channel/UC7n6NcNMDCfhIjZ_DtI-jTQ"
       },
       "badge": "simpleVerified",
       "verified": false,
       "hireMe": true,
       "ytChannel": {
-        "name": "Enck",
-        "subscribers": 1830,
-        "abvSubs": "1.83K"
+        "name": "Clumzzy",
+        "subscribers": 22900,
+        "abvSubs": "22.9K"
       },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/467168"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/28719"
     },
     {
-      "id": "454266",
-      "name": "BlueFireDudester",
+      "id": "342470",
+      "name": "Kw3rty",
       "country": "Unknown",
       "flag": "\ud83c\udf0d",
       "score": 6.0,
       "contacts": {
-        "discord": "BlueFireDudester",
-        "website": "bluefiredudester.wixsite.com/bluefiredudester"
+        "discord": "kw3rty",
+        "website": "kw3rty.carrd.co"
       },
       "badge": "simpleVerified",
       "verified": false,
       "hireMe": true,
       "ytChannel": {
-        "name": "BlueFireDudester",
-        "subscribers": 885,
-        "abvSubs": "885"
+        "name": "kw3rtyblox",
+        "subscribers": 6,
+        "abvSubs": "6"
       },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/454266"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/342470"
     },
     {
-      "id": "484847",
-      "name": "Pedro Lucas Zampa Chiarelli",
+      "id": "336781",
+      "name": "Abby",
       "country": "Unknown",
       "flag": "\ud83c\udf0d",
       "score": 6.0,
       "contacts": {
-        "discord": "Darkosta"
+        "discord": "mebandae"
       },
       "badge": "simpleVerified",
       "verified": false,
       "hireMe": true,
       "ytChannel": {
-        "name": "Darkosta",
-        "subscribers": 119,
-        "abvSubs": "119"
+        "name": "MeBandae",
+        "subscribers": 15,
+        "abvSubs": "15"
       },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/484847"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/336781"
+    },
+    {
+      "id": "291196",
+      "name": "Max",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
+      "score": 6.0,
+      "contacts": {
+        "discord": "that"
+      },
+      "badge": "simpleVerified",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": null,
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/291196"
+    },
+    {
+      "id": "436331",
+      "name": "DuckDuk | Daniel",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
+      "score": 6.0,
+      "contacts": {
+        "discord": "Duck.Duk"
+      },
+      "badge": "simpleVerified",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": null,
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/436331"
     }
   ],
-  "generated_at": "2026-06-01T13:00:10.570241Z"
+  "generated_at": "2026-06-02T13:00:10.701935Z"
 }
