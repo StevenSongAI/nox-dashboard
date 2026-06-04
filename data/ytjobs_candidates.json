@@ -1,192 +1,194 @@
 {
-  "date": "2026-06-03",
-  "total_sent": 537,
+  "date": "2026-06-04",
+  "total_sent": 547,
   "total_pool": 72576,
   "candidates": [
     {
-      "id": "99885",
-      "name": " Miroslav Vesel\u00fd",
+      "id": "381124",
+      "name": "Soul",
       "country": "Unknown",
       "flag": "\ud83c\udf0d",
       "score": 6.0,
       "contacts": {
-        "discord": "comradekysa"
+        "discord": "soulscreened"
       },
       "badge": "simpleVerified",
       "verified": false,
       "hireMe": true,
       "ytChannel": null,
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/99885"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/381124"
     },
     {
-      "id": "31937",
-      "name": "Nathan Burden",
+      "id": "234854",
+      "name": "Abild",
       "country": "Unknown",
       "flag": "\ud83c\udf0d",
       "score": 6.0,
       "contacts": {
-        "email": "burdinquiries@gmail.com",
-        "discord": "nBURD#5485"
+        "email": "seb.abildgaard@hotmail.com",
+        "discord": "abild"
+      },
+      "badge": "simpleVerified",
+      "verified": false,
+      "hireMe": false,
+      "ytChannel": {
+        "name": "Abild",
+        "subscribers": 8,
+        "abvSubs": "8"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/234854"
+    },
+    {
+      "id": "421169",
+      "name": "ArticVFX",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
+      "score": 6.0,
+      "contacts": {
+        "discord": "Articvfx",
+        "twitter": "ArticWzz"
+      },
+      "badge": "simpleVerified",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "ArticVFX",
+        "subscribers": 399,
+        "abvSubs": "399"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/421169"
+    },
+    {
+      "id": "191043",
+      "name": "daksh",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
+      "score": 6.0,
+      "contacts": {
+        "discord": "okdaksh"
+      },
+      "badge": "simpleVerified",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "dk4343",
+        "subscribers": 1250,
+        "abvSubs": "1.25K"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/191043"
+    },
+    {
+      "id": "26559",
+      "name": "Burgle",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
+      "score": 6.0,
+      "contacts": {
+        "discord": "burgle"
+      },
+      "badge": "simpleVerified",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "Burgle",
+        "subscribers": 812,
+        "abvSubs": "812"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/26559"
+    },
+    {
+      "id": "13178",
+      "name": "Eduardo Brun",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
+      "score": 6.0,
+      "contacts": {
+        "discord": "du.brun"
+      },
+      "badge": "gold",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "Du brun",
+        "subscribers": 232,
+        "abvSubs": "232"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/13178"
+    },
+    {
+      "id": "116268",
+      "name": "Medii",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
+      "score": 6.0,
+      "contacts": {
+        "email": "mehdiachilles2@gmail.com",
+        "discord": "mediivfx"
       },
       "badge": null,
       "verified": false,
       "hireMe": true,
       "ytChannel": {
-        "name": "nBURD",
-        "subscribers": 39300,
-        "abvSubs": "39.3K"
+        "name": "Medii",
+        "subscribers": 13,
+        "abvSubs": "13"
       },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/31937"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/116268"
     },
     {
-      "id": "2999",
-      "name": "Nathan Scott",
+      "id": "478287",
+      "name": "Kaique Mello",
       "country": "Unknown",
       "flag": "\ud83c\udf0d",
       "score": 6.0,
       "contacts": {
-        "discord": "NathanRevive",
-        "website": "Reviveproductions.co.uk"
-      },
-      "badge": "simpleVerified",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": null,
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/2999"
-    },
-    {
-      "id": "416820",
-      "name": "Guilherme Dias",
-      "country": "Unknown",
-      "flag": "\ud83c\udf0d",
-      "score": 6.0,
-      "contacts": {
-        "discord": "odiaseditor"
-      },
-      "badge": "simpleVerified",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "Dias",
-        "subscribers": 21,
-        "abvSubs": "21"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/416820"
-    },
-    {
-      "id": "412690",
-      "name": "Om1r",
-      "country": "Unknown",
-      "flag": "\ud83c\udf0d",
-      "score": 6.0,
-      "contacts": {
-        "discord": "omar_999"
-      },
-      "badge": "simpleVerified",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "Om1r",
-        "subscribers": 0,
-        "abvSubs": "0"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/412690"
-    },
-    {
-      "id": "150323",
-      "name": "Samuel",
-      "country": "Unknown",
-      "flag": "\ud83c\udf0d",
-      "score": 6.0,
-      "contacts": {
-        "discord": "samu_8000"
-      },
-      "badge": "simpleVerified",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "Samuel Gelfert",
-        "subscribers": 102,
-        "abvSubs": "102"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/150323"
-    },
-    {
-      "id": "416480",
-      "name": "Lunarxd",
-      "country": "Unknown",
-      "flag": "\ud83c\udf0d",
-      "score": 6.0,
-      "contacts": {
-        "discord": "lunarx.wrld"
-      },
-      "badge": "simpleVerified",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "Lunar",
-        "subscribers": 26,
-        "abvSubs": "26"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/416480"
-    },
-    {
-      "id": "477626",
-      "name": " Douglas T.",
-      "country": "Unknown",
-      "flag": "\ud83c\udf0d",
-      "score": 6.0,
-      "contacts": {
-        "discord": "doughated"
-      },
-      "badge": "simpleVerified",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "Doug T",
-        "subscribers": 4,
-        "abvSubs": "4"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/477626"
-    },
-    {
-      "id": "434065",
-      "name": "pannella",
-      "country": "Unknown",
-      "flag": "\ud83c\udf0d",
-      "score": 6.0,
-      "contacts": {
-        "discord": "pannella"
-      },
-      "badge": "simpleVerified",
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "pannella",
-        "subscribers": 439,
-        "abvSubs": "439"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/434065"
-    },
-    {
-      "id": "402686",
-      "name": "Jota",
-      "country": "Unknown",
-      "flag": "\ud83c\udf0d",
-      "score": 6.0,
-      "contacts": {
-        "discord": "Jota"
+        "discord": "okaiquemello"
       },
       "badge": "silver",
       "verified": false,
       "hireMe": true,
       "ytChannel": {
-        "name": "jota.editor",
-        "subscribers": 1,
-        "abvSubs": "1"
+        "name": "Kaique Editor",
+        "subscribers": 15500,
+        "abvSubs": "15.5K"
       },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/402686"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/478287"
+    },
+    {
+      "id": "415447",
+      "name": "Toryaku",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
+      "score": 6.0,
+      "contacts": {
+        "discord": "toryaku"
+      },
+      "badge": "simpleVerified",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "Toryaku",
+        "subscribers": 10,
+        "abvSubs": "10"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/415447"
+    },
+    {
+      "id": "391754",
+      "name": "Legend Cat",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
+      "score": 6.0,
+      "contacts": {
+        "discord": "alwayswannapvp",
+        "website": "teodoesprod.weblium.site"
+      },
+      "badge": "simpleVerified",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": null,
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/391754"
     }
   ],
-  "generated_at": "2026-06-03T13:00:10.384690Z"
+  "generated_at": "2026-06-04T13:00:12.327579Z"
 }
