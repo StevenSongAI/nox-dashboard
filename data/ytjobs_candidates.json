@@ -1,188 +1,181 @@
 {
-  "date": "2026-06-06",
-  "total_sent": 566,
+  "date": "2026-06-07",
+  "total_sent": 576,
   "total_pool": 72576,
   "candidates": [
     {
-      "id": "309457",
-      "name": "James kabanga",
+      "id": "372990",
+      "name": "Derpree",
       "country": "Unknown",
       "flag": "\ud83c\udf0d",
       "score": 6.0,
       "contacts": {
-        "email": "jameskabanga7@gmail.com",
-        "discord": "jamesk0846"
-      },
-      "badge": null,
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": null,
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/309457"
-    },
-    {
-      "id": "289865",
-      "name": "Archie.C",
-      "country": "Unknown",
-      "flag": "\ud83c\udf0d",
-      "score": 6.0,
-      "contacts": {
-        "email": "clumpysands@gmail.com",
-        "discord": "archie.c74"
+        "email": "finntheberry@gmail.com",
+        "discord": "derpree"
       },
       "badge": null,
       "verified": false,
       "hireMe": true,
       "ytChannel": {
-        "name": "SloppyStones",
-        "subscribers": 19,
-        "abvSubs": "19"
+        "name": "Derpree",
+        "subscribers": 4,
+        "abvSubs": "4"
       },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/289865"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/372990"
     },
     {
-      "id": "48552",
-      "name": "Jesi",
+      "id": "356015",
+      "name": "Exalted",
       "country": "Unknown",
       "flag": "\ud83c\udf0d",
       "score": 6.0,
       "contacts": {
-        "email": "Contactojesicab@gmail.com",
-        "discord": "Jesieditora"
-      },
-      "badge": null,
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": null,
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/48552"
-    },
-    {
-      "id": "470341",
-      "name": "Yaroslav Levchun",
-      "country": "Unknown",
-      "flag": "\ud83c\udf0d",
-      "score": 6.0,
-      "contacts": {
-        "email": "levchundsg@gmail.com",
-        "discord": "levchun"
-      },
-      "badge": null,
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": null,
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/470341"
-    },
-    {
-      "id": "429541",
-      "name": "Facundo Daniel Esquivel",
-      "country": "Unknown",
-      "flag": "\ud83c\udf0d",
-      "score": 6.0,
-      "contacts": {
-        "email": "facundo.d.esquivel@hotmail.com",
-        "discord": "facundoesq"
+        "email": "exaltedbusinesses@gmail.com",
+        "discord": "exalted05"
       },
       "badge": null,
       "verified": false,
       "hireMe": true,
       "ytChannel": {
-        "name": "Facundo Esquivel",
-        "subscribers": 3,
-        "abvSubs": "3"
+        "name": "Exalted",
+        "subscribers": 17,
+        "abvSubs": "17"
       },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/429541"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/356015"
     },
     {
-      "id": "274621",
-      "name": "R1MURU",
+      "id": "516255",
+      "name": "Daniel",
       "country": "Unknown",
       "flag": "\ud83c\udf0d",
       "score": 6.0,
       "contacts": {
-        "email": "dangma333@gmail.com",
-        "discord": "https"
+        "discord": "offstagedaniel",
+        "website": "offstagedaniel.carrd.co"
       },
-      "badge": null,
+      "badge": "gold",
       "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "R1MURU\u97fb",
-        "subscribers": 247,
-        "abvSubs": "247"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/274621"
+      "hireMe": false,
+      "ytChannel": null,
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/516255"
     },
     {
-      "id": "490671",
-      "name": "Rog\u00e9rio Mathiasso",
+      "id": "514162",
+      "name": "Muntasir Mehdi",
       "country": "Unknown",
       "flag": "\ud83c\udf0d",
       "score": 6.0,
       "contacts": {
-        "email": "rogeriomth2@gmail.com",
-        "discord": "ROGERIOMTH"
+        "discord": "Hydrogendioxide",
+        "website": "rnuntasir.netlify.app"
       },
-      "badge": null,
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": {
-        "name": "Fanmade Toon Films",
-        "subscribers": 7,
-        "abvSubs": "7"
-      },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/490671"
-    },
-    {
-      "id": "486809",
-      "name": "Foopoos",
-      "country": "Unknown",
-      "flag": "\ud83c\udf0d",
-      "score": 6.0,
-      "contacts": {
-        "email": "foopooseditor@gmail.com",
-        "discord": "Email"
-      },
-      "badge": null,
+      "badge": "simpleVerified",
       "verified": false,
       "hireMe": true,
       "ytChannel": null,
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/486809"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/514162"
     },
     {
-      "id": "440850",
-      "name": "Shiv",
+      "id": "529811",
+      "name": "N\u00edcolas",
       "country": "Unknown",
       "flag": "\ud83c\udf0d",
       "score": 6.0,
       "contacts": {
-        "email": "hishivam1916@gmail.com",
-        "discord": "auxi_shivam_47733"
+        "discord": "nicmalachias",
+        "website": "nicmalachias.xyz"
       },
-      "badge": null,
-      "verified": false,
-      "hireMe": true,
-      "ytChannel": null,
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/440850"
-    },
-    {
-      "id": "423155",
-      "name": "Amaar Hassan",
-      "country": "Unknown",
-      "flag": "\ud83c\udf0d",
-      "score": 6.0,
-      "contacts": {
-        "email": "amaarhassan688@gmail.com",
-        "discord": "stormgaming0110"
-      },
-      "badge": null,
+      "badge": "simpleVerified",
       "verified": false,
       "hireMe": true,
       "ytChannel": {
-        "name": "Vortex Aep",
-        "subscribers": 1600,
-        "abvSubs": "1.6K"
+        "name": "N\u00edcolas",
+        "subscribers": 938,
+        "abvSubs": "938"
       },
-      "ytjobsUrl": "https://ytjobs.co/talent/profile/423155"
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/529811"
+    },
+    {
+      "id": "19609",
+      "name": "Switcheru0s",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
+      "score": 5.5,
+      "contacts": {
+        "discord": "Switcheru0s"
+      },
+      "badge": "silver",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": null,
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/19609"
+    },
+    {
+      "id": "21782",
+      "name": " Riordojim (Jim)",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
+      "score": 5.5,
+      "contacts": {
+        "discord": "Riordojim#1261",
+        "website": "youtu.be/dNtg4ixc10E"
+      },
+      "badge": "simpleVerified",
+      "verified": false,
+      "hireMe": false,
+      "ytChannel": null,
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/21782"
+    },
+    {
+      "id": "9853",
+      "name": "Doug",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
+      "score": 5.0,
+      "contacts": {
+        "discord": "doug"
+      },
+      "badge": "silver",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": null,
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/9853"
+    },
+    {
+      "id": "70210",
+      "name": "Emryth",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
+      "score": 5.0,
+      "contacts": {
+        "discord": "emryth"
+      },
+      "badge": "simpleVerified",
+      "verified": false,
+      "hireMe": true,
+      "ytChannel": {
+        "name": "Emryth",
+        "subscribers": 414,
+        "abvSubs": "414"
+      },
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/70210"
+    },
+    {
+      "id": "40201",
+      "name": "Elian Cardona",
+      "country": "Unknown",
+      "flag": "\ud83c\udf0d",
+      "score": 5.0,
+      "contacts": {
+        "discord": "Happy112#1256",
+        "website": "editorhappy112.carrd.co"
+      },
+      "badge": "gold",
+      "verified": false,
+      "hireMe": false,
+      "ytChannel": null,
+      "ytjobsUrl": "https://ytjobs.co/talent/profile/40201"
     }
   ],
-  "generated_at": "2026-06-06T13:00:12.750264Z"
+  "generated_at": "2026-06-07T13:00:11.697555Z"
 }
